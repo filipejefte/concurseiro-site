@@ -1,0 +1,101 @@
+/* Componentes da marca, em CSS puro (sem framework). Prefixo cc-. Tudo lê os tokens. */
+
+body { margin: 0; font-family: var(--font-sans); background: var(--papel); color: var(--tinta); -webkit-font-smoothing: antialiased; }
+.cc-num { font-variant-numeric: tabular-nums; }
+.cc-pad { padding: var(--space-4); }
+.cc-stack { display: flex; flex-direction: column; gap: var(--space-3); }
+.cc-row { display: flex; flex-wrap: wrap; gap: var(--space-3); align-items: center; }
+
+/* ---------- O grifo: o marca-texto da marca ---------- */
+.cc-grifo { position: relative; isolation: isolate; display: inline-block; padding: 0 var(--grifo-sobra, 0.16em); color: var(--on-grifo); }
+.cc-grifo::before { content: ""; position: absolute; z-index: -1; inset: 0.06em 0 0.02em 0; background: var(--grifo); border-radius: 2px; transform: skewX(var(--grifo-inclinacao, -12deg)) rotate(var(--grifo-giro, -1.5deg)); }
+
+/* ---------- Logotipo (palavra dentro do grifo) ---------- */
+.cc-logo { display: inline-flex; align-items: center; gap: 0.32em; font-family: var(--font-sans); font-weight: 800; letter-spacing: -0.035em; line-height: 1; text-transform: lowercase; }
+.cc-logo .cc-grifo { padding: 0.04em 0.2em 0.1em; }
+.cc-logo-icone { width: 1.15em; height: 1.15em; flex: none; display: block; }
+
+/* ---------- Selo de situação ---------- */
+.cc-status { display: inline-flex; align-items: center; gap: var(--space-1); height: 26px; padding: 0 10px 0 8px; border-radius: var(--radius-full); font-size: 13px; line-height: 16px; font-weight: 600; white-space: nowrap; }
+.cc-status svg { width: 14px; height: 14px; flex: none; }
+.cc-status-aberto { background: var(--verde-suave); color: var(--verde); }
+.cc-status-breve { background: var(--prazo-suave); color: var(--prazo); }
+.cc-status-previsto { background: var(--previsto-suave); color: var(--previsto); }
+.cc-status-encerrado { background: transparent; color: var(--encerrado); box-shadow: inset 0 0 0 1px var(--linha); }
+
+/* ---------- Botões ---------- */
+.cc-btn { -webkit-appearance: none; appearance: none; display: inline-flex; align-items: center; justify-content: center; gap: var(--space-2); min-height: 48px; padding: 0 var(--space-4); border-radius: var(--radius-md); border: 1px solid var(--linha-forte); background: var(--papel-alto); color: var(--tinta); font: inherit; font-size: 16px; line-height: 20px; font-weight: 600; text-decoration: none; cursor: pointer; }
+.cc-btn svg { width: 18px; height: 18px; flex: none; }
+.cc-btn-primario { background: var(--verde); border-color: var(--verde); color: var(--on-verde); }
+.cc-btn-primario:hover { background: var(--verde-forte); border-color: var(--verde-forte); }
+.cc-btn-texto { border-color: transparent; background: transparent; color: var(--link); text-decoration: underline; text-underline-offset: 3px; padding: 0 var(--space-2); }
+.cc-btn-bloco { width: 100%; }
+.cc-btn:focus-visible, .cc-campo input:focus-visible, .cc-check input:focus-visible { outline: 2px solid transparent; box-shadow: var(--foco); }
+.cc-flutuante { border-radius: var(--radius-full); box-shadow: var(--sombra-botao-flutuante); padding: 0 var(--space-6) 0 var(--space-4); }
+
+/* ---------- Card de concurso ---------- */
+.cc-card { background: var(--papel-alto); border: 1px solid var(--linha); border-radius: var(--radius-lg); padding: var(--space-4); display: flex; flex-direction: column; gap: var(--space-3); max-width: 380px; }
+.cc-card-topo { display: flex; justify-content: space-between; align-items: center; gap: var(--space-2); }
+.cc-card-local { display: inline-flex; align-items: center; gap: var(--space-1); color: var(--tinta-suave); font-size: 14px; line-height: 20px; white-space: nowrap; }
+.cc-card-local svg { width: 16px; height: 16px; }
+.cc-card-orgao { margin: 0; font-size: 17px; line-height: 22px; font-weight: 700; }
+.cc-card-cargo { margin: 2px 0 0; font-size: 16px; line-height: 22px; color: var(--tinta-suave); }
+.cc-rotulo { display: block; font-size: 12px; line-height: 16px; font-weight: 600; letter-spacing: 0.02em; text-transform: uppercase; color: var(--tinta-suave); margin-bottom: 2px; }
+.cc-salario { display: block; font-size: 30px; line-height: 34px; font-weight: 800; letter-spacing: -0.01em; font-variant-numeric: proportional-nums; }
+.cc-salario small { display: block; margin-top: var(--space-1); font-size: 14px; line-height: 20px; font-weight: 600; letter-spacing: 0; color: var(--tinta-suave); }
+.cc-dados { display: flex; flex-wrap: wrap; gap: var(--space-1) var(--space-3); margin: 0; padding: 0; list-style: none; font-size: 15px; line-height: 20px; font-weight: 600; }
+.cc-dados li + li::before { content: "·"; color: var(--tinta-suave); margin-right: var(--space-3); }
+.cc-card-rodape { display: flex; justify-content: space-between; align-items: center; gap: var(--space-2); padding-top: var(--space-3); border-top: 1px solid var(--linha); }
+.cc-fonte { font-size: 13px; line-height: 18px; color: var(--tinta-suave); }
+.cc-card-encerrado { background: var(--papel); }
+.cc-card-encerrado .cc-card-orgao, .cc-card-encerrado .cc-salario { color: var(--encerrado); }
+
+/* ---------- Ficha do edital ---------- */
+.cc-ficha { margin: 0; display: grid; grid-template-columns: minmax(110px, 40%) 1fr; border-top: 1px solid var(--linha); }
+.cc-ficha dt, .cc-ficha dd { margin: 0; padding: var(--space-3) 0; border-bottom: 1px solid var(--linha); font-size: 15px; line-height: 20px; }
+.cc-ficha dt { color: var(--tinta-suave); padding-right: var(--space-3); }
+.cc-ficha dd { font-weight: 600; }
+.cc-ni { font-weight: 400; font-style: italic; color: var(--tinta-suave); }
+
+/* ---------- Aviso de confiança ---------- */
+.cc-aviso { display: flex; gap: var(--space-3); align-items: flex-start; padding: var(--space-3) var(--space-4); border: 1px solid var(--linha); border-radius: var(--radius-lg); background: var(--papel); font-size: 14px; line-height: 20px; max-width: 520px; }
+.cc-aviso svg { width: 20px; height: 20px; flex: none; color: var(--verde); margin-top: 1px; }
+.cc-aviso strong { font-weight: 700; }
+.cc-atualizacao { display: inline-flex; align-items: center; gap: var(--space-1); font-size: 13px; line-height: 18px; color: var(--tinta-suave); }
+.cc-atualizacao svg { width: 14px; height: 14px; }
+.cc-rotulo-pub { display: inline-block; font-size: 11px; line-height: 16px; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; color: var(--tinta-suave); }
+
+/* ---------- Captura de alerta (folha) ---------- */
+.cc-folha { background: var(--papel-alto); border-radius: var(--radius-lg) var(--radius-lg) 0 0; box-shadow: var(--sombra-folha); padding: var(--space-6) var(--space-4) var(--space-4); max-width: 400px; display: flex; flex-direction: column; gap: var(--space-4); }
+.cc-folha h3 { margin: 0; font-size: 20px; line-height: 26px; font-weight: 700; letter-spacing: -0.01em; }
+.cc-folha p { margin: 0; font-size: 15px; line-height: 22px; color: var(--tinta-suave); }
+.cc-abas { display: grid; grid-template-columns: 1fr 1fr; border: 1px solid var(--linha-forte); border-radius: var(--radius-md); overflow: hidden; }
+.cc-abas button { -webkit-appearance: none; appearance: none; border: 0; background: transparent; color: var(--tinta); font: inherit; font-size: 15px; font-weight: 600; min-height: 44px; cursor: pointer; }
+.cc-abas button[aria-pressed="true"] { background: var(--verde); color: var(--on-verde); }
+.cc-campo { display: flex; flex-direction: column; gap: var(--space-1); font-size: 14px; line-height: 20px; font-weight: 600; }
+.cc-campo input { -webkit-appearance: none; appearance: none; min-height: 48px; padding: 0 var(--space-3); border: 1px solid var(--linha-forte); border-radius: var(--radius-sm); background: var(--papel-alto); color: var(--tinta); font: inherit; font-size: 16px; font-weight: 400; }
+.cc-check { display: flex; gap: var(--space-3); align-items: flex-start; font-size: 14px; line-height: 20px; color: var(--tinta); }
+.cc-check input { -webkit-appearance: none; appearance: none; width: 22px; height: 22px; flex: none; margin: 0; border: 1.5px solid var(--linha-forte); border-radius: var(--radius-sm); background: var(--papel-alto); display: grid; place-content: center; cursor: pointer; }
+.cc-check input:checked { background: var(--verde); border-color: var(--verde); }
+.cc-check input:checked::after { content: ""; width: 10px; height: 6px; border-left: 2.5px solid var(--on-verde); border-bottom: 2.5px solid var(--on-verde); transform: rotate(-45deg) translate(1px, -1px); }
+.cc-letra-miuda { font-size: 13px; line-height: 18px; color: var(--tinta-suave); }
+
+/* ---------- Mensagem de alerta (Telegram / e-mail) ---------- */
+.cc-msg { background: var(--papel-alto); border: 1px solid var(--linha); border-radius: var(--radius-lg) var(--radius-lg) var(--radius-lg) 4px; padding: var(--space-3) var(--space-4); max-width: 320px; font-size: 15px; line-height: 22px; }
+.cc-msg p { margin: 0 0 var(--space-2); }
+.cc-msg p:last-child { margin: 0; }
+.cc-msg a { color: var(--link); font-weight: 600; }
+.cc-email { background: var(--papel-alto); border: 1px solid var(--linha); border-radius: var(--radius-lg); max-width: 360px; overflow: hidden; }
+.cc-email-cab { padding: var(--space-3) var(--space-4); border-bottom: 1px solid var(--linha); font-size: 13px; line-height: 18px; color: var(--tinta-suave); }
+.cc-email-cab b { color: var(--tinta); font-weight: 700; }
+.cc-email-corpo { padding: var(--space-4); display: flex; flex-direction: column; gap: var(--space-3); font-size: 15px; line-height: 22px; }
+
+/* ---------- Post social (4:5) ---------- */
+.cc-post { width: 320px; height: 400px; box-sizing: border-box; border-radius: var(--radius-lg); padding: 24px; display: flex; flex-direction: column; justify-content: space-between; background: var(--papel); border: 1px solid var(--linha); overflow: hidden; }
+.cc-post-verde { background: var(--verde); border-color: var(--verde); color: var(--on-verde); }
+.cc-post-verde .cc-post-meta, .cc-post-verde .cc-post-pe { color: var(--on-verde); opacity: 0.86; }
+.cc-post-tag { font-size: 12px; line-height: 16px; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; }
+.cc-post-orgao { margin: var(--space-2) 0 0; font-size: 26px; line-height: 28px; font-weight: 800; letter-spacing: -0.02em; }
+.cc-post-salario { font-size: 40px; line-height: 44px; font-weight: 800; letter-spacing: -0.02em; }
+.cc-post-meta { font-size: 15px; line-height: 21px; font-weight: 600; color: var(--tinta-suave); }
+.cc-post-pe { display: flex; justify-content: space-between; align-items: flex-end; font-size: 11px; line-height: 15px; color: var(--tinta-suave); }

@@ -1,0 +1,64 @@
+/*
+  Tokens do design system Concurseiro (tema Claro).
+  Fonte: design system "Concurseiro" (tokens.json). Mudou lá, muda aqui.
+  Os componentes em componentes.css e as telas em site.css só leem estas variáveis.
+*/
+
+@font-face {
+  font-family: "Schibsted Grotesk";
+  src: url("../fonts/schibsted-grotesk-latin-wght-normal.woff2") format("woff2");
+  font-weight: 400 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --font-sans: "Schibsted Grotesk", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+
+  /* Cor */
+  --papel: #f7f6f1;
+  --papel-alto: #ffffff;
+  --linha: #dedbd0;
+  --linha-forte: #7e8781;
+  --tinta: #14211b;
+  --tinta-suave: #56625b;
+  --verde: #0b6b48;
+  --verde-forte: #08573a;
+  --verde-suave: #ddefe5;
+  --on-verde: #ffffff;
+  --grifo: #d6f26a;
+  --on-grifo: #14211b;
+  --prazo: #9c4308;
+  --prazo-suave: #fce9d9;
+  --previsto: #4b5872;
+  --previsto-suave: #e6e9f0;
+  --encerrado: #6b716d;
+  --erro: #b42318;
+  --erro-suave: #fde8e6;
+  --link: var(--verde);
+
+  /* Espaço (base de 4px) */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-12: 48px;
+
+  /* Raio */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-full: 9999px;
+
+  /* Sombra (só no que flutua) e foco */
+  --sombra-folha: 0 -2px 6px #14211b0f, 0 -12px 32px -4px #14211b29;
+  --sombra-botao-flutuante: 0 2px 4px #14211b1f, 0 8px 20px -4px #0b6b4859;
+  --foco: 0 0 0 2px #f7f6f1, 0 0 0 4px #0b6b48;
+
+  /* Geometria do grifo */
+  --grifo-inclinacao: -12deg;
+  --grifo-giro: -1.5deg;
+  --grifo-sobra: 0.16em;
+}

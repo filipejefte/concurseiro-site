@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Concursos abertos em Maringá (PR) · concurseiro (protótipo)</title>
+<meta name="description" content="Concursos com inscrição aberta em Maringá (PR) e região: salário, vagas, prazo e link para o edital oficial.">
+<meta name="theme-color" content="#f7f6f1">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="assets/fonts/schibsted-grotesk-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/tokens.css">
+<link rel="stylesheet" href="assets/css/componentes.css">
+<link rel="stylesheet" href="assets/css/site.css">
+<script src="assets/js/dados.js" defer></script>
+<script src="assets/js/app.js" defer></script>
+</head>
+<body data-pagina="cidade" data-cidade="Maringá" data-regiao="Maringá (PR) e região">
+<a class="pt-pular" href="#conteudo">Pular para o conteúdo</a>
+
+<header class="pt-topo">
+  <div class="pt-topo-in">
+    <a class="pt-marca" href="index.html" aria-label="concurseiro, página inicial">
+      <span class="cc-logo">
+        <svg class="cc-logo-icone" viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="15" fill="#0B6B48"/><polygon points="15,25 53,22 49,41 11,44" fill="#D6F26A"/></svg>
+        <span class="cc-grifo">concurseiro</span>
+      </span>
+    </a>
+    <nav class="pt-nav" aria-label="Principal">
+      <a class="pt-navlink" href="concursos.html">Concursos abertos</a>
+      <a class="pt-navlink" href="cidade-maringa.html" aria-current="page">Por cidade</a>
+      <a class="pt-navlink" href="concursos.html?nacionais=1">Nacionais</a>
+    </nav>
+    <div class="pt-topo-acoes">
+      <a class="pt-icone-btn pt-so-celular" href="concursos.html" aria-label="Buscar concursos"><svg class="pt-i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></a>
+      <button class="pt-icone-btn pt-so-celular" type="button" data-menu aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-celular"><svg class="pt-i" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+      <button class="cc-btn cc-btn-primario pt-so-computador" type="button" data-abrir-alerta><svg class="pt-i2" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 16v-5a6 6 0 1 1 12 0v5l1.5 2h-15z"/><path d="M10 20.5a2.2 2.2 0 0 0 4 0"/></svg>Avise-me</button>
+    </div>
+  </div>
+  <nav id="menu-celular" class="pt-menu-celular pt-so-celular" aria-label="Menu" hidden>
+    <a href="index.html">Início</a>
+    <a href="concursos.html">Concursos abertos</a>
+    <a href="concursos.html?nacionais=1">Nacionais</a>
+    <button type="button" data-abrir-alerta>Avise-me</button>
+  </nav>
+</header>
+
+<main id="conteudo" class="pt-pagina" style="display:flex;flex-direction:column;gap:32px;padding-top:4px;padding-bottom:48px">
+  <div style="display:flex;flex-direction:column;gap:12px">
+    <nav aria-label="Você está em">
+      <ol class="pt-trilha">
+        <li><a href="index.html">Início</a></li>
+        <li aria-hidden="true">›</li>
+        <li><a href="concursos.html?raio=estado">Paraná</a></li>
+        <li aria-hidden="true">›</li>
+        <li aria-current="page">Maringá</li>
+      </ol>
+    </nav>
+    <h1 class="pt-titulo">Concursos abertos em Maringá (PR)</h1>
+    <p class="pt-capa"><span class="cc-grifo" data-n-cidade>3 concursos</span> com inscrição aberta na cidade e mais <span data-n-regiao>5</span> a até 50 km.</p>
+    <span class="cc-atualizacao"><svg class="pt-i" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12a8 8 0 1 1-2.3-5.6"/><path d="M20 4v4.5h-4.5"/></svg>Conferido hoje às 18h · Diário Oficial do Estado e sites das bancas</span>
+  </div>
+
+  <div class="pt-grade-cards" data-lista="cidade"></div>
+
+  <aside class="pt-pub" aria-label="Publicidade">
+    <span class="cc-rotulo-pub">Publicidade</span>
+    <div class="pt-pub-caixa">Espaço do Google AdSense · 320 × 100</div>
+  </aside>
+
+  <section class="pt-secao" aria-labelledby="titulo-proximas">
+    <h2 class="pt-h2" id="titulo-proximas">Perto de Maringá</h2>
+    <ul class="pt-lista" data-lista="proximas"></ul>
+    <a class="cc-btn" href="concursos.html" style="align-self:flex-start">Ver os <span data-n-total>8</span>&nbsp;concursos a até 50 km</a>
+  </section>
+
+  <section class="pt-secao" aria-labelledby="titulo-areas-cidade">
+    <h2 class="pt-h2" id="titulo-areas-cidade">Por área em Maringá e região</h2>
+    <div class="pt-chips" data-lista="areas-cidade"></div>
+  </section>
+
+  <section class="pt-secao" aria-labelledby="titulo-bancas-cidade">
+    <h2 class="pt-h2" id="titulo-bancas-cidade">Bancas com concurso na região</h2>
+    <div class="pt-chips" data-lista="bancas-cidade"></div>
+  </section>
+
+  <section class="pt-secao" aria-labelledby="titulo-faq">
+    <h2 class="pt-h2" id="titulo-faq">Perguntas frequentes</h2>
+    <div class="pt-faq">
+      <details open>
+        <summary>Quantos concursos estão abertos em Maringá?<svg class="pt-i" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>
+        <p>Hoje são <span data-n-cidade>3 concursos</span> com inscrição aberta na cidade e <span data-n-regiao>5</span> a até 50 km. A lista muda todo dia: a hora da última conferência fica no topo da página.</p>
+      </details>
+      <details>
+        <summary>Onde faço a inscrição?<svg class="pt-i" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>
+        <p>Só no site da banca organizadora. Na ficha de cada concurso, o botão "Ver edital oficial" leva ao endereço certo. Aqui não há inscrição nem cobrança.</p>
+      </details>
+      <details>
+        <summary>O salário mostrado é o que eu recebo?<svg class="pt-i" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>
+        <p>É o salário inicial bruto do edital, antes dos descontos. Benefícios aparecem à parte.</p>
+      </details>
+      <details>
+        <summary>Como recebo aviso de concurso novo em Maringá?<svg class="pt-i" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>
+        <p>Toque em "Avise-me" e escolha e-mail ou Telegram. Só mandamos alerta com a sua autorização, e todo alerta tem um link para sair.</p>
+      </details>
+    </div>
+  </section>
+
+  <section class="pt-cta" aria-labelledby="titulo-cta">
+    <svg class="pt-i" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 16v-5a6 6 0 1 1 12 0v5l1.5 2h-15z"/><path d="M10 20.5a2.2 2.2 0 0 0 4 0"/></svg>
+    <h2 class="pt-h2" id="titulo-cta">Concurso novo em Maringá? A gente avisa.</h2>
+    <button class="cc-btn cc-btn-primario" type="button" data-abrir-alerta><svg class="pt-i2" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 16v-5a6 6 0 1 1 12 0v5l1.5 2h-15z"/><path d="M10 20.5a2.2 2.2 0 0 0 4 0"/></svg>Avise-me</button>
+  </section>
+
+  <div class="cc-aviso" role="note" style="max-width:none">
+    <svg class="pt-i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 5 6v5.5c0 4.3 3 7.8 7 9.5 4-1.7 7-5.2 7-9.5V6z"/><path d="m9 12 2 2 4-4"/></svg>
+    <div><strong>Não somos site oficial.</strong> A inscrição e o pagamento da taxa são feitos só no site da banca. Aqui você encontra o concurso e o caminho certo até ele.</div>
+  </div>
+</main>
+
+<footer class="pt-rodape">
+  <div class="pt-rodape-in">
+    <div class="pt-rodape-texto">
+      <span class="cc-logo"><span class="cc-grifo">concurseiro</span></span>
+      <p>Reunimos concursos públicos a partir dos editais e diários oficiais. Inscrição e pagamento, só no site da banca.</p>
+      <p><strong>Protótipo:</strong> órgãos, salários e datas desta versão são exemplos fictícios.</p>
+    </div>
+    <nav class="pt-rodape-links" aria-label="Rodapé">
+      <a href="#">Como conferimos os dados</a>
+      <a href="#">Política de privacidade</a>
+      <a href="#">Sobre</a>
+      <a href="#">Contato</a>
+    </nav>
+  </div>
+</footer>
+
+<button class="cc-btn cc-btn-primario cc-flutuante pt-fab" type="button" data-abrir-alerta><svg class="pt-i2" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 16v-5a6 6 0 1 1 12 0v5l1.5 2h-15z"/><path d="M10 20.5a2.2 2.2 0 0 0 4 0"/></svg>Avise-me</button>
+</body>
+</html>
