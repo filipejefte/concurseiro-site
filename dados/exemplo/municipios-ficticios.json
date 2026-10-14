@@ -1,0 +1,9 @@
+{
+  "aviso": "CIDADES FICTÍCIAS, só para os dados de exemplo. Códigos na faixa 41999xx, que o IBGE não usa. Coordenadas inventadas perto de Maringá. Nunca entram na tabela real.",
+  "municipios": [
+    { "ibge": "4199901", "nome": "Vale Verde", "lat": -23.3665, "lon": -51.8315, "ficticio": true },
+    { "ibge": "4199902", "nome": "Campo Alto", "lat": -23.6133, "lon": -52.11, "ficticio": true },
+    { "ibge": "4199903", "nome": "Serra Azul", "lat": -23.1378, "lon": -52.191, "ficticio": true },
+    { "ibge": "4199904", "nome": "Rio do Campo", "lat": -23.7897, "lon": -51.4515, "ficticio": true }
+  ]
+}

@@ -1,0 +1,132 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "concurso.schema.json",
+  "title": "Concurso",
+  "description": "Uma ficha de concurso, extraída de ato oficial. O que o edital não traz fica null. A situação (aberto, encerra em até 7 dias, previsto, encerrado) não fica aqui: é calculada na publicação a partir das datas.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id", "ficticio", "orgao", "esfera", "uf", "municipio_ibge", "cidade", "nacional", "abrangencia", "area",
+    "banca", "inscricao", "isencao_ate", "prova_objetiva", "local_prova", "taxa", "isencao_regras",
+    "regime", "beneficios", "o_que_levar", "cargos", "documentos",
+    "conferencia", "primeira_varredura", "ultima_alteracao"
+  ],
+  "properties": {
+    "id": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$", "description": "Slug estável, ex.: prefeitura-maringa-pr-2026-edital-01" },
+    "ficticio": { "type": "boolean", "description": "true só nos dados de exemplo" },
+    "orgao": { "type": "string", "minLength": 1 },
+    "esfera": { "enum": ["federal", "estadual", "municipal"] },
+    "uf": { "type": "string", "pattern": "^[A-Z]{2}$" },
+    "municipio_ibge": { "type": ["string", "null"], "pattern": "^[0-9]{7}$" },
+    "cidade": { "type": ["string", "null"] },
+    "nacional": { "type": "boolean", "description": "Vagas em vários estados" },
+    "abrangencia": { "type": ["string", "null"], "description": "Texto curto para concurso nacional, ex.: 14 estados" },
+    "area": { "enum": ["Administrativa", "Saúde", "Educação", "Operacional", "Policial e segurança", "Jurídica", "Bancária", "Outras"] },
+
+    "banca": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["nome", "url"],
+      "properties": {
+        "nome": { "type": ["string", "null"] },
+        "url": { "$ref": "#/$defs/url_ou_null" }
+      }
+    },
+    "inscricao": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["inicio", "fim", "url"],
+      "properties": {
+        "inicio": { "$ref": "#/$defs/data_ou_null" },
+        "fim": { "$ref": "#/$defs/data_ou_null" },
+        "url": { "$ref": "#/$defs/url_ou_null" }
+      }
+    },
+    "isencao_ate": { "$ref": "#/$defs/data_ou_null" },
+    "prova_objetiva": { "$ref": "#/$defs/data_ou_null" },
+    "local_prova": { "type": ["string", "null"] },
+    "taxa": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["min", "max"],
+      "properties": {
+        "min": { "type": ["number", "null"], "minimum": 0 },
+        "max": { "type": ["number", "null"], "minimum": 0 }
+      }
+    },
+    "isencao_regras": { "type": ["string", "null"] },
+
+    "regime": { "type": ["string", "null"] },
+    "beneficios": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["nome", "valor"],
+        "properties": {
+          "nome": { "type": "string", "minLength": 1 },
+          "valor": { "type": ["number", "null"], "exclusiveMinimum": 0 }
+        }
+      }
+    },
+    "o_que_levar": { "type": ["string", "null"] },
+    "cargos": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["nome", "vagas", "cadastro_reserva", "salario", "escolaridade", "requisitos", "jornada_horas", "materias"],
+        "properties": {
+          "nome": { "type": "string", "minLength": 1 },
+          "vagas": { "type": ["integer", "null"], "minimum": 0 },
+          "cadastro_reserva": { "type": "boolean" },
+          "salario": { "type": ["number", "null"], "exclusiveMinimum": 0 },
+          "escolaridade": { "enum": ["Fundamental", "Médio", "Técnico", "Superior", null] },
+          "requisitos": { "type": ["string", "null"] },
+          "jornada_horas": { "type": ["number", "null"], "exclusiveMinimum": 0 },
+          "materias": { "type": "array", "items": { "type": "string", "minLength": 1 } }
+        }
+      }
+    },
+
+    "documentos": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["tipo", "titulo", "numero", "url", "publicado_em", "fonte", "resumo"],
+        "properties": {
+          "tipo": { "enum": ["edital", "retificacao", "autorizacao", "contratacao_banca", "resultado", "outro"] },
+          "titulo": { "type": "string", "minLength": 1 },
+          "numero": { "type": ["string", "null"] },
+          "url": { "type": "string", "pattern": "^https?://" },
+          "publicado_em": { "$ref": "#/$defs/data_ou_null" },
+          "fonte": { "enum": ["DOU", "AMP-PR", "DIOE-PR", "banca", "outra"] },
+          "resumo": { "type": ["string", "null"] }
+        }
+      }
+    },
+
+    "conferencia": {
+      "type": ["object", "null"],
+      "additionalProperties": false,
+      "required": ["conferido_em", "por", "campos"],
+      "properties": {
+        "conferido_em": { "$ref": "#/$defs/data" },
+        "por": { "type": "string", "minLength": 1 },
+        "campos": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": { "enum": ["salario", "inscricao.inicio", "inscricao.fim", "prova_objetiva", "taxa", "banca", "cidade", "edital"] }
+        }
+      }
+    },
+    "primeira_varredura": { "$ref": "#/$defs/data_ou_null" },
+    "ultima_alteracao": { "$ref": "#/$defs/data_ou_null" }
+  },
+  "$defs": {
+    "data": { "type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$" },
+    "data_ou_null": { "type": ["string", "null"], "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$" },
+    "url_ou_null": { "type": ["string", "null"], "pattern": "^https?://" }
+  }
+}

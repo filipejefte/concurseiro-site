@@ -51,6 +51,10 @@ a:focus-visible, button:focus-visible, summary:focus-visible, input:focus-visibl
 .pt-menu-celular a, .pt-menu-celular button { -webkit-appearance: none; appearance: none; display: flex; align-items: center; min-height: 48px; padding: 0; border: 0; border-bottom: 1px solid var(--linha); background: transparent; color: var(--tinta); font: inherit; font-size: 17px; font-weight: 600; text-align: left; text-decoration: none; cursor: pointer; }
 .pt-menu-celular > :last-child { border-bottom: 0; color: var(--verde); }
 
+/* Faixa de atualização (abaixo do cabeçalho, em todas as páginas) */
+.pt-faixa { border-bottom: 1px solid var(--linha); background: var(--papel-alto); }
+.pt-faixa p { margin: 0 auto; padding-top: 8px; padding-bottom: 8px; font-size: 13px; line-height: 18px; color: var(--tinta-suave); }
+
 /* Texto */
 .pt-display { margin: 0; font-size: 40px; line-height: 44px; font-weight: 800; letter-spacing: -0.02em; }
 .pt-titulo { margin: 0; font-size: 28px; line-height: 32px; font-weight: 800; letter-spacing: -0.015em; }
@@ -120,6 +124,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible, input:focus-visibl
 a.cc-card { max-width: none; text-decoration: none; color: var(--tinta); }
 a.cc-card:hover { border-color: var(--linha-forte); }
 .pt-ver-ficha { min-height: 44px; pointer-events: none; }
+.cc-salario .cc-ni { display: block; font-size: 18px; line-height: 24px; letter-spacing: 0; }
 
 /* Listas em linha */
 .pt-lista { list-style: none; margin: 0; padding: 0; background: var(--papel-alto); border: 1px solid var(--linha); border-radius: var(--radius-lg); overflow: hidden; }

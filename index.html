@@ -3,20 +3,21 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- Protótipo com dados de exemplo: não deixar o Google indexar. Tirar o noindex só no site com dados reais. -->
+<!-- v0: fora do Google até os sócios decidirem abrir o site. Tirar o noindex (e o robots.txt) só com essa decisão. -->
 <meta name="robots" content="noindex, nofollow">
 <title>Concursos abertos perto de você · concurseiro (protótipo)</title>
-<meta name="description" content="Todo concurso aberto do Brasil, com o salário na frente. Prazos, vagas e o caminho para o edital oficial.">
+<meta name="description" content="Concursos federais e do Paraná com inscrição aberta, com o salário na frente. Prazos, vagas e o caminho para o edital oficial.">
 <meta name="theme-color" content="#f7f6f1">
 <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
 <link rel="preload" href="assets/fonts/schibsted-grotesk-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="assets/css/tokens.css">
 <link rel="stylesheet" href="assets/css/componentes.css">
 <link rel="stylesheet" href="assets/css/site.css">
+<script src="assets/js/config.js" defer></script>
 <script src="assets/js/dados.js" defer></script>
 <script src="assets/js/app.js" defer></script>
 </head>
-<body data-pagina="inicio" data-regiao="Maringá (PR) e região">
+<body data-pagina="inicio">
 <a class="pt-pular" href="#conteudo">Pular para o conteúdo</a>
 
 <header class="pt-topo">
@@ -29,7 +30,7 @@
     </a>
     <nav class="pt-nav" aria-label="Principal">
       <a class="pt-navlink" href="concursos.html">Concursos abertos</a>
-      <a class="pt-navlink" href="cidade-maringa.html">Por cidade</a>
+      <a class="pt-navlink" href="cidade.html">Por cidade</a>
       <a class="pt-navlink" href="concursos.html?nacionais=1">Nacionais</a>
     </nav>
     <div class="pt-topo-acoes">
@@ -40,7 +41,7 @@
   </div>
   <nav id="menu-celular" class="pt-menu-celular pt-so-celular" aria-label="Menu" hidden>
     <a href="concursos.html">Concursos abertos</a>
-    <a href="cidade-maringa.html">Por cidade</a>
+    <a href="cidade.html">Por cidade</a>
     <a href="concursos.html?nacionais=1">Nacionais</a>
     <button type="button" data-abrir-alerta>Avise-me</button>
   </nav>
@@ -48,9 +49,9 @@
 
 <main id="conteudo">
   <section class="pt-heroi pt-pagina">
-    <p class="pt-local"><svg class="pt-i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><span>Maringá (PR) · pela sua conexão</span><a class="pt-link" href="concursos.html#filtros">Alterar</a></p>
-    <h1 class="pt-display">Concursos abertos perto de você</h1>
-    <p class="pt-capa"><span class="cc-grifo" data-n-perto>8 concursos</span> com inscrição aberta ou prevista a até 50 km.</p>
+    <p class="pt-local"><svg class="pt-i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><span data-local-texto>Nenhuma cidade escolhida</span><button class="pt-link-btn" type="button" data-abrir-cidade data-rotulo-cidade>Escolher cidade</button></p>
+    <h1 class="pt-display" data-titulo>Concursos abertos no Paraná</h1>
+    <p class="pt-capa" data-precisa-dados><span class="cc-grifo" data-n-perto>0 concursos</span><span data-capa-resto> com inscrição aberta ou prevista.</span></p>
     <form class="pt-busca" action="concursos.html" method="get" role="search">
       <label class="pt-rotulo-campo" for="busca">Buscar concurso</label>
       <div class="pt-busca-linha">
@@ -70,16 +71,16 @@
 
   <div class="pt-colunas pt-pagina">
     <div class="pt-principal">
-      <section class="pt-secao ordem-1" aria-labelledby="titulo-perto">
+      <section class="pt-secao ordem-1" aria-labelledby="titulo-perto" data-precisa-dados>
         <div class="pt-secao-cab">
-          <h2 class="pt-h2" id="titulo-perto">Perto de você</h2>
+          <h2 class="pt-h2" id="titulo-perto" data-titulo-perto>Perto de você</h2>
           <a class="pt-link pt-link-44" href="concursos.html" data-ver-perto style="font-size:15px">Ver todos</a>
         </div>
         <div class="pt-grade-cards" data-lista="perto"></div>
-        <a class="cc-btn" href="concursos.html" style="align-self:flex-start">Ver todos os concursos perto de você</a>
+        <a class="cc-btn" href="concursos.html" style="align-self:flex-start" data-ver-todos>Ver todos os concursos</a>
       </section>
 
-      <section class="pt-secao ordem-3" aria-labelledby="titulo-areas">
+      <section class="pt-secao ordem-3" aria-labelledby="titulo-areas" data-precisa-dados>
         <div class="pt-secao-cab">
           <h2 class="pt-h2" id="titulo-areas">Por área</h2>
           <a class="pt-link pt-link-44" href="concursos.html" style="font-size:15px">Todas</a>
@@ -87,26 +88,26 @@
         <div class="pt-grade-areas" data-lista="areas"></div>
       </section>
 
-      <section class="pt-secao ordem-4" aria-labelledby="titulo-nacionais">
+      <section class="pt-secao ordem-4" aria-labelledby="titulo-nacionais" data-precisa-dados data-secao-nacionais>
         <div class="pt-secao-cab">
           <h2 class="pt-h2" id="titulo-nacionais">Nacionais</h2>
           <a class="pt-link pt-link-44" href="concursos.html?nacionais=1" data-ver-nacionais style="font-size:15px">Ver todos</a>
         </div>
-        <p class="pt-apoio" style="font-size:15px;line-height:22px">Concursos federais com vaga ou prova no Paraná.</p>
+        <p class="pt-apoio" style="font-size:15px;line-height:22px">Concursos federais com vagas em vários estados ou fora do Paraná.</p>
         <div class="pt-grade-cards" data-lista="nacionais"></div>
       </section>
     </div>
 
     <div class="pt-lateral">
-      <section class="pt-secao ordem-2" aria-labelledby="titulo-encerram">
+      <section class="pt-secao ordem-2" aria-labelledby="titulo-encerram" data-precisa-dados>
         <h2 class="pt-h2" id="titulo-encerram">Encerram nesta semana</h2>
         <ul class="pt-lista" data-lista="encerram"></ul>
       </section>
 
       <section class="pt-cta ordem-5" aria-labelledby="titulo-cta">
         <svg class="pt-i" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 16v-5a6 6 0 1 1 12 0v5l1.5 2h-15z"/><path d="M10 20.5a2.2 2.2 0 0 0 4 0"/></svg>
-        <h2 class="pt-h2" id="titulo-cta">Avise-me quando abrir concurso perto de Maringá</h2>
-        <p class="pt-texto" style="font-size:15px;line-height:22px">Um e-mail ou uma mensagem no Telegram quando abrir concurso na sua região ou quando a inscrição estiver acabando. Você sai quando quiser.</p>
+        <h2 class="pt-h2" id="titulo-cta" data-titulo-cta>Avise-me quando abrir concurso</h2>
+        <p class="pt-texto" style="font-size:15px;line-height:22px">Um canal no Telegram com os concursos novos de cada semana e as inscrições que estão acabando. Sem cadastro: você entra e sai quando quiser.</p>
         <button class="cc-btn cc-btn-primario" type="button" data-abrir-alerta><svg class="pt-i2" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 16v-5a6 6 0 1 1 12 0v5l1.5 2h-15z"/><path d="M10 20.5a2.2 2.2 0 0 0 4 0"/></svg>Avise-me</button>
       </section>
 
@@ -127,9 +128,9 @@
   <div class="pt-rodape-in">
     <div class="pt-rodape-texto">
       <span class="cc-logo"><span class="cc-grifo">concurseiro</span></span>
-      <p>Reunimos concursos públicos a partir dos editais e diários oficiais. Inscrição e pagamento, só no site da banca.</p>
+      <p>Reunimos concursos públicos federais e do Paraná a partir dos editais e diários oficiais. Inscrição e pagamento, só no site da banca.</p>
       <p>Anúncios levam "Publicidade". Indicações pagas levam "Link de parceiro".</p>
-      <p><strong>Protótipo:</strong> órgãos, salários e datas desta versão são exemplos fictícios.</p>
+      <p data-so-exemplo><strong>Protótipo:</strong> órgãos, salários e datas desta versão são exemplos fictícios.</p>
     </div>
     <nav class="pt-rodape-links" aria-label="Rodapé">
       <a href="#">Como conferimos os dados</a>

@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
-<title>Concursos perto de Maringá · concurseiro (protótipo)</title>
+<title>Concursos · concurseiro (protótipo)</title>
 <meta name="description" content="Concursos abertos perto de você, com salário, vagas, escolaridade e prazo de inscrição.">
 <meta name="theme-color" content="#f7f6f1">
 <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
@@ -12,10 +12,11 @@
 <link rel="stylesheet" href="assets/css/tokens.css">
 <link rel="stylesheet" href="assets/css/componentes.css">
 <link rel="stylesheet" href="assets/css/site.css">
+<script src="assets/js/config.js" defer></script>
 <script src="assets/js/dados.js" defer></script>
 <script src="assets/js/app.js" defer></script>
 </head>
-<body data-pagina="concursos" data-regiao="Maringá (PR) e região">
+<body data-pagina="concursos">
 <a class="pt-pular" href="#conteudo">Pular para o conteúdo</a>
 
 <header class="pt-topo">
@@ -28,7 +29,7 @@
     </a>
     <nav class="pt-nav" aria-label="Principal">
       <a class="pt-navlink" href="concursos.html" aria-current="page">Concursos abertos</a>
-      <a class="pt-navlink" href="cidade-maringa.html">Por cidade</a>
+      <a class="pt-navlink" href="cidade.html">Por cidade</a>
       <a class="pt-navlink" href="concursos.html?nacionais=1">Nacionais</a>
     </nav>
     <div class="pt-topo-acoes">
@@ -38,7 +39,7 @@
   </div>
   <nav id="menu-celular" class="pt-menu-celular pt-so-celular" aria-label="Menu" hidden>
     <a href="index.html">Início</a>
-    <a href="cidade-maringa.html">Por cidade</a>
+    <a href="cidade.html">Por cidade</a>
     <a href="concursos.html?nacionais=1">Nacionais</a>
     <button type="button" data-abrir-alerta>Avise-me</button>
   </nav>
@@ -46,8 +47,8 @@
 
 <main id="conteudo" class="pt-listagem pt-pagina">
   <div class="pt-listagem-topo">
-    <h1 class="pt-titulo" data-titulo>Concursos perto de Maringá</h1>
-    <p class="pt-local"><svg class="pt-i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><span data-resumo-local>Maringá (PR) · a até 50 km</span><button class="pt-link-btn" type="button" data-abrir-filtros>Alterar</button></p>
+    <h1 class="pt-titulo" data-titulo>Concursos</h1>
+    <p class="pt-local"><svg class="pt-i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><span data-resumo-local></span><button class="pt-link-btn" type="button" data-abrir-filtros>Alterar</button></p>
     <form class="pt-busca" data-form-busca role="search">
       <label class="pt-rotulo-campo" for="busca-lista">Buscar concurso</label>
       <div class="pt-busca-linha">
@@ -77,7 +78,7 @@
   <div class="pt-grade-cards" data-lista="resultado"></div>
 
   <div class="pt-vazio" data-vazio hidden>
-    <p class="pt-texto" style="font-weight:600">Nenhum concurso aberto com esses filtros agora. Quer um alerta quando abrir?</p>
+    <p class="pt-texto" style="font-weight:600" data-vazio-texto>Nenhum concurso aberto com esses filtros agora. Quer um alerta quando abrir?</p>
     <button class="cc-btn cc-btn-primario" type="button" data-abrir-alerta><svg class="pt-i2" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 16v-5a6 6 0 1 1 12 0v5l1.5 2h-15z"/><path d="M10 20.5a2.2 2.2 0 0 0 4 0"/></svg>Avise-me</button>
   </div>
 
@@ -93,8 +94,8 @@
   <div class="pt-rodape-in">
     <div class="pt-rodape-texto">
       <span class="cc-logo"><span class="cc-grifo">concurseiro</span></span>
-      <p>Reunimos concursos públicos a partir dos editais e diários oficiais. Inscrição e pagamento, só no site da banca.</p>
-      <p><strong>Protótipo:</strong> órgãos, salários e datas desta versão são exemplos fictícios.</p>
+      <p>Reunimos concursos públicos federais e do Paraná a partir dos editais e diários oficiais. Inscrição e pagamento, só no site da banca.</p>
+      <p data-so-exemplo><strong>Protótipo:</strong> órgãos, salários e datas desta versão são exemplos fictícios.</p>
     </div>
     <nav class="pt-rodape-links" aria-label="Rodapé">
       <a href="#">Como conferimos os dados</a>
@@ -118,9 +119,9 @@
     <div class="pt-filtros-corpo" data-filtros-corpo>
       <div class="pt-filtro-grupo" role="group" aria-labelledby="grupo-1">
         <h3 class="pt-filtro-tit" id="grupo-1">Onde</h3>
-        <div class="pt-caixa" style="justify-content:flex-start"><svg class="pt-i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Maringá (PR)<span style="font-weight:400;color:var(--tinta-suave)">· pela sua conexão</span></div>
-        <button class="cc-btn" type="button" data-localizacao><svg class="pt-i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="7"/><circle cx="12" cy="12" r="2.5"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/></svg>Usar minha localização exata</button>
-        <p class="pt-apoio" data-aviso-localizacao aria-live="polite">Só com a sua permissão. Serve para ordenar os concursos por distância.</p>
+        <div class="pt-caixa" style="justify-content:flex-start"><svg class="pt-i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><span data-onde>Nenhuma cidade escolhida</span></div>
+        <button class="cc-btn" type="button" data-abrir-cidade><svg class="pt-i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="7"/><circle cx="12" cy="12" r="2.5"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/></svg><span data-rotulo-cidade>Escolher minha cidade</span></button>
+        <p class="pt-apoio">A distância é medida a partir da cidade escolhida, que fica guardada só neste aparelho.</p>
         <span class="pt-rotulo-campo" id="raio-rotulo">Distância</span>
         <div class="pt-chips" role="group" aria-labelledby="raio-rotulo" data-grupo-raio></div>
         <label class="cc-check pt-check44"><input type="checkbox" name="nacionais"><span>Incluir concursos nacionais</span></label>

@@ -1,0 +1,914 @@
+{
+  "aviso": "DADOS DE EXEMPLO. Órgãos, cidades, salários, datas, links e bancas associadas são fictícios, criados só para testar o site. Não publique como informação real.",
+  "varredura": null,
+  "proxima_varredura": null,
+  "cobertura": [
+    "federal",
+    "PR"
+  ],
+  "concursos": [
+    {
+      "id": "universidade-estadual-do-vale-2026-edital-01",
+      "ficticio": true,
+      "orgao": "Universidade Estadual do Vale",
+      "esfera": "estadual",
+      "uf": "PR",
+      "municipio_ibge": "4115200",
+      "cidade": "Maringá",
+      "nacional": false,
+      "abrangencia": null,
+      "area": "Educação",
+      "banca": {
+        "nome": "Vunesp",
+        "url": "https://vunesp.example"
+      },
+      "inscricao": {
+        "inicio": null,
+        "fim": "2026-11-09",
+        "url": null
+      },
+      "isencao_ate": null,
+      "prova_objetiva": null,
+      "local_prova": null,
+      "taxa": {
+        "min": null,
+        "max": null
+      },
+      "isencao_regras": null,
+      "regime": null,
+      "beneficios": [
+        {
+          "nome": "Auxílio-transporte",
+          "valor": null
+        }
+      ],
+      "o_que_levar": null,
+      "cargos": [
+        {
+          "nome": "Técnico de laboratório",
+          "vagas": 8,
+          "cadastro_reserva": false,
+          "salario": 5870.2,
+          "escolaridade": "Técnico",
+          "requisitos": null,
+          "jornada_horas": 40,
+          "materias": []
+        },
+        {
+          "nome": "Bibliotecário",
+          "vagas": 4,
+          "cadastro_reserva": false,
+          "salario": 5512.8,
+          "escolaridade": "Superior",
+          "requisitos": null,
+          "jornada_horas": 40,
+          "materias": []
+        },
+        {
+          "nome": "Técnico em informática",
+          "vagas": 6,
+          "cadastro_reserva": false,
+          "salario": 4932.1,
+          "escolaridade": "Técnico",
+          "requisitos": null,
+          "jornada_horas": 40,
+          "materias": []
+        }
+      ],
+      "documentos": [
+        {
+          "tipo": "edital",
+          "titulo": "Edital nº 01/2026",
+          "numero": "01/2026",
+          "url": "https://universidade-estadual-do-vale.example/edital-01-2026.pdf",
+          "publicado_em": null,
+          "fonte": "DIOE-PR",
+          "resumo": null
+        }
+      ],
+      "conferencia": null,
+      "primeira_varredura": null,
+      "ultima_alteracao": null
+    },
+    {
+      "id": "hospital-regional-do-vale-2026-edital-01",
+      "ficticio": true,
+      "orgao": "Hospital Regional do Vale",
+      "esfera": "estadual",
+      "uf": "PR",
+      "municipio_ibge": "4115200",
+      "cidade": "Maringá",
+      "nacional": false,
+      "abrangencia": null,
+      "area": "Saúde",
+      "banca": {
+        "nome": "IBFC",
+        "url": "https://ibfc.example"
+      },
+      "inscricao": {
+        "inicio": null,
+        "fim": "2026-10-28",
+        "url": null
+      },
+      "isencao_ate": null,
+      "prova_objetiva": null,
+      "local_prova": null,
+      "taxa": {
+        "min": null,
+        "max": null
+      },
+      "isencao_regras": null,
+      "regime": null,
+      "beneficios": [
+        {
+          "nome": "Insalubridade",
+          "valor": null
+        }
+      ],
+      "o_que_levar": null,
+      "cargos": [
+        {
+          "nome": "Técnico em radiologia",
+          "vagas": 12,
+          "cadastro_reserva": true,
+          "salario": 3760.0,
+          "escolaridade": "Técnico",
+          "requisitos": null,
+          "jornada_horas": 24,
+          "materias": []
+        }
+      ],
+      "documentos": [
+        {
+          "tipo": "edital",
+          "titulo": "Edital nº 01/2026",
+          "numero": "01/2026",
+          "url": "https://hospital-regional-do-vale.example/edital-01-2026.pdf",
+          "publicado_em": null,
+          "fonte": "DIOE-PR",
+          "resumo": null
+        }
+      ],
+      "conferencia": null,
+      "primeira_varredura": null,
+      "ultima_alteracao": null
+    },
+    {
+      "id": "instituto-federal-do-vale-2026-edital-01",
+      "ficticio": true,
+      "orgao": "Instituto Federal do Vale",
+      "esfera": "federal",
+      "uf": "PR",
+      "municipio_ibge": "4115200",
+      "cidade": "Maringá",
+      "nacional": false,
+      "abrangencia": null,
+      "area": "Educação",
+      "banca": {
+        "nome": "Quadrix",
+        "url": "https://quadrix.example"
+      },
+      "inscricao": {
+        "inicio": null,
+        "fim": "2026-11-23",
+        "url": null
+      },
+      "isencao_ate": null,
+      "prova_objetiva": null,
+      "local_prova": null,
+      "taxa": {
+        "min": null,
+        "max": null
+      },
+      "isencao_regras": null,
+      "regime": null,
+      "beneficios": [
+        {
+          "nome": "Auxílio-alimentação",
+          "valor": null
+        }
+      ],
+      "o_que_levar": null,
+      "cargos": [
+        {
+          "nome": "Professor de matemática",
+          "vagas": 2,
+          "cadastro_reserva": false,
+          "salario": 10481.64,
+          "escolaridade": "Superior",
+          "requisitos": null,
+          "jornada_horas": 40,
+          "materias": []
+        }
+      ],
+      "documentos": [
+        {
+          "tipo": "edital",
+          "titulo": "Edital nº 01/2026",
+          "numero": "01/2026",
+          "url": "https://instituto-federal-do-vale.example/edital-01-2026.pdf",
+          "publicado_em": null,
+          "fonte": "DOU",
+          "resumo": null
+        }
+      ],
+      "conferencia": null,
+      "primeira_varredura": null,
+      "ultima_alteracao": null
+    },
+    {
+      "id": "prefeitura-vale-verde-pr-2026-edital-12",
+      "ficticio": true,
+      "orgao": "Prefeitura de Vale Verde (PR)",
+      "esfera": "municipal",
+      "uf": "PR",
+      "municipio_ibge": "4199901",
+      "cidade": "Vale Verde",
+      "nacional": false,
+      "abrangencia": null,
+      "area": "Administrativa",
+      "banca": {
+        "nome": "Instituto AOCP",
+        "url": "https://institutoaocp.example"
+      },
+      "inscricao": {
+        "inicio": "2026-10-05",
+        "fim": "2026-11-20",
+        "url": "https://institutoaocp.example/concurso/vale-verde-2026"
+      },
+      "isencao_ate": "2026-10-23",
+      "prova_objetiva": "2026-12-13",
+      "local_prova": null,
+      "taxa": {
+        "min": 60.0,
+        "max": 120.0
+      },
+      "isencao_regras": "Isenção para inscritos no CadÚnico",
+      "regime": "Estatutário",
+      "beneficios": [
+        {
+          "nome": "Vale-alimentação",
+          "valor": 800.0
+        },
+        {
+          "nome": "Plano de saúde",
+          "valor": null
+        }
+      ],
+      "o_que_levar": "Documento com foto e caneta preta de tubo transparente",
+      "cargos": [
+        {
+          "nome": "Engenheiro civil",
+          "vagas": 3,
+          "cadastro_reserva": false,
+          "salario": 9312.4,
+          "escolaridade": "Superior",
+          "requisitos": "Superior em engenharia civil e registro no CREA",
+          "jornada_horas": 40,
+          "materias": [
+            "Língua Portuguesa",
+            "Legislação municipal",
+            "Estruturas e fundações",
+            "Orçamento e licitação de obras",
+            "Saneamento e drenagem"
+          ]
+        },
+        {
+          "nome": "Professor de educação infantil",
+          "vagas": 40,
+          "cadastro_reserva": true,
+          "salario": 4580.57,
+          "escolaridade": "Superior",
+          "requisitos": "Licenciatura em pedagogia",
+          "jornada_horas": 30,
+          "materias": [
+            "Língua Portuguesa",
+            "Fundamentos da educação",
+            "BNCC da educação infantil",
+            "Desenvolvimento infantil",
+            "Legislação educacional"
+          ]
+        },
+        {
+          "nome": "Agente administrativo",
+          "vagas": 120,
+          "cadastro_reserva": false,
+          "salario": 4218.5,
+          "escolaridade": "Médio",
+          "requisitos": "Ensino médio completo",
+          "jornada_horas": 40,
+          "materias": [
+            "Língua Portuguesa",
+            "Matemática",
+            "Noções de informática",
+            "Noções de administração pública",
+            "Conhecimentos gerais de Vale Verde"
+          ]
+        },
+        {
+          "nome": "Técnico em enfermagem",
+          "vagas": 24,
+          "cadastro_reserva": false,
+          "salario": 3905.1,
+          "escolaridade": "Técnico",
+          "requisitos": "Curso técnico e registro no Coren",
+          "jornada_horas": 40,
+          "materias": [
+            "Língua Portuguesa",
+            "SUS e legislação",
+            "Fundamentos de enfermagem",
+            "Saúde coletiva",
+            "Biossegurança"
+          ]
+        },
+        {
+          "nome": "Auxiliar de serviços gerais",
+          "vagas": 2,
+          "cadastro_reserva": true,
+          "salario": 2140.0,
+          "escolaridade": "Fundamental",
+          "requisitos": "Ensino fundamental completo",
+          "jornada_horas": 40,
+          "materias": [
+            "Língua Portuguesa",
+            "Matemática básica",
+            "Higiene e limpeza",
+            "Segurança no trabalho"
+          ]
+        }
+      ],
+      "documentos": [
+        {
+          "tipo": "edital",
+          "titulo": "Edital nº 12/2026",
+          "numero": "12/2026",
+          "url": "https://diariomunicipal.example/vale-verde/edital-12-2026.pdf",
+          "publicado_em": "2026-09-28",
+          "fonte": "AMP-PR",
+          "resumo": null
+        },
+        {
+          "tipo": "retificacao",
+          "titulo": "Retificação nº 1",
+          "numero": "1",
+          "url": "https://diariomunicipal.example/vale-verde/retificacao-01-edital-12-2026.pdf",
+          "publicado_em": "2026-10-08",
+          "fonte": "AMP-PR",
+          "resumo": "Muda a taxa de inscrição"
+        }
+      ],
+      "conferencia": null,
+      "primeira_varredura": null,
+      "ultima_alteracao": null
+    },
+    {
+      "id": "camara-vale-verde-pr-2026-edital-01",
+      "ficticio": true,
+      "orgao": "Câmara de Vale Verde (PR)",
+      "esfera": "municipal",
+      "uf": "PR",
+      "municipio_ibge": "4199901",
+      "cidade": "Vale Verde",
+      "nacional": false,
+      "abrangencia": null,
+      "area": "Administrativa",
+      "banca": {
+        "nome": "Instituto AOCP",
+        "url": "https://institutoaocp.example"
+      },
+      "inscricao": {
+        "inicio": null,
+        "fim": "2026-10-16",
+        "url": null
+      },
+      "isencao_ate": null,
+      "prova_objetiva": null,
+      "local_prova": null,
+      "taxa": {
+        "min": null,
+        "max": null
+      },
+      "isencao_regras": null,
+      "regime": null,
+      "beneficios": [],
+      "o_que_levar": null,
+      "cargos": [
+        {
+          "nome": "Assistente legislativo",
+          "vagas": 4,
+          "cadastro_reserva": true,
+          "salario": 3120.0,
+          "escolaridade": "Médio",
+          "requisitos": null,
+          "jornada_horas": 30,
+          "materias": []
+        }
+      ],
+      "documentos": [
+        {
+          "tipo": "edital",
+          "titulo": "Edital nº 01/2026",
+          "numero": "01/2026",
+          "url": "https://camara-vale-verde-pr.example/edital-01-2026.pdf",
+          "publicado_em": null,
+          "fonte": "AMP-PR",
+          "resumo": null
+        }
+      ],
+      "conferencia": null,
+      "primeira_varredura": null,
+      "ultima_alteracao": null
+    },
+    {
+      "id": "consorcio-saude-norte-pr-2026-edital-01",
+      "ficticio": true,
+      "orgao": "Consórcio de Saúde do Norte (PR)",
+      "esfera": "municipal",
+      "uf": "PR",
+      "municipio_ibge": "4199902",
+      "cidade": "Campo Alto",
+      "nacional": false,
+      "abrangencia": null,
+      "area": "Saúde",
+      "banca": {
+        "nome": "Instituto AOCP",
+        "url": "https://institutoaocp.example"
+      },
+      "inscricao": {
+        "inicio": null,
+        "fim": "2026-11-05",
+        "url": null
+      },
+      "isencao_ate": null,
+      "prova_objetiva": null,
+      "local_prova": null,
+      "taxa": {
+        "min": null,
+        "max": null
+      },
+      "isencao_regras": null,
+      "regime": null,
+      "beneficios": [
+        {
+          "nome": "Insalubridade",
+          "valor": null
+        }
+      ],
+      "o_que_levar": null,
+      "cargos": [
+        {
+          "nome": "Enfermeiro",
+          "vagas": 32,
+          "cadastro_reserva": true,
+          "salario": 6274.6,
+          "escolaridade": "Superior",
+          "requisitos": null,
+          "jornada_horas": 36,
+          "materias": []
+        }
+      ],
+      "documentos": [
+        {
+          "tipo": "edital",
+          "titulo": "Edital nº 01/2026",
+          "numero": "01/2026",
+          "url": "https://consorcio-saude-norte-pr.example/edital-01-2026.pdf",
+          "publicado_em": null,
+          "fonte": "AMP-PR",
+          "resumo": null
+        }
+      ],
+      "conferencia": null,
+      "primeira_varredura": null,
+      "ultima_alteracao": null
+    },
+    {
+      "id": "guarda-municipal-campo-alto-pr-2026",
+      "ficticio": true,
+      "orgao": "Guarda Municipal de Campo Alto (PR)",
+      "esfera": "municipal",
+      "uf": "PR",
+      "municipio_ibge": "4199902",
+      "cidade": "Campo Alto",
+      "nacional": false,
+      "abrangencia": null,
+      "area": "Policial e segurança",
+      "banca": {
+        "nome": null,
+        "url": null
+      },
+      "inscricao": {
+        "inicio": null,
+        "fim": null,
+        "url": null
+      },
+      "isencao_ate": null,
+      "prova_objetiva": null,
+      "local_prova": null,
+      "taxa": {
+        "min": null,
+        "max": null
+      },
+      "isencao_regras": null,
+      "regime": null,
+      "beneficios": [
+        {
+          "nome": "Adicional de risco",
+          "valor": null
+        }
+      ],
+      "o_que_levar": null,
+      "cargos": [
+        {
+          "nome": "Guarda municipal",
+          "vagas": 40,
+          "cadastro_reserva": false,
+          "salario": 3480.0,
+          "escolaridade": "Médio",
+          "requisitos": null,
+          "jornada_horas": 40,
+          "materias": []
+        }
+      ],
+      "documentos": [
+        {
+          "tipo": "autorizacao",
+          "titulo": "Lei Municipal nº 1.234/2026",
+          "numero": "1.234/2026",
+          "url": "https://campo-alto.example/lei-1234-2026.pdf",
+          "publicado_em": "2026-09-15",
+          "fonte": "AMP-PR",
+          "resumo": "Autoriza concurso para 40 vagas de guarda municipal"
+        }
+      ],
+      "conferencia": null,
+      "primeira_varredura": null,
+      "ultima_alteracao": null
+    },
+    {
+      "id": "samae-serra-azul-pr-2026-edital-01",
+      "ficticio": true,
+      "orgao": "SAMAE de Serra Azul (PR)",
+      "esfera": "municipal",
+      "uf": "PR",
+      "municipio_ibge": "4199903",
+      "cidade": "Serra Azul",
+      "nacional": false,
+      "abrangencia": null,
+      "area": "Operacional",
+      "banca": {
+        "nome": "IBFC",
+        "url": "https://ibfc.example"
+      },
+      "inscricao": {
+        "inicio": null,
+        "fim": "2026-10-14",
+        "url": null
+      },
+      "isencao_ate": null,
+      "prova_objetiva": null,
+      "local_prova": null,
+      "taxa": {
+        "min": null,
+        "max": null
+      },
+      "isencao_regras": null,
+      "regime": null,
+      "beneficios": [],
+      "o_que_levar": null,
+      "cargos": [
+        {
+          "nome": "Operador de estação de tratamento",
+          "vagas": 6,
+          "cadastro_reserva": false,
+          "salario": 2960.4,
+          "escolaridade": "Fundamental",
+          "requisitos": null,
+          "jornada_horas": 44,
+          "materias": []
+        }
+      ],
+      "documentos": [
+        {
+          "tipo": "edital",
+          "titulo": "Edital nº 01/2026",
+          "numero": "01/2026",
+          "url": "https://samae-serra-azul-pr.example/edital-01-2026.pdf",
+          "publicado_em": null,
+          "fonte": "AMP-PR",
+          "resumo": null
+        }
+      ],
+      "conferencia": null,
+      "primeira_varredura": null,
+      "ultima_alteracao": null
+    },
+    {
+      "id": "prefeitura-rio-do-campo-pr-2026-edital-01",
+      "ficticio": true,
+      "orgao": "Prefeitura de Rio do Campo (PR)",
+      "esfera": "municipal",
+      "uf": "PR",
+      "municipio_ibge": "4199904",
+      "cidade": "Rio do Campo",
+      "nacional": false,
+      "abrangencia": null,
+      "area": "Educação",
+      "banca": {
+        "nome": "Vunesp",
+        "url": "https://vunesp.example"
+      },
+      "inscricao": {
+        "inicio": null,
+        "fim": "2026-11-06",
+        "url": null
+      },
+      "isencao_ate": null,
+      "prova_objetiva": null,
+      "local_prova": null,
+      "taxa": {
+        "min": null,
+        "max": null
+      },
+      "isencao_regras": null,
+      "regime": null,
+      "beneficios": [
+        {
+          "nome": "Vale-alimentação",
+          "valor": null
+        }
+      ],
+      "o_que_levar": null,
+      "cargos": [
+        {
+          "nome": "Professor de educação básica",
+          "vagas": 30,
+          "cadastro_reserva": true,
+          "salario": 4420.55,
+          "escolaridade": "Superior",
+          "requisitos": null,
+          "jornada_horas": 30,
+          "materias": []
+        }
+      ],
+      "documentos": [
+        {
+          "tipo": "edital",
+          "titulo": "Edital nº 01/2026",
+          "numero": "01/2026",
+          "url": "https://prefeitura-rio-do-campo-pr.example/edital-01-2026.pdf",
+          "publicado_em": null,
+          "fonte": "AMP-PR",
+          "resumo": null
+        }
+      ],
+      "conferencia": null,
+      "primeira_varredura": null,
+      "ultima_alteracao": null
+    },
+    {
+      "id": "camara-rio-do-campo-pr-2026-edital-01",
+      "ficticio": true,
+      "orgao": "Câmara de Rio do Campo (PR)",
+      "esfera": "municipal",
+      "uf": "PR",
+      "municipio_ibge": "4199904",
+      "cidade": "Rio do Campo",
+      "nacional": false,
+      "abrangencia": null,
+      "area": "Jurídica",
+      "banca": {
+        "nome": "Quadrix",
+        "url": "https://quadrix.example"
+      },
+      "inscricao": {
+        "inicio": null,
+        "fim": "2026-11-10",
+        "url": null
+      },
+      "isencao_ate": null,
+      "prova_objetiva": null,
+      "local_prova": null,
+      "taxa": {
+        "min": null,
+        "max": null
+      },
+      "isencao_regras": null,
+      "regime": null,
+      "beneficios": [],
+      "o_que_levar": null,
+      "cargos": [
+        {
+          "nome": "Procurador jurídico",
+          "vagas": 1,
+          "cadastro_reserva": false,
+          "salario": 8950.0,
+          "escolaridade": "Superior",
+          "requisitos": null,
+          "jornada_horas": 20,
+          "materias": []
+        }
+      ],
+      "documentos": [
+        {
+          "tipo": "edital",
+          "titulo": "Edital nº 01/2026",
+          "numero": "01/2026",
+          "url": "https://camara-rio-do-campo-pr.example/edital-01-2026.pdf",
+          "publicado_em": null,
+          "fonte": "AMP-PR",
+          "resumo": null
+        }
+      ],
+      "conferencia": null,
+      "primeira_varredura": null,
+      "ultima_alteracao": null
+    },
+    {
+      "id": "fundacao-nacional-de-pesquisa-2026-edital-01",
+      "ficticio": true,
+      "orgao": "Fundação Nacional de Pesquisa",
+      "esfera": "federal",
+      "uf": "DF",
+      "municipio_ibge": null,
+      "cidade": "Brasília",
+      "nacional": true,
+      "abrangencia": "14 estados",
+      "area": "Administrativa",
+      "banca": {
+        "nome": "Cebraspe",
+        "url": "https://cebraspe.example"
+      },
+      "inscricao": {
+        "inicio": null,
+        "fim": "2026-11-27",
+        "url": null
+      },
+      "isencao_ate": null,
+      "prova_objetiva": null,
+      "local_prova": null,
+      "taxa": {
+        "min": null,
+        "max": null
+      },
+      "isencao_regras": null,
+      "regime": null,
+      "beneficios": [
+        {
+          "nome": "Auxílio-alimentação",
+          "valor": null
+        }
+      ],
+      "o_que_levar": null,
+      "cargos": [
+        {
+          "nome": "Analista de pesquisa",
+          "vagas": 40,
+          "cadastro_reserva": true,
+          "salario": 8480.22,
+          "escolaridade": "Superior",
+          "requisitos": null,
+          "jornada_horas": 40,
+          "materias": []
+        },
+        {
+          "nome": "Analista de tecnologia da informação",
+          "vagas": 20,
+          "cadastro_reserva": true,
+          "salario": 8120.0,
+          "escolaridade": "Superior",
+          "requisitos": null,
+          "jornada_horas": 40,
+          "materias": []
+        },
+        {
+          "nome": "Analista em biologia",
+          "vagas": 5,
+          "cadastro_reserva": true,
+          "salario": 8010.0,
+          "escolaridade": "Superior",
+          "requisitos": null,
+          "jornada_horas": 40,
+          "materias": []
+        },
+        {
+          "nome": "Analista de gestão",
+          "vagas": 30,
+          "cadastro_reserva": true,
+          "salario": 7920.5,
+          "escolaridade": "Superior",
+          "requisitos": null,
+          "jornada_horas": 40,
+          "materias": []
+        },
+        {
+          "nome": "Técnico em pesquisa",
+          "vagas": 60,
+          "cadastro_reserva": true,
+          "salario": 4880.35,
+          "escolaridade": "Médio",
+          "requisitos": null,
+          "jornada_horas": 40,
+          "materias": []
+        },
+        {
+          "nome": "Técnico administrativo",
+          "vagas": 50,
+          "cadastro_reserva": true,
+          "salario": 4512.9,
+          "escolaridade": "Médio",
+          "requisitos": null,
+          "jornada_horas": 40,
+          "materias": []
+        },
+        {
+          "nome": "Assistente em pesquisa",
+          "vagas": 15,
+          "cadastro_reserva": true,
+          "salario": 4210.0,
+          "escolaridade": "Médio",
+          "requisitos": null,
+          "jornada_horas": 40,
+          "materias": []
+        }
+      ],
+      "documentos": [
+        {
+          "tipo": "edital",
+          "titulo": "Edital nº 01/2026",
+          "numero": "01/2026",
+          "url": "https://fundacao-nacional-de-pesquisa.example/edital-01-2026.pdf",
+          "publicado_em": null,
+          "fonte": "DOU",
+          "resumo": null
+        }
+      ],
+      "conferencia": null,
+      "primeira_varredura": null,
+      "ultima_alteracao": null
+    },
+    {
+      "id": "banco-publico-de-desenvolvimento-2026-edital-01",
+      "ficticio": true,
+      "orgao": "Banco Público de Desenvolvimento",
+      "esfera": "federal",
+      "uf": "DF",
+      "municipio_ibge": null,
+      "cidade": "Brasília",
+      "nacional": true,
+      "abrangencia": "todos os estados",
+      "area": "Bancária",
+      "banca": {
+        "nome": "FGV",
+        "url": "https://fgv.example"
+      },
+      "inscricao": {
+        "inicio": null,
+        "fim": "2026-11-18",
+        "url": null
+      },
+      "isencao_ate": null,
+      "prova_objetiva": null,
+      "local_prova": null,
+      "taxa": {
+        "min": null,
+        "max": null
+      },
+      "isencao_regras": null,
+      "regime": null,
+      "beneficios": [
+        {
+          "nome": "Vale-refeição",
+          "valor": null
+        }
+      ],
+      "o_que_levar": null,
+      "cargos": [
+        {
+          "nome": "Escriturário",
+          "vagas": 600,
+          "cadastro_reserva": true,
+          "salario": 4105.9,
+          "escolaridade": "Médio",
+          "requisitos": null,
+          "jornada_horas": 30,
+          "materias": []
+        }
+      ],
+      "documentos": [
+        {
+          "tipo": "edital",
+          "titulo": "Edital nº 01/2026",
+          "numero": "01/2026",
+          "url": "https://banco-publico-de-desenvolvimento.example/edital-01-2026.pdf",
+          "publicado_em": null,
+          "fonte": "DOU",
+          "resumo": null
+        }
+      ],
+      "conferencia": null,
+      "primeira_varredura": null,
+      "ultima_alteracao": null
+    }
+  ]
+}
