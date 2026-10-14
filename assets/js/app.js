@@ -19,10 +19,11 @@
   function $(sel, raiz) { return (raiz || document).querySelector(sel); }
   function $$(sel, raiz) { return Array.prototype.slice.call((raiz || document).querySelectorAll(sel)); }
   // Escapa HTML e mantém "R$" colado no valor (espaço inquebrável).
+  // "$$" na troca vira um "$" literal; "$&" sozinho repetiria o texto achado ("RR$ nbsp;").
   function esc(t) {
     return String(t == null ? '' : t).replace(/[&<>"']/g, function (ch) {
       return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[ch];
-    }).replace(/R\$ /g, 'R$&nbsp;');
+    }).replace(/R\$ /g, 'R$$&nbsp;');
   }
   function normalizar(t) { return String(t || '').normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase(); }
   function plural(n, um, varios) { return n === 1 ? um : varios; }
@@ -163,6 +164,16 @@
       botao.setAttribute('aria-expanded', String(abrir));
       botao.setAttribute('aria-label', abrir ? 'Fechar menu' : 'Abrir menu');
     });
+  }
+
+  /* ---------- Botão flutuante: vira só o ícone ao rolar, para não cobrir os cards ---------- */
+
+  function iniciarBotaoFlutuante() {
+    var fab = $('.pt-fab');
+    if (!fab) return;
+    function ajustar() { fab.classList.toggle('pt-fab-icone', window.scrollY > 80); }
+    window.addEventListener('scroll', ajustar, { passive: true });
+    ajustar();
   }
 
   /* ---------- Folha "Avise-me" ---------- */
@@ -554,6 +565,7 @@
   document.addEventListener('DOMContentLoaded', function () {
     iniciarMenu();
     iniciarAlerta();
+    iniciarBotaoFlutuante();
     var pagina = document.body.getAttribute('data-pagina');
     if (pagina === 'inicio') paginaInicio();
     if (pagina === 'concursos') paginaConcursos();

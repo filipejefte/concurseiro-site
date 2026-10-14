@@ -173,7 +173,7 @@ a.cc-card:hover { border-color: var(--linha-forte); }
 .pt-cargos { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--linha); }
 .pt-cargos li { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 2px 12px; padding: 12px 0; border-bottom: 1px solid var(--linha); }
 .pt-cargo-nome { font-size: 16px; line-height: 22px; font-weight: 600; }
-.pt-cargo-sal { font-size: 16px; line-height: 22px; font-weight: 700; text-align: right; }
+.pt-cargo-sal { font-size: 16px; line-height: 22px; font-weight: 700; text-align: right; font-variant-numeric: proportional-nums; }
 .pt-cargo-info { grid-column: 1 / -1; font-size: 14px; line-height: 20px; color: var(--tinta-suave); }
 .pt-retif { display: block; margin-top: 4px; font-size: 13px; line-height: 18px; font-weight: 400; color: var(--tinta-suave); }
 .pt-acordeao { border: 1px solid var(--linha-forte); border-radius: var(--radius-md); background: var(--papel-alto); }
@@ -241,6 +241,9 @@ a.cc-card:hover { border-color: var(--linha-forte); }
 
 /* Botão flutuante (só no celular; no computador o Avise-me fica no topo) */
 .pt-fab { position: fixed; right: 16px; bottom: 24px; z-index: 20; }
+/* Ao rolar, só o sino (56 px): o texto continua no DOM e dá o nome acessível. 24 + 56 < 96 px de folga do rodapé. */
+.pt-fab-icone { width: 56px; height: 56px; padding: 0; gap: 0; font-size: 0; }
+.pt-fab-icone svg { width: 22px; height: 22px; }
 @media (min-width: 960px) { .pt-fab { display: none; } }
 
 /* Rodapé */
