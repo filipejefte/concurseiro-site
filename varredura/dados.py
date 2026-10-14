@@ -1,5 +1,6 @@
 """Caminhos, leitura dos arquivos de dados e as regras que a varredura e o site compartilham."""
 import json
+import os
 from datetime import date
 from pathlib import Path
 
@@ -13,6 +14,7 @@ SCHEMA = DADOS / "schema" / "concurso.schema.json"
 VARREDURAS = DADOS / "varreduras"
 DADOS_JS = RAIZ / "assets" / "js" / "dados.js"
 CACHE = RAIZ / ".cache"
+SITE = "https://filipejefte.github.io/concurseiro-site/"
 
 # Campos que uma pessoa confere antes de qualquer concurso ir ao ar (regra 4).
 CAMPOS_CRITICOS = ["salario", "inscricao.inicio", "inscricao.fim", "prova_objetiva", "taxa", "banca", "cidade", "edital"]
@@ -28,6 +30,31 @@ def gravar_json(caminho, dados):
     caminho = Path(caminho)
     caminho.parent.mkdir(parents=True, exist_ok=True)
     caminho.write_text(json.dumps(dados, ensure_ascii=False, indent=2) + "\n", encoding="utf-8", newline="\n")
+
+
+def carregar_env(caminho=RAIZ / ".env"):
+    """Lê CHAVE=valor do .env para o ambiente (sem sobrescrever o que já existe)."""
+    if not caminho.exists():
+        return
+    for linha in caminho.read_text(encoding="utf-8").splitlines():
+        linha = linha.strip()
+        if not linha or linha.startswith("#") or "=" not in linha:
+            continue
+        chave, valor = linha.split("=", 1)
+        os.environ.setdefault(chave.strip(), valor.strip().strip('"').strip("'"))
+
+
+def ultima_pasta():
+    """Pasta da varredura mais recente (dados/varreduras/AAAA-MM-DD)."""
+    pastas = sorted(p for p in VARREDURAS.glob("????-??-??") if p.is_dir()) if VARREDURAS.exists() else []
+    if not pastas:
+        raise SystemExit("Nenhuma varredura em dados/varreduras/. Rode antes: python -m varredura coletar ...")
+    return pastas[-1]
+
+
+def carregar_fichas(pasta):
+    """Fichas extraídas da semana: [{"ato", "trechos", "concurso"}], uma por arquivo em fichas/."""
+    return [ler_json(f) for f in sorted((Path(pasta) / "fichas").glob("*.json"))]
 
 
 def data(texto):

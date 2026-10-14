@@ -1,0 +1,4 @@
+[tool.pytest.ini_options]
+# Permite rodar `pytest` (não só `python -m pytest`) a partir da raiz do projeto.
+pythonpath = ["."]
+testpaths = ["tests"]

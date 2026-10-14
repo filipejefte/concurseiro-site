@@ -2,3 +2,12 @@
 Thumbs.db
 *.log
 node_modules/
+
+# Varredura: segredos, cache das fontes e PDFs nunca vão para o git.
+.env
+.cache/
+*.pdf
+__pycache__/
+.pytest_cache/
+# Fila de extração: texto bruto dos atos, refeito pela coleta (o atos.json da semana guarda os links).
+dados/varreduras/*/fila/

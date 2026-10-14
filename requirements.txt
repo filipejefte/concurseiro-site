@@ -1,0 +1,5 @@
+# Varredura semanal (Python 3.11 ou mais novo). Instalar: python -m pip install -r requirements.txt
+jsonschema>=4.20      # validação do schema das fichas
+pypdf>=5.0            # texto das edições em PDF do Diário dos Municípios do PR
+anthropic>=1.0        # só para --modo api (extração com claude-haiku-5-5)
+pytest>=8.0           # testes
