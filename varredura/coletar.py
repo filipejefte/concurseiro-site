@@ -11,34 +11,36 @@ from .triagem import PARA_EXTRAIR, classificar
 def coletar(desde, ate, inicial=False, modo="claude-code"):
     pasta = VARREDURAS / ate.isoformat()
     if (pasta / "atos.json").exists():
-        raise SystemExit(f"A coleta de {ate} já existe em {pasta}. Para refazer, apague atos.json e fila/ dessa pasta.")
+        # Refazer é seguro: o cache evita baixar de novo e os nomes da fila são estáveis,
+        # então fichas e descartes já feitos continuam ligados aos seus atos.
+        print(f"Refazendo a coleta de {ate} (fichas e descartes já feitos ficam).", flush=True)
     cliente = Cliente()
-    estado_fontes, atos = {}, []
+    estado_fontes, registro, para_fila = {}, [], []
     for Classe in FONTES:
         fonte = Classe(cliente)
+        lidos = 0
         try:
-            achados = fonte.listar_atos(desde, ate)
+            # A triagem roda ato a ato: só o que fala de concurso fica na memória.
+            for ato in fonte.listar_atos(desde, ate):
+                lidos += 1
+                resultado = classificar(ato)
+                if resultado is None:
+                    continue
+                classe, pss = resultado
+                item = {k: v for k, v in ato.como_dict().items() if k != "texto"}
+                item.update(classe=classe, pss=pss, fila=None)
+                registro.append(item)
+                if classe in PARA_EXTRAIR and not pss:
+                    para_fila.append((ato, classe, pss, item))
         except NotImplementedError as erro:
             estado_fontes[fonte.nome] = f"pulada: {erro}"
         except (SystemExit, OSError, urllib.error.URLError, ValueError) as erro:
             # Uma fonte com problema não derruba as outras; a revisão mostra o que faltou.
-            estado_fontes[fonte.nome] = f"falhou: {erro}"
+            estado_fontes[fonte.nome] = f"falhou depois de {lidos} atos: {erro}"
         else:
             estado_fontes[fonte.nome] = "ok"
-            atos.extend(achados)
-        print(f"{fonte.nome}: {estado_fontes[fonte.nome]}" + (f" ({len(achados)} atos)" if estado_fontes[fonte.nome] == "ok" else ""))
+        print(f"{fonte.nome}: {estado_fontes[fonte.nome]} ({lidos} atos lidos)", flush=True)
 
-    registro, para_fila = [], []
-    for ato in atos:
-        resultado = classificar(ato)
-        if resultado is None:
-            continue
-        classe, pss = resultado
-        item = {k: v for k, v in ato.como_dict().items() if k != "texto"}
-        item.update(classe=classe, pss=pss, fila=None)
-        registro.append(item)
-        if classe in PARA_EXTRAIR and not pss:
-            para_fila.append((ato, classe, pss, item))
     for nome, (_, _, _, item) in zip(escrever_fila(pasta, [(a, c, p) for a, c, p, _ in para_fila]), para_fila):
         item["fila"] = nome
     gravar_json(pasta / "atos.json", {

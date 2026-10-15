@@ -63,19 +63,26 @@ class DiarioMunicipiosPR(Fonte):
         if arquivo_txt.exists():
             return arquivo_txt.read_text(encoding="utf-8")
         from pypdf import PdfReader  # só quem lê a AMP precisa do pypdf
+        from pypdf.errors import PdfReadError
         pdf = self.cliente.arquivo_cache(url, extensao=".pdf")
         self.cliente.baixar(url, extensao=".pdf")
-        texto = "\n".join((pagina.extract_text() or "") for pagina in PdfReader(pdf).pages)
+        try:
+            texto = "\n".join((pagina.extract_text() or "") for pagina in PdfReader(pdf).pages)
+        except PdfReadError:
+            # PDF cortado no cache (download interrompido): baixa de novo uma vez.
+            pdf.unlink(missing_ok=True)
+            self.cliente.baixar(url, extensao=".pdf")
+            texto = "\n".join((pagina.extract_text() or "") for pagina in PdfReader(pdf).pages)
         arquivo_txt.write_text(texto, encoding="utf-8")
         return texto
 
     def listar_atos(self, desde, ate):
         token = self._token()
-        atos = []
         dia = desde
         while dia <= ate:
             if dia.weekday() < 5:  # a AMP circula em dias úteis
                 for url, data_edicao in self._edicoes(dia, token):
-                    atos.extend(materias(self._texto_do_pdf(url), data_edicao))
+                    atos = materias(self._texto_do_pdf(url), data_edicao)
+                    print(f"AMP-PR {data_edicao}: {len(atos)} matérias", flush=True)
+                    yield from atos
             dia += timedelta(days=1)
-        return atos

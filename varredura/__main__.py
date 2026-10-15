@@ -42,6 +42,7 @@ def main(argv=None):
 
     pen = sub.add_parser("pendentes", help="lista os atos da fila que ainda não viraram ficha nem descarte")
     pen.add_argument("--pasta", type=Path)
+    pen.add_argument("--resumo", action="store_true", help="mostra classe, órgão, título e o trecho das inscrições de cada ato")
 
     rev = sub.add_parser("revisao", help="gera revisao.md e revisao.csv")
     rev.add_argument("--pasta", type=Path)
@@ -87,7 +88,11 @@ def main(argv=None):
         pasta = args.pasta or dados.ultima_pasta()
         faltam = pendentes(pasta)
         for arquivo in faltam:
-            print(arquivo)
+            if args.resumo:
+                from .extracao import resumo_do_ato
+                print(resumo_do_ato(arquivo))
+            else:
+                print(arquivo)
         print(f"{len(faltam)} ato(s) pendente(s) em {pasta / 'fila'}")
         return 0
 

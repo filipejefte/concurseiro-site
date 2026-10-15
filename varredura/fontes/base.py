@@ -30,7 +30,7 @@ class Ato:
 
 
 class Fonte:
-    """Uma fonte oficial. listar_atos devolve os atos publicados entre as datas (inclusive)."""
+    """Uma fonte oficial. listar_atos devolve (gera, dia a dia) os atos publicados entre as datas, inclusive."""
     nome = ""
 
     def __init__(self, cliente):
@@ -53,18 +53,36 @@ class Cliente:
         self._robots = {}
         self._abridor = urllib.request.build_opener(urllib.request.HTTPCookieProcessor(CookieJar()))
 
-    def _esperar(self):
-        falta = self.intervalo - (time.monotonic() - self._ultimo)
+    # Pausa maior por servidor, quando a fonte pede mais calma que 1 requisição por segundo.
+    PAUSAS = {"inlabs.in.gov.br": 3.0}
+
+    def _esperar(self, host=""):
+        falta = max(self.intervalo, self.PAUSAS.get(host, 0)) - (time.monotonic() - self._ultimo)
         if falta > 0:
             time.sleep(falta)
         self._ultimo = time.monotonic()
 
+    ESPERAS = (10, 30, 90)  # segundos entre tentativas, quando a rede ou o servidor falham de passagem
+
     def _pedir(self, url, dados=None, cabecalhos=None):
-        self._esperar()
         corpo = urllib.parse.urlencode(dados).encode() if dados is not None else None
-        pedido = urllib.request.Request(url, data=corpo, headers={"User-Agent": self.user_agent, **(cabecalhos or {})})
-        with self._abridor.open(pedido, timeout=180) as resp:
-            return resp.read()
+        for tentativa in range(len(self.ESPERAS) + 1):
+            self._esperar(urllib.parse.urlsplit(url).netloc)
+            pedido = urllib.request.Request(url, data=corpo, headers={"User-Agent": self.user_agent, **(cabecalhos or {})})
+            try:
+                with self._abridor.open(pedido, timeout=60) as resp:
+                    return resp.read()
+            except urllib.error.HTTPError as erro:
+                if erro.code < 500 or tentativa == len(self.ESPERAS):
+                    raise
+                motivo = f"HTTP {erro.code}"
+            except (urllib.error.URLError, TimeoutError, ConnectionError) as erro:
+                if tentativa == len(self.ESPERAS):
+                    raise
+                motivo = str(getattr(erro, "reason", erro)).splitlines()[0]
+            espera = self.ESPERAS[tentativa]
+            print(f"  {urllib.parse.urlsplit(url).netloc}: {motivo}; nova tentativa em {espera} s", flush=True)
+            time.sleep(espera)
 
     def permitido(self, url):
         partes = urllib.parse.urlsplit(url)

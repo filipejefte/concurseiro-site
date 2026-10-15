@@ -157,9 +157,25 @@ def test_comparar_separa_novos_alterados_e_encerrados():
     ("EXTRATO DE CONTRATO Nº 10/2026", "Contratação de empresa para organização e realização de concurso público", ("contratacao_banca", False)),
     ("LEI Nº 100/2026", "Fica autorizada a realização de concurso público para 40 vagas", ("autorizacao", False)),
     ("PORTARIA Nº 5", "Concede férias ao servidor", None),
+    ("EDITAL PPG Nº 1/2026", "Torna pública a abertura das inscrições do processo seletivo para o mestrado", ("outro", False)),
+    ("EDITAL Nº 1/2026", "EDITAL Nº 1/2026 CONCURSO PÚBLICO O CONSELHO REGIONAL faz saber que realizará, através do INSTITUTO, "
+     "Concurso Público destinado à contratação", ("abertura", False)),
+    ("EDITAL Nº 276, DE 24 DE SETEMBRO DE 2026", "PROVIMENTO DE CARGOS DE PROFESSOR DA CARREIRA DO MAGISTÉRIO SUPERIOR "
+     "A Pró-Reitora [...] concurso público de provas e títulos", ("abertura", False)),
+    ("PORTARIA Nº 17336/2026","Nomeia candidato aprovado no Concurso Público, Edital de Abertura nº 1/2024", ("outro", False)),
+    ("EDITAL DE CHAMAMENTO DO CONCURSO PÚBLICO", "Convoca aprovados no Concurso Público, Edital de Abertura nº 001/2024",
+     ("resultado", False)),
 ])
 def test_triagem(titulo, texto, esperado):
     assert classificar({"titulo": titulo, "texto": texto}) == esperado
+
+
+def test_triagem_cobertura():
+    ato = {"titulo": "EDITAL Nº 1/2026", "texto": "Torna pública a abertura das inscrições do concurso público",
+           "orgao": "Prefeituras/Estado de Goiás/Prefeitura Municipal de Palmelo"}
+    assert classificar(ato) == ("fora", False)
+    ato["orgao"] = "Prefeituras/Estado do Paraná/Prefeitura Municipal de Maringá"
+    assert classificar(ato) == ("abertura", False)
 
 
 # ---------- leitores das fontes (textos sintéticos, sem rede) ----------
@@ -179,6 +195,44 @@ def test_zip_do_inlabs():
     ato = atos_do_zip(buffer.getvalue())[0]
     assert (ato.data, ato.titulo, ato.orgao) == ("2026-10-06", "EDITAL Nº 1, DE 5 DE OUTUBRO DE 2026", "Ministério X/Universidade Y")
     assert ato.url.startswith("https://pesquisa.in.gov.br/") and "abertura das inscrições" in ato.texto
+
+
+def test_cliente_tenta_de_novo_em_falha_de_rede(tmp_path, monkeypatch):
+    import urllib.error
+    from varredura.fontes.base import Cliente
+
+    cliente = Cliente(contato="teste", intervalo=0, cache=tmp_path)
+    monkeypatch.setattr(Cliente, "ESPERAS", (0, 0, 0))
+    respostas = [urllib.error.URLError(TimeoutError("sem resposta")), TimeoutError("sem resposta"), b"ok"]
+
+    class Resposta:
+        def __init__(self, corpo): self.corpo = corpo
+        def __enter__(self): return self
+        def __exit__(self, *a): return False
+        def read(self): return self.corpo
+
+    def abrir(pedido, timeout):
+        r = respostas.pop(0)
+        if isinstance(r, Exception):
+            raise r
+        return Resposta(r)
+
+    monkeypatch.setattr(cliente._abridor, "open", abrir)
+    assert cliente._pedir("https://exemplo.gov.br/x") == b"ok"
+
+    respostas[:] = [urllib.error.HTTPError("https://exemplo.gov.br/y", 404, "não achado", {}, None)]
+    with pytest.raises(urllib.error.HTTPError):  # 404 não é falha passageira: não tenta de novo
+        cliente._pedir("https://exemplo.gov.br/y")
+
+
+def test_nome_na_fila_e_estavel():
+    from varredura.extracao import nome_na_fila
+    from varredura.fontes.base import Ato
+
+    a = Ato("DOU", "2026-10-13", "EDITAL Nº 1", "Universidade X", "http://pesquisa.in.gov.br/p45", "texto do edital 1")
+    b = Ato("DOU", "2026-10-13", "EDITAL Nº 2", "Universidade X", "http://pesquisa.in.gov.br/p45", "texto do edital 2")
+    assert nome_na_fila(a) == nome_na_fila(Ato(**a.como_dict()))  # refazer a coleta dá o mesmo nome
+    assert nome_na_fila(a) != nome_na_fila(b)                      # mesma página do DOU, matérias diferentes
 
 
 def test_materias_da_amp():

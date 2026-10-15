@@ -12,7 +12,7 @@ import re
 import urllib.error
 import zipfile
 import xml.etree.ElementTree as ET
-from datetime import timedelta
+from datetime import date, timedelta
 
 from .base import Ato, Fonte
 
@@ -34,7 +34,11 @@ def atos_do_zip(corpo, fonte="DOU"):
         for nome in z.namelist():
             if not nome.lower().endswith(".xml"):
                 continue
-            raiz = ET.fromstring(z.read(nome))
+            try:
+                raiz = ET.fromstring(z.read(nome))
+            except ET.ParseError:
+                print(f"  XML ilegível no ZIP, pulado: {nome}", flush=True)
+                continue
             artigo = raiz if raiz.tag == "article" else raiz.find(".//article")
             if artigo is None:
                 continue
@@ -68,24 +72,57 @@ class DouInlabs(Fonte):
                             cabecalhos={"Content-Type": "application/x-www-form-urlencoded"})
         self._logado = True
 
+    def _zip(self, url, dia):
+        """(corpo do ZIP, None) ou (None, motivo) quando não há arquivo.
+
+        Um login só por coleta: em 14/10/2026 o INLABS parou de responder por 10 a 15 minutos logo
+        depois de vários logins seguidos, então a coleta evita entrar de novo.
+        Dia sem edição pode vir como 404 ou como a página inicial do INLABS (domingo); login
+        inválido aparece como dias úteis seguidos sem arquivo (ver listar_atos).
+        """
+        cache = self.cliente.arquivo_cache(url, extensao=".zip")
+        # Dia passado sem arquivo também fica marcado no cache: refazer a coleta não pergunta de novo.
+        sem_arquivo = cache.with_suffix(".sem-arquivo")
+        if sem_arquivo.exists():
+            return None, "404"
+        if not self._logado and not cache.exists():
+            self._entrar()
+        try:
+            corpo = self.cliente.baixar(url, cabecalhos={"origem": "736372697074"}, extensao=".zip")
+        except urllib.error.HTTPError as erro:
+            if erro.code != 404:
+                raise
+            motivo = "404"
+        else:
+            if corpo.startswith(b"PK"):
+                return corpo, None
+            cache.unlink(missing_ok=True)  # página HTML não vai para o cache
+            motivo = "resposta sem ZIP"
+        # Só marca o que é certo: 404, ou página HTML em fim de semana. HTML em dia útil pode ser
+        # sessão inválida, e marcar esconderia o DOU daquele dia para sempre.
+        if dia < date.today() and (motivo == "404" or dia.weekday() >= 5):
+            sem_arquivo.parent.mkdir(parents=True, exist_ok=True)
+            sem_arquivo.touch()
+        return None, motivo
+
     def listar_atos(self, desde, ate):
-        atos = []
+        uteis_sem_arquivo = 0
         dia = desde
         while dia <= ate:
+            n, avisos = 0, []
             for secao in SECOES:
-                url = URL_DOWNLOAD.format(dia=dia.isoformat(), secao=secao)
-                if not self._logado and not self.cliente.arquivo_cache(url, extensao=".zip").exists():
-                    self._entrar()
-                try:
-                    corpo = self.cliente.baixar(url, cabecalhos={"origem": "736372697074"}, extensao=".zip")
-                except urllib.error.HTTPError as erro:
-                    if erro.code == 404:  # dia sem edição (ou sem edição extra)
-                        continue
-                    raise
-                if not corpo.startswith(b"PK"):
-                    # Sem login válido o INLABS devolve uma página HTML: não guardar isso como ZIP.
-                    self.cliente.arquivo_cache(url, extensao=".zip").unlink(missing_ok=True)
-                    raise SystemExit(f"O INLABS não devolveu um ZIP para {dia} {secao}. Confira INLABS_EMAIL e INLABS_SENHA.")
-                atos.extend(atos_do_zip(corpo))
+                corpo, motivo = self._zip(URL_DOWNLOAD.format(dia=dia.isoformat(), secao=secao), dia)
+                if corpo is None:
+                    if motivo != "404":
+                        avisos.append(f"{secao}: {motivo}")
+                    continue
+                atos = atos_do_zip(corpo)
+                n += len(atos)
+                yield from atos
+            print(f"DOU {dia}: {n} matérias" + (f" (sem arquivo: {'; '.join(avisos)})" if avisos else ""), flush=True)
+            if dia.weekday() < 5:
+                uteis_sem_arquivo = 0 if n else uteis_sem_arquivo + 1
+                if uteis_sem_arquivo >= 3:
+                    raise SystemExit("O INLABS não entregou arquivo em 3 dias úteis seguidos. Confira INLABS_EMAIL e "
+                                     "INLABS_SENHA e se o INLABS está no ar. " + "; ".join(avisos))
             dia += timedelta(days=1)
-        return atos
