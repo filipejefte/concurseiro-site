@@ -1,0 +1,333 @@
+{
+  "ato": "amp-pr-2026-09-23-secretaria-de-administracao-5c9718a0.md",
+  "trechos": {
+    "salario": "101 Engenheiro Civil 40h 01 + CR - - R$ 6.781,02 [...] 102 Farmacêutico 40h CR - - R$ 6.397,87 [...] 103 Médico 30h 03 + CR - - R$ 11.541,58 [...] 104 Médico (ESF) 40h 03 + CR - - R$ 12.823,98 [...] 105 Pedagoga 40h 01 + CR - - R$ 3.611,46 [...] 106 Terapeuta Ocupacional 20h 02 + CR - - R$ 3.611,46 [...] 201 Agente Administrativo 40h 08 +CR 01 01 R$ 1.950,21 [...] 202 Agente Comunitário de Saúde 40h 04 +CR 01 01 R$ 2.048,74 [...] 205 Professor 20h 29 +CR 02 04 R$ 1.863,49 (5) [...] 206 Técnico em Enfermagem 40h 02 +CR - 01 R$ 2.359,78 (4) [...] 207 Técnico em Higiene Dental 40h 01 +CR - - R$ 2.145,25 [...] 208 Técnico de Manutenção de Computadores e Rede 40h 01 +CR - - R$ 3.059,14 [...] 301 Auxiliar de Serviços Gerais 40h 12 +CR 01 02 R$ 1.619,19 [...] 401 Motorista 40h 04 +CR 01 01 R$ 2.607,76 [...] 402 Operador de Máquinas 40h 03 +CR - 01 R$ 3.155,41 [...] 403 Serviços Braçais 40h 02 +CR - 01 R$ 1.781,11 (colunas: vagas ampla concorrência, PcD, afro; na Tabela 3.2 o texto extraído passa do código 202 para o 205) | Retificação de 08/10/2026 (LEIA-SE): 202 Agente Comunitário de Saúde 40h 05 +CR - 01; 206 Técnico em Enfermagem 40h 03 +CR - -; 401 Motorista 40h 05 +CR - 01; 402 Operador de Máquinas 40h 04 +CR - -; 403 Serviços Braçais 40h 03 +CR - -",
+    "inscricao.inicio": "5.3 O período para a realização das inscrições será a partir das 12h00min do dia 30 de setembro de 2026",
+    "inscricao.fim": "às 23h59min do dia 29 de outubro de 2026, observado horário oficial de Brasília/DF, através do endereço eletrônico www.concursosfau.com.br",
+    "prova_objetiva": "10.2 A prova objetiva será aplicada na data provável de 15 de novembro de 2026",
+    "taxa": "Tabela 3.1 (nível superior): R$ 180,00; Tabela 3.2 (nível médio/técnico): R$ 130,00; Tabelas 3.3 e 3.4 (nível fundamental): R$ 80,00",
+    "banca": "O Concurso Público a que se refere o presente Edital será executado pela Fundação de Apoio ao Desenvolvimento da UNICENTRO",
+    "cidade": "10.1 A prova objetiva será aplicada na Cidade de Nova Prata do Iguaçu/Paraná; quadro de servidores do Município de Nova Prata do Iguaçu",
+    "edital": "EDITAL DE ABERTURA Nº 01/2026 CONCURSO PÚBLICO Nº 01/2026 A Prefeita do Município de Nova Prata do Iguaçu – Estado do Paraná"
+  },
+  "concurso": {
+    "id": "prefeitura-nova-prata-do-iguacu-pr-2026-edital-01",
+    "ficticio": false,
+    "orgao": "Prefeitura de Nova Prata do Iguaçu (PR)",
+    "esfera": "municipal",
+    "uf": "PR",
+    "municipio_ibge": "4117255",
+    "cidade": "Nova Prata do Iguaçu",
+    "nacional": false,
+    "abrangencia": null,
+    "area": "Educação",
+    "banca": {
+      "nome": "Fundação de Apoio ao Desenvolvimento da UNICENTRO (FAU)",
+      "url": "https://www.concursosfau.com.br"
+    },
+    "inscricao": {
+      "inicio": "2026-09-30",
+      "fim": "2026-10-29",
+      "url": "https://www.concursosfau.com.br"
+    },
+    "isencao_ate": "2026-10-02",
+    "prova_objetiva": "2026-11-15",
+    "local_prova": "Nova Prata do Iguaçu (PR), podendo ser também em cidades vizinhas se o número de inscritos exceder a capacidade do município",
+    "taxa": {
+      "min": 80.0,
+      "max": 180.0
+    },
+    "isencao_regras": "Isenção para membros de família de baixa renda (CadÚnico), doadores de sangue ou de medula óssea e eleitores convocados, nos termos do edital; pedido em 01 e 02/10/2026",
+    "regime": "Estatutário",
+    "beneficios": [],
+    "o_que_levar": "Caneta esferográfica transparente de tinta azul ou preta, documento oficial de identificação com foto e o Cartão de Informação do Candidato impresso",
+    "cargos": [
+      {
+        "nome": "Médico (ESF)",
+        "vagas": 3,
+        "cadastro_reserva": true,
+        "salario": 12823.98,
+        "escolaridade": "Superior",
+        "requisitos": "Nível superior completo; requisitos no Anexo I do edital",
+        "jornada_horas": 40,
+        "materias": [
+          "Língua Portuguesa",
+          "Matemática/Raciocínio Lógico",
+          "Conhecimentos Gerais",
+          "Conhecimentos Específicos"
+        ]
+      },
+      {
+        "nome": "Médico",
+        "vagas": 3,
+        "cadastro_reserva": true,
+        "salario": 11541.58,
+        "escolaridade": "Superior",
+        "requisitos": "Nível superior completo; requisitos no Anexo I do edital",
+        "jornada_horas": 30,
+        "materias": [
+          "Língua Portuguesa",
+          "Matemática/Raciocínio Lógico",
+          "Conhecimentos Gerais",
+          "Conhecimentos Específicos"
+        ]
+      },
+      {
+        "nome": "Engenheiro Civil",
+        "vagas": 1,
+        "cadastro_reserva": true,
+        "salario": 6781.02,
+        "escolaridade": "Superior",
+        "requisitos": "Nível superior completo; requisitos no Anexo I do edital",
+        "jornada_horas": 40,
+        "materias": [
+          "Língua Portuguesa",
+          "Matemática/Raciocínio Lógico",
+          "Conhecimentos Gerais",
+          "Conhecimentos Específicos"
+        ]
+      },
+      {
+        "nome": "Farmacêutico",
+        "vagas": 0,
+        "cadastro_reserva": true,
+        "salario": 6397.87,
+        "escolaridade": "Superior",
+        "requisitos": "Nível superior completo; requisitos no Anexo I do edital",
+        "jornada_horas": 40,
+        "materias": [
+          "Língua Portuguesa",
+          "Matemática/Raciocínio Lógico",
+          "Conhecimentos Gerais",
+          "Conhecimentos Específicos"
+        ]
+      },
+      {
+        "nome": "Pedagoga",
+        "vagas": 1,
+        "cadastro_reserva": true,
+        "salario": 3611.46,
+        "escolaridade": "Superior",
+        "requisitos": "Nível superior completo; requisitos no Anexo I do edital",
+        "jornada_horas": 40,
+        "materias": [
+          "Língua Portuguesa",
+          "Matemática/Raciocínio Lógico",
+          "Conhecimentos Gerais",
+          "Conhecimentos Específicos"
+        ]
+      },
+      {
+        "nome": "Terapeuta Ocupacional",
+        "vagas": 2,
+        "cadastro_reserva": true,
+        "salario": 3611.46,
+        "escolaridade": "Superior",
+        "requisitos": "Nível superior completo; requisitos no Anexo I do edital",
+        "jornada_horas": 20,
+        "materias": [
+          "Língua Portuguesa",
+          "Matemática/Raciocínio Lógico",
+          "Conhecimentos Gerais",
+          "Conhecimentos Específicos"
+        ]
+      },
+      {
+        "nome": "Técnico de Manutenção de Computadores e Rede",
+        "vagas": 1,
+        "cadastro_reserva": true,
+        "salario": 3059.14,
+        "escolaridade": null,
+        "requisitos": "Nível médio/técnico; requisitos no Anexo I do edital",
+        "jornada_horas": 40,
+        "materias": [
+          "Língua Portuguesa",
+          "Matemática/Raciocínio Lógico",
+          "Conhecimentos Gerais",
+          "Conhecimentos Específicos"
+        ]
+      },
+      {
+        "nome": "Técnico em Enfermagem",
+        "vagas": 3,
+        "cadastro_reserva": true,
+        "salario": 2359.78,
+        "escolaridade": null,
+        "requisitos": "Nível médio/técnico; requisitos no Anexo I do edital. Complemento até o piso nacional, conforme o edital",
+        "jornada_horas": 40,
+        "materias": [
+          "Língua Portuguesa",
+          "Matemática/Raciocínio Lógico",
+          "Conhecimentos Gerais",
+          "Conhecimentos Específicos"
+        ]
+      },
+      {
+        "nome": "Técnico em Higiene Dental",
+        "vagas": 1,
+        "cadastro_reserva": true,
+        "salario": 2145.25,
+        "escolaridade": null,
+        "requisitos": "Nível médio/técnico; requisitos no Anexo I do edital",
+        "jornada_horas": 40,
+        "materias": [
+          "Língua Portuguesa",
+          "Matemática/Raciocínio Lógico",
+          "Conhecimentos Gerais",
+          "Conhecimentos Específicos"
+        ]
+      },
+      {
+        "nome": "Agente Comunitário de Saúde",
+        "vagas": 6,
+        "cadastro_reserva": true,
+        "salario": 2048.74,
+        "escolaridade": null,
+        "requisitos": "Nível médio/técnico; requisitos no Anexo I do edital. Deve residir na área da comunidade em que vai atuar (Lei Federal 11.350/2006)",
+        "jornada_horas": 40,
+        "materias": [
+          "Língua Portuguesa",
+          "Matemática/Raciocínio Lógico",
+          "Conhecimentos Gerais",
+          "Conhecimentos Específicos"
+        ]
+      },
+      {
+        "nome": "Agente Administrativo",
+        "vagas": 10,
+        "cadastro_reserva": true,
+        "salario": 1950.21,
+        "escolaridade": null,
+        "requisitos": "Nível médio/técnico; requisitos no Anexo I do edital",
+        "jornada_horas": 40,
+        "materias": [
+          "Língua Portuguesa",
+          "Matemática/Raciocínio Lógico",
+          "Conhecimentos Gerais",
+          "Conhecimentos Específicos"
+        ]
+      },
+      {
+        "nome": "Professor",
+        "vagas": 35,
+        "cadastro_reserva": true,
+        "salario": 1863.49,
+        "escolaridade": null,
+        "requisitos": "Nível médio/técnico; requisitos no Anexo I do edital. A remuneração varia conforme a formação apresentada na posse",
+        "jornada_horas": 20,
+        "materias": [
+          "Língua Portuguesa",
+          "Matemática/Raciocínio Lógico",
+          "Conhecimentos Gerais",
+          "Conhecimentos Específicos"
+        ]
+      },
+      {
+        "nome": "Operador de Máquinas",
+        "vagas": 4,
+        "cadastro_reserva": true,
+        "salario": 3155.41,
+        "escolaridade": "Fundamental",
+        "requisitos": "Ensino fundamental incompleto; requisitos no Anexo I do edital",
+        "jornada_horas": 40,
+        "materias": [
+          "Língua Portuguesa",
+          "Matemática/Raciocínio Lógico",
+          "Conhecimentos Gerais",
+          "Conhecimentos Específicos"
+        ]
+      },
+      {
+        "nome": "Motorista",
+        "vagas": 6,
+        "cadastro_reserva": true,
+        "salario": 2607.76,
+        "escolaridade": "Fundamental",
+        "requisitos": "Ensino fundamental incompleto; requisitos no Anexo I do edital",
+        "jornada_horas": 40,
+        "materias": [
+          "Língua Portuguesa",
+          "Matemática/Raciocínio Lógico",
+          "Conhecimentos Gerais",
+          "Conhecimentos Específicos"
+        ]
+      },
+      {
+        "nome": "Serviços Braçais",
+        "vagas": 3,
+        "cadastro_reserva": true,
+        "salario": 1781.11,
+        "escolaridade": "Fundamental",
+        "requisitos": "Ensino fundamental incompleto; requisitos no Anexo I do edital",
+        "jornada_horas": 40,
+        "materias": [
+          "Língua Portuguesa",
+          "Matemática/Raciocínio Lógico",
+          "Conhecimentos Gerais",
+          "Conhecimentos Específicos"
+        ]
+      },
+      {
+        "nome": "Auxiliar de Serviços Gerais",
+        "vagas": 15,
+        "cadastro_reserva": true,
+        "salario": 1619.19,
+        "escolaridade": "Fundamental",
+        "requisitos": "Ensino fundamental completo; requisitos no Anexo I do edital",
+        "jornada_horas": 40,
+        "materias": [
+          "Língua Portuguesa",
+          "Matemática/Raciocínio Lógico",
+          "Conhecimentos Gerais",
+          "Conhecimentos Específicos"
+        ]
+      }
+    ],
+    "documentos": [
+      {
+        "tipo": "edital",
+        "titulo": "Edital de Abertura nº 01/2026 – Concurso Público nº 01/2026",
+        "numero": "01/2026",
+        "url": "https://www.diariomunicipal.com.br/amp/materia/B81AACEE",
+        "publicado_em": "2026-09-23",
+        "fonte": "AMP-PR",
+        "resumo": null
+      },
+      {
+        "tipo": "retificacao",
+        "titulo": "Retificação do Anexo I – Requisitos e atribuições dos cargos",
+        "numero": null,
+        "url": "https://www.diariomunicipal.com.br/amp/materia/9265CE46",
+        "publicado_em": "2026-09-28",
+        "fonte": "AMP-PR",
+        "resumo": "Corrige o nome do cargo para Auxiliar de Serviços Gerais"
+      },
+      {
+        "tipo": "retificacao",
+        "titulo": "Retificação do Anexo II – Conteúdo programático",
+        "numero": null,
+        "url": "https://www.diariomunicipal.com.br/amp/materia/C9891754",
+        "publicado_em": "2026-09-28",
+        "fonte": "AMP-PR",
+        "resumo": "Republica o conteúdo programático de todos os cargos"
+      },
+      {
+        "tipo": "retificacao",
+        "titulo": "Retificação do Edital de Abertura nº 01/2026",
+        "numero": null,
+        "url": "https://www.diariomunicipal.com.br/amp/materia/6A078694",
+        "publicado_em": "2026-10-08",
+        "fonte": "AMP-PR",
+        "resumo": "Redistribui vagas de ampla concorrência, PcD e afro nas Tabelas 3.2 e 3.4, sem mudar o total de cada cargo"
+      }
+    ],
+    "conferencia": null,
+    "primeira_varredura": null,
+    "ultima_alteracao": null
+  },
+  "atos_extras": [
+    "amp-pr-2026-09-28-secretaria-de-administracao-dfc445ce.md",
+    "amp-pr-2026-09-28-secretaria-de-administracao-e98b3240.md",
+    "amp-pr-2026-10-08-secretaria-de-administracao-2b95a46a.md"
+  ]
+}

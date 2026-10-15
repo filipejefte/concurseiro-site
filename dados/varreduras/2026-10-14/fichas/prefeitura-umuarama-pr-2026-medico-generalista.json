@@ -1,0 +1,93 @@
+{
+  "ato": "amp-pr-2026-10-05-prefeitura-municipal-de-umuarama-94d1a5f0.md",
+  "atos_extras": [
+    "amp-pr-2026-08-18-secretaria-municipal-de-administracao-4573c248.md"
+  ],
+  "trechos": {
+    "salario": "O ato não traz vagas nem salários",
+    "inscricao.inicio": "não consta no ato",
+    "inscricao.fim": "não consta no ato",
+    "prova_objetiva": "não consta no ato",
+    "taxa": "não consta no ato",
+    "banca": "contratação direta, por Dispensa de Licitação, da pessoa jurídica: INSTITUTO UNICAMPO DE DESENVOLVIMENTO ACADEMICO, CIENTÍFICO, CULTURAL E SOCIAL",
+    "cidade": "Concurso Público destinado ao provimento dos cargos efetivos de Médico Generalista – 20 (vinte) horas semanais e Médico Generalista – 40 (quarenta) horas semanais, integrantes do quadro de pessoal do Município de Umuarama",
+    "edital": "AUTORIZAÇÃO DE DISPENSA DE LICITAÇÃO Nº 021/2026 - PMU"
+  },
+  "concurso": {
+    "id": "prefeitura-umuarama-pr-2026-medico-generalista",
+    "ficticio": false,
+    "orgao": "Prefeitura de Umuarama (PR)",
+    "esfera": "municipal",
+    "uf": "PR",
+    "municipio_ibge": "4128104",
+    "cidade": "Umuarama",
+    "nacional": false,
+    "abrangencia": null,
+    "area": "Saúde",
+    "banca": {
+      "nome": "Instituto Unicampo",
+      "url": null
+    },
+    "inscricao": {
+      "inicio": null,
+      "fim": null,
+      "url": null
+    },
+    "isencao_ate": null,
+    "prova_objetiva": null,
+    "local_prova": null,
+    "taxa": {
+      "min": null,
+      "max": null
+    },
+    "isencao_regras": null,
+    "regime": null,
+    "beneficios": [],
+    "o_que_levar": null,
+    "cargos": [
+      {
+        "nome": "Médico Generalista (20 h)",
+        "vagas": null,
+        "cadastro_reserva": true,
+        "salario": null,
+        "escolaridade": null,
+        "requisitos": null,
+        "jornada_horas": 20,
+        "materias": []
+      },
+      {
+        "nome": "Médico Generalista (40 h)",
+        "vagas": null,
+        "cadastro_reserva": true,
+        "salario": null,
+        "escolaridade": null,
+        "requisitos": null,
+        "jornada_horas": 40,
+        "materias": []
+      }
+    ],
+    "documentos": [
+      {
+        "tipo": "contratacao_banca",
+        "titulo": "Autorização de Dispensa de Licitação nº 021/2026",
+        "numero": "021/2026",
+        "url": "https://www.diariomunicipal.com.br/amp/materia/176970FE",
+        "publicado_em": "2026-10-05",
+        "fonte": "AMP-PR",
+        "resumo": null
+      },
+      {
+        "tipo": "outro",
+        "titulo": "Termo de Referência – concurso para Médico Generalista 20 h e 40 h",
+        "numero": null,
+        "url": "https://www.diariomunicipal.com.br/amp/materia/59B5D824",
+        "publicado_em": "2026-08-18",
+        "fonte": "AMP-PR",
+        "resumo": null
+      }
+    ],
+    "conferencia": null,
+    "primeira_varredura": null,
+    "ultima_alteracao": null
+  }
+}

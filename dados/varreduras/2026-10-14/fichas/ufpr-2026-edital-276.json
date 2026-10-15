@@ -1,0 +1,362 @@
+{
+  "ato": "dou-2026-09-25-ministerio-da-educacao-universidade-fede-1d1541fc.md",
+  "atos_extras": [
+    "dou-2026-10-02-ministerio-da-educacao-universidade-fede-c8f21b67.md"
+  ],
+  "trechos": {
+    "salario": "CLASSE A [...] 20 (VINTE) HORAS [...] PROFESSOR ASSISTENTE (COM GRADUAÇÃO) R$ 3.198,59 [...] (COM MESTRADO) [...] R$ 3.998,24 [...] (COM DOUTORADO) [...] R$ 5.037,78 [...] DEDICAÇÃO EXCLUSIVA (DE) [...] (COM GRADUAÇÃO) R$ 6.397,19 [...] (COM MESTRADO) [...] R$ 9.595,78 [...] (COM DOUTORADO) [...] R$ 13.753,96 — salário de cada item pela titulação mínima exigida no Anexo 01",
+    "inscricao.inicio": "ANEXO 02 [...] itens 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 1.10, 1.11, 1.12, 1.13, 1.14, 1.15, 1.16, 1.17, 1.18, 1.19, 1.20, 1.21, 1.22, 1.23, 1.24, 1.25, 1.26, 1.27, 1.29, 1.30, 1.31, 1.32: período de inscrições 28/09/2026 a 28/10/2026",
+    "inscricao.fim": "ANEXO 02 [...] itens 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 1.10, 1.11, 1.12, 1.13, 1.14, 1.15, 1.16, 1.17, 1.18, 1.19, 1.20, 1.21, 1.22, 1.23, 1.24, 1.25, 1.26, 1.27, 1.29, 1.30, 1.31, 1.32: período de inscrições 28/09/2026 a 28/10/2026",
+    "prova_objetiva": "não consta data: o Anexo 02 só traz o período provável das provas (por quinzena), e o concurso é de provas escrita, didática e de títulos",
+    "taxa": "ANEXO 02 ITEM TAXA DE INSCRIÇÃO [...] valores por item: 1.4 R$ 240,00, 1.5 R$ 240,00, 1.6 R$ 70,00, 1.7 R$ 240,00, 1.8 R$ 240,00, 1.9 R$ 88,00, 1.10 R$ 88,00, 1.11 R$ 240,00, 1.12 R$ 88,00, 1.13 R$ 240,00, 1.14 R$ 240,00, 1.15 R$ 240,00, 1.16 R$ 168,00, 1.17 R$ 70,00, 1.18 R$ 88,00, 1.19 R$ 240,00, 1.20 R$ 240,00, 1.21 R$ 240,00, 1.22 R$ 240,00, 1.23 R$ 240,00, 1.24 R$ 240,00, 1.25 R$ 240,00, 1.26 R$ 88,00, 1.27 R$ 88,00, 1.29 R$ 61,00, 1.30 R$ 61,00, 1.31 R$ 240,00, 1.32 R$ 240,00",
+    "banca": "a própria UFPR (Pró-Reitoria de Gestão de Pessoas e unidades promotoras de cada item)",
+    "cidade": "Universidade Federal do Paraná, Curitiba; itens de Palotina e Toledo nos respectivos campi",
+    "edital": "EDITAL Nº 276, DE 24 DE SETEMBRO DE 2026 PROVIMENTO DE CARGOS DE PROFESSOR DA CARREIRA DO MAGISTÉRIO SUPERIOR"
+  },
+  "concurso": {
+    "id": "ufpr-2026-edital-276",
+    "ficticio": false,
+    "orgao": "Universidade Federal do Paraná (UFPR)",
+    "esfera": "federal",
+    "uf": "PR",
+    "municipio_ibge": "4106902",
+    "cidade": "Curitiba",
+    "nacional": false,
+    "abrangencia": null,
+    "area": "Educação",
+    "banca": {
+      "nome": "UFPR (Pró-Reitoria de Gestão de Pessoas)",
+      "url": null
+    },
+    "inscricao": {
+      "inicio": "2026-09-28",
+      "fim": "2026-10-28",
+      "url": null
+    },
+    "isencao_ate": null,
+    "prova_objetiva": null,
+    "local_prova": null,
+    "taxa": {
+      "min": 61.0,
+      "max": 240.0
+    },
+    "isencao_regras": "Isenção para inscritos no CadÚnico (Decreto 11.016/2022) e doadores de medula óssea (Lei 13.656/2018); pedido em até 10 dias corridos do início das inscrições, por e-mail à PROGEPE (urp@ufpr.br)",
+    "regime": "Estatutário (Lei 8.112/1990)",
+    "beneficios": [
+      {
+        "nome": "Auxílio-alimentação (dedicação exclusiva)",
+        "valor": 1175.0
+      },
+      {
+        "nome": "Auxílio-alimentação (20 horas)",
+        "valor": 587.5
+      }
+    ],
+    "o_que_levar": null,
+    "cargos": [
+      {
+        "nome": "Professor do Magistério Superior – Engenharia Civil",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 13753.96,
+        "escolaridade": "Superior",
+        "requisitos": "Item 1.4; Departamento de Transportes; dedicação exclusiva; titulação mínima: doutorado (áreas aceitas no Anexo 01 do edital); vaga reservada a pessoas pretas ou pardas",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Magistério Superior – Eletrônica e Telecomunicações",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 13753.96,
+        "escolaridade": "Superior",
+        "requisitos": "Item 1.5; Departamento de Engenharia Elétrica; dedicação exclusiva; titulação mínima: doutorado (áreas aceitas no Anexo 01 do edital); vaga reservada a pessoas pretas ou pardas",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Magistério Superior – Urgência e Emergência Pediátrica",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 3198.59,
+        "escolaridade": "Superior",
+        "requisitos": "Item 1.6; Departamento de Pediatria; 20 horas; graduação em Medicina com residência ou especialização (Anexo 01 do edital); a remuneração sobe com a titulação",
+        "jornada_horas": 20,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Magistério Superior – Horticultura",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 13753.96,
+        "escolaridade": "Superior",
+        "requisitos": "Item 1.7; Departamento de Fitotecnia e Fitossanidade; dedicação exclusiva; titulação mínima: doutorado (áreas aceitas no Anexo 01 do edital)",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Magistério Superior – Arqueologia",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 13753.96,
+        "escolaridade": "Superior",
+        "requisitos": "Item 1.8; Departamento de Antropologia; dedicação exclusiva; titulação mínima: doutorado (áreas aceitas no Anexo 01 do edital)",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Magistério Superior – Odontologia em Saúde Coletiva",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 5037.78,
+        "escolaridade": "Superior",
+        "requisitos": "Item 1.9; Departamento de Saúde Coletiva; 20 horas; titulação mínima: doutorado (áreas aceitas no Anexo 01 do edital); vaga reservada a pessoa indígena",
+        "jornada_horas": 20,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Magistério Superior – Saúde do Trabalhador",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 5037.78,
+        "escolaridade": "Superior",
+        "requisitos": "Item 1.10; Departamento de Saúde Coletiva; 20 horas; titulação mínima: doutorado (áreas aceitas no Anexo 01 do edital); vaga reservada a pessoas pretas ou pardas",
+        "jornada_horas": 20,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Magistério Superior – Terapia Ocupacional aplicada",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 13753.96,
+        "escolaridade": "Superior",
+        "requisitos": "Item 1.11; Departamento de Terapia Ocupacional; dedicação exclusiva; titulação mínima: doutorado (áreas aceitas no Anexo 01 do edital)",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Magistério Superior – Direito",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 5037.78,
+        "escolaridade": "Superior",
+        "requisitos": "Item 1.12; Departamento de Administração Geral e Aplicada; 20 horas; titulação mínima: doutorado (áreas aceitas no Anexo 01 do edital)",
+        "jornada_horas": 20,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Magistério Superior – Clínica Cirúrgica de Pequenos Animais",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 13753.96,
+        "escolaridade": "Superior",
+        "requisitos": "Item 1.13; Departamento de Ciências Veterinárias; dedicação exclusiva; titulação mínima: doutorado (áreas aceitas no Anexo 01 do edital); lotação em Palotina (PR)",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Magistério Superior – Sistemas de Computação",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 13753.96,
+        "escolaridade": "Superior",
+        "requisitos": "Item 1.14; Departamento de Informática; dedicação exclusiva; graduação em Computação ou área listada, com doutorado na área de Computação (retificado pelo Edital 288/2026)",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Magistério Superior – Genética",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 13753.96,
+        "escolaridade": "Superior",
+        "requisitos": "Item 1.15; Departamento de Biociências; dedicação exclusiva; titulação mínima: doutorado (áreas aceitas no Anexo 01 do edital); lotação em Palotina (PR)",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Magistério Superior – Computação",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 9595.78,
+        "escolaridade": "Superior",
+        "requisitos": "Item 1.16; Departamento de Engenharias e Exatas; dedicação exclusiva; titulação mínima: mestrado (áreas aceitas no Anexo 01 do edital); lotação em Palotina (PR)",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Magistério Superior – Ginecologia, Obstetrícia e Reprodução Humana",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 3998.24,
+        "escolaridade": "Superior",
+        "requisitos": "Item 1.17; Departamento de Tocoginecologia; 20 horas; titulação mínima: mestrado (áreas aceitas no Anexo 01 do edital); vaga reservada a pessoas pretas ou pardas",
+        "jornada_horas": 20,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Magistério Superior – Radiologia e Propedêutica Médica",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 5037.78,
+        "escolaridade": "Superior",
+        "requisitos": "Item 1.18; Departamento de Clínica Médica; 20 horas; titulação mínima: doutorado (áreas aceitas no Anexo 01 do edital)",
+        "jornada_horas": 20,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Magistério Superior – História Pública (Patrimônio e Memória)",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 13753.96,
+        "escolaridade": "Superior",
+        "requisitos": "Item 1.19; Departamento de História; dedicação exclusiva; titulação mínima: doutorado (áreas aceitas no Anexo 01 do edital); vaga reservada a pessoas pretas ou pardas",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Magistério Superior – Fisiologia Humana",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 13753.96,
+        "escolaridade": "Superior",
+        "requisitos": "Item 1.20; Departamento de Fisiologia; dedicação exclusiva; titulação mínima: doutorado (áreas aceitas no Anexo 01 do edital)",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Magistério Superior – Anatomia Humana",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 13753.96,
+        "escolaridade": "Superior",
+        "requisitos": "Item 1.21; Departamento de Anatomia; dedicação exclusiva; titulação mínima: doutorado (áreas aceitas no Anexo 01 do edital)",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Magistério Superior – Educação Matemática",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 13753.96,
+        "escolaridade": "Superior",
+        "requisitos": "Item 1.22; Departamento de Matemática; dedicação exclusiva; titulação mínima: doutorado (áreas aceitas no Anexo 01 do edital)",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Magistério Superior – Planejamento e Gestão em Turismo",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 13753.96,
+        "escolaridade": "Superior",
+        "requisitos": "Item 1.23; Departamento de Turismo; dedicação exclusiva; titulação mínima: doutorado (áreas aceitas no Anexo 01 do edital); vaga reservada a pessoa com deficiência",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Magistério Superior – Mineralogia",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 13753.96,
+        "escolaridade": "Superior",
+        "requisitos": "Item 1.24; Departamento de Geologia; dedicação exclusiva; titulação mínima: doutorado (áreas aceitas no Anexo 01 do edital)",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Magistério Superior – Engenharia de Produção",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 13753.96,
+        "escolaridade": "Superior",
+        "requisitos": "Item 1.25; Departamento de Engenharia de Produção; dedicação exclusiva; titulação mínima: doutorado (áreas aceitas no Anexo 01 do edital)",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Magistério Superior – Gastroenterologia Pediátrica",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 5037.78,
+        "escolaridade": "Superior",
+        "requisitos": "Item 1.26; Departamento de Pediatria; 20 horas; titulação mínima: doutorado (áreas aceitas no Anexo 01 do edital); vaga reservada a pessoa quilombola",
+        "jornada_horas": 20,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Magistério Superior – Mecânica dos Fluidos e Fenômenos de Transporte",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 5037.78,
+        "escolaridade": "Superior",
+        "requisitos": "Item 1.27; Departamento de Hidráulica e Saneamento; 20 horas; titulação mínima: doutorado (áreas aceitas no Anexo 01 do edital); vaga reservada a pessoas pretas ou pardas",
+        "jornada_horas": 20,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Magistério Superior – Medicina de Família e Comunidade",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 3198.59,
+        "escolaridade": "Superior",
+        "requisitos": "Item 1.29; Curso de Medicina (Campus Toledo); 20 horas; graduação em Medicina com residência ou especialização (Anexo 01 do edital); a remuneração sobe com a titulação; vaga reservada a pessoas pretas ou pardas; lotação em Toledo (PR)",
+        "jornada_horas": 20,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Magistério Superior – Clínica Médica",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 3198.59,
+        "escolaridade": "Superior",
+        "requisitos": "Item 1.30; Curso de Medicina (Campus Toledo); 20 horas; graduação em Medicina com residência ou especialização (Anexo 01 do edital); a remuneração sobe com a titulação; lotação em Toledo (PR)",
+        "jornada_horas": 20,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Magistério Superior – Engenharia Química (Operações Unitárias)",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 13753.96,
+        "escolaridade": "Superior",
+        "requisitos": "Item 1.31; Departamento de Engenharia Química; dedicação exclusiva; titulação mínima: doutorado (áreas aceitas no Anexo 01 do edital)",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Magistério Superior – Estatística e Ciência de Dados",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 13753.96,
+        "escolaridade": "Superior",
+        "requisitos": "Item 1.32; Departamento de Estatística; dedicação exclusiva; titulação mínima: doutorado (áreas aceitas no Anexo 01 do edital); vaga reservada a pessoas pretas ou pardas",
+        "jornada_horas": 40,
+        "materias": []
+      }
+    ],
+    "documentos": [
+      {
+        "tipo": "edital",
+        "titulo": "Edital nº 276/2026-PROGEPE – Professor do Magistério Superior",
+        "numero": "276/2026",
+        "url": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=25/09/2026&jornal=530&pagina=61",
+        "publicado_em": "2026-09-25",
+        "fonte": "DOU",
+        "resumo": null
+      },
+      {
+        "tipo": "retificacao",
+        "titulo": "Edital nº 288/2026 – Retificação do Edital nº 276/2026",
+        "numero": "288/2026",
+        "url": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=02/10/2026&jornal=530&pagina=53",
+        "publicado_em": "2026-10-02",
+        "fonte": "DOU",
+        "resumo": "Corrige a titulação exigida do item 1.14 (Sistemas de Computação)"
+      }
+    ],
+    "conferencia": null,
+    "primeira_varredura": null,
+    "ultima_alteracao": null
+  }
+}

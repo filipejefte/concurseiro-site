@@ -1,0 +1,82 @@
+{
+  "ato": "amp-pr-2026-09-29-prefeitura-municipal-de-realeza-c9eadbc2.md",
+  "atos_extras": [
+    "amp-pr-2026-09-23-departamento-de-licitacao-e42ef555.md",
+    "amp-pr-2026-09-23-departamento-de-licitacao-a59db06d.md"
+  ],
+  "trechos": {
+    "salario": "O ato não lista cargos nem salários",
+    "inscricao.inicio": "não consta no ato",
+    "inscricao.fim": "não consta no ato",
+    "prova_objetiva": "não consta no ato",
+    "taxa": "não consta no ato",
+    "banca": "CONTRATADA: FUNDAÇÃO DE APOIO AO CAMPUS DE PARANAVAÍ - FAFIPA [...] DATA DA ASSINATURA: 22/09/2026",
+    "cidade": "Concurso Público destinado ao provimento de cargos efetivos do Município de Realeza/PR",
+    "edital": "EXTRATO DE CONTRATO - CONTRATO ADMINISTRATIVO DE PRESTAÇÃO DE SERVIÇOS Nº 314/2026"
+  },
+  "concurso": {
+    "id": "prefeitura-realeza-pr-2026",
+    "ficticio": false,
+    "orgao": "Prefeitura de Realeza (PR)",
+    "esfera": "municipal",
+    "uf": "PR",
+    "municipio_ibge": "4121406",
+    "cidade": "Realeza",
+    "nacional": false,
+    "abrangencia": null,
+    "area": "Outras",
+    "banca": {
+      "nome": "Fundação FAFIPA",
+      "url": "https://www.fundacaofafipa.org.br"
+    },
+    "inscricao": {
+      "inicio": null,
+      "fim": null,
+      "url": null
+    },
+    "isencao_ate": null,
+    "prova_objetiva": null,
+    "local_prova": null,
+    "taxa": {
+      "min": null,
+      "max": null
+    },
+    "isencao_regras": null,
+    "regime": null,
+    "beneficios": [],
+    "o_que_levar": null,
+    "cargos": [],
+    "documentos": [
+      {
+        "tipo": "contratacao_banca",
+        "titulo": "Extrato do Contrato nº 314/2026 – Dispensa nº 26/2026",
+        "numero": "314/2026",
+        "url": "https://www.diariomunicipal.com.br/amp/materia/1153BEDD",
+        "publicado_em": "2026-09-29",
+        "fonte": "AMP-PR",
+        "resumo": "Contrato assinado em 22/09/2026"
+      },
+      {
+        "tipo": "contratacao_banca",
+        "titulo": "Termo de homologação – Dispensa nº 26/2026",
+        "numero": "26/2026",
+        "url": "https://www.diariomunicipal.com.br/amp/materia/75A4E645",
+        "publicado_em": "2026-09-23",
+        "fonte": "AMP-PR",
+        "resumo": null
+      },
+      {
+        "tipo": "contratacao_banca",
+        "titulo": "Resultado da Dispensa nº 26/2026",
+        "numero": "26/2026",
+        "url": "https://www.diariomunicipal.com.br/amp/materia/D225F8B4",
+        "publicado_em": "2026-09-23",
+        "fonte": "AMP-PR",
+        "resumo": null
+      }
+    ],
+    "conferencia": null,
+    "primeira_varredura": null,
+    "ultima_alteracao": null
+  }
+}

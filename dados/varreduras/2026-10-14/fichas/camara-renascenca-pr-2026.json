@@ -1,0 +1,82 @@
+{
+  "ato": "amp-pr-2026-08-27-prefeitura-municipal-de-renascenca-ee3f0e4d.md",
+  "atos_extras": [],
+  "trechos": {
+    "salario": "A resolução lista cargo, escolaridade, carga horária e vagas, sem remuneração",
+    "inscricao.inicio": "não consta no ato",
+    "inscricao.fim": "não consta no ato",
+    "prova_objetiva": "não consta no ato",
+    "taxa": "não consta no ato",
+    "banca": "não consta no ato",
+    "cidade": "concurso público para o provimento de cargos efetivos vagos integrantes do quadro de pessoal do Poder Legislativo (Câmara Municipal de Renascença)",
+    "edital": "RESOLUÇÃO Nº 008, DE 26 DE AGOSTO DE 2026 [...] AUTORIZA A REALIZAÇÃO DE CONCURSO PÚBLICO"
+  },
+  "concurso": {
+    "id": "camara-renascenca-pr-2026",
+    "ficticio": false,
+    "orgao": "Câmara Municipal de Renascença (PR)",
+    "esfera": "municipal",
+    "uf": "PR",
+    "municipio_ibge": "4121604",
+    "cidade": "Renascença",
+    "nacional": false,
+    "abrangencia": null,
+    "area": "Administrativa",
+    "banca": {
+      "nome": null,
+      "url": null
+    },
+    "inscricao": {
+      "inicio": null,
+      "fim": null,
+      "url": null
+    },
+    "isencao_ate": null,
+    "prova_objetiva": null,
+    "local_prova": null,
+    "taxa": {
+      "min": null,
+      "max": null
+    },
+    "isencao_regras": null,
+    "regime": null,
+    "beneficios": [],
+    "o_que_levar": null,
+    "cargos": [
+      {
+        "nome": "Secretário",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": null,
+        "escolaridade": "Superior",
+        "requisitos": "Ensino Superior Completo",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Agente de Apoio",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": null,
+        "escolaridade": "Fundamental",
+        "requisitos": "Ensino Fundamental Completo",
+        "jornada_horas": 40,
+        "materias": []
+      }
+    ],
+    "documentos": [
+      {
+        "tipo": "autorizacao",
+        "titulo": "Resolução nº 008, de 26 de agosto de 2026 – autoriza a realização de concurso público",
+        "numero": "008/2026",
+        "url": "https://www.diariomunicipal.com.br/amp/materia/1591F1C0",
+        "publicado_em": "2026-08-27",
+        "fonte": "AMP-PR",
+        "resumo": null
+      }
+    ],
+    "conferencia": null,
+    "primeira_varredura": null,
+    "ultima_alteracao": null
+  }
+}

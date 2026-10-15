@@ -1,0 +1,6054 @@
+# Revisão da varredura de 14/10/2026
+
+Fichas: 22 · novos: 22 · alterados: 0 · iguais ao publicado: 0 · encerrados desde a última varredura: 0
+
+Como conferir: abra `revisao.csv` (Excel ou LibreOffice), compare cada valor com o trecho e com o ato oficial e escreva `ok` na coluna **conferido**. Valor errado: corrija `fichas/<id>.json`, rode `python -m varredura revisao` de novo (as marcas das linhas que não mudaram ficam) e marque `ok`. `corrigir` segura o concurso fora da publicação.
+
+## Fontes com problema nesta coleta
+
+- **DIOE-PR**: pulada: DIOE-PR ainda não implementado: formato e acesso não verificados (ver TODO no arquivo).
+
+## Novos
+
+### Câmara Municipal de Iporã (PR) · `camara-ipora-pr-2026`
+
+Ato: [EXTRATO DO CONTRATO](https://www.diariomunicipal.com.br/amp/materia/02307134) · AMP-PR · 2026-10-08
+
+| Campo | Valor | Trecho do ato |
+| --- | --- | --- |
+| salario | Assistente Legislativo: Não informado no edital | O ato não traz vagas nem salários |
+| salario | Zeladora: Não informado no edital | O ato não traz vagas nem salários |
+| inscricao.inicio | Não informado no edital | não consta no ato |
+| inscricao.fim | Não informado no edital | não consta no ato |
+| prova_objetiva | Não informado no edital | não consta no ato |
+| taxa | Não informado no edital | não consta no ato |
+| banca | Instituto Omni | Contratante: Câmara Municipal de Iporã/PR Contratada: Instituto Omni [...] Data da assinatura: 05/10/2026 |
+| cidade | Iporã (PR) · IBGE 4110607 | concurso público para os cargos de Assistente Legislativo e Cadastro de Reserva da Zeladora (Câmara Municipal de Iporã) |
+| edital | https://www.diariomunicipal.com.br/amp/materia/02307134 | EXTRATO DO CONTRATO Contratante: Câmara Municipal de Iporã/PR |
+
+### Câmara Municipal de Nova Prata do Iguaçu (PR) · `camara-nova-prata-do-iguacu-pr-2026-edital-01`
+
+Ato: [EDITAL DE ABERTURA Nº 01/2026_CONCURSO PÚBLICO Nº 01/2026](https://www.diariomunicipal.com.br/amp/materia/7024F0DC) · AMP-PR · 2026-09-23
+
+| Campo | Valor | Trecho do ato |
+| --- | --- | --- |
+| salario | Advogado: R$ 5.543,88 | 101 Advogado 20h CR - - R$ 5.543,88 180,00 102 Contador 20h CR - - R$ 5.543,88 180,00 103 Tesoureiro 20h CR - - R$ 5.543,88 180,00 [...] 201 Agente Administrativo 40h 01 - - R$ 2.689,59 130,00 202 Auxiliar de Serviços Gerais 40h 01 - - R$ 1.837,03 130,00 203 Técnico em Informática 30h 01 - - R$ 4.331,62 130,00 204 Técnico de Relações Públicas 30h CR - - R$ 6.341,92 130,00 |
+| salario | Contador: R$ 5.543,88 | 101 Advogado 20h CR - - R$ 5.543,88 180,00 102 Contador 20h CR - - R$ 5.543,88 180,00 103 Tesoureiro 20h CR - - R$ 5.543,88 180,00 [...] 201 Agente Administrativo 40h 01 - - R$ 2.689,59 130,00 202 Auxiliar de Serviços Gerais 40h 01 - - R$ 1.837,03 130,00 203 Técnico em Informática 30h 01 - - R$ 4.331,62 130,00 204 Técnico de Relações Públicas 30h CR - - R$ 6.341,92 130,00 |
+| salario | Tesoureiro: R$ 5.543,88 | 101 Advogado 20h CR - - R$ 5.543,88 180,00 102 Contador 20h CR - - R$ 5.543,88 180,00 103 Tesoureiro 20h CR - - R$ 5.543,88 180,00 [...] 201 Agente Administrativo 40h 01 - - R$ 2.689,59 130,00 202 Auxiliar de Serviços Gerais 40h 01 - - R$ 1.837,03 130,00 203 Técnico em Informática 30h 01 - - R$ 4.331,62 130,00 204 Técnico de Relações Públicas 30h CR - - R$ 6.341,92 130,00 |
+| salario | Agente Administrativo: R$ 2.689,59 | 101 Advogado 20h CR - - R$ 5.543,88 180,00 102 Contador 20h CR - - R$ 5.543,88 180,00 103 Tesoureiro 20h CR - - R$ 5.543,88 180,00 [...] 201 Agente Administrativo 40h 01 - - R$ 2.689,59 130,00 202 Auxiliar de Serviços Gerais 40h 01 - - R$ 1.837,03 130,00 203 Técnico em Informática 30h 01 - - R$ 4.331,62 130,00 204 Técnico de Relações Públicas 30h CR - - R$ 6.341,92 130,00 |
+| salario | Auxiliar de Serviços Gerais: R$ 1.837,03 | 101 Advogado 20h CR - - R$ 5.543,88 180,00 102 Contador 20h CR - - R$ 5.543,88 180,00 103 Tesoureiro 20h CR - - R$ 5.543,88 180,00 [...] 201 Agente Administrativo 40h 01 - - R$ 2.689,59 130,00 202 Auxiliar de Serviços Gerais 40h 01 - - R$ 1.837,03 130,00 203 Técnico em Informática 30h 01 - - R$ 4.331,62 130,00 204 Técnico de Relações Públicas 30h CR - - R$ 6.341,92 130,00 |
+| salario | Técnico em Informática: R$ 4.331,62 | 101 Advogado 20h CR - - R$ 5.543,88 180,00 102 Contador 20h CR - - R$ 5.543,88 180,00 103 Tesoureiro 20h CR - - R$ 5.543,88 180,00 [...] 201 Agente Administrativo 40h 01 - - R$ 2.689,59 130,00 202 Auxiliar de Serviços Gerais 40h 01 - - R$ 1.837,03 130,00 203 Técnico em Informática 30h 01 - - R$ 4.331,62 130,00 204 Técnico de Relações Públicas 30h CR - - R$ 6.341,92 130,00 |
+| salario | Técnico de Relações Públicas: R$ 6.341,92 | 101 Advogado 20h CR - - R$ 5.543,88 180,00 102 Contador 20h CR - - R$ 5.543,88 180,00 103 Tesoureiro 20h CR - - R$ 5.543,88 180,00 [...] 201 Agente Administrativo 40h 01 - - R$ 2.689,59 130,00 202 Auxiliar de Serviços Gerais 40h 01 - - R$ 1.837,03 130,00 203 Técnico em Informática 30h 01 - - R$ 4.331,62 130,00 204 Técnico de Relações Públicas 30h CR - - R$ 6.341,92 130,00 |
+| inscricao.inicio | 30/09/2026 | 5.3 O período para a realização das inscrições será a partir das 12h00min do dia 30 de setembro de 2026 |
+| inscricao.fim | 29/10/2026 | às 23h59min do dia 29 de outubro de 2026, observado horário oficial de Brasília/DF, através do endereço eletrônico www.concursosfau.com.br |
+| prova_objetiva | 15/11/2026 | 10.2 A prova objetiva será aplicada na data provável de 15 de novembro de 2026 |
+| taxa | R$ 130,00 a R$ 180,00 | TABELA 3.1 NÍVEL SUPERIOR COMPLETO [...] Taxa de Inscrição (R$) [...] 180,00 [...] TABELA 3.2 NÍVEL MÉDIO/TÉCNICO [...] 130,00 |
+| banca | Fundação de Apoio ao Desenvolvimento da UNICENTRO (FAU) | A Fundação de Apoio ao Desenvolvimento da UNICENTRO e a Câmara Municipal de Nova Prata do Iguaçu [...] entrar em contato com a FAU |
+| cidade | Nova Prata do Iguaçu (PR) · IBGE 4117255 | 10.1 A prova objetiva será aplicada na Cidade de Nova Prata do Iguaçu/Paraná; o concurso destina-se ao quadro de servidores da Câmara Municipal de Nova Prata do Iguaçu |
+| edital | https://www.diariomunicipal.com.br/amp/materia/7024F0DC | EDITAL DE ABERTURA Nº 01/2026 CONCURSO PÚBLICO Nº 01/2026 O Presidente da Câmara Municipal de Nova Prata do Iguaçu – Estado do Paraná |
+
+### Câmara Municipal de Paranaguá (PR) · `camara-paranagua-pr-2026`
+
+Ato: [EXTRATO DE DISPENSA DE LICITAÇÃO N° 08/2026 -](https://www.diariomunicipal.com.br/amp/materia/C90005FC) · AMP-PR · 2026-10-14
+
+| Campo | Valor | Trecho do ato |
+| --- | --- | --- |
+| inscricao.inicio | Não informado no edital | não consta no ato |
+| inscricao.fim | Não informado no edital | não consta no ato |
+| prova_objetiva | Não informado no edital | não consta no ato |
+| taxa | Não informado no edital | não consta no ato |
+| banca | Fundação FAFIPA | Contratante: Câmara Municipal de Paranaguá. Contratada: Fundação de Apoio ao Campus de Paranavaí – [...] FAFIPA |
+| cidade | Paranaguá (PR) · IBGE 4118204 | concurso público destinado ao provimento de cargos efetivos e à formação de cadastro de reserva da Câmara Municipal de Paranaguá |
+| edital | https://www.diariomunicipal.com.br/amp/materia/C90005FC | EXTRATO DE DISPENSA DE LICITAÇÃO N° 08/2026 - COMPRA DIRETA |
+
+### Câmara Municipal de Quatro Barras (PR) · `camara-quatro-barras-pr-2026`
+
+Ato: [CONCURSO PÚBLICO PARA PREENCHIMENTO DE VAGAS](https://www.diariomunicipal.com.br/amp/materia/CB504042) · AMP-PR · 2026-09-25
+
+| Campo | Valor | Trecho do ato |
+| --- | --- | --- |
+| inscricao.inicio | Não informado no edital | não consta no ato |
+| inscricao.fim | Não informado no edital | não consta no ato |
+| prova_objetiva | Não informado no edital | não consta no ato |
+| taxa | Não informado no edital | não consta no ato |
+| banca | Instituto Consulpam | CONTRATANTE: CAMARA MUNICIPAL DE QUATRO BARRAS CONTRATADA: INSTITUTO CONSULPAM CONSULTORIA PÚBLICO PRIVADO |
+| cidade | Quatro Barras (PR) · IBGE 4120804 | CONCURSO PÚBLICO PARA PREENCHIMENTO DE VAGAS DE CARGOS EFETIVOS DA CÂMARA MUNICIPAL DE QUATRO BARRAS – PR |
+| edital | https://www.diariomunicipal.com.br/amp/materia/CB504042 | CONTRATO 16 DISPENSA: 18/2026 |
+
+### Câmara Municipal de Renascença (PR) · `camara-renascenca-pr-2026`
+
+Ato: [RESOLUÇÃO Nº 008, DE 26 DE AGOSTO DE 2026](https://www.diariomunicipal.com.br/amp/materia/1591F1C0) · AMP-PR · 2026-08-27
+
+| Campo | Valor | Trecho do ato |
+| --- | --- | --- |
+| salario | Secretário: Não informado no edital | A resolução lista cargo, escolaridade, carga horária e vagas, sem remuneração |
+| salario | Agente de Apoio: Não informado no edital | A resolução lista cargo, escolaridade, carga horária e vagas, sem remuneração |
+| inscricao.inicio | Não informado no edital | não consta no ato |
+| inscricao.fim | Não informado no edital | não consta no ato |
+| prova_objetiva | Não informado no edital | não consta no ato |
+| taxa | Não informado no edital | não consta no ato |
+| banca | Não informado no edital | não consta no ato |
+| cidade | Renascença (PR) · IBGE 4121604 | concurso público para o provimento de cargos efetivos vagos integrantes do quadro de pessoal do Poder Legislativo (Câmara Municipal de Renascença) |
+| edital | https://www.diariomunicipal.com.br/amp/materia/1591F1C0 | RESOLUÇÃO Nº 008, DE 26 DE AGOSTO DE 2026 [...] AUTORIZA A REALIZAÇÃO DE CONCURSO PÚBLICO |
+
+### Câmara Municipal de Rio Azul (PR) · `camara-rio-azul-pr-2026-edital-01-01`
+
+Ato: [CONCURSO PÚBLICO - EDITAL DE ABERTURA Nº](https://www.diariomunicipal.com.br/amp/materia/64FE0D83) · AMP-PR · 2026-09-25
+
+| Campo | Valor | Trecho do ato |
+| --- | --- | --- |
+| salario | Contador: R$ 5.275,16 | CARGO: Agente de Serviços Operacionais [...] VENCIMENTO: R$ 1.621,00 [...] CARGO: Assistente Legislativo [...] VENCIMENTO: R$ 3.114,03 [...] CARGO: Contador [...] AC: 01 [...] VENCIMENTO: R$ 5.275,16 |
+| salario | Assistente Legislativo: R$ 3.114,03 | CARGO: Agente de Serviços Operacionais [...] VENCIMENTO: R$ 1.621,00 [...] CARGO: Assistente Legislativo [...] VENCIMENTO: R$ 3.114,03 [...] CARGO: Contador [...] AC: 01 [...] VENCIMENTO: R$ 5.275,16 |
+| salario | Agente de Serviços Operacionais: R$ 1.621,00 | CARGO: Agente de Serviços Operacionais [...] VENCIMENTO: R$ 1.621,00 [...] CARGO: Assistente Legislativo [...] VENCIMENTO: R$ 3.114,03 [...] CARGO: Contador [...] AC: 01 [...] VENCIMENTO: R$ 5.275,16 |
+| inscricao.inicio | 05/10/2026 | O período para a realização das inscrições iniciará às 08h do dia 05/10/2026 |
+| inscricao.fim | 26/10/2026 | perdurando até às 23h59min do dia 26/10/2026, observado o horário oficial de Brasília – DF |
+| prova_objetiva | 22/11/2026 | Aplicação da prova objetiva / discursiva 22/11/2026 |
+| taxa | R$ 60,00 a R$ 100,00 | CARGO DE NÍVEL FUNDAMENTAL VALOR DA TAXA DE INSCRIÇÃO: R$ 60,00 [...] CARGO DE NÍVEL MÉDIO VALOR DA TAXA DE INSCRIÇÃO: R$ 80,00 [...] CARGO DE NÍVEL SUPERIOR VALOR DA TAXA DE INSCRIÇÃO: R$ 100,00 |
+| banca | Fundação FAFIPA | 1.1 O Concurso Público a que se refere o presente Edital será executado pela Fundação FAFIPA – Campus de Paranavaí |
+| cidade | Rio Azul (PR) · IBGE 4122008 | será aplicada no Município de Rio Azul, Estado do Paraná; quadro de servidores efetivos do Poder Legislativo Municipal |
+| edital | https://www.diariomunicipal.com.br/amp/materia/64FE0D83 | EDITAL DE ABERTURA N.º 01.01/2026 CONCURSO PÚBLICO Nº 01/2026 A Presidente da Câmara Municipal de Rio Azul, Estado do Paraná |
+
+### Conselho Regional de Engenharia e Agronomia do Paraná (CREA-PR) · `crea-pr-2026-edital-02`
+
+Ato: [EDITAL nº 2, DE 8 de setembro de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=09/09/2026&jornal=530&pagina=117) · DOU · 2026-09-09
+
+| Campo | Valor | Trecho do ato |
+| --- | --- | --- |
+| salario | Agente Profissional – Advogado: R$ 7.234,12 | AGENTE ADMINISTRATIVO [...] Salário de R$ 3.115,75 (40h/s) e R$ 2.336,80 (30h/s) [...] AGENTE PROFISSIONAL DO SISTEMA (NS) [...] Salário mínimo igual à 8,5 salários-mínimos nacional de ingresso [...] AGENTE PROFISSIONAL - Sede - Curitiba; Formação e vagas: Contador CR, Advogado 1 + CR, Analista de Informação CR [...] Salário R$ 7.234,12 [...] Arquiteto e Urbanista CR [...] Salário mínimo igual à 8,5 salários-mínimos nacional de ingresso |
+| salario | Agente Profissional – Contador: R$ 7.234,12 | AGENTE ADMINISTRATIVO [...] Salário de R$ 3.115,75 (40h/s) e R$ 2.336,80 (30h/s) [...] AGENTE PROFISSIONAL DO SISTEMA (NS) [...] Salário mínimo igual à 8,5 salários-mínimos nacional de ingresso [...] AGENTE PROFISSIONAL - Sede - Curitiba; Formação e vagas: Contador CR, Advogado 1 + CR, Analista de Informação CR [...] Salário R$ 7.234,12 [...] Arquiteto e Urbanista CR [...] Salário mínimo igual à 8,5 salários-mínimos nacional de ingresso |
+| salario | Agente Profissional – Analista de Informação: R$ 7.234,12 | AGENTE ADMINISTRATIVO [...] Salário de R$ 3.115,75 (40h/s) e R$ 2.336,80 (30h/s) [...] AGENTE PROFISSIONAL DO SISTEMA (NS) [...] Salário mínimo igual à 8,5 salários-mínimos nacional de ingresso [...] AGENTE PROFISSIONAL - Sede - Curitiba; Formação e vagas: Contador CR, Advogado 1 + CR, Analista de Informação CR [...] Salário R$ 7.234,12 [...] Arquiteto e Urbanista CR [...] Salário mínimo igual à 8,5 salários-mínimos nacional de ingresso |
+| salario | Agente Profissional do Sistema (engenharias e agronomia): Não informado no edital | AGENTE ADMINISTRATIVO [...] Salário de R$ 3.115,75 (40h/s) e R$ 2.336,80 (30h/s) [...] AGENTE PROFISSIONAL DO SISTEMA (NS) [...] Salário mínimo igual à 8,5 salários-mínimos nacional de ingresso [...] AGENTE PROFISSIONAL - Sede - Curitiba; Formação e vagas: Contador CR, Advogado 1 + CR, Analista de Informação CR [...] Salário R$ 7.234,12 [...] Arquiteto e Urbanista CR [...] Salário mínimo igual à 8,5 salários-mínimos nacional de ingresso |
+| salario | Agente Profissional – Arquiteto e Urbanista: Não informado no edital | AGENTE ADMINISTRATIVO [...] Salário de R$ 3.115,75 (40h/s) e R$ 2.336,80 (30h/s) [...] AGENTE PROFISSIONAL DO SISTEMA (NS) [...] Salário mínimo igual à 8,5 salários-mínimos nacional de ingresso [...] AGENTE PROFISSIONAL - Sede - Curitiba; Formação e vagas: Contador CR, Advogado 1 + CR, Analista de Informação CR [...] Salário R$ 7.234,12 [...] Arquiteto e Urbanista CR [...] Salário mínimo igual à 8,5 salários-mínimos nacional de ingresso |
+| salario | Agente Administrativo (40 h): R$ 3.115,75 | AGENTE ADMINISTRATIVO [...] Salário de R$ 3.115,75 (40h/s) e R$ 2.336,80 (30h/s) [...] AGENTE PROFISSIONAL DO SISTEMA (NS) [...] Salário mínimo igual à 8,5 salários-mínimos nacional de ingresso [...] AGENTE PROFISSIONAL - Sede - Curitiba; Formação e vagas: Contador CR, Advogado 1 + CR, Analista de Informação CR [...] Salário R$ 7.234,12 [...] Arquiteto e Urbanista CR [...] Salário mínimo igual à 8,5 salários-mínimos nacional de ingresso |
+| salario | Agente Administrativo (30 h): R$ 2.336,80 | AGENTE ADMINISTRATIVO [...] Salário de R$ 3.115,75 (40h/s) e R$ 2.336,80 (30h/s) [...] AGENTE PROFISSIONAL DO SISTEMA (NS) [...] Salário mínimo igual à 8,5 salários-mínimos nacional de ingresso [...] AGENTE PROFISSIONAL - Sede - Curitiba; Formação e vagas: Contador CR, Advogado 1 + CR, Analista de Informação CR [...] Salário R$ 7.234,12 [...] Arquiteto e Urbanista CR [...] Salário mínimo igual à 8,5 salários-mínimos nacional de ingresso |
+| inscricao.inicio | 10/09/2026 | Inscrições de 10/09/2026 a 15/10/2026 pelo site www.institutounifil.com.br |
+| inscricao.fim | 15/10/2026 | Inscrições de 10/09/2026 a 15/10/2026 pelo site www.institutounifil.com.br |
+| prova_objetiva | 22/11/2026 | Data provável de realização da prova: 22/11/2026 |
+| taxa | R$ 60,00 a R$ 100,00 | Taxa de Inscrição: R$ 60,00 (Agente Administrativo) [...] Taxa de Inscrição: R$ 100,00 (Agente Profissional) |
+| banca | Instituto Filadélfia de Londrina (UniFil) | por intermédio da Organizadora Instituto Filadélfia de Londrina - UniFil |
+| cidade | Curitiba (PR) · IBGE 4106902 | AGENTE ADMINISTRATIVO - Sede e Inspetoria de Curitiba: 5 vagas [...] Pato Branco 1 vaga; Local de prova: Curitiba, Cascavel, Apucarana, Londrina, Maringá, Ponta Grossa, Guarapuava e Pato Branco |
+| edital | http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=09/09/2026&jornal=530&pagina=117 | EDITAL nº 2, DE 8 de setembro de 2026 Concurso Público Para seleção de candidatos para cadastro de reserva O CONSELHO REGIONAL DE ENGENHARIA E AGRONOMIA DO PARANÁ - CREA/PR |
+
+### Conselho Regional de Química da 9ª Região – Paraná (CRQ-IX) · `crq-9-regiao-pr-2026-edital-01`
+
+Ato: [EDITAL Nº 1, DE 18 DE SETEMBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=21/09/2026&jornal=530&pagina=220) · DOU · 2026-09-21
+
+| Campo | Valor | Trecho do ato |
+| --- | --- | --- |
+| salario | Auxiliar Administrativo: Não informado no edital | O aviso lista os cargos (Auxiliar Administrativo; Auxiliar Técnico de Fiscalização; Técnico em Contabilidade; Agente Fiscal; Analista de Informática; Assessor Jurídico e Contador), sem vagas nem salários; o edital normativo está em www.quadrix.org.br |
+| salario | Auxiliar Técnico de Fiscalização: Não informado no edital | O aviso lista os cargos (Auxiliar Administrativo; Auxiliar Técnico de Fiscalização; Técnico em Contabilidade; Agente Fiscal; Analista de Informática; Assessor Jurídico e Contador), sem vagas nem salários; o edital normativo está em www.quadrix.org.br |
+| salario | Técnico em Contabilidade: Não informado no edital | O aviso lista os cargos (Auxiliar Administrativo; Auxiliar Técnico de Fiscalização; Técnico em Contabilidade; Agente Fiscal; Analista de Informática; Assessor Jurídico e Contador), sem vagas nem salários; o edital normativo está em www.quadrix.org.br |
+| salario | Agente Fiscal: Não informado no edital | O aviso lista os cargos (Auxiliar Administrativo; Auxiliar Técnico de Fiscalização; Técnico em Contabilidade; Agente Fiscal; Analista de Informática; Assessor Jurídico e Contador), sem vagas nem salários; o edital normativo está em www.quadrix.org.br |
+| salario | Analista de Informática: Não informado no edital | O aviso lista os cargos (Auxiliar Administrativo; Auxiliar Técnico de Fiscalização; Técnico em Contabilidade; Agente Fiscal; Analista de Informática; Assessor Jurídico e Contador), sem vagas nem salários; o edital normativo está em www.quadrix.org.br |
+| salario | Assessor Jurídico: Não informado no edital | O aviso lista os cargos (Auxiliar Administrativo; Auxiliar Técnico de Fiscalização; Técnico em Contabilidade; Agente Fiscal; Analista de Informática; Assessor Jurídico e Contador), sem vagas nem salários; o edital normativo está em www.quadrix.org.br |
+| salario | Contador: Não informado no edital | O aviso lista os cargos (Auxiliar Administrativo; Auxiliar Técnico de Fiscalização; Técnico em Contabilidade; Agente Fiscal; Analista de Informática; Assessor Jurídico e Contador), sem vagas nem salários; o edital normativo está em www.quadrix.org.br |
+| inscricao.inicio | Não informado no edital | não consta no ato (o aviso só traz o fim das inscrições) |
+| inscricao.fim | 21/10/2026 | Será admitida a inscrição exclusivamente via internet, no endereço eletrônico http://www.quadrix.org.br, até às 23 horas do dia 21 de outubro de 2026 |
+| prova_objetiva | 29/11/2026 | As provas objetivas e discursivas serão realizadas na data de 29 de novembro de 2026 (domingo) nas cidades de Curitiba/PR e Maringá/PR |
+| taxa | R$ 62,00 a R$ 66,00 | R$ 62,00 para o cargo de nível médio; R$ 64,00 para os cargos de nível técnico; e R$ 66,00 para os cargos de nível superior |
+| banca | Instituto Quadrix | O concurso público será realizado sob a responsabilidade do Instituto Quadrix |
+| cidade | Curitiba (PR) · IBGE 4106902 | As fases do concurso público serão realizadas nas cidades de Curitiba/PR e Maringá/PR (o aviso não diz a cidade de lotação) |
+| edital | http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=21/09/2026&jornal=530&pagina=220 | EDITAL Nº 1, DE 18 DE SETEMBRO DE 2026 CONCURSO PÚBLICO [...] CONSELHO REGIONAL DE QUÍMICA DA 9ª REGIÃO - CRQ - 9ª REGIÃO - PARANÁ |
+
+### Prefeitura de Califórnia (PR) · `prefeitura-california-pr-2026`
+
+Ato: [DECRETO Nº 170/2026](https://www.diariomunicipal.com.br/amp/materia/8EA31230) · AMP-PR · 2026-07-20
+
+| Campo | Valor | Trecho do ato |
+| --- | --- | --- |
+| salario | Advogado: Não informado no edital | O decreto lista cargos, carga horária, escolaridade e vagas, sem remuneração |
+| salario | Agente de Defesa Civil: Não informado no edital | O decreto lista cargos, carga horária, escolaridade e vagas, sem remuneração |
+| salario | Assistente Social: Não informado no edital | O decreto lista cargos, carga horária, escolaridade e vagas, sem remuneração |
+| salario | Auxiliar Administrativo: Não informado no edital | O decreto lista cargos, carga horária, escolaridade e vagas, sem remuneração |
+| salario | Auxiliar de Cuidados Dentários: Não informado no edital | O decreto lista cargos, carga horária, escolaridade e vagas, sem remuneração |
+| salario | Auxiliar de Farmácia: Não informado no edital | O decreto lista cargos, carga horária, escolaridade e vagas, sem remuneração |
+| salario | Auxiliar de Serviços Gerais: Não informado no edital | O decreto lista cargos, carga horária, escolaridade e vagas, sem remuneração |
+| salario | Auxiliar de Mecânico: Não informado no edital | O decreto lista cargos, carga horária, escolaridade e vagas, sem remuneração |
+| salario | Borracheiro: Não informado no edital | O decreto lista cargos, carga horária, escolaridade e vagas, sem remuneração |
+| salario | Contador: Não informado no edital | O decreto lista cargos, carga horária, escolaridade e vagas, sem remuneração |
+| salario | Coveiro: Não informado no edital | O decreto lista cargos, carga horária, escolaridade e vagas, sem remuneração |
+| salario | Eletricista: Não informado no edital | O decreto lista cargos, carga horária, escolaridade e vagas, sem remuneração |
+| salario | Enfermeiro: Não informado no edital | O decreto lista cargos, carga horária, escolaridade e vagas, sem remuneração |
+| salario | Enfermeiro (12x36): Não informado no edital | O decreto lista cargos, carga horária, escolaridade e vagas, sem remuneração |
+| salario | Engenheiro Civil: Não informado no edital | O decreto lista cargos, carga horária, escolaridade e vagas, sem remuneração |
+| salario | Escriturário: Não informado no edital | O decreto lista cargos, carga horária, escolaridade e vagas, sem remuneração |
+| salario | Farmacêutico: Não informado no edital | O decreto lista cargos, carga horária, escolaridade e vagas, sem remuneração |
+| salario | Fiscal de Tributos: Não informado no edital | O decreto lista cargos, carga horária, escolaridade e vagas, sem remuneração |
+| salario | Fisioterapeuta: Não informado no edital | O decreto lista cargos, carga horária, escolaridade e vagas, sem remuneração |
+| salario | Fonoaudióloga: Não informado no edital | O decreto lista cargos, carga horária, escolaridade e vagas, sem remuneração |
+| salario | Gari: Não informado no edital | O decreto lista cargos, carga horária, escolaridade e vagas, sem remuneração |
+| salario | Mecânico: Não informado no edital | O decreto lista cargos, carga horária, escolaridade e vagas, sem remuneração |
+| salario | Monitor Educacional: Não informado no edital | O decreto lista cargos, carga horária, escolaridade e vagas, sem remuneração |
+| salario | Motorista: Não informado no edital | O decreto lista cargos, carga horária, escolaridade e vagas, sem remuneração |
+| salario | Nutricionista: Não informado no edital | O decreto lista cargos, carga horária, escolaridade e vagas, sem remuneração |
+| salario | Operador de Máquinas: Não informado no edital | O decreto lista cargos, carga horária, escolaridade e vagas, sem remuneração |
+| salario | Pedreiro: Não informado no edital | O decreto lista cargos, carga horária, escolaridade e vagas, sem remuneração |
+| salario | Professor I: Não informado no edital | O decreto lista cargos, carga horária, escolaridade e vagas, sem remuneração |
+| salario | Psicólogo: Não informado no edital | O decreto lista cargos, carga horária, escolaridade e vagas, sem remuneração |
+| salario | Psicopedagogo: Não informado no edital | O decreto lista cargos, carga horária, escolaridade e vagas, sem remuneração |
+| salario | Técnico de Contabilidade: Não informado no edital | O decreto lista cargos, carga horária, escolaridade e vagas, sem remuneração |
+| salario | Técnico de Enfermagem: Não informado no edital | O decreto lista cargos, carga horária, escolaridade e vagas, sem remuneração |
+| salario | Técnico de Enfermagem (12x36): Não informado no edital | O decreto lista cargos, carga horária, escolaridade e vagas, sem remuneração |
+| salario | Técnico em Agropecuária: Não informado no edital | O decreto lista cargos, carga horária, escolaridade e vagas, sem remuneração |
+| salario | Técnico em Segurança do Trabalho: Não informado no edital | O decreto lista cargos, carga horária, escolaridade e vagas, sem remuneração |
+| salario | Técnico em Vigilância Sanitária: Não informado no edital | O decreto lista cargos, carga horária, escolaridade e vagas, sem remuneração |
+| salario | Vigia: Não informado no edital | O decreto lista cargos, carga horária, escolaridade e vagas, sem remuneração |
+| inscricao.inicio | Não informado no edital | não consta no ato |
+| inscricao.fim | Não informado no edital | não consta no ato |
+| prova_objetiva | Não informado no edital | não consta no ato |
+| taxa | Não informado no edital | não consta no ato |
+| banca | Não informado no edital | licitação anulada em 28/08/2026 (Pregão Eletrônico nº 35/2026); banca não contratada |
+| cidade | Califórnia (PR) · IBGE 4103503 | PREFEITURA MUNICIPAL DE CALIFÓRNIA [...] provimento de cargos públicos municipais |
+| edital | https://www.diariomunicipal.com.br/amp/materia/8EA31230 | DECRETO Nº 170/2026 SÚMULA: Autoriza a abertura de Concurso Público para provimento de cargos públicos municipais e formação de Cadastro de Reserva |
+
+### Prefeitura de Nova Prata do Iguaçu (PR) · `prefeitura-nova-prata-do-iguacu-pr-2026-edital-01`
+
+Ato: [EDITAL DE ABERTURA Nº 01/2026 - CONCURSO PÚBLICO Nº 01/2026](https://www.diariomunicipal.com.br/amp/materia/B81AACEE) · AMP-PR · 2026-09-23
+
+| Campo | Valor | Trecho do ato |
+| --- | --- | --- |
+| salario | Médico (ESF): R$ 12.823,98 | 101 Engenheiro Civil 40h 01 + CR - - R$ 6.781,02 [...] 102 Farmacêutico 40h CR - - R$ 6.397,87 [...] 103 Médico 30h 03 + CR - - R$ 11.541,58 [...] 104 Médico (ESF) 40h 03 + CR - - R$ 12.823,98 [...] 105 Pedagoga 40h 01 + CR - - R$ 3.611,46 [...] 106 Terapeuta Ocupacional 20h 02 + CR - - R$ 3.611,46 [...] 201 Agente Administrativo 40h 08 +CR 01 01 R$ 1.950,21 [...] 202 Agente Comunitário de Saúde 40h 04 +CR 01 01 R$ 2.048,74 [...] 205 Professor 20h 29 +CR 02 04 R$ 1.863,49 (5) [...] 206 Técnico em Enfermagem 40h 02 +CR - 01 R$ 2.359,78 (4) [...] 207 Técnico em Higiene Dental 40h 01 +CR - - R$ 2.145,25 [...] 208 Técnico de Manutenção de Computadores e Rede 40h 01 +CR - - R$ 3.059,14 [...] 301 Auxiliar de Serviços Gerais 40h 12 +CR 01 02 R$ 1.619,19 [...] 401 Motorista 40h 04 +CR 01 01 R$ 2.607,76 [...] 402 Operador de Máquinas 40h 03 +CR - 01 R$ 3.155,41 [...] 403 Serviços Braçais 40h 02 +CR - 01 R$ 1.781,11 (colunas: vagas ampla concorrência, PcD, afro; na Tabela 3.2 o texto extraído passa do código 202 para o 205) \| Retificação de 08/10/2026 (LEIA-SE): 202 Agente Comunitário de Saúde 40h 05 +CR - 01; 206 Técnico em Enfermagem 40h 03 +CR - -; 401 Motorista 40h 05 +CR - 01; 402 Operador de Máquinas 40h 04 +CR - -; 403 Serviços Braçais 40h 03 +CR - - |
+| salario | Médico: R$ 11.541,58 | 101 Engenheiro Civil 40h 01 + CR - - R$ 6.781,02 [...] 102 Farmacêutico 40h CR - - R$ 6.397,87 [...] 103 Médico 30h 03 + CR - - R$ 11.541,58 [...] 104 Médico (ESF) 40h 03 + CR - - R$ 12.823,98 [...] 105 Pedagoga 40h 01 + CR - - R$ 3.611,46 [...] 106 Terapeuta Ocupacional 20h 02 + CR - - R$ 3.611,46 [...] 201 Agente Administrativo 40h 08 +CR 01 01 R$ 1.950,21 [...] 202 Agente Comunitário de Saúde 40h 04 +CR 01 01 R$ 2.048,74 [...] 205 Professor 20h 29 +CR 02 04 R$ 1.863,49 (5) [...] 206 Técnico em Enfermagem 40h 02 +CR - 01 R$ 2.359,78 (4) [...] 207 Técnico em Higiene Dental 40h 01 +CR - - R$ 2.145,25 [...] 208 Técnico de Manutenção de Computadores e Rede 40h 01 +CR - - R$ 3.059,14 [...] 301 Auxiliar de Serviços Gerais 40h 12 +CR 01 02 R$ 1.619,19 [...] 401 Motorista 40h 04 +CR 01 01 R$ 2.607,76 [...] 402 Operador de Máquinas 40h 03 +CR - 01 R$ 3.155,41 [...] 403 Serviços Braçais 40h 02 +CR - 01 R$ 1.781,11 (colunas: vagas ampla concorrência, PcD, afro; na Tabela 3.2 o texto extraído passa do código 202 para o 205) \| Retificação de 08/10/2026 (LEIA-SE): 202 Agente Comunitário de Saúde 40h 05 +CR - 01; 206 Técnico em Enfermagem 40h 03 +CR - -; 401 Motorista 40h 05 +CR - 01; 402 Operador de Máquinas 40h 04 +CR - -; 403 Serviços Braçais 40h 03 +CR - - |
+| salario | Engenheiro Civil: R$ 6.781,02 | 101 Engenheiro Civil 40h 01 + CR - - R$ 6.781,02 [...] 102 Farmacêutico 40h CR - - R$ 6.397,87 [...] 103 Médico 30h 03 + CR - - R$ 11.541,58 [...] 104 Médico (ESF) 40h 03 + CR - - R$ 12.823,98 [...] 105 Pedagoga 40h 01 + CR - - R$ 3.611,46 [...] 106 Terapeuta Ocupacional 20h 02 + CR - - R$ 3.611,46 [...] 201 Agente Administrativo 40h 08 +CR 01 01 R$ 1.950,21 [...] 202 Agente Comunitário de Saúde 40h 04 +CR 01 01 R$ 2.048,74 [...] 205 Professor 20h 29 +CR 02 04 R$ 1.863,49 (5) [...] 206 Técnico em Enfermagem 40h 02 +CR - 01 R$ 2.359,78 (4) [...] 207 Técnico em Higiene Dental 40h 01 +CR - - R$ 2.145,25 [...] 208 Técnico de Manutenção de Computadores e Rede 40h 01 +CR - - R$ 3.059,14 [...] 301 Auxiliar de Serviços Gerais 40h 12 +CR 01 02 R$ 1.619,19 [...] 401 Motorista 40h 04 +CR 01 01 R$ 2.607,76 [...] 402 Operador de Máquinas 40h 03 +CR - 01 R$ 3.155,41 [...] 403 Serviços Braçais 40h 02 +CR - 01 R$ 1.781,11 (colunas: vagas ampla concorrência, PcD, afro; na Tabela 3.2 o texto extraído passa do código 202 para o 205) \| Retificação de 08/10/2026 (LEIA-SE): 202 Agente Comunitário de Saúde 40h 05 +CR - 01; 206 Técnico em Enfermagem 40h 03 +CR - -; 401 Motorista 40h 05 +CR - 01; 402 Operador de Máquinas 40h 04 +CR - -; 403 Serviços Braçais 40h 03 +CR - - |
+| salario | Farmacêutico: R$ 6.397,87 | 101 Engenheiro Civil 40h 01 + CR - - R$ 6.781,02 [...] 102 Farmacêutico 40h CR - - R$ 6.397,87 [...] 103 Médico 30h 03 + CR - - R$ 11.541,58 [...] 104 Médico (ESF) 40h 03 + CR - - R$ 12.823,98 [...] 105 Pedagoga 40h 01 + CR - - R$ 3.611,46 [...] 106 Terapeuta Ocupacional 20h 02 + CR - - R$ 3.611,46 [...] 201 Agente Administrativo 40h 08 +CR 01 01 R$ 1.950,21 [...] 202 Agente Comunitário de Saúde 40h 04 +CR 01 01 R$ 2.048,74 [...] 205 Professor 20h 29 +CR 02 04 R$ 1.863,49 (5) [...] 206 Técnico em Enfermagem 40h 02 +CR - 01 R$ 2.359,78 (4) [...] 207 Técnico em Higiene Dental 40h 01 +CR - - R$ 2.145,25 [...] 208 Técnico de Manutenção de Computadores e Rede 40h 01 +CR - - R$ 3.059,14 [...] 301 Auxiliar de Serviços Gerais 40h 12 +CR 01 02 R$ 1.619,19 [...] 401 Motorista 40h 04 +CR 01 01 R$ 2.607,76 [...] 402 Operador de Máquinas 40h 03 +CR - 01 R$ 3.155,41 [...] 403 Serviços Braçais 40h 02 +CR - 01 R$ 1.781,11 (colunas: vagas ampla concorrência, PcD, afro; na Tabela 3.2 o texto extraído passa do código 202 para o 205) \| Retificação de 08/10/2026 (LEIA-SE): 202 Agente Comunitário de Saúde 40h 05 +CR - 01; 206 Técnico em Enfermagem 40h 03 +CR - -; 401 Motorista 40h 05 +CR - 01; 402 Operador de Máquinas 40h 04 +CR - -; 403 Serviços Braçais 40h 03 +CR - - |
+| salario | Pedagoga: R$ 3.611,46 | 101 Engenheiro Civil 40h 01 + CR - - R$ 6.781,02 [...] 102 Farmacêutico 40h CR - - R$ 6.397,87 [...] 103 Médico 30h 03 + CR - - R$ 11.541,58 [...] 104 Médico (ESF) 40h 03 + CR - - R$ 12.823,98 [...] 105 Pedagoga 40h 01 + CR - - R$ 3.611,46 [...] 106 Terapeuta Ocupacional 20h 02 + CR - - R$ 3.611,46 [...] 201 Agente Administrativo 40h 08 +CR 01 01 R$ 1.950,21 [...] 202 Agente Comunitário de Saúde 40h 04 +CR 01 01 R$ 2.048,74 [...] 205 Professor 20h 29 +CR 02 04 R$ 1.863,49 (5) [...] 206 Técnico em Enfermagem 40h 02 +CR - 01 R$ 2.359,78 (4) [...] 207 Técnico em Higiene Dental 40h 01 +CR - - R$ 2.145,25 [...] 208 Técnico de Manutenção de Computadores e Rede 40h 01 +CR - - R$ 3.059,14 [...] 301 Auxiliar de Serviços Gerais 40h 12 +CR 01 02 R$ 1.619,19 [...] 401 Motorista 40h 04 +CR 01 01 R$ 2.607,76 [...] 402 Operador de Máquinas 40h 03 +CR - 01 R$ 3.155,41 [...] 403 Serviços Braçais 40h 02 +CR - 01 R$ 1.781,11 (colunas: vagas ampla concorrência, PcD, afro; na Tabela 3.2 o texto extraído passa do código 202 para o 205) \| Retificação de 08/10/2026 (LEIA-SE): 202 Agente Comunitário de Saúde 40h 05 +CR - 01; 206 Técnico em Enfermagem 40h 03 +CR - -; 401 Motorista 40h 05 +CR - 01; 402 Operador de Máquinas 40h 04 +CR - -; 403 Serviços Braçais 40h 03 +CR - - |
+| salario | Terapeuta Ocupacional: R$ 3.611,46 | 101 Engenheiro Civil 40h 01 + CR - - R$ 6.781,02 [...] 102 Farmacêutico 40h CR - - R$ 6.397,87 [...] 103 Médico 30h 03 + CR - - R$ 11.541,58 [...] 104 Médico (ESF) 40h 03 + CR - - R$ 12.823,98 [...] 105 Pedagoga 40h 01 + CR - - R$ 3.611,46 [...] 106 Terapeuta Ocupacional 20h 02 + CR - - R$ 3.611,46 [...] 201 Agente Administrativo 40h 08 +CR 01 01 R$ 1.950,21 [...] 202 Agente Comunitário de Saúde 40h 04 +CR 01 01 R$ 2.048,74 [...] 205 Professor 20h 29 +CR 02 04 R$ 1.863,49 (5) [...] 206 Técnico em Enfermagem 40h 02 +CR - 01 R$ 2.359,78 (4) [...] 207 Técnico em Higiene Dental 40h 01 +CR - - R$ 2.145,25 [...] 208 Técnico de Manutenção de Computadores e Rede 40h 01 +CR - - R$ 3.059,14 [...] 301 Auxiliar de Serviços Gerais 40h 12 +CR 01 02 R$ 1.619,19 [...] 401 Motorista 40h 04 +CR 01 01 R$ 2.607,76 [...] 402 Operador de Máquinas 40h 03 +CR - 01 R$ 3.155,41 [...] 403 Serviços Braçais 40h 02 +CR - 01 R$ 1.781,11 (colunas: vagas ampla concorrência, PcD, afro; na Tabela 3.2 o texto extraído passa do código 202 para o 205) \| Retificação de 08/10/2026 (LEIA-SE): 202 Agente Comunitário de Saúde 40h 05 +CR - 01; 206 Técnico em Enfermagem 40h 03 +CR - -; 401 Motorista 40h 05 +CR - 01; 402 Operador de Máquinas 40h 04 +CR - -; 403 Serviços Braçais 40h 03 +CR - - |
+| salario | Técnico de Manutenção de Computadores e Rede: R$ 3.059,14 | 101 Engenheiro Civil 40h 01 + CR - - R$ 6.781,02 [...] 102 Farmacêutico 40h CR - - R$ 6.397,87 [...] 103 Médico 30h 03 + CR - - R$ 11.541,58 [...] 104 Médico (ESF) 40h 03 + CR - - R$ 12.823,98 [...] 105 Pedagoga 40h 01 + CR - - R$ 3.611,46 [...] 106 Terapeuta Ocupacional 20h 02 + CR - - R$ 3.611,46 [...] 201 Agente Administrativo 40h 08 +CR 01 01 R$ 1.950,21 [...] 202 Agente Comunitário de Saúde 40h 04 +CR 01 01 R$ 2.048,74 [...] 205 Professor 20h 29 +CR 02 04 R$ 1.863,49 (5) [...] 206 Técnico em Enfermagem 40h 02 +CR - 01 R$ 2.359,78 (4) [...] 207 Técnico em Higiene Dental 40h 01 +CR - - R$ 2.145,25 [...] 208 Técnico de Manutenção de Computadores e Rede 40h 01 +CR - - R$ 3.059,14 [...] 301 Auxiliar de Serviços Gerais 40h 12 +CR 01 02 R$ 1.619,19 [...] 401 Motorista 40h 04 +CR 01 01 R$ 2.607,76 [...] 402 Operador de Máquinas 40h 03 +CR - 01 R$ 3.155,41 [...] 403 Serviços Braçais 40h 02 +CR - 01 R$ 1.781,11 (colunas: vagas ampla concorrência, PcD, afro; na Tabela 3.2 o texto extraído passa do código 202 para o 205) \| Retificação de 08/10/2026 (LEIA-SE): 202 Agente Comunitário de Saúde 40h 05 +CR - 01; 206 Técnico em Enfermagem 40h 03 +CR - -; 401 Motorista 40h 05 +CR - 01; 402 Operador de Máquinas 40h 04 +CR - -; 403 Serviços Braçais 40h 03 +CR - - |
+| salario | Técnico em Enfermagem: R$ 2.359,78 | 101 Engenheiro Civil 40h 01 + CR - - R$ 6.781,02 [...] 102 Farmacêutico 40h CR - - R$ 6.397,87 [...] 103 Médico 30h 03 + CR - - R$ 11.541,58 [...] 104 Médico (ESF) 40h 03 + CR - - R$ 12.823,98 [...] 105 Pedagoga 40h 01 + CR - - R$ 3.611,46 [...] 106 Terapeuta Ocupacional 20h 02 + CR - - R$ 3.611,46 [...] 201 Agente Administrativo 40h 08 +CR 01 01 R$ 1.950,21 [...] 202 Agente Comunitário de Saúde 40h 04 +CR 01 01 R$ 2.048,74 [...] 205 Professor 20h 29 +CR 02 04 R$ 1.863,49 (5) [...] 206 Técnico em Enfermagem 40h 02 +CR - 01 R$ 2.359,78 (4) [...] 207 Técnico em Higiene Dental 40h 01 +CR - - R$ 2.145,25 [...] 208 Técnico de Manutenção de Computadores e Rede 40h 01 +CR - - R$ 3.059,14 [...] 301 Auxiliar de Serviços Gerais 40h 12 +CR 01 02 R$ 1.619,19 [...] 401 Motorista 40h 04 +CR 01 01 R$ 2.607,76 [...] 402 Operador de Máquinas 40h 03 +CR - 01 R$ 3.155,41 [...] 403 Serviços Braçais 40h 02 +CR - 01 R$ 1.781,11 (colunas: vagas ampla concorrência, PcD, afro; na Tabela 3.2 o texto extraído passa do código 202 para o 205) \| Retificação de 08/10/2026 (LEIA-SE): 202 Agente Comunitário de Saúde 40h 05 +CR - 01; 206 Técnico em Enfermagem 40h 03 +CR - -; 401 Motorista 40h 05 +CR - 01; 402 Operador de Máquinas 40h 04 +CR - -; 403 Serviços Braçais 40h 03 +CR - - |
+| salario | Técnico em Higiene Dental: R$ 2.145,25 | 101 Engenheiro Civil 40h 01 + CR - - R$ 6.781,02 [...] 102 Farmacêutico 40h CR - - R$ 6.397,87 [...] 103 Médico 30h 03 + CR - - R$ 11.541,58 [...] 104 Médico (ESF) 40h 03 + CR - - R$ 12.823,98 [...] 105 Pedagoga 40h 01 + CR - - R$ 3.611,46 [...] 106 Terapeuta Ocupacional 20h 02 + CR - - R$ 3.611,46 [...] 201 Agente Administrativo 40h 08 +CR 01 01 R$ 1.950,21 [...] 202 Agente Comunitário de Saúde 40h 04 +CR 01 01 R$ 2.048,74 [...] 205 Professor 20h 29 +CR 02 04 R$ 1.863,49 (5) [...] 206 Técnico em Enfermagem 40h 02 +CR - 01 R$ 2.359,78 (4) [...] 207 Técnico em Higiene Dental 40h 01 +CR - - R$ 2.145,25 [...] 208 Técnico de Manutenção de Computadores e Rede 40h 01 +CR - - R$ 3.059,14 [...] 301 Auxiliar de Serviços Gerais 40h 12 +CR 01 02 R$ 1.619,19 [...] 401 Motorista 40h 04 +CR 01 01 R$ 2.607,76 [...] 402 Operador de Máquinas 40h 03 +CR - 01 R$ 3.155,41 [...] 403 Serviços Braçais 40h 02 +CR - 01 R$ 1.781,11 (colunas: vagas ampla concorrência, PcD, afro; na Tabela 3.2 o texto extraído passa do código 202 para o 205) \| Retificação de 08/10/2026 (LEIA-SE): 202 Agente Comunitário de Saúde 40h 05 +CR - 01; 206 Técnico em Enfermagem 40h 03 +CR - -; 401 Motorista 40h 05 +CR - 01; 402 Operador de Máquinas 40h 04 +CR - -; 403 Serviços Braçais 40h 03 +CR - - |
+| salario | Agente Comunitário de Saúde: R$ 2.048,74 | 101 Engenheiro Civil 40h 01 + CR - - R$ 6.781,02 [...] 102 Farmacêutico 40h CR - - R$ 6.397,87 [...] 103 Médico 30h 03 + CR - - R$ 11.541,58 [...] 104 Médico (ESF) 40h 03 + CR - - R$ 12.823,98 [...] 105 Pedagoga 40h 01 + CR - - R$ 3.611,46 [...] 106 Terapeuta Ocupacional 20h 02 + CR - - R$ 3.611,46 [...] 201 Agente Administrativo 40h 08 +CR 01 01 R$ 1.950,21 [...] 202 Agente Comunitário de Saúde 40h 04 +CR 01 01 R$ 2.048,74 [...] 205 Professor 20h 29 +CR 02 04 R$ 1.863,49 (5) [...] 206 Técnico em Enfermagem 40h 02 +CR - 01 R$ 2.359,78 (4) [...] 207 Técnico em Higiene Dental 40h 01 +CR - - R$ 2.145,25 [...] 208 Técnico de Manutenção de Computadores e Rede 40h 01 +CR - - R$ 3.059,14 [...] 301 Auxiliar de Serviços Gerais 40h 12 +CR 01 02 R$ 1.619,19 [...] 401 Motorista 40h 04 +CR 01 01 R$ 2.607,76 [...] 402 Operador de Máquinas 40h 03 +CR - 01 R$ 3.155,41 [...] 403 Serviços Braçais 40h 02 +CR - 01 R$ 1.781,11 (colunas: vagas ampla concorrência, PcD, afro; na Tabela 3.2 o texto extraído passa do código 202 para o 205) \| Retificação de 08/10/2026 (LEIA-SE): 202 Agente Comunitário de Saúde 40h 05 +CR - 01; 206 Técnico em Enfermagem 40h 03 +CR - -; 401 Motorista 40h 05 +CR - 01; 402 Operador de Máquinas 40h 04 +CR - -; 403 Serviços Braçais 40h 03 +CR - - |
+| salario | Agente Administrativo: R$ 1.950,21 | 101 Engenheiro Civil 40h 01 + CR - - R$ 6.781,02 [...] 102 Farmacêutico 40h CR - - R$ 6.397,87 [...] 103 Médico 30h 03 + CR - - R$ 11.541,58 [...] 104 Médico (ESF) 40h 03 + CR - - R$ 12.823,98 [...] 105 Pedagoga 40h 01 + CR - - R$ 3.611,46 [...] 106 Terapeuta Ocupacional 20h 02 + CR - - R$ 3.611,46 [...] 201 Agente Administrativo 40h 08 +CR 01 01 R$ 1.950,21 [...] 202 Agente Comunitário de Saúde 40h 04 +CR 01 01 R$ 2.048,74 [...] 205 Professor 20h 29 +CR 02 04 R$ 1.863,49 (5) [...] 206 Técnico em Enfermagem 40h 02 +CR - 01 R$ 2.359,78 (4) [...] 207 Técnico em Higiene Dental 40h 01 +CR - - R$ 2.145,25 [...] 208 Técnico de Manutenção de Computadores e Rede 40h 01 +CR - - R$ 3.059,14 [...] 301 Auxiliar de Serviços Gerais 40h 12 +CR 01 02 R$ 1.619,19 [...] 401 Motorista 40h 04 +CR 01 01 R$ 2.607,76 [...] 402 Operador de Máquinas 40h 03 +CR - 01 R$ 3.155,41 [...] 403 Serviços Braçais 40h 02 +CR - 01 R$ 1.781,11 (colunas: vagas ampla concorrência, PcD, afro; na Tabela 3.2 o texto extraído passa do código 202 para o 205) \| Retificação de 08/10/2026 (LEIA-SE): 202 Agente Comunitário de Saúde 40h 05 +CR - 01; 206 Técnico em Enfermagem 40h 03 +CR - -; 401 Motorista 40h 05 +CR - 01; 402 Operador de Máquinas 40h 04 +CR - -; 403 Serviços Braçais 40h 03 +CR - - |
+| salario | Professor: R$ 1.863,49 | 101 Engenheiro Civil 40h 01 + CR - - R$ 6.781,02 [...] 102 Farmacêutico 40h CR - - R$ 6.397,87 [...] 103 Médico 30h 03 + CR - - R$ 11.541,58 [...] 104 Médico (ESF) 40h 03 + CR - - R$ 12.823,98 [...] 105 Pedagoga 40h 01 + CR - - R$ 3.611,46 [...] 106 Terapeuta Ocupacional 20h 02 + CR - - R$ 3.611,46 [...] 201 Agente Administrativo 40h 08 +CR 01 01 R$ 1.950,21 [...] 202 Agente Comunitário de Saúde 40h 04 +CR 01 01 R$ 2.048,74 [...] 205 Professor 20h 29 +CR 02 04 R$ 1.863,49 (5) [...] 206 Técnico em Enfermagem 40h 02 +CR - 01 R$ 2.359,78 (4) [...] 207 Técnico em Higiene Dental 40h 01 +CR - - R$ 2.145,25 [...] 208 Técnico de Manutenção de Computadores e Rede 40h 01 +CR - - R$ 3.059,14 [...] 301 Auxiliar de Serviços Gerais 40h 12 +CR 01 02 R$ 1.619,19 [...] 401 Motorista 40h 04 +CR 01 01 R$ 2.607,76 [...] 402 Operador de Máquinas 40h 03 +CR - 01 R$ 3.155,41 [...] 403 Serviços Braçais 40h 02 +CR - 01 R$ 1.781,11 (colunas: vagas ampla concorrência, PcD, afro; na Tabela 3.2 o texto extraído passa do código 202 para o 205) \| Retificação de 08/10/2026 (LEIA-SE): 202 Agente Comunitário de Saúde 40h 05 +CR - 01; 206 Técnico em Enfermagem 40h 03 +CR - -; 401 Motorista 40h 05 +CR - 01; 402 Operador de Máquinas 40h 04 +CR - -; 403 Serviços Braçais 40h 03 +CR - - |
+| salario | Operador de Máquinas: R$ 3.155,41 | 101 Engenheiro Civil 40h 01 + CR - - R$ 6.781,02 [...] 102 Farmacêutico 40h CR - - R$ 6.397,87 [...] 103 Médico 30h 03 + CR - - R$ 11.541,58 [...] 104 Médico (ESF) 40h 03 + CR - - R$ 12.823,98 [...] 105 Pedagoga 40h 01 + CR - - R$ 3.611,46 [...] 106 Terapeuta Ocupacional 20h 02 + CR - - R$ 3.611,46 [...] 201 Agente Administrativo 40h 08 +CR 01 01 R$ 1.950,21 [...] 202 Agente Comunitário de Saúde 40h 04 +CR 01 01 R$ 2.048,74 [...] 205 Professor 20h 29 +CR 02 04 R$ 1.863,49 (5) [...] 206 Técnico em Enfermagem 40h 02 +CR - 01 R$ 2.359,78 (4) [...] 207 Técnico em Higiene Dental 40h 01 +CR - - R$ 2.145,25 [...] 208 Técnico de Manutenção de Computadores e Rede 40h 01 +CR - - R$ 3.059,14 [...] 301 Auxiliar de Serviços Gerais 40h 12 +CR 01 02 R$ 1.619,19 [...] 401 Motorista 40h 04 +CR 01 01 R$ 2.607,76 [...] 402 Operador de Máquinas 40h 03 +CR - 01 R$ 3.155,41 [...] 403 Serviços Braçais 40h 02 +CR - 01 R$ 1.781,11 (colunas: vagas ampla concorrência, PcD, afro; na Tabela 3.2 o texto extraído passa do código 202 para o 205) \| Retificação de 08/10/2026 (LEIA-SE): 202 Agente Comunitário de Saúde 40h 05 +CR - 01; 206 Técnico em Enfermagem 40h 03 +CR - -; 401 Motorista 40h 05 +CR - 01; 402 Operador de Máquinas 40h 04 +CR - -; 403 Serviços Braçais 40h 03 +CR - - |
+| salario | Motorista: R$ 2.607,76 | 101 Engenheiro Civil 40h 01 + CR - - R$ 6.781,02 [...] 102 Farmacêutico 40h CR - - R$ 6.397,87 [...] 103 Médico 30h 03 + CR - - R$ 11.541,58 [...] 104 Médico (ESF) 40h 03 + CR - - R$ 12.823,98 [...] 105 Pedagoga 40h 01 + CR - - R$ 3.611,46 [...] 106 Terapeuta Ocupacional 20h 02 + CR - - R$ 3.611,46 [...] 201 Agente Administrativo 40h 08 +CR 01 01 R$ 1.950,21 [...] 202 Agente Comunitário de Saúde 40h 04 +CR 01 01 R$ 2.048,74 [...] 205 Professor 20h 29 +CR 02 04 R$ 1.863,49 (5) [...] 206 Técnico em Enfermagem 40h 02 +CR - 01 R$ 2.359,78 (4) [...] 207 Técnico em Higiene Dental 40h 01 +CR - - R$ 2.145,25 [...] 208 Técnico de Manutenção de Computadores e Rede 40h 01 +CR - - R$ 3.059,14 [...] 301 Auxiliar de Serviços Gerais 40h 12 +CR 01 02 R$ 1.619,19 [...] 401 Motorista 40h 04 +CR 01 01 R$ 2.607,76 [...] 402 Operador de Máquinas 40h 03 +CR - 01 R$ 3.155,41 [...] 403 Serviços Braçais 40h 02 +CR - 01 R$ 1.781,11 (colunas: vagas ampla concorrência, PcD, afro; na Tabela 3.2 o texto extraído passa do código 202 para o 205) \| Retificação de 08/10/2026 (LEIA-SE): 202 Agente Comunitário de Saúde 40h 05 +CR - 01; 206 Técnico em Enfermagem 40h 03 +CR - -; 401 Motorista 40h 05 +CR - 01; 402 Operador de Máquinas 40h 04 +CR - -; 403 Serviços Braçais 40h 03 +CR - - |
+| salario | Serviços Braçais: R$ 1.781,11 | 101 Engenheiro Civil 40h 01 + CR - - R$ 6.781,02 [...] 102 Farmacêutico 40h CR - - R$ 6.397,87 [...] 103 Médico 30h 03 + CR - - R$ 11.541,58 [...] 104 Médico (ESF) 40h 03 + CR - - R$ 12.823,98 [...] 105 Pedagoga 40h 01 + CR - - R$ 3.611,46 [...] 106 Terapeuta Ocupacional 20h 02 + CR - - R$ 3.611,46 [...] 201 Agente Administrativo 40h 08 +CR 01 01 R$ 1.950,21 [...] 202 Agente Comunitário de Saúde 40h 04 +CR 01 01 R$ 2.048,74 [...] 205 Professor 20h 29 +CR 02 04 R$ 1.863,49 (5) [...] 206 Técnico em Enfermagem 40h 02 +CR - 01 R$ 2.359,78 (4) [...] 207 Técnico em Higiene Dental 40h 01 +CR - - R$ 2.145,25 [...] 208 Técnico de Manutenção de Computadores e Rede 40h 01 +CR - - R$ 3.059,14 [...] 301 Auxiliar de Serviços Gerais 40h 12 +CR 01 02 R$ 1.619,19 [...] 401 Motorista 40h 04 +CR 01 01 R$ 2.607,76 [...] 402 Operador de Máquinas 40h 03 +CR - 01 R$ 3.155,41 [...] 403 Serviços Braçais 40h 02 +CR - 01 R$ 1.781,11 (colunas: vagas ampla concorrência, PcD, afro; na Tabela 3.2 o texto extraído passa do código 202 para o 205) \| Retificação de 08/10/2026 (LEIA-SE): 202 Agente Comunitário de Saúde 40h 05 +CR - 01; 206 Técnico em Enfermagem 40h 03 +CR - -; 401 Motorista 40h 05 +CR - 01; 402 Operador de Máquinas 40h 04 +CR - -; 403 Serviços Braçais 40h 03 +CR - - |
+| salario | Auxiliar de Serviços Gerais: R$ 1.619,19 | 101 Engenheiro Civil 40h 01 + CR - - R$ 6.781,02 [...] 102 Farmacêutico 40h CR - - R$ 6.397,87 [...] 103 Médico 30h 03 + CR - - R$ 11.541,58 [...] 104 Médico (ESF) 40h 03 + CR - - R$ 12.823,98 [...] 105 Pedagoga 40h 01 + CR - - R$ 3.611,46 [...] 106 Terapeuta Ocupacional 20h 02 + CR - - R$ 3.611,46 [...] 201 Agente Administrativo 40h 08 +CR 01 01 R$ 1.950,21 [...] 202 Agente Comunitário de Saúde 40h 04 +CR 01 01 R$ 2.048,74 [...] 205 Professor 20h 29 +CR 02 04 R$ 1.863,49 (5) [...] 206 Técnico em Enfermagem 40h 02 +CR - 01 R$ 2.359,78 (4) [...] 207 Técnico em Higiene Dental 40h 01 +CR - - R$ 2.145,25 [...] 208 Técnico de Manutenção de Computadores e Rede 40h 01 +CR - - R$ 3.059,14 [...] 301 Auxiliar de Serviços Gerais 40h 12 +CR 01 02 R$ 1.619,19 [...] 401 Motorista 40h 04 +CR 01 01 R$ 2.607,76 [...] 402 Operador de Máquinas 40h 03 +CR - 01 R$ 3.155,41 [...] 403 Serviços Braçais 40h 02 +CR - 01 R$ 1.781,11 (colunas: vagas ampla concorrência, PcD, afro; na Tabela 3.2 o texto extraído passa do código 202 para o 205) \| Retificação de 08/10/2026 (LEIA-SE): 202 Agente Comunitário de Saúde 40h 05 +CR - 01; 206 Técnico em Enfermagem 40h 03 +CR - -; 401 Motorista 40h 05 +CR - 01; 402 Operador de Máquinas 40h 04 +CR - -; 403 Serviços Braçais 40h 03 +CR - - |
+| inscricao.inicio | 30/09/2026 | 5.3 O período para a realização das inscrições será a partir das 12h00min do dia 30 de setembro de 2026 |
+| inscricao.fim | 29/10/2026 | às 23h59min do dia 29 de outubro de 2026, observado horário oficial de Brasília/DF, através do endereço eletrônico www.concursosfau.com.br |
+| prova_objetiva | 15/11/2026 | 10.2 A prova objetiva será aplicada na data provável de 15 de novembro de 2026 |
+| taxa | R$ 80,00 a R$ 180,00 | Tabela 3.1 (nível superior): R$ 180,00; Tabela 3.2 (nível médio/técnico): R$ 130,00; Tabelas 3.3 e 3.4 (nível fundamental): R$ 80,00 |
+| banca | Fundação de Apoio ao Desenvolvimento da UNICENTRO (FAU) | O Concurso Público a que se refere o presente Edital será executado pela Fundação de Apoio ao Desenvolvimento da UNICENTRO |
+| cidade | Nova Prata do Iguaçu (PR) · IBGE 4117255 | 10.1 A prova objetiva será aplicada na Cidade de Nova Prata do Iguaçu/Paraná; quadro de servidores do Município de Nova Prata do Iguaçu |
+| edital | https://www.diariomunicipal.com.br/amp/materia/B81AACEE | EDITAL DE ABERTURA Nº 01/2026 CONCURSO PÚBLICO Nº 01/2026 A Prefeita do Município de Nova Prata do Iguaçu – Estado do Paraná |
+
+### Prefeitura de Palmital (PR) · `prefeitura-palmital-pr-2026`
+
+Ato: [CONTRATO ADMINISTRATIVO Nº 146/2026 - FAU UNICENTRO](https://www.diariomunicipal.com.br/amp/materia/3C4C4F76) · AMP-PR · 2026-09-04
+
+| Campo | Valor | Trecho do ato |
+| --- | --- | --- |
+| inscricao.inicio | Não informado no edital | não consta no ato |
+| inscricao.fim | Não informado no edital | não consta no ato |
+| prova_objetiva | Não informado no edital | não consta no ato |
+| taxa | Não informado no edital | não consta no ato |
+| banca | Fundação de Apoio ao Desenvolvimento da UNICENTRO (FAU) | CONTRATO ADMINISTRATIVO Nº 146/2026 - FAU UNICENTRO |
+| cidade | Palmital (PR) · IBGE 4117800 | CONCURSO PÚBLICO destinado ao provimento de cargos públicos do quadro de pessoal do MUNICÍPIO DE PALMITAL-PR |
+| edital | https://www.diariomunicipal.com.br/amp/materia/3C4C4F76 | CONTRATO ADMINISTRATIVO Nº 146/2026 DISPENSA DE LICITAÇÃO Nº 28/2026 |
+
+### Prefeitura de Realeza (PR) · `prefeitura-realeza-pr-2026`
+
+Ato: [EXTRATO DE CONTRATO -DISP. 26](https://www.diariomunicipal.com.br/amp/materia/1153BEDD) · AMP-PR · 2026-09-29
+
+| Campo | Valor | Trecho do ato |
+| --- | --- | --- |
+| inscricao.inicio | Não informado no edital | não consta no ato |
+| inscricao.fim | Não informado no edital | não consta no ato |
+| prova_objetiva | Não informado no edital | não consta no ato |
+| taxa | Não informado no edital | não consta no ato |
+| banca | Fundação FAFIPA | CONTRATADA: FUNDAÇÃO DE APOIO AO CAMPUS DE PARANAVAÍ - FAFIPA [...] DATA DA ASSINATURA: 22/09/2026 |
+| cidade | Realeza (PR) · IBGE 4121406 | Concurso Público destinado ao provimento de cargos efetivos do Município de Realeza/PR |
+| edital | https://www.diariomunicipal.com.br/amp/materia/1153BEDD | EXTRATO DE CONTRATO - CONTRATO ADMINISTRATIVO DE PRESTAÇÃO DE SERVIÇOS Nº 314/2026 |
+
+### Prefeitura de Sengés (PR) · `prefeitura-senges-pr-2026`
+
+Ato: [EXTRATO DO CONTRATO Nº 222/2026](https://www.diariomunicipal.com.br/amp/materia/59DA1748) · AMP-PR · 2026-08-25
+
+| Campo | Valor | Trecho do ato |
+| --- | --- | --- |
+| salario | Guarda Civil Municipal: Não informado no edital | não consta no ato |
+| inscricao.inicio | Não informado no edital | não consta no ato |
+| inscricao.fim | Não informado no edital | não consta no ato |
+| prova_objetiva | Não informado no edital | não consta no ato |
+| taxa | Não informado no edital | não consta no ato |
+| banca | Instituto Filadélfia de Londrina | CONTRATADA: INSTITUTO FILADÉLFIA DE LONDRINA [...] DATA ASSINATURA DO CONTRATO: 19/08/2026 |
+| cidade | Sengés (PR) · IBGE 4126306 | provimento de 13 (treze) vagas imediatas e formação de cadastro de reserva para o cargo de Guarda Civil Municipal do quadro efetivo do Município de Sengés/PR |
+| edital | https://www.diariomunicipal.com.br/amp/materia/59DA1748 | EXTRATO DO CONTRATO Nº 222/2026 Dispensa de Licitação n.º 050/2026 |
+
+### Prefeitura de Três Barras do Paraná (PR) · `prefeitura-tres-barras-do-parana-pr-2026`
+
+Ato: [DECRETO Nº 7248/2026](https://www.diariomunicipal.com.br/amp/materia/07AAE918) · AMP-PR · 2026-08-20
+
+| Campo | Valor | Trecho do ato |
+| --- | --- | --- |
+| salario | Auxiliar de Serviços Gerais: Não informado no edital | O decreto lista cargos, vagas e carga horária, sem remuneração |
+| salario | Trabalhador Braçal: Não informado no edital | O decreto lista cargos, vagas e carga horária, sem remuneração |
+| salario | Cozinheiro: Não informado no edital | O decreto lista cargos, vagas e carga horária, sem remuneração |
+| salario | Auditor Tributário Municipal: Não informado no edital | O decreto lista cargos, vagas e carga horária, sem remuneração |
+| inscricao.inicio | Não informado no edital | não consta no ato |
+| inscricao.fim | Não informado no edital | não consta no ato |
+| prova_objetiva | Não informado no edital | não consta no ato |
+| taxa | Não informado no edital | não consta no ato |
+| banca | Não informado no edital | Art. 3º O Departamento de Licitação deverá realizar certame, para a contratação de empresa especializada (banca ainda não contratada) |
+| cidade | Três Barras do Paraná (PR) · IBGE 4127858 | provimento efetivo de vagas existentes no Quadro de Pessoal do município de Três Barras do Paraná |
+| edital | https://www.diariomunicipal.com.br/amp/materia/07AAE918 | DECRETO Nº 7248/2026 Data: 19/08/2026 Determina providências para a realização de Concurso Público |
+
+### Prefeitura de Tunas do Paraná (PR) · `prefeitura-tunas-do-parana-pr-2026`
+
+Ato: [CONCURSOS LTDA CNPJ: 20.951.635/0001 -81, no valor total de](https://www.diariomunicipal.com.br/amp/materia/33D83A67) · AMP-PR · 2026-08-17
+
+| Campo | Valor | Trecho do ato |
+| --- | --- | --- |
+| inscricao.inicio | Não informado no edital | não consta no ato |
+| inscricao.fim | Não informado no edital | não consta no ato |
+| prova_objetiva | Não informado no edital | não consta no ato |
+| taxa | Não informado no edital | não consta no ato |
+| banca | Legalle Concursos | RATIFICO a contratação da empresa: LEGALLE CONCURSOS LTDA [...] Tunas do Paraná, 14 de agosto de 2026 |
+| cidade | Tunas do Paraná (PR) · IBGE 4127882 | CONCURSO PÚBLICO DE PROVAS OBJETIVAS PARA PROVIMENTO DE CARGOS EFETIVOS DA PREFEITURA MUNICIPAL DE TUNAS DO PARANÁ |
+| edital | https://www.diariomunicipal.com.br/amp/materia/33D83A67 | RATIFICAÇÃO DE DISPENSA DE LICITAÇÃO Nº 11/2026 |
+
+### Prefeitura de Umuarama (PR) · `prefeitura-umuarama-pr-2026-medico-generalista`
+
+Ato: [DIRETORIA DE LICITAÇÕES E CONTRATOS](https://www.diariomunicipal.com.br/amp/materia/176970FE) · AMP-PR · 2026-10-05
+
+| Campo | Valor | Trecho do ato |
+| --- | --- | --- |
+| salario | Médico Generalista (20 h): Não informado no edital | O ato não traz vagas nem salários |
+| salario | Médico Generalista (40 h): Não informado no edital | O ato não traz vagas nem salários |
+| inscricao.inicio | Não informado no edital | não consta no ato |
+| inscricao.fim | Não informado no edital | não consta no ato |
+| prova_objetiva | Não informado no edital | não consta no ato |
+| taxa | Não informado no edital | não consta no ato |
+| banca | Instituto Unicampo | contratação direta, por Dispensa de Licitação, da pessoa jurídica: INSTITUTO UNICAMPO DE DESENVOLVIMENTO ACADEMICO, CIENTÍFICO, CULTURAL E SOCIAL |
+| cidade | Umuarama (PR) · IBGE 4128104 | Concurso Público destinado ao provimento dos cargos efetivos de Médico Generalista – 20 (vinte) horas semanais e Médico Generalista – 40 (quarenta) horas semanais, integrantes do quadro de pessoal do Município de Umuarama |
+| edital | https://www.diariomunicipal.com.br/amp/materia/176970FE | AUTORIZAÇÃO DE DISPENSA DE LICITAÇÃO Nº 021/2026 - PMU |
+
+### Universidade Federal do Paraná (UFPR) · `ufpr-2026-edital-276-item-1-1`
+
+Ato: [EDITAL Nº 276, DE  24 DE SETEMBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=25/09/2026&jornal=530&pagina=61) · DOU · 2026-09-25
+
+| Campo | Valor | Trecho do ato |
+| --- | --- | --- |
+| salario | Professor do Magistério Superior – Sistemas de Informação Geográfica: R$ 13.753,96 | CLASSE A [...] 20 (VINTE) HORAS [...] PROFESSOR ASSISTENTE (COM GRADUAÇÃO) R$ 3.198,59 [...] (COM MESTRADO) [...] R$ 3.998,24 [...] (COM DOUTORADO) [...] R$ 5.037,78 [...] DEDICAÇÃO EXCLUSIVA (DE) [...] (COM GRADUAÇÃO) R$ 6.397,19 [...] (COM MESTRADO) [...] R$ 9.595,78 [...] (COM DOUTORADO) [...] R$ 13.753,96 — salário de cada item pela titulação mínima exigida no Anexo 01 |
+| inscricao.inicio | 18/02/2027 | ANEXO 02 [...] itens 1.1: período de inscrições 18/02/2027 a 19/03/2027 |
+| inscricao.fim | 19/03/2027 | ANEXO 02 [...] itens 1.1: período de inscrições 18/02/2027 a 19/03/2027 |
+| prova_objetiva | Não informado no edital | não consta data: o Anexo 02 só traz o período provável das provas (por quinzena), e o concurso é de provas escrita, didática e de títulos |
+| taxa | R$ 240,00 | ANEXO 02 ITEM TAXA DE INSCRIÇÃO [...] valores por item: 1.1 R$ 240,00 |
+| banca | UFPR (Pró-Reitoria de Gestão de Pessoas) | a própria UFPR (Pró-Reitoria de Gestão de Pessoas e unidades promotoras de cada item) |
+| cidade | Curitiba (PR) · IBGE 4106902 | Universidade Federal do Paraná, Curitiba; itens de Palotina e Toledo nos respectivos campi |
+| edital | http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=25/09/2026&jornal=530&pagina=61 | EDITAL Nº 276, DE 24 DE SETEMBRO DE 2026 PROVIMENTO DE CARGOS DE PROFESSOR DA CARREIRA DO MAGISTÉRIO SUPERIOR |
+
+### Universidade Federal do Paraná (UFPR) · `ufpr-2026-edital-276-item-1-2`
+
+Ato: [EDITAL Nº 276, DE  24 DE SETEMBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=25/09/2026&jornal=530&pagina=61) · DOU · 2026-09-25
+
+| Campo | Valor | Trecho do ato |
+| --- | --- | --- |
+| salario | Professor do Magistério Superior – Manejo de Florestas Naturais: R$ 13.753,96 | CLASSE A [...] 20 (VINTE) HORAS [...] PROFESSOR ASSISTENTE (COM GRADUAÇÃO) R$ 3.198,59 [...] (COM MESTRADO) [...] R$ 3.998,24 [...] (COM DOUTORADO) [...] R$ 5.037,78 [...] DEDICAÇÃO EXCLUSIVA (DE) [...] (COM GRADUAÇÃO) R$ 6.397,19 [...] (COM MESTRADO) [...] R$ 9.595,78 [...] (COM DOUTORADO) [...] R$ 13.753,96 — salário de cada item pela titulação mínima exigida no Anexo 01 |
+| inscricao.inicio | 22/03/2027 | ANEXO 02 [...] itens 1.2: período de inscrições 22/03/2027 a 20/04/2027 |
+| inscricao.fim | 20/04/2027 | ANEXO 02 [...] itens 1.2: período de inscrições 22/03/2027 a 20/04/2027 |
+| prova_objetiva | Não informado no edital | não consta data: o Anexo 02 só traz o período provável das provas (por quinzena), e o concurso é de provas escrita, didática e de títulos |
+| taxa | R$ 240,00 | ANEXO 02 ITEM TAXA DE INSCRIÇÃO [...] valores por item: 1.2 R$ 240,00 |
+| banca | UFPR (Pró-Reitoria de Gestão de Pessoas) | a própria UFPR (Pró-Reitoria de Gestão de Pessoas e unidades promotoras de cada item) |
+| cidade | Curitiba (PR) · IBGE 4106902 | Universidade Federal do Paraná, Curitiba; itens de Palotina e Toledo nos respectivos campi |
+| edital | http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=25/09/2026&jornal=530&pagina=61 | EDITAL Nº 276, DE 24 DE SETEMBRO DE 2026 PROVIMENTO DE CARGOS DE PROFESSOR DA CARREIRA DO MAGISTÉRIO SUPERIOR |
+
+### Universidade Federal do Paraná (UFPR) · `ufpr-2026-edital-276-item-1-28`
+
+Ato: [EDITAL Nº 276, DE  24 DE SETEMBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=25/09/2026&jornal=530&pagina=61) · DOU · 2026-09-25
+
+| Campo | Valor | Trecho do ato |
+| --- | --- | --- |
+| salario | Professor do Magistério Superior – Radiologia Odontológica e Imaginologia: R$ 5.037,78 | CLASSE A [...] 20 (VINTE) HORAS [...] PROFESSOR ASSISTENTE (COM GRADUAÇÃO) R$ 3.198,59 [...] (COM MESTRADO) [...] R$ 3.998,24 [...] (COM DOUTORADO) [...] R$ 5.037,78 [...] DEDICAÇÃO EXCLUSIVA (DE) [...] (COM GRADUAÇÃO) R$ 6.397,19 [...] (COM MESTRADO) [...] R$ 9.595,78 [...] (COM DOUTORADO) [...] R$ 13.753,96 — salário de cada item pela titulação mínima exigida no Anexo 01 |
+| inscricao.inicio | 21/12/2026 | ANEXO 02 [...] itens 1.28: período de inscrições 21/12/2026 a 20/01/2027 |
+| inscricao.fim | 20/01/2027 | ANEXO 02 [...] itens 1.28: período de inscrições 21/12/2026 a 20/01/2027 |
+| prova_objetiva | Não informado no edital | não consta data: o Anexo 02 só traz o período provável das provas (por quinzena), e o concurso é de provas escrita, didática e de títulos |
+| taxa | R$ 88,00 | ANEXO 02 ITEM TAXA DE INSCRIÇÃO [...] valores por item: 1.28 R$ 88,00 |
+| banca | UFPR (Pró-Reitoria de Gestão de Pessoas) | a própria UFPR (Pró-Reitoria de Gestão de Pessoas e unidades promotoras de cada item) |
+| cidade | Curitiba (PR) · IBGE 4106902 | Universidade Federal do Paraná, Curitiba; itens de Palotina e Toledo nos respectivos campi |
+| edital | http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=25/09/2026&jornal=530&pagina=61 | EDITAL Nº 276, DE 24 DE SETEMBRO DE 2026 PROVIMENTO DE CARGOS DE PROFESSOR DA CARREIRA DO MAGISTÉRIO SUPERIOR |
+
+### Universidade Federal do Paraná (UFPR) · `ufpr-2026-edital-276-item-1-3`
+
+Ato: [EDITAL Nº 276, DE  24 DE SETEMBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=25/09/2026&jornal=530&pagina=61) · DOU · 2026-09-25
+
+| Campo | Valor | Trecho do ato |
+| --- | --- | --- |
+| salario | Professor do Magistério Superior – Conservação da Natureza: R$ 13.753,96 | CLASSE A [...] 20 (VINTE) HORAS [...] PROFESSOR ASSISTENTE (COM GRADUAÇÃO) R$ 3.198,59 [...] (COM MESTRADO) [...] R$ 3.998,24 [...] (COM DOUTORADO) [...] R$ 5.037,78 [...] DEDICAÇÃO EXCLUSIVA (DE) [...] (COM GRADUAÇÃO) R$ 6.397,19 [...] (COM MESTRADO) [...] R$ 9.595,78 [...] (COM DOUTORADO) [...] R$ 13.753,96 — salário de cada item pela titulação mínima exigida no Anexo 01 |
+| inscricao.inicio | 18/01/2027 | ANEXO 02 [...] itens 1.3: período de inscrições 18/01/2027 a 17/02/2027 |
+| inscricao.fim | 17/02/2027 | ANEXO 02 [...] itens 1.3: período de inscrições 18/01/2027 a 17/02/2027 |
+| prova_objetiva | Não informado no edital | não consta data: o Anexo 02 só traz o período provável das provas (por quinzena), e o concurso é de provas escrita, didática e de títulos |
+| taxa | R$ 240,00 | ANEXO 02 ITEM TAXA DE INSCRIÇÃO [...] valores por item: 1.3 R$ 240,00 |
+| banca | UFPR (Pró-Reitoria de Gestão de Pessoas) | a própria UFPR (Pró-Reitoria de Gestão de Pessoas e unidades promotoras de cada item) |
+| cidade | Curitiba (PR) · IBGE 4106902 | Universidade Federal do Paraná, Curitiba; itens de Palotina e Toledo nos respectivos campi |
+| edital | http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=25/09/2026&jornal=530&pagina=61 | EDITAL Nº 276, DE 24 DE SETEMBRO DE 2026 PROVIMENTO DE CARGOS DE PROFESSOR DA CARREIRA DO MAGISTÉRIO SUPERIOR |
+
+### Universidade Federal do Paraná (UFPR) · `ufpr-2026-edital-276`
+
+Ato: [EDITAL Nº 276, DE  24 DE SETEMBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=25/09/2026&jornal=530&pagina=61) · DOU · 2026-09-25
+
+| Campo | Valor | Trecho do ato |
+| --- | --- | --- |
+| salario | Professor do Magistério Superior – Engenharia Civil: R$ 13.753,96 | CLASSE A [...] 20 (VINTE) HORAS [...] PROFESSOR ASSISTENTE (COM GRADUAÇÃO) R$ 3.198,59 [...] (COM MESTRADO) [...] R$ 3.998,24 [...] (COM DOUTORADO) [...] R$ 5.037,78 [...] DEDICAÇÃO EXCLUSIVA (DE) [...] (COM GRADUAÇÃO) R$ 6.397,19 [...] (COM MESTRADO) [...] R$ 9.595,78 [...] (COM DOUTORADO) [...] R$ 13.753,96 — salário de cada item pela titulação mínima exigida no Anexo 01 |
+| salario | Professor do Magistério Superior – Eletrônica e Telecomunicações: R$ 13.753,96 | CLASSE A [...] 20 (VINTE) HORAS [...] PROFESSOR ASSISTENTE (COM GRADUAÇÃO) R$ 3.198,59 [...] (COM MESTRADO) [...] R$ 3.998,24 [...] (COM DOUTORADO) [...] R$ 5.037,78 [...] DEDICAÇÃO EXCLUSIVA (DE) [...] (COM GRADUAÇÃO) R$ 6.397,19 [...] (COM MESTRADO) [...] R$ 9.595,78 [...] (COM DOUTORADO) [...] R$ 13.753,96 — salário de cada item pela titulação mínima exigida no Anexo 01 |
+| salario | Professor do Magistério Superior – Urgência e Emergência Pediátrica: R$ 3.198,59 | CLASSE A [...] 20 (VINTE) HORAS [...] PROFESSOR ASSISTENTE (COM GRADUAÇÃO) R$ 3.198,59 [...] (COM MESTRADO) [...] R$ 3.998,24 [...] (COM DOUTORADO) [...] R$ 5.037,78 [...] DEDICAÇÃO EXCLUSIVA (DE) [...] (COM GRADUAÇÃO) R$ 6.397,19 [...] (COM MESTRADO) [...] R$ 9.595,78 [...] (COM DOUTORADO) [...] R$ 13.753,96 — salário de cada item pela titulação mínima exigida no Anexo 01 |
+| salario | Professor do Magistério Superior – Horticultura: R$ 13.753,96 | CLASSE A [...] 20 (VINTE) HORAS [...] PROFESSOR ASSISTENTE (COM GRADUAÇÃO) R$ 3.198,59 [...] (COM MESTRADO) [...] R$ 3.998,24 [...] (COM DOUTORADO) [...] R$ 5.037,78 [...] DEDICAÇÃO EXCLUSIVA (DE) [...] (COM GRADUAÇÃO) R$ 6.397,19 [...] (COM MESTRADO) [...] R$ 9.595,78 [...] (COM DOUTORADO) [...] R$ 13.753,96 — salário de cada item pela titulação mínima exigida no Anexo 01 |
+| salario | Professor do Magistério Superior – Arqueologia: R$ 13.753,96 | CLASSE A [...] 20 (VINTE) HORAS [...] PROFESSOR ASSISTENTE (COM GRADUAÇÃO) R$ 3.198,59 [...] (COM MESTRADO) [...] R$ 3.998,24 [...] (COM DOUTORADO) [...] R$ 5.037,78 [...] DEDICAÇÃO EXCLUSIVA (DE) [...] (COM GRADUAÇÃO) R$ 6.397,19 [...] (COM MESTRADO) [...] R$ 9.595,78 [...] (COM DOUTORADO) [...] R$ 13.753,96 — salário de cada item pela titulação mínima exigida no Anexo 01 |
+| salario | Professor do Magistério Superior – Odontologia em Saúde Coletiva: R$ 5.037,78 | CLASSE A [...] 20 (VINTE) HORAS [...] PROFESSOR ASSISTENTE (COM GRADUAÇÃO) R$ 3.198,59 [...] (COM MESTRADO) [...] R$ 3.998,24 [...] (COM DOUTORADO) [...] R$ 5.037,78 [...] DEDICAÇÃO EXCLUSIVA (DE) [...] (COM GRADUAÇÃO) R$ 6.397,19 [...] (COM MESTRADO) [...] R$ 9.595,78 [...] (COM DOUTORADO) [...] R$ 13.753,96 — salário de cada item pela titulação mínima exigida no Anexo 01 |
+| salario | Professor do Magistério Superior – Saúde do Trabalhador: R$ 5.037,78 | CLASSE A [...] 20 (VINTE) HORAS [...] PROFESSOR ASSISTENTE (COM GRADUAÇÃO) R$ 3.198,59 [...] (COM MESTRADO) [...] R$ 3.998,24 [...] (COM DOUTORADO) [...] R$ 5.037,78 [...] DEDICAÇÃO EXCLUSIVA (DE) [...] (COM GRADUAÇÃO) R$ 6.397,19 [...] (COM MESTRADO) [...] R$ 9.595,78 [...] (COM DOUTORADO) [...] R$ 13.753,96 — salário de cada item pela titulação mínima exigida no Anexo 01 |
+| salario | Professor do Magistério Superior – Terapia Ocupacional aplicada: R$ 13.753,96 | CLASSE A [...] 20 (VINTE) HORAS [...] PROFESSOR ASSISTENTE (COM GRADUAÇÃO) R$ 3.198,59 [...] (COM MESTRADO) [...] R$ 3.998,24 [...] (COM DOUTORADO) [...] R$ 5.037,78 [...] DEDICAÇÃO EXCLUSIVA (DE) [...] (COM GRADUAÇÃO) R$ 6.397,19 [...] (COM MESTRADO) [...] R$ 9.595,78 [...] (COM DOUTORADO) [...] R$ 13.753,96 — salário de cada item pela titulação mínima exigida no Anexo 01 |
+| salario | Professor do Magistério Superior – Direito: R$ 5.037,78 | CLASSE A [...] 20 (VINTE) HORAS [...] PROFESSOR ASSISTENTE (COM GRADUAÇÃO) R$ 3.198,59 [...] (COM MESTRADO) [...] R$ 3.998,24 [...] (COM DOUTORADO) [...] R$ 5.037,78 [...] DEDICAÇÃO EXCLUSIVA (DE) [...] (COM GRADUAÇÃO) R$ 6.397,19 [...] (COM MESTRADO) [...] R$ 9.595,78 [...] (COM DOUTORADO) [...] R$ 13.753,96 — salário de cada item pela titulação mínima exigida no Anexo 01 |
+| salario | Professor do Magistério Superior – Clínica Cirúrgica de Pequenos Animais: R$ 13.753,96 | CLASSE A [...] 20 (VINTE) HORAS [...] PROFESSOR ASSISTENTE (COM GRADUAÇÃO) R$ 3.198,59 [...] (COM MESTRADO) [...] R$ 3.998,24 [...] (COM DOUTORADO) [...] R$ 5.037,78 [...] DEDICAÇÃO EXCLUSIVA (DE) [...] (COM GRADUAÇÃO) R$ 6.397,19 [...] (COM MESTRADO) [...] R$ 9.595,78 [...] (COM DOUTORADO) [...] R$ 13.753,96 — salário de cada item pela titulação mínima exigida no Anexo 01 |
+| salario | Professor do Magistério Superior – Sistemas de Computação: R$ 13.753,96 | CLASSE A [...] 20 (VINTE) HORAS [...] PROFESSOR ASSISTENTE (COM GRADUAÇÃO) R$ 3.198,59 [...] (COM MESTRADO) [...] R$ 3.998,24 [...] (COM DOUTORADO) [...] R$ 5.037,78 [...] DEDICAÇÃO EXCLUSIVA (DE) [...] (COM GRADUAÇÃO) R$ 6.397,19 [...] (COM MESTRADO) [...] R$ 9.595,78 [...] (COM DOUTORADO) [...] R$ 13.753,96 — salário de cada item pela titulação mínima exigida no Anexo 01 |
+| salario | Professor do Magistério Superior – Genética: R$ 13.753,96 | CLASSE A [...] 20 (VINTE) HORAS [...] PROFESSOR ASSISTENTE (COM GRADUAÇÃO) R$ 3.198,59 [...] (COM MESTRADO) [...] R$ 3.998,24 [...] (COM DOUTORADO) [...] R$ 5.037,78 [...] DEDICAÇÃO EXCLUSIVA (DE) [...] (COM GRADUAÇÃO) R$ 6.397,19 [...] (COM MESTRADO) [...] R$ 9.595,78 [...] (COM DOUTORADO) [...] R$ 13.753,96 — salário de cada item pela titulação mínima exigida no Anexo 01 |
+| salario | Professor do Magistério Superior – Computação: R$ 9.595,78 | CLASSE A [...] 20 (VINTE) HORAS [...] PROFESSOR ASSISTENTE (COM GRADUAÇÃO) R$ 3.198,59 [...] (COM MESTRADO) [...] R$ 3.998,24 [...] (COM DOUTORADO) [...] R$ 5.037,78 [...] DEDICAÇÃO EXCLUSIVA (DE) [...] (COM GRADUAÇÃO) R$ 6.397,19 [...] (COM MESTRADO) [...] R$ 9.595,78 [...] (COM DOUTORADO) [...] R$ 13.753,96 — salário de cada item pela titulação mínima exigida no Anexo 01 |
+| salario | Professor do Magistério Superior – Ginecologia, Obstetrícia e Reprodução Humana: R$ 3.998,24 | CLASSE A [...] 20 (VINTE) HORAS [...] PROFESSOR ASSISTENTE (COM GRADUAÇÃO) R$ 3.198,59 [...] (COM MESTRADO) [...] R$ 3.998,24 [...] (COM DOUTORADO) [...] R$ 5.037,78 [...] DEDICAÇÃO EXCLUSIVA (DE) [...] (COM GRADUAÇÃO) R$ 6.397,19 [...] (COM MESTRADO) [...] R$ 9.595,78 [...] (COM DOUTORADO) [...] R$ 13.753,96 — salário de cada item pela titulação mínima exigida no Anexo 01 |
+| salario | Professor do Magistério Superior – Radiologia e Propedêutica Médica: R$ 5.037,78 | CLASSE A [...] 20 (VINTE) HORAS [...] PROFESSOR ASSISTENTE (COM GRADUAÇÃO) R$ 3.198,59 [...] (COM MESTRADO) [...] R$ 3.998,24 [...] (COM DOUTORADO) [...] R$ 5.037,78 [...] DEDICAÇÃO EXCLUSIVA (DE) [...] (COM GRADUAÇÃO) R$ 6.397,19 [...] (COM MESTRADO) [...] R$ 9.595,78 [...] (COM DOUTORADO) [...] R$ 13.753,96 — salário de cada item pela titulação mínima exigida no Anexo 01 |
+| salario | Professor do Magistério Superior – História Pública (Patrimônio e Memória): R$ 13.753,96 | CLASSE A [...] 20 (VINTE) HORAS [...] PROFESSOR ASSISTENTE (COM GRADUAÇÃO) R$ 3.198,59 [...] (COM MESTRADO) [...] R$ 3.998,24 [...] (COM DOUTORADO) [...] R$ 5.037,78 [...] DEDICAÇÃO EXCLUSIVA (DE) [...] (COM GRADUAÇÃO) R$ 6.397,19 [...] (COM MESTRADO) [...] R$ 9.595,78 [...] (COM DOUTORADO) [...] R$ 13.753,96 — salário de cada item pela titulação mínima exigida no Anexo 01 |
+| salario | Professor do Magistério Superior – Fisiologia Humana: R$ 13.753,96 | CLASSE A [...] 20 (VINTE) HORAS [...] PROFESSOR ASSISTENTE (COM GRADUAÇÃO) R$ 3.198,59 [...] (COM MESTRADO) [...] R$ 3.998,24 [...] (COM DOUTORADO) [...] R$ 5.037,78 [...] DEDICAÇÃO EXCLUSIVA (DE) [...] (COM GRADUAÇÃO) R$ 6.397,19 [...] (COM MESTRADO) [...] R$ 9.595,78 [...] (COM DOUTORADO) [...] R$ 13.753,96 — salário de cada item pela titulação mínima exigida no Anexo 01 |
+| salario | Professor do Magistério Superior – Anatomia Humana: R$ 13.753,96 | CLASSE A [...] 20 (VINTE) HORAS [...] PROFESSOR ASSISTENTE (COM GRADUAÇÃO) R$ 3.198,59 [...] (COM MESTRADO) [...] R$ 3.998,24 [...] (COM DOUTORADO) [...] R$ 5.037,78 [...] DEDICAÇÃO EXCLUSIVA (DE) [...] (COM GRADUAÇÃO) R$ 6.397,19 [...] (COM MESTRADO) [...] R$ 9.595,78 [...] (COM DOUTORADO) [...] R$ 13.753,96 — salário de cada item pela titulação mínima exigida no Anexo 01 |
+| salario | Professor do Magistério Superior – Educação Matemática: R$ 13.753,96 | CLASSE A [...] 20 (VINTE) HORAS [...] PROFESSOR ASSISTENTE (COM GRADUAÇÃO) R$ 3.198,59 [...] (COM MESTRADO) [...] R$ 3.998,24 [...] (COM DOUTORADO) [...] R$ 5.037,78 [...] DEDICAÇÃO EXCLUSIVA (DE) [...] (COM GRADUAÇÃO) R$ 6.397,19 [...] (COM MESTRADO) [...] R$ 9.595,78 [...] (COM DOUTORADO) [...] R$ 13.753,96 — salário de cada item pela titulação mínima exigida no Anexo 01 |
+| salario | Professor do Magistério Superior – Planejamento e Gestão em Turismo: R$ 13.753,96 | CLASSE A [...] 20 (VINTE) HORAS [...] PROFESSOR ASSISTENTE (COM GRADUAÇÃO) R$ 3.198,59 [...] (COM MESTRADO) [...] R$ 3.998,24 [...] (COM DOUTORADO) [...] R$ 5.037,78 [...] DEDICAÇÃO EXCLUSIVA (DE) [...] (COM GRADUAÇÃO) R$ 6.397,19 [...] (COM MESTRADO) [...] R$ 9.595,78 [...] (COM DOUTORADO) [...] R$ 13.753,96 — salário de cada item pela titulação mínima exigida no Anexo 01 |
+| salario | Professor do Magistério Superior – Mineralogia: R$ 13.753,96 | CLASSE A [...] 20 (VINTE) HORAS [...] PROFESSOR ASSISTENTE (COM GRADUAÇÃO) R$ 3.198,59 [...] (COM MESTRADO) [...] R$ 3.998,24 [...] (COM DOUTORADO) [...] R$ 5.037,78 [...] DEDICAÇÃO EXCLUSIVA (DE) [...] (COM GRADUAÇÃO) R$ 6.397,19 [...] (COM MESTRADO) [...] R$ 9.595,78 [...] (COM DOUTORADO) [...] R$ 13.753,96 — salário de cada item pela titulação mínima exigida no Anexo 01 |
+| salario | Professor do Magistério Superior – Engenharia de Produção: R$ 13.753,96 | CLASSE A [...] 20 (VINTE) HORAS [...] PROFESSOR ASSISTENTE (COM GRADUAÇÃO) R$ 3.198,59 [...] (COM MESTRADO) [...] R$ 3.998,24 [...] (COM DOUTORADO) [...] R$ 5.037,78 [...] DEDICAÇÃO EXCLUSIVA (DE) [...] (COM GRADUAÇÃO) R$ 6.397,19 [...] (COM MESTRADO) [...] R$ 9.595,78 [...] (COM DOUTORADO) [...] R$ 13.753,96 — salário de cada item pela titulação mínima exigida no Anexo 01 |
+| salario | Professor do Magistério Superior – Gastroenterologia Pediátrica: R$ 5.037,78 | CLASSE A [...] 20 (VINTE) HORAS [...] PROFESSOR ASSISTENTE (COM GRADUAÇÃO) R$ 3.198,59 [...] (COM MESTRADO) [...] R$ 3.998,24 [...] (COM DOUTORADO) [...] R$ 5.037,78 [...] DEDICAÇÃO EXCLUSIVA (DE) [...] (COM GRADUAÇÃO) R$ 6.397,19 [...] (COM MESTRADO) [...] R$ 9.595,78 [...] (COM DOUTORADO) [...] R$ 13.753,96 — salário de cada item pela titulação mínima exigida no Anexo 01 |
+| salario | Professor do Magistério Superior – Mecânica dos Fluidos e Fenômenos de Transporte: R$ 5.037,78 | CLASSE A [...] 20 (VINTE) HORAS [...] PROFESSOR ASSISTENTE (COM GRADUAÇÃO) R$ 3.198,59 [...] (COM MESTRADO) [...] R$ 3.998,24 [...] (COM DOUTORADO) [...] R$ 5.037,78 [...] DEDICAÇÃO EXCLUSIVA (DE) [...] (COM GRADUAÇÃO) R$ 6.397,19 [...] (COM MESTRADO) [...] R$ 9.595,78 [...] (COM DOUTORADO) [...] R$ 13.753,96 — salário de cada item pela titulação mínima exigida no Anexo 01 |
+| salario | Professor do Magistério Superior – Medicina de Família e Comunidade: R$ 3.198,59 | CLASSE A [...] 20 (VINTE) HORAS [...] PROFESSOR ASSISTENTE (COM GRADUAÇÃO) R$ 3.198,59 [...] (COM MESTRADO) [...] R$ 3.998,24 [...] (COM DOUTORADO) [...] R$ 5.037,78 [...] DEDICAÇÃO EXCLUSIVA (DE) [...] (COM GRADUAÇÃO) R$ 6.397,19 [...] (COM MESTRADO) [...] R$ 9.595,78 [...] (COM DOUTORADO) [...] R$ 13.753,96 — salário de cada item pela titulação mínima exigida no Anexo 01 |
+| salario | Professor do Magistério Superior – Clínica Médica: R$ 3.198,59 | CLASSE A [...] 20 (VINTE) HORAS [...] PROFESSOR ASSISTENTE (COM GRADUAÇÃO) R$ 3.198,59 [...] (COM MESTRADO) [...] R$ 3.998,24 [...] (COM DOUTORADO) [...] R$ 5.037,78 [...] DEDICAÇÃO EXCLUSIVA (DE) [...] (COM GRADUAÇÃO) R$ 6.397,19 [...] (COM MESTRADO) [...] R$ 9.595,78 [...] (COM DOUTORADO) [...] R$ 13.753,96 — salário de cada item pela titulação mínima exigida no Anexo 01 |
+| salario | Professor do Magistério Superior – Engenharia Química (Operações Unitárias): R$ 13.753,96 | CLASSE A [...] 20 (VINTE) HORAS [...] PROFESSOR ASSISTENTE (COM GRADUAÇÃO) R$ 3.198,59 [...] (COM MESTRADO) [...] R$ 3.998,24 [...] (COM DOUTORADO) [...] R$ 5.037,78 [...] DEDICAÇÃO EXCLUSIVA (DE) [...] (COM GRADUAÇÃO) R$ 6.397,19 [...] (COM MESTRADO) [...] R$ 9.595,78 [...] (COM DOUTORADO) [...] R$ 13.753,96 — salário de cada item pela titulação mínima exigida no Anexo 01 |
+| salario | Professor do Magistério Superior – Estatística e Ciência de Dados: R$ 13.753,96 | CLASSE A [...] 20 (VINTE) HORAS [...] PROFESSOR ASSISTENTE (COM GRADUAÇÃO) R$ 3.198,59 [...] (COM MESTRADO) [...] R$ 3.998,24 [...] (COM DOUTORADO) [...] R$ 5.037,78 [...] DEDICAÇÃO EXCLUSIVA (DE) [...] (COM GRADUAÇÃO) R$ 6.397,19 [...] (COM MESTRADO) [...] R$ 9.595,78 [...] (COM DOUTORADO) [...] R$ 13.753,96 — salário de cada item pela titulação mínima exigida no Anexo 01 |
+| inscricao.inicio | 28/09/2026 | ANEXO 02 [...] itens 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 1.10, 1.11, 1.12, 1.13, 1.14, 1.15, 1.16, 1.17, 1.18, 1.19, 1.20, 1.21, 1.22, 1.23, 1.24, 1.25, 1.26, 1.27, 1.29, 1.30, 1.31, 1.32: período de inscrições 28/09/2026 a 28/10/2026 |
+| inscricao.fim | 28/10/2026 | ANEXO 02 [...] itens 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 1.10, 1.11, 1.12, 1.13, 1.14, 1.15, 1.16, 1.17, 1.18, 1.19, 1.20, 1.21, 1.22, 1.23, 1.24, 1.25, 1.26, 1.27, 1.29, 1.30, 1.31, 1.32: período de inscrições 28/09/2026 a 28/10/2026 |
+| prova_objetiva | Não informado no edital | não consta data: o Anexo 02 só traz o período provável das provas (por quinzena), e o concurso é de provas escrita, didática e de títulos |
+| taxa | R$ 61,00 a R$ 240,00 | ANEXO 02 ITEM TAXA DE INSCRIÇÃO [...] valores por item: 1.4 R$ 240,00, 1.5 R$ 240,00, 1.6 R$ 70,00, 1.7 R$ 240,00, 1.8 R$ 240,00, 1.9 R$ 88,00, 1.10 R$ 88,00, 1.11 R$ 240,00, 1.12 R$ 88,00, 1.13 R$ 240,00, 1.14 R$ 240,00, 1.15 R$ 240,00, 1.16 R$ 168,00, 1.17 R$ 70,00, 1.18 R$ 88,00, 1.19 R$ 240,00, 1.20 R$ 240,00, 1.21 R$ 240,00, 1.22 R$ 240,00, 1.23 R$ 240,00, 1.24 R$ 240,00, 1.25 R$ 240,00, 1.26 R$ 88,00, 1.27 R$ 88,00, 1.29 R$ 61,00, 1.30 R$ 61,00, 1.31 R$ 240,00, 1.32 R$ 240,00 |
+| banca | UFPR (Pró-Reitoria de Gestão de Pessoas) | a própria UFPR (Pró-Reitoria de Gestão de Pessoas e unidades promotoras de cada item) |
+| cidade | Curitiba (PR) · IBGE 4106902 | Universidade Federal do Paraná, Curitiba; itens de Palotina e Toledo nos respectivos campi |
+| edital | http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=25/09/2026&jornal=530&pagina=61 | EDITAL Nº 276, DE 24 DE SETEMBRO DE 2026 PROVIMENTO DE CARGOS DE PROFESSOR DA CARREIRA DO MAGISTÉRIO SUPERIOR |
+
+### Universidade Federal da Integração Latino-Americana (UNILA) · `unila-2026-edital-240`
+
+Ato: [EDITAL Nº 240/DICS/DAP/PROGEPE, DE 22 DE SETEMBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=24/09/2026&jornal=530&pagina=44) · DOU · 2026-09-24
+
+| Campo | Valor | Trecho do ato |
+| --- | --- | --- |
+| salario | Professor do Magistério Superior – Morfologia/Anatomia humana: R$ 13.288,85 | DEDICAÇÃO EXCLUSIVA [...] Doutorado R$7.107,99 R$ 13.288,85 (vencimento básico + retribuição por titulação; as três vagas exigem doutorado) |
+| salario | Professor do Magistério Superior – Farmacologia/Farmacologia clínica: R$ 13.288,85 | DEDICAÇÃO EXCLUSIVA [...] Doutorado R$7.107,99 R$ 13.288,85 (vencimento básico + retribuição por titulação; as três vagas exigem doutorado) |
+| salario | Professor do Magistério Superior – Saúde coletiva/Saúde da família: R$ 13.288,85 | DEDICAÇÃO EXCLUSIVA [...] Doutorado R$7.107,99 R$ 13.288,85 (vencimento básico + retribuição por titulação; as três vagas exigem doutorado) |
+| inscricao.inicio | 28/09/2026 | ANEXO I - CRONOGRAMA GERAL Período de Inscrições 28/09/2026 a 27/10/2026 |
+| inscricao.fim | 27/10/2026 | ANEXO I - CRONOGRAMA GERAL Período de Inscrições 28/09/2026 a 27/10/2026 |
+| prova_objetiva | Não informado no edital | não consta no ato: O cronograma das demais etapas constará nos editais de conteúdo específico de cada área |
+| taxa | R$ 215,00 | 9.3 A taxa de inscrição será de R$215,00 (duzentos e quinze reais) |
+| banca | UNILA (Divisão de Concursos e Seleções) | o próprio concurso da UNILA (Divisão de Concursos e Seleções); informações em https://portal.unila.edu.br/concursos |
+| cidade | Foz do Iguaçu (PR) · IBGE 4108304 | 14.1 As etapas presenciais de realização das provas [...] ocorrerão na cidade de Foz do Iguaçu/PR, preferencialmente nos câmpus da UNILA |
+| edital | http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=24/09/2026&jornal=530&pagina=44 | EDITAL Nº 240/DICS/DAP/PROGEPE, DE 22 DE SETEMBRO DE 2026 CONCURSO PÚBLICO UNIFICADO DESTINADO AO PROVIMENTO DE CARGOS DA CARREIRA DE MAGISTÉRIO SUPERIOR |
+
+## Em avaliação: processos seletivos simplificados (não publicados)
+
+- Ministério da Educação/Universidade Federal de Santa Catarina/Pró-Reitoria de Desenvolvimento e Gestão de Pessoas/Departamento de Desenvolvimento de Pessoas · [PORTARIA N° 842/DDP, de 29 de junho de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=01/07/2026&jornal=515&pagina=80) · 2026-07-01
+- Ministério da Educação/Universidade Federal de Santa Catarina/Pró-Reitoria de Desenvolvimento e Gestão de Pessoas/Departamento de Desenvolvimento de Pessoas · [PORTARIA N° 854/DDP, de 30 de junho de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=01/07/2026&jornal=515&pagina=80) · 2026-07-01
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Espírito Santo/Campus Cachoeiro do Itapemirim · [PORTARIA Nº 288, DE 30 DE JUNHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=01/07/2026&jornal=515&pagina=73) · 2026-07-01
+- Ministério da Educação/Universidade Federal de Juiz de Fora/Pró-Reitoria de Gestão de Pessoas · [PORTARIA PROGEPE/UFJF Nº 382, DE 30 de junho de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=01/07/2026&jornal=515&pagina=80) · 2026-07-01
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Espírito Santo/Campus Linhares · [PORTARIA Nº 205, DE 30 DE JUNHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=01/07/2026&jornal=515&pagina=73) · 2026-07-01
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Minas Gerais/Campus Arcos · [EXTRATO DE CONTRATO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=01/07/2026&jornal=530&pagina=57) · 2026-07-01
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Rondônia/Campus Ariquemes · [edital de  CONVOCAÇÃO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=01/07/2026&jornal=530&pagina=75) · 2026-07-01
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia Catarinense/Pró-Reitoria de Desenvolvimento, Inclusão, Diversidade e Assistência à Pessoa · [EDITAL Nº 70/CAMDP/IFC/2025, de 28 de maio de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=01/07/2026&jornal=530&pagina=52) · 2026-07-01
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia Catarinense/Pró-Reitoria de Desenvolvimento, Inclusão, Diversidade e Assistência à Pessoa · [EDITAL Nº 82/CAMDP/IFC/2025 de 18 de junho de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=01/07/2026&jornal=530&pagina=52) · 2026-07-01
+- Ministério da Educação/Universidade Federal do Rio Grande do Norte/Pró-Reitoria de Gestão de Pessoas/Diretoria de Administração de Pessoal · [EDITAL   Nº 872, DE 30 DE JUNHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=01/07/2026&jornal=530&pagina=99) · 2026-07-01
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Ceará/Campus Jaguaribe · [edital](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=01/07/2026&jornal=530&pagina=53) · 2026-07-01
+- Ministério da Educação/Universidade Federal do Espírito Santo/Reitoria · [EDITAL Nº 111, DE 30 DE JUNHO DE 2026 HOMOLOGAÇÃO DO RESULTADO DO PROCESSO SELETIVO SIMPLIFICADO PARA CONTRATAÇÃO DE PROFESSOR SUBSTITUTOS](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=01/07/2026&jornal=530&pagina=87) · 2026-07-01
+- Ministério da Educação/Universidade Federal da Integração Latino-Americana · [EDITAL nº 197/2026/DICS/DAP/PROGEPE, DE 30 DE JUNHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=01/07/2026&jornal=530&pagina=89) · 2026-07-01
+- Ministério da Educação/Universidade Federal do Espírito Santo/Reitoria · [EDITAL Nº 112, DE 30 DE JUNHO DE 2026 HOMOLOGAÇÃO DO RESULTADO DO PROCESSO SELETIVO SIMPLIFICADO PARA CONTRATAÇÃO DE PROFESSOR SUBSTITUTOS](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=01/07/2026&jornal=530&pagina=87) · 2026-07-01
+- Ministério da Educação/Fundação Universidade Federal de Sergipe · [EDITAL  Nº 52, DE 26 DE JUNHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=01/07/2026&jornal=530&pagina=134) · 2026-07-01
+- Ministério da Educação/Fundação Universidade Federal de Sergipe · [EDITAL  Nº 44, DE 26 DE JUNHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=01/07/2026&jornal=530&pagina=133) · 2026-07-01
+- Ministério da Justiça e Segurança Pública/Secretaria Nacional de Políticas Penais · [EXTRATO DE RESCISÃO CONTRATUAL](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=01/07/2026&jornal=530&pagina=177) · 2026-07-01
+- Ministério da Educação/Universidade Federal do Espírito Santo/Reitoria · [EDITAL Nº 113, DE 30 DE JUNHO DE 2026 HOMOLOGAÇÃO DO RESULTADO DO PROCESSO SELETIVO SIMPLIFICADO PARA CONTRATAÇÃO DE PROFESSOR SUBSTITUTO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=01/07/2026&jornal=530&pagina=87) · 2026-07-01
+- Ministério da Educação/Universidade Federal do Espírito Santo/Reitoria · [EDITAL Nº 114, DE 30 DE JUNHO DE 2026 HOMOLOGAÇÃO DO RESULTADO DO PROCESSO SELETIVO SIMPLIFICADO PARA  CONTRATAÇÃO DE PROFESSOR SUBSTITUTO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=01/07/2026&jornal=530&pagina=87) · 2026-07-01
+- Ministério da Educação/Universidade Federal do Rio de Janeiro/Centro Multidisciplinar UFRJ-Macaé · [EDITAL nº 803 DE 26 DE JUNHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=01/07/2026&jornal=530&pagina=100) · 2026-07-01
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia Baiano/Gabinete · [EDITAL DE 30 DE JUNHO DE 2026HOMOLOGAÇÃO DO RESULTADO FINAL DO PROCESSO SELETIVO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=01/07/2026&jornal=530&pagina=51) · 2026-07-01
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia Baiano/Gabinete · [EDITAL DE 30 DE JUNHO DE 2026  HOMOLOGAÇÃO  DO RESULTADO FINAL DO PROCESSO SELETIVO SIMPLIFICADO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=01/07/2026&jornal=530&pagina=50) · 2026-07-01
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Norte/Campus Natal-Zona Norte · [EDITAL Nº 59-DG/ZN/RE/IFRN, 24 DE JUNHO DE 2026 (*)](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=01/07/2026&jornal=530&pagina=73) · 2026-07-01
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Minas Gerais/Campus Ribeirão das Neves · [Edital de 30 de junho de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=01/07/2026&jornal=530&pagina=57) · 2026-07-01
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Paraná/Campus Colombo · [EDITAL N° 62, DE 30 DE JUNHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=01/07/2026&jornal=530&pagina=59) · 2026-07-01
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Paraná/Campus Colombo · [EDITAL N°61, DE 30 DE JUNHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=01/07/2026&jornal=530&pagina=59) · 2026-07-01
+- Ministério da Educação/Universidade Federal do Espírito Santo/Reitoria · [EDITAL Nº 115, DE 30 DE JUNHO DE 2026 HOMOLOGAÇÃO DO RESULTADO DO PROCESSO SELETIVO SIMPLICADO PARA  CONTRATAÇÃO DE PROFESSOR SUBSTITUTO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=01/07/2026&jornal=530&pagina=87) · 2026-07-01
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Sul/Campus Alvorada · [Edital](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=01/07/2026&jornal=530&pagina=74) · 2026-07-01
+- Ministério da Educação/Universidade Federal do Espírito Santo/Reitoria · [EDITAL Nº 116, DE 30 DE JUNHO DE 2026 HOMOLOGAÇÃO DO RESULTADO DO PROCESSO SELETIVO SIMPLIFICADO PARA CONTRATAÇÃO DE PROFESSOR SUBSTITUTO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=01/07/2026&jornal=530&pagina=88) · 2026-07-01
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Rondônia/Campus Ariquemes · [edital de CONVOCAÇÃO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=01/07/2026&jornal=530&pagina=75) · 2026-07-01
+- Ministério da Educação/Universidade Federal do Espírito Santo/Reitoria · [EDITAL Nº 117, DE 30 DE JUNHO DE 2026 HOMOLOGAção do resultado do processo seletivo simplificado para contratação de professor substituto](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=01/07/2026&jornal=530&pagina=88) · 2026-07-01
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia da Paraíba/Reitoria · [EDITAL Nº 102, DE 15 DE JUNHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=01/07/2026&jornal=530&pagina=58) · 2026-07-01
+- Ministério da Educação/Fundação Universidade Federal de Sergipe · [EDITAL Nº 51, DE 30 DE JUNHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=01/07/2026&jornal=530&pagina=133) · 2026-07-01
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Goiás/Câmpus Jataí/Gabinete · [EDITAL Nº 19, DE 30 DE JUNHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=01/07/2026&jornal=530&pagina=55) · 2026-07-01
+- Ministério da Educação/Universidade Federal da Paraíba · [EDITAL Nº 133/2026 - PROGEP-DSP](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=01/07/2026&jornal=530&pagina=94) · 2026-07-01
+- Ministério da Educação/Universidade Federal dos Vales do Jequitinhonha e Mucuri · [EDITAL Nº 89, DE 30 DE JUNHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=01/07/2026&jornal=530&pagina=102) · 2026-07-01
+- Ministério da Educação/Universidade Federal da Paraíba · [EDITAL Nº 116/2026 - PROGEP-DSP](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=01/07/2026&jornal=530&pagina=92) · 2026-07-01
+- Ministério da Educação/Universidade Federal da Paraíba · [EDITAL Nº 125/2026 - PROGEP-DSP](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=01/07/2026&jornal=530&pagina=93) · 2026-07-01
+- Ministério da Educação/Universidade Federal da Paraíba · [EDITAL Nº 129/2026-PROGEP-DSP](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=01/07/2026&jornal=530&pagina=94) · 2026-07-01
+- Ministério da Justiça e Segurança Pública/Secretaria Nacional de Políticas Penais · [EXTRATO DE CONTRATOS](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=01/07/2026&jornal=530&pagina=176) · 2026-07-01
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Mato Grosso do Sul · [EDITAL CAMPUS NOVA ANDRADINA/IFMS Nº 2.5/2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=01/07/2026&jornal=530&pagina=56) · 2026-07-01
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Pará/Campus Óbidos · [Edital](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=01/07/2026&jornal=530&pagina=58) · 2026-07-01
+- Ministério da Educação/Fundação Universidade Federal do Pampa · [EDITAL Nº 199/2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=01/07/2026&jornal=530&pagina=125) · 2026-07-01
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Santa Catarina · [EDITAL Nº 11, de 30 de junho de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=01/07/2026&jornal=530&pagina=76) · 2026-07-01
+- Ministério da Educação/Universidade Federal de São Paulo/Pró-Reitoria de Gestão com Pessoas · [EDITAL Nº 503, DE 30 DE JUNHO DE 2026 HOMOLOGAÇÃO DE PROCESSO SELETIVO SIMPLIFICADO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=01/07/2026&jornal=530&pagina=102) · 2026-07-01
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Norte de Minas Gerais/Campus Januária · [EDITAL Nº 221, DE 30 DE JUNHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=01/07/2026&jornal=530&pagina=57) · 2026-07-01
+- Ministério da Educação/Universidade Federal de Juiz de Fora/Pró-Reitoria de Pós-Graduação e Pesquisa · [EDITAL](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=01/07/2026&jornal=530&pagina=89) · 2026-07-01
+- Ministério da Educação/Fundação Universidade Federal de São Carlos/Pró-Reitoria de Gestão de Pessoas · [Edital nº 77, de 30 de junho de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=01/07/2026&jornal=530&pagina=132) · 2026-07-01
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Pará/Gabinete · [Edital](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=01/07/2026&jornal=530&pagina=58) · 2026-07-01
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Minas Gerais/Campus Bambuí · [EXTRATO DE CONTRATO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=01/07/2026&jornal=530&pagina=56) · 2026-07-01
+- Ministério da Educação/Universidade Federal do Cariri/Pró-Reitoria de Gestão de Pessoas · [EDITAL Nº 50/2026, DE 30 DE JUNHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=01/07/2026&jornal=530&pagina=86) · 2026-07-01
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Maranhão/Campus Santa Inês · [EDITAL Nº 253, DE 30 DE JUNHO  DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=01/07/2026&jornal=530&pagina=55) · 2026-07-01
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Tocantins/Campus Dianópolis · [EDITAL Nº 24/2026, DE 30 DE JUNHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=01/07/2026&jornal=530&pagina=84) · 2026-07-01
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia Catarinense/Pró-Reitoria de Desenvolvimento, Inclusão, Diversidade e Assistência à Pessoa · [EDITAL Nº 79/CAMDP/IFC/2025 de 15 de junho de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=01/07/2026&jornal=530&pagina=52) · 2026-07-01
+- Ministério da Educação/Fundação Universidade Federal do Maranhão/Gabinete da Reitoria/Pró-Reitoria de Recursos Humanos · [EDITAL  Nº 358, DE  30 DE JUNHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=01/07/2026&jornal=530&pagina=124) · 2026-07-01
+- Ministério da Educação/Fundação Universidade Federal do Maranhão/Gabinete da Reitoria/Pró-Reitoria de Recursos Humanos · [EDITAL  Nº 347, DE  30 DE JUNHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=01/07/2026&jornal=530&pagina=121) · 2026-07-01
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Piauí · [EDITAL nº 16 - DG-SRNONAT/CASRN/IFPI, de 30 de junho de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=01/07/2026&jornal=530&pagina=73) · 2026-07-01
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Espírito Santo/Campus Linhares · [PORTARIA Nº 206, DE 30 DE JUNHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=02/07/2026&jornal=515&pagina=39) · 2026-07-02
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia Catarinense/Pró-Reitoria de Desenvolvimento, Inclusão, Diversidade e Assistência à Pessoa · [EDITAL Nº 71/CAMDP/IFC/2025, de 28 de maio de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=02/07/2026&jornal=530&pagina=50) · 2026-07-02
+- Entidades de Fiscalização do Exercício das Profissões Liberais/Conselho Regional de Biologia 8ª Região · [EDITAL DE CONVOCAÇÃO Nº 7/2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=02/07/2026&jornal=530&pagina=261) · 2026-07-02
+- Ministério da Educação/Universidade Federal do Espírito Santo/Reitoria · [EDITAL Nº 118, DE 1º DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=02/07/2026&jornal=530&pagina=84) · 2026-07-02
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Minas Gerais/Campus Bambuí · [EDITAL de 26 de junho de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=02/07/2026&jornal=530&pagina=53) · 2026-07-02
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Minas Gerais/Campus Bambuí · [EDITAL de  26 de junho de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=02/07/2026&jornal=530&pagina=54) · 2026-07-02
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Minas Gerais/Campus Bambuí · [EDITAL de  26 de junho de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=02/07/2026&jornal=530&pagina=54) · 2026-07-02
+- Ministério da Educação/Universidade Federal do Espírito Santo/Reitoria · [EDITAL Nº 119, DE 1º DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=02/07/2026&jornal=530&pagina=84) · 2026-07-02
+- Ministério da Educação/Universidade Federal da Bahia · [eDITAL DE RETIFICAÇÃO Nº 5, DE 1 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=02/07/2026&jornal=530&pagina=79) · 2026-07-02
+- Ministério da Educação/Universidade Federal do Rio Grande do Norte/Pró-Reitoria de Gestão de Pessoas · [EDITAL Nº 101/2026-PROGESP](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=02/07/2026&jornal=530&pagina=104) · 2026-07-02
+- Ministério da Educação/Universidade Federal do Rio Grande do Norte/Pró-Reitoria de Gestão de Pessoas · [EDITAL Nº 102/2026-PROGESP](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=02/07/2026&jornal=530&pagina=104) · 2026-07-02
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Norte/Campus Santa Cruz · [EDITAL Nº 64, DE  26 DE JUNHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=02/07/2026&jornal=530&pagina=57) · 2026-07-02
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de São Paulo · [EDITAL Nº 75/2026 - PRO-PRD/RET/IFSP, DE 1 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=02/07/2026&jornal=530&pagina=59) · 2026-07-02
+- Ministério da Educação/Universidade Federal do Rio de Janeiro/Centro de Ciências da Saúde · [EDITAL Nº 817, DE 1º DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=02/07/2026&jornal=530&pagina=105) · 2026-07-02
+- Ministério da Educação/Fundação Universidade Federal de Roraima · [Edital nº 184, de 30 de junho de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=02/07/2026&jornal=530&pagina=122) · 2026-07-02
+- Ministério da Educação/Universidade Federal de Uberlândia/Pró-Reitoria de Gestão de Pessoas · [EDITAL PROGEP Nº 55/2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=02/07/2026&jornal=530&pagina=129) · 2026-07-02
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Sul/Campus Bento Gonçalves/Coordenadoria de Gestão de Pessoas · [EDITAL Nº 35-2026, DE 26 DE MAIO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=02/07/2026&jornal=530&pagina=57) · 2026-07-02
+- Ministério da Educação/Fundação Universidade Federal do Rio Grande · [EDITAL Nº 19, DE 30 DE JUNHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=02/07/2026&jornal=530&pagina=121) · 2026-07-02
+- Ministério da Educação/Fundação Universidade Federal do Rio Grande · [EDITAL Nº 20, DE 30 DE JUNHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=02/07/2026&jornal=530&pagina=122) · 2026-07-02
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Minas Gerais/Campus Ouro Preto · [EXTRATO DE RESCISÃO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=02/07/2026&jornal=530&pagina=54) · 2026-07-02
+- Ministério da Educação/Universidade Federal de Alagoas/Pró-Reitoria de Gestão de Pessoas e do Trabalho · [EDITAL PROGEP Nº 30, DE 1º DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=02/07/2026&jornal=530&pagina=76) · 2026-07-02
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Sertão Pernambucano/Diretoria-Geral · [EDITAL DE HOMOLOGAÇÃO Nº 17 DE 1º DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=02/07/2026&jornal=530&pagina=66) · 2026-07-02
+- Ministério da Educação/Universidade Federal da Bahia/Reitoria/Pró-Reitoria de Desenvolvimento de Pessoas · [EDITAL DE 1º DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=02/07/2026&jornal=530&pagina=82) · 2026-07-02
+- Ministério da Educação/Universidade Federal da Bahia/Reitoria/Pró-Reitoria de Desenvolvimento de Pessoas · [EDITAL DE 1º DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=02/07/2026&jornal=530&pagina=82) · 2026-07-02
+- Ministério da Educação/Universidade Federal da Bahia/Reitoria/Pró-Reitoria de Desenvolvimento de Pessoas · [EDITAL DE 1º DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=02/07/2026&jornal=530&pagina=82) · 2026-07-02
+- Ministério da Agricultura e Pecuária/Secretaria Executiva/Subsecretaria de Gestão de Pessoas e de Gestão do Conhecimento · [EXTRATO DE CONTRATO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=02/07/2026&jornal=530&pagina=1) · 2026-07-02
+- Ministério da Educação/Universidade Federal da Integração Latino-Americana · [EDITAL nº 198/2026/DICS/DAP/PROGEPE, DE 1º DE JULHO DE 2026 PROCESSO SELETIVO SIMPLIFICADO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=02/07/2026&jornal=530&pagina=85) · 2026-07-02
+- Ministério da Educação/Universidade Federal do Sul da Bahia · [EDITAL Nº 6/2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=02/07/2026&jornal=530&pagina=107) · 2026-07-02
+- Ministério da Educação/Universidade Federal do Norte do Tocantins · [EDITAL Nº 33/2026, DE 25 DE JUNHO 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=02/07/2026&jornal=530&pagina=88) · 2026-07-02
+- Ministério da Educação/Universidade Federal do Estado do Rio de Janeiro · [EDITAL N° 163, de 1° de julho de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=02/07/2026&jornal=530&pagina=127) · 2026-07-02
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Sul de Minas Gerais/Reitoria · [EDITAL nº 169/2026 - GAB/IFSULDEMINAS](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=02/07/2026&jornal=530&pagina=70) · 2026-07-02
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Paraná/Campus Pitanga · [EDITAL N° 112, DE 1° DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=02/07/2026&jornal=530&pagina=55) · 2026-07-02
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Paraná/Campus Palmas · [EDITAL N° 150, DE 1º DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=02/07/2026&jornal=530&pagina=55) · 2026-07-02
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Minas Gerais/Campus Ouro Preto · [edital de 1º de julho de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=02/07/2026&jornal=530&pagina=54) · 2026-07-02
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia Baiano/Gabinete · [EDITAL DE 1º DE JULHO DE 2026 HOMOLOGAÇÃO DO RESULTADO FINAL DO PROCESSO SELETIVO SIMPLIFICADO PARA A CONTRATAÇÃO DE PROFESSOR SUBSTITUTO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=02/07/2026&jornal=530&pagina=49) · 2026-07-02
+- Ministério da Educação/Universidade Federal do Espírito Santo/Reitoria · [EDITAL Nº 120, DE 1º DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=02/07/2026&jornal=530&pagina=84) · 2026-07-02
+- Ministério da Educação/Universidade Federal da Paraíba · [EDITAL Nº 141/2026 - PROGEP-DSP](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=02/07/2026&jornal=530&pagina=90) · 2026-07-02
+- Ministério da Educação/Universidade Federal da Paraíba · [EDITAL Nº 140/2026 - PROGEP-DSP](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=02/07/2026&jornal=530&pagina=90) · 2026-07-02
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Amazonas/Reitoria · [EDITAL](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=02/07/2026&jornal=530&pagina=48) · 2026-07-02
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Amazonas/Reitoria · [EDITAL](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=02/07/2026&jornal=530&pagina=48) · 2026-07-02
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Sul/Campus Rio Grande · [EDITAL Nº 35,  DE  1º DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=02/07/2026&jornal=530&pagina=58) · 2026-07-02
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Sul/Campus Rio Grande · [EDITAL Nº 34,  DE  1º DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=02/07/2026&jornal=530&pagina=57) · 2026-07-02
+- Ministério da Educação/Fundação Universidade de Brasília/Decanato de Gestão de Pessoas · [EDITAL  Nº 106, DE 1º DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=02/07/2026&jornal=530&pagina=117) · 2026-07-02
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia Baiano/Gabinete · [EDITAL DE 1º DE JULHO DE 2026 HOMOLOGAÇÃO DO RESULTADO FINAL DO PROCESSO SELETIVO SIMPLIFICADO PARA A CONTRATAÇÃO DE PROFESSOR SUBSTITUTO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=02/07/2026&jornal=530&pagina=49) · 2026-07-02
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia Baiano/Gabinete · [EDITAL DE 1º DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=02/07/2026&jornal=530&pagina=49) · 2026-07-02
+- Ministério da Educação/Universidade Federal da Bahia/Reitoria/Pró-Reitoria de Desenvolvimento de Pessoas · [EDITAL DE 30 DE JUNHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=02/07/2026&jornal=530&pagina=80) · 2026-07-02
+- Ministério da Educação/Fundação Universidade Federal do Pampa · [EDITAL Nº 205/2026 RESULTADO DE PROCESSO SELETIVO SIMPLIFICADO PARA PROFESSOR SUBSTITUTO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=02/07/2026&jornal=530&pagina=120) · 2026-07-02
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Minas Gerais/Campus Bambuí · [EXTRATO DE CONTRATO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=02/07/2026&jornal=530&pagina=53) · 2026-07-02
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Ceará/Campus Itapipoca/Gabinete · [EDITAL](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=02/07/2026&jornal=530&pagina=50) · 2026-07-02
+- Ministério da Educação/Fundação Universidade do Amazonas · [PORTARIA Nº 1.395, DE 1º DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=515&pagina=117) · 2026-07-03
+- Ministério da Educação/Universidade Federal de Juiz de Fora/Pró-Reitoria de Pós-Graduação e Pesquisa · [PORTARIA PROPP/UFJF Nº 163, DE 2 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=515&pagina=116) · 2026-07-03
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Espírito Santo/Campus Piúma · [PORTARIA Nº 135, DE 2 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=515&pagina=114) · 2026-07-03
+- Ministério da Educação/Universidade Federal de Juiz de Fora/Pró-Reitoria de Gestão de Pessoas · [PORTARIA PROGEPE/UFJF Nº 385, DE 2 de julho de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=515&pagina=116) · 2026-07-03
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Sul/Campus Viamão · [EDITAL Nº 6, DE 10 DE ABRIL DE 2024](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=96) · 2026-07-03
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Sul/Campus Viamão · [EDITAL Nº 6, DE 10 DE ABRIL DE 2024](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=96) · 2026-07-03
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Sul/Campus Viamão · [EDITAL Nº 10, DE 4 DE JULHO DE 2024](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=96) · 2026-07-03
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Sul/Campus Viamão · [EDITAL Nº  10, DE 4 DE JULHO DE 2024](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=96) · 2026-07-03
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia da Bahia/Campus Brumado/Gabinete/BRU · [EXTRATO DE TERMO ADITIVO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=55) · 2026-07-03
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia da Bahia/Campus Brumado/Gabinete/BRU · [EXTRATO DE TERMO ADITIVO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=55) · 2026-07-03
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia da Bahia/Campus Brumado/Gabinete/BRU · [EXTRATO DE TERMO ADITIVO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=55) · 2026-07-03
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia da Bahia/Campus Brumado/Gabinete/BRU · [EXTRATO DE TERMO ADITIVO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=55) · 2026-07-03
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia da Bahia/Campus Brumado/Gabinete/BRU · [EXTRATO DE TERMO ADITIVO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=55) · 2026-07-03
+- Ministério da Educação/Fundação Universidade Federal de São João Del Rei/Pró-Reitoria de Gestão e Desenvolvimento de Pessoas · [EDITAL DE  1º de julho de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=167) · 2026-07-03
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia Catarinense/Pró-Reitoria de Desenvolvimento, Inclusão, Diversidade e Assistência à Pessoa · [EDITAL Nº 67, DE 25 DE JUNHO DE 2025](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=56) · 2026-07-03
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Paraná/Campus Paranavaí/Seção do Gabinete da Diretoria Geral · [EDITAL N° 93, DE 2 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=93) · 2026-07-03
+- Ministério da Educação/Fundação Universidade Federal de Sergipe · [EDITAL Nº 56, DE 1° DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=168) · 2026-07-03
+- Ministério da Educação/Fundação Universidade Federal de Sergipe · [EDITAL Nº 55, DE 1° DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=168) · 2026-07-03
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Triângulo Mineiro/Campus Patrocínio/Coordenação-Geral de Administração e Planejamento/Coordenação de Gestão de Pessoas · [EDITAL Nº 29, DE 2 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=108) · 2026-07-03
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Triângulo Mineiro/Campus Patrocínio/Coordenação-Geral de Administração e Planejamento/Coordenação de Gestão de Pessoas · [EDITAL Nº 28, DE 2 de JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=107) · 2026-07-03
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Sudeste de Minas Gerais/Reitoria · [Edital nº 49, de 2 de julho de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=106) · 2026-07-03
+- Ministério da Educação/Fundação Universidade Federal do Piauí/Centro de Ciências da Saúde · [AVISO DE RETIFICAÇÃO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=164) · 2026-07-03
+- Ministério da Educação/Fundação Universidade Federal de Sergipe · [EDITAL Nº 57, DE 1° DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=169) · 2026-07-03
+- Ministério da Educação/Fundação Universidade Federal de Mato Grosso/Faculdade de Medicina/Departamento de Ciências Básicas em Saúde · [EDITAL DE HOMOLOGAÇÃO Nº 2, DE 5 DE JUNHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=150) · 2026-07-03
+- Ministério da Educação/Fundação Universidade Federal de Mato Grosso/Faculdade de Agronomia e Zootecnia/Departamento de Zootecnia e Extensão Rural · [EDITAL DE HOMOLOGAÇÃO Nº 1, DE 29 de junho de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=150) · 2026-07-03
+- Ministério da Educação/Fundação Universidade Federal de Mato Grosso/Faculdade de Comunicação e Artes/Departamento de Comunicação · [EDITAL DE HOMOLOGAÇÃO Nº 3, DE 15 de junho de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=152) · 2026-07-03
+- Ministério da Educação/Fundação Universidade Federal de Mato Grosso/Faculdade de Agronomia e Zootecnia/Departamento de Fitotecnia e Fitossanidade · [EDITAL Nº 4, DE 29 DE JUNHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=149) · 2026-07-03
+- Ministério da Educação/Fundação Universidade Federal de Mato Grosso/Faculdade de Comunicação e Artes · [EDITAL DE HOMOLOGAÇÃO Nº 1, DE 1º de julho de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=152) · 2026-07-03
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Tocantins/Campus Porto Nacional · [EDITAL Nº 25, DE 1º DE JULHO DE 2025](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=107) · 2026-07-03
+- Ministério da Educação/Fundação Universidade Federal de Sergipe · [EDITAL Nº 54, DE 1° DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=168) · 2026-07-03
+- Ministério da Educação/Fundação Universidade Federal de Mato Grosso/Campus Universitário de Sinop/Instituto de Ciências da Saúde · [EDITAL DE HOMOLOGAÇÃO Nº 5, DE 30 de junho de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=148) · 2026-07-03
+- Ministério da Educação/Fundação Universidade Federal de Mato Grosso/Campus Universitário de Sinop/Instituto de Ciências da Saúde · [EDITAL DE HOMOLOGAÇÃO Nº 6 DE 29 de junho de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=148) · 2026-07-03
+- Ministério da Educação/Fundação Universidade Federal de Mato Grosso/Campus Universitário de Sinop/Instituto de Ciências da Saúde · [EDITAL DE HOMOLOGAÇÃO Nº 7, DE 29 de junho de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=148) · 2026-07-03
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Norte/Campus Caicó · [EDITAL DE HOMOLOGAÇÃO Nº 51, DE 2 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=94) · 2026-07-03
+- Ministério da Educação/Fundação Universidade Federal de Mato Grosso/Faculdade de Educação Física/Departamento de Teoria e Fundamentos em Educação Física · [EDITAL DE HOMOLOGAÇÃO Nº 2, DE 1º de julho de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=150) · 2026-07-03
+- Ministério da Educação/Fundação Universidade Federal de Mato Grosso/Faculdade de Economia · [EDITAL Nº 1, DE 29 DE JUNHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=150) · 2026-07-03
+- Ministério da Educação/Fundação Universidade Federal de Mato Grosso/Instituto de Saúde Coletiva/Departamento de Saúde Coletiva · [EDITAL DE HOMOLOGAÇÃO Nº 1, DE 29 de junho de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=152) · 2026-07-03
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Paraná/Campus Coronel Vivida/Seção de Gestão  de Pessoas · [EDITAL N° 65, DE 2  DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=93) · 2026-07-03
+- Ministério da Educação/Fundação Universidade Federal de São João Del Rei/Pró-Reitoria de Gestão e Desenvolvimento de Pessoas · [EDITAL DE 2 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=166) · 2026-07-03
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Paraná/Campus Paranaguá · [EDITAL N°119, DE 2 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=92) · 2026-07-03
+- Ministério da Educação/Fundação Universidade Federal de Mato Grosso/Instituto de Linguagens/Departamento de Letras · [EDITAL DE HOMOLOGAÇÃO Nº 3/2026, DE 26 de junho de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=151) · 2026-07-03
+- Ministério da Educação/Fundação Universidade Federal de Mato Grosso/Instituto de Física · [EDITAL DE HOMOLOGAÇÃO Nº 1, DE 23 DE JUNHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=151) · 2026-07-03
+- Ministério da Educação/Fundação Universidade Federal de Mato Grosso/Instituto de Geografia, História e Documentação/Departamento de Geografia · [EDITAL DE HOMOLOGAÇÃO Nº 1, DE 29 de junho de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=152) · 2026-07-03
+- Ministério da Educação/Fundação Universidade Federal de Mato Grosso/Instituto de Geografia, História e Documentação/Departamento de História · [EDITAL DE HOMOLOGAÇÃO Nº 1, DE 1º de julho de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=152) · 2026-07-03
+- Ministério da Educação/Fundação Universidade Federal de Mato Grosso/Campus Universitário de Sinop/Instituto de Ciências Naturais, Humanas e Sociais · [EDITAL DE HOMOLOGAÇÃO Nº 5, DE 30 de junho de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=149) · 2026-07-03
+- Ministério da Educação/Fundação Universidade Federal de Mato Grosso/Campus Universitário de Sinop/Instituto de Ciências Naturais, Humanas e Sociais · [EDITAL DE HOMOLOGAÇÃO Nº 1, DE 30 de junho de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=148) · 2026-07-03
+- Ministério da Educação/Fundação Universidade Federal de Mato Grosso/Campus Universitário de Sinop/Instituto de Ciências Naturais, Humanas e Sociais · [EDITAL DE HOMOLOGAÇÃO Nº 2, DE 30 de junho de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=148) · 2026-07-03
+- Ministério da Educação/Fundação Universidade Federal de Mato Grosso/Campus Universitário de Sinop/Instituto de Ciências Naturais, Humanas e Sociais · [EDITAL DE HOMOLOGAÇÃO Nº 4, DE 30 de junho de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=149) · 2026-07-03
+- Ministério da Educação/Fundação Universidade Federal de Mato Grosso/Campus Universitário de Sinop/Instituto de Ciências Naturais, Humanas e Sociais · [EDITAL DE HOMOLOGAÇÃO Nº 3, DE 30 de junho de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=149) · 2026-07-03
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Sul/Campus Porto Alegre · [EDITAL Nº 51, DE 2 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=95) · 2026-07-03
+- Ministério da Educação/Centro Federal de Educação Tecnológica de Minas Gerais/Secretaria de Gestão de Pessoas · [EDITAL Nº 482, DE 2 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=38) · 2026-07-03
+- Ministério da Educação/Centro Federal de Educação Tecnológica de Minas Gerais/Secretaria de Gestão de Pessoas · [EDITAL Nº 476, DE 1º DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=38) · 2026-07-03
+- Ministério da Educação/Centro Federal de Educação Tecnológica de Minas Gerais/Secretaria de Gestão de Pessoas · [EDITAL Nº 477, DE 1º DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=38) · 2026-07-03
+- Ministério da Educação/Centro Federal de Educação Tecnológica de Minas Gerais/Secretaria de Gestão de Pessoas · [EDITAL Nº 480, DE 1º DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=38) · 2026-07-03
+- Ministério da Educação/Centro Federal de Educação Tecnológica de Minas Gerais/Secretaria de Gestão de Pessoas · [EDITAL Nº 483, DE 2 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=38) · 2026-07-03
+- Ministério da Educação/Centro Federal de Educação Tecnológica de Minas Gerais/Secretaria de Gestão de Pessoas · [EDITAL Nº 481, DE 1º DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=38) · 2026-07-03
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Ceará/Campus Maracanaú · [Edital nº 1, de 5 de maio de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=86) · 2026-07-03
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Paraná/Campus Campo Largo · [EDITAL Nº 121, DE 2 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=93) · 2026-07-03
+- Ministério da Educação/Fundação Universidade Federal de Mato Grosso/Centro de Ciências Exatas e de Tecnologia · [EDITAL DE HOMOLOGAÇÃO Nº 2, DE 26 de junho de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=149) · 2026-07-03
+- Ministério da Educação/Fundação Universidade Federal de Mato Grosso/Faculdade de Nutrição/Departamento de Alimentos e Nutrição · [EDITAL DE HOMOLOGAÇÃO Nº 3, DE 26 de junho de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=151) · 2026-07-03
+- Ministério da Educação/Fundação Universidade Federal de Mato Grosso/Instituto de Computação · [EDITAL DE HOMOLOGAÇÃO Nº 1, DE 29 de junho de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=151) · 2026-07-03
+- Ministério da Educação/Fundação Universidade Federal de Mato Grosso/Instituto de Ciências Humanas e Sociais/Departamento de Antropologia · [EDITAL DE HOMOLOGAÇÃO Nº 1, DE 26 de junho de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=151) · 2026-07-03
+- Ministério da Educação/Fundação Universidade Federal de Mato Grosso/Faculdade de Enfermagem/Departamento de Enfermagem · [EDITAL DE HOMOLOGAÇÃO Nº 2, DE 29 DE JUNHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=151) · 2026-07-03
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Paraná/Campus Palmas · [EDITAL N°152, DE 2 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=92) · 2026-07-03
+- Ministério da Educação/Fundação Universidade Federal de Mato Grosso/Faculdade de Medicina Veterinária · [EDITAL DE HOMOLOGAÇÃO Nº 1, DE 29 de junho de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=152) · 2026-07-03
+- Ministério da Educação/Fundação Universidade Federal de Mato Grosso/Faculdade de Administração e Ciência Contábeis/Departamento de Ciências Contábeis · [EDITAL DE HOMOLOGAÇÃO Nº 1, DE 29 de junho de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=149) · 2026-07-03
+- Ministério da Educação/Fundação Universidade Federal de Mato Grosso/Faculdade de Arquitetura, Engenharia e Tecnologia/Departamento de Engenharia Civil · [EDITAL DE HOMOLOGAÇÃO Nº 1, DE 29 de junho de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=150) · 2026-07-03
+- Ministério da Educação/Fundação Universidade Federal de Mato Grosso/Faculdade de Arquitetura, Engenharia e Tecnologia/Departamento de Engenharia Civil · [EDITAL DE HOMOLOGAÇÃO Nº 2, DE 29 de junho de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=150) · 2026-07-03
+- Ministério da Educação/Fundação Universidade Federal de Mato Grosso/Instituto de Educação/Departamento de Psicologia · [EDITAL DE HOMOLOGAÇÃO Nº 1, DE 26 de junho de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=151) · 2026-07-03
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Mato Grosso do Sul · [EDITAL Nº 4.5,  de 2 de julho de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=89) · 2026-07-03
+- Ministério da Educação/Universidade Federal do Espírito Santo/Reitoria · [EDITAL Nº 121, DE 2 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=112) · 2026-07-03
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Goiás/Campus da Cidade de Luziânia/Gabinete · [EDITAL Nº 18, DE 2 DE JULHO 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=89) · 2026-07-03
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Goiás/Campus da Cidade de Luziânia/Gabinete · [EDITAL Nº 17,  DE 2 DE JULHO 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=88) · 2026-07-03
+- Ministério da Educação/Universidade Federal de Alagoas/Pró-Reitoria de Gestão de Pessoas e do Trabalho · [EDITAL PROGEP Nº 31, DE 2 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=109) · 2026-07-03
+- Ministério da Educação/Colégio Pedro II/Pró-Reitoria de Gestão de Pessoas · [EDITAL Nº 14, DE 1º DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=40) · 2026-07-03
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Minas Gerais/Campus Arcos · [EXTRATO DE TERMO ADITIVO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=90) · 2026-07-03
+- Ministério da Educação/Fundação Universidade Federal de Sergipe · [EDITAL Nº 53, DE 2 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=167) · 2026-07-03
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Pará/Campus Paragominas · [Edital nº 8, de 26 de junho de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=90) · 2026-07-03
+- Entidades de Fiscalização do Exercício das Profissões Liberais/CONSELHO REGIONAL DOS TÉCNICOS INDUSTRIAIS DA 2ª REGIÃO · [Edital de CONVOCAÇÃO nº 3/2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=387) · 2026-07-03
+- Ministério da Educação/Universidade Federal de Alagoas/Pró-Reitoria de Gestão de Pessoas e do Trabalho · [EDITAL PROGEP Nº 32, DE 2 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=110) · 2026-07-03
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Alagoas/Reitoria · [EDITAL Nº 68/2026/IFAL, DE 15 DE JUNHO 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=42) · 2026-07-03
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Alagoas/Reitoria · [EDITAL Nº 71/2026/IFAL, DE 15 DE JUNHO 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=43) · 2026-07-03
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Alagoas/Reitoria · [EDITAL Nº 72/2026/IFAL, DE 15 DE JUNHO 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=43) · 2026-07-03
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Alagoas/Reitoria · [EDITAL Nº 73/2026/IFAL, DE 15 DE JUNHO 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=43) · 2026-07-03
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Alagoas/Reitoria · [EDITAL Nº 74/2026/IFAL, DE 15 DE JUNHO 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=44) · 2026-07-03
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Alagoas/Reitoria · [EDITAL Nº 75/2026/IFAL, DE 15 DE JUNHO 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=44) · 2026-07-03
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Rondônia/Campus Jaru · [EDITAL Nº 29/2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=97) · 2026-07-03
+- Ministério da Educação/Universidade Federal dos Vales do Jequitinhonha e Mucuri · [EDITAL Nº 90, DE 2 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=134) · 2026-07-03
+- Ministério da Educação/Fundação Universidade Federal de São Carlos/Pró-Reitoria de Gestão de Pessoas · [Edital nº 78, de 2 de julho de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=165) · 2026-07-03
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Sul/Campus Feliz · [EDITAL](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=95) · 2026-07-03
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia Catarinense/Pró-Reitoria de Desenvolvimento, Inclusão, Diversidade e Assistência à Pessoa · [EDITAL Nº 63, DE 17 DE JUNHO DE 2025](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=57) · 2026-07-03
+- Ministério da Educação/Universidade Federal do Estado do Rio de Janeiro · [EDITAL N° 164, DE 2 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=171) · 2026-07-03
+- Ministério da Educação/Universidade Federal do Pará/Pró-Reitoria de Desenvolvimento e Gestão de Pessoal · [EDITAL Nº 58, DE 2 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=118) · 2026-07-03
+- Ministério da Educação/Universidade Federal do Pará/Pró-Reitoria de Desenvolvimento e Gestão de Pessoal · [EDITAL Nº 57, DE 2 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=118) · 2026-07-03
+- Ministério da Educação/Universidade Federal do Pará/Pró-Reitoria de Desenvolvimento e Gestão de Pessoal · [EDITAL Nº 56, DE 2 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=117) · 2026-07-03
+- Ministério da Educação/Fundação Universidade Federal de Mato Grosso/Campus Universitário de Sinop/Instituto de Ciências Agrárias e Ambientais · [EDITAL DE HOMOLOGAÇÃO Nº 3, DE 29 de junho de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=147) · 2026-07-03
+- Ministério da Educação/Fundação Universidade Federal de Mato Grosso/Campus Universitário de Sinop/Instituto de Ciências Agrárias e Ambientais · [EDITAL DE HOMOLOGAÇÃO Nº 6, DE 29 de junho de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=147) · 2026-07-03
+- Ministério da Educação/Fundação Universidade Federal de Mato Grosso/Campus Universitário de Sinop/Instituto de Ciências Agrárias e Ambientais · [EDITAL DE HOMOLOGAÇÃO Nº 2, DE 29 de junho de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=147) · 2026-07-03
+- Ministério da Educação/Fundação Universidade Federal de Mato Grosso/Campus Universitário de Sinop/Instituto de Ciências Agrárias e Ambientais · [EDITAL DE HOMOLOGAÇÃO Nº 5, DE 29 de junho de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=147) · 2026-07-03
+- Ministério da Educação/Fundação Universidade Federal de Mato Grosso/Campus Universitário de Sinop/Instituto de Ciências Agrárias e Ambientais · [EDITAL DE HOMOLOGAÇÃO Nº 4, DE 29 de junho de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=147) · 2026-07-03
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Acre · [EDITAL COMPLEMENTAR N° 5, DE 1º DE JUlho DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=42) · 2026-07-03
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Paraná/Campus Londrina · [EDITAL N° 122, DE 1º DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=92) · 2026-07-03
+- Ministério da Educação/Fundação Universidade Federal de Mato Grosso/Campus Universitário do Araguaia/Instituto de Ciências Humanas e Sociais · [EDITAL DE HOMOLOGAÇÃO Nº 2, DE 29 de junho de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=146) · 2026-07-03
+- Ministério da Educação/Fundação Universidade Federal de Mato Grosso/Campus Universitário do Araguaia/Instituto de Ciências Humanas e Sociais · [EDITAL DE HOMOLOGAÇÃO Nº 3, DE 29 de junho de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=146) · 2026-07-03
+- Ministério da Educação/Fundação Universidade Federal de Mato Grosso/Campus Universitário do Araguaia/Instituto de Ciências Humanas e Sociais · [EDITAL DE HOMOLOGAÇÃO Nº 4, DE 29 de junho de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=147) · 2026-07-03
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia Baiano/Gabinete · [EDITAL](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=55) · 2026-07-03
+- Ministério da Educação/Universidade Federal de Uberlândia/Pró-Reitoria de Gestão de Pessoas · [EDITAL PROGEP Nº 58/2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=172) · 2026-07-03
+- Ministério da Educação/Universidade Federal de Uberlândia/Pró-Reitoria de Gestão de Pessoas · [EDITAL PROGEP Nº 59/2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=173) · 2026-07-03
+- Ministério da Educação/Universidade Federal de Uberlândia/Pró-Reitoria de Gestão de Pessoas · [EDITAL PROGEP Nº 62/2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=173) · 2026-07-03
+- Ministério da Educação/Universidade Federal de Uberlândia/Pró-Reitoria de Gestão de Pessoas · [EDITAL  PROGEP Nº 64/2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=173) · 2026-07-03
+- Ministério da Educação/Universidade Federal de Uberlândia/Pró-Reitoria de Gestão de Pessoas · [EDITAL PROGEP Nº 65/2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=173) · 2026-07-03
+- Ministério da Educação/Universidade Federal de Uberlândia · [EDITAL PROGEP Nº 60/2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=172) · 2026-07-03
+- Ministério da Educação/Universidade Federal de Uberlândia · [EDITAL PROGEP Nº 63/2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=172) · 2026-07-03
+- Ministério do Planejamento e Orçamento/Fundação Instituto Brasileiro de Geografia e Estatística · [edital, de  2 de julho de 2026.](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=355) · 2026-07-03
+- Ministério do Planejamento e Orçamento/Fundação Instituto Brasileiro de Geografia e Estatística · [edital de 2 de julho de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=350) · 2026-07-03
+- Ministério do Planejamento e Orçamento/Fundação Instituto Brasileiro de Geografia e Estatística · [edital, de 2 de julho de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=323) · 2026-07-03
+- Ministério do Planejamento e Orçamento/Fundação Instituto Brasileiro de Geografia e Estatística · [edital de 2 de julho de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=322) · 2026-07-03
+- Ministério do Planejamento e Orçamento/Fundação Instituto Brasileiro de Geografia e Estatística · [edital de 2 de julho de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=321) · 2026-07-03
+- Ministério do Planejamento e Orçamento/Fundação Instituto Brasileiro de Geografia e Estatística · [RESULTADO FINAL DE APROVADOS - PESSOAS COM DEFICIÊNCIAS](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=314) · 2026-07-03
+- Ministério do Planejamento e Orçamento/Fundação Instituto Brasileiro de Geografia e Estatística · [Edital, ede 2 de julho de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=242) · 2026-07-03
+- Ministério do Planejamento e Orçamento/Fundação Instituto Brasileiro de Geografia e Estatística · [edital de 2 de julho de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=241) · 2026-07-03
+- Ministério da Educação/Fundação Universidade Federal do Rio Grande · [RETIFICAÇÃO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=164) · 2026-07-03
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Alagoas/Reitoria · [EDITAL Nº 78/2026/IFAL, DE 2 de julho de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=45) · 2026-07-03
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Alagoas/Reitoria · [EDITAL NA 78-2026 - Homologacao](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=47) · 2026-07-03
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Alagoas/Reitoria · [EDITAL NA 78-2026 - Homologacao](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=48) · 2026-07-03
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Alagoas/Reitoria · [EDITAL NA 78-2026 - Homologacao](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=50) · 2026-07-03
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Alagoas/Reitoria · [EDITAL NA 78-2026 - Homologacao](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=51) · 2026-07-03
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Alagoas/Reitoria · [EDITAL NA 78-2026 - Homologacao](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=53) · 2026-07-03
+- Ministério da Educação/Universidade Federal do Cariri/Pró-Reitoria de Gestão de Pessoas · [EDITAL Nº 51/2026, DE 2 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=111) · 2026-07-03
+- Ministério da Educação/Fundação Universidade Federal de Sergipe · [EDITAL Nº 58, DE 2 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=169) · 2026-07-03
+- Ministério da Educação/Fundação Universidade Federal de Sergipe · [EDITAL Nº 59, DE 2 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=169) · 2026-07-03
+- Ministério da Educação/Universidade Federal Rural do Rio de Janeiro/Reitoria · [EDITAL Nº 49, DE 2 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=132) · 2026-07-03
+- Ministério da Educação/Fundação Universidade Federal do Maranhão/Gabinete da Reitoria/Pró-Reitoria de Recursos Humanos · [EDITAL  Nº 363, DE 2 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=144) · 2026-07-03
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Paraná/Campus Curitiba · [EDITAL N° 321, DE 2 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=91) · 2026-07-03
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Paraná/Campus Curitiba · [EDITAL N° 324, DE 2 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=92) · 2026-07-03
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Paraná/Campus Curitiba · [EDITAL N° 324, DE 2 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=91) · 2026-07-03
+- Ministério da Educação/Universidade Federal do Pará/Pró-Reitoria de Desenvolvimento e Gestão de Pessoal · [EDITAL Nº 60, DE 2 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=123) · 2026-07-03
+- Ministério da Educação/Universidade Federal do Pará/Pró-Reitoria de Desenvolvimento e Gestão de Pessoal · [EDITAL Nº 59, DE 2 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=121) · 2026-07-03
+- Ministério dos Povos Indígenas/Fundação Nacional dos Povos Indígenas · [EDITAL Nº 13/DPT/FUNAI/2025](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=357) · 2026-07-03
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Roraima/Reitoria · [EDITAL Nº 1, DE 2 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=97) · 2026-07-03
+- Ministério da Educação/Universidade Federal da Paraíba · [EDITAL Nº 110/2026-PROGEP-DSP](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=125) · 2026-07-03
+- Ministério da Educação/Universidade Federal da Paraíba · [EDITAL Nº 143/2026 - PROGEP-DSP](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=125) · 2026-07-03
+- Ministério da Educação/Universidade Federal da Paraíba · [EDITAL Nº 145/2026 - PROGEP-DSP](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=125) · 2026-07-03
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia Catarinense/Pró-Reitoria de Desenvolvimento, Inclusão, Diversidade e Assistência à Pessoa · [EDITAL Nº 56, DE 3 DE JUNHO DE 2025](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=57) · 2026-07-03
+- Ministério do Planejamento e Orçamento/Fundação Instituto Brasileiro de Geografia e Estatística · [EDITAL de 2 de julho de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=356) · 2026-07-03
+- Ministério da Educação/Fundação Universidade Federal do Acre · [EDITAL Nº 26, de 2 de julho de 2026 - PROGRAD](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=142) · 2026-07-03
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Norte de Minas Gerais/Campus Almenara · [EDITAL Nº 156, DE 2 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=90) · 2026-07-03
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Paraná/Campus Curitiba · [EDITAL N° 326, DE 2 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=91) · 2026-07-03
+- Ministério da Educação/Universidade Federal de Rondonópolis/Pró-Reitoria de Gestão de Pessoas · [EDITAL PROGEP/REITORIA/UFR N° 14, DE 2 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=131) · 2026-07-03
+- Ministério da Educação/Fundação Universidade Federal do Pampa · [EDITAL Nº 207, de 2 de julho de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=163) · 2026-07-03
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Rio de Janeiro · [EDITAL Nº 104, DE 14 DE MAIO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=96) · 2026-07-03
+- Ministério da Educação/Fundação Universidade Federal de Mato Grosso do Sul/Reitoria · [EDITAL PROGEP/UFMS Nº 96, DE 2 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=153) · 2026-07-03
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Minas Gerais/Campus Congonhas · [EXTRATO DE CONTRATO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=90) · 2026-07-03
+- Ministério da Educação/Universidade Federal da Paraíba · [EDITAL Nº 148/2026-PROGEP-DSP](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=530&pagina=125) · 2026-07-03
+- Ministério da Educação/Fundação Universidade Federal do Piauí · [ATO Nº 1.161,  de 3 de julho de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=613&pagina=10) · 2026-07-03
+- Ministério da Pesca e Aquicultura/Secretaria Executiva · [EXTRATO DE TERMO ADITIVO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=609&pagina=24) · 2026-07-03
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Rondônia/Campus Jaru · [edital de HOMOLOGAÇÃO Do RESULTADO FINAL do EDITAL nº  35/2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=609&pagina=14) · 2026-07-03
+- Ministério da Educação/Fundação Universidade Federal do Piauí/Campus Senador Helvídio Nunes de Barros - Picos · [PORTARIA CSHNB/UFPI Nº 48, DE 3 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=06/07/2026&jornal=515&pagina=66) · 2026-07-06
+- Ineditoriais/AGÊNCIA BRASILEIRA DE APOIO À GESTÃO DO SUS · [EDITAL](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=06/07/2026&jornal=530&pagina=141) · 2026-07-06
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Mato Grosso do Sul · [EDITAL CAMPUS NOVA ANDRADINA/IFMS Nº 3.5/2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=06/07/2026&jornal=530&pagina=39) · 2026-07-06
+- Entidades de Fiscalização do Exercício das Profissões Liberais/CONSELHO DE ARQUITETURA E URBANISMO DE RONDÔNIA · [EDITAL  Nº 2/2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=06/07/2026&jornal=530&pagina=135) · 2026-07-06
+- Ministério da Saúde/Grupo Hospitalar Conceição · [EDITAL DE 3 de julho de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=06/07/2026&jornal=530&pagina=112) · 2026-07-06
+- Ministério da Defesa/Comando do Exército/Comando Militar do Sul/4º Grupamento de Engenharia/Comissão Regional de Obras da 3ª Região Militar · [EXTRATO DE CONTRATO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=06/07/2026&jornal=530&pagina=24) · 2026-07-06
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Brasília/IFB Campus Planaltina · [EDITAL DE CONVOCAÇÃO nº 16/DGPL/IFB, DE 3 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=06/07/2026&jornal=530&pagina=36) · 2026-07-06
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Espírito Santo/Campus Barra de São Francisco · [Edital Nº 190, DE 30 DE JUNHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=06/07/2026&jornal=530&pagina=38) · 2026-07-06
+- Entidades de Fiscalização do Exercício das Profissões Liberais/CONSELHO REGIONAL DE NUTRIÇÃO DA OITAVA REGIÃO · [EDITAL Nº 1/2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=06/07/2026&jornal=530&pagina=140) · 2026-07-06
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Tocantins/Campus Dianópolis · [EDITAL Nº 25, DE 3 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=06/07/2026&jornal=530&pagina=44) · 2026-07-06
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Brasília/IFB Campus Recanto das Emas · [EDITAL Nº 30/2026 - DGRE/RIFB/IFBRASÍLIA, DE 1º DE JUNHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=06/07/2026&jornal=530&pagina=36) · 2026-07-06
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Brasília/IFB Campus Recanto das Emas · [EDITAL Nº 30/2026 - DGRE/RIFB/IFBRASÍLIA, DE 1º DE JUNHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=06/07/2026&jornal=530&pagina=36) · 2026-07-06
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Brasília/IFB Campus Recanto das Emas · [EDITAL Nº 30/2026 - DGRE/RIFB/IFBRASÍLIA, DE 1º DE JUNHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=06/07/2026&jornal=530&pagina=36) · 2026-07-06
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Acre · [EDITAL DE CONVOCAÇÃO Nº 2 DE 3 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=06/07/2026&jornal=530&pagina=34) · 2026-07-06
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Acre · [EDITAL DE CONVOCAÇÃO Nº 4 DE 3 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=06/07/2026&jornal=530&pagina=34) · 2026-07-06
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Sul/Campus Restinga/Coordenadoria de Gestão de Pessoas · [EDITAL Nº 11, DE 25 DE MAIO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=06/07/2026&jornal=530&pagina=42) · 2026-07-06
+- Ministério da Educação/Universidade Federal do Estado do Rio de Janeiro · [EDITAL](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=06/07/2026&jornal=530&pagina=64) · 2026-07-06
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Paraná/Campus Jaguariaíva/Diretoria de Planejamento e Administração · [EDITAL N° 79, DE 3 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=06/07/2026&jornal=530&pagina=40) · 2026-07-06
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Paraná/Campus Jaguariaíva/Seção de Gestão de Pessoas · [EDITAL N°62, DE 12 DE JUNHO  DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=06/07/2026&jornal=530&pagina=41) · 2026-07-06
+- Ministério da Educação/Universidade Federal do Norte do Tocantins · [EDITAL UFNT Nº 34/2026, DE 3 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=06/07/2026&jornal=530&pagina=51) · 2026-07-06
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia Catarinense/Pró-Reitoria de Desenvolvimento, Inclusão, Diversidade e Assistência à Pessoa · [aviso de RETIFICAÇÃO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=07/07/2026&jornal=530&pagina=35) · 2026-07-07
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Ceará/Campus Jaguaribe · [EXTRATO DE CONTRATO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=07/07/2026&jornal=530&pagina=36) · 2026-07-07
+- Ministério da Educação/Universidade Federal do Rio Grande do Norte/Pró-Reitoria de Gestão de Pessoas · [retificação](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=07/07/2026&jornal=530&pagina=49) · 2026-07-07
+- Ministério da Educação/Universidade Federal dos Vales do Jequitinhonha e Mucuri · [EDITAL Nº 93, DE 6 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=07/07/2026&jornal=530&pagina=51) · 2026-07-07
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Pará/Gabinete · [EXTRATO DO TERMO ADITIVO Nº 73/2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=07/07/2026&jornal=530&pagina=39) · 2026-07-07
+- Ministério da Educação/Fundação Universidade Federal de São Carlos/Pró-Reitoria de Gestão de Pessoas · [Editais de 6 de julho de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=07/07/2026&jornal=530&pagina=59) · 2026-07-07
+- Ministério da Educação/Universidade Federal do Norte do Tocantins · [EDITAL Nº 35 - UFNT, DE 6 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=07/07/2026&jornal=530&pagina=48) · 2026-07-07
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Minas Gerais/Campus Piumhi · [EXTRATO DE CONTRATO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=07/07/2026&jornal=530&pagina=38) · 2026-07-07
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Mato Grosso do Sul · [EDITAL CAMPUS TRÊS LAGOAS/IFMS Nº 2.6/2025](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=08/07/2026&jornal=530&pagina=39) · 2026-07-08
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Goiás/Câmpus Goiânia Oeste/Coordenação de Recursos Humanos e Assistência ao Servidor · [EDITAL Nº 13/2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=08/07/2026&jornal=530&pagina=38) · 2026-07-08
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Ceará/Campus Crateús · [EXTRATO DE CONTRATO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=08/07/2026&jornal=530&pagina=36) · 2026-07-08
+- Ministério da Justiça e Segurança Pública/Secretaria Nacional de Políticas Penais · [EXTRATO DE RESCISÃO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=08/07/2026&jornal=530&pagina=92) · 2026-07-08
+- Ministério da Educação/Universidade Federal do Rio de Janeiro/Centro Multidisciplinar UFRJ-Macaé/Coordenação do Curso de Graduação em Medicina · [EDITAL Nº 829, DE 3 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=08/07/2026&jornal=530&pagina=52) · 2026-07-08
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Minas Gerais/Campus Sabará · [EXTRATO DE TERMO ADITIVO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=08/07/2026&jornal=530&pagina=40) · 2026-07-08
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Minas Gerais/Campus Bambuí · [EXTRATO DE RESCISÃO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=08/07/2026&jornal=530&pagina=40) · 2026-07-08
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Ceará/Campus Cedro · [EDITAL Nº 15/2026 DG CED/CEDRO-IFCE](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=08/07/2026&jornal=530&pagina=36) · 2026-07-08
+- Ministério da Educação/Universidade Federal do Pará/Pró-Reitoria de Desenvolvimento e Gestão de Pessoal · [EDITAL Nº 62, DE 7 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=08/07/2026&jornal=530&pagina=49) · 2026-07-08
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Brasília/IFB Campus Planaltina · [EDITAL](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=08/07/2026&jornal=530&pagina=36) · 2026-07-08
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Minas Gerais/Campus Bambuí · [EXTRATOS DE TERMOS ADITIVOS](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=08/07/2026&jornal=530&pagina=39) · 2026-07-08
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Santa Catarina · [EXTRATO DE CONTRATO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=08/07/2026&jornal=530&pagina=42) · 2026-07-08
+- Ministério da Educação/Universidade Federal da Paraíba · [EDITAL Nº 151/2026 - PROGEP-DSP](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=08/07/2026&jornal=530&pagina=49) · 2026-07-08
+- Ministério da Educação/Universidade Federal da Paraíba · [EDITAL Nº 150/2026 - PROGEP-DSP](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=08/07/2026&jornal=530&pagina=49) · 2026-07-08
+- Ministério da Educação/Universidade Federal de Alagoas/Pró-Reitoria de Gestão de Pessoas e do Trabalho · [EDITAL CONJUNTO Nº 33, DE 7 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=08/07/2026&jornal=530&pagina=46) · 2026-07-08
+- Ministério da Educação/Fundação Universidade de Brasília/Decanato de Gestão de Pessoas · [EDITAL DE RECLASSIFICAÇÃO Nº 124, DE 7 de julho de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=08/07/2026&jornal=530&pagina=60) · 2026-07-08
+- Ministério da Educação/Fundo Nacional de Desenvolvimento da Educação · [EDITAL DE 07 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=08/07/2026&jornal=530&pagina=34) · 2026-07-08
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Minas Gerais/Campus Ouro Branco · [EXTRATO DE CONTRATO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=08/07/2026&jornal=530&pagina=40) · 2026-07-08
+- Ministério da Educação/Fundação Universidade do Amazonas · [PORTARIA Nº 1.471, DE 8 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=09/07/2026&jornal=515&pagina=49) · 2026-07-09
+- Entidades de Fiscalização do Exercício das Profissões Liberais/Conselho Regional de Biologia 8ª Região · [EDITAL  Nº 8, de 6 de julho de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=09/07/2026&jornal=530&pagina=135) · 2026-07-09
+- Ministério da Educação/Fundação Universidade Federal de Sergipe · [EDITAL Nº 6, DE 7 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=09/07/2026&jornal=530&pagina=74) · 2026-07-09
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Pará/Gabinete · [EXTRATO DE TERMO ADITIVO Nº 72/2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=09/07/2026&jornal=530&pagina=32) · 2026-07-09
+- Ministério dos Povos Indígenas/Fundação Nacional dos Povos Indígenas · [EDITAL](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=09/07/2026&jornal=530&pagina=111) · 2026-07-09
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Minas Gerais/Campus São João Evangelista · [EXTRATOS DE TERMOS ADITIVOS](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=09/07/2026&jornal=530&pagina=31) · 2026-07-09
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Acre · [EDITAL DE CONVOCAÇÃO Nº 5 DE 8 DE JULHO DE 2026 AO EDITAL 001/2026/DIRGE-CCS/IFAC, DE 6 DE FEVEREIRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=09/07/2026&jornal=530&pagina=27) · 2026-07-09
+- Ministério da Educação/Universidade Federal do Rio Grande do Norte/Pró-Reitoria de Gestão de Pessoas/Diretoria de Administração de Pessoal · [EDITAL DE CONVOCAÇÃO Nº 927, DE 8 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=09/07/2026&jornal=530&pagina=60) · 2026-07-09
+- Ministério da Educação/Fundação Universidade Federal de Mato Grosso/Campus Universitário de Sinop/Faculdade de Medicina Veterinária · [EDITAL DE HOMOLOGAÇÃO Nº 1, DE 30 DE JUNHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=09/07/2026&jornal=530&pagina=72) · 2026-07-09
+- Ministério da Educação/Fundação Universidade Federal de Mato Grosso/Campus Universitário de Sinop/Faculdade de Medicina Veterinária · [Edital](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=09/07/2026&jornal=530&pagina=72) · 2026-07-09
+- Ministério da Educação/Universidade Federal de Lavras/Pró-Reitoria de Graduação/Diretoria de Processos Seletivos · [EDITAL Nº 8/DIPS/PROGRAD/2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=09/07/2026&jornal=530&pagina=42) · 2026-07-09
+- Ministério da Educação/Universidade Federal de Lavras/Pró-Reitoria de Graduação/Diretoria de Processos Seletivos · [EDITAL Nº 9/DIPS/PROGRAD/2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=09/07/2026&jornal=530&pagina=42) · 2026-07-09
+- Ministério da Educação/Fundação Universidade Federal de São Carlos/Pró-Reitoria de Gestão de Pessoas · [EDITAL Nº 81, DE 7 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=09/07/2026&jornal=530&pagina=73) · 2026-07-09
+- Ministério da Educação/Fundação Universidade do Amazonas/Pró-Reitoria de Gestão de Pessoas · [EXTRATOS DE CONTRATOS](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=09/07/2026&jornal=530&pagina=70) · 2026-07-09
+- Ministério da Educação/Fundação Universidade de Brasília/Decanato de Gestão de Pessoas · [EDITAL Nº 125, DE 7 de julho de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=09/07/2026&jornal=530&pagina=71) · 2026-07-09
+- Defensoria Pública da União/Defensoria Pública da União em Fortaleza-CE · [Edital - DPU-CE/DGP CE - Nº 1.4, DE 25 DE junho DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=09/07/2026&jornal=530&pagina=129) · 2026-07-09
+- Ministério da Educação/Fundação Universidade do Amazonas · [PORTARIA Nº 1.471, DE 8 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=10/07/2026&jornal=515&pagina=97) · 2026-07-10
+- Ministério da Educação/Centro Federal de Educação Tecnológica de Minas Gerais/Secretaria de Gestão de Pessoas · [EDITAL Nº 495, DE 8 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=10/07/2026&jornal=530&pagina=26) · 2026-07-10
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Santa Catarina · [EXTRATOS DE CONTRATO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=10/07/2026&jornal=530&pagina=34) · 2026-07-10
+- Ministério da Integração e do Desenvolvimento Regional/Agência Nacional de Águas e Saneamento Básico/Superintendência de Administração, Finanças e Gestão de Pessoas · [AVISO DE MANIFESTAÇÃO INTERESSE](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=10/07/2026&jornal=530&pagina=72) · 2026-07-10
+- Ministério da Integração e do Desenvolvimento Regional/Agência Nacional de Águas e Saneamento Básico/Superintendência de Administração, Finanças e Gestão de Pessoas · [AVISO DE MANIFESTAÇÃO DE INTERESSE](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=10/07/2026&jornal=530&pagina=72) · 2026-07-10
+- Ministério da Integração e do Desenvolvimento Regional/Agência Nacional de Águas e Saneamento Básico/Superintendência de Administração, Finanças e Gestão de Pessoas · [AVISO DE MANIFESTAÇÃO DE INTERESSE](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=10/07/2026&jornal=530&pagina=72) · 2026-07-10
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Brasília/IFB Campus Planaltina · [EDITAL Nº 60  - DGPL/RIFB/IFBRASILIA, 21 DE JULHO DE 2025](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=10/07/2026&jornal=530&pagina=28) · 2026-07-10
+- Ministério da Defesa/Comando do Exército/Comando Militar do Sul/4º Grupamento de Engenharia/Comissão Regional de Obras da 5ª Região Militar · [EDITAL DE CONVOCAÇÃO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=10/07/2026&jornal=530&pagina=17) · 2026-07-10
+- Ministério da Educação/Fundação Universidade Federal do Acre · [EDITAL Nº 22/2026 - PROGRAD](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=10/07/2026&jornal=530&pagina=59) · 2026-07-10
+- Ministério da Educação/Fundação Universidade de Brasília/Decanato de Gestão de Pessoas · [EDITAL Nº 127, DE 8 de julho de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=10/07/2026&jornal=530&pagina=59) · 2026-07-10
+- Ministério da Educação/Universidade Federal do Rio Grande do Norte/Pró-Reitoria de Gestão de Pessoas/Diretoria de Administração de Pessoal · [EDITAL DE CONVOCAÇÃO Nº 940, DE 9 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=10/07/2026&jornal=530&pagina=48) · 2026-07-10
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Minas Gerais/Campus Ipatinga · [EXTRATO DE TERMO ADITIVO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=10/07/2026&jornal=530&pagina=32) · 2026-07-10
+- Ministério da Educação/Universidade Federal de Juiz de Fora/Pró-Reitoria de Gestão de Pessoas · [PORTARIA PROGEPE/UFJF Nº 389, DE 10 de julho de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=13/07/2026&jornal=515&pagina=143) · 2026-07-13
+- Prefeituras/Estado da Bahia/Prefeitura Municipal de Capim Grosso · [AVISO DE DISPENSA DE LICITAÇÃO ELETRÔNICA Nº 29/2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=13/07/2026&jornal=530&pagina=177) · 2026-07-13
+- Ministério da Educação/Fundação Universidade Federal do Piauí/Centro de Ciências da Natureza/Assistente do CCN · [EDITAL Nº 12/2026 - CCN/UFPI](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=13/07/2026&jornal=530&pagina=82) · 2026-07-13
+- Ministério da Educação/Universidade Federal do Estado do Rio de Janeiro · [EDITAL N° 166, de 10 de julho de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=13/07/2026&jornal=530&pagina=84) · 2026-07-13
+- Ministério da Educação/Universidade Federal do Estado do Rio de Janeiro · [EDITAL N° 165, de 10 de julho de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=13/07/2026&jornal=530&pagina=83) · 2026-07-13
+- Ministério da Educação/Universidade Federal do Estado do Rio de Janeiro · [EDITAL N° 167, de 10 de julho de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=13/07/2026&jornal=530&pagina=85) · 2026-07-13
+- Ministério da Educação/Universidade Federal do Rio de Janeiro/Centro de Ciências Jurídicas e Econômicas/Faculdade de Administração e Ciências Contábeis/Coordenação de Pós-Graduação do Curso de Ciências Contábeis · [EDITAL nº  835,  DE  6 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=13/07/2026&jornal=530&pagina=69) · 2026-07-13
+- Ministério da Educação/Universidade Federal do Rio de Janeiro/Centro de Ciências Jurídicas e Econômicas/Faculdade de Administração e Ciências Contábeis/Coordenação de Pós-Graduação do Curso de Ciências Contábeis · [EDITAL nº 834,  DE 6 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=13/07/2026&jornal=530&pagina=68) · 2026-07-13
+- Ministério da Educação/Universidade Federal do Pará/Pró-Reitoria de Desenvolvimento e Gestão de Pessoal · [EDITAL Nº 63, DE 10 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=13/07/2026&jornal=530&pagina=66) · 2026-07-13
+- Ministério da Agricultura e Pecuária/Secretaria Executiva/Subsecretaria de Gestão de Pessoas e de Gestão do Conhecimento · [EXTRATO DE RESCISÃO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=13/07/2026&jornal=530&pagina=2) · 2026-07-13
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Rondônia/Campus Ariquemes · [edital de convocação](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=13/07/2026&jornal=530&pagina=58) · 2026-07-13
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Rondônia/Campus Ariquemes · [EDITAL DE CONVOCAÇÃO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=13/07/2026&jornal=530&pagina=58) · 2026-07-13
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Rondônia/Campus Ariquemes · [EDITAL DE CONVOCAÇÃO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=13/07/2026&jornal=530&pagina=58) · 2026-07-13
+- Ministério da Educação/Fundação Universidade Federal do Maranhão/Gabinete da Reitoria/Pró-Reitoria de Recursos Humanos · [EDITAL Nº 370, de 10 de julho de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=13/07/2026&jornal=530&pagina=82) · 2026-07-13
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Ceará/Campus Tauá/Gabinete · [EDITAL DE 10 de julho de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=13/07/2026&jornal=530&pagina=53) · 2026-07-13
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Santa Catarina · [EXTRATOs DE CONTRATO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=13/07/2026&jornal=530&pagina=58) · 2026-07-13
+- Ministério da Educação/Fundação Universidade do Amazonas/Pró-Reitoria de Gestão de Pessoas · [EXTRATOS DE CONTRATOS](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=13/07/2026&jornal=530&pagina=81) · 2026-07-13
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Minas Gerais/Campus Ouro Preto · [EXTRATO DE CONTRATO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=13/07/2026&jornal=530&pagina=55) · 2026-07-13
+- Ministério da Educação/Universidade Federal do Rio Grande do Norte/Pró-Reitoria de Gestão de Pessoas/Diretoria de Administração de Pessoal · [EDITAL DE CONVOCAÇÃO Nº 952, DE 10 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=13/07/2026&jornal=530&pagina=68) · 2026-07-13
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Norte/Campus Natal-Zona Norte · [PORTARIA Nº 198, DE 13 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=14/07/2026&jornal=515&pagina=71) · 2026-07-14
+- Ministério da Gestão e da Inovação em Serviços Públicos/Gabinete da Ministra · [PORTARIA MGI Nº 5.743, DE 13 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=14/07/2026&jornal=515&pagina=80) · 2026-07-14
+- Ministério da Educação/Universidade Federal do Estado do Rio de Janeiro · [EDITAL N° 168, de 10 de julho de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=14/07/2026&jornal=530&pagina=78) · 2026-07-14
+- Ministério da Educação/Centro Federal de Educação Tecnológica de Minas Gerais/Secretaria de Gestão de Pessoas · [EDITAL Nº 503, DE 13 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=14/07/2026&jornal=530&pagina=31) · 2026-07-14
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Alagoas/Reitoria · [EDITAL  Nº 77/IFAL, DE 10 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=14/07/2026&jornal=530&pagina=34) · 2026-07-14
+- Ministério da Educação/Fundação Universidade Federal de Sergipe · [EDITAL Nº 6, DE 13 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=14/07/2026&jornal=530&pagina=77) · 2026-07-14
+- Entidades de Fiscalização do Exercício das Profissões Liberais/Conselho Regional de Psicologia da 4ª Região · [EDITAL DE ABERTURA DE PROCESSO SELETIVO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=14/07/2026&jornal=530&pagina=151) · 2026-07-14
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia Baiano/Gabinete · [EDITAL](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=14/07/2026&jornal=530&pagina=35) · 2026-07-14
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Santa Catarina · [EXTRATO DE CONTRATO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=14/07/2026&jornal=530&pagina=43) · 2026-07-14
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Brasília/IFB Campus São Sebastião · [EDITAL DE  CONVOCAÇÃO, DE 13 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=14/07/2026&jornal=530&pagina=36) · 2026-07-14
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Brasília/IFB Campus São Sebastião · [EDITAL DE CONVOCAÇÃO, DE 13 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=14/07/2026&jornal=530&pagina=35) · 2026-07-14
+- Ministério da Educação/Universidade Federal do Norte do Tocantins · [EDITAL Nº 36/2026 - UFNT, DE 13 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=14/07/2026&jornal=530&pagina=49) · 2026-07-14
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Brasília/IFB Campus Recanto das Emas · [EDITAL Nº 30/2026 - DGRE/RIFB/IFBRASÍLIA, DE 01 DE JUNHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=15/07/2026&jornal=530&pagina=35) · 2026-07-15
+- Ministério da Educação/Universidade Federal do Rio Grande do Norte/Pró-Reitoria de Gestão de Pessoas/Diretoria de Administração de Pessoal · [EDITAL DE CONVOCAÇÃO Nº 971, DE 14 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=15/07/2026&jornal=530&pagina=48) · 2026-07-15
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia Farroupilha/CAMPUS PANAMBI · [EDITAL Nº 223/2026, DE 14 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=15/07/2026&jornal=530&pagina=36) · 2026-07-15
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Acre · [EDITAL  Nº 3, DE 14 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=15/07/2026&jornal=530&pagina=32) · 2026-07-15
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Acre · [EDITAL  Nº 1,  DE 14 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=15/07/2026&jornal=530&pagina=32) · 2026-07-15
+- Ministério da Educação/Universidade Federal de Uberlândia · [EDITAL](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=15/07/2026&jornal=530&pagina=75) · 2026-07-15
+- Ministério da Educação/Universidade Federal do Rio Grande do Norte/Pró-Reitoria de Gestão de Pessoas/Diretoria de Administração de Pessoal · [EDITAL Nº 973, DE 14 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=15/07/2026&jornal=530&pagina=47) · 2026-07-15
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Santa Catarina · [EXTRATOS DE CONTRATOS](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=16/07/2026&jornal=530&pagina=71) · 2026-07-16
+- Entidades de Fiscalização do Exercício das Profissões Liberais/Conselho Regional de Biologia da 5ª Região · [EDITAL DE 15 de julho de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=16/07/2026&jornal=530&pagina=255) · 2026-07-16
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Minas Gerais/Campus Arcos · [EXTRATO DE CONTRATO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=16/07/2026&jornal=530&pagina=69) · 2026-07-16
+- Ministério da Educação/Universidade Federal de Alagoas/Pró-Reitoria de Gestão de Pessoas e do Trabalho · [EDITAL PROGEP Nº 35, DE 2 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=16/07/2026&jornal=530&pagina=73) · 2026-07-16
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Alagoas/Reitoria · [EDITAL Nº 79/IFAL, de 14 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=16/07/2026&jornal=530&pagina=36) · 2026-07-16
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Alagoas/Reitoria · [EDITAL Nº 80/IFAL,  DE 14 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=16/07/2026&jornal=530&pagina=36) · 2026-07-16
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Alagoas/Reitoria · [EDITAL Nº 81/IFAL, DE  14 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=16/07/2026&jornal=530&pagina=36) · 2026-07-16
+- Ministério da Educação/Universidade Federal do Rio Grande do Norte/Pró-Reitoria de Gestão de Pessoas/Diretoria de Administração de Pessoal · [EDITAL DE CONVOCAÇÃO Nº 976, DE 15 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=16/07/2026&jornal=530&pagina=186) · 2026-07-16
+- Ministério da Educação/Universidade Federal da Paraíba · [EDITAL Nº 153/2026 - PROGEP-DSP, 15 de Julho de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=16/07/2026&jornal=530&pagina=184) · 2026-07-16
+- Ministério da Educação/Fundação Universidade do Amazonas/Pró-Reitoria de Gestão de Pessoas · [EXTRATO DE CONTRATO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=16/07/2026&jornal=530&pagina=194) · 2026-07-16
+- Ministério da Defesa/Comando da Aeronáutica/Secretaria de Economia e Finanças e Administração da Aeronáutica/Diretoria de Administração da Aeronáutica/Subdiretoria de Apoio Administrativo/Grupamento de Apoio de Belém · [EDITAL](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=16/07/2026&jornal=530&pagina=10) · 2026-07-16
+- Entidades de Fiscalização do Exercício das Profissões Liberais/Conselho Regional de Psicologia da 1ª Região · [EDITAL DE RESULTADO FINAL E HOMOLOGAÇÃO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=17/07/2026&jornal=530&pagina=163) · 2026-07-17
+- Ministério da Agricultura e Pecuária/Secretaria Executiva/Subsecretaria de Gestão de Pessoas e de Gestão do Conhecimento · [EXTRATO DE RESCISÃO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=17/07/2026&jornal=530&pagina=2) · 2026-07-17
+- Ministério da Educação/Universidade Federal da Bahia/Reitoria/Pró-Reitoria de Desenvolvimento de Pessoas · [EDITAL DE 16 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=17/07/2026&jornal=530&pagina=69) · 2026-07-17
+- Ministério da Educação/Universidade Federal da Bahia/Reitoria/Pró-Reitoria de Desenvolvimento de Pessoas · [EDITAL DE 14 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=17/07/2026&jornal=530&pagina=69) · 2026-07-17
+- Ministério da Educação/Universidade Federal de Goiás/Gabinete da Reitoria · [EDITAIS  DE 15 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=17/07/2026&jornal=530&pagina=71) · 2026-07-17
+- Ministério do Planejamento e Orçamento/Fundação Instituto Brasileiro de Geografia e Estatística · [EDITAL DE PROCESSO SELETIVO SIMPLIFICADO DO IBGE Nº 2/2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=17/07/2026&jornal=530&pagina=123) · 2026-07-17
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Santa Catarina · [EXTRATO DE CONTRATO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=17/07/2026&jornal=530&pagina=66) · 2026-07-17
+- Ministério da Educação/Universidade Federal do Espírito Santo/Reitoria · [EDITAL Nº 125, DE 16 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=17/07/2026&jornal=530&pagina=70) · 2026-07-17
+- Ministério do Planejamento e Orçamento/Instituto de Pesquisa Econômica Aplicada/Diretoria de Desenvolvimento Institucional/Coordenação-Geral de Serviços Corporativos e Apoio à Pesquisa · [EDITAL de PROCESSO SELETIVO SIMPLIFICADO IPEA/PIPA Nº 1,  Brasília 16 de julho de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=17/07/2026&jornal=530&pagina=124) · 2026-07-17
+- Ministério da Educação/Fundação Universidade do Amazonas/Pró-Reitoria de Gestão de Pessoas · [EXTRATO DE CONTRATO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=17/07/2026&jornal=530&pagina=87) · 2026-07-17
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Alagoas/Reitoria · [EDITAL DE CONVOçãO Nº 83/IFAL, 16 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=17/07/2026&jornal=530&pagina=34) · 2026-07-17
+- Ineditoriais/Fundação de Apoio da Universidade Federal do Rio Grande do Sul · [EDITAL](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=20/07/2026&jornal=530&pagina=163) · 2026-07-20
+- Ministério da Educação/Universidade Federal do Estado do Rio de Janeiro · [EDITAL N° 169, de 16 de julho de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=20/07/2026&jornal=530&pagina=87) · 2026-07-20
+- Ministério da Educação/Universidade Federal do Estado do Rio de Janeiro · [EDITAL N° 170, DE 16 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=20/07/2026&jornal=530&pagina=88) · 2026-07-20
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Acre · [EDITAL Nº 13/2026/DIRGE-CBS/IFAC](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=20/07/2026&jornal=530&pagina=30) · 2026-07-20
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Santa Catarina · [EXTRATO DE CONTRATO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=20/07/2026&jornal=530&pagina=58) · 2026-07-20
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Alagoas/Reitoria · [EDITAL Nº 82/IFAL,  DE 16 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=20/07/2026&jornal=530&pagina=31) · 2026-07-20
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Alagoas/Reitoria · [EDITAL Nº 83/IFAL,  DE 16 DE JULHO DE 2026 (*)](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=20/07/2026&jornal=530&pagina=31) · 2026-07-20
+- Ministério da Educação/Universidade Federal do Rio de Janeiro/Centro de Letras e Artes/Faculdade de Arquitetura e Urbanismo/Coordenação de Pós-Graduação do Curso de Arquitetura · [EDITAL Nº 871, DE 15 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=20/07/2026&jornal=530&pagina=66) · 2026-07-20
+- Ministério da Educação/Universidade Federal do Rio de Janeiro/Centro de Letras e Artes/Faculdade de Arquitetura e Urbanismo/Coordenação de Pós-Graduação do Curso de Arquitetura · [EDITAL Nº 874, DE 15 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=20/07/2026&jornal=530&pagina=66) · 2026-07-20
+- Ministério da Defesa/Comando da Marinha/Comando de Operações Navais/7º Distrito Naval · [eDITAL DE 17 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=20/07/2026&jornal=530&pagina=20) · 2026-07-20
+- Ministério da Educação/Instituto Benjamin Constant · [EXTRATO DE CONTRATO nº 1/2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=20/07/2026&jornal=530&pagina=28) · 2026-07-20
+- Ministério da Educação/Universidade Federal do Estado do Rio de Janeiro · [EDITAL N° 171, DE 16 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=20/07/2026&jornal=530&pagina=88) · 2026-07-20
+- Ministério da Justiça e Segurança Pública/Secretaria Nacional de Políticas Penais · [EXTRATO DE RESCISÃO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=20/07/2026&jornal=530&pagina=111) · 2026-07-20
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Alagoas/Reitoria · [EDITAL Nº 84/IFAL,  DE 17 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=20/07/2026&jornal=530&pagina=31) · 2026-07-20
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Alagoas/Reitoria · [EDITAL Nº 85/IFAL,  DE 17 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=20/07/2026&jornal=530&pagina=32) · 2026-07-20
+- Ministério da Educação/Fundo Nacional de Desenvolvimento da Educação · [EDITAL DE 17 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=20/07/2026&jornal=530&pagina=28) · 2026-07-20
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Minas Gerais/Campus Governador Valadares · [EXTRATO DE CONTRATO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=20/07/2026&jornal=530&pagina=35) · 2026-07-20
+- Ministério da Educação/Universidade Federal de Santa Catarina/Pró-Reitoria de Desenvolvimento e Gestão de Pessoas/Departamento de Desenvolvimento de Pessoas · [PORTARIA N° 931/DDP, de 10 de julho de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=21/07/2026&jornal=515&pagina=102) · 2026-07-21
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Minas Gerais/Campus Arcos · [EXTRATO DE CONTRATO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=21/07/2026&jornal=530&pagina=49) · 2026-07-21
+- Ministério da Educação/Universidade Federal do Rio Grande do Norte/Pró-Reitoria de Gestão de Pessoas/Diretoria de Administração de Pessoal · [EDITAL  Nº 1037, DE 20 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=21/07/2026&jornal=530&pagina=72) · 2026-07-21
+- Ministério da Educação/Universidade Federal da Bahia/Reitoria/Pró-Reitoria de Desenvolvimento de Pessoas · [EDITAL DE 17 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=21/07/2026&jornal=530&pagina=68) · 2026-07-21
+- Ministério da Educação/Universidade Federal da Bahia/Reitoria/Pró-Reitoria de Desenvolvimento de Pessoas · [EDITAL DE 20 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=21/07/2026&jornal=530&pagina=68) · 2026-07-21
+- Ministério da Educação/Universidade Federal do Estado do Rio de Janeiro · [EDITAL N° 172, de 20 de julho de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=21/07/2026&jornal=530&pagina=83) · 2026-07-21
+- Ministério da Educação/Universidade Federal de São Paulo/Pró-Reitoria de Gestão com Pessoas · [EDITAL Nº 534, DE 20 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=21/07/2026&jornal=530&pagina=74) · 2026-07-21
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Minas Gerais/Campus Congonhas · [EXTRATO DE CONTRATO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=21/07/2026&jornal=530&pagina=49) · 2026-07-21
+- Ministério dos Povos Indígenas/Fundação Nacional dos Povos Indígenas · [EDITAL](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=21/07/2026&jornal=530&pagina=118) · 2026-07-21
+- Ministério da Educação/Universidade Federal de Santa Catarina/Pró-Reitoria de Desenvolvimento e Gestão de Pessoas/Departamento de Desenvolvimento de Pessoas · [PORTARIA N° 1.033/DDP, de 21 de julho de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=22/07/2026&jornal=515&pagina=44) · 2026-07-22
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Acre · [EDITAL Nº 5, de 21 de julho de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=22/07/2026&jornal=530&pagina=141) · 2026-07-22
+- Ministério da Educação/Universidade Federal do Espírito Santo/Reitoria · [EDITAL Nº 126, DE 21 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=22/07/2026&jornal=530&pagina=154) · 2026-07-22
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Alagoas/Reitoria · [EDITAL DE CONVOCAÇÃO Nº 88, DE  17 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=22/07/2026&jornal=530&pagina=142) · 2026-07-22
+- Ministério da Educação/Universidade Federal do Paraná · [EXTRATO DO TERMO DE CONTRATO Nº 97/2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=22/07/2026&jornal=530&pagina=163) · 2026-07-22
+- Ministério da Educação/Universidade Federal do Sul da Bahia · [EDITAL Nº 6, de  20 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=22/07/2026&jornal=530&pagina=166) · 2026-07-22
+- Ministério da Educação/Fundação Universidade Federal de Ouro Preto/Reitoria · [EXTRATOS DE CONTRATOS](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=22/07/2026&jornal=530&pagina=175) · 2026-07-22
+- Ministério da Educação/Universidade Federal da Integração Latino-Americana · [EDITAL 203/2026/DICS/DAP/PROGEPE, DE 21 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=22/07/2026&jornal=530&pagina=154) · 2026-07-22
+- Ministério da Educação/Universidade Federal de Minas Gerais/Reitoria · [EDITAL Nº 1691, DE 20 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=22/07/2026&jornal=530&pagina=155) · 2026-07-22
+- Ministério da Educação/Fundação Universidade Federal de São Carlos/Pró-Reitoria de Gestão de Pessoas · [EDITAL Nº 82, DE 20 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=22/07/2026&jornal=530&pagina=178) · 2026-07-22
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Alagoas/Reitoria · [EDITAL  Nº 86/IFAL, de 17 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=22/07/2026&jornal=530&pagina=141) · 2026-07-22
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Alagoas/Reitoria · [EDITAL  Nº 87, de 17 de julho de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=22/07/2026&jornal=530&pagina=142) · 2026-07-22
+- Ministério da Educação/Fundação Universidade Federal do Pampa · [EDITAL Nº 232/2026, DE 21 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=22/07/2026&jornal=530&pagina=176) · 2026-07-22
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Maranhão/Campus Avançado Carolina · [EDITAL Nº 8, DE 21 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=22/07/2026&jornal=530&pagina=145) · 2026-07-22
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Sudeste de Minas Gerais/Reitoria · [EDITAL](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=23/07/2026&jornal=530&pagina=39) · 2026-07-23
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Sudeste de Minas Gerais/Reitoria · [EDITAL](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=23/07/2026&jornal=530&pagina=40) · 2026-07-23
+- Ministério da Educação/Universidade Federal da Bahia · [EDITAL](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=23/07/2026&jornal=530&pagina=41) · 2026-07-23
+- Ministério da Educação/Universidade Federal da Paraíba · [EDITAL DE SELEÇÃO Nº 1/2026 - PPGTA-CCHSA](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=23/07/2026&jornal=530&pagina=45) · 2026-07-23
+- Ministério da Educação/Universidade Federal de Santa Catarina/Pró-Reitoria de Desenvolvimento e Gestão de Pessoas/Departamento de Desenvolvimento de Pessoas · [EDITAL N° 154/DDP, de 22 de junho de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=23/07/2026&jornal=530&pagina=48) · 2026-07-23
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Rondônia/Campus Ariquemes · [EDITAL DE CONVOCAÇÃO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=23/07/2026&jornal=530&pagina=38) · 2026-07-23
+- Ministério da Educação/Universidade Federal de Alagoas/Pró-Reitoria de Gestão de Pessoas e do Trabalho · [EDITAL PROGEP Nº 38, DE 20 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=23/07/2026&jornal=530&pagina=40) · 2026-07-23
+- Ministério da Educação/Universidade Federal da Integração Latino-Americana · [EDITAL Nº 208/2026/DICS/DAP/PROGEPE, DE  22 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=23/07/2026&jornal=530&pagina=44) · 2026-07-23
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Minas Gerais/Campus Ribeirão das Neves · [EXTRATO DE CONTRATO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=23/07/2026&jornal=530&pagina=35) · 2026-07-23
+- Prefeituras/Estado da Bahia/Prefeitura Municipal de Capim Grosso · [AVISOS DE ADJUDICAÇÃO E HOMOLOGAÇÃO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=24/07/2026&jornal=530&pagina=157) · 2026-07-24
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Triângulo Mineiro/Campus Ituiutaba · [EDITAL Nº 2, DE 22 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=24/07/2026&jornal=530&pagina=47) · 2026-07-24
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Pará/Campus Ananindeua · [AVISO DE PRORROGAÇÃO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=24/07/2026&jornal=530&pagina=43) · 2026-07-24
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Alagoas/Reitoria · [EDITAL DE CONVOCAção Nº 89/IFAL, DE  22 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=24/07/2026&jornal=530&pagina=39) · 2026-07-24
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Maranhão/Reitoria · [EDITAL Nº 49, DE 22 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=24/07/2026&jornal=530&pagina=42) · 2026-07-24
+- Ministério da Educação/Universidade Federal de Goiás/Gabinete da Reitoria · [EDITAL DE PRORROGAÇÃO DE CONCURSO, DE 22 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=24/07/2026&jornal=530&pagina=49) · 2026-07-24
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Santa Catarina · [EXTRATOS DE CONTRATOS](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=24/07/2026&jornal=530&pagina=44) · 2026-07-24
+- Ministério da Educação/Fundação Universidade de Brasília/Decanato de Gestão de Pessoas · [EDITAL DE RECLASSIFICAÇÃO Nº 128/ 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=24/07/2026&jornal=530&pagina=64) · 2026-07-24
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Alagoas/Reitoria · [EDITAL DE CONVOCAÇÃO Nº 90/IFAL](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=24/07/2026&jornal=530&pagina=40) · 2026-07-24
+- Ministério da Educação/Universidade Federal do Espírito Santo/Pró-Reitoria de Gestão de Pessoas · [PORTARIA NORMATIVA Nº 115, DE 24 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=27/07/2026&jornal=515&pagina=40) · 2026-07-27
+- Entidades de Fiscalização do Exercício das Profissões Liberais/Conselho Regional de Fisioterapia e Terapia Ocupacional da 20ª Região · [EDITAL Nº 1, DE 24 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=27/07/2026&jornal=530&pagina=187) · 2026-07-27
+- Entidades de Fiscalização do Exercício das Profissões Liberais/Conselho Regional de Nutricão da 9ª Região · [edital, de 15 de julho de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=27/07/2026&jornal=530&pagina=188) · 2026-07-27
+- Ministério da Justiça e Segurança Pública/Secretaria Nacional de Políticas Penais · [EXTRATO DE RESCISÃO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=27/07/2026&jornal=530&pagina=118) · 2026-07-27
+- Ministério da Educação/Universidade Federal da Paraíba · [EDITAL Nº 154 - PROGEP-DSP, 16 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=27/07/2026&jornal=530&pagina=58) · 2026-07-27
+- Ministério da Educação/Universidade Federal da Paraíba · [EDITAL Nº 155/2026 - PROGEP-DSP, 20 de Julho de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=27/07/2026&jornal=530&pagina=58) · 2026-07-27
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Pará/Gabinete · [EXTRATO De TERMO ADITIVO Nº 75/2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=27/07/2026&jornal=530&pagina=26) · 2026-07-27
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Santa Catarina · [EXTRATO DE CONTRATO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=27/07/2026&jornal=530&pagina=28) · 2026-07-27
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Santa Catarina · [EXTRATO DE CONTRATO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=27/07/2026&jornal=530&pagina=28) · 2026-07-27
+- Ministério da Educação/Fundação Universidade Federal de Rondônia/Diretoria do Campus de Ji-Paraná · [EDITAL Nº 3/UNIR/CJP/2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=27/07/2026&jornal=530&pagina=69) · 2026-07-27
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Alagoas/Reitoria · [EDITAL DE CONVOCAO Nº 91/IFAL, DE  23 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=27/07/2026&jornal=530&pagina=23) · 2026-07-27
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Alagoas/Reitoria · [EDITAL DE CONVOÇÃO Nº 92/IFAL, DE  23 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=27/07/2026&jornal=530&pagina=23) · 2026-07-27
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Alagoas/Reitoria · [EDITAL DE CONVOCAO Nº 93/IFAL, DE  23 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=27/07/2026&jornal=530&pagina=23) · 2026-07-27
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Alagoas/Reitoria · [EDITAL DE CONVOCAO Nº 94/IFAL, DE  23 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=27/07/2026&jornal=530&pagina=23) · 2026-07-27
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Alagoas/Reitoria · [EDITAL DE CONVOCAO Nº 95/IFAL, DE  23 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=27/07/2026&jornal=530&pagina=23) · 2026-07-27
+- Ministério da Educação/Universidade Federal de São Paulo/Pró-Reitoria de Gestão com Pessoas · [EDITAL Nº 547, DE 24 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=28/07/2026&jornal=530&pagina=51) · 2026-07-28
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Minas Gerais/Campus Ouro Preto · [EXTRATOS DE TERMOS ADITIVOS](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=28/07/2026&jornal=530&pagina=38) · 2026-07-28
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Minas Gerais/Campus Itabiríto · [EXTRATO DE TERMO ADITIVO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=28/07/2026&jornal=530&pagina=39) · 2026-07-28
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Pará/Gabinete · [EXTRATO DO TERMO ADITIVO Nº 77/2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=28/07/2026&jornal=530&pagina=39) · 2026-07-28
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Minas Gerais/Campus Ouro Branco · [EXTRATO DE RESCISÃO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=28/07/2026&jornal=530&pagina=39) · 2026-07-28
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Acre · [EDITAL DE CONVOCAÇÃO Nº 6, DE 27 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=28/07/2026&jornal=530&pagina=31) · 2026-07-28
+- Ministério da Educação/Universidade Federal do Rio Grande do Norte/Pró-Reitoria de Gestão de Pessoas/Diretoria de Administração de Pessoal · [EDITAL Nº 1072, DE 27 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=28/07/2026&jornal=530&pagina=48) · 2026-07-28
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Santa Catarina · [EXTRATO DE CONTRATO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=28/07/2026&jornal=530&pagina=41) · 2026-07-28
+- Ministério da Educação/Universidade Federal de Goiás/Gabinete da Reitoria · [EDITAL Nº 29, DE 22 de julho de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=28/07/2026&jornal=530&pagina=44) · 2026-07-28
+- Ministério da Educação/Fundação Universidade de Brasília/Decanato de Gestão de Pessoas · [EDITAL Nº 131, DE 23 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=28/07/2026&jornal=530&pagina=58) · 2026-07-28
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Minas Gerais/Campus Itabiríto · [EXTRATO DE CONTRATO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=28/07/2026&jornal=530&pagina=39) · 2026-07-28
+- Ministério da Educação/Universidade Federal do Rio Grande do Norte/Pró-Reitoria de Gestão de Pessoas/Diretoria de Administração de Pessoal · [EDITAL  Nº 1.079, DE 27 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=28/07/2026&jornal=530&pagina=47) · 2026-07-28
+- Ministério da Educação/Fundação Universidade Federal do Acre · [PORTARIA Nº 2.442, DE 28 DE julho DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=29/07/2026&jornal=515&pagina=24) · 2026-07-29
+- Ministério da Educação/Universidade Federal do Estado do Rio de Janeiro · [EDITAL N° 173, DE 27 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=29/07/2026&jornal=530&pagina=71) · 2026-07-29
+- Ministério da Educação/Fundação Universidade Federal de Ouro Preto/Reitoria · [EXTRATOs DE CONTRATOs](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=29/07/2026&jornal=530&pagina=68) · 2026-07-29
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Triângulo Mineiro/Campus Uberlândia · [EDITAL DE PRORROGAÇÃO Nº 31, DE 27 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=29/07/2026&jornal=530&pagina=47) · 2026-07-29
+- Ministério da Educação/Universidade Federal do Estado do Rio de Janeiro · [EDITAL N° 174, DE 27 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=29/07/2026&jornal=530&pagina=72) · 2026-07-29
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Minas Gerais/Campus Ibirité · [EXTRATO DE TERMO ADITIVO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=29/07/2026&jornal=530&pagina=42) · 2026-07-29
+- Ministério da Defesa/Comando do Exército/Comando Militar do Sul/4º Grupamento de Engenharia/Comissão Regional de Obras da 3ª Região Militar · [EDSTRATO DE TERMO ADITIVO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=29/07/2026&jornal=530&pagina=28) · 2026-07-29
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Alagoas/Reitoria · [EDITAL DE CONVOCAO Nº 96/IFAL, DE  27 DE JULHO DE 2025](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=29/07/2026&jornal=530&pagina=39) · 2026-07-29
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Alagoas/Reitoria · [EDITAL DE CONVOCAO Nº 97/IFAL, DE  27 DE JULHO DE 2025](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=29/07/2026&jornal=530&pagina=39) · 2026-07-29
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Alagoas/Reitoria · [EDITAL DE CONVOCAO Nº 98/IFAL, DE  27 DE JULHO DE 2025](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=29/07/2026&jornal=530&pagina=39) · 2026-07-29
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Alagoas/Reitoria · [EDITAL DE CONVOCAO Nº 99/IFAL, DE  27 DE JULHO DE 2025](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=29/07/2026&jornal=530&pagina=39) · 2026-07-29
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Alagoas/Reitoria · [EDITAL DE CONVOCAO Nº 100/IFAL, DE  27 DE JULHO DE 2025](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=29/07/2026&jornal=530&pagina=39) · 2026-07-29
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Alagoas/Reitoria · [EDITAL DE CONVOCAO Nº 101/IFAL, DE 27 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=29/07/2026&jornal=530&pagina=40) · 2026-07-29
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Norte/Campus Natal-Central/Diretoria de Gestão de Pessoas · [EDITAL DE HOMOLOGAÇÃO Nº 5 - DIAPE/DG/CNAT/RE/IFRN, DE 28 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=29/07/2026&jornal=530&pagina=44) · 2026-07-29
+- Ineditoriais/AGÊNCIA BRASILEIRA DE APOIO À GESTÃO DO SUS · [EDITAL](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=29/07/2026&jornal=530&pagina=134) · 2026-07-29
+- Ministério da Educação/Fundação Universidade Federal de São Carlos/Pró-Reitoria de Gestão de Pessoas · [EDITAL Nº 83, DE 28 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=29/07/2026&jornal=530&pagina=69) · 2026-07-29
+- Ministério da Defesa/Comando do Exército/Comando Militar do Sul/4º Grupamento de Engenharia/Comissão Regional de Obras da 3ª Região Militar · [EXTRATO DE TERMO ADITIVO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=30/07/2026&jornal=530&pagina=21) · 2026-07-30
+- Ministério da Educação/Universidade Federal do Rio Grande do Norte/Pró-Reitoria de Gestão de Pessoas · [AVISO DE RETIFICAÇÃO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=30/07/2026&jornal=530&pagina=57) · 2026-07-30
+- Ministério da Educação/Universidade Federal do Rio Grande do Norte/Pró-Reitoria de Gestão de Pessoas/Diretoria de Administração de Pessoal · [EDITAL Nº 1092, DE 29 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=30/07/2026&jornal=530&pagina=57) · 2026-07-30
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Minas Gerais/Campus Arcos · [EXTRATO DE TERMO ADITIVO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=30/07/2026&jornal=530&pagina=46) · 2026-07-30
+- Ministério da Justiça e Segurança Pública/Secretaria Nacional de Políticas Penais · [EXTRATO DE RESCISÃO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=30/07/2026&jornal=530&pagina=96) · 2026-07-30
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Paraná/Campus Umuarama/Seção do Gabinete da Diretoria Geral · [EDITAL N° 94, DE 29 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=30/07/2026&jornal=530&pagina=47) · 2026-07-30
+- Ministério da Agricultura e Pecuária/Secretaria Executiva/Subsecretaria de Gestão de Pessoas e de Gestão do Conhecimento · [EXTRATO DE RESCISÃO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=30/07/2026&jornal=530&pagina=1) · 2026-07-30
+- Ministério da Educação/Universidade Federal da Fronteira Sul · [EDITAL Nº 325, DE 29 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=30/07/2026&jornal=530&pagina=53) · 2026-07-30
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Santa Catarina · [EXTRATOS DE CONTRATOS](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=30/07/2026&jornal=530&pagina=49) · 2026-07-30
+- Ministério da Educação/Fundação Universidade Federal de São Carlos/Pró-Reitoria de Gestão de Pessoas · [EDITAL Nº 86, DE 29 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=30/07/2026&jornal=530&pagina=69) · 2026-07-30
+- Ministério da Educação/Universidade Federal do Rio Grande do Norte/Pró-Reitoria de Gestão de Pessoas/Diretoria de Administração de Pessoal · [EDITAL DE CONVOCAÇÃO Nº 1.093 DE 29 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=30/07/2026&jornal=530&pagina=57) · 2026-07-30
+- Entidades de Fiscalização do Exercício das Profissões Liberais/Conselho Regional de Serviço Social da 9ª Região · [EDITAL DE CONVOCAÇÃO, DE 17 DE JULHO DE 2026   MANIFESTAÇÃO DE INTERESSE DE CONTRATAÇÃO TEMPORÁRIA](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=31/07/2026&jornal=530&pagina=182) · 2026-07-31
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Ceará/Campus Maranguape · [EDITAL Nº 3, DE 24 DE ABRIL DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=31/07/2026&jornal=530&pagina=47) · 2026-07-31
+- Ministério da Educação/Universidade Federal do Rio Grande do Norte/Pró-Reitoria de Gestão de Pessoas/Diretoria de Administração de Pessoal · [EDITAL  Nº 1.095, DE 30 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=31/07/2026&jornal=530&pagina=63) · 2026-07-31
+- Ministério da Educação/Universidade Federal do Estado do Rio de Janeiro · [EDITAL N° 176, DE 30 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=31/07/2026&jornal=530&pagina=79) · 2026-07-31
+- Ministério da Educação/Universidade Federal do Estado do Rio de Janeiro · [EDITAL N° 177, DE 30 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=31/07/2026&jornal=530&pagina=79) · 2026-07-31
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Maranhão/Campus Santa Inês · [EDITAL](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=31/07/2026&jornal=530&pagina=49) · 2026-07-31
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Brasília/IFB Campus São Sebastião · [EDITAL DE  CONVOCAÇÃO DE 14 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=31/07/2026&jornal=530&pagina=45) · 2026-07-31
+- Ministério da Educação/Universidade Federal de Juiz de Fora/Pró-Reitoria de Gestão de Pessoas · [PORTARIA PROGEPE/UFJF Nº 397, DE 31 de julho de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/08/2026&jornal=515&pagina=16) · 2026-08-03
+- Ministério da Educação/Universidade Federal da Paraíba · [EDITAL Nº 154/2026 PROGEP-DSP, 16 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/08/2026&jornal=530&pagina=43) · 2026-08-03
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Minas Gerais/Campus Governador Valadares · [EXTRATO DE CONTRATO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/08/2026&jornal=530&pagina=30) · 2026-08-03
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Pará/Campus Ananindeua · [EDITAL](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/08/2026&jornal=530&pagina=31) · 2026-08-03
+- Entidades de Fiscalização do Exercício das Profissões Liberais/CONSELHO REGIONAL DE ODONTOLOGIA DA BAHIA · [EDITAL DE SELEÇÃO PÚBLICA SIMPLIFICADA Nº 1/2026, DE 31 de julho de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/08/2026&jornal=530&pagina=163) · 2026-08-03
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Minas Gerais/Campus Formiga · [EXTRATO DE CONTRATO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/08/2026&jornal=530&pagina=30) · 2026-08-03
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Minas Gerais/Campus Itabiríto · [EXTRATO DE CONTRATO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/08/2026&jornal=530&pagina=30) · 2026-08-03
+- Entidades de Fiscalização do Exercício das Profissões Liberais/CONSELHO REGIONAL DE NUTRIÇÃO DA OITAVA REGIÃO · [Edital de 31 de  julho de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/08/2026&jornal=530&pagina=163) · 2026-08-03
+- Ministério da Justiça e Segurança Pública/Secretaria Nacional de Políticas Penais · [EXTRATO DE CONTRATO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/08/2026&jornal=530&pagina=104) · 2026-08-03
+- Ministério da Educação/Universidade Federal do Estado do Rio de Janeiro · [EDITAL N° 179, DE 30 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/08/2026&jornal=530&pagina=87) · 2026-08-03
+- Ministério da Educação/Universidade Federal do Estado do Rio de Janeiro · [EDITAL N° 181, DE 30 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/08/2026&jornal=530&pagina=87) · 2026-08-03
+- Ministério da Educação/Universidade Federal do Estado do Rio de Janeiro · [EDITAL N° 180, DE 30 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/08/2026&jornal=530&pagina=87) · 2026-08-03
+- Entidades de Fiscalização do Exercício das Profissões Liberais/CONSELHO REGIONAL DE NUTRIÇÃO DA OITAVA REGIÃO · [EDITAL DE CONVOCAÇÃO, de 31 de julho de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/08/2026&jornal=530&pagina=163) · 2026-08-03
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Minas Gerais/Campus Ouro Preto · [EXTRATO DE RESCISÃO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/08/2026&jornal=530&pagina=30) · 2026-08-03
+- Ministério da Saúde/Secretaria Executiva/Subsecretaria de Assuntos Administrativos/Coordenação-Geral de Material e Patrimônio/Coordenação de Compras e Licitações/Divisão de Procedimentos Licitatórios · [EXTRATO DE CONTRATO Nº 120/2026 - UASG 250110](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/08/2026&jornal=530&pagina=121) · 2026-08-03
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Rondônia/Campus Ariquemes · [EDITAL DE  CONVOCAÇÃO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/08/2026&jornal=530&pagina=32) · 2026-08-03
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Ceará/Campus Pecém · [EDITAL Nº 10, DE 15 DE MAIO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/08/2026&jornal=530&pagina=29) · 2026-08-03
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Minas Gerais/Campus Formiga · [EXTRATO DE CONTRATO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/08/2026&jornal=530&pagina=30) · 2026-08-03
+- Ministério da Educação/Universidade Federal de Rondonópolis/Pró-Reitoria de Gestão de Pessoas · [EDITAL PROGEP/REITORIA/UFR Nº 17, DE 30 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/08/2026&jornal=530&pagina=66) · 2026-08-03
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Minas Gerais/Campus Ouro Branco · [EXTRATOS DE TERMO ADITIVO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/08/2026&jornal=530&pagina=30) · 2026-08-03
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Pará/Gabinete · [EXTRATO DO TERMO ADITIVO Nº 79/2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/08/2026&jornal=530&pagina=31) · 2026-08-03
+- Ministério da Agricultura e Pecuária/Secretaria Executiva/Subsecretaria de Gestão de Pessoas e de Gestão do Conhecimento · [EXTRATO DE RESCISÃO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/08/2026&jornal=530&pagina=1) · 2026-08-03
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Santa Catarina · [EXTRATOs DE CONTRATOs](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/08/2026&jornal=530&pagina=33) · 2026-08-03
+- Ministério da Educação/Universidade Federal do Rio Grande do Norte/Pró-Reitoria de Gestão de Pessoas/Diretoria de Administração de Pessoal · [EDITAL Nº 1.104, DE 31 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/08/2026&jornal=530&pagina=65) · 2026-08-03
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Minas Gerais/Campus Ipatinga · [EXTRATO DE CONTRATO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/08/2026&jornal=530&pagina=30) · 2026-08-03
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Minas Gerais/Campus Ipatinga · [EXTRATO DE CONTRATO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/08/2026&jornal=530&pagina=30) · 2026-08-03
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Minas Gerais/Campus Ouro Branco · [EXTRATO DE CONTRATO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/08/2026&jornal=530&pagina=30) · 2026-08-03
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Minas Gerais/Campus Bambuí · [EXTRATO DE CONTRATO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=04/08/2026&jornal=530&pagina=35) · 2026-08-04
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Minas Gerais/Campus Bambuí · [EXTRATO DE CONTRATO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=04/08/2026&jornal=530&pagina=35) · 2026-08-04
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Sul/Campus Sertão/Diretoria de Administração e Planejamento/Coordenação-Geral de Recursos Humanos · [EDITAL Nº 30, DE 28 DE MAIO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=04/08/2026&jornal=530&pagina=52) · 2026-08-04
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Sul/Campus Sertão/Diretoria de Administração e Planejamento/Coordenação-Geral de Recursos Humanos · [EDITAL Nº 31, DE 29 DE MAIO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=04/08/2026&jornal=530&pagina=51) · 2026-08-04
+- Ministério da Educação/Universidade Federal do Estado do Rio de Janeiro · [EDITAL N° 182, DE 31 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=04/08/2026&jornal=530&pagina=72) · 2026-08-04
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Minas Gerais/Campus Bambuí · [EXTRATO DE CONTRATO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=04/08/2026&jornal=530&pagina=35) · 2026-08-04
+- Ministério da Educação/Fundação Universidade de Brasília/Decanato de Gestão de Pessoas · [EDITAL  Nº 134, DE 29 de julho de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=04/08/2026&jornal=530&pagina=68) · 2026-08-04
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Santa Catarina · [EXTRATO DE CONTRATO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=04/08/2026&jornal=530&pagina=53) · 2026-08-04
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Acre · [EDITAL DE CONVOCAÇÃO Nº 1, DE 3 DE AGOSTO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=04/08/2026&jornal=530&pagina=32) · 2026-08-04
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Alagoas/Reitoria · [EDITAL DE CONVOCAO Nº 102/IFAL, DE  3 DE AGOSTO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=04/08/2026&jornal=530&pagina=32) · 2026-08-04
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Alagoas/Reitoria · [EDITAL DE CONVOCAO Nº 103/IFAL, DE 3 DE AGOSTO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=04/08/2026&jornal=530&pagina=32) · 2026-08-04
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Minas Gerais/Campus Ouro Preto · [EXTRATO DE CONTRATO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=04/08/2026&jornal=530&pagina=36) · 2026-08-04
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Minas Gerais/Campus Ribeirão das Neves · [EXTRATO DE CONTRATO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=04/08/2026&jornal=530&pagina=36) · 2026-08-04
+- Ministério da Educação/Universidade Federal do Rio Grande do Norte/Pró-Reitoria de Gestão de Pessoas/Diretoria de Administração de Pessoal · [EDITAL DE CONVOCAÇÃO Nº 1.110 DE 3 DE AGOSTO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=04/08/2026&jornal=530&pagina=58) · 2026-08-04
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Brasília/IFB Campus Planaltina · [EDITAL DE CONVOCAÇÃO nº 17/DGPL/IFB, DE 4 DE AGOSTO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=05/08/2026&jornal=530&pagina=41) · 2026-08-05
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Alagoas/Reitoria · [EDITAL DE CONVOCAÇÃO Nº 104/IFAL](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=05/08/2026&jornal=530&pagina=40) · 2026-08-05
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Alagoas/Reitoria · [EDITAL DE CONVOCAÇÃO Nº 105/IFAL](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=05/08/2026&jornal=530&pagina=40) · 2026-08-05
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Alagoas/Reitoria · [EDITAL DE CONVOCAÇÃO Nº 106/IFAL](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=05/08/2026&jornal=530&pagina=40) · 2026-08-05
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Alagoas/Reitoria · [EDITAL DE CONVOCAÇÃO Nº 107/IFAL](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=05/08/2026&jornal=530&pagina=40) · 2026-08-05
+- Ministério da Educação/Universidade Federal de Goiás/Gabinete da Reitoria · [EDITAL DE 3 DE AGOSTO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=05/08/2026&jornal=530&pagina=52) · 2026-08-05
+- Ministério da Educação/Fundação Universidade de Brasília/Decanato de Gestão de Pessoas · [EDITAL  Nº 135, DE 3 DE AGOSTO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=05/08/2026&jornal=530&pagina=71) · 2026-08-05
+- Ministério da Educação/Universidade Federal do Estado do Rio de Janeiro · [EDITAL N° 175, DE 31 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=05/08/2026&jornal=530&pagina=74) · 2026-08-05
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Pará/Gabinete · [EXTRATOS DE TERMO ADITIVO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=05/08/2026&jornal=530&pagina=44) · 2026-08-05
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Norte/Campus Natal-Zona Norte · [PORTARIA Nº 220, DE 3 DE AGOSTO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=06/08/2026&jornal=515&pagina=90) · 2026-08-06
+- Ministério da Educação/Universidade Federal do Espírito Santo/Pró-Reitoria de Gestão de Pessoas · [PORTARIAS NORMATIVAS DE 5 DE AGOSTO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=06/08/2026&jornal=515&pagina=92) · 2026-08-06
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Sudeste de Minas Gerais/Reitoria · [Edital](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=06/08/2026&jornal=530&pagina=42) · 2026-08-06
+- Ministério da Educação/Universidade Federal do Estado do Rio de Janeiro · [EDITAL N° 178, DE 30 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=06/08/2026&jornal=530&pagina=79) · 2026-08-06
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Acre · [EDITAL COMPLEMENTAR Nº 8, DE 5 DE AGOSTO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=06/08/2026&jornal=530&pagina=33) · 2026-08-06
+- Ministério da Educação/Universidade Federal do Sul e Sudeste do Pará · [EDITAL](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=06/08/2026&jornal=530&pagina=54) · 2026-08-06
+- Defensoria Pública da União · [EDITAL - DPU/SSIN DPGU - Nº 1, DE 5 DE agosto DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=06/08/2026&jornal=530&pagina=127) · 2026-08-06
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Alagoas/Reitoria · [EDITAL DE CONVOCAÇÃO Nº 108/IFAL, DE 4 DE AGOSTO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=06/08/2026&jornal=530&pagina=33) · 2026-08-06
+- Ministério da Educação/Fundação Universidade de Brasília/Decanato de Gestão de Pessoas · [Edital](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=06/08/2026&jornal=530&pagina=76) · 2026-08-06
+- Ministério da Educação/Universidade Federal do Sul da Bahia · [EDITAL Nº 6/2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=06/08/2026&jornal=530&pagina=52) · 2026-08-06
+- Ministério da Educação/Fundação Universidade Federal de São Carlos/Pró-Reitoria de Gestão de Pessoas · [EDITAL Nº 87, DE 5 DE AGOSTO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=06/08/2026&jornal=530&pagina=78) · 2026-08-06
+- Ministério da Educação/Universidade Federal do Cariri/Pró-Reitoria de Gestão de Pessoas · [EDITAL Nº 53/2026, DE 5 DE AGOSTO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=06/08/2026&jornal=530&pagina=44) · 2026-08-06
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Santa Catarina · [EXTRATO DE CONTRATO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=06/08/2026&jornal=530&pagina=41) · 2026-08-06
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Minas Gerais/Campus Governador Valadares · [EXTRATO DE CONTRATO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=06/08/2026&jornal=530&pagina=38) · 2026-08-06
+- Ineditoriais/Fundação de Apoio da Universidade Federal do Rio Grande do Sul · [EDITAL](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=07/08/2026&jornal=530&pagina=191) · 2026-08-07
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Santa Catarina · [EXTRATO DE CONTRATO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=07/08/2026&jornal=530&pagina=48) · 2026-08-07
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Ceará/Campus Cedro · [EDITAL Nº 18 DG-CED/CEDRO-IFCE, DE 05 DE AGOSTO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=07/08/2026&jornal=530&pagina=40) · 2026-08-07
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Pernambuco · [EDITAL CPES/IFPE Nº 3, DE 3 DE AGOSTO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=07/08/2026&jornal=530&pagina=46) · 2026-08-07
+- Ministério dos Povos Indígenas/Fundação Nacional dos Povos Indígenas · [EDITAL](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=07/08/2026&jornal=530&pagina=109) · 2026-08-07
+- Ministério da Educação/Centro Federal de Educação Tecnológica de Minas Gerais/Secretaria de Gestão de Pessoas · [EDITAL Nº 524, DE 4 DE AGOSTO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=07/08/2026&jornal=530&pagina=37) · 2026-08-07
+- Ministério da Educação/Universidade Federal do Estado do Rio de Janeiro · [EDITAL N° 184, DE 6 DE AGOSTO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=07/08/2026&jornal=530&pagina=69) · 2026-08-07
+- Ministério da Educação/Universidade Federal do Estado do Rio de Janeiro · [EDITAL N° 185, DE 6 DE AGOSTO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=07/08/2026&jornal=530&pagina=69) · 2026-08-07
+- Ministério da Educação/Universidade Federal do Estado do Rio de Janeiro · [EDITAL N° 186, DE 6 DE AGOSTO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=07/08/2026&jornal=530&pagina=69) · 2026-08-07
+- Ministério da Educação/Fundação Universidade de Brasília/Decanato de Gestão de Pessoas · [EDITAL  Nº 138, DE 5 de agosto de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=07/08/2026&jornal=530&pagina=64) · 2026-08-07
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Mato Grosso do Sul/Reitoria · [EDITAL Nº 3/2025](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=07/08/2026&jornal=530&pagina=43) · 2026-08-07
+- Ministério da Educação/Universidade Federal da Bahia/Reitoria/Pró-Reitoria de Desenvolvimento de Pessoas · [EDITAL DE 6 DE AGOSTO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=07/08/2026&jornal=530&pagina=50) · 2026-08-07
+- Ministério da Educação/Universidade Federal do Pará/Pró-Reitoria de Desenvolvimento e Gestão de Pessoal · [EDITAL Nº 65, DE 6 DE AGOSTO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=07/08/2026&jornal=530&pagina=55) · 2026-08-07
+- Ministério da Educação/Universidade Federal do Rio de Janeiro/Centro de Ciências Matemáticas e da Natureza/Instituto de Química · [EDITAL nº 897, DE 24 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=07/08/2026&jornal=530&pagina=57) · 2026-08-07
+- Ministério da Educação/Universidade Federal do Rio Grande do Norte/Pró-Reitoria de Gestão de Pessoas/Diretoria de Administração de Pessoal · [EDITAL Nº 1.149, DE 6 DE AGOSTO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=07/08/2026&jornal=530&pagina=57) · 2026-08-07
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Minas Gerais/Campus Ibirité · [EXTRATO DE TERMO ADITIVO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=07/08/2026&jornal=530&pagina=43) · 2026-08-07
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Minas Gerais/Campus Ouro Branco · [EXTRATO DE TERMO ADITIVO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=10/08/2026&jornal=530&pagina=53) · 2026-08-10
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Norte · [EDITAL Nº 41 - DIDEPE/DIGPE/RE/IFRN, DE  5 DE AGOSTO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=10/08/2026&jornal=530&pagina=54) · 2026-08-10
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Ceará/Campus Crateús · [EXTRATO DE CONTRATO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=10/08/2026&jornal=530&pagina=49) · 2026-08-10
+- Ministério da Educação/Fundação Universidade Federal de Sergipe · [EDITAL Nº 7, DE  7 DE AGOSTO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=10/08/2026&jornal=530&pagina=83) · 2026-08-10
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Triângulo Mineiro/Campus Paracatu · [EDITAL N° 32/DGPC-REI, de 7 de agosto de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=10/08/2026&jornal=530&pagina=57) · 2026-08-10
+- Ministério da Educação/Universidade Federal do Estado do Rio de Janeiro · [EDITAL N° 187, DE  6 DE AGOSTO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=10/08/2026&jornal=530&pagina=86) · 2026-08-10
+- Ministério da Educação/Universidade Federal do Estado do Rio de Janeiro · [EDITAL N° 188, DE  7 DE AGOSTO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=10/08/2026&jornal=530&pagina=85) · 2026-08-10
+- Ministério da Educação/Universidade Federal do Estado do Rio de Janeiro · [EDITAL N° 189, de  7 de agosto de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=10/08/2026&jornal=530&pagina=84) · 2026-08-10
+- Ministério da Educação/Universidade Federal do Estado do Rio de Janeiro · [EDITAL N° 190, de 7 de agosto de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=10/08/2026&jornal=530&pagina=84) · 2026-08-10
+- Ministério da Educação/Universidade Federal do Espírito Santo/Reitoria · [EDITAL Nº 127, DE 7 DE AGOSTO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=10/08/2026&jornal=530&pagina=65) · 2026-08-10
+- Ministério da Agricultura e Pecuária/Secretaria Executiva/Subsecretaria de Gestão de Pessoas e de Gestão do Conhecimento · [EXTRATO DE RESCISÃO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=10/08/2026&jornal=530&pagina=2) · 2026-08-10
+- Ministério da Educação/Universidade Federal do Rio Grande do Norte/Pró-Reitoria de Gestão de Pessoas/Diretoria de Administração de Pessoal · [EDITAL DE CONVOCAÇÃO Nº 1153, DE 7 DE AGOSTO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=10/08/2026&jornal=530&pagina=72) · 2026-08-10
+- Ministério da Educação/Universidade Federal de Uberlândia/Pró-Reitoria de Gestão de Pessoas · [EDITAL PROGEP Nº 134/2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=10/08/2026&jornal=530&pagina=87) · 2026-08-10
+- Ministério da Educação/Universidade Federal de Uberlândia/Pró-Reitoria de Gestão de Pessoas · [EDITAL N° 138/2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=10/08/2026&jornal=530&pagina=86) · 2026-08-10
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Tocantins/Campus Paraíso do Tocantins · [EDITAL Nº 50/2026/PSO/REI/IFTO, DE 6 DE AGOSTO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=10/08/2026&jornal=530&pagina=57) · 2026-08-10
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Santa Catarina · [EXTRATO DE CONTRATO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=10/08/2026&jornal=530&pagina=56) · 2026-08-10
+- Ministério da Educação/Universidade Federal do Rio Grande do Norte/Pró-Reitoria de Gestão de Pessoas/Diretoria de Administração de Pessoal · [EDITAL DE CONVOCAÇÃO Nº 1.154, DE 7 DE AGOSTO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=10/08/2026&jornal=530&pagina=72) · 2026-08-10
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Minas Gerais/Campus Ibirité · [EXTRATO DE TERMO  ADITIVO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=10/08/2026&jornal=530&pagina=53) · 2026-08-10
+- Ministério da Educação/Universidade Federal do Espírito Santo/Pró-Reitoria de Gestão de Pessoas · [PORTARIA NORMATIVA Nº 118, DE 10 DE AGOSTO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=11/08/2026&jornal=515&pagina=27) · 2026-08-11
+- Ministério da Educação/Universidade Federal do Estado do Rio de Janeiro · [EDITAL N° 191, DE 10 DE AGOSTO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=11/08/2026&jornal=530&pagina=73) · 2026-08-11
+- Ministério da Educação/Universidade Federal do Estado do Rio de Janeiro · [EDITAL N° 192, DE 10 DE AGOSTO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=11/08/2026&jornal=530&pagina=73) · 2026-08-11
+- Ministério da Educação/Universidade Federal do Estado do Rio de Janeiro · [EDITAL N° 194, DE 10 DE AGOSTO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=11/08/2026&jornal=530&pagina=73) · 2026-08-11
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Santa Catarina · [EXTRATO DE CONTRATO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=11/08/2026&jornal=530&pagina=44) · 2026-08-11
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia Catarinense/Pró-Reitoria de Desenvolvimento, Inclusão, Diversidade e Assistência à Pessoa · [EDITAL Nº 83/CAMDP/IFC/2026, de 10 de agosto de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=11/08/2026&jornal=530&pagina=36) · 2026-08-11
+- Ministério da Educação/Universidade Federal do Rio Grande do Norte/Pró-Reitoria de Gestão de Pessoas/Diretoria de Administração de Pessoal · [EDITAL DE CONVOCAÇÃO Nº 1160 DE 10 DE AGOSTO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=11/08/2026&jornal=530&pagina=60) · 2026-08-11
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Alagoas/Reitoria · [EDITAL DE CONVOCAÇÃO Nº 109/IFAL, DE 10 DE AGOSTO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=11/08/2026&jornal=530&pagina=35) · 2026-08-11
+- Ministério da Educação/Universidade Federal do Rio Grande do Norte/Pró-Reitoria de Gestão de Pessoas/Diretoria de Administração de Pessoal · [EDITAL DE CONVOCAÇÃO Nº 1.163 DE 10 DE AGOSTO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=11/08/2026&jornal=530&pagina=59) · 2026-08-11
+- Ministério da Educação/Centro Federal de Educação Tecnológica Celso Suckow da Fonseca · [PORTARIA Nº 1.449/CEFET-RJ, DE 10 DE AGOSTO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=12/08/2026&jornal=515&pagina=15) · 2026-08-12
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Santa Catarina · [RETIFICAÇÃO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=12/08/2026&jornal=530&pagina=36) · 2026-08-12
+- Ministério da Educação/Fundação Universidade Federal do ABC/Pró-Reitoria de Gestão de Pessoas · [EXTRATOS DE CONTRATOS](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=12/08/2026&jornal=530&pagina=53) · 2026-08-12
+- Ministério da Educação/Fundação Universidade Federal de Mato Grosso/Instituto de Ciências Humanas e Sociais/Departamento de Serviço Social · [EDITAL DE HOMOLOGAÇÃO Nº 1, DE 1 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=12/08/2026&jornal=530&pagina=55) · 2026-08-12
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Goiás · [eDITAL Nº 5/2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=12/08/2026&jornal=530&pagina=33) · 2026-08-12
+- Ministério da Agricultura e Pecuária/Secretaria Executiva/Subsecretaria de Gestão de Pessoas e de Gestão do Conhecimento · [EXTRATO DE TERMO ADITIVO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=12/08/2026&jornal=530&pagina=2) · 2026-08-12
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Pará · [EDITAL DE 11 de junho de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=12/08/2026&jornal=530&pagina=34) · 2026-08-12
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Brasília/IFB Campus Planaltina · [EDITAL Nº 18/DGPL/IFB, DE 11 DE AGOSTO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=12/08/2026&jornal=530&pagina=30) · 2026-08-12
+- Ministério da Educação/Fundação Universidade Federal de São João Del Rei/Pró-Reitoria de Gestão e Desenvolvimento de Pessoas · [EDITAL DE RETIFICAÇÃO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=12/08/2026&jornal=530&pagina=70) · 2026-08-12
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Santa Catarina · [EXTRATO DE CONTRATOS](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=12/08/2026&jornal=530&pagina=36) · 2026-08-12
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Alagoas/Reitoria · [EDITAL Nº 110/IFAL, DE 11 DE AGOSTO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=12/08/2026&jornal=530&pagina=29) · 2026-08-12
+- Ministério da Educação/Universidade Federal do Estado do Rio de Janeiro · [EDITAL Nº 193, de 10 de agosto de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=12/08/2026&jornal=530&pagina=70) · 2026-08-12
+- Entidades de Fiscalização do Exercício das Profissões Liberais/Conselho Regional de Psicologia da 4ª Região · [EDITAL DE 11 DE AGOSTO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=12/08/2026&jornal=530&pagina=173) · 2026-08-12
+- Ministério da Educação/Universidade Federal do Estado do Rio de Janeiro · [EDITAL Nº 195, de 11 de agosto de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=12/08/2026&jornal=530&pagina=71) · 2026-08-12
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia Catarinense/Pró-Reitoria de Desenvolvimento, Inclusão, Diversidade e Assistência à Pessoa · [AVISO DE RETIFICAÇÃO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=12/08/2026&jornal=530&pagina=32) · 2026-08-12
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Minas Gerais/Campus Ouro Preto · [EXTRATO DE CONTRATO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=12/08/2026&jornal=530&pagina=34) · 2026-08-12
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Sudeste de Minas Gerais/Reitoria · [AVISO DE PRORROGAÇÃO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=13/08/2026&jornal=530&pagina=118) · 2026-08-13
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia da Bahia/Campus Santo Antônio de Jesus · [EDITAL DE PRORROGAÇÃO, DE 12 DE AGOSTO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=13/08/2026&jornal=530&pagina=110) · 2026-08-13
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Alagoas/Reitoria · [EDITAL Nº 111/IFAL, DE  12 DE AGOSTO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=13/08/2026&jornal=530&pagina=109) · 2026-08-13
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Alagoas/Reitoria · [EDITAL Nº 112/IFAL, DE 12 DE AGOSTO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=13/08/2026&jornal=530&pagina=110) · 2026-08-13
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de São Paulo/Tupã · [AVISO DE RETIFICAÇÃO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=13/08/2026&jornal=530&pagina=118) · 2026-08-13
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Minas Gerais/Campus Ouro Branco · [EXTRATO DE TERMO ADITIVO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=13/08/2026&jornal=530&pagina=114) · 2026-08-13
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Sul/Campus Porto Alegre · [EDITAL Nº 58, DE 12 DE AGOSTO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=13/08/2026&jornal=530&pagina=117) · 2026-08-13
+- Ministério da Educação/Fundação Universidade de Brasília/Decanato de Gestão de Pessoas · [EDITAL  Nº 141, DE 10 DE AGOSTO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=13/08/2026&jornal=530&pagina=129) · 2026-08-13
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Pará/Gabinete · [EXTRATO DE TEMO ADITIVO Nº 81/2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=13/08/2026&jornal=530&pagina=114) · 2026-08-13
+- Ministério da Educação/Fundação Universidade de Brasília · [EXTRATO DE CONTRATO Nº 1209/2026 - UASG 154040](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=13/08/2026&jornal=530&pagina=129) · 2026-08-13
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Ceará/Campus Camocim · [edital](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=13/08/2026&jornal=530&pagina=111) · 2026-08-13
+- Ministério da Educação/Universidade Federal do Espírito Santo/Pró-Reitoria de Gestão de Pessoas · [PORTARIA NORMATIVA Nº 119, DE 13 DE AGOSTO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=14/08/2026&jornal=515&pagina=26) · 2026-08-14
+- Ineditoriais/Fundação de Apoio da Universidade Federal do Rio Grande do Sul · [EDITAL](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=14/08/2026&jornal=530&pagina=169) · 2026-08-14
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Minas Gerais/Campus Ouro Preto · [EXTRATO DE CONTRATO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=14/08/2026&jornal=530&pagina=45) · 2026-08-14
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Triângulo Mineiro · [EDITAL  Nº 30, DE 24 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=14/08/2026&jornal=530&pagina=58) · 2026-08-14
+- Ministério da Agricultura e Pecuária/Secretaria Executiva/Subsecretaria de Gestão de Pessoas e de Gestão do Conhecimento · [EXTRATO DE RESCISÃO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=14/08/2026&jornal=530&pagina=2) · 2026-08-14
+- Ministério da Educação/Universidade Federal do Rio Grande do Norte/Pró-Reitoria de Gestão de Pessoas/Diretoria de Administração de Pessoal · [EDITAL  Nº 1178, DE 13 DE AGOSTO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=14/08/2026&jornal=530&pagina=65) · 2026-08-14
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Santa Catarina · [RETIFICAÇÃO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=14/08/2026&jornal=530&pagina=49) · 2026-08-14
+- Ministério da Educação/Universidade Federal do Rio Grande do Norte/Pró-Reitoria de Gestão de Pessoas/Diretoria de Administração de Pessoal · [EDITAL Nº 1.180, DE 13 DE AGOSTO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=14/08/2026&jornal=530&pagina=65) · 2026-08-14
+- Ministério da Educação/Fundação Universidade Federal de Mato Grosso/Faculdade de Medicina/Departamento de Ciências Básicas em Saúde · [EDITAL](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=14/08/2026&jornal=530&pagina=79) · 2026-08-14
+- Ministério da Educação/Universidade Federal de São Paulo/Pró-Reitoria de Gestão com Pessoas · [EDITAL Nº 581, DE 13 DE AGOSTO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=14/08/2026&jornal=530&pagina=68) · 2026-08-14
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Goiás/Câmpus Goiânia/Coordenação de Recursos Humanos e Assistência ao Servidor · [EDITAL Nº 32, DE 13 DE AGOSTO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=14/08/2026&jornal=530&pagina=43) · 2026-08-14
+- Ministério da Educação/Fundação Universidade Federal de Ciências da Saúde de Porto Alegre · [PORTARIA DAP PROGESP UFCSPA Nº 7.779, de 14 DE AGOSTO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=17/08/2026&jornal=515&pagina=34) · 2026-08-17
+- Ministério da Educação/Fundação Universidade Federal de Ciências da Saúde de Porto Alegre · [PORTARIA DAP PROGESP UFCSPA Nº 7.781, de 14 DE AGOSTO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=17/08/2026&jornal=515&pagina=34) · 2026-08-17
+- Ministério da Educação/Fundação Universidade Federal de Ciências da Saúde de Porto Alegre · [PORTARIA DAP PROGESP UFCSPA Nº 7.779, de 14 DE AGOSTO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=17/08/2026&jornal=515&pagina=34) · 2026-08-17
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Minas Gerais/Campus São João Evangelista · [EXTRATO DE CONTRATO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=17/08/2026&jornal=530&pagina=33) · 2026-08-17
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Santa Catarina · [EXTRATO DE CONTRATO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=17/08/2026&jornal=530&pagina=35) · 2026-08-17
+- Ministério da Educação/Universidade Federal do Espírito Santo/Reitoria · [EDITAL Nº 129, DE 14 DE AGOSTO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=17/08/2026&jornal=530&pagina=38) · 2026-08-17
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Mato Grosso do Sul/Campus Dourados/Coordenação de Gestão de Pessoas · [EDITAL Nº 1.9/IFMS Nº 1/2025](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=17/08/2026&jornal=530&pagina=32) · 2026-08-17
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Minas Gerais/Campus Arcos · [EXTRATO DE TERMO ADITIVO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=17/08/2026&jornal=530&pagina=33) · 2026-08-17
+- Ministério da Educação/Universidade Federal do Rio Grande do Norte/Pró-Reitoria de Gestão de Pessoas/Diretoria de Administração de Pessoal · [EDITAL  Nº 1184, DE 14 DE AGOSTO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=17/08/2026&jornal=530&pagina=41) · 2026-08-17
+- Ministério da Educação/Fundação Universidade de Brasília/Decanato de Gestão de Pessoas · [EDITAL Nº 10/2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=17/08/2026&jornal=530&pagina=56) · 2026-08-17
+- Ministério da Educação/Fundação Universidade de Brasília/Decanato de Gestão de Pessoas · [EDITAL  Nº 143, DE 13 DE AGOSTO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=17/08/2026&jornal=530&pagina=56) · 2026-08-17
+- Entidades de Fiscalização do Exercício das Profissões Liberais/CONSELHO REGIONAL DE ODONTOLOGIA DO MARANHÃO · [EDITAL DE PROCESSO SELETIVO SIMPLIFICADO Nº 10, DE 17 DE AGOSTO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=17/08/2026&jornal=530&pagina=130) · 2026-08-17
+- Ministério da Educação/Universidade Federal do Sul e Sudeste do Pará · [edital de 14 de agosto de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=17/08/2026&jornal=530&pagina=45) · 2026-08-17
+- Ministério da Educação/Universidade Federal do Rio Grande do Norte/Pró-Reitoria de Gestão de Pessoas/Diretoria de Administração de Pessoal · [EDITAL  Nº 1.186, DE 14 DE AGOSTO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=17/08/2026&jornal=530&pagina=42) · 2026-08-17
+- Ministério da Educação/Universidade Federal do Espírito Santo/Pró-Reitoria de Gestão de Pessoas · [PORTARIA NORMATIVA Nº 120, DE 17 DE AGOSTO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=18/08/2026&jornal=515&pagina=73) · 2026-08-18
+- Ministério da Educação/Fundação Universidade Federal do Pampa · [PORTARIA nº 1.505, de  17 DE AGOSTO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=18/08/2026&jornal=515&pagina=74) · 2026-08-18
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Maranhão/Campus Codó/Diretoria de Administração e Planejamento/Departamento de Gestão de Pessoas · [EDITAL Nº 74, de 13 DE AGOSTO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=18/08/2026&jornal=530&pagina=35) · 2026-08-18
+- Entidades de Fiscalização do Exercício das Profissões Liberais/Conselho Regional de Psicologia da 4ª Região · [EDITAL DE 17 DE AGOSTO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=18/08/2026&jornal=530&pagina=157) · 2026-08-18
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Alagoas/Reitoria · [EDITAL Nº 113/IFAL, DE  17 DE AGOSTO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=18/08/2026&jornal=530&pagina=32) · 2026-08-18
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Alagoas/Reitoria · [EDITAL  Nº 114/IFAL, DE 17 DE AGOSTO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=18/08/2026&jornal=530&pagina=32) · 2026-08-18
+- Defensoria Pública da União/Secretaria de Serviços Integrados Nacionais · [Edital - DPU/CAFI DPGU - Nº 2, DE 17 DE AGOSTO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=18/08/2026&jornal=530&pagina=117) · 2026-08-18
+- Ministério da Educação/Fundação Universidade Federal de São Carlos/Pró-Reitoria de Gestão de Pessoas · [Edital nº 88, de 17 de agosto de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=18/08/2026&jornal=530&pagina=58) · 2026-08-18
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Pará/Gabinete · [EXTRATO DE TERMO ADITIVO Nº 82/2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=18/08/2026&jornal=530&pagina=36) · 2026-08-18
+- Ministério da Educação/Universidade Federal da Paraíba · [EDITAL Nº 156 - PROGEP-DSP, 17 de Agosto de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=18/08/2026&jornal=530&pagina=46) · 2026-08-18
+- Ministério da Justiça e Segurança Pública/Agência Nacional de Proteção de Dados · [EDITAL](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=18/08/2026&jornal=530&pagina=85) · 2026-08-18
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Santa Catarina · [EXTRATO DE CONTRATO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=19/08/2026&jornal=530&pagina=35) · 2026-08-19
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Santa Catarina · [EXTRATO DE CONTRATO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=19/08/2026&jornal=530&pagina=35) · 2026-08-19
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Minas Gerais/Campus Ribeirão das Neves · [EXTRATO DE RESCISÃO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=19/08/2026&jornal=530&pagina=33) · 2026-08-19
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Santa Catarina · [EXTRATO DE CONTRATO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=19/08/2026&jornal=530&pagina=35) · 2026-08-19
+- Ministério da Educação/Fundação Universidade Federal de Rondônia/Diretoria do Campus de Cacoal · [EDITAL](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=19/08/2026&jornal=530&pagina=60) · 2026-08-19
+- Ministério da Educação/Universidade Federal Rural do Rio de Janeiro/Reitoria · [EDITAL52-2026-TAE_SUPERIOR_002__](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=19/08/2026&jornal=530&pagina=47) · 2026-08-19
+- Defensoria Pública da União · [EDITAL - DPU/CAFI DPGU - Nº 3, DE 18 DE AGOSTO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=19/08/2026&jornal=530&pagina=121) · 2026-08-19
+- Ministério da Educação/Universidade Federal de São Paulo/Pró-Reitoria de Gestão com Pessoas · [EDITAL Nº 589, DE 17 DE AGOSTO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=19/08/2026&jornal=530&pagina=53) · 2026-08-19
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Alagoas/Reitoria · [EDITAL Nº 115/IFAL, DE 18 DE AGOSTO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=19/08/2026&jornal=530&pagina=29) · 2026-08-19
+- Ministério do Planejamento e Orçamento/Fundação Instituto Brasileiro de Geografia e Estatística · [EDITAL, 17 de agosto de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=19/08/2026&jornal=530&pagina=97) · 2026-08-19
+- Ministério do Planejamento e Orçamento/Fundação Instituto Brasileiro de Geografia e Estatística · [EDITAL, 17 de agosto de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=19/08/2026&jornal=530&pagina=97) · 2026-08-19
+- Ministério da Educação/Universidade Federal do Rio Grande do Norte/Pró-Reitoria de Gestão de Pessoas/Diretoria de Administração de Pessoal · [EDITAL DE CONVOCAÇÃO Nº 1.195, DE 18 DE AGOSTO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=19/08/2026&jornal=530&pagina=40) · 2026-08-19
+- Ministério da Educação/Universidade Federal do Estado do Rio de Janeiro · [EDITAL Nº 197, DE 18 DE AGOSTO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=20/08/2026&jornal=530&pagina=62) · 2026-08-20
+- Ministério da Educação/Universidade Federal do Rio Grande do Norte/Pró-Reitoria de Gestão de Pessoas/Diretoria de Administração de Pessoal · [EDITAL DE CONVOCAÇÃO Nº 1.200, DE 19 DE AGOSTO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=20/08/2026&jornal=530&pagina=49) · 2026-08-20
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Tocantins/Campus Paraíso do Tocantins · [EDITAL Nº 52/2026/PSO/REI/IFTO, DE 18 DE AGOSTO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=20/08/2026&jornal=530&pagina=41) · 2026-08-20
+- Ministério da Educação/Universidade Federal da Integração Latino-Americana · [EDITAL Nº 220/2026 - DICS, DE 18 DE AGOSTO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=21/08/2026&jornal=530&pagina=61) · 2026-08-21
+- Ministério da Educação/Universidade Federal do Rio Grande do Norte/Pró-Reitoria de Gestão de Pessoas/Diretoria de Administração de Pessoal · [EDITAL DE CONVOCAÇÃO Nº 1.207, DE 20 DE AGOSTO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=21/08/2026&jornal=530&pagina=63) · 2026-08-21
+- Ministério da Educação/Fundação Universidade de Brasília/Decanato de Gestão de Pessoas · [EDITAL Nº 11/2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=21/08/2026&jornal=530&pagina=72) · 2026-08-21
+- Ministério da Educação/Universidade Federal do Rio Grande do Norte/Pró-Reitoria de Gestão de Pessoas/Diretoria de Administração de Pessoal · [EDITAL DE CONVOCAÇÃO Nº 1.208, DE 20 DE AGOSTO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=21/08/2026&jornal=530&pagina=63) · 2026-08-21
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Pará/Gabinete · [EXTRATO DE TERMO ADITIVO Nº 83/2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=21/08/2026&jornal=530&pagina=49) · 2026-08-21
+- Ineditoriais/Associação Pró-Gestão das Águas da Bacia Hidrográfica do Rio Paraíba do Sul · [EDITAL Nº 3, DE 19 DE AGOSTO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=24/08/2026&jornal=530&pagina=148) · 2026-08-24
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Santa Catarina · [EXTRATO DE CONTRATO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=24/08/2026&jornal=530&pagina=34) · 2026-08-24
+- Defensoria Pública da União/Defensoria Pública da União em Montes Claros-MG · [EDITAL - DPU-MC/DAD MC - Nº 4, DE 20 DE AGOSTO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=24/08/2026&jornal=530&pagina=126) · 2026-08-24
+- Ministério dos Povos Indígenas/Fundação Nacional dos Povos Indígenas · [EDITAL](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=24/08/2026&jornal=530&pagina=103) · 2026-08-24
+- Atos do Poder Judiciário/Supremo Tribunal Federal/Plenário · [DECISÕES](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=25/08/2026&jornal=515&pagina=1) · 2026-08-25
+- Ministério da Educação/Universidade Federal de Catalão · [AVISO DE RETIFICAÇÃO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=25/08/2026&jornal=530&pagina=57) · 2026-08-25
+- Ministério da Saúde/Grupo Hospitalar Conceição · [EDITAL DE 24 de agosto de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=25/08/2026&jornal=530&pagina=105) · 2026-08-25
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Brasília/IFB Campus Planaltina · [EDITAL DE CONVOCAÇÃO 19/DGPL/IFB, DE 24 DE AGOSTO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=25/08/2026&jornal=530&pagina=47) · 2026-08-25
+- Ministério da Educação/Fundação Universidade Federal de Roraima · [Edital nº 119, de 22 de maio de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=25/08/2026&jornal=530&pagina=72) · 2026-08-25
+- Ministério da Educação/Universidade Federal de Alagoas/Pró-Reitoria de Gestão de Pessoas e do Trabalho · [EDITAL PROGEP Nº 42, DE 21 DE AGOSTO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=25/08/2026&jornal=530&pagina=56) · 2026-08-25
+- Defensoria Pública da União · [EXTRATO DE RECONHECIMENTO DE DÍVIDA](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=25/08/2026&jornal=530&pagina=115) · 2026-08-25
+- Ministério da Educação/Universidade Federal de Goiás/Gabinete da Reitoria · [EDITAL  DE 21 DE AGOSTO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=25/08/2026&jornal=530&pagina=57) · 2026-08-25
+- Ministério da Educação/Universidade Federal do Sul e Sudeste do Pará · [EDITAL](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=26/08/2026&jornal=530&pagina=57) · 2026-08-26
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Minas Gerais/Campus Ibirité · [EXTRATOS DE TERMOS ADITIVOS](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=26/08/2026&jornal=530&pagina=37) · 2026-08-26
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Minas Gerais/Campus Arcos · [EXTRATO DE TERMO ADITIVO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=26/08/2026&jornal=530&pagina=37) · 2026-08-26
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Brasília/IFB Campus Planaltina · [EDITAL DE CONVOCAÇÃO Nº 20/DGPL/IFB, DE 25 DE AGOSTO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=26/08/2026&jornal=530&pagina=33) · 2026-08-26
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Santa Catarina · [EXTRATO DE CONTRATO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=26/08/2026&jornal=530&pagina=40) · 2026-08-26
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Sergipe · [EDITAL PROGEP/REITORIA/IFS Nº 1, DE 26 DE MARÇO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=26/08/2026&jornal=530&pagina=41) · 2026-08-26
+- Ministério da Educação/Universidade Federal de Goiás/Gabinete da Reitoria · [EDITAL DE  24 de agosto de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=26/08/2026&jornal=530&pagina=50) · 2026-08-26
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia da Paraíba/Reitoria · [EDITAL Nº 130, DE 25 DE AGOSTO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=26/08/2026&jornal=530&pagina=37) · 2026-08-26
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Ceará/Campus Aracati · [edital](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=26/08/2026&jornal=530&pagina=34) · 2026-08-26
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Minas Gerais/Campus Ouro Preto · [EXTRATO DE CONTRATO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=26/08/2026&jornal=530&pagina=37) · 2026-08-26
+- Ministério da Educação/Fundação Universidade do Amazonas/Pró-Reitoria de Gestão de Pessoas · [EXTRATO DE CONTRATO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=26/08/2026&jornal=530&pagina=66) · 2026-08-26
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Alagoas/Reitoria · [EDITAL DE CONVOcação Nº 116/IFAL, DE 18 DE AGOSTO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=26/08/2026&jornal=530&pagina=32) · 2026-08-26
+- Ministério da Educação/Universidade Federal do Rio Grande do Norte/Pró-Reitoria de Gestão de Pessoas/Diretoria de Administração de Pessoal · [EDITAL Nº 1.224, DE 25 DE AGOSTO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=26/08/2026&jornal=530&pagina=55) · 2026-08-26
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Sergipe · [PORTARIA Nº 2.901, DE 25 DE AGOSTO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=27/08/2026&jornal=515&pagina=25) · 2026-08-27
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Maranhão/Campus Pinheiro · [EDITAL Nº 187, DE 26 DE AGOSTO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=27/08/2026&jornal=530&pagina=36) · 2026-08-27
+- Ministério da Educação/Universidade Federal do Rio de Janeiro/Centro de Filosofia e Ciências Humanas/Instituto de Filosofia e Ciências Sociais · [EDITAL Nº 958, DE 25 DE AGOSTO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=27/08/2026&jornal=530&pagina=48) · 2026-08-27
+- Ministério da Educação/Universidade Federal da Integração Latino-Americana · [EDITAL Nº 222/2026/DICS/DAP/PROGEPE, DE 26 DE AGOSTO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=27/08/2026&jornal=530&pagina=44) · 2026-08-27
+- Ministério da Educação/Universidade Federal da Integração Latino-Americana · [EDITAL Nº 223/2026/DICS/DAP/PROGEPE, DE  26 DE AGOSTO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=27/08/2026&jornal=530&pagina=44) · 2026-08-27
+- Ministério da Educação/Universidade Federal da Integração Latino-Americana · [EDITAL Nº 224/2026/DICS/DAP/PROGEPE, DE  26 DE AGOSTO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=27/08/2026&jornal=530&pagina=44) · 2026-08-27
+- Ministério dos Povos Indígenas/Fundação Nacional dos Povos Indígenas · [EDITAL](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=27/08/2026&jornal=530&pagina=98) · 2026-08-27
+- Ministério da Educação/Universidade Federal da Paraíba · [AVISOS DE SUSPENSÃO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=28/08/2026&jornal=530&pagina=50) · 2026-08-28
+- Ministério da Educação/Universidade Federal da Paraíba · [EDITAL Nº 158/2026 - PROGEP-DSP](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=28/08/2026&jornal=530&pagina=50) · 2026-08-28
+- Ministério da Defesa/Comando do Exército/Comando Militar do Sudeste/2ª Região Militar/Comissão Regional de Obras / 2ª Região Militar · [edital](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=28/08/2026&jornal=530&pagina=18) · 2026-08-28
+- Ministério da Educação/Universidade Federal de Santa Maria/Pró-Reitoria de Gestão de Pessoas · [EDITAL Nº 223, DE 26 DE AGOSTO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=28/08/2026&jornal=530&pagina=54) · 2026-08-28
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Rondônia/Campus Ariquemes · [EDITAL DE CONVOCAÇÃO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=28/08/2026&jornal=530&pagina=37) · 2026-08-28
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Acre · [EDITAL DE CONVOCAÇÃO Nº 7, DE 27 DE AGOSTO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=28/08/2026&jornal=530&pagina=29) · 2026-08-28
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Rondônia/Campus Ariquemes · [EDITAL DE CONVOCAÇÃO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=28/08/2026&jornal=530&pagina=37) · 2026-08-28
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Acre · [EDITAL DE CONVOCAÇÃO Nº 2, DE 27 DE AGOSTO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=28/08/2026&jornal=530&pagina=29) · 2026-08-28
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Acre · [EDITAL DE CONVOCAÇÃO Nº 6, DE 27 DE AGOSTO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=28/08/2026&jornal=530&pagina=29) · 2026-08-28
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Brasília/IFB Campus Planaltina · [EDITAL DE CONVOCAÇÃO nº 21/DGPL/IFB, DE 27 DE AGOSTO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=28/08/2026&jornal=530&pagina=30) · 2026-08-28
+- Ministério da Educação/Fundação Universidade Federal de Pelotas · [EDITAL Nº 26/2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=28/08/2026&jornal=530&pagina=63) · 2026-08-28
+- Ministério da Educação/Universidade Federal do Rio Grande do Norte/Pró-Reitoria de Gestão de Pessoas · [EDITAL Nº 106 - PROGESP, DE 27 DE AGOSTO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=28/08/2026&jornal=530&pagina=51) · 2026-08-28
+- Ministério da Agricultura e Pecuária/Secretaria Executiva/Subsecretaria de Gestão de Pessoas e de Gestão do Conhecimento · [EXTRATO DE TERMO ADITIVO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=28/08/2026&jornal=530&pagina=2) · 2026-08-28
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Ceará/Campus Aracati · [edital](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=28/08/2026&jornal=530&pagina=31) · 2026-08-28
+- Ineditoriais/Fundação de Apoio da Universidade Federal do Rio Grande do Sul · [EDITAL](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=31/08/2026&jornal=530&pagina=164) · 2026-08-31
+- Entidades de Fiscalização do Exercício das Profissões Liberais/Conselho Regional de Serviço Social da 9ª Região · [EDITAL](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=31/08/2026&jornal=530&pagina=158) · 2026-08-31
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Mato Grosso do Sul · [EDITAL CAMPUS JARDIM/IFMS Nº 2/2025](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=31/08/2026&jornal=530&pagina=43) · 2026-08-31
+- Ministério da Educação/Universidade Federal da Integração Latino-Americana · [EDITAL nº 227/2026/DICS/DAP/PROGEPE, DE  28 DE AGOSTO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=31/08/2026&jornal=530&pagina=50) · 2026-08-31
+- Ministério da Educação/Universidade Federal da Integração Latino-Americana · [EDITAL nº 226/2026/DICS/DAP/PROGEPE, DE  28 DE AGOSTO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=31/08/2026&jornal=530&pagina=50) · 2026-08-31
+- Ineditoriais/AGÊNCIA BRASILEIRA DE APOIO À GESTÃO DO SUS · [EDITAL](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=31/08/2026&jornal=530&pagina=158) · 2026-08-31
+- Ministério da Educação/Universidade Federal do Estado do Rio de Janeiro · [EDITAL Nº 198 DE 27 DE AGOSTO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=31/08/2026&jornal=530&pagina=73) · 2026-08-31
+- Ministério da Educação/Universidade Federal do Estado do Rio de Janeiro · [EDITAL Nº 200, DE 27 DE AGOSTO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=31/08/2026&jornal=530&pagina=73) · 2026-08-31
+- Ministério da Educação/Universidade Federal do Estado do Rio de Janeiro · [EDITAL Nº 201, DE 27 DE AGOSTO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=31/08/2026&jornal=530&pagina=74) · 2026-08-31
+- Ministério da Educação/Universidade Federal do Estado do Rio de Janeiro · [EDITAL Nº 199, DE 27 DE AGOSTO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=31/08/2026&jornal=530&pagina=73) · 2026-08-31
+- Ministério da Educação/Universidade Federal do Estado do Rio de Janeiro · [EDITAL N° 202, de 28 de agosto de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=31/08/2026&jornal=530&pagina=74) · 2026-08-31
+- Ministério da Educação/Universidade Federal da Bahia/Reitoria/Pró-Reitoria de Desenvolvimento de Pessoas · [EDITAL DE 28 DE AGOSTO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=31/08/2026&jornal=530&pagina=48) · 2026-08-31
+- Ministério da Educação/Fundação Universidade Federal de São João Del Rei/Pró-Reitoria de Gestão e Desenvolvimento de Pessoas · [EDITAL 28 de agosto de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=31/08/2026&jornal=530&pagina=73) · 2026-08-31
+- Ministério da Educação/Fundação Universidade Federal de São João Del Rei/Pró-Reitoria de Gestão e Desenvolvimento de Pessoas · [EDITAL DE 28 de agosto de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=31/08/2026&jornal=530&pagina=73) · 2026-08-31
+- Ministério da Educação/Universidade Federal de Itajubá/Pró-Reitoria de Gestão de Pessoas/Diretoria de Desenvolvimento de  Pessoal · [EDITAL  Nº 46, DE 28 DE AGOSTO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=31/08/2026&jornal=530&pagina=50) · 2026-08-31
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Sudeste de Minas Gerais/Reitoria · [Edital de 31 de agosto de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=01/09/2026&jornal=530&pagina=46) · 2026-09-01
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Rondônia/Campus Ariquemes · [EDITAL DE CONVOCAÇÃO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=01/09/2026&jornal=530&pagina=45) · 2026-09-01
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Santa Catarina · [EXTRATO DE CONTRATO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=01/09/2026&jornal=530&pagina=45) · 2026-09-01
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Ceará/Campus Maracanaú · [EDITAL Nº 2/2025, DE 20 DE MAIO DE 2025](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=01/09/2026&jornal=530&pagina=39) · 2026-09-01
+- Ministério da Educação/Universidade Federal do Estado do Rio de Janeiro · [EDITAL Nº 212, DE 28 DE AGOSTO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=01/09/2026&jornal=530&pagina=68) · 2026-09-01
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Minas Gerais/Campus Ipatinga · [EXTRATO DE CONTRATO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=02/09/2026&jornal=530&pagina=54) · 2026-09-02
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Minas Gerais/Campus Bambuí · [EDITAL](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=02/09/2026&jornal=530&pagina=54) · 2026-09-02
+- Ministério da Educação/Universidade Federal de Uberlândia/Pró-Reitoria de Gestão de Pessoas · [EDITAL DE HOMOLOGAÇÃO PROGEP Nº 73/2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=02/09/2026&jornal=530&pagina=79) · 2026-09-02
+- Ministério da Educação/Universidade Federal de Uberlândia/Pró-Reitoria de Gestão de Pessoas · [EDITAL DE HOMOLOGAÇÃO PROGEP Nº 72/2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=02/09/2026&jornal=530&pagina=79) · 2026-09-02
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Pará/Campus Marabá Rural · [EDITAL Nº 6, DE 1º DE SETEMBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=02/09/2026&jornal=530&pagina=54) · 2026-09-02
+- Ministério da Educação/Fundação Universidade Federal de Sergipe · [EDITAL DE HOMOLOGAÇÃO Nº 60, DE 1º DE SETEMBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=02/09/2026&jornal=530&pagina=75) · 2026-09-02
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Piauí · [EDITAL Nº 17/2026 - DG-URUCUI/CAURU/IFPI, DE 31 DE AGOSTO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=02/09/2026&jornal=530&pagina=55) · 2026-09-02
+- Ministério da Educação/Universidade Federal do Estado do Rio de Janeiro · [EDITAL Nº 214, de 1º de setembro de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=02/09/2026&jornal=530&pagina=77) · 2026-09-02
+- Ministério da Justiça e Segurança Pública/Secretaria Nacional de Políticas Penais · [EXTRATO DE RESCISÃO CONTRATUAL](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=02/09/2026&jornal=530&pagina=120) · 2026-09-02
+- Ministério da Educação/Universidade Federal da Paraíba · [EDITAL N° 159/2026 - PROGEP-DSP](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=02/09/2026&jornal=530&pagina=63) · 2026-09-02
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Minas Gerais/Campus Ipatinga · [EXTRATO DE TERMO ADITIVO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=02/09/2026&jornal=530&pagina=54) · 2026-09-02
+- Ministério da Educação/Universidade Federal do Estado do Rio de Janeiro · [EDITAL Nº 203, DE 1º DE SETEMBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=02/09/2026&jornal=530&pagina=78) · 2026-09-02
+- Ministério da Educação/Universidade Federal do Estado do Rio de Janeiro · [EDITAL Nº 204, DE 1º DE SETEMBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=02/09/2026&jornal=530&pagina=78) · 2026-09-02
+- Ministério da Educação/Universidade Federal do Estado do Rio de Janeiro · [EDITAL Nº 205, DE 1º DE SETEMBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=02/09/2026&jornal=530&pagina=78) · 2026-09-02
+- Ministério da Educação/Universidade Federal do Estado do Rio de Janeiro · [EDITAL Nº 206, DE 1º DE SETEMBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=02/09/2026&jornal=530&pagina=78) · 2026-09-02
+- Ministério da Educação/Universidade Federal do Estado do Rio de Janeiro · [EDITAL Nº 207, DE 1º DE SETEMBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=02/09/2026&jornal=530&pagina=78) · 2026-09-02
+- Ministério da Educação/Universidade Federal do Estado do Rio de Janeiro · [EDITAL Nº 208, DE 1º DE SETEMBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=02/09/2026&jornal=530&pagina=79) · 2026-09-02
+- Ministério da Educação/Universidade Federal do Estado do Rio de Janeiro · [EDITAL Nº 209, DE 1º  DE SETEMBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=02/09/2026&jornal=530&pagina=79) · 2026-09-02
+- Ministério da Educação/Universidade Federal do Estado do Rio de Janeiro · [EDITAL Nº 210, DE 1º DE SETEMBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=02/09/2026&jornal=530&pagina=79) · 2026-09-02
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Paraná/Campus Umuarama/Seção do Gabinete da Diretoria Geral Umuarama · [EDITAL Nº 106, DE 1º DE SETEMBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/09/2026&jornal=530&pagina=34) · 2026-09-03
+- Ministério da Educação/Fundação Universidade Federal de Sergipe · [EDITAL Nº 8, DE 2 DE SETEMBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/09/2026&jornal=530&pagina=53) · 2026-09-03
+- Defensoria Pública da União/Defensoria Pública da União em Aracaju-SE · [EDITAL - DPU-SE/DGP SE - Nº 3/2026, DE 26 DE AGOSTO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/09/2026&jornal=530&pagina=96) · 2026-09-03
+- Defensoria Pública da União/Secretaria de Serviços Integrados Nacionais · [EXTRATO DE RECONHECIMENTO DE DÍVIDA](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/09/2026&jornal=530&pagina=96) · 2026-09-03
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Roraima/Pró-Reitoria de Gestão de Pessoas e Desenvolvimento Institucional · [EXTRATOs DE CONTRATOS](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/09/2026&jornal=530&pagina=37) · 2026-09-03
+- Ministério da Educação/Universidade Federal do Oeste do Pará/Pró-Reitoria de Gestão de Pessoas · [EDITAL DE PRORROGAÇÃO Nº 273/2026-CAP, DE 2 DE SETEMBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/09/2026&jornal=530&pagina=42) · 2026-09-03
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Sudeste de Minas Gerais/Reitoria · [EDITAL](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=04/09/2026&jornal=530&pagina=37) · 2026-09-04
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de São Paulo/Campus Bragança Paulista · [EDITAL Nº 60, DE 2 DE SETEMBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=04/09/2026&jornal=530&pagina=36) · 2026-09-04
+- Ministério da Educação/Universidade Federal de São Paulo/Pró-Reitoria de Gestão com Pessoas · [EDITAL Nº  636,  DE 3 DE SETEMBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=04/09/2026&jornal=530&pagina=45) · 2026-09-04
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Alagoas/Reitoria · [EDITAL DE CONVOCAO Nº 117/IFAL, DE  1º DE SETEMBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=04/09/2026&jornal=530&pagina=26) · 2026-09-04
+- Ministério da Educação/Universidade Federal de Alfenas/Diretoria de Processos Seletivos · [EDITAL  Nº 110, DE 3 DE SETEMBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=04/09/2026&jornal=530&pagina=39) · 2026-09-04
+- Ministério da Educação/Universidade Federal do Estado do Rio de Janeiro · [EDITAL Nº 215, DE 3 DE SETEMBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=04/09/2026&jornal=530&pagina=61) · 2026-09-04
+- Ministério da Educação/Universidade Federal do Espírito Santo/Pró-Reitoria de Gestão de Pessoas · [PORTARIA NORMATIVA Nº 121, DE 4 DE SETEMBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=08/09/2026&jornal=515&pagina=60) · 2026-09-08
+- Ministério da Educação/Universidade Federal de Alfenas/Diretoria de Processos Seletivos · [RETIFICAÇÃO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=08/09/2026&jornal=530&pagina=45) · 2026-09-08
+- Ministério da Educação/Universidade Federal do Rio Grande do Norte/Pró-Reitoria de Gestão de Pessoas · [aviso de RETIFICAÇÃO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=08/09/2026&jornal=530&pagina=51) · 2026-09-08
+- Ministério da Educação/Universidade Federal do Triângulo Mineiro · [EDITAL Nº 31, DE 3 DE SETEMBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=08/09/2026&jornal=530&pagina=73) · 2026-09-08
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Alagoas/Reitoria · [EDITAL DE CONVOCAÇÃO Nº 118/IFAL, DE 1º DE SETEMBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=08/09/2026&jornal=530&pagina=27) · 2026-09-08
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Alagoas/Reitoria · [EDITAL DE CONVOCAÇÃO Nº 119/IFAL, DE 1º DE SETEMBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=08/09/2026&jornal=530&pagina=27) · 2026-09-08
+- Ministério da Educação/Universidade Federal do Rio Grande do Norte/Pró-Reitoria de Gestão de Pessoas · [aviso de RETIFICAÇÃO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=08/09/2026&jornal=530&pagina=51) · 2026-09-08
+- Ministério da Agricultura e Pecuária/Secretaria Executiva/Subsecretaria de Gestão de Pessoas e de Gestão do Conhecimento · [EXTRATOS DE TERMO ADITIVO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=08/09/2026&jornal=530&pagina=2) · 2026-09-08
+- Ministério da Educação/Universidade Federal de Goiás/Gabinete da Reitoria · [EDITAL DE PRORROGAÇÃO DE CONCURSO, DE 3 DE SETEMBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=08/09/2026&jornal=530&pagina=47) · 2026-09-08
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Santa Catarina · [EXTRATO DE CONTRATO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=08/09/2026&jornal=530&pagina=43) · 2026-09-08
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Minas Gerais/Campus São João Evangelista · [EXTRATO DE CONTRATO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=08/09/2026&jornal=530&pagina=41) · 2026-09-08
+- Ministério da Educação/Fundação Universidade Federal do Pampa · [PORTARIA Nº 1.646, DE 8 DE SETEMBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=09/09/2026&jornal=515&pagina=32) · 2026-09-09
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Ceará/Campus Jaguaribe · [EXTRATO DE CONTRATO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=09/09/2026&jornal=530&pagina=24) · 2026-09-09
+- Ministério da Educação/Fundação Universidade Federal de Pelotas · [EDITAL Nº 27/2026, DE 8 DE SETEMBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=09/09/2026&jornal=530&pagina=51) · 2026-09-09
+- Ministério da Educação/Universidade Federal de Uberlândia/Pró-Reitoria de Gestão de Pessoas · [EDITAL](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=09/09/2026&jornal=530&pagina=52) · 2026-09-09
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Ceará/Campus Sobral · [EDITAL](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=09/09/2026&jornal=530&pagina=25) · 2026-09-09
+- Ministério da Educação/Universidade Federal do Rio Grande do Norte/Pró-Reitoria de Gestão de Pessoas · [aviso de  RETIFICAÇÃO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=09/09/2026&jornal=530&pagina=36) · 2026-09-09
+- Ministério da Educação/Universidade Federal da Fronteira Sul · [EDITAL Nº 387, DE 8 DE SETEMBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=09/09/2026&jornal=530&pagina=34) · 2026-09-09
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Santa Catarina · [EXTRATO DE CONTRATO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=09/09/2026&jornal=530&pagina=30) · 2026-09-09
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Ceará/Campus Acaraú · [EDITAL DE 8 de setembro de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=09/09/2026&jornal=530&pagina=24) · 2026-09-09
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Alagoas/Reitoria · [EDITAL   Nº 120/IFAL, DE  8 DE SETEMBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=09/09/2026&jornal=530&pagina=23) · 2026-09-09
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Minas Gerais/Campus Bambuí · [EXTRATO DE CONTRATO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=09/09/2026&jornal=530&pagina=26) · 2026-09-09
+- Ministério da Educação/Universidade Federal da Integração Latino-Americana · [EDITAL Nº 228/2026/DICS/DAP/PROGEPE, DE 8 DE SETEMBRO  DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=10/09/2026&jornal=530&pagina=45) · 2026-09-10
+- Ministério da Educação/Universidade Federal de Uberlândia/Pró-Reitoria de Gestão de Pessoas · [EDITAL  PROGEP Nº 76, DE 9 DE SETEMBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=10/09/2026&jornal=530&pagina=65) · 2026-09-10
+- Ministério da Educação/Universidade Federal de Uberlândia/Pró-Reitoria de Gestão de Pessoas · [EDITAL  PROGEP Nº 75, DE 9 DE SETEMBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=10/09/2026&jornal=530&pagina=64) · 2026-09-10
+- Ministério da Educação/Universidade Federal do Rio Grande do Norte/Pró-Reitoria de Gestão de Pessoas/Diretoria de Administração de Pessoal · [EDITAL DE CONVOCAÇÃO Nº 1.284, DE 9 DE SETEMBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=10/09/2026&jornal=530&pagina=49) · 2026-09-10
+- Ministério da Educação/Universidade Federal do Rio de Janeiro/Centro de Ciências Jurídicas e Econômicas/Faculdade de Administração e Ciências Contábeis · [EDITAL Nº 1.015, DE 4 DE SETEMBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=10/09/2026&jornal=530&pagina=50) · 2026-09-10
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Minas Gerais/Campus Ribeirão das Neves · [EXTRATO DE CONTRATO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=10/09/2026&jornal=530&pagina=38) · 2026-09-10
+- Ministério do Meio Ambiente e Mudança do Clima/Instituto Brasileiro do Meio Ambiente e dos Recursos Naturais Renováveis/Diretoria de Planejamento, Administração e Logística · [PORTARIA DIPLAN/IBAMA Nº 148, DE 9 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=11/09/2026&jornal=515&pagina=141) · 2026-09-11
+- Entidades de Fiscalização do Exercício das Profissões Liberais/Conselho Regional de Serviço Social da 6ª Região · [EDITAL DE CONCURSO PÚBLICO Nº 1/2023](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=11/09/2026&jornal=530&pagina=154) · 2026-09-11
+- Entidades de Fiscalização do Exercício das Profissões Liberais/Conselho Regional de Biologia da 5ª Região · [EDITAL DE CONVOCAÇÃO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=11/09/2026&jornal=530&pagina=146) · 2026-09-11
+- Ministério da Agricultura e Pecuária/Secretaria Executiva/Subsecretaria de Governança das Superintendências/Superintendência de Agricultura e Pecuária do Estado do Mato Grosso · [EXTRATO DE RESCISÃO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=11/09/2026&jornal=530&pagina=2) · 2026-09-11
+- Ministério da Educação/Universidade Federal do Espírito Santo/Pró-Reitoria de Gestão de Pessoas · [EDITAL Nº 131, DE 10 DE SETEMBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=11/09/2026&jornal=530&pagina=64) · 2026-09-11
+- Ministério da Educação/Universidade Federal da Paraíba · [EDITAL Nº 160/2026 - PROGEP-DSP, 9 de Setembro de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=11/09/2026&jornal=530&pagina=66) · 2026-09-11
+- Ministério da Educação/Universidade Federal do Rio Grande do Norte/Pró-Reitoria de Gestão de Pessoas · [EDITAL DE 10 DE SETEMBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=11/09/2026&jornal=530&pagina=66) · 2026-09-11
+- Ministério da Educação/Fundação Universidade Federal do Pampa · [PORTARIAS DE 11 DE SETEMBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=14/09/2026&jornal=515&pagina=22) · 2026-09-14
+- Ineditoriais/Fundação de Apoio da Universidade Federal do Rio Grande do Sul · [edital Nº 12, de 11 de setembro de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=14/09/2026&jornal=530&pagina=175) · 2026-09-14
+- Entidades de Fiscalização do Exercício das Profissões Liberais/Conselho Regional de Nutricão da 9ª Região · [EDITAL CRN9 Nº 1/2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=14/09/2026&jornal=530&pagina=168) · 2026-09-14
+- Ministério da Educação/Centro Federal de Educação Tecnológica de Minas Gerais/Secretaria de Gestão de Pessoas · [EDITAL Nº 599, DE 10 DE SETEMBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=14/09/2026&jornal=530&pagina=30) · 2026-09-14
+- Ministério dos Povos Indígenas/Fundação Nacional dos Povos Indígenas · [edital](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=14/09/2026&jornal=530&pagina=110) · 2026-09-14
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Minas Gerais/Campus Ouro Preto · [EXTRATO DE TERMO ADITIVO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=14/09/2026&jornal=530&pagina=34) · 2026-09-14
+- Ministério da Educação/Universidade Federal de Uberlândia/Pró-Reitoria de Gestão de Pessoas · [EDITAL PROGEP Nº 77/2026, DE 11 DE SETEMBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=14/09/2026&jornal=530&pagina=75) · 2026-09-14
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Minas Gerais/Campus Arcos · [EXTRATO DE TERMO ADITIVO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=14/09/2026&jornal=530&pagina=34) · 2026-09-14
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Minas Gerais/Campus Ouro Preto · [EXTRATO DE TERMO ADITIVO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=14/09/2026&jornal=530&pagina=34) · 2026-09-14
+- Ministério da Educação/Universidade Federal da Integração Latino-Americana · [EDITAL Nº 235/2026/DICS/DAP/PROGEPE, DE 11 DE SETEMBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=14/09/2026&jornal=530&pagina=47) · 2026-09-14
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Alagoas/Reitoria · [EDITAL N° 121/IFAL, DE 11 DE SETEMBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=14/09/2026&jornal=530&pagina=30) · 2026-09-14
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Santa Catarina · [EXTRATOs DE CONTRATO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=14/09/2026&jornal=530&pagina=38) · 2026-09-14
+- Ministério da Educação/Universidade Federal de São Paulo/Pró-Reitoria de Gestão com Pessoas · [EDITAL Nº 650, DE 11 DE SETEMBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=14/09/2026&jornal=530&pagina=59) · 2026-09-14
+- Ministério da Educação/Universidade Federal da Integração Latino-Americana · [EDITAL Nº 233/2026/DICS/DAP/PROGEPE, DE 11 DE SETEMBRO  DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=14/09/2026&jornal=530&pagina=47) · 2026-09-14
+- Ministério da Educação/Universidade Federal da Integração Latino-Americana · [EDITAL nº 231/2026/DICS/DAP/PROGEPE, DE 11 DE SETEMBRO  DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=14/09/2026&jornal=530&pagina=47) · 2026-09-14
+- Ministério da Educação/Universidade Federal da Integração Latino-Americana · [EDITAL nº 230/2026/DICS/DAP/PROGEPE, DE 11 DE SETEMBRO  DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=14/09/2026&jornal=530&pagina=47) · 2026-09-14
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Paraná/Campus Capanema/Seção de Gestão de Pessoas · [EDITAL Nº 23, DE 11 DE SETEMBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=14/09/2026&jornal=530&pagina=36) · 2026-09-14
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Alagoas/Reitoria · [EDITAL DE CONVOCAO Nº 123/IFAL, DE 11 DE SETEMBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=14/09/2026&jornal=530&pagina=31) · 2026-09-14
+- Ministério da Educação/Universidade Federal do Rio Grande do Norte/Pró-Reitoria de Gestão de Pessoas/Diretoria de Administração de Pessoal · [EDITAL DE CONVOCAÇÃO Nº 1.294, DE 11 DE SETEMBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=14/09/2026&jornal=530&pagina=51) · 2026-09-14
+- Prefeituras/Estado da Bahia/Prefeitura Municipal de Aracatu · [AVISO DE DISPENSA DE LICITAÇÃO Nº 20/2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=15/09/2026&jornal=530&pagina=131) · 2026-09-15
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Triângulo Mineiro/Campus Patrocínio/Coordenação-Geral de Administração e Planejamento/Coordenação de Gestão de Pessoas · [EDITAL Nº 33, DE 10 DE SETEMBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=15/09/2026&jornal=530&pagina=40) · 2026-09-15
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Alagoas/Reitoria · [EDITAL DE CONVOCAÇÃO Nº 122/IFAL, DE 11 DE SETEMBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=15/09/2026&jornal=530&pagina=31) · 2026-09-15
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Alagoas/Reitoria · [EDITAL DE CONVOCação Nº 124/IFAL, DE 11 DE SETEMBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=15/09/2026&jornal=530&pagina=31) · 2026-09-15
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Santa Catarina · [EXTRATO DE CONTRATO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=15/09/2026&jornal=530&pagina=38) · 2026-09-15
+- Ministério da Agricultura e Pecuária/Secretaria Executiva/Subsecretaria de Gestão de Pessoas e de Gestão do Conhecimento · [EXTRATO DE RESCISÃO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=15/09/2026&jornal=530&pagina=1) · 2026-09-15
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Pará/Gabinete · [EXTRATO DE TERMO ADITIVO Nº 84/2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=15/09/2026&jornal=530&pagina=36) · 2026-09-15
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Brasília/IFB Campus São Sebastião · [CONVOCAÇÃO DE 14 DE SETEMBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=16/09/2026&jornal=530&pagina=33) · 2026-09-16
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Brasília/IFB Campus São Sebastião · [CONVOCAÇÃO DE 14 DE SETEMBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=16/09/2026&jornal=530&pagina=33) · 2026-09-16
+- Defensoria Pública da União/Defensoria Pública da União em Cuiabá-MT · [Edital  DPU-MT/DIGEP MT Nº 1, DE 14 DE setembro DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=16/09/2026&jornal=530&pagina=125) · 2026-09-16
+- Ministério da Educação/Fundação Universidade Federal de Ouro Preto/Reitoria · [EXTRATOS DE CONTRATOS](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=16/09/2026&jornal=530&pagina=66) · 2026-09-16
+- Ministério da Educação/Fundação Universidade do Amazonas/Pró-Reitoria de Pesquisa e Pós-Graduação · [EDITAL Nº 66/2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=16/09/2026&jornal=530&pagina=65) · 2026-09-16
+- Ministério dos Povos Indígenas/Fundação Nacional dos Povos Indígenas · [EDITAL Nº 13/2025/DPT/FUNAI, DE  15 DE SETEMBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=16/09/2026&jornal=530&pagina=101) · 2026-09-16
+- Defensoria Pública da União/Gabinete da Defensora Pública-Geral Federal · [EDITAL DPU/CAFI DPGU Nº 6/2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=16/09/2026&jornal=530&pagina=125) · 2026-09-16
+- Ministério da Educação/Universidade Federal do Estado do Rio de Janeiro · [EDITAL N° 216, de 15 de setembro de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=17/09/2026&jornal=530&pagina=80) · 2026-09-17
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Mato Grosso do Sul · [EDITAL DE 16 DE SETEMBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=17/09/2026&jornal=530&pagina=31) · 2026-09-17
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Minas Gerais/Campus Sabará · [EXTRATO DE TERMO ADITIVO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=17/09/2026&jornal=530&pagina=32) · 2026-09-17
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Minas Gerais/Campus Ouro Preto · [EXTRATO DE TERMO ADITIVO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=17/09/2026&jornal=530&pagina=32) · 2026-09-17
+- Ministério da Educação/Universidade Federal de Jataí · [Edital Nº 9/2025, de   16 de setembro de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=17/09/2026&jornal=530&pagina=53) · 2026-09-17
+- Ministério da Defesa/Comando da Marinha/Comando de Operações Navais/9º Distrito Naval · [EDITAL DE 17 de abril de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=17/09/2026&jornal=530&pagina=22) · 2026-09-17
+- Ministério da Educação/Universidade Federal de Jataí · [Edital Nº 3/2026, de 16 de setembro de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=17/09/2026&jornal=530&pagina=44) · 2026-09-17
+- Ministério da Educação/Universidade Federal de Jataí · [Edital Especifico_PSS nA 3-2026_](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=17/09/2026&jornal=530&pagina=46) · 2026-09-17
+- Ministério da Educação/Universidade Federal de Jataí · [Edital Especifico_PSS nA 3-2026_](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=17/09/2026&jornal=530&pagina=47) · 2026-09-17
+- Ministério da Educação/Universidade Federal de Jataí · [Edital Especifico_PSS nA 3-2026_](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=17/09/2026&jornal=530&pagina=49) · 2026-09-17
+- Ministério da Educação/Universidade Federal de Jataí · [Edital Especifico_PSS nA 3-2026_](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=17/09/2026&jornal=530&pagina=50) · 2026-09-17
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Brasília/IFB Campus São Sebastião · [EDITAL DE 16 DE SETEMBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=17/09/2026&jornal=530&pagina=29) · 2026-09-17
+- Ministério da Educação/Fundação Universidade Federal do ABC/Pró-Reitoria de Gestão de Pessoas · [EXTRATOS DE CONTRATOS](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=17/09/2026&jornal=530&pagina=66) · 2026-09-17
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Pernambuco · [EDITAL DGPE/REI/IFPE Nº 36, DE 10 DE SETEMBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=17/09/2026&jornal=530&pagina=34) · 2026-09-17
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Acre · [EDITAL Nº 7, DE 15 DE SETEMBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=17/09/2026&jornal=530&pagina=28) · 2026-09-17
+- Ministério da Educação/Universidade Federal do Rio Grande do Norte/Pró-Reitoria de Gestão de Pessoas/Diretoria de Administração de Pessoal · [EDITAL  Nº 1.313, DE 16 DE SETEMBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=17/09/2026&jornal=530&pagina=56) · 2026-09-17
+- Ministério da Educação/Centro Federal de Educação Tecnológica Celso Suckow da Fonseca · [PORTARIA Nº 1.772/CEFET-RJ, DE 16 DE SETEMBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=18/09/2026&jornal=515&pagina=38) · 2026-09-18
+- Ministério da Educação/Universidade Federal de Goiás/Pró-Reitoria de Gestão de Pessoas/Diretora de Administração de Pessoas · [Edital nº 24, DE 17 de setembro de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=18/09/2026&jornal=530&pagina=39) · 2026-09-18
+- Prefeituras/Estado do Pará/Prefeitura Municipal de Novo Progresso · [AVISO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=18/09/2026&jornal=530&pagina=176) · 2026-09-18
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Sudeste de Minas Gerais/Reitoria · [Edital DE 18 DE SETEMBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=21/09/2026&jornal=530&pagina=131) · 2026-09-21
+- Ineditoriais/Fundação de Apoio da Universidade Federal do Rio Grande do Sul · [EDITAL  Nº 13/2026 , DE 11 de setembro de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=21/09/2026&jornal=530&pagina=222) · 2026-09-21
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Minas Gerais/Campus Ponte Nova · [EXTRATO DE CONTRATO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=21/09/2026&jornal=530&pagina=107) · 2026-09-21
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Alagoas/Reitoria · [EDITAL Nº 125/IFAL, DE  18 DE SETEMBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=21/09/2026&jornal=530&pagina=103) · 2026-09-21
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Alagoas/Reitoria · [EDITAL DE  Nº 126/IFAL, DE 18 DE SETEMBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=21/09/2026&jornal=530&pagina=103) · 2026-09-21
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Maranhão/Campus Barra do Corda · [EDITAL Nº 49 GAB-IFMA/BDC, DE 22 DE JULHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=21/09/2026&jornal=530&pagina=106) · 2026-09-21
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Pernambuco · [EDITAL CBLJ/IFPE Nº 12, DE 18 DE SETEMBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=22/09/2026&jornal=530&pagina=32) · 2026-09-22
+- Ministério da Agricultura e Pecuária/Secretaria Executiva/Subsecretaria de Gestão de Pessoas e de Gestão do Conhecimento · [EXTRATO DE RESCISÃO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=22/09/2026&jornal=530&pagina=1) · 2026-09-22
+- Ministério da Educação/Fundação Universidade Federal de São João Del Rei/Pró-Reitoria de Gestão e Desenvolvimento de Pessoas · [EDITAL DE 21 DE SETEMBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=22/09/2026&jornal=530&pagina=65) · 2026-09-22
+- Ministério da Educação/Fundação Universidade Federal de Sergipe · [EDITAL Nº 61, DE 21 DE SETEMBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=22/09/2026&jornal=530&pagina=66) · 2026-09-22
+- Ministério da Educação/Universidade Federal de Jataí · [EDITAL DE   21 DE SETEMBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=22/09/2026&jornal=530&pagina=38) · 2026-09-22
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Amazonas/Campus Humaitá · [EDITAL  DE 22 DE SETEMBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=23/09/2026&jornal=530&pagina=33) · 2026-09-23
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Alagoas/Reitoria · [EDITAL DE CONVOCAÇÃO Nº 127/IFAL, DE 18 DE SETEMBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=23/09/2026&jornal=530&pagina=33) · 2026-09-23
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Alagoas/Reitoria · [EDITAL DE CONVOCAÇÃO Nº 129/IFAL, DE  18 DE SETEMBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=23/09/2026&jornal=530&pagina=33) · 2026-09-23
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Minas Gerais/Campus Ribeirão das Neves · [EDITAL Nº 1025/2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=23/09/2026&jornal=530&pagina=38) · 2026-09-23
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Goiás/Câmpus Jataí/Gabinete · [EDITAL Nº 27, DE 22 DE SETEMBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=23/09/2026&jornal=530&pagina=36) · 2026-09-23
+- Ministério da Educação/Universidade Federal de Alagoas/Pró-Reitoria de Gestão de Pessoas e do Trabalho · [EDITAL Nº 45, DE 22 DE SETEMBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=23/09/2026&jornal=530&pagina=44) · 2026-09-23
+- Ministério da Educação/Universidade Federal de Alagoas/Pró-Reitoria de Gestão de Pessoas e do Trabalho · [EDITAL Nº 46, DE 22 DE SETEMBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=23/09/2026&jornal=530&pagina=46) · 2026-09-23
+- Ministério da Educação/Universidade Federal do Estado do Rio de Janeiro · [EDITAL Nº 219, DE 22 DE SETEMBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=23/09/2026&jornal=530&pagina=80) · 2026-09-23
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Piauí · [EDITAL Nº 19/2026 - DG-URUCUI/CAURU/IFPI, de 22 de setembro de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=23/09/2026&jornal=530&pagina=40) · 2026-09-23
+- Defensoria Pública da União/Gabinete da Defensora Pública-Geral Federal · [EDITAL](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=23/09/2026&jornal=530&pagina=127) · 2026-09-23
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Sudeste de Minas Gerais/Reitoria · [EDITAL DE 22 DE SETEMBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=23/09/2026&jornal=530&pagina=43) · 2026-09-23
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia Catarinense/Pró-Reitoria de Desenvolvimento, Inclusão, Diversidade e Assistência à Pessoa · [aviso de Retificação](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=23/09/2026&jornal=530&pagina=35) · 2026-09-23
+- Ministério da Educação/Universidade Federal do Delta do Parnaíba/Pró-Reitoria de Gestão de Pessoas · [EDITAL Nº 11, DE 22  DE SETEMBRO DE  2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=23/09/2026&jornal=530&pagina=66) · 2026-09-23
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Minas Gerais/Campus São João Evangelista · [EXTRATO DE CONTRATO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=23/09/2026&jornal=530&pagina=38) · 2026-09-23
+- Ministério da Educação/Fundação Universidade Federal de Viçosa/Pró-Reitoria de Gestão de Pessoas · [EDITAL DE SELEÇÃO N° 2/2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=24/09/2026&jornal=530&pagina=77) · 2026-09-24
+- Ministério da Educação/Universidade Federal do Rio Grande do Norte/Pró-Reitoria de Gestão de Pessoas · [EDITAL DE 23 DE SETEMBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=24/09/2026&jornal=530&pagina=60) · 2026-09-24
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Acre · [EDITAL DE CONVOCAÇÃO Nº 8, DE 21 DE SETEMBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=24/09/2026&jornal=530&pagina=25) · 2026-09-24
+- Ministério da Educação/Universidade Federal do Delta do Parnaíba/Pró-Reitoria de Gestão de Pessoas · [EDITAL Nº 11, DE 22 DE SETEMBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=24/09/2026&jornal=530&pagina=42) · 2026-09-24
+- Ministério da Educação/Universidade Federal do Rio Grande do Norte/Pró-Reitoria de Gestão de Pessoas/Diretoria de Administração de Pessoal · [EDITAL DE CONVOCAÇÃO Nº 1.332, DE 23 DE SETEMBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=24/09/2026&jornal=530&pagina=60) · 2026-09-24
+- Ministério da Defesa/Comando do Exército/Comando Militar do Sudeste/2ª Região Militar/Comissão Regional de Obras / 2ª Região Militar · [EXTRATO DE TERMO ADITIVO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=25/09/2026&jornal=530&pagina=19) · 2026-09-25
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Alagoas/Reitoria · [EDITAL DE CONVOcação Nº 130/IFAL, DE 24 DE SETEMBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=25/09/2026&jornal=530&pagina=31) · 2026-09-25
+- Ministério da Defesa/Comando do Exército/Comando Militar do Sudeste/2ª Região Militar/Comissão Regional de Obras / 2ª Região Militar · [EXTRATO DE TERMO ADITIVO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=25/09/2026&jornal=530&pagina=19) · 2026-09-25
+- Ministério dos Povos Indígenas/Fundação Nacional dos Povos Indígenas · [EDITAL de  23 de setembro de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=25/09/2026&jornal=530&pagina=130) · 2026-09-25
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Alagoas/Reitoria · [EDITAL DE CONVOCAÇÃO Nº 131/IFAL, DE 25 DE SETEMBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=28/09/2026&jornal=530&pagina=32) · 2026-09-28
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Alagoas/Reitoria · [EDITAL DE CONVOCAÇÃO Nº 132/IFAL, DE 25 DE SETEMBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=28/09/2026&jornal=530&pagina=32) · 2026-09-28
+- Ministério da Educação/Universidade Federal do Rio de Janeiro/Centro de Tecnologia/Coordenação de Programas de Pós-Graduação de Engenharia · [EDITAL Nº 1.109, DE 23 SETEMBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=28/09/2026&jornal=530&pagina=70) · 2026-09-28
+- Ministério dos Povos Indígenas/Fundação Nacional dos Povos Indígenas · [edital](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=28/09/2026&jornal=530&pagina=119) · 2026-09-28
+- Ministério da Educação/Universidade Federal de Minas Gerais/Reitoria · [EDITAL Nº 2205, DE 25 DE SETEMBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=28/09/2026&jornal=530&pagina=65) · 2026-09-28
+- Ministério da Gestão e da Inovação em Serviços Públicos/Gabinete da Ministra · [PORTARIA CONJUNTA MGI/MPO Nº 64, DE 23 DE SETEMBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=28/09/2026&jornal=601&pagina=1) · 2026-09-28
+- Ministério da Educação/Universidade Federal do Estado do Rio de Janeiro · [EDITAL Nº 221, DE 25 DE SETEMBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=29/09/2026&jornal=530&pagina=75) · 2026-09-29
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Pernambuco/Campus Cabo de Santo Agostinho/Divisão de Gestão de Pessoas · [EDITAL Nº 22/CCSA/IFPE, DE 28 DE SETEMBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=29/09/2026&jornal=530&pagina=34) · 2026-09-29
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Paraná/Campus Campo Largo · [edital](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=29/09/2026&jornal=530&pagina=33) · 2026-09-29
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Santa Catarina · [EXTRATOS DE CONTRATOS](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=29/09/2026&jornal=530&pagina=42) · 2026-09-29
+- Ministério da Educação/Universidade Federal de Goiás/Pró-Reitoria de Gestão de Pessoas/Diretora de Administração de Pessoas · [EDITAL Nº 25, DE 28 DE SETEMBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=29/09/2026&jornal=530&pagina=60) · 2026-09-29
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Alagoas/Reitoria · [EDITAL DE CONVOCAÇÃO Nº 134/IFAL, DE 25 DE SETEMBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=29/09/2026&jornal=530&pagina=29) · 2026-09-29
+- Ministério da Educação/Universidade Federal de Minas Gerais/Pró-Reitoria de Recursos Humanos · [EDITAL Nº 2213, DE 28 DE SETEMBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=30/09/2026&jornal=530&pagina=50) · 2026-09-30
+- Ministério da Educação/Universidade Federal do Estado do Rio de Janeiro · [EDITAL N° 218, DE 28 DE SETEMBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=30/09/2026&jornal=530&pagina=65) · 2026-09-30
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Minas Gerais/Campus Itabiríto · [EXTRATO DE TERMO ADITIVO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=30/09/2026&jornal=530&pagina=41) · 2026-09-30
+- Defensoria Pública da União/Gabinete da Defensora Pública-Geral Federal · [EDITAL](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=30/09/2026&jornal=530&pagina=132) · 2026-09-30
+- Ministério da Educação/Universidade Federal de Minas Gerais/Reitoria · [EDITAL Nº 2234, DE 29 DE SETEMBRO  DE 2025](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=30/09/2026&jornal=530&pagina=50) · 2026-09-30
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Sudeste de Minas Gerais/Reitoria · [EDITAL](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=01/10/2026&jornal=530&pagina=45) · 2026-10-01
+- Ministério da Educação/Universidade Federal de Uberlândia/Pró-Reitoria de Gestão de Pessoas · [EDITAL PROGEP Nº 78/2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=01/10/2026&jornal=530&pagina=84) · 2026-10-01
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Sul/Campus Erechim · [EDITAL Nº 45, DE 29 DE SETEMBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=01/10/2026&jornal=530&pagina=44) · 2026-10-01
+- Ministério da Educação/Fundação Universidade Federal de Mato Grosso · [EDITAL Nº 1, DE 30 DE SETEMBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=01/10/2026&jornal=530&pagina=78) · 2026-10-01
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Minas Gerais/Campus São João Evangelista · [EXTRATOS DE TERMOS ADITIVOS](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=01/10/2026&jornal=530&pagina=41) · 2026-10-01
+- Ministério da Justiça e Segurança Pública/Secretaria Nacional de Políticas Penais · [EXTRATO DE RESCISÃO CONTRATUAL](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=01/10/2026&jornal=530&pagina=114) · 2026-10-01
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Santa Catarina · [EXTRATO DE CONTRATO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=01/10/2026&jornal=530&pagina=45) · 2026-10-01
+- Ministério da Educação/Universidade Federal do Recôncavo da Bahia/Gabinete da Reitoria · [EDITAL Nº 1, DE 30 DE SETEMBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=01/10/2026&jornal=530&pagina=62) · 2026-10-01
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Acre · [EDITAL DE CONVOCAÇÃO Nº 6, DE 29 DE SETEMBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=01/10/2026&jornal=530&pagina=36) · 2026-10-01
+- Ministério da Justiça e Segurança Pública/Agência Nacional de Proteção de Dados · [EDITAL](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=01/10/2026&jornal=530&pagina=115) · 2026-10-01
+- Ministério dos Povos Indígenas/Fundação Nacional dos Povos Indígenas · [EDITAL de  30 de setembro de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=01/10/2026&jornal=530&pagina=140) · 2026-10-01
+- Ministério da Educação/Universidade Federal do Estado do Rio de Janeiro · [EDITAL Nº 222, DE 30 DE SETEMBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=02/10/2026&jornal=530&pagina=81) · 2026-10-02
+- Ministério da Educação/Universidade Federal do Estado do Rio de Janeiro · [EDITAL Nº 223, DE 30 DE SETEMBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=02/10/2026&jornal=530&pagina=81) · 2026-10-02
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Sul/Campus Porto Alegre · [EDITAL Nº 72, DE 1º DE OUTUBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=02/10/2026&jornal=530&pagina=45) · 2026-10-02
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Sudeste de Minas Gerais/Reitoria · [EDITAL](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=02/10/2026&jornal=530&pagina=47) · 2026-10-02
+- Ministério da Defesa/Comando do Exército/Comando Militar do Sul/4º Grupamento de Engenharia/Comissão Regional de Obras da 3ª Região Militar · [EXTRATO DE CONTRATO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=02/10/2026&jornal=530&pagina=23) · 2026-10-02
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia Baiano/Gabinete · [EDITAL DE 1º DE OUTUBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=02/10/2026&jornal=530&pagina=39) · 2026-10-02
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Ceará/Campus Tabuleiro do Norte · [EDITAL Nº 30/2026 GAB-TAB/DG-TAB/TABULEIRO-IFCE](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=02/10/2026&jornal=530&pagina=40) · 2026-10-02
+- Ministério da Defesa/Comando do Exército/Comando Militar do Sudeste/2ª Região Militar/Comissão Regional de Obras / 2ª Região Militar · [EXTRATO DE RESCISÃO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=02/10/2026&jornal=530&pagina=21) · 2026-10-02
+- Ministério da Educação/Universidade Federal do Estado do Rio de Janeiro · [EDITAL Nº 224, DE 30 DE SETEMBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=02/10/2026&jornal=530&pagina=81) · 2026-10-02
+- Ministério da Educação/Fundação Universidade Federal de Rondônia/Diretoria do Campus de Ji-Paraná · [EDITAL Nº 3/UNIR/CJP/2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=02/10/2026&jornal=530&pagina=78) · 2026-10-02
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Alagoas/Reitoria · [EDITAL DE CONVOCAÇÃO Nº 135/IFAL, DE 1º DE OUTUBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=02/10/2026&jornal=530&pagina=37) · 2026-10-02
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Alagoas/Reitoria · [EDITAL DE CONVOCAÇÃO Nº 136/IFAL, DE 1º DE OUTUBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=02/10/2026&jornal=530&pagina=37) · 2026-10-02
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Alagoas/Reitoria · [EDITAL DE CONVOCAÇÃO Nº 137/IFAL, DE 1º DE OUTUBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=02/10/2026&jornal=530&pagina=37) · 2026-10-02
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Espírito Santo/Campus Cachoeiro do Itapemirim · [PORTARIA Nº 497, de 29 de setembro de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=05/10/2026&jornal=515&pagina=49) · 2026-10-05
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Espírito Santo/Campus Cachoeiro do Itapemirim · [PORTARIA Nº 498, de 29 de setembro de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=05/10/2026&jornal=515&pagina=49) · 2026-10-05
+- Ministério da Educação/Fundação Universidade Federal de São Carlos/Pró-Reitoria de Gestão de Pessoas · [EDITAL Nº 89, DE 29 DE SETEMBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=05/10/2026&jornal=530&pagina=69) · 2026-10-05
+- Ministério da Educação/Universidade Federal de Goiás/Gabinete da Reitoria · [EXTRATO DE CONTRATO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=05/10/2026&jornal=530&pagina=44) · 2026-10-05
+- Prefeituras/Estado de São Paulo/Prefeitura Municipal de Ouroeste · [AVISO  DE LICITAÇÃO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=05/10/2026&jornal=530&pagina=269) · 2026-10-05
+- Ministério da Educação/Universidade Federal da Paraíba · [EDITAL Nº 163/2026 - PROGEP-DSP](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=05/10/2026&jornal=530&pagina=53) · 2026-10-05
+- Ministério da Educação/Universidade Federal do Estado do Rio de Janeiro · [EDITAL Nº 227, DE 2 DE OUTUBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=05/10/2026&jornal=530&pagina=71) · 2026-10-05
+- Ministério da Educação/Universidade Federal de Alagoas/Pró-Reitoria de Gestão de Pessoas e do Trabalho · [EDITAL Nº 53, DE 2 DE OUTUBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=05/10/2026&jornal=530&pagina=40) · 2026-10-05
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Santa Catarina · [EXTRATO DE CONTRATO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=05/10/2026&jornal=530&pagina=34) · 2026-10-05
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Alagoas/Reitoria · [EDITAL DE CONVOCAÇÃO Nº 138/IFAL, 1º DE OUTUBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=05/10/2026&jornal=530&pagina=26) · 2026-10-05
+- Ministério da Educação/Universidade Federal de Alagoas/Pró-Reitoria de Gestão de Pessoas e do Trabalho · [EDITAL Nº 54, DE 2 DE OUTUBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=05/10/2026&jornal=530&pagina=40) · 2026-10-05
+- Ministério da Justiça e Segurança Pública/Agência Nacional de Proteção de Dados · [EXTRATO DE RESCISÃO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=05/10/2026&jornal=530&pagina=142) · 2026-10-05
+- Ineditoriais/AGÊNCIA BRASILEIRA DE APOIO À GESTÃO DO SUS · [EDITAL](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=05/10/2026&jornal=530&pagina=202) · 2026-10-05
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Minas Gerais/Campus Ouro Preto · [EXTRATOS DE TERMOS ADITIVOS](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=05/10/2026&jornal=530&pagina=30) · 2026-10-05
+- Ministério da Educação/Centro Federal de Educação Tecnológica de Minas Gerais/Secretaria de Gestão de Pessoas · [Edital Nº 659, de 5 de outubro de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=06/10/2026&jornal=530&pagina=29) · 2026-10-06
+- Ministério da Educação/Centro Federal de Educação Tecnológica de Minas Gerais/Secretaria de Gestão de Pessoas · [Edital nº 661, de 5 de outubro de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=06/10/2026&jornal=530&pagina=30) · 2026-10-06
+- Ministério da Educação/Centro Federal de Educação Tecnológica de Minas Gerais/Secretaria de Gestão de Pessoas · [EDITAL Nº 662, DE 28 DE SETEMBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=06/10/2026&jornal=530&pagina=30) · 2026-10-06
+- Ministério da Educação/Fundação Universidade Federal de Sergipe · [EDITAL  Nº 62, DE 5 DE OUTUBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=06/10/2026&jornal=530&pagina=72) · 2026-10-06
+- Ministério da Educação/Universidade Federal do Estado do Rio de Janeiro · [EDITAL Nº 229, DE 5 DE OUTUBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=06/10/2026&jornal=530&pagina=73) · 2026-10-06
+- Ministério da Agricultura e Pecuária/Secretaria Executiva/Subsecretaria de Gestão de Pessoas e de Gestão do Conhecimento · [EXTRATOS DE TERMOS ADITIVOS](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=06/10/2026&jornal=530&pagina=1) · 2026-10-06
+- Ministério da Educação/Colégio Pedro II/Pró-Reitoria de Gestão de Pessoas · [EDITAL Nº 23, DE 5 de outubro de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=06/10/2026&jornal=530&pagina=30) · 2026-10-06
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Pará/Campus Marabá Rural · [EDITAL Nº 6, DE 2 DE SETEMBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=06/10/2026&jornal=530&pagina=35) · 2026-10-06
+- Ministério da Educação/Fundação Universidade Federal de Sergipe · [EDITAL Nº 9, DE 5 DE OUTUBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=06/10/2026&jornal=530&pagina=72) · 2026-10-06
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Sul/Campus Caxias do Sul · [EDITAL Nº 33, DE 5 DE OUTUBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=06/10/2026&jornal=530&pagina=37) · 2026-10-06
+- Prefeituras/Estado de Minas Gerais/Prefeitura Municipal de Pavão · [AVISO DE PROCESSO SELETIVO SIMPLIFICADO nº 2/2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=06/10/2026&jornal=530&pagina=173) · 2026-10-06
+- Ministério da Educação/Fundação Universidade Federal de Mato Grosso · [Edital](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=06/10/2026&jornal=530&pagina=70) · 2026-10-06
+- Ineditoriais/Fundação de Apoio da Universidade Federal do Rio Grande do Sul · [edital](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=07/10/2026&jornal=530&pagina=188) · 2026-10-07
+- Prefeituras/Estado da Bahia/Prefeitura Municipal de Itagibá · [AVISO DE CHAMAMENTO PÚBLICO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=07/10/2026&jornal=530&pagina=203) · 2026-10-07
+- Ministério da Educação/Universidade Federal de Minas Gerais/Reitoria · [EDITAL Nº 2.265, DE  5 DE OUTUBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=07/10/2026&jornal=530&pagina=78) · 2026-10-07
+- Ministério da Educação/Universidade Federal de Minas Gerais/Reitoria · [EDITAL Nº 2.275, DE 5 DE OUTUBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=07/10/2026&jornal=530&pagina=78) · 2026-10-07
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Sul/Campus Farroupilha/Gabinete · [EDITAL Nº 46, DE 6 DE OUTUBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=07/10/2026&jornal=530&pagina=70) · 2026-10-07
+- Ministério da Educação/Universidade Federal da Integração Latino-Americana · [EDITAL 246/DICS/DAP/PROGEPE, DE 25 DE SETEMBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=07/10/2026&jornal=530&pagina=77) · 2026-10-07
+- Ministério da Educação/Fundação Universidade Federal de São João Del Rei/Pró-Reitoria de Gestão e Desenvolvimento de Pessoas · [edital de 6 de outubro de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=07/10/2026&jornal=530&pagina=113) · 2026-10-07
+- Ministério da Justiça e Segurança Pública/Agência Nacional de Proteção de Dados · [EXTRATO DE RESCISÃO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=07/10/2026&jornal=530&pagina=140) · 2026-10-07
+- Ministério da Gestão e da Inovação em Serviços Públicos/Secretaria de Serviços Compartilhados/Diretoria de Gestão de Pessoas · [Edital Nº 74/2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=07/10/2026&jornal=530&pagina=128) · 2026-10-07
+- Ministério da Gestão e da Inovação em Serviços Públicos/Secretaria de Serviços Compartilhados/Diretoria de Gestão de Pessoas · [Edital Nº 75/2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=07/10/2026&jornal=530&pagina=127) · 2026-10-07
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Minas Gerais/Campus Ipatinga · [EXTRATO DE TERMO ADITIVO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=07/10/2026&jornal=530&pagina=68) · 2026-10-07
+- Ministério da Educação/Universidade Federal do Rio Grande do Norte/Pró-Reitoria de Gestão de Pessoas/Diretoria de Administração de Pessoal · [EDITAL DE CONVOCAÇÃO Nº 1.388, DE 6 DE OUTUBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=07/10/2026&jornal=530&pagina=80) · 2026-10-07
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Minas Gerais/Campus Santa Luzia · [EXTRATO DE CONTRATO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=07/10/2026&jornal=530&pagina=68) · 2026-10-07
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Sudeste de Minas Gerais/Reitoria · [EDITAL](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=08/10/2026&jornal=530&pagina=36) · 2026-10-08
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Pernambuco · [EDITAL CPES/IFPE Nº 4, DE 6 DE OUTUBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=08/10/2026&jornal=530&pagina=33) · 2026-10-08
+- Ministério da Defesa/Comando do Exército/Comando Militar do Sudeste/2ª Região Militar/Comissão Regional de Obras / 2ª Região Militar · [EXTRATO DE TERMO ADITIVO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=08/10/2026&jornal=530&pagina=17) · 2026-10-08
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Minas Gerais/Campus Ouro Preto · [EXTRATO DE TERMO ADITIVO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=08/10/2026&jornal=530&pagina=32) · 2026-10-08
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Alagoas/Reitoria · [EDITAL DE CONVOCAÇÃO Nº 139/IFAL, DE 7 DE OUTUBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=08/10/2026&jornal=530&pagina=29) · 2026-10-08
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia Catarinense/Pró-Reitoria de Desenvolvimento, Inclusão, Diversidade e Assistência à Pessoa · [aviso de Retificação](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=08/10/2026&jornal=530&pagina=30) · 2026-10-08
+- Ministério da Educação/Universidade Federal de Minas Gerais/Reitoria · [EDITAL Nº 2289, DE 6 DE OUTUBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=08/10/2026&jornal=530&pagina=42) · 2026-10-08
+- Ministério da Educação/Universidade Federal da Fronteira Sul · [EDITAL Nº 417 DE 7 DE OUTUBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=08/10/2026&jornal=530&pagina=41) · 2026-10-08
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Sudeste de Minas Gerais/Reitoria · [EDITAL](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=09/10/2026&jornal=530&pagina=44) · 2026-10-09
+- Ministério da Educação/Centro Federal de Educação Tecnológica de Minas Gerais/Secretaria de Gestão de Pessoas · [EDITAL Nº 657, DE 5 DE OUTUBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=09/10/2026&jornal=530&pagina=32) · 2026-10-09
+- Ministério da Educação/Instituto Benjamin Constant · [EDITAL Nº 39, DE 6 DE OUTUBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=09/10/2026&jornal=530&pagina=32) · 2026-10-09
+- Entidades de Fiscalização do Exercício das Profissões Liberais/Conselho Federal de Educação Física · [EDITAL Nº 1/2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=09/10/2026&jornal=530&pagina=179) · 2026-10-09
+- Entidades de Fiscalização do Exercício das Profissões Liberais/Conselho Federal de Educação Física · [Edital 01-CREF23-RO_002](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=09/10/2026&jornal=530&pagina=181) · 2026-10-09
+- Entidades de Fiscalização do Exercício das Profissões Liberais/Conselho Federal de Educação Física · [EDITAL Nº 1/2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=09/10/2026&jornal=530&pagina=185) · 2026-10-09
+- Entidades de Fiscalização do Exercício das Profissões Liberais/Conselho Federal de Educação Física · [Edital 01-CREF24-TO_002](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=09/10/2026&jornal=530&pagina=187) · 2026-10-09
+- Entidades de Fiscalização do Exercício das Profissões Liberais/Conselho Federal de Educação Física · [EDITAL Nº 1/2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=09/10/2026&jornal=530&pagina=191) · 2026-10-09
+- Entidades de Fiscalização do Exercício das Profissões Liberais/Conselho Federal de Educação Física · [Edital 01-CREF25-AP_002](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=09/10/2026&jornal=530&pagina=193) · 2026-10-09
+- Entidades de Fiscalização do Exercício das Profissões Liberais/Conselho Federal de Educação Física · [EDITAL Nº 1/2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=09/10/2026&jornal=530&pagina=196) · 2026-10-09
+- Entidades de Fiscalização do Exercício das Profissões Liberais/Conselho Federal de Educação Física · [Edital 01-CREF26-AC_002](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=09/10/2026&jornal=530&pagina=198) · 2026-10-09
+- Entidades de Fiscalização do Exercício das Profissões Liberais/Conselho Federal de Educação Física · [EDITAL Nº 1/2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=09/10/2026&jornal=530&pagina=202) · 2026-10-09
+- Entidades de Fiscalização do Exercício das Profissões Liberais/Conselho Federal de Educação Física · [Edital 01-CREF27-RR_002](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=09/10/2026&jornal=530&pagina=204) · 2026-10-09
+- Ministério da Educação/Fundação Universidade Federal de Pelotas · [EDITAL Nº 29/2026, DE 8 DE OUTUBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=09/10/2026&jornal=530&pagina=71) · 2026-10-09
+- Ministério da Educação/Universidade Federal do Norte do Tocantins · [EDITAL UFNT Nº 40, DE 8 DE OUTUBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=09/10/2026&jornal=530&pagina=54) · 2026-10-09
+- Ministério da Educação/Universidade Federal de São Paulo/Pró-Reitoria de Gestão com Pessoas · [EDITAL Nº 719, DE 8 DE OUTUBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=09/10/2026&jornal=530&pagina=60) · 2026-10-09
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Alagoas/Reitoria · [EDITAL DE CONVOCAÇÃO Nº 140/IFAL, de 8 DE OUTUBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=09/10/2026&jornal=530&pagina=33) · 2026-10-09
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Norte de Minas Gerais/Campus Arinos · [EDITAL Nº 115, DE 7 DE OUTUBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=09/10/2026&jornal=530&pagina=38) · 2026-10-09
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Minas Gerais/Campus Santa Luzia · [EXTRATO DE CONTRATO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=13/10/2026&jornal=530&pagina=59) · 2026-10-13
+- Ministério da Defesa/Comando do Exército/Comando Militar do Sudeste/2ª Região Militar/Comissão Regional de Obras / 2ª Região Militar · [EXTRATO DE CONTRATO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=13/10/2026&jornal=530&pagina=16) · 2026-10-13
+- Ministério da Defesa/Comando do Exército/Comando Militar do Sudeste/2ª Região Militar/Comissão Regional de Obras / 2ª Região Militar · [EXTRATO DE TERMO ADITIVO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=13/10/2026&jornal=530&pagina=16) · 2026-10-13
+- Ministério da Defesa/Comando do Exército/Comando Militar do Sudeste/2ª Região Militar/Comissão Regional de Obras / 2ª Região Militar · [EXTRATO DE TERMO ADITIVO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=13/10/2026&jornal=530&pagina=16) · 2026-10-13
+- Ministério da Defesa/Comando do Exército/Comando Militar do Sudeste/2ª Região Militar/Comissão Regional de Obras / 2ª Região Militar · [EXTRATO DE TERMO ADITIVO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=13/10/2026&jornal=530&pagina=16) · 2026-10-13
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Ceará/Campus Limoeiro do Norte · [EDITAL Nº 4, DE 8  DE OUTUBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=13/10/2026&jornal=530&pagina=51) · 2026-10-13
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Alagoas/Reitoria · [EDITAL DE CONVOCAÇÃO Nº 141/IFAL, DE 9 DE OUTUBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=13/10/2026&jornal=530&pagina=47) · 2026-10-13
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia do Norte de Minas Gerais/Campus Arinos · [EDITAL Nº 116, DE 8 DE OUTUBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=13/10/2026&jornal=530&pagina=59) · 2026-10-13
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia Farroupilha · [EDITAL Nº 125, DE 15 DE MAIO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=13/10/2026&jornal=530&pagina=51) · 2026-10-13
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia Farroupilha · [EDITAL Nº 151, DE 24 DE JUNHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=13/10/2026&jornal=530&pagina=51) · 2026-10-13
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia Farroupilha · [EDITAL Nº 109, DE 30 DE ABRIL DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=13/10/2026&jornal=530&pagina=52) · 2026-10-13
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Santa Catarina · [EXTRATO DE CONTRATO](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=14/10/2026&jornal=530&pagina=44) · 2026-10-14
+- Ministério da Educação/Universidade Federal de Pernambuco · [EDITAL Nº 14, DE 9 DE OUTUBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=14/10/2026&jornal=530&pagina=74) · 2026-10-14
+- Ministério da Educação/Universidade Federal do Estado do Rio de Janeiro · [EDITAL Nº 230, DE 7 DE OUTUBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=14/10/2026&jornal=530&pagina=89) · 2026-10-14
+- Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Sergipe · [EDITAL PROGEP/REITORIA/IFS Nº 2, DE 13 DE OUTUBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=14/10/2026&jornal=530&pagina=44) · 2026-10-14
+- Ministério da Educação/Universidade Federal de Itajubá/Pró-Reitoria de Gestão de Pessoas/Diretoria de Desenvolvimento de  Pessoal · [EDITAL DE  13 DE OUTUBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=14/10/2026&jornal=530&pagina=55) · 2026-10-14
+- Ministério da Educação/Universidade Federal do Rio Grande do Norte/Pró-Reitoria de Gestão de Pessoas/Diretoria de Administração de Pessoal · [EDITAL DE CONVOCAÇÃO Nº 1.406, DE 13 DE OUTUBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=14/10/2026&jornal=530&pagina=75) · 2026-10-14
+- Ministério da Educação/Fundação Universidade Federal de Rondônia/Diretoria da Faculdade de Ciências da Saúde · [EDITAL](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=14/10/2026&jornal=530&pagina=88) · 2026-10-14
+- Ministério da Educação/Universidade Federal de Rondonópolis/Pró-Reitoria de Gestão de Pessoas · [EDITAL PROGEP/UFR N° 18, DE 13 DE OUTUBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=14/10/2026&jornal=530&pagina=76) · 2026-10-14
+- GABINETE DO PODER EXECUTIVO MUNICIPAL · [DECRETO Nº 87 ALTERA COMISSÃO PROCESSO](https://www.diariomunicipal.com.br/amp/materia/9B93BD5B) · 2026-07-01
+- GABINETE DO PODER EXECUTIVO MUNICIPAL · [RETIFICAÇÃO PROCESSO SELETIVO SIMPLIFICADO](https://www.diariomunicipal.com.br/amp/materia/4C6C9468) · 2026-07-01
+- ADMINISTRAÇÃO · [EDITAL DE CONVOCAÇÃO Nº 020/2026 - PROCESSO](https://www.diariomunicipal.com.br/amp/materia/023A42FE) · 2026-07-01
+- ADMINISTRAÇÃO · [Edital nº. 007/2026, que estabelece instruções destinadas à realização](https://www.diariomunicipal.com.br/amp/materia/33F96111) · 2026-07-01
+- ADMINISTRAÇÃO · [Edital nº. 07/2026, que estabelece instruções destinadas à realização](https://www.diariomunicipal.com.br/amp/materia/AE9C1439) · 2026-07-01
+- DEPARTAMENTO DE ADMINISTRAÇÃO · [PROCESSO SELETIVO SIMPLIFICADO N°004/2026 EDITAL](https://www.diariomunicipal.com.br/amp/materia/BF84414F) · 2026-07-01
+- DEPARTAMENTO DE ADMINISTRAÇÃO · [PROCESSO SELETIVO SIMPLIFICADO - PSS N°001/2025](https://www.diariomunicipal.com.br/amp/materia/08F82DD4) · 2026-07-01
+- DEPARTAMENTO DE ADMINISTRAÇÃO · [PROCESSO SELETIVO SIMPLIFICADO - PSS N° 002/2025](https://www.diariomunicipal.com.br/amp/materia/0AA74653) · 2026-07-01
+- DEPARTAMENTO DE ADMINISTRAÇÃO · [PROCESSO SELETIVO SIMPLIFICADO - PSS N° 002/2026](https://www.diariomunicipal.com.br/amp/materia/30228BE0) · 2026-07-01
+- DEPARTAMENTO DE ADMINISTRAÇÃO · [PROCESSO SELETIVO SIMPLIFICADO N° 004/2026](https://www.diariomunicipal.com.br/amp/materia/936BFB1D) · 2026-07-01
+- MUNICÍPIO DE FERNANDES PINHEIRO · [EDITAL N° 19/2025 -PROCESSO SELETIVO SIMPLIFICADO](https://www.diariomunicipal.com.br/amp/materia/840CF4C9) · 2026-07-01
+- MUNICÍPIO DE FERNANDES PINHEIRO · [EDITAL N° 29/2026 -PROCESSO SELETIVO SIMPLIFICADO](https://www.diariomunicipal.com.br/amp/materia/4AC59471) · 2026-07-01
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [EDITAL DE CHAMAMENTO Nº. 015/2026](https://www.diariomunicipal.com.br/amp/materia/85896D85) · 2026-07-01
+- CONSAMU · [PROCESSO SELETIVO SIMPLIFICADO Nº 001/2026 PARA](https://www.diariomunicipal.com.br/amp/materia/DE0B8CC3) · 2026-07-01
+- SECRETARIA DE ADMINISTRAÇÃO GERAL · [EXTRATO DE CONTRATO DE TRABALHO Nº 024/2026](https://www.diariomunicipal.com.br/amp/materia/669F5710) · 2026-07-01
+- ADMINISTRAÇÃO RH · [EDITAL N°001/2026 CONVOCAÇÃO PROCESSO SELETIVO](https://www.diariomunicipal.com.br/amp/materia/84471E52) · 2026-07-01
+- ADMINISTRAÇÃO RH · [PROCESSO SELETIVO SIMPLIFICADO N° 003/2022](https://www.diariomunicipal.com.br/amp/materia/BD3F0E13) · 2026-07-01
+- SERVIÇO AUTONOMO DE AGUA E ESGOTO - JARDIM · [EDITAL DE CONVOCAÇÃO Nº 003/2026 PROCESSO](https://www.diariomunicipal.com.br/amp/materia/6A776640) · 2026-07-01
+- SECRETARIA DE ADMINISTRAÇÃO - SETOR DE RECURSOS HUMANOS · [DECRETO N.º 287/2026.](https://www.diariomunicipal.com.br/amp/materia/050B2EC6) · 2026-07-01
+- SECRETARIA DE ADMINISTRAÇÃO - SETOR DE RECURSOS HUMANOS · [EXTRATO DE CONTRATO POR PRAZO DETERMINADO –](https://www.diariomunicipal.com.br/amp/materia/84567A35) · 2026-07-01
+- GABINETE DO PREFEITO · [DECRETO Nº 315/2026 - NOMEIA E DÁ POSSE A PESSOAS](https://www.diariomunicipal.com.br/amp/materia/C0B82B67) · 2026-07-01
+- GABINETE DO PREFEITO · [EDITAL N º. 228/2026 - DISPÕE SOBRE A CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/0C97B2D9) · 2026-07-01
+- DEPARTAMENTO DE ADMINISTRAÇÃO E PLANEJAMENTO · [EDITAL Nº 031/2026](https://www.diariomunicipal.com.br/amp/materia/AC2F5A55) · 2026-07-01
+- PREFEITURA MUNICIPAL DE MORRETES · [EDITAL Nº 92, DE 30 DE JUNHO 2026. EDITAL DE](https://www.diariomunicipal.com.br/amp/materia/A332AE32) · 2026-07-01
+- FUNDAÇÃO DE ATENÇÃO A SAÚDE DE MORRETES · [EDITAL Nº 93, DE 30 DE JUNHO DE 2026. EDITAL DE](https://www.diariomunicipal.com.br/amp/materia/86189D1F) · 2026-07-01
+- FUNDAÇÃO DE ATENÇÃO A SAÚDE DE MORRETES · [EDITAL Nº 94, DE 30 DE JUNHO 2026. EDITAL DE](https://www.diariomunicipal.com.br/amp/materia/1E5FF37B) · 2026-07-01
+- SECRETARIA DE ADMINISTRAÇÃO · [PORTARIA Nº 6327/2026](https://www.diariomunicipal.com.br/amp/materia/5A78519D) · 2026-07-01
+- PREFEITURA MUNICIPAL DE PALMITAL · [PROCESSO SELETIVO SIMPLIFICADO PARA VAGAS DE](https://www.diariomunicipal.com.br/amp/materia/2F40403F) · 2026-07-01
+- SECRETARIA MUNICIPAL DE RECURSOS HUMANOS · [PORTARIA Nº 170/2026 – DE 30 DE JUNHO DE 2026.](https://www.diariomunicipal.com.br/amp/materia/19A24A47) · 2026-07-01
+- CONSÓRCIO INTERMUNICIPAL DE SANEAMENTO DO PARANÁ · [PORTARIA N.º 12 DE 30 DE JUNHO DE 2026.](https://www.diariomunicipal.com.br/amp/materia/EE84F2B9) · 2026-07-01
+- DEPARTAMENTO DE ADMINISTRAÇÃO · [PROCESSO SELETIVO SIMPLIFICADO Nº 01/2026 EDITAL](https://www.diariomunicipal.com.br/amp/materia/776DFFF0) · 2026-07-01
+- RECURSOS HUMANOS · [EDITAL DE CONVOCAÇÃO PSS N° 01/2025](https://www.diariomunicipal.com.br/amp/materia/5054D5E8) · 2026-07-01
+- GABINETE DO PREFEITO · [EDITAL N º 008/2026 – 13ª CONVOCAÇÃO –PSS Nº 004/2025–](https://www.diariomunicipal.com.br/amp/materia/D09BD7D3) · 2026-07-01
+- GABINETE DO PREFEITO · [EDITAL N º 011/2026 – 19ª CONVOCAÇÃO –PSS Nº 002/2025–](https://www.diariomunicipal.com.br/amp/materia/9665A8F8) · 2026-07-01
+- GABINETE DO PREFEITO · [EDITAL N º 012/2026 – 19ª CONVOCAÇÃO – PSS Nº 001/2025–](https://www.diariomunicipal.com.br/amp/materia/71294D8F) · 2026-07-01
+- DEPARTAMENTO ADMINISTRATIVO · [PORTARIA N.º 711/2026](https://www.diariomunicipal.com.br/amp/materia/601E349D) · 2026-07-01
+- SECRETARIA GERAL · [PSS N º 001/2026 – SECRETARIA MUNICIPAL DE SAÚDE 6ª](https://www.diariomunicipal.com.br/amp/materia/471110DC) · 2026-07-01
+- PREFEITURA MUNICIPAL DE SANTA FÉ · [PROCESSO SELETIVO SIMPLIFICADO](https://www.diariomunicipal.com.br/amp/materia/D0352857) · 2026-07-01
+- PREFEITURA MUNICIPAL DE SENGÉS · [EDITAL DE CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/67DA3602) · 2026-07-01
+- SECRETARIA DE ADMINISTRAÇÃO · [EDITAL DE CONVOCAÇÃO 132-2026](https://www.diariomunicipal.com.br/amp/materia/734BD7C2) · 2026-07-01
+- SECRETARIA DE ADMINISTRAÇÃO · [EDITAL DE CONVOCAÇÃO 133-2026](https://www.diariomunicipal.com.br/amp/materia/D29937AB) · 2026-07-01
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO - · [PORTARIA Nº 428/2026](https://www.diariomunicipal.com.br/amp/materia/85EE3770) · 2026-07-01
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO - · [PORTARIA Nº 434/2026](https://www.diariomunicipal.com.br/amp/materia/74998467) · 2026-07-01
+- DIVISÃO DE RECURSOS HUMANOS E SEGURANÇA DO TRABALHO · [EDITAL 132/2026 - CLASSIFICAÇÃO FINAL PSS AUXILIAR DE FARMÁCIA](https://www.diariomunicipal.com.br/amp/materia/0E2124F5) · 2026-07-01
+- DIVISÃO DE RECURSOS HUMANOS E SEGURANÇA DO TRABALHO · [EDITAL 133/2026 - CLASSIFICAÇÃO FINAL PSS AUXILIAR DE EDUCADOR-CUIDADOR SOCIAL](https://www.diariomunicipal.com.br/amp/materia/C13E4040) · 2026-07-01
+- DEPARTAMENTO DE ADMINISTRAÇÃO · [EDITAL Nº 001/2026. PROCESSO SELETIVO SIMPLIFICADO PARA CONTRATAÇÃO DE ESTAGIÁRIOS EDITAL 003/2026](https://www.diariomunicipal.com.br/amp/materia/653F094D) · 2026-07-01
+- CONSAMU · [PROCESSO SELETIVO SIMPLIFICADO Nº 002/2026 PARA CONTRATAÇÃO TEMPORÁRIA DE EMPREGADOS PÚBLICOS PARA](https://www.diariomunicipal.com.br/amp/materia/9D299AE3) · 2026-07-01
+- PREFEITURA MUNICIPAL DE GUARACI · [EDITAL 050/2026](https://www.diariomunicipal.com.br/amp/materia/20ACC566) · 2026-07-01
+- SECRETARIA DE ADMINISTRAÇÃO · [PROCESSO SELETIVO SIMPLIFICADO Nº 02/2026 EDITAL N.º 01.02/2026](https://www.diariomunicipal.com.br/amp/materia/DDFEA25F) · 2026-07-01
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [PREFEITURA MUNICIPAL DE PAULA FREITAS/PR PROCESSO SELETIVO SIMPLIFICADO – PSS PARA CADASTRO DE](https://www.diariomunicipal.com.br/amp/materia/0970718E) · 2026-07-01
+- SECRETARIA MUNICIPAL DE RECURSOS HUMANOS · [DECRETO N. º 3438/2026- DE 29 DE JUNHO DE 2026.](https://www.diariomunicipal.com.br/amp/materia/CF702E43) · 2026-07-01
+- DEPARTAMENTO DE ADMINISTRAÇÃO · [EDITAL Nº 04/2026 EDITAL DE ENSALAMENTO PROCESSO SELETIVO SIMPLIFICADO Nº 02/2026](https://www.diariomunicipal.com.br/amp/materia/13A3C98B) · 2026-07-01
+- EXECUTIVO MUNICIPAL · [PROCESSO SELETIVO SIMPLIFICADO Nº 002/2026](https://www.diariomunicipal.com.br/amp/materia/886D9995) · 2026-07-01
+- PREFEITURA MUNICIPAL DE UMUARAMA · [EDITAL 75/2026](https://www.diariomunicipal.com.br/amp/materia/C2CD5126) · 2026-07-01
+- GABINETE DA PREFEITA · [DECRETO Nº. 11.259 DE 01 DE JULHO DE 2026](https://www.diariomunicipal.com.br/amp/materia/052E6793) · 2026-07-02
+- GABINETE DA PREFEITA · [DECRETO Nº. 11.260 DE 01 DE JULHO DE 2026](https://www.diariomunicipal.com.br/amp/materia/7D90527A) · 2026-07-02
+- GABINETE DA PREFEITA · [DECRETO Nº. 11.261 DE 01 DE JULHO DE 2026](https://www.diariomunicipal.com.br/amp/materia/9778EF3E) · 2026-07-02
+- GABINETE DA PREFEITA · [DECRETO Nº. 11.262 DE 01 DE JULHO DE 2026](https://www.diariomunicipal.com.br/amp/materia/0835FEB4) · 2026-07-02
+- ADMINISTRAÇÃO · [PORTARIA Nº 459/2026](https://www.diariomunicipal.com.br/amp/materia/8FD88B21) · 2026-07-02
+- ADMINISTRAÇÃO · [PORTARIA Nº 460/2026](https://www.diariomunicipal.com.br/amp/materia/D4E68500) · 2026-07-02
+- ADMINISTRAÇÃO · [PORTARIA Nº 461/2026](https://www.diariomunicipal.com.br/amp/materia/BC0A52D8) · 2026-07-02
+- ADMINISTRAÇÃO · [PORTARIA Nº 462/2026](https://www.diariomunicipal.com.br/amp/materia/346DFE6C) · 2026-07-02
+- ADMINISTRAÇÃO · [PORTARIA Nº 463/2026](https://www.diariomunicipal.com.br/amp/materia/7BFBC6C1) · 2026-07-02
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [PORTARIA Nº 113/2026](https://www.diariomunicipal.com.br/amp/materia/80FF371E) · 2026-07-02
+- SECRETARIA MUNICIPAL DE GOVERNO · [EDITAL DE CONVOCAÇÃO N. º 025/2026 – PROCESSO](https://www.diariomunicipal.com.br/amp/materia/326CD666) · 2026-07-02
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO QUARTO TERMO ADITIVO Nº 055/2026 DO](https://www.diariomunicipal.com.br/amp/materia/1DE77966) · 2026-07-02
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO QUARTO TERMO ADITIVO Nº 056/2026 DO](https://www.diariomunicipal.com.br/amp/materia/DF936E11) · 2026-07-02
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO QUARTO TERMO ADITIVO Nº 057/2026 DO](https://www.diariomunicipal.com.br/amp/materia/79A74A6A) · 2026-07-02
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO SEGUNDO TERMO ADITIVO Nº 042/2026 DO](https://www.diariomunicipal.com.br/amp/materia/35D30E13) · 2026-07-02
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO SEGUNDO TERMO ADITIVO Nº 043/2026 DO](https://www.diariomunicipal.com.br/amp/materia/629644D5) · 2026-07-02
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO SEGUNDO TERMO ADITIVO Nº 056/2026 DO](https://www.diariomunicipal.com.br/amp/materia/717917C4) · 2026-07-02
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO TERMO ADITIVO Nº 033/2026 DO](https://www.diariomunicipal.com.br/amp/materia/FEAF2B0E) · 2026-07-02
+- GABINETE · [EDITAL Nº 005/2026](https://www.diariomunicipal.com.br/amp/materia/B00DAD7B) · 2026-07-02
+- GABINETE · [LEI Nº 2.940/2026](https://www.diariomunicipal.com.br/amp/materia/625E2BB7) · 2026-07-02
+- GABINETE · [PORTARIA N°168/2026](https://www.diariomunicipal.com.br/amp/materia/F80518A0) · 2026-07-02
+- DEPARTAMENTO DE GESTÃO DE PESSOAS · [EDITAL Nº 033/2026 DE 01/07/2026 - PSS 001/2026](https://www.diariomunicipal.com.br/amp/materia/D42928FB) · 2026-07-02
+- DEPARTAMENTO DE ADMINISTRAÇÃO · [PROCESSO SELETIVO SIMPLIFICADO - PSS N°001/2025](https://www.diariomunicipal.com.br/amp/materia/25B06625) · 2026-07-02
+- DEPARTAMENTO DE RECURSOS HUMANOS · [DECRETO 114/2026](https://www.diariomunicipal.com.br/amp/materia/53FF948E) · 2026-07-02
+- DEPARTAMENTO DE RECURSOS HUMANOS · [DECRETO 115/2026](https://www.diariomunicipal.com.br/amp/materia/B53A99FD) · 2026-07-02
+- DEPARTAMENTO DE RECURSOS HUMANOS · [DECRETO 116/2026](https://www.diariomunicipal.com.br/amp/materia/6B3E314C) · 2026-07-02
+- DEPARTAMENTO DE RECURSOS HUMANOS · [DECRETO 117/2026](https://www.diariomunicipal.com.br/amp/materia/7E30F43A) · 2026-07-02
+- DEPARTAMENTO DE RECURSOS HUMANOS · [DECRETO 118/2026](https://www.diariomunicipal.com.br/amp/materia/50508769) · 2026-07-02
+- DEPARTAMENTO DE RECURSOS HUMANOS · [DECRETO 119/2026](https://www.diariomunicipal.com.br/amp/materia/84ECEE7E) · 2026-07-02
+- DEPARTAMENTO DE RECURSOS HUMANOS · [DECRETO 120/2026](https://www.diariomunicipal.com.br/amp/materia/7D09D0DD) · 2026-07-02
+- DEPARTAMENTO DE RECURSOS HUMANOS · [DECRETO 121/2026](https://www.diariomunicipal.com.br/amp/materia/024F38E8) · 2026-07-02
+- DEPARTAMENTO DE RECURSOS HUMANOS · [DECRETO 122/2026](https://www.diariomunicipal.com.br/amp/materia/2967E370) · 2026-07-02
+- DEPARTAMENTO DE RECURSOS HUMANOS · [DECRETO 124/2026](https://www.diariomunicipal.com.br/amp/materia/9ABD3B78) · 2026-07-02
+- PREFEITURA MUNICIPAL DE ITAPEJARA D'OESTE · [AVISO DE LICITAÇÃO EDITAL DE DISPENSA](https://www.diariomunicipal.com.br/amp/materia/D678F8B2) · 2026-07-02
+- ADMINISTRAÇÃO RH · [PORTARIA Nº 245/2026](https://www.diariomunicipal.com.br/amp/materia/E23F3708) · 2026-07-02
+- PREFEITURA MUNICIPAL DE IVATUBA · [EDITAL DE CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/6585C9A7) · 2026-07-02
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [EXTRATO DO TERMO DE RESCISÃO CONTRATO DE](https://www.diariomunicipal.com.br/amp/materia/39B02CA6) · 2026-07-02
+- GOVERNO MUNICIPAL · [EDITAL DE CONVOCAÇÃO Nº 011/2026 PROCESSO](https://www.diariomunicipal.com.br/amp/materia/AAF4D52F) · 2026-07-02
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [EDITAL DE CONVOCAÇÃO Nº. 011/2026 DE 1º DE JULHO](https://www.diariomunicipal.com.br/amp/materia/C4A232CF) · 2026-07-02
+- PREFEITURA MUNICIPAL DE MORRETES · [EDITAL Nº 06, DE 01 DE JULHO DE 2026. EDITAL DE](https://www.diariomunicipal.com.br/amp/materia/41202C64) · 2026-07-02
+- FUNDAÇÃO DE ATENÇÃO A SAÚDE DE MORRETES · [EDITAL Nº 95, DE 01 DE JULHO DE 2026. EDITAL DE](https://www.diariomunicipal.com.br/amp/materia/943EEBD9) · 2026-07-02
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [COMUNICADO – CHAMADA PROFESSOR 40H - PROCESSO](https://www.diariomunicipal.com.br/amp/materia/730B483B) · 2026-07-02
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [TERMO DE DESISTÊNCIA - PROCESSO SELETIVO](https://www.diariomunicipal.com.br/amp/materia/8762FFB3) · 2026-07-02
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [TERMO DE DESISTÊNCIA - PROCESSO SELETIVO](https://www.diariomunicipal.com.br/amp/materia/D4B96C99) · 2026-07-02
+- PREFEITURA MUNICIPAL DE PALMITAL · [EDITAL DE CONVOCAÇÃO N.º 16/2026 PROCESSO](https://www.diariomunicipal.com.br/amp/materia/489C444D) · 2026-07-02
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO DE RESCISÃO DO CONTRATO](https://www.diariomunicipal.com.br/amp/materia/1FFF3D71) · 2026-07-02
+- DEPARTAMENTO DE RECURSOS HUMANOS · [PORTARIA Nº 645 DE 01 DE JULHO DE 2026.](https://www.diariomunicipal.com.br/amp/materia/C30BEA78) · 2026-07-02
+- PREFEITURA MUNICIPAL DE PITANGA · [SECRETARIA DE GESTÃO PÚBLICA](https://www.diariomunicipal.com.br/amp/materia/2ABFF46A) · 2026-07-02
+- ADMINISTRATIVO / RECURSOS HUMANOS · [EDITAL DE CONVOCAÇÃO 40-2026 ASSISTENTE SOCIAL](https://www.diariomunicipal.com.br/amp/materia/75CF9E58) · 2026-07-02
+- PREFEITURA MUNICIPAL DE PORTO AMAZONAS · [EDITAL Nº 22 - PROCESSO SELETIVO SIMPLIFICADO Nº](https://www.diariomunicipal.com.br/amp/materia/61812FC6) · 2026-07-02
+- PREFEITURA MUNICIPAL DE QUERÊNCIA DO NORTE · [EDITAL N°022/2026](https://www.diariomunicipal.com.br/amp/materia/922D1F6F) · 2026-07-02
+- DEPARTAMENTO DE RECURSOS HUMANOS · [PORTARIA N° 220 DE 01 DE JULHO DE 2026](https://www.diariomunicipal.com.br/amp/materia/1281D70C) · 2026-07-02
+- DEPARTAMENTO DE RECURSOS HUMANOS · [PROCESSO SELETIVO SIMPLIFICADO Nº 002/2025 EDITAL](https://www.diariomunicipal.com.br/amp/materia/CBEE152D) · 2026-07-02
+- ADMINISTRAÇÃO GERAL · [EDITAL Nº 82/2026 (CONVOCAÇÃO)](https://www.diariomunicipal.com.br/amp/materia/8B5AF053) · 2026-07-02
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [EDITAL N.º 77/2026 – RESULTADO DEFINITIVO DA PROVA](https://www.diariomunicipal.com.br/amp/materia/A751098E) · 2026-07-02
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [EDITAL N.º 78/2026 – RESULTADO FINAL E](https://www.diariomunicipal.com.br/amp/materia/75CF4811) · 2026-07-02
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [EDITAL N.º 79/2026 CONVOCAÇÃO PARA PROVA PRÁTICA](https://www.diariomunicipal.com.br/amp/materia/D4227730) · 2026-07-02
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [PORTARIA Nº 841/2026](https://www.diariomunicipal.com.br/amp/materia/2DBABD63) · 2026-07-02
+- ADMINISTRAÇÃO · [EDITAL PROCESSO SELETIVO SIMPLIFICADO Nº 10/2026](https://www.diariomunicipal.com.br/amp/materia/49D55100) · 2026-07-02
+- PREFEITURA MUNICIPAL DE CAPITÃO LEÔNIDAS MARQUES · [PROCESSO SELETIVO SIMPLIFICADO Nº 002/2026](https://www.diariomunicipal.com.br/amp/materia/91312AB0) · 2026-07-02
+- PREFEITURA MUNICIPAL DE MORRETES · [EDITAL Nº 07, DE 01 DE JULHO DE 2026. EDITAL DE CONVOCAÇÃO PSS 02/2026](https://www.diariomunicipal.com.br/amp/materia/7EA66ABA) · 2026-07-02
+- EXECUTIVO MUNICIPAL · [PROCESSO SELETIVO SIMPLIFICADO Nº 002/2026 EDITAL 004/2026 – CLASSIFICAÇÃO PROVISÓRIA](https://www.diariomunicipal.com.br/amp/materia/D905A4C4) · 2026-07-02
+- RECURSOS HUMANOS · [EDITAL DE CONVOCAÇÃO N. º 09/2026](https://www.diariomunicipal.com.br/amp/materia/A18794A9) · 2026-07-02
+- ADMINISTRAÇÃO GERAL · [EDITAL Nº 081/2026 PROCESSO SELETIVO SIMPLICADO Nº 02/2026](https://www.diariomunicipal.com.br/amp/materia/9A3B50D2) · 2026-07-02
+- GABINETE DA PREFEITA · [EDITAL DE CONVOCAÇÃO N. 011/2026 PSS - PROFESSOR](https://www.diariomunicipal.com.br/amp/materia/9A57C67D) · 2026-07-03
+- ADMINISTRAÇÃO · [PORTARIA Nº. 473/2026](https://www.diariomunicipal.com.br/amp/materia/3C62C8F7) · 2026-07-03
+- SECRETARIA MUNICIPAL DE GOVERNO · [EDITAL DE CONVOCAÇÃO Nº 026/2026 - PROCESSO](https://www.diariomunicipal.com.br/amp/materia/FA2A071B) · 2026-07-03
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [DECRETO N.º 245/2026 DATA: 02-07-2026](https://www.diariomunicipal.com.br/amp/materia/9E933493) · 2026-07-03
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [EDITAL N.º 023/2026](https://www.diariomunicipal.com.br/amp/materia/A04C6D03) · 2026-07-03
+- MUNICÍPIO DE FERNANDES PINHEIRO · [EDITAL N° 29/2026 -PROCESSO SELETIVO SIMPLIFICADO](https://www.diariomunicipal.com.br/amp/materia/DB35C266) · 2026-07-03
+- MUNICÍPIO DE FERNANDES PINHEIRO · [EDITAL N° 30/2026 -PROCESSO SELETIVO SIMPLIFICADO](https://www.diariomunicipal.com.br/amp/materia/BC5901AD) · 2026-07-03
+- DEPARTAMENTO DE RECURSOS HUMANOS · [EDITAL Nº 02/2026 – AUXILIAR DE SAÚDE BUCAL - ASB](https://www.diariomunicipal.com.br/amp/materia/55A59470) · 2026-07-03
+- DEPARTAMENTO DE RECURSOS HUMANOS · [DECRETO 127/2026](https://www.diariomunicipal.com.br/amp/materia/EA05BA33) · 2026-07-03
+- DEPARTAMENTO DE RECURSOS HUMANOS · [DECRETO 129/2026](https://www.diariomunicipal.com.br/amp/materia/96A7B5A5) · 2026-07-03
+- DEPARTAMENTO DE RECURSOS HUMANOS · [DECRETO 130/2026](https://www.diariomunicipal.com.br/amp/materia/E045FEA3) · 2026-07-03
+- DEPARTAMENTO DE RECURSOS HUMANOS · [DECRETO 131/2026](https://www.diariomunicipal.com.br/amp/materia/35504D0A) · 2026-07-03
+- DEPARTAMENTO DE RECURSOS HUMANOS · [DECRETO 132/2026](https://www.diariomunicipal.com.br/amp/materia/D92144C1) · 2026-07-03
+- DEPARTAMENTO DE RECURSOS HUMANOS · [DECRETO 133/2026](https://www.diariomunicipal.com.br/amp/materia/78A2EBA9) · 2026-07-03
+- DEPARTAMENTO DE RECURSOS HUMANOS · [DECRETO 134/2026](https://www.diariomunicipal.com.br/amp/materia/6C36A45D) · 2026-07-03
+- DEPARTAMENTO DE RECURSOS HUMANOS · [DECRETO 135/2026](https://www.diariomunicipal.com.br/amp/materia/30A187BE) · 2026-07-03
+- DEPARTAMENTO DE RECURSOS HUMANOS · [DECRETO 136/2026](https://www.diariomunicipal.com.br/amp/materia/DD0F2074) · 2026-07-03
+- DEPARTAMENTO DE RECURSOS HUMANOS · [DECRETO 137/2026](https://www.diariomunicipal.com.br/amp/materia/1D6A0280) · 2026-07-03
+- GOVERNO MUNICIPAL - GABINETE DO PREFEITO · [EXTRATO DE RESCISÃO DO CONTRATO](https://www.diariomunicipal.com.br/amp/materia/A4540512) · 2026-07-03
+- GOVERNO MUNICIPAL - GABINETE DO PREFEITO · [EXTRATO DE RESCISÃO DO CONTRATO](https://www.diariomunicipal.com.br/amp/materia/9A4C3BEB) · 2026-07-03
+- DEPARTAMENTO MUNICIPAL DE ADMINISTRAÇÃO · [DECRETO Nº 149/2026](https://www.diariomunicipal.com.br/amp/materia/8252DBCD) · 2026-07-03
+- PREFEITURA MUNICIPAL DE IVATUBA · [GABINETE DO PREFEITO](https://www.diariomunicipal.com.br/amp/materia/818655DD) · 2026-07-03
+- GABINETE DO PREFEITO · [EDITAL DE CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/68BFA941) · 2026-07-03
+- GABINETE DO PREFEITO · [DECRETO Nº 321/2026 - NOMEIA E DÁ POSSE A PESSOA](https://www.diariomunicipal.com.br/amp/materia/29B90193) · 2026-07-03
+- GABINETE DO PREFEITO · [EDITAL N º. 229/2026 CONVOCAÇÃO - DISPÕE SOBRE A](https://www.diariomunicipal.com.br/amp/materia/57511AE2) · 2026-07-03
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [COMUNICADO – CHAMADA AUXILIAR ADMINISTRATIVO](https://www.diariomunicipal.com.br/amp/materia/72117DDB) · 2026-07-03
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [termos do Edital nº 03/2024 de 24 de maio de 2024, convocou o](https://www.diariomunicipal.com.br/amp/materia/F06EEC29) · 2026-07-03
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [TERMO DE DESISTÊNCIA - PROCESSO SELETIVO](https://www.diariomunicipal.com.br/amp/materia/5D20EC74) · 2026-07-03
+- SECRETARIA MUNICIPAL DE RECURSOS HUMANOS · [PORTARIA N. º 173/2026– DE 02 DE JULHO DE 2026.](https://www.diariomunicipal.com.br/amp/materia/BA209D2B) · 2026-07-03
+- SECRETARIA MUNICIPAL DE RECURSOS HUMANOS · [PORTARIA N. º 174/2026- DE 02 DE JULHO DE 2026.](https://www.diariomunicipal.com.br/amp/materia/BF1FF79C) · 2026-07-03
+- DEPARTAMENTO DE ADMINISTRAÇÃO · [EDITAL Nº 22 - PROCESSO SELETIVO SIMPLIFICADO Nº](https://www.diariomunicipal.com.br/amp/materia/150147CA) · 2026-07-03
+- DEPARTAMENTO DE ADMINISTRAÇÃO · [PORTARIA Nº 8.956/2026 02/07/2026](https://www.diariomunicipal.com.br/amp/materia/CAC52263) · 2026-07-03
+- GABINETE DO PREFEITO · [EDITAL Nº 08/2026 HOMOLOGAÇÃO DO PROCESSO](https://www.diariomunicipal.com.br/amp/materia/42767DCA) · 2026-07-03
+- ADMINISTRAÇÃO GERAL · [EDITAL Nº 084/2026 (CONVOCAÇÃO)](https://www.diariomunicipal.com.br/amp/materia/B4C96C3D) · 2026-07-03
+- ADMINISTRAÇÃO GERAL · [EDITAL Nº 83/2026 (CONVOCAÇÃO)](https://www.diariomunicipal.com.br/amp/materia/F473AA7C) · 2026-07-03
+- GABINETE DO PREFEITO · [DECRETO Nº 6280, DE 01 DE JULHO DE 2026](https://www.diariomunicipal.com.br/amp/materia/FB1975AE) · 2026-07-03
+- PREFEITURA MUNICIPAL DE TOMAZINA · [EDITAL DE CONVOCAÇÃO Nº 007-2026 - PROCESSO](https://www.diariomunicipal.com.br/amp/materia/8530D615) · 2026-07-03
+- PREFEITURA MUNICIPAL DE AGUDOS DO SUL · [GABINETE DO PODER EXECUTIVO MUNICIPAL](https://www.diariomunicipal.com.br/amp/materia/95972E32) · 2026-07-03
+- DEPARTAMENTO DE GESTÃO DE PESSOAS · [EDITAL Nº 034/2026 DE 02/07/2026 - PSS 001/2026](https://www.diariomunicipal.com.br/amp/materia/2F8C5C16) · 2026-07-03
+- PREFEITURA MUNICIPAL DE DOUTOR ULYSSES · [PROCESSO SELETIVO SIMPLIFICADO 006/2026 EDITAL DE DIVULGAÇÃO DO RESULTADO DOS RECURSOS DA](https://www.diariomunicipal.com.br/amp/materia/5F8AC1C7) · 2026-07-03
+- PREFEITURA MUNICIPAL DE IRATI · [EDITAL Nº 001.2./2026 - 35ª CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/EF3ABCEA) · 2026-07-03
+- GABINETE DO PREFEITO · [PROCESSO SELETIVO SIMPLIFICADO – PSS Nº 001/2026 RESULTADO PROVISÓRIO PROVA DE TÍTULOS](https://www.diariomunicipal.com.br/amp/materia/7D68698A) · 2026-07-03
+- SECRETARIA DE EDUCAÇÃO E CULTURA · [EDITAL 001 PROCESSO SELETIVO SIMPLIFICADO 2026](https://www.diariomunicipal.com.br/amp/materia/D01CE53C) · 2026-07-03
+- PREFEITURA MUNICIPAL DE RIO BRANCO DO SUL · [EDITAL 07/2026 - CLASSIFICAÇÃO DEFINITIVA PROCESSO SELETIVO SIMPLIFICADO - PSS 001/2026](https://www.diariomunicipal.com.br/amp/materia/C04C466E) · 2026-07-03
+- PREFEITURA MUNICIPAL DE SAPOPEMA · [EDITAL Nº 081/2026 PROCESSO SELETIVO SIMPLICADO Nº 02/2026](https://www.diariomunicipal.com.br/amp/materia/C5ECDCDB) · 2026-07-03
+- DEPARTAMENTO DE RH · [EDITAL 35 2026 - CONVOCAÇÃO PROFESSOR EDUCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/A293B2CB) · 2026-07-06
+- PREFEITURA MUNICIPAL DE BALSA NOVA · [EDITAL 06/2026 - PSS – CONDUTOR DE VEÍCULOS DA](https://www.diariomunicipal.com.br/amp/materia/0A5A46D1) · 2026-07-06
+- ADMINISTRAÇÃO · [RETIFICAÇÃO DO CRONOGRAMA DO EDITAL 06/2026 -](https://www.diariomunicipal.com.br/amp/materia/DFBA4BD5) · 2026-07-06
+- RECURSOS HUMANOS · [DECRETO Nº 695/2026](https://www.diariomunicipal.com.br/amp/materia/90086F80) · 2026-07-06
+- RECURSOS HUMANOS · [PROCESSO SELETIVO SIMPLIFICADO – PSS Nº 001/2025](https://www.diariomunicipal.com.br/amp/materia/4B57372F) · 2026-07-06
+- DEPARTAMENTO DE RECURSOS HUMANOS · [PORTARIA Nº 054/2026](https://www.diariomunicipal.com.br/amp/materia/AEF8C295) · 2026-07-06
+- DEPARTAMENTO DE ADMINISTRAÇÃO · [EDITAL Nº 001/2026. PROCESSO SELETIVO SIMPLIFICADO](https://www.diariomunicipal.com.br/amp/materia/BFDA8FE5) · 2026-07-06
+- RH · [EDITAL 098/2026 CONVOCAÇÃO PSS 03/2024](https://www.diariomunicipal.com.br/amp/materia/1AFC00DD) · 2026-07-06
+- PREFEITURA MUNICIPAL DE INÁCIO MARTINS · [DECRETO 138/2026](https://www.diariomunicipal.com.br/amp/materia/456DB276) · 2026-07-06
+- DEPARTAMENTO DE RECURSOS HUMANOS · [DECRETO 139/2026](https://www.diariomunicipal.com.br/amp/materia/0A7C4C5F) · 2026-07-06
+- DEPARTAMENTO DE RECURSOS HUMANOS · [DECRETO 140/2026](https://www.diariomunicipal.com.br/amp/materia/5DF1CF19) · 2026-07-06
+- DEPARTAMENTO DE RECURSOS HUMANOS · [DECRETO 141/2026](https://www.diariomunicipal.com.br/amp/materia/7CA37625) · 2026-07-06
+- DEPARTAMENTO DE RECURSOS HUMANOS · [DECRETO 142/2026](https://www.diariomunicipal.com.br/amp/materia/3B234C7D) · 2026-07-06
+- GOVERNO MUNICIPAL - GABINETE DO PREFEITO · [PORTARIA Nº. 1045/2026](https://www.diariomunicipal.com.br/amp/materia/F3D854AF) · 2026-07-06
+- GOVERNO MUNICIPAL - GABINETE DO PREFEITO · [PORTARIA Nº. 1049/2026](https://www.diariomunicipal.com.br/amp/materia/D305ABB1) · 2026-07-06
+- GABINETE DO PREFEITO · [DECRETO Nº 477/2026](https://www.diariomunicipal.com.br/amp/materia/415AC5DC) · 2026-07-06
+- GABINETE DO PREFEITO · [DECRETO Nº 478/2026](https://www.diariomunicipal.com.br/amp/materia/AF98E0BA) · 2026-07-06
+- GABINETE DO PREFEITO · [DECRETO Nº 479/2026](https://www.diariomunicipal.com.br/amp/materia/1673CF12) · 2026-07-06
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [EDITAL DE CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/2A9439A5) · 2026-07-06
+- GOVERNO MUNICIPAL · [EDITAL 02.02/2026 – REITIFCAÇÃO DO EDITAL 02.01/2026](https://www.diariomunicipal.com.br/amp/materia/C7A2AFE1) · 2026-07-06
+- PREFEITURA MUNICIPAL DE LOBATO · [DECRETO Nº. 127/2026 DE 03 DE JULHO DE 2026, FICA](https://www.diariomunicipal.com.br/amp/materia/7B286466) · 2026-07-06
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [EDITAL DE CONVOCAÇÃO Nº. 012/2026 DE 03 DE JULHO](https://www.diariomunicipal.com.br/amp/materia/41B67BFE) · 2026-07-06
+- SECRETARIA DE ADMINISTRAÇÃO - SETOR DE RECURSOS HUMANOS · [DECRETO N.º 291/2026.](https://www.diariomunicipal.com.br/amp/materia/BD348993) · 2026-07-06
+- SECRETARIA DE ADMINISTRAÇÃO - SETOR DE RECURSOS HUMANOS · [DECRETO N.º 292/2026.](https://www.diariomunicipal.com.br/amp/materia/27E1B808) · 2026-07-06
+- SECRETARIA DE ADMINISTRAÇÃO - SETOR DE RECURSOS HUMANOS · [DECRETO N.º 294/2026](https://www.diariomunicipal.com.br/amp/materia/46C8380B) · 2026-07-06
+- SECRETARIA DE ADMINISTRAÇÃO - SETOR DE RECURSOS HUMANOS · [EXTRATO DE CONTRATO POR PRAZO DETERMINADO](https://www.diariomunicipal.com.br/amp/materia/D31747E1) · 2026-07-06
+- SECRETARIA DE ADMINISTRAÇÃO - SETOR DE RECURSOS HUMANOS · [EXTRATO DE CONTRATO POR PRAZO DETERMINADO](https://www.diariomunicipal.com.br/amp/materia/C7FD6D09) · 2026-07-06
+- SECRETARIA DE ADMINISTRAÇÃO - SETOR DE RECURSOS HUMANOS · [EXTRATO DE CONTRATO POR PRAZO DETERMINADO](https://www.diariomunicipal.com.br/amp/materia/F8E88923) · 2026-07-06
+- GABINETE DO PREFEITO · [DECRETO Nº 322/2026 - NOMEIA E DÁ POSSE A PESSOAS](https://www.diariomunicipal.com.br/amp/materia/8C410F7C) · 2026-07-06
+- GABINETE · [EDITAL 103-2026 CONVOCAÇÃO ATENDENTE INFANTIL](https://www.diariomunicipal.com.br/amp/materia/21E5F5D4) · 2026-07-06
+- PREFEITURA MUNICIPAL DE PAIÇANDU · [PORTARIA Nº 420/2026](https://www.diariomunicipal.com.br/amp/materia/CAC1FDAB) · 2026-07-06
+- PREFEITURA MUNICIPAL DE PAIÇANDU · [PORTARIA Nº 421/2026](https://www.diariomunicipal.com.br/amp/materia/8A35ED5C) · 2026-07-06
+- PREFEITURA MUNICIPAL DE PAIÇANDU · [PORTARIA Nº 422/2026](https://www.diariomunicipal.com.br/amp/materia/0B7D6133) · 2026-07-06
+- PREFEITURA MUNICIPAL DE PAIÇANDU · [PORTARIA Nº 423/2026](https://www.diariomunicipal.com.br/amp/materia/C4D9AE48) · 2026-07-06
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [COMUNICADO – CHAMADA CUIDADOR DE](https://www.diariomunicipal.com.br/amp/materia/7CF296F8) · 2026-07-06
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [COMUNICADO – CHAMADA PROFESSOR 20H - PROCESSO](https://www.diariomunicipal.com.br/amp/materia/2F269AE9) · 2026-07-06
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [TERMO DE DESISTÊNCIA - PROCESSO SELETIVO](https://www.diariomunicipal.com.br/amp/materia/C6667149) · 2026-07-06
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO DE RESCISÃO DO CONTRATO](https://www.diariomunicipal.com.br/amp/materia/F1D39132) · 2026-07-06
+- SECRETARIA MUNICIPAL DE RECURSOS HUMANOS · [EDITAL DE CONVOCAÇÃO Nº 01/2026](https://www.diariomunicipal.com.br/amp/materia/113F7474) · 2026-07-06
+- SECRETARIA MUNICIPAL DE RECURSOS HUMANOS · [EDITAL DE CONVOCAÇÃO Nº 088/2026](https://www.diariomunicipal.com.br/amp/materia/DD72D86F) · 2026-07-06
+- DEPARTAMENTO DE ADMINISTRAÇÃO · [PORTARIA Nº 8.960/2026 03/07/2026](https://www.diariomunicipal.com.br/amp/materia/6E803246) · 2026-07-06
+- DEPARTAMENTO DE ADMINISTRAÇÃO · [PROCESSO SELETIVO SIMPLIFICADO Nº 01/2025 EDITAL](https://www.diariomunicipal.com.br/amp/materia/14E5EF56) · 2026-07-06
+- DEPARTAMENTO DE RECURSOS HUMANOS · [PROCESSO SELETIVO SIMPLIFICADO Nº 002/2025 EDITAL](https://www.diariomunicipal.com.br/amp/materia/0D71A050) · 2026-07-06
+- ADMINISTRAÇÃO GERAL · [EDITAL Nº 85/2026 PROCESSO SELETIVO SIMPLICADO Nº](https://www.diariomunicipal.com.br/amp/materia/77532EE5) · 2026-07-06
+- PREFEITURA MUNICIPAL DE SENGÉS · [EDITAL DE CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/B76ECE49) · 2026-07-06
+- PREFEITURA MUNICIPAL DE TERRA RICA · [EDITAL DE CONVOCAÇÃO Nº 040/2026](https://www.diariomunicipal.com.br/amp/materia/5125057C) · 2026-07-06
+- PREFEITURA MUNICIPAL DE AGUDOS DO SUL · [EDITAL Nº 003/2026 REPUBLICADO POR INCORREÇÃO DIVULGAÇÃO PRELIMINAR DAS INSCRIÇÕES PROCESSO](https://www.diariomunicipal.com.br/amp/materia/54939EB4) · 2026-07-06
+- PREFEITURA MUNICIPAL DE IRATI · [EDITAL Nº 001.2./2026 - 36ª CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/019B74DE) · 2026-07-06
+- PREFEITURA MUNICIPAL DE MARILENA · [EDITAL N° 001/2026](https://www.diariomunicipal.com.br/amp/materia/2B8C5E1B) · 2026-07-06
+- PREFEITURA MUNICIPAL DE RIO NEGRO · [EDITAL Nº 085/2026](https://www.diariomunicipal.com.br/amp/materia/4BCBA1CC) · 2026-07-06
+- PREFEITURA MUNICIPAL DE SÃO JERÔNIMO DA SERRA · [EDITAL DE CHAMAMENTO PÚBLICO Nº 001.2026](https://www.diariomunicipal.com.br/amp/materia/2BB89A4F) · 2026-07-06
+- GABINETE DO PREFEITO · [DECRETO 210/2026 - HOMOLOGA PSS AUXILIAR DE](https://www.diariomunicipal.com.br/amp/materia/D17E3DD8) · 2026-07-07
+- GABINETE DO PREFEITO · [DECRETO 211/2026 - HOMOLOGA PSS AUXILIAR DE](https://www.diariomunicipal.com.br/amp/materia/964C535C) · 2026-07-07
+- DEPARTAMENTO DE RH · [EXTRATO CONTRATO 15 2026 - PROFESSOR PSS](https://www.diariomunicipal.com.br/amp/materia/B35217B5) · 2026-07-07
+- DEPARTAMENTO DE RH · [PORTARIA 185 2026](https://www.diariomunicipal.com.br/amp/materia/B3C0815F) · 2026-07-07
+- SECRETARIA MUNICIPAL DE RECURSOS HUMANOS · [EXTRATO DE CONTRATO DE PROCESSO SELETIVO](https://www.diariomunicipal.com.br/amp/materia/AF3AE553) · 2026-07-07
+- SECRETARIA MUNICIPAL DE RECURSOS HUMANOS · [EXTRATO DE CONTRATO DE PROCESSO SELETIVO](https://www.diariomunicipal.com.br/amp/materia/ABA3E2C2) · 2026-07-07
+- SECRETARIA MUNICIPAL DE RECURSOS HUMANOS · [EXTRATO DE CONTRATO DE PROCESSO SELETIVO](https://www.diariomunicipal.com.br/amp/materia/C250972F) · 2026-07-07
+- SECRETARIA MUNICIPAL DE RECURSOS HUMANOS · [EXTRATO DE CONTRATO DE PROCESSO SELETIVO](https://www.diariomunicipal.com.br/amp/materia/6FC0FBB0) · 2026-07-07
+- SECRETARIA MUNICIPAL DE RECURSOS HUMANOS · [EXTRATO DE CONTRATO DE PROCESSO SELETIVO](https://www.diariomunicipal.com.br/amp/materia/2D054F3A) · 2026-07-07
+- SECRETARIA MUNICIPAL DE RECURSOS HUMANOS · [EXTRATO DE CONTRATO DE PROCESSO SELETIVO](https://www.diariomunicipal.com.br/amp/materia/D5A6F336) · 2026-07-07
+- SECRETARIA MUNICIPAL DE RECURSOS HUMANOS · [EXTRATO DE RESCISÃO DE CONTRATO Nº 15/2026 -](https://www.diariomunicipal.com.br/amp/materia/3FBB3B4C) · 2026-07-07
+- SECRETARIA MUNICIPAL DE RECURSOS HUMANOS · [EXTRATO DE RESCISÃO DE CONTRATO Nº 27/2026 -](https://www.diariomunicipal.com.br/amp/materia/5DBF5A76) · 2026-07-07
+- SECRETARIA MUNICIPAL DE RECURSOS HUMANOS · [EXTRATO DE RESCISÃO DE CONTRATO Nº 33/2026 -](https://www.diariomunicipal.com.br/amp/materia/54EF5027) · 2026-07-07
+- ADMINISTRAÇÃO · [Edital nº. 007/2026, que estabelece instruções destinadas à realização](https://www.diariomunicipal.com.br/amp/materia/CBD22F4E) · 2026-07-07
+- ADMINISTRAÇÃO · [Edital nº. 08/2026, que estabelece instruções destinadas à realização](https://www.diariomunicipal.com.br/amp/materia/16628D71) · 2026-07-07
+- RECURSOS HUMANOS · [PROCESSO SELETIVO SIMPLIFICADO – PSS Nº 001/2025](https://www.diariomunicipal.com.br/amp/materia/31F76AD9) · 2026-07-07
+- PREFEITURA MUNICIPAL DE CORONEL VIVIDA · [EDITAL Nº 035/2026 DE 06/07/2026 - PSS 001/2026](https://www.diariomunicipal.com.br/amp/materia/7028389E) · 2026-07-07
+- DEPARTAMENTO DE GESTÃO DE PESSOAS · [EDITAL Nº 036/2026 DE 06/07/2026 - PSS 001/2026](https://www.diariomunicipal.com.br/amp/materia/9CE85A1D) · 2026-07-07
+- DEPARTAMENTO DE GESTÃO DE PESSOAS · [EXTRATO DE RESCISÃO DE CONTRATO DE SERVIÇO](https://www.diariomunicipal.com.br/amp/materia/622B87D3) · 2026-07-07
+- DEPARTAMENTO DE GESTÃO DE PESSOAS · [LEI 3641/2026](https://www.diariomunicipal.com.br/amp/materia/3379260A) · 2026-07-07
+- GABINETE DO PREFEITO · [LEI MUN. 3641 CONTRATAÇÃO TEMPORÁRIA DE](https://www.diariomunicipal.com.br/amp/materia/575D4172) · 2026-07-07
+- PREFEITURA MUNICIPAL DE FERNANDES PINHEIRO · [EDITAL N° 30/2026 -PROCESSO SELETIVO SIMPLIFICADO](https://www.diariomunicipal.com.br/amp/materia/9D1AA1CA) · 2026-07-07
+- RECURSOS HUMANOS · [EDITAL Nº 99/2026 CONVOCAÇÃO PSS 03.2024](https://www.diariomunicipal.com.br/amp/materia/988C47BC) · 2026-07-07
+- DEPARTAMENTO DE RECURSOS HUMANOS · [DECRETO 150/2026](https://www.diariomunicipal.com.br/amp/materia/D88952AB) · 2026-07-07
+- DEPARTAMENTO DE RECURSOS HUMANOS · [DECRETO 151/2026](https://www.diariomunicipal.com.br/amp/materia/C4B8D16F) · 2026-07-07
+- DEPARTAMENTO DE RECURSOS HUMANOS · [DECRETO 152/2026](https://www.diariomunicipal.com.br/amp/materia/051D80AA) · 2026-07-07
+- GOVERNO MUNICIPAL - GABINETE DO PREFEITO · [PORTARIA Nº. 1065/2026](https://www.diariomunicipal.com.br/amp/materia/89B8D865) · 2026-07-07
+- GABINETE DO PREFEITO · [PROCESSO SELETIVO SIMPLIFICADO Nº 001/2025 -](https://www.diariomunicipal.com.br/amp/materia/FD04F37E) · 2026-07-07
+- DEPARTAMENTO DE ADMINISTRAÇÃO E PLANEJAMENTO · [EDITAL 003/2026 HOMOLOGAÇÃO DA RELAÇÃO DE](https://www.diariomunicipal.com.br/amp/materia/39BD1AFF) · 2026-07-07
+- PREFEITURA MUNICIPAL DE NOVA PRATA DO IGUAÇU · [PORTARIA Nº 6330/2026](https://www.diariomunicipal.com.br/amp/materia/A2D52A6E) · 2026-07-07
+- SECRETARIA DE ADMINISTRAÇÃO · [PORTARIA Nº 6333/2026](https://www.diariomunicipal.com.br/amp/materia/3BE38808) · 2026-07-07
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO DE RESCISÃO DO CONTRATO](https://www.diariomunicipal.com.br/amp/materia/CD28477B) · 2026-07-07
+- SECRETARIA MUNICIPAL DE RECURSOS HUMANOS · [PORTARIA N. º 176/2026– DE 06 DE JULHO DE 2026.](https://www.diariomunicipal.com.br/amp/materia/55DA7E1E) · 2026-07-07
+- SECRETARIA MUNICIPAL DE RECURSOS HUMANOS · [PORTARIA N. º 177/2026– DE 06 DE JULHO DE 2026.](https://www.diariomunicipal.com.br/amp/materia/423CEE37) · 2026-07-07
+- SECRETARIA MUNICIPAL DE RECURSOS HUMANOS · [PORTARIA N. º 178/2026– DE 02 DE JULHO DE 2026.](https://www.diariomunicipal.com.br/amp/materia/6203BAB4) · 2026-07-07
+- SECRETARIA MUNICIPAL DE RECURSOS HUMANOS · [PORTARIA Nº 179/2026 – DE 06 DE JULHO DE 2026.](https://www.diariomunicipal.com.br/amp/materia/8941FDF4) · 2026-07-07
+- ADMINISTRATIVO / RECURSOS HUMANOS · [EDITAL DE CONVOCAÇÃO 41-2026 EDUCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/D1A00C4C) · 2026-07-07
+- DEPARTAMENTO DE ADMINISTRAÇÃO · [PORTARIA Nº 8.963/2026 06/07/2026](https://www.diariomunicipal.com.br/amp/materia/8189960C) · 2026-07-07
+- GABINETE DO PREFEITO · [EDITAL N º 001/2026 – 01ª CONVOCAÇÃO –PSS Nº 001/2026–](https://www.diariomunicipal.com.br/amp/materia/6249F01A) · 2026-07-07
+- PREFEITURA MUNICIPAL DE RIO NEGRO · [EDITAL N.º 087/2026](https://www.diariomunicipal.com.br/amp/materia/BC8CE2E3) · 2026-07-07
+- PREFEITURA MUNICIPAL DE TERRA RICA · [EDITAL DE CONVOCAÇÃO Nº 040/2026](https://www.diariomunicipal.com.br/amp/materia/D53C20E5) · 2026-07-07
+- PREFEITURA MUNICIPAL DE TERRA RICA · [EDITAL DE CONVOCAÇÃO Nº 041/2026](https://www.diariomunicipal.com.br/amp/materia/5EBFB062) · 2026-07-07
+- GABINETE DO PREFEITO · [PROCESSO SELETIVO SIMPLIFICADO Nº 02/2026 – EDITAL](https://www.diariomunicipal.com.br/amp/materia/0A561CDD) · 2026-07-07
+- PREFEITURA MUNICIPAL DE TOMAZINA · [EDITAL DE CONVOCAÇÃO Nº 007-2026 - PROCESSO](https://www.diariomunicipal.com.br/amp/materia/146C700B) · 2026-07-07
+- PODER EXECUTIVO · [PORTARIA N.º 314/2026](https://www.diariomunicipal.com.br/amp/materia/1022BF06) · 2026-07-07
+- SECRETARIA DE ADMINISTRAÇÃO · [EDITAL DE CONVOCAÇÃO 134-2026](https://www.diariomunicipal.com.br/amp/materia/12F7903C) · 2026-07-07
+- PREFEITURA MUNICIPAL DE AGUDOS DO SUL · [EXTRATO 075/2026 DO TERMO ADITIVO AO CONTRATO DE TRABALHO REGIME ESPECIAL](https://www.diariomunicipal.com.br/amp/materia/35BE6F25) · 2026-07-07
+- GABINETE DO PODER EXECUTIVO MUNICIPAL · [EXTRATO Nº 074/2026 DE CONTRATO DE TRABALHO POR PRAZO DETERMINADO EM REGIME ESPECIAL](https://www.diariomunicipal.com.br/amp/materia/1B12E2DF) · 2026-07-07
+- GABINETE DO PODER EXECUTIVO MUNICIPAL · [EXTRATO Nº 076/2026 DE CONTRATO DE TRABALHO POR PRAZO DETERMINADO EM REGIME ESPECIAL](https://www.diariomunicipal.com.br/amp/materia/373A3537) · 2026-07-07
+- ADMINISTRAÇÃO · [EDITAL DE CONVOCAÇÃO Nº 021/2026 - PROCESSO SELETIVO SIMPLIFICADO Nº 010/2024 - TRABALHADOR EM EDUCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/9D0A1832) · 2026-07-07
+- ADMINISTRAÇÃO · [PROCESSO SELETIVO SIMPLIFICADO – PSS, para contratações temporárias para exercer a função de TÉCNICO EM ENFERMAGEM ,](https://www.diariomunicipal.com.br/amp/materia/EAD69B1C) · 2026-07-07
+- PREFEITURA MUNICIPAL DE DOUTOR ULYSSES · [EDITAL Nº 001/2026. PROCESSO SELETIVO SIMPLIFICADO PARA CONTRATAÇÃO DE ESTAGIÁRIOS EDITAL 005/2026](https://www.diariomunicipal.com.br/amp/materia/6CCDCF9E) · 2026-07-07
+- DEPARTAMENTO DE ADMINISTRAÇÃO · [PROCESSO SELETIVO SIMPLIFICADO N° 004/2026 EDITAL DE DIVULGAÇÃO DAS INSCRIÇÕES](https://www.diariomunicipal.com.br/amp/materia/59AB9BE6) · 2026-07-07
+- PREFEITURA MUNICIPAL DE IRATI · [EDITAL Nº 001.8/2026 – 4ª CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/6EA1CF74) · 2026-07-07
+- GABINETE DO PREFEITO · [EDITAL Nº 002.26/2026 – 22ª CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/67773196) · 2026-07-07
+- PREFEITURA MUNICIPAL DE MORRETES · [EDITAL DE CONVOCAÇÃO Nº 09, DE 06 DE JULHO DE 2026 - PSS SAÚDE Nº 01/2025](https://www.diariomunicipal.com.br/amp/materia/2F206E4B) · 2026-07-07
+- DEPARTAMENTO DE PESSOAL · [EDITAL DE PRORROGAÇÃO Nº 01/2026 PROCESSO](https://www.diariomunicipal.com.br/amp/materia/9C474D1A) · 2026-07-08
+- PREFEITURA MUNICIPAL DE BALSA NOVA · [DECRETO DE CANCELAMENTO N°.138/2026](https://www.diariomunicipal.com.br/amp/materia/72DDC9E3) · 2026-07-08
+- RECURSOS HUMANOS · [TERMO ADITIVO DE CONTRATO](https://www.diariomunicipal.com.br/amp/materia/CF95E0C6) · 2026-07-08
+- RECURSOS HUMANOS · [PROCESSO SELETIVO SIMPLIFICADO – PSS Nº 001/2025](https://www.diariomunicipal.com.br/amp/materia/340F609C) · 2026-07-08
+- DEPARTAMENTO DE GESTÃO DE PESSOAS · [EXTRATO DE ADITIVO DE CONTRATOS DE SERVIÇO](https://www.diariomunicipal.com.br/amp/materia/623BE3F1) · 2026-07-08
+- DEPARTAMENTO DE GESTÃO DE PESSOAS · [PORTARIA 047/2026](https://www.diariomunicipal.com.br/amp/materia/003FEFE1) · 2026-07-08
+- SECRETÁRIA DE ADMINISTRAÇÃO E FINANÇAS · [DECRETO Nº 23676/2026](https://www.diariomunicipal.com.br/amp/materia/AFF4EB76) · 2026-07-08
+- SECRETARIA DE ADMINISTRAÇÃO E PLANEJAMENTO · [EDITAL Nº 051/2026](https://www.diariomunicipal.com.br/amp/materia/DE431A88) · 2026-07-08
+- PREFEITURA MUNICIPAL DE ITAPEJARA D'OESTE · [DECRETO Nº 153/2026](https://www.diariomunicipal.com.br/amp/materia/8F5A61EB) · 2026-07-08
+- SECRETARIA DE ADMINISTRAÇÃO · [EDITAL DE CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/1229F52C) · 2026-07-08
+- GABINETE DO PREFEITO · [EDITAL N º. 230/2026 - DISPÕE SOBRE A CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/20A64425) · 2026-07-08
+- GABINETE DO PREFEITO · [EDITAL N º. 231/2026 - DISPÕE SOBRE A CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/DE18C74A) · 2026-07-08
+- GABINETE DO PREFEITO · [EDITAL N º. 232/2026 - DISPÕE SOBRE A CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/63F0E710) · 2026-07-08
+- GABINETE DO PREFEITO · [EDITAL N º. 233/2026 - DISPÕE SOBRE A CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/ADA44BA7) · 2026-07-08
+- DEPARTAMENTO DE ADMINISTRAÇÃO E PLANEJAMENTO · [EDITAL Nº 032/2026](https://www.diariomunicipal.com.br/amp/materia/E604B9D5) · 2026-07-08
+- FUNDAÇÃO DE ATENÇÃO A SAÚDE DE MORRETES · [EDITAL Nº 08, DE 07 DE JULHO DE 2026. EDITAL DE](https://www.diariomunicipal.com.br/amp/materia/B014077B) · 2026-07-08
+- FUNDAÇÃO DE ATENÇÃO A SAÚDE DE MORRETES · [EXTRATO DE RESCISÃO DE CONTRATO DE TRABALHO](https://www.diariomunicipal.com.br/amp/materia/4353AEDC) · 2026-07-08
+- FUNDAÇÃO DE ATENÇÃO A SAÚDE DE MORRETES · [PORTARIA N° 20 DE 07 DE JULHO DE 2026 DISPÕE SOBE O](https://www.diariomunicipal.com.br/amp/materia/E04937B4) · 2026-07-08
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [COMUNICADO – CHAMADA AUXILIAR ADMINISTRATIVO](https://www.diariomunicipal.com.br/amp/materia/4CE702F5) · 2026-07-08
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [COMUNICADO – CHAMADA CUIDADOR DE](https://www.diariomunicipal.com.br/amp/materia/E07ED718) · 2026-07-08
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [TERMO DE DESISTÊNCIA - PROCESSO SELETIVO](https://www.diariomunicipal.com.br/amp/materia/94CCF40D) · 2026-07-08
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [TERMO DE DESISTÊNCIA - PROCESSO SELETIVO](https://www.diariomunicipal.com.br/amp/materia/A63C3A20) · 2026-07-08
+- DEPARTAMENTO DE RECURSOS HUMANOS · [EXTRATO DE CONTRATO DE PRESTAÇÃO DE SERVIÇOS](https://www.diariomunicipal.com.br/amp/materia/CD866E83) · 2026-07-08
+- ADMINISTRAÇÃO GERAL · [EDITAL N°023/2026 HOMOLOGAÇÃO A CLASSIFICAÇÃO](https://www.diariomunicipal.com.br/amp/materia/492194DA) · 2026-07-08
+- DEPARTAMENTO DE ADMINISTRAÇÃO · [PORTARIA Nº 8.964/2026 07/07/2026](https://www.diariomunicipal.com.br/amp/materia/EB91FC86) · 2026-07-08
+- PREFEITURA MUNICIPAL DE RIO BRANCO DO IVAÍ · [PROCESSO SELETIVO SIMPLIFICADO Nº 001/2026 -](https://www.diariomunicipal.com.br/amp/materia/520CAB5D) · 2026-07-08
+- GABINETE DO PREFEITO · [EDITAL N º 001/2026 – 02ª CONVOCAÇÃO –PSS Nº 001/2026–](https://www.diariomunicipal.com.br/amp/materia/66443627) · 2026-07-08
+- ADMINISTRAÇÃO GERAL · [DECRETO Nº 3548/2026](https://www.diariomunicipal.com.br/amp/materia/A8392FC5) · 2026-07-08
+- ADMINISTRAÇÃO GERAL · [DECRETO Nº 3549/2026](https://www.diariomunicipal.com.br/amp/materia/078D485E) · 2026-07-08
+- ADMINISTRAÇÃO GERAL · [DECRETO Nº 3550/2026](https://www.diariomunicipal.com.br/amp/materia/47EEA59F) · 2026-07-08
+- DIVISÃO DE RECURSOS HUMANOS · [EDITAL 072/2026](https://www.diariomunicipal.com.br/amp/materia/34A64992) · 2026-07-08
+- DIVISÃO DE RECURSOS HUMANOS · [EDITAL 073/2026](https://www.diariomunicipal.com.br/amp/materia/767CD6EC) · 2026-07-08
+- DIVISÃO DE RECURSOS HUMANOS · [EDITAL 074/2026](https://www.diariomunicipal.com.br/amp/materia/F4661F48) · 2026-07-08
+- PREFEITURA MUNICIPAL DE SÃO SEBASTIÃO DA AMOREIRA · [DECRETO Nº 175/2026](https://www.diariomunicipal.com.br/amp/materia/AB6DDAFD) · 2026-07-08
+- DIVISÃO DE PESSOAL · [DECRETO Nº 178/2026](https://www.diariomunicipal.com.br/amp/materia/F7BC6EDB) · 2026-07-08
+- ADMINISTRAÇÃO GERAL · [EDITAL Nº 86/2026 PROCESSO SELETIVO SIMPLICADO Nº](https://www.diariomunicipal.com.br/amp/materia/51ECF5EE) · 2026-07-08
+- ADMINISTRAÇÃO GERAL · [LEI N.º 1689/2026](https://www.diariomunicipal.com.br/amp/materia/E1F5CC5B) · 2026-07-08
+- GABINETE DO PREFEITO · [PROCESSO SELETIVO SIMPLIFICADO Nº 01/202 EDITAL](https://www.diariomunicipal.com.br/amp/materia/0F9685D0) · 2026-07-08
+- MUNICÍPIO DE TRÊS BARRAS DO PARANÁ · [DECRETO Nº 7199/2026](https://www.diariomunicipal.com.br/amp/materia/EFA3981D) · 2026-07-08
+- MUNICÍPIO DE TRÊS BARRAS DO PARANÁ · [PORTARIA Nº1318/2026](https://www.diariomunicipal.com.br/amp/materia/813EA492) · 2026-07-08
+- DEPARTAMENTO DE ADMINISTRAÇÃO · [EDITAL Nº 07-C, DE 07 DE JULHO DE 2026](https://www.diariomunicipal.com.br/amp/materia/DDA40DB7) · 2026-07-08
+- PREFEITURA MUNICIPAL DE MORRETES · [EXTRATO DE CONTRATOS PROCESSO SELETIVO SIMPLIFICADO – PSS Nº 001/2025](https://www.diariomunicipal.com.br/amp/materia/F06415EC) · 2026-07-08
+- PREFEITURA MUNICIPAL DE PATO BRANCO · [EXTRATO DE CONTRATO DE PRESTAÇÃO DE SERVIÇOS PROCESSO SELETIVO SIMPLIFICADO – ADMISSÕES MAIO/2026](https://www.diariomunicipal.com.br/amp/materia/5BB0C795) · 2026-07-08
+- PREFEITURA MUNICIPAL DE REALEZA · [PROCESSO SELETIVO SIMPLIFICADO Nº 04/2026 EDITAL Nº 02 – DIVULGAÇÃO DOS INSCRITOS](https://www.diariomunicipal.com.br/amp/materia/E4A0C229) · 2026-07-08
+- PREFEITURA MUNICIPAL DE SANTO ANTÔNIO DO PARAÍSO · [DECRETO Nº 3551/2026](https://www.diariomunicipal.com.br/amp/materia/B0F2BBA8) · 2026-07-08
+- ADMINISTRAÇÃO GERAL · [DECRETO Nº 3552/2026](https://www.diariomunicipal.com.br/amp/materia/5AFF0DE1) · 2026-07-08
+- ADMINISTRAÇÃO GERAL · [DECRETO Nº 3553/2026](https://www.diariomunicipal.com.br/amp/materia/D3470889) · 2026-07-08
+- ADMINISTRAÇÃO GERAL · [DECRETO Nº 3554/2026](https://www.diariomunicipal.com.br/amp/materia/A03AD854) · 2026-07-08
+- DEPARTAMENTO DE RECURSOS HUMANOS · [LEI N.º 1.140/2026](https://www.diariomunicipal.com.br/amp/materia/86E4C770) · 2026-07-09
+- GABINETE DA PREFEITA · [EDITAL DE CONVOCAÇÃO N. 012/2026 PSS - PROFESSOR](https://www.diariomunicipal.com.br/amp/materia/5AFB1EAF) · 2026-07-09
+- ADMINISTRAÇÃO · [EDITAL DE CONVOCAÇÃO Nº 001/2026 - PROCESSO](https://www.diariomunicipal.com.br/amp/materia/A3AAA868) · 2026-07-09
+- ADMINISTRAÇÃO · [EDITAL DE CONVOCAÇÃO Nº 022/2026 - PROCESSO](https://www.diariomunicipal.com.br/amp/materia/31CF11AA) · 2026-07-09
+- ADMINISTRAÇÃO · [PORTARIA Nº. 489/2026](https://www.diariomunicipal.com.br/amp/materia/6DC037A1) · 2026-07-09
+- PREFEITURA MUNICIPAL DE BOCAIÚVA DO SUL · [DECRETO Nº 707/2026](https://www.diariomunicipal.com.br/amp/materia/889AC567) · 2026-07-09
+- RECURSOS HUMANOS · [DECRETO Nº 709/2026](https://www.diariomunicipal.com.br/amp/materia/C2820661) · 2026-07-09
+- RECURSOS HUMANOS · [EXTRATO DE CONTRATO PSS Nº 137/2026](https://www.diariomunicipal.com.br/amp/materia/61052AFC) · 2026-07-09
+- SECRETARIA MUNICIPAL DE GOVERNO · [EDITAL DE CONVOCAÇÃO N.º 027/2026 – PROCESSO](https://www.diariomunicipal.com.br/amp/materia/09BBBFE4) · 2026-07-09
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DE CONTRATO POR PRAZO DETERMINADO](https://www.diariomunicipal.com.br/amp/materia/5966E879) · 2026-07-09
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DE CONTRATO POR PRAZO DETERMINADO](https://www.diariomunicipal.com.br/amp/materia/84F9AFE9) · 2026-07-09
+- PREFEITURA MUNICIPAL DE CORONEL VIVIDA · [EDITAL Nº 037/2026 DE 08/07/2026 - PSS 001/2026](https://www.diariomunicipal.com.br/amp/materia/965EC8E4) · 2026-07-09
+- PREFEITURA MUNICIPAL DE DOUTOR ULYSSES · [DECRETO Nº0216/2026 NOMEAR, O SENHOR WILIAN](https://www.diariomunicipal.com.br/amp/materia/6C66615F) · 2026-07-09
+- DEPARTAMENTO DE ADMINISTRAÇÃO · [DECRETO Nº0218/2026 NOMEAR, A SENHORA RAFAELA](https://www.diariomunicipal.com.br/amp/materia/A376A110) · 2026-07-09
+- DEPARTAMENTO DE ADMINISTRAÇÃO · [PROCESSO SELETIVO SIMPLIFICADO - PSS N°001/2025](https://www.diariomunicipal.com.br/amp/materia/33E255A9) · 2026-07-09
+- MUNICÍPIO DE FERNANDES PINHEIRO · [DECRETO Nº. 183/2026 SÚMULA: ADMISSÃO DE](https://www.diariomunicipal.com.br/amp/materia/9A058DB5) · 2026-07-09
+- CONSAMU · [PROCESSO SELETIVO SIMPLIFICADO Nº 001/2026 PARA](https://www.diariomunicipal.com.br/amp/materia/9A379EAE) · 2026-07-09
+- CONSAMU · [PROCESSO SELETIVO SIMPLIFICADO Nº 002/2026 PARA](https://www.diariomunicipal.com.br/amp/materia/C4C5629B) · 2026-07-09
+- PREFEITURA MUNICIPAL DE HONÓRIO SERPA · [EDITAL Nº 06-C, DE 08 DE JULHO DE 2026.](https://www.diariomunicipal.com.br/amp/materia/19536E05) · 2026-07-09
+- PREFEITURA MUNICIPAL DE INÁCIO MARTINS · [Processo Seletivo Simplificado Edital nº 03/2025.](https://www.diariomunicipal.com.br/amp/materia/0E01D623) · 2026-07-09
+- GABINETE DO PREFEITO · [DECRETO Nº 494/2026](https://www.diariomunicipal.com.br/amp/materia/AFC9896C) · 2026-07-09
+- GABINETE DO PREFEITO · [DECRETO Nº 495/2026](https://www.diariomunicipal.com.br/amp/materia/2AF4504F) · 2026-07-09
+- PREFEITURA MUNICIPAL DE ITAPERUÇU · [EDITAL COMPLEMENTAR N° 23 – PROCESSO SELETIVO](https://www.diariomunicipal.com.br/amp/materia/6B9D82D9) · 2026-07-09
+- GABINETE DO PREFEITO · [DECRETO Nº 332/2026 - NOMEIA E DÁ POSSE A PESSOAS](https://www.diariomunicipal.com.br/amp/materia/DC7F9E0F) · 2026-07-09
+- GABINETE DO PREFEITO · [EDITAL N º. 234/2026 - HOMOLOGAÇÃO PRELIMINAR DAS](https://www.diariomunicipal.com.br/amp/materia/878A2A0B) · 2026-07-09
+- RECURSOS HUMANOS · [PORTARIA Nº 012/2026](https://www.diariomunicipal.com.br/amp/materia/C77F7CEA) · 2026-07-09
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [COMUNICADO – CHAMADA CUIDADOR DE](https://www.diariomunicipal.com.br/amp/materia/064DA102) · 2026-07-09
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [COMUNICADO – CHAMADA PROFESSOR 20H - PROCESSO](https://www.diariomunicipal.com.br/amp/materia/37FE2B83) · 2026-07-09
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [termos do Edital nº 01/2026 de 05 de janeiro de 2026, convocou o](https://www.diariomunicipal.com.br/amp/materia/C2190B9B) · 2026-07-09
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [TERMO DE DESISTÊNCIA - PROCESSO SELETIVO](https://www.diariomunicipal.com.br/amp/materia/371A96CC) · 2026-07-09
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO DE RESCISÃO DO CONTRATO](https://www.diariomunicipal.com.br/amp/materia/BDEEBF59) · 2026-07-09
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [PORTARIA MUNICIPAL Nº 1247/2026](https://www.diariomunicipal.com.br/amp/materia/B7B4D8A6) · 2026-07-09
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [PORTARIA MUNICIPAL Nº 1248/2026](https://www.diariomunicipal.com.br/amp/materia/FFE6F4CC) · 2026-07-09
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [PORTARIA MUNICIPAL Nº 1249/2026](https://www.diariomunicipal.com.br/amp/materia/4E967E3E) · 2026-07-09
+- SECRETARIA MUNICIPAL DE RECURSOS HUMANOS · [PORTARIA N. º 181/2026– DE 08 DE JULHO DE 2026.](https://www.diariomunicipal.com.br/amp/materia/76C9B5E6) · 2026-07-09
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [PORTARIA N.º 033/2026](https://www.diariomunicipal.com.br/amp/materia/08427DA5) · 2026-07-09
+- EXECUTIVO MUNICIPAL · [PROCESSO SELETIVO SIMPLIFICADO Nº 002/2026 EDITAL](https://www.diariomunicipal.com.br/amp/materia/F6395EAB) · 2026-07-09
+- EXECUTIVO MUNICIPAL · [RETIFICAÇÃO N º 02](https://www.diariomunicipal.com.br/amp/materia/5DCAADD1) · 2026-07-09
+- ADMINISTRAÇÃO GERAL · [DECRETO Nº 181/2026](https://www.diariomunicipal.com.br/amp/materia/C2B69E90) · 2026-07-09
+- ADMINISTRAÇÃO GERAL · [EDITAL Nº 087/2026 (CONVOCAÇÃO)](https://www.diariomunicipal.com.br/amp/materia/6EC32CDD) · 2026-07-09
+- PODER EXECUTIVO · [PORTARIA N.º 318/2026](https://www.diariomunicipal.com.br/amp/materia/3B543F21) · 2026-07-09
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [EDITAL N.º 80/2026 – HOMOLOGAÇÃO DO RESULTADO](https://www.diariomunicipal.com.br/amp/materia/55C21CC9) · 2026-07-09
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [EDITAL N.º 81/2026 RESULTADO PRELIMINAR DA PROVA](https://www.diariomunicipal.com.br/amp/materia/8C8DA005) · 2026-07-09
+- GABINETE DO PODER EXECUTIVO MUNICIPAL · [EDITAL Nº 005/2026 HOMOLOGAÇÃO DO RESULTADO DAS INSCRIÇÕES PROCESSO SELETIVO SIMPLIFICADO Nº 001/2026](https://www.diariomunicipal.com.br/amp/materia/261E376B) · 2026-07-09
+- CONSAMU · [PROCESSO SELETIVO SIMPLIFICADO Nº 001/2025 PARA CONTRATAÇÃO DE FUNCIONÁRIOS TEMPORÁRIOS PARA O CONSAMU – EDITAL DE ABERTU RA Nº 31/2025 DE 26/02/2025](https://www.diariomunicipal.com.br/amp/materia/1A6CEBD5) · 2026-07-09
+- PREFEITURA MUNICIPAL DE INÁCIO MARTINS · [DEPARTAMENTO DE RECURSOS HUMANOS](https://www.diariomunicipal.com.br/amp/materia/010842E5) · 2026-07-09
+- PREFEITURA MUNICIPAL DE MANGUEIRINHA · [EDITAL PSS Nº 005-2026](https://www.diariomunicipal.com.br/amp/materia/FE5B8221) · 2026-07-09
+- PREFEITURA MUNICIPAL DE INÁCIO MARTINS · [DEPARTAMENTO DE RECURSOS HUMANOS](https://www.diariomunicipal.com.br/amp/materia/3F1201E3) · 2026-07-09
+- ADMINISTRAÇÃO · [Edital nº. 06/2026, que estabelece instruções destinada s à realização](https://www.diariomunicipal.com.br/amp/materia/4E75C31F) · 2026-07-10
+- ADMINISTRAÇÃO · [PORTARIA Nº. 494/2026](https://www.diariomunicipal.com.br/amp/materia/666BF596) · 2026-07-10
+- RECURSOS HUMANOS · [DECRETO Nº 1957/2026 DE 06 DE JULHO DE 2026](https://www.diariomunicipal.com.br/amp/materia/6FD64D50) · 2026-07-10
+- RECURSOS HUMANOS · [EXTRATO DE ADITIVO DE CONTRATO - PSS 02 2025](https://www.diariomunicipal.com.br/amp/materia/C8E395DC) · 2026-07-10
+- SECRETARIA GOVERNO · [PORTARIA Nº 943/2026 DISPÕE SOBRE A NOMEAÇÃO DA](https://www.diariomunicipal.com.br/amp/materia/58886FB1) · 2026-07-10
+- PREFEITURA MUNICIPAL DE DIAMANTE DO SUL · [PORTARIA Nº 942/2026](https://www.diariomunicipal.com.br/amp/materia/5781578D) · 2026-07-10
+- CONSAMU · [PROCESSO SELETIVO SIMPLIFICADO Nº 002/2026 PARA](https://www.diariomunicipal.com.br/amp/materia/EC85BCE1) · 2026-07-10
+- DEPARTAMENTO DE RECURSOS HUMANOS · [DECRETO 153/2026](https://www.diariomunicipal.com.br/amp/materia/7128DBEA) · 2026-07-10
+- GABINETE DO PREFEITO · [DECRETO Nº 501/2026](https://www.diariomunicipal.com.br/amp/materia/3B08FF7E) · 2026-07-10
+- GABINETE DO PREFEITO · [PROCESSO SELETIVO SIMPLIFICADO – PSS Nº 001/2026](https://www.diariomunicipal.com.br/amp/materia/EF869015) · 2026-07-10
+- DEPARTAMENTO MUNICIPAL DE ADMINISTRAÇÃO · [DECRETO Nº 160/2026](https://www.diariomunicipal.com.br/amp/materia/158C7A51) · 2026-07-10
+- PREFEITURA MUNICIPAL DE MORRETES · [EXTRATO DE EXTINÇÃO DE CONTRATO DE TRABAHO](https://www.diariomunicipal.com.br/amp/materia/475ECDA3) · 2026-07-10
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EDITAL DE CONVOCAÇÃO Nº 146/2026](https://www.diariomunicipal.com.br/amp/materia/EBC2140D) · 2026-07-10
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [PORTARIA MUNICIPAL Nº 1266/2026](https://www.diariomunicipal.com.br/amp/materia/53C31610) · 2026-07-10
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [PORTARIA MUNICIPAL Nº 1268/2026](https://www.diariomunicipal.com.br/amp/materia/1B38D164) · 2026-07-10
+- DEPARTAMENTO DE RECURSOS HUMANOS · [PORTARIA Nº 668 DE 09 DE JULHO DE 2026.](https://www.diariomunicipal.com.br/amp/materia/AD368F87) · 2026-07-10
+- SECRETARIA MUNICIPAL DE RECURSOS HUMANOS · [EDITAL DE CONVOCAÇÃO Nº 03/2026](https://www.diariomunicipal.com.br/amp/materia/95ED980A) · 2026-07-10
+- SECRETARIA MUNICIPAL DE RECURSOS HUMANOS · [EDITAL Nº 02/2026- TORNA PÚBLICO A DESISTÊNCIA DOS](https://www.diariomunicipal.com.br/amp/materia/537AFCE4) · 2026-07-10
+- PREFEITURA MUNICIPAL DE PINHAL DE SÃO BENTO · [Processo Seletivo Simplificado para desenvolvimento de estágio](https://www.diariomunicipal.com.br/amp/materia/FB2092FB) · 2026-07-10
+- DEPARTAMENTO ADMINISTRATIVO · [PORTARIA N.º 762/2026](https://www.diariomunicipal.com.br/amp/materia/31B696B5) · 2026-07-10
+- SECRETARIA GERAL · [PROCESSO SELETIVO SIMPLIFICACO – PSS Nº 001/2026 –](https://www.diariomunicipal.com.br/amp/materia/3AFB55DF) · 2026-07-10
+- EXECUTIVO MUNICIPAL · [PROCESSO SELETIVO SIMPLIFICADO Nº 002/2026 EDITAL](https://www.diariomunicipal.com.br/amp/materia/9C6CA9ED) · 2026-07-10
+- ADMINISTRAÇÃO GERAL · [DECRETO Nº 183/2026](https://www.diariomunicipal.com.br/amp/materia/36C2467F) · 2026-07-10
+- ADMINISTRAÇÃO GERAL · [EDITAL Nº 088/2026 (CONVOCAÇÃO)](https://www.diariomunicipal.com.br/amp/materia/3007DD59) · 2026-07-10
+- ADMINISTRAÇÃO GERAL · [EDITAL Nº 089/2026 (CONVOCAÇÃO)](https://www.diariomunicipal.com.br/amp/materia/F08EBC1B) · 2026-07-10
+- PREFEITURA MUNICIPAL DE TERRA RICA · [EDITAL DE CONVOCAÇÃO Nº 042/2026](https://www.diariomunicipal.com.br/amp/materia/F343CD61) · 2026-07-10
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [PORTARIA Nº 930/2026](https://www.diariomunicipal.com.br/amp/materia/1AE2FC28) · 2026-07-10
+- GABINETE DO PODER EXECUTIVO MUNICIPAL · [EDITAL Nº 006/2026 DIVULGAÇÃO DA CLASSIFICAÇÃO PROVISÓRIA PROCESSO SELETIVO SIMPLIFICADO Nº 001/2026](https://www.diariomunicipal.com.br/amp/materia/E79DB81C) · 2026-07-10
+- DEPARTAMENTO DE GESTÃO DE PESSOAS · [EDITAL Nº 001/2026 DE 09/07/2026 - PSS 002/2026](https://www.diariomunicipal.com.br/amp/materia/87D64094) · 2026-07-10
+- PREFEITURA MUNICIPAL DE ITAÚNA DO SUL · [DECRETO Nº 077/20256](https://www.diariomunicipal.com.br/amp/materia/CC39D052) · 2026-07-10
+- PREFEITURA MUNICIPAL DE MARILENA · [EDITAL 004/2026 ANEXO I](https://www.diariomunicipal.com.br/amp/materia/109C711A) · 2026-07-10
+- DEPARTAMENTO DE ADMINISTRAÇÃO E PLANEJAMENTO · [EDITAL 004/2026 DIVULGAÇÃO DE RESULTADO PRELIMINAR](https://www.diariomunicipal.com.br/amp/materia/7D4AD0B4) · 2026-07-10
+- SECRETARIA MUNICIPAL DE SAÚDE · [EDITAL DE PROCESSO SELETIVO SIMPLIFICADO - PSS Nº 02/2026 – SECRETARIA MUNICIPAL DE SAÚDE.](https://www.diariomunicipal.com.br/amp/materia/BDE38919) · 2026-07-10
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EDITAL DE CONVOCAÇÃO Nº 144/2026](https://www.diariomunicipal.com.br/amp/materia/E62E1AB5) · 2026-07-10
+- DEPARTAMENTO DE RH · [EDITAL 36 2026 - CONVOCAÇÃO PROFESSOR EDUCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/23C37C90) · 2026-07-13
+- GABINETE DA PREFEITA · [EDITAL DE CONVOCAÇÃO N. 013/2026 PSS - PROFESSOR](https://www.diariomunicipal.com.br/amp/materia/EA672183) · 2026-07-13
+- ADMINISTRAÇÃO · [EDITAL DE CONVOCAÇÃO Nº 009/2026 - PROCESSO](https://www.diariomunicipal.com.br/amp/materia/DE3F7B9B) · 2026-07-13
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [EDITAL N.º 024/2026](https://www.diariomunicipal.com.br/amp/materia/6BFD7A70) · 2026-07-13
+- DEPARTAMENTO DE GESTÃO DE PESSOAS · [EXTRATO DE CONTRATO DE SERVIÇO TEMPORÁRIO -](https://www.diariomunicipal.com.br/amp/materia/E1220D3E) · 2026-07-13
+- DEPARTAMENTO DE GESTÃO DE PESSOAS · [EXTRATO DE RESCISÃO DE CONTRATO DE SERVIÇO](https://www.diariomunicipal.com.br/amp/materia/EAEC3992) · 2026-07-13
+- MUNICÍPIO DE FERNANDES PINHEIRO · [EDITAL N° 32/2026 -PROCESSO SELETIVO SIMPLIFICADO](https://www.diariomunicipal.com.br/amp/materia/71D39028) · 2026-07-13
+- GOVERNO MUNICIPAL - GABINETE DO PREFEITO · [PORTARIA Nº. 1076/2026](https://www.diariomunicipal.com.br/amp/materia/0F29FA76) · 2026-07-13
+- GOVERNO MUNICIPAL - GABINETE DO PREFEITO · [PORTARIA Nº. 1081/2026](https://www.diariomunicipal.com.br/amp/materia/4EE508EA) · 2026-07-13
+- GOVERNO MUNICIPAL - GABINETE DO PREFEITO · [PORTARIA Nº. 1082/2026](https://www.diariomunicipal.com.br/amp/materia/4DB0D3BD) · 2026-07-13
+- GOVERNO MUNICIPAL - GABINETE DO PREFEITO · [PORTARIA Nº 1092/2026](https://www.diariomunicipal.com.br/amp/materia/E51A1CA7) · 2026-07-13
+- GABINETE DO PREFEITO · [DECRETO Nº 504/2026](https://www.diariomunicipal.com.br/amp/materia/0D8996A0) · 2026-07-13
+- GABINETE DO PREFEITO · [PROCESSO SELETIVO SIMPLIFICADO Nº 001/2025 -](https://www.diariomunicipal.com.br/amp/materia/F0D5CB41) · 2026-07-13
+- PREFEITURA MUNICIPAL DE ITAÚNA DO SUL · [EDITAL N°002/2026 CONVOCAÇÃO PROCESSO SELETIVO](https://www.diariomunicipal.com.br/amp/materia/38343779) · 2026-07-13
+- DIVISÃO DE RECURSOS HUMANOS · [EDITAL DE CONVOCAÇÃO - PROFESSOR - PSS 001/2025](https://www.diariomunicipal.com.br/amp/materia/7822E01D) · 2026-07-13
+- SECRETARIA DE ADMINISTRAÇÃO · [EDITAL DE CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/9CE6CC00) · 2026-07-13
+- GABINETE DO PREFEITO · [EDITAL N º. 236/2026 CONVOCAÇÃO - PROCESSO](https://www.diariomunicipal.com.br/amp/materia/1F426620) · 2026-07-13
+- GABINETE DO PREFEITO · [EDITAL N º. 237/2026 - CONVOCAÇÃO PROCESSO](https://www.diariomunicipal.com.br/amp/materia/ADE3AADC) · 2026-07-13
+- GABINETE · [EDITAL 105-2026 CONVOCAÇÃO ATENDENTE INFANTIL](https://www.diariomunicipal.com.br/amp/materia/5C66C227) · 2026-07-13
+- FUNDAÇÃO DE ATENÇÃO A SAÚDE DE MORRETES · [EDITAL Nº 96, DE 10 DE JULHO DE 2026. EDITAL DE](https://www.diariomunicipal.com.br/amp/materia/50CA7472) · 2026-07-13
+- SECRETARIA DE ADMINISTRAÇÃO · [PORTARIA Nº 8990 DE 10 DE JULHO DE 2026](https://www.diariomunicipal.com.br/amp/materia/FFBD90B4) · 2026-07-13
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [COMUNICADO – CHAMADA PROFESSOR 20H - PROCESSO](https://www.diariomunicipal.com.br/amp/materia/3F021DC9) · 2026-07-13
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [COMUNICADO – CHAMADA PROFESSOR 40H - PROCESSO](https://www.diariomunicipal.com.br/amp/materia/1AA91483) · 2026-07-13
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [TERMO DE DESISTÊNCIA - PROCESSO SELETIVO](https://www.diariomunicipal.com.br/amp/materia/C21BA632) · 2026-07-13
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [TERMO DE DESISTÊNCIA - PROCESSO SELETIVO](https://www.diariomunicipal.com.br/amp/materia/E38A9CFE) · 2026-07-13
+- PREFEITURA MUNICIPAL DE PALMITAL · [PORTARIA 452/2026](https://www.diariomunicipal.com.br/amp/materia/C5FDFF35) · 2026-07-13
+- PREFEITURA MUNICIPAL DE PALMITAL · [PORTARIA 453/2026](https://www.diariomunicipal.com.br/amp/materia/F5C34C7C) · 2026-07-13
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EDITAL DE CONVOCAÇÃO Nº 145/2026](https://www.diariomunicipal.com.br/amp/materia/92FFA6F7) · 2026-07-13
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EDITAL DE CONVOCAÇÃO Nº 152/2026](https://www.diariomunicipal.com.br/amp/materia/462DCB4C) · 2026-07-13
+- SECRETARIA MUNICIPAL DE RECURSOS HUMANOS · [PORTARIA N. º 183/2026– DE 10 DE JULHO DE 2026.](https://www.diariomunicipal.com.br/amp/materia/FC2BC8CC) · 2026-07-13
+- DEPARTAMENTO DE ADMINISTRAÇÃO · [EDITAL Nº 23 - PROCESSO SELETIVO SIMPLIFICADO Nº](https://www.diariomunicipal.com.br/amp/materia/F21D0572) · 2026-07-13
+- PREFEITURA MUNICIPAL DE RIO BRANCO DO IVAÍ · [EDITAL Nº. 019/2026 - PROCESSO SELETIVO ESTAGIÁRIOS](https://www.diariomunicipal.com.br/amp/materia/7DD6993D) · 2026-07-13
+- GABINETE DO PREFEITO · [DECRETO N.º 5.116/2026](https://www.diariomunicipal.com.br/amp/materia/28864F8D) · 2026-07-13
+- GABINETE DO PREFEITO · [DECRETO Nº 6295, DE 06 DE JULHO DE 2026](https://www.diariomunicipal.com.br/amp/materia/7B11E009) · 2026-07-13
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [EDITAL N.º 83/2026](https://www.diariomunicipal.com.br/amp/materia/AF1B17F3) · 2026-07-13
+- PREFEITURA MUNICIPAL DE BALSA NOVA · [EDITAL PROCESSO SELETIVO SIMPLIFICADO Nº 11/2026](https://www.diariomunicipal.com.br/amp/materia/D0222A1B) · 2026-07-13
+- ADMINISTRAÇÃO · [PROCESSO SELETIVO SIMPLIFICADO – PSS, para contratações temporárias para exercer a função de TÉCNICO EM ENFERMAGEM ,](https://www.diariomunicipal.com.br/amp/materia/89140D04) · 2026-07-13
+- PREFEITURA MUNICIPAL DE ITAÚNA DO SUL · [PROCESSO SELETIVO SIMPLIFICADO PSS Nº 001/2026 CONTRATAÇÃO POR TEMPO DETERMINADO EDITAL N° 001/2026](https://www.diariomunicipal.com.br/amp/materia/AE8A9A37) · 2026-07-13
+- PREFEITURA MUNICIPAL DE PORTO AMAZONAS · [EDITAL Nº 24 - PROCESSO SELETIVO SIMPLIFICADO Nº 01/2025](https://www.diariomunicipal.com.br/amp/materia/8027BE93) · 2026-07-13
+- SECRETARIA MUNICIPAL DE RECURSOS HUMANOS · [EDITAL DE RETIFICAÇÃO Nº065/2026– PSS- 2026](https://www.diariomunicipal.com.br/amp/materia/76F3B083) · 2026-07-14
+- GABINETE DA PREFEITA · [EDITAL DE CONVOCAÇÃO N. 003/2026 PSS - MOTORISTA](https://www.diariomunicipal.com.br/amp/materia/50D86324) · 2026-07-14
+- ADMINISTRAÇÃO · [DECRETO DE HOMOLOGAÇÃO N°. 145/2026](https://www.diariomunicipal.com.br/amp/materia/7869429F) · 2026-07-14
+- ADMINISTRAÇÃO · [EDITAL DE CONVOCAÇÃO Nº 023/2026 - PROCESSO](https://www.diariomunicipal.com.br/amp/materia/1201C8AC) · 2026-07-14
+- RECURSOS HUMANOS · [PROCESSO SELETIVO SIMPLIFICADO – PSS Nº 001/2025](https://www.diariomunicipal.com.br/amp/materia/7B1193CC) · 2026-07-14
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [EXTRATO DO CONTRATO Nº 236/2026 – DISPENSA DE](https://www.diariomunicipal.com.br/amp/materia/F8D93316) · 2026-07-14
+- DEPARTAMENTO DE ADMINISTRAÇÃO · [DECRETO Nº 0222/2026 NOMEAR, A SENHORA MARCIELE](https://www.diariomunicipal.com.br/amp/materia/DCB3C53C) · 2026-07-14
+- DEPARTAMENTO DE ADMINISTRAÇÃO · [DECRETO Nº0224/2026 NOMEAR, A SENHORA ALINE](https://www.diariomunicipal.com.br/amp/materia/945760A5) · 2026-07-14
+- PREFEITURA MUNICIPAL DE FLOR DA SERRA DO SUL · [EDITAL 100/2026 RESULTADO DA CONVOCAÇÃO 99 PSS](https://www.diariomunicipal.com.br/amp/materia/EEF780DF) · 2026-07-14
+- PREFEITURA MUNICIPAL DE HONÓRIO SERPA · [EDITAL Nº 07-D, DE 13 DE JULHO DE 2026](https://www.diariomunicipal.com.br/amp/materia/DC7FB2CC) · 2026-07-14
+- GOVERNO MUNICIPAL - GABINETE DO PREFEITO · [EXTRATO DE CONTRATO](https://www.diariomunicipal.com.br/amp/materia/E0A6C12F) · 2026-07-14
+- GOVERNO MUNICIPAL - GABINETE DO PREFEITO · [EXTRATO DE CONTRATO](https://www.diariomunicipal.com.br/amp/materia/1DA56302) · 2026-07-14
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [DECLARAÇÃO PROCESSO SELETIVO SIMPLIFICADO –](https://www.diariomunicipal.com.br/amp/materia/05BD284D) · 2026-07-14
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [EDITAL DE CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/D6B91553) · 2026-07-14
+- PREFEITURA MUNICIPAL DE LOBATO · [DECRETO Nº. 134/2026 DE 136 DE JULHO DE 2026, FICA](https://www.diariomunicipal.com.br/amp/materia/B3A81CC4) · 2026-07-14
+- PREFEITURA MUNICIPAL DE MALLET · [GABINETE DO PREFEITO](https://www.diariomunicipal.com.br/amp/materia/F9F68393) · 2026-07-14
+- GABINETE DO PREFEITO · [DECISÃO ADMINISTRATIVA - PROCESSO CLOUD Nº](https://www.diariomunicipal.com.br/amp/materia/45577CED) · 2026-07-14
+- GABINETE DO PREFEITO · [DECRETO Nº 308/2026](https://www.diariomunicipal.com.br/amp/materia/045F91DE) · 2026-07-14
+- GABINETE DO PREFEITO · [DECRETO Nº 309/2026](https://www.diariomunicipal.com.br/amp/materia/FBD2FF3E) · 2026-07-14
+- GABINETE DO PREFEITO · [EDITAL N º. 239/2026 - CONVOCAÇÃO PROCESSO](https://www.diariomunicipal.com.br/amp/materia/55E80AE9) · 2026-07-14
+- GABINETE DO PREFEITO · [EDITAL N º. 240/2026 CONVOCAÇÃO PROCESSO](https://www.diariomunicipal.com.br/amp/materia/53FBFA05) · 2026-07-14
+- GABINETE DO PREFEITO · [EDITAL N º. 241/2026 . CONVOCAÇÃO PROCESSO](https://www.diariomunicipal.com.br/amp/materia/5DCCA3B6) · 2026-07-14
+- GABINETE DO PREFEITO · [EDITAL N º. 242/2026 CONVOCAÇÃO PROCESSO](https://www.diariomunicipal.com.br/amp/materia/490A8793) · 2026-07-14
+- GABINETE DO PREFEITO · [EDITAL N º. 243/2026 CONVOCAÇÃO PROCESSO](https://www.diariomunicipal.com.br/amp/materia/71973562) · 2026-07-14
+- SECRETARIA DE ADMINISTRAÇÃO · [PORTARIA N° 8993 DE 13 DE JULHO DE 2026](https://www.diariomunicipal.com.br/amp/materia/BC963342) · 2026-07-14
+- PREFEITURA MUNICIPAL DE PALMITAL · [PORTARIA 453/2026](https://www.diariomunicipal.com.br/amp/materia/F26D13C9) · 2026-07-14
+- SECRETARIA DE GESTÃO PÚBLICA · [EDITAL 04/2026 DA ANÁLISE DE RECURSOS DO EDITAL N°](https://www.diariomunicipal.com.br/amp/materia/C853A100) · 2026-07-14
+- ADMINISTRAÇÃO GERAL · [EDITAL N°024/2026 JULGA RECURSO ADMINISTRATIVO,](https://www.diariomunicipal.com.br/amp/materia/14259E42) · 2026-07-14
+- DEPARTAMENTO ADMINISTRATIVO · [EDITAL Nº 089/2026](https://www.diariomunicipal.com.br/amp/materia/A2052BBA) · 2026-07-14
+- SECRETARIA GERAL · [PSS N º 001/2026 – SECRETARIA MUNICIPAL DE SAÚDE 7ª](https://www.diariomunicipal.com.br/amp/materia/2C0ABC7B) · 2026-07-14
+- DEPARTAMENTO DE RECURSOS HUMANOS E ADM · [EXTRATO DE RESCISÃO CONTRATO TEMPORÁRIO Nº](https://www.diariomunicipal.com.br/amp/materia/2929B3BC) · 2026-07-14
+- GABINETE DO PREFEITO · [DECRETO N.º 5.117/2026](https://www.diariomunicipal.com.br/amp/materia/5B56104B) · 2026-07-14
+- PREFEITURA MUNICIPAL DE TERRA RICA · [DECRETO Nº 292/2026](https://www.diariomunicipal.com.br/amp/materia/2E4062E7) · 2026-07-14
+- PREFEITURA MUNICIPAL DE TERRA RICA · [EDITAL DE CONVOCAÇÃO Nº 043/2026](https://www.diariomunicipal.com.br/amp/materia/8E76CA01) · 2026-07-14
+- PREFEITURA MUNICIPAL DE DOUTOR ULYSSES · [PROCESSO SELETIVO SIMPLIFICADO 004/2026 EDITAL DE DIVULGAÇÃO DO RESULTADO DOS RECURSOS DA](https://www.diariomunicipal.com.br/amp/materia/7ADAD6AD) · 2026-07-14
+- DEPARTAMENTO ADMINISTRATIVO · [EDITAL Nº 090/2026](https://www.diariomunicipal.com.br/amp/materia/28A8494D) · 2026-07-14
+- RECURSOS HUMANOS · [EDITAL DE CONVOCAÇÃO N° 032/2026](https://www.diariomunicipal.com.br/amp/materia/3736B0C0) · 2026-07-15
+- SECRETARIA DE ADMINISTRAÇÃO · [PORTARIA Nº 206, DE 14 DE JULHO DE 2026](https://www.diariomunicipal.com.br/amp/materia/DF6DE898) · 2026-07-15
+- ADMINISTRAÇÃO · [PROCESSO SELETIVO SIMPLIFICADO DESTINADO À](https://www.diariomunicipal.com.br/amp/materia/97109424) · 2026-07-15
+- ADMINISTRAÇÃO · [Edital nº. 06/2026, que estabelece instruções destinadas à reali zação](https://www.diariomunicipal.com.br/amp/materia/32E0A52C) · 2026-07-15
+- ADMINISTRAÇÃO · [Edital nº. 06/2026, que estabe lece instruções destinadas à realização](https://www.diariomunicipal.com.br/amp/materia/6DA3515F) · 2026-07-15
+- ADMINISTRAÇÃO · [PORTARIA Nº. 500/2026](https://www.diariomunicipal.com.br/amp/materia/D8B6C6E9) · 2026-07-15
+- ADMINISTRAÇÃO · [PORTARIA N.º 501/2026](https://www.diariomunicipal.com.br/amp/materia/45926FA8) · 2026-07-15
+- SECRETARIA MUNICIPAL DE GOVERNO · [EDITAL DE CONVOCAÇÃO N. º 028/2026 – PROCESSO](https://www.diariomunicipal.com.br/amp/materia/60492160) · 2026-07-15
+- DEPARTAMENTO DE GESTÃO DE PESSOAS · [EDITAL Nº 038/2026 DE 14/07/2026 - PSS 001/2026](https://www.diariomunicipal.com.br/amp/materia/7BCB40E4) · 2026-07-15
+- DEPARTAMENTO DE GESTÃO DE PESSOAS · [EDITAL Nº 039/2026 DE 14/07/2026 - PSS 001/2026](https://www.diariomunicipal.com.br/amp/materia/4A5D747D) · 2026-07-15
+- DEPARTAMENTO DE RECURSOS HUMANOS · [DECRETO 155/2026](https://www.diariomunicipal.com.br/amp/materia/07E971CB) · 2026-07-15
+- PREFEITURA MUNICIPAL DE ITAPERUÇU · [EDITAL COMPLEMENTAR N° 24 – PROCESSO SELETIVO](https://www.diariomunicipal.com.br/amp/materia/8BF1F660) · 2026-07-15
+- GABINETE DO PREFEITO · [EDITAL N º. 244/2026 - CONVOCAÇÃO PROCESSO](https://www.diariomunicipal.com.br/amp/materia/30D78E43) · 2026-07-15
+- GABINETE DO PREFEITO · [EDITAL N º. 245/2026 - CONVOCAÇÃO PROCESSO](https://www.diariomunicipal.com.br/amp/materia/81D36872) · 2026-07-15
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [COMUNICADO – CHAMADA AUXILIAR ADMINISTRATIVO](https://www.diariomunicipal.com.br/amp/materia/32DE31DB) · 2026-07-15
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [COMUNICADO – CHAMADA CUIDADOR DE](https://www.diariomunicipal.com.br/amp/materia/FACE5DF4) · 2026-07-15
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [COMUNICADO – CHAMADA PROFESSOR 20H - PROCESSO](https://www.diariomunicipal.com.br/amp/materia/BDC6CF52) · 2026-07-15
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [termos do Edital nº 01/2026 de 05 de janeiro de 2026, convocou o](https://www.diariomunicipal.com.br/amp/materia/4AE3EF43) · 2026-07-15
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [TERMO DE DESISTÊNCIA - PROCESSO SELETIVO](https://www.diariomunicipal.com.br/amp/materia/F88DE060) · 2026-07-15
+- DEPARTAMENTO DE RECURSOS HUMANOS · [PORTARIA Nº 674 DE 14 DE JULHO DE 2026.](https://www.diariomunicipal.com.br/amp/materia/00FAEB42) · 2026-07-15
+- DEPARTAMENTO DE RECURSOS HUMANOS · [PORTARIA N° 233 DE 14 DE JULHO DE 2026](https://www.diariomunicipal.com.br/amp/materia/883B74C4) · 2026-07-15
+- PREFEITURA MUNICIPAL DE RIO BRANCO DO IVAÍ · [ERRATA PSS- 01/2026](https://www.diariomunicipal.com.br/amp/materia/4C0AFCAC) · 2026-07-15
+- GABINETE DO PREFEITO · [EDITAL N º 009/2026 – 14ª CONVOCAÇÃO – PSS Nº 004/2025 –](https://www.diariomunicipal.com.br/amp/materia/FFF731E5) · 2026-07-15
+- GABINETE DO PREFEITO · [EDITAL N º 012/2026 – 20ª CONVOCAÇÃO – PSS Nº 002/2025 –](https://www.diariomunicipal.com.br/amp/materia/CB77B48F) · 2026-07-15
+- DEPARTAMENTO DE RECURSOS HUMANOS · [PORTARIA N° 34.695/2026 - RH](https://www.diariomunicipal.com.br/amp/materia/EF26F015) · 2026-07-15
+- DEPARTAMENTO DE RECURSOS HUMANOS · [PORTARIA N° 34.700/2026 - RH](https://www.diariomunicipal.com.br/amp/materia/C89BAE81) · 2026-07-15
+- DEPARTAMENTO DE RECURSOS HUMANOS · [PORTARIA N° 34.719/2026 - RH](https://www.diariomunicipal.com.br/amp/materia/3913C7DF) · 2026-07-15
+- DIVISÃO DE RECURSOS HUMANOS · [PORTARIA Nº 177/2026](https://www.diariomunicipal.com.br/amp/materia/4D2EBECF) · 2026-07-15
+- ADMINISTRAÇÃO GERAL · [EDITAL Nº 090/2026 (CONVOCAÇÃO)](https://www.diariomunicipal.com.br/amp/materia/F4C12DA3) · 2026-07-15
+- GABINETE DO PREFEITO · [PROCESSO SELETIVO SIMPLIFICADO Nº 01/2026 - EDITAL](https://www.diariomunicipal.com.br/amp/materia/B9930E76) · 2026-07-15
+- GABINETE DO PREFEITO · [PROCESSO SELETIVO SIMPLIFICADO Nº 02/2026 – EDITAL](https://www.diariomunicipal.com.br/amp/materia/55A8ABA4) · 2026-07-15
+- PODER EXECUTIVO · [EDITAL DE CONVOCAÇÃO Nº 007-2026 - PROCESSO](https://www.diariomunicipal.com.br/amp/materia/EC455C80) · 2026-07-15
+- PODER EXECUTIVO · [EDITAL DE CONVOCAÇÃO Nº 007-2026 - PROCESSO](https://www.diariomunicipal.com.br/amp/materia/7D76D1C9) · 2026-07-15
+- PREFEITURA MUNICIPAL DE CLEVELÂNDIA · [EDITAL Nº 05/2026 – PSS 2026 PROCESSO SELETIVO DE CLEVELÂNDIA PUBLICAÇÃO DAS INSCRIÇÕES](https://www.diariomunicipal.com.br/amp/materia/90F03B2E) · 2026-07-15
+- PREFEITURA MUNICIPAL DE PITANGA · [EDITAL N. º 05/2026 – SEMECE PROCESSO SELETIVO SIMPLIFICADO](https://www.diariomunicipal.com.br/amp/materia/2A51ECAF) · 2026-07-15
+- PREFEITURA MUNICIPAL DE REALEZA · [EDITAL Nº 02/2026 EDITAL NOTA PROVA OBJETIVA PROCESSO SELETIVO SIMPLIFICADO Nº 02/2026](https://www.diariomunicipal.com.br/amp/materia/4453305D) · 2026-07-15
+- DEPARTAMENTO DE ADMINISTRAÇÃO · [GABARITO DEFINITIVO PROCESSO SELETIVO SIMPLIFICADO N° 02/2026](https://www.diariomunicipal.com.br/amp/materia/3A00F708) · 2026-07-15
+- PREFEITURA MUNICIPAL DE SALGADO FILHO · [EDITAL Nº 03/2026 EDITAL DE HOMOLOGAÇÃO DAS INSCRIÇÕES PROCESSO SELETIVO SIMPLIFICADO Nº 01/2026](https://www.diariomunicipal.com.br/amp/materia/FBB3A0E8) · 2026-07-15
+- GABINETE DA PREFEITA · [DECRETO Nº. 11.284 DE 15 DE JULHO DE 2026](https://www.diariomunicipal.com.br/amp/materia/0B6F63BE) · 2026-07-16
+- GABINETE DA PREFEITA · [EDITAL DE CONVOCAÇÃO N. 014/2026 PSS - PROFESSOR](https://www.diariomunicipal.com.br/amp/materia/A937FDFB) · 2026-07-16
+- PREFEITURA MUNICIPAL DE BALSA NOVA · [DECRETO DE HOMOLOGAÇÃO N°. 146/2026](https://www.diariomunicipal.com.br/amp/materia/A90395F2) · 2026-07-16
+- ADMINISTRAÇÃO · [EDITAL PROCESSO SELETIVO SIMPLIFICADO Nº 12/2026](https://www.diariomunicipal.com.br/amp/materia/C096E5AE) · 2026-07-16
+- ADMINISTRAÇÃO · [PORTARIA Nº. 502/2026](https://www.diariomunicipal.com.br/amp/materia/8ADDDCD4) · 2026-07-16
+- ADMINISTRAÇÃO · [PORTARIA Nº 503/2026](https://www.diariomunicipal.com.br/amp/materia/C1960352) · 2026-07-16
+- ADMINISTRAÇÃO · [PORTARIA Nº 504/2026](https://www.diariomunicipal.com.br/amp/materia/C2D66276) · 2026-07-16
+- ADMINISTRAÇÃO · [PORTARIA Nº 505/2026](https://www.diariomunicipal.com.br/amp/materia/C92A4C68) · 2026-07-16
+- ADMINISTRAÇÃO · [PORTARIA Nº 506/2026](https://www.diariomunicipal.com.br/amp/materia/21CAC3E0) · 2026-07-16
+- ADMINISTRAÇÃO · [PORTARIA Nº 507/2026](https://www.diariomunicipal.com.br/amp/materia/63DF62C5) · 2026-07-16
+- ADMINISTRAÇÃO · [PORTARIA Nº 508/2026](https://www.diariomunicipal.com.br/amp/materia/746750EB) · 2026-07-16
+- RECURSOS HUMANOS · [PROCESSO SELETIVO SIMPLIFICADO – PSS Nº 001/2025](https://www.diariomunicipal.com.br/amp/materia/760862AC) · 2026-07-16
+- SECRETARIA DE ADMINISTRAÇÃO E FINANÇAS · [EXTRATO PROCESSO LICITATÓRIO Nº 65/2026](https://www.diariomunicipal.com.br/amp/materia/C38DBB81) · 2026-07-16
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [EDITAL Nº 26.08/2025](https://www.diariomunicipal.com.br/amp/materia/253BAF6E) · 2026-07-16
+- GABINETE · [PORTARIA N° 11/2026](https://www.diariomunicipal.com.br/amp/materia/C82FEDF8) · 2026-07-16
+- GABINETE DO PREFEITO · [PORTARIA N.º 666/2026](https://www.diariomunicipal.com.br/amp/materia/7A98B8BF) · 2026-07-16
+- SECRETARIA MUNICIPAL DE EDUCAÇÃO, CULTURA E ESPORTES · [PROCESSO SELETIVO SIMPLIFICADO Nº. 002/2026 EDITAL](https://www.diariomunicipal.com.br/amp/materia/E8826183) · 2026-07-16
+- MUNICÍPIO DE FERNANDES PINHEIRO · [EDITAL N° 33/2026 -PROCESSO SELETIVO SIMPLIFICADO](https://www.diariomunicipal.com.br/amp/materia/63C32D96) · 2026-07-16
+- DEPARTAMENTO DE ADMINISTRAÇÃO · [EDITAL Nº 07-E, DE 15 DE JULHO DE 2026.](https://www.diariomunicipal.com.br/amp/materia/CA116D0B) · 2026-07-16
+- DEPARTAMENTO DE ADMINISTRAÇÃO · [EDITAL Nº 07-F - DE 15 DE JULHO DE 2026.](https://www.diariomunicipal.com.br/amp/materia/7E5DA943) · 2026-07-16
+- ADMINISTRAÇÃO RH · [EDITAL N°003/2026 CONVOCAÇÃO PROCESSO SELETIVO](https://www.diariomunicipal.com.br/amp/materia/D5EB3748) · 2026-07-16
+- ADMINISTRAÇÃO RH · [PORTARIA Nº 281/2026](https://www.diariomunicipal.com.br/amp/materia/05261B21) · 2026-07-16
+- PREFEITURA MUNICIPAL DE MALLET · [DECRETO Nº 309/2026-A](https://www.diariomunicipal.com.br/amp/materia/6CF51E05) · 2026-07-16
+- GABINETE DO PREFEITO · [DECRETO Nº 344/2026 - NOMEIA E DÁ POSSE A PESSOA](https://www.diariomunicipal.com.br/amp/materia/A548C15F) · 2026-07-16
+- GABINETE DO PREFEITO · [EDITAL Nº 246/2026 PROCESSO SELETIVO](https://www.diariomunicipal.com.br/amp/materia/8A3CC4E2) · 2026-07-16
+- PREFEITURA MUNICIPAL DE MORRETES · [EXTRATO DE RESCISÃO DE CONTRATO DE TRABALHO](https://www.diariomunicipal.com.br/amp/materia/46831F3B) · 2026-07-16
+- PREFEITURA MUNICIPAL DE QUITANDINHA · [EDITAL Nº. 03/2026](https://www.diariomunicipal.com.br/amp/materia/EF1A8392) · 2026-07-16
+- PREFEITURA MUNICIPAL DE REALEZA · [PROCESSO SELETIVO SIMPLIFICADO Nº 07/2025 EDITAL](https://www.diariomunicipal.com.br/amp/materia/705C2C71) · 2026-07-16
+- PREFEITURA MUNICIPAL DE RENASCENÇA · [LEI Nº 2014, DE 15 DE JULHO DE 2026](https://www.diariomunicipal.com.br/amp/materia/22ACB335) · 2026-07-16
+- DEPARTAMENTO DE ADMINISTRAÇÃO · [LEI Nº 2015, DE 15 DE JULHO DE 2026](https://www.diariomunicipal.com.br/amp/materia/2BF89572) · 2026-07-16
+- RECURSOS HUMANOS · [PROCESSO SELETIVO SIMPLICADO - PSS Nº 01/2026 CONTRATAÇÃO POR TEMPO DETERMINADO EDITAL N° 033/2026](https://www.diariomunicipal.com.br/amp/materia/15B64E80) · 2026-07-16
+- PREFEITURA MUNICIPAL DE MARILENA · [EDITAL 005/2026 DIVULGAÇÃO DE RESULTADO-PÓS RECURSO](https://www.diariomunicipal.com.br/amp/materia/878071ED) · 2026-07-16
+- DEPARTAMENTO DE ADMINISTRAÇÃO E PLANEJAMENTO · [EDITAL 005/2026 DIVULGAÇÃO DE RESULTADO PÓS RECURSOS](https://www.diariomunicipal.com.br/amp/materia/8C1D2E4D) · 2026-07-16
+- PREFEITURA MUNICIPAL DE MORRETES · [EXTRATO DE CONTRATOS PROCESSO SELETIVO SIMPLIFICADO – PSS Nº 001/2025 E PSS 002/2026](https://www.diariomunicipal.com.br/amp/materia/713B0516) · 2026-07-16
+- FUNDAÇÃO DE ATENÇÃO A SAÚDE DE MORRETES · [EXTRATO DO 1° TERMO ADITIVO CONTRATO DE TRABALHO POR PRAZO DETERMINADO PROCESSO SELETIVO](https://www.diariomunicipal.com.br/amp/materia/ABAD2C96) · 2026-07-16
+- PREFEITURA MUNICIPAL DE SÃO JOSÉ DA BOA VISTA · [EDITAL 075/2026](https://www.diariomunicipal.com.br/amp/materia/38CD4E51) · 2026-07-16
+- GABINETE DO PREFEITO · [EDITAL 141/2026 - ABERTURA PSS ENFERMEIRO](https://www.diariomunicipal.com.br/amp/materia/E4C0CDBA) · 2026-07-17
+- GABINETE DO PREFEITO · [PORTARIA 766-2026 - NOMEIA COMISSÃO PSS](https://www.diariomunicipal.com.br/amp/materia/112C98F4) · 2026-07-17
+- GABINETE DO PREFEITO · [PORTARIA 767/2026 - NOMEIA COMISSÃO PSS](https://www.diariomunicipal.com.br/amp/materia/A7ECFB87) · 2026-07-17
+- SECRETARIA DE ADMINISTRACAO · [LEI 1689-2026](https://www.diariomunicipal.com.br/amp/materia/3DF5E6CA) · 2026-07-17
+- GABINETE DA PREFEITA · [EDITAL DE CONVOCAÇÃO N. 004/2026 PSS - MOTORISTA](https://www.diariomunicipal.com.br/amp/materia/86E2CE15) · 2026-07-17
+- ADMINISTRAÇÃO · [EDITAL DE CONVOCAÇÃO Nº 017/2026 - PROCESSO](https://www.diariomunicipal.com.br/amp/materia/07020710) · 2026-07-17
+- ADMINISTRAÇÃO · [PORTARIA Nº 511/2026](https://www.diariomunicipal.com.br/amp/materia/38104D55) · 2026-07-17
+- PREFEITURA MUNICIPAL DE CLEVELÂNDIA · [EDITAL Nº 05/2026 PROCESSO SELETIVO DE](https://www.diariomunicipal.com.br/amp/materia/FC1648FE) · 2026-07-17
+- DEPARTAMENTO DE ADMINISTRAÇÃO · [PROCESSO SELETIVO SIMPLIFICADO - PSS N°001/2025](https://www.diariomunicipal.com.br/amp/materia/E2051365) · 2026-07-17
+- DEPARTAMENTO DE ADMINISTRAÇÃO · [PROCESSO SELETIVO SIMPLIFICADO - PSS N°001/2025](https://www.diariomunicipal.com.br/amp/materia/F2E3F2D7) · 2026-07-17
+- CONSAMU · [PROCESSO SELETIVO SIMPLIFICADO Nº 001/2026 PARA](https://www.diariomunicipal.com.br/amp/materia/AEE9A91B) · 2026-07-17
+- CONSAMU · [PROCESSO SELETIVO SIMPLIFICADO Nº 002/2026 PARA](https://www.diariomunicipal.com.br/amp/materia/B61E233F) · 2026-07-17
+- PREFEITURA MUNICIPAL DE INÁCIO MARTINS · [Processo Seletivo Simplificado Edital nº 03/2025.](https://www.diariomunicipal.com.br/amp/materia/08283F46) · 2026-07-17
+- DEPARTAMENTO DE RECURSOS HUMANOS · [CONVOCAÇÃO Nº 04 - PROCESSO SELETIVO](https://www.diariomunicipal.com.br/amp/materia/8A5CBF95) · 2026-07-17
+- DEPARTAMENTO DE RECURSOS HUMANOS · [DECRETO 156/2026](https://www.diariomunicipal.com.br/amp/materia/18CFF29C) · 2026-07-17
+- DEPARTAMENTO DE RECURSOS HUMANOS · [DECRETO 157/2026](https://www.diariomunicipal.com.br/amp/materia/4455FB61) · 2026-07-17
+- DEPARTAMENTO DE RECURSOS HUMANOS · [DECRETO 158/206](https://www.diariomunicipal.com.br/amp/materia/2A5E4346) · 2026-07-17
+- GABINETE DO PREFEITO · [DECRETO Nº 518/2026](https://www.diariomunicipal.com.br/amp/materia/FAFB6CEF) · 2026-07-17
+- GABINETE DO PREFEITO · [DECRETO Nº 519/2026](https://www.diariomunicipal.com.br/amp/materia/F13AB79C) · 2026-07-17
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [EXTRATO DO CONTRATO DE TRABALHO POR TEMPO](https://www.diariomunicipal.com.br/amp/materia/E0136E68) · 2026-07-17
+- GABINETE DO PREFEITO · [DECRETO Nº 347/2026 - NOMEIA E DÁ POSSE A PESSOA](https://www.diariomunicipal.com.br/amp/materia/46D9C959) · 2026-07-17
+- GABINETE DO PREFEITO · [EDITAL N º. 247/2026 - CONVOCAÇÃO PROCESSO](https://www.diariomunicipal.com.br/amp/materia/8CBB4321) · 2026-07-17
+- GABINETE DO PREFEITO · [EDITAL N º. 248/2026 CONVOCAÇÃO PROCESSO](https://www.diariomunicipal.com.br/amp/materia/81042736) · 2026-07-17
+- GABINETE DO PREFEITO · [EDITAL N º. 249/2026 CONVOCAÇÃO PROCESSO](https://www.diariomunicipal.com.br/amp/materia/59CC722E) · 2026-07-17
+- GABINETE DO PREFEITO · [EDITAL N º. 250/2026 CONVOCAÇÃO PROCESSO](https://www.diariomunicipal.com.br/amp/materia/90F9C779) · 2026-07-17
+- PREFEITURA MUNICIPAL DE PAIÇANDU · [EDITAL DE CONVOCAÇÃO Nº 201/2026](https://www.diariomunicipal.com.br/amp/materia/833F0776) · 2026-07-17
+- PREFEITURA MUNICIPAL DE PAIÇANDU · [EDITAL DE CONVOCAÇÃO Nº 202/2026](https://www.diariomunicipal.com.br/amp/materia/3D67DAF9) · 2026-07-17
+- PREFEITURA MUNICIPAL DE PAIÇANDU · [EDITAL DE CONVOCAÇÃO Nº 203/2026](https://www.diariomunicipal.com.br/amp/materia/E6FDDFED) · 2026-07-17
+- PREFEITURA MUNICIPAL DE PAIÇANDU · [PORTARIA Nº 427/2026](https://www.diariomunicipal.com.br/amp/materia/61EAD467) · 2026-07-17
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [COMUNICADO – CHAMADA CUIDADOR DE](https://www.diariomunicipal.com.br/amp/materia/9125B2C5) · 2026-07-17
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [COMUNICADO – CHAMADA PROFESSOR 20H - PROCESSO](https://www.diariomunicipal.com.br/amp/materia/A5008ECD) · 2026-07-17
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [COMUNICADO – CHAMADA PROFESSOR 40H - PROCESSO](https://www.diariomunicipal.com.br/amp/materia/3ABBBE79) · 2026-07-17
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [termos do Edital nº 002/2025, convocou o candidato abaixo](https://www.diariomunicipal.com.br/amp/materia/F0F28A3A) · 2026-07-17
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [TERMO DE DESISTÊNCIA - PROCESSO SELETIVO](https://www.diariomunicipal.com.br/amp/materia/F063E420) · 2026-07-17
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [TERMO DE DESISTÊNCIA - PROCESSO SELETIVO](https://www.diariomunicipal.com.br/amp/materia/33D97BEE) · 2026-07-17
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO DE RESCISÃO DO CONTRATO](https://www.diariomunicipal.com.br/amp/materia/507238AC) · 2026-07-17
+- SECRETARIA MUNICIPAL DE RECURSOS HUMANOS · [EDITAL Nº 04/2026- TORNA PÚBLICO A DESISTÊNCIA DOS](https://www.diariomunicipal.com.br/amp/materia/48743BE2) · 2026-07-17
+- GABINETE DO PREFEITO · [DECRETO N° 745/2026](https://www.diariomunicipal.com.br/amp/materia/B5E8D997) · 2026-07-17
+- RECURSOS HUMANOS · [EDITAL DE CONVOCAÇÃO PSS N° 01/2025](https://www.diariomunicipal.com.br/amp/materia/05A8F483) · 2026-07-17
+- DEPARTAMENTO DE RECURSOS HUMANOS · [PORTARIA N° 34.730/2026 - RH](https://www.diariomunicipal.com.br/amp/materia/14010733) · 2026-07-17
+- EXECUTIVO MUNICIPAL · [PORTARIA Nº 109/2026 DATA: 16/07/2026](https://www.diariomunicipal.com.br/amp/materia/467FFE75) · 2026-07-17
+- PREFEITURA MUNICIPAL DE TERRA RICA · [EDITAL DE CONVOCAÇÃO Nº 045/2026](https://www.diariomunicipal.com.br/amp/materia/6EE2730C) · 2026-07-17
+- GABINETE DO PREFEITO · [EDITAL 140/2026 - ABERTURA PSS EDUCADOR/CUIDADOR SOCIAL TEMPORÁRIO](https://www.diariomunicipal.com.br/amp/materia/44782C28) · 2026-07-17
+- GABINETE DO PODER EXECUTIVO MUNICIPAL · [EDITAL Nº 006/2026 DIVULGAÇÃO DA CLASSIFICAÇÃO PROVISÓRIA REPUBLICADO POR INCORREÇÃO PROCESSO](https://www.diariomunicipal.com.br/amp/materia/D6119D93) · 2026-07-17
+- GABINETE DO PODER EXECUTIVO MUNICIPAL · [EDITAL Nº 007/2026 DIVULGAÇÃO DO RECURSO DA CLASSIFICAÇÃO PROVISÓRIA PROCESSO SELETIVO SIMPLIFICADO](https://www.diariomunicipal.com.br/amp/materia/8F9BAEEA) · 2026-07-17
+- PREFEITURA MUNICIPAL DE CERRO AZUL · [EDITAL Nº 001/2026 EDITAL DE PROCESSO SELETIVO SIMPLIFICADO PARA SELEÇÃO DE TUTORES(AS) /](https://www.diariomunicipal.com.br/amp/materia/37F73B94) · 2026-07-17
+- PREFEITURA MUNICIPAL DE CLEVELÂNDIA · [EDITAL Nº 05/2026 – PSS 2026 PROCESSO SELETIVO DE CLEVELÂNDIA HOMOLOGAÇÃO DAS INSCRIÇÕES](https://www.diariomunicipal.com.br/amp/materia/23685A3D) · 2026-07-17
+- PREFEITURA MUNICIPAL DE DOUTOR ULYSSES · [PROCESSO SELETIVO SIMPLIFICADO 004/2026 EDITAL DE DIVULGAÇÃO DA CLASSIFICAÇÃO PRELIMINAR DA PROVA](https://www.diariomunicipal.com.br/amp/materia/D48AD873) · 2026-07-17
+- PREFEITURA MUNICIPAL DE GUARACI · [EDITAL Nº 052/2026](https://www.diariomunicipal.com.br/amp/materia/A3482F63) · 2026-07-17
+- PREFEITURA MUNICIPAL DE RIO NEGRO · [EDITAL Nº 091/2026](https://www.diariomunicipal.com.br/amp/materia/ECD03F50) · 2026-07-17
+- PREFEITURA MUNICIPAL DE ROLÂNDIA · [EDITAL N º 002/2026 – SECRETARIA DE SAÚDE RESULTADO PROVISÓRIO](https://www.diariomunicipal.com.br/amp/materia/22240E8B) · 2026-07-17
+- PREFEITURA MUNICIPAL DE TERRA RICA · [EDITAL DE CONVOCAÇÃO Nº 044/2026](https://www.diariomunicipal.com.br/amp/materia/8040FF90) · 2026-07-17
+- GABINETE DO PREFEITO · [EDITAL 143/2026 - CONVOCAÇÃO TÉCNICO DE](https://www.diariomunicipal.com.br/amp/materia/B236A235) · 2026-07-20
+- MUNICÍPIO DE CORUMBATAÍ DO SUL · [PORTARIA 127/2026](https://www.diariomunicipal.com.br/amp/materia/F3475319) · 2026-07-20
+- DEPARTAMENTO DE RECURSOS HUMANOS · [PORTARIA 128/2026](https://www.diariomunicipal.com.br/amp/materia/B7760A56) · 2026-07-20
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [PORTARIA Nº 302/2026 - PRORROGA O PRAZO DE](https://www.diariomunicipal.com.br/amp/materia/839BAD70) · 2026-07-20
+- PREFEITURA MUNICIPAL DE BALSA NOVA · [EDITAL DE CONVOCAÇÃO Nº 001/2026 - PROCESSO](https://www.diariomunicipal.com.br/amp/materia/B3225695) · 2026-07-20
+- ADMINISTRAÇÃO · [EDITAL DE CONVOCAÇÃO N.º 01/2026 - PROCESSO](https://www.diariomunicipal.com.br/amp/materia/697ED825) · 2026-07-20
+- ADMINISTRAÇÃO · [EDITAL DE CONVOCAÇÃO Nº 012/2026 - PROCESSO](https://www.diariomunicipal.com.br/amp/materia/F643A387) · 2026-07-20
+- RECURSOS HUMANOS · [PROCESSO SELETIVO SIMPLIFICADO – PSS Nº 001/2025](https://www.diariomunicipal.com.br/amp/materia/DF29D024) · 2026-07-20
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [EXTRATO DO CONTRATO N° 03/2025](https://www.diariomunicipal.com.br/amp/materia/39CD6211) · 2026-07-20
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [EXTRATO DO CONTRATO N° 07/2026](https://www.diariomunicipal.com.br/amp/materia/B2574355) · 2026-07-20
+- MUNICÍPIO DE FERNANDES PINHEIRO · [EDITAL N° 34/2026 -PROCESSO SELETIVO SIMPLIFICADO](https://www.diariomunicipal.com.br/amp/materia/CA9B5033) · 2026-07-20
+- RH · [EDITAL 101/2026 CONVOCAÇÃO PSS 03/2024](https://www.diariomunicipal.com.br/amp/materia/396B68E4) · 2026-07-20
+- DEPARTAMENTO DE RECURSOS HUMANOS · [Processo Seletivo Simplificado Edital nº 03/2025.](https://www.diariomunicipal.com.br/amp/materia/0E4223DA) · 2026-07-20
+- GOVERNO MUNICIPAL - GABINETE DO PREFEITO · [EXTRATO DE CONTRATO](https://www.diariomunicipal.com.br/amp/materia/D9B341FA) · 2026-07-20
+- GOVERNO MUNICIPAL - GABINETE DO PREFEITO · [PORTARIA Nº 1135/2026](https://www.diariomunicipal.com.br/amp/materia/A8F24E41) · 2026-07-20
+- GOVERNO MUNICIPAL - GABINETE DO PREFEITO · [PORTARIA Nº. 1144/2026](https://www.diariomunicipal.com.br/amp/materia/B7132442) · 2026-07-20
+- DIRETORIA DE RECURSOS HUMANOS · [EDITAL DE CONVOCAÇÃO Nº 034/2026](https://www.diariomunicipal.com.br/amp/materia/01CD6D5C) · 2026-07-20
+- PREFEITURA MUNICIPAL DE MANDAGUARI · [DECRETO Nº 352/2026 - NOMEIA E DÁ POSSE A PESSOA](https://www.diariomunicipal.com.br/amp/materia/7CA9F8BA) · 2026-07-20
+- PREFEITURA MUNICIPAL DE PAIÇANDU · [PORTARIA Nº 328/2026](https://www.diariomunicipal.com.br/amp/materia/F7DD5473) · 2026-07-20
+- FUNDAÇÃO DE EDUCAÇÃO DE PAIÇANDU · [PORTARIA Nº 329/2026](https://www.diariomunicipal.com.br/amp/materia/A9D25511) · 2026-07-20
+- FUNDAÇÃO DE EDUCAÇÃO DE PAIÇANDU · [PORTARIA Nº 331/2026](https://www.diariomunicipal.com.br/amp/materia/11C5FD4A) · 2026-07-20
+- FUNDAÇÃO DE EDUCAÇÃO DE PAIÇANDU · [PORTARIA Nº 332/2026](https://www.diariomunicipal.com.br/amp/materia/D3E6915E) · 2026-07-20
+- FUNDAÇÃO DE EDUCAÇÃO DE PAIÇANDU · [PORTARIA Nº 333/2026](https://www.diariomunicipal.com.br/amp/materia/73832E20) · 2026-07-20
+- FUNDAÇÃO DE EDUCAÇÃO DE PAIÇANDU · [PORTARIA Nº 334/2026](https://www.diariomunicipal.com.br/amp/materia/3EE60757) · 2026-07-20
+- FUNDAÇÃO DE SÁUDE DE PAIÇANDU · [PORTARIA Nº 297/2026](https://www.diariomunicipal.com.br/amp/materia/64DBF20F) · 2026-07-20
+- FUNDAÇÃO DE SÁUDE DE PAIÇANDU · [PORTARIA Nº 298/2026](https://www.diariomunicipal.com.br/amp/materia/D7EA69CA) · 2026-07-20
+- FUNDAÇÃO DE SÁUDE DE PAIÇANDU · [PORTARIA Nº 299/2026](https://www.diariomunicipal.com.br/amp/materia/7AA7D92F) · 2026-07-20
+- FUNDAÇÃO DE SÁUDE DE PAIÇANDU · [PORTARIA Nº 300/2026](https://www.diariomunicipal.com.br/amp/materia/E9C8E657) · 2026-07-20
+- FUNDAÇÃO DE SÁUDE DE PAIÇANDU · [PORTARIA Nº 301/2026](https://www.diariomunicipal.com.br/amp/materia/2D13F590) · 2026-07-20
+- FUNDAÇÃO DE SÁUDE DE PAIÇANDU · [PORTARIA Nº 302/2026](https://www.diariomunicipal.com.br/amp/materia/2504ED7D) · 2026-07-20
+- PREFEITURA MUNICIPAL DE PAIÇANDU · [EDITAL DE CONVOCAÇÃO Nº 204/2026](https://www.diariomunicipal.com.br/amp/materia/CA4A7320) · 2026-07-20
+- PREFEITURA MUNICIPAL DE PAIÇANDU · [EDITAL DE CONVOCAÇÃO Nº 205/2026](https://www.diariomunicipal.com.br/amp/materia/7F522789) · 2026-07-20
+- PREFEITURA MUNICIPAL DE PAIÇANDU · [EDITAL DE CONVOCAÇÃO Nº 206/2026](https://www.diariomunicipal.com.br/amp/materia/74A1EB07) · 2026-07-20
+- PREFEITURA MUNICIPAL DE PAIÇANDU · [EDITAL DE CONVOCAÇÃO Nº 207/2026](https://www.diariomunicipal.com.br/amp/materia/BB1F5A97) · 2026-07-20
+- PREFEITURA MUNICIPAL DE PAIÇANDU · [EDITAL DE CONVOCAÇÃO Nº 208/2026](https://www.diariomunicipal.com.br/amp/materia/F083D075) · 2026-07-20
+- PREFEITURA MUNICIPAL DE PAIÇANDU · [EDITAL DE CONVOCAÇÃO Nº 209/2026](https://www.diariomunicipal.com.br/amp/materia/B4878793) · 2026-07-20
+- PREFEITURA MUNICIPAL DE PAIÇANDU · [EDITAL DE CONVOCAÇÃO Nº 210/2026](https://www.diariomunicipal.com.br/amp/materia/7D5DF7BB) · 2026-07-20
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [TERMO DE DESISTÊNCIA - PROCESSO SELETIVO](https://www.diariomunicipal.com.br/amp/materia/44E96EA2) · 2026-07-20
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [TERMO DE DESISTÊNCIA - PROCESSO SELETIVO](https://www.diariomunicipal.com.br/amp/materia/1B13D91C) · 2026-07-20
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO DE RESCISÃO DO CONTRATO](https://www.diariomunicipal.com.br/amp/materia/365372A3) · 2026-07-20
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO DE RESCISÃO DO CONTRATO](https://www.diariomunicipal.com.br/amp/materia/6F086E73) · 2026-07-20
+- DEPARTAMENTO DE RECURSOS HUMANOS · [PORTARIA N° 34.735/2026 - RH](https://www.diariomunicipal.com.br/amp/materia/C6475330) · 2026-07-20
+- DEPARTAMENTO DE RECURSOS HUMANOS · [PORTARIA N° 34.741/2026 - RH](https://www.diariomunicipal.com.br/amp/materia/E2FEA157) · 2026-07-20
+- DEPARTAMENTO DE RECURSOS HUMANOS E ADM · [PORTARIA Nº 221, DE 17 DE JULHO DE 2026](https://www.diariomunicipal.com.br/amp/materia/7F08D8EA) · 2026-07-20
+- PREFEITURA MUNICIPAL DE SÃO SEBASTIÃO DA AMOREIRA · [DECRETO Nº 186/2026](https://www.diariomunicipal.com.br/amp/materia/E02DAC33) · 2026-07-20
+- PREFEITURA MUNICIPAL DE TERRA RICA · [EDITAL DE CONVOCAÇÃO Nº 046/2026](https://www.diariomunicipal.com.br/amp/materia/24556B8A) · 2026-07-20
+- PREFEITURA MUNICIPAL DE TRÊS BARRAS DO PARANÁ · [EDITAL Nº. 088/2026](https://www.diariomunicipal.com.br/amp/materia/D6E8FFE3) · 2026-07-20
+- PREFEITURA MUNICIPAL DE CAPITÃO LEÔNIDAS MARQUES · [EDITAL 02/2026](https://www.diariomunicipal.com.br/amp/materia/9B39B914) · 2026-07-20
+- PREFEITURA MUNICIPAL DE CLEVELÂNDIA · [EDITAL Nº 05/2026 PROCESSO SELETIVO DE CLEVELÂNDIA ENSALAMENTO](https://www.diariomunicipal.com.br/amp/materia/C4185631) · 2026-07-20
+- SECRETARIA MUNICIPAL DE EDUCAÇÃO, CULTURA E ESPORTES · [PROCESSO SELETIVO SIMPLIFICADO Nº. 002/2026 EDITAL PSS 003/2026](https://www.diariomunicipal.com.br/amp/materia/6FDD7785) · 2026-07-20
+- SECRETARIA MUNICIPAL DE EDUCAÇÃO, ESPORTE E LAZER · [PROCESSO SELETIVO SIMPLIFICADO Nº 02/2026](https://www.diariomunicipal.com.br/amp/materia/A20D8CC5) · 2026-07-20
+- PREFEITURA MUNICIPAL DE UMUARAMA · [RETIFICAÇÃO N.º 01 – DISPÕE DA ALTERAÇÃO DE DOCUMENTOS E/OU EXAMES PARA ASSUNÇÃO DA FUNÇÃO PÚBLICA](https://www.diariomunicipal.com.br/amp/materia/5C61A82B) · 2026-07-20
+- PREFEITURA MUNI CIPAL DE ANDIRÁ · [EDITAL DE CONVOCAÇÃO  N. 005/2026 PSS - MOTORISTA](https://www.diariomunicipal.com.br/amp/materia/3883BC42) · 2026-07-21
+- ADMINISTRAÇÃO · [EDITAL DE CONVOCAÇÃO  Nº 002/2026 - PROCESSO](https://www.diariomunicipal.com.br/amp/materia/3D0D627D) · 2026-07-21
+- SECRETARIA MUNICIPAL  DE GOVERNO · [EDITAL DE CONVOCAÇÃO  N. º 029/2026 – PROCESSO](https://www.diariomunicipal.com.br/amp/materia/ADF1ECD0) · 2026-07-21
+- SECRETARIA MUN ICIPAL DE GOVERNO · [EXTRATO DE CONTRATO POR PRAZO DETERMINAD O](https://www.diariomunicipal.com.br/amp/materia/2FD87D69) · 2026-07-21
+- PREFEITURA MUNICIPAL  DE FERNANDES PINHEIRO · [EDITAL N° 35/2026 -PROCESSO SELETIVO SIMPLIFICADO](https://www.diariomunicipal.com.br/amp/materia/C5925285) · 2026-07-21
+- MUNICÍPIO DE FERNAND ES PINHEIRO · [EDITAL N° 38/2025 -PROCESSO SELETIVO SIMPLIFICADO](https://www.diariomunicipal.com.br/amp/materia/DEE338FA) · 2026-07-21
+- DEPARTAMENTO DE ADMI NISTRAÇÃO · [EXTRATO DE CONTRATO Nº 010/2026](https://www.diariomunicipal.com.br/amp/materia/1E78A648) · 2026-07-21
+- FUNDAÇÃO DE EDUCAÇÃO  DE PAIÇANDU · [PORTARIA Nº 335/2026](https://www.diariomunicipal.com.br/amp/materia/E6F1AF56) · 2026-07-21
+- FUNDAÇÃO DE EDUCAÇÃO  DE PAIÇANDU · [PORTARIA Nº 336/2026](https://www.diariomunicipal.com.br/amp/materia/FC03614B) · 2026-07-21
+- FUNDAÇÃO DE EDUCAÇÃO  DE PAIÇANDU · [PORTARIA Nº 337/2026](https://www.diariomunicipal.com.br/amp/materia/F9DE0EC1) · 2026-07-21
+- FUNDAÇÃO DE EDUCAÇÃO  DE PAIÇANDU · [PORTARIA Nº 338/2026](https://www.diariomunicipal.com.br/amp/materia/9F7FA135) · 2026-07-21
+- FUNDAÇÃO DE EDUCAÇÃO  DE PAIÇANDU · [PORTARIA Nº 339/2026](https://www.diariomunicipal.com.br/amp/materia/F3C08805) · 2026-07-21
+- FUNDAÇÃO DE EDUCAÇÃO  DE PAIÇANDU · [PORTARIA Nº 340/2026](https://www.diariomunicipal.com.br/amp/materia/A7D1E30A) · 2026-07-21
+- FUNDAÇÃO DE EDUCAÇÃO  DE PAIÇANDU · [PORTARIA Nº 392/2026](https://www.diariomunicipal.com.br/amp/materia/6D826A7D) · 2026-07-21
+- FUNDAÇÃO DE SÁUDE DE  PAIÇANDU · [EDITAL DE CONVOCAÇÃO  Nº194/2026](https://www.diariomunicipal.com.br/amp/materia/9601A6B9) · 2026-07-21
+- FUNDAÇÃO DE SÁUDE DE  PAIÇANDU · [EDITAL DE CONVOCAÇÃO  Nº195/2026](https://www.diariomunicipal.com.br/amp/materia/DBE88C84) · 2026-07-21
+- FUNDAÇÃO DE SÁUDE DE  PAIÇANDU · [EDITAL DE CONVOCAÇÃO  Nº196/2026](https://www.diariomunicipal.com.br/amp/materia/693ACC62) · 2026-07-21
+- FUNDAÇÃO DE SÁUDE DE  PAIÇANDU · [EDITAL DE CONVOCAÇÃO  Nº197/2026](https://www.diariomunicipal.com.br/amp/materia/00EB6445) · 2026-07-21
+- FUNDAÇÃO DE SÁUDE DE  PAIÇANDU · [EDITAL DE CONVOCAÇÃO  Nº198/2026](https://www.diariomunicipal.com.br/amp/materia/D353278C) · 2026-07-21
+- FUNDAÇÃO DE SÁUDE DE  PAIÇANDU · [EDITAL DE CONVOCAÇÃO  Nº199/2026](https://www.diariomunicipal.com.br/amp/materia/4084B461) · 2026-07-21
+- FUNDAÇÃO DE SÁUDE DE  PAIÇANDU · [EDITAL DE CONVOCAÇÃO  Nº 200/2026](https://www.diariomunicipal.com.br/amp/materia/A00DF664) · 2026-07-21
+- SECRETARIA MUNICIPAL  DE GESTÃO PÚBLICA · [COMUNICADO – CHAMADA CUIDADOR DE](https://www.diariomunicipal.com.br/amp/materia/089FC6B9) · 2026-07-21
+- SECRETARIA MUNICIPAL  DE GESTÃO PÚBLICA · [TERMO DE DESISTÊNCIA  - PROCESSO SELETIVO](https://www.diariomunicipal.com.br/amp/materia/DD84B255) · 2026-07-21
+- PREFEITURA MUNICIPAL  DE QUERÊNCIA DO NORT E ADMINISTRAÇÃO GERAL · [EDITAL Nº. 025/2026](https://www.diariomunicipal.com.br/amp/materia/35CE1D4D) · 2026-07-21
+- DEPARTAMENTO DE ADMI NISTRAÇÃO · [PROCESSO SELETIVO SIMPLIFICADO Nº 01/202 6 EDITAL](https://www.diariomunicipal.com.br/amp/materia/8EACCE0F) · 2026-07-21
+- RECURSOS HUMANOS · [EDITAL DE CONVOCAÇÃO  PSS N° 01/2025](https://www.diariomunicipal.com.br/amp/materia/88AD3A9D) · 2026-07-21
+- SECRETARIA GERAL · [PSS N º 001/2026 – SECRETARIA MUNICIPAL  DE SAÚDE 8ª](https://www.diariomunicipal.com.br/amp/materia/79CD7D96) · 2026-07-21
+- DEPARTAMENTO DE RECU RSOS HUMANOS E ADM · [PORTARIA Nº 223, DE 20 DE JULHO DE 2026](https://www.diariomunicipal.com.br/amp/materia/F5F8504B) · 2026-07-21
+- DEPARTAMENTO DE RECU RSOS HUMANOS E ADM · [PORTARIA Nº 224, DE 20 DE JULHO DE 2026](https://www.diariomunicipal.com.br/amp/materia/8CF1758F) · 2026-07-21
+- PREFEITURA MUNICIPAL  DE SAPOPEMA · [DECRETO Nº 189/2026](https://www.diariomunicipal.com.br/amp/materia/83A59720) · 2026-07-21
+- PREFEITURA MUNICIPAL  DE TERRA RICA · [EDITAL DE CONVOCAÇÃO  Nº 047/2026](https://www.diariomunicipal.com.br/amp/materia/A33E9E8B) · 2026-07-21
+- PREFEITURA MUNICIPAL  DE TERRA RICA · [EDITAL DE CONVOCAÇÃO  Nº 048/2026](https://www.diariomunicipal.com.br/amp/materia/68CBFEC5) · 2026-07-21
+- SECRETARIA MUNICIPAL  DE ADMINISTRAÇÃO · [PORTARIA Nº 951/202 6](https://www.diariomunicipal.com.br/amp/materia/4710DB5F) · 2026-07-21
+- PREFEITURA MUNICIPAL  DE AMAPORÃ · [EDITAL DE RETIFICAÇÃ O Nº 36/2026 (RETIFI CAÇÃO DO EDITAL DE ABERTURA Nº 33/20 26) PROCESSO SELETIVO](https://www.diariomunicipal.com.br/amp/materia/2949F683) · 2026-07-21
+- PREFEITURA MUNICIPAL  DE BALSA NOVA · [ADMINISTRAÇÃO](https://www.diariomunicipal.com.br/amp/materia/88C73396) · 2026-07-21
+- GOVERNO MUNICIPAL · [PROCESSO SELETIVO SIMPLIFICADO - EDITAL Nº 02.01/2026](https://www.diariomunicipal.com.br/amp/materia/C25AD047) · 2026-07-21
+- PREFEITURA MUNICIPAL  DE MARILENA · [EDITAL 006/2026 HOMO LOGAÇÃO DE CLASSIFICAÇÃO FINAL](https://www.diariomunicipal.com.br/amp/materia/0EEE715B) · 2026-07-21
+- DEPARTAMENTO DE ADMI NISTRAÇÃO E PLANEJAMENTO · [EDITAL 006/2026 HOMO LOGAÇÃO DE CLASSIFICAÇÃO FINAL](https://www.diariomunicipal.com.br/amp/materia/5EAB4DEE) · 2026-07-21
+- PREFEITURA MUNICIPAL  DE PITANGA · [EDITAL N. º 06/2026 – SEMECE PROCESSO SELETIVO SIMPLIFICADO](https://www.diariomunicipal.com.br/amp/materia/B6356207) · 2026-07-21
+- PREFEITURA MUNICIPAL  DE RIO NEGRO · [EDITAL N.º 092/2026](https://www.diariomunicipal.com.br/amp/materia/4C658F11) · 2026-07-21
+- PREFEITURA MUNICIPAL  DE SANTA LÚCIA · [PROCESSO SELETIVO SIMPLIFICADO Nº 002/20 26 EDITAL 007/2026 – CLASSIFICAÇÃO PROVA PRÁTICA](https://www.diariomunicipal.com.br/amp/materia/35C0CFAC) · 2026-07-21
+- GABINETE DO PREFEITO · [DECRETO N.º 583/2026](https://www.diariomunicipal.com.br/amp/materia/F779A009) · 2026-07-22
+- SECRETARIA MUNICIPAL DE EDUCAÇÃO · [DECRETO N.º 270/2026 DATA: 21-07-2026](https://www.diariomunicipal.com.br/amp/materia/86A39F70) · 2026-07-22
+- PREFEITURA MUNICIPAL DE HONÓRIO SERPA · [EDITAL Nº 07-G, DE 20 DE JULHO DE 2026. PROCESSO](https://www.diariomunicipal.com.br/amp/materia/92E139E0) · 2026-07-22
+- DEPARTAMENTO DE ADMINISTRAÇÃO · [EDITAL Nº 07-H, DE 21 DE JULHO DE 2026. PROCESSO](https://www.diariomunicipal.com.br/amp/materia/D4A6D7E8) · 2026-07-22
+- DEPARTAMENTO DE ADMINISTRAÇÃO · [EDITAL Nº 07-I, DE 21 DE JULHO DE 2026. PROCESSO](https://www.diariomunicipal.com.br/amp/materia/C3F0AB05) · 2026-07-22
+- DEPARTAMENTO DE RECURSOS HUMANOS · [Processo Seletivo Simplificado Edital nº 03/2025.](https://www.diariomunicipal.com.br/amp/materia/19C51205) · 2026-07-22
+- PREFEITURA MUNICIPAL DE IRATI · [DECRETO Nº 524/2026](https://www.diariomunicipal.com.br/amp/materia/302B550D) · 2026-07-22
+- GABINETE DO PREFEITO · [DECRETO Nº 525/2026](https://www.diariomunicipal.com.br/amp/materia/3E2E8258) · 2026-07-22
+- GABINETE DO PREFEITO · [DECRETO Nº 526/2026](https://www.diariomunicipal.com.br/amp/materia/6B4BE72B) · 2026-07-22
+- GABINETE DO PREFEITO · [DECRETO Nº 527/2026](https://www.diariomunicipal.com.br/amp/materia/A4BB3B9A) · 2026-07-22
+- GABINETE DO PREFEITO · [DECRETO Nº 528/2026](https://www.diariomunicipal.com.br/amp/materia/E2FB796C) · 2026-07-22
+- ADMINISTRAÇÃO RH · [Processo Seletivo Simplificado — PSS nº 001/2026](https://www.diariomunicipal.com.br/amp/materia/C5973790) · 2026-07-22
+- ADMINISTRAÇÃO RH · [EDITAL N°004/2026 CONVOCAÇÃO PROCESSO SELETIVO](https://www.diariomunicipal.com.br/amp/materia/BE7FCF71) · 2026-07-22
+- ADMINISTRAÇÃO RH · [PORTARIA Nº 290/2026](https://www.diariomunicipal.com.br/amp/materia/130C2287) · 2026-07-22
+- ADMINISTRAÇÃO RH · [Processo Seletivo Simplificado — PSS nº 001/2026 — Edital nº](https://www.diariomunicipal.com.br/amp/materia/B2902473) · 2026-07-22
+- GABINETE DO PREFEITO · [EDITAL N º. 251/2026 CONVOCAÇÃO PROCESSO](https://www.diariomunicipal.com.br/amp/materia/73ECE2CD) · 2026-07-22
+- GABINETE DO PREFEITO · [EDITAL N º. 252/2026 CONVOCAÇÃO PROCESSO](https://www.diariomunicipal.com.br/amp/materia/CDA121C0) · 2026-07-22
+- GABINETE DO PREFEITO · [EDITAL N º. 253/2026 CONVOCAÇÃO PROCESSO](https://www.diariomunicipal.com.br/amp/materia/FA522073) · 2026-07-22
+- GABINETE DO PREFEITO · [EDITAL N º. 254/2026 CONVOCAÇÃO PROCESSO](https://www.diariomunicipal.com.br/amp/materia/F739477F) · 2026-07-22
+- GABINETE DO PREFEITO · [EDITAL N º. 255/2026 CONVOCAÇÃO PROCESSO](https://www.diariomunicipal.com.br/amp/materia/3428A63C) · 2026-07-22
+- FUNDAÇÃO DE EDUCAÇÃO DE PAIÇANDU · [PORTARIA Nº 394/2026](https://www.diariomunicipal.com.br/amp/materia/B94524E6) · 2026-07-22
+- FUNDAÇÃO DE EDUCAÇÃO DE PAIÇANDU · [PORTARIA Nº 395/2026](https://www.diariomunicipal.com.br/amp/materia/E11FC539) · 2026-07-22
+- FUNDAÇÃO DE EDUCAÇÃO DE PAIÇANDU · [PORTARIA Nº 396/2026](https://www.diariomunicipal.com.br/amp/materia/228611CA) · 2026-07-22
+- FUNDAÇÃO DE EDUCAÇÃO DE PAIÇANDU · [PORTARIA Nº 398/2026](https://www.diariomunicipal.com.br/amp/materia/A37EB2F7) · 2026-07-22
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [COMUNICADO – CHAMADA PROFESSOR 20H - PROCESSO](https://www.diariomunicipal.com.br/amp/materia/73411307) · 2026-07-22
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [TERMO DE DESISTÊNCIA - PROCESSO SELETIVO](https://www.diariomunicipal.com.br/amp/materia/EC36F728) · 2026-07-22
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO DE RESCISÃO DO CONTRATO](https://www.diariomunicipal.com.br/amp/materia/6658EEAA) · 2026-07-22
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO DE RESCISÃO DO CONTRATO](https://www.diariomunicipal.com.br/amp/materia/239B95F1) · 2026-07-22
+- SECRETARIA MUNICIPAL DE RECURSOS HUMANOS · [PORTARIA N. º 188/2026– DE 21 DE JULHO DE 2026.](https://www.diariomunicipal.com.br/amp/materia/1FC80D1C) · 2026-07-22
+- SECRETARIA MUNICIPAL DE RECURSOS HUMANOS · [PORTARIA N. º 189/2026– DE 21 DE JULHO DE 2026.](https://www.diariomunicipal.com.br/amp/materia/3EE57C21) · 2026-07-22
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO E FINANÇAS · [EDITAL Nº. 04/2026](https://www.diariomunicipal.com.br/amp/materia/5738C5B0) · 2026-07-22
+- RECURSOS HUMANOS · [EDITAL DE CONVOCAÇÃO PSS N° 01/2025](https://www.diariomunicipal.com.br/amp/materia/54597402) · 2026-07-22
+- SECRETARIA GERAL · [EDITAL Nº 002/2026 PROCESSO SELETIVO SIMPLIFICADO](https://www.diariomunicipal.com.br/amp/materia/E2D51D83) · 2026-07-22
+- DIVISÃO DE RECURSOS HUMANOS · [EDITAL 076/2026](https://www.diariomunicipal.com.br/amp/materia/6EB7DD90) · 2026-07-22
+- DIVISÃO DE PESSOAL · [DECRETO Nº 189/2026](https://www.diariomunicipal.com.br/amp/materia/669E6493) · 2026-07-22
+- ADMINISTRAÇÃO GERAL · [DECRETO Nº 192/2026](https://www.diariomunicipal.com.br/amp/materia/E3A2D22D) · 2026-07-22
+- PREFEITURA MUNICIPAL DE TERRA RICA · [DECRETO Nº 316/2026](https://www.diariomunicipal.com.br/amp/materia/B74160F9) · 2026-07-22
+- PREFEITURA MUNICIPAL DE TERRA RICA · [EDITAL DE CONVOCAÇÃO Nº 050/2026](https://www.diariomunicipal.com.br/amp/materia/B131A5D6) · 2026-07-22
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [EDITAL N.º 84/2026 RESULTADO DEFINITIVO DA PROVA](https://www.diariomunicipal.com.br/amp/materia/01950EED) · 2026-07-22
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [EDITAL N.º 85/2026 RESULTADO FINAL E CLASSIFICAÇÃO](https://www.diariomunicipal.com.br/amp/materia/E3C03F32) · 2026-07-22
+- PREFEITURA MUNICIPAL DE AGUDOS DO SUL · [EDITAL Nº 007/2026 DIVULGAÇÃO DO RECURSO DA CLASSIFICAÇÃO PROVISÓRIA REPUBLICADO POR INCORREÇÃO](https://www.diariomunicipal.com.br/amp/materia/7E113401) · 2026-07-22
+- GABINETE DO PODER EXECUTIVO MUNICIPAL · [EDITAL Nº 008/2026 EDITAL DE CANDIDATOS CLASSIFICADOS PROCESSO SELETIVO SIMPLIFICADO Nº 001/2026](https://www.diariomunicipal.com.br/amp/materia/56F8FB1F) · 2026-07-22
+- PREFEITURA MUNICIPAL DE BALSA NOVA · [ADMINISTRAÇÃO](https://www.diariomunicipal.com.br/amp/materia/6C347ED7) · 2026-07-22
+- GABINETE · [EDITAL Nº 05/2026 PROCESSO SELETIVO DE CLEVELÂNDIA CLASSIFICAÇÃO PRELIMINAR](https://www.diariomunicipal.com.br/amp/materia/D08DA67B) · 2026-07-22
+- PREFEITURA MUNICIPAL DE IRATI · [EDITAL Nº 002.27/2026 – 23ª CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/C0270502) · 2026-07-22
+- PREFEITURA MUNICIPAL DE PATO BRANCO · [EDITAL Nº 003/2026](https://www.diariomunicipal.com.br/amp/materia/773CF95B) · 2026-07-22
+- PREFEITURA MUNICIPAL DE ROLÂNDIA · [EDITAL N º 002/2026 – SECRETARIA DE SAÚDE RESULTADO FINAL](https://www.diariomunicipal.com.br/amp/materia/867D227D) · 2026-07-22
+- PREFEITURA MUNICIPAL DE SALGADO FILHO · [EDITAL Nº 04/2026 EDITAL DE ENSALAMENTO PROCESSO SELETIVO SIMPLIFICADO Nº 01/2026](https://www.diariomunicipal.com.br/amp/materia/7614D920) · 2026-07-22
+- GABINETE DO PODER EXECUTIVO MUNICIPAL · [EDITAL DE CONVOCAÇÃO Nº 057/2026 - DIVISÃO DE](https://www.diariomunicipal.com.br/amp/materia/900FBAAA) · 2026-07-23
+- GABINETE DO PODER EXECUTIVO MUNICIPAL · [EXTRATO Nº 077/2026 DE RESCISÃO DE TÉRMINO DE](https://www.diariomunicipal.com.br/amp/materia/B8A42610) · 2026-07-23
+- PREFEITURA MUNICIPAL DE BOM JESUS DO SUL · [EDITAL Nº 2/2026 – HOMOLOGAÇÃO DAS INSCRIÇÕES](https://www.diariomunicipal.com.br/amp/materia/BD2C170D) · 2026-07-23
+- PREFEITURA MUNICIPAL DE CERRO AZUL · [EDITAL DE RETIFICAÇÃO Nº 001/2026 AO EDITAL Nº](https://www.diariomunicipal.com.br/amp/materia/B575D23D) · 2026-07-23
+- PREFEITURA MUNICIPAL DE CORONEL VIVIDA · [EDITAL Nº 040/2026 DE 22/07/2026 - PSS 001/2026](https://www.diariomunicipal.com.br/amp/materia/1C2C57A6) · 2026-07-23
+- GOVERNO MUNICIPAL - GABINETE DO PREFEITO · [PORTARIA Nº. 1158/2026](https://www.diariomunicipal.com.br/amp/materia/6056DAED) · 2026-07-23
+- SERVIÇO AUTÔNOMO MUNICIPAL DE ÁGUA E ESGOTO · [EXTRATO DO TERMO ADITIVO Nº 01 AO CONTRATO](https://www.diariomunicipal.com.br/amp/materia/945C5CA6) · 2026-07-23
+- SERVIÇO AUTÔNOMO MUNICIPAL DE ÁGUA E ESGOTO · [EXTRATO DO TERMO ADITIVO Nº 01 AO CONTRATO](https://www.diariomunicipal.com.br/amp/materia/159CAB13) · 2026-07-23
+- SERVIÇO AUTÔNOMO MUNICIPAL DE ÁGUA E ESGOTO · [EXTRATO DO TERMO ADITIVO Nº 01 AO CONTRATO](https://www.diariomunicipal.com.br/amp/materia/7824A545) · 2026-07-23
+- SERVIÇO AUTÔNOMO MUNICIPAL DE ÁGUA E ESGOTO · [EXTRATO DO TERMO ADITIVO Nº 01 AO CONTRATO](https://www.diariomunicipal.com.br/amp/materia/791E0C86) · 2026-07-23
+- SERVIÇO AUTÔNOMO MUNICIPAL DE ÁGUA E ESGOTO · [EXTRATO DO TERMO ADITIVO Nº 01 AO CONTRATO](https://www.diariomunicipal.com.br/amp/materia/44DCCFC1) · 2026-07-23
+- FUNDAÇÃO DE EDUCAÇÃO DE PAIÇANDU · [PORTARIA Nº 408/2026](https://www.diariomunicipal.com.br/amp/materia/C78A74E0) · 2026-07-23
+- PREFEITURA MUNICIPAL DE PAULA FREITAS · [EDITAL DE CONVOCAÇÃO Nº 05/2026](https://www.diariomunicipal.com.br/amp/materia/B6A2E039) · 2026-07-23
+- SECRETARIA MUNICIPAL DE RECURSOS HUMANOS · [EDITAL DE CONVOCAÇÃO Nº 089/2026](https://www.diariomunicipal.com.br/amp/materia/424C28EE) · 2026-07-23
+- PREFEITURA MUNICIPAL DE REALEZA · [PORTARIA Nº 8.989/2026 22/07/2026](https://www.diariomunicipal.com.br/amp/materia/43C7AB78) · 2026-07-23
+- DEPARTAMENTO DE ADMINISTRAÇÃO · [PORTARIA Nº 8.990/2026 22/07/2026](https://www.diariomunicipal.com.br/amp/materia/E8239608) · 2026-07-23
+- DEPARTAMENTO DE ADMINISTRAÇÃO · [LEI Nº 2018, DE 22 DE JULHO DE 2026](https://www.diariomunicipal.com.br/amp/materia/B1E872FE) · 2026-07-23
+- RECURSOS HUMANOS · [EDITAL DE CONVOCAÇÃO PSS N° 01/2025](https://www.diariomunicipal.com.br/amp/materia/BD7709CE) · 2026-07-23
+- ADMINISTRAÇÃO GERAL · [DECRETO Nº 3556/2026](https://www.diariomunicipal.com.br/amp/materia/A6AC33F2) · 2026-07-23
+- ADMINISTRAÇÃO GERAL · [DECRETO Nº 194/2026](https://www.diariomunicipal.com.br/amp/materia/04FC8AF2) · 2026-07-23
+- PREFEITURA MUNICIPAL DE TERRA RICA · [DECRETO Nº 320/2026](https://www.diariomunicipal.com.br/amp/materia/A5DBAFBF) · 2026-07-23
+- PREFEITURA MUNICIPAL DE TERRA RICA · [EDITAL DE CONVOCAÇÃO Nº 051/2026](https://www.diariomunicipal.com.br/amp/materia/77045039) · 2026-07-23
+- PREFEITURA MUNICIPAL DE TERRA RICA · [EDITAL DE CONVOCAÇÃO Nº 052/2026](https://www.diariomunicipal.com.br/amp/materia/A4AA9D0B) · 2026-07-23
+- MUNICÍPIO DE TRÊS BARRAS DO PARANÁ · [DECRETO Nº 7213/2026](https://www.diariomunicipal.com.br/amp/materia/179C0942) · 2026-07-23
+- MUNICÍPIO DE TRÊS BARRAS DO PARANÁ · [PORTARIA Nº1322/2026](https://www.diariomunicipal.com.br/amp/materia/003859DC) · 2026-07-23
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO - · [PORTARIA Nº 505/2026](https://www.diariomunicipal.com.br/amp/materia/122BBC5F) · 2026-07-23
+- PREFEITURA MUNICIPAL DE BALSA NOVA · [PROCESSO SELETIVO SIMPLIFICADO – PSS, para contratações temporárias para exercer a função de ASSISTENTE EDUCACIONAL, em](https://www.diariomunicipal.com.br/amp/materia/612DD188) · 2026-07-23
+- PREFEITURA MUNICIPAL DE GENERAL CARNEIRO · [DECRETO MUNICIPAL N.º517/2026](https://www.diariomunicipal.com.br/amp/materia/388AEAB0) · 2026-07-23
+- PREFEITURA MUNICIPAL DE JAGUAPITÃ · [PROCESSO SELETIVO SIMPLIFICADO - EDITAL Nº 02.01/2026](https://www.diariomunicipal.com.br/amp/materia/F69C48A0) · 2026-07-23
+- PREFEITURA MUNICIPAL DE MANGUEIRINHA · [RECURSOS HUMANOS](https://www.diariomunicipal.com.br/amp/materia/C5913BEB) · 2026-07-23
+- PREFEITURA MUNICIPAL DE SANTO ANTÔNIO DO PARAÍSO · [DECRETO Nº 3357/2026](https://www.diariomunicipal.com.br/amp/materia/BC764149) · 2026-07-23
+- PREFEITURA MUNICIPAL DE SÃO JOSÉ DA BOA VISTA · [EDITAL 077/2026](https://www.diariomunicipal.com.br/amp/materia/7A6E2A39) · 2026-07-23
+- GABINETE DO PREFEITO MUNICIPAL · [LEI MUNICIPAL N.º 995 DE 23 DE JULHO DE 2026](https://www.diariomunicipal.com.br/amp/materia/7B4212FA) · 2026-07-24
+- GABINETE DO PODER EXECUTIVO MUNICIPAL · [DECRETO Nº 54 DE 30 DE ABRIL DE 2026](https://www.diariomunicipal.com.br/amp/materia/18067D29) · 2026-07-24
+- ADMINISTRAÇÃO · [EDITAL DE CONVOCAÇÃO N.º 02/2026 - PROCESSO](https://www.diariomunicipal.com.br/amp/materia/ED3FACBB) · 2026-07-24
+- ADMINISTRAÇÃO · [DECRETO Nº 200/2026](https://www.diariomunicipal.com.br/amp/materia/0D3C8F0F) · 2026-07-24
+- ADMINISTRAÇÃO · [PORTARIA Nº 161/2026](https://www.diariomunicipal.com.br/amp/materia/EC1C4BB5) · 2026-07-24
+- SECRETARIA MUNICIPAL DE GOVERNO · [EDITAL DE CONVOCAÇÃO N. º 030/2026 – PROCESSO](https://www.diariomunicipal.com.br/amp/materia/C6C5825C) · 2026-07-24
+- SECRETARIA GOVERNO · [PORTARIA Nº 1005/2026 DISPÕE SOBRE A NOMEAÇÃO DA](https://www.diariomunicipal.com.br/amp/materia/8D31B196) · 2026-07-24
+- SECRETÁRIA DE ADMINISTRAÇÃO E FINANÇAS · [DECRETO Nº 23702/2026](https://www.diariomunicipal.com.br/amp/materia/E5E9A612) · 2026-07-24
+- DEPARTAMENTO DE RECURSOS HUMANOS · [Processo Seletivo Simplificado Edital nº 03/2025.](https://www.diariomunicipal.com.br/amp/materia/EDBDA9A9) · 2026-07-24
+- GOVERNO MUNICIPAL - GABINETE DO PREFEITO · [PORTARIA Nº. 1161/2026](https://www.diariomunicipal.com.br/amp/materia/D3BD676C) · 2026-07-24
+- GOVERNO MUNICIPAL - GABINETE DO PREFEITO · [PORTARIA Nº. 1162/2026](https://www.diariomunicipal.com.br/amp/materia/68BE5AB4) · 2026-07-24
+- GABINETE DO PREFEITO · [DECRETO Nº 532/2026](https://www.diariomunicipal.com.br/amp/materia/B36A8453) · 2026-07-24
+- DIVISÃO DE LICITAÇÃO · [EXTRATO DO TERMO DE RATIFICAÇÃO DISPENSA DE](https://www.diariomunicipal.com.br/amp/materia/071D9D24) · 2026-07-24
+- DIVISÃO DE RECURSOS HUMANOS · [EDITAL DE CONVOCAÇÃO -PROFESSOR(A) - PSS 001/2025](https://www.diariomunicipal.com.br/amp/materia/B4DC1C41) · 2026-07-24
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [EXTRATO TERMO ADITIVO AO CONTRATO DE](https://www.diariomunicipal.com.br/amp/materia/877F64C6) · 2026-07-24
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [EXTRATO TERMO ADITIVO AO CONTRATO DE](https://www.diariomunicipal.com.br/amp/materia/17BCAEF7) · 2026-07-24
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [EXTRATO TERMO ADITIVO AO CONTRATO DE](https://www.diariomunicipal.com.br/amp/materia/3024CFC0) · 2026-07-24
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [EXTRATO TERMO ADITIVO AO CONTRATO DE](https://www.diariomunicipal.com.br/amp/materia/968519E8) · 2026-07-24
+- GOVERNO MUNICIPAL · [PORTARIA Nº. 467/2026](https://www.diariomunicipal.com.br/amp/materia/583D430B) · 2026-07-24
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [COMUNICADO – CHAMADA CUIDADOR DE](https://www.diariomunicipal.com.br/amp/materia/B3CCAC11) · 2026-07-24
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [TERMO DE DESISTÊNCIA - PROCESSO SELETIVO](https://www.diariomunicipal.com.br/amp/materia/EDB2FEEC) · 2026-07-24
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO DE RESCISÃO DO CONTRATO](https://www.diariomunicipal.com.br/amp/materia/EF398A87) · 2026-07-24
+- PREFEITURA MUNICIPAL DE RIO BRANCO DO IVAÍ · [EDITAL DE HOMOLOGAÇÃO DAS INSCRIÇÕES - PSS](https://www.diariomunicipal.com.br/amp/materia/E3F3C62E) · 2026-07-24
+- DEPARTAMENTO DE RECURSOS HUMANOS · [PORTARIA N° 34.754/2026 - RH](https://www.diariomunicipal.com.br/amp/materia/D3BEFFA8) · 2026-07-24
+- DEPARTAMENTO DE RECURSOS HUMANOS · [PORTARIA N° 34.758/2026 - RH](https://www.diariomunicipal.com.br/amp/materia/91EB7ABE) · 2026-07-24
+- DEPARTAMENTO DE RECURSOS HUMANOS · [PORTARIA N° 34.759/2026 - RH](https://www.diariomunicipal.com.br/amp/materia/42AB75A2) · 2026-07-24
+- PREFEITURA MUNICIPAL DE TERRA RICA · [EDITAL DE CONVOCAÇÃO Nº 055/2026](https://www.diariomunicipal.com.br/amp/materia/9CFBD093) · 2026-07-24
+- PREFEITURA MUNICIPAL DE TOMAZINA · [EDITAL DE CONVOCAÇÃO Nº 007-2026 - PROCESSO](https://www.diariomunicipal.com.br/amp/materia/1FFA511F) · 2026-07-24
+- PODER EXECUTIVO · [PORTARIA N.º 326/2026](https://www.diariomunicipal.com.br/amp/materia/A0A054E7) · 2026-07-24
+- MUNICÍPIO DE TRÊS BARRAS DO PARANÁ · [EDITAL Nº. 089/2026](https://www.diariomunicipal.com.br/amp/materia/F35C7BF4) · 2026-07-24
+- MUNICÍPIO DE TRÊS BARRAS DO PARANÁ · [PORTARIA N°1323/2026](https://www.diariomunicipal.com.br/amp/materia/AF37EA62) · 2026-07-24
+- PREFEITURA MUNICIPAL DE GENERAL CARNEIRO · [Edital n.º 005/2025.](https://www.diariomunicipal.com.br/amp/materia/8ECAA5EA) · 2026-07-24
+- GOVERNO MUNICIPAL · [PROCESSO SELETIVO SIMPLIFICADO – EDITAL ABERTURA Nº 02.01/2026](https://www.diariomunicipal.com.br/amp/materia/5382B46B) · 2026-07-24
+- DEPARTAMENTO DE RH · [EDITAL 016-2026 CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/E49EECD3) · 2026-07-24
+- EXECUTIVO MUNICIPAL · [PROCESSO SELETIVO SIMPLIFICADO Nº 002/2026 EDITAL 008/2026 – CLASSIFICAÇÃO DEFINITIVA DA PROVA DE TÍTULOS,](https://www.diariomunicipal.com.br/amp/materia/A6E6C316) · 2026-07-24
+- PREFEITURA MUNICIPAL DE INÁCIO MARTINS · [Portaria 001/2025](https://www.diariomunicipal.com.br/amp/materia/8E2A972C) · 2026-07-24
+- DEPARTAMENTO DE RH · [EXTRATO CONTRATO 16 2026 - PROFESSOR EDUCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/1319032B) · 2026-07-27
+- DEPARTAMENTO DE RH · [PORTARIA 196 2026](https://www.diariomunicipal.com.br/amp/materia/F57AA826) · 2026-07-27
+- GABINETE DO PREFEITO MUNICIPAL · [DECRETO Nº 121/2026, 24 DE JULHO DE 2026.](https://www.diariomunicipal.com.br/amp/materia/7299B5B9) · 2026-07-27
+- GABINETE DO PREFEITO MUNICIPAL · [DECRETO Nº 48, DE 24 DE JULHO DE 2026](https://www.diariomunicipal.com.br/amp/materia/B80DCFBB) · 2026-07-27
+- GABINETE DA PREFEITA · [EDITAL DE CONVOCAÇÃO N. 006/2026 PSS - MOTORISTA](https://www.diariomunicipal.com.br/amp/materia/B01CF636) · 2026-07-27
+- GABINETE DA PREFEITA · [EDITAL DE CONVOCAÇÃO N. 015/2026 PSS - PROFESSOR](https://www.diariomunicipal.com.br/amp/materia/B5910180) · 2026-07-27
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [RETIFICAÇÃO DO EXTRATO DO CONTRATO N° 03/2025](https://www.diariomunicipal.com.br/amp/materia/6DCC476B) · 2026-07-27
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [RETIFICAÇÃO DO EXTRATO DO CONTRATO N° 31/2025](https://www.diariomunicipal.com.br/amp/materia/61BB5722) · 2026-07-27
+- PREFEITURA MUNICIPAL DE CLEVELÂNDIA · [EDITAL Nº 05/2026 PROCESSO SELETIVO DE](https://www.diariomunicipal.com.br/amp/materia/A480529D) · 2026-07-27
+- PREFEITURA MUNICIPAL DE CORONEL VIVIDA · [EDITAL Nº 041/2026 DE 24/07/2026 - PSS 001/2026](https://www.diariomunicipal.com.br/amp/materia/1C8F627C) · 2026-07-27
+- DEPARTAMENTO DE GESTÃO DE PESSOAS · [EXTRATO DE ADITIVO DE CONTRATOS DE SERVIÇO](https://www.diariomunicipal.com.br/amp/materia/A6892DC3) · 2026-07-27
+- DEPARTAMENTO DE ADMINISTRAÇÃO · [PROCESSO SELETIVO SIMPLIFICADO 004/2026 EDITAL DE](https://www.diariomunicipal.com.br/amp/materia/04E35D74) · 2026-07-27
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [EDITAL DE CHAMAMENTO Nº. 016/2026](https://www.diariomunicipal.com.br/amp/materia/D1A156B8) · 2026-07-27
+- CONSAMU · [PROCESSO SELETIVO SIMPLIFICADO Nº 001/2026 PARA](https://www.diariomunicipal.com.br/amp/materia/365D94E8) · 2026-07-27
+- CONSAMU · [PROCESSO SELETIVO SIMPLIFICADO Nº 002/2026 PARA](https://www.diariomunicipal.com.br/amp/materia/02E9690C) · 2026-07-27
+- DEPARTAMENTO DE RECURSOS HUMANOS · [DECRETO 164/2026](https://www.diariomunicipal.com.br/amp/materia/39A0CDEB) · 2026-07-27
+- DEPARTAMENTO DE RECURSOS HUMANOS · [DECRETO 165/2026](https://www.diariomunicipal.com.br/amp/materia/2E5A168A) · 2026-07-27
+- DEPARTAMENTO DE RECURSOS HUMANOS · [DECRETO 166/2026](https://www.diariomunicipal.com.br/amp/materia/EE649365) · 2026-07-27
+- DEPARTAMENTO DE RECURSOS HUMANOS · [DECRETO 167/2026](https://www.diariomunicipal.com.br/amp/materia/39E68C7E) · 2026-07-27
+- PREFEITURA MUNICIPAL DE ITAMBÉ · [PROCESSO SELETIVO SIMPLIFICADO Nº 001/2025](https://www.diariomunicipal.com.br/amp/materia/DE5A8582) · 2026-07-27
+- GABINETE DO PREFEITO · [DECRETO Nº 322/2026](https://www.diariomunicipal.com.br/amp/materia/82CDB175) · 2026-07-27
+- FUNDAÇÃO DE EDUCAÇÃO DE PAIÇANDU · [EDITAL DE CONVOCAÇÃO Nº 221/2026](https://www.diariomunicipal.com.br/amp/materia/4A1F61E6) · 2026-07-27
+- FUNDAÇÃO DE EDUCAÇÃO DE PAIÇANDU · [EDITAL DE CONVOCAÇÃO Nº 223/2026](https://www.diariomunicipal.com.br/amp/materia/E5E581EF) · 2026-07-27
+- FUNDAÇÃO DE EDUCAÇÃO DE PAIÇANDU · [EDITAL DE CONVOCAÇÃO Nº 224/2026](https://www.diariomunicipal.com.br/amp/materia/71BF72E0) · 2026-07-27
+- FUNDAÇÃO DE SÁUDE DE PAIÇANDU · [EDITAL DE CONVOCAÇÃO Nº214/2026](https://www.diariomunicipal.com.br/amp/materia/F62C375E) · 2026-07-27
+- FUNDAÇÃO DE SÁUDE DE PAIÇANDU · [EDITAL DE CONVOCAÇÃO Nº215/2026](https://www.diariomunicipal.com.br/amp/materia/4528502F) · 2026-07-27
+- FUNDAÇÃO DE SÁUDE DE PAIÇANDU · [EDITAL DE CONVOCAÇÃO Nº 217/2026](https://www.diariomunicipal.com.br/amp/materia/69B7292D) · 2026-07-27
+- FUNDAÇÃO DE SÁUDE DE PAIÇANDU · [EDITAL DE CONVOCAÇÃO Nº 218/2026](https://www.diariomunicipal.com.br/amp/materia/CF1AFDF0) · 2026-07-27
+- FUNDAÇÃO DE SÁUDE DE PAIÇANDU · [EDITAL DE CONVOCAÇÃO Nº 219/2026](https://www.diariomunicipal.com.br/amp/materia/5A519A26) · 2026-07-27
+- FUNDAÇÃO DE SÁUDE DE PAIÇANDU · [EDITAL DE CONVOCAÇÃO Nº220/2026](https://www.diariomunicipal.com.br/amp/materia/00C56CE0) · 2026-07-27
+- FUNDAÇÃO DE SÁUDE DE PAIÇANDU · [PORTARIA Nº 313/2026](https://www.diariomunicipal.com.br/amp/materia/B5612859) · 2026-07-27
+- DEPARTAMENTO DE ADMINISTRAÇÃO · [EDITAL Nº 06/2026 EDITAL CONVOCAÇÃO TAF – TESTE](https://www.diariomunicipal.com.br/amp/materia/329EC491) · 2026-07-27
+- DEPARTAMENTO DE ADMINISTRAÇÃO · [EXTRATO DE RESCISÃO/EXONERAÇÃO CONTRATO](https://www.diariomunicipal.com.br/amp/materia/678D8C00) · 2026-07-27
+- DEPARTAMENTO DE ADMINISTRAÇÃO · [PORTARIA Nº 8.995/2026 24/07/2026](https://www.diariomunicipal.com.br/amp/materia/C5FFE23E) · 2026-07-27
+- DEPARTAMENTO DE ADMINISTRAÇÃO · [PROCESSO SELETIVO SIMPLIFICADO Nº 01/2026 EDITAL](https://www.diariomunicipal.com.br/amp/materia/E83B1CD0) · 2026-07-27
+- PREFEITURA MUNICIPAL DE RIO BRANCO DO SUL · [ERRATA EDITAL N º 002/2025 – 02ª CONVOCAÇÃO – PSS Nº](https://www.diariomunicipal.com.br/amp/materia/95402AF5) · 2026-07-27
+- SECRETARIA GERAL E DO PLANEJAMENTO · [EDITAL Nº 001/2026 PROCESSO SELETIVO SIMPLIFICADO](https://www.diariomunicipal.com.br/amp/materia/0EAD6BA8) · 2026-07-27
+- SECRETARIA GERAL E DO PLANEJAMENTO · [EDITAL Nº 001/2026 PROCESSO SELETIVO SIMPLIFICADO](https://www.diariomunicipal.com.br/amp/materia/28F44BDB) · 2026-07-27
+- DIVISÃO DE RECURSOS HUMANOS · [EDITAL 078/2026](https://www.diariomunicipal.com.br/amp/materia/0E622C2B) · 2026-07-27
+- DIVISÃO DE RECURSOS HUMANOS · [EDITAL 079/2026](https://www.diariomunicipal.com.br/amp/materia/A5E6F360) · 2026-07-27
+- DIVISÃO DE RECURSOS HUMANOS · [PORTARIA Nº 181/2026](https://www.diariomunicipal.com.br/amp/materia/A516FBFB) · 2026-07-27
+- PODER EXECUTIVO · [PORTARIA N.º 327/2026](https://www.diariomunicipal.com.br/amp/materia/8CE06BA0) · 2026-07-27
+- PODER EXECUTIVO · [PORTARIA N.º 328/2026](https://www.diariomunicipal.com.br/amp/materia/B02BD5A2) · 2026-07-27
+- MUNICÍPIO DE TRÊS BARRAS DO PARANÁ · [PORTARIA Nº1324/2026](https://www.diariomunicipal.com.br/amp/materia/8C9C5300) · 2026-07-27
+- SECRETARIA DE ADMINISTRAÇÃO · [EDITAL DE CONVOCAÇÃO 137-2026](https://www.diariomunicipal.com.br/amp/materia/AFF848C8) · 2026-07-27
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [PORTARIA Nº 972/2026](https://www.diariomunicipal.com.br/amp/materia/CA809969) · 2026-07-27
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO - · [PORTARIA Nº 514/2026](https://www.diariomunicipal.com.br/amp/materia/BEDDA539) · 2026-07-27
+- MUNICÍPIO DE CORUMBATAÍ DO SUL · [EDITAL DE PROCESSO SELETIVO SIMPLIFICADO - PSS 01/2026](https://www.diariomunicipal.com.br/amp/materia/F203B121) · 2026-07-27
+- MUNICÍPIO DE NOSSA SENHORA DAS GRAÇAS · [PROCESSO SELETIVO SIMPLIFICADO Nº 002/2026 EDITAL Nº 001/2026](https://www.diariomunicipal.com.br/amp/materia/F27014A3) · 2026-07-27
+- PREFEITURA MUNICIPAL DE BARRA DO JACARÉ · [RECURSOS HUMANOS](https://www.diariomunicipal.com.br/amp/materia/02F41333) · 2026-07-27
+- PREFEITURA MUNICIPAL DE CERRO AZUL · [EDITAL DE PROCESSO SELETIVO SIMPLIFICADO 005/2026 SEMED](https://www.diariomunicipal.com.br/amp/materia/5F0AADB2) · 2026-07-27
+- PREFEITURA MUNICIPAL DE CLEVELÂNDIA · [EDITAL Nº 05/2026 PROCESSO SELETIVO DE CLEVELÂNDIA LISTA DOS APROVADOS](https://www.diariomunicipal.com.br/amp/materia/00EE8745) · 2026-07-27
+- PREFEITURA MUNICIPAL DE DIAMANTE D'OESTE · [PROCESSO SELETIVO SIMPLIFICADO Nº. 002/2026 EDITAL PSS 004/2026](https://www.diariomunicipal.com.br/amp/materia/41A98E14) · 2026-07-27
+- SECRETARIA DE EDUCAÇÃO E CULTURA · [HOMOLOGAÇÃO DAS INSCRIÇÕES DO PROCESSO SELETIVO SIMPLIFICADO EDITAL N° 001/2026](https://www.diariomunicipal.com.br/amp/materia/DEA85893) · 2026-07-27
+- SECRETARIA MUNICIPAL DE SAÚDE · [1º TERMO DE RETIFICAÇÃO AO EDITAL DE PROCESSO SELETIVO SIMPLIFICADO Nº 02/2026](https://www.diariomunicipal.com.br/amp/materia/5C87F0E7) · 2026-07-27
+- SECRETARIA MUNICIPAL DE RECURSOS HUMANOS · [PROCESSO SELETIVO SIMPLIFICADO – PSS PARA CONTRATAÇÃO POR PRAZO DETERMINADO E FORMAÇÃO DE CADASTRO DE](https://www.diariomunicipal.com.br/amp/materia/8A0CC94F) · 2026-07-27
+- PREFEITURA MUNICIPAL DE AGUDOS DO SUL · [EDITAL DE CONVOCAÇÃO Nº 059/2026 - DIVISÃO DE](https://www.diariomunicipal.com.br/amp/materia/9E52D66F) · 2026-07-28
+- RECURSOS HUMANOS · [PROCESSO SELETIVO SIMPLIFICADO – PSS Nº 001/2025](https://www.diariomunicipal.com.br/amp/materia/8B846FB0) · 2026-07-28
+- GABINETE · [EDITAL Nº 05/2026 PROCESSO SELETIVO DE](https://www.diariomunicipal.com.br/amp/materia/B1611B31) · 2026-07-28
+- SECRETARIA DE ADMINISTRAÇÃO E PLANEJAMENTO · [EDITAL Nº 053/2026](https://www.diariomunicipal.com.br/amp/materia/FBD6B956) · 2026-07-28
+- PREFEITURA MUNICIPAL DE HONÓRIO SERPA · [EDITAL Nº 07-J, DE 27 DE JULHO DE 2026. PROCESSO](https://www.diariomunicipal.com.br/amp/materia/E4388659) · 2026-07-28
+- GOVERNO MUNICIPAL - GABINETE DO PREFEITO · [PORTARIA Nº 1174/2026](https://www.diariomunicipal.com.br/amp/materia/F7E38167) · 2026-07-28
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [DECLARAÇÃO PROCESSO SELETIVO SIMPLIFICADO –](https://www.diariomunicipal.com.br/amp/materia/0AE0C5CD) · 2026-07-28
+- PREFEITURA MUNICIPAL DE MALLET · [EDITAL DE ABERTURA Nº 001.003 – PSS 003/2026 - TO](https://www.diariomunicipal.com.br/amp/materia/091FDA6D) · 2026-07-28
+- RECURSOS HUMANOS · [PROCESSO SELETIVO SIMPLIFICADO – PSS/PMM Nº](https://www.diariomunicipal.com.br/amp/materia/023562C1) · 2026-07-28
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [COMUNICADO – CHAMADA PROFESSOR 20H - PROCESSO](https://www.diariomunicipal.com.br/amp/materia/FE3CD951) · 2026-07-28
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [termos do Edital nº 003/2025, convocou o candidato abaixo](https://www.diariomunicipal.com.br/amp/materia/D76D7D9E) · 2026-07-28
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO DE RESCISÃO DO CONTRATO](https://www.diariomunicipal.com.br/amp/materia/858BC5E6) · 2026-07-28
+- SECRETARIA MUNICIPAL DE RECURSOS HUMANOS · [EDITAL DE CONVOCAÇÃO Nº 06/2026](https://www.diariomunicipal.com.br/amp/materia/C1994EE4) · 2026-07-28
+- SECRETARIA MUNICIPAL DE RECURSOS HUMANOS · [EDITAL DE CONVOCAÇÃO Nº 07/2026](https://www.diariomunicipal.com.br/amp/materia/7C5D1630) · 2026-07-28
+- GABINETE DO PREFEITO · [EDITAL N º 003/2026 – 03ª CONVOCAÇÃO –PSS Nº 001/2026–](https://www.diariomunicipal.com.br/amp/materia/22E0699A) · 2026-07-28
+- GABINETE DO PREFEITO · [EDITAL N º 013/2026 – 20ª CONVOCAÇÃO –PSS Nº 001/2025 –](https://www.diariomunicipal.com.br/amp/materia/9573E317) · 2026-07-28
+- DEPARTAMENTO DE RECURSOS HUMANOS · [PORTARIA N° 34.755/2026 - RH](https://www.diariomunicipal.com.br/amp/materia/A806A5A3) · 2026-07-28
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [EDITAL DE CONVOCAÇÃO Nº 014/2026.](https://www.diariomunicipal.com.br/amp/materia/FAD2E30A) · 2026-07-28
+- ADMINISTRAÇÃO GERAL · [EDITAL Nº 091/2026 (CONVOCAÇÃO)](https://www.diariomunicipal.com.br/amp/materia/4D0D8DCA) · 2026-07-28
+- PREFEITURA MUNICIPAL DE SENGÉS · [EDITAL DE CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/023CA536) · 2026-07-28
+- PREFEITURA MUNICIPAL DE TERRA RICA · [EDITAL DE CONVOCAÇÃO Nº 057/2026](https://www.diariomunicipal.com.br/amp/materia/CCA9BE28) · 2026-07-28
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [EDITAL 086/2026](https://www.diariomunicipal.com.br/amp/materia/4E956AF7) · 2026-07-28
+- ADMINISTRAÇÃO · [EDITAL DE PROCESSO SELETIVO Nº 1/2026](https://www.diariomunicipal.com.br/amp/materia/EA609885) · 2026-07-28
+- PREFEITURA MUNICIPAL DE CLEVELÂNDIA · [EDITAL Nº 05/2026 PROCESSO SELETIVO DE CLEVELÂNDIA HOMOLOGAÇÃO DA CLASSIFICAÇÃO FINAL](https://www.diariomunicipal.com.br/amp/materia/622ED825) · 2026-07-28
+- PREFEITURA MUNICIPAL DE IRATI · [EDITAL Nº 001.9/2026 – 5ª CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/435AF9C2) · 2026-07-28
+- RECURSOS HUMANOS · [CLASSICAÇÃO PRELIMINAR PSS Nº 005/2026](https://www.diariomunicipal.com.br/amp/materia/5737EEFD) · 2026-07-28
+- EXECUTIVO MUNICIPAL · [PROCESSO SELETIVO SIMPLIFICADO Nº 002/2026 EDITAL 009/2026 – HOMOLOGAÇÃO DO RESULTADO FINAL](https://www.diariomunicipal.com.br/amp/materia/0E2E87FB) · 2026-07-28
+- PREFEITURA MUNICIPAL DE TERRA RICA · [EDITAL DE CONVOCAÇÃO Nº 056/2026](https://www.diariomunicipal.com.br/amp/materia/ED8178CF) · 2026-07-28
+- DEPARTAMENTO DE RECURSOS HUMANOS · [EDITAL DE RETIFICAÇÃO Nº 01/2026 AO EDITAL DE PSS](https://www.diariomunicipal.com.br/amp/materia/D5727345) · 2026-07-29
+- RECURSOS HUMANOS · [EDITAL Nº 037/2026 – RESULTADO FINAL DO PROCESSO](https://www.diariomunicipal.com.br/amp/materia/70920886) · 2026-07-29
+- PREFEITURA MUNICIPAL DE CORONEL VIVIDA · [EDITAL Nº 042/2026 DE 28/07/2026 - PSS 001/2026](https://www.diariomunicipal.com.br/amp/materia/1786137C) · 2026-07-29
+- DEPARTAMENTO DE GESTÃO DE PESSOAS · [EDITAL Nº 043/2026 DE 28/07/2026 - PSS 001/2026](https://www.diariomunicipal.com.br/amp/materia/D623D2CC) · 2026-07-29
+- PREFEITURA MUNICIPAL DE DOUTOR ULYSSES · [DECRETO Nº 0233/2026 NOMEAR, A SENHORA ARISLENE](https://www.diariomunicipal.com.br/amp/materia/2516667F) · 2026-07-29
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [EDITAL DE CHAMAMENTO Nº. 017/2026](https://www.diariomunicipal.com.br/amp/materia/6145D33E) · 2026-07-29
+- PREFEITURA MUNICIPAL DE INÁCIO MARTINS · [PROCESSO SELETIVO SIMPLIFICADO Nº 001/2025](https://www.diariomunicipal.com.br/amp/materia/C3B93028) · 2026-07-29
+- DEPARTAMENTO DE RECURSOS HUMANOS · [Processo Seletivo Simplificado Edital nº 03/2025.](https://www.diariomunicipal.com.br/amp/materia/DE40D9C1) · 2026-07-29
+- GOVERNO MUNICIPAL - GABINETE DO PREFEITO · [PORTARIA Nº. 1179/2026](https://www.diariomunicipal.com.br/amp/materia/542FDF15) · 2026-07-29
+- GOVERNO MUNICIPAL - GABINETE DO PREFEITO · [PORTARIA Nº. 1193/2026](https://www.diariomunicipal.com.br/amp/materia/1CDF58FE) · 2026-07-29
+- PREFEITURA MUNICIPAL DE IVATUBA · [EDITAL DE CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/FDEE51C8) · 2026-07-29
+- DIRETORIA DE RECURSOS HUMANOS · [PORTARIA Nº 0133/2026](https://www.diariomunicipal.com.br/amp/materia/61D93ADB) · 2026-07-29
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [EDITAL DE CONVOCAÇÃO Nº. 013/2026 DE 28 DE JULHO](https://www.diariomunicipal.com.br/amp/materia/3918C661) · 2026-07-29
+- PREFEITURA MUNICIPAL DE MALLET · [GABINETE DO PREFEITO](https://www.diariomunicipal.com.br/amp/materia/4E15521C) · 2026-07-29
+- SECRETARIA DE ADMINISTRAÇÃO - SETOR DE RECURSOS HUMANOS · [EXTRATO DE TERMO ADITIVO AO CONTRATO POR](https://www.diariomunicipal.com.br/amp/materia/86C8F6A2) · 2026-07-29
+- SECRETARIA DE ADMINISTRAÇÃO - SETOR DE RECURSOS HUMANOS · [EXTRATO DE TERMO ADITIVO POR PRAZO](https://www.diariomunicipal.com.br/amp/materia/C3B1FE13) · 2026-07-29
+- SECRETARIA DE ADMINISTRAÇÃO - SETOR DE RECURSOS HUMANOS · [EXTRATO DE TERMO ADITIVO POR PRAZO](https://www.diariomunicipal.com.br/amp/materia/F20BE828) · 2026-07-29
+- SECRETARIA DE ADMINISTRAÇÃO - SETOR DE RECURSOS HUMANOS · [EXTRATO DE TERMO ADITIVO POR PRAZO](https://www.diariomunicipal.com.br/amp/materia/53091757) · 2026-07-29
+- SECRETARIA DE ADMINISTRAÇÃO - SETOR DE RECURSOS HUMANOS · [EXTRATO DE TERMO ADITIVO POR PRAZO](https://www.diariomunicipal.com.br/amp/materia/0F4A8A75) · 2026-07-29
+- SECRETARIA DE ADMINISTRAÇÃO - SETOR DE RECURSOS HUMANOS · [EXTRATO DE TERMO ADITIVO POR PRAZO](https://www.diariomunicipal.com.br/amp/materia/175BD653) · 2026-07-29
+- SECRETARIA DE ADMINISTRAÇÃO - SETOR DE RECURSOS HUMANOS · [EXTRATO DE TERMO ADITIVO POR PRAZO](https://www.diariomunicipal.com.br/amp/materia/11B8F0BA) · 2026-07-29
+- GABINETE DO PREFEITO · [EDITAL N º. 258/2026 CONVOCAÇÃO PROCESSO](https://www.diariomunicipal.com.br/amp/materia/86A75B87) · 2026-07-29
+- GABINETE DO PREFEITO · [EDITAL N º. 259/2026 CONVOCAÇÃO - PROCESSO](https://www.diariomunicipal.com.br/amp/materia/9269E170) · 2026-07-29
+- GABINETE DO PREFEITO · [EDITAL N º. 260/2026 - CONVOCAÇÃO PROCESSO](https://www.diariomunicipal.com.br/amp/materia/EE72C939) · 2026-07-29
+- GABINETE DO PREFEITO · [EDITAL N º. 261/2026 CONVOCAÇÃO PROCESSO](https://www.diariomunicipal.com.br/amp/materia/67B11EEB) · 2026-07-29
+- GABINETE DO PREFEITO · [EDITAL N º. 262/2026 CONVOCAÇÃO PROCESSO](https://www.diariomunicipal.com.br/amp/materia/04017BD0) · 2026-07-29
+- PREFEITURA MUNICIPAL DE MORRETES · [EDITAL Nº 97, DE 28 DE JULHO 2026. EDITAL DE](https://www.diariomunicipal.com.br/amp/materia/065D299C) · 2026-07-29
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [COMUNICADO – CHAMADA AUXILIAR DE CUIDADOR DE](https://www.diariomunicipal.com.br/amp/materia/40757B4B) · 2026-07-29
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [COMUNICADO – CHAMADA AUXILIAR DE CUIDADOR DE](https://www.diariomunicipal.com.br/amp/materia/8538ED94) · 2026-07-29
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EDITAL DE CONVOCAÇÃO Nº 159/2026](https://www.diariomunicipal.com.br/amp/materia/78F26795) · 2026-07-29
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [PORTARIA MUNICIPAL Nº 1399/2026](https://www.diariomunicipal.com.br/amp/materia/A5907CC9) · 2026-07-29
+- DEPARTAMENTO DE RECURSOS HUMANOS · [PORTARIA N° 34.768/2026 - RH](https://www.diariomunicipal.com.br/amp/materia/5775F327) · 2026-07-29
+- EXECUTIVO MUNICIPAL · [PROCESSO SELETIVO SIMPLIFICADO Nº 002/2026 EDITAL](https://www.diariomunicipal.com.br/amp/materia/1F91248A) · 2026-07-29
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [PROCESSO SELETIVO SIMPLIFICADO – PSS – EDITAL Nº](https://www.diariomunicipal.com.br/amp/materia/F86E9C90) · 2026-07-29
+- PREFEITURA MUNICIPAL DE SENGÉS · [EDITAL DE CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/2C2246FF) · 2026-07-29
+- PREFEITURA MUNICIPAL DE TERRA RICA · [EDITAL DE CONVOCAÇÃO Nº 058/2026](https://www.diariomunicipal.com.br/amp/materia/A87C05E1) · 2026-07-29
+- MUNICÍPIO DE TRÊS BARRAS DO PARANÁ · [DECRETO Nº 7220/2026](https://www.diariomunicipal.com.br/amp/materia/F7DAECB3) · 2026-07-29
+- MUNICÍPIO DE TRÊS BARRAS DO PARANÁ · [EDITAL Nº. 090/2026](https://www.diariomunicipal.com.br/amp/materia/29D3465C) · 2026-07-29
+- SECRETARIA DE ADMINISTRAÇÃO · [EDITAL DE CONVOCAÇÃO 139-2026](https://www.diariomunicipal.com.br/amp/materia/502E5A3D) · 2026-07-29
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [EDITAL N.º 89/2026](https://www.diariomunicipal.com.br/amp/materia/AE5D7EC3) · 2026-07-29
+- PREFEITURA MUNICIPAL DE BARRA DO JACARÉ · [EDITAL DE CONVOCAÇÃO PSS – ESTAGIÁRIOS Nº 01.11/2026](https://www.diariomunicipal.com.br/amp/materia/D6F5D911) · 2026-07-29
+- PREFEITURA MUNICIPAL DE DOUTOR ULYSSES · [PROCESSO SELETIVO SIMPLIFICADO N° 004/2026 EDITAL DE DIVULGAÇÃO DA CLASSIFICAÇÃO FINAL](https://www.diariomunicipal.com.br/amp/materia/A62B7225) · 2026-07-29
+- GABINETE DO PREFEITO · [PROCESSO SELETIVO SIMPLIFICADO Nº 001/2026 - SECRETARIA MUNICIPAL DE SAÚDE](https://www.diariomunicipal.com.br/amp/materia/4F8847A7) · 2026-07-29
+- PREFEITURA MUNICIPAL DE JAGUAPITÃ · [PROCESSO SELETIVO SIMPLIFICADO - EDITAL Nº 001/2026](https://www.diariomunicipal.com.br/amp/materia/5DEB5AFE) · 2026-07-29
+- PREFEITURA MUNICIPAL DE MALLET · [EDITAL DE ABERTURA Nº 001.002 – PSS 002/2026-PROFESSOR PROCESSO SELETIVO SIMPLIFICADO Nº 002/2026-PROFESSOR](https://www.diariomunicipal.com.br/amp/materia/2751F97B) · 2026-07-29
+- SECRETARIAS MUNICIPAIS · [EDITAL DE ABERTURA Nº 001.003 – PSS 003/2026 – TO – RETIFICADO* PROCESSO SELETIVO SIMPLIFICADO Nº PSS 003/2026](https://www.diariomunicipal.com.br/amp/materia/674675B1) · 2026-07-29
+- PREFEITURA MUNICIPAL DE MANDAGUARI · [CONTABILIDADE](https://www.diariomunicipal.com.br/amp/materia/F0A86875) · 2026-07-29
+- DEPARTAMENTO DE ADMINISTRAÇÃO · [PROCESSO SELETIVO SIMPLIFICADO Nº 04/2026 EDITAL Nº 03 – HOMOLOGAÇÃO DAS INSCRIÇÕES](https://www.diariomunicipal.com.br/amp/materia/2C54DB2E) · 2026-07-29
+- PREFEITURA MUNICIPAL DE RIO NEGRO · [EDITAL N.º 094/2026](https://www.diariomunicipal.com.br/amp/materia/01BFB852) · 2026-07-29
+- GABINETE DA PREFEITA · [EDITAL DE CONVOCAÇÃO N. 007/2026 PSS - MOTORISTA](https://www.diariomunicipal.com.br/amp/materia/0D83522D) · 2026-07-30
+- GABINETE DA PREFEITA · [EDITAL DE CONVOCAÇÃO N. 016/2026 PSS - PROFESSOR](https://www.diariomunicipal.com.br/amp/materia/D283949A) · 2026-07-30
+- PREFEITURA MUNICIPAL DE CORONEL VIVIDA · [EXTRATO DE CONTRATOS DE SERVIÇO TEMPORÁRIO -](https://www.diariomunicipal.com.br/amp/materia/6750CF50) · 2026-07-30
+- MUNICÍPIO DE FERNANDES PINHEIRO · [DECRETO Nº. 193/2026 SÚMULA: ADMISSÃO DE](https://www.diariomunicipal.com.br/amp/materia/CD7E15B0) · 2026-07-30
+- MUNICIPIO DE GOIOXIM · [PORTARIA Nº 170 DE 29 DE JULHO DE 2026 CONSTITUI](https://www.diariomunicipal.com.br/amp/materia/C91D643B) · 2026-07-30
+- PREFEITURA MUNICIPAL DE INÁCIO MARTINS · [PROCESSO SELETIVO SIMPLIFICADO Nº 001/2025](https://www.diariomunicipal.com.br/amp/materia/97F21B28) · 2026-07-30
+- DIVISÃO DE RECURSOS HUMANOS · [EDITAL DE CONVOCAÇÃO - PROFESSOR - PSS 001/2025](https://www.diariomunicipal.com.br/amp/materia/0E06F12D) · 2026-07-30
+- PREFEITURA MUNICIPAL DE LAPA · [Processo Seletivo Simplificado nº 02/2026, e demais disposições](https://www.diariomunicipal.com.br/amp/materia/CE68D271) · 2026-07-30
+- DEPARTAMENTO DE ADMINISTRAÇÃO · [PROCESSO SELETIVO SIMPLIFICADO PARA DESENVOLVIMENTO DE ESTÁGIO](https://www.diariomunicipal.com.br/amp/materia/9162FD83) · 2026-07-30
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [COMUNICADO – CHAMADA AUXILIAR ADMINISTRATIVO](https://www.diariomunicipal.com.br/amp/materia/02F32B62) · 2026-07-30
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [COMUNICADO – CHAMADA AUXILIAR DE CUIDADOR DE](https://www.diariomunicipal.com.br/amp/materia/F9C9CB88) · 2026-07-30
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [COMUNICADO – CHAMADA PROFESSOR 20H - PROCESSO](https://www.diariomunicipal.com.br/amp/materia/10CBC6D7) · 2026-07-30
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [TERMO DE DESISTÊNCIA - PROCESSO SELETIVO](https://www.diariomunicipal.com.br/amp/materia/BBDBFBE6) · 2026-07-30
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [TERMO DE DESISTÊNCIA - PROCESSO SELETIVO](https://www.diariomunicipal.com.br/amp/materia/BC4FAE05) · 2026-07-30
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [TERMO DE DESISTÊNCIA - PROCESSO SELETIVO](https://www.diariomunicipal.com.br/amp/materia/E2EBA7C6) · 2026-07-30
+- PREFEITURA MUNICIPAL DE PALMITAL · [EDITAL DE CONVOCAÇÃO N.º 04/2026 PROCESSO](https://www.diariomunicipal.com.br/amp/materia/27ED9D28) · 2026-07-30
+- PREFEITURA MUNICIPAL DE PRADO FERREIRA · [PORTARIA N.º 17 DE 22 DE JULHO DE 2026](https://www.diariomunicipal.com.br/amp/materia/3F5BD35F) · 2026-07-30
+- DIVISÃO DE PESSOAL · [DECRETO Nº 199/2026](https://www.diariomunicipal.com.br/amp/materia/FDDF7950) · 2026-07-30
+- PREFEITURA MUNICIPAL DE TERRA RICA · [EDITAL DE CONVOCAÇÃO Nº 059/2026](https://www.diariomunicipal.com.br/amp/materia/CF156851) · 2026-07-30
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [PORTARIA Nº 976/2026](https://www.diariomunicipal.com.br/amp/materia/06436F1F) · 2026-07-30
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [PORTARIA Nº 977/2026](https://www.diariomunicipal.com.br/amp/materia/E1A6CB1B) · 2026-07-30
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [PORTARIA Nº 979/2026](https://www.diariomunicipal.com.br/amp/materia/30C3621E) · 2026-07-30
+- SECRETARIA MUNICIPAL DE SAUDE · [PROCESSO SELETIVO SIMPLIFICADO Nº 002/2026 EDITAL N° 03/2026](https://www.diariomunicipal.com.br/amp/materia/3C82AAAF) · 2026-07-30
+- DEPARTAMENTO DE ADMINISTRAÇÃO · [PROCESSO SELETIVO SIMPLIFICADO Nº001/2026 EDITAL DE DIVULGAÇÃO DA HOMOLOGAÇÃO DO RESULTADO FINAL](https://www.diariomunicipal.com.br/amp/materia/95E4FF93) · 2026-07-30
+- PREFEITURA MUNICIPAL DE PATO BRANCO · [EXTRATO DE CONTRATO DE PRESTAÇÃO DE SERVIÇOS PROCESSO SELETIVO SIMPLIFICADO – ADMISSÕES JULHO/2026](https://www.diariomunicipal.com.br/amp/materia/3409A2D3) · 2026-07-30
+- PREFEITURA MUNICIPAL DE REALEZA · [PROCESSO SELETIVO SIMPLIFICADO Nº 04/2026 EDITAL Nº 04 – RESULTADO FINAL E CLASSIFICAÇÃO](https://www.diariomunicipal.com.br/amp/materia/806ECE00) · 2026-07-30
+- PREFEITURA MUNICIPAL DE RIO BRANCO DO IVAÍ · [ERRATA 02 AO EDITAL DE ABERTURA PSS 01/2026](https://www.diariomunicipal.com.br/amp/materia/8F2C206E) · 2026-07-30
+- PREFEITURA MUNICIPAL DE GUARACI · [EDITAL N.º 054/2026](https://www.diariomunicipal.com.br/amp/materia/EEDD503F) · 2026-07-30
+- MUNICÍPIO DE NOSSA SENHORA DAS GRAÇAS · [EDITAL DE RETIFICAÇÃO Nº 001/2026](https://www.diariomunicipal.com.br/amp/materia/10A7BE37) · 2026-07-31
+- GABINETE DO PODER EXECUTIVO MUNICIPAL · [EDITAL DE CONVOCAÇÃO Nº 061/2026 - DIVISÃO DE](https://www.diariomunicipal.com.br/amp/materia/72519CCC) · 2026-07-31
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [PORTARIA Nº 339/2026 - PRORROGA O PRAZO DE](https://www.diariomunicipal.com.br/amp/materia/612D5C0C) · 2026-07-31
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO TERMO ADITIVO Nº 034/2026 DO](https://www.diariomunicipal.com.br/amp/materia/8BA112F7) · 2026-07-31
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO TERMO ADITIVO Nº 035/2026 DO](https://www.diariomunicipal.com.br/amp/materia/68932434) · 2026-07-31
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO TERMO ADITIVO Nº 036/2026 DO](https://www.diariomunicipal.com.br/amp/materia/B535279E) · 2026-07-31
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO TERMO ADITIVO Nº 037/2026 DO](https://www.diariomunicipal.com.br/amp/materia/F51F0F34) · 2026-07-31
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO TERMO ADITIVO Nº 038/2026 DO](https://www.diariomunicipal.com.br/amp/materia/29A5D911) · 2026-07-31
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO TERMO ADITIVO Nº 039/2026 DO](https://www.diariomunicipal.com.br/amp/materia/1BC9E068) · 2026-07-31
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO TERMO ADITIVO Nº 040/2026 DO](https://www.diariomunicipal.com.br/amp/materia/29B15E53) · 2026-07-31
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO TERMO ADITIVO Nº 041/2026 DO](https://www.diariomunicipal.com.br/amp/materia/DA645025) · 2026-07-31
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO TERMO ADITIVO Nº 042/2026 DO](https://www.diariomunicipal.com.br/amp/materia/115A3AD0) · 2026-07-31
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO TERMO ADITIVO Nº 043/2026 DO](https://www.diariomunicipal.com.br/amp/materia/FB4CB1AF) · 2026-07-31
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO TERMO ADITIVO Nº 044/2026 DO](https://www.diariomunicipal.com.br/amp/materia/B991C0FC) · 2026-07-31
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO TERMO ADITIVO Nº 045/2026 DO](https://www.diariomunicipal.com.br/amp/materia/E789A172) · 2026-07-31
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO TERMO ADITIVO Nº 046/2026 DO](https://www.diariomunicipal.com.br/amp/materia/B64D41E7) · 2026-07-31
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO TERMO ADITIVO Nº 047/2026 DO](https://www.diariomunicipal.com.br/amp/materia/79838C41) · 2026-07-31
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO TERMO ADITIVO Nº 048/2026 DO](https://www.diariomunicipal.com.br/amp/materia/DCB92D9A) · 2026-07-31
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO TERMO ADITIVO Nº 049/2026 DO](https://www.diariomunicipal.com.br/amp/materia/4667BFA4) · 2026-07-31
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO TERMO ADITIVO Nº 050/2026 DO](https://www.diariomunicipal.com.br/amp/materia/BCC5361F) · 2026-07-31
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO TERMO ADITIVO Nº 051/2026 DO](https://www.diariomunicipal.com.br/amp/materia/F28E21D2) · 2026-07-31
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO TERMO ADITIVO Nº 052/2026 DO](https://www.diariomunicipal.com.br/amp/materia/7FF7D32C) · 2026-07-31
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO TERMO ADITIVO Nº 053/2026 DO](https://www.diariomunicipal.com.br/amp/materia/E47DDB52) · 2026-07-31
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO TERMO ADITIVO Nº 054/2026 DO](https://www.diariomunicipal.com.br/amp/materia/4765C2ED) · 2026-07-31
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO TERMO ADITIVO Nº 055/2026 DO](https://www.diariomunicipal.com.br/amp/materia/54D217D1) · 2026-07-31
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO TERMO ADITIVO Nº 056/2026 DO](https://www.diariomunicipal.com.br/amp/materia/CD4A6238) · 2026-07-31
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO TERMO ADITIVO Nº 057/2026 DO](https://www.diariomunicipal.com.br/amp/materia/137C3E35) · 2026-07-31
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO TERMO ADITIVO Nº 058/2026 DO](https://www.diariomunicipal.com.br/amp/materia/C8AE3DE4) · 2026-07-31
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO TERMO ADITIVO Nº 059/2026 DO](https://www.diariomunicipal.com.br/amp/materia/789ED27A) · 2026-07-31
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO TERMO ADITIVO Nº 060/2026 DO](https://www.diariomunicipal.com.br/amp/materia/0DAA112D) · 2026-07-31
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO TERMO ADITIVO Nº 061/2026 DO](https://www.diariomunicipal.com.br/amp/materia/63385BFB) · 2026-07-31
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO TERMO ADITIVO Nº 062/2026 DO](https://www.diariomunicipal.com.br/amp/materia/5D88F29B) · 2026-07-31
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO TERMO ADITIVO Nº 063/2026 DO](https://www.diariomunicipal.com.br/amp/materia/0FBC6798) · 2026-07-31
+- PREFEITURA MUNICIPAL DE CORONEL VIVIDA · [EDITAL Nº 044/2026 DE 30/07/2026 - PSS 001/2026](https://www.diariomunicipal.com.br/amp/materia/04A56BB1) · 2026-07-31
+- RH · [EDITAL 102 RESULTADO DA CONVOCAÇÃO 101/2026 PSS](https://www.diariomunicipal.com.br/amp/materia/0B4C0383) · 2026-07-31
+- SECRETARIA DE ADMINISTRAÇÃO E PLANEJAMENTO · [EDITAL Nº 055/2026](https://www.diariomunicipal.com.br/amp/materia/0D4F402C) · 2026-07-31
+- SECRETARIA DE ADMINISTRAÇÃO E PLANEJAMENTO · [EDITAL Nº 056/2026](https://www.diariomunicipal.com.br/amp/materia/262BA08D) · 2026-07-31
+- PREFEITURA MUNICIPAL DE INÁCIO MARTINS · [RESOLUÇÃO 133/2026](https://www.diariomunicipal.com.br/amp/materia/370D1874) · 2026-07-31
+- CONSORCIO INTERMUNICIPAL DE SAUDE DA REGIAO · [RESOLUÇÃO 134/2026](https://www.diariomunicipal.com.br/amp/materia/21113A3D) · 2026-07-31
+- DEPARTAMENTO DE RECURSOS HUMANOS · [Processo Seletivo Simplificado Edital nº 03/2025.](https://www.diariomunicipal.com.br/amp/materia/32C5BD11) · 2026-07-31
+- GOVERNO MUNICIPAL - GABINETE DO PREFEITO · [PORTARIA Nº. 1202/2026](https://www.diariomunicipal.com.br/amp/materia/394BBD6C) · 2026-07-31
+- GABINETE DO PREFEITO · [DECRETO Nº 546/2026](https://www.diariomunicipal.com.br/amp/materia/527AE7FB) · 2026-07-31
+- GABINETE DO PREFEITO · [DECRETO Nº 547/2026](https://www.diariomunicipal.com.br/amp/materia/59367D88) · 2026-07-31
+- PREFEITURA MUNICIPAL DE ITAMBÉ · [PROCESSO SELETIVO SIMPLIFICADO Nº 001/2025](https://www.diariomunicipal.com.br/amp/materia/D820E273) · 2026-07-31
+- DEPARTAMENTO DE ADMINISTRAÇÃO · [TERMO DE DESISTÊNCIA](https://www.diariomunicipal.com.br/amp/materia/2025F8CC) · 2026-07-31
+- ADMINISTRAÇÃO RH · [PROCESSO SELETIVO SIMPLIFICADO N° 001/2024](https://www.diariomunicipal.com.br/amp/materia/CBDE56B1) · 2026-07-31
+- ADMINISTRAÇÃO RH · [PROCESSO SELETIVO SIMPLIFICADO N° 001/2025](https://www.diariomunicipal.com.br/amp/materia/0249089C) · 2026-07-31
+- PREFEITURA MUNICIPAL DE LAPA · [DECRETO N° 29847, DE 30 DE JULHO DE 2026](https://www.diariomunicipal.com.br/amp/materia/F88AA44C) · 2026-07-31
+- GABINETE · [DECRETO N° 29848, DE 30 DE JULHO DE 2026](https://www.diariomunicipal.com.br/amp/materia/4F4680CE) · 2026-07-31
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [PORTARIA Nº. 249/2026 DE 30 DE JULHO DE 2026,](https://www.diariomunicipal.com.br/amp/materia/3ABE49F6) · 2026-07-31
+- GABINETE DO PREFEITO · [EDITAL N º. 263/2026 - DISPÕE SOBRE A CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/6C67846F) · 2026-07-31
+- PREFEITURA MUNICIPAL DE MARILENA · [EDITAL Nº 033/2026](https://www.diariomunicipal.com.br/amp/materia/C9609B4F) · 2026-07-31
+- SECRETARIA DE ADMINISTRAÇÃO · [PORTARIA N° 9118 DE 29 DE JULHO DE 2026](https://www.diariomunicipal.com.br/amp/materia/131E974B) · 2026-07-31
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [PROCESSO SELETIVO SIMPLIFICADO Nº. 01/2026](https://www.diariomunicipal.com.br/amp/materia/25DF01CD) · 2026-07-31
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [COMUNICADO – CHAMADA PROFESSOR 40H - PROCESSO](https://www.diariomunicipal.com.br/amp/materia/E8ABABE6) · 2026-07-31
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [TERMO DE DESISTÊNCIA - PROCESSO SELETIVO](https://www.diariomunicipal.com.br/amp/materia/52D78872) · 2026-07-31
+- PREFEITURA MUNICIPAL DE QUERÊNCIA DO NORTE · [DECRETO N° 112/2026](https://www.diariomunicipal.com.br/amp/materia/61C3E67A) · 2026-07-31
+- PREFEITURA MUNICIPAL DE RIO BRANCO DO IVAÍ · [EDITAL Nº 018/2026](https://www.diariomunicipal.com.br/amp/materia/F77AA30F) · 2026-07-31
+- GABINETE DO PREFEITO · [EDITAL N º 013/2026 – 21ª CONVOCAÇÃO –PSS Nº 002/2025–](https://www.diariomunicipal.com.br/amp/materia/E69742D2) · 2026-07-31
+- DEPARTAMENTO DE RECURSOS HUMANOS · [PORTARIA N° 34.779/2026 - RH](https://www.diariomunicipal.com.br/amp/materia/0FCBF666) · 2026-07-31
+- SECRETARIA GERAL · [PORTARIA Nº 3.239, DE 30 DE JULHO DE 2026.](https://www.diariomunicipal.com.br/amp/materia/F1CDCFD7) · 2026-07-31
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [PROCESSO SELETIVO SIMPLIFICADO 001/2025](https://www.diariomunicipal.com.br/amp/materia/2F9997D7) · 2026-07-31
+- PREFEITURA MUNICIPAL DE SENGÉS · [EDITAL DE CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/56AEA079) · 2026-07-31
+- PREFEITURA MUNICIPAL DE TERRA RICA · [EDITAL DE CONVOCAÇÃO Nº 061/2026](https://www.diariomunicipal.com.br/amp/materia/BEEA9F42) · 2026-07-31
+- PREFEITURA MUNICIPAL DE TOMAZINA · [EDITAL DE CONVOCAÇÃO Nº 007-2026 - PROCESSO](https://www.diariomunicipal.com.br/amp/materia/F07D4E13) · 2026-07-31
+- DEPARTAMENTO DE ADMINISTRAÇÃO FINANÇAS E PLANEJAMENTO · [DECRETO Nº 234, DE 30 DE JULHO DE 2026](https://www.diariomunicipal.com.br/amp/materia/53489440) · 2026-07-31
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [PORTARIA Nº 981/2026](https://www.diariomunicipal.com.br/amp/materia/9EC110C0) · 2026-07-31
+- PREFEITURA MUNICIPAL DE CERRO AZUL · [EDITAL Nº 002/2026 DIVULGAÇÃO DAS INSCRIÇÕES DEFERIDAS E INDEFERIDAS PROCESSO SELETIVO SIMPLIFICADO –](https://www.diariomunicipal.com.br/amp/materia/1B4D0CFF) · 2026-07-31
+- DEPARTAMENTO DE RECURSOS HUMANOS · [17º EDITAL DE CONVOCAÇÃO PSS ESTAGIARIOS 2026](https://www.diariomunicipal.com.br/amp/materia/7189E8B4) · 2026-07-31
+- PREFEITURA MUNICIPAL DE IVAÍ · [HOMOLOGAÇÃO DAS INSCRIÇÕES DO PROCESSO SELETIVO SIMPLIFICADO EDITAL N° 001/2026 APÓS RECURSO](https://www.diariomunicipal.com.br/amp/materia/6444A985) · 2026-07-31
+- PREFEITURA MUNICIPAL DE MANGUEIRINHA · [RECURSOS HUMANOS](https://www.diariomunicipal.com.br/amp/materia/847959F0) · 2026-07-31
+- SECRETARIA MUNICIPAL DE SAÚDE · [2º TERMO DE RETIFICAÇÃO AO EDITAL DE PROCESSO SELETIVO SIMPLIFICADO Nº 02/2026](https://www.diariomunicipal.com.br/amp/materia/6A8D3EEC) · 2026-07-31
+- SECRETARIA GERAL · [EDITAL Nº 001/2026 – SECRETARIA DE EDUCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/16F9B8E6) · 2026-07-31
+- SECRETARIA DE ADMINISTRACAO · [HOMOLOGAÇÃO PROCESSO 003-2026](https://www.diariomunicipal.com.br/amp/materia/8AE58CA4) · 2026-07-31
+- GABINETE DO PODER EXECUTIVO MUNICIPAL · [EDITAL DE CONVOCAÇÃO Nº 064/2026 - DIVISÃO DE](https://www.diariomunicipal.com.br/amp/materia/434724CE) · 2026-08-03
+- ADMINISTRAÇÃO · [PORTARIA Nº 527/2026](https://www.diariomunicipal.com.br/amp/materia/0C84A354) · 2026-08-03
+- ADMINISTRAÇÃO · [PORTARIA Nº 528/2026](https://www.diariomunicipal.com.br/amp/materia/8B012C10) · 2026-08-03
+- ADMINISTRAÇÃO · [PORTARIA Nº 529/2026](https://www.diariomunicipal.com.br/amp/materia/813C2AAE) · 2026-08-03
+- ADMINISTRAÇÃO · [PORTARIA Nº 530/2026](https://www.diariomunicipal.com.br/amp/materia/A26AE3AB) · 2026-08-03
+- ADMINISTRAÇÃO · [PORTARIA Nº 531/2026](https://www.diariomunicipal.com.br/amp/materia/238F4A7D) · 2026-08-03
+- ADMINISTRAÇÃO · [PORTARIA Nº 533/2026](https://www.diariomunicipal.com.br/amp/materia/64286BF5) · 2026-08-03
+- ADMINISTRAÇÃO · [PORTARIA Nº 534/2026](https://www.diariomunicipal.com.br/amp/materia/6BCE7113) · 2026-08-03
+- ADMINISTRAÇÃO · [PORTARIA Nº 535/2026](https://www.diariomunicipal.com.br/amp/materia/0F05681E) · 2026-08-03
+- ADMINISTRAÇÃO · [PORTARIA Nº 536/2026](https://www.diariomunicipal.com.br/amp/materia/4DE7883E) · 2026-08-03
+- ADMINISTRAÇÃO · [PORTARIA Nº 538/2026](https://www.diariomunicipal.com.br/amp/materia/CE38E7D1) · 2026-08-03
+- ADMINISTRAÇÃO · [PORTARIA Nº 540/2026](https://www.diariomunicipal.com.br/amp/materia/74E29DD4) · 2026-08-03
+- ADMINISTRAÇÃO · [PORTARIA Nº 541/2026](https://www.diariomunicipal.com.br/amp/materia/42E30F70) · 2026-08-03
+- ADMINISTRAÇÃO · [PORTARIA Nº 546/2026](https://www.diariomunicipal.com.br/amp/materia/89C9D255) · 2026-08-03
+- ADMINISTRAÇÃO · [PORTARIA Nº 548/2026](https://www.diariomunicipal.com.br/amp/materia/C2649FA9) · 2026-08-03
+- ADMINISTRAÇÃO · [PORTARIA Nº 549/2026](https://www.diariomunicipal.com.br/amp/materia/1D010855) · 2026-08-03
+- SECRETARIA MUNICIPAL DE GOVERNO · [ERRATA: REFERENTE AO EXTRATO DO SEGUNDO](https://www.diariomunicipal.com.br/amp/materia/4DC281D1) · 2026-08-03
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO TERCEIRO TERMO ADITIVO N°072/2026 DO](https://www.diariomunicipal.com.br/amp/materia/CF6BC72C) · 2026-08-03
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO TERCEIRO TERMO ADITIVO N°073/2026 DO](https://www.diariomunicipal.com.br/amp/materia/7391637F) · 2026-08-03
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO TERCEIRO TERMO ADITIVO N°074/2026 DO](https://www.diariomunicipal.com.br/amp/materia/E49E20AE) · 2026-08-03
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO TERCEIRO TERMO ADITIVO N°075/2026 DO](https://www.diariomunicipal.com.br/amp/materia/3203A058) · 2026-08-03
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO TERCEIRO TERMO ADITIVO N°076/2026 DO](https://www.diariomunicipal.com.br/amp/materia/9C7639EC) · 2026-08-03
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO TERCEIRO TERMO ADITIVO N°077/2026 DO](https://www.diariomunicipal.com.br/amp/materia/2CC913D0) · 2026-08-03
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO TERCEIRO TERMO ADITIVO N°078/2026 DO](https://www.diariomunicipal.com.br/amp/materia/3C3C140D) · 2026-08-03
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO TERCEIRO TERMO ADITIVO N°079/2026 DO](https://www.diariomunicipal.com.br/amp/materia/8D553F8B) · 2026-08-03
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO TERCEIRO TERMO ADITIVO N°080/2026 DO](https://www.diariomunicipal.com.br/amp/materia/7A38AB52) · 2026-08-03
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO TERCEIRO TERMO ADITIVO N°081/2026 DO](https://www.diariomunicipal.com.br/amp/materia/7E1CAC92) · 2026-08-03
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO TERCEIRO TERMO ADITIVO N°082/2026 DO](https://www.diariomunicipal.com.br/amp/materia/5B4A934C) · 2026-08-03
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO TERCEIRO TERMO ADITIVO N°083/2026 DO](https://www.diariomunicipal.com.br/amp/materia/484D55F5) · 2026-08-03
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO TERCEIRO TERMO ADITIVO N°084/2026 DO](https://www.diariomunicipal.com.br/amp/materia/4941A808) · 2026-08-03
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO TERCEIRO TERMO ADITIVO N°085/2026 DO](https://www.diariomunicipal.com.br/amp/materia/F908B0C4) · 2026-08-03
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO TERCEIRO TERMO ADITIVO N°086/2026 DO](https://www.diariomunicipal.com.br/amp/materia/B06AB7DD) · 2026-08-03
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO TERCEIRO TERMO ADITIVO N°087/2026 DO](https://www.diariomunicipal.com.br/amp/materia/108DBCF1) · 2026-08-03
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO TERCEIRO TERMO ADITIVO N°088/2026 DO](https://www.diariomunicipal.com.br/amp/materia/B6368EC9) · 2026-08-03
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO TERCEIRO TERMO ADITIVO N°089/2026 DO](https://www.diariomunicipal.com.br/amp/materia/DFD3151D) · 2026-08-03
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO TERCEIRO TERMO ADITIVO N°090/2026 DO](https://www.diariomunicipal.com.br/amp/materia/FD2177E1) · 2026-08-03
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO TERCEIRO TERMO ADITIVO N°091/2026 DO](https://www.diariomunicipal.com.br/amp/materia/FFAE4D0D) · 2026-08-03
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO TERCEIRO TERMO ADITIVO N°092/2026 DO](https://www.diariomunicipal.com.br/amp/materia/94EA1272) · 2026-08-03
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO TERCEIRO TERMO ADITIVO N°093/2026 DO](https://www.diariomunicipal.com.br/amp/materia/AA936891) · 2026-08-03
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO TERCEIRO TERMO ADITIVO N°094/2026 DO](https://www.diariomunicipal.com.br/amp/materia/E862660C) · 2026-08-03
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO TERCEIRO TERMO ADITIVO N°095/2026 DO](https://www.diariomunicipal.com.br/amp/materia/3F3BE841) · 2026-08-03
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO TERCEIRO TERMO ADITIVO N°096/2026 DO](https://www.diariomunicipal.com.br/amp/materia/FC8AFEEC) · 2026-08-03
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO TERCEIRO TERMO ADITIVO N°097/2026 DO](https://www.diariomunicipal.com.br/amp/materia/ABA09E5D) · 2026-08-03
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO TERCEIRO TERMO ADITIVO N°098/2026 DO](https://www.diariomunicipal.com.br/amp/materia/D1457DD9) · 2026-08-03
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO TERCEIRO TERMO ADITIVO N°099/2026 DO](https://www.diariomunicipal.com.br/amp/materia/886ADBC4) · 2026-08-03
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO TERCEIRO TERMO ADITIVO N°100/2026 DO](https://www.diariomunicipal.com.br/amp/materia/6F4E5B9F) · 2026-08-03
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO TERCEIRO TERMO ADITIVO N°101/2026 DO](https://www.diariomunicipal.com.br/amp/materia/8B8F5D3F) · 2026-08-03
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO TERCEIRO TERMO ADITIVO N°102/2026 DO](https://www.diariomunicipal.com.br/amp/materia/A3F5F012) · 2026-08-03
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO TERCEIRO TERMO ADITIVO N°103/2026 DO](https://www.diariomunicipal.com.br/amp/materia/D2CA1BAD) · 2026-08-03
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO TERCEIRO TERMO ADITIVO N°104/2026 DO](https://www.diariomunicipal.com.br/amp/materia/7BFBC43C) · 2026-08-03
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO TERCEIRO TERMO ADITIVO N°105/2026 DO](https://www.diariomunicipal.com.br/amp/materia/222AD6EB) · 2026-08-03
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO TERCEIRO TERMO ADITIVO N°106/2026 DO](https://www.diariomunicipal.com.br/amp/materia/8EE964C5) · 2026-08-03
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO TERCEIRO TERMO ADITIVO N°107/2026 DO](https://www.diariomunicipal.com.br/amp/materia/83951290) · 2026-08-03
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO TERCEIRO TERMO ADITIVO N°108/2026 DO](https://www.diariomunicipal.com.br/amp/materia/D592E20A) · 2026-08-03
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO TERCEIRO TERMO ADITIVO N°109/2026 DO](https://www.diariomunicipal.com.br/amp/materia/9C14233E) · 2026-08-03
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO TERMO ADITIVO Nº 044/2026 DO](https://www.diariomunicipal.com.br/amp/materia/81BAA2D9) · 2026-08-03
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO TERMO ADITIVO Nº 045/2026 DO](https://www.diariomunicipal.com.br/amp/materia/540055B9) · 2026-08-03
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO TERMO ADITIVO Nº 046/2026 DO](https://www.diariomunicipal.com.br/amp/materia/BCD93734) · 2026-08-03
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO TERMO ADITIVO Nº 059/2026 DO](https://www.diariomunicipal.com.br/amp/materia/77B10883) · 2026-08-03
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO TERMO ADITIVO Nº 060/2026 DO](https://www.diariomunicipal.com.br/amp/materia/B553106A) · 2026-08-03
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO TERMO ADITIVO Nº 061/2026 DO](https://www.diariomunicipal.com.br/amp/materia/66B346DA) · 2026-08-03
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO TERMO ADITIVO Nº 062/2026 DO](https://www.diariomunicipal.com.br/amp/materia/40C16CED) · 2026-08-03
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO TERMO ADITIVO Nº 063/2026 DO](https://www.diariomunicipal.com.br/amp/materia/7A3E55B9) · 2026-08-03
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO TERMO ADITIVO Nº 064/2026 DO](https://www.diariomunicipal.com.br/amp/materia/3BCC2D61) · 2026-08-03
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO TERMO ADITIVO Nº 064/2026 DO](https://www.diariomunicipal.com.br/amp/materia/475E78E6) · 2026-08-03
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO TERMO ADITIVO Nº 065/2026 DO](https://www.diariomunicipal.com.br/amp/materia/BA11A544) · 2026-08-03
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO TERMO ADITIVO Nº 065/2026 DO](https://www.diariomunicipal.com.br/amp/materia/6083853D) · 2026-08-03
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO TERMO ADITIVO Nº 066/2026 DO](https://www.diariomunicipal.com.br/amp/materia/69DC2D38) · 2026-08-03
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO TERMO ADITIVO Nº 066/2026 DO](https://www.diariomunicipal.com.br/amp/materia/C24D91C9) · 2026-08-03
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO TERMO ADITIVO Nº 067/2026 DO](https://www.diariomunicipal.com.br/amp/materia/9E0204C4) · 2026-08-03
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO TERMO ADITIVO Nº 067/2026 DO](https://www.diariomunicipal.com.br/amp/materia/2392F272) · 2026-08-03
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO TERMO ADITIVO Nº 068/2026 DO](https://www.diariomunicipal.com.br/amp/materia/489F9B46) · 2026-08-03
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO TERMO ADITIVO Nº 068/2026 DO](https://www.diariomunicipal.com.br/amp/materia/BFF77733) · 2026-08-03
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO TERMO ADITIVO Nº 069/2026 DO](https://www.diariomunicipal.com.br/amp/materia/D4980E2F) · 2026-08-03
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO TERMO ADITIVO Nº 069/2026 DO](https://www.diariomunicipal.com.br/amp/materia/1036DB50) · 2026-08-03
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO TERMO ADITIVO Nº 070/2026 DO](https://www.diariomunicipal.com.br/amp/materia/29791552) · 2026-08-03
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO TERMO ADITIVO Nº 070/2026 DO](https://www.diariomunicipal.com.br/amp/materia/29DC2237) · 2026-08-03
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO TERMO ADITIVO Nº 071/2026 DO](https://www.diariomunicipal.com.br/amp/materia/17BE2AA5) · 2026-08-03
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO TERMO ADITIVO Nº 071/2026 DO](https://www.diariomunicipal.com.br/amp/materia/C2CD6EE4) · 2026-08-03
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO TERMO ADITIVO Nº 072/2026 DO](https://www.diariomunicipal.com.br/amp/materia/962E0E79) · 2026-08-03
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO TERMO ADITIVO Nº 073/2026 DO](https://www.diariomunicipal.com.br/amp/materia/FEE0C5EC) · 2026-08-03
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO TERMO ADITIVO Nº 074/2026 DO](https://www.diariomunicipal.com.br/amp/materia/FBC99583) · 2026-08-03
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO TERMO ADITIVO Nº 075/2026 DO](https://www.diariomunicipal.com.br/amp/materia/9AC0D7BC) · 2026-08-03
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [EDITAL N.º 030/2026](https://www.diariomunicipal.com.br/amp/materia/CD05F565) · 2026-08-03
+- MUNICIPIO DE GOIOXIM · [PROCESSO SELETIVO SIMPLIFICADO – PSS EDITAL DE](https://www.diariomunicipal.com.br/amp/materia/2B8DAB58) · 2026-08-03
+- DEPARTAMENTO DE ADMINISTRAÇÃO · [EDITAL Nº 07-K, DE 31 DE JULHO DE 2026. PROCESSO](https://www.diariomunicipal.com.br/amp/materia/394CA4B1) · 2026-08-03
+- PREFEITURA MUNICIPAL DE INÁCIO MARTINS · [RESOLUÇÃO 136/2026](https://www.diariomunicipal.com.br/amp/materia/09BD8DAD) · 2026-08-03
+- GOVERNO MUNICIPAL - GABINETE DO PREFEITO · [PORTARIA Nº. 1209/2026](https://www.diariomunicipal.com.br/amp/materia/C82CA10E) · 2026-08-03
+- GOVERNO MUNICIPAL - GABINETE DO PREFEITO · [PORTARIA Nº. 1211/2026](https://www.diariomunicipal.com.br/amp/materia/C82C5D76) · 2026-08-03
+- DEPARTAMENTO MUNICIPAL DE ADMINISTRAÇÃO · [DECRETO Nº 181/2026](https://www.diariomunicipal.com.br/amp/materia/83884F50) · 2026-08-03
+- PREFEITURA MUNICIPAL DE IVATUBA · [EXTRATO DO TERMO DE ENCERRAMENTO](https://www.diariomunicipal.com.br/amp/materia/24BBD7B7) · 2026-08-03
+- GOVERNO MUNICIPAL · [PORTARIA Nº. 486/2026](https://www.diariomunicipal.com.br/amp/materia/93475529) · 2026-08-03
+- GOVERNO MUNICIPAL · [PROCESSO SELETIVO SIMPLIFICADO - EDITAL Nº](https://www.diariomunicipal.com.br/amp/materia/39B35877) · 2026-08-03
+- PREFEITURA MUNICIPAL DE LARANJAL · [EDITAL 06/2026](https://www.diariomunicipal.com.br/amp/materia/BCF50E84) · 2026-08-03
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [DECRETO Nº. 150/2026 DE 31 DE JULHO DE 2026, FICA](https://www.diariomunicipal.com.br/amp/materia/61037DC9) · 2026-08-03
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [EDITAL DE CONVOCAÇÃO Nº. 014/2026 DE 31 DE JULHO](https://www.diariomunicipal.com.br/amp/materia/AE0AD5BD) · 2026-08-03
+- GABINETE DO PREFEITO · [DECRETO Nº 374/2026 - NOMEIA E DÁ POSSE A PESSOAS](https://www.diariomunicipal.com.br/amp/materia/BAF94A7E) · 2026-08-03
+- DEPARTAMENTO DE ADMINISTRAÇÃO E PLANEJAMENTO · [EDITAL Nº 034/2026](https://www.diariomunicipal.com.br/amp/materia/67BEFB54) · 2026-08-03
+- PREFEITURA MUNICIPAL DE PALMITAL · [EDITAL DE CONVOCAÇÃO N.º 05/2026 PROCESSO](https://www.diariomunicipal.com.br/amp/materia/616C6EDA) · 2026-08-03
+- SECRETARIA MUNICIPAL DE RECURSOS HUMANOS · [PORTARIA Nº 197/2026 – DE 31 DE JULHO DE 2026.](https://www.diariomunicipal.com.br/amp/materia/1C551F39) · 2026-08-03
+- SECRETARIA MUNICIPAL DE RECURSOS HUMANOS · [PORTARIA Nº 198/2026 – DE 31 DE JULHO DE 2026.](https://www.diariomunicipal.com.br/amp/materia/5B244F31) · 2026-08-03
+- PREFEITURA MUNICIPAL DE PINHAL DE SÃO BENTO · [EDITAL Nº 03/2026 - GABARITO PRELIMINAR](https://www.diariomunicipal.com.br/amp/materia/D8EE89B4) · 2026-08-03
+- DEPARTAMENTO DE ADMINISTRAÇÃO · [EXTRATO DE CONTRATO PRAZO DETERMINADO Nº](https://www.diariomunicipal.com.br/amp/materia/5AB3CD78) · 2026-08-03
+- CONSÓRCIO INTERMUNICIPAL DE SANEAMENTO DO PARANÁ · [EDITAL DE CONVOCAÇÃO Nº 024/2026 34ª CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/DF5B93BC) · 2026-08-03
+- PREFEITURA MUNICIPAL DE RANCHO ALEGRE D' OESTE · [EXTRATO DE RESCISÃO DE CONTRATO DE TRABALHO](https://www.diariomunicipal.com.br/amp/materia/FFC0350D) · 2026-08-03
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [EDITAL DE CONVOCAÇÃO Nº 015/2026.](https://www.diariomunicipal.com.br/amp/materia/90FBCD70) · 2026-08-03
+- DIVISÃO DE RECURSOS HUMANOS · [PORTARIA Nº 187/2026](https://www.diariomunicipal.com.br/amp/materia/E4912CBB) · 2026-08-03
+- PREFEITURA MUNICIPAL DE TERRA RICA · [EDITAL DE CONVOCAÇÃO Nº 062/2026](https://www.diariomunicipal.com.br/amp/materia/F8330DBA) · 2026-08-03
+- PREFEITURA MUNICIPAL DE TOMAZINA · [EDITAL DE CONVOCAÇÃO Nº 001-2026 - PROCESSO](https://www.diariomunicipal.com.br/amp/materia/1CF308A3) · 2026-08-03
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [PORTARIA Nº 993/2026](https://www.diariomunicipal.com.br/amp/materia/53BD3A39) · 2026-08-03
+- MUNICIPIO DE ENÉAS MARQUES · [PORTARIA 4233/2026](https://www.diariomunicipal.com.br/amp/materia/295D3257) · 2026-08-03
+- PREFEITURA MUNICIPAL DE AMAPORÃ · [EDITAL Nº 038/2026 – HOMOLOGAÇÃO DO RESULTADO FINAL DO PROCESSO SELETIVO Nº 002/2026 DE 15/07/2026](https://www.diariomunicipal.com.br/amp/materia/6BB4A749) · 2026-08-03
+- PREFEITURA MUNICIPAL DE BALSA NOVA · [ADMINISTRAÇÃO](https://www.diariomunicipal.com.br/amp/materia/7EC037BD) · 2026-08-03
+- ADMINISTRAÇÃO · [PROCESSO SELETIVO SIMPLIFICADO – PSS, para contrat ações temporárias para exercer a função de AGENTE EDUCACIONAL , em](https://www.diariomunicipal.com.br/amp/materia/4B05EFA4) · 2026-08-03
+- PREFEITURA MUNICIPAL DE BOM JESUS DO SUL · [EDITAL DE PROCESSO SELETIVO SIMPLIFICADO N° 01/2026 EDITAL Nº 3/2026 – HOMOLOGAÇÃO FINAL DAS INSCRIÇÕES](https://www.diariomunicipal.com.br/amp/materia/1ED91EF2) · 2026-08-03
+- ADMINISTRAÇÃO · [EDITAL Nº 4/2026 – RESULTADO PROVISÓRIO](https://www.diariomunicipal.com.br/amp/materia/1511730E) · 2026-08-03
+- PREFEITURA MUNICIPAL DE HONÓRIO SERPA · [EDITAL Nº 07-L, DE 03 DE AGOSTO DE 2026. PROCESSO SELETIVO SIMPLIFICADO Nº 002/2026 – EDITAL DE ABERTURA Nº](https://www.diariomunicipal.com.br/amp/materia/CDD8A9D0) · 2026-08-03
+- PREFEITURA MUNICIPAL DE MORRETES · [EDITAL DE PROCESSO SELETIVO SIMPLIFICADO EDUCAÇÃO N.º 01/2025 CONVOCAÇÃO Nº 09, DE 03 DE AGOSTO DE 2026](https://www.diariomunicipal.com.br/amp/materia/0B6D52B1) · 2026-08-03
+- DEPARTAMENTO DE RH · [EDITAL Nº 017-2026- CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/910FED9A) · 2026-08-03
+- PREFEITURA MUNICIPAL DE BOM JESUS DO SUL · [EDITAL DE PROCESSO SELETIVO Nº 1/2026 PROGRAMA MUNICIPAL DE APRENDIZAGEM EDITAL Nº 6/2026 – GABARITO DEFINITIVO](https://www.diariomunicipal.com.br/amp/materia/B9613701) · 2026-08-03
+- GABINETE DA PREFEITA · [DECRETO Nº. 11.298 DE 03 DE AGOSTO DE 2026](https://www.diariomunicipal.com.br/amp/materia/81EB379A) · 2026-08-04
+- GABINETE DA PREFEITA · [EDITAL DE CONVOCAÇÃO N. 008/2026 PSS - MOTORISTA](https://www.diariomunicipal.com.br/amp/materia/C90246A6) · 2026-08-04
+- RECURSOS HUMANOS · [TERMO ADITIVO DE CONTRATO](https://www.diariomunicipal.com.br/amp/materia/800BDA47) · 2026-08-04
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DE CONTRATO POR PRAZO DETERMINADO](https://www.diariomunicipal.com.br/amp/materia/FB77161F) · 2026-08-04
+- GABINETE DO PREFEITO · [DECRETO N.º 618/2026](https://www.diariomunicipal.com.br/amp/materia/81FCA614) · 2026-08-04
+- GABINETE DO PREFEITO · [DECRETO N.º 619/2026](https://www.diariomunicipal.com.br/amp/materia/F3C2B7D6) · 2026-08-04
+- GABINETE DO PREFEITO · [DECRETO N.º 620/2026](https://www.diariomunicipal.com.br/amp/materia/FF9DB2AA) · 2026-08-04
+- GABINETE DO PREFEITO · [DECRETO N.º 621/2026](https://www.diariomunicipal.com.br/amp/materia/86101407) · 2026-08-04
+- GABINETE DO PREFEITO · [DECRETO N.º 622/2026](https://www.diariomunicipal.com.br/amp/materia/1A18F589) · 2026-08-04
+- GABINETE DO PREFEITO · [DECRETO N.º 623/2026](https://www.diariomunicipal.com.br/amp/materia/4434F071) · 2026-08-04
+- GABINETE DO PREFEITO · [DECRETO N.º 624/2026](https://www.diariomunicipal.com.br/amp/materia/49020325) · 2026-08-04
+- GABINETE DO PREFEITO · [DECRETO N.º 625/2026](https://www.diariomunicipal.com.br/amp/materia/9114BF01) · 2026-08-04
+- GABINETE DO PREFEITO · [DECRETO N.º 626/2026](https://www.diariomunicipal.com.br/amp/materia/15ECAAAC) · 2026-08-04
+- GABINETE DO PREFEITO · [DECRETO N.º 627/2026](https://www.diariomunicipal.com.br/amp/materia/509BAAD7) · 2026-08-04
+- GABINETE DO PREFEITO · [DECRETO N.º 628/2026](https://www.diariomunicipal.com.br/amp/materia/8D9BC36B) · 2026-08-04
+- GABINETE DO PREFEITO · [DECRETO N.º 629/2026](https://www.diariomunicipal.com.br/amp/materia/BFEE9B11) · 2026-08-04
+- GABINETE DO PREFEITO · [DECRETO N.º 630/2026](https://www.diariomunicipal.com.br/amp/materia/6669361E) · 2026-08-04
+- GABINETE DO PREFEITO · [DECRETO N.º 635/2026](https://www.diariomunicipal.com.br/amp/materia/E6744964) · 2026-08-04
+- DEPARTAMENTO DE ADMINISTRAÇÃO · [ERRATA Nº 006/2026 CORRIGE O CONTIDO NO EDITAL DE](https://www.diariomunicipal.com.br/amp/materia/08D1927B) · 2026-08-04
+- DEPARTAMENTO DE ADMINISTRAÇÃO · [PROCESSO SELETIVO SIMPLIFICADO - PSS N°001/2025](https://www.diariomunicipal.com.br/amp/materia/D89CA728) · 2026-08-04
+- MUNICÍPIO DE FERNANDES PINHEIRO · [EDITAL N° 039/2025 - PROCESSO SELETIVO](https://www.diariomunicipal.com.br/amp/materia/DAC1CF41) · 2026-08-04
+- MUNICÍPIO DE FERNANDES PINHEIRO · [EDITAL Nº 36/2026 -PROCESSO SELETIVO SIMPLIFICADO](https://www.diariomunicipal.com.br/amp/materia/3380C57E) · 2026-08-04
+- RH · [EDITAL 103/2026 CONVOCAÇÃO PSS 03/2024](https://www.diariomunicipal.com.br/amp/materia/D1097FAA) · 2026-08-04
+- MUNICIPIO DE GOIOXIM · [PROCESSO SELETIVO SIMPLIFICADO – PSS EDITAL N°](https://www.diariomunicipal.com.br/amp/materia/437D0A47) · 2026-08-04
+- DEPARTAMENTO DE RECURSOS HUMANOS · [DECRETO 183/2026](https://www.diariomunicipal.com.br/amp/materia/E19B387D) · 2026-08-04
+- DEPARTAMENTO MUNICIPAL DE ADMINISTRAÇÃO · [DECRETO Nº 181/2026](https://www.diariomunicipal.com.br/amp/materia/C37BB998) · 2026-08-04
+- DEPARTAMENTO MUNICIPAL DE ADMINISTRAÇÃO · [DECRETO Nº 182/2026](https://www.diariomunicipal.com.br/amp/materia/F3F4167D) · 2026-08-04
+- DIVISÃO DE LICITAÇÃO · [EXTRATO DO TERMO DO CONTRATO N° 173/2026](https://www.diariomunicipal.com.br/amp/materia/A48ACE66) · 2026-08-04
+- PREFEITURA MUNICIPAL DE IVATUBA · [EDITAL DE CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/62868B03) · 2026-08-04
+- FUNDAÇÃO DE ATENÇÃO A SAÚDE DE MORRETES · [EXTRATO DE RESCISÃO DE CONTRATO DE TRABALHO](https://www.diariomunicipal.com.br/amp/materia/E64F1722) · 2026-08-04
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [COMUNICADO – CHAMADA AUXILIAR DE CUIDADOR DE](https://www.diariomunicipal.com.br/amp/materia/DD73D975) · 2026-08-04
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [COMUNICADO – CHAMADA AUXILIAR DE CUIDADOR DE](https://www.diariomunicipal.com.br/amp/materia/C5936525) · 2026-08-04
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [termos do Edital nº 01/2026 de 05 de janeiro de 2026, convocou o](https://www.diariomunicipal.com.br/amp/materia/741B98AA) · 2026-08-04
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [termos do Edital nº 01/2026 de 05 de janeiro de 2026, convocou o](https://www.diariomunicipal.com.br/amp/materia/CF651F39) · 2026-08-04
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [TERMO DE DESISTÊNCIA - PROCESSO SELETIVO](https://www.diariomunicipal.com.br/amp/materia/C20C78F4) · 2026-08-04
+- PREFEITURA MUNICIPAL DE PALMITAL · [EDITAL DE CONVOCAÇÃO N.º 06/2026 PROCESSO](https://www.diariomunicipal.com.br/amp/materia/A5390AEC) · 2026-08-04
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EDITAL DE CONVOCAÇÃO Nº 161/2026](https://www.diariomunicipal.com.br/amp/materia/D4EA5EC7) · 2026-08-04
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EDITAL DE CONVOCAÇÃO Nº 162/2026](https://www.diariomunicipal.com.br/amp/materia/A5054264) · 2026-08-04
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EDITAL DE CONVOCAÇÃO Nº 163/2026](https://www.diariomunicipal.com.br/amp/materia/79789F5E) · 2026-08-04
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO DE RESCISÃO DO CONTRATO](https://www.diariomunicipal.com.br/amp/materia/8E277AC6) · 2026-08-04
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO DE RESCISÃO DO CONTRATO](https://www.diariomunicipal.com.br/amp/materia/8B145CCD) · 2026-08-04
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [PORTARIA MUNICIPAL Nº 1424/2026](https://www.diariomunicipal.com.br/amp/materia/81147FC5) · 2026-08-04
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [PORTARIA MUNICIPAL Nº 1425/2026](https://www.diariomunicipal.com.br/amp/materia/88DEF157) · 2026-08-04
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [PORTARIA MUNICIPAL Nº 1426/2026](https://www.diariomunicipal.com.br/amp/materia/D33F3257) · 2026-08-04
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [PORTARIA MUNICIPAL Nº 1427/2026](https://www.diariomunicipal.com.br/amp/materia/BDBC0389) · 2026-08-04
+- SECRETARIA MUNICIPAL DE RECURSOS HUMANOS · [EDITAL Nº 08/2026- TORNA PÚBLICO A DESISTÊNCIA DOS](https://www.diariomunicipal.com.br/amp/materia/C5969D3A) · 2026-08-04
+- SECRETARIA MUNICIPAL DE RECURSOS HUMANOS · [EDITAL Nº 09/2026- TORNA PÚBLICO O NÃO](https://www.diariomunicipal.com.br/amp/materia/D69B9B13) · 2026-08-04
+- SECRETARIA MUNICIPAL DE RECURSOS HUMANOS · [PORTARIA Nº 200/2026 – DE 03 DE AGOSTO DE 2026.](https://www.diariomunicipal.com.br/amp/materia/A1ADE1B0) · 2026-08-04
+- SECRETARIA MUNICIPAL DE RECURSOS HUMANOS · [PORTARIA Nº 201/2026 – DE 03 DE AGOSTO DE 2026.](https://www.diariomunicipal.com.br/amp/materia/03D54FB1) · 2026-08-04
+- SECRETARIA MUNICIPAL DE RECURSOS HUMANOS · [PORTARIA Nº 202/2026 – DE 03 DE AGOSTO DE 2026.](https://www.diariomunicipal.com.br/amp/materia/B8A446A2) · 2026-08-04
+- DEPARTAMENTO DE ADMINISTRAÇÃO · [PORTARIA Nº 9.009/2026 03/08/2026](https://www.diariomunicipal.com.br/amp/materia/A0D5CD0B) · 2026-08-04
+- DEPARTAMENTO ADMINISTRATIVO · [EDITAL N.º 096/2026](https://www.diariomunicipal.com.br/amp/materia/6261AD7A) · 2026-08-04
+- DIVISÃO DE RECURSOS HUMANOS · [PORTARIA Nº 191/2026](https://www.diariomunicipal.com.br/amp/materia/1A08ABCA) · 2026-08-04
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO, · [PORTARIA Nº 201 DE 03 DE AGOSTO DE 2026](https://www.diariomunicipal.com.br/amp/materia/8B2A2437) · 2026-08-04
+- PREFEITURA MUNICIPAL DE SAPOPEMA · [DECRETO Nº 202/2026](https://www.diariomunicipal.com.br/amp/materia/2AF1FB11) · 2026-08-04
+- GABINETE DO PREFEITO · [DECRETO N.º 5.144/2026](https://www.diariomunicipal.com.br/amp/materia/47C47EC5) · 2026-08-04
+- PREFEITURA MUNICIPAL DE TERRA RICA · [DECRETO Nº 339/2026](https://www.diariomunicipal.com.br/amp/materia/CA04CD79) · 2026-08-04
+- PREFEITURA MUNICIPAL DE TERRA RICA · [DECRETO Nº 340/2026](https://www.diariomunicipal.com.br/amp/materia/C282EC74) · 2026-08-04
+- PREFEITURA MUNICIPAL DE TERRA RICA · [DECRETO Nº 342/2026](https://www.diariomunicipal.com.br/amp/materia/A7D3D6E9) · 2026-08-04
+- MUNICÍPIO DE TRÊS BARRAS DO PARANÁ · [DECRETO Nº 7225/2026](https://www.diariomunicipal.com.br/amp/materia/AFFBFE75) · 2026-08-04
+- PREFEITURA MUNICIPAL DE TURVO · [EDITAL DE CONVOCAÇÃO 140-2026](https://www.diariomunicipal.com.br/amp/materia/E12B47F5) · 2026-08-04
+- PREFEITURA MUNICIPAL DE ALMIRANTE TAMANDARÉ · [EDITAL CLASSIFICAÇÃO PRRVISÓRIA N. º 077/2026 – PROCESSO SELETIVO / SMRH](https://www.diariomunicipal.com.br/amp/materia/52249591) · 2026-08-04
+- PREFEITURA MUNICIPAL DE HONÓRIO SERPA · [EDITAL Nº 06-D, DE 03 DE AGOSTO DE 2026.](https://www.diariomunicipal.com.br/amp/materia/A356BBC2) · 2026-08-04
+- GABINETE DA PREFEITA · [EDITAL Nº 006/2026](https://www.diariomunicipal.com.br/amp/materia/EFD479A3) · 2026-08-05
+- ADMINISTRAÇÃO · [EDITAL DE CONVOCAÇÃO N.º 03/2026 - PROCESSO](https://www.diariomunicipal.com.br/amp/materia/7A28D1C2) · 2026-08-05
+- ADMINISTRAÇÃO · [EDITAL PROCESSO SELETIVO SIMPLIFICADO Nº 13/2026](https://www.diariomunicipal.com.br/amp/materia/7408CC02) · 2026-08-05
+- RECURSOS HUMANOS · [TERMO ADITIVO DE CONTRATO](https://www.diariomunicipal.com.br/amp/materia/17FF97D0) · 2026-08-05
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DE CONTRATO POR PRAZO DETERMINADO](https://www.diariomunicipal.com.br/amp/materia/BC1AC896) · 2026-08-05
+- PREFEITURA MUNICIPAL DE CORONEL VIVIDA · [EDITAL Nº 045/2026 DE 04/08/2026 - PSS 001/2026](https://www.diariomunicipal.com.br/amp/materia/9A0D42DF) · 2026-08-05
+- DEPARTAMENTO DE ADMINISTRAÇÃO · [DECRETO Nº 0242/2026 NOMEAR, O SENHOR ERICK SUEL](https://www.diariomunicipal.com.br/amp/materia/C893E521) · 2026-08-05
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [EDITAL DE CHAMAMENTO PÚBLICO Nº. 019/2026](https://www.diariomunicipal.com.br/amp/materia/9582D1EB) · 2026-08-05
+- MUNICIPIO DE GOIOXIM · [PORTARIA Nº 177 DE 04 DE AGOSTO DE 2026 EXONERA](https://www.diariomunicipal.com.br/amp/materia/065DAC99) · 2026-08-05
+- CONSAMU · [PROCESSO SELETIVO SIMPLIFICADO Nº 001/2026 PARA](https://www.diariomunicipal.com.br/amp/materia/C988D88D) · 2026-08-05
+- CONSAMU · [PROCESSO SELETIVO SIMPLIFICADO Nº 002/2026 PARA](https://www.diariomunicipal.com.br/amp/materia/3344151B) · 2026-08-05
+- DEPARTAMENTO DE RECURSOS HUMANOS · [Processo Seletivo Simplificado Edital nº 03/2025.](https://www.diariomunicipal.com.br/amp/materia/8D419996) · 2026-08-05
+- GABINETE DO PREFEITO · [EDITAL N º. 264/2026 - DISPÕE SOBRE A CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/00BE8E8B) · 2026-08-05
+- GABINETE DO PREFEITO · [EDITAL N º. 265/2026 - DISPÕE SOBRE A CONVOCAÇÃO DE](https://www.diariomunicipal.com.br/amp/materia/C9B60BC4) · 2026-08-05
+- GABINETE DO PREFEITO · [EDITAL N º. 266/2026 - DISPÕE SOBRE A CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/458040B9) · 2026-08-05
+- GABINETE DO PREFEITO · [EDITAL N º. 267/2026 - DISPÕE SOBRE A CONVOCAÇÃO DO](https://www.diariomunicipal.com.br/amp/materia/187EDFEC) · 2026-08-05
+- FUNDAÇÃO DE ATENÇÃO A SAÚDE DE MORRETES · [EDITAL Nº 98, DE 04 DE AGOSTO 2026. EDITAL DE](https://www.diariomunicipal.com.br/amp/materia/D74631B1) · 2026-08-05
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [PROCESSO SELETIVO SIMPLIFICADO Nº. 01/2026](https://www.diariomunicipal.com.br/amp/materia/77B9F4DD) · 2026-08-05
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [COMUNICADO – CHAMADA PROFESSOR 20H - PROCESSO](https://www.diariomunicipal.com.br/amp/materia/84334067) · 2026-08-05
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [COMUNICADO – CHAMADA PROFESSOR 20H - PROCESSO](https://www.diariomunicipal.com.br/amp/materia/67A51C6C) · 2026-08-05
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [termos do Edital nº 01/2026 de 05 de janeiro de 2026, convocou o](https://www.diariomunicipal.com.br/amp/materia/32FA396F) · 2026-08-05
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [TERMO DE DESISTÊNCIA - PROCESSO SELETIVO](https://www.diariomunicipal.com.br/amp/materia/90DB91D5) · 2026-08-05
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [TERMO DE DESISTÊNCIA - PROCESSO SELETIVO](https://www.diariomunicipal.com.br/amp/materia/3E0611E6) · 2026-08-05
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO DE RESCISÃO DO CONTRATO](https://www.diariomunicipal.com.br/amp/materia/C35376BE) · 2026-08-05
+- SECRETARIA MUNICIPAL DE RECURSOS HUMANOS · [EDITAL DE CONVOCAÇÃO Nº 10/2026](https://www.diariomunicipal.com.br/amp/materia/1E64EE23) · 2026-08-05
+- PREFEITURA MUNICIPAL DE REALEZA · [EDITAL Nº 07/2026 EDITAL NOTA DA PROVA TÍTULOS](https://www.diariomunicipal.com.br/amp/materia/CFB2C82C) · 2026-08-05
+- GABINETE DO PREFEITO · [EDITAL N º 014/2026 – 22ª CONVOCAÇÃO –PSS Nº 002/2025–](https://www.diariomunicipal.com.br/amp/materia/AE9ACC5D) · 2026-08-05
+- PREFEITURA MUNICIPAL DE SANTO ANTÔNIO DO PARAÍSO · [DECRETO Nº 3565/2026](https://www.diariomunicipal.com.br/amp/materia/23477D46) · 2026-08-05
+- GABINETE DO PREFEITO · [LEI Nº 3529/2026](https://www.diariomunicipal.com.br/amp/materia/DA1EB961) · 2026-08-05
+- ADMINISTRAÇÃO GERAL · [LEI MUNICIPAL N.º 1692/2026](https://www.diariomunicipal.com.br/amp/materia/1EB92CB0) · 2026-08-05
+- SECRETARIA MUNICIPAL DE EDUCAÇÃO · [RETIFICAÇÃO - EDITAL PROCESSO SELETIVO](https://www.diariomunicipal.com.br/amp/materia/8E352EFE) · 2026-08-05
+- PREFEITURA MUNICIPAL DE TERRA RICA · [EDITAL DE CONVOCAÇÃO Nº 063/2026](https://www.diariomunicipal.com.br/amp/materia/AD7A66B7) · 2026-08-05
+- MUNICÍPIO DE TRÊS BARRAS DO PARANÁ · [PORTARIA Nº1326/2026](https://www.diariomunicipal.com.br/amp/materia/D1068BD4) · 2026-08-05
+- PREFEITURA MUNICIPAL DE CANDÓI · [PROCESSO SELETIVO SIMPLIFICADO N° 02/2026 - ESTÁGIÁRIOS - EDITAL DE ABERTURA Nº 01/2026](https://www.diariomunicipal.com.br/amp/materia/2CCF72D8) · 2026-08-05
+- PREFEITURA MUNICIPAL DE CERRO AZUL · [EDITAL Nº 003/2026 DIVULGAÇÃO DO RESULTADO PRELIMINAR DA CLASSIFICAÇÃO PROCESSO SELETIVO](https://www.diariomunicipal.com.br/amp/materia/62F47474) · 2026-08-05
+- PREFEITURA MUNICIPAL DE GOIOXIM · [EDITAL 001/2026](https://www.diariomunicipal.com.br/amp/materia/02E2F785) · 2026-08-05
+- PREFEITURA MUNICIPAL DE JAGUAPITÃ · [PROCESSO SELETIVO SIMPLIFICADO - EDITAL Nº 02.01/2026](https://www.diariomunicipal.com.br/amp/materia/C3A9CB68) · 2026-08-05
+- PREFEITURA MUNICIPAL DE REALEZA · [EDITAL Nº 08/2026 EDITAL NOTA DO TESTE DE APTIDÃO FÍSICA- TAF PROCESSO SELETIVO SIMPLIFICADO Nº 02/2026](https://www.diariomunicipal.com.br/amp/materia/1ACFF21D) · 2026-08-05
+- PREFEITURA MUNICIPAL DE SANTO ANTÔNIO DO PARAÍSO · [DECRETO Nº 3568/2026](https://www.diariomunicipal.com.br/amp/materia/1879A253) · 2026-08-05
+- ADMINISTRAÇÃO GERAL · [DECRETO Nº 3569/2026](https://www.diariomunicipal.com.br/amp/materia/EBC5B1E9) · 2026-08-05
+- DIVISÃO DE RECURSOS HUMANOS · [PORTARIA Nº 192/2026](https://www.diariomunicipal.com.br/amp/materia/8EE2F8AF) · 2026-08-05
+- PREFEITURA MUNICIPAL DE TUNAS DO PARANÁ · [PROCESSO SELETIVO SIMPLIFICADO Nº 002/2026 EDITAL – A (EDITAL DE ABERTURA)](https://www.diariomunicipal.com.br/amp/materia/BF3F3785) · 2026-08-05
+- DEPARTAMENTO DE RH · [EXTRATO DO PRIMEIRO TERMO ADITIVO - CONTRATO](https://www.diariomunicipal.com.br/amp/materia/7F10AB1A) · 2026-08-06
+- DEPARTAMENTO DE RH · [EXTRATO DO PRIMEIRO TERMO ADITIVO - CONTRATO](https://www.diariomunicipal.com.br/amp/materia/9BCA552D) · 2026-08-06
+- DEPARTAMENTO DE RH · [EXTRATO DO PRIMEIRO TERMO ADITIVO - CONTRATO](https://www.diariomunicipal.com.br/amp/materia/DCC8842C) · 2026-08-06
+- DEPARTAMENTO DE RH · [EXTRATO DO PRIMEIRO TERMO ADITIVO - CONTRATO](https://www.diariomunicipal.com.br/amp/materia/108FCAAF) · 2026-08-06
+- GABINETE DO PODER EXECUTIVO MUNICIPAL · [EDITAL DE CONVOCAÇÃO Nº 066/2026 - DIVISÃO DE](https://www.diariomunicipal.com.br/amp/materia/0FC58F9D) · 2026-08-06
+- RECURSOS HUMANOS · [EDITAL DE CONVOCAÇÃO N° 040/2026](https://www.diariomunicipal.com.br/amp/materia/46DB6D84) · 2026-08-06
+- GABINETE DA PREFEITA · [DECRETO Nº. 11.310 DE 05 DE AGOSTO DE 2026](https://www.diariomunicipal.com.br/amp/materia/580F435B) · 2026-08-06
+- GABINETE DA PREFEITA · [DECRETO Nº. 11.311 DE 05 DE AGOSTO DE 2026](https://www.diariomunicipal.com.br/amp/materia/DC3A8174) · 2026-08-06
+- GABINETE DA PREFEITA · [EXTRATO DE PRORROGAÇÃO DE CONTRATO DE](https://www.diariomunicipal.com.br/amp/materia/F21C60B3) · 2026-08-06
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [DECRETO Nº 226/2026](https://www.diariomunicipal.com.br/amp/materia/285304FC) · 2026-08-06
+- PREFEITURA MUNICIPAL DE CAMPO MAGRO · [DECRETO N.º 653/2026](https://www.diariomunicipal.com.br/amp/materia/166C8AAC) · 2026-08-06
+- PREFEITURA MUNICIPAL DE GENERAL CARNEIRO · [DECRETO Nº. 526 DE 05 DE AGOSTO DE 2026](https://www.diariomunicipal.com.br/amp/materia/734F63A6) · 2026-08-06
+- GOVERNO MUNICIPAL - GABINETE DO PREFEITO · [PORTARIA Nº. 1219/2026](https://www.diariomunicipal.com.br/amp/materia/89E0A415) · 2026-08-06
+- GOVERNO MUNICIPAL - GABINETE DO PREFEITO · [PORTARIA Nº. 1223/2026](https://www.diariomunicipal.com.br/amp/materia/60387849) · 2026-08-06
+- GOVERNO MUNICIPAL - GABINETE DO PREFEITO · [PORTARIA Nº. 1226/2026](https://www.diariomunicipal.com.br/amp/materia/8075B567) · 2026-08-06
+- GOVERNO MUNICIPAL - GABINETE DO PREFEITO · [PORTARIA Nº. 1228/2026](https://www.diariomunicipal.com.br/amp/materia/C41EF343) · 2026-08-06
+- GOVERNO MUNICIPAL - GABINETE DO PREFEITO · [PORTARIA Nº. 1232/2026](https://www.diariomunicipal.com.br/amp/materia/4DC78239) · 2026-08-06
+- GOVERNO MUNICIPAL - GABINETE DO PREFEITO · [PORTARIA Nº. 1233/2026](https://www.diariomunicipal.com.br/amp/materia/A70A4206) · 2026-08-06
+- GOVERNO MUNICIPAL - GABINETE DO PREFEITO · [PORTARIA Nº. 1238/2026](https://www.diariomunicipal.com.br/amp/materia/352DF70C) · 2026-08-06
+- GOVERNO MUNICIPAL - GABINETE DO PREFEITO · [PORTARIA Nº. 1239/2026](https://www.diariomunicipal.com.br/amp/materia/CBE2E0B8) · 2026-08-06
+- GOVERNO MUNICIPAL · [DECRETO Nº. 079/2026](https://www.diariomunicipal.com.br/amp/materia/FFCF8C98) · 2026-08-06
+- GOVERNO MUNICIPAL · [EDITAL DE CONVOCAÇÃO Nº 01/2026 PROCESSO](https://www.diariomunicipal.com.br/amp/materia/40BB1BE5) · 2026-08-06
+- SECRETARIA DE ADMINISTRAÇÃO - SETOR DE RECURSOS HUMANOS · [EDITAL DE CONVOCAÇÃO N° 013.001/2026 – PSS 001/2025](https://www.diariomunicipal.com.br/amp/materia/6196E7FC) · 2026-08-06
+- GABINETE DO PREFEITO · [DECRETO Nº 383/2026 - NOMEIA E DÁ POSSE A PESSOA](https://www.diariomunicipal.com.br/amp/materia/F3CC371F) · 2026-08-06
+- PREFEITURA MUNICIPAL DE PAIÇANDU · [EDITAL DE CONVOCAÇÃO Nº 225/2026](https://www.diariomunicipal.com.br/amp/materia/6ECFA0F6) · 2026-08-06
+- PREFEITURA MUNICIPAL DE PAIÇANDU · [EDITAL DE CONVOCAÇÃO Nº 226/2026](https://www.diariomunicipal.com.br/amp/materia/24F68B16) · 2026-08-06
+- PREFEITURA MUNICIPAL DE PAIÇANDU · [EDITAL DE CONVOCAÇÃO Nº 227/2026](https://www.diariomunicipal.com.br/amp/materia/81A79A68) · 2026-08-06
+- PREFEITURA MUNICIPAL DE PAIÇANDU · [EDITAL DE CONVOCAÇÃO Nº 228/2026](https://www.diariomunicipal.com.br/amp/materia/FF39FA56) · 2026-08-06
+- PREFEITURA MUNICIPAL DE PAIÇANDU · [EDITAL DE CONVOCAÇÃO Nº 229/2026](https://www.diariomunicipal.com.br/amp/materia/48F5252B) · 2026-08-06
+- PREFEITURA MUNICIPAL DE PAIÇANDU · [EDITAL DE RECONVOCAÇÃO Nº 8/2026](https://www.diariomunicipal.com.br/amp/materia/2B621C4F) · 2026-08-06
+- PREFEITURA MUNICIPAL DE PINHAL DE SÃO BENTO · [EDITAL Nº 05/2026 - RETIFICAÇÃO Nº 02 - PROCESSO](https://www.diariomunicipal.com.br/amp/materia/9BE48854) · 2026-08-06
+- SECRETARIA DE ADMINISTRAÇÃO · [EDITAL Nº 06/2026 - GABARITO DEFINITIVO - PROCESSO](https://www.diariomunicipal.com.br/amp/materia/960D7DCC) · 2026-08-06
+- SECRETARIA DE GESTÃO PÚBLICA · [PORTARIA Nº 628, DE 03 DE AGOSTO DE 2026](https://www.diariomunicipal.com.br/amp/materia/E0CE6666) · 2026-08-06
+- SECRETARIA DE GESTÃO PÚBLICA · [PORTARIA Nº 633, DE 04 DE AGOSTO DE 2026](https://www.diariomunicipal.com.br/amp/materia/80D8F199) · 2026-08-06
+- DEPARTAMENTO DE ADMINISTRAÇÃO · [PORTARIA Nº 9.016/2026 05/08/2026](https://www.diariomunicipal.com.br/amp/materia/F60F85E2) · 2026-08-06
+- PREFEITURA MUNICIPAL DE RIO BRANCO DO SUL · [EDITAL N º 004/2026 – 04ª CONVOCAÇÃO –PSS Nº 001/2026–](https://www.diariomunicipal.com.br/amp/materia/18D15F20) · 2026-08-06
+- DEPARTAMENTO ADMINISTRATIVO · [EDITAL N.º 097/2026](https://www.diariomunicipal.com.br/amp/materia/B35610F9) · 2026-08-06
+- DEPARTAMENTO DE RH · [DECRETO 1435/2026](https://www.diariomunicipal.com.br/amp/materia/2F014FAB) · 2026-08-06
+- EXECUTIVO MUNICIPAL · [PROCESSO SELETIVO SIMPLIFICADO Nº 002/2026 EDITAL](https://www.diariomunicipal.com.br/amp/materia/1DE0E6B0) · 2026-08-06
+- ADMINISTRAÇÃO GERAL · [EDITAL Nº 092/2026 (CONVOCAÇÃO)](https://www.diariomunicipal.com.br/amp/materia/D11E323F) · 2026-08-06
+- PREFEITURA MUNICIPAL DE SENGÉS · [DECRETO N.º 5.147/2026](https://www.diariomunicipal.com.br/amp/materia/46C716C2) · 2026-08-06
+- PREFEITURA MUNICIPAL DE TOMAZINA · [Processo Seletivo Simplificado](https://www.diariomunicipal.com.br/amp/materia/11D52FCB) · 2026-08-06
+- CIAS · [EXTRATO DE RENOVAÇÃO DE CONTRATO PSS](https://www.diariomunicipal.com.br/amp/materia/1833389D) · 2026-08-06
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [EDITAL 091/2026](https://www.diariomunicipal.com.br/amp/materia/E3DE7A49) · 2026-08-06
+- GABINETE DO PREFEITO · [RESULTADO CLASSIFICATÓRIO DO PROCESSO SELETIVO SIMPLIFICADO (EDITAL PSS/SEMEC N.º 012/2025), APÓS](https://www.diariomunicipal.com.br/amp/materia/6F92B538) · 2026-08-06
+- GABINETE DO PREFEITO · [RESULTADO CLASSIFICATÓRIO DO PROCESSO SELETIVO SIMPLIFICADO (EDITAL PSS/SEMEC N.º 013/2025), APÓS](https://www.diariomunicipal.com.br/amp/materia/E6537C30) · 2026-08-06
+- GABINETE DO PREFEITO · [RESULTADO CLASSIFICATÓRIO DO PROCESSO SELETIVO SIMPLIFICADO (EDITAL PSS/SESAU N.º 038/2025), APÓS](https://www.diariomunicipal.com.br/amp/materia/44922A65) · 2026-08-06
+- GABINETE DO PREFEITO · [RESULTADO CLASSIFICATÓRIO DO PROCESSO SELETIVO SIMPLIFICADO (EDITAL PSS/SESAU N.º 076/2025), APÓS](https://www.diariomunicipal.com.br/amp/materia/C274E9B8) · 2026-08-06
+- GABINETE DO PREFEITO · [RESULTADO CLASSIFICATÓRIO DO PROCESSO SELETIVO SIMPLIFICADO (EDITAL PSS/SESAU N.º 076/2025), APÓS](https://www.diariomunicipal.com.br/amp/materia/69F7AFC7) · 2026-08-06
+- SECRETARIA DE ADMINISTRAÇÃO · [PROCESSO SELETIVO - 01/2026](https://www.diariomunicipal.com.br/amp/materia/5213CE48) · 2026-08-06
+- PREFEITURA MUNICIPAL DE REALEZA · [PROCESSO SELETIVO SIMPLIFICADO Nº 04/2026 EDITAL Nº 05 – HOMOLOGAÇÃO DO RESULTADO FINAL E DA](https://www.diariomunicipal.com.br/amp/materia/55E1EF03) · 2026-08-06
+- MUNICIPIO DE CRUZEIRO DO IGUAÇU · [SECRETARIA DE ADMINISTRACAO](https://www.diariomunicipal.com.br/amp/materia/0343E62A) · 2026-08-07
+- ADMINISTRAÇÃO MUNICIPAL · [PROCESSO SELETIVO SIMPLIFICADO Nº 002/2026 EDITAL](https://www.diariomunicipal.com.br/amp/materia/E8D7BC40) · 2026-08-07
+- GABINETE DO PODER EXECUTIVO MUNICIPAL · [EDITAL DE CONVOCAÇÃO Nº 069/2026 - DIVISÃO DE](https://www.diariomunicipal.com.br/amp/materia/D65C8EBD) · 2026-08-07
+- GABINETE DO PODER EXECUTIVO MUNICIPAL · [EXTRATO Nº 078/2026 DE RESCISÃO DE TÉRMINO DE](https://www.diariomunicipal.com.br/amp/materia/56809A25) · 2026-08-07
+- GABINETE DO PODER EXECUTIVO MUNICIPAL · [EXTRATO Nº 079/2026 DE RESCISÃO DE TÉRMINO DE](https://www.diariomunicipal.com.br/amp/materia/04445E15) · 2026-08-07
+- GABINETE DO PODER EXECUTIVO MUNICIPAL · [EXTRATO Nº 080/2026 DE RESCISÃO DE TÉRMINO DE](https://www.diariomunicipal.com.br/amp/materia/D8134AFA) · 2026-08-07
+- GABINETE DO PODER EXECUTIVO MUNICIPAL · [EXTRATO Nº 081/2026 DE RESCISÃO DE TÉRMINO DE](https://www.diariomunicipal.com.br/amp/materia/F5281A40) · 2026-08-07
+- GABINETE DO PODER EXECUTIVO MUNICIPAL · [EXTRATO Nº 082/2026 DE RESCISÃO DE TÉRMINO DE](https://www.diariomunicipal.com.br/amp/materia/A2D8B2D0) · 2026-08-07
+- GABINETE DO PODER EXECUTIVO MUNICIPAL · [EXTRATO Nº 083/2026 DE RESCISÃO DE TÉRMINO DE](https://www.diariomunicipal.com.br/amp/materia/11176603) · 2026-08-07
+- GABINETE DO PODER EXECUTIVO MUNICIPAL · [EXTRATO Nº 085/2026 DE RESCISÃO DE TÉRMINO DE](https://www.diariomunicipal.com.br/amp/materia/D82AFDD2) · 2026-08-07
+- GABINETE DO PODER EXECUTIVO MUNICIPAL · [EXTRATO Nº 091/2026 DE RESCISÃO DE TÉRMINO DE](https://www.diariomunicipal.com.br/amp/materia/4000DD5C) · 2026-08-07
+- SECRETARIA MUNICIPAL DE SAUDE · [PROCESSO SELETIVO SIMPLIFICADO Nº 002/2026 EDITAL](https://www.diariomunicipal.com.br/amp/materia/26120E88) · 2026-08-07
+- PREFEITURA MUNICIPAL DE CORONEL VIVIDA · [EDITAL Nº 046/2026 DE 06/08/2026 - PSS 001/2026](https://www.diariomunicipal.com.br/amp/materia/2AAFC657) · 2026-08-07
+- MUNICÍPIO DE FERNANDES PINHEIRO · [EDITAL Nº 37/2026 -PROCESSO SELETIVO SIMPLIFICADO](https://www.diariomunicipal.com.br/amp/materia/1A5497D9) · 2026-08-07
+- RH · [EDITAL 002/2026 PSS 01/2026 ESTAGIÁRIOS](https://www.diariomunicipal.com.br/amp/materia/D650B38F) · 2026-08-07
+- PREFEITURA MUNICIPAL DE HONÓRIO SERPA · [EDITAL Nº 06-E, DE 06 DE AGOSTO DE 2026](https://www.diariomunicipal.com.br/amp/materia/1B9F0404) · 2026-08-07
+- DEPARTAMENTO DE RECURSOS HUMANOS · [Processo Seletivo Sim plificado Edital nº 04/2025 para o cargo de](https://www.diariomunicipal.com.br/amp/materia/5A35720D) · 2026-08-07
+- GOVERNO MUNICIPAL - GABINETE DO PREFEITO · [PORTARIA Nº. 1241/2026](https://www.diariomunicipal.com.br/amp/materia/A80D014A) · 2026-08-07
+- GOVERNO MUNICIPAL - GABINETE DO PREFEITO · [PORTARIA Nº. 1242/2026](https://www.diariomunicipal.com.br/amp/materia/5F8D9B93) · 2026-08-07
+- GOVERNO MUNICIPAL - GABINETE DO PREFEITO · [PORTARIA Nº. 1246/2026](https://www.diariomunicipal.com.br/amp/materia/98554AFC) · 2026-08-07
+- GABINETE DO PREFEITO · [DECRETO Nº 562/2026](https://www.diariomunicipal.com.br/amp/materia/22AFF1CC) · 2026-08-07
+- GABINETE DO PREFEITO · [DECRETO Nº 563/2026](https://www.diariomunicipal.com.br/amp/materia/F80FE5F6) · 2026-08-07
+- GABINETE DO PREFEITO · [DECRETO Nº 564/2026](https://www.diariomunicipal.com.br/amp/materia/40CD56C2) · 2026-08-07
+- GABINETE DO PREFEITO · [DECRETO Nº 565/2026](https://www.diariomunicipal.com.br/amp/materia/CBABE82D) · 2026-08-07
+- GABINETE DO PREFEITO · [DECRETO Nº 566/2026](https://www.diariomunicipal.com.br/amp/materia/74705912) · 2026-08-07
+- GABINETE DO PREFEITO · [DECRETO Nº 567/2026](https://www.diariomunicipal.com.br/amp/materia/24D1692B) · 2026-08-07
+- GABINETE DO PREFEITO · [DECRETO Nº 568/2026](https://www.diariomunicipal.com.br/amp/materia/0C3ACB9E) · 2026-08-07
+- GABINETE DO PREFEITO · [PROCESSO SELETIVO SIMPLIFICADO Nº 001/2026 -](https://www.diariomunicipal.com.br/amp/materia/93AA4CDA) · 2026-08-07
+- PROCURADORIA · [DECRETO Nº 569/2026](https://www.diariomunicipal.com.br/amp/materia/2B684203) · 2026-08-07
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [DECLARAÇÃO PROCESSO SELETIVO SIMPLIFICADO –](https://www.diariomunicipal.com.br/amp/materia/814802B2) · 2026-08-07
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [DECLARAÇÃO PROCESSO SELETIVO SIMPLIFICADO –](https://www.diariomunicipal.com.br/amp/materia/F22DAE3E) · 2026-08-07
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [EDITAL DE CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/FA9C92A6) · 2026-08-07
+- GOVERNO MUNICIPAL · [PORTARIA Nº. 516/2026](https://www.diariomunicipal.com.br/amp/materia/02EF9F6D) · 2026-08-07
+- SECRETARIA DE ADMINISTRAÇÃO · [CONTRATO DE PRESTAÇÃO DE SERVIÇOS EM REGIME](https://www.diariomunicipal.com.br/amp/materia/F4053172) · 2026-08-07
+- SECRETARIA DE ADMINISTRAÇÃO · [CONTRATO DE PRESTAÇÃO DE SERVIÇOS EM REGIME](https://www.diariomunicipal.com.br/amp/materia/EF39D7D9) · 2026-08-07
+- SECRETARIA DE ADMINISTRAÇÃO · [EDITAL DE CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/56CF1D56) · 2026-08-07
+- SECRETARIA DE ADMINISTRAÇÃO - SETOR DE RECURSOS HUMANOS · [EDITAL DE CONVOCAÇÃO N° 014.001/2026 – PSS 001/2025](https://www.diariomunicipal.com.br/amp/materia/FDF829C6) · 2026-08-07
+- DEPARTAMENTO DE ADMINISTRAÇÃO E PLANEJAMENTO · [termos do artigo 37 inciso IX da Consti tuição](https://www.diariomunicipal.com.br/amp/materia/7D7EDE1E) · 2026-08-07
+- DEPARTAMENTO DE ADMINISTRAÇÃO E PLANEJAMENTO · [termos do artigo 37 inciso IX da Constituição](https://www.diariomunicipal.com.br/amp/materia/CA234689) · 2026-08-07
+- DEPARTAMENTO DE ADMINISTRAÇÃO E PLANEJAMENTO · [PLANEJAMENTO](https://www.diariomunicipal.com.br/amp/materia/92C3C1AD) · 2026-08-07
+- DEPARTAMENTO DE ADMINISTRAÇÃO E PLANEJAMENTO · [termos do artigo 37 inciso IX da Constituição](https://www.diariomunicipal.com.br/amp/materia/418FF6AE) · 2026-08-07
+- PREFEITURA MUNICIPAL DE PAIÇANDU · [EDITAL DE CONVOCAÇÃO Nº 211/2026](https://www.diariomunicipal.com.br/amp/materia/B4284A69) · 2026-08-07
+- PREFEITURA MUNICIPAL DE PAIÇANDU · [EDITAL DE CONVOCAÇÃO Nº212/2026](https://www.diariomunicipal.com.br/amp/materia/0DF02635) · 2026-08-07
+- PREFEITURA MUNICIPAL DE PAIÇANDU · [EDITAL DE CONVOCAÇÃO Nº 213/2026](https://www.diariomunicipal.com.br/amp/materia/AA0ECADA) · 2026-08-07
+- PREFEITURA MUNICIPAL DE PAIÇANDU · [PORTARIA Nº 456/2026](https://www.diariomunicipal.com.br/amp/materia/47F8938B) · 2026-08-07
+- PREFEITURA MUNICIPAL DE PAIÇANDU · [PORTARIA Nº 457/2026](https://www.diariomunicipal.com.br/amp/materia/5EA884BC) · 2026-08-07
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [COMUNICADO – CHAMADA AUXILIAR ADMINISTRATIVO](https://www.diariomunicipal.com.br/amp/materia/14158264) · 2026-08-07
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [COMUNICADO – CHAMADA AUXILIAR DE CUIDADOR DE](https://www.diariomunicipal.com.br/amp/materia/FED58743) · 2026-08-07
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [COMUNICADO – CHAMADA PROFESSOR 40H - PROCESSO](https://www.diariomunicipal.com.br/amp/materia/E198E6AD) · 2026-08-07
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [TERMO DE DESISTÊNCIA - PROCESSO SELETIVO](https://www.diariomunicipal.com.br/amp/materia/849AB3B0) · 2026-08-07
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [TERMO DE DESISTÊNCIA - PROCESSO SELETIVO](https://www.diariomunicipal.com.br/amp/materia/EB85C285) · 2026-08-07
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [TERMO DE DESISTÊNCIA - PROCESSO SELETIVO](https://www.diariomunicipal.com.br/amp/materia/0C4EAAB8) · 2026-08-07
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO DE RESCISÃO DO CONTRATO](https://www.diariomunicipal.com.br/amp/materia/2B06F033) · 2026-08-07
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO DE RESCISÃO DO CONTRATO](https://www.diariomunicipal.com.br/amp/materia/12F5995C) · 2026-08-07
+- SECRETARIA GERAL · [PSS N º 002/2026 – SECRETARIA MUNICIPAL DE SAÚDE 1ª](https://www.diariomunicipal.com.br/amp/materia/2B6192A5) · 2026-08-07
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [PROCESSO SELETIVO SIMPLIFICADO - PSS – EDITAL Nº.](https://www.diariomunicipal.com.br/amp/materia/EA336C40) · 2026-08-07
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [PORTARIA 203/2026](https://www.diariomunicipal.com.br/amp/materia/F6237853) · 2026-08-07
+- MUNICÍPIO DE TRÊS BARRAS DO PARANÁ · [EDITAL Nº. 091/2026](https://www.diariomunicipal.com.br/amp/materia/ED993EC0) · 2026-08-07
+- PREFEITURA MUNICIPAL DE TURVO · [EDITAL DE CONVOCAÇÃO 141-2026](https://www.diariomunicipal.com.br/amp/materia/259D50E3) · 2026-08-07
+- SECRETARIA DE ADMINISTRAÇÃO · [EDITAL DE CONVOCAÇÃO 142-2026](https://www.diariomunicipal.com.br/amp/materia/2E960B8C) · 2026-08-07
+- GABINETE DO PODER EXECUTIVO MUNICIPAL · [EXTRATO Nº 087/2026 DE CONTRATO DE TRABALHO POR PRAZO DETERMINADO EM REGIME ESPECIAL](https://www.diariomunicipal.com.br/amp/materia/07526B4A) · 2026-08-07
+- GABINETE DO PODER EXECUTIVO MUNICIPAL · [EXTRATO Nº 088/2026 DE CONTRATO DE TRABALHO POR PRAZO DETERMINADO EM REGIME ESPECIAL](https://www.diariomunicipal.com.br/amp/materia/AE31D2AC) · 2026-08-07
+- GABINETE DO PODER EXECUTIVO MUNICIPAL · [EXTRATO Nº 089/2026 DE CONTRATO DE TRABALHO POR PRAZO DETERMINADO EM REGIME ESPECIAL](https://www.diariomunicipal.com.br/amp/materia/CA01D5B9) · 2026-08-07
+- GABINETE DO PODER EXECUTIVO MUNICIPAL · [EXTRATO Nº 090/2026 DE CONTRATO DE TRABALHO POR PRAZO DETERMINADO EM REGIME ESPECIAL](https://www.diariomunicipal.com.br/amp/materia/A5684CD0) · 2026-08-07
+- SECRETARIA MUNICIPAL DE RECURSOS HUMANOS · [EDITAL DE CLASSIFICAÇÃO PROVISÓRIA PSS Nº 02/2026](https://www.diariomunicipal.com.br/amp/materia/4D3CFDA9) · 2026-08-07
+- PREFEITURA MUNICIPAL DE INÁCIO MARTINS · [DEPARTAMENTO DE RECURSOS HUMANOS](https://www.diariomunicipal.com.br/amp/materia/B1619C68) · 2026-08-07
+- DEPARTAMENTO DE RH · [EDITAL 39 2026 - CONVOCAÇÃO PROFESSOR EDUCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/0B51BEC6) · 2026-08-10
+- GABINETE DO PODER EXECUTIVO MUNICIPAL · [EDITAL DE CONVOCAÇÃO Nº 072/2026 - DIVISÃO DE](https://www.diariomunicipal.com.br/amp/materia/105B9402) · 2026-08-10
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [PROCESSO SELETIVO 001/2025 EDITAL 011/2026](https://www.diariomunicipal.com.br/amp/materia/19CEED49) · 2026-08-10
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [EDITAL N.º 032/2026](https://www.diariomunicipal.com.br/amp/materia/1BC09A9C) · 2026-08-10
+- SECRETARIA GOVERNO · [EDITAL Nº 004/2026 DIVULGAÇÃO DO RESULTADO DOS](https://www.diariomunicipal.com.br/amp/materia/27263BE2) · 2026-08-10
+- SECRETARIA GOVERNO · [EDITAL Nº 005/2026 RETIFICAÇÃO DO CRONOGRAMA DO](https://www.diariomunicipal.com.br/amp/materia/4562FE88) · 2026-08-10
+- SECRETARIA GOVERNO · [EDITAL Nº 06.005/2026 - RETIFICAÇÃO HOMOLOGAÇÃO](https://www.diariomunicipal.com.br/amp/materia/259103E7) · 2026-08-10
+- DEPARTAMENTO DE ADMINISTRAÇÃO · [DECRETO Nº0244/2026 NOMEAR, O SENHOR ERICK RENÃ](https://www.diariomunicipal.com.br/amp/materia/5955A828) · 2026-08-10
+- DEPARTAMENTO DE RECURSOS HUMANOS · [PORTARIA 192/2026](https://www.diariomunicipal.com.br/amp/materia/38CB37DE) · 2026-08-10
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [EDITAL DE CHAMAMENTO Nº. 020/2026](https://www.diariomunicipal.com.br/amp/materia/60D1370B) · 2026-08-10
+- SECRETARIA DE ADMINISTRAÇÃO E PLANEJAMENTO · [EDITAL Nº 057/2026](https://www.diariomunicipal.com.br/amp/materia/7ACECC8E) · 2026-08-10
+- PREFEITURA MUNICIPAL DE ITAÚNA DO SUL · [EDITAL N°005/2026 CONVOCAÇÃO PROCESSO SELETIVO](https://www.diariomunicipal.com.br/amp/materia/7A244EDA) · 2026-08-10
+- PREFEITURA MUNICIPAL DE MALLET · [DECRETO Nº 342/2026](https://www.diariomunicipal.com.br/amp/materia/B0A98689) · 2026-08-10
+- RECURSOS HUMANOS · [EDITAL DE CONVOCAÇÃO Nº 01/2026 PSS Nº 05/2026](https://www.diariomunicipal.com.br/amp/materia/8551E6A0) · 2026-08-10
+- RECURSOS HUMANOS · [PORTARIA Nº 016/2026](https://www.diariomunicipal.com.br/amp/materia/45464492) · 2026-08-10
+- PREFEITURA MUNICIPAL DE MORRETES · [EDITAL Nº 03, DE 07 DE AGOSTO DE 2026.. EDITAL DE](https://www.diariomunicipal.com.br/amp/materia/00226EE6) · 2026-08-10
+- FUNDAÇÃO DE ATENÇÃO A SAÚDE DE MORRETES · [EDITAL Nº 100, DE 07 DE AGOSTO DE 2026.. EDITAL DE](https://www.diariomunicipal.com.br/amp/materia/28942506) · 2026-08-10
+- FUNDAÇÃO DE ATENÇÃO A SAÚDE DE MORRETES · [EDITAL Nº 99, DE 07 DE AGOSTO 2026. EDITAL DE](https://www.diariomunicipal.com.br/amp/materia/CBFB8594) · 2026-08-10
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [COMUNICADO – CHAMADA AUXILIAR DE CUIDADOR DE](https://www.diariomunicipal.com.br/amp/materia/B4B553A5) · 2026-08-10
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [PROCESSO SELETIVO SIMPLIFICADO Nº. 01/2026](https://www.diariomunicipal.com.br/amp/materia/04CD2E65) · 2026-08-10
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [COMUNICADO – CHAMADA PROFESSOR 20H - PROCESSO](https://www.diariomunicipal.com.br/amp/materia/FD8CA3EE) · 2026-08-10
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [COMUNICADO – CHAMADA PROFESSOR 20H - PROCESSO](https://www.diariomunicipal.com.br/amp/materia/37330322) · 2026-08-10
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [termos do Edital nº 01/2026 de 05 de janeiro de 2026, convocou o](https://www.diariomunicipal.com.br/amp/materia/2026FBD7) · 2026-08-10
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [termos do Edital nº 01/2026 de 05 de janeiro de 2026, convocou o](https://www.diariomunicipal.com.br/amp/materia/87185336) · 2026-08-10
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [termos do Edital nº 01/2026 de 05 de janeiro de 2026, convocou o](https://www.diariomunicipal.com.br/amp/materia/26A156B2) · 2026-08-10
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [TERMO DE DESISTÊNCIA - PROCESSO SELETIVO](https://www.diariomunicipal.com.br/amp/materia/0B61295B) · 2026-08-10
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [TERMO DE DESISTÊNCIA - PROCESSO SELETIVO](https://www.diariomunicipal.com.br/amp/materia/2649ED3F) · 2026-08-10
+- SECRETARIA MUNICIPAL DE RECURSOS HUMANOS · [EDITAL Nº 11/2026- TORNA PÚBLICO A DESISTÊNCIA DOS](https://www.diariomunicipal.com.br/amp/materia/01BD3156) · 2026-08-10
+- SECRETARIA DE GESTÃO PÚBLICA · [DECLARAÇÃO DE DESISTÊNCIA DE VAGA PROFESSOR](https://www.diariomunicipal.com.br/amp/materia/D6755E2B) · 2026-08-10
+- PREFEITURA MUNICIPAL DE QUERÊNCIA DO NORTE · [PORTARIA N° 098/2026](https://www.diariomunicipal.com.br/amp/materia/035263F1) · 2026-08-10
+- RECURSOS HUMANOS · [EDITAL DE CONVOCAÇÃO PSS N° 01/2025](https://www.diariomunicipal.com.br/amp/materia/488DD7C3) · 2026-08-10
+- PREFEITURA MUNICIPAL DE RIO BRANCO DO IVAÍ · [EDITAL COMPLEMENTAR PSS- 001-2026- SMS](https://www.diariomunicipal.com.br/amp/materia/386E8867) · 2026-08-10
+- PREFEITURA MUNICIPAL DE RIO BRANCO DO IVAÍ · [PROCESSO SELETIVO SIMPLIFICADO (EDITAL Nº](https://www.diariomunicipal.com.br/amp/materia/6E35FF7D) · 2026-08-10
+- ADMINISTRAÇÃO GERAL · [DECRETO Nº 205/2026](https://www.diariomunicipal.com.br/amp/materia/119919A6) · 2026-08-10
+- ADMINISTRAÇÃO GERAL · [EDITAL Nº 94/2026 (CONVOCAÇÃO)](https://www.diariomunicipal.com.br/amp/materia/5F1AD972) · 2026-08-10
+- GABINETE DO PREFEITO · [EDITAL DE CONVOCAÇÃO Nº 12 PROCESSO SELETIVO](https://www.diariomunicipal.com.br/amp/materia/D58B663A) · 2026-08-10
+- PODER EXECUTIVO · [PORTARIA N.º 338/2026](https://www.diariomunicipal.com.br/amp/materia/89D26ACD) · 2026-08-10
+- PREFEITURA MUNICIPAL DE CERRO AZUL · [EDITAL Nº 006/2026 DIVULGAÇÃO DA CLASSIFICAÇÃO FINAL POR CURSO PRETENDIDO PROCESSO SELETIVO](https://www.diariomunicipal.com.br/amp/materia/9AB0B293) · 2026-08-10
+- PREFEITURA MUNICIPAL DE ITAMBARACÁ · [LEI Nº 2.073/2026](https://www.diariomunicipal.com.br/amp/materia/0DE0879C) · 2026-08-10
+- PREFEITURA MUNICIPAL DE ITAÚNA DO SUL · [EDITAL Nº 002/2026](https://www.diariomunicipal.com.br/amp/materia/45E03AA6) · 2026-08-10
+- SECRETARIA DE EDUCAÇÃO E CULTURA · [EDITAL N° 001/2026](https://www.diariomunicipal.com.br/amp/materia/79F9FEF2) · 2026-08-10
+- RECURSOS HUMANOS · [EDITAL PSS Nº 006-2026](https://www.diariomunicipal.com.br/amp/materia/0884B68B) · 2026-08-10
+- PREFEITURA MUNICIPAL DE SALGADO FILHO · [EDITAL Nº 05/2026 EDITAL NOTA PROVA OBJETIVA PROCESSO SELETIVO SIMPLIFICADO Nº 01/2026](https://www.diariomunicipal.com.br/amp/materia/CD5562BD) · 2026-08-10
+- DEPARTAMENTO DE RECURSOS HUMANOS E ADM · [GABARITO DEFINITIVO PROCESSO SELETIVO SIMPLIFICADO Nº 01/2026](https://www.diariomunicipal.com.br/amp/materia/214A6758) · 2026-08-10
+- PREFEITURA MUNICIPAL DE SALTO DO LONTRA · [EDITAL Nº 018-2026- CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/BFCDD8CF) · 2026-08-10
+- ADMINISTRAÇÃO MUNICIPAL · [PORTARIA Nº 508/2026](https://www.diariomunicipal.com.br/amp/materia/164F6EE3) · 2026-08-11
+- ADMINISTRAÇÃO MUNICIPAL · [PROCESSO SELETIVO SIMPLIFICADO Nº 002/2026 EDITAL](https://www.diariomunicipal.com.br/amp/materia/4ADC6766) · 2026-08-11
+- DEPARTAMENTO DE PESSOAL · [EDITAL DE CONVOCAÇÃO Nº 011/20256 PROCESSO](https://www.diariomunicipal.com.br/amp/materia/8F3FFA54) · 2026-08-11
+- GABINETE DA PREFEITA · [EDITAL DE CONVOCAÇÃO N. 009/2026 PSS - MOTORISTA](https://www.diariomunicipal.com.br/amp/materia/42FF0806) · 2026-08-11
+- ADMINISTRAÇÃO · [EDITAL DE CONVOCAÇÃO N.º 04/2026 - PROCESSO](https://www.diariomunicipal.com.br/amp/materia/70E42A5E) · 2026-08-11
+- ADMINISTRAÇÃO · [Edital nº. 11/2026, que estabelece instruções destinadas à realização](https://www.diariomunicipal.com.br/amp/materia/7D787A89) · 2026-08-11
+- RECURSOS HUMANOS · [PORTARIA Nº 397, DE 10 DE AGOSTO DE 2026.](https://www.diariomunicipal.com.br/amp/materia/D80569D4) · 2026-08-11
+- RECURSOS HUMANOS · [PROCESSO SELETIVO SIMPLIFICADO – PSS Nº 001/2025](https://www.diariomunicipal.com.br/amp/materia/2EBC9B5F) · 2026-08-11
+- PREFEITURA MUNICIPAL DE CAPITÃO LEÔNIDAS · [DECRETO N.º 311/2026 DATA: 10-08-2026](https://www.diariomunicipal.com.br/amp/materia/58B9615F) · 2026-08-11
+- SECRETARIA DE ADMINISTRAÇÃO E PLANEJAMENTO · [EDITAL Nº 058/2026](https://www.diariomunicipal.com.br/amp/materia/B7A010B0) · 2026-08-11
+- SECRETARIA DE ADMINISTRAÇÃO E PLANEJAMENTO · [EDITAL Nº 060/2026](https://www.diariomunicipal.com.br/amp/materia/6F300FB5) · 2026-08-11
+- GABINETE DO PREFEITO · [DECRETO Nº 575/2026](https://www.diariomunicipal.com.br/amp/materia/4FFDD407) · 2026-08-11
+- PROCURADORIA · [DECRETO Nº 574/2026](https://www.diariomunicipal.com.br/amp/materia/8025BC53) · 2026-08-11
+- RECURSOS HUMANOS · [DECRETO Nº 5.506/2026](https://www.diariomunicipal.com.br/amp/materia/B24A8D7B) · 2026-08-11
+- RECURSOS HUMANOS · [PORTARIA Nº 313/2026](https://www.diariomunicipal.com.br/amp/materia/5CCD6373) · 2026-08-11
+- RECURSOS HUMANOS · [PORTARIA Nº 314/2026](https://www.diariomunicipal.com.br/amp/materia/3559FAC9) · 2026-08-11
+- PREFEITURA MUNICIPAL DE ITAPEJARA D'OESTE · [DECRETO Nº 184/2026](https://www.diariomunicipal.com.br/amp/materia/E63EAD42) · 2026-08-11
+- ADMINISTRAÇÃO RH · [EDITAL N°006/2026 CONVOCAÇÃO PROCESSO SELETIVO](https://www.diariomunicipal.com.br/amp/materia/A1E70766) · 2026-08-11
+- ADMINISTRAÇÃO RH · [PORTARIA Nº 311/2026](https://www.diariomunicipal.com.br/amp/materia/17E2EEA8) · 2026-08-11
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [DECRETO N.º 156/2026 DE 10 DE AGOSTO DE 2026,](https://www.diariomunicipal.com.br/amp/materia/D1A35BD3) · 2026-08-11
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [PORTARIA Nº. 254/2026 DE 10 DE AGOSTO DE 2026, -](https://www.diariomunicipal.com.br/amp/materia/4AE3E427) · 2026-08-11
+- GABINETE DO PREFEITO · [EDITAL DE ABERTURA Nº 001.004 – PSS 004/2026 –](https://www.diariomunicipal.com.br/amp/materia/AD172C14) · 2026-08-11
+- SECRETARIA DE ADMINISTRAÇÃO - SETOR DE RECURSOS HUMANOS · [DECRETO N.º 348/2026.](https://www.diariomunicipal.com.br/amp/materia/467E5C7B) · 2026-08-11
+- SECRETARIA DE ADMINISTRAÇÃO - SETOR DE RECURSOS HUMANOS · [EDITAL DE CONVOCAÇÃO N° 015.001/2026 – PSS 001/2025](https://www.diariomunicipal.com.br/amp/materia/A2F2C6C3) · 2026-08-11
+- GABINETE DO PREFEITO · [DECRETO Nº 390/2026 - NOMEIA E DÁ POSSE A PESSOAS](https://www.diariomunicipal.com.br/amp/materia/9B766316) · 2026-08-11
+- GABINETE DO PREFEITO · [EDITAL N º. 268/2026 CONVOCAÇÃO PROCESSO](https://www.diariomunicipal.com.br/amp/materia/09C5F06C) · 2026-08-11
+- GABINETE DO PREFEITO · [EDITAL N º. 269/2026 CONVOCAÇÃO PROCESSO](https://www.diariomunicipal.com.br/amp/materia/ED126F29) · 2026-08-11
+- FUNDAÇÃO DE SÁUDE DE PAIÇANDU · [PORTARIA Nº 327/2026](https://www.diariomunicipal.com.br/amp/materia/92A34FB4) · 2026-08-11
+- FUNDAÇÃO DE SÁUDE DE PAIÇANDU · [PORTARIA Nº 328/2026](https://www.diariomunicipal.com.br/amp/materia/D8611C14) · 2026-08-11
+- FUNDAÇÃO DE SÁUDE DE PAIÇANDU · [PORTARIA Nº 329/2026](https://www.diariomunicipal.com.br/amp/materia/D8806412) · 2026-08-11
+- FUNDAÇÃO DE SÁUDE DE PAIÇANDU · [PORTARIA Nº 330/2026](https://www.diariomunicipal.com.br/amp/materia/B8A38654) · 2026-08-11
+- FUNDAÇÃO DE SÁUDE DE PAIÇANDU · [PORTARIA Nº 331/2026](https://www.diariomunicipal.com.br/amp/materia/14096488) · 2026-08-11
+- FUNDAÇÃO DE SÁUDE DE PAIÇANDU · [PORTARIA Nº 332/2026](https://www.diariomunicipal.com.br/amp/materia/5D0FDDBA) · 2026-08-11
+- FUNDAÇÃO DE SÁUDE DE PAIÇANDU · [PORTARIA Nº 333/2026](https://www.diariomunicipal.com.br/amp/materia/52C366F2) · 2026-08-11
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [termos do Edital nº 01/2025 – SECRETARIA MUNICIPAL DE](https://www.diariomunicipal.com.br/amp/materia/10D355BE) · 2026-08-11
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [termos do Edital nº  01/2025 – SECRETARIA MUNICIPAL DE](https://www.diariomunicipal.com.br/amp/materia/F26D9799) · 2026-08-11
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [termos do Edital nº 01/2025 – SECRETARIA MUNIC IPAL DE](https://www.diariomunicipal.com.br/amp/materia/0C54D467) · 2026-08-11
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [termos do Edital nº 01/2025 – SECRETARIA MUNICIPAL DE](https://www.diariomunicipal.com.br/amp/materia/C7DFAD75) · 2026-08-11
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [termos do Edital nº 01/2025 – SECRETARIA MUNICIPAL DE](https://www.diariomunicipal.com.br/amp/materia/93ED92AB) · 2026-08-11
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [termos do Edital nº 01/2025 – SECRETARIA MUNICIPAL DE](https://www.diariomunicipal.com.br/amp/materia/18427468) · 2026-08-11
+- PREFEITURA MUNICIPAL DE PALMITAL · [PORTARIA 487/2026](https://www.diariomunicipal.com.br/amp/materia/1FF72863) · 2026-08-11
+- PREFEITURA MUNICIPAL DE PALMITAL · [PORTARIA 488/2026](https://www.diariomunicipal.com.br/amp/materia/12013213) · 2026-08-11
+- PREFEITURA MUNICIPAL DE PALMITAL · [PORTARIA 489/2026](https://www.diariomunicipal.com.br/amp/materia/E531EC20) · 2026-08-11
+- SECRETARIA MUNICIPAL DE RECURSOS HUMANOS · [PORTARIA Nº 206/2026 – DE 10 DE AGOSTO DE 2026.](https://www.diariomunicipal.com.br/amp/materia/D0D97056) · 2026-08-11
+- DEPARTAMENTO DE ADMINISTRAÇÃO · [PORTARIA Nº 9.019/2026 10/08/2026](https://www.diariomunicipal.com.br/amp/materia/61283320) · 2026-08-11
+- DEPARTAMENTO DE RECURSOS HUMANOS · [Lei nº 11.788, de 25 de setembro de 2008 e Lei Municipal nº](https://www.diariomunicipal.com.br/amp/materia/0A0F4D7D) · 2026-08-11
+- GABINETE DO PREFEITO · [EDITAL N º 010/2026 – 15ª CONVOCAÇÃO – PSS Nº 004/2025 –](https://www.diariomunicipal.com.br/amp/materia/9FF61DCD) · 2026-08-11
+- GABINETE DO PREFEITO · [EDITAL N º 014/2026 – 21ª CONVOCAÇÃO –PSS Nº 001/2025–](https://www.diariomunicipal.com.br/amp/materia/D9073C3F) · 2026-08-11
+- SECRETARIA GERAL · [PSS N º 001/2026 – SECRETARIA MUNICIPAL DE SAÚDE 9ª](https://www.diariomunicipal.com.br/amp/materia/03881AD6) · 2026-08-11
+- PREFEITURA MUNICIPAL DE SALTO DO LONTRA · [DECRETO 1438/2027](https://www.diariomunicipal.com.br/amp/materia/0C799B77) · 2026-08-11
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [PORTARIA Nº 205/2026 – DE 05 DE AGOSTO DE 2026.](https://www.diariomunicipal.com.br/amp/materia/389CC279) · 2026-08-11
+- DIVISÃO DE RECURSOS HUMANOS · [EDITAL 085/2026](https://www.diariomunicipal.com.br/amp/materia/B2B77182) · 2026-08-11
+- DIVISÃO DE PESSOAL · [DECRETO Nº 218/2026](https://www.diariomunicipal.com.br/amp/materia/10162074) · 2026-08-11
+- PREFEITURA MUNICIPAL DE SENGÉS · [EDITAL DE CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/11DF0BE8) · 2026-08-11
+- DEPARTAMENTO DE RECURSOS HUMANOS · [EDITAL Nº. 02/2026 - PSS Nº 01-2026](https://www.diariomunicipal.com.br/amp/materia/8C2AC41D) · 2026-08-11
+- PREFEITURA MUNICIPAL DE AGUDOS DO SUL · [EDITAL Nº 009/2026 EDITAL DE CANDIDATOS CLASSIFICADOS PROCESSO SELETIVO SIMPLIFICADO 001/2026](https://www.diariomunicipal.com.br/amp/materia/C764C6C7) · 2026-08-11
+- PREFEITURA MUNICIPAL DE BALSA NOVA · [PROCESSO SELETIVO SIMPLIFICADO – PSS, para contratações temporárias para exercer a função de AGENTE EDUCACIONAL, em](https://www.diariomunicipal.com.br/amp/materia/AB20D792) · 2026-08-11
+- ADMINISTRAÇÃO · [PROCESSO SELETIVO SIMPLIFICADO – PSS, para contratações temporárias para exercer a função de ASSISTENTE EDUCACIONAL, em](https://www.diariomunicipal.com.br/amp/materia/36ED06DF) · 2026-08-11
+- ADMINISTRAÇÃO · [PROCESSO SELETIVO SIMPLIFICADO – PSS, para contratações temporárias para exercer a função de ASSISTENTE EDUCACIONAL, em](https://www.diariomunicipal.com.br/amp/materia/D789DB7B) · 2026-08-11
+- PREFEITURA MUNICIPAL DE BOM JESUS DO SUL · [EDITAL DE PROCESSO SELETIVO SIMPLIFICADO N° 1/2026 EDITAL Nº 5/2026 – RESULTADO FINAL](https://www.diariomunicipal.com.br/amp/materia/5386D774) · 2026-08-11
+- PREFEITURA MUNICIPAL DE HONÓRIO SERPA · [EDITAL Nº 06-F, DE 10 DE AGOSTO DE 2026.](https://www.diariomunicipal.com.br/amp/materia/35E27155) · 2026-08-11
+- DEPARTAMENTO DE ADMINISTRAÇÃO · [EDITAL Nº 06-G DE 10 DE AGOSTO DE 2026.](https://www.diariomunicipal.com.br/amp/materia/CC34B9A1) · 2026-08-11
+- PREFEITURA MUNICIPAL DE IRATI · [EDITAL DE PROCESSO SELETIVO PÚBLICO SIMPLIFICADO Nº 003/2026](https://www.diariomunicipal.com.br/amp/materia/52DB8F0E) · 2026-08-11
+- SECRETARIA MUNICIPAL DE EDUCAÇÃO · [EDITAL DE PROCESSO SELETIVO SIMPLIFICADO EDUCAÇÃO N.º 01/2025](https://www.diariomunicipal.com.br/amp/materia/36DF29C2) · 2026-08-11
+- SECRETARIA DE ADMINISTRAÇÃO E PLANEJAMENTO · [EDITAL Nº 059/2026](https://www.diariomunicipal.com.br/amp/materia/3DE13476) · 2026-08-11
+- DIVISÃO DE RECURSOS HUMANOS E SEGURANÇA DO TRABALHO · [EDITAL 146/2026 - INSCRITOS PSS EDUCADOR/CUIDADOR](https://www.diariomunicipal.com.br/amp/materia/6CB13D4B) · 2026-08-12
+- GABINETE DO PODER EXECUTIVO MUNICIPAL · [EDITAL DE CONVOCAÇÃO Nº 075/2026 - DIVISÃO DE](https://www.diariomunicipal.com.br/amp/materia/1B0EFB7E) · 2026-08-12
+- RECURSOS HUMANOS · [EDITAL DE CONVOCAÇÃO N° 042/2026](https://www.diariomunicipal.com.br/amp/materia/D99E6A95) · 2026-08-12
+- GABINETE DA PREFEITA · [EDITAL DE CONVOCAÇÃO N. 017/2026 PSS - PROFESSOR](https://www.diariomunicipal.com.br/amp/materia/5B4A6011) · 2026-08-12
+- PREFEITURA MUNICIPAL DE BALSA NOVA · [EDITAL DE CONVOCAÇÃO Nº 013/2026 - PROCESSO](https://www.diariomunicipal.com.br/amp/materia/FAAA27A2) · 2026-08-12
+- DEPARTAMENTO DE GESTÃO DE PESSOAS · [EDITAL 002/2026 - PSS 002/2026](https://www.diariomunicipal.com.br/amp/materia/05A82DC9) · 2026-08-12
+- DEPARTAMENTO DE GESTÃO DE PESSOAS · [EDITAL Nº 009/2026 DE 11/08/2026 - PSS 003/2025](https://www.diariomunicipal.com.br/amp/materia/F3EA2737) · 2026-08-12
+- DEPARTAMENTO DE ADMINISTRAÇÃO · [PROCESSO SELETIVO SIMPLIFICADO - PSS N°001/2025](https://www.diariomunicipal.com.br/amp/materia/B83E5DD2) · 2026-08-12
+- DEPARTAMENTO DE ADMINISTRAÇÃO · [PROCESSO SELETIVO SIMPLIFICADO - PSS N° 004/2026](https://www.diariomunicipal.com.br/amp/materia/B8CF9E0E) · 2026-08-12
+- MUNICÍPIO DE FERNANDES PINHEIRO · [DECRETO Nº 209/2026](https://www.diariomunicipal.com.br/amp/materia/A0F26CCD) · 2026-08-12
+- MUNICÍPIO DE FERNANDES PINHEIRO · [DECRETO Nº 210/2026](https://www.diariomunicipal.com.br/amp/materia/C2234923) · 2026-08-12
+- MUNICÍPIO DE FERNANDES PINHEIRO · [EDITAL N° 041/2025 - PROCESSO SELETIVO](https://www.diariomunicipal.com.br/amp/materia/2A6E4D2C) · 2026-08-12
+- RH · [EDITAL 104 RESULTADO DA CONVOCAÇÃO 103/2026 PSS](https://www.diariomunicipal.com.br/amp/materia/30ADC852) · 2026-08-12
+- CONSAMU · [PROCESSO SELETIVO SIMPLIFICADO Nº 001/2026 PARA](https://www.diariomunicipal.com.br/amp/materia/BAE7E274) · 2026-08-12
+- DEPARTAMENTO DE RECURSOS HUMANOS · [DECRETO 189/2026](https://www.diariomunicipal.com.br/amp/materia/7FB94FF2) · 2026-08-12
+- PREFEITURA MUNICIPAL DE IRATI · [DECRETO Nº 576/2026](https://www.diariomunicipal.com.br/amp/materia/D2F49169) · 2026-08-12
+- GABINETE DO PREFEITO · [DECRETO Nº 577/2026](https://www.diariomunicipal.com.br/amp/materia/93AD78CC) · 2026-08-12
+- PROCURADORIA · [EDITAL Nº 002.28/2026 – 24ª CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/B1D69596) · 2026-08-12
+- PROCURADORIA · [PROCESSO SELETIVO SIMPLIFICADO Nº 001/2026 -](https://www.diariomunicipal.com.br/amp/materia/8438FFC6) · 2026-08-12
+- DIVISÃO DE RECURSOS HUMANOS · [EDITAL DE CONVOCAÇÃO - PROFESSOR – PROCESSO](https://www.diariomunicipal.com.br/amp/materia/63184643) · 2026-08-12
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [DECLARAÇÃO PROCESSO SELETIVO SIMPLIFICADO –](https://www.diariomunicipal.com.br/amp/materia/839A9A92) · 2026-08-12
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [EDITAL DE CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/1C6B6EB8) · 2026-08-12
+- DEPARTAMENTO DE ADMINISTRAÇÃO E PLANEJAMENTO · [EDITAL Nº 035/2026](https://www.diariomunicipal.com.br/amp/materia/99F3D9B8) · 2026-08-12
+- FUNDAÇÃO DE EDUCAÇÃO DE PAIÇANDU · [EDITAL DE CONVOCAÇÃO Nº 230/2026](https://www.diariomunicipal.com.br/amp/materia/E7E0ADE9) · 2026-08-12
+- FUNDAÇÃO DE EDUCAÇÃO DE PAIÇANDU · [EDITAL DE CONVOCAÇÃO Nº 231/2026](https://www.diariomunicipal.com.br/amp/materia/CF886936) · 2026-08-12
+- FUNDAÇÃO DE EDUCAÇÃO DE PAIÇANDU · [EDITAL DE CONVOCAÇÃO Nº 232/2026](https://www.diariomunicipal.com.br/amp/materia/247BEF9B) · 2026-08-12
+- FUNDAÇÃO DE EDUCAÇÃO DE PAIÇANDU · [EDITAL DE CONVOCAÇÃO Nº 233/2026](https://www.diariomunicipal.com.br/amp/materia/6BE788E4) · 2026-08-12
+- FUNDAÇÃO DE EDUCAÇÃO DE PAIÇANDU · [EDITAL DE RECONVOCAÇÃO Nº 9/2026](https://www.diariomunicipal.com.br/amp/materia/75C10023) · 2026-08-12
+- FUNDAÇÃO DE EDUCAÇÃO DE PAIÇANDU · [PORTARIA Nº 424/2026](https://www.diariomunicipal.com.br/amp/materia/C9155D6D) · 2026-08-12
+- FUNDAÇÃO DE EDUCAÇÃO DE PAIÇANDU · [PORTARIA Nº 425/2026](https://www.diariomunicipal.com.br/amp/materia/D98EC8E5) · 2026-08-12
+- FUNDAÇÃO DE EDUCAÇÃO DE PAIÇANDU · [PORTARIA Nº 426/2026](https://www.diariomunicipal.com.br/amp/materia/C12B0B19) · 2026-08-12
+- FUNDAÇÃO DE EDUCAÇÃO DE PAIÇANDU · [PORTARIA Nº 427/2026](https://www.diariomunicipal.com.br/amp/materia/EE9E2DE0) · 2026-08-12
+- FUNDAÇÃO DE EDUCAÇÃO DE PAIÇANDU · [PORTARIA Nº 428/2026](https://www.diariomunicipal.com.br/amp/materia/80E31382) · 2026-08-12
+- FUNDAÇÃO DE EDUCAÇÃO DE PAIÇANDU · [PORTARIA Nº 429/2026](https://www.diariomunicipal.com.br/amp/materia/82BEDE25) · 2026-08-12
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [COMUNICADO – CHAMADA AUXILIAR DE CUIDADOR DE](https://www.diariomunicipal.com.br/amp/materia/34CBAEDE) · 2026-08-12
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [PROCESSO SELETIVO SIMPLIFICADO Nº. 01/2026](https://www.diariomunicipal.com.br/amp/materia/C6C9ECB9) · 2026-08-12
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [COMUNICADO – CHAMADA PROFESSOR 20H - PROCESSO](https://www.diariomunicipal.com.br/amp/materia/FBA2E918) · 2026-08-12
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [TERMO DE DESISTÊNCIA - PROCESSO SELETIVO](https://www.diariomunicipal.com.br/amp/materia/FA1ACF1B) · 2026-08-12
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [TERMO DE DESISTÊNCIA - PROCESSO SELETIVO](https://www.diariomunicipal.com.br/amp/materia/C0C024C2) · 2026-08-12
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [TERMO DE DESISTÊNCIA - PROCESSO SELETIVO](https://www.diariomunicipal.com.br/amp/materia/C1DDC1EF) · 2026-08-12
+- DEPARTAMENTO DE RECURSOS HUMANOS · [PORTARIA Nº 743, DE 11 DE AGOSTO DE 2026.](https://www.diariomunicipal.com.br/amp/materia/6726A096) · 2026-08-12
+- PREFEITURA MUNICIPAL DE PAULA FREITAS · [PORTARIA Nº 207/2026 – DE 11 DE AGOSTO DE 2026.](https://www.diariomunicipal.com.br/amp/materia/D6BA3371) · 2026-08-12
+- SECRETARIA DE ADMINISTRAÇÃO · [EXTRATO DE TERMO ADITIVO DE CONTRATO](https://www.diariomunicipal.com.br/amp/materia/0EED4F38) · 2026-08-12
+- ADMINISTRATIVO · [PORTARIA Nº 469 DE 11 DE AGOSTO DE 2026](https://www.diariomunicipal.com.br/amp/materia/1099AD37) · 2026-08-12
+- ADMINISTRATIVO · [PORTARIA Nº 470 DE 11 DE AGOSTO DE 2026](https://www.diariomunicipal.com.br/amp/materia/707FA42A) · 2026-08-12
+- ADMINISTRATIVO · [PORTARIA Nº 471 DE 11 DE AGOSTO DE 2026](https://www.diariomunicipal.com.br/amp/materia/726ED0A3) · 2026-08-12
+- CONSÓRCIO INTERMUNICIPAL DE SANEAMENTO DO PARANÁ · [EDITAL DE CONVOCAÇÃO Nº 025/2026 35ª CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/FCE5EE30) · 2026-08-12
+- PREFEITURA MUNICIPAL DE RANCHO ALEGRE D' OESTE · [EXTRATO DE PRORROGAÇÃO DE CONTRATO DE](https://www.diariomunicipal.com.br/amp/materia/86465FE4) · 2026-08-12
+- ADMINISTRAÇÃO · [EXTRATO DE PRORROGAÇÃO DE CONTRATO DE](https://www.diariomunicipal.com.br/amp/materia/AC89A225) · 2026-08-12
+- ADMINISTRAÇÃO · [EXTRATO DE PRORROGAÇÃO DE CONTRATO DE](https://www.diariomunicipal.com.br/amp/materia/C2CD07B9) · 2026-08-12
+- ADMINISTRAÇÃO · [EXTRATO DE PRORROGAÇÃO DE CONTRATO DE](https://www.diariomunicipal.com.br/amp/materia/8E8C58DA) · 2026-08-12
+- ADMINISTRAÇÃO · [EXTRATO DE PRORROGAÇÃO DE CONTRATO DE](https://www.diariomunicipal.com.br/amp/materia/5F7D6CBE) · 2026-08-12
+- ADMINISTRAÇÃO · [EXTRATO DE PRORROGAÇÃO DE CONTRATO DE](https://www.diariomunicipal.com.br/amp/materia/F0EE3BE0) · 2026-08-12
+- ADMINISTRAÇÃO · [EXTRATO DE PRORROGAÇÃO DE CONTRATO DE](https://www.diariomunicipal.com.br/amp/materia/F9BC6B5B) · 2026-08-12
+- ADMINISTRAÇÃO · [EXTRATO DE PRORROGAÇÃO DE CONTRATO DE](https://www.diariomunicipal.com.br/amp/materia/7FFA0630) · 2026-08-12
+- ADMINISTRAÇÃO · [EXTRATO DE PRORROGAÇÃO DE CONTRATO DE](https://www.diariomunicipal.com.br/amp/materia/D2CE2767) · 2026-08-12
+- ADMINISTRAÇÃO · [EXTRATO DE PRORROGAÇÃO DE CONTRATO DE](https://www.diariomunicipal.com.br/amp/materia/F34B28A2) · 2026-08-12
+- ADMINISTRAÇÃO · [EXTRATO DE PRORROGAÇÃO DE CONTRATO DE](https://www.diariomunicipal.com.br/amp/materia/D1FBF9D0) · 2026-08-12
+- ADMINISTRAÇÃO · [EXTRATO DE PRORROGAÇÃO DE CONTRATO DE](https://www.diariomunicipal.com.br/amp/materia/94A41030) · 2026-08-12
+- ADMINISTRAÇÃO · [EXTRATO DE PRORROGAÇÃO DE CONTRATO DE](https://www.diariomunicipal.com.br/amp/materia/0CB5A7AC) · 2026-08-12
+- ADMINISTRAÇÃO · [EXTRATO DE PRORROGAÇÃO DE CONTRATO DE](https://www.diariomunicipal.com.br/amp/materia/4CF3A77C) · 2026-08-12
+- ADMINISTRAÇÃO · [EXTRATO DE PRORROGAÇÃO DE CONTRATO DE](https://www.diariomunicipal.com.br/amp/materia/47E6BF6D) · 2026-08-12
+- ADMINISTRAÇÃO · [EXTRATO DE PRORROGAÇÃO DE CONTRATO DE](https://www.diariomunicipal.com.br/amp/materia/2CD055D9) · 2026-08-12
+- ADMINISTRAÇÃO · [EXTRATO DE PRORROGAÇÃO DE CONTRATO DE](https://www.diariomunicipal.com.br/amp/materia/4649192E) · 2026-08-12
+- ADMINISTRAÇÃO · [EXTRATO DE PRORROGAÇÃO DE CONTRATO DE](https://www.diariomunicipal.com.br/amp/materia/3D97D0B8) · 2026-08-12
+- ADMINISTRAÇÃO · [EXTRATO DE PRORROGAÇÃO DE CONTRATO DE](https://www.diariomunicipal.com.br/amp/materia/EF5AAEF2) · 2026-08-12
+- ADMINISTRAÇÃO · [EXTRATO DE PRORROGAÇÃO DE CONTRATO DE](https://www.diariomunicipal.com.br/amp/materia/598FAD8C) · 2026-08-12
+- ADMINISTRAÇÃO · [EXTRATO DE PRORROGAÇÃO DE CONTRATO DE](https://www.diariomunicipal.com.br/amp/materia/A5A1EF41) · 2026-08-12
+- ADMINISTRAÇÃO · [EXTRATO DE PRORROGAÇÃO DE CONTRATO DE](https://www.diariomunicipal.com.br/amp/materia/8ADBBD6E) · 2026-08-12
+- ADMINISTRAÇÃO · [EXTRATO DE PRORROGAÇÃO DE CONTRATO DE](https://www.diariomunicipal.com.br/amp/materia/FF2EB3C2) · 2026-08-12
+- DEPARTAMENTO DE RECURSOS HUMANOS · [PORTARIA N° 34.837/2026 - RH](https://www.diariomunicipal.com.br/amp/materia/F993EC25) · 2026-08-12
+- DEPARTAMENTO DE RH · [DECRETO 1440/2026](https://www.diariomunicipal.com.br/amp/materia/F70D32EF) · 2026-08-12
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [EDITAL DE CONVOCAÇÃO Nº 016/2026.](https://www.diariomunicipal.com.br/amp/materia/885472A3) · 2026-08-12
+- DIVISÃO DE RECURSOS HUMANOS · [EDITAL 086/2026](https://www.diariomunicipal.com.br/amp/materia/A00B2F0F) · 2026-08-12
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO, · [DECRETO Nº 219 DE 11 DE AGOSTO DE 2026](https://www.diariomunicipal.com.br/amp/materia/72A1BF7D) · 2026-08-12
+- ADMINISTRAÇÃO GERAL · [EDITAL Nº 095/2026 (CONVOCAÇÃO)](https://www.diariomunicipal.com.br/amp/materia/4A199FEA) · 2026-08-12
+- ADMINISTRAÇÃO GERAL · [LEI N.º 1693/2026](https://www.diariomunicipal.com.br/amp/materia/2BA58568) · 2026-08-12
+- PREFEITURA MUNICIPAL DE SENGÉS · [EDITAL DE CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/D8F829FA) · 2026-08-12
+- PODER EXECUTIVO · [EDITAL DE CONVOCAÇÃO Nº 008-2026 - PROCESSO](https://www.diariomunicipal.com.br/amp/materia/995F3181) · 2026-08-12
+- PREFEITURA MUNICIPAL DE TUNAS DO PARANÁ · [PROCESSO SELETIVO SIMPLIFICADO Nº 002/2026 EDITAL](https://www.diariomunicipal.com.br/amp/materia/4F164BC2) · 2026-08-12
+- MUNICÍPIO DE CHOPINZINHO · [EDITAL 147/2026 - INSCRITOS PSS ENFERMEIRO TEMPORÁRIO](https://www.diariomunicipal.com.br/amp/materia/60DB1383) · 2026-08-12
+- PREFEITURA MUNICIPAL DE IRATI · [EDITAL Nº 001.10/2026 – 6ª CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/357381FA) · 2026-08-12
+- PREFEITURA MUNICIPAL DE JAGUAPITÃ · [PROCESSO SELETIVO SIMPLIFICADO - EDITAL Nº 02.01/2026](https://www.diariomunicipal.com.br/amp/materia/CE8F9E04) · 2026-08-12
+- SECRETARIA DE ADMINISTRAÇÃO · [EDITAL N.º 04/2026 PROCESSO SELETIVO SIMPLIFICADO Nº 02/2026](https://www.diariomunicipal.com.br/amp/materia/27BA0A0E) · 2026-08-12
+- MUNICÍPIO DE NOSSA SENHORA DAS GRAÇAS · [PROCESSO SELETIVO SIMPLIFICADO Nº 002/2026 EDITAL](https://www.diariomunicipal.com.br/amp/materia/524DD097) · 2026-08-13
+- SECRETARIA MUNICIPAL DE RECURSOS HUMANOS · [EXTRATO DE CONTRATO DE PROCESSO SELETIVO](https://www.diariomunicipal.com.br/amp/materia/2BEB3407) · 2026-08-13
+- RECURSOS HUMANOS · [EDITAL DE CONVOCAÇÃO N° 043/2026](https://www.diariomunicipal.com.br/amp/materia/531C2157) · 2026-08-13
+- PREFEITURA MUNICIPAL DE BOCAIÚVA DO SUL · [DECRETO 744/2026 - DISPÕE SOBRE AS CONSIGNAÇÕES](https://www.diariomunicipal.com.br/amp/materia/952D3DC7) · 2026-08-13
+- RECURSOS HUMANOS · [PROCESSO SELETIVO SIMPLIFICADO – PSS Nº 001/2025](https://www.diariomunicipal.com.br/amp/materia/D120B6E2) · 2026-08-13
+- SECRETARIA GOVERNO · [EDITAL Nº 07.005/2026 - RECURSOS](https://www.diariomunicipal.com.br/amp/materia/7DD1B6D6) · 2026-08-13
+- SECRETÁRIA DE ADMINISTRAÇÃO E FINANÇAS · [DECRETO Nº 23727/2026](https://www.diariomunicipal.com.br/amp/materia/5F308E3F) · 2026-08-13
+- SECRETÁRIA DE ADMINISTRAÇÃO E FINANÇAS · [DECRETO Nº 23728/2026](https://www.diariomunicipal.com.br/amp/materia/C5E35944) · 2026-08-13
+- SECRETÁRIA DE ADMINISTRAÇÃO E FINANÇAS · [DECRETO Nº 23731/2026](https://www.diariomunicipal.com.br/amp/materia/8EB81720) · 2026-08-13
+- PREFEITURA MUNICIPAL DE FERNANDES PINHEIRO · [EDITAL Nº 38/2026 -PROCESSO SELETIVO SIMPLIFICADO](https://www.diariomunicipal.com.br/amp/materia/AB92E819) · 2026-08-13
+- PREFEITURA MUNICIPAL DE GOIOERÊ · [EDITAL DE CHAMAMENTO Nº. 021/2026](https://www.diariomunicipal.com.br/amp/materia/2DD549DA) · 2026-08-13
+- MUNICIPIO DE GOIOXIM · [PORTARIA Nº 182 DE 12 DE AGOSTO DE 2026](https://www.diariomunicipal.com.br/amp/materia/87BF3477) · 2026-08-13
+- MUNICIPIO DE GOIOXIM · [PROCESSO SELETIVO SIMPLIFICADO – PSS EDITAL Nº](https://www.diariomunicipal.com.br/amp/materia/FEF381D4) · 2026-08-13
+- SECRETARIA DE ADMINISTRAÇÃO E PLANEJAMENTO · [EDITAL Nº 061/2026](https://www.diariomunicipal.com.br/amp/materia/DFA6EBA9) · 2026-08-13
+- SECRETARIA DE ADMINISTRAÇÃO E PLANEJAMENTO · [EDITAL Nº 062/2026](https://www.diariomunicipal.com.br/amp/materia/C1FFCCA5) · 2026-08-13
+- DEPARTAMENTO DE RECURSOS HUMANOS · [DECRETO 190/2026](https://www.diariomunicipal.com.br/amp/materia/72EE257C) · 2026-08-13
+- RECURSOS HUMANOS · [PORTARIA Nº 315/2026](https://www.diariomunicipal.com.br/amp/materia/AB32C86B) · 2026-08-13
+- RECURSOS HUMANOS · [PORTARIA Nº 316/2026](https://www.diariomunicipal.com.br/amp/materia/02ABF4C0) · 2026-08-13
+- PREFEITURA MUNICIPAL DE ITAÚNA DO SUL · [EDITAL Nº 007/2026 CONVOCAÇÃO PROCESSO SELETIVO](https://www.diariomunicipal.com.br/amp/materia/6CE2476C) · 2026-08-13
+- ADMINISTRAÇÃO RH · [PORTARIA Nº 312/2026](https://www.diariomunicipal.com.br/amp/materia/1007E258) · 2026-08-13
+- ADMINISTRAÇÃO RH · [PROCESSO SELETIVO SIMPLIFICADO N° 001/2024](https://www.diariomunicipal.com.br/amp/materia/0BCF0847) · 2026-08-13
+- GABINETE DO PREFEITO · [EDITAL N º. 270/2026 - DISPÕE SOBRE A CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/F5D0C930) · 2026-08-13
+- GABINETE DO PREFEITO · [EDITAL N º. 271/2026 - DISPÕE SOBRE A CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/26510648) · 2026-08-13
+- PREFEITURA MUNICIPAL DE MORRETES · [EDITAL Nº 04, DE 12 DE AGOSTO DE 2026.. EDITAL DE](https://www.diariomunicipal.com.br/amp/materia/EBA8BC90) · 2026-08-13
+- FUNDAÇÃO DE ATENÇÃO A SAÚDE DE MORRETES · [EDITAL Nº 102, DE 12 DE AGOSTO 2026. EDITAL DE](https://www.diariomunicipal.com.br/amp/materia/CA366BD7) · 2026-08-13
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [PROCESSO SELETIVO SIMPLIFICADO Nº. 01/2026](https://www.diariomunicipal.com.br/amp/materia/CD40243E) · 2026-08-13
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [COMUNICADO – CHAMADA PROFESSOR 40H - PROCESSO](https://www.diariomunicipal.com.br/amp/materia/D824DBA1) · 2026-08-13
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [COMUNICADO – CHAMADA PROFESSOR DE EDUCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/7D0E319D) · 2026-08-13
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [TERMO DE DESISTÊNCIA - PROCESSO SELETIVO](https://www.diariomunicipal.com.br/amp/materia/F22B4ECA) · 2026-08-13
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [TERMO DE DESISTÊNCIA - PROCESSO SELETIVO](https://www.diariomunicipal.com.br/amp/materia/9837BC17) · 2026-08-13
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO ADITIVO DE PRORROGAÇÃO DE](https://www.diariomunicipal.com.br/amp/materia/D693FDD4) · 2026-08-13
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO ADITIVO DE PRORROGAÇÃO DE](https://www.diariomunicipal.com.br/amp/materia/F65B5E9F) · 2026-08-13
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO ADITIVO DE PRORROGAÇÃO DE](https://www.diariomunicipal.com.br/amp/materia/7688A9B8) · 2026-08-13
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO ADITIVO DE PRORROGAÇÃO DE](https://www.diariomunicipal.com.br/amp/materia/46F6F9C2) · 2026-08-13
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO ADITIVO DE PRORROGAÇÃO DE](https://www.diariomunicipal.com.br/amp/materia/D9857B49) · 2026-08-13
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO ADITIVO DE PRORROGAÇÃO DE](https://www.diariomunicipal.com.br/amp/materia/9D2B31CB) · 2026-08-13
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO ADITIVO DE PRORROGAÇÃO DE](https://www.diariomunicipal.com.br/amp/materia/FA173325) · 2026-08-13
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO ADITIVO DE PRORROGAÇÃO DE](https://www.diariomunicipal.com.br/amp/materia/A42EF7EA) · 2026-08-13
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO ADITIVO DE PRORROGAÇÃO DE](https://www.diariomunicipal.com.br/amp/materia/22D5B97F) · 2026-08-13
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO ADITIVO DE PRORROGAÇÃO DE](https://www.diariomunicipal.com.br/amp/materia/7BAE948B) · 2026-08-13
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO ADITIVO DE PRORROGAÇÃO DE](https://www.diariomunicipal.com.br/amp/materia/E02D72BE) · 2026-08-13
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO ADITIVO DE PRORROGAÇÃO DE](https://www.diariomunicipal.com.br/amp/materia/24F485CE) · 2026-08-13
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO ADITIVO DE PRORROGAÇÃO DE](https://www.diariomunicipal.com.br/amp/materia/D7173908) · 2026-08-13
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO ADITIVO DE PRORROGAÇÃO DE](https://www.diariomunicipal.com.br/amp/materia/F2946238) · 2026-08-13
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO ADITIVO DE PRORROGAÇÃO DE](https://www.diariomunicipal.com.br/amp/materia/D93AB36E) · 2026-08-13
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO ADITIVO DE PRORROGAÇÃO DE](https://www.diariomunicipal.com.br/amp/materia/487B465D) · 2026-08-13
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO ADITIVO DE PRORROGAÇÃO DE](https://www.diariomunicipal.com.br/amp/materia/1ECD62D0) · 2026-08-13
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO ADITIVO DE PRORROGAÇÃO DE](https://www.diariomunicipal.com.br/amp/materia/C5C244C4) · 2026-08-13
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO ADITIVO DE PRORROGAÇÃO DE](https://www.diariomunicipal.com.br/amp/materia/9E24442C) · 2026-08-13
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO ADITIVO DE PRORROGAÇÃO DE](https://www.diariomunicipal.com.br/amp/materia/53753069) · 2026-08-13
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO ADITIVO DE PRORROGAÇÃO DE](https://www.diariomunicipal.com.br/amp/materia/3BE7B0EF) · 2026-08-13
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO ADITIVO DE PRORROGAÇÃO DE](https://www.diariomunicipal.com.br/amp/materia/4C01A0B1) · 2026-08-13
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO ADITIVO DE PRORROGAÇÃO DE](https://www.diariomunicipal.com.br/amp/materia/EBFEF7D8) · 2026-08-13
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO ADITIVO DE PRORROGAÇÃO DE](https://www.diariomunicipal.com.br/amp/materia/5718DB6D) · 2026-08-13
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO ADITIVO DE PRORROGAÇÃO DE](https://www.diariomunicipal.com.br/amp/materia/10EF3888) · 2026-08-13
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO ADITIVO DE PRORROGAÇÃO DE](https://www.diariomunicipal.com.br/amp/materia/C3BE57D3) · 2026-08-13
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO ADITIVO DE PRORROGAÇÃO DE](https://www.diariomunicipal.com.br/amp/materia/7DB9A9AA) · 2026-08-13
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO ADITIVO DE PRORROGAÇÃO DE](https://www.diariomunicipal.com.br/amp/materia/311FD64F) · 2026-08-13
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO ADITIVO DE PRORROGAÇÃO DE](https://www.diariomunicipal.com.br/amp/materia/603865A6) · 2026-08-13
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO ADITIVO DE PRORROGAÇÃO DE](https://www.diariomunicipal.com.br/amp/materia/0CCEDF3E) · 2026-08-13
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO ADITIVO DE PRORROGAÇÃO DE](https://www.diariomunicipal.com.br/amp/materia/9EA80E1A) · 2026-08-13
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO ADITIVO DE PRORROGAÇÃO DE](https://www.diariomunicipal.com.br/amp/materia/182FEDB5) · 2026-08-13
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO ADITIVO DE PRORROGAÇÃO DE](https://www.diariomunicipal.com.br/amp/materia/17CF0777) · 2026-08-13
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO ADITIVO DE PRORROGAÇÃO DE](https://www.diariomunicipal.com.br/amp/materia/7B6F57E9) · 2026-08-13
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO ADITIVO DE PRORROGAÇÃO DE](https://www.diariomunicipal.com.br/amp/materia/D28AF928) · 2026-08-13
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO ADITIVO DE PRORROGAÇÃO DE](https://www.diariomunicipal.com.br/amp/materia/303B6356) · 2026-08-13
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO ADITIVO DE PRORROGAÇÃO DE](https://www.diariomunicipal.com.br/amp/materia/5CBFD271) · 2026-08-13
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO ADITIVO DE PRORROGAÇÃO DE](https://www.diariomunicipal.com.br/amp/materia/AAF48238) · 2026-08-13
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO ADITIVO DE PRORROGAÇÃO DE](https://www.diariomunicipal.com.br/amp/materia/1F7913E8) · 2026-08-13
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO ADITIVO DE PRORROGAÇÃO DE](https://www.diariomunicipal.com.br/amp/materia/8E7E6164) · 2026-08-13
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO ADITIVO DE PRORROGAÇÃO DE](https://www.diariomunicipal.com.br/amp/materia/DD84F448) · 2026-08-13
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO ADITIVO DE PRORROGAÇÃO DE](https://www.diariomunicipal.com.br/amp/materia/D029C223) · 2026-08-13
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO ADITIVO DE PRORROGAÇÃO DE](https://www.diariomunicipal.com.br/amp/materia/4CC9F296) · 2026-08-13
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO ADITIVO DE PRORROGAÇÃO DE](https://www.diariomunicipal.com.br/amp/materia/9983CC2F) · 2026-08-13
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO ADITIVO DE PRORROGAÇÃO DE](https://www.diariomunicipal.com.br/amp/materia/C66923BD) · 2026-08-13
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO ADITIVO DE PRORROGAÇÃO DE](https://www.diariomunicipal.com.br/amp/materia/A5B5BF34) · 2026-08-13
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO ADITIVO DE PRORROGAÇÃO DE](https://www.diariomunicipal.com.br/amp/materia/CAE96D37) · 2026-08-13
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO ADITIVO DE PRORROGAÇÃO DE](https://www.diariomunicipal.com.br/amp/materia/CDCF8AA2) · 2026-08-13
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO ADITIVO DE PRORROGAÇÃO DE](https://www.diariomunicipal.com.br/amp/materia/179E6070) · 2026-08-13
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO ADITIVO DE PRORROGAÇÃO DE](https://www.diariomunicipal.com.br/amp/materia/0CE3C5F8) · 2026-08-13
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO ADITIVO DE PRORROGAÇÃO DE](https://www.diariomunicipal.com.br/amp/materia/188D9D6F) · 2026-08-13
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO ADITIVO DE PRORROGAÇÃO DE](https://www.diariomunicipal.com.br/amp/materia/F90CF07D) · 2026-08-13
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO ADITIVO DE PRORROGAÇÃO DE](https://www.diariomunicipal.com.br/amp/materia/962A3264) · 2026-08-13
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO ADITIVO DE PRORROGAÇÃO DE](https://www.diariomunicipal.com.br/amp/materia/215B6A9D) · 2026-08-13
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO ADITIVO DE PRORROGAÇÃO DE](https://www.diariomunicipal.com.br/amp/materia/E2584139) · 2026-08-13
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO ADITIVO DE PRORROGAÇÃO DE](https://www.diariomunicipal.com.br/amp/materia/7E77D8ED) · 2026-08-13
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO DE RESCISÃO DO CONTRATO](https://www.diariomunicipal.com.br/amp/materia/1D53BA46) · 2026-08-13
+- PREFEITURA MUNICIPAL DE PAULA FREITAS · [PORTARIA N. º 208/2026– DE 12 DE AGOSTO DE 2026.](https://www.diariomunicipal.com.br/amp/materia/10BAEABE) · 2026-08-13
+- PREFEITURA MUNICIPAL DE RIO BRANCO DO IVAÍ · [EDITAL COMPLEMENTAR PSS- 002-2026- SMS](https://www.diariomunicipal.com.br/amp/materia/93CDDCA5) · 2026-08-13
+- DEPARTAMENTO ADMINISTRATIVO · [EDITAL N.º 099/2026](https://www.diariomunicipal.com.br/amp/materia/06C7E959) · 2026-08-13
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [EDITAL DE CONVOCAÇÃO Nº 017/2026.](https://www.diariomunicipal.com.br/amp/materia/A1C22694) · 2026-08-13
+- DIVISÃO DE RECURSOS HUMANOS · [EDITAL 087/2026](https://www.diariomunicipal.com.br/amp/materia/9A154085) · 2026-08-13
+- DIVISÃO DE RECURSOS HUMANOS · [EDITAL 088/2026](https://www.diariomunicipal.com.br/amp/materia/DBF4152D) · 2026-08-13
+- ADMINISTRAÇÃO GERAL · [DECRETO Nº 207/2026](https://www.diariomunicipal.com.br/amp/materia/D2DD19A2) · 2026-08-13
+- ADMINISTRAÇÃO GERAL · [EDITAL Nº 96/2026 (CONVOCAÇÃO)](https://www.diariomunicipal.com.br/amp/materia/A25EA229) · 2026-08-13
+- ADMINISTRAÇÃO GERAL · [EDITAL Nº 97/2026 (CONVOCAÇÃO)](https://www.diariomunicipal.com.br/amp/materia/18D42D3F) · 2026-08-13
+- ADMINISTRAÇÃO GERAL · [EDITAL Nº 98/2026 (CONVOCAÇÃO)](https://www.diariomunicipal.com.br/amp/materia/87158AD1) · 2026-08-13
+- PREFEITURA MUNICIPAL DE SENGÉS · [EDITAL DE CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/C4182AA5) · 2026-08-13
+- PREFEITURA MUNICIPAL DE TERRA RICA · [EDITAL DE CONVOCAÇÃO Nº 065/2026](https://www.diariomunicipal.com.br/amp/materia/37FC36F6) · 2026-08-13
+- GABINETE DO PREFEITO · [PROCESSO SELETIVO SIMPLIFICADO Nº 02/2026 – EDITAL](https://www.diariomunicipal.com.br/amp/materia/31B6AA71) · 2026-08-13
+- PODER EXECUTIVO · [PORTARIA N.º 340/2026](https://www.diariomunicipal.com.br/amp/materia/E1532A7E) · 2026-08-13
+- PREFEITURA MUNICIPAL DE BOM JESUS DO SUL · [EDITAL DE PROCESSO SELETIVO SIMPLIFICADO N° 1/2026 EDITAL Nº 6/2026 – HOMOLOGAÇÃO DO RESULTADO FINAL](https://www.diariomunicipal.com.br/amp/materia/C6937CC7) · 2026-08-13
+- SECRETARIA DE ADMINISTRAÇÃO · [EDITAL N.º 04/2026 PROCESSO SELETIVO SIMPLIFICADO Nº 02/2026](https://www.diariomunicipal.com.br/amp/materia/EF4B1D4A) · 2026-08-13
+- PREFEITURA MUNICIPAL DE MALLET · [EDITAL Nº 002.002 - PSS 002/2026-PROFESSOR RELAÇÃO PRELIMINAR DOS INSCRITOS PROCESSO SELETIVO](https://www.diariomunicipal.com.br/amp/materia/3398FAD9) · 2026-08-13
+- SECRETARIA GERAL · [RESULTADO PROVISÓRIO PROCESSO SELETIVO SIMPLIFICADO 001/2026 SECRETARIA MUNICIPAL DE EDUCAÇÃO DE](https://www.diariomunicipal.com.br/amp/materia/65023C12) · 2026-08-13
+- PREFEITURA MUNICIPAL DE GUARACI · [DECRETO Nº 119/2026](https://www.diariomunicipal.com.br/amp/materia/449DDCA6) · 2026-08-13
+- DEPARTAMENTO DE RH · [EXTRATO PRIMEIRO ADITIVO - CT 11 2026 - PSS](https://www.diariomunicipal.com.br/amp/materia/74A0DC0A) · 2026-08-14
+- DEPARTAMENTO DE RH · [EXTRATO PRIMEIRO ADITIVO - CT 12 2025 - PSS](https://www.diariomunicipal.com.br/amp/materia/4C50CFDB) · 2026-08-14
+- DEPARTAMENTO DE RH · [EXTRATO PRIMEIRO ADITIVO - CT 14 2025 - PSS](https://www.diariomunicipal.com.br/amp/materia/C77EA6A7) · 2026-08-14
+- GABINETE DO PODER EXECUTIVO MUNICIPAL · [EDITAL DE CONVOCAÇÃO Nº 080/2026 - DIVISÃO DE](https://www.diariomunicipal.com.br/amp/materia/8FCC41EE) · 2026-08-14
+- GABINETE DA PREFEITA · [EDITAL DE CONVOCAÇÃO N. 010/2026 PSS - MOTORISTA](https://www.diariomunicipal.com.br/amp/materia/F5377C0F) · 2026-08-14
+- ADMINISTRAÇÃO · [EDITAL DE CONVOCAÇÃO Nº 014/2026 - PROCESSO](https://www.diariomunicipal.com.br/amp/materia/3EE7006C) · 2026-08-14
+- ADMINISTRAÇÃO · [EDITAL DE CONVOCAÇÃO N.º 05/2026 - PROCESSO](https://www.diariomunicipal.com.br/amp/materia/50C6F0E1) · 2026-08-14
+- ADMINISTRAÇÃO · [Edital nº. 12/2026, que estabelece instruções destinadas à realização](https://www.diariomunicipal.com.br/amp/materia/E6639A70) · 2026-08-14
+- GABINETE · [DECRETO DE HOMOLOGAÇÃO N°. 164/2026](https://www.diariomunicipal.com.br/amp/materia/74F832A1) · 2026-08-14
+- RECURSOS HUMANOS · [EDITAL Nº. 03.32/2026 - EDITAL DE CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/6E43B22F) · 2026-08-14
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [EDITAL N.º 033/2026](https://www.diariomunicipal.com.br/amp/materia/4D9F89F3) · 2026-08-14
+- MUNICIPIO DE CATANDUVAS · [DECRETO Nº 223/2026 - DISPÕE SOBRE PRORROGAÇÃO](https://www.diariomunicipal.com.br/amp/materia/ABA2CD6A) · 2026-08-14
+- MUNICIPIO DE CATANDUVAS · [TERMO ADITIVO PSS Nº 003/2025 PRORROGAÇÃO DE](https://www.diariomunicipal.com.br/amp/materia/250C3C5F) · 2026-08-14
+- PREFEITURA MUNICIPAL DE CERRO AZUL · [EDITAL DE RETIFICAÇÃO Nº 09.005/2026](https://www.diariomunicipal.com.br/amp/materia/8A6B2123) · 2026-08-14
+- SECRETARIA GOVERNO · [EDITAL Nº 008/2026 CONVOCAÇÃO PARA INGRESSO](https://www.diariomunicipal.com.br/amp/materia/E445B4B5) · 2026-08-14
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [EDITAL DE PRORROGAÇÃO DE PRORROGAÇÃO DE PSS](https://www.diariomunicipal.com.br/amp/materia/843C5518) · 2026-08-14
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [EDITAL DE PRORROGAÇÃO DE PRORROGAÇÃO DE PSS](https://www.diariomunicipal.com.br/amp/materia/6AB0B688) · 2026-08-14
+- SECRETÁRIA DE ADMINISTRAÇÃO E FINANÇAS · [EDITAL DE ANULAÇÃO DE CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/B3D7842C) · 2026-08-14
+- SECRETÁRIA DE ADMINISTRAÇÃO E FINANÇAS · [EDITAL DE CONVOCAÇÃO Nº 002/2026](https://www.diariomunicipal.com.br/amp/materia/E4C536CD) · 2026-08-14
+- MUNICIPIO DE GOIOXIM · [EXTRATO DE CONTRATO DE TRABALHO POR PRAZO](https://www.diariomunicipal.com.br/amp/materia/5D9EE600) · 2026-08-14
+- CONSAMU · [PROCESSO SELETIVO SIMPLIFICADO Nº 002/2026 PARA](https://www.diariomunicipal.com.br/amp/materia/3B7A713F) · 2026-08-14
+- PREFEITURA MUNICIPAL DE GUARACI · [EDITAL Nº 063/2026](https://www.diariomunicipal.com.br/amp/materia/927B1C2D) · 2026-08-14
+- RECURSOS HUMANOS · [PROCESSO SELETIVO SIMPLIFICADO.](https://www.diariomunicipal.com.br/amp/materia/D5DEFE25) · 2026-08-14
+- SECRETARIA DE ADMINISTRAÇÃO - SETOR DE RECURSOS HUMANOS · [EDITAL DE CONVOCAÇÃO N° 016.001/2026 – PSS 001/2025](https://www.diariomunicipal.com.br/amp/materia/EFD69408) · 2026-08-14
+- GABINETE DO PREFEITO · [EDITAL N º. 273/2026 - DISPÕE SOBRE A CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/EB5F0260) · 2026-08-14
+- GABINETE DO PREFEITO · [EDITAL N º. 274/2026 - DISPÕE SOBRE A CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/E1A1A2E1) · 2026-08-14
+- GABINETE DO PREFEITO · [EDITAL N º. 275/2026 - DISPÕE SOBRE A CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/903637AA) · 2026-08-14
+- GABINETE DO PREFEITO · [EDITAL N º. 276/2026 - DISPÕE SOBRE A CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/E02E37D6) · 2026-08-14
+- PREFEITURA MUNICIPAL DE MORRETES · [EDITAL Nº 103, DE 13 DE AGOSTO 2026. EDITAL DE](https://www.diariomunicipal.com.br/amp/materia/49919F5C) · 2026-08-14
+- FUNDAÇÃO DE SÁUDE DE PAIÇANDU · [EDITAL DE CONVOCAÇÃO Nº234/2026](https://www.diariomunicipal.com.br/amp/materia/C1B2011D) · 2026-08-14
+- FUNDAÇÃO DE SÁUDE DE PAIÇANDU · [EDITAL DE CONVOCAÇÃO Nº 235/2026](https://www.diariomunicipal.com.br/amp/materia/530A7A51) · 2026-08-14
+- FUNDAÇÃO DE SÁUDE DE PAIÇANDU · [EDITAL DE CONVOCAÇÃO Nº 236/2026](https://www.diariomunicipal.com.br/amp/materia/05403010) · 2026-08-14
+- FUNDAÇÃO DE SÁUDE DE PAIÇANDU · [EDITAL DE CONVOCAÇÃO Nº 237/2026](https://www.diariomunicipal.com.br/amp/materia/F1E8A4E0) · 2026-08-14
+- FUNDAÇÃO DE SÁUDE DE PAIÇANDU · [EDITAL DE CONVOCAÇÃO Nº 238/2026](https://www.diariomunicipal.com.br/amp/materia/4FB79811) · 2026-08-14
+- FUNDAÇÃO DE SÁUDE DE PAIÇANDU · [EDITAL DE CONVOCAÇÃO Nº 239/2026](https://www.diariomunicipal.com.br/amp/materia/800247AB) · 2026-08-14
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [PORTARIA MUNICIPAL Nº 1524/2026](https://www.diariomunicipal.com.br/amp/materia/705477BC) · 2026-08-14
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [PORTARIA MUNICIPAL Nº 1526/2026](https://www.diariomunicipal.com.br/amp/materia/9D78C9DD) · 2026-08-14
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [PORTARIA MUNICIPAL Nº 1527/2026](https://www.diariomunicipal.com.br/amp/materia/8BA80601) · 2026-08-14
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [PORTARIA MUNICIPAL Nº 1528/2026](https://www.diariomunicipal.com.br/amp/materia/EA4954C1) · 2026-08-14
+- DEPARTAMENTO DE ADMINISTRAÇÃO · [PROCESSO SELETIVO SIMPLIFICADO Nº 04/2026 EDITAL](https://www.diariomunicipal.com.br/amp/materia/310F7B11) · 2026-08-14
+- PREFEITURA MUNICIPAL DE RESERVA DO IGUAÇU · [TERMO DE DISPENSA DE LICITAÇÃO Nº 014/2026](https://www.diariomunicipal.com.br/amp/materia/B867B64D) · 2026-08-14
+- DEPARTAMENTO ADMINISTRATIVO · [EDITAL N.º 100/2026](https://www.diariomunicipal.com.br/amp/materia/A49170EF) · 2026-08-14
+- DEPARTAMENTO ADMINISTRATIVO · [EDITAL N.º 101/2026](https://www.diariomunicipal.com.br/amp/materia/C27406AE) · 2026-08-14
+- DEPARTAMENTO ADMINISTRATIVO · [PORTARIA N.º 863/2026](https://www.diariomunicipal.com.br/amp/materia/22F242D0) · 2026-08-14
+- DEPARTAMENTO ADMINISTRATIVO · [PORTARIA N.º 864/2026](https://www.diariomunicipal.com.br/amp/materia/3A5CEC26) · 2026-08-14
+- DEPARTAMENTO ADMINISTRATIVO · [PORTARIA N.º 865/2026](https://www.diariomunicipal.com.br/amp/materia/08169DC0) · 2026-08-14
+- DEPARTAMENTO ADMINISTRATIVO · [PORTARIA N.º 866/2026](https://www.diariomunicipal.com.br/amp/materia/222C1CF4) · 2026-08-14
+- PREFEITURA MUNICIPAL DE SENGÉS · [EDITAL DE CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/D9620D3D) · 2026-08-14
+- PREFEITURA MUNICIPAL DE CERRO AZUL · [EDITAL Nº 08.005/2026 - CLASSIFICAÇÃO PROVISORIA](https://www.diariomunicipal.com.br/amp/materia/E9833F4B) · 2026-08-14
+- PREFEITURA MUNICIPAL DE ITAMBARACÁ · [EDITAL Nº 01/2026 - PSS](https://www.diariomunicipal.com.br/amp/materia/1E4CE909) · 2026-08-14
+- PREFEITURA MUNICIPAL DE MANDAGUARI · [EDITAL Nº. 272/2026 - PROCESSO SELETIVO SIMPLIFICADO CARGOS: BIOLOGO - GEOGRAFO](https://www.diariomunicipal.com.br/amp/materia/80F03880) · 2026-08-14
+- SECRETARIA MUNICIPAL DE SAÚDE · [INSCRIÇÕES HOMOLOGADAS E NÃO HOMOLOGADAS – PROCESSO SELETIVO SIMPLIFICADO Nº 02/2026](https://www.diariomunicipal.com.br/amp/materia/EE62E43E) · 2026-08-14
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [PORTARIA MUNICIPAL Nº 1523/2026](https://www.diariomunicipal.com.br/amp/materia/B601092F) · 2026-08-14
+- PREFEITURA MUNICIPAL DE PLANALTO · [EDITAL DE ABERTURA PSS MOTORISTA 2026](https://www.diariomunicipal.com.br/amp/materia/A8427C0C) · 2026-08-14
+- PREFEITURA MUNICIPAL DE REALEZA · [EDITAL Nº 09/2026 EDITAL CLASSIFICAÇÃO FINAL PROCESSO SELETIVO SIMPLIFICADO Nº 02/2026](https://www.diariomunicipal.com.br/amp/materia/299AB0CE) · 2026-08-14
+- DIVISÃO DE RECURSOS HUMANOS E SEGURANÇA DO TRABALHO · [EDITAL 149/2026 - HOMOLOGA INSCRITOS PSS](https://www.diariomunicipal.com.br/amp/materia/C87722A1) · 2026-08-17
+- DIVISÃO DE RECURSOS HUMANOS E SEGURANÇA DO TRABALHO · [EDITAL 150/2026 - HOMOLOGA INSCRITOS PSS](https://www.diariomunicipal.com.br/amp/materia/3D07859A) · 2026-08-17
+- DIVISÃO DE RECURSOS HUMANOS E SEGURANÇA DO TRABALHO · [EDITAL 151/2026 - CONVOCAÇÃO E ENSALAMENTO](https://www.diariomunicipal.com.br/amp/materia/574E39F4) · 2026-08-17
+- DIVISÃO DE RECURSOS HUMANOS E SEGURANÇA DO TRABALHO · [EDITAL 152/2026 - CONVOCAÇÃO E ENSALAMENTO](https://www.diariomunicipal.com.br/amp/materia/B186A10E) · 2026-08-17
+- DIVISÃO DE RECURSOS HUMANOS · [EDITAL DE CONVOCAÇÃO DE APROVADOS Nº 004/2026](https://www.diariomunicipal.com.br/amp/materia/0F98DD58) · 2026-08-17
+- GABINETE DO PODER EXECUTIVO MUNICIPAL · [EDITAL DE CONVOCAÇÃO Nº 081/2026 - DIVISÃO DE](https://www.diariomunicipal.com.br/amp/materia/15E56804) · 2026-08-17
+- GABINETE DA PREFEITA · [EDITAL DE CONVOCAÇÃO N. 018/2026 PSS - PROFESSOR](https://www.diariomunicipal.com.br/amp/materia/4496EF56) · 2026-08-17
+- ADMINISTRAÇÃO · [PORTARIA Nº. 587/2026](https://www.diariomunicipal.com.br/amp/materia/94058884) · 2026-08-17
+- ADMINISTRAÇÃO · [PORTARIA Nº. 588/2026](https://www.diariomunicipal.com.br/amp/materia/31021BFB) · 2026-08-17
+- RECURSOS HUMANOS · [PORTARIA Nº. 121/2026, DE 14 DE AGOSTO DE 2026.](https://www.diariomunicipal.com.br/amp/materia/E1985CD8) · 2026-08-17
+- ADMINISTRAÇÃO · [PROCESSO SELETIVO SIMPLIFICADO PSS N° 1/2025](https://www.diariomunicipal.com.br/amp/materia/02F86463) · 2026-08-17
+- GABINETE PREFEITO · [EDITAL N.º 035/2026](https://www.diariomunicipal.com.br/amp/materia/E359CEC1) · 2026-08-17
+- DEPARTAMENTO DE ADMINISTRAÇÃO · [DECRETO 252/2026 NOMEAR O SR. NATHAN JORGE](https://www.diariomunicipal.com.br/amp/materia/905E1612) · 2026-08-17
+- DEPARTAMENTO DE ADMINISTRAÇÃO · [DECRETO 254/2026 NOMEAR O SR. NEREU SCHEFFER](https://www.diariomunicipal.com.br/amp/materia/D2EDF987) · 2026-08-17
+- DEPARTAMENTO DE ADMINISTRAÇÃO · [PROCESSO SELETIVO SIMPLIFICADO - PSS N° 004/2026](https://www.diariomunicipal.com.br/amp/materia/605F46E0) · 2026-08-17
+- PREFEITURA MUNICIPAL DE FERNANDES PINHEIRO · [DECRETO Nº 214/2026](https://www.diariomunicipal.com.br/amp/materia/47D6919F) · 2026-08-17
+- PREFEITURA MUNICIPAL DE INÁCIO MARTINS · [DECRETO 191/2026](https://www.diariomunicipal.com.br/amp/materia/5489A2C7) · 2026-08-17
+- PREFEITURA MUNICIPAL DE ITAMBÉ · [EXTRATO DE CONTRATO Nº 011/2026](https://www.diariomunicipal.com.br/amp/materia/744D327B) · 2026-08-17
+- DIVISÃO DE RECURSOS HUMANOS · [EDITAL DE CONVOCAÇÃO - PROFESSOR – PROCESSO](https://www.diariomunicipal.com.br/amp/materia/75847878) · 2026-08-17
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [DECLARAÇÃO PROCESSO SELETIVO SIMPLIFICADO –](https://www.diariomunicipal.com.br/amp/materia/7FD5FA52) · 2026-08-17
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [EDITAL DE CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/97BC38E2) · 2026-08-17
+- SECRETARIA DE ADMINISTRAÇÃO - SETOR DE RECURSOS HUMANOS · [DECRETO N.º 353/2026](https://www.diariomunicipal.com.br/amp/materia/A958874A) · 2026-08-17
+- SECRETARIA DE ADMINISTRAÇÃO - SETOR DE RECURSOS HUMANOS · [DECRETO N.º 356/2026](https://www.diariomunicipal.com.br/amp/materia/8A02AD50) · 2026-08-17
+- SECRETARIA DE ADMINISTRAÇÃO - SETOR DE RECURSOS HUMANOS · [EDITAL DE CONVOCAÇÃO N° 017.001/2026 – PSS 001/2025](https://www.diariomunicipal.com.br/amp/materia/800E83FA) · 2026-08-17
+- SECRETARIA DE ADMINISTRAÇÃO - SETOR DE RECURSOS HUMANOS · [EXTRATO DE CONTRATO POR PRAZO DETERMINADO –](https://www.diariomunicipal.com.br/amp/materia/0CD3A3AA) · 2026-08-17
+- GABINETE DO PREFEITO · [EDITAL N º. 277/2026 - DISPÕE SOBRE A CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/26CD9E4A) · 2026-08-17
+- GABINETE DO PREFEITO · [EDITAL N º. 278/2026 - DISPÕE SOBRE A CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/B5E25032) · 2026-08-17
+- RECURSOS HUMANOS · [DECRETO Nº 194/2026](https://www.diariomunicipal.com.br/amp/materia/9CEB168F) · 2026-08-17
+- DEPARTAMENTO DE ADMINISTRAÇÃO E PLANEJAMENTO · [PLANEJAMENTO](https://www.diariomunicipal.com.br/amp/materia/5E1F10C3) · 2026-08-17
+- PREFEITURA MUNICIPAL DE MORRETES · [EDITAL Nº 104, DE 14 DE AGOSTO 2026. EDITAL DE](https://www.diariomunicipal.com.br/amp/materia/C40CF93C) · 2026-08-17
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [COMUNICADO – CHAMADA AUXILIAR DE CUIDADOR DE](https://www.diariomunicipal.com.br/amp/materia/5A6938A7) · 2026-08-17
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [COMUNICADO – CHAMADA PROFESSOR DE EDUCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/7751AAAA) · 2026-08-17
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [TERMO DE DESISTÊNCIA - PROCESSO SELETIVO](https://www.diariomunicipal.com.br/amp/materia/76C4CA83) · 2026-08-17
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [TERMO DE DESISTÊNCIA - PROCESSO SELETIVO](https://www.diariomunicipal.com.br/amp/materia/1A96F80D) · 2026-08-17
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EDITAL DE CONVOCAÇÃO Nº 169/2026](https://www.diariomunicipal.com.br/amp/materia/B1ABD0F4) · 2026-08-17
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EDITAL DE CONVOCAÇÃO Nº 170/2026](https://www.diariomunicipal.com.br/amp/materia/579D8DF2) · 2026-08-17
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EDITAL DE CONVOCAÇÃO Nº 171/2026](https://www.diariomunicipal.com.br/amp/materia/6BA916BE) · 2026-08-17
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [PORTARIA MUNICIPAL Nº 1525/2026](https://www.diariomunicipal.com.br/amp/materia/0279C561) · 2026-08-17
+- DEPARTAMENTO DE RECURSOS HUMANOS · [PROCESSO SELETIVO SIMPLIFICADO Nº 002/2025 EDITAL](https://www.diariomunicipal.com.br/amp/materia/AD0570CB) · 2026-08-17
+- PREFEITURA MUNICIPAL DE RIO BRANCO DO IVAÍ · [EDITAL Nº 019/2026 - RESULTADO FINAL PSS SAÚDE](https://www.diariomunicipal.com.br/amp/materia/9578C082) · 2026-08-17
+- DEPARTAMENTO DE RECURSOS HUMANOS · [PORTARIA N° 34.852/2026 - RH](https://www.diariomunicipal.com.br/amp/materia/B11A190C) · 2026-08-17
+- DEPARTAMENTO DE RECURSOS HUMANOS E ADM · [EDITAL Nº 06/2026 - EDITAL CONVOCAÇÃO PROVA](https://www.diariomunicipal.com.br/amp/materia/FDB2845D) · 2026-08-17
+- PREFEITURA MUNICIPAL DE SANTA FÉ · [PROCESSO SELETIVO SIMPLIFICADO](https://www.diariomunicipal.com.br/amp/materia/31930AF3) · 2026-08-17
+- DIVISÃO DE PESSOAL · [DECRETO Nº 221/2026](https://www.diariomunicipal.com.br/amp/materia/D599F1F6) · 2026-08-17
+- DIVISÃO DE PESSOAL · [DECRETO Nº 223/2026](https://www.diariomunicipal.com.br/amp/materia/E4FBA66E) · 2026-08-17
+- SECRETARIA M. ADMINISTRAÇAO RH · [EDITAL Nº 161/2026](https://www.diariomunicipal.com.br/amp/materia/A83FD93C) · 2026-08-17
+- SECRETARIA MUNICIPAL DE EDUCAÇÃO · [EDITAL Nº 158/2026 REPUBLICAÇÃO ERRATA DO EDITAL](https://www.diariomunicipal.com.br/amp/materia/219BB297) · 2026-08-17
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [EDITAL N.º 93/2026](https://www.diariomunicipal.com.br/amp/materia/12A21B88) · 2026-08-17
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [PORTARIA Nº 1.089/2026](https://www.diariomunicipal.com.br/amp/materia/70C4DC9F) · 2026-08-17
+- SECRETARIA MUNICIPAL DE RECURSOS HUMANOS · [EDITAL CLASSIFICAÇÃO FINAL E CONVOCAÇÃO N. º 082/2026 – PROCESSO SELETIVO / SMRH](https://www.diariomunicipal.com.br/amp/materia/5D0F8416) · 2026-08-17
+- PREFEITURA MUNICIPAL DE BALSA NOVA · [PROCESSO SELETIVO SIMPLIFICADO – PSS, para contratações temporárias para exercer a função de ASSISTENTE EDUCACIONAL, em](https://www.diariomunicipal.com.br/amp/materia/185D7DA3) · 2026-08-17
+- RH · [EDITAL 03/2026 RESULTADO FINAL PSS 01/2026 ESTAGIÁRIOS](https://www.diariomunicipal.com.br/amp/materia/6B970A55) · 2026-08-17
+- CONSAMU · [PROCESSO SELETIVO SIMPLIFICADO Nº 002/2025 PAR A CONTRATAÇÃO DE FUNCIONÁRIOS TEMPORÁRIOS PARA O](https://www.diariomunicipal.com.br/amp/materia/E7E0B7C7) · 2026-08-17
+- PREFEITURA MUNICIPAL DE IVAÍ · [EDITAL N° 001/2026](https://www.diariomunicipal.com.br/amp/materia/A5FEA058) · 2026-08-17
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [EDITAL N.º 90/2026](https://www.diariomunicipal.com.br/amp/materia/21833DCD) · 2026-08-17
+- SECRETARIA DE ADMINISTRACAO · [DECRETO 6574-2026](https://www.diariomunicipal.com.br/amp/materia/8C7B0CEA) · 2026-08-18
+- DEPARTAMENTO DE PESSOAL · [EDITAL DE CONVOCAÇÃO Nº 012/2026 PROCESSO](https://www.diariomunicipal.com.br/amp/materia/09AF160A) · 2026-08-18
+- DEPARTAMENTO DE PESSOAL · [EDITAL DE PRORROGAÇÃO Nº 01/2026 PROCESSO](https://www.diariomunicipal.com.br/amp/materia/32DCA8B3) · 2026-08-18
+- ADMINISTRAÇÃO · [EDITAL DE CONVOCAÇÃO Nº 015/2026 - PROCESSO](https://www.diariomunicipal.com.br/amp/materia/80B9A756) · 2026-08-18
+- ADMINISTRAÇÃO · [EDITAL DE CONVOCAÇÃO N.º 06/2026 - PROCESSO](https://www.diariomunicipal.com.br/amp/materia/FDDFA6DB) · 2026-08-18
+- GABINETE · [DECRETO DE HOMOLOGAÇÃO N°.166/2026](https://www.diariomunicipal.com.br/amp/materia/3D2BCAEC) · 2026-08-18
+- PREFEITURA MUNICIPAL DE BARRA DO JACARÉ · [EDITAL Nº. 03.33/2026 - EDITAL DE CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/9F6C8E25) · 2026-08-18
+- RECURSOS HUMANOS · [DECRETO Nº 750/2026](https://www.diariomunicipal.com.br/amp/materia/E00C611B) · 2026-08-18
+- RECURSOS HUMANOS · [PROCESSO SELETIVO SIMPLIFICADO – PSS Nº 001/2025](https://www.diariomunicipal.com.br/amp/materia/2188999B) · 2026-08-18
+- GABINETE PREFEITO · [DECRETO N.º 320/2026 DATA: 17-08-2026](https://www.diariomunicipal.com.br/amp/materia/B6B061BE) · 2026-08-18
+- MUNICÍPIO DE FERNANDES PINHEIRO · [DECRETO Nº 217/2026](https://www.diariomunicipal.com.br/amp/materia/4638B79D) · 2026-08-18
+- PREFEITURA MUNICIPAL DE GOIOERÊ · [DECRETO Nº. 9.940/2026](https://www.diariomunicipal.com.br/amp/materia/64EB80EE) · 2026-08-18
+- PREFEITURA MUNICIPAL DE GUARACI · [EDITAL Nº 064/2026](https://www.diariomunicipal.com.br/amp/materia/2103F4A8) · 2026-08-18
+- SECRETARIA DE ADMINISTRAÇÃO E PLANEJAMENTO · [EDITAL Nº 065/2026](https://www.diariomunicipal.com.br/amp/materia/D6BF78F5) · 2026-08-18
+- SECRETARIA DE ADMINISTRAÇÃO E PLANEJAMENTO · [EDITAL Nº 066/2026](https://www.diariomunicipal.com.br/amp/materia/522866CD) · 2026-08-18
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [PORTARIA Nº 194/2026](https://www.diariomunicipal.com.br/amp/materia/51314B9F) · 2026-08-18
+- PREFEITURA MUNICIPAL DE HONÓRIO SERPA · [EDITAL Nº 06-H DE 17 DE AGOSTO DE 2026](https://www.diariomunicipal.com.br/amp/materia/1CD91D3C) · 2026-08-18
+- DEPARTAMENTO DE RECURSOS HUMANOS · [DECRETO 192/2026](https://www.diariomunicipal.com.br/amp/materia/D607CB3D) · 2026-08-18
+- GOVERNO MUNICIPAL - GABINETE DO PREFEITO · [PORTARIA Nº. 1265/2026](https://www.diariomunicipal.com.br/amp/materia/D4945929) · 2026-08-18
+- GOVERNO MUNICIPAL - GABINETE DO PREFEITO · [PORTARIA Nº. 1266/2026](https://www.diariomunicipal.com.br/amp/materia/A66283BE) · 2026-08-18
+- GOVERNO MUNICIPAL - GABINETE DO PREFEITO · [PORTARIA Nº. 1273/2026](https://www.diariomunicipal.com.br/amp/materia/C0C36524) · 2026-08-18
+- GOVERNO MUNICIPAL - GABINETE DO PREFEITO · [PORTARIA Nº. 1278/2026](https://www.diariomunicipal.com.br/amp/materia/6A09C119) · 2026-08-18
+- GOVERNO MUNICIPAL - GABINETE DO PREFEITO · [PORTARIA Nº. 1280/2026](https://www.diariomunicipal.com.br/amp/materia/1ECEE3D8) · 2026-08-18
+- GOVERNO MUNICIPAL - GABINETE DO PREFEITO · [PORTARIA Nº. 1281/2026](https://www.diariomunicipal.com.br/amp/materia/A2364412) · 2026-08-18
+- GOVERNO MUNICIPAL - GABINETE DO PREFEITO · [PORTARIA Nº. 1283/2026](https://www.diariomunicipal.com.br/amp/materia/509729AA) · 2026-08-18
+- PREFEITURA MUNICIPAL DE IRATI · [DECRETO Nº 584/2026](https://www.diariomunicipal.com.br/amp/materia/6838292A) · 2026-08-18
+- PROCURADORIA · [DECRETO Nº 585/2026](https://www.diariomunicipal.com.br/amp/materia/BD90C907) · 2026-08-18
+- PREFEITURA MUNICIPAL DE ITAMBARACÁ · [EDITAL](https://www.diariomunicipal.com.br/amp/materia/81F6AF70) · 2026-08-18
+- ADMINISTRAÇÃO RH · [PROCESSO SELETIVO SIMPLIFICADO Nº 001/2024](https://www.diariomunicipal.com.br/amp/materia/8B7B6C11) · 2026-08-18
+- GABINETE DO PREFEITO · [EDITAL DE CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/EB18B1DD) · 2026-08-18
+- GOVERNO MUNICIPAL · [DECRETO Nº. 086/2026](https://www.diariomunicipal.com.br/amp/materia/208D80A7) · 2026-08-18
+- GOVERNO MUNICIPAL · [EDITAL DE CONVOCAÇÃO Nº 02/2026 PROCESSO](https://www.diariomunicipal.com.br/amp/materia/2CDC2FB9) · 2026-08-18
+- SECRETARIA DE ADMINISTRAÇÃO · [EDITAL DE CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/3BF426AF) · 2026-08-18
+- SECRETARIAS MUNICIPAIS · [EDITAL Nº 002.003 - PSS 003/2026-TO](https://www.diariomunicipal.com.br/amp/materia/E2417642) · 2026-08-18
+- DEPARTAMENTO DE ADMINISTRAÇÃO E PLANEJAMENTO · [DECRETO N° 287/2026](https://www.diariomunicipal.com.br/amp/materia/04DEC7D3) · 2026-08-18
+- FUNDAÇÃO DE SÁUDE DE PAIÇANDU · [PORTARIA Nº 338/2026](https://www.diariomunicipal.com.br/amp/materia/01DA928B) · 2026-08-18
+- FUNDAÇÃO DE SÁUDE DE PAIÇANDU · [PORTARIA Nº 340/2026](https://www.diariomunicipal.com.br/amp/materia/2BC62A55) · 2026-08-18
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [COMUNICADO – CHAMADA AUXILIAR DE CUIDADOR DE](https://www.diariomunicipal.com.br/amp/materia/D7658048) · 2026-08-18
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [PROCESSO SELETIVO SIMPLIFICADO Nº. 01/2026](https://www.diariomunicipal.com.br/amp/materia/0BC5C10F) · 2026-08-18
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [termos do Edital nº 01/2026 de 05 de janeiro de 2026, convocou o](https://www.diariomunicipal.com.br/amp/materia/4B6A17F8) · 2026-08-18
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [termos do Edital nº 01/2026 de 05 de janeiro de 2026, convocou o](https://www.diariomunicipal.com.br/amp/materia/05ADD0DD) · 2026-08-18
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO ADITIVO DE PRORROGAÇÃO DE](https://www.diariomunicipal.com.br/amp/materia/FA0EE2C9) · 2026-08-18
+- CONSÓRCIO INTERMUNICIPAL DE SANEAMENTO DO PARANÁ · [PORTARIA N.º 19 DE 17 DE AGOSTO DE 2026.](https://www.diariomunicipal.com.br/amp/materia/215A1A28) · 2026-08-18
+- DEPARTAMENTO DE RECURSOS HUMANOS · [PROCESSO SELETIVO SIMPLIFICADO Nº 001/2025 EDITAL](https://www.diariomunicipal.com.br/amp/materia/5EC84036) · 2026-08-18
+- DEPARTAMENTO DE RECURSOS HUMANOS · [PROCESSO SELETIVO SIMPLIFICADO Nº 002/2025 EDITAL](https://www.diariomunicipal.com.br/amp/materia/BAB4934F) · 2026-08-18
+- DEPARTAMENTO ADMINISTRATIVO · [EDITAL N.º 103/2026](https://www.diariomunicipal.com.br/amp/materia/B822F1E9) · 2026-08-18
+- DEPARTAMENTO ADMINISTRATIVO · [PORTARIA N.º 870/2026](https://www.diariomunicipal.com.br/amp/materia/CDF62887) · 2026-08-18
+- DEPARTAMENTO ADMINISTRATIVO · [PORTARIA N.º 871/2026](https://www.diariomunicipal.com.br/amp/materia/CFB482DF) · 2026-08-18
+- DEPARTAMENTO ADMINISTRATIVO · [PORTARIA N.º 872/2026](https://www.diariomunicipal.com.br/amp/materia/902882A0) · 2026-08-18
+- DEPARTAMENTO ADMINISTRATIVO · [PORTARIA N.º 873/2026](https://www.diariomunicipal.com.br/amp/materia/1252D55C) · 2026-08-18
+- DEPARTAMENTO ADMINISTRATIVO · [PORTARIA N.º 874/2026](https://www.diariomunicipal.com.br/amp/materia/86F8D039) · 2026-08-18
+- DEPARTAMENTO ADMINISTRATIVO · [PORTARIA N.º 875/2026](https://www.diariomunicipal.com.br/amp/materia/E7D94862) · 2026-08-18
+- DEPARTAMENTO ADMINISTRATIVO · [PORTARIA N.º 876/2026](https://www.diariomunicipal.com.br/amp/materia/CB8DFB1E) · 2026-08-18
+- DEPARTAMENTO ADMINISTRATIVO · [PORTARIA N.º 877/2026](https://www.diariomunicipal.com.br/amp/materia/494E29A6) · 2026-08-18
+- DEPARTAMENTO ADMINISTRATIVO · [PORTARIA N.º 878/2026](https://www.diariomunicipal.com.br/amp/materia/E0FFD957) · 2026-08-18
+- DEPARTAMENTO ADMINISTRATIVO · [PORTARIA N.º 879/2026](https://www.diariomunicipal.com.br/amp/materia/4036401B) · 2026-08-18
+- DEPARTAMENTO ADMINISTRATIVO · [PORTARIA N.º 880/2026](https://www.diariomunicipal.com.br/amp/materia/BAEA0AA4) · 2026-08-18
+- ADMINISTRAÇÃO GERAL · [DECRETO Nº 3571/2026](https://www.diariomunicipal.com.br/amp/materia/7A083DB2) · 2026-08-18
+- ADMINISTRAÇÃO GERAL · [DECRETO Nº 3572/2026](https://www.diariomunicipal.com.br/amp/materia/8E00925B) · 2026-08-18
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [PROCESSO SELETIVO SIMPLIFICADO – PSS – EDITAL Nº](https://www.diariomunicipal.com.br/amp/materia/923B4F52) · 2026-08-18
+- DIVISÃO DE RECURSOS HUMANOS · [EDITAL 089/2026](https://www.diariomunicipal.com.br/amp/materia/B7A58801) · 2026-08-18
+- DIVISÃO DE RECURSOS HUMANOS · [EDITAL 090/2026](https://www.diariomunicipal.com.br/amp/materia/C40EE41F) · 2026-08-18
+- DIVISÃO DE RECURSOS HUMANOS · [EDITAL 091/2026](https://www.diariomunicipal.com.br/amp/materia/A7E6A4E2) · 2026-08-18
+- PREFEITURA MUNICIPAL DE SENGÉS · [EDITAL DE CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/D63DB4F8) · 2026-08-18
+- DEPARTAMENTO DE RECURSOS HUMANOS · [EDITAL DE CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/1766D713) · 2026-08-18
+- PREFEITURA MUNICIPAL DE TERRA RICA · [DECRETO Nº 365/2026](https://www.diariomunicipal.com.br/amp/materia/29F205B1) · 2026-08-18
+- PREFEITURA MUNICIPAL DE TERRA RICA · [EDITAL DE CONVOCAÇÃO Nº 066/2026](https://www.diariomunicipal.com.br/amp/materia/9072AE1C) · 2026-08-18
+- GABINETE DO PREFEITO · [DECRETO Nº 6334, DE 17 DE AGOSTO DE 2026](https://www.diariomunicipal.com.br/amp/materia/41523FDE) · 2026-08-18
+- PODER EXECUTIVO · [PORTARIA N.º 343/2026](https://www.diariomunicipal.com.br/amp/materia/6C46E500) · 2026-08-18
+- PODER EXECUTIVO · [PORTARIA N.º 344/2026](https://www.diariomunicipal.com.br/amp/materia/FB314B54) · 2026-08-18
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [PORTARIA 1.046/2026](https://www.diariomunicipal.com.br/amp/materia/0666A02D) · 2026-08-18
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [PORTARIA Nº 1.045/2026](https://www.diariomunicipal.com.br/amp/materia/AD511BCE) · 2026-08-18
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [TERMO DE REFERÊNCIA PARA CONTRATAÇÃO DE](https://www.diariomunicipal.com.br/amp/materia/E349CB55) · 2026-08-18
+- PREFEITURA MUNICIPAL DE DOUTOR ULYSSES · [PROCESSO SELETIVO SIMPLIFICADO Nº004/2026 EDITAL DE RETIFICAÇÃO DA HOMOLOGAÇÃO DO RESULTADO FINAL](https://www.diariomunicipal.com.br/amp/materia/2B8E7261) · 2026-08-18
+- PREFEITURA MUNICIPAL DE IRATI · [EDITAL Nº 001.11/2026 – 7ª CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/B279E5EB) · 2026-08-18
+- PREFEITURA MUNICIPAL DE ITAÚNA DO SUL · [EDITAL Nº 003/2026 RESULTADO FINAL DO PROCESSO SELETIVO SIMPLIFICADO Nº001/2026](https://www.diariomunicipal.com.br/amp/materia/B47B445E) · 2026-08-18
+- PREFEITURA MUNICIPAL DE PAULA FREITAS · [DECRETO N. º 3457/2026- DE 17 DE AGOSTO DE 2026.](https://www.diariomunicipal.com.br/amp/materia/95B0473D) · 2026-08-18
+- SECRETARIA GERAL · [PROCESSO SELETIVO SIMPLIFICADO 001/2026 PREFEITURA MUNICIPAL DE ROLÂNDIA SECRETARIA MUNICIPAL DE](https://www.diariomunicipal.com.br/amp/materia/5C330FFC) · 2026-08-18
+- SECRETARIA GERAL · [RESULTADO FINAL PROCESSO SELETIVO SIMPLIFICADO 001/2026 SECRETARIA MUNICIPAL DE EDUCAÇÃO DE](https://www.diariomunicipal.com.br/amp/materia/DC4DBE8D) · 2026-08-18
+- PREFEITURA MUNICIPAL DE SALTO DO LONTRA · [EDITAL Nº 019-2026- CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/9AC45C9E) · 2026-08-18
+- ADMINISTRAÇÃO MUNICIPAL · [PROCESSO SELETIVO SIMPLIFICADO Nº 002/2026 EDITAL](https://www.diariomunicipal.com.br/amp/materia/5AEA2E88) · 2026-08-19
+- DIVISÃO DE RECURSOS HUMANOS · [DECRETO Nº 5017 NOMEIA EDINA DENTI DA SILVA](https://www.diariomunicipal.com.br/amp/materia/7BB0C4F8) · 2026-08-19
+- RECURSOS HUMANOS · [EDITAL Nº. 04.10/2026 - EDITAL DE CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/F46131AC) · 2026-08-19
+- DEPARTAMENTO DE GESTÃO DE PESSOAS · [EDITAL 003/2026 - PSS 002/2026](https://www.diariomunicipal.com.br/amp/materia/5421EF02) · 2026-08-19
+- DEPARTAMENTO DE ADMINISTRAÇÃO · [DECRETO Nº0256/2026 NOMEAR, O SENHOR BRUNO ROSA](https://www.diariomunicipal.com.br/amp/materia/449992D4) · 2026-08-19
+- DEPARTAMENTO DE ADMINISTRAÇÃO · [PROCESSO SELETIVO SIMPLIFICADO - PSS N° 004/2026](https://www.diariomunicipal.com.br/amp/materia/BA9C6119) · 2026-08-19
+- SECRETARIA DE ADMINISTRAÇÃO E PLANEJAMENTO · [EDITAL Nº 067/2026](https://www.diariomunicipal.com.br/amp/materia/ACCEBC46) · 2026-08-19
+- PREFEITURA MUNICIPAL DE HONÓRIO SERPA · [EDITAL Nº 06-I DE 19 DE AGOSTO DE 2026.](https://www.diariomunicipal.com.br/amp/materia/927E0109) · 2026-08-19
+- DEPARTAMENTO DE RECURSOS HUMANOS · [CONVOCAÇÃO Nº 05 - PROCESSO SELETIVO](https://www.diariomunicipal.com.br/amp/materia/C1CE83C4) · 2026-08-19
+- PREFEITURA MUNICIPAL DE ITAMBARACÁ · [EDITAL](https://www.diariomunicipal.com.br/amp/materia/3BEF26D6) · 2026-08-19
+- DEPARTAMENTO MUNICIPAL DE ADMINISTRAÇÃO · [DECRETO Nº 191/2026](https://www.diariomunicipal.com.br/amp/materia/6F6D4671) · 2026-08-19
+- PREFEITURA MUNICIPAL DE ITAÚNA DO SUL · [DECRETO N° 163/2026](https://www.diariomunicipal.com.br/amp/materia/6D5C5A2D) · 2026-08-19
+- PREFEITURA MUNICIPAL DE JAGUAPITÃ · [EDITAL DE CONVOCAÇÃO Nº 01/2026 PROCESSO](https://www.diariomunicipal.com.br/amp/materia/27D8A4E8) · 2026-08-19
+- GOVERNO MUNICIPAL · [EDITAL DE CONVOCAÇÃO Nº 02/2026 PROCESSO](https://www.diariomunicipal.com.br/amp/materia/E23B4788) · 2026-08-19
+- SECRETARIA DE ADMINISTRAÇÃO - SETOR DE RECURSOS HUMANOS · [EXTRATO DE TERMO ADITIVO POR PRAZO](https://www.diariomunicipal.com.br/amp/materia/DC6A389D) · 2026-08-19
+- SECRETARIA DE ADMINISTRAÇÃO - SETOR DE RECURSOS HUMANOS · [EXTRATO DE TERMO ADITIVO POR PRAZO](https://www.diariomunicipal.com.br/amp/materia/338CCF79) · 2026-08-19
+- SECRETARIA DE ADMINISTRAÇÃO - SETOR DE RECURSOS HUMANOS · [EXTRATO DE TERMO ADITIVO POR PRAZO](https://www.diariomunicipal.com.br/amp/materia/C45F142A) · 2026-08-19
+- GABINETE DO PREFEITO · [EDITAL N º. 279/2026 CONVOCAÇÃO PROCESSO](https://www.diariomunicipal.com.br/amp/materia/09061448) · 2026-08-19
+- GABINETE DO PREFEITO · [EDITAL N º. 280/2026 - CONVOCAÇÃO PROCESSO](https://www.diariomunicipal.com.br/amp/materia/47F57C08) · 2026-08-19
+- FUNDAÇÃO DE ATENÇÃO A SAÚDE DE MORRETES · [EDITAL Nº 105, DE 18 DE AGOSTO 2026. EDITAL DE](https://www.diariomunicipal.com.br/amp/materia/AF2285FB) · 2026-08-19
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [PROCESSO SELETIVO SIMPLIFICADO Nº. 01/2026](https://www.diariomunicipal.com.br/amp/materia/81C704B3) · 2026-08-19
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [TERMO DE DESISTÊNCIA - PROCESSO SELETIVO](https://www.diariomunicipal.com.br/amp/materia/9F47ED2A) · 2026-08-19
+- DEPARTAMENTO DE RECURSOS HUMANOS · [PROCESSO SELETIVO SIMPLIFICADO Nº 002/2025 EDITAL](https://www.diariomunicipal.com.br/amp/materia/5A0871CB) · 2026-08-19
+- PREFEITURA MUNICIPAL DE RESERVA DO IGUAÇU · [PORTARIA Nº: 051/2026 SÚMULA: ALTERA MEMBROS DA](https://www.diariomunicipal.com.br/amp/materia/44C7D03B) · 2026-08-19
+- PREFEITURA MUNICIPAL DE RESERVA DO IGUAÇU · [TERMO DE ADJUDICAÇÃO E HOMOLOGAÇÃO](https://www.diariomunicipal.com.br/amp/materia/364FDEEC) · 2026-08-19
+- PREFEITURA MUNICIPAL DE RIO BRANCO DO IVAÍ · [DECRETO 064/2026 - HOMOLOGAÇÃO RESULTADO FINAL](https://www.diariomunicipal.com.br/amp/materia/FF94B5D7) · 2026-08-19
+- DEPARTAMENTO ADMINISTRATIVO · [PORTARIA N.º 883/2026](https://www.diariomunicipal.com.br/amp/materia/99469D77) · 2026-08-19
+- DEPARTAMENTO ADMINISTRATIVO · [PORTARIA N.º 884/2026](https://www.diariomunicipal.com.br/amp/materia/57347CD1) · 2026-08-19
+- SECRETARIA GERAL · [PREFEITURA MUNICIPAL DE ROLÂNDIA EDITAL 001/2026](https://www.diariomunicipal.com.br/amp/materia/79A31EC9) · 2026-08-19
+- PREFEITURA MUNICIPAL DE SALTO DO LONTRA · [DECRETO 1443/2026](https://www.diariomunicipal.com.br/amp/materia/D76A5E3E) · 2026-08-19
+- PREFEITURA MUNICIPAL DE TERRA RICA · [EDITAL DE CONVOCAÇÃO Nº 067/2026](https://www.diariomunicipal.com.br/amp/materia/43050FFF) · 2026-08-19
+- PREFEITURA MUNICIPAL DE BALSA NOVA · [EDITAL DE CONVOCAÇÃO N.º 01/2026 - CHAMADA PUBLICA 009/2026 - PSS AGENTE EDUCACIONAL](https://www.diariomunicipal.com.br/amp/materia/CC0D2AA1) · 2026-08-19
+- SECRETARIAS MUNICIPAIS · [EDITAL Nº 003.002 - PSS 002/2026-PROFESSOR HOMOLOGAÇÃO DAS INSCRIÇÕES APÓS RECURSOS DO PROCESSO](https://www.diariomunicipal.com.br/amp/materia/68A6093B) · 2026-08-19
+- DEPARTAMENTO DE PESSOAL · [EDITAL DE CONVOCAÇÃO Nº 013/2026 PROCESSO](https://www.diariomunicipal.com.br/amp/materia/F51D2A3E) · 2026-08-20
+- GABINETE DA PREFEITA · [DECRETO Nº. 11.321 DE 19 DE AGOSTO DE 2026](https://www.diariomunicipal.com.br/amp/materia/B948514E) · 2026-08-20
+- GABINETE DA PREFEITA · [EDITAL DE CONVOCAÇÃO N. 011/2026 PSS - MOTORISTA](https://www.diariomunicipal.com.br/amp/materia/3FE19209) · 2026-08-20
+- ADMINISTRAÇÃO · [EDITAL DE CONVOCAÇÃO N.º 001/2026 - CHAMADA](https://www.diariomunicipal.com.br/amp/materia/530A87BC) · 2026-08-20
+- ADMINISTRAÇÃO · [Edital nº. 11/2026, que estabelece instruções destinadas à realização](https://www.diariomunicipal.com.br/amp/materia/3B323D76) · 2026-08-20
+- ADMINISTRAÇÃO · [Edital nº. 11/2026, que estabelece instruções destinadas à realização](https://www.diariomunicipal.com.br/amp/materia/15105C0F) · 2026-08-20
+- RECURSOS HUMANOS · [PROCESSO SELETIVO SIMPLIFICADO – PSS Nº 001/2025](https://www.diariomunicipal.com.br/amp/materia/426DD9F8) · 2026-08-20
+- PREFEITURA MUNICIPAL DE CORONEL VIVIDA · [EDITAL 004/2026 - PSS 02/206](https://www.diariomunicipal.com.br/amp/materia/891BB70A) · 2026-08-20
+- PREFEITURA MUNICIPAL DE DOUTOR ULYSSES · [DECRETO Nº0257/2026 NOMEAR, O SENHOR IMAR DOS](https://www.diariomunicipal.com.br/amp/materia/3843DA71) · 2026-08-20
+- DEPARTAMENTO DE ADMINISTRAÇÃO · [DECRETO Nº0259/2026 NOMEAR, A SENHORA YASMIM](https://www.diariomunicipal.com.br/amp/materia/4230FF05) · 2026-08-20
+- SECRETARIA DE ADMINISTRAÇÃO E PLANEJAMENTO · [EDITAL Nº 068/2026](https://www.diariomunicipal.com.br/amp/materia/A892CFA3) · 2026-08-20
+- SECRETARIA DE ADMINISTRAÇÃO E PLANEJAMENTO · [EDITAL Nº 069/2026](https://www.diariomunicipal.com.br/amp/materia/84009D06) · 2026-08-20
+- PREFEITURA MUNICIPAL DE INÁCIO MARTINS · [DEPARTAMENTO DE RECURSOS HUMANOS](https://www.diariomunicipal.com.br/amp/materia/9ED90B55) · 2026-08-20
+- PROCURADORIA · [DECRETO Nº 597/2026](https://www.diariomunicipal.com.br/amp/materia/3CD590EC) · 2026-08-20
+- PREFEITURA MUNICIPAL DE ITAMBÉ · [PROCESSO SELETIVO SIMPLIFICADO Nº 001/2025](https://www.diariomunicipal.com.br/amp/materia/7DAA62F7) · 2026-08-20
+- ADMINISTRAÇÃO RH · [PROCESSO SELETIVO SIMPLIFICADO N° 001/2023](https://www.diariomunicipal.com.br/amp/materia/80FF675E) · 2026-08-20
+- GABINETE DO PREFEITO · [EDITAL DE CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/617A7121) · 2026-08-20
+- GABINETE DO PREFEITO · [EDITAL Nº. 272/2026](https://www.diariomunicipal.com.br/amp/materia/1E0D319C) · 2026-08-20
+- PREFEITURA MUNICIPAL DE MARILENA · [termos do artigo 37 inciso IX da Constituição](https://www.diariomunicipal.com.br/amp/materia/64D66595) · 2026-08-20
+- DEPARTAMENTO DE ADMINISTRAÇÃO E PLANEJAMENTO · [termos do artigo 37 inciso IX da Constituição](https://www.diariomunicipal.com.br/amp/materia/4B31597A) · 2026-08-20
+- PREFEITURA MUNICIPAL DE MORRETES · [EDITAL Nº 106, DE 19 DE AGOSTO 2026. EDITAL DE](https://www.diariomunicipal.com.br/amp/materia/8D3865D5) · 2026-08-20
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [COMUNICADO – CHAMADA AUXILIAR DE CUIDADOR DE](https://www.diariomunicipal.com.br/amp/materia/6FFF73A8) · 2026-08-20
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [PROCESSO SELETIVO SIMPLIFICADO Nº. 01/2026](https://www.diariomunicipal.com.br/amp/materia/22A31102) · 2026-08-20
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [COMUNICADO – CHAMADA PROFESSOR 20H - PROCESSO](https://www.diariomunicipal.com.br/amp/materia/F9696D6D) · 2026-08-20
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [COMUNICADO – CHAMADA PROFESSOR 40H - PROCESSO](https://www.diariomunicipal.com.br/amp/materia/E8ECE222) · 2026-08-20
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [termos do Edital nº 002/2025, convocou o candidato abaixo](https://www.diariomunicipal.com.br/amp/materia/79182A10) · 2026-08-20
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [termos do Edital nº 01/2026 de 05 de janeiro de 2026, convocou o](https://www.diariomunicipal.com.br/amp/materia/4B397430) · 2026-08-20
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [TERMO DE DESISTÊNCIA - PROCESSO SELETIVO](https://www.diariomunicipal.com.br/amp/materia/BF3D55A8) · 2026-08-20
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [TERMO DE DESISTÊNCIA - PROCESSO SELETIVO](https://www.diariomunicipal.com.br/amp/materia/862AFA06) · 2026-08-20
+- CONSÓRCIO INTERMUNICIPAL DE SANEAMENTO DO PARANÁ · [EDITAL DE CONVOCAÇÃO Nº 026/2026 36ª CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/BB466DD0) · 2026-08-20
+- DEPARTAMENTO ADMINISTRATIVO · [PORTARIA N.º 893/2026](https://www.diariomunicipal.com.br/amp/materia/E5043BF6) · 2026-08-20
+- DEPARTAMENTO ADMINISTRATIVO · [PORTARIA N.º 894/2026](https://www.diariomunicipal.com.br/amp/materia/3552FC2A) · 2026-08-20
+- DEPARTAMENTO DE RECURSOS HUMANOS · [PORTARIA N° 34.856/2026 - RH](https://www.diariomunicipal.com.br/amp/materia/7D3067FE) · 2026-08-20
+- DIVISÃO DE RECURSOS HUMANOS · [EDITAL 092/2026](https://www.diariomunicipal.com.br/amp/materia/AA812640) · 2026-08-20
+- DEPARTAMENTO DE RECURSOS HUMANOS · [EDITAL Nº 59/2026](https://www.diariomunicipal.com.br/amp/materia/63F09BE5) · 2026-08-20
+- GABINETE DO PREFEITO · [DECRETO N.º 5.157/2026](https://www.diariomunicipal.com.br/amp/materia/F01B8DEA) · 2026-08-20
+- GABINETE DO PREFEITO · [PROCESSO SELETIVO SIMPLIFICADO Nº 02/2026 – EDITAL](https://www.diariomunicipal.com.br/amp/materia/346F957B) · 2026-08-20
+- DEPARTAMENTO DE ADMINISTRAÇÃO FINANÇAS E PLANEJAMENTO · [DECRETO Nº 248 DE 18 DE AGOSTO DE 2026](https://www.diariomunicipal.com.br/amp/materia/DFED0C22) · 2026-08-20
+- PREFEITURA MUNICIPAL DE BALSA NOVA · [EDITAL PROCESSO SELETIVO SIMPLIFICADO Nº 14/2026](https://www.diariomunicipal.com.br/amp/materia/08909EEE) · 2026-08-20
+- PROCURADORIA · [EDITAL Nº 001.12/2026 – 8ª CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/93FDAD5C) · 2026-08-20
+- SECRETARIA MUNICIPAL DE SAÚDE · [INSCRIÇÕES HOMOLOGADAS E NÃO HOMOLOGADAS – PROCESSO SELETIVO SIMPLIFICADO Nº 02/2026](https://www.diariomunicipal.com.br/amp/materia/3F147FE9) · 2026-08-20
+- PREFEITURA MUNICIPAL DE REALEZA · [EDITAL Nº 10/2026 EDITAL HOMOLOGAÇÃO FINAL PROCESSO SELETIVO SIMPLIFICADO Nº 02/2026](https://www.diariomunicipal.com.br/amp/materia/BB338085) · 2026-08-20
+- ADMINISTRAÇÃO · [EDITAL DE CONVOCAÇÃO N.º 002/2026 - PROCESSO](https://www.diariomunicipal.com.br/amp/materia/4B87CB9D) · 2026-08-21
+- ADMINISTRAÇÃO · [EDITAL DE CONVOCAÇÃO Nº 016/2026 - PROCESSO](https://www.diariomunicipal.com.br/amp/materia/0B3C993A) · 2026-08-21
+- ADMINISTRAÇÃO · [EDITAL DE CONVOCAÇÃO N.º 07/2026 - PROCESSO](https://www.diariomunicipal.com.br/amp/materia/76F85AEA) · 2026-08-21
+- PREFEITURA MUNICIPAL DE CAMPINA DO SIMÃO · [EDITAL Nº 03 2026 PSS PROFESSORES CONVOCAÇÃO DOS](https://www.diariomunicipal.com.br/amp/materia/218E110C) · 2026-08-21
+- PREFEITURA MUNICIPAL DE CERRO AZUL · [EDITAL Nº 009/2026 CONVOCAÇÃO PARA INGRESSO](https://www.diariomunicipal.com.br/amp/materia/97094911) · 2026-08-21
+- SECRETARIA GOVERNO · [EDITAL Nº 010.005/2026 - RECURSOS](https://www.diariomunicipal.com.br/amp/materia/6225D411) · 2026-08-21
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [EDITAL Nº 10.04/2026](https://www.diariomunicipal.com.br/amp/materia/CDAA8BAD) · 2026-08-21
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [PORTARIA Nº 132/2026](https://www.diariomunicipal.com.br/amp/materia/7AB48E43) · 2026-08-21
+- PREFEITURA MUNICIPAL DE INÁCIO MARTINS · [DEPARTAMENTO DE RECURSOS HUMANOS](https://www.diariomunicipal.com.br/amp/materia/22196EB9) · 2026-08-21
+- ADMINISTRAÇÃO RH · [DECRETO N° 096/2026](https://www.diariomunicipal.com.br/amp/materia/664E0554) · 2026-08-21
+- PREFEITURA MUNICIPAL DE IVATUBA · [GABINETE DO PREFEITO](https://www.diariomunicipal.com.br/amp/materia/C64C5594) · 2026-08-21
+- GABINETE DO PREFEITO · [EDITAL DE CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/A480FA0F) · 2026-08-21
+- GOVERNO MUNICIPAL · [EDITAL DE CONVOCAÇÃO Nº 03/2026 PROCESSO](https://www.diariomunicipal.com.br/amp/materia/26E4C15F) · 2026-08-21
+- SECRETARIA DE ADMINISTRAÇÃO - SETOR DE RECURSOS HUMANOS · [DECRETO N.º 362/2026](https://www.diariomunicipal.com.br/amp/materia/8D93F1BD) · 2026-08-21
+- SECRETARIA DE ADMINISTRAÇÃO - SETOR DE RECURSOS HUMANOS · [EDITAL DE CONVOCAÇÃO N° 018.001/2026 – PSS 001/2025](https://www.diariomunicipal.com.br/amp/materia/AA5DD1F9) · 2026-08-21
+- SECRETARIAS MUNICIPAIS · [EDITAL Nº 003.003 - PSS 003/2026-TO](https://www.diariomunicipal.com.br/amp/materia/2C203AD0) · 2026-08-21
+- SECRETARIAS MUNICIPAIS · [EDITAL Nº 004.002 - PSS 002/2026-PROFESSOR](https://www.diariomunicipal.com.br/amp/materia/22FEDBE2) · 2026-08-21
+- SECRETARIAS MUNICIPAIS · [EDITAL Nº 004.003 - PSS 003/2026-TO](https://www.diariomunicipal.com.br/amp/materia/D5D2F5AA) · 2026-08-21
+- GABINETE DO PREFEITO · [DECRETO Nº 405/2026 - NOMEIA E DÁ POSSE A PESSOAS](https://www.diariomunicipal.com.br/amp/materia/CF87967B) · 2026-08-21
+- GABINETE DO PREFEITO · [EDITAL N º. 281/2026 CONVOCAÇÃO - DISPÕE SOBRE A](https://www.diariomunicipal.com.br/amp/materia/768A1B5A) · 2026-08-21
+- DEPARTAMENTO DE ADMINISTRAÇÃO E PLANEJAMENTO · [termos do artigo 37 inciso IX da Constituição](https://www.diariomunicipal.com.br/amp/materia/9B3F6017) · 2026-08-21
+- DEPARTAMENTO DE ADMINISTRAÇÃO E PLANEJAMENTO · [termos do artigo 37 inciso IX da Constituição](https://www.diariomunicipal.com.br/amp/materia/224E96F4) · 2026-08-21
+- DEPARTAMENTO DE ADMINISTRAÇÃO E PLANEJAMENTO · [termos do artigo 37 inciso IX da Constituição](https://www.diariomunicipal.com.br/amp/materia/0826E5DD) · 2026-08-21
+- DEPARTAMENTO DE ADMINISTRAÇÃO E PLANEJAMENTO · [EDITAL Nº 036/2026](https://www.diariomunicipal.com.br/amp/materia/731618D6) · 2026-08-21
+- SECRETARIA MUNICIPAL DE EDUCAÇÃO · [EDITAL DE PROCESSO SELETIVO SIMPLIFICADO](https://www.diariomunicipal.com.br/amp/materia/A5A7AB16) · 2026-08-21
+- PREFEITURA MUNICIPAL DE PAIÇANDU · [PORTARIA Nº 478/2026](https://www.diariomunicipal.com.br/amp/materia/9C9A4213) · 2026-08-21
+- PREFEITURA MUNICIPAL DE PAIÇANDU · [PORTARIA Nº 480/2026](https://www.diariomunicipal.com.br/amp/materia/5001D3F7) · 2026-08-21
+- PREFEITURA MUNICIPAL DE PAIÇANDU · [PORTARIA Nº 481/2026](https://www.diariomunicipal.com.br/amp/materia/49535F37) · 2026-08-21
+- PREFEITURA MUNICIPAL DE PAIÇANDU · [PORTARIA Nº 482/2026](https://www.diariomunicipal.com.br/amp/materia/0B7C24EE) · 2026-08-21
+- PREFEITURA MUNICIPAL DE PAIÇANDU · [PORTARIA Nº 486/2026](https://www.diariomunicipal.com.br/amp/materia/07CB221F) · 2026-08-21
+- PREFEITURA MUNICIPAL DE PAIÇANDU · [PORTARIA Nº 487/2026](https://www.diariomunicipal.com.br/amp/materia/35B55A42) · 2026-08-21
+- PREFEITURA MUNICIPAL DE PAIÇANDU · [PORTARIA Nº 488/2026](https://www.diariomunicipal.com.br/amp/materia/677DBE6D) · 2026-08-21
+- PREFEITURA MUNICIPAL DE PAIÇANDU · [PORTARIA Nº 489/2026](https://www.diariomunicipal.com.br/amp/materia/C37A49A8) · 2026-08-21
+- PREFEITURA MUNICIPAL DE PAIÇANDU · [PORTARIA Nº 490/2026](https://www.diariomunicipal.com.br/amp/materia/BCB9659A) · 2026-08-21
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [COMUNICADO – CHAMADA AUXILIAR DE CUIDADOR DE](https://www.diariomunicipal.com.br/amp/materia/CD2D1404) · 2026-08-21
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [termos do Edital nº 01/2026 de 05 de janeiro de 2026, convocou o](https://www.diariomunicipal.com.br/amp/materia/86847A59) · 2026-08-21
+- SECRETARIA DE GESTÃO PÚBLICA · [EDITAL N.º 008/2026 DA 1ª ETAPA DA CONVOCAÇÃO DO](https://www.diariomunicipal.com.br/amp/materia/A933BF5F) · 2026-08-21
+- DEPARTAMENTO ADMINISTRATIVO · [PORTARIA N.º 896/2026](https://www.diariomunicipal.com.br/amp/materia/74F84B10) · 2026-08-21
+- DEPARTAMENTO ADMINISTRATIVO · [PORTARIA N.º 897/2026](https://www.diariomunicipal.com.br/amp/materia/EF2D3A5C) · 2026-08-21
+- DEPARTAMENTO ADMINISTRATIVO · [PORTARIA N.º 898/2026](https://www.diariomunicipal.com.br/amp/materia/3FAEA6FF) · 2026-08-21
+- DEPARTAMENTO ADMINISTRATIVO · [PORTARIA N.º 899/2026](https://www.diariomunicipal.com.br/amp/materia/ABEDEEB5) · 2026-08-21
+- EXECUTIVO MUNICIPAL · [DECRETO Nº 155/2026 DATA 17/08/2026](https://www.diariomunicipal.com.br/amp/materia/A91A0114) · 2026-08-21
+- EXECUTIVO MUNICIPAL · [DECRETO Nº 156/2026 DATA 17/08/2026](https://www.diariomunicipal.com.br/amp/materia/AC7EFD2F) · 2026-08-21
+- EXECUTIVO MUNICIPAL · [DECRETO Nº 158/2026 DATA 17/08/2026](https://www.diariomunicipal.com.br/amp/materia/07BBA2A1) · 2026-08-21
+- PREFEITURA MUNICIPAL DE SÃO JOSÉ DA BOA VISTA · [EDITAL 094/2026](https://www.diariomunicipal.com.br/amp/materia/16A2FD52) · 2026-08-21
+- DIVISÃO DE PESSOAL · [DECRETO Nº 226/2026](https://www.diariomunicipal.com.br/amp/materia/B1AB6EB3) · 2026-08-21
+- DIVISÃO DE PESSOAL · [PORTARIA Nº 224/2026](https://www.diariomunicipal.com.br/amp/materia/9A73A80F) · 2026-08-21
+- PODER EXECUTIVO · [EDITAL DE CONVOCAÇÃO Nº 008-2026 - PROCESSO](https://www.diariomunicipal.com.br/amp/materia/31B80AD6) · 2026-08-21
+- PREFEITURA MUNICIPAL DE TURVO · [EDITAL DE CONVOCAÇÃO 143-2026](https://www.diariomunicipal.com.br/amp/materia/2BDD13DE) · 2026-08-21
+- PREFEITURA MUNICIPAL DE CERRO AZUL · [EDITAL Nº 011.005/2026 - CLASSIFICAÇÃO DEFINITIVA](https://www.diariomunicipal.com.br/amp/materia/59E78CB7) · 2026-08-21
+- SECRETARIAS MUNICIPAIS · [EDITAL Nº 003.002 - PSS 002/2026-PROFESSOR - RETIFICADO HOMOLOGAÇÃO DAS INSCRIÇÕES APÓS RECURSOS DO](https://www.diariomunicipal.com.br/amp/materia/8253DED5) · 2026-08-21
+- SECRETARIA MUNICIPAL DE SAÚDE · [TORNA PUBLICO A RELAÇÃO DAS NOTAS POR CARGO – PROCESSO SELETIVO SIMPLIFICADO Nº 02/2026](https://www.diariomunicipal.com.br/amp/materia/510D4374) · 2026-08-21
+- RECURSOS HUMANOS · [EDITAL DE CONVOCAÇÃO N° 046/2026](https://www.diariomunicipal.com.br/amp/materia/5A834DC4) · 2026-08-24
+- GABINETE DA PREFEITA · [EXTRATO DE PRORROGAÇÃO DE CONTRATO DE](https://www.diariomunicipal.com.br/amp/materia/E760F50A) · 2026-08-24
+- GABINETE DA PREFEITA · [EXTRATO DE PRORROGAÇÃO DE CONTRATO DE](https://www.diariomunicipal.com.br/amp/materia/2346A738) · 2026-08-24
+- GABINETE DA PREFEITA · [EXTRATO DE PRORROGAÇÃO DE CONTRATO DE](https://www.diariomunicipal.com.br/amp/materia/68B1F1D6) · 2026-08-24
+- SECRETARIA MUNICIPAL DE ASSISTÊNCIA SOCIAL · [PROCESSO SELETIVO SIMPLIFICADO PARA](https://www.diariomunicipal.com.br/amp/materia/8B07AA76) · 2026-08-24
+- SECRETÁRIA DE ADMINISTRAÇÃO E FINANÇAS · [DECRETO Nº 23758/2026](https://www.diariomunicipal.com.br/amp/materia/EE9AEB8E) · 2026-08-24
+- MUNICIPIO DE GOIOXIM · [PORTARIA Nº 187 DE 21 DE AGOSTO DE 2026](https://www.diariomunicipal.com.br/amp/materia/7A6F4EB8) · 2026-08-24
+- CONSAMU · [PROCESSO SELETIVO SIMPLIFICADO Nº 002/2026 PARA](https://www.diariomunicipal.com.br/amp/materia/F58AE867) · 2026-08-24
+- SECRETARIA DE ADMINISTRAÇÃO E PLANEJAMENTO · [EDITAL Nº 070/2026](https://www.diariomunicipal.com.br/amp/materia/45F6C0A9) · 2026-08-24
+- CONSORCIO INTERMUNICIPAL DE SAUDE DA REGIAO · [RESOLUÇÃO 149/2026](https://www.diariomunicipal.com.br/amp/materia/D9D7AD67) · 2026-08-24
+- CONSORCIO INTERMUNICIPAL DE SAUDE DA REGIAO · [RESOLUÇÃO 151/2026](https://www.diariomunicipal.com.br/amp/materia/54A0B71B) · 2026-08-24
+- PREFEITURA MUNICIPAL DE ITAMBÉ · [PROCESSO SELETIVO SIMPLIFICADO Nº 001/2025](https://www.diariomunicipal.com.br/amp/materia/8AFFC355) · 2026-08-24
+- DEPARTAMENTO DE ADMINISTRAÇÃO · [TERMO DE DESISTÊNCIA](https://www.diariomunicipal.com.br/amp/materia/0662EE9C) · 2026-08-24
+- DEPARTAMENTO DE ADMINISTRAÇÃO · [TERMO DE DESISTÊNCIA](https://www.diariomunicipal.com.br/amp/materia/B31D68AB) · 2026-08-24
+- GABINETE DO PREFEITO · [EDITAL DE CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/7ACBD46F) · 2026-08-24
+- GOVERNO MUNICIPAL · [EDITAL DE CONVOCAÇÃO Nº 012/2026 PROCESSO](https://www.diariomunicipal.com.br/amp/materia/667B4EE6) · 2026-08-24
+- SECRETARIA DE ADMINISTRAÇÃO - SETOR DE RECURSOS HUMANOS · [DECRETO N.º 365/2026](https://www.diariomunicipal.com.br/amp/materia/03CA87DA) · 2026-08-24
+- SECRETARIA DE ADMINISTRAÇÃO - SETOR DE RECURSOS HUMANOS · [EDITAL DE CONVOCAÇÃO N° 019.001/2026 – PSS 001/2025](https://www.diariomunicipal.com.br/amp/materia/560816A6) · 2026-08-24
+- SECRETARIA DE ADMINISTRAÇÃO - SETOR DE RECURSOS HUMANOS · [EXTRATO DE RESCISÃO DE CONTRATO POR PRAZO](https://www.diariomunicipal.com.br/amp/materia/849B24B8) · 2026-08-24
+- FUNDAÇÃO DE ATENÇÃO A SAÚDE DE MORRETES · [PORTARIA N° 27 DE 21 DE AGOSTO DE 2026](https://www.diariomunicipal.com.br/amp/materia/1CE53D06) · 2026-08-24
+- FUNDAÇÃO DE SÁUDE DE PAIÇANDU · [ERRATA DO EDITAL Nº 239/2026](https://www.diariomunicipal.com.br/amp/materia/E72C0E1D) · 2026-08-24
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO DE RESCISÃO DO CONTRATO](https://www.diariomunicipal.com.br/amp/materia/E6A79522) · 2026-08-24
+- DEPARTAMENTO DE RECURSOS HUMANOS · [PORTARIA Nº 768 DE 21 DE AGOSTO DE 2026.](https://www.diariomunicipal.com.br/amp/materia/CAF1DC7B) · 2026-08-24
+- DEPARTAMENTO DE RECURSOS HUMANOS · [PORTARIA Nº 769, DE 21 DE AGOSTO DE 2026.](https://www.diariomunicipal.com.br/amp/materia/82BD642C) · 2026-08-24
+- ADMINISTRAÇÃO GERAL · [EDITAL N°026/2026](https://www.diariomunicipal.com.br/amp/materia/C4524AE8) · 2026-08-24
+- DEPARTAMENTO DE RECURSOS HUMANOS · [PORTARIA Nº 34.990/2025 – RH](https://www.diariomunicipal.com.br/amp/materia/5BE09A26) · 2026-08-24
+- DEPARTAMENTO DE RECURSOS HUMANOS E ADM · [EXTRATO DE RESCISÃO CONTRATO TEMPORÁRIO Nº](https://www.diariomunicipal.com.br/amp/materia/B46859DD) · 2026-08-24
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [PROCESSO SELETIVO SIMPLIFICADO 001/2026](https://www.diariomunicipal.com.br/amp/materia/F9609E55) · 2026-08-24
+- MUNICIPIO DE SANTO ANTONIO DO SUDOESTE · [EXTRATO DO CONTRATO Nº 0258/2026 DISPENSA Nº](https://www.diariomunicipal.com.br/amp/materia/4D81475B) · 2026-08-24
+- PREFEITURA MUNICIPAL DE SÃO SEBASTIÃO DA AMOREIRA · [PORTARIA Nº 225/2026](https://www.diariomunicipal.com.br/amp/materia/07488E3E) · 2026-08-24
+- MUNICÍPIO DE CORUMBATAÍ DO SUL · [EDITAL Nº. 04/2026 - PSS Nº 01-2026](https://www.diariomunicipal.com.br/amp/materia/6B763579) · 2026-08-24
+- MUNICIPIO DE SANTO ANTONIO DO SUDOESTE · [TERMO DE HOMOLOGAÇÃO PROCESSO DE DISPENSA Nº 45/2026](https://www.diariomunicipal.com.br/amp/materia/4BDC43C0) · 2026-08-24
+- DEPARTAMENTO DE RECURSOS HUMANOS · [PORTARIA 144/2026](https://www.diariomunicipal.com.br/amp/materia/CFF5EFC0) · 2026-08-25
+- ADMINISTRAÇÃO · [EDITAL DE CONVOCAÇÃO N.º 002/2026 - PROCESSO](https://www.diariomunicipal.com.br/amp/materia/5E784983) · 2026-08-25
+- ADMINISTRAÇÃO · [EDITAL DE CONVOCAÇÃO N.º 003/2026 - PROCESSO](https://www.diariomunicipal.com.br/amp/materia/7600CE84) · 2026-08-25
+- ADMINISTRAÇÃO · [EDITAL DE CONVOCAÇÃO N.º 08/2026 - PROCESSO](https://www.diariomunicipal.com.br/amp/materia/D4D917AB) · 2026-08-25
+- ADMINISTRAÇÃO · [Edital nº. 12/2026, que estabelece instruções destinadas à realização](https://www.diariomunicipal.com.br/amp/materia/446332E1) · 2026-08-25
+- PREFEITURA MUNICIPAL DE BARRA DO JACARÉ · [PORTARIA Nº. 122/2026, DE 24 DE AGOSTO DE 2026.](https://www.diariomunicipal.com.br/amp/materia/1D7B17BE) · 2026-08-25
+- DEPARTAMENTO DE GESTÃO DE PESSOAS · [EDITAL 005/2026 - PSS 002/2026](https://www.diariomunicipal.com.br/amp/materia/99BF8D0D) · 2026-08-25
+- CONSORCIO INTERMUNICIPAL DE SAUDE DA REGIAO · [RESOLUÇÃO 153/2026](https://www.diariomunicipal.com.br/amp/materia/3D712ED7) · 2026-08-25
+- GOVERNO MUNICIPAL - GABINETE DO PREFEITO · [PORTARIA Nº. 1293/2026](https://www.diariomunicipal.com.br/amp/materia/CF2AB1E7) · 2026-08-25
+- GOVERNO MUNICIPAL - GABINETE DO PREFEITO · [PORTARIA Nº. 1296/2026](https://www.diariomunicipal.com.br/amp/materia/4A7CE9B7) · 2026-08-25
+- GOVERNO MUNICIPAL - GABINETE DO PREFEITO · [PORTARIA Nº. 1305/2026](https://www.diariomunicipal.com.br/amp/materia/FD47E44E) · 2026-08-25
+- GOVERNO MUNICIPAL - GABINETE DO PREFEITO · [PORTARIA Nº. 1306/2026](https://www.diariomunicipal.com.br/amp/materia/11E922D7) · 2026-08-25
+- GOVERNO MUNICIPAL - GABINETE DO PREFEITO · [PORTARIA Nº. 1313/2026](https://www.diariomunicipal.com.br/amp/materia/F7116E92) · 2026-08-25
+- PROCURADORIA · [DECRETO Nº 615/2026](https://www.diariomunicipal.com.br/amp/materia/378A10B1) · 2026-08-25
+- PREFEITURA MUNICIPAL DE ITAMBÉ · [PROCESSO SELETIVO SIMPLIFICADO Nº 001/2025](https://www.diariomunicipal.com.br/amp/materia/EA4FE7A3) · 2026-08-25
+- DEPARTAMENTO DE ADMINISTRAÇÃO · [TERMO DE DESISTÊNCIA](https://www.diariomunicipal.com.br/amp/materia/8C58365A) · 2026-08-25
+- GABINETE DO PREFEITO · [EDITAL N º. 283/2026 CONVOCAÇÃO PROCESSO](https://www.diariomunicipal.com.br/amp/materia/4FE497E6) · 2026-08-25
+- GABINETE DO PREFEITO · [EDITAL N º. 284/2026 - CONVOCAÇÃO PROCESSO](https://www.diariomunicipal.com.br/amp/materia/FE735A57) · 2026-08-25
+- GABINETE DO PREFEITO · [EDITAL N º. 285/2026 CONVOCAÇÃO PROCESSO](https://www.diariomunicipal.com.br/amp/materia/A61B7B05) · 2026-08-25
+- GABINETE DO PREFEITO · [EDITAL N º. 286/2026 CONVOCAÇÃO PROCESSO](https://www.diariomunicipal.com.br/amp/materia/1EA17033) · 2026-08-25
+- DEPARTAMENTO DE ADMINISTRAÇÃO E PLANEJAMENTO · [PLANEJAMENTO](https://www.diariomunicipal.com.br/amp/materia/AD1019E1) · 2026-08-25
+- PREFEITURA MUNICIPAL DE MORRETES · [EDITAL Nº 107, DE 24 DE AGOSTO 2026. EDITAL DE](https://www.diariomunicipal.com.br/amp/materia/7C4E33E5) · 2026-08-25
+- FUNDAÇÃO DE EDUCAÇÃO DE PAIÇANDU · [PORTARIA Nº 435/2026](https://www.diariomunicipal.com.br/amp/materia/EAC182FB) · 2026-08-25
+- FUNDAÇÃO DE EDUCAÇÃO DE PAIÇANDU · [PORTARIA Nº 441/2026](https://www.diariomunicipal.com.br/amp/materia/C3942FD4) · 2026-08-25
+- FUNDAÇÃO DE EDUCAÇÃO DE PAIÇANDU · [PORTARIA Nº 442/2026](https://www.diariomunicipal.com.br/amp/materia/894C3C5A) · 2026-08-25
+- DEPARTAMENTO DE ADMINISTRAÇÃO · [PROCESSO SELETIVO SIMPLIFICADO Nº 02/2026 EDITAL](https://www.diariomunicipal.com.br/amp/materia/880D6A6E) · 2026-08-25
+- DEPARTAMENTO DE ADMINISTRAÇÃO · [PROCESSO SELETIVO SIMPLIFICADO Nº 07/2025 EDITAL](https://www.diariomunicipal.com.br/amp/materia/CFFE3466) · 2026-08-25
+- PREFEITURA MUNICIPAL DE RENASCENÇA · [PROCESSO SELETIVO SIMPLIFICADO Nº 001/2025 EDITAL](https://www.diariomunicipal.com.br/amp/materia/42A78A85) · 2026-08-25
+- DEPARTAMENTO DE RECURSOS HUMANOS · [PROCESSO SELETIVO SIMPLIFICADO Nº 001/2025 EDITAL](https://www.diariomunicipal.com.br/amp/materia/FD3CF5F2) · 2026-08-25
+- DEPARTAMENTO DE RECURSOS HUMANOS · [PORTARIA Nº 34.990/2025 – RH](https://www.diariomunicipal.com.br/amp/materia/E7DC41FB) · 2026-08-25
+- SECRETARIA GERAL · [PSS N º 001/2026 – SECRETARIA MUNICIPAL DE SAÚDE 10ª](https://www.diariomunicipal.com.br/amp/materia/4B5F724F) · 2026-08-25
+- PREFEITURA MUNICIPAL DE SALTO DO LONTRA · [DECRETO 1447/2026](https://www.diariomunicipal.com.br/amp/materia/D464E60C) · 2026-08-25
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [DECRETO Nº245/2026](https://www.diariomunicipal.com.br/amp/materia/BA9B0A5A) · 2026-08-25
+- ADMINISTRAÇÃO GERAL · [EDITAL Nº 099/2026(CONVOCAÇÃO)](https://www.diariomunicipal.com.br/amp/materia/59B56931) · 2026-08-25
+- GABINETE DO PREFEITO · [DECRETO N.º 5.165/2026](https://www.diariomunicipal.com.br/amp/materia/D94076E7) · 2026-08-25
+- GABINETE DO PREFEITO · [PROCESSO SELETIVO SIMPLIFICADO Nº 02/2026 – EDITAL](https://www.diariomunicipal.com.br/amp/materia/DBBF7DBB) · 2026-08-25
+- MUNICÍPIO DE NOSSA SENHORA DAS GRAÇAS · [LEI Nº 1.215, DE 24 DE AGOSTO DE 2026](https://www.diariomunicipal.com.br/amp/materia/0C776F61) · 2026-08-25
+- PREFEITURA MUNICIPAL DE PAULA FREITAS · [PORTARIA N. º 212/2026 – DE 24 DE AGOSTO DE 2026.](https://www.diariomunicipal.com.br/amp/materia/CC2C5888) · 2026-08-25
+- PREFEITURA MUNICIPAL DE TUNAS DO PARANÁ · [PROCESSO SELETIVO SIMPLIFICADO Nº 002/2026 EDITAL – C (LISTA PROVISÓRIA)](https://www.diariomunicipal.com.br/amp/materia/77022977) · 2026-08-25
+- DEPARTAMENTO DE RH · [EXTRATO PRIMEIRO ADITIVO - CT 15 2025 - PSS 01 2025](https://www.diariomunicipal.com.br/amp/materia/A6D3A088) · 2026-08-26
+- DEPARTAMENTO DE RH · [EXTRATO PRIMEIRO ADITIVO - CT 16 2025 - PSS 01 2025](https://www.diariomunicipal.com.br/amp/materia/206B4DA0) · 2026-08-26
+- DEPARTAMENTO DE RH · [EXTRATO PRIMEIRO ADITIVO - CT 18 2025 - PSS 01 2025](https://www.diariomunicipal.com.br/amp/materia/928DA7EC) · 2026-08-26
+- GABINETE DA PREFEITA · [EDITAL DE CONVOCAÇÃO N. 012/2026 PSS - MOTORISTA](https://www.diariomunicipal.com.br/amp/materia/098FFF7C) · 2026-08-26
+- ADMINISTRAÇÃO · [Edital nº. 11/2026, que estabelece instruções destinadas à realização](https://www.diariomunicipal.com.br/amp/materia/AEEBA19C) · 2026-08-26
+- PREFEITURA MUNICIPAL DE BARRA DO JACARÉ · [EDITAL Nº. 04.11/2026 - EDITAL DE CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/EF994FA0) · 2026-08-26
+- DEPARTAMENTO DE ADMINISTRAÇÃO · [DECRETO Nº0262/2026 NOMEAR, A SENHORA JACIARA DO](https://www.diariomunicipal.com.br/amp/materia/CB841A90) · 2026-08-26
+- DEPARTAMENTO DE ADMINISTRAÇÃO · [PROCESSO SELETIVO SIMPLIFICADO - PSS N°001/2025](https://www.diariomunicipal.com.br/amp/materia/5AC4FE0E) · 2026-08-26
+- DEPARTAMENTO DE ADMINISTRAÇÃO · [PROCESSO SELETIVO SIMPLIFICADO - PSS N° 004/2026](https://www.diariomunicipal.com.br/amp/materia/2CAA59F3) · 2026-08-26
+- MUNICÍPIO DE FERNANDES PINHEIRO · [EDITAL Nº 39/2026 -PROCESSO SELETIVO SIMPLIFICADO](https://www.diariomunicipal.com.br/amp/materia/3F99D384) · 2026-08-26
+- DEPARTAMENTO DE ADMINISTRAÇÃO · [LEI MUNICIPAL Nº 1.114, DE 25 DE AGOSTO DE 2026.](https://www.diariomunicipal.com.br/amp/materia/9FD08D55) · 2026-08-26
+- CONSORCIO INTERMUNICIPAL DE SAUDE DA REGIAO · [RESOLUÇÃO 158/2026](https://www.diariomunicipal.com.br/amp/materia/23553866) · 2026-08-26
+- CONSORCIO INTERMUNICIPAL DE SAUDE DA REGIAO · [RESOLUÇÃO 159/2026](https://www.diariomunicipal.com.br/amp/materia/3C0CA651) · 2026-08-26
+- CONSORCIO INTERMUNICIPAL DE SAUDE DA REGIAO · [RESOLUÇÃO 160/2026](https://www.diariomunicipal.com.br/amp/materia/EFFD4973) · 2026-08-26
+- DEPARTAMENTO DE RECURSOS HUMANOS · [AVISO DE ABERTURA PROCESSO SELETIVO DE](https://www.diariomunicipal.com.br/amp/materia/B5FEE1A9) · 2026-08-26
+- GOVERNO MUNICIPAL · [LEI N.º 1136/2026](https://www.diariomunicipal.com.br/amp/materia/D5D5A375) · 2026-08-26
+- GOVERNO MUNICIPAL - GABINETE DO PREFEITO · [PORTARIA Nº. 1352/2026](https://www.diariomunicipal.com.br/amp/materia/6F9A3715) · 2026-08-26
+- GOVERNO MUNICIPAL - GABINETE DO PREFEITO · [PORTARIA Nº. 1354/2026](https://www.diariomunicipal.com.br/amp/materia/FE63C083) · 2026-08-26
+- PROCURADORIA · [DECRETO Nº 620/2026](https://www.diariomunicipal.com.br/amp/materia/C8A61CB5) · 2026-08-26
+- PREFEITURA MUNICIPAL DE IVATUBA · [EDITAL DE CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/19DAB91D) · 2026-08-26
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [DECLARAÇÃO PROCESSO SELETIVO SIMPLIFICADO –](https://www.diariomunicipal.com.br/amp/materia/8000FB33) · 2026-08-26
+- DEPARTAMENTO DE ADMINISTRAÇÃO E PLANEJAMENTO · [PLANEJAMENTO](https://www.diariomunicipal.com.br/amp/materia/496E85DC) · 2026-08-26
+- DEPARTAMENTO DE ADMINISTRAÇÃO E PLANEJAMENTO · [PLANEJAMENTO](https://www.diariomunicipal.com.br/amp/materia/513EDF45) · 2026-08-26
+- DEPARTAMENTO DE ADMINISTRAÇÃO E PLANEJAMENTO · [PLANEJAMENTO](https://www.diariomunicipal.com.br/amp/materia/A40A4E7F) · 2026-08-26
+- FUNDAÇÃO DE ATENÇÃO A SAÚDE DE MORRETES · [EDITAL Nº 07, DE 25 DE AGOSTO DE 2026. EDITAL DE](https://www.diariomunicipal.com.br/amp/materia/6FF3E2CA) · 2026-08-26
+- FUNDAÇÃO DE EDUCAÇÃO DE PAIÇANDU · [PORTARIA Nº 443/2026](https://www.diariomunicipal.com.br/amp/materia/82052173) · 2026-08-26
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [COMUNICADO – CHAMADA AUXILIAR DE CUIDADOR DE](https://www.diariomunicipal.com.br/amp/materia/6E3FE6B3) · 2026-08-26
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [PROCESSO SELETIVO SIMPLIFICADO Nº. 01/2026](https://www.diariomunicipal.com.br/amp/materia/6BEE356C) · 2026-08-26
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [COMUNICADO – CHAMADA PROFESSOR 20H - PROCESSO](https://www.diariomunicipal.com.br/amp/materia/9CEEAE6B) · 2026-08-26
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [termos do Edital nº 01/2025 – SECRETARIA MUNICIPAL DE](https://www.diariomunicipal.com.br/amp/materia/E67EEA01) · 2026-08-26
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [termos do Edital nº 01/2026 de 05 de janeiro de 2026, convocou o](https://www.diariomunicipal.com.br/amp/materia/6D7D2013) · 2026-08-26
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [termos do Edital nº 01/2026 de 05 de janeiro de 2026, convocou o](https://www.diariomunicipal.com.br/amp/materia/3915BAEF) · 2026-08-26
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [termos do Edital nº 01/2025 – SECRETARIA MUNICIPAL DE](https://www.diariomunicipal.com.br/amp/materia/D4150DD7) · 2026-08-26
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [TERMO DE DESISTÊNCIA - PROCESSO SELETIVO](https://www.diariomunicipal.com.br/amp/materia/313EC0D4) · 2026-08-26
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO DE RESCISÃO DO CONTRATO](https://www.diariomunicipal.com.br/amp/materia/9FDE2F73) · 2026-08-26
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO DE RESCISÃO DO CONTRATO](https://www.diariomunicipal.com.br/amp/materia/C9AC56E8) · 2026-08-26
+- ADMINISTRATIVO · [PORTARIA Nº 478 DE 25 DE AGOSTO DE 2026](https://www.diariomunicipal.com.br/amp/materia/05644F3F) · 2026-08-26
+- DEPARTAMENTO DE ADMINISTRAÇÃO · [EXTRATO DE RESCISÃO/EXONERAÇÃO CONTRATO](https://www.diariomunicipal.com.br/amp/materia/DEDCA7B5) · 2026-08-26
+- DEPARTAMENTO DE ADMINISTRAÇÃO · [PROCESSO SELETIVO SIMPLIFICADO Nº 04/2026 EDITAL](https://www.diariomunicipal.com.br/amp/materia/481C0A34) · 2026-08-26
+- PREFEITURA MUNICIPAL DE RIO NEGRO · [DECRETO Nº 135/2026](https://www.diariomunicipal.com.br/amp/materia/7BE51F70) · 2026-08-26
+- DEPARTAMENTO ADMINISTRATIVO · [EDITAL N.º 105/2026](https://www.diariomunicipal.com.br/amp/materia/CE0D9293) · 2026-08-26
+- DEPARTAMENTO ADMINISTRATIVO · [PORTARIA N.º 905/2026](https://www.diariomunicipal.com.br/amp/materia/FD024EC3) · 2026-08-26
+- SECRETARIA GERAL · [PREFEITURA MUNICIPAL DE ROLÂNDIA EDITAL 001/2026](https://www.diariomunicipal.com.br/amp/materia/CC83FD24) · 2026-08-26
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [PROCESSO SELETIVO SIMPLIFICADO](https://www.diariomunicipal.com.br/amp/materia/00450227) · 2026-08-26
+- PREFEITURA MUNICIPAL DE SÃO JERÔNIMO DA SERRA · [PROCESSO SELETIVO SIMPLIFICADO – PSS – EDITAL Nº](https://www.diariomunicipal.com.br/amp/materia/F69F48DD) · 2026-08-26
+- PREFEITURA MUNICIPAL DE SÃO JOSÉ DA BOA VISTA · [EDITAL 095/2026](https://www.diariomunicipal.com.br/amp/materia/9590F27D) · 2026-08-26
+- ADMINISTRAÇÃO GERAL · [LEI N.º 1696/2026](https://www.diariomunicipal.com.br/amp/materia/4F8786CB) · 2026-08-26
+- GABINETE DO PREFEITO · [DECRETO Nº 6342, 25 DE AGOSTO DE 2026](https://www.diariomunicipal.com.br/amp/materia/FE63BDD5) · 2026-08-26
+- GABINETE DO PREFEITO · [DECRETO Nº 6343, 25 DE AGOSTO DE 2026](https://www.diariomunicipal.com.br/amp/materia/AE55FA0C) · 2026-08-26
+- PREFEITURA MUNICIPAL DE TOMAZINA · [EDITAL DE CONVOCAÇÃO Nº 008-2026 - PROCESSO](https://www.diariomunicipal.com.br/amp/materia/EB17FF9C) · 2026-08-26
+- PODER EXECUTIVO · [EDITAL DE CONVOCAÇÃO Nº 008-2026 - PROCESSO](https://www.diariomunicipal.com.br/amp/materia/D8137DE1) · 2026-08-26
+- MUNICIPIO DE GOIOXIM · [PROCESSO SELETIVO SIMPLIFICADO – PSS EDITAL Nº 001/2026 EDITAL DE DIVULGAÇÃO Nº 004/2026 RELAÇÃO](https://www.diariomunicipal.com.br/amp/materia/AC3C486C) · 2026-08-26
+- DEPARTAMENTO DE ADMINISTRAÇÃO · [PROCESSO SELETIVO SIMPLIFICADO Nº 07/2025 EDITAL Nº 21 – CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/2E24B291) · 2026-08-26
+- PREFEITURA MUNICIPAL DE SALGADO FILHO · [EDITAL Nº 07/2026 EDITAL NOTA PROVA TÍTULOS PROCESSO SELETIVO SIMPLIFICADO Nº 01/2026](https://www.diariomunicipal.com.br/amp/materia/24103228) · 2026-08-26
+- DEPARTAMENTO DE RECURSOS HUMANOS E ADM · [EDITAL Nº 08/2026 EDITAL NOTA PROVA PRÁTICA PROCESSO SELETIVO SIMPLIFICADO Nº 01/2026](https://www.diariomunicipal.com.br/amp/materia/6A442052) · 2026-08-26
+- DEPARTAMENTO DE RECURSOS HUMANOS · [EDITAL DE CONVOCAÇÃO Nº 01/2026 - PSS Nº 01/2026](https://www.diariomunicipal.com.br/amp/materia/09B584F4) · 2026-08-27
+- ADMINISTRAÇÃO MUNICIPAL · [PORTARIA Nº 538/2026](https://www.diariomunicipal.com.br/amp/materia/E4D4101B) · 2026-08-27
+- DIVISÃO DE RECURSOS HUMANOS · [EDITAL DE CONVOCAÇÃO DE APROVADOS Nº 005 2026](https://www.diariomunicipal.com.br/amp/materia/3B1D13D0) · 2026-08-27
+- DIVISÃO DE RECURSOS HUMANOS · [EDITAL DE CONVOCAÇÃO DE APROVADOS Nº 006 2026](https://www.diariomunicipal.com.br/amp/materia/684C3CDF) · 2026-08-27
+- GABINETE · [DECRETO DE HOMOLOGAÇÃO N°. 172/2026](https://www.diariomunicipal.com.br/amp/materia/D1079397) · 2026-08-27
+- RECURSOS HUMANOS · [EDITAL Nº. 03.34/2026 - EDITAL DE CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/088E4D72) · 2026-08-27
+- RECURSOS HUMANOS · [DECRETO Nº 756/2026](https://www.diariomunicipal.com.br/amp/materia/7C431477) · 2026-08-27
+- RECURSOS HUMANOS · [PROCESSO SELETIVO SIMPLIFICADO – PSS Nº 001/2025](https://www.diariomunicipal.com.br/amp/materia/AF006315) · 2026-08-27
+- SECRETÁRIA DE ADMINISTRAÇÃO E FINANÇAS · [DECRETO Nº 23763/2026](https://www.diariomunicipal.com.br/amp/materia/7244A935) · 2026-08-27
+- MUNICÍPIO DE FERNANDES PINHEIRO · [DECRETO Nº 221/2026](https://www.diariomunicipal.com.br/amp/materia/CB563652) · 2026-08-27
+- PREFEITURA MUNICIPAL DE ITAMBÉ · [PROCESSO SELETIVO SIMPLIFICADO Nº 001/2025](https://www.diariomunicipal.com.br/amp/materia/313585B9) · 2026-08-27
+- DEPARTAMENTO DE ADMINISTRAÇÃO · [TERMO DE DESISTÊNCIA](https://www.diariomunicipal.com.br/amp/materia/04FB5FE7) · 2026-08-27
+- PREFEITURA MUNICIPAL DE IVATUBA · [GABINETE DO PREFEITO](https://www.diariomunicipal.com.br/amp/materia/9037B0B7) · 2026-08-27
+- GABINETE DO PREFEITO · [EDITAL DE CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/5E3E8DE8) · 2026-08-27
+- GOVERNO MUNICIPAL · [EDITAL DE CONVOCAÇÃO Nº 03/2026 PROCESSO](https://www.diariomunicipal.com.br/amp/materia/F817FE09) · 2026-08-27
+- GOVERNO MUNICIPAL · [EDITAL DE CONVOCAÇÃO Nº 04/2026 PROCESSO](https://www.diariomunicipal.com.br/amp/materia/C9FF1948) · 2026-08-27
+- SECRETARIA DE ADMINISTRAÇÃO · [EDITAL DE CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/F60C1691) · 2026-08-27
+- SECRETARIA DE ADMINISTRAÇÃO · [EDITAL DE CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/3298271A) · 2026-08-27
+- SECRETARIA DE ADMINISTRAÇÃO · [EDITAL DE CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/24032CA5) · 2026-08-27
+- SECRETARIA DE ADMINISTRAÇÃO · [EDITAL DE CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/B47D9A04) · 2026-08-27
+- GABINETE DO PREFEITO · [EDITAL Nº 287/2026 - PROCESSO SELETIVO](https://www.diariomunicipal.com.br/amp/materia/11B1976D) · 2026-08-27
+- GABINETE DO PREFEITO · [EDITAL Nº 288/2026 PROCESSO SELETIVO SIMPLIFICADO-](https://www.diariomunicipal.com.br/amp/materia/19EA6150) · 2026-08-27
+- PREFEITURA MUNICIPAL DE PAIÇANDU · [EDITAL DE CONVOCAÇÃO Nº 240/2026](https://www.diariomunicipal.com.br/amp/materia/4665237E) · 2026-08-27
+- PREFEITURA MUNICIPAL DE PAIÇANDU · [EDITAL DE CONVOCAÇÃO Nº241/2026](https://www.diariomunicipal.com.br/amp/materia/8752916B) · 2026-08-27
+- PREFEITURA MUNICIPAL DE PAIÇANDU · [EDITAL DE CONVOCAÇÃO Nº 242/2026](https://www.diariomunicipal.com.br/amp/materia/E2FD2B63) · 2026-08-27
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [PROCESSO SELETIVO SIMPLIFICADO Nº. 02/2025](https://www.diariomunicipal.com.br/amp/materia/EC363A1D) · 2026-08-27
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [PROCESSO SELETIVO SIMPLIFICADO Nº. 02/2025](https://www.diariomunicipal.com.br/amp/materia/84DE28C7) · 2026-08-27
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [COMUNICADO – CHAMADA PROFESSOR 40H - PROCESSO](https://www.diariomunicipal.com.br/amp/materia/1F83BBCF) · 2026-08-27
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [COMUNICADO – CHAMADA PROFESSOR 40H - PROCESSO](https://www.diariomunicipal.com.br/amp/materia/A79E9887) · 2026-08-27
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EDITAL DE CONVOCAÇÃO Nº 174/2026](https://www.diariomunicipal.com.br/amp/materia/B8C4FA02) · 2026-08-27
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EDITAL DE CONVOCAÇÃO Nº 175/2026](https://www.diariomunicipal.com.br/amp/materia/67F5C500) · 2026-08-27
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [PORTARIA MUNICIPAL Nº 1578/2026](https://www.diariomunicipal.com.br/amp/materia/8EF0EAC8) · 2026-08-27
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [PORTARIA MUNICIPAL Nº 1579/2026](https://www.diariomunicipal.com.br/amp/materia/DDC485ED) · 2026-08-27
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [PORTARIA MUNICIPAL Nº 1580/2026](https://www.diariomunicipal.com.br/amp/materia/556EF867) · 2026-08-27
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [PORTARIA MUNICIPAL Nº 1588/2026](https://www.diariomunicipal.com.br/amp/materia/7C8E60C9) · 2026-08-27
+- PREFEITURA MUNICIPAL DE RESERVA DO IGUAÇU · [EXTRATO DO CONTRATO ADMINISTRATIVO N.º 204/2026 -](https://www.diariomunicipal.com.br/amp/materia/8A3CDF9A) · 2026-08-27
+- GABINETE DO PREFEITO · [EDITAL N º 005/2026 – 05ª CONVOCAÇÃO –PSS Nº 001/2026–](https://www.diariomunicipal.com.br/amp/materia/E3F1A69A) · 2026-08-27
+- DIVISÃO DE PESSOAL · [DECRETO Nº 236/2026](https://www.diariomunicipal.com.br/amp/materia/0B7BEF6A) · 2026-08-27
+- DIVISÃO DE PESSOAL · [DECRETO Nº 239/2026](https://www.diariomunicipal.com.br/amp/materia/B1D2BE12) · 2026-08-27
+- ADMINISTRAÇÃO GERAL · [EDITAL Nº 100/2026 (CONVOCAÇÃO)](https://www.diariomunicipal.com.br/amp/materia/BF33DBAE) · 2026-08-27
+- PREFEITURA MUNICIPAL DE TERRA RICA · [EDITAL DE CONVOCAÇÃO Nº 068/2026](https://www.diariomunicipal.com.br/amp/materia/7CDF2BE6) · 2026-08-27
+- PREFEITURA MUNICIPAL DE TOMAZINA · [EDITAL DE CONVOCAÇÃO Nº 008-2026 - PROCESSO](https://www.diariomunicipal.com.br/amp/materia/E71DEF7D) · 2026-08-27
+- PODER EXECUTIVO · [EDITAL DE CONVOCAÇÃO Nº 008-2026 - PROCESSO](https://www.diariomunicipal.com.br/amp/materia/4ECB62EE) · 2026-08-27
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [EDITAL N.º 100/2026](https://www.diariomunicipal.com.br/amp/materia/19C1F061) · 2026-08-27
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [EDITAL N.º 101/2026](https://www.diariomunicipal.com.br/amp/materia/7B484D5F) · 2026-08-27
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [PORTARIA Nº 1.119/2026](https://www.diariomunicipal.com.br/amp/materia/12A60DE5) · 2026-08-27
+- MUNICÍPIO DE CHOPINZINHO · [EDITAL 154/2026 - CLASSIFICAÇÃO PROVISÓRIA PSS EDUCADOR/CUIDADOR SOCIAL TEMPORÁRIO](https://www.diariomunicipal.com.br/amp/materia/EAB69C38) · 2026-08-27
+- DIVISÃO DE RECURSOS HUMANOS E SEGURANÇA DO TRABALHO · [EDITAL 155/2026 - CLASSIFICAÇÃO PROVISÓRIA PSS ENFERMEIRO TEMPORÁRIO](https://www.diariomunicipal.com.br/amp/materia/7731145A) · 2026-08-27
+- ADMINISTRAÇÃO · [PROCESSO SELETIVO SIMPLIFICADO – PSS, para contratações temporárias para exercer a função de AUXILIAR EM FARMÁCIA , em](https://www.diariomunicipal.com.br/amp/materia/A980D5BE) · 2026-08-27
+- PREFEITURA MUNICIPAL DE PALMEIRA · [SECRETARIA MUNICIPAL DE SAÚDE](https://www.diariomunicipal.com.br/amp/materia/7CC8AFE2) · 2026-08-27
+- SECRETARIA MUNICIPAL DE SAÚDE · [SECRETARIA MUNICIPAL DE SAÚDE INSCRIÇÕES HOMOLOGADAS E NÃO HOMOLOGADAS APÓS RECURSO – PROCESSO](https://www.diariomunicipal.com.br/amp/materia/2F814951) · 2026-08-27
+- DEPARTAMENTO DE RECURSOS HUMANOS · [EDITAL DE CONVOCAÇÃO Nº 02/2026 - PSS Nº 01/2026](https://www.diariomunicipal.com.br/amp/materia/8F9822F5) · 2026-08-28
+- PREFEITURA MUNICIPAL DE BALSA NOVA · [EDITAL DE CONVOCAÇÃO N.º 003/2026 - PROCESSO](https://www.diariomunicipal.com.br/amp/materia/C329854B) · 2026-08-28
+- PREFEITURA MUNICIPAL DE BARRA DO JACARÉ · [EDITAL Nº. 04.12/2026 - EDITAL DE CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/A4858DF4) · 2026-08-28
+- SECRETARIA DE GOVERNO · [EDITAL Nº 012.005/2026 – CONVOCAÇÃO PSS](https://www.diariomunicipal.com.br/amp/materia/2A0882A0) · 2026-08-28
+- DEPARTAMENTO DE ADMINISTRAÇÃO · [PROCESSO SELETIVO SIMPLIFICADO - PSS N° 003/2025](https://www.diariomunicipal.com.br/amp/materia/F88FDC6E) · 2026-08-28
+- SECRETARIA DE ADMINISTRAÇÃO E PLANEJAMENTO · [EDITAL Nº 071/2026](https://www.diariomunicipal.com.br/amp/materia/1104BB3E) · 2026-08-28
+- GOVERNO MUNICIPAL - GABINETE DO PREFEITO · [PORTARIA Nº. 1363/2026](https://www.diariomunicipal.com.br/amp/materia/D28A16F4) · 2026-08-28
+- GOVERNO MUNICIPAL - GABINETE DO PREFEITO · [PORTARIA Nº. 1364/2026](https://www.diariomunicipal.com.br/amp/materia/D4C0C360) · 2026-08-28
+- DEPARTAMENTO MUNICIPAL DE ADMINISTRAÇÃO · [TERMO DE HOMOLOGAÇÃO EDITAL DE DISPENSA](https://www.diariomunicipal.com.br/amp/materia/DE7A4B35) · 2026-08-28
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [EDITAL DE CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/A5BB95F9) · 2026-08-28
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [EXTRATO TERMO ADITIVO AO CONTRATO DE](https://www.diariomunicipal.com.br/amp/materia/601F031C) · 2026-08-28
+- SECRETARIA DE ADMINISTRAÇÃO · [EDITAL DE CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/C8496B92) · 2026-08-28
+- SECRETARIA DE ADMINISTRAÇÃO · [EDITAL DE CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/BE919A29) · 2026-08-28
+- SECRETARIA DE ADMINISTRAÇÃO · [EDITAL DE CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/085948DB) · 2026-08-28
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [PORTARIA Nº. 279/2026 DE 27 DE AGOSTO DE 2026,](https://www.diariomunicipal.com.br/amp/materia/8490D925) · 2026-08-28
+- RECURSOS HUMANOS · [DECRETO Nº 044/2026](https://www.diariomunicipal.com.br/amp/materia/6AE606D8) · 2026-08-28
+- GABINETE DO PREFEITO · [EDITAL N º. 289/2026 - CONVOCAÇÃO PROCESSO](https://www.diariomunicipal.com.br/amp/materia/F5100087) · 2026-08-28
+- PREFEITURA MUNICIPAL DE MARILENA · [termos do artigo 37 inciso IX da Constituição](https://www.diariomunicipal.com.br/amp/materia/F9C2098E) · 2026-08-28
+- DEPARTAMENTO DE ADMINISTRAÇÃO E PLANEJAMENTO · [PLANEJAMENTO](https://www.diariomunicipal.com.br/amp/materia/1389F7E7) · 2026-08-28
+- DEPARTAMENTO DE ADMINISTRAÇÃO E PLANEJAMENTO · [PLANEJAMENTO](https://www.diariomunicipal.com.br/amp/materia/3B738042) · 2026-08-28
+- SECRETARIA MUNICIPAL DE SAUDE · [EDITAL DE CONVOCAÇÃO Nº 10, DE 27 DE AGOSTO DE](https://www.diariomunicipal.com.br/amp/materia/17B362D6) · 2026-08-28
+- FUNDAÇÃO DE SÁUDE DE PAIÇANDU · [EDITAL DE CONVOCAÇÃO Nº243/2026](https://www.diariomunicipal.com.br/amp/materia/A96C6C59) · 2026-08-28
+- FUNDAÇÃO DE SÁUDE DE PAIÇANDU · [EDITAL DE CONVOCAÇÃO Nº 244/2026](https://www.diariomunicipal.com.br/amp/materia/A5B418EA) · 2026-08-28
+- FUNDAÇÃO DE SÁUDE DE PAIÇANDU · [EDITAL DE CONVOCAÇÃO Nº 245/2026](https://www.diariomunicipal.com.br/amp/materia/727B3220) · 2026-08-28
+- FUNDAÇÃO DE SÁUDE DE PAIÇANDU · [EDITAL DE CONVOCAÇÃO Nº 246/2026](https://www.diariomunicipal.com.br/amp/materia/FCF2B143) · 2026-08-28
+- FUNDAÇÃO DE SÁUDE DE PAIÇANDU · [EDITAL DE CONVOCAÇÃO Nº 247/2026](https://www.diariomunicipal.com.br/amp/materia/264DC88F) · 2026-08-28
+- FUNDAÇÃO DE SÁUDE DE PAIÇANDU · [PORTARIA Nº 344/2026](https://www.diariomunicipal.com.br/amp/materia/DAE5F16C) · 2026-08-28
+- FUNDAÇÃO DE SÁUDE DE PAIÇANDU · [PORTARIA Nº 345/2026](https://www.diariomunicipal.com.br/amp/materia/9D079937) · 2026-08-28
+- FUNDAÇÃO DE SÁUDE DE PAIÇANDU · [PORTARIA Nº 346/2026](https://www.diariomunicipal.com.br/amp/materia/E49CA2E2) · 2026-08-28
+- FUNDAÇÃO DE SÁUDE DE PAIÇANDU · [PORTARIA Nº 347/2026](https://www.diariomunicipal.com.br/amp/materia/A9360D08) · 2026-08-28
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [COMUNICADO – CHAMADA PROFESSOR 20H - PROCESSO](https://www.diariomunicipal.com.br/amp/materia/319ACB07) · 2026-08-28
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [TERMO DE DESISTÊNCIA - PROCESSO SELETIVO](https://www.diariomunicipal.com.br/amp/materia/5667AD37) · 2026-08-28
+- SECRETARIA MUNICIPAL DE RECURSOS HUMANOS · [EDITAL DE CONVOCAÇÃO Nº 12/2026](https://www.diariomunicipal.com.br/amp/materia/4CE2C541) · 2026-08-28
+- SECRETARIA MUNICIPAL DE RECURSOS HUMANOS · [PORTARIA N. º 214/2026 – DE 27 DE AGOSTO DE 2026.](https://www.diariomunicipal.com.br/amp/materia/B815876B) · 2026-08-28
+- SECRETARIA DE ADMINISTRAÇÃO · [EDITAL Nº 10/2026 - RELATÓRIO DE RECURSO - FASE](https://www.diariomunicipal.com.br/amp/materia/2063BC3F) · 2026-08-28
+- CONSÓRCIO INTERMUNICIPAL DE SANEAMENTO DO PARANÁ · [EDITAL DE CONVOCAÇÃO Nº 027/2026 37ª CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/CE16B4AA) · 2026-08-28
+- DEPARTAMENTO DE RECURSOS HUMANOS · [EDITAL Nº 220/2026 PRORROGAÇÃO DO PRAZO DE](https://www.diariomunicipal.com.br/amp/materia/88E60FBE) · 2026-08-28
+- RECURSOS HUMANOS · [EDITAL DE CONVOCAÇÃO N. º 10/2026](https://www.diariomunicipal.com.br/amp/materia/973BF94E) · 2026-08-28
+- PREFEITURA MUNICIPAL DE SÃO PEDRO DO PARANÁ · [EDITAL Nº 60/2026](https://www.diariomunicipal.com.br/amp/materia/D128263C) · 2026-08-28
+- PREFEITURA MUNICIPAL DE SAPOPEMA · [EDITAL Nº 101/2026(CONVOCAÇÃO)](https://www.diariomunicipal.com.br/amp/materia/9C40C471) · 2026-08-28
+- PODER EXECUTIVO · [ERRATA DO EDITAL DE CONVOCAÇÃO Nº 008-2026 -](https://www.diariomunicipal.com.br/amp/materia/BE00843A) · 2026-08-28
+- MUNICÍPIO DE TRÊS BARRAS DO PARANÁ · [PORTARIA Nº1327/2026](https://www.diariomunicipal.com.br/amp/materia/D804BA08) · 2026-08-28
+- ADMINISTRAÇÃO · [EDITAL PROCESSO SELETIVO SIMPLIFICADO Nº 15/2026](https://www.diariomunicipal.com.br/amp/materia/68F839B4) · 2026-08-28
+- ADMINISTRAÇÃO · [PROCESSO SELETIVO SIMPLIFICADO – PSS, para contratações temporárias para exercer a função de AUXILIAR DE OBRAS E](https://www.diariomunicipal.com.br/amp/materia/3B362BD1) · 2026-08-28
+- PREFEITURA MUNICIPAL DE TUNAS DO PARANÁ · [PROCESSO SELETIVO SIMPLIFICADO Nº 002/2026 EDITAL – D (CONVOCAÇÃO PARA PROVA OBJETIVA, LOCAL E](https://www.diariomunicipal.com.br/amp/materia/887DF006) · 2026-08-28
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [PORTARIA Nº 349/2026 - PRORROGA O PRAZO DE](https://www.diariomunicipal.com.br/amp/materia/6465FBB3) · 2026-08-31
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [PORTARIA Nº 392/2026 - PRORROGAR PSS 001/2025 E PSS](https://www.diariomunicipal.com.br/amp/materia/85E7961F) · 2026-08-31
+- GABINETE · [DECRETO DE HOMOLOGAÇÃO N°.175/2026](https://www.diariomunicipal.com.br/amp/materia/24BE50E4) · 2026-08-31
+- PREFEITURA MUNICIPAL DE CAPITÃO LEÔNIDAS · [DECRETO N.º 332/2026 DATA: 24-08-2026](https://www.diariomunicipal.com.br/amp/materia/1BCC940A) · 2026-08-31
+- GABINETE PREFEITO · [DECRETO N.º 334/2026 DATA: 24-08-2026](https://www.diariomunicipal.com.br/amp/materia/84302DEF) · 2026-08-31
+- GABINETE PREFEITO · [EDITAL N.º 038/2026](https://www.diariomunicipal.com.br/amp/materia/C6AD3E28) · 2026-08-31
+- GOVERNO MUNICIPAL - GABINETE DO PREFEITO · [PORTARIA Nº. 1368/2026](https://www.diariomunicipal.com.br/amp/materia/86B7F573) · 2026-08-31
+- GOVERNO MUNICIPAL - GABINETE DO PREFEITO · [PORTARIA Nº. 1376/2026](https://www.diariomunicipal.com.br/amp/materia/E27369CB) · 2026-08-31
+- DEPARTAMENTO DE ADMINISTRAÇÃO · [EXTRATO DE CONTRATO Nº 012/2026](https://www.diariomunicipal.com.br/amp/materia/604BD494) · 2026-08-31
+- GOVERNO MUNICIPAL · [EDITAL DE CONVOCAÇÃO Nº 013/2026 PROCESSO](https://www.diariomunicipal.com.br/amp/materia/903CEEC4) · 2026-08-31
+- SECRETARIA DE ADMINISTRAÇÃO · [EDITAL DE CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/BC845648) · 2026-08-31
+- SECRETARIA DE ADMINISTRAÇÃO · [EDITAL DE CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/D8F528CF) · 2026-08-31
+- SECRETARIA DE ADMINISTRAÇÃO · [EDITAL DE CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/5AAE6AAE) · 2026-08-31
+- SECRETARIA DE ADMINISTRAÇÃO · [EDITAL DE CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/47A35C3E) · 2026-08-31
+- SECRETARIA DE ADMINISTRAÇÃO · [EDITAL DE CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/2C5F84B9) · 2026-08-31
+- SECRETARIA DE ADMINISTRAÇÃO - SETOR DE RECURSOS HUMANOS · [EXTRATO DE RESCISÃO DE CONTRATO POR PRAZO](https://www.diariomunicipal.com.br/amp/materia/4C766DEA) · 2026-08-31
+- DEPARTAMENTO DE ADMINISTRAÇÃO E PLANEJAMENTO · [EDITAL Nº 037/2026](https://www.diariomunicipal.com.br/amp/materia/1D4C6A4B) · 2026-08-31
+- FUNDAÇÃO DE ATENÇÃO A SAÚDE DE MORRETES · [EXTRATO DE RESCISÃO ANTECIPADA DO CONTRATOS](https://www.diariomunicipal.com.br/amp/materia/A9A547C1) · 2026-08-31
+- FUNDAÇÃO DE ATENÇÃO A SAÚDE DE MORRETES · [PORTARIA N° 30 DE 28 DE AGOSTO DE 2026.](https://www.diariomunicipal.com.br/amp/materia/98419D2A) · 2026-08-31
+- FUNDAÇÃO DE ATENÇÃO A SAÚDE DE MORRETES · [PORTARIA N° 31 DE 28 DE AGOSTO DE 2026](https://www.diariomunicipal.com.br/amp/materia/DF3E3008) · 2026-08-31
+- SECRETARIA DE ADMINISTRAÇÃO · [PORTARIA Nº 6377/2026](https://www.diariomunicipal.com.br/amp/materia/254EB314) · 2026-08-31
+- FUNDAÇÃO DE EDUCAÇÃO DE PAIÇANDU · [EDITAL DE CONVOCAÇÃO Nº 254/2026](https://www.diariomunicipal.com.br/amp/materia/357767EB) · 2026-08-31
+- FUNDAÇÃO DE EDUCAÇÃO DE PAIÇANDU · [EDITAL DE CONVOCAÇÃO Nº 255/2026](https://www.diariomunicipal.com.br/amp/materia/9F6C8CDE) · 2026-08-31
+- FUNDAÇÃO DE EDUCAÇÃO DE PAIÇANDU · [EDITAL DE CONVOCAÇÃO Nº 256/2026](https://www.diariomunicipal.com.br/amp/materia/F09FE46F) · 2026-08-31
+- FUNDAÇÃO DE EDUCAÇÃO DE PAIÇANDU · [EDITAL DE CONVOCAÇÃO Nº 257/2026](https://www.diariomunicipal.com.br/amp/materia/2D6A3020) · 2026-08-31
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [COMUNICADO – CHAMADA AUXILIAR DE CUIDADOR DE](https://www.diariomunicipal.com.br/amp/materia/DEB6F1AD) · 2026-08-31
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [PROCESSO SELETIVO SIMPLIFICADO Nº. 01/2026](https://www.diariomunicipal.com.br/amp/materia/5E016C6D) · 2026-08-31
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [termos do Edital nº 01/2026 de 05 de janeiro de 2026, convocou o](https://www.diariomunicipal.com.br/amp/materia/B1D18633) · 2026-08-31
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [termos do Edital nº 01/2026 de 05 de janeiro de 2026, convo cou o](https://www.diariomunicipal.com.br/amp/materia/A39FC45B) · 2026-08-31
+- SECRETARIA MUNICIPAL DE SAÚDE · [DECRETO Nº 19.511, DE 28 DE AGOSTO DE 2026 -](https://www.diariomunicipal.com.br/amp/materia/FBB8A2D2) · 2026-08-31
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO DE RESCISÃO DO CONTRATO](https://www.diariomunicipal.com.br/amp/materia/C1A33B1D) · 2026-08-31
+- DEPARTAMENTO DE RECURSOS HUMANOS · [PORTARIA Nº 789, DE 28 DE AGOSTO DE 2026.](https://www.diariomunicipal.com.br/amp/materia/D6923DCB) · 2026-08-31
+- SECRETARIA MUNICIPAL DE RECURSOS HUMANOS · [EDITAL DE CONVOCAÇÃO Nº 14/2026](https://www.diariomunicipal.com.br/amp/materia/10C3564C) · 2026-08-31
+- SECRETARIA MUNICIPAL DE RECURSOS HUMANOS · [EDITAL Nº 13/2026- TORNA PÚBLICO A DESISTÊNCIA DOS](https://www.diariomunicipal.com.br/amp/materia/63FBCD3F) · 2026-08-31
+- ADMINISTRATIVO / RECURSOS HUMANOS · [EDITAL DE PUBLICAÇÃO INSCRIÇÕES PSS 04-2026](https://www.diariomunicipal.com.br/amp/materia/9E96636B) · 2026-08-31
+- DEPARTAMENTO DE ADMINISTRAÇÃO · [PORTARIA Nº 9.064/2026 28/08/2026](https://www.diariomunicipal.com.br/amp/materia/DE257A6E) · 2026-08-31
+- DEPARTAMENTO DE RECURSOS HUMANOS · [PORTARIA Nº 35.051/2025 – RH](https://www.diariomunicipal.com.br/amp/materia/C54A67CA) · 2026-08-31
+- DEPARTAMENTO DE RECURSOS HUMANOS · [PORTARIA Nº 35.053/2025 – RH](https://www.diariomunicipal.com.br/amp/materia/145CBC54) · 2026-08-31
+- DEPARTAMENTO DE RECURSOS HUMANOS · [PORTARIA Nº 35.054/2025 – RH](https://www.diariomunicipal.com.br/amp/materia/761396A3) · 2026-08-31
+- DEPARTAMENTO DE RECURSOS HUMANOS · [PORTARIA Nº 35.055/2025 – RH](https://www.diariomunicipal.com.br/amp/materia/CDA9151F) · 2026-08-31
+- DEPARTAMENTO DE RECURSOS HUMANOS · [PORTARIA Nº 35.056/2025 – RH](https://www.diariomunicipal.com.br/amp/materia/42973798) · 2026-08-31
+- DEPARTAMENTO DE RECURSOS HUMANOS · [PORTARIA Nº 35.057/2025 – RH](https://www.diariomunicipal.com.br/amp/materia/09585F8F) · 2026-08-31
+- PREFEITURA MUNICIPAL DE SANTA FÉ · [PROCESSO SELETIVO SIMPLIFICADO](https://www.diariomunicipal.com.br/amp/materia/C6DEDEE9) · 2026-08-31
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [PROCESSO SELETIVO SIMPLIFICADO](https://www.diariomunicipal.com.br/amp/materia/513AFD9A) · 2026-08-31
+- PREFEITURA MUNICIPAL DE TERRA RICA · [EDITAL DE CONVOCAÇÃO Nº 069/2026](https://www.diariomunicipal.com.br/amp/materia/0FE1A0DE) · 2026-08-31
+- PREFEITURA MUNICIPAL DE TERRA RICA · [EDITAL DE CONVOCAÇÃO Nº 070/2026](https://www.diariomunicipal.com.br/amp/materia/C52C801F) · 2026-08-31
+- PREFEITURA MUNICIPAL DE IRATI · [EDITAL Nº 001.2./2026 - 37ª CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/D56EE4C2) · 2026-08-31
+- PROCURADORIA · [EDITAL Nº 002.29/2026 – 25ª CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/B5E283C8) · 2026-08-31
+- DIVISÃO DE RECURSOS HUMANOS E SEGURANÇA DO TRABALHO · [EDITAL 157/2026 - CLASSIFICAÇÃO FINAL PSS](https://www.diariomunicipal.com.br/amp/materia/6A142EF0) · 2026-09-01
+- DIVISÃO DE RECURSOS HUMANOS E SEGURANÇA DO TRABALHO · [EDITAL 158/2026 - CLASSIFICAÇÃO FINAL PSS](https://www.diariomunicipal.com.br/amp/materia/760F0350) · 2026-09-01
+- SETOR DE PESSOAL · [PORTARIA 4242/2026](https://www.diariomunicipal.com.br/amp/materia/C533A64D) · 2026-09-01
+- DIVISÃO DE RECURSOS HUMANOS · [DECRETO Nº 5023 NOMEIA A SRA. JOSIELI MALAQUIAS](https://www.diariomunicipal.com.br/amp/materia/AE77DA74) · 2026-09-01
+- DIVISÃO DE RECURSOS HUMANOS · [DECRETO Nº 5024 / 2026 NOMEIA A SRA. SUELEM](https://www.diariomunicipal.com.br/amp/materia/A72E6BA1) · 2026-09-01
+- DIVISÃO DE RECURSOS HUMANOS · [EDITAL DE CONVOCAÇÃO DE APROVADOS Nº 007/2026](https://www.diariomunicipal.com.br/amp/materia/144A435E) · 2026-09-01
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [PORTARIA Nº 398/2026 - PRORROGA 9SS 001-2025 E PSS 003-](https://www.diariomunicipal.com.br/amp/materia/DE325CB9) · 2026-09-01
+- PREFEITURA MUNICIPAL DE BALSA NOVA · [EDITAL DE CONVOCAÇÃO N.º 001/2026 - PROCESSO](https://www.diariomunicipal.com.br/amp/materia/0CED3397) · 2026-09-01
+- ADMINISTRAÇÃO · [EDITAL DE CONVOCAÇÃO N.º 004/2026 - PROCESSO](https://www.diariomunicipal.com.br/amp/materia/5ADB9DE7) · 2026-09-01
+- ADMINISTRAÇÃO · [DECRETO N° 1490/2026](https://www.diariomunicipal.com.br/amp/materia/18E3946B) · 2026-09-01
+- ADMINISTRAÇÃO · [DECRETO Nº 1489 /2026](https://www.diariomunicipal.com.br/amp/materia/3A0AD750) · 2026-09-01
+- RECURSOS HUMANOS · [PROCESSO SELETIVO SIMPLIFICADO – PSS Nº 001/2025](https://www.diariomunicipal.com.br/amp/materia/1E720993) · 2026-09-01
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO SEGUNDO TERMO ADITIVO Nº 111/2026 DO](https://www.diariomunicipal.com.br/amp/materia/E6310D3B) · 2026-09-01
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO SEGUNDO TERMO ADITIVO Nº 112/2026 DO](https://www.diariomunicipal.com.br/amp/materia/C1ED5833) · 2026-09-01
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO TERMO ADITIVO Nº 076/2026 DO](https://www.diariomunicipal.com.br/amp/materia/E5485930) · 2026-09-01
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO TERMO ADITIVO Nº 077/2026 DO](https://www.diariomunicipal.com.br/amp/materia/AEB79E37) · 2026-09-01
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO TERMO ADITIVO Nº 078/2026 DO](https://www.diariomunicipal.com.br/amp/materia/AD072C56) · 2026-09-01
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO TERMO ADITIVO Nº 079/2026 DO](https://www.diariomunicipal.com.br/amp/materia/98BB2EDE) · 2026-09-01
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO TERMO ADITIVO Nº 110/2026 DO](https://www.diariomunicipal.com.br/amp/materia/000EF981) · 2026-09-01
+- DEPARTAMENTO DE RECURSOS HUMANOS · [PROCESSO SELETIVO SIMPLIFICADO N° 02/2026 -](https://www.diariomunicipal.com.br/amp/materia/19BC41D4) · 2026-09-01
+- PREFEITURA MUNICIPAL DE CORONEL VIVIDA · [EDITAL Nº 006/2026 DE 31/08/2026 - PSS 002/2026](https://www.diariomunicipal.com.br/amp/materia/AC01FBF8) · 2026-09-01
+- DEPARTAMENTO DE RECURSOS HUMANOS · [PROCESSO SELETIVO SIMPLIFICADO Nº 01/2025 EDITAL](https://www.diariomunicipal.com.br/amp/materia/A5E8724C) · 2026-09-01
+- CONSAMU · [PROCESSO SELETIVO SIMPLIFICADO Nº 002/2026 PARA](https://www.diariomunicipal.com.br/amp/materia/87C3CD14) · 2026-09-01
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [EDITAL DE CONVOCAÇÃO Nº 050/2026 PROCESSO](https://www.diariomunicipal.com.br/amp/materia/F97E1011) · 2026-09-01
+- GABINETE DO PREFEITO · [PROCESSO SELETIVO SIMPLIFICADO Nº 001/2025 -](https://www.diariomunicipal.com.br/amp/materia/F54BE428) · 2026-09-01
+- SECRETARIA DE ADMINISTRAÇÃO GERAL · [EDITAL](https://www.diariomunicipal.com.br/amp/materia/265C6FD3) · 2026-09-01
+- SECRETARIA DE ADMINISTRAÇÃO GERAL · [PORTARIA Nº 345/2026](https://www.diariomunicipal.com.br/amp/materia/C3461AF2) · 2026-09-01
+- SECRETARIA DE ADMINISTRAÇÃO GERAL · [PORTARIA Nº 347/2026](https://www.diariomunicipal.com.br/amp/materia/0E81C6D1) · 2026-09-01
+- PREFEITURA MUNICIPAL DE ITAPEJARA D'OESTE · [AVISO DE LICITAÇÃO EDITAL DE DISPENSA DE](https://www.diariomunicipal.com.br/amp/materia/7EDC3F44) · 2026-09-01
+- DEPARTAMENTO MUNICIPAL DE ADMINISTRAÇÃO · [Extrato Contrato N° 4366/2026](https://www.diariomunicipal.com.br/amp/materia/AF53C31A) · 2026-09-01
+- ADMINISTRAÇÃO RH · [PROCESSO SELETIVO SIMPLIFICADO N° 003/2025](https://www.diariomunicipal.com.br/amp/materia/EAE4F8A2) · 2026-09-01
+- PREFEITURA MUNICIPAL DE IVATUBA · [GABINETE DO PREFEITO](https://www.diariomunicipal.com.br/amp/materia/13868A3A) · 2026-09-01
+- GABINETE DO PREFEITO · [DECLARAÇÃO PROCESSO SELETIVO SIMPLIFICADO –](https://www.diariomunicipal.com.br/amp/materia/9DD4CE21) · 2026-09-01
+- GABINETE DO PREFEITO · [EDITAL DE CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/D45D7ABA) · 2026-09-01
+- GABINETE DO PREFEITO · [EDITAL DE CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/878DA1DD) · 2026-09-01
+- GABINETE DO PREFEITO · [EDITAL DE CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/64C69F65) · 2026-09-01
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [EXTRATO DO CONTRATO DE TRABALHO POR TEMPO](https://www.diariomunicipal.com.br/amp/materia/E6CE1D35) · 2026-09-01
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [EXTRATO DO CONTRATO DE TRABALHO POR TEMPO](https://www.diariomunicipal.com.br/amp/materia/61E77DD7) · 2026-09-01
+- GOVERNO MUNICIPAL · [PORTARIA Nº. 585/2026](https://www.diariomunicipal.com.br/amp/materia/EFDB5F38) · 2026-09-01
+- GOVERNO MUNICIPAL · [PORTARIA Nº. 586/2026](https://www.diariomunicipal.com.br/amp/materia/B0656EF9) · 2026-09-01
+- GOVERNO MUNICIPAL · [PORTARIA Nº. 587/2026](https://www.diariomunicipal.com.br/amp/materia/7CB1BBFD) · 2026-09-01
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [EDITAL 06/2026](https://www.diariomunicipal.com.br/amp/materia/3AA47692) · 2026-09-01
+- SECRETARIA DE ADMINISTRAÇÃO - SETOR DE RECURSOS HUMANOS · [DECRETO N.º 381/2026](https://www.diariomunicipal.com.br/amp/materia/280E0BC7) · 2026-09-01
+- SECRETARIA DE ADMINISTRAÇÃO - SETOR DE RECURSOS HUMANOS · [DECRETO N.º 382/2026](https://www.diariomunicipal.com.br/amp/materia/9BB96563) · 2026-09-01
+- SECRETARIA DE ADMINISTRAÇÃO - SETOR DE RECURSOS HUMANOS · [EXTRATO DE CONTRATO POR PRAZO DETERMINADO –](https://www.diariomunicipal.com.br/amp/materia/CAB117F9) · 2026-09-01
+- SECRETARIA DE ADMINISTRAÇÃO - SETOR DE RECURSOS HUMANOS · [EXTRATO DE CONTRATO POR PRAZO DETERMINADO –](https://www.diariomunicipal.com.br/amp/materia/4F9A733F) · 2026-09-01
+- PREFEITURA MUNICIPAL DE MANDAGUARI · [DECRETO Nº 424/2026 - NOMEIA E DÁ POSSE A PESSOA](https://www.diariomunicipal.com.br/amp/materia/03AD1099) · 2026-09-01
+- GABINETE DO PREFEITO · [DECRETO Nº 427/2026 - NOMEIA E DÁ POSSE A PESSOA](https://www.diariomunicipal.com.br/amp/materia/2D069C13) · 2026-09-01
+- GABINETE DO PREFEITO · [EDITAL N º. 290/2026 - CONVOCAÇÃO PROCESSO](https://www.diariomunicipal.com.br/amp/materia/55596027) · 2026-09-01
+- GABINETE DO PREFEITO · [EDITAL Nº 292/2026 - PROCESSO SELETIVO](https://www.diariomunicipal.com.br/amp/materia/E7F2F6B1) · 2026-09-01
+- PREFEITURA MUNICIPAL DE MORRETES · [EDITAL Nº 08, DE 31 DE AGOSTO DE 2026. EDITAL DE](https://www.diariomunicipal.com.br/amp/materia/34D4D46A) · 2026-09-01
+- FUNDAÇÃO DE ATENÇÃO A SAÚDE DE MORRETES · [EDITAL Nº 09, DE 31 DE AGOSTO DE 2026. EDITAL DE](https://www.diariomunicipal.com.br/amp/materia/710A55B8) · 2026-09-01
+- FUNDAÇÃO DE ATENÇÃO A SAÚDE DE MORRETES · [EDITAL Nº 108, DE 31 DE AGOSTO DE 2026. EDITAL DE](https://www.diariomunicipal.com.br/amp/materia/A4596844) · 2026-09-01
+- PREFEITURA MUNICIPAL DE PAIÇANDU · [EDITAL DE CONVOCAÇÃO Nº 248/2026](https://www.diariomunicipal.com.br/amp/materia/0ADF4F84) · 2026-09-01
+- PREFEITURA MUNICIPAL DE PAIÇANDU · [EDITAL DE CONVOCAÇÃO Nº 249/2026](https://www.diariomunicipal.com.br/amp/materia/693F16D4) · 2026-09-01
+- PREFEITURA MUNICIPAL DE PAIÇANDU · [EDITAL DE CONVOCAÇÃO Nº 250/2026](https://www.diariomunicipal.com.br/amp/materia/5AA15F32) · 2026-09-01
+- PREFEITURA MUNICIPAL DE PAIÇANDU · [EDITAL DE CONVOCAÇÃO Nº 251/2026](https://www.diariomunicipal.com.br/amp/materia/19F9044C) · 2026-09-01
+- PREFEITURA MUNICIPAL DE PAIÇANDU · [EDITAL DE CONVOCAÇÃO Nº 252/2026](https://www.diariomunicipal.com.br/amp/materia/791091B4) · 2026-09-01
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [PROCESSO SELETIVO SIMPLIFICADO Nº. 02/2025](https://www.diariomunicipal.com.br/amp/materia/D1C26266) · 2026-09-01
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [COMUNICADO – CHAMADA PROFESSOR 20H - PROCESSO](https://www.diariomunicipal.com.br/amp/materia/056FC2D4) · 2026-09-01
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [COMUNICADO – CHAMADA PROFESSOR 40H - PROCESSO](https://www.diariomunicipal.com.br/amp/materia/5AE7C3FD) · 2026-09-01
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [TERMO DE DESISTÊNCIA - PROCESSO SELETIVO](https://www.diariomunicipal.com.br/amp/materia/DB336E18) · 2026-09-01
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [TERMO DE DESISTÊNCIA - PROCESSO SELETIVO](https://www.diariomunicipal.com.br/amp/materia/8B3F50EA) · 2026-09-01
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [TERMO DE DESISTÊNCIA - PROCESSO SELETIVO](https://www.diariomunicipal.com.br/amp/materia/8251C377) · 2026-09-01
+- SECRETARIA MUNICIPAL DE RECURSOS HUMANOS · [PORTARIA N. º 221/2026– DE 31 DE AGOSTO DE 2026.](https://www.diariomunicipal.com.br/amp/materia/AC941D8F) · 2026-09-01
+- ADMINISTRAÇÃO GERAL · [EDITAL N°027/2026](https://www.diariomunicipal.com.br/amp/materia/3BBE8AC3) · 2026-09-01
+- DEPARTAMENTO DE ADMINISTRAÇÃO · [PORTARIA Nº 9.067/2026 31/08/2026](https://www.diariomunicipal.com.br/amp/materia/17BED86B) · 2026-09-01
+- DEPARTAMENTO ADMINISTRATIVO · [EDITAL N.º 108/2026](https://www.diariomunicipal.com.br/amp/materia/48EFB0D8) · 2026-09-01
+- DEPARTAMENTO ADMINISTRATIVO · [PORTARIA N.º 923/2026](https://www.diariomunicipal.com.br/amp/materia/D847AC65) · 2026-09-01
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [PROCESSO SELETIVO SIMPLIFICADO 001/2026](https://www.diariomunicipal.com.br/amp/materia/C8BA48C0) · 2026-09-01
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [EDITAL DE CONVOCAÇÃO Nº 018/2026.](https://www.diariomunicipal.com.br/amp/materia/49E8EC78) · 2026-09-01
+- DIVISÃO DE RECURSOS HUMANOS · [EDITAL 098/2026](https://www.diariomunicipal.com.br/amp/materia/3C87E315) · 2026-09-01
+- DIVISÃO DE RECURSOS HUMANOS · [EDITAL 099/2026](https://www.diariomunicipal.com.br/amp/materia/C63D27EE) · 2026-09-01
+- DIVISÃO DE RECURSOS HUMANOS · [EDITAL 100/2026](https://www.diariomunicipal.com.br/amp/materia/181FAC60) · 2026-09-01
+- DIVISÃO DE RECURSOS HUMANOS · [EDITAL 101/2026](https://www.diariomunicipal.com.br/amp/materia/3C8D02F3) · 2026-09-01
+- DIVISÃO DE RECURSOS HUMANOS · [PORTARIA Nº 213/2026](https://www.diariomunicipal.com.br/amp/materia/B3F64881) · 2026-09-01
+- DIVISÃO DE RECURSOS HUMANOS · [PORTARIA Nº 214/2026](https://www.diariomunicipal.com.br/amp/materia/9019A7B0) · 2026-09-01
+- DIVISÃO DE RECURSOS HUMANOS · [PORTARIA Nº 215/2026](https://www.diariomunicipal.com.br/amp/materia/3FC5BB4E) · 2026-09-01
+- GABINETE DO PREFEITO · [PROCESSO SELETIVO SIMPLIFICADO Nº 02/2026 – EDITAL](https://www.diariomunicipal.com.br/amp/materia/CE1AFF89) · 2026-09-01
+- PODER EXECUTIVO · [EDITAL DE CONVOCAÇÃO Nº 008-2026 - PROCESSO](https://www.diariomunicipal.com.br/amp/materia/B15C6BE0) · 2026-09-01
+- PODER EXECUTIVO · [PORTARIA N.º 351/2026](https://www.diariomunicipal.com.br/amp/materia/366A913E) · 2026-09-01
+- PODER EXECUTIVO · [PORTARIA N.º 352/2026](https://www.diariomunicipal.com.br/amp/materia/AD14D4AC) · 2026-09-01
+- PODER EXECUTIVO · [PORTARIA N.º 353/2026](https://www.diariomunicipal.com.br/amp/materia/A0E75605) · 2026-09-01
+- PODER EXECUTIVO · [PORTARIA N.º 354/2026](https://www.diariomunicipal.com.br/amp/materia/C706BFDF) · 2026-09-01
+- PODER EXECUTIVO · [PORTARIA N.º 355/2026](https://www.diariomunicipal.com.br/amp/materia/05648900) · 2026-09-01
+- PODER EXECUTIVO · [PORTARIA N.º 356/2026](https://www.diariomunicipal.com.br/amp/materia/04B6D1C6) · 2026-09-01
+- PODER EXECUTIVO · [PORTARIA N.º 357/2026](https://www.diariomunicipal.com.br/amp/materia/1E7B25EC) · 2026-09-01
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [PORTARIA Nº 1.129/2026](https://www.diariomunicipal.com.br/amp/materia/EC199EF1) · 2026-09-01
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [PORTARIA Nº 1.130/2026](https://www.diariomunicipal.com.br/amp/materia/61A4AEB0) · 2026-09-01
+- PREFEITURA MUNICIPAL DE CANDÓI · [PROCESSO SELETIVO SIMPLIFICADO N° 02/2026 - ESTÁGIÁRIOS - EDITAL Nº 03/2026 - DIVULGAÇÃO DA HOMOLOGAÇÃO](https://www.diariomunicipal.com.br/amp/materia/8FAEFB9F) · 2026-09-01
+- PREFEITURA MUNICIPAL DE GOIOXIM · [PROCESSO SELETIVO SIMPLIFICADO – PSS](https://www.diariomunicipal.com.br/amp/materia/A86DB9C8) · 2026-09-01
+- PREFEITURA MUNICIPAL DE SALGADO FILHO · [EDITAL Nº 09/2026 EDITAL CLASSIFICAÇÃO FINAL PROCESSO SELETIVO SIMPLIFICADO Nº 01/2026](https://www.diariomunicipal.com.br/amp/materia/79470433) · 2026-09-01
+- DIVISÃO DE RECURSOS HUMANOS · [DECRETO Nº 5027 NOMEIA O SR. JOÃO VITOR ZOLETT](https://www.diariomunicipal.com.br/amp/materia/F06FC2B1) · 2026-09-02
+- DIVISÃO DE RECURSOS HUMANOS · [DECRETO Nº 5028/2026 NOMEIA A SRA. THAILANE TAYLIS](https://www.diariomunicipal.com.br/amp/materia/62284D53) · 2026-09-02
+- GABINETE DO PODER EXECUTIVO MUNICIPAL · [EDITAL DE CONVOCAÇÃO Nº 082/2026 - DIVISÃO DE](https://www.diariomunicipal.com.br/amp/materia/F0F0E0E3) · 2026-09-02
+- RECURSOS HUMANOS · [EXTRATO DE CONTRATO DE TRABALHO POR TEMPO](https://www.diariomunicipal.com.br/amp/materia/0778ACDB) · 2026-09-02
+- GABINETE DA PREFEITA · [DECRETO Nº. 11.333 DE 01 DE SETEMBRO DE 2026](https://www.diariomunicipal.com.br/amp/materia/9A1E3383) · 2026-09-02
+- ADMINISTRAÇÃO · [PORTARIA Nº 615/2026](https://www.diariomunicipal.com.br/amp/materia/937C3C38) · 2026-09-02
+- ADMINISTRAÇÃO · [PORTARIA Nº 616/2026](https://www.diariomunicipal.com.br/amp/materia/751B5A91) · 2026-09-02
+- ADMINISTRAÇÃO · [PORTARIA Nº 617/2026](https://www.diariomunicipal.com.br/amp/materia/6087E8B0) · 2026-09-02
+- ADMINISTRAÇÃO · [PORTARIA Nº 618/2026](https://www.diariomunicipal.com.br/amp/materia/E7693E98) · 2026-09-02
+- ADMINISTRAÇÃO · [PORTARIA Nº 619/2026](https://www.diariomunicipal.com.br/amp/materia/EDCFDA67) · 2026-09-02
+- ADMINISTRAÇÃO · [PORTARIA Nº 620/2026](https://www.diariomunicipal.com.br/amp/materia/C8447F47) · 2026-09-02
+- ADMINISTRAÇÃO · [PORTARIA Nº 621/2026](https://www.diariomunicipal.com.br/amp/materia/86CAE799) · 2026-09-02
+- ADMINISTRAÇÃO · [PORTARIA Nº 622/2026](https://www.diariomunicipal.com.br/amp/materia/E8856621) · 2026-09-02
+- ADMINISTRAÇÃO · [PORTARIA Nº 623/2026](https://www.diariomunicipal.com.br/amp/materia/ABFBB230) · 2026-09-02
+- ADMINISTRAÇÃO · [PORTARIA Nº 625/2026](https://www.diariomunicipal.com.br/amp/materia/5CEB1EF8) · 2026-09-02
+- SECRETARIA DE ADMINISTRAÇÃO · [EXTRATO DE ADITIVO DE CONTRATO DE TRABALHO](https://www.diariomunicipal.com.br/amp/materia/7F2307DE) · 2026-09-02
+- PREFEITURA MUNICIPAL DE CANDÓI · [PROCESSO SELETIVO SIMPLIFICADO N° 02/2026 -](https://www.diariomunicipal.com.br/amp/materia/0F99FE81) · 2026-09-02
+- PREFEITURA MUNICIPAL DE DOUTOR ULYSSES · [PROCESSO SELETIVO SIMPLIFICADO - PSS N°001/2025](https://www.diariomunicipal.com.br/amp/materia/A494AF68) · 2026-09-02
+- SECRETARIA DE ADMINISTRAÇÃO GERAL · [EDITAL](https://www.diariomunicipal.com.br/amp/materia/5B4DAF05) · 2026-09-02
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [EXTRATO DO CONTRATO DE TRABALHO POR TEMPO](https://www.diariomunicipal.com.br/amp/materia/9FA55ECF) · 2026-09-02
+- GOVERNO MUNICIPAL · [PORTARIA Nº. 590/2026](https://www.diariomunicipal.com.br/amp/materia/C702706F) · 2026-09-02
+- GABINETE DO PREFEITO · [DECRETO Nº 433/2026 - NOMEIA E DÁ POSSE A PESSOA](https://www.diariomunicipal.com.br/amp/materia/BB54D722) · 2026-09-02
+- PREFEITURA MUNICIPAL DE MORRETES · [EXTRATO DE RESCISÃO ANTECIPADA DO CONTRATOS](https://www.diariomunicipal.com.br/amp/materia/216C229B) · 2026-09-02
+- SECRETARIA MUNICIPAL DE RECURSOS HUMANOS · [PORTARIA N.º 226/2026– DE 01 DE SETEMBRO DE 2026.](https://www.diariomunicipal.com.br/amp/materia/5B19F49B) · 2026-09-02
+- PREFEITURA MUNICIPAL DE QUERÊNCIA DO NORTE · [PORTARIA N° 116/2026](https://www.diariomunicipal.com.br/amp/materia/6067A593) · 2026-09-02
+- DEPARTAMENTO DE ADMINISTRAÇÃO · [PROCESSO SELETIVO SIMPLIFICADO Nº 07/2025 EDITAL](https://www.diariomunicipal.com.br/amp/materia/F52A5A82) · 2026-09-02
+- SECRETARIA GERAL · [PSS N º 001/2026 – SECRETARIA MUNICIPAL DE SAÚDE 11ª](https://www.diariomunicipal.com.br/amp/materia/71188D72) · 2026-09-02
+- PREFEITURA MUNICIPAL DE SÃO PEDRO DO PARANÁ · [DEPARTAMENTO DE RECURSOS HUMANOS](https://www.diariomunicipal.com.br/amp/materia/A3A9EC1A) · 2026-09-02
+- DEPARTAMENTO DE RECURSOS HUMANOS · [MUNICÍPIO DE SÃO PEDRO DO PARANÁ - CONTRATO](https://www.diariomunicipal.com.br/amp/materia/3B552815) · 2026-09-02
+- DEPARTAMENTO DE RECURSOS HUMANOS · [MUNICÍPIO DE SÃO PEDRO DO PARANÁ - CONTRATO](https://www.diariomunicipal.com.br/amp/materia/F194E471) · 2026-09-02
+- ADMINISTRAÇÃO GERAL · [DECRETO Nº 223/2026](https://www.diariomunicipal.com.br/amp/materia/D1754AD8) · 2026-09-02
+- ADMINISTRAÇÃO GERAL · [EDITAL Nº 105/2026(CONVOCAÇÃO)](https://www.diariomunicipal.com.br/amp/materia/86DF61F9) · 2026-09-02
+- ADMINISTRAÇÃO GERAL · [EDITAL Nº 106/2026 (CONVOCAÇÃO)](https://www.diariomunicipal.com.br/amp/materia/237FE7AB) · 2026-09-02
+- ADMINISTRAÇÃO GERAL · [EDITAL Nº 107/2026(CONVOCAÇÃO)](https://www.diariomunicipal.com.br/amp/materia/0C014265) · 2026-09-02
+- SECRETARIA M. ADMINISTRAÇAO RH · [EDITAL Nº 167/2026](https://www.diariomunicipal.com.br/amp/materia/00164F46) · 2026-09-02
+- MUNICÍPIO DE TRÊS BARRAS DO PARANÁ · [PORTARIA Nº1330/2026](https://www.diariomunicipal.com.br/amp/materia/EB37CB1F) · 2026-09-02
+- MUNICÍPIO DE TRÊS BARRAS DO PARANÁ · [PORTARIA Nº1331/2026](https://www.diariomunicipal.com.br/amp/materia/579FEAB7) · 2026-09-02
+- SECRETARIA DE ADMINISTRAÇÃO · [EDITAL DE CONVOCAÇÃO 144-2026](https://www.diariomunicipal.com.br/amp/materia/88ACFD0E) · 2026-09-02
+- SECRETARIA DE ADMINISTRAÇÃO · [EDITAL DE CONVOCAÇÃO 145-2026](https://www.diariomunicipal.com.br/amp/materia/63EF7EAF) · 2026-09-02
+- SECRETARIA DE ADMINISTRAÇÃO · [EDITAL DE CONVOCAÇÃO 146-2026](https://www.diariomunicipal.com.br/amp/materia/369EFA6E) · 2026-09-02
+- SECRETARIA DE ADMINISTRAÇÃO · [EDITAL DE CONVOCAÇÃO 147-2026](https://www.diariomunicipal.com.br/amp/materia/FD3B2AE0) · 2026-09-02
+- MUNICIPIO DE ENÉAS MARQUES · [LEI 1607](https://www.diariomunicipal.com.br/amp/materia/C6684B42) · 2026-09-02
+- PREFEITURA MUNICIPAL DE GOIOXIM · [PROCESSO SELETIVO SIMPLIFICADO – PSS](https://www.diariomunicipal.com.br/amp/materia/624672C9) · 2026-09-02
+- SECRETARIA MUNICIPAL DE RECURSOS HUMANOS · [PORTARIA N.º 227/2026, DE 01 DE SETEMBRO DE 2026](https://www.diariomunicipal.com.br/amp/materia/29E71FBE) · 2026-09-02
+- ADMINISTRAÇÃO · [EDITAL DE CONVOCAÇÃO N.º 005/2026 - PROCESSO](https://www.diariomunicipal.com.br/amp/materia/D57A4381) · 2026-09-03
+- RECURSOS HUMANOS · [DECRETO Nº 767/2026](https://www.diariomunicipal.com.br/amp/materia/4BA65383) · 2026-09-03
+- ADMINISTRAÇÃO · [DECRETO Nº 1491 /2026](https://www.diariomunicipal.com.br/amp/materia/876E9EE8) · 2026-09-03
+- RECURSOS HUMANOS · [PROCESSO SELETIVO SIMPLIFICADO – PSS Nº 001/2025](https://www.diariomunicipal.com.br/amp/materia/543436FC) · 2026-09-03
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [PORTARIA Nº 156/2026](https://www.diariomunicipal.com.br/amp/materia/78FEC1B4) · 2026-09-03
+- PREFEITURA MUNICIPAL DE CANDÓI · [EXTRATO SEGUNDO TERMO ADITIVO DO CONTRATO DE](https://www.diariomunicipal.com.br/amp/materia/911F459E) · 2026-09-03
+- SECRETARIA MUNICIPAL DE EDUCAÇÃO E CULTURA. · [EDITAL Nº 013.005 /2026 – CONVOCAÇÃO PARA](https://www.diariomunicipal.com.br/amp/materia/C96DED69) · 2026-09-03
+- DEPARTAMENTO DE RECURSOS HUMANOS · [PORTARIA Nº 061/2026](https://www.diariomunicipal.com.br/amp/materia/8F7618F0) · 2026-09-03
+- DEPARTAMENTO DE GESTÃO DE PESSOAS · [EDITAL Nº 007/2026 DE 02/09/2026 - PSS 002/2026](https://www.diariomunicipal.com.br/amp/materia/ECF4705D) · 2026-09-03
+- SECRETARIA MUNICIPAL DE ASSISTÊNCIA SOCIAL · [PROCESSO SELETIVO SIMPLIFICADO Nº. 03/2026 EDITAL](https://www.diariomunicipal.com.br/amp/materia/486A2F7B) · 2026-09-03
+- DEPARTAMENTO DE ADMINISTRAÇÃO · [DECRETO Nº0269/2026 NOMEAR, O SENHOR ERICON](https://www.diariomunicipal.com.br/amp/materia/E10FCC33) · 2026-09-03
+- DEPARTAMENTO DE ADMINISTRAÇÃO · [DECRETO Nº0271/2026 NOMEAR, O SENHOR LUIZ CARLOS](https://www.diariomunicipal.com.br/amp/materia/39B54BA3) · 2026-09-03
+- MUNICÍPIO DE FERNANDES PINHEIRO · [EDITAL Nº 40/2026 -PROCESSO SELETIVO SIMPLIFICADO](https://www.diariomunicipal.com.br/amp/materia/2F3E5D8B) · 2026-09-03
+- SECRETARIA DE ADMINISTRAÇÃO E PLANEJAMENTO · [EDITAL Nº 072/2026](https://www.diariomunicipal.com.br/amp/materia/17A7C553) · 2026-09-03
+- SECRETARIA DE ADMINISTRAÇÃO E PLANEJAMENTO · [EDITAL Nº 073/2026](https://www.diariomunicipal.com.br/amp/materia/AAAFD1A0) · 2026-09-03
+- SECRETARIA DE ADMINISTRAÇÃO E PLANEJAMENTO · [EDITAL Nº 074/2026](https://www.diariomunicipal.com.br/amp/materia/406E088A) · 2026-09-03
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [EDITAL DE CONVOCAÇÃO Nº 51/2026 PROCESSO](https://www.diariomunicipal.com.br/amp/materia/5B678398) · 2026-09-03
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [EDITAL 07/2026](https://www.diariomunicipal.com.br/amp/materia/F8A4EA6C) · 2026-09-03
+- PREFEITURA MUNICIPAL DE MARILENA · [termos do artigo 37 inciso IX da Constituição](https://www.diariomunicipal.com.br/amp/materia/433DC6E0) · 2026-09-03
+- PREFEITURA MUNICIPAL DE MORRETES · [EXTRATO DE RESCISÃO DE CONTRATO DE TRABALHO](https://www.diariomunicipal.com.br/amp/materia/10AE0392) · 2026-09-03
+- SECRETARIA DE ADMINISTRAÇÃO · [PORTARIA N° 9288 DE 01 DE SETEMBRO DE 2026](https://www.diariomunicipal.com.br/amp/materia/B309E35D) · 2026-09-03
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [COMUNICADO – CHAMADA AUXILIAR DE CUIDADOR DE](https://www.diariomunicipal.com.br/amp/materia/370C9A24) · 2026-09-03
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [COMUNICADO – CHAMADA PROFESSOR 20H - PROCESSO](https://www.diariomunicipal.com.br/amp/materia/D0214077) · 2026-09-03
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [TERMO DE DESISTÊNCIA - PROCESSO SELETIVO](https://www.diariomunicipal.com.br/amp/materia/44283207) · 2026-09-03
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [TERMO DE DESISTÊNCIA - PROCESSO SELETIVO](https://www.diariomunicipal.com.br/amp/materia/9EECAFA2) · 2026-09-03
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO DE RESCISÃO DO CONTRATO](https://www.diariomunicipal.com.br/amp/materia/8C3239D8) · 2026-09-03
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO DE RESCISÃO DO CONTRATO](https://www.diariomunicipal.com.br/amp/materia/55506A42) · 2026-09-03
+- SECRETARIA MUNICIPAL DE RECURSOS HUMANOS · [EDITAL DE CONVOCAÇÃO Nº 16/2026](https://www.diariomunicipal.com.br/amp/materia/516E6EBE) · 2026-09-03
+- SECRETARIA MUNICIPAL DE RECURSOS HUMANOS · [EDITAL Nº 15/2026- TORNA PÚBLICO A DESISTÊNCIA DOS](https://www.diariomunicipal.com.br/amp/materia/35F0A123) · 2026-09-03
+- GABINETE DO PREFEITO · [EDITAL N º 006/2026 – 06ª CONVOCAÇÃO –PSS Nº 001/2026–](https://www.diariomunicipal.com.br/amp/materia/5567E177) · 2026-09-03
+- GABINETE DO PREFEITO · [EDITAL N º 015/2026 – 22ª CONVOCAÇÃO – PSS Nº 001/2025–](https://www.diariomunicipal.com.br/amp/materia/64C83500) · 2026-09-03
+- GABINETE DO PREFEITO · [EDITAL N º 015/2026 – 23ª CONVOCAÇÃO –PSS Nº 002/2025–](https://www.diariomunicipal.com.br/amp/materia/9DB576E1) · 2026-09-03
+- SECRETARIA GERAL · [PREFEITURA MUNICIPAL DE ROLÂNDIA EDITAL 001/2026](https://www.diariomunicipal.com.br/amp/materia/2E47A5C7) · 2026-09-03
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [EDITAL DE PROCESSO SELETIVO SIMPLIFICADO Nº](https://www.diariomunicipal.com.br/amp/materia/3E1B5449) · 2026-09-03
+- DIVISÃO DE PESSOAL · [PORTARIA Nº 236/2026](https://www.diariomunicipal.com.br/amp/materia/96383EBA) · 2026-09-03
+- ADMINISTRAÇÃO GERAL · [EDITAL Nº 108/2026(CONVOCAÇÃO)](https://www.diariomunicipal.com.br/amp/materia/AB464E39) · 2026-09-03
+- ADMINISTRAÇÃO GERAL · [EDITAL Nº 109/2026(CONVOCAÇÃO)](https://www.diariomunicipal.com.br/amp/materia/99E33A94) · 2026-09-03
+- GABINETE DO PREFEITO · [DECRETO Nº 6351, DE 01 DE SETEMBRO DE 2026](https://www.diariomunicipal.com.br/amp/materia/D386FB7E) · 2026-09-03
+- GABINETE DO PREFEITO · [DECRETO Nº 6359, DE 02 DE SETEMBRO DE 2026](https://www.diariomunicipal.com.br/amp/materia/A6E66108) · 2026-09-03
+- GABINETE DO PREFEITO · [DECRETO Nº 6361, DE 02 DE SETEMBRO DE 2026](https://www.diariomunicipal.com.br/amp/materia/85BB983B) · 2026-09-03
+- PODER EXECUTIVO · [PORTARIA N.º 359/2026](https://www.diariomunicipal.com.br/amp/materia/A0ADB823) · 2026-09-03
+- MUNICÍPIO DE NOSSA SENHORA DAS GRAÇAS · [PROCESSO SELETIVO SIMPLIFICADO – PSS 003/2026 EDITAL Nº 01/2026 ABERTURA](https://www.diariomunicipal.com.br/amp/materia/848E5F87) · 2026-09-03
+- PREFEITURA MUNICIPAL DE MORRETES · [EXTRATO DE CONTRATOS PROCESSO SELETIVO SIMPLIFICADO – PSS Nº 001/2025 E PSS N° 001/2026](https://www.diariomunicipal.com.br/amp/materia/29E15AD8) · 2026-09-03
+- GABINETE DO PREFEITO · [DECRETO 278/2026 - HOMOLOGA PSS ENFERMEIRO](https://www.diariomunicipal.com.br/amp/materia/7E37CB31) · 2026-09-04
+- GABINETE DO PREFEITO · [DECRETO 279/2026 - HOMOLOGA PSS](https://www.diariomunicipal.com.br/amp/materia/41122073) · 2026-09-04
+- PREFEITURA MUNICIPAL DE BALSA NOVA · [EDITAL DE CONVOCAÇÃO N.º 002/2026 - PROCESSO](https://www.diariomunicipal.com.br/amp/materia/65FBFA56) · 2026-09-04
+- PREFEITURA MUNICIPAL DE CATANDUVAS · [DECRETO Nº 250/2026](https://www.diariomunicipal.com.br/amp/materia/A77F8D06) · 2026-09-04
+- SECRETÁRIA DE ADMINISTRAÇÃO E FINANÇAS · [DECRETO Nº 23784/2026](https://www.diariomunicipal.com.br/amp/materia/0359BE77) · 2026-09-04
+- SECRETÁRIA DE ADMINISTRAÇÃO E FINANÇAS · [DECRETO Nº 23786/2026](https://www.diariomunicipal.com.br/amp/materia/CEAB6487) · 2026-09-04
+- SECRETÁRIA DE ADMINISTRAÇÃO E FINANÇAS · [DECRETO Nº 23787/2026](https://www.diariomunicipal.com.br/amp/materia/6F111EE2) · 2026-09-04
+- SECRETARIA DE ADMINISTRAÇÃO E PLANEJAMENTO · [EDITAL Nº 075/2026](https://www.diariomunicipal.com.br/amp/materia/A60A587F) · 2026-09-04
+- GOVERNO MUNICIPAL - GABINETE DO PREFEITO · [PORTARIA Nº. 1391/2026](https://www.diariomunicipal.com.br/amp/materia/3E763354) · 2026-09-04
+- GOVERNO MUNICIPAL - GABINETE DO PREFEITO · [PORTARIA Nº. 1392/2026](https://www.diariomunicipal.com.br/amp/materia/AE42E701) · 2026-09-04
+- GOVERNO MUNICIPAL - GABINETE DO PREFEITO · [PORTARIA Nº. 1394/2026](https://www.diariomunicipal.com.br/amp/materia/BC2A1441) · 2026-09-04
+- GOVERNO MUNICIPAL - GABINETE DO PREFEITO · [PORTARIA Nº. 1402/2026](https://www.diariomunicipal.com.br/amp/materia/E358CE75) · 2026-09-04
+- GOVERNO MUNICIPAL - GABINETE DO PREFEITO · [PORTARIA Nº. 1406/2026](https://www.diariomunicipal.com.br/amp/materia/9354DBFB) · 2026-09-04
+- GOVERNO MUNICIPAL - GABINETE DO PREFEITO · [PORTARIA Nº. 1414/2026](https://www.diariomunicipal.com.br/amp/materia/100575BA) · 2026-09-04
+- PREFEITURA MUNICIPAL DE IVATUBA · [GABINETE DO PREFEITO](https://www.diariomunicipal.com.br/amp/materia/AA66532F) · 2026-09-04
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [EXTRATO DO TERMO DE RESCISÃO CONTRATO DE](https://www.diariomunicipal.com.br/amp/materia/DA941A23) · 2026-09-04
+- GOVERNO MUNICIPAL · [EDITAL DE CONVOCAÇÃO Nº 05/2026 PROCESSO](https://www.diariomunicipal.com.br/amp/materia/78E4B25F) · 2026-09-04
+- GOVERNO MUNICIPAL · [PORTARIA Nº. 596/2026](https://www.diariomunicipal.com.br/amp/materia/83E62420) · 2026-09-04
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [PROCESSO SELETIVO SIMPLIFICADO Nº. 01/2026](https://www.diariomunicipal.com.br/amp/materia/DBF66202) · 2026-09-04
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [COMUNICADO – CHAMADA PROFESSOR 40H - PROCESSO](https://www.diariomunicipal.com.br/amp/materia/F7FDE319) · 2026-09-04
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [termos d o Edital nº 01/2025 – SECRETARIA MUNICIPAL DE](https://www.diariomunicipal.com.br/amp/materia/84F01B8C) · 2026-09-04
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [termos do Edital nº 01/2026 de 05 de janeiro de 2026, convocou o](https://www.diariomunicipal.com.br/amp/materia/86AF46BC) · 2026-09-04
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [TERMO DE DESISTÊNCIA - PROCESSO SELETIVO](https://www.diariomunicipal.com.br/amp/materia/D10BEEFE) · 2026-09-04
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EDITAL DE CONVOCAÇÃO Nº 176/2026](https://www.diariomunicipal.com.br/amp/materia/E6B1216F) · 2026-09-04
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EDITAL DE CONVOCAÇÃO Nº 178/2026](https://www.diariomunicipal.com.br/amp/materia/E4ADCD24) · 2026-09-04
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [PORTARIA MUNICIPAL Nº 1581/2026](https://www.diariomunicipal.com.br/amp/materia/E9A0F1CA) · 2026-09-04
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [PORTARIA MUNICIPAL Nº 1644/2026](https://www.diariomunicipal.com.br/amp/materia/AA0576E4) · 2026-09-04
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [PORTARIA MUNICIPAL Nº 1645/2026](https://www.diariomunicipal.com.br/amp/materia/5BD30FB2) · 2026-09-04
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [PORTARIA MUNICIPAL Nº 1646/2026](https://www.diariomunicipal.com.br/amp/materia/88199382) · 2026-09-04
+- DEPARTAMENTO ADMINISTRATIVO · [PORTARIA N.º 942/2026](https://www.diariomunicipal.com.br/amp/materia/700BDE79) · 2026-09-04
+- DEPARTAMENTO ADMINISTRATIVO · [PORTARIA N.º 947/2026](https://www.diariomunicipal.com.br/amp/materia/45FE66CB) · 2026-09-04
+- DIVISÃO DE RECURSOS HUMANOS · [EDITAL 103/2026](https://www.diariomunicipal.com.br/amp/materia/C6543123) · 2026-09-04
+- DIVISÃO DE PESSOAL · [DECRETO Nº 243/2026](https://www.diariomunicipal.com.br/amp/materia/949D9BFC) · 2026-09-04
+- ADMINISTRAÇÃO GERAL · [EDITAL Nº 110/2026(CONVOCAÇÃO)](https://www.diariomunicipal.com.br/amp/materia/F5E81E08) · 2026-09-04
+- ADMINISTRAÇÃO GERAL · [EDITAL Nº 111/2026 (CONVOCAÇÃO)](https://www.diariomunicipal.com.br/amp/materia/6B292EA6) · 2026-09-04
+- SECRETARIA DE ADMINISTRAÇÃO, PLANEJAMENTO E RECURSOS HUMANOS · [DECRETO Nº289/2026](https://www.diariomunicipal.com.br/amp/materia/2B83686F) · 2026-09-04
+- GABINETE DO PREFEITO · [DECRETO Nº 6354, DE 01 DE SETEMBRO DE 2026](https://www.diariomunicipal.com.br/amp/materia/50EE7E8E) · 2026-09-04
+- GABINETE DO PREFEITO · [DECRETO Nº 6362, DE 02 DE SETEMBRO DE 2026](https://www.diariomunicipal.com.br/amp/materia/7485D580) · 2026-09-04
+- GABINETE DO PREFEITO · [DECRETO Nº 6363, DE 02 DE SETEMBRO DE 2026](https://www.diariomunicipal.com.br/amp/materia/18B59AFA) · 2026-09-04
+- GABINETE DO PREFEITO · [DECRETO Nº 6364, DE 02 DE SETEMBRO DE 2026](https://www.diariomunicipal.com.br/amp/materia/6A6AAAF9) · 2026-09-04
+- GABINETE DO PREFEITO · [DECRETO Nº 6365, DE 02 DE SETEMBRO DE 2026](https://www.diariomunicipal.com.br/amp/materia/66079844) · 2026-09-04
+- DEPARTAMENTO DE ADMINISTRAÇÃO FINANÇAS E PLANEJAMENTO · [PROCESSO SELETIVO SIMPLIFICADO Nº 002/2026 EDITAL](https://www.diariomunicipal.com.br/amp/materia/50847AF0) · 2026-09-04
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [RETIFICAÇÃO DO TERMO DE REFERÊNCIA](https://www.diariomunicipal.com.br/amp/materia/B95DAA6B) · 2026-09-04
+- PREFEITURA MUNICIPAL DE MANDAGUARI · [EDITAL Nº 293/2026 - DISPÕE SOBRE A PONTUAÇÃO DA ENTREVISTA E CLASSIFICAÇÃO FINAL DO PROCESSO SELETIVO](https://www.diariomunicipal.com.br/amp/materia/16C6B8CF) · 2026-09-04
+- PREFEITURA MUNICIPAL DE MORRETES · [EXTRATO DE CONTRATOS](https://www.diariomunicipal.com.br/amp/materia/6759F93A) · 2026-09-04
+- FUNDAÇÃO DE ATENÇÃO A SAÚDE DE MORRETES · [EXTRATO DO 1° TERMO ADITIVO](https://www.diariomunicipal.com.br/amp/materia/1F0940FA) · 2026-09-04
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EDITAL DE CONVOCAÇÃO Nº 177/2026](https://www.diariomunicipal.com.br/amp/materia/204A218F) · 2026-09-04
+- GABINETE DO PREFEITO · [DECRETO N.º 715/2026](https://www.diariomunicipal.com.br/amp/materia/8B697EAA) · 2026-09-08
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [EDITAL N.º 039/2026](https://www.diariomunicipal.com.br/amp/materia/638A4278) · 2026-09-08
+- PREFEITURA MUNICIPAL DE CORONEL VIVIDA · [EXTRATO DE CONTRATOS DE SERVIÇO TEMPORÁRIO -](https://www.diariomunicipal.com.br/amp/materia/C14CF9A2) · 2026-09-08
+- PREFEITURA MUNICIPAL DE FLOR DA SERRA DO SUL · [LEI Nº 1.000/2026](https://www.diariomunicipal.com.br/amp/materia/3A7A21DB) · 2026-09-08
+- SECRETARIA DE ADMINISTRAÇÃO E PLANEJAMENTO · [EDITAL Nº 076/2026](https://www.diariomunicipal.com.br/amp/materia/ECFAC58D) · 2026-09-08
+- SECRETARIA DE ADMINISTRAÇÃO E PLANEJAMENTO · [EDITAL Nº 077/2026](https://www.diariomunicipal.com.br/amp/materia/547FBFA5) · 2026-09-08
+- SECRETARIA DE ADMINISTRAÇÃO E PLANEJAMENTO · [EDITAL Nº 078/2026](https://www.diariomunicipal.com.br/amp/materia/D8D989CF) · 2026-09-08
+- SECRETARIA DE ADMINISTRAÇÃO E PLANEJAMENTO · [EDITAL Nº 079/2026](https://www.diariomunicipal.com.br/amp/materia/9B03DC3E) · 2026-09-08
+- PREFEITURA MUNICIPAL DE GUARAQUEÇABA · [EDITAL DE CONVOCAÇÃO Nº 51/2026 PROCESSO](https://www.diariomunicipal.com.br/amp/materia/014C6485) · 2026-09-08
+- GABINETE DO PREFEITO · [DECRETO Nº 653/2026](https://www.diariomunicipal.com.br/amp/materia/8353DC76) · 2026-09-08
+- GABINETE DO PREFEITO · [DECRETO Nº 654/2026](https://www.diariomunicipal.com.br/amp/materia/34550184) · 2026-09-08
+- GABINETE DO PREFEITO · [DECRETO Nº 655/2026](https://www.diariomunicipal.com.br/amp/materia/4EFE90B8) · 2026-09-08
+- GABINETE DO PREFEITO · [DECRETO Nº 656/2026](https://www.diariomunicipal.com.br/amp/materia/2B7F1BE3) · 2026-09-08
+- DIVISÃO DE RECURSOS HUMANOS · [EDITAL DE CONVOCAÇÃO -PROFISSIONAL DE APOIO](https://www.diariomunicipal.com.br/amp/materia/F9D6E011) · 2026-09-08
+- GABINETE · [DECRETO N° 29918, DE 04 DE SETEMBRO DE 2026](https://www.diariomunicipal.com.br/amp/materia/579ACD54) · 2026-09-08
+- GABINETE · [DECRETO N° 29919, DE 04 DE SETEMBRO DE 2026](https://www.diariomunicipal.com.br/amp/materia/A8EBCD5B) · 2026-09-08
+- GABINETE · [DECRETO N° 29920, DE 04 DE SETEMBRO DE 2026](https://www.diariomunicipal.com.br/amp/materia/713418A0) · 2026-09-08
+- SECRETARIA DE ADMINISTRAÇÃO · [EDITAL DE CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/06B86125) · 2026-09-08
+- SECRETARIA DE ADMINISTRAÇÃO · [EDITAL DE CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/5EB8380B) · 2026-09-08
+- SECRETARIA DE ADMINISTRAÇÃO · [EDITAL DE CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/27BB3C5F) · 2026-09-08
+- SECRETARIA DE ADMINISTRAÇÃO · [EDITAL DE CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/263E3379) · 2026-09-08
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [EDITAL 08/2026](https://www.diariomunicipal.com.br/amp/materia/9CA1515F) · 2026-09-08
+- GABINETE DO PREFEITO · [EDITAL N º. 294/2026 CONVOCAÇÃO PROCESSO](https://www.diariomunicipal.com.br/amp/materia/A5673CE4) · 2026-09-08
+- GABINETE DO PREFEITO · [EDITAL N º. 295/2026 CONVOCAÇÃO PROCESSO](https://www.diariomunicipal.com.br/amp/materia/DA0D6470) · 2026-09-08
+- PREFEITURA MUNICIPAL DE MARILENA · [DEPARTAMENTO DE ADMINISTRAÇÃO E](https://www.diariomunicipal.com.br/amp/materia/364419A9) · 2026-09-08
+- DEPARTAMENTO DE ADMINISTRAÇÃO E PLANEJAMENTO · [PLANEJAMENTO](https://www.diariomunicipal.com.br/amp/materia/0F528978) · 2026-09-08
+- DEPARTAMENTO DE ADMINISTRAÇÃO E PLANEJAMENTO · [PLANEJAMENTO](https://www.diariomunicipal.com.br/amp/materia/BADDCBAD) · 2026-09-08
+- SECRETARIA DE ADMINISTRAÇÃO · [DECRETO Nº 2956 DE 03 DE SETEMBRO DE 2026](https://www.diariomunicipal.com.br/amp/materia/820CE812) · 2026-09-08
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO DE RESCISÃO DO CONTRATO](https://www.diariomunicipal.com.br/amp/materia/BA161AFE) · 2026-09-08
+- DEPARTAMENTO DE RECURSOS HUMANOS · [PORTARIA Nº 823 DE 04 DE AGOSTO DE 2026](https://www.diariomunicipal.com.br/amp/materia/3BBE1529) · 2026-09-08
+- DEPARTAMENTO DE RECURSOS HUMANOS · [PORTARIA Nº 824, DE 04 DE SETEMBRO DE 2026.](https://www.diariomunicipal.com.br/amp/materia/74996262) · 2026-09-08
+- PREFEITURA MUNICIPAL DE PITANGA · [EDITAL N.º 009/2026 1ª CONVOCAÇÃO PARA](https://www.diariomunicipal.com.br/amp/materia/74BDC992) · 2026-09-08
+- PREFEITURA MUNICIPAL DE PRADO FERREIRA · [EDITAL DE CONVOCAÇÃO Nº 028/2026 38ª CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/BECB6B08) · 2026-09-08
+- CONSÓRCIO INTERMUNICIPAL DE SANEAMENTO DO PARANÁ · [EDITAL DE CONVOCAÇÃO Nº 029/2026 8ª CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/D46905B6) · 2026-09-08
+- CONSÓRCIO INTERMUNICIPAL DE SANEAMENTO DO PARANÁ · [PORTARIA N.º 21, DE 04 DE SETEMBRO DE 2026.](https://www.diariomunicipal.com.br/amp/materia/146D214C) · 2026-09-08
+- DEPARTAMENTO DE ADMINISTRAÇÃO · [PROCESSO SELETIVO SIMPLIFICADO Nº 07/2025 EDITAL](https://www.diariomunicipal.com.br/amp/materia/4D4F4B68) · 2026-09-08
+- DIVISÃO DE RECURSOS HUMANOS · [EDITAL 104/2026](https://www.diariomunicipal.com.br/amp/materia/E0C3A52F) · 2026-09-08
+- DIVISÃO DE RECURSOS HUMANOS · [EDITAL 105/2026](https://www.diariomunicipal.com.br/amp/materia/054A8FC5) · 2026-09-08
+- DEPARTAMENTO DE RECURSOS HUMANOS · [EDITAL Nº 66/2026](https://www.diariomunicipal.com.br/amp/materia/7016ABCA) · 2026-09-08
+- MUNICÍPIO DE TRÊS BARRAS DO PARANÁ · [LEI Nº 3174/2026](https://www.diariomunicipal.com.br/amp/materia/CDE89E1F) · 2026-09-08
+- PREFEITURA MUNICIPAL DE IRATI · [EDITAL Nº 001.2./2026 - 38ª CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/2CB9855E) · 2026-09-08
+- GABINETE DO PREFEITO · [EDITAL Nº 002.30/2026 – 26ª CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/79B92FF4) · 2026-09-08
+- PREFEITURA MUNICIPAL DE SALGADO FILHO · [EDITAL Nº 10/2026 EDITAL HOMOLOGAÇÃO FINAL PROCESSO SELETIVO SIMPLIFICADO Nº 01/2026](https://www.diariomunicipal.com.br/amp/materia/BC21A4EA) · 2026-09-08
+- PREFEITURA MUNICIPAL DE TUNAS DO PARANÁ · [PROCESSO SELETIVO SIMPLIFICADO Nº 002/2026](https://www.diariomunicipal.com.br/amp/materia/2D68BACA) · 2026-09-08
+- DEPARTAMENTO DE RECURSOS HUMANOS · [PORTARIA Nº 4250/2026](https://www.diariomunicipal.com.br/amp/materia/4CA5BC82) · 2026-09-09
+- GABINETE DO PODER EXECUTIVO MUNICIPAL · [EDITAL DE CONVOCAÇÃO Nº 090/2026 - DIVISÃO DE](https://www.diariomunicipal.com.br/amp/materia/FEC25CA8) · 2026-09-09
+- GABINETE DA PREFEITA · [DECISÃO ADMINISTRATIVA](https://www.diariomunicipal.com.br/amp/materia/514B4C47) · 2026-09-09
+- PREFEITURA MUNICIPAL DE BALSA NOVA · [EDITAL DE CONVOCAÇÃO N.º 003/2026 - PROCESSO](https://www.diariomunicipal.com.br/amp/materia/E556CA43) · 2026-09-09
+- ADMINISTRAÇÃO · [EDITAL DE CONVOCAÇÃO N.º 006/2026 - PROCESSO](https://www.diariomunicipal.com.br/amp/materia/BC1A53AF) · 2026-09-09
+- ADMINISTRAÇÃO · [PORTARIA Nº. 633/2026](https://www.diariomunicipal.com.br/amp/materia/FE2B5004) · 2026-09-09
+- ADMINISTRAÇÃO · [PORTARIA Nº. 634/2026](https://www.diariomunicipal.com.br/amp/materia/430BF9BE) · 2026-09-09
+- ADMINISTRAÇÃO · [PORTARIA Nº. 635/2026](https://www.diariomunicipal.com.br/amp/materia/0E8358E8) · 2026-09-09
+- ADMINISTRAÇÃO · [PORTARIA Nº. 636/2026](https://www.diariomunicipal.com.br/amp/materia/A6567F63) · 2026-09-09
+- RECURSOS HUMANOS · [PORTARIA Nº. 132/2026, DE 08 DE SETEMBRO DE 2026.](https://www.diariomunicipal.com.br/amp/materia/AEA03358) · 2026-09-09
+- RECURSOS HUMANOS · [TERMO ADITIVO DE CONTRATO](https://www.diariomunicipal.com.br/amp/materia/C6EAB98C) · 2026-09-09
+- DEPARTAMENTO DE RECURSOS HUMANOS · [EDITAL Nº 04 / 2026 – PSS PROFESSORES CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/54876E6A) · 2026-09-09
+- PREFEITURA MUNICIPAL DE CAMPO MAGRO · [DECRETO N.º 721/2026](https://www.diariomunicipal.com.br/amp/materia/91441770) · 2026-09-09
+- GABINETE DO PREFEITO · [DECRETO N.º 722/2026](https://www.diariomunicipal.com.br/amp/materia/D4B22CA4) · 2026-09-09
+- GABINETE DO PREFEITO · [DECRETO N.º 723/2026](https://www.diariomunicipal.com.br/amp/materia/0505508C) · 2026-09-09
+- DEPARTAMENTO DE ADMINISTRAÇÃO · [PROCESSO SELETIVO SIMPLIFICADO - PSS N°001/2025](https://www.diariomunicipal.com.br/amp/materia/CD593465) · 2026-09-09
+- SECRETARIA DE ADMINISTRAÇÃO E PLANEJAMENTO · [EDITAL Nº 080/2026](https://www.diariomunicipal.com.br/amp/materia/5667C8A8) · 2026-09-09
+- SECRETARIA DE ADMINISTRAÇÃO E PLANEJAMENTO · [EDITAL Nº 081/2026](https://www.diariomunicipal.com.br/amp/materia/B82A4A91) · 2026-09-09
+- GOVERNO MUNICIPAL - GABINETE DO PREFEITO · [PORTARIA Nº. 1392/2026 REPUBLICAÇÃO POR](https://www.diariomunicipal.com.br/amp/materia/4A86BB45) · 2026-09-09
+- GOVERNO MUNICIPAL - GABINETE DO PREFEITO · [PORTARIA Nº. 1394/2026 REPUBLICAÇÃO POR](https://www.diariomunicipal.com.br/amp/materia/D70FA04F) · 2026-09-09
+- GOVERNO MUNICIPAL - GABINETE DO PREFEITO · [PORTARIA Nº. 1435/2026](https://www.diariomunicipal.com.br/amp/materia/B717019B) · 2026-09-09
+- ADMINISTRAÇÃO RH · [PROCESSO SELETIVO SIMPLIFICADO N° 003/2025](https://www.diariomunicipal.com.br/amp/materia/6316F2BC) · 2026-09-09
+- PREFEITURA MUNICIPAL DE IVATUBA · [EXTRATO DO CONTRATO DE TRABALHO POR TEMPO](https://www.diariomunicipal.com.br/amp/materia/B44ED1F0) · 2026-09-09
+- GABINETE DO PREFEITO · [EXTRATO DO CONTRATO DE TRABALHO POR TEMPO](https://www.diariomunicipal.com.br/amp/materia/3F770FA9) · 2026-09-09
+- GOVERNO MUNICIPAL · [EDITAL DE CONVOCAÇÃO Nº 04/2026 PROCESSO](https://www.diariomunicipal.com.br/amp/materia/C5F666C5) · 2026-09-09
+- SECRETARIA DE ADMINISTRAÇÃO · [EDITAL DE CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/1A4D2C8C) · 2026-09-09
+- PREFEITURA MUNICIPAL DE MARILENA · [DEPARTAMENTO DE ADMINISTRAÇÃO E](https://www.diariomunicipal.com.br/amp/materia/DF253C6B) · 2026-09-09
+- DEPARTAMENTO DE ADMINISTRAÇÃO E PLANEJAMENTO · [PLANEJAMENTO](https://www.diariomunicipal.com.br/amp/materia/2CD538F4) · 2026-09-09
+- DEPARTAMENTO DE ADMINISTRAÇÃO E PLANEJAMENTO · [termos do artigo 37 inciso IX da Constituição](https://www.diariomunicipal.com.br/amp/materia/0A928F83) · 2026-09-09
+- FUNDAÇÃO DE SÁUDE DE PAIÇANDU · [EDITAL DE CONVOCAÇÃO Nº259/2026](https://www.diariomunicipal.com.br/amp/materia/6C21CD63) · 2026-09-09
+- FUNDAÇÃO DE SÁUDE DE PAIÇANDU · [EDITAL DE CONVOCAÇÃO Nº 260/2026](https://www.diariomunicipal.com.br/amp/materia/CB2D26C4) · 2026-09-09
+- FUNDAÇÃO DE SÁUDE DE PAIÇANDU · [EDITAL DE CONVOCAÇÃO Nº 261/2026](https://www.diariomunicipal.com.br/amp/materia/1E1E8163) · 2026-09-09
+- FUNDAÇÃO DE SÁUDE DE PAIÇANDU · [EDITAL DE CONVOCAÇÃO Nº 262/2026](https://www.diariomunicipal.com.br/amp/materia/DF832035) · 2026-09-09
+- PREFEITURA MUNICIPAL DE PAIÇANDU · [EDITAL DE CONVOCAÇÃO Nº 263/2026](https://www.diariomunicipal.com.br/amp/materia/327B4557) · 2026-09-09
+- PREFEITURA MUNICIPAL DE PAIÇANDU · [EDITAL DE CONVOCAÇÃO Nº 264/2026](https://www.diariomunicipal.com.br/amp/materia/088FD8A7) · 2026-09-09
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [COMUNICADO – CHAMADA AUXILIAR DE CUIDADOR DE](https://www.diariomunicipal.com.br/amp/materia/98546658) · 2026-09-09
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [COMUNICADO – CHAMADA PROFESSOR 20H - PROCESSO](https://www.diariomunicipal.com.br/amp/materia/1E1DEC28) · 2026-09-09
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [PROCESSO SELETIVO SIMPLIFICADO Nº 01/2026 -](https://www.diariomunicipal.com.br/amp/materia/26B72E5A) · 2026-09-09
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [PROCESSO SELETIVO SIMPLIFICADO Nº 02/2025 –](https://www.diariomunicipal.com.br/amp/materia/B231C9DD) · 2026-09-09
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO ADITIVO DE PRORROGAÇÃO DE](https://www.diariomunicipal.com.br/amp/materia/1B35259D) · 2026-09-09
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO ADITIVO DE PRORROGAÇÃO DE](https://www.diariomunicipal.com.br/amp/materia/FC296E8C) · 2026-09-09
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO ADITIVO DE PRORROGAÇÃO DE](https://www.diariomunicipal.com.br/amp/materia/98B9ACAB) · 2026-09-09
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO ADITIVO DE PRORROGAÇÃO DE](https://www.diariomunicipal.com.br/amp/materia/A1314ACA) · 2026-09-09
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO ADITIVO DE PRORROGAÇÃO DE](https://www.diariomunicipal.com.br/amp/materia/FF52EFC1) · 2026-09-09
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO ADITIVO DE PRORROGAÇÃO DE](https://www.diariomunicipal.com.br/amp/materia/EA880FE2) · 2026-09-09
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO ADITIVO DE PRORROGAÇÃO DE](https://www.diariomunicipal.com.br/amp/materia/FB30C455) · 2026-09-09
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO ADITIVO DE PRORROGAÇÃO DE](https://www.diariomunicipal.com.br/amp/materia/5F33A35B) · 2026-09-09
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO ADITIVO DE PRORROGAÇÃO DE](https://www.diariomunicipal.com.br/amp/materia/35DC496E) · 2026-09-09
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO ADITIVO DE PRORROGAÇÃO DE](https://www.diariomunicipal.com.br/amp/materia/1E78EB51) · 2026-09-09
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO ADITIVO DE PRORROGAÇÃO DE](https://www.diariomunicipal.com.br/amp/materia/7B44367F) · 2026-09-09
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO ADITIVO DE PRORROGAÇÃO DE](https://www.diariomunicipal.com.br/amp/materia/49063B35) · 2026-09-09
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO ADITIVO DE PRORROGAÇÃO DE](https://www.diariomunicipal.com.br/amp/materia/0ABF3EEE) · 2026-09-09
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO ADITIVO DE PRORROGAÇÃO DE](https://www.diariomunicipal.com.br/amp/materia/B110713D) · 2026-09-09
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO ADITIVO DE PRORROGAÇÃO DE](https://www.diariomunicipal.com.br/amp/materia/0C29341D) · 2026-09-09
+- DEPARTAMENTO DE RECURSOS HUMANOS · [PORTARIA Nº 831 DE 08 DE SETEMBRO DE 2026.](https://www.diariomunicipal.com.br/amp/materia/7E0A5D1A) · 2026-09-09
+- DEPARTAMENTO DE RECURSOS HUMANOS · [PORTARIA Nº 832 DE 08 DE SETEMBRO DE 2026.](https://www.diariomunicipal.com.br/amp/materia/44888165) · 2026-09-09
+- SECRETARIA MUNICIPAL DE RECURSOS HUMANOS · [PROCESSO SELETIVO SIMPLIFICADO – PSS](https://www.diariomunicipal.com.br/amp/materia/3CEC70BE) · 2026-09-09
+- PREFEITURA MUNICIPAL DE PLANALTO · [EDITAL DE PUBLICAÇÃO CLASSIFICAÇÃO PRELIMINAR](https://www.diariomunicipal.com.br/amp/materia/460DE96E) · 2026-09-09
+- DEPARTAMENTO DE ADMINISTRAÇÃO · [PORTARIA Nº 9.090/2026 08/09/2026](https://www.diariomunicipal.com.br/amp/materia/57303206) · 2026-09-09
+- DEPARTAMENTO DE RECURSOS HUMANOS · [PROCESSO SELETIVO SIMPLIFICADO Nº 002/2025 EDITAL](https://www.diariomunicipal.com.br/amp/materia/601DA66C) · 2026-09-09
+- ADMINISTRAÇÃO GERAL · [DECRETO Nº 230/2026](https://www.diariomunicipal.com.br/amp/materia/FA150AFB) · 2026-09-09
+- ADMINISTRAÇÃO GERAL · [DECRETO Nº231/2026](https://www.diariomunicipal.com.br/amp/materia/9138FD03) · 2026-09-09
+- ADMINISTRAÇÃO GERAL · [DECRETO Nº 234/2026](https://www.diariomunicipal.com.br/amp/materia/DFA529D9) · 2026-09-09
+- PREFEITURA MUNICIPAL DE TERRA RICA · [DECRETO Nº 393/2026](https://www.diariomunicipal.com.br/amp/materia/DBD7192D) · 2026-09-09
+- PODER EXECUTIVO · [EDITAL DE CONVOCAÇÃO Nº 008-2026 - PROCESSO](https://www.diariomunicipal.com.br/amp/materia/D9FA79D5) · 2026-09-09
+- DEPARTAMENTO DE RECURSOS HUMANOS · [EDITAL DE ABERTURA PSS 2026](https://www.diariomunicipal.com.br/amp/materia/8ECB33DA) · 2026-09-09
+- ADMINISTRAÇÃO · [PROCESSO SELETIVO SIMPLIFICADO – PSS, para contratações temporárias para exercer a função de AUXILIAR EM FARMÁCIA , em](https://www.diariomunicipal.com.br/amp/materia/89FCC865) · 2026-09-09
+- ADMINISTRAÇÃO · [PROCESSO SELETIVO SIMPLIFICADO – PSS, para contratações temporárias para exercer a função de AUXILIAR EM FARMÁCIA , em](https://www.diariomunicipal.com.br/amp/materia/557C191A) · 2026-09-09
+- MUNICÍPIO DE FÊNIX · [LEI Nº 20/2026](https://www.diariomunicipal.com.br/amp/materia/897DC776) · 2026-09-10
+- MUNICÍPIO DE NOSSA SENHORA DAS GRAÇAS · [EDITAL Nº 02/2026 – PSS Nº 003/2026](https://www.diariomunicipal.com.br/amp/materia/C492C267) · 2026-09-10
+- GABINETE DO PODER EXECUTIVO MUNICIPAL · [EXTRATO Nº 093/2026 DE RESCISÃO DE TÉRMINO DE](https://www.diariomunicipal.com.br/amp/materia/9A784487) · 2026-09-10
+- GABINETE DO PODER EXECUTIVO MUNICIPAL · [EXTRATO Nº 094/2026 DE RESCISÃO DE TÉRMINO DE](https://www.diariomunicipal.com.br/amp/materia/9F549619) · 2026-09-10
+- GABINETE DO PODER EXECUTIVO MUNICIPAL · [EXTRATO Nº 103/2026 DE RESCISÃO DE TÉRMINO DE](https://www.diariomunicipal.com.br/amp/materia/A59D811E) · 2026-09-10
+- GABINETE DO PODER EXECUTIVO MUNICIPAL · [EXTRATO Nº 104/2026 DE RESCISÃO DE TÉRMINO DE](https://www.diariomunicipal.com.br/amp/materia/E901A1A2) · 2026-09-10
+- GABINETE DO PODER EXECUTIVO MUNICIPAL · [EXTRATO Nº 105/2026 DE RESCISÃO DE CONTRATO DE](https://www.diariomunicipal.com.br/amp/materia/E07C7573) · 2026-09-10
+- RH · [EDITAL DE CONVOCAÇÃO 04/2026 PSS 01/2026](https://www.diariomunicipal.com.br/amp/materia/958854E2) · 2026-09-10
+- RH · [PORTARIA 345/2026](https://www.diariomunicipal.com.br/amp/materia/2431876E) · 2026-09-10
+- CONSAMU · [PROCESSO SELETIVO SIMPLIFICADO Nº 002/2026 PARA](https://www.diariomunicipal.com.br/amp/materia/9A3158D3) · 2026-09-10
+- SECRETARIA DE ADMINISTRAÇÃO E PLANEJAMENTO · [EDITAL Nº 083/2026](https://www.diariomunicipal.com.br/amp/materia/1B84055E) · 2026-09-10
+- SECRETARIA DE ADMINISTRAÇÃO GERAL · [EDITAL](https://www.diariomunicipal.com.br/amp/materia/3AA40823) · 2026-09-10
+- GABINETE DO PREFEITO · [PORTARIA Nº 386/2026 DE 28 DE AGOSTO DE 2026](https://www.diariomunicipal.com.br/amp/materia/39EF5126) · 2026-09-10
+- PREFEITURA MUNICIPAL DE IVATUBA · [GABINETE DO PREFEITO](https://www.diariomunicipal.com.br/amp/materia/DD711B75) · 2026-09-10
+- GABINETE DO PREFEITO · [DECLARAÇÃO PROCESSO SELETIVO SIMPLIFICADO –](https://www.diariomunicipal.com.br/amp/materia/DCF34615) · 2026-09-10
+- GABINETE DO PREFEITO · [EDITAL DE CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/E8EC9110) · 2026-09-10
+- GABINETE DO PREFEITO · [EDITAL DE CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/614C1DE2) · 2026-09-10
+- GABINETE DO PREFEITO · [EXTRATO DO TERMO DE RESCISÃO CONTRATO DE](https://www.diariomunicipal.com.br/amp/materia/F9BE4020) · 2026-09-10
+- GABINETE DO PREFEITO · [EXTRATO TERMO ADITIVO AO CONTRATO DE](https://www.diariomunicipal.com.br/amp/materia/BACA1686) · 2026-09-10
+- GOVERNO MUNICIPAL · [EDITAL DE CONVOCAÇÃO Nº 014/2026 PROCESSO](https://www.diariomunicipal.com.br/amp/materia/B075556F) · 2026-09-10
+- GOVERNO MUNICIPAL · [PORTARIA Nº. 608/2026](https://www.diariomunicipal.com.br/amp/materia/00328550) · 2026-09-10
+- SECRETARIA DE ADMINISTRAÇÃO · [EDITAL DE CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/12705815) · 2026-09-10
+- GABINETE DO PREFEITO · [EDITAL N º. 296/2026 - CONVOCAÇÃO PROCESSO](https://www.diariomunicipal.com.br/amp/materia/0C180741) · 2026-09-10
+- GABINETE DO PREFEITO · [EDITAL N º. 297/2026 - CONVOCAÇÃO PROCESSO](https://www.diariomunicipal.com.br/amp/materia/D866BA43) · 2026-09-10
+- GABINETE DO PREFEITO · [EDITAL N º. 299/2026 - CONVOCAÇÃO PROCESSO](https://www.diariomunicipal.com.br/amp/materia/803FCEBA) · 2026-09-10
+- PREFEITURA MUNICIPAL DE MARILENA · [DEPARTAMENTO DE ADMINISTRAÇÃO E](https://www.diariomunicipal.com.br/amp/materia/729E8FA9) · 2026-09-10
+- DEPARTAMENTO DE ADMINISTRAÇÃO E PLANEJAMENTO · [PLANEJAMENTO](https://www.diariomunicipal.com.br/amp/materia/75BC2A4B) · 2026-09-10
+- SECRETARIA MUNICIPAL DE RECURSOS HUMANOS · [EDITAL DE CONVOCAÇÃO Nº 17/2026](https://www.diariomunicipal.com.br/amp/materia/F0D688C1) · 2026-09-10
+- PREFEITURA MUNICIPAL DE PINHAL DE SÃO BENTO · [EDITAL DE CONVOCAÇÃO Nº 01/2026-PROCESSO](https://www.diariomunicipal.com.br/amp/materia/A878C378) · 2026-09-10
+- PREFEITURA MUNICIPAL DE QUERÊNCIA DO NORTE · [EDITAL Nº. 028/2026](https://www.diariomunicipal.com.br/amp/materia/141B07DB) · 2026-09-10
+- DEPARTAMENTO DE RECURSOS HUMANOS · [EDITAL Nº 226/2026 PROCESSO SELETIVO SIMPLIFICADO](https://www.diariomunicipal.com.br/amp/materia/C56592E5) · 2026-09-10
+- DEPARTAMENTO DE RECURSOS HUMANOS · [PROCESSO SELETIVO SIMPLIFICADO Nº 002/2025 EDITAL](https://www.diariomunicipal.com.br/amp/materia/3A143A25) · 2026-09-10
+- PREFEITURA MUNICIPAL DE RIO BRANCO DO IVAÍ · [EDITAL 022-2026- PSS- SAÚDE](https://www.diariomunicipal.com.br/amp/materia/D723FC94) · 2026-09-10
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [PROCESSO SELETIVO S IMPLIFICADO – PSS – EDITAL Nº](https://www.diariomunicipal.com.br/amp/materia/E87B49B0) · 2026-09-10
+- PREFEITURA MUNICIPAL DE SÃO JOSÉ DA BOA VISTA · [EDITAL 106/2026](https://www.diariomunicipal.com.br/amp/materia/5C3651F3) · 2026-09-10
+- DIVISÃO DE RECURSOS HUMANOS · [EDITAL 107/2026](https://www.diariomunicipal.com.br/amp/materia/95A85B5D) · 2026-09-10
+- DIVISÃO DE RECURSOS HUMANOS · [EDITAL 108/2026](https://www.diariomunicipal.com.br/amp/materia/255BAE17) · 2026-09-10
+- PREFEITURA MUNICIPAL DE SÃO SEBASTIÃO DA AMOREIRA · [DECRETO Nº 247/2026](https://www.diariomunicipal.com.br/amp/materia/C3A209D8) · 2026-09-10
+- ADMINISTRAÇÃO GERAL · [EDITAL Nº 112/2026 (CONVOCAÇÃO)](https://www.diariomunicipal.com.br/amp/materia/C50A7AD6) · 2026-09-10
+- PREFEITURA MUNICIPAL DE TUNAS DO PARANÁ · [DECRETO Nº 262 DE 08 DE SETEMBRO DE 2026](https://www.diariomunicipal.com.br/amp/materia/6134B5AB) · 2026-09-10
+- SECRETARIA DE ADMINISTRAÇÃO · [EDITAL DE CONVOCAÇÃO 148-2026](https://www.diariomunicipal.com.br/amp/materia/11983A99) · 2026-09-10
+- SECRETARIA DE ADMINISTRAÇÃO · [EDITAL DE CONVOCAÇÃO 149-2026](https://www.diariomunicipal.com.br/amp/materia/4CC2E900) · 2026-09-10
+- SECRETARIA DE ADMINISTRAÇÃO · [EDITAL DE CONVOCAÇÃO 150-2026](https://www.diariomunicipal.com.br/amp/materia/2C721A80) · 2026-09-10
+- MUNICIPIO DE ENÉAS MARQUES · [RETIFICAÇÃO ANEXO II EDITAL PSS 2026](https://www.diariomunicipal.com.br/amp/materia/F7C710E5) · 2026-09-10
+- GABINETE DO PODER EXECUTIVO MUNICIPAL · [EXTRATO 092/2026 DO TERMO ADITIVO AO CONTRATO DE TRABALHO REGIME ESPECIAL](https://www.diariomunicipal.com.br/amp/materia/3DBA04E4) · 2026-09-10
+- GABINETE DO PODER EXECUTIVO MUNICIPAL · [EXTRATO Nº 095/2026 DE CONTRATO DE TRABALHO POR PRAZO DETERMINADO EM REGIME ESPECIAL](https://www.diariomunicipal.com.br/amp/materia/1665B322) · 2026-09-10
+- GABINETE DO PODER EXECUTIVO MUNICIPAL · [EXTRATO Nº 096/2026 DE CONTRATO DE TRABALHO POR PRAZO DETERMINADO EM REGIME ESPECIAL](https://www.diariomunicipal.com.br/amp/materia/D15A4A24) · 2026-09-10
+- GABINETE DO PODER EXECUTIVO MUNICIPAL · [EXTRATO Nº 097/2026 DE CONTRATO DE TRABALHO POR PRAZO DETERMINADO EM REGIME ESPECIAL](https://www.diariomunicipal.com.br/amp/materia/AE039D47) · 2026-09-10
+- GABINETE DO PODER EXECUTIVO MUNICIPAL · [EXTRATO Nº 098/2026 DE CONTRATO DE TRABALHO POR PRAZO DETERMINADO EM REGIME ESPECIAL](https://www.diariomunicipal.com.br/amp/materia/E2A61F26) · 2026-09-10
+- GABINETE DO PODER EXECUTIVO MUNICIPAL · [EXTRATO Nº 099/2026 DE CONTRATO DE TRABALHO POR PRAZO DETERMINADO EM REGIME ESPECIAL](https://www.diariomunicipal.com.br/amp/materia/E036FEF4) · 2026-09-10
+- GABINETE DO PODER EXECUTIVO MUNICIPAL · [EXTRATO Nº 100/2026 DE CONTRATO DE TRABALHO POR PRAZO DETERMINADO EM REGIME ESPECIAL](https://www.diariomunicipal.com.br/amp/materia/3B6CAD2A) · 2026-09-10
+- GABINETE DO PODER EXECUTIVO MUNICIPAL · [EXTRATO Nº 101/2026 DE CONTRATO DE TRABALHO POR PRAZO DETERMINADO EM REGIME ESPECIAL](https://www.diariomunicipal.com.br/amp/materia/44001776) · 2026-09-10
+- GABINETE DO PODER EXECUTIVO MUNICIPAL · [EXTRATO Nº 102/2026 DE CONTRATO DE TRABALHO POR PRAZO DETERMINADO EM REGIME ESPECIAL](https://www.diariomunicipal.com.br/amp/materia/F768AF3C) · 2026-09-10
+- GABINETE DO PODER EXECUTIVO MUNICIPAL · [EXTRATO Nº 106/2026 DE CONTRATO DE TRABALHO POR PRAZO DETERMINADO EM REGIME ESPECIAL](https://www.diariomunicipal.com.br/amp/materia/C6CE9AB1) · 2026-09-10
+- GABINETE DO PODER EXECUTIVO MUNICIPAL · [EXTRATO Nº 107/2026 DE CONTRATO DE TRABALHO POR PRAZO DETERMINADO EM REGIME ESPECIAL](https://www.diariomunicipal.com.br/amp/materia/936ABB4B) · 2026-09-10
+- GABINETE DO PODER EXECUTIVO MUNICIPAL · [EXTRATO Nº 108/2026 DE CONTRATO DE TRABALHO POR PRAZO DETERMINADO EM REGIME ESPECIAL](https://www.diariomunicipal.com.br/amp/materia/33D5C58B) · 2026-09-10
+- GABINETE DO PODER EXECUTIVO MUNICIPAL · [EXTRATO Nº 109/2026 DE CONTRATO DE TRABALHO POR PRAZO DETERMINADO EM REGIME ESPECIAL](https://www.diariomunicipal.com.br/amp/materia/EF602D1F) · 2026-09-10
+- PREFEITURA MUNICIPAL DE BALSA NOVA · [EDITAL PROCESSO SELETIVO SIMPLIFICADO Nº 16/2026](https://www.diariomunicipal.com.br/amp/materia/D905537A) · 2026-09-10
+- ADMINISTRAÇÃO · [PROCESSO SELETIVO SIMPLIFICADO – PSS, para contratações temporárias para exercer a função de PROFESSOR, em conformidade com](https://www.diariomunicipal.com.br/amp/materia/B17C7084) · 2026-09-10
+- PREFEITURA MUNICIPAL DE GUARACI · [EDITAL Nº 082/2026](https://www.diariomunicipal.com.br/amp/materia/AFA07CCA) · 2026-09-10
+- PREFEITURA MUNICIPAL DE PATO BRANCO · [EDITAL Nº004/2026- 002. CLASSIFICAÇÃO PRELIMINAR](https://www.diariomunicipal.com.br/amp/materia/9BF4F2CE) · 2026-09-10
+- PREFEITURA MUNICIPAL DE SÃO JERÔNIMO DA SERRA · [EDITAL DE PROCESSO SELETIVO SIMPLIFICADO Nº 03/2026 PROCESSO SELETIVO SIMPLIFICADO Nº 03/2026 MÉDICO -](https://www.diariomunicipal.com.br/amp/materia/E1DB162B) · 2026-09-10
+- DIVISÃO DE RECURSOS HUMANOS · [EDITAL DE CONVOCAÇÃO DE APROVADOS Nº 008 2026](https://www.diariomunicipal.com.br/amp/materia/C4671DBA) · 2026-09-11
+- GABINETE DA PREFEITA · [DECRETO Nº. 11.340 DE 10 DE SETEMBRO DE 2026](https://www.diariomunicipal.com.br/amp/materia/92E177C5) · 2026-09-11
+- GABINETE DA PREFEITA · [EDITAL DE CONVOCAÇÃO N. 019/2026 PSS - PROFESSOR](https://www.diariomunicipal.com.br/amp/materia/1C25FCD2) · 2026-09-11
+- ADMINISTRAÇÃO · [EDITAL DE CONVOCAÇÃO N.º 007/2026 - PROCESSO](https://www.diariomunicipal.com.br/amp/materia/D62E77BD) · 2026-09-11
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [EDITAL N.º 040/2026](https://www.diariomunicipal.com.br/amp/materia/8B43AAB1) · 2026-09-11
+- SECRETARIA DE GOVERNO · [EDITAL Nº 014.005/2026 – CONVOCAÇÃO PROCESSO](https://www.diariomunicipal.com.br/amp/materia/B1EEB5C9) · 2026-09-11
+- SECRETÁRIA DE ADMINISTRAÇÃO E FINANÇAS · [DECRETO Nº 23799/2026](https://www.diariomunicipal.com.br/amp/materia/D6EFF821) · 2026-09-11
+- PREFEITURA MUNICIPAL DE DOUTOR ULYSSES · [DECRETO Nº0282/2026 NOMEAR, O SENHOR JONATAN](https://www.diariomunicipal.com.br/amp/materia/19614460) · 2026-09-11
+- DEPARTAMENTO DE ADMINISTRAÇÃO · [DECRETO Nº0283/2026 NOMEAR, A SENHORA RAQUEL](https://www.diariomunicipal.com.br/amp/materia/F90E1469) · 2026-09-11
+- PREFEITURA MUNICIPAL DE GUARACI · [EDITAL Nº 084/2026](https://www.diariomunicipal.com.br/amp/materia/C267C183) · 2026-09-11
+- SECRETARIA DE ADMINISTRAÇÃO E PLANEJAMENTO · [EDITAL Nº 085/2026](https://www.diariomunicipal.com.br/amp/materia/9121FAD6) · 2026-09-11
+- SECRETARIA DE ADMINISTRAÇÃO E PLANEJAMENTO · [EDITAL Nº 086/2026](https://www.diariomunicipal.com.br/amp/materia/6D0AF10D) · 2026-09-11
+- DIVISÃO DE RECURSOS HUMANOS · [EDITAL DE CONVOCAÇÃO - PROFISSIONAL DE APOIO](https://www.diariomunicipal.com.br/amp/materia/E114834F) · 2026-09-11
+- GABINETE DO PREFEITO · [EDITAL DE CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/5E606908) · 2026-09-11
+- SECRETARIA DE ADMINISTRAÇÃO · [CONTRATO DE PRESTAÇÃO DE SERVIÇOS EM REGIME](https://www.diariomunicipal.com.br/amp/materia/5C5590B9) · 2026-09-11
+- SECRETARIA DE ADMINISTRAÇÃO · [CONTRATO DE PRESTAÇÃO DE SERVIÇOS EM REGIME](https://www.diariomunicipal.com.br/amp/materia/71129957) · 2026-09-11
+- SECRETARIA DE ADMINISTRAÇÃO · [CONTRATO DE PRESTAÇÃO DE SERVIÇOS EM REGIME](https://www.diariomunicipal.com.br/amp/materia/00060B94) · 2026-09-11
+- PREFEITURA MUNICIPAL DE MARILENA · [termos do artigo 37 inciso IX da Constituição](https://www.diariomunicipal.com.br/amp/materia/A2F4F96A) · 2026-09-11
+- FUNDAÇÃO DE EDUCAÇÃO DE PAIÇANDU · [EDITAL DE CONVOCAÇÃO Nº 267/2026](https://www.diariomunicipal.com.br/amp/materia/DAB020D7) · 2026-09-11
+- FUNDAÇÃO DE EDUCAÇÃO DE PAIÇANDU · [EDITAL DE CONVOCAÇÃO Nº 268/2026](https://www.diariomunicipal.com.br/amp/materia/4FF3F740) · 2026-09-11
+- FUNDAÇÃO DE EDUCAÇÃO DE PAIÇANDU · [PORTARIA Nº 459/2026](https://www.diariomunicipal.com.br/amp/materia/AEB3697E) · 2026-09-11
+- FUNDAÇÃO DE EDUCAÇÃO DE PAIÇANDU · [PORTARIA Nº 460/2026](https://www.diariomunicipal.com.br/amp/materia/FD87DA0E) · 2026-09-11
+- FUNDAÇÃO DE EDUCAÇÃO DE PAIÇANDU · [PORTARIA Nº 461/2026](https://www.diariomunicipal.com.br/amp/materia/3000BBC0) · 2026-09-11
+- FUNDAÇÃO DE EDUCAÇÃO DE PAIÇANDU · [PORTARIA Nº 466/2026](https://www.diariomunicipal.com.br/amp/materia/7AD390C9) · 2026-09-11
+- FUNDAÇÃO DE EDUCAÇÃO DE PAIÇANDU · [PORTARIA Nº 467/2026](https://www.diariomunicipal.com.br/amp/materia/C74E77A7) · 2026-09-11
+- FUNDAÇÃO DE EDUCAÇÃO DE PAIÇANDU · [PORTARIA Nº 469/2026](https://www.diariomunicipal.com.br/amp/materia/58FACB00) · 2026-09-11
+- FUNDAÇÃO DE EDUCAÇÃO DE PAIÇANDU · [PORTARIA Nº 470/2026](https://www.diariomunicipal.com.br/amp/materia/69589D73) · 2026-09-11
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [PROCESSO SELETIVO SIMPLIFICADO Nº. 01/2026 - PA](https://www.diariomunicipal.com.br/amp/materia/9A17DCD8) · 2026-09-11
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [Processo Seletivo Simplificado – PSS nº. 01/2026, o não](https://www.diariomunicipal.com.br/amp/materia/87C48756) · 2026-09-11
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [COMUNICADO – CHAMADA PROFESSOR 20H - PROCESSO](https://www.diariomunicipal.com.br/amp/materia/0933D618) · 2026-09-11
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [TERMO DE DESISTÊNCIA - PROCESSO SELETIVO](https://www.diariomunicipal.com.br/amp/materia/8BE53F90) · 2026-09-11
+- PREFEITURA MUNICIPAL DE PALMITAL · [PORTARIA 552/2026](https://www.diariomunicipal.com.br/amp/materia/3EBEF3AF) · 2026-09-11
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO ADITIVO DE PRORROGAÇÃO DE](https://www.diariomunicipal.com.br/amp/materia/5CE5DB93) · 2026-09-11
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO ADITIVO DE PRORROGAÇÃO DE](https://www.diariomunicipal.com.br/amp/materia/B699DE7A) · 2026-09-11
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO ADITIVO DE PRORROGAÇÃO DE](https://www.diariomunicipal.com.br/amp/materia/BBA9DEC8) · 2026-09-11
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO ADITIVO DE PRORROGAÇÃO DE](https://www.diariomunicipal.com.br/amp/materia/E8628207) · 2026-09-11
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO ADITIVO DE PRORROGAÇÃO DE](https://www.diariomunicipal.com.br/amp/materia/349CF842) · 2026-09-11
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO ADITIVO DE PRORROGAÇÃO DE](https://www.diariomunicipal.com.br/amp/materia/8B59B8BF) · 2026-09-11
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO ADITIVO DE PRORROGAÇÃO DE](https://www.diariomunicipal.com.br/amp/materia/1FC93C84) · 2026-09-11
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO ADITIVO DE PRORROGAÇÃO DE](https://www.diariomunicipal.com.br/amp/materia/2AA659F9) · 2026-09-11
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO ADITIVO DE PRORROGAÇÃO DE](https://www.diariomunicipal.com.br/amp/materia/62BF90E7) · 2026-09-11
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO ADITIVO DE PRORROGAÇÃO DE](https://www.diariomunicipal.com.br/amp/materia/D6827ED6) · 2026-09-11
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO DE RESCISÃO DO CONTRATO](https://www.diariomunicipal.com.br/amp/materia/C3C06A36) · 2026-09-11
+- SECRETARIA MUNICIPAL DE RECURSOS HUMANOS · [EDITAL DE CONVOCAÇÃO Nº 19/2026](https://www.diariomunicipal.com.br/amp/materia/7F267C25) · 2026-09-11
+- SECRETARIA MUNICIPAL DE RECURSOS HUMANOS · [EDITAL DE CONVOCAÇÃO Nº 21/2026](https://www.diariomunicipal.com.br/amp/materia/F0B97C70) · 2026-09-11
+- SECRETARIA MUNICIPAL DE RECURSOS HUMANOS · [EDITAL Nº 18/2026- TORNA PÚBLICO A DESISTÊNCIA DO](https://www.diariomunicipal.com.br/amp/materia/F1C3EC6C) · 2026-09-11
+- SECRETARIA MUNICIPAL DE RECURSOS HUMANOS · [EDITAL Nº 20/2026- TORNA PÚBLICO A DESISTÊNCIA DO](https://www.diariomunicipal.com.br/amp/materia/4B50CF46) · 2026-09-11
+- DEPARTAMENTO DE RECURSOS HUMANOS · [PROCESSO SELETIVO SIMPLIFICADO Nº 002/2025 EDITAL](https://www.diariomunicipal.com.br/amp/materia/7719DB27) · 2026-09-11
+- PREFEITURA MUNICIPAL DE RIO BRANCO DO IVAÍ · [EDITAL 022-2026- PSS- SAÚDE](https://www.diariomunicipal.com.br/amp/materia/45631673) · 2026-09-11
+- PREFEITURA MUNICIPAL DE RIO NEGRO · [EDITAL Nº 111/2026](https://www.diariomunicipal.com.br/amp/materia/415E073E) · 2026-09-11
+- SECRETARIA GERAL · [PSS N º 001/2026 – SECRETARIA MUNICIPAL DE SAÚDE 12ª](https://www.diariomunicipal.com.br/amp/materia/AF1B71DD) · 2026-09-11
+- PREFEITURA MUNICIPAL DE SÃO JOSÉ DA BOA VISTA · [EDITAL 110/2026](https://www.diariomunicipal.com.br/amp/materia/D7429D5E) · 2026-09-11
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [EDITAL 105/2026](https://www.diariomunicipal.com.br/amp/materia/4A4B18A5) · 2026-09-11
+- GABINETE DO PREFEITO · [RESULTADO CLASSIFICATÓRIO DO PROCESSO SELETIVO SIMPLIFICADO (EDITAL PSS/SEMEC N.º 013/2025), APÓS](https://www.diariomunicipal.com.br/amp/materia/37549879) · 2026-09-11
+- PREFEITURA MUNICIPAL DE GUARAQUEÇABA · [EDITAL DE CONVOCAÇÃO Nº 052/2026](https://www.diariomunicipal.com.br/amp/materia/A8C9C50D) · 2026-09-11
+- PREFEITURA MUNICIPAL DE IRATI · [EDITAL Nº 04 DO PROCESSO SELETIVO SIMPLIFICADO Nº 003/2026](https://www.diariomunicipal.com.br/amp/materia/E82B833E) · 2026-09-11
+- SECRETARIA DE RECURSOS HUMANOS · [EDITAL -01/2026 - PSS](https://www.diariomunicipal.com.br/amp/materia/D1608F9C) · 2026-09-14
+- DIVISÃO DE RECURSOS HUMANOS · [EDITAL DE CONVOCAÇÃO DE APROVADOS Nº 009 2025](https://www.diariomunicipal.com.br/amp/materia/2B9F2772) · 2026-09-14
+- PREFEITURA MUNICIPAL DE AGUDOS DO SUL · [EDITAL DE CONVOCAÇÃO Nº 096/2026 - DIVISÃO DE](https://www.diariomunicipal.com.br/amp/materia/8204B0DE) · 2026-09-14
+- GABINETE DO PODER EXECUTIVO MUNICIPAL · [EDITAL DE CONVOCAÇÃO Nº 097/2026 - DIVISÃO DE](https://www.diariomunicipal.com.br/amp/materia/9DCB3F35) · 2026-09-14
+- PREFEITURA MUNICIPAL DE BALSA NOVA · [EDITAL DE CONVOCAÇÃO N.º 001/2026 - PROCESSO](https://www.diariomunicipal.com.br/amp/materia/35943339) · 2026-09-14
+- ADMINISTRAÇÃO · [EDITAL DE CONVOCAÇÃO Nº 018/2026 - PROCESSO](https://www.diariomunicipal.com.br/amp/materia/B1C6DEF6) · 2026-09-14
+- ADMINISTRAÇÃO · [DECRETO Nº 1488/2026](https://www.diariomunicipal.com.br/amp/materia/249B62D9) · 2026-09-14
+- RECURSOS HUMANOS · [PORTARIA Nº 469, DE 11 DE SETEMBRO DE 2026](https://www.diariomunicipal.com.br/amp/materia/264E3393) · 2026-09-14
+- GABINETE DO PREFEITO · [LEI N.º 1.946/2026](https://www.diariomunicipal.com.br/amp/materia/D05F2E68) · 2026-09-14
+- DEPARTAMENTO DE ADMINISTRAÇÃO · [DECRETO Nº 0284/2026 NOMEAR, A SENHORA FRANCIELE](https://www.diariomunicipal.com.br/amp/materia/45C98798) · 2026-09-14
+- MUNICÍPIO DE FERNANDES PINHEIRO · [DECRETO Nº 232/2026](https://www.diariomunicipal.com.br/amp/materia/83F0EAF5) · 2026-09-14
+- MUNICÍPIO DE FERNANDES PINHEIRO · [DECRETO Nº 233/2026](https://www.diariomunicipal.com.br/amp/materia/EF5534FA) · 2026-09-14
+- CONSAMU · [PORTARIA Nº 189/2026](https://www.diariomunicipal.com.br/amp/materia/3825072E) · 2026-09-14
+- PREFEITURA MUNICIPAL DE GUARACI · [EDITAL Nº 087/2026](https://www.diariomunicipal.com.br/amp/materia/F7EF8EA4) · 2026-09-14
+- SECRETARIA DE ADMINISTRAÇÃO E PLANEJAMENTO · [EDITAL Nº 088/2026](https://www.diariomunicipal.com.br/amp/materia/E2686348) · 2026-09-14
+- SECRETARIA DE ADMINISTRAÇÃO E PLANEJAMENTO · [EDITAL Nº 089/2026](https://www.diariomunicipal.com.br/amp/materia/075F0830) · 2026-09-14
+- SECRETARIA DE ADMINISTRAÇÃO E PLANEJAMENTO · [EDITAL N.º 090/2026](https://www.diariomunicipal.com.br/amp/materia/37ED376B) · 2026-09-14
+- PROCURADORIA · [DECRETO Nº 666/2026](https://www.diariomunicipal.com.br/amp/materia/1106F493) · 2026-09-14
+- PROCURADORIA · [DECRETO Nº 667/2026](https://www.diariomunicipal.com.br/amp/materia/B546BEDF) · 2026-09-14
+- PROCURADORIA · [PROCESSO SELETIVO SIMPLIFICADO Nº 001/2025 -](https://www.diariomunicipal.com.br/amp/materia/4CFE55A3) · 2026-09-14
+- DEPARTAMENTO DE ADMINISTRAÇÃO · [EXTRATO DE CONTRATO Nº 013/2026](https://www.diariomunicipal.com.br/amp/materia/FF6BE032) · 2026-09-14
+- DEPARTAMENTO DE ADMINISTRAÇÃO · [EXTRATO DE CONTRATO Nº 014/2026](https://www.diariomunicipal.com.br/amp/materia/49451D5B) · 2026-09-14
+- DIVISÃO DE RECURSOS HUMANOS · [EDITAL DE CONVOCAÇÃO - AUXILIAR DE SERVIÇOS](https://www.diariomunicipal.com.br/amp/materia/713E222E) · 2026-09-14
+- GABINETE DO PREFEITO · [PORTARIA Nº 248/2026](https://www.diariomunicipal.com.br/amp/materia/46A28B89) · 2026-09-14
+- GOVERNO MUNICIPAL · [EDITAL DE CONVOCAÇÃO Nº 06/2026 PROCESSO](https://www.diariomunicipal.com.br/amp/materia/40BAFFDB) · 2026-09-14
+- GOVERNO MUNICIPAL · [PORTARIA Nº. 608/2026](https://www.diariomunicipal.com.br/amp/materia/AFD556DA) · 2026-09-14
+- GABINETE · [DECRETO N° 29922, DE 11 DE SETEMBRO DE 2026](https://www.diariomunicipal.com.br/amp/materia/F80B6F09) · 2026-09-14
+- GABINETE · [DECRETO N° 29923, DE 11 DE SETEMBRO DE 2026](https://www.diariomunicipal.com.br/amp/materia/59AB2816) · 2026-09-14
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [EDITAL 09/2026](https://www.diariomunicipal.com.br/amp/materia/72F407CF) · 2026-09-14
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [PORTARIA Nº. 289/2026 DE 11 DE SETEMBRO DE 2026,](https://www.diariomunicipal.com.br/amp/materia/D0457D3C) · 2026-09-14
+- GABINETE DO PREFEITO · [ERRATA EDITAL Nº. 272/2026 - DISPÕE SOBRE ERRATA](https://www.diariomunicipal.com.br/amp/materia/D3FFAD7C) · 2026-09-14
+- PREFEITURA MUNICIPAL DE PAIÇANDU · [PORTARIA Nº 471/2026](https://www.diariomunicipal.com.br/amp/materia/79990DD3) · 2026-09-14
+- FUNDAÇÃO DE EDUCAÇÃO DE PAIÇANDU · [PORTARIA Nº 472/2026](https://www.diariomunicipal.com.br/amp/materia/BFACDD1F) · 2026-09-14
+- FUNDAÇÃO DE EDUCAÇÃO DE PAIÇANDU · [PORTARIA Nº 473/2026](https://www.diariomunicipal.com.br/amp/materia/F05D4EC2) · 2026-09-14
+- FUNDAÇÃO DE EDUCAÇÃO DE PAIÇANDU · [PORTARIA Nº 474/2026](https://www.diariomunicipal.com.br/amp/materia/752537F9) · 2026-09-14
+- FUNDAÇÃO DE EDUCAÇÃO DE PAIÇANDU · [PORTARIA Nº 475/2026](https://www.diariomunicipal.com.br/amp/materia/A7DC75BE) · 2026-09-14
+- FUNDAÇÃO DE EDUCAÇÃO DE PAIÇANDU · [PORTARIA Nº 476/2026](https://www.diariomunicipal.com.br/amp/materia/7748A8A0) · 2026-09-14
+- FUNDAÇÃO DE EDUCAÇÃO DE PAIÇANDU · [PORTARIA Nº 477/2026](https://www.diariomunicipal.com.br/amp/materia/9CEA4A1B) · 2026-09-14
+- FUNDAÇÃO DE EDUCAÇÃO DE PAIÇANDU · [PORTARIA Nº 478/2026](https://www.diariomunicipal.com.br/amp/materia/660ACF92) · 2026-09-14
+- FUNDAÇÃO DE SÁUDE DE PAIÇANDU · [PORTARIA Nº375/2026](https://www.diariomunicipal.com.br/amp/materia/7729ECAB) · 2026-09-14
+- FUNDAÇÃO DE SÁUDE DE PAIÇANDU · [PORTARIA Nº 378/2026](https://www.diariomunicipal.com.br/amp/materia/EEBE080A) · 2026-09-14
+- FUNDAÇÃO DE SÁUDE DE PAIÇANDU · [PORTARIA Nº 379/2026](https://www.diariomunicipal.com.br/amp/materia/67CA5DAA) · 2026-09-14
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO DE RESCISÃO DO CONTRATO](https://www.diariomunicipal.com.br/amp/materia/027AEA7D) · 2026-09-14
+- SECRETARIA MUNICIPAL DE RECURSOS HUMANOS · [EDITAL DE CONVOCAÇÃO Nº 001/2026](https://www.diariomunicipal.com.br/amp/materia/3ED51DA3) · 2026-09-14
+- SECRETARIA MUNICIPAL DE RECURSOS HUMANOS · [PORTARIA N.º 238/2026, DE 11 DE SETEMBRO DE 2026](https://www.diariomunicipal.com.br/amp/materia/95BF35D0) · 2026-09-14
+- SECRETARIA MUNICIPAL DE RECURSOS HUMANOS · [PORTARIA Nº 240/2026 – DE 11 DE SETEMBRO DE 2026.](https://www.diariomunicipal.com.br/amp/materia/C7764834) · 2026-09-14
+- SECRETARIA DE ADMINISTRAÇÃO · [EDITAL DE CONVOCAÇÃO Nº 02/2026 - PROCESSO](https://www.diariomunicipal.com.br/amp/materia/6E49BC70) · 2026-09-14
+- PREFEITURA MUNICIPAL DE PRADO FERREIRA · [EDITAL DE CONVOCAÇÃO Nº 030/2026 39ª CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/78F86F44) · 2026-09-14
+- DEPARTAMENTO DE RECURSOS HUMANOS · [PROCESSO SELETIVO SIMPLIFICADO Nº 002/2025 EDITAL](https://www.diariomunicipal.com.br/amp/materia/9121E194) · 2026-09-14
+- DEPARTAMENTO ADMINISTRATIVO · [PORTARIA N.º 975/2026](https://www.diariomunicipal.com.br/amp/materia/49FD7743) · 2026-09-14
+- DEPARTAMENTO DE RECURSOS HUMANOS E ADM · [EDITAL DE CONVOCAÇÃO Nº 01/2026 PROCESSO](https://www.diariomunicipal.com.br/amp/materia/D8790CB8) · 2026-09-14
+- GABINETE DO PREFEITO · [RETIFICAÇÃO DO EDITAL Nº 001/2026 PROCESSO](https://www.diariomunicipal.com.br/amp/materia/118FD8D5) · 2026-09-14
+- PODER EXECUTIVO · [PORTARIA N.º 363/2026](https://www.diariomunicipal.com.br/amp/materia/E183F8A1) · 2026-09-14
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [PORTARIA Nº 1.161/2026](https://www.diariomunicipal.com.br/amp/materia/5A104D57) · 2026-09-14
+- CONSAMU · [PROCESSO SELETIVO SIMPLIFICADO Nº 003/2025 PARA CONTRATAÇÃO DE FUNCIONÁRIOS TEMPORÁRIOS PARA O CONSAMU – EDITAL DE ABERTURA Nº 181/2025 DE 14/10/2025 -](https://www.diariomunicipal.com.br/amp/materia/D68BD9C5) · 2026-09-14
+- PROCURADORIA · [EDITAL Nº 002.31/2026 – 27ª CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/DD001A8D) · 2026-09-14
+- PREFEITURA MUNICIPAL DE TUNAS DO PARANÁ · [PROCESSO SELETIVO SIMPLIFICADO Nº 002/2026 EDITAL – G (PUBLICAÇÃO DA DECISÃO DOS RECURSOS CONTRA O RESULTADO DA ANÁLISE DE TEMPO DE SERVIÇO,](https://www.diariomunicipal.com.br/amp/materia/71B00EDF) · 2026-09-14
+- ADMINISTRAÇÃO · [DECRETO N° 1493/2026](https://www.diariomunicipal.com.br/amp/materia/EB8F5233) · 2026-09-15
+- ADMINISTRAÇÃO · [DECRETO N° 1494/2026](https://www.diariomunicipal.com.br/amp/materia/423AB48C) · 2026-09-15
+- ADMINISTRAÇÃO · [DECRETO N° 1495/2026](https://www.diariomunicipal.com.br/amp/materia/70DE768A) · 2026-09-15
+- ADMINISTRAÇÃO · [DECRETO N° 1496/2026](https://www.diariomunicipal.com.br/amp/materia/5ACE8409) · 2026-09-15
+- ADMINISTRAÇÃO · [DECRETO N° 1497/2026](https://www.diariomunicipal.com.br/amp/materia/8137B800) · 2026-09-15
+- ADMINISTRAÇÃO · [DECRETO N° 1500/2026](https://www.diariomunicipal.com.br/amp/materia/E2F8EF3A) · 2026-09-15
+- ADMINISTRAÇÃO · [DECRETO N° 1501/2026](https://www.diariomunicipal.com.br/amp/materia/BC169001) · 2026-09-15
+- ADMINISTRAÇÃO · [DECRETO N° 1502/2026](https://www.diariomunicipal.com.br/amp/materia/98E9659F) · 2026-09-15
+- ADMINISTRAÇÃO · [DECRETO Nº 1498/2026](https://www.diariomunicipal.com.br/amp/materia/EC0B410F) · 2026-09-15
+- ADMINISTRAÇÃO · [DECRETO Nº 1499/2026](https://www.diariomunicipal.com.br/amp/materia/C2C8EE4A) · 2026-09-15
+- PREFEITURA MUNICIPAL DE CANDÓI · [PROCESSO SELETIVO SIMPLIFICADO N° 02/2026 -](https://www.diariomunicipal.com.br/amp/materia/86B796B3) · 2026-09-15
+- DEPARTAMENTO DE GESTÃO DE PESSOAS · [EXTRATO DE CONTRATOS DE SERVIÇO TEMPORÁRIO -](https://www.diariomunicipal.com.br/amp/materia/8932BCFC) · 2026-09-15
+- PREFEITURA MUNICIPAL DE DIAMANTE D'OESTE · [PROCESSO SELETIVO SIMPLIFICADO Nº. 03/2026 EDITAL](https://www.diariomunicipal.com.br/amp/materia/CFA7FFD7) · 2026-09-15
+- SECRETARIA DE ADMINISTRAÇÃO E PLANEJAMENTO · [EDITAL Nº 091/2026](https://www.diariomunicipal.com.br/amp/materia/A8914667) · 2026-09-15
+- GOVERNO MUNICIPAL - GABINETE DO PREFEITO · [PORTARIA Nº. 1458/2026](https://www.diariomunicipal.com.br/amp/materia/47127E23) · 2026-09-15
+- GOVERNO MUNICIPAL - GABINETE DO PREFEITO · [PORTARIA Nº. 1462/2026](https://www.diariomunicipal.com.br/amp/materia/8F5EC2BF) · 2026-09-15
+- PROCURADORIA · [PROCESSO SELETIVO SIMPLIFICADO Nº 001/2025 -](https://www.diariomunicipal.com.br/amp/materia/020A2E98) · 2026-09-15
+- PREFEITURA MUNICIPAL DE ITAÚNA DO SUL · [EDITAL N°004/2026 CONVOCAÇÃO PROCESSO SELETIVO](https://www.diariomunicipal.com.br/amp/materia/C3662E9F) · 2026-09-15
+- ADMINISTRAÇÃO RH · [EDITAL N°005/2026 CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/BB698CF8) · 2026-09-15
+- ADMINISTRAÇÃO RH · [PORTARIA Nº 356/2026](https://www.diariomunicipal.com.br/amp/materia/9955F7CC) · 2026-09-15
+- GOVERNO MUNICIPAL · [EDITAL DE CONVOCAÇÃO Nº 05/2026 PROCESSO](https://www.diariomunicipal.com.br/amp/materia/6776FCD8) · 2026-09-15
+- GOVERNO MUNICIPAL · [PORTARIA Nº. 608/2026](https://www.diariomunicipal.com.br/amp/materia/A4546931) · 2026-09-15
+- GOVERNO MUNICIPAL · [PORTARIA Nº. 614/2026](https://www.diariomunicipal.com.br/amp/materia/F4F163F5) · 2026-09-15
+- GABINETE DO PREFEITO · [EDITAL N º. 300/2026 CONVOCAÇÃO PROCESSO](https://www.diariomunicipal.com.br/amp/materia/70577C03) · 2026-09-15
+- GABINETE · [EDITAL 126-2026 CONVOCAÇÃO ATENDENTE INFANTIL](https://www.diariomunicipal.com.br/amp/materia/A7E84AAF) · 2026-09-15
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [PROCESSO SELETIVO SIMPLIFICADO Nº. 02/2025 -](https://www.diariomunicipal.com.br/amp/materia/5F5D7963) · 2026-09-15
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [COMUNICADO – CHAMADA AUXILIAR DE CUIDADOR DE](https://www.diariomunicipal.com.br/amp/materia/4355063E) · 2026-09-15
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [PROCESSO SELETIVO SIMPLIFICADO Nº. 01/2026 -](https://www.diariomunicipal.com.br/amp/materia/1A453ECF) · 2026-09-15
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [PROCESSO SELETIVO SIMPLIFICADO Nº. 01/2026 -](https://www.diariomunicipal.com.br/amp/materia/095A2EDA) · 2026-09-15
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [COMUNICADO – CHAMADA PROFESSOR 20H - PROCESSO](https://www.diariomunicipal.com.br/amp/materia/8B6D9FD2) · 2026-09-15
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [PROCESSO SELETIVO SIMPLIFICADO Nº 001/2026 –](https://www.diariomunicipal.com.br/amp/materia/5BF9A0BD) · 2026-09-15
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [TERMO DE DESISTÊNCIA - PROCESSO SELETIVO](https://www.diariomunicipal.com.br/amp/materia/0CD57FEB) · 2026-09-15
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [TERMO DE DESISTÊNCIA - PROCESSO SELETIVO](https://www.diariomunicipal.com.br/amp/materia/2E526504) · 2026-09-15
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [TERMO DE DESISTÊNCIA - PROCESSO SELETIVO](https://www.diariomunicipal.com.br/amp/materia/D5B4D9FA) · 2026-09-15
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [TERMO DE DESISTÊNCIA - PROCESSO SELETIVO](https://www.diariomunicipal.com.br/amp/materia/3CA83631) · 2026-09-15
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EDITAL DE CONVOCAÇÃO Nº 180/2026](https://www.diariomunicipal.com.br/amp/materia/92FECBB9) · 2026-09-15
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EDITAL DE CONVOCAÇÃO Nº 181/2026](https://www.diariomunicipal.com.br/amp/materia/2C8345FE) · 2026-09-15
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO DE RESCISÃO DO CONTRATO](https://www.diariomunicipal.com.br/amp/materia/0002575C) · 2026-09-15
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [PORTARIA MUNICIPAL Nº 1699/2026](https://www.diariomunicipal.com.br/amp/materia/B73A50F4) · 2026-09-15
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [PORTARIA MUNICIPAL Nº 1700/2026](https://www.diariomunicipal.com.br/amp/materia/3499F02B) · 2026-09-15
+- DEPARTAMENTO DE RECURSOS HUMANOS · [PORTARIA Nº 833, DE 08 DE SETEMBRO DE 2026.](https://www.diariomunicipal.com.br/amp/materia/39F934D5) · 2026-09-15
+- DEPARTAMENTO DE RECURSOS HUMANOS · [PORTARIA Nº 849 DE 14 DE SETEMBRO DE 2026.](https://www.diariomunicipal.com.br/amp/materia/6582D001) · 2026-09-15
+- SECRETARIA DE ADMINISTRAÇÃO · [EDITAL DE CONVOCAÇÃO Nº 03/2026 - PROCESSO](https://www.diariomunicipal.com.br/amp/materia/A124D7A4) · 2026-09-15
+- PREFEITURA MUNICIPAL DE RIO BRANCO DO IVAÍ · [DECRETO 074-2026-RH](https://www.diariomunicipal.com.br/amp/materia/19587430) · 2026-09-15
+- PREFEITURA MUNICIPAL DE RIO BRANCO DO IVAÍ · [DECRETO 075-2026-RH](https://www.diariomunicipal.com.br/amp/materia/3DD5853C) · 2026-09-15
+- PREFEITURA MUNICIPAL DE RIO BRANCO DO IVAÍ · [DECRETO 076-2026-RH](https://www.diariomunicipal.com.br/amp/materia/FA57D6E0) · 2026-09-15
+- DEPARTAMENTO ADMINISTRATIVO · [EDITAL Nº 114/2026](https://www.diariomunicipal.com.br/amp/materia/F004CF84) · 2026-09-15
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [TERMO ADITIVO Nº001/2026](https://www.diariomunicipal.com.br/amp/materia/18460B79) · 2026-09-15
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [TERMO ADITIVO Nº002/2026](https://www.diariomunicipal.com.br/amp/materia/D8BB2629) · 2026-09-15
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [TERMO ADITIVO Nº003/2026](https://www.diariomunicipal.com.br/amp/materia/6FA6F3F2) · 2026-09-15
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [TERMO ADITIVO Nº004/2026](https://www.diariomunicipal.com.br/amp/materia/22C7C229) · 2026-09-15
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [TERMO ADITIVO Nº005/2026](https://www.diariomunicipal.com.br/amp/materia/0E1C238F) · 2026-09-15
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [TERMO ADITIVO Nº006/2026](https://www.diariomunicipal.com.br/amp/materia/562F07D0) · 2026-09-15
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [TERMO ADITIVO Nº007/2026](https://www.diariomunicipal.com.br/amp/materia/086CC679) · 2026-09-15
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [TERMO ADITIVO Nº008/2026](https://www.diariomunicipal.com.br/amp/materia/89526FF2) · 2026-09-15
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [TERMO ADITIVO Nº009/2026](https://www.diariomunicipal.com.br/amp/materia/4671DCE1) · 2026-09-15
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [TERMO ADITIVO Nº010/2026](https://www.diariomunicipal.com.br/amp/materia/25FF5D5F) · 2026-09-15
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [TERMO ADITIVO Nº011/2026](https://www.diariomunicipal.com.br/amp/materia/AFDD7529) · 2026-09-15
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [TERMO ADITIVO Nº012/2026](https://www.diariomunicipal.com.br/amp/materia/7529143A) · 2026-09-15
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [TERMO ADITIVO Nº013/2026](https://www.diariomunicipal.com.br/amp/materia/36491951) · 2026-09-15
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [TERMO ADITIVO Nº014/2026](https://www.diariomunicipal.com.br/amp/materia/4A6BA8E9) · 2026-09-15
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [TERMO ADITIVO Nº015/2026](https://www.diariomunicipal.com.br/amp/materia/4187F0AB) · 2026-09-15
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [TERMO ADITIVO Nº016/2026](https://www.diariomunicipal.com.br/amp/materia/CECB3C26) · 2026-09-15
+- DIVISÃO DE RECURSOS HUMANOS · [EDITAL 111/2026](https://www.diariomunicipal.com.br/amp/materia/3365D808) · 2026-09-15
+- DIVISÃO DE RECURSOS HUMANOS · [EDITAL 112/2026](https://www.diariomunicipal.com.br/amp/materia/31BB5D10) · 2026-09-15
+- ADMINISTRAÇÃO GERAL · [DECRETO Nº 237/2026](https://www.diariomunicipal.com.br/amp/materia/6203E538) · 2026-09-15
+- PREFEITURA MUNICIPAL DE TUNAS DO PARANÁ · [DECRETO Nº 266, DE 14 DE SETEMBRO DE 2026](https://www.diariomunicipal.com.br/amp/materia/BF802462) · 2026-09-15
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [EDITAL 104/2026](https://www.diariomunicipal.com.br/amp/materia/AA34FF2B) · 2026-09-15
+- PREFEITURA MUNICIPAL DE BALSA NOVA · [PROCESSO SELETIVO SIMPLIFICADO – PSS, para contratações temporárias para exercer a função de AUXILIAR EM FARMÁCIA , em](https://www.diariomunicipal.com.br/amp/materia/1ED3C655) · 2026-09-15
+- PREFEITURA MUNICIPAL DE GOIOXIM · [PROCESSO SELETIVO SIMPLIFICADO – PSS](https://www.diariomunicipal.com.br/amp/materia/C325F220) · 2026-09-15
+- PREFEITURA MUNICIPAL DE INÁCIO MARTINS · [Processo Seletivo de Estagiários Nº 002/2026](https://www.diariomunicipal.com.br/amp/materia/12D096A3) · 2026-09-15
+- PREFEITURA MUNICIPAL DE PATO BRANCO · [EDITAL Nº004/2026- 003](https://www.diariomunicipal.com.br/amp/materia/C184513E) · 2026-09-15
+- MUNICIPIO DE ENÉAS MARQUES · [PORTARIA Nº 4252/2026](https://www.diariomunicipal.com.br/amp/materia/AD9721D1) · 2026-09-16
+- DEPARTAMENTO DE RECURSOS HUMANOS · [RETIFICAÇÃO EDITAL PSS 2026](https://www.diariomunicipal.com.br/amp/materia/9F1C1104) · 2026-09-16
+- DIVISÃO DE RECURSOS HUMANOS · [DECRETO Nº 5036 NOMEIA A SRA. ANA MARIA MARTINI](https://www.diariomunicipal.com.br/amp/materia/6AFE28A2) · 2026-09-16
+- DIVISÃO DE RECURSOS HUMANOS · [EDITAL DE CONVOCAÇÃO DE APROVADOS Nº 010/2026](https://www.diariomunicipal.com.br/amp/materia/44F135EE) · 2026-09-16
+- ADMINISTRAÇÃO · [EDITAL DE CONVOCAÇÃO N.º 008/2026 - PROCESSO](https://www.diariomunicipal.com.br/amp/materia/765AFF50) · 2026-09-16
+- ADMINISTRAÇÃO · [Edital nº. 15/2026, que estabelece instruções desti nadas à realização](https://www.diariomunicipal.com.br/amp/materia/3C7618EB) · 2026-09-16
+- GABINETE · [DECRETO DE HOMOLOGAÇÃO N°. 181/2026](https://www.diariomunicipal.com.br/amp/materia/3574E789) · 2026-09-16
+- PREFEITURA MUNICIPAL DE CORONEL VIVIDA · [EDITAL Nº 047/2026 DE 15/09/2026 - PSS 001/2026](https://www.diariomunicipal.com.br/amp/materia/F9B1054E) · 2026-09-16
+- MUNICÍPIO DE FERNANDES PINHEIRO · [DECRETO Nº 241/2026](https://www.diariomunicipal.com.br/amp/materia/C1BBFC4E) · 2026-09-16
+- MUNICIPIO DE GOIOXIM · [PROCESSO SELETIVO SIMPLIFICADO – PSS EDITAL DE](https://www.diariomunicipal.com.br/amp/materia/2E8E0D69) · 2026-09-16
+- PROCURADORIA · [DECRETO Nº 671/2026](https://www.diariomunicipal.com.br/amp/materia/62D7C2B9) · 2026-09-16
+- PROCURADORIA · [PROCESSO SELETIVO SIMPLIFICADO Nº 001/2025 -](https://www.diariomunicipal.com.br/amp/materia/4C135E36) · 2026-09-16
+- ADMINISTRAÇÃO RH · [PROCESSO SELETIVO SIMPLIFICADO N° 003/2022](https://www.diariomunicipal.com.br/amp/materia/CD11E7F0) · 2026-09-16
+- DIVISÃO DE RECURSOS HUMANOS · [EDITAL DE CONVOCAÇÃO - PROFISSIONAL DE APOIO](https://www.diariomunicipal.com.br/amp/materia/E5C2D6F6) · 2026-09-16
+- GABINETE DO PREFEITO · [EDITAL DE CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/4FDF5D6D) · 2026-09-16
+- GOVERNO MUNICIPAL · [EDITAL DE CONVOCAÇÃO Nº 015/2026 PROCESSO](https://www.diariomunicipal.com.br/amp/materia/F0B8FFC2) · 2026-09-16
+- SECRETARIA DE ADMINISTRAÇÃO · [EDITAL DE CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/C530869D) · 2026-09-16
+- SECRETARIA DE ADMINISTRAÇÃO · [EDITAL DE CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/2C1C42DC) · 2026-09-16
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [EDITAL 10/2026](https://www.diariomunicipal.com.br/amp/materia/618C3879) · 2026-09-16
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [EDITAL DE CONVOCAÇÃO Nº. 015/2026 DE 15 DE](https://www.diariomunicipal.com.br/amp/materia/41B86498) · 2026-09-16
+- SECRETARIA DE ADMINISTRAÇÃO - SETOR DE RECURSOS HUMANOS · [EXTRATO DE RESCISÃO DE CONTRATO POR PRAZO](https://www.diariomunicipal.com.br/amp/materia/5A8FF17B) · 2026-09-16
+- GABINETE DO PREFEITO · [EDITAL N º. 301/2026 - DISPÕE SOBRE A CONVOCAÇÃO DA](https://www.diariomunicipal.com.br/amp/materia/96915053) · 2026-09-16
+- GABINETE DO PREFEITO · [EDITAL N º. 302/2026 - DISPÕE SOBRE A CONVOCAÇÃO DA](https://www.diariomunicipal.com.br/amp/materia/03ED84B7) · 2026-09-16
+- GABINETE DO PREFEITO · [EDITAL N º. 303/2026 CONVOCAÇÃO PROCESSO](https://www.diariomunicipal.com.br/amp/materia/5844A7E5) · 2026-09-16
+- PREFEITURA MUNICIPAL DE PAIÇANDU · [EDITAL DE CONVOCAÇÃO Nº 271/2026](https://www.diariomunicipal.com.br/amp/materia/8AEA3F62) · 2026-09-16
+- PREFEITURA MUNICIPAL DE PAIÇANDU · [EDITAL DE CONVOCAÇÃO Nº 272/2026](https://www.diariomunicipal.com.br/amp/materia/0C51DCE3) · 2026-09-16
+- PREFEITURA MUNICIPAL DE PAIÇANDU · [EDITAL DE CONVOCAÇÃO Nº 273/2026](https://www.diariomunicipal.com.br/amp/materia/C6BF54C5) · 2026-09-16
+- PREFEITURA MUNICIPAL DE PAIÇANDU · [EDITAL DE CONVOCAÇÃO Nº 274/2026](https://www.diariomunicipal.com.br/amp/materia/3928EAEA) · 2026-09-16
+- PREFEITURA MUNICIPAL DE PAIÇANDU · [EDITAL DE CONVOCAÇÃO Nº 275/2026](https://www.diariomunicipal.com.br/amp/materia/EDBB1115) · 2026-09-16
+- PREFEITURA MUNICIPAL DE PAIÇANDU · [EDITAL DE CONVOCAÇÃO Nº 276/2026](https://www.diariomunicipal.com.br/amp/materia/5F30DDC5) · 2026-09-16
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [PROCESSO SELETIVO SIMPLIFICADO Nº. 01/2026 -](https://www.diariomunicipal.com.br/amp/materia/5F239CC4) · 2026-09-16
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [TERMO DE DESISTÊNCIA - PROCESSO SELETIVO](https://www.diariomunicipal.com.br/amp/materia/1FF0BE0F) · 2026-09-16
+- SECRETARIA MUNICIPAL DE GOVERNO · [EDITAL DE CONVOCAÇÃO 25/2026 – CUMPRIMENTO DE](https://www.diariomunicipal.com.br/amp/materia/00B2383D) · 2026-09-16
+- SECRETARIA MUNICIPAL DE RECURSOS HUMANOS · [PORTARIA Nº 242/2026 – DE 15 DE SETEMBRO DE 2026.](https://www.diariomunicipal.com.br/amp/materia/45579013) · 2026-09-16
+- SECRETARIA MUNICIPAL DE RECURSOS HUMANOS · [PORTARIA Nº 243/2026 – DE 15 DE SETEMBRO DE 2026.](https://www.diariomunicipal.com.br/amp/materia/EB937FFE) · 2026-09-16
+- SECRETARIA DE ADMINISTRAÇÃO · [EXTRATO CONTRATO TEMPORARIO Nº 01/2026](https://www.diariomunicipal.com.br/amp/materia/B5B6DC39) · 2026-09-16
+- SECRETARIA DE ADMINISTRAÇÃO · [EXTRATO DE CONTRATO TEMPORÁRIO Nº02/2026](https://www.diariomunicipal.com.br/amp/materia/BD42B2DE) · 2026-09-16
+- SECRETARIA DE ADMINISTRAÇÃO · [EXTRATO DE CONTRATO TEMPORÁRIO Nº 03/2026](https://www.diariomunicipal.com.br/amp/materia/4863E45F) · 2026-09-16
+- SECRETARIA DE ADMINISTRAÇÃO · [PORTARIA Nº 3408/2026](https://www.diariomunicipal.com.br/amp/materia/6671994C) · 2026-09-16
+- SECRETARIA DE ADMINISTRAÇÃO · [PORTARIA Nº 3409/2026](https://www.diariomunicipal.com.br/amp/materia/7483F675) · 2026-09-16
+- SECRETARIA DE ADMINISTRAÇÃO · [PORTARIA Nº3410/2026](https://www.diariomunicipal.com.br/amp/materia/6F0F2EB7) · 2026-09-16
+- ADMINISTRATIVO / RECURSOS HUMANOS · [EDITAL DE RETIFICAÇÃO PSS 04/2026](https://www.diariomunicipal.com.br/amp/materia/56CD9243) · 2026-09-16
+- DEPARTAMENTO DE RECURSOS HUMANOS · [EDITAL Nº 234/2026 PROCESSO SELETIVO SIMPLIFICADO](https://www.diariomunicipal.com.br/amp/materia/E8A08E40) · 2026-09-16
+- DEPARTAMENTO DE RECURSOS HUMANOS · [PROCESSO SELETIVO SIMPLIFICADO Nº 002/2025 EDITAL](https://www.diariomunicipal.com.br/amp/materia/8940D7C5) · 2026-09-16
+- EXECUTIVO MUNICIPAL · [LEI Nº 1299/2026 DE 15 DE SETEMBRO DE 2026.](https://www.diariomunicipal.com.br/amp/materia/3B8C3341) · 2026-09-16
+- PREFEITURA MUNICIPAL DE SÃO JOSÉ DA BOA VISTA · [EDITAL Nº 113/2026](https://www.diariomunicipal.com.br/amp/materia/E8B6CC57) · 2026-09-16
+- DIVISÃO DE RECURSOS HUMANOS · [PORTARIA Nº 226/2026](https://www.diariomunicipal.com.br/amp/materia/BE609CC4) · 2026-09-16
+- DEPARTAMENTO DE RECURSOS HUMANOS · [MUNICÍPIO DE SÃO PEDRO DO PARANÁ - CONTRATO](https://www.diariomunicipal.com.br/amp/materia/C95065EE) · 2026-09-16
+- DEPARTAMENTO DE RECURSOS HUMANOS · [EDITAL Nº 67/2026](https://www.diariomunicipal.com.br/amp/materia/C1FE4760) · 2026-09-16
+- SECRETARIA M. ADMINISTRAÇAO RH · [EDITAL Nº 175/2026](https://www.diariomunicipal.com.br/amp/materia/F5847733) · 2026-09-16
+- SECRETARIA M. ADMINISTRAÇAO RH · [EDITAL Nº 176/2026](https://www.diariomunicipal.com.br/amp/materia/F4AA1E1D) · 2026-09-16
+- SECRETARIA M. ADMINISTRAÇAO RH · [PORTARIA Nº 2516/2026](https://www.diariomunicipal.com.br/amp/materia/8990ECBB) · 2026-09-16
+- SECRETARIA M. ADMINISTRAÇAO RH · [PORTARIA Nº 2586/2026](https://www.diariomunicipal.com.br/amp/materia/90F364CD) · 2026-09-16
+- SECRETARIA M. ADMINISTRAÇAO RH · [PORTARIA Nº 2587/2026](https://www.diariomunicipal.com.br/amp/materia/43619C0A) · 2026-09-16
+- SECRETARIA DE ADMINISTRAÇÃO, PLANEJAMENTO E RECURSOS HUMANOS · [DECRETO Nº 294 DE 14 DE SETEMBRO DE 2026.](https://www.diariomunicipal.com.br/amp/materia/86349AF7) · 2026-09-16
+- PREFEITURA MUNICIPAL DE TURVO · [EDITAL DE CONVOCAÇÃO 151-2026](https://www.diariomunicipal.com.br/amp/materia/9C20695A) · 2026-09-16
+- SECRETARIA DE ADMINISTRAÇÃO · [EDITAL DE CONVOCAÇÃO 152-2026](https://www.diariomunicipal.com.br/amp/materia/58EBF21B) · 2026-09-16
+- SECRETARIA DE ADMINISTRAÇÃO · [EDITAL DE CONVOCAÇÃO 153-2026](https://www.diariomunicipal.com.br/amp/materia/49AC06A3) · 2026-09-16
+- CONSAMU · [PROCESSO SELETIVO SIMPLIFICADO Nº 003/2026 PARA CONTRATAÇÃO TEMPORÁRIA DE EMPREGADOS PÚBLICOS PARA](https://www.diariomunicipal.com.br/amp/materia/A4DF0170) · 2026-09-16
+- DEPARTAMENTO DE RECURSOS HUMANOS · [RETIFICAÇÃO EDITAL PSS 2026](https://www.diariomunicipal.com.br/amp/materia/2EFFC33E) · 2026-09-17
+- SECRETARIA MUNICIPAL DE RECURSOS HUMANOS · [EXTRATO DE CONTRATO DE PROCESSO SELETIVO](https://www.diariomunicipal.com.br/amp/materia/1A648339) · 2026-09-17
+- SECRETARIA MUNICIPAL DE RECURSOS HUMANOS · [EXTRATO DE CONTRATO DE PROCESSO SELETIVO](https://www.diariomunicipal.com.br/amp/materia/6557D265) · 2026-09-17
+- SECRETARIA MUNICIPAL DE RECURSOS HUMANOS · [EXTRATO DE CONTRATO DE PROCESSO SELETIVO](https://www.diariomunicipal.com.br/amp/materia/444AF747) · 2026-09-17
+- SECRETARIA MUNICIPAL DE RECURSOS HUMANOS · [EXTRATO DE CONTRATO DE PROCESSO SELETIVO](https://www.diariomunicipal.com.br/amp/materia/F0F2405A) · 2026-09-17
+- SECRETARIA MUNICIPAL DE RECURSOS HUMANOS · [EXTRATO DE CONTRATO DE PROCESSO SELETIVO](https://www.diariomunicipal.com.br/amp/materia/9B2A7204) · 2026-09-17
+- SECRETARIA MUNICIPAL DE RECURSOS HUMANOS · [EXTRATO DE CONTRATO DE PROCESSO SELETIVO](https://www.diariomunicipal.com.br/amp/materia/EAF63722) · 2026-09-17
+- SECRETARIA MUNICIPAL DE RECURSOS HUMANOS · [EXTRATO DE CONTRATO DE PROCESSO SELETIVO](https://www.diariomunicipal.com.br/amp/materia/3FB734F3) · 2026-09-17
+- SECRETARIA MUNICIPAL DE RECURSOS HUMANOS · [EXTRATO DE CONTRATO DE PROCESSO SELETIVO](https://www.diariomunicipal.com.br/amp/materia/C3FF79BD) · 2026-09-17
+- SECRETARIA MUNICIPAL DE RECURSOS HUMANOS · [EXTRATO DE CONTRATO DE PROCESSO SELETIVO](https://www.diariomunicipal.com.br/amp/materia/5804522C) · 2026-09-17
+- SECRETARIA MUNICIPAL DE RECURSOS HUMANOS · [EXTRATO DE CONTRATO DE PROCESSO SELETIVO](https://www.diariomunicipal.com.br/amp/materia/CF223112) · 2026-09-17
+- SECRETARIA MUNICIPAL DE RECURSOS HUMANOS · [EXTRATO DE CONTRATO DE PROCESSO SELETIVO](https://www.diariomunicipal.com.br/amp/materia/237D3916) · 2026-09-17
+- SECRETARIA MUNICIPAL DE RECURSOS HUMANOS · [EXTRATO DE CONTRATO DE PROCESSO SELETIVO](https://www.diariomunicipal.com.br/amp/materia/605DF3C3) · 2026-09-17
+- SECRETARIA MUNICIPAL DE RECURSOS HUMANOS · [EXTRATO DE CONTRATO DE PROCESSO SELETIVO](https://www.diariomunicipal.com.br/amp/materia/400E448B) · 2026-09-17
+- SECRETARIA MUNICIPAL DE RECURSOS HUMANOS · [EXTRATO DE CONTRATO DE PROCESSO SELETIVO](https://www.diariomunicipal.com.br/amp/materia/08D7D9E8) · 2026-09-17
+- SECRETARIA MUNICIPAL DE RECURSOS HUMANOS · [EXTRATO DE CONTRATO DE PROCESSO SELETIVO](https://www.diariomunicipal.com.br/amp/materia/D5449727) · 2026-09-17
+- SECRETARIA MUNICIPAL DE RECURSOS HUMANOS · [EXTRATO DE RESCISÃO DE CONTRATO Nº 01/2026 -](https://www.diariomunicipal.com.br/amp/materia/08D04B3F) · 2026-09-17
+- SECRETARIA MUNICIPAL DE RECURSOS HUMANOS · [EXTRATO DE RESCISÃO DE CONTRATO Nº 047/2026 -](https://www.diariomunicipal.com.br/amp/materia/C4F7B297) · 2026-09-17
+- SECRETARIA MUNICIPAL DE RECURSOS HUMANOS · [EXTRATO DE RESCISÃO DE CONTRATO Nº 053/2026 -](https://www.diariomunicipal.com.br/amp/materia/8BD8E20B) · 2026-09-17
+- SECRETARIA MUNICIPAL DE RECURSOS HUMANOS · [EXTRATO DE RESCISÃO DE CONTRATO Nº 07/2026 -](https://www.diariomunicipal.com.br/amp/materia/8EC04C4F) · 2026-09-17
+- SECRETARIA MUNICIPAL DE RECURSOS HUMANOS · [EXTRATO DE RESCISÃO DE CONTRATO Nº 15/2026 -](https://www.diariomunicipal.com.br/amp/materia/369B7841) · 2026-09-17
+- SECRETARIA MUNICIPAL DE RECURSOS HUMANOS · [EXTRATO DE RESCISÃO DE CONTRATO Nº 38/2026 -](https://www.diariomunicipal.com.br/amp/materia/86D4CCF1) · 2026-09-17
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [DECRETO 250/2026 - CONCEDE AUXILIO TRANSPORTE E](https://www.diariomunicipal.com.br/amp/materia/5087DB83) · 2026-09-17
+- PREFEITURA MUNICIPAL DE BALSA NOVA · [EDITAL DE CONVOCAÇÃO Nº 019/2026 - PROCESSO](https://www.diariomunicipal.com.br/amp/materia/D72F1901) · 2026-09-17
+- ADMINISTRAÇÃO · [PORTARIA Nº 646/2026](https://www.diariomunicipal.com.br/amp/materia/733742BE) · 2026-09-17
+- ADMINISTRAÇÃO · [PORTARIA Nº 647/2026](https://www.diariomunicipal.com.br/amp/materia/6095971D) · 2026-09-17
+- ADMINISTRAÇÃO · [PORTARIA Nº 648/2026](https://www.diariomunicipal.com.br/amp/materia/0C4115DE) · 2026-09-17
+- ADMINISTRAÇÃO · [PORTARIA Nº 650/2026](https://www.diariomunicipal.com.br/amp/materia/8EA00514) · 2026-09-17
+- ADMINISTRAÇÃO · [PORTARIA Nº 651/2026](https://www.diariomunicipal.com.br/amp/materia/8188B0F8) · 2026-09-17
+- RECURSOS HUMANOS · [PORTARIA Nº 478, DE 16 DE SETEMBRO DE 2026.](https://www.diariomunicipal.com.br/amp/materia/8DD68CD9) · 2026-09-17
+- DEPARTAMENTO DE RECURSOS HUMANOS · [TERMO DE RESCISÃO DE CONTRATO DE PRESTAÇÃO DE](https://www.diariomunicipal.com.br/amp/materia/1A17E3CB) · 2026-09-17
+- DEPARTAMENTO DE RECURSOS HUMANOS · [TERMO DE RESCISÃO DE CONTRATO DE PRESTAÇÃO DE](https://www.diariomunicipal.com.br/amp/materia/2D0D31DA) · 2026-09-17
+- PREFEITURA MUNICIPAL DE CANDÓI · [PROCESSO SELETIVO SIMPLIFICADO N° 02/2026 -](https://www.diariomunicipal.com.br/amp/materia/5FB75C6A) · 2026-09-17
+- DEPARTAMENTO DE ADMINISTRAÇÃO · [PORTARIA Nº. 099/2026 AUTORIZAR A REALIZAÇÃO DE](https://www.diariomunicipal.com.br/amp/materia/71FFDA1A) · 2026-09-17
+- GOVERNO MUNICIPAL - GABINETE DO PREFEITO · [PORTARIA Nº. 1476/2026](https://www.diariomunicipal.com.br/amp/materia/707F5A7F) · 2026-09-17
+- PROCURADORIA · [PROCESSO SELETIVO SIMPLIFICADO Nº 001/2025 -](https://www.diariomunicipal.com.br/amp/materia/CF01AF12) · 2026-09-17
+- SECRETARIA DE ADMINISTRAÇÃO GERAL · [PROCESSO SELETIVO SIMPLIFICADO – PSS Nº 01/2026](https://www.diariomunicipal.com.br/amp/materia/61B2EBD2) · 2026-09-17
+- SECRETARIA DE ADMINISTRAÇÃO GERAL · [DESPACHO](https://www.diariomunicipal.com.br/amp/materia/0BE328A7) · 2026-09-17
+- SECRETARIA DE ADMINISTRAÇÃO GERAL · [PORTARIA Nº 363/2026](https://www.diariomunicipal.com.br/amp/materia/657D356B) · 2026-09-17
+- SECRETARIA DE ADMINISTRAÇÃO GERAL · [PORTARIA Nº 364/2026](https://www.diariomunicipal.com.br/amp/materia/4A5EAE9A) · 2026-09-17
+- DIVISÃO DE RECURSOS HUMANOS · [EDITAL DE CONVOCAÇÃO - AUXILIAR DE SERVIÇOS](https://www.diariomunicipal.com.br/amp/materia/43F89BAA) · 2026-09-17
+- DIVISÃO DE RECURSOS HUMANOS · [EDITAL DE CONVOCAÇÃO - PROFISSIONAL DE APOIO](https://www.diariomunicipal.com.br/amp/materia/E7F55CB5) · 2026-09-17
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [DECLARAÇÃO PROCESSO SELETIVO SIMPLIFICADO –](https://www.diariomunicipal.com.br/amp/materia/10A75ECD) · 2026-09-17
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [EDITAL DE CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/28419EA0) · 2026-09-17
+- GOVERNO MUNICIPAL · [EDITAL DE CONVOCAÇÃO Nº 016/2026 PROCESSO](https://www.diariomunicipal.com.br/amp/materia/042285A5) · 2026-09-17
+- GOVERNO MUNICIPAL · [EDITAL DE CONVOCAÇÃO Nº 07/2026 PROCESSO](https://www.diariomunicipal.com.br/amp/materia/00F1D321) · 2026-09-17
+- GABINETE DO PREFEITO · [DECRETO Nº 457/2026 - NOMEIA E DÁ POSSE A PESSOAS](https://www.diariomunicipal.com.br/amp/materia/68306CA8) · 2026-09-17
+- DEPARTAMENTO DE ADMINISTRAÇÃO E PLANEJAMENTO · [PLANEJAMENTO](https://www.diariomunicipal.com.br/amp/materia/E03ECAB2) · 2026-09-17
+- FUNDAÇÃO DE EDUCAÇÃO DE PAIÇANDU · [PORTARIA Nº 483/2026](https://www.diariomunicipal.com.br/amp/materia/8B89FE23) · 2026-09-17
+- PREFEITURA MUNICIPAL DE PAIÇANDU · [EDITAL DE CONVOCAÇÃO Nº 269/2026](https://www.diariomunicipal.com.br/amp/materia/81651AC5) · 2026-09-17
+- PREFEITURA MUNICIPAL DE PAIÇANDU · [EDITAL DE CONVOCAÇÃO Nº 270/2026](https://www.diariomunicipal.com.br/amp/materia/9EC75533) · 2026-09-17
+- PREFEITURA MUNICIPAL DE PAIÇANDU · [PORTARIA Nº 517/2026](https://www.diariomunicipal.com.br/amp/materia/8CE304A7) · 2026-09-17
+- PREFEITURA MUNICIPAL DE PAIÇANDU · [PORTARIA Nº 527/2026](https://www.diariomunicipal.com.br/amp/materia/1F85F131) · 2026-09-17
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [PROCESSO SELETIVO SIMPLIFICADO Nº. 02/2026 -](https://www.diariomunicipal.com.br/amp/materia/A69F5885) · 2026-09-17
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [PROCESSO SELETIVO SIMPLIFICADO Nº. 01/2026 -](https://www.diariomunicipal.com.br/amp/materia/E4ECA327) · 2026-09-17
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [COMUNICADO – CHAMADA MOTORISTA II PROCESSO](https://www.diariomunicipal.com.br/amp/materia/C42474D5) · 2026-09-17
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [TERMO DE DESISTÊNCIA - PROCESSO SELETIVO](https://www.diariomunicipal.com.br/amp/materia/70F2250E) · 2026-09-17
+- PREFEITURA MUNICIPAL DE PAULA FREITAS · [EDITAL DE CONVOCAÇÃO Nº 23/2026](https://www.diariomunicipal.com.br/amp/materia/47E725BB) · 2026-09-17
+- SECRETARIA MUNICIPAL DE RECURSOS HUMANOS · [EDITAL Nº 22/2026- TORNA PÚBLICO A DESISTÊNCIA DO](https://www.diariomunicipal.com.br/amp/materia/DA9F5A97) · 2026-09-17
+- SECRETARIA DE ADMINISTRAÇÃO · [EDITAL DE CONVOCAÇÃO Nº 04/2026 - PROCESSO](https://www.diariomunicipal.com.br/amp/materia/98DE1BCB) · 2026-09-17
+- PREFEITURA MUNICIPAL DE PORTO AMAZONAS · [EDITAL Nº 25 - PSS](https://www.diariomunicipal.com.br/amp/materia/931FB2C9) · 2026-09-17
+- PREFEITURA MUNICIPAL DE QUERÊNCIA DO NORTE · [EDITAL N°029/2026](https://www.diariomunicipal.com.br/amp/materia/2027A008) · 2026-09-17
+- DEPARTAMENTO DE RECURSOS HUMANOS · [EDITAL Nº 235/2026 PROCESSO SELETIVO SIMPLIFICADO](https://www.diariomunicipal.com.br/amp/materia/9C3C27B0) · 2026-09-17
+- GABINETE DO PREFEITO · [EDITAL N º 007/2026 – 07ª CONVOCAÇÃO –PSS Nº 001/2026–](https://www.diariomunicipal.com.br/amp/materia/DE56F3C8) · 2026-09-17
+- DEPARTAMENTO ADMINISTRATIVO · [PORTARIA N.º 983/2026](https://www.diariomunicipal.com.br/amp/materia/B1C9B812) · 2026-09-17
+- PREFEITURA MUNICIPAL DE SANTA FÉ · [PROCESSO SELETIVO SIMPLIFICADO](https://www.diariomunicipal.com.br/amp/materia/081439FC) · 2026-09-17
+- PREFEITURA MUNICIPAL DE SANTO ANTÔNIO DO SUDOESTE · [DECRETO Nº 4374/2026](https://www.diariomunicipal.com.br/amp/materia/7A2B93EE) · 2026-09-17
+- PREFEITURA MUNICIPAL DE SÃO JERÔNIMO DA SERRA · [PROCESSO SELETIVO SIMPLIFICADO – PSS – EDITAL Nº](https://www.diariomunicipal.com.br/amp/materia/364005DB) · 2026-09-17
+- DIVISÃO DE PESSOAL · [PORTARIA N.º 261//2026](https://www.diariomunicipal.com.br/amp/materia/11AE2F8F) · 2026-09-17
+- MUNICÍPIO DE TRÊS BARRAS DO PARANÁ · [PORTARIA Nº1334/2026](https://www.diariomunicipal.com.br/amp/materia/91BDB0AF) · 2026-09-17
+- PREFEITURA MUNICIPAL DE BALSA NOVA · [EDITAL PROCESSO SELETIVO SIMPLIFICADO Nº 17/2026](https://www.diariomunicipal.com.br/amp/materia/F6381690) · 2026-09-17
+- GABINETE DO PREFEITO · [DECRETO 297/2026 - PRORROGA PSS ASSISTENTE SOCIAL](https://www.diariomunicipal.com.br/amp/materia/8AD776DA) · 2026-09-18
+- DIVISÃO DE RECURSOS HUMANOS · [DECRETO Nº 5040 NOMEIA A SRA. TAMILY VITORIA](https://www.diariomunicipal.com.br/amp/materia/C8757430) · 2026-09-18
+- DEPARTAMENTO DE RH · [EXTRATO PRIMEIRO ADITIVO CT 20 2025 - PSS 01 2025](https://www.diariomunicipal.com.br/amp/materia/AD9097AF) · 2026-09-18
+- PREFEITURA MUNICIPAL DE CAPITÃO LEÔNIDAS · [DECRETO N.º 367/2026 DATA: 15-09-2026](https://www.diariomunicipal.com.br/amp/materia/19A0DBFB) · 2026-09-18
+- GABINETE PREFEITO · [DECRETO N.º 369/2026 DATA: 17-09-2026](https://www.diariomunicipal.com.br/amp/materia/65C3FB4D) · 2026-09-18
+- DEPARTAMENTO DE ADMINISTRAÇÃO · [PROCESSO SELETIVO SIMPLIFICADO - PSS N° 004/2026](https://www.diariomunicipal.com.br/amp/materia/BF229455) · 2026-09-18
+- CONSAMU · [PROCESSO SELETIVO SIMPLIFICADO Nº 002/2026 PARA](https://www.diariomunicipal.com.br/amp/materia/FEE90835) · 2026-09-18
+- SECRETARIA DE ADMINISTRAÇÃO GERAL · [EDITAL](https://www.diariomunicipal.com.br/amp/materia/5C4F2A5B) · 2026-09-18
+- ADMINISTRAÇÃO RH · [PROCESSO SELETIVO SIMPLIFICADO Nº 001/2026](https://www.diariomunicipal.com.br/amp/materia/B7B6BE32) · 2026-09-18
+- GABINETE DO PREFEITO · [DECRETO Nº 461/2026 - NOMEIA E DÁ POSSE A PESSOAS](https://www.diariomunicipal.com.br/amp/materia/D3F40144) · 2026-09-18
+- SECRETARIA DE ADMINISTRAÇÃO · [RESOLUÇÃO Nº 001/2026](https://www.diariomunicipal.com.br/amp/materia/3858768A) · 2026-09-18
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [PROCESSO SELETIVO SIMPLIFICADO Nº. 02/2025 -](https://www.diariomunicipal.com.br/amp/materia/CF67E73E) · 2026-09-18
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [PROCESSO SELETIVO SIMPLIFICADO Nº. 01/2026 - ELAINE](https://www.diariomunicipal.com.br/amp/materia/C6280DCD) · 2026-09-18
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [COMUNICADO – CHAMADA PROFESSOR 20H - PROCESSO](https://www.diariomunicipal.com.br/amp/materia/B66949A2) · 2026-09-18
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [PROCESSO SELETIVO SIMPLIFICADO Nº 02/2025 –](https://www.diariomunicipal.com.br/amp/materia/0C690EB3) · 2026-09-18
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [TERMO DE DESISTÊNCIA - PROCESSO SELETIVO](https://www.diariomunicipal.com.br/amp/materia/A5CB74B8) · 2026-09-18
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [TERMO DE DESISTÊNCIA - PROCESSO SELETIVO](https://www.diariomunicipal.com.br/amp/materia/5048D50B) · 2026-09-18
+- PREFEITURA MUNICIPAL DE PAULA FREITAS · [EDITAL DE CONVOCAÇÃO Nº 01/2026](https://www.diariomunicipal.com.br/amp/materia/832D042B) · 2026-09-18
+- SECRETARIA MUNICIPAL DE RECURSOS HUMANOS · [PORTARIA Nº 245/2026 – DE 17 DE SETEMBRO DE 2026.](https://www.diariomunicipal.com.br/amp/materia/68714DAA) · 2026-09-18
+- SECRETARIA DE ADMINISTRAÇÃO · [DECRETO Nº 15.027/2026](https://www.diariomunicipal.com.br/amp/materia/8EBA5C17) · 2026-09-18
+- DEPARTAMENTO DE ADMINISTRAÇÃO · [PROCESSO SELETIVO SIMPLIFICADO Nº 07/2025 EDITAL](https://www.diariomunicipal.com.br/amp/materia/7108AB16) · 2026-09-18
+- DEPARTAMENTO DE RECURSOS HUMANOS · [PORTARIA Nº 307 DE 17 DE SETEMBRO DE 2026](https://www.diariomunicipal.com.br/amp/materia/138BB0C8) · 2026-09-18
+- DEPARTAMENTO DE RECURSOS HUMANOS · [PROCESSO SELETIVO SIMPLIFICADO Nº 002/2025 EDITAL](https://www.diariomunicipal.com.br/amp/materia/A28D6D8A) · 2026-09-18
+- PREFEITURA MUNICIPAL DE SALGADO FILHO · [EDITAL DE CONVOCAÇÃO Nº 02/2026 PROCESSO](https://www.diariomunicipal.com.br/amp/materia/DE027161) · 2026-09-18
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [TERMO ADITIVO Nº017/2026](https://www.diariomunicipal.com.br/amp/materia/1DB94920) · 2026-09-18
+- ADMINISTRAÇÃO · [PROCESSO SELETIVO SIMPLIFICADO – PSS, para contratações temporárias para exercer a função de PROFESSOR, em conformidade com](https://www.diariomunicipal.com.br/amp/materia/3BA6A8E1) · 2026-09-18
+- ADMINISTRAÇÃO · [PROCESSO SELETIVO SIMPLIFICADO – PSS, para contratações temporárias para exercer a função de PROFESSOR, em conformidade com](https://www.diariomunicipal.com.br/amp/materia/F41CB6DF) · 2026-09-18
+- PREFEITURA MUNICIPAL DE CANDÓI · [PROCESSO SELETIVO SIMPLIFICADO N° 02/2026 - ESTÁGIÁRIOS EDITAL Nº 07/2026 - DIVULGAÇÃO DO RESULTADO](https://www.diariomunicipal.com.br/amp/materia/82744867) · 2026-09-18
+- PREFEITURA MUNICIPAL DE IRATI · [EDITAL Nº 002.32/2026 – 28ª CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/B8B15233) · 2026-09-18
+- PREFEITURA MUNICIPAL DE ITAPEJARA D'OESTE · [EDITAL PSS Nº 003/2026](https://www.diariomunicipal.com.br/amp/materia/A075FA6F) · 2026-09-18
+- PREFEITURA MUNICIPAL DE PLANALTO · [EDITAL DE PUBLICAÇÃO RESULTADO FINAL E HOMOLOGAÇÃO PSS MOTORISTA](https://www.diariomunicipal.com.br/amp/materia/BF2194AB) · 2026-09-18
+- PREFEITURA MUNICIPAL DE REALEZA · [PROCESSO SELETIVO SIMPLIFICADO Nº 07/2025 EDITAL Nº 24 – CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/E5AB7A4A) · 2026-09-18
+- SECRETARIA DE RECURSOS HUMANOS · [EDITAL 02 PSS](https://www.diariomunicipal.com.br/amp/materia/2B40833C) · 2026-09-21
+- DIVISÃO DE RECURSOS HUMANOS · [EDITAL DE CONVOCAÇÃO DE APROVADOS Nº 011 2026](https://www.diariomunicipal.com.br/amp/materia/358BECF1) · 2026-09-21
+- GABINETE DO PODER EXECUTIVO MUNICIPAL · [EDITAL DE CONVOCAÇÃO Nº 099/2026 - DIVISÃO DE](https://www.diariomunicipal.com.br/amp/materia/924F648C) · 2026-09-21
+- GABINETE DO PODER EXECUTIVO MUNICIPAL · [EXTRATO Nº 116/2026 DE RESCISÃO DE CONTRATO DE](https://www.diariomunicipal.com.br/amp/materia/0FF7B05F) · 2026-09-21
+- GABINETE DO PODER EXECUTIVO MUNICIPAL · [EXTRATO Nº 117/2026 DE RESCISÃO DE CONTRATO DE](https://www.diariomunicipal.com.br/amp/materia/60945EC7) · 2026-09-21
+- GABINETE DO PODER EXECUTIVO MUNICIPAL · [EXTRATO Nº 118/2026 DE RESCISÃO DE CONTRATO DE](https://www.diariomunicipal.com.br/amp/materia/D49D8AE9) · 2026-09-21
+- GABINETE DO PODER EXECUTIVO MUNICIPAL · [EXTRATO Nº 134/2026 DE RESCISÃO DE CONTRATO DE](https://www.diariomunicipal.com.br/amp/materia/521A5189) · 2026-09-21
+- GABINETE DA PREFEITA · [DECRETO Nº. 11.348 DE 17 DE SETEMBRO DE 2026](https://www.diariomunicipal.com.br/amp/materia/BFFDF76D) · 2026-09-21
+- GABINETE DA PREFEITA · [DECRETO Nº. 11.349 DE 17 DE SETEMBRO DE 2026](https://www.diariomunicipal.com.br/amp/materia/DE3F06BD) · 2026-09-21
+- GABINETE DA PREFEITA · [DECRETO Nº. 11.350 DE 17 DE SETEMBRO DE 2026](https://www.diariomunicipal.com.br/amp/materia/C9050740) · 2026-09-21
+- RECURSOS HUMANOS · [EDITAL Nº. 02.28/2026 - EDITAL DE CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/4E6D4B5A) · 2026-09-21
+- PREFEITURA MUNICIPAL DE CAPITÃO LEÔNIDAS · [EDITAL N.º 043/2026](https://www.diariomunicipal.com.br/amp/materia/4B3CA1AE) · 2026-09-21
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [PROCESSO SELETIVO SIMPLIFICADO Nº. 03/2026 EDITAL](https://www.diariomunicipal.com.br/amp/materia/E3A5F8A0) · 2026-09-21
+- SECRETÁRIA DE ADMINISTRAÇÃO E FINANÇAS · [DECRETO Nº 23822/2026](https://www.diariomunicipal.com.br/amp/materia/09E45F6C) · 2026-09-21
+- SECRETÁRIA DE ADMINISTRAÇÃO E FINANÇAS · [DECRETO Nº 23823/2026](https://www.diariomunicipal.com.br/amp/materia/CF51427E) · 2026-09-21
+- DEPARTAMENTO DE ADMINISTRAÇÃO · [PROCESSO SELETIVO SIMPLIFICADO - PSS N°001/2025](https://www.diariomunicipal.com.br/amp/materia/731187D9) · 2026-09-21
+- DEPARTAMENTO DE ADMINISTRAÇÃO · [PROCESSO SELETIVO SIMPLIFICADO PSS N° 005/2026](https://www.diariomunicipal.com.br/amp/materia/845CD74E) · 2026-09-21
+- DEPARTAMENTO DE RECURSOS HUMANOS · [DECRETO 202/2026](https://www.diariomunicipal.com.br/amp/materia/AAE3CE14) · 2026-09-21
+- DEPARTAMENTO DE RECURSOS HUMANOS · [PORTARIA 416/2026](https://www.diariomunicipal.com.br/amp/materia/BDE8F7CA) · 2026-09-21
+- GOVERNO MUNICIPAL - GABINETE DO PREFEITO · [PORTARIA Nº. 1490/2026](https://www.diariomunicipal.com.br/amp/materia/C0E23BB7) · 2026-09-21
+- PREFEITURA MUNICIPAL DE IRATI · [DECRETO Nº 682/2026](https://www.diariomunicipal.com.br/amp/materia/FECC787E) · 2026-09-21
+- DEPARTAMENTO MUNICIPAL DE ADMINISTRAÇÃO · [TERMO DE HOMOLOGAÇÃO EDITAL DE DISPENSA](https://www.diariomunicipal.com.br/amp/materia/33A7BDD3) · 2026-09-21
+- DIVISÃO DE RECURSOS HUMANOS · [EDITAL DE CONVOCAÇÃO - AUXILIAR DE SERVIÇOS](https://www.diariomunicipal.com.br/amp/materia/D353946E) · 2026-09-21
+- DIVISÃO DE RECURSOS HUMANOS · [EDITAL DE CONVOCAÇÃO - PROFISSIONAL DE APOIO](https://www.diariomunicipal.com.br/amp/materia/C95B0778) · 2026-09-21
+- GOVERNO MUNICIPAL · [EDITAL DE CONVOCAÇÃO Nº 07/2026 PROCESSO](https://www.diariomunicipal.com.br/amp/materia/34C3419A) · 2026-09-21
+- SECRETARIA DE ADMINISTRAÇÃO · [EDITAL DE CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/F047787C) · 2026-09-21
+- SECRETARIA DE ADMINISTRAÇÃO · [EDITAL DE CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/06425775) · 2026-09-21
+- SECRETARIA DE ADMINISTRAÇÃO · [EDITAL DE CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/4301F66B) · 2026-09-21
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [EDITAL 11/2026](https://www.diariomunicipal.com.br/amp/materia/B5346941) · 2026-09-21
+- FUNDAÇÃO DE ATENÇÃO A SAÚDE DE MORRETES · [EDITAL Nº 10, DE 18 DE SETEMBRO DE 2026. EDITAL DE](https://www.diariomunicipal.com.br/amp/materia/6774AA37) · 2026-09-21
+- FUNDAÇÃO DE ATENÇÃO A SAÚDE DE MORRETES · [EXTRATO DE RESCISÃO DE CONTRATO DE TRABALHO](https://www.diariomunicipal.com.br/amp/materia/F3532599) · 2026-09-21
+- FUNDAÇÃO DE SÁUDE DE PAIÇANDU · [PORTARIA Nº 384/2026](https://www.diariomunicipal.com.br/amp/materia/F06E8BF6) · 2026-09-21
+- FUNDAÇÃO DE SÁUDE DE PAIÇANDU · [PORTARIA Nº 385/2026](https://www.diariomunicipal.com.br/amp/materia/7CFBF1D9) · 2026-09-21
+- PREFEITURA MUNICIPAL DE PAIÇANDU · [PORTARIA Nº533/2026](https://www.diariomunicipal.com.br/amp/materia/79938F9D) · 2026-09-21
+- PREFEITURA MUNICIPAL DE PAIÇANDU · [PORTARIA Nº534/2026](https://www.diariomunicipal.com.br/amp/materia/257AB4CF) · 2026-09-21
+- DEPARTAMENTO DE RECURSOS HUMANOS · [PORTARIA Nº 866 DE 17 DE SETEMBRO DE 2026.](https://www.diariomunicipal.com.br/amp/materia/3BB63903) · 2026-09-21
+- SECRETARIA MUNICIPAL DE RECURSOS HUMANOS · [PORTARIA Nº 248/2026 – DE 18 DE SETEMBRO DE 2026.](https://www.diariomunicipal.com.br/amp/materia/819B43B3) · 2026-09-21
+- PREFEITURA MUNICIPAL DE PIRAQUARA · [DECRETO 15.027/2026 ―REPUBLICADO POR](https://www.diariomunicipal.com.br/amp/materia/F4302410) · 2026-09-21
+- PREFEITURA MUNICIPAL DE QUERÊNCIA DO NORTE · [EDITAL N°030/2026](https://www.diariomunicipal.com.br/amp/materia/639896EA) · 2026-09-21
+- DEPARTAMENTO DE RECURSOS HUMANOS · [PROCESSO SELETIVO SIMPLIFICADO Nº 002/2025 EDITAL](https://www.diariomunicipal.com.br/amp/materia/2FF1211D) · 2026-09-21
+- SECRETARIA GERAL · [PSS N º 001/2026 – SECRETARIA MUNICIPAL DE SAÚDE 13ª](https://www.diariomunicipal.com.br/amp/materia/887491F5) · 2026-09-21
+- DIVISÃO DE RECURSOS HUMANOS · [EDITAL 116/2026](https://www.diariomunicipal.com.br/amp/materia/9A24A0A9) · 2026-09-21
+- DIVISÃO DE RECURSOS HUMANOS · [EDITAL 117/2026](https://www.diariomunicipal.com.br/amp/materia/7FE90FF6) · 2026-09-21
+- GABINETE DO PODER EXECUTIVO MUNICIPAL · [EXTRATO 119/2026 DO TERMO ADITIVO AO CONTRATO DE TRABALHO REGIME ESPECIAL](https://www.diariomunicipal.com.br/amp/materia/FE1EE5B5) · 2026-09-21
+- GABINETE DO PODER EXECUTIVO MUNICIPAL · [EXTRATO 133/2026 DO TERMO ADITIVO AO CONTRATO DE TRABALHO REGIME ESPECIAL](https://www.diariomunicipal.com.br/amp/materia/2807C331) · 2026-09-21
+- GABINETE DO PODER EXECUTIVO MUNICIPAL · [EXTRATO 139/2026 DO TERMO ADITIVO AO CONTRATO DE TRABALHO REGIME ESPECIAL](https://www.diariomunicipal.com.br/amp/materia/969E9492) · 2026-09-21
+- GABINETE DO PODER EXECUTIVO MUNICIPAL · [EXTRATO Nº 110/2026 DE CONTRATO DE TRABALHO POR PRAZO DETERMINADO EM REGIME ESPECIAL](https://www.diariomunicipal.com.br/amp/materia/15E1CD48) · 2026-09-21
+- GABINETE DO PODER EXECUTIVO MUNICIPAL · [EXTRATO Nº 111/2026 DE CONTRATO DE TRABALHO POR PRAZO DETERMINADO EM REGIME ESPECIAL](https://www.diariomunicipal.com.br/amp/materia/8AB3AB34) · 2026-09-21
+- GABINETE DO PODER EXECUTIVO MUNICIPAL · [EXTRATO Nº 112/2026 DE CONTRATO DE TRABALHO POR PRAZO DETERMINADO EM REGIME ESPECIAL](https://www.diariomunicipal.com.br/amp/materia/652554BF) · 2026-09-21
+- GABINETE DO PODER EXECUTIVO MUNICIPAL · [EXTRATO Nº 113/2026 DE CONTRATO DE TRABALHO POR PRAZO DETERMINADO EM REGIME ESPECIAL](https://www.diariomunicipal.com.br/amp/materia/76E0C0EE) · 2026-09-21
+- GABINETE DO PODER EXECUTIVO MUNICIPAL · [EXTRATO Nº 114/2026 DE CONTRATO DE TRABALHO POR PRAZO DETERMINADO EM REGIME ESPECIAL](https://www.diariomunicipal.com.br/amp/materia/9A680E9B) · 2026-09-21
+- GABINETE DO PODER EXECUTIVO MUNICIPAL · [EXTRATO Nº 115/2026 DE CONTRATO DE TRABALHO POR PRAZO DETERMINADO EM REGIME ESPECIAL](https://www.diariomunicipal.com.br/amp/materia/71F5F6A0) · 2026-09-21
+- GABINETE DO PODER EXECUTIVO MUNICIPAL · [EXTRATO Nº 121/2026 DE CONTRATO DE TRABALHO POR PRAZO DETERMINADO EM REGIME ESPECIAL](https://www.diariomunicipal.com.br/amp/materia/C522C23E) · 2026-09-21
+- GABINETE DO PODER EXECUTIVO MUNICIPAL · [EXTRATO Nº 122/2026 DE CONTRATO DE TRABALHO POR PRAZO DETERMINADO EM REGIME ESPECIAL](https://www.diariomunicipal.com.br/amp/materia/79FEA2CF) · 2026-09-21
+- GABINETE DO PODER EXECUTIVO MUNICIPAL · [EXTRATO Nº 123/2026 DE RESCISÃO DE CONTRATO DE TRABALHO POR PRAZO DETERMINADO EM REGIME ESPECIAL](https://www.diariomunicipal.com.br/amp/materia/81402A8B) · 2026-09-21
+- GABINETE DO PODER EXECUTIVO MUNICIPAL · [EXTRATO Nº 124/2026 DE CONTRATO DE TRABALHO POR PRAZO DETERMINADO EM REGIME ESPECIAL](https://www.diariomunicipal.com.br/amp/materia/82A7394F) · 2026-09-21
+- GABINETE DO PODER EXECUTIVO MUNICIPAL · [EXTRATO Nº 125/2026 DE CONTRATO DE TRABALHO POR PRAZO DETERMINADO EM REGIME ESPECIAL](https://www.diariomunicipal.com.br/amp/materia/9A7F6CA8) · 2026-09-21
+- GABINETE DO PODER EXECUTIVO MUNICIPAL · [EXTRATO Nº 126/2026 DE RESCISÃO DE CONTRATO DE TRABALHO POR PRAZO DETERMINADO EM REGIME ESPECIAL](https://www.diariomunicipal.com.br/amp/materia/DBB92B72) · 2026-09-21
+- GABINETE DO PODER EXECUTIVO MUNICIPAL · [EXTRATO Nº 127/2026 DE CONTRATO DE TRABALHO POR PRAZO DETERMINADO EM REGIME ESPECIA](https://www.diariomunicipal.com.br/amp/materia/D894EE56) · 2026-09-21
+- GABINETE DO PODER EXECUTIVO MUNICIPAL · [EXTRATO Nº 128/2026 DE CONTRATO DE TRABALHO POR PRAZO DETERMINADO EM REGIME ESPECIAL](https://www.diariomunicipal.com.br/amp/materia/1C78B57F) · 2026-09-21
+- GABINETE DO PODER EXECUTIVO MUNICIPAL · [EXTRATO Nº 129/2026 DE RESCISÃO DE TÉRMINO DE CONTRATO DE TRABALHO POR PRAZO DETERMINADO EM REGIME](https://www.diariomunicipal.com.br/amp/materia/D3C4EC1D) · 2026-09-21
+- GABINETE DO PODER EXECUTIVO MUNICIPAL · [EXTRATO Nº 130/2026 DE CONTRATO DE TRABALHO POR PRAZO DETERMINADO EM REGIME ESPECIAL](https://www.diariomunicipal.com.br/amp/materia/E082BA29) · 2026-09-21
+- GABINETE DO PODER EXECUTIVO MUNICIPAL · [EXTRATO Nº 131/2026 DE CONTRATO DE TRABALHO POR PRAZO DETERMINADO EM REGIME ESPECIAL](https://www.diariomunicipal.com.br/amp/materia/1A64C415) · 2026-09-21
+- GABINETE DO PODER EXECUTIVO MUNICIPAL · [EXTRATO Nº 132/2026 DE CONTRATO DE TRABALHO POR PRAZO DETERMINADO EM REGIME ESPECIAL](https://www.diariomunicipal.com.br/amp/materia/CDF2DDCA) · 2026-09-21
+- GABINETE DO PODER EXECUTIVO MUNICIPAL · [EXTRATO Nº 135/2026 DE CONTRATO DE TRABALHO POR PRAZO DETERMINADO EM REGIME ESPECIAL](https://www.diariomunicipal.com.br/amp/materia/A5D2C833) · 2026-09-21
+- GABINETE DO PODER EXECUTIVO MUNICIPAL · [EXTRATO Nº 136/2026 DE CONTRATO DE TRABALHO POR PRAZO DETERMINADO EM REGIME ESPECIAL](https://www.diariomunicipal.com.br/amp/materia/FE02A1FC) · 2026-09-21
+- GABINETE DO PODER EXECUTIVO MUNICIPAL · [EXTRATO Nº 137/2026 DE CONTRATO DE TRABALHO POR PRAZO DETERMINADO EM REGIME ESPECIAL](https://www.diariomunicipal.com.br/amp/materia/3D8BC84C) · 2026-09-21
+- GABINETE DO PODER EXECUTIVO MUNICIPAL · [EXTRATO Nº 138/2026 DE CONTRATO DE TRABALHO POR PRAZO DETERMINADO EM REGIME ESPECIAL](https://www.diariomunicipal.com.br/amp/materia/5F23EFB9) · 2026-09-21
+- PREFEITURA MUNICIPAL DE MORRETES · [EXTRATO DO 1° TERMO ADITIVO](https://www.diariomunicipal.com.br/amp/materia/5ACE5043) · 2026-09-21
+- PREFEITURA MUNICIPAL DE PORTO AMAZONAS · [EDITAL Nº 26 - PSS](https://www.diariomunicipal.com.br/amp/materia/47B7B8E5) · 2026-09-21
+- RECURSOS HUMANOS · [DECRETO Nº 789/2026](https://www.diariomunicipal.com.br/amp/materia/3BF87244) · 2026-09-22
+- RECURSOS HUMANOS · [EXTRATO DE CONTRATO Nº 138/2026](https://www.diariomunicipal.com.br/amp/materia/C8C24C03) · 2026-09-22
+- SECRETARIA DE GOVERNO · [EDITAL Nº 015.005/2026 – RETIFICAÇÃO PROCESSO](https://www.diariomunicipal.com.br/amp/materia/BD77434B) · 2026-09-22
+- SECRETARIA DE ADMINISTRAÇÃO E PLANEJAMENTO · [EDITAL Nº 097/2026](https://www.diariomunicipal.com.br/amp/materia/C36321D5) · 2026-09-22
+- SECRETARIA DE ADMINISTRAÇÃO E PLANEJAMENTO · [EDITAL Nº 098/2026](https://www.diariomunicipal.com.br/amp/materia/1FA56948) · 2026-09-22
+- GOVERNO MUNICIPAL - GABINETE DO PREFEITO · [PORTARIA Nº. 1499/2026](https://www.diariomunicipal.com.br/amp/materia/6C43DF16) · 2026-09-22
+- GOVERNO MUNICIPAL · [PORTARIA Nº. 635/2026](https://www.diariomunicipal.com.br/amp/materia/694ACA6A) · 2026-09-22
+- GOVERNO MUNICIPAL · [PORTARIA Nº. 636/2026](https://www.diariomunicipal.com.br/amp/materia/7BED988B) · 2026-09-22
+- GOVERNO MUNICIPAL · [PORTARIA Nº. 640/2026](https://www.diariomunicipal.com.br/amp/materia/17B2BEE8) · 2026-09-22
+- SECRETARIA DE ADMINISTRAÇÃO · [EDITAL DE CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/2C554D78) · 2026-09-22
+- SECRETARIA DE ADMINISTRAÇÃO · [EDITAL DE CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/2421AC16) · 2026-09-22
+- GABINETE DO PREFEITO · [DECRETO Nº 465/2026 - NOMEIA E DÁ POSSE A PESSOA](https://www.diariomunicipal.com.br/amp/materia/CFF77EE5) · 2026-09-22
+- GABINETE DO PREFEITO · [EDITAL N º. 304/2026 - DISPÕE SOBRE A CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/B883162D) · 2026-09-22
+- GABINETE DO PREFEITO · [EDITAL N º. 305/2026 - CONVOCAÇÃO PROCESSO](https://www.diariomunicipal.com.br/amp/materia/5B9E6B86) · 2026-09-22
+- GABINETE · [EDITAL 131-2026 CONVOCAÇÃO ATENDENTE INFANTIL](https://www.diariomunicipal.com.br/amp/materia/E0E1BAB2) · 2026-09-22
+- PREFEITURA MUNICIPAL DE PAIÇANDU · [EDITAL DE CONVOCAÇÃO Nº 277/2026](https://www.diariomunicipal.com.br/amp/materia/71A44292) · 2026-09-22
+- FUNDAÇÃO DE EDUCAÇÃO DE PAIÇANDU · [EDITAL DE CONVOCAÇÃO Nº 278/2026](https://www.diariomunicipal.com.br/amp/materia/6CCA21A0) · 2026-09-22
+- FUNDAÇÃO DE EDUCAÇÃO DE PAIÇANDU · [EDITAL DE CONVOCAÇÃO Nº 279/2026](https://www.diariomunicipal.com.br/amp/materia/AECCFFA6) · 2026-09-22
+- PREFEITURA MUNICIPAL DE PAIÇANDU · [PORTARIA Nº 523/2026](https://www.diariomunicipal.com.br/amp/materia/BB70EA4F) · 2026-09-22
+- SECRETARIA MUNICIPAL DE EDUCAÇÃO · [DECRETO Nº 19.565, DE 21 DE SETEMBRO DE 2026 -](https://www.diariomunicipal.com.br/amp/materia/5AC57F82) · 2026-09-22
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [PROCESSO SELETIVO SIMPLIFICADO Nº. 02/2025 -](https://www.diariomunicipal.com.br/amp/materia/53CF9E14) · 2026-09-22
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [PROCESSO SELETIVO SIMPLIFICADO Nº. 01/2026 - PA](https://www.diariomunicipal.com.br/amp/materia/A823D477) · 2026-09-22
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [TERMO DE DESISTÊNCIA - PROCESSO SELETIVO](https://www.diariomunicipal.com.br/amp/materia/63F4C292) · 2026-09-22
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [TERMO DE DESISTÊNCIA - PROCESSO SELETIVO](https://www.diariomunicipal.com.br/amp/materia/4A4E21CA) · 2026-09-22
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [TERMO DE DESISTÊNCIA - PROCESSO SELETIVO](https://www.diariomunicipal.com.br/amp/materia/3162FB84) · 2026-09-22
+- SECRETARIA MUNICIPAL DE RECURSOS HUMANOS · [PORTARIA Nº 249/2026 – DE 21 DE SETEMBRO DE 2026.](https://www.diariomunicipal.com.br/amp/materia/9E8D35F7) · 2026-09-22
+- PREFEITURA MUNICIPAL DE PINHAL DE SÃO BENTO · [EDITAL DE CONVOCAÇÃO Nº 03/2026 - ESTAGIÁRIO](https://www.diariomunicipal.com.br/amp/materia/D3C8E91F) · 2026-09-22
+- SECRETARIA DE ADMINISTRAÇÃO · [EDITAL DE CONVOCAÇÃO Nº 05/2026 - PROCESSO](https://www.diariomunicipal.com.br/amp/materia/D2F4ABC0) · 2026-09-22
+- SECRETARIA DE ADMINISTRAÇÃO · [EXTRATO DE CONTRATO Nº 04/2026](https://www.diariomunicipal.com.br/amp/materia/A7A1E294) · 2026-09-22
+- SECRETARIA DE ADMINISTRAÇÃO · [EXTRATO DE CONTRATO Nº 05/2026](https://www.diariomunicipal.com.br/amp/materia/645955C2) · 2026-09-22
+- SECRETARIA DE ADMINISTRAÇÃO · [EXTRATO DE CONTRATO Nº 06/2026](https://www.diariomunicipal.com.br/amp/materia/98EFDC6E) · 2026-09-22
+- SECRETARIA DE ADMINISTRAÇÃO · [EXTRATO DE CONTRATO Nº 07/2026](https://www.diariomunicipal.com.br/amp/materia/BD00BC7A) · 2026-09-22
+- SECRETARIA DE ADMINISTRAÇÃO · [EXTRATO DE CONTRATO Nº 08/2026](https://www.diariomunicipal.com.br/amp/materia/8E5098E3) · 2026-09-22
+- SECRETARIA DE ADMINISTRAÇÃO · [PORTARIA Nº 3411/2026](https://www.diariomunicipal.com.br/amp/materia/BAD25005) · 2026-09-22
+- SECRETARIA DE ADMINISTRAÇÃO · [PORTARIA Nº 3412/2026](https://www.diariomunicipal.com.br/amp/materia/61A1E6AD) · 2026-09-22
+- SECRETARIA DE ADMINISTRAÇÃO · [PORTARIA Nº 3413/2026](https://www.diariomunicipal.com.br/amp/materia/21AF66A1) · 2026-09-22
+- SECRETARIA DE ADMINISTRAÇÃO · [PORTARIA Nº 3414/2026](https://www.diariomunicipal.com.br/amp/materia/17D0FE7C) · 2026-09-22
+- SECRETARIA DE ADMINISTRAÇÃO · [PORTARIA Nº 3415/2026](https://www.diariomunicipal.com.br/amp/materia/5EEB0208) · 2026-09-22
+- PREFEITURA MUNICIPAL DE PITANGA · [SECRETARIA DE GESTÃO PÚBLICA](https://www.diariomunicipal.com.br/amp/materia/79736D69) · 2026-09-22
+- CONSÓRCIO INTERMUNICIPAL DE SANEAMENTO DO PARANÁ · [PORTARIA N.º 24, DE 21 DE SETEMBRO DE 2026.](https://www.diariomunicipal.com.br/amp/materia/8E663CB1) · 2026-09-22
+- DEPARTAMENTO DE RECURSOS HUMANOS · [EDITAL Nº 241/2026 PROCESSO SELETIVO SIMPLIFICADO](https://www.diariomunicipal.com.br/amp/materia/B2653998) · 2026-09-22
+- DEPARTAMENTO DE RECURSOS HUMANOS · [PROCESSO SELETIVO SIMPLIFICADO Nº 002/2025 EDITAL](https://www.diariomunicipal.com.br/amp/materia/AFE51594) · 2026-09-22
+- DEPARTAMENTO DE RECURSOS HUMANOS · [PORTARIA Nº 35.109/2026 – RH](https://www.diariomunicipal.com.br/amp/materia/C4D149D1) · 2026-09-22
+- DEPARTAMENTO DE RECURSOS HUMANOS · [PORTARIA Nº 35.110/2026 – RH](https://www.diariomunicipal.com.br/amp/materia/9C1E85EA) · 2026-09-22
+- DEPARTAMENTO DE RECURSOS HUMANOS · [PORTARIA Nº 35.111/2026 – RH](https://www.diariomunicipal.com.br/amp/materia/B2DF5D88) · 2026-09-22
+- DEPARTAMENTO DE RECURSOS HUMANOS · [PORTARIA Nº 35.112/2026 – RH](https://www.diariomunicipal.com.br/amp/materia/405BBF69) · 2026-09-22
+- DEPARTAMENTO DE RECURSOS HUMANOS · [PORTARIA Nº 35.113/2026 – RH](https://www.diariomunicipal.com.br/amp/materia/6E66B03F) · 2026-09-22
+- DEPARTAMENTO DE RECURSOS HUMANOS · [PORTARIA Nº 35.114/2026 – RH](https://www.diariomunicipal.com.br/amp/materia/FBCA14B2) · 2026-09-22
+- DEPARTAMENTO DE RECURSOS HUMANOS · [PORTARIA Nº 35.115/2026 – RH](https://www.diariomunicipal.com.br/amp/materia/372C3E90) · 2026-09-22
+- DEPARTAMENTO DE RECURSOS HUMANOS · [PORTARIA Nº 35.116/2026 – RH](https://www.diariomunicipal.com.br/amp/materia/15F3ABF7) · 2026-09-22
+- DEPARTAMENTO DE RECURSOS HUMANOS · [PORTARIA Nº 35.117/2026 – RH](https://www.diariomunicipal.com.br/amp/materia/AFC98691) · 2026-09-22
+- DEPARTAMENTO DE RECURSOS HUMANOS · [PORTARIA Nº 35.118/2026 – RH](https://www.diariomunicipal.com.br/amp/materia/49F904A0) · 2026-09-22
+- DEPARTAMENTO DE RECURSOS HUMANOS · [PORTARIA Nº 35.119/2026 – RH](https://www.diariomunicipal.com.br/amp/materia/275716AE) · 2026-09-22
+- DEPARTAMENTO DE RECURSOS HUMANOS · [PORTARIA Nº 35.120/2026 – RH](https://www.diariomunicipal.com.br/amp/materia/E79B142D) · 2026-09-22
+- DEPARTAMENTO DE RECURSOS HUMANOS · [PORTARIA Nº 35.121/2026 – RH](https://www.diariomunicipal.com.br/amp/materia/2A641601) · 2026-09-22
+- DEPARTAMENTO DE RECURSOS HUMANOS E ADM · [EXTRATO DE TERMO CONTRATUAL CONTRATO](https://www.diariomunicipal.com.br/amp/materia/DC68A4B7) · 2026-09-22
+- DEPARTAMENTO DE RECURSOS HUMANOS E ADM · [EXTRATO DE TERMO CONTRATUAL CONTRATO](https://www.diariomunicipal.com.br/amp/materia/07772C71) · 2026-09-22
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [EDITAL DE CONVOCAÇÃO Nº 024/2026.](https://www.diariomunicipal.com.br/amp/materia/4CCA7AFA) · 2026-09-22
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [TERMO ADITIVO Nº018/2026](https://www.diariomunicipal.com.br/amp/materia/6F693335) · 2026-09-22
+- DIVISÃO DE RECURSOS HUMANOS · [PORTARIA Nº 235/2026](https://www.diariomunicipal.com.br/amp/materia/54D3FB9E) · 2026-09-22
+- SECRETARIA M. ADMINISTRAÇAO RH · [EXTRATO Nº 01/2026](https://www.diariomunicipal.com.br/amp/materia/85FE32ED) · 2026-09-22
+- SECRETARIA M. ADMINISTRAÇAO RH · [EXTRATO Nº 02/2026](https://www.diariomunicipal.com.br/amp/materia/BFC63956) · 2026-09-22
+- SECRETARIA M. ADMINISTRAÇAO RH · [EXTRATO Nº 03/2026](https://www.diariomunicipal.com.br/amp/materia/68D450C1) · 2026-09-22
+- SECRETARIA M. ADMINISTRAÇAO RH · [EXTRATO Nº 04/2026](https://www.diariomunicipal.com.br/amp/materia/0BAB9A8E) · 2026-09-22
+- PREFEITURA MUNICIPAL DE TERRA RICA · [DECLARAÇÃO DE DESISTÊNCIA - 029/2026](https://www.diariomunicipal.com.br/amp/materia/78B21173) · 2026-09-22
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [PORTARIA Nº 1.143/2026](https://www.diariomunicipal.com.br/amp/materia/366BE715) · 2026-09-22
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [PORTARIA Nº 1.212/2026](https://www.diariomunicipal.com.br/amp/materia/2B5800EF) · 2026-09-22
+- PREFEITURA MUNICIPAL DE IRATI · [EDITAL Nº 06 DO PROCESSO SELETIVO SIMPLIFICADO Nº 003/2026](https://www.diariomunicipal.com.br/amp/materia/F645000B) · 2026-09-22
+- SECRETARIA DE RECURSOS HUMANOS · [PORTARIA Nº 294/2026-RH](https://www.diariomunicipal.com.br/amp/materia/D030CDE9) · 2026-09-23
+- GABINETE DA PREFEITA · [EDITAL DE CONVOCAÇÃO N. 020/2026 PSS - PROFESSOR](https://www.diariomunicipal.com.br/amp/materia/9A544EC0) · 2026-09-23
+- PREFEITURA MUNICIPAL DE BALSA NOVA · [EDITAL DE CONVOCAÇÃO Nº 020/2026 - PROCESSO](https://www.diariomunicipal.com.br/amp/materia/F47F8901) · 2026-09-23
+- ADMINISTRAÇÃO · [EDITAL DE CONVOCAÇÃO Nº 023/2026 - PROCESSO](https://www.diariomunicipal.com.br/amp/materia/70C1FBF4) · 2026-09-23
+- GABINETE · [DECRETO Nº 186/2026](https://www.diariomunicipal.com.br/amp/materia/D6545A45) · 2026-09-23
+- RECURSOS HUMANOS · [EDITAL Nº. 02.29/2026 - EDITAL DE CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/336D13B2) · 2026-09-23
+- RECURSOS HUMANOS · [TERMO ADITIVO DE CONTRATO DE 22/09/2026.](https://www.diariomunicipal.com.br/amp/materia/CB49AFDB) · 2026-09-23
+- RECURSOS HUMANOS · [TERMO ADITIVO DE CONTRATO DE 22/09/2026.](https://www.diariomunicipal.com.br/amp/materia/054D0E53) · 2026-09-23
+- PREFEITURA MUNICIPAL DE CAPITÃO LEÔNIDAS · [PROCESSO SELETIVO SIMPLIFICADO EDITAL N° 05/2026](https://www.diariomunicipal.com.br/amp/materia/5F18AE1F) · 2026-09-23
+- DEPARTAMENTO DE ADMINISTRAÇÃO · [DECRETO Nº 0297/2026 NOMEAR, A SENHORA ILOYZI](https://www.diariomunicipal.com.br/amp/materia/ABC78177) · 2026-09-23
+- DEPARTAMENTO DE ADMINISTRAÇÃO · [DECRETO Nº 0298/2026 NOMEAR, A SENHORA VANESSA](https://www.diariomunicipal.com.br/amp/materia/D16400C1) · 2026-09-23
+- DEPARTAMENTO DE ADMINISTRAÇÃO · [DECRETO Nº 0301/2026 NOMEAR, O SENHOR FABIO](https://www.diariomunicipal.com.br/amp/materia/39D66E75) · 2026-09-23
+- DEPARTAMENTO DE ADMINISTRAÇÃO · [PROCESSO SELETIVO SIMPLIFICADO - PSS N° 004/2026](https://www.diariomunicipal.com.br/amp/materia/FDA80891) · 2026-09-23
+- MUNICIPIO DE GOIOXIM · [LEI COMPLEMENTAR N° 04 -2026 -DISPÕE SOBRE](https://www.diariomunicipal.com.br/amp/materia/1730ABA4) · 2026-09-23
+- SECRETARIA DE ADMINISTRAÇÃO E PLANEJAMENTO · [EDITAL Nº 100/2026](https://www.diariomunicipal.com.br/amp/materia/12C449F8) · 2026-09-23
+- DEPARTAMENTO DE RECURSOS HUMANOS · [Processo Seletivo Simplificado Edital nº 03/2025.](https://www.diariomunicipal.com.br/amp/materia/03310B25) · 2026-09-23
+- GOVERNO MUNICIPAL - GABINETE DO PREFEITO · [PORTARIA Nº. 1501/2026](https://www.diariomunicipal.com.br/amp/materia/C7F93782) · 2026-09-23
+- PROCURADORIA · [DECRETO Nº 692/2026](https://www.diariomunicipal.com.br/amp/materia/30E65E49) · 2026-09-23
+- RECURSOS HUMANOS · [PORTARIA Nº 370/2026](https://www.diariomunicipal.com.br/amp/materia/F40A6453) · 2026-09-23
+- PREFEITURA MUNICIPAL DE IVATUBA · [EXTRATO DO CONTRATO DE TRABALHO POR TEMPO](https://www.diariomunicipal.com.br/amp/materia/8945272A) · 2026-09-23
+- PREFEITURA MUNICIPAL DE LAPA · [DECRETO N° 29937, DE 22 DE SETEMBRO DE 2026](https://www.diariomunicipal.com.br/amp/materia/55D2BF7C) · 2026-09-23
+- SECRETARIA DE ADMINISTRAÇÃO · [CONTRATO DE PRESTAÇÃO DE SERVIÇOS EM REGIME](https://www.diariomunicipal.com.br/amp/materia/A5879290) · 2026-09-23
+- SECRETARIA DE ADMINISTRAÇÃO · [CONTRATO DE PRESTAÇÃO DE SERVIÇOS EM REGIME](https://www.diariomunicipal.com.br/amp/materia/D73E6FA3) · 2026-09-23
+- SECRETARIA DE ADMINISTRAÇÃO · [PORTARIA SEMAD Nº 913, DE 18 DE SETEMBRO DE 2026](https://www.diariomunicipal.com.br/amp/materia/BE9A03B5) · 2026-09-23
+- GABINETE DO PREFEITO · [DECRETO Nº 468/2026 - CONSTITUI A COMISSÃO](https://www.diariomunicipal.com.br/amp/materia/1043060F) · 2026-09-23
+- GABINETE DO PREFEITO · [EDITAL N º. 306/2026 - CONVOCAÇÃO PROCESSO](https://www.diariomunicipal.com.br/amp/materia/52A6B80B) · 2026-09-23
+- PREFEITURA MUNICIPAL DE PAIÇANDU · [EDITAL DE CONVOCAÇÃO Nº 280/2026](https://www.diariomunicipal.com.br/amp/materia/7670DA61) · 2026-09-23
+- FUNDAÇÃO DE EDUCAÇÃO DE PAIÇANDU · [PORTARIA Nº 497/2026](https://www.diariomunicipal.com.br/amp/materia/3F2ACAD3) · 2026-09-23
+- FUNDAÇÃO DE EDUCAÇÃO DE PAIÇANDU · [PORTARIA Nº 498/2026](https://www.diariomunicipal.com.br/amp/materia/74CD1252) · 2026-09-23
+- FUNDAÇÃO DE EDUCAÇÃO DE PAIÇANDU · [PORTARIA Nº 499/2026](https://www.diariomunicipal.com.br/amp/materia/2B6C1E75) · 2026-09-23
+- FUNDAÇÃO DE EDUCAÇÃO DE PAIÇANDU · [PORTARIA Nº 500/2026](https://www.diariomunicipal.com.br/amp/materia/04ADF507) · 2026-09-23
+- FUNDAÇÃO DE SÁUDE DE PAIÇANDU · [PORTARIA Nº 387/2026](https://www.diariomunicipal.com.br/amp/materia/D30A58D1) · 2026-09-23
+- FUNDAÇÃO DE SÁUDE DE PAIÇANDU · [PORTARIA Nº 389/2026](https://www.diariomunicipal.com.br/amp/materia/3B70353C) · 2026-09-23
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [COMUNICADO – CHAMADA AUXILIAR DE CUIDADOR DE](https://www.diariomunicipal.com.br/amp/materia/B0F33D57) · 2026-09-23
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [COMUNICADO – CHAMADA PROFESSOR 20H - PROCESSO](https://www.diariomunicipal.com.br/amp/materia/2A2E8D18) · 2026-09-23
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [PROCESSO SELETIVO SIMPLIFICADO Nº 02/2025 –](https://www.diariomunicipal.com.br/amp/materia/C261F7F5) · 2026-09-23
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [TERMO DE DESISTÊNCIA - PROCESSO SELETIVO](https://www.diariomunicipal.com.br/amp/materia/F67CBFD9) · 2026-09-23
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EDITAL DE CONVOCAÇÃO Nº 185/2026](https://www.diariomunicipal.com.br/amp/materia/7B9AD6C7) · 2026-09-23
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EDITAL DE CONVOCAÇÃO Nº 186/2026](https://www.diariomunicipal.com.br/amp/materia/2BA82C2F) · 2026-09-23
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EDITAL DE CONVOCAÇÃO Nº 187/2026](https://www.diariomunicipal.com.br/amp/materia/069F16C8) · 2026-09-23
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [PORTARIA MUNICIPAL Nº 1732/2026](https://www.diariomunicipal.com.br/amp/materia/079D8942) · 2026-09-23
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [PORTARIA MUNICIPAL Nº 1734/2026](https://www.diariomunicipal.com.br/amp/materia/FDAB69FE) · 2026-09-23
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [PORTARIA MUNICIPAL Nº 1735/2026](https://www.diariomunicipal.com.br/amp/materia/47B0EFCB) · 2026-09-23
+- SECRETARIA DE ADMINISTRAÇÃO · [EXTRATO DE CONTRATO Nº 09/2026](https://www.diariomunicipal.com.br/amp/materia/012DFA97) · 2026-09-23
+- SECRETARIA DE ADMINISTRAÇÃO · [PORTARIA Nº 3417/2026](https://www.diariomunicipal.com.br/amp/materia/A5AE745C) · 2026-09-23
+- DEPARTAMENTO DE RECURSOS HUMANOS · [PROCESSO SELETIVO SIMPLIFICADO Nº 001/2025 EDITAL](https://www.diariomunicipal.com.br/amp/materia/98B9AD25) · 2026-09-23
+- DEPARTAMENTO DE RECURSOS HUMANOS · [PORTARIA Nº 35.088/2025 – RH](https://www.diariomunicipal.com.br/amp/materia/28F6EFE1) · 2026-09-23
+- PREFEITURA MUNICIPAL DE TERRA RICA · [DECRETO Nº 416/2026](https://www.diariomunicipal.com.br/amp/materia/11CFBEC2) · 2026-09-23
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [EDITAL 111/2026](https://www.diariomunicipal.com.br/amp/materia/E9E05654) · 2026-09-23
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [PORTARIA Nº 1.157/2026](https://www.diariomunicipal.com.br/amp/materia/78478BC1) · 2026-09-23
+- MUNICIPIO DE GOIOXIM · [PROCESSO SELETIVO SIMPLIFICADO – PSS](https://www.diariomunicipal.com.br/amp/materia/B7FFB654) · 2026-09-23
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [EDITAL 113/2026](https://www.diariomunicipal.com.br/amp/materia/7D119E4F) · 2026-09-23
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [EXTRATO Nº 27/2026](https://www.diariomunicipal.com.br/amp/materia/4F522BC7) · 2026-09-23
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [PORTARIA Nº 419/2026 - PRORROGAR CONTRATOS PSS Nº](https://www.diariomunicipal.com.br/amp/materia/3411C03C) · 2026-09-24
+- GABINETE · [LISTA DE CLASSIFICAÇÃO PROVISÓRIA DO PROCESSO](https://www.diariomunicipal.com.br/amp/materia/285E5780) · 2026-09-24
+- MUNICÍPIO DE FERNANDES PINHEIRO · [EDITAL Nº 41/2026 -PROCESSO SELETIVO SIMPLIFICADO](https://www.diariomunicipal.com.br/amp/materia/51AF614C) · 2026-09-24
+- MUNICIPIO DE GOIOXIM · [PROCESSO SELETIVO SIMPLIFICADO – PSS EDITAL DE](https://www.diariomunicipal.com.br/amp/materia/086A23C4) · 2026-09-24
+- SECRETARIA DE ADMINISTRAÇÃO E PLANEJAMENTO · [EDITAL Nº 101/2026](https://www.diariomunicipal.com.br/amp/materia/6A73DDA4) · 2026-09-24
+- SECRETARIA DE ADMINISTRAÇÃO E PLANEJAMENTO · [EDITAL Nº 102/2026](https://www.diariomunicipal.com.br/amp/materia/BDF8FB60) · 2026-09-24
+- GOVERNO MUNICIPAL - GABINETE DO PREFEITO · [PORTARIA Nº 1508/2026](https://www.diariomunicipal.com.br/amp/materia/DB3977EB) · 2026-09-24
+- PREFEITURA MUNICIPAL DE IVATUBA · [GABINETE DO PREFEITO](https://www.diariomunicipal.com.br/amp/materia/2F865D60) · 2026-09-24
+- GABINETE DO PREFEITO · [DECLARAÇÃO PROCESSO SELETIVO SIMPLIFICADO –](https://www.diariomunicipal.com.br/amp/materia/193B4DC8) · 2026-09-24
+- GABINETE DO PREFEITO · [EDITAL DE CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/4B3C67BB) · 2026-09-24
+- GABINETE DO PREFEITO · [EDITAL DE CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/66235C45) · 2026-09-24
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [EDITAL 12/2026](https://www.diariomunicipal.com.br/amp/materia/41B98127) · 2026-09-24
+- PREFEITURA MUNICIPAL DE PAIÇANDU · [PORTARIA Nº 540/2026](https://www.diariomunicipal.com.br/amp/materia/E12FD348) · 2026-09-24
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [COMUNICADO – CHAMADA AUXILIAR DE CUIDADOR DE](https://www.diariomunicipal.com.br/amp/materia/717CA8FD) · 2026-09-24
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [PROCESSO SELETIVO SIMPLIFICADO Nº. 01/2026](https://www.diariomunicipal.com.br/amp/materia/EBE293DE) · 2026-09-24
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [PROCESSO SELETIVO SIMPLIFICADO Nº. 02/2026](https://www.diariomunicipal.com.br/amp/materia/1BE82AB8) · 2026-09-24
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [termos do Edital nº 001/2026 – Assistência Social, de 04 de março de](https://www.diariomunicipal.com.br/amp/materia/7569116A) · 2026-09-24
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [TERMO DE DESISTÊNCIA - PROCESSO SELETIVO](https://www.diariomunicipal.com.br/amp/materia/54AF46E8) · 2026-09-24
+- PREFEITURA MUNICIPAL DE PALMITAL · [EDITAL DE CONVOCAÇÃO N.º 07/2026 PROCESSO](https://www.diariomunicipal.com.br/amp/materia/0A1A7CBA) · 2026-09-24
+- PREFEITURA MUNICIPAL DE PALMITAL · [EDITAL DE CONVOCAÇÃO N.º 08/2026 PROCESSO](https://www.diariomunicipal.com.br/amp/materia/8DE947BE) · 2026-09-24
+- SECRETARIA MUNICIPAL DE RECURSOS HUMANOS · [EDITAL DE CONVOCAÇÃO Nº 24/2026](https://www.diariomunicipal.com.br/amp/materia/C4EC5F8D) · 2026-09-24
+- SECRETARIA MUNICIPAL DE RECURSOS HUMANOS · [PORTARIA N. º 250/2026– DE 23 DE SETEMBRO DE 2026.](https://www.diariomunicipal.com.br/amp/materia/DF8542FA) · 2026-09-24
+- SECRETARIA MUNICIPAL DE RECURSOS HUMANOS · [PORTARIA N. º 251/2026– DE 23 DE SETEMBRO DE 2026.](https://www.diariomunicipal.com.br/amp/materia/7BACD628) · 2026-09-24
+- SECRETARIA DE ADMINISTRAÇÃO · [EXTRATO DE CONTRATO Nº 13/2026](https://www.diariomunicipal.com.br/amp/materia/476AC9E0) · 2026-09-24
+- SECRETARIA DE ADMINISTRAÇÃO · [EXTRATO DE CONTRATO TEMPORÁRIO Nº 10/2026](https://www.diariomunicipal.com.br/amp/materia/360BE271) · 2026-09-24
+- SECRETARIA DE ADMINISTRAÇÃO · [EXTRATO DE CONTRATO TEMPORÁRIO Nº 12/2026](https://www.diariomunicipal.com.br/amp/materia/2EE11AC3) · 2026-09-24
+- SECRETARIA DE ADMINISTRAÇÃO · [EXTRATO DE CONTRATRO TEMPORARIO Nº 11/2026](https://www.diariomunicipal.com.br/amp/materia/FC5A5D7F) · 2026-09-24
+- SECRETARIA DE ADMINISTRAÇÃO · [PORTARIA Nº 3418/2026](https://www.diariomunicipal.com.br/amp/materia/8CE2DDDB) · 2026-09-24
+- SECRETARIA DE ADMINISTRAÇÃO · [PORTARIA Nº 3419/2026](https://www.diariomunicipal.com.br/amp/materia/4A8BE0D6) · 2026-09-24
+- SECRETARIA DE ADMINISTRAÇÃO · [PORTARIA Nº 3420/2026](https://www.diariomunicipal.com.br/amp/materia/CC22B34C) · 2026-09-24
+- SECRETARIA DE ADMINISTRAÇÃO · [PORTARIA Nº 3421/2026](https://www.diariomunicipal.com.br/amp/materia/B79BB092) · 2026-09-24
+- GABINETE DO PREFEITO · [EDITAL N º 016/2026 – 24ª CONVOCAÇÃO – PSS Nº 002/2025–](https://www.diariomunicipal.com.br/amp/materia/1A47E71C) · 2026-09-24
+- PREFEITURA MUNICIPAL DE TERRA RICA · [EDITAL DE CONVOCAÇÃO Nº 071/2026](https://www.diariomunicipal.com.br/amp/materia/4BEABD1F) · 2026-09-24
+- PREFEITURA MUNICIPAL DE BALSA NOVA · [PROCESSO SELETIVO SIMPLIFICADO – PSS, para contratações temporárias para exercer a função de PROFESSOR, em conformidade com](https://www.diariomunicipal.com.br/amp/materia/EB6C255B) · 2026-09-24
+- PREFEITURA MUNICIPAL DE RESERVA DO IGUAÇU · [PROCESSO SELETIVO SIMPLIFICADO Nº 03/2026 EDITAL DE ABERTURA DO PROCESSO SELETIVO SIMPLIFICADO Nº.](https://www.diariomunicipal.com.br/amp/materia/BA8F68D5) · 2026-09-24
+- SECRETARIA MUNICIPAL DE RECURSOS HUMANOS · [EXTRATO DE CONTRATO DE PROCESSO SELETIVO](https://www.diariomunicipal.com.br/amp/materia/8BF53C6A) · 2026-09-25
+- SECRETARIA MUNICIPAL DE RECURSOS HUMANOS · [EXTRATO DE CONTRATO DE PROCESSO SELETIVO](https://www.diariomunicipal.com.br/amp/materia/0A49E65F) · 2026-09-25
+- SECRETARIA MUNICIPAL DE RECURSOS HUMANOS · [EXTRATO DE CONTRATO DE PROCESSO SELETIVO](https://www.diariomunicipal.com.br/amp/materia/875B245D) · 2026-09-25
+- SECRETARIA MUNICIPAL DE RECURSOS HUMANOS · [EXTRATO DE CONTRATO DE PROCESSO SELETIVO](https://www.diariomunicipal.com.br/amp/materia/BA0815A5) · 2026-09-25
+- SECRETARIA MUNICIPAL DE RECURSOS HUMANOS · [EXTRATO DE CONTRATO DE PROCESSO SELETIVO](https://www.diariomunicipal.com.br/amp/materia/3E4FE12A) · 2026-09-25
+- SECRETARIA MUNICIPAL DE RECURSOS HUMANOS · [EXTRATO DE CONTRATO DE PROCESSO SELETIVO](https://www.diariomunicipal.com.br/amp/materia/C08F605D) · 2026-09-25
+- SECRETARIA MUNICIPAL DE RECURSOS HUMANOS · [EXTRATO DE CONTRATO DE PROCESSO SELETIVO](https://www.diariomunicipal.com.br/amp/materia/8A890E09) · 2026-09-25
+- SECRETARIA MUNICIPAL DE RECURSOS HUMANOS · [EXTRATO DE CONTRATO DE PROCESSO SELETIVO](https://www.diariomunicipal.com.br/amp/materia/8483CC7A) · 2026-09-25
+- SECRETARIA MUNICIPAL DE RECURSOS HUMANOS · [EXTRATO DE CONTRATO DE PROCESSO SELETIVO](https://www.diariomunicipal.com.br/amp/materia/441AAFA3) · 2026-09-25
+- SECRETARIA MUNICIPAL DE RECURSOS HUMANOS · [EXTRATO DE RESCISÃO DE CONTRATO Nº 047/2026 -](https://www.diariomunicipal.com.br/amp/materia/C949C812) · 2026-09-25
+- GABINETE · [DECRETO DE HOMOLOGAÇÃO N°. 190/2026](https://www.diariomunicipal.com.br/amp/materia/70D9209B) · 2026-09-25
+- SECRETARIA DE GOVERNO · [EDITAL Nº 016.005/2026 – CONVOCAÇÃO DOS](https://www.diariomunicipal.com.br/amp/materia/69A2D86E) · 2026-09-25
+- GOVERNO MUNICIPAL - GABINETE DO PREFEITO · [PORTARIA Nº. 1512/2026](https://www.diariomunicipal.com.br/amp/materia/467AE9F1) · 2026-09-25
+- GOVERNO MUNICIPAL - GABINETE DO PREFEITO · [PORTARIA Nº. 1514/2026](https://www.diariomunicipal.com.br/amp/materia/A61672F8) · 2026-09-25
+- GOVERNO MUNICIPAL - GABINETE DO PREFEITO · [PORTARIA Nº. 1519/2026](https://www.diariomunicipal.com.br/amp/materia/116A83B1) · 2026-09-25
+- PROCURADORIA · [DECRETO Nº 704/2026](https://www.diariomunicipal.com.br/amp/materia/B7E0A358) · 2026-09-25
+- PROCURADORIA · [DECRETO Nº 705/2026](https://www.diariomunicipal.com.br/amp/materia/FDF6A59E) · 2026-09-25
+- PREFEITURA MUNICIPAL DE ITAÚNA DO SUL · [PROCESSO SELETIVO SIMPLIFICADO N° 001/2025](https://www.diariomunicipal.com.br/amp/materia/B9DD2789) · 2026-09-25
+- SECRETARIA DE ADMINISTRAÇÃO · [EDITAL DE CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/4682CB72) · 2026-09-25
+- SECRETARIA DE ADMINISTRAÇÃO · [EDITAL DE CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/3BD546BF) · 2026-09-25
+- SECRETARIA DE ADMINISTRAÇÃO · [EDITAL DE CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/2C00A0E0) · 2026-09-25
+- SECRETARIA DE ADMINISTRAÇÃO · [EDITAL DE CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/65749577) · 2026-09-25
+- SECRETARIA DE ADMINISTRAÇÃO · [EDITAL DE CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/915DA569) · 2026-09-25
+- SECRETARIA DE ADMINISTRAÇÃO · [EDITAL DE CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/1B2D6AEA) · 2026-09-25
+- SECRETARIA DE ADMINISTRAÇÃO · [EDITAL DE CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/A52B1452) · 2026-09-25
+- SECRETARIA DE ADMINISTRAÇÃO · [EDITAL DE CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/1042F1CB) · 2026-09-25
+- SECRETARIA DE ADMINISTRAÇÃO · [EDITAL DE CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/B56DABFB) · 2026-09-25
+- SECRETARIA DE ADMINISTRAÇÃO · [EDITAL DE CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/BB6549F0) · 2026-09-25
+- SECRETARIA DE ADMINISTRAÇÃO · [EDITAL DE CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/80C75A50) · 2026-09-25
+- GABINETE DO PREFEITO · [EDITAL N º. 307/2026 CONVOCAÇÃO PROCESSO](https://www.diariomunicipal.com.br/amp/materia/4EA506EF) · 2026-09-25
+- FUNDAÇÃO DE EDUCAÇÃO DE PAIÇANDU · [PORTARIA Nº 502/2026](https://www.diariomunicipal.com.br/amp/materia/CAA3FE31) · 2026-09-25
+- FUNDAÇÃO DE EDUCAÇÃO DE PAIÇANDU · [PORTARIA Nº 503/2026](https://www.diariomunicipal.com.br/amp/materia/91E43F95) · 2026-09-25
+- PREFEITURA MUNICIPAL DE PAIÇANDU · [PORTARIA Nº542/2026](https://www.diariomunicipal.com.br/amp/materia/CD60F7C1) · 2026-09-25
+- PREFEITURA MUNICIPAL DE PAIÇANDU · [PORTARIA Nº543/2026](https://www.diariomunicipal.com.br/amp/materia/1292BB00) · 2026-09-25
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [PROCESSO SELETIVO SIMPLIFICADO Nº. 01/2026](https://www.diariomunicipal.com.br/amp/materia/F1B48C9B) · 2026-09-25
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [PROCESSO SELETIVO SIMPLIFICADO Nº. 02/2026](https://www.diariomunicipal.com.br/amp/materia/111A2FCF) · 2026-09-25
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [COMUNICADO – CHAMADA MÉDICO ESF PROCESSO](https://www.diariomunicipal.com.br/amp/materia/F1BEAD89) · 2026-09-25
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [TERMO DE DESISTÊNCIA - PROCESSO SELETIVO](https://www.diariomunicipal.com.br/amp/materia/E0EF6E7A) · 2026-09-25
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO DE RESCISÃO DO CONTRATO](https://www.diariomunicipal.com.br/amp/materia/54C4B3F0) · 2026-09-25
+- DEPARTAMENTO DE RECURSOS HUMANOS · [PORTARIA Nº 882 DE 23 DE SETEMBRO DE 2026.](https://www.diariomunicipal.com.br/amp/materia/C53C91DF) · 2026-09-25
+- DEPARTAMENTO DE RECURSOS HUMANOS · [PORTARIA Nº 883, DE 23 DE SETEMBRO DE 2026.](https://www.diariomunicipal.com.br/amp/materia/4B5B8874) · 2026-09-25
+- DEPARTAMENTO DE RECURSOS HUMANOS · [PORTARIA Nº 886, DE 23 DE SETEMBRO DE 2026.](https://www.diariomunicipal.com.br/amp/materia/4FF0BB11) · 2026-09-25
+- CONSÓRCIO INTERMUNICIPAL DE SANEAMENTO DO PARANÁ · [EDITAL DE CONVOCAÇÃO Nº 031/2026](https://www.diariomunicipal.com.br/amp/materia/19F1F39C) · 2026-09-25
+- RECURSOS HUMANOS · [EDITAL DE CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/D3BBD9A1) · 2026-09-25
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO, · [EXTRATO DO EDITAL DE PROCESSO SELETIVO](https://www.diariomunicipal.com.br/amp/materia/90A72C98) · 2026-09-25
+- SECRETARIA DE ADMINISTRAÇÃO · [EDITAL DE CONVOCAÇÃO 155-2026](https://www.diariomunicipal.com.br/amp/materia/F3B81D18) · 2026-09-25
+- SECRETARIA DE ADMINISTRAÇÃO · [EDITAL DE CONVOCAÇÃO 156-2026](https://www.diariomunicipal.com.br/amp/materia/E1839E6E) · 2026-09-25
+- PREFEITURA MUNICIPAL DE CANDÓI · [PROCESSO SELETIVO SIMPLIFICADO N° 02/2026 - ESTÁGIÁRIOS EDITAL Nº 08/2026 - DIVULGAÇÃO DO RESULTADO](https://www.diariomunicipal.com.br/amp/materia/8D177639) · 2026-09-25
+- PREFEITURA MUNICIPAL DE TUNAS DO PARANÁ · [PROCESSO SELETIVO SIMPLIFICADO Nº 002/2026 EDITAL DE CHAMAMENTO 001/2026](https://www.diariomunicipal.com.br/amp/materia/647FAAA5) · 2026-09-25
+- MUNICÍPIO DE NOSSA SENHORA DAS GRAÇAS · [PORTARIA Nº 594/2026](https://www.diariomunicipal.com.br/amp/materia/BBE4FF08) · 2026-09-28
+- RECURSOS HUMANOS · [EDITAL DE CONVOCAÇÃO N° 053/2026](https://www.diariomunicipal.com.br/amp/materia/B5D7B5BE) · 2026-09-28
+- GABINETE DA PREFEITA · [EDITAL DE CONVOCAÇÃO N. 021/2026 PSS - PROFESSOR](https://www.diariomunicipal.com.br/amp/materia/20CF25A6) · 2026-09-28
+- PREFEITURA MUNICIPAL DE BALSA NOVA · [EDITAL DE CONVOCAÇÃO N.º 004/2026 - PROCESSO](https://www.diariomunicipal.com.br/amp/materia/525DC900) · 2026-09-28
+- ADMINISTRAÇÃO · [EDITAL DE CONVOCAÇÃO Nº 025/2026 - PROCESSO](https://www.diariomunicipal.com.br/amp/materia/A09C1EBF) · 2026-09-28
+- ADMINISTRAÇÃO · [PORTARIA N.º 677/2026](https://www.diariomunicipal.com.br/amp/materia/261DEEAF) · 2026-09-28
+- ADMINISTRAÇÃO · [PORTARIA N.º 678/2026](https://www.diariomunicipal.com.br/amp/materia/E53A147C) · 2026-09-28
+- ADMINISTRAÇÃO · [PORTARIA N.º 679/2026](https://www.diariomunicipal.com.br/amp/materia/2C3457EB) · 2026-09-28
+- ADMINISTRAÇÃO · [PORTARIA N.º 680/2026](https://www.diariomunicipal.com.br/amp/materia/07B89168) · 2026-09-28
+- ADMINISTRAÇÃO · [PORTARIA N.º 681/2026](https://www.diariomunicipal.com.br/amp/materia/C41062B9) · 2026-09-28
+- ADMINISTRAÇÃO · [PORTARIA N.º 682/2026](https://www.diariomunicipal.com.br/amp/materia/FD3B3B5E) · 2026-09-28
+- DEPARTAMENTO DE GESTÃO DE PESSOAS · [EDITAL Nº 048/2026 DE 25/09/2026 - PSS 001/2026](https://www.diariomunicipal.com.br/amp/materia/A18E200F) · 2026-09-28
+- MUNICÍPIO DE FERNANDES PINHEIRO · [DECRETO Nº 248/2026 - ADMISSÃO DE EMPREGADA](https://www.diariomunicipal.com.br/amp/materia/984D7E1D) · 2026-09-28
+- CONSAMU · [PROCESSO SELETIVO SIMPLIFICADO Nº 002/2026 PARA](https://www.diariomunicipal.com.br/amp/materia/63E1A1B3) · 2026-09-28
+- SECRETARIA DE ADMINISTRAÇÃO E PLANEJAMENTO · [EDITAL Nº 104/2026](https://www.diariomunicipal.com.br/amp/materia/6831FBAE) · 2026-09-28
+- SECRETARIA DE ADMINISTRAÇÃO E PLANEJAMENTO · [EDITAL Nº 105/2026](https://www.diariomunicipal.com.br/amp/materia/5A49FB32) · 2026-09-28
+- PREFEITURA MUNICIPAL DE HONÓRIO SERPA · [EDITAL Nº 01-Z.4, DE 25 DE SETEMBRO DE 2026.](https://www.diariomunicipal.com.br/amp/materia/9523F42A) · 2026-09-28
+- GOVERNO MUNICIPAL - GABINETE DO PREFEITO · [PORTARIA Nº. 1531/2026](https://www.diariomunicipal.com.br/amp/materia/A66A49D4) · 2026-09-28
+- PREFEITURA MUNICIPAL DE MORRETES · [RETIFICAÇÃO EXTRATO DE RESCISÃO DE CONTRATO](https://www.diariomunicipal.com.br/amp/materia/7A562428) · 2026-09-28
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [PROCESSO SELETIVO SIMPLIFICADO Nº. 01/2026](https://www.diariomunicipal.com.br/amp/materia/A39E6A6F) · 2026-09-28
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [COMUNICADO – CHAMADA MOTORISTA II PROCESSO](https://www.diariomunicipal.com.br/amp/materia/CF8106E0) · 2026-09-28
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [COMUNICADO – CHAMADA PROFESSOR 20H - PROCESSO](https://www.diariomunicipal.com.br/amp/materia/2C053D59) · 2026-09-28
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [termos do Edital nº 001/2026 – Assistência Social, de 04 de março de](https://www.diariomunicipal.com.br/amp/materia/A795B7C5) · 2026-09-28
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [termos do Edital PROCESSO SELETIVO SIMPLIFICADO nº](https://www.diariomunicipal.com.br/amp/materia/BE70F225) · 2026-09-28
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [TERMO DE DESISTÊNCIA - PROCESSO SELETIVO](https://www.diariomunicipal.com.br/amp/materia/6CEBDAB6) · 2026-09-28
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO DE RESCISÃO DO CONTRATO](https://www.diariomunicipal.com.br/amp/materia/3085A246) · 2026-09-28
+- SECRETARIA MUNICIPAL DE RECURSOS HUMANOS · [EDITAL Nº 02/2026- TORNA PÚBLICO O NÃO](https://www.diariomunicipal.com.br/amp/materia/6AC3E443) · 2026-09-28
+- SECRETARIA DE GESTÃO PÚBLICA · [EDITAL N.º 009/2026 3ª CONVOCAÇÃO PARA](https://www.diariomunicipal.com.br/amp/materia/F0CB477C) · 2026-09-28
+- DEPARTAMENTO DE ADMINISTRAÇÃO · [PROCESSO SELETIVO SIMPLIFICADO Nº 07/2025 EDITAL](https://www.diariomunicipal.com.br/amp/materia/885228B1) · 2026-09-28
+- DEPARTAMENTO DE RECURSOS HUMANOS · [PROCESSO SELETIVO SIMPLIFICADO Nº 001/2025 EDITAL](https://www.diariomunicipal.com.br/amp/materia/F92A1E7F) · 2026-09-28
+- DEPARTAMENTO ADMINISTRATIVO · [PORTARIA N.º 1008/2026](https://www.diariomunicipal.com.br/amp/materia/1ABC7847) · 2026-09-28
+- SECRETARIA GERAL · [PREFEITURA MUNICIPAL DE ROLÂNDIA EDITAL 001/2026](https://www.diariomunicipal.com.br/amp/materia/C52FE763) · 2026-09-28
+- DEPARTAMENTO DE RECURSOS HUMANOS E ADM · [EXTRATO DE TERMO CONTRATUAL CONTRATO](https://www.diariomunicipal.com.br/amp/materia/37D4DD38) · 2026-09-28
+- DEPARTAMENTO DE RECURSOS HUMANOS E ADM · [EXTRATO DE TERMO CONTRATUAL CONTRATO](https://www.diariomunicipal.com.br/amp/materia/A5465C4E) · 2026-09-28
+- DEPARTAMENTO DE RECURSOS HUMANOS E ADM · [EXTRATO DE TERMO CONTRATUAL CONTRATO](https://www.diariomunicipal.com.br/amp/materia/7E53B01A) · 2026-09-28
+- DIVISÃO DE RECURSOS HUMANOS · [EDITAL 119/2026](https://www.diariomunicipal.com.br/amp/materia/4A651894) · 2026-09-28
+- DIVISÃO DE RECURSOS HUMANOS · [EDITAL 120/2026](https://www.diariomunicipal.com.br/amp/materia/DA963F5D) · 2026-09-28
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [PORTARIA Nº 1.232/2026](https://www.diariomunicipal.com.br/amp/materia/EB5BC7B5) · 2026-09-28
+- PREFEITURA MUNICIPAL DE CERRO AZUL · [EDITAL Nº 016.005/2026 – PROCESSO SELETIVO SIMPLIFICADO EDITAL Nº 005/2026](https://www.diariomunicipal.com.br/amp/materia/6AAE074B) · 2026-09-28
+- SECRETARIA DE GOVERNO · [PROCESSO SELETIVO SIMPLIFICADO – PSS Nº 06/2026 EDITAL DE ABERTURA Nº 01.06/2026](https://www.diariomunicipal.com.br/amp/materia/D0C8A976) · 2026-09-28
+- PREFEITURA MUNICIPAL DE IRATI · [EDITAL Nº 001.13/2026 – 9ª CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/A3F1EBAD) · 2026-09-28
+- PROCURADORIA · [EDITAL Nº 001.2./2026 - 39ª CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/39D4599E) · 2026-09-28
+- PROCURADORIA · [EDITAL Nº 002.33/2026 – 29ª CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/9DE4799B) · 2026-09-28
+- PREFEITURA MUNICIPAL DE ITAPEJARA D'OESTE · [EDITAL DE PROCESSO SELETIVO SIMPLIFICADO Nº 004/2026](https://www.diariomunicipal.com.br/amp/materia/86DC4803) · 2026-09-28
+- PREFEITURA MUNICIPAL DE IVATUBA · [EXTRATO DO CONTRATO PREGÃO ELETRÔNICO Nº. 034/2026-PMI](https://www.diariomunicipal.com.br/amp/materia/8ACE4F62) · 2026-09-28
+- ADMINISTRAÇÃO MUNICIPAL · [PROCESSO SELETIVO SIMPLIFICADO – PSS 003/2026](https://www.diariomunicipal.com.br/amp/materia/31592C44) · 2026-09-29
+- ADMINISTRAÇÃO · [EDITAL DE CONVOCAÇÃO N.º 001/2026 - PROCESSO](https://www.diariomunicipal.com.br/amp/materia/0E8F5989) · 2026-09-29
+- ADMINISTRAÇÃO · [PORTARIA N.º 684/2026](https://www.diariomunicipal.com.br/amp/materia/3FA61B9A) · 2026-09-29
+- ADMINISTRAÇÃO · [PORTARIA N.º 685/2026](https://www.diariomunicipal.com.br/amp/materia/8BEB731C) · 2026-09-29
+- ADMINISTRAÇÃO · [PORTARIA N.º 686/2026](https://www.diariomunicipal.com.br/amp/materia/2DCA8AC3) · 2026-09-29
+- ADMINISTRAÇÃO · [PORTARIA N.º 687/2026](https://www.diariomunicipal.com.br/amp/materia/6A9F980A) · 2026-09-29
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [PROCESSO SELETIVO 001/2025 EDITAL 12/2026](https://www.diariomunicipal.com.br/amp/materia/0612DD1B) · 2026-09-29
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO SEGUNDO TERMO ADITIVO Nº 047/2026 DO](https://www.diariomunicipal.com.br/amp/materia/77D8C5BB) · 2026-09-29
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO SEGUNDO TERMO ADITIVO Nº 048/2026 DO](https://www.diariomunicipal.com.br/amp/materia/1B9B7C39) · 2026-09-29
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO SEGUNDO TERMO ADITIVO Nº 048/2026 DO](https://www.diariomunicipal.com.br/amp/materia/20D39BB1) · 2026-09-29
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO SEGUNDO TERMO ADITIVO Nº 049/2026 DO](https://www.diariomunicipal.com.br/amp/materia/04BA3467) · 2026-09-29
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO SEGUNDO TERMO ADITIVO Nº 081/2026 DO](https://www.diariomunicipal.com.br/amp/materia/4C02C501) · 2026-09-29
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO SEGUNDO TERMO ADITIVO Nº 082/2026 DO](https://www.diariomunicipal.com.br/amp/materia/3B6CE761) · 2026-09-29
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO SEGUNDO TERMO ADITIVO Nº 083/2026 DO](https://www.diariomunicipal.com.br/amp/materia/593B99AB) · 2026-09-29
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO SEGUNDO TERMO ADITIVO Nº 084/2026 DO](https://www.diariomunicipal.com.br/amp/materia/B4D128A5) · 2026-09-29
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO SEGUNDO TERMO ADITIVO Nº 085/2026 DO](https://www.diariomunicipal.com.br/amp/materia/6E76C5D3) · 2026-09-29
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO SEGUNDO TERMO ADITIVO Nº 086/2026 DO](https://www.diariomunicipal.com.br/amp/materia/83D62B48) · 2026-09-29
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO SEGUNDO TERMO ADITIVO Nº 087/2026 DO](https://www.diariomunicipal.com.br/amp/materia/88D1FC9D) · 2026-09-29
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO SEGUNDO TERMO ADITIVO Nº 088/2026 DO](https://www.diariomunicipal.com.br/amp/materia/62BA2057) · 2026-09-29
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO SEGUNDO TERMO ADITIVO Nº 089/2026 DO](https://www.diariomunicipal.com.br/amp/materia/5B22727E) · 2026-09-29
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO SEGUNDO TERMO ADITIVO Nº 090/2026 DO](https://www.diariomunicipal.com.br/amp/materia/3DD4EE45) · 2026-09-29
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO SEGUNDO TERMO ADITIVO Nº 091/2026 DO](https://www.diariomunicipal.com.br/amp/materia/777DB810) · 2026-09-29
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO SEGUNDO TERMO ADITIVO Nº 092/2026 DO](https://www.diariomunicipal.com.br/amp/materia/4BF0F4D5) · 2026-09-29
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO SEGUNDO TERMO ADITIVO Nº 093/2026 DO](https://www.diariomunicipal.com.br/amp/materia/41096390) · 2026-09-29
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO SEGUNDO TERMO ADITIVO Nº 094/2026 DO](https://www.diariomunicipal.com.br/amp/materia/F182ED13) · 2026-09-29
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO SEGUNDO TERMO ADITIVO Nº 095/2026 DO](https://www.diariomunicipal.com.br/amp/materia/229ED225) · 2026-09-29
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO SEGUNDO TERMO ADITIVO Nº 096/2026 DO](https://www.diariomunicipal.com.br/amp/materia/313FB0BF) · 2026-09-29
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO SEGUNDO TERMO ADITIVO Nº 097/2026 DO](https://www.diariomunicipal.com.br/amp/materia/A60D7688) · 2026-09-29
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO SEGUNDO TERMO ADITIVO Nº 098/2026 DO](https://www.diariomunicipal.com.br/amp/materia/DDA9947B) · 2026-09-29
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO SEGUNDO TERMO ADITIVO Nº 099/2026 DO](https://www.diariomunicipal.com.br/amp/materia/842493A4) · 2026-09-29
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO SEGUNDO TERMO ADITIVO Nº 100/2026 DO](https://www.diariomunicipal.com.br/amp/materia/452BC387) · 2026-09-29
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO SEGUNDO TERMO ADITIVO Nº 101/2026 DO](https://www.diariomunicipal.com.br/amp/materia/4829E710) · 2026-09-29
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO SEGUNDO TERMO ADITIVO Nº 102/2026 DO](https://www.diariomunicipal.com.br/amp/materia/60D0E6AF) · 2026-09-29
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO SEGUNDO TERMO ADITIVO Nº 103/2026 DO](https://www.diariomunicipal.com.br/amp/materia/87C19ED8) · 2026-09-29
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO SEGUNDO TERMO ADITIVO Nº 104/2026 DO](https://www.diariomunicipal.com.br/amp/materia/3490A6B0) · 2026-09-29
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO TERCEIRO TERMO ADITIVO N°113/2026 DO](https://www.diariomunicipal.com.br/amp/materia/2FFA74A2) · 2026-09-29
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO TERCEIRO TERMO ADITIVO N°114/2026 DO](https://www.diariomunicipal.com.br/amp/materia/968DCCFF) · 2026-09-29
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO TERCEIRO TERMO ADITIVO N°115/2026 DO](https://www.diariomunicipal.com.br/amp/materia/F494DBBA) · 2026-09-29
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO TERCEIRO TERMO ADITIVO N°116/2026 DO](https://www.diariomunicipal.com.br/amp/materia/30771610) · 2026-09-29
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO TERCEIRO TERMO ADITIVO N°117/2026 DO](https://www.diariomunicipal.com.br/amp/materia/4DF43473) · 2026-09-29
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO TERCEIRO TERMO ADITIVO N°118/2026 DO](https://www.diariomunicipal.com.br/amp/materia/2869F418) · 2026-09-29
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO TERCEIRO TERMO ADITIVO N°120/2026 DO](https://www.diariomunicipal.com.br/amp/materia/A221120A) · 2026-09-29
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO TERCEIRO TERMO ADITIVO N°121/2026 DO](https://www.diariomunicipal.com.br/amp/materia/5E26C49C) · 2026-09-29
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO TERCEIRO TERMO ADITIVO N°122/2026 DO](https://www.diariomunicipal.com.br/amp/materia/172003EA) · 2026-09-29
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO TERCEIRO TERMO ADITIVO N°123/2026 DO](https://www.diariomunicipal.com.br/amp/materia/3F3E069D) · 2026-09-29
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO TERCEIRO TERMO ADITIVO Nº 050/2026 DO](https://www.diariomunicipal.com.br/amp/materia/AD28EE82) · 2026-09-29
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO TERCEIRO TERMO ADITIVO Nº 051/2026 DO](https://www.diariomunicipal.com.br/amp/materia/63B30054) · 2026-09-29
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO TERCEIRO TERMO ADITIVO Nº 052/2026 DO](https://www.diariomunicipal.com.br/amp/materia/A6E7BBCD) · 2026-09-29
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO TERCEIRO TERMO ADITIVO Nº 053/2026 DO](https://www.diariomunicipal.com.br/amp/materia/66B5E03C) · 2026-09-29
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO TERCEIRO TERMO ADITIVO Nº 054/2026 DO](https://www.diariomunicipal.com.br/amp/materia/A16ED25D) · 2026-09-29
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO TERCEIRO TERMO ADITIVO Nº 055/2026 DO](https://www.diariomunicipal.com.br/amp/materia/81146A92) · 2026-09-29
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO TERCEIRO TERMO ADITIVO Nº 056/2026 DO](https://www.diariomunicipal.com.br/amp/materia/EAE94EB2) · 2026-09-29
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO TERCEIRO TERMO ADITIVO Nº 057/2026 DO](https://www.diariomunicipal.com.br/amp/materia/902465FC) · 2026-09-29
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO TERCEIRO TERMO ADITIVO Nº 058/2026 DO](https://www.diariomunicipal.com.br/amp/materia/E2A14759) · 2026-09-29
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO TERCEIRO TERMO ADITIVO Nº 059/2026 DO](https://www.diariomunicipal.com.br/amp/materia/28E6B164) · 2026-09-29
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO TERCEIRO TERMO ADITIVO Nº 060/2026 DO](https://www.diariomunicipal.com.br/amp/materia/D1DEA037) · 2026-09-29
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO TERCEIRO TERMO ADITIVO Nº 061/2026 DO](https://www.diariomunicipal.com.br/amp/materia/89142ED5) · 2026-09-29
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO TERCEIRO TERMO ADITIVO Nº 062/2026 DO](https://www.diariomunicipal.com.br/amp/materia/5088623A) · 2026-09-29
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO TERCEIRO TERMO ADITIVO Nº 063/2026 DO](https://www.diariomunicipal.com.br/amp/materia/025CD4F9) · 2026-09-29
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO TERCEIRO TERMO ADITIVO Nº 064/2026 DO](https://www.diariomunicipal.com.br/amp/materia/DD449C17) · 2026-09-29
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO TERCEIRO TERMO ADITIVO Nº 065/2026 DO](https://www.diariomunicipal.com.br/amp/materia/22F7BEA6) · 2026-09-29
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO TERCEIRO TERMO ADITIVO Nº 066/2026 DO](https://www.diariomunicipal.com.br/amp/materia/65BF5D1B) · 2026-09-29
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO TERMO ADITIVO Nº 080/2026 DO](https://www.diariomunicipal.com.br/amp/materia/B1DBE56B) · 2026-09-29
+- SECRETARIA MUNICIPAL DE GOVERNO · [EXTRATO DO TERMO ADITIVO Nº 119/2026 DO](https://www.diariomunicipal.com.br/amp/materia/ED97CE12) · 2026-09-29
+- SECRETARIA DE GOVERNO · [EDITAL DE RETIFICAÇÃO Nº 02.06/2026 PROCESSO](https://www.diariomunicipal.com.br/amp/materia/9190B9A0) · 2026-09-29
+- DEPARTAMENTO DE ADMINISTRAÇÃO · [PROCESSO SELETIVO SIMPLIFICADO - PSS N°001/2025](https://www.diariomunicipal.com.br/amp/materia/3AAEAF43) · 2026-09-29
+- MUNICIPIO DE GOIOXIM · [EXTRATO DE CONTRATO DE TRABALHO POR PRAZO](https://www.diariomunicipal.com.br/amp/materia/E29CBD76) · 2026-09-29
+- MUNICIPIO DE GOIOXIM · [PORTARIA Nº 215 DE 28 DE SETEMBRO DE 2026](https://www.diariomunicipal.com.br/amp/materia/78BE4B9F) · 2026-09-29
+- DEPARTAMENTO DE RECURSOS HUMANOS · [Processo Seletivo Simplificado Edital nº 03/2025.](https://www.diariomunicipal.com.br/amp/materia/E4495060) · 2026-09-29
+- GOVERNO MUNICIPAL - GABINETE DO PREFEITO · [PORTARIA Nº. 1535/2026](https://www.diariomunicipal.com.br/amp/materia/3BFA160E) · 2026-09-29
+- GOVERNO MUNICIPAL - GABINETE DO PREFEITO · [PORTARIA Nº. 1539/2026](https://www.diariomunicipal.com.br/amp/materia/C27FD5FB) · 2026-09-29
+- RECURSOS HUMANOS · [EDITAL Nº 02.01/2026 - PSS](https://www.diariomunicipal.com.br/amp/materia/3CFDD3BC) · 2026-09-29
+- PREFEITURA MUNICIPAL DE ITAMBÉ · [PORTARIA N.º 211/2026](https://www.diariomunicipal.com.br/amp/materia/30F17B9F) · 2026-09-29
+- GOVERNO MUNICIPAL · [PORTARIA Nº. 658/2026](https://www.diariomunicipal.com.br/amp/materia/71C54980) · 2026-09-29
+- SECRETARIA DE ADMINISTRAÇÃO · [EDITAL DE CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/9E29377A) · 2026-09-29
+- SECRETARIA DE ADMINISTRAÇÃO - SETOR DE RECURSOS HUMANOS · [EDITAL DE CONVOCAÇÃO N° 020.001/2026 – PSS 001/2025](https://www.diariomunicipal.com.br/amp/materia/595B3E27) · 2026-09-29
+- PREFEITURA MUNICIPAL DE PALMITAL · [PORTARIA 591/2026](https://www.diariomunicipal.com.br/amp/materia/783A02E8) · 2026-09-29
+- SECRETARIA MUNICIPAL DE RECURSOS HUMANOS · [EDITAL DE CONVOCAÇÃO Nº 04/2026](https://www.diariomunicipal.com.br/amp/materia/3453C7FB) · 2026-09-29
+- PREFEITURA MUNICIPAL DE PINHAL DE SÃO BENTO · [Processo Seletivo Simplificado para desenvolvimento de estágio](https://www.diariomunicipal.com.br/amp/materia/C48FECD4) · 2026-09-29
+- EXECUTIVO MUNICIPAL · [PROCESSO SELETIVO SIMPLIFICADO Nº 002/2026 EDITAL](https://www.diariomunicipal.com.br/amp/materia/A8DBABDF) · 2026-09-29
+- PREFEITURA MUNICIPAL DE SAPOPEMA · [EDITAL Nº 113/2026 (CONVOCAÇÃO)](https://www.diariomunicipal.com.br/amp/materia/41E64A94) · 2026-09-29
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [EDITAL 114/2026](https://www.diariomunicipal.com.br/amp/materia/8EB0F5EB) · 2026-09-29
+- PREFEITURA MUNICIPAL DE GUARAQUEÇABA · [EDITAL DE CONVOCAÇÃO Nº 54/2026 PROCESSO SELETIVO SIMPLIFICADO – PSS Nº 001/2025](https://www.diariomunicipal.com.br/amp/materia/BD45AFBD) · 2026-09-29
+- PREFEITURA MUNICIPAL DE INÁCIO MARTINS · [EDITAL DE PROCESSO SELETIVO SIMPLIFICADO N.º 03/2026 PROFESSOR(A)](https://www.diariomunicipal.com.br/amp/materia/C56A2D1F) · 2026-09-29
+- PREFEITURA MUNICIPAL DE ROLÂNDIA · [SECRETARIA GERAL](https://www.diariomunicipal.com.br/amp/materia/099E7A48) · 2026-09-29
+- SECRETARIA DE RECURSOS HUMANOS · [EDITAL 03/2026 - PSS](https://www.diariomunicipal.com.br/amp/materia/B7FF8CA0) · 2026-09-30
+- PREFEITURA MUNICIPAL DE BALSA NOVA · [EDITAL DE CONVOCAÇÃO Nº 026/2026 - PROCESSO](https://www.diariomunicipal.com.br/amp/materia/B3010638) · 2026-09-30
+- DEPARTAMENTO DE GESTÃO DE PESSOAS · [PORTARIA N.º 690/2026](https://www.diariomunicipal.com.br/amp/materia/C2B8C722) · 2026-09-30
+- GABINETE DO PREFEITO · [LISTA DE CLASSIFICAÇÃO DEFINITIVA DO PROCESSO](https://www.diariomunicipal.com.br/amp/materia/B75D0482) · 2026-09-30
+- GABINETE DO PREFEITO · [PROCESSO SELETIVO SIMPLIFICADO – PSS Nº 15/2026](https://www.diariomunicipal.com.br/amp/materia/C0A027E4) · 2026-09-30
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [EDITAL Nº 15.01/2026](https://www.diariomunicipal.com.br/amp/materia/2AF7B214) · 2026-09-30
+- SECRETARIA DE ADMINISTRAÇÃO E PLANEJAMENTO · [EDITAL Nº 106/2026](https://www.diariomunicipal.com.br/amp/materia/A29E3C8C) · 2026-09-30
+- SECRETARIA DE ADMINISTRAÇÃO E PLANEJAMENTO · [EDITAL Nº 107/2026](https://www.diariomunicipal.com.br/amp/materia/F2F021AB) · 2026-09-30
+- SECRETARIA DE ADMINISTRAÇÃO E PLANEJAMENTO · [EDITAL Nº 108/2026](https://www.diariomunicipal.com.br/amp/materia/54E82F95) · 2026-09-30
+- SECRETARIA DE ADMINISTRAÇÃO E PLANEJAMENTO · [EDITAL Nº 109/2026](https://www.diariomunicipal.com.br/amp/materia/691401FE) · 2026-09-30
+- SECRETARIA DE ADMINISTRAÇÃO E PLANEJAMENTO · [EDITAL Nº 110/2026](https://www.diariomunicipal.com.br/amp/materia/56B98D2D) · 2026-09-30
+- DEPARTAMENTO DE RECURSOS HUMANOS · [Processo Seletivo Simplificado Edital nº 04/2025 para o cargo de](https://www.diariomunicipal.com.br/amp/materia/4728FD08) · 2026-09-30
+- GOVERNO MUNICIPAL - GABINETE DO PREFEITO · [PORTARIA Nº. 1540/2026](https://www.diariomunicipal.com.br/amp/materia/96159AC2) · 2026-09-30
+- GOVERNO MUNICIPAL - GABINETE DO PREFEITO · [PORTARIA Nº. 1542/2026](https://www.diariomunicipal.com.br/amp/materia/D319FF77) · 2026-09-30
+- ADMINISTRAÇÃO RH · [PROCESSO SELETIVO SIMPLIFICADO N° 003/2022](https://www.diariomunicipal.com.br/amp/materia/110785EE) · 2026-09-30
+- PREFEITURA MUNICIPAL DE IVATUBA · [EDITAL DE CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/447C2643) · 2026-09-30
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [DECRETO Nº. 187/2026 DE 29 DE SETEMBRO DE 2026, FICA](https://www.diariomunicipal.com.br/amp/materia/C0D9DC7C) · 2026-09-30
+- PREFEITURA MUNICIPAL DE MALLET · [EXTRATO DE TERMO ADITIVO AO CONTRATO POR](https://www.diariomunicipal.com.br/amp/materia/AE65B01C) · 2026-09-30
+- SECRETARIA DE ADMINISTRAÇÃO - SETOR DE RECURSOS HUMANOS · [EXTRATO DE TERMO ADITIVO POR PRAZO](https://www.diariomunicipal.com.br/amp/materia/B12EF8A6) · 2026-09-30
+- SECRETARIA DE ADMINISTRAÇÃO - SETOR DE RECURSOS HUMANOS · [EXTRATO DE TERMO ADITIVO POR PRAZO](https://www.diariomunicipal.com.br/amp/materia/1EE343A5) · 2026-09-30
+- SECRETARIA DE ADMINISTRAÇÃO - SETOR DE RECURSOS HUMANOS · [EXTRATO DE TERMO ADITIVO POR PRAZO](https://www.diariomunicipal.com.br/amp/materia/EFF531DC) · 2026-09-30
+- SECRETARIA DE ADMINISTRAÇÃO - SETOR DE RECURSOS HUMANOS · [EXTRATO DE TERMO ADITIVO POR PRAZO](https://www.diariomunicipal.com.br/amp/materia/CDDAFFD4) · 2026-09-30
+- SECRETARIA DE ADMINISTRAÇÃO - SETOR DE RECURSOS HUMANOS · [EXTRATO DE TERMO ADITIVO POR PRAZO](https://www.diariomunicipal.com.br/amp/materia/16AA7A4E) · 2026-09-30
+- GABINETE DO PREFEITO · [EDITAL N º. 308/2026 CONVOCAÇÃO PROCESSO](https://www.diariomunicipal.com.br/amp/materia/9759FEE1) · 2026-09-30
+- GABINETE DO PREFEITO · [EDITAL N º. 309/2026 CONVOCAÇÃO PROCESSO](https://www.diariomunicipal.com.br/amp/materia/2F994ACE) · 2026-09-30
+- GABINETE · [EDITAL 146-2026 CONVOCAÇÃO ATENDENTE INFANTIL](https://www.diariomunicipal.com.br/amp/materia/FCA138EF) · 2026-09-30
+- FUNDAÇÃO DE ATENÇÃO A SAÚDE DE MORRETES · [RESOLUÇÃO Nº 07/2026 – CONSELHO CURADOR/FASMO](https://www.diariomunicipal.com.br/amp/materia/8F717786) · 2026-09-30
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [PROCESSO SELETIVO SIMPLIFICADO Nº. 02/2025](https://www.diariomunicipal.com.br/amp/materia/CB39230E) · 2026-09-30
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [COMUNICADO – CHAMADA AUXILIAR DE CUIDADOR DE](https://www.diariomunicipal.com.br/amp/materia/C3D0A20D) · 2026-09-30
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [PROCESSO SELETIVO SIMPLIFICADO Nº. 01/2026](https://www.diariomunicipal.com.br/amp/materia/B545F06B) · 2026-09-30
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [COMUNICADO – CHAMADA TÉCNICO EM ENFERMAGEM](https://www.diariomunicipal.com.br/amp/materia/8F67361F) · 2026-09-30
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [termos do Edital nº 001/2026 – Assistência Social, de 04 de março de](https://www.diariomunicipal.com.br/amp/materia/F9F54179) · 2026-09-30
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [termos do Edital nº 001/2026 – Assistência Social, de 04 de setembro](https://www.diariomunicipal.com.br/amp/materia/CB2DBFF9) · 2026-09-30
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [termos do Edital nº 02/2025 - convocou o candidato abaixo](https://www.diariomunicipal.com.br/amp/materia/68C87347) · 2026-09-30
+- SECRETARIA MUNICIPAL DE RECURSOS HUMANOS · [EDITAL Nº 05/2026- TORNA PÚBLICO A DESISTÊNCIA DOS](https://www.diariomunicipal.com.br/amp/materia/884E4136) · 2026-09-30
+- SECRETARIA DE ADMINISTRAÇÃO · [EDITAL DE CONVOCAÇÃO Nº 05/2026 - ESTAGIÁRIO](https://www.diariomunicipal.com.br/amp/materia/565C3D73) · 2026-09-30
+- PREFEITURA MUNICIPAL DE RIO AZUL · [EDITAL DE CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/DBCDACC8) · 2026-09-30
+- RECURSOS HUMANOS · [EDITAL DE CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/02F2CC2A) · 2026-09-30
+- GABINETE DO PREFEITO · [EDITAL N º 008/2026 – 08ª CONVOCAÇÃO –PSS Nº 001/2026–](https://www.diariomunicipal.com.br/amp/materia/214C2535) · 2026-09-30
+- SECRETARIA GERAL · [PSS N º 001/2026 – SECRETARIA MUNICIPAL DE SAÚDE 14ª](https://www.diariomunicipal.com.br/amp/materia/EBE17D14) · 2026-09-30
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [EDITAL Nº 02/2026 PROCESSO SELETIVO SIMPLIFICADO](https://www.diariomunicipal.com.br/amp/materia/1055F1DB) · 2026-09-30
+- PREFEITURA MUNICIPAL DE FLOR DA SERRA DO SUL · [PROCESSO SELETIVO PÚBLICO SIMPLIFICADO Nº 001/2026 EDITAL Nº 001/2026](https://www.diariomunicipal.com.br/amp/materia/C7F793A9) · 2026-09-30
+- SECRETARIA DE RECURSOS HUMANOS · [PORTARIA Nº 302/2026-RH](https://www.diariomunicipal.com.br/amp/materia/ACD47317) · 2026-10-01
+- SECRETARIA DE RECURSOS HUMANOS · [PORTARIA Nº 303/2026-RH](https://www.diariomunicipal.com.br/amp/materia/1AD4464E) · 2026-10-01
+- GABINETE DA PREFEITA · [EDITAL DE CONVOCAÇÃO N. 022/2026 PSS - PROFESSOR](https://www.diariomunicipal.com.br/amp/materia/A08F3649) · 2026-10-01
+- GABINETE DO PREFEITO · [LISTA DE CLASSIFICAÇÃO DEFINITIVA DO PROCESSO](https://www.diariomunicipal.com.br/amp/materia/EA111FBD) · 2026-10-01
+- GABINETE DO PREFEITO · [PROCESSO SELETIVO SIMPLIFICADO – PSS Nº 15/2026](https://www.diariomunicipal.com.br/amp/materia/89BB3987) · 2026-10-01
+- SECRETARIA MUNICIPAL DE GOVERNO · [PROCESSO SELETIVO SIMPLIFICADO Nº 002/2025](https://www.diariomunicipal.com.br/amp/materia/9051C155) · 2026-10-01
+- SECRETARIA MUNICIPAL DE EDUCAÇÃO E CULTURA. · [EDITAL Nº 017.005/2026 – CONVOCAÇÃO PARA](https://www.diariomunicipal.com.br/amp/materia/7355B121) · 2026-10-01
+- MUNICÍPIO DE FERNANDES PINHEIRO · [EDITAL Nº 42/2026 -PROCESSO SELETIVO SIMPLIFICADO](https://www.diariomunicipal.com.br/amp/materia/B00FC5C4) · 2026-10-01
+- SECRETARIA DE ADMINISTRAÇÃO E PLANEJAMENTO · [EDITAL Nº 111/2026](https://www.diariomunicipal.com.br/amp/materia/686A5069) · 2026-10-01
+- RECURSOS HUMANOS · [EDITAL 03.01/2026 - PSS](https://www.diariomunicipal.com.br/amp/materia/F45C8B98) · 2026-10-01
+- PREFEITURA MUNICIPAL DE ITAMBÉ · [PROCESSO SELETIVO SIMPLIFICADO Nº 001/2025](https://www.diariomunicipal.com.br/amp/materia/6D94F179) · 2026-10-01
+- PREFEITURA MUNICIPAL DE IVATUBA · [GABINETE DO PREFEITO](https://www.diariomunicipal.com.br/amp/materia/0CE6B47A) · 2026-10-01
+- GABINETE DO PREFEITO · [EDITAL DE CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/D9A87EA1) · 2026-10-01
+- GOVERNO MUNICIPAL · [PORTARIA Nº. 664/2026](https://www.diariomunicipal.com.br/amp/materia/ABEA2627) · 2026-10-01
+- SECRETARIA DE ADMINISTRAÇÃO · [EDITAL DE CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/DB1456D5) · 2026-10-01
+- SECRETARIA DE ADMINISTRAÇÃO · [EDITAL DE CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/7D564289) · 2026-10-01
+- GABINETE DO PREFEITO · [EDITAL N º. 310/2026 CONVOCAÇÃO PROCESSO](https://www.diariomunicipal.com.br/amp/materia/2FB9E22A) · 2026-10-01
+- GABINETE DO PREFEITO · [EDITAL N º. 311/2026 CONVOCAÇÃO PROCESSO](https://www.diariomunicipal.com.br/amp/materia/8F9D9934) · 2026-10-01
+- SECRETARIA DE ADMINISTRAÇÃO · [PORTARIA Nº 6399/2026](https://www.diariomunicipal.com.br/amp/materia/5B89B258) · 2026-10-01
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [COMUNICADO – CHAMADA PROFESSOR 20H - PROCESSO](https://www.diariomunicipal.com.br/amp/materia/72B4A0B2) · 2026-10-01
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [TERMO DE DESISTÊNCIA - PROCESSO SELETIVO](https://www.diariomunicipal.com.br/amp/materia/F7CF0E05) · 2026-10-01
+- PREFEITURA MUNICIPAL DE PALMITAL · [PORTARIA 591/2026](https://www.diariomunicipal.com.br/amp/materia/ACEF0EBF) · 2026-10-01
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO DE RESCISÃO DO CONTRATO](https://www.diariomunicipal.com.br/amp/materia/BF96DB7D) · 2026-10-01
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO DE RESCISÃO DO CONTRATO](https://www.diariomunicipal.com.br/amp/materia/0875CD18) · 2026-10-01
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [PORTARIA MUNICIPAL Nº 1790/2026](https://www.diariomunicipal.com.br/amp/materia/AA95BBDB) · 2026-10-01
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [PORTARIA MUNICIPAL Nº 1791/2026](https://www.diariomunicipal.com.br/amp/materia/2F744601) · 2026-10-01
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [PORTARIA MUNICIPAL Nº 1792/2026](https://www.diariomunicipal.com.br/amp/materia/3A23D56C) · 2026-10-01
+- SECRETARIA MUNICIPAL DE RECURSOS HUMANOS · [EDITAL DE CONVOCAÇÃO Nº 06/2026](https://www.diariomunicipal.com.br/amp/materia/E11607C6) · 2026-10-01
+- SECRETARIA MUNICIPAL DE RECURSOS HUMANOS · [PORTARIA Nº 258/2026 – DE 30 DE SETEMBRO DE 2026.](https://www.diariomunicipal.com.br/amp/materia/E2A51A7A) · 2026-10-01
+- SECRETARIA MUNICIPAL DE RECURSOS HUMANOS · [PORTARIA Nº 259/2026 – DE 30 DE SETEMBRO DE 2026.](https://www.diariomunicipal.com.br/amp/materia/E7A90CBA) · 2026-10-01
+- SECRETARIA MUNICIPAL DE RECURSOS HUMANOS · [PORTARIA Nº 260/2026 – DE 30 DE SETEMBRO DE 2026.](https://www.diariomunicipal.com.br/amp/materia/13B5A9F1) · 2026-10-01
+- SECRETARIA MUNICIPAL DE RECURSOS HUMANOS · [PORTARIA Nº 261/2026 – DE 30 DE SETEMBRO DE 2026.](https://www.diariomunicipal.com.br/amp/materia/A95F9756) · 2026-10-01
+- SECRETARIA MUNICIPAL DE RECURSOS HUMANOS · [PORTARIA Nº 262/2026 – DE 30 DE SETEMBRO DE 2026.](https://www.diariomunicipal.com.br/amp/materia/7DDBBF9E) · 2026-10-01
+- SECRETARIA MUNICIPAL DE RECURSOS HUMANOS · [PORTARIA Nº 263/2026 – DE 30 DE SETEMBRO DE 2026.](https://www.diariomunicipal.com.br/amp/materia/DCF52640) · 2026-10-01
+- SECRETARIA MUNICIPAL DE RECURSOS HUMANOS · [PORTARIA Nº 264/2026 – DE 30 DE SETEMBRO DE 2026.](https://www.diariomunicipal.com.br/amp/materia/231BE4F0) · 2026-10-01
+- SECRETARIA MUNICIPAL DE RECURSOS HUMANOS · [PORTARIA Nº 267/2026 – DE 30 DE SETEMBRO DE 2026.](https://www.diariomunicipal.com.br/amp/materia/B1628FDD) · 2026-10-01
+- SECRETARIA DE ADMINISTRAÇÃO · [EDITAL DE CONVOCAÇÃO Nº 06/2026 - PROCESSO](https://www.diariomunicipal.com.br/amp/materia/A04438E0) · 2026-10-01
+- ADMINISTRAÇÃO · [EXTRATO DE PRORROGAÇÃO DE CONTRATO DE](https://www.diariomunicipal.com.br/amp/materia/B5A00220) · 2026-10-01
+- ADMINISTRAÇÃO · [EXTRATO DE PRORROGAÇÃO DE CONTRATO DE](https://www.diariomunicipal.com.br/amp/materia/C2296BB1) · 2026-10-01
+- ADMINISTRAÇÃO · [EXTRATO DE PRORROGAÇÃO DE CONTRATO DE](https://www.diariomunicipal.com.br/amp/materia/E870B34B) · 2026-10-01
+- ADMINISTRAÇÃO · [EXTRATO DE PRORROGAÇÃO DE CONTRATO DE](https://www.diariomunicipal.com.br/amp/materia/A5D37EF4) · 2026-10-01
+- ADMINISTRAÇÃO · [EXTRATO DE PRORROGAÇÃO DE CONTRATO DE](https://www.diariomunicipal.com.br/amp/materia/844FCAD8) · 2026-10-01
+- ADMINISTRAÇÃO · [EXTRATO DE PRORROGAÇÃO DE CONTRATO DE](https://www.diariomunicipal.com.br/amp/materia/5F8601B2) · 2026-10-01
+- ADMINISTRAÇÃO · [EXTRATO DE PRORROGAÇÃO DE CONTRATO DE](https://www.diariomunicipal.com.br/amp/materia/C3D25ECA) · 2026-10-01
+- ADMINISTRAÇÃO · [EXTRATO DE PRORROGAÇÃO DE CONTRATO DE](https://www.diariomunicipal.com.br/amp/materia/FF49C5B3) · 2026-10-01
+- ADMINISTRAÇÃO · [EXTRATO DE PRORROGAÇÃO DE CONTRATO DE](https://www.diariomunicipal.com.br/amp/materia/B839623A) · 2026-10-01
+- ADMINISTRAÇÃO · [EXTRATO DE PRORROGAÇÃO DE CONTRATO DE](https://www.diariomunicipal.com.br/amp/materia/03502C31) · 2026-10-01
+- ADMINISTRAÇÃO · [EXTRATO DE PRORROGAÇÃO DE CONTRATO DE](https://www.diariomunicipal.com.br/amp/materia/1E9A5C75) · 2026-10-01
+- DEPARTAMENTO DE ADMINISTRAÇÃO · [PORTARIA Nº 9.133/2026 30/09/2026](https://www.diariomunicipal.com.br/amp/materia/6CCEEB6B) · 2026-10-01
+- GABINETE DO PREFEITO · [EDITAL N º 016/2026 – 23ª CONVOCAÇÃO –PSS Nº 001/2025–](https://www.diariomunicipal.com.br/amp/materia/CC029ED0) · 2026-10-01
+- DIVISÃO DE RECURSOS HUMANOS · [PORTARIA Nº 247/2026](https://www.diariomunicipal.com.br/amp/materia/AA1F62D1) · 2026-10-01
+- SECRETARIA DE ADMINISTRAÇÃO · [EDITAL DE CONVOCAÇÃO 157-2026](https://www.diariomunicipal.com.br/amp/materia/9C6300E8) · 2026-10-01
+- MUNICIPIO DE CRUZEIRO DO IGUAÇU · [SECRETARIA DE ADMINISTRACAO](https://www.diariomunicipal.com.br/amp/materia/173A8227) · 2026-10-01
+- SECRETARIA DE ADMINISTRACAO · [CONVOCAÇÃO 010-2026](https://www.diariomunicipal.com.br/amp/materia/5DB66F73) · 2026-10-01
+- MUNICÍPIO DE FÊNIX · [EDITAL 04/2026](https://www.diariomunicipal.com.br/amp/materia/3E49B4A5) · 2026-10-02
+- ADMINISTRAÇÃO MUNICIPAL · [PROCESSO SELETIVO SIMPLIFICADO – PSS 003/2026](https://www.diariomunicipal.com.br/amp/materia/E6265958) · 2026-10-02
+- RECURSOS HUMANOS · [DECRETO NO 210/2026](https://www.diariomunicipal.com.br/amp/materia/2A163B9A) · 2026-10-02
+- PREFEITURA MUNICIPAL DE BALSA NOVA · [EDITAL DE CONVOCAÇÃO N.º 002/2026 - PROCESSO](https://www.diariomunicipal.com.br/amp/materia/23AC2E72) · 2026-10-02
+- DEPARTAMENTO DE GESTÃO DE PESSOAS · [EDITAL DE CONVOCAÇÃO Nº 027/2026 - PROCESSO](https://www.diariomunicipal.com.br/amp/materia/443F8B5B) · 2026-10-02
+- GOVERNO MUNICIPAL - GABINETE DO PREFEITO · [EXTRATO DE RESCISÃO](https://www.diariomunicipal.com.br/amp/materia/CE8E7F6D) · 2026-10-02
+- GOVERNO MUNICIPAL - GABINETE DO PREFEITO · [PORTARIA Nº. 1549/2026](https://www.diariomunicipal.com.br/amp/materia/22097B23) · 2026-10-02
+- GOVERNO MUNICIPAL - GABINETE DO PREFEITO · [PORTARIA Nº. 1550/2026](https://www.diariomunicipal.com.br/amp/materia/3BAA9616) · 2026-10-02
+- SECRETARIA DE ADMINISTRAÇÃO · [CONTRATO DE PRESTAÇÃO DE SERVIÇOS EM REGIME](https://www.diariomunicipal.com.br/amp/materia/1FFF8971) · 2026-10-02
+- RECURSOS HUMANOS · [DECRETO Nº 50/2026](https://www.diariomunicipal.com.br/amp/materia/10EF5AF6) · 2026-10-02
+- RECURSOS HUMANOS · [PORTARIA Nº 100/2026](https://www.diariomunicipal.com.br/amp/materia/B7A2876C) · 2026-10-02
+- DEPARTAMENTO DE ADMINISTRAÇÃO E PLANEJAMENTO · [PLANEJAMENTO](https://www.diariomunicipal.com.br/amp/materia/B7873AAC) · 2026-10-02
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [COMUNICADO – CHAMADA AUXILIAR ADMINISTRATIVO](https://www.diariomunicipal.com.br/amp/materia/51B1EEB9) · 2026-10-02
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [COMUNICADO – CHAMADA AUXILIAR DE CUIDADOR DE](https://www.diariomunicipal.com.br/amp/materia/F4DC598A) · 2026-10-02
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [PROCESSO SELETIVO SIMPLIFICADO Nº. 01/2026](https://www.diariomunicipal.com.br/amp/materia/CBC3D411) · 2026-10-02
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [termos do Edital nº 001/2026 – Assistência Social, de 04 de março de](https://www.diariomunicipal.com.br/amp/materia/BD4F69E8) · 2026-10-02
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [termos do Edital nº 001/2026 – Assistência Social, de 04 de setembro](https://www.diariomunicipal.com.br/amp/materia/38E82C73) · 2026-10-02
+- SECRETARIA DE GESTÃO PÚBLICA · [EDITAL DE CONVOCAÇÃO - 17° CHAMADA](https://www.diariomunicipal.com.br/amp/materia/81A91018) · 2026-10-02
+- PREFEITURA MUNICIPAL DE QUERÊNCIA DO NORTE · [PORTARIA N° 131/2026](https://www.diariomunicipal.com.br/amp/materia/A0D864D8) · 2026-10-02
+- PREFEITURA MUNICIPAL DE RENASCENÇA · [PROCESSO SELETIVO SIMPLIFICADO Nº 001/2025 EDITAL](https://www.diariomunicipal.com.br/amp/materia/0111ED5A) · 2026-10-02
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [TERMO ADITIVO Nº019/2026](https://www.diariomunicipal.com.br/amp/materia/E3D371E7) · 2026-10-02
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [TERMO ADITIVO Nº020/2026](https://www.diariomunicipal.com.br/amp/materia/C32885B3) · 2026-10-02
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [TERMO ADITIVO Nº021/2026](https://www.diariomunicipal.com.br/amp/materia/FB6811C9) · 2026-10-02
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [TERMO ADITIVO Nº022/2026](https://www.diariomunicipal.com.br/amp/materia/88E333C6) · 2026-10-02
+- SECRETARIA M. ADMINISTRAÇAO RH · [EDITAL Nº 181/2026](https://www.diariomunicipal.com.br/amp/materia/CE3621C9) · 2026-10-02
+- SECRETARIA M. ADMINISTRAÇAO RH · [EDITAL Nº 182/2026](https://www.diariomunicipal.com.br/amp/materia/904AE8C5) · 2026-10-02
+- SECRETARIA M. ADMINISTRAÇAO RH · [PORTARIA Nº 2644/2026](https://www.diariomunicipal.com.br/amp/materia/AD0E43BE) · 2026-10-02
+- SECRETARIA M. ADMINISTRAÇAO RH · [PORTARIA Nº 2646/2026](https://www.diariomunicipal.com.br/amp/materia/F595C93D) · 2026-10-02
+- PREFEITURA MUNICIPAL DE TERRA RICA · [EDITAL DE CONVOCAÇÃO Nº 073/2026](https://www.diariomunicipal.com.br/amp/materia/70FB7570) · 2026-10-02
+- GABINETE DO PREFEITO · [DECRETO Nº 6385, DE 02 DE SETEMBRO DE 2026](https://www.diariomunicipal.com.br/amp/materia/0E684714) · 2026-10-02
+- GABINETE DO PREFEITO · [DECRETO Nº 6386, DE 01 DE OUTUBRO DE 2026](https://www.diariomunicipal.com.br/amp/materia/B989A418) · 2026-10-02
+- GABINETE DO PREFEITO · [DECRETO Nº 6387, DE 01 DE OUTUBRO DE 2026](https://www.diariomunicipal.com.br/amp/materia/023A985A) · 2026-10-02
+- GABINETE DO PREFEITO · [DECRETO Nº 6388, DE 01 DE OUTUBRO DE 2026](https://www.diariomunicipal.com.br/amp/materia/F9ACD5E2) · 2026-10-02
+- GABINETE DO PREFEITO · [DECRETO Nº 6389, DE 01 DE OUTUBRO DE 2026](https://www.diariomunicipal.com.br/amp/materia/C599D66B) · 2026-10-02
+- GABINETE DO PREFEITO · [DECRETO Nº 6390, DE 01 DE OUTUBRO DE 2026](https://www.diariomunicipal.com.br/amp/materia/9A3B2B2E) · 2026-10-02
+- DEPARTAMENTO DE ADMINISTRAÇÃO FINANÇAS E PLANEJAMENTO · [DECRETO Nº 313 DE 01 DE OUTUBRO DE 2026](https://www.diariomunicipal.com.br/amp/materia/E3CA3C50) · 2026-10-02
+- DEPARTAMENTO DE ADMINISTRAÇÃO FINANÇAS E PLANEJAMENTO · [DECRETO Nº 314 DE 01 DE OUTUBRO DE 2026](https://www.diariomunicipal.com.br/amp/materia/531136E2) · 2026-10-02
+- DEPARTAMENTO DE ADMINISTRAÇÃO FINANÇAS E PLANEJAMENTO · [DECRETO Nº 315 DE 01 DE OUTUBRO DE 2026](https://www.diariomunicipal.com.br/amp/materia/E917DCDA) · 2026-10-02
+- DEPARTAMENTO DE ADMINISTRAÇÃO FINANÇAS E PLANEJAMENTO · [DECRETO Nº 317 DE 01 DE OUTUBRO DE 2026](https://www.diariomunicipal.com.br/amp/materia/EA5B8823) · 2026-10-02
+- DEPARTAMENTO DE ADMINISTRAÇÃO FINANÇAS E PLANEJAMENTO · [DECRETO Nº 318 DE 01 DE OUTUBRO DE 2026](https://www.diariomunicipal.com.br/amp/materia/D82F86B7) · 2026-10-02
+- DEPARTAMENTO DE ADMINISTRAÇÃO FINANÇAS E PLANEJAMENTO · [DECRETO Nº 319 DE 01 DE OUTUBRO DE 2026](https://www.diariomunicipal.com.br/amp/materia/819955F6) · 2026-10-02
+- DEPARTAMENTO DE ADMINISTRAÇÃO FINANÇAS E PLANEJAMENTO · [DECRETO Nº 320 DE 01 DE OUTUBRO DE 2026](https://www.diariomunicipal.com.br/amp/materia/FDC1A3CF) · 2026-10-02
+- DEPARTAMENTO DE ADMINISTRAÇÃO FINANÇAS E PLANEJAMENTO · [DECRETO Nº 321 DE 01 DE OUTUBRO DE 2026](https://www.diariomunicipal.com.br/amp/materia/4FFA3353) · 2026-10-02
+- DEPARTAMENTO DE ADMINISTRAÇÃO FINANÇAS E PLANEJAMENTO · [DECRETO Nº 322 DE 01 DE OUTUBRO DE 2026](https://www.diariomunicipal.com.br/amp/materia/9FF645E2) · 2026-10-02
+- DEPARTAMENTO DE ADMINISTRAÇÃO FINANÇAS E PLANEJAMENTO · [DECRETO Nº 323 DE 01 DE OUTUBRO DE 2026](https://www.diariomunicipal.com.br/amp/materia/154C42EE) · 2026-10-02
+- DEPARTAMENTO DE ADMINISTRAÇÃO FINANÇAS E PLANEJAMENTO · [DECRETO Nº 324 DE 01 DE OUTUBRO DE 2026](https://www.diariomunicipal.com.br/amp/materia/16BB7AEE) · 2026-10-02
+- DEPARTAMENTO DE ADMINISTRAÇÃO FINANÇAS E PLANEJAMENTO · [DECRETO Nº 316 DE 01 DE OUTUBRO DE 2026](https://www.diariomunicipal.com.br/amp/materia/9E49A9BC) · 2026-10-02
+- MUNICÍPIO DE NOSSA SENHORA DAS GRAÇAS · [PROCESSO SELETIVO SIMPLIFICADO – PSS 003/2026 EDITAL Nº 06/2026 HOMOLOGAÇÃO DAS INSCRIÇÕES](https://www.diariomunicipal.com.br/amp/materia/C6FB1D58) · 2026-10-02
+- ADMINISTRAÇÃO MUNICIPAL · [RETIFICAÇÃO Nº 01/2026 PROCESSO SELETIVO SIMPLIFICADO – PSS 003/2026 EDITAL Nº 03/2026](https://www.diariomunicipal.com.br/amp/materia/0FEFA1BF) · 2026-10-02
+- PREFEITURA MUNICIPAL DE DOUTOR ULYSSES · [PROCESSO SELETIVO SIMPLIFICADO 005/2026 EDITAL 02.2026 EDITAL DE DIVULGAÇÃO DAS INSCRIÇÕES DEFERIDAS,](https://www.diariomunicipal.com.br/amp/materia/4E8F41C9) · 2026-10-02
+- PREFEITURA MUNICIPAL DE IRATI · [EDITAL DE PROCESSO SELETIVO SIMPLIFICADO DA SECRETARIA MUNICIPAL DE ASSISTÊNCIA SOCIAL E DIREITOS](https://www.diariomunicipal.com.br/amp/materia/4EAEFB76) · 2026-10-02
+- PROCURADORIA · [EDITAL Nº 001.14/2026 – 10ª CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/52470D1D) · 2026-10-02
+- PROCURADORIA · [EDITAL Nº 002.34/2026 – 30ª CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/700C2A4B) · 2026-10-02
+- GABINETE DO PREFEITO MUNICIPAL · [PORTARIA Nº 213/2026 CONSTITUI E DESIGNA A](https://www.diariomunicipal.com.br/amp/materia/F1EE12CB) · 2026-10-05
+- RECURSOS HUMANOS · [DECRETO NO 210/2026](https://www.diariomunicipal.com.br/amp/materia/75D04A35) · 2026-10-05
+- PREFEITURA MUNICIPAL DE BALSA NOVA · [EDITAL DE CONVOCAÇÃO N.º 009/2026 - PROCESSO](https://www.diariomunicipal.com.br/amp/materia/B877CC0D) · 2026-10-05
+- DEPARTAMENTO DE GESTÃO DE PESSOAS · [PORTARIA Nº 700/2026](https://www.diariomunicipal.com.br/amp/materia/8B2E6D51) · 2026-10-05
+- DEPARTAMENTO DE GESTÃO DE PESSOAS · [PORTARIA Nº 701/2026](https://www.diariomunicipal.com.br/amp/materia/4A9320BC) · 2026-10-05
+- DEPARTAMENTO DE GESTÃO DE PESSOAS · [PORTARIA Nº 702/2026](https://www.diariomunicipal.com.br/amp/materia/D6123C65) · 2026-10-05
+- DEPARTAMENTO DE GESTÃO DE PESSOAS · [PORTARIA Nº 703/2026](https://www.diariomunicipal.com.br/amp/materia/DDEC7CE2) · 2026-10-05
+- DEPARTAMENTO DE GESTÃO DE PESSOAS · [PORTARIA Nº 704/2026](https://www.diariomunicipal.com.br/amp/materia/2E1CB6ED) · 2026-10-05
+- RECURSOS HUMANOS · [EXTRATO DE CONTRATO DE TRABALHO POR PRAZO](https://www.diariomunicipal.com.br/amp/materia/826C8AFB) · 2026-10-05
+- RECURSOS HUMANOS · [DECRETO Nº 802/2026](https://www.diariomunicipal.com.br/amp/materia/17A25BA7) · 2026-10-05
+- PREFEITURA MUNICIPAL DE CERRO AZUL · [EDITAL Nº 16.01/2026](https://www.diariomunicipal.com.br/amp/materia/9009DE31) · 2026-10-05
+- PREFEITURA MUNICIPAL DE INÁCIO MARTINS · [DECRETO 212/2026](https://www.diariomunicipal.com.br/amp/materia/070D4009) · 2026-10-05
+- DEPARTAMENTO DE RECURSOS HUMANOS · [DECRETO 213/2026](https://www.diariomunicipal.com.br/amp/materia/4174F347) · 2026-10-05
+- DEPARTAMENTO DE RECURSOS HUMANOS · [DECRETO 214/2026](https://www.diariomunicipal.com.br/amp/materia/529221E7) · 2026-10-05
+- GOVERNO MUNICIPAL - GABINETE DO PREFEITO · [PORTARIA Nº. 1552/2026](https://www.diariomunicipal.com.br/amp/materia/42E275F6) · 2026-10-05
+- GOVERNO MUNICIPAL - GABINETE DO PREFEITO · [PORTARIA Nº. 1561/2026](https://www.diariomunicipal.com.br/amp/materia/11996DEE) · 2026-10-05
+- GOVERNO MUNICIPAL - GABINETE DO PREFEITO · [PORTARIA Nº. 1563/2026](https://www.diariomunicipal.com.br/amp/materia/FE2D8639) · 2026-10-05
+- GOVERNO MUNICIPAL - GABINETE DO PREFEITO · [PORTARIA Nº. 1564/2026](https://www.diariomunicipal.com.br/amp/materia/E0E08D03) · 2026-10-05
+- PROCURADORIA · [DECRETO Nº 726/2026](https://www.diariomunicipal.com.br/amp/materia/2CE0B967) · 2026-10-05
+- PROCURADORIA · [DECRETO Nº 727/2026](https://www.diariomunicipal.com.br/amp/materia/3B3F3D3F) · 2026-10-05
+- PROCURADORIA · [DECRETO Nº 728/2026](https://www.diariomunicipal.com.br/amp/materia/ABAC1297) · 2026-10-05
+- PROCURADORIA · [DECRETO Nº 729/2026](https://www.diariomunicipal.com.br/amp/materia/F5847FE2) · 2026-10-05
+- PROCURADORIA · [DECRETO Nº 735/2026](https://www.diariomunicipal.com.br/amp/materia/92A5E14B) · 2026-10-05
+- PREFEITURA MUNICIPAL DE ITAMBÉ · [PROCESSO SELETIVO SIMPLIFICADO Nº 001/2025](https://www.diariomunicipal.com.br/amp/materia/C1494A82) · 2026-10-05
+- DEPARTAMENTO DE ADMINISTRAÇÃO · [TERMO DE DESISTÊNCIA](https://www.diariomunicipal.com.br/amp/materia/F3F78075) · 2026-10-05
+- GABINETE DO PREFEITO · [EXTRATO TERMO ADITIVO AO CONTRATO DE](https://www.diariomunicipal.com.br/amp/materia/35CB7401) · 2026-10-05
+- GABINETE DO PREFEITO · [EXTRATO TERMO ADITIVO AO CONTRATO DE](https://www.diariomunicipal.com.br/amp/materia/A0D330C5) · 2026-10-05
+- GABINETE · [DECRETO N° 29947, DE 02 DE OUTUBRO DE 2026](https://www.diariomunicipal.com.br/amp/materia/494886A5) · 2026-10-05
+- GABINETE · [DECRETO N° 29948, DE 02 DE OUTUBRO DE 2026](https://www.diariomunicipal.com.br/amp/materia/2D15B0E3) · 2026-10-05
+- GABINETE · [DECRETO N° 29949, DE 02 DE OUTUBRO DE 2026](https://www.diariomunicipal.com.br/amp/materia/0AAB8B29) · 2026-10-05
+- GABINETE · [DECRETO N° 29950, DE 02 DE OUTUBRO DE 2026](https://www.diariomunicipal.com.br/amp/materia/5A6C7219) · 2026-10-05
+- GABINETE · [LEI N° 4607, DE 02 DE OUTUBRO DE 2026](https://www.diariomunicipal.com.br/amp/materia/16933310) · 2026-10-05
+- GABINETE · [LEI N° 4608, DE 02 DE OUTUBRO DE 2026](https://www.diariomunicipal.com.br/amp/materia/207E8720) · 2026-10-05
+- GABINETE DO PREFEITO · [EDITAL Nº 312/2026 PROCESSO SELETIVO SIMPLIFICADO](https://www.diariomunicipal.com.br/amp/materia/53C3FC4D) · 2026-10-05
+- GABINETE DO PREFEITO · [EDITAL N º. 313/2026 CONVOCAÇÃO PROCESSO](https://www.diariomunicipal.com.br/amp/materia/E435EA0E) · 2026-10-05
+- SECRETARIA DE ADMINISTRAÇÃO · [PORTARIA N° 9489 DE 02 DE OUTUBRO DE 2026](https://www.diariomunicipal.com.br/amp/materia/F6C5FAD1) · 2026-10-05
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [COMUNICADO – CHAMADA MÉDICO ESF PROCESSO](https://www.diariomunicipal.com.br/amp/materia/C6DFB726) · 2026-10-05
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [COMUNICADO – CHAMADA MOTORISTA II PROCESSO](https://www.diariomunicipal.com.br/amp/materia/8657C18D) · 2026-10-05
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [COMUNICADO – CHAMADA PROFESSOR DE EDUCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/CDE77DEC) · 2026-10-05
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [termos do Edital nº 02/2026 – SECRETARIA MUNICIPAL DE](https://www.diariomunicipal.com.br/amp/materia/3CCAD2E1) · 2026-10-05
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [termos do Edital nº 02/2026 – SECRETARIA MUNICIPAL DE](https://www.diariomunicipal.com.br/amp/materia/00A82D70) · 2026-10-05
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [termos do Edital nº 02/2026 – SECRETARIA MUNICIPAL DE](https://www.diariomunicipal.com.br/amp/materia/D23C224B) · 2026-10-05
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [termos do Edital nº 02/2026 – SECRETARIA MUNICIPAL DE](https://www.diariomunicipal.com.br/amp/materia/CD41DC5E) · 2026-10-05
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [PORTARIA MUNICIPAL Nº 1806/2026](https://www.diariomunicipal.com.br/amp/materia/F486F541) · 2026-10-05
+- PREFEITURA MUNICIPAL DE PLANALTO · [EDITAL DE CONVOCAÇÃO Nº 45/2026](https://www.diariomunicipal.com.br/amp/materia/2898CCC9) · 2026-10-05
+- DEPARTAMENTO DE ADMINISTRAÇÃO · [EXTRATO DE CONTRATO PRAZO DETERMINADO Nº](https://www.diariomunicipal.com.br/amp/materia/B8FE0304) · 2026-10-05
+- PREFEITURA MUNICIPAL DE REALEZA · [EXTRATO DE RESCISÃO/EXONERAÇÃO CONTRATO](https://www.diariomunicipal.com.br/amp/materia/AD804F3A) · 2026-10-05
+- DEPARTAMENTO DE ADMINISTRAÇÃO · [PORTARIA Nº 9.138/2026 02/10/2026](https://www.diariomunicipal.com.br/amp/materia/E7A8C663) · 2026-10-05
+- GABINETE DO PREFEITO · [EDITAL N º 017/2026 – 25ª CONVOCAÇÃO –PSS Nº 002/2025–](https://www.diariomunicipal.com.br/amp/materia/5148988D) · 2026-10-05
+- DEPARTAMENTO ADMINISTRATIVO · [PORTARIA N.º 1055/2026](https://www.diariomunicipal.com.br/amp/materia/29C8AB37) · 2026-10-05
+- DEPARTAMENTO ADMINISTRATIVO · [PORTARIA Nº 1056/2026](https://www.diariomunicipal.com.br/amp/materia/335C700A) · 2026-10-05
+- GABINETE DO PREFEITO · [PORTARIA Nº 16.078](https://www.diariomunicipal.com.br/amp/materia/85EDF3D2) · 2026-10-05
+- GABINETE DO PREFEITO · [PORTARIA Nº 16.065](https://www.diariomunicipal.com.br/amp/materia/49EA57EE) · 2026-10-05
+- GABINETE DO PREFEITO · [PORTARIA Nº 16.073](https://www.diariomunicipal.com.br/amp/materia/6CAAF3D9) · 2026-10-05
+- GABINETE DO PREFEITO · [PORTARIA Nº 16.075](https://www.diariomunicipal.com.br/amp/materia/9D5A6FE8) · 2026-10-05
+- GABINETE DO PREFEITO · [PORTARIA Nº 16.064](https://www.diariomunicipal.com.br/amp/materia/425DBFC1) · 2026-10-05
+- GABINETE DO PREFEITO · [PORTARIA Nº 16.060](https://www.diariomunicipal.com.br/amp/materia/BA3A6A63) · 2026-10-05
+- GABINETE DO PREFEITO · [PORTARIA Nº 16.061](https://www.diariomunicipal.com.br/amp/materia/5EB3983F) · 2026-10-05
+- GABINETE DO PREFEITO · [PORTARIA Nº 16.062](https://www.diariomunicipal.com.br/amp/materia/015D8590) · 2026-10-05
+- GABINETE DO PREFEITO · [PORTARIA Nº 16.077](https://www.diariomunicipal.com.br/amp/materia/6205FA2A) · 2026-10-05
+- GABINETE DO PREFEITO · [PORTARIA Nº 16.069](https://www.diariomunicipal.com.br/amp/materia/478AC959) · 2026-10-05
+- GABINETE DO PREFEITO · [PORTARIA Nº 16.072](https://www.diariomunicipal.com.br/amp/materia/3AF657E2) · 2026-10-05
+- GABINETE DO PREFEITO · [PORTARIA Nº 16.079](https://www.diariomunicipal.com.br/amp/materia/6917E6A6) · 2026-10-05
+- GABINETE DO PREFEITO · [PORTARIA Nº 16.071](https://www.diariomunicipal.com.br/amp/materia/03821570) · 2026-10-05
+- GABINETE DO PREFEITO · [PORTARIA Nº 16.070](https://www.diariomunicipal.com.br/amp/materia/B30A099B) · 2026-10-05
+- GABINETE DO PREFEITO · [PORTARIA Nº 16.063](https://www.diariomunicipal.com.br/amp/materia/7DC7784A) · 2026-10-05
+- GABINETE DO PREFEITO · [PORTARIA Nº 16.066](https://www.diariomunicipal.com.br/amp/materia/21588BF7) · 2026-10-05
+- GABINETE DO PREFEITO · [PORTARIA Nº 16.074](https://www.diariomunicipal.com.br/amp/materia/04A38125) · 2026-10-05
+- GABINETE DO PREFEITO · [PORTARIA Nº 16.076](https://www.diariomunicipal.com.br/amp/materia/31C7CDD6) · 2026-10-05
+- GABINETE DO PREFEITO · [PORTARIA Nº 16.068](https://www.diariomunicipal.com.br/amp/materia/E478CB9B) · 2026-10-05
+- GABINETE DO PREFEITO · [PORTARIA Nº 16.067](https://www.diariomunicipal.com.br/amp/materia/46385A18) · 2026-10-05
+- GABINETE DO PREFEITO · [EXTRATO DE CONTRATO DE TRABALHO DE ANDRIELLY](https://www.diariomunicipal.com.br/amp/materia/36D89044) · 2026-10-05
+- GABINETE DO PREFEITO · [EXTRATO DE CONTRATO DE TRABALHO DE CARLOS](https://www.diariomunicipal.com.br/amp/materia/A1978926) · 2026-10-05
+- GABINETE DO PREFEITO · [EXTRATO DE CONTRATO DE TRABALHO DE CATHARINA](https://www.diariomunicipal.com.br/amp/materia/A5F4CF67) · 2026-10-05
+- GABINETE DO PREFEITO · [EXTRATO DE CONTRATO DE TRABALHO DE EDUARDO](https://www.diariomunicipal.com.br/amp/materia/D8BB0F45) · 2026-10-05
+- GABINETE DO PREFEITO · [EXTRATO DE CONTRATO DE TRABALHO DE GABRIEL](https://www.diariomunicipal.com.br/amp/materia/15124D6A) · 2026-10-05
+- GABINETE DO PREFEITO · [EXTRATO DE CONTRATO DE TRABALHO DE GIOVANA](https://www.diariomunicipal.com.br/amp/materia/98296758) · 2026-10-05
+- GABINETE DO PREFEITO · [EXTRATO DE CONTRATO DE TRABALHO DE GUSTAVO](https://www.diariomunicipal.com.br/amp/materia/293CBF25) · 2026-10-05
+- GABINETE DO PREFEITO · [EXTRATO DE CONTRATO DE TRABALHO DE HENRIQUE](https://www.diariomunicipal.com.br/amp/materia/E90A03C2) · 2026-10-05
+- GABINETE DO PREFEITO · [EXTRATO DE CONTRATO DE TRABALHO DE HÉRON](https://www.diariomunicipal.com.br/amp/materia/D4A028F0) · 2026-10-05
+- GABINETE DO PREFEITO · [EXTRATO DE CONTRATO DE TRABALHO DE ISADORA](https://www.diariomunicipal.com.br/amp/materia/09092508) · 2026-10-05
+- GABINETE DO PREFEITO · [EXTRATO DE CONTRATO DE TRABALHO DE JOAO](https://www.diariomunicipal.com.br/amp/materia/9E77B347) · 2026-10-05
+- GABINETE DO PREFEITO · [EXTRATO DE CONTRATO DE TRABALHO DE JULLIA](https://www.diariomunicipal.com.br/amp/materia/7D51EEF9) · 2026-10-05
+- GABINETE DO PREFEITO · [EXTRATO DE CONTRATO DE TRABALHO DE KAMILY](https://www.diariomunicipal.com.br/amp/materia/BC085150) · 2026-10-05
+- GABINETE DO PREFEITO · [EXTRATO DE CONTRATO DE TRABALHO DE LAVINIA](https://www.diariomunicipal.com.br/amp/materia/DF543E50) · 2026-10-05
+- GABINETE DO PREFEITO · [EXTRATO DE CONTRATO DE TRABALHO DE MURILO](https://www.diariomunicipal.com.br/amp/materia/0509A022) · 2026-10-05
+- GABINETE DO PREFEITO · [EXTRATO DE CONTRATO DE TRABALHO DE MURILO](https://www.diariomunicipal.com.br/amp/materia/3C517E33) · 2026-10-05
+- GABINETE DO PREFEITO · [EXTRATO DE CONTRATO DE TRABALHO DE PEDRO](https://www.diariomunicipal.com.br/amp/materia/8E8BB9E1) · 2026-10-05
+- GABINETE DO PREFEITO · [EXTRATO DE CONTRATO DE TRABALHO DE PEDRO](https://www.diariomunicipal.com.br/amp/materia/9DB80ECA) · 2026-10-05
+- GABINETE DO PREFEITO · [EXTRATO DE CONTRATO DE TRABALHO DE SARHA](https://www.diariomunicipal.com.br/amp/materia/9BB23C2E) · 2026-10-05
+- GABINETE DO PREFEITO · [EXTRATO DE CONTRATO DE TRABALHO DE STHER](https://www.diariomunicipal.com.br/amp/materia/108B23CA) · 2026-10-05
+- DIVISÃO DE RECURSOS HUMANOS · [EDITAL 122/2026](https://www.diariomunicipal.com.br/amp/materia/67433D2F) · 2026-10-05
+- DIVISÃO DE RECURSOS HUMANOS · [EDITAL 123/2026](https://www.diariomunicipal.com.br/amp/materia/08C695A9) · 2026-10-05
+- DIVISÃO DE RECURSOS HUMANOS · [PORTARIA Nº 250/2026](https://www.diariomunicipal.com.br/amp/materia/7DEADE37) · 2026-10-05
+- PREFEITURA MUNICIPAL DE TERRA RICA · [DECRETO Nº 437/2026](https://www.diariomunicipal.com.br/amp/materia/43FC87D7) · 2026-10-05
+- PREFEITURA MUNICIPAL DE TOMAZINA · [EDITAL DE CONVOCAÇÃO Nº 010-2026 - PROCESSO](https://www.diariomunicipal.com.br/amp/materia/89D35FB4) · 2026-10-05
+- PREFEITURA MUNICIPAL DE TURVO · [EDITAL DE CONVOCAÇÃO 158-2026](https://www.diariomunicipal.com.br/amp/materia/BDA822F6) · 2026-10-05
+- SECRETARIA DE ADMINISTRAÇÃO · [EDITAL DE CONVOCAÇÃO 159-2026](https://www.diariomunicipal.com.br/amp/materia/B0A21884) · 2026-10-05
+- SECRETARIA DE ADMINISTRAÇÃO · [EDITAL DE CONVOCAÇÃO 160-2026](https://www.diariomunicipal.com.br/amp/materia/9ED5D3AA) · 2026-10-05
+- DIRETORIA DE LICITAÇÕES E CONTRATOS · [AUTORIZAÇÃO DE DISPENSA DE LICITAÇÃO Nº 022/2026 -](https://www.diariomunicipal.com.br/amp/materia/EC9B7ADD) · 2026-10-05
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [EDITAL 116/2026](https://www.diariomunicipal.com.br/amp/materia/1CB8A1FC) · 2026-10-05
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [EDITAL N.º 117/2026](https://www.diariomunicipal.com.br/amp/materia/369F8AFF) · 2026-10-05
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [PORTARIA Nº 1.282/2026](https://www.diariomunicipal.com.br/amp/materia/53A9937B) · 2026-10-05
+- PREFEITURA MUNICIPAL DE TEIXEIRA SOARES · [DECRETO Nº 314/2026](https://www.diariomunicipal.com.br/amp/materia/49FF77EE) · 2026-10-05
+- DIVISÃO DE RECURSOS HUMANOS · [EDITAL DE CONVOCAÇÃO DE APROVADOS Nº 012/2026](https://www.diariomunicipal.com.br/amp/materia/5767BD74) · 2026-10-06
+- GABINETE DO PODER EXECUTIVO MUNICIPAL · [EDITAL DE CONVOCAÇÃO Nº 100/2026 - DIVISÃO DE](https://www.diariomunicipal.com.br/amp/materia/EFEF8C24) · 2026-10-06
+- GABINETE DO PODER EXECUTIVO MUNICIPAL · [EXTRATO Nº 143/2026 DE RESCISÃO DE CONTRATO DE](https://www.diariomunicipal.com.br/amp/materia/7E2268B2) · 2026-10-06
+- GABINETE DO PODER EXECUTIVO MUNICIPAL · [EXTRATO Nº 144/2026 DE RESCISÃO DE CONTRATO DE](https://www.diariomunicipal.com.br/amp/materia/21C0DA23) · 2026-10-06
+- RECURSOS HUMANOS · [EXTRATO DE CONTRATO DE TRABALHO POR TEMPO](https://www.diariomunicipal.com.br/amp/materia/936F42CD) · 2026-10-06
+- GABINETE DA PREFEITA · [EDITAL DE CONVOCAÇÃO N. 023/2026 PSS - PROFESSOR](https://www.diariomunicipal.com.br/amp/materia/C12E2D2B) · 2026-10-06
+- GABINETE DO PREFEITO · [DECRETO N.º 778/2026](https://www.diariomunicipal.com.br/amp/materia/B47CDD4F) · 2026-10-06
+- GABINETE PREFEITO · [EDITAL N.º 044/2026](https://www.diariomunicipal.com.br/amp/materia/4DD47FBE) · 2026-10-06
+- SECRETARIA DE GOVERNO · [EDITAL Nº 018.005/2026 – CONVOCAÇÃO PROCESSO](https://www.diariomunicipal.com.br/amp/materia/10337800) · 2026-10-06
+- DEPARTAMENTO DE GESTÃO DE PESSOAS · [EDITAL 049/2026 - PSS 001/2026](https://www.diariomunicipal.com.br/amp/materia/39BB8215) · 2026-10-06
+- SECRETÁRIA DE ADMINISTRAÇÃO E FINANÇAS · [DECRETO Nº 23855/2026](https://www.diariomunicipal.com.br/amp/materia/458A9346) · 2026-10-06
+- SECRETÁRIA DE ADMINISTRAÇÃO E FINANÇAS · [DECRETO Nº 23856/2026](https://www.diariomunicipal.com.br/amp/materia/6FC1E9CA) · 2026-10-06
+- SECRETÁRIA DE ADMINISTRAÇÃO E FINANÇAS · [DECRETO Nº 23862/2026](https://www.diariomunicipal.com.br/amp/materia/CAB069A3) · 2026-10-06
+- SECRETÁRIA DE ADMINISTRAÇÃO E FINANÇAS · [EDITAL DE CONVOCAÇÃO Nº 003/2026](https://www.diariomunicipal.com.br/amp/materia/58FE7F8A) · 2026-10-06
+- PREFEITURA MUNICIPAL DE FERNANDES PINHEIRO · [DECRETO Nº 256/2026 - ADMISSÃO DE EMPREGADA](https://www.diariomunicipal.com.br/amp/materia/7EE40C72) · 2026-10-06
+- PREFEITURA MUNICIPAL DE GENERAL CARNEIRO · [DECRETO Nº. 552 DE 05 DE OUTUBRO DE 2026](https://www.diariomunicipal.com.br/amp/materia/38089B7B) · 2026-10-06
+- GOVERNO MUNICIPAL - GABINETE DO PREFEITO · [PORTARIA Nº. 1567/2026](https://www.diariomunicipal.com.br/amp/materia/F0B148C5) · 2026-10-06
+- GABINETE · [DECRETO N° 29953, DE 05 DE OUTUBRO DE 2026](https://www.diariomunicipal.com.br/amp/materia/A81DB601) · 2026-10-06
+- RECURSOS HUMANOS · [PORTARIA Nº 109/2026](https://www.diariomunicipal.com.br/amp/materia/3D0F4457) · 2026-10-06
+- SECRETARIA DE ADMINISTRAÇÃO - SETOR DE RECURSOS HUMANOS · [DECRETO N.º 414/2026](https://www.diariomunicipal.com.br/amp/materia/04ACE52C) · 2026-10-06
+- GABINETE DO PREFEITO · [EDITAL N º. 314/2026 CONVOCAÇÃO PROCESSO](https://www.diariomunicipal.com.br/amp/materia/037F2D16) · 2026-10-06
+- GABINETE · [EDITAL 148-2026 CONVOCAÇÃO ATENDENTE INFANTIL](https://www.diariomunicipal.com.br/amp/materia/CCCFAC6F) · 2026-10-06
+- FUNDAÇÃO DE EDUCAÇÃO DE PAIÇANDU · [PORTARIA Nº 516/2026](https://www.diariomunicipal.com.br/amp/materia/3D461FA6) · 2026-10-06
+- FUNDAÇÃO DE EDUCAÇÃO DE PAIÇANDU · [PORTARIA Nº 517/2026](https://www.diariomunicipal.com.br/amp/materia/04ED79C3) · 2026-10-06
+- FUNDAÇÃO DE EDUCAÇÃO DE PAIÇANDU · [PORTARIA Nº 519/2026](https://www.diariomunicipal.com.br/amp/materia/E632054E) · 2026-10-06
+- FUNDAÇÃO DE EDUCAÇÃO DE PAIÇANDU · [PORTARIA Nº 520/2026](https://www.diariomunicipal.com.br/amp/materia/3DA1263B) · 2026-10-06
+- FUNDAÇÃO DE EDUCAÇÃO DE PAIÇANDU · [PORTARIA Nº 522/2026](https://www.diariomunicipal.com.br/amp/materia/1229635F) · 2026-10-06
+- FUNDAÇÃO DE EDUCAÇÃO DE PAIÇANDU · [PORTARIA Nº 523/2026](https://www.diariomunicipal.com.br/amp/materia/A0A8258E) · 2026-10-06
+- FUNDAÇÃO DE EDUCAÇÃO DE PAIÇANDU · [PORTARIA Nº 524/2026](https://www.diariomunicipal.com.br/amp/materia/834D660C) · 2026-10-06
+- FUNDAÇÃO DE EDUCAÇÃO DE PAIÇANDU · [PORTARIA Nº 525/2026](https://www.diariomunicipal.com.br/amp/materia/53BA6D8F) · 2026-10-06
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [PROCESSO SELETIVO SIMPLIFICADO Nº. 02/2026](https://www.diariomunicipal.com.br/amp/materia/088DBDE1) · 2026-10-06
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [COMUNICADO – CHAMADA PSICÓLOGO - PROCESSO](https://www.diariomunicipal.com.br/amp/materia/CCEC872A) · 2026-10-06
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [COMUNICADO – CHAMADA TÉCNICO EM ENFERMAGEM](https://www.diariomunicipal.com.br/amp/materia/18F7A149) · 2026-10-06
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [termos do Edital nº 02/2026 – SECRETARIA MUNICIPAL DE](https://www.diariomunicipal.com.br/amp/materia/F68CADC4) · 2026-10-06
+- DEPARTAMENTO DE RECURSOS HUMANOS · [PORTARIA Nº 910 DE 05 DE OUTUBRO DE 2026.](https://www.diariomunicipal.com.br/amp/materia/7B6E56F2) · 2026-10-06
+- DEPARTAMENTO DE RECURSOS HUMANOS · [PORTARIA Nº 915 DE 05 DE OUTUBRO DE 2026.](https://www.diariomunicipal.com.br/amp/materia/F5E8547D) · 2026-10-06
+- DEPARTAMENTO DE RECURSOS HUMANOS · [PORTARIA Nº 916, DE 05 DE OUTUBRO DE 2026.](https://www.diariomunicipal.com.br/amp/materia/9D334A23) · 2026-10-06
+- SECRETARIA MUNICIPAL DE RECURSOS HUMANOS · [EDITAL DE CONVOCAÇÃO Nº 003/2026](https://www.diariomunicipal.com.br/amp/materia/D03E16AF) · 2026-10-06
+- SECRETARIA MUNICIPAL DE RECURSOS HUMANOS · [PORTARIA N. º 271/2026– DE 05 DE OUTUBRO DE 2026.](https://www.diariomunicipal.com.br/amp/materia/A871836B) · 2026-10-06
+- GABINETE DO PREFEITO · [PORTARIA Nº 248/2026](https://www.diariomunicipal.com.br/amp/materia/A97FBB9F) · 2026-10-06
+- SECRETARIA DE ADMINISTRAÇÃO · [EDITAL Nº 36/2026](https://www.diariomunicipal.com.br/amp/materia/4A52C6BE) · 2026-10-06
+- SECRETARIA DE GESTÃO PÚBLICA · [DECLARAÇÃO DE DESISTÊNCIA](https://www.diariomunicipal.com.br/amp/materia/C381E56F) · 2026-10-06
+- SECRETARIA DE GESTÃO PÚBLICA · [EDITAL DE CONVOCAÇÃO - 18° CHAMADA](https://www.diariomunicipal.com.br/amp/materia/06DB1879) · 2026-10-06
+- PREFEITURA MUNICIPAL DE PRADO FERREIRA · [EDITAL DE CONVOCAÇÃO Nº 032/2026 41ª CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/AF3B4C3E) · 2026-10-06
+- PREFEITURA MUNICIPAL DE RESERVA DO IGUAÇU · [PROCESSO SELETIVO SIMPLIFICADO Nº 03/2026 EDITAL](https://www.diariomunicipal.com.br/amp/materia/DBEFF07F) · 2026-10-06
+- PREFEITURA MUNICIPAL DE RESERVA DO IGUAÇU · [PROCESSO SELETIVO SIMPLIFICADO Nº 03/2026 EDITAL](https://www.diariomunicipal.com.br/amp/materia/466B4398) · 2026-10-06
+- PREFEITURA MUNICIPAL DE RIO NEGRO · [PORTARIA N.º 1060/2026](https://www.diariomunicipal.com.br/amp/materia/C4DC36F9) · 2026-10-06
+- SECRETARIA GERAL · [PREFEITURA MUNICIPAL DE ROLÂNDIA EDITAL 001/2026](https://www.diariomunicipal.com.br/amp/materia/328EAAA2) · 2026-10-06
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [TERMO ADITIVO Nº023/2026](https://www.diariomunicipal.com.br/amp/materia/77755B7B) · 2026-10-06
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [TERMO ADITIVO Nº024/2026](https://www.diariomunicipal.com.br/amp/materia/9EF0C36A) · 2026-10-06
+- EXECUTIVO MUNICIPAL · [DECRETO Nº 185/2026 DATA 01/10/2026](https://www.diariomunicipal.com.br/amp/materia/3DCCCA68) · 2026-10-06
+- RECURSOS HUMANOS · [EDITAL DE CONVOCAÇÃO N. º 11/2026](https://www.diariomunicipal.com.br/amp/materia/49A33CB5) · 2026-10-06
+- PREFEITURA MUNICIPAL DE SAPOPEMA · [DECRETO Nº250/2026](https://www.diariomunicipal.com.br/amp/materia/422E712B) · 2026-10-06
+- ADMINISTRAÇÃO GERAL · [EDITAL Nº 114/2026(CONVOCAÇÃO)](https://www.diariomunicipal.com.br/amp/materia/C17DC2A8) · 2026-10-06
+- SECRETARIA M. ADMINISTRAÇAO RH · [EDITAL Nº 186/2026](https://www.diariomunicipal.com.br/amp/materia/5CA3A6CD) · 2026-10-06
+- SECRETARIA M. ADMINISTRAÇAO RH · [EDITAL Nº 187/2026](https://www.diariomunicipal.com.br/amp/materia/0F403824) · 2026-10-06
+- SECRETARIA M. ADMINISTRAÇAO RH · [EXTRATO Nº 05/2026](https://www.diariomunicipal.com.br/amp/materia/C716337D) · 2026-10-06
+- SECRETARIA M. ADMINISTRAÇAO RH · [EXTRATO Nº 06/2026](https://www.diariomunicipal.com.br/amp/materia/3D739CF2) · 2026-10-06
+- SECRETARIA M. ADMINISTRAÇAO RH · [EXTRATO Nº 07/2026](https://www.diariomunicipal.com.br/amp/materia/E7BCA92A) · 2026-10-06
+- PREFEITURA MUNICIPAL DE TERRA RICA · [DECRETO Nº 439/2026](https://www.diariomunicipal.com.br/amp/materia/85C5E895) · 2026-10-06
+- PREFEITURA MUNICIPAL DE TERRA RICA · [DECRETO Nº 440/2026](https://www.diariomunicipal.com.br/amp/materia/01FA9B71) · 2026-10-06
+- PREFEITURA MUNICIPAL DE TIJUCAS DO SUL · [DECRETO Nº 6388, DE 01 DE OUTUBRO DE 2026](https://www.diariomunicipal.com.br/amp/materia/4775C7ED) · 2026-10-06
+- GABINETE DO PREFEITO · [DECRETO Nº 6392, DE 01 DE OUTUBRO DE 2026](https://www.diariomunicipal.com.br/amp/materia/5A5E2072) · 2026-10-06
+- PREFEITURA MUNICIPAL DE TOMAZINA · [EDITAL DE CONVOCAÇÃO Nº 010-2026 - PROCESSO](https://www.diariomunicipal.com.br/amp/materia/2072B286) · 2026-10-06
+- PODER EXECUTIVO · [EDITAL DE CONVOCAÇÃO Nº 010-2026 - PROCESSO](https://www.diariomunicipal.com.br/amp/materia/15E4E9A7) · 2026-10-06
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [PORTARIA Nº 1.281/2026](https://www.diariomunicipal.com.br/amp/materia/18ACEE4A) · 2026-10-06
+- MUNICIPIO DE ENÉAS MARQUES · [EDITAL Nº 31/2026](https://www.diariomunicipal.com.br/amp/materia/E40EA60A) · 2026-10-06
+- PREFEITURA MUNICIPAL DE AGUDOS DO SUL · [EXTRATO Nº 140/2026 DE CONTRATO DE TRABALHO POR PRAZO DETERMINADO EM REGIME ESPECIAL](https://www.diariomunicipal.com.br/amp/materia/B0F283F8) · 2026-10-06
+- GABINETE DO PODER EXECUTIVO MUNICIPAL · [EXTRATO Nº 141/2026 DE CONTRATO DE TRABALHO POR PRAZO DETERMINADO EM REGIME ESPECIAL](https://www.diariomunicipal.com.br/amp/materia/AC5D1622) · 2026-10-06
+- GABINETE DO PODER EXECUTIVO MUNICIPAL · [EXTRATO Nº 142/2026 DE CONTRATO DE TRABALHO POR PRAZO DETERMINADO EM REGIME ESPECIAL](https://www.diariomunicipal.com.br/amp/materia/FE31FB27) · 2026-10-06
+- GABINETE DO PODER EXECUTIVO MUNICIPAL · [EXTRATO Nº 145/2026 DE CONTRATO DE TRABALHO POR PRAZO DETERMINADO EM REGIME ESPECIAL](https://www.diariomunicipal.com.br/amp/materia/3DA23898) · 2026-10-06
+- GABINETE DO PODER EXECUTIVO MUNICIPAL · [EXTRATO Nº 146/2026 DE CONTRATO DE TRABALHO POR PRAZO DETERMINADO EM REGIME ESPECIAL](https://www.diariomunicipal.com.br/amp/materia/ECEF4F4A) · 2026-10-06
+- PREFEITURA MUNICIPAL DE GUAIRA · [PROCESSO SELETIVO SIMPLIFICADO Nº 002/2026 PARA CONTRATAÇÃO TEMPORÁRIA DE EMPREGADOS PÚBLICOS PARA](https://www.diariomunicipal.com.br/amp/materia/116B4326) · 2026-10-06
+- PREFEITURA MUNICIPAL DE SÃO JERÔNIMO DA SERRA · [EDITAL Nº 03/2026 PROCESSO SELETIVO SIMPLIFICADO Nº 03/2026 MÉDICO – ESTRATÉGIA SAÚDE DA FAMÍLIA /](https://www.diariomunicipal.com.br/amp/materia/826A1C8E) · 2026-10-06
+- SECRETARIA DE ADMINISTRACAO · [DECRETO 6616-2026](https://www.diariomunicipal.com.br/amp/materia/C3E6E37A) · 2026-10-07
+- DIVISÃO DE RECURSOS HUMANOS · [EDITAL DE CONVOCAÇÃO DE APROVADOS Nº 013 2026](https://www.diariomunicipal.com.br/amp/materia/8ADD2B93) · 2026-10-07
+- DEPARTAMENTO DE GESTÃO DE PESSOAS · [EDITAL DE CONVOCAÇÃO N.º 003/2026 - PROCESSO](https://www.diariomunicipal.com.br/amp/materia/21D35820) · 2026-10-07
+- DEPARTAMENTO DE GESTÃO DE PESSOAS · [EDITAL DE CONVOCAÇÃO N.º 010/2026 - PROCESSO](https://www.diariomunicipal.com.br/amp/materia/DAE4107D) · 2026-10-07
+- DEPARTAMENTO DE GESTÃO DE PESSOAS · [EDITAL DE CONVOCAÇÃO Nº 028/2026 - PROCESSO](https://www.diariomunicipal.com.br/amp/materia/CCFE8C3D) · 2026-10-07
+- ADMINISTRAÇÃO · [DECRETO Nº 248/2026](https://www.diariomunicipal.com.br/amp/materia/65FE2872) · 2026-10-07
+- SECRETARIA DE GOVERNO · [PROCESSO SELETIVO SIMPLIFICADO – PSS Nº 06/2026](https://www.diariomunicipal.com.br/amp/materia/455163E2) · 2026-10-07
+- SECRETARIA MUNICIPAL DE EDUCAÇÃO · [ALTERAÇÃO DA INSTRUÇÃO NORMATIVA Nº 12/2025](https://www.diariomunicipal.com.br/amp/materia/D0D80471) · 2026-10-07
+- PREFEITURA MUNICIPAL DE DOUTOR ULYSSES · [PROCESSO SELETIVO SIMPLIFICADO - PSS N°001/2025](https://www.diariomunicipal.com.br/amp/materia/EFB751D7) · 2026-10-07
+- DEPARTAMENTO DE RECURSOS HUMANOS · [PROCESSO SELETIVO SIMPLIFICADO Nº 02/2025 EDITAL](https://www.diariomunicipal.com.br/amp/materia/BA31ADF9) · 2026-10-07
+- SECRETARIA DE ADMINISTRAÇÃO E PLANEJAMENTO · [EDITAL Nº 112/2026](https://www.diariomunicipal.com.br/amp/materia/23E03365) · 2026-10-07
+- SECRETARIA DE ADMINISTRAÇÃO E PLANEJAMENTO · [EDITAL Nº 113/2026](https://www.diariomunicipal.com.br/amp/materia/A95D53F4) · 2026-10-07
+- SECRETARIA DE ADMINISTRAÇÃO E PLANEJAMENTO · [PORTARIA Nº 170 /2026](https://www.diariomunicipal.com.br/amp/materia/46715020) · 2026-10-07
+- GOVERNO MUNICIPAL - GABINETE DO PREFEITO · [PORTARIA Nº. 1576/2026](https://www.diariomunicipal.com.br/amp/materia/9647DED5) · 2026-10-07
+- GOVERNO MUNICIPAL - GABINETE DO PREFEITO · [PORTARIA Nº. 1579/2026](https://www.diariomunicipal.com.br/amp/materia/0FFEE02A) · 2026-10-07
+- PREFEITURA MUNICIPAL DE LAPA · [DECRETO N° 29955, DE 06 DE OUTUBRO DE 2026](https://www.diariomunicipal.com.br/amp/materia/E6C666BD) · 2026-10-07
+- GABINETE DO PREFEITO · [DECRETO Nº 489/2026 - NOMEIA E DÁ POSSE A PESSOAS](https://www.diariomunicipal.com.br/amp/materia/5D33BE80) · 2026-10-07
+- PREFEITURA MUNICIPAL DE PAIÇANDU · [PORTARIA Nº569/2026](https://www.diariomunicipal.com.br/amp/materia/CEA45AB4) · 2026-10-07
+- PREFEITURA MUNICIPAL DE PAIÇANDU · [PORTARIA Nº570/2026](https://www.diariomunicipal.com.br/amp/materia/2B9DE4BB) · 2026-10-07
+- PREFEITURA MUNICIPAL DE PAIÇANDU · [PORTARIA Nº571/2026](https://www.diariomunicipal.com.br/amp/materia/CDFD9A6B) · 2026-10-07
+- PREFEITURA MUNICIPAL DE PAIÇANDU · [PORTARIA Nº572/2026](https://www.diariomunicipal.com.br/amp/materia/9A68BCE4) · 2026-10-07
+- PREFEITURA MUNICIPAL DE PAIÇANDU · [PORTARIA Nº 573/2026](https://www.diariomunicipal.com.br/amp/materia/870A89D7) · 2026-10-07
+- PREFEITURA MUNICIPAL DE PAIÇANDU · [PORTARIA Nº 574/2026](https://www.diariomunicipal.com.br/amp/materia/C8BAEB91) · 2026-10-07
+- PREFEITURA MUNICIPAL DE PAIÇANDU · [PORTARIA Nº575/2026](https://www.diariomunicipal.com.br/amp/materia/CDD8ACA2) · 2026-10-07
+- PREFEITURA MUNICIPAL DE PAIÇANDU · [PORTARIA Nº576/2026](https://www.diariomunicipal.com.br/amp/materia/986EC1C8) · 2026-10-07
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [COMUNICADO – CHAMADA TÉCNICO EM ENFERMAGEM](https://www.diariomunicipal.com.br/amp/materia/70F19B35) · 2026-10-07
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO ADITIVO DE PRORROGAÇÃO DE](https://www.diariomunicipal.com.br/amp/materia/4A5AB8DC) · 2026-10-07
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO ADITIVO DE PRORROGAÇÃO DE](https://www.diariomunicipal.com.br/amp/materia/1D26F6D3) · 2026-10-07
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO ADITIVO DE PRORROGAÇÃO DE](https://www.diariomunicipal.com.br/amp/materia/92A5C045) · 2026-10-07
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO ADITIVO DE PRORROGAÇÃO DE](https://www.diariomunicipal.com.br/amp/materia/F5293AB9) · 2026-10-07
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO ADITIVO DE PRORROGAÇÃO DE](https://www.diariomunicipal.com.br/amp/materia/A18D64CD) · 2026-10-07
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO ADITIVO DE PRORROGAÇÃO DE](https://www.diariomunicipal.com.br/amp/materia/71E1B9FA) · 2026-10-07
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO ADITIVO DE PRORROGAÇÃO DE](https://www.diariomunicipal.com.br/amp/materia/1FC33084) · 2026-10-07
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO ADITIVO DE PRORROGAÇÃO DE](https://www.diariomunicipal.com.br/amp/materia/93F2210C) · 2026-10-07
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO ADITIVO DE PRORROGAÇÃO DE](https://www.diariomunicipal.com.br/amp/materia/7AA8709D) · 2026-10-07
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO ADITIVO DE PRORROGAÇÃO DE](https://www.diariomunicipal.com.br/amp/materia/5F9FE012) · 2026-10-07
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO ADITIVO DE PRORROGAÇÃO DE](https://www.diariomunicipal.com.br/amp/materia/129310D1) · 2026-10-07
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO ADITIVO DE PRORROGAÇÃO DE](https://www.diariomunicipal.com.br/amp/materia/1054B6F4) · 2026-10-07
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO ADITIVO DE PRORROGAÇÃO DE](https://www.diariomunicipal.com.br/amp/materia/694B2F33) · 2026-10-07
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO ADITIVO DE PRORROGAÇÃO DE](https://www.diariomunicipal.com.br/amp/materia/8BC4D90C) · 2026-10-07
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO ADITIVO DE PRORROGAÇÃO DE](https://www.diariomunicipal.com.br/amp/materia/88BA2EF6) · 2026-10-07
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO ADITIVO DE PRORROGAÇÃO DE](https://www.diariomunicipal.com.br/amp/materia/3DE5995D) · 2026-10-07
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO ADITIVO DE PRORROGAÇÃO DE](https://www.diariomunicipal.com.br/amp/materia/22D1230D) · 2026-10-07
+- SECRETARIA MUNICIPAL DE RECURSOS HUMANOS · [PORTARIA N. º 273/2026– DE 06 DE OUTUBRO DE 2026.](https://www.diariomunicipal.com.br/amp/materia/682EEDF7) · 2026-10-07
+- SECRETARIA DE GESTÃO PÚBLICA · [DECLARAÇÃO DE DESISTÊNCIA](https://www.diariomunicipal.com.br/amp/materia/C584EFFA) · 2026-10-07
+- SECRETARIA DE GESTÃO PÚBLICA · [EDITAL DE CONVOCAÇÃO - 19° CHAMADA](https://www.diariomunicipal.com.br/amp/materia/94EC4E18) · 2026-10-07
+- SECRETARIA DE GESTÃO PÚBLICA · [EDITAL N.º 012/2026 DA 2ª ETAPA DA CONVOCAÇÃO DO](https://www.diariomunicipal.com.br/amp/materia/359AEA3E) · 2026-10-07
+- DEPARTAMENTO DE ADMINISTRAÇÃO · [PORTARIA Nº 9.145/2026, DE 06 DE OUTUBRO DE 2026](https://www.diariomunicipal.com.br/amp/materia/2206844C) · 2026-10-07
+- DEPARTAMENTO DE RECURSOS HUMANOS · [PORTARIA Nº 329, DE 06 DE OUTUBRO DE 2026.](https://www.diariomunicipal.com.br/amp/materia/A476062C) · 2026-10-07
+- RECURSOS HUMANOS · [EDITAL DE CONVOCAÇÃO PSS](https://www.diariomunicipal.com.br/amp/materia/B87F025B) · 2026-10-07
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [PROCESSO SELETIVO SIMPLIFICADO - PSS – EDITAL Nº.](https://www.diariomunicipal.com.br/amp/materia/F7FE6E7B) · 2026-10-07
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [EDITAL Nº 04/2026 PROCESSO SELETIVO SIMPLIFICADO](https://www.diariomunicipal.com.br/amp/materia/6554B920) · 2026-10-07
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [PORTARIA 253/2026](https://www.diariomunicipal.com.br/amp/materia/7097FCD1) · 2026-10-07
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO, · [EDITAL Nº 002-26 - RELAÇÃO PRELIMINAR DAS](https://www.diariomunicipal.com.br/amp/materia/6DEE050D) · 2026-10-07
+- ADMINISTRAÇÃO GERAL · [EDITAL Nº 115/2026(CONVOCAÇÃO)](https://www.diariomunicipal.com.br/amp/materia/1550087E) · 2026-10-07
+- ADMINISTRAÇÃO GERAL · [EDITAL Nº 116/2026(CONVOCAÇÃO)](https://www.diariomunicipal.com.br/amp/materia/CF4153E7) · 2026-10-07
+- ADMINISTRAÇÃO GERAL · [EDITAL Nº 117/2026(CONVOCAÇÃO)](https://www.diariomunicipal.com.br/amp/materia/91B40784) · 2026-10-07
+- ADMINISTRAÇÃO GERAL · [LEI N.º 1699/2026](https://www.diariomunicipal.com.br/amp/materia/77C5F7BA) · 2026-10-07
+- PREFEITURA MUNICIPAL DE SENGÉS · [EDITAL DE CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/4B43FB28) · 2026-10-07
+- PREFEITURA MUNICIPAL DE TUNAS DO PARANÁ · [DECRETO Nº 326 DE 05 DE OUTUBRO DE 2026](https://www.diariomunicipal.com.br/amp/materia/E326F42A) · 2026-10-07
+- DEPARTAMENTO DE ADMINISTRAÇÃO FINANÇAS E PLANEJAMENTO · [DECRETO Nº 328 DE 06 DE OUTUBRO DE 2026](https://www.diariomunicipal.com.br/amp/materia/DEE33608) · 2026-10-07
+- DEPARTAMENTO DE ADMINISTRAÇÃO FINANÇAS E PLANEJAMENTO · [DECRETO Nº 329 DE 06 DE OUTUBRO DE 2026](https://www.diariomunicipal.com.br/amp/materia/4EDAD366) · 2026-10-07
+- PREFEITURA MUNICIPAL DE MORRETES · [EXTRATO DO 1° TERMO ADITIVO](https://www.diariomunicipal.com.br/amp/materia/80213267) · 2026-10-07
+- RECURSOS HUMANOS · [TERMO ADITIVO DE CONTRATO DE 07/10/2026.](https://www.diariomunicipal.com.br/amp/materia/85995BE2) · 2026-10-08
+- RECURSOS HUMANOS · [TERMO ADITIVO DE CONTRATO DE 07/10/2026.](https://www.diariomunicipal.com.br/amp/materia/85DBD85B) · 2026-10-08
+- ADMINISTRAÇÃO · [PORTARIA Nº 207/2026](https://www.diariomunicipal.com.br/amp/materia/F69DF099) · 2026-10-08
+- PREFEITURA MUNICIPAL DE CORONEL VIVIDA · [EDITAL 050/2026 - PSS 001/2026](https://www.diariomunicipal.com.br/amp/materia/00541039) · 2026-10-08
+- DEPARTAMENTO DE ADMINISTRAÇÃO · [DECRETO Nº0311/2026 NOMEAR O SENHOR ELIZEU DE](https://www.diariomunicipal.com.br/amp/materia/3C30AC99) · 2026-10-08
+- DEPARTAMENTO DE ADMINISTRAÇÃO · [DECRETO Nº 0313/2026 NOMEAR, A SENHORA VILMA](https://www.diariomunicipal.com.br/amp/materia/D95F0B67) · 2026-10-08
+- DEPARTAMENTO DE RECURSOS HUMANOS · [PORTARIA 265/2026](https://www.diariomunicipal.com.br/amp/materia/B10A0C2B) · 2026-10-08
+- SECRETARIA DE ADMINISTRAÇÃO E PLANEJAMENTO · [EDITAL Nº 114/2026](https://www.diariomunicipal.com.br/amp/materia/91B0DEAC) · 2026-10-08
+- GOVERNO MUNICIPAL - GABINETE DO PREFEITO · [PORTARIA Nº. 1581/2026](https://www.diariomunicipal.com.br/amp/materia/6F02121A) · 2026-10-08
+- GOVERNO MUNICIPAL - GABINETE DO PREFEITO · [PORTARIA Nº. 1583/2026](https://www.diariomunicipal.com.br/amp/materia/6F6DFBA2) · 2026-10-08
+- RECURSOS HUMANOS · [EDITAL Nº 04.01/2026 - PSS](https://www.diariomunicipal.com.br/amp/materia/F26FDF9A) · 2026-10-08
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [DECLARAÇÃO PROCESSO SELETIVO SIMPLIFICADO –](https://www.diariomunicipal.com.br/amp/materia/20714C81) · 2026-10-08
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [EDITAL DE CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/9E803DD7) · 2026-10-08
+- GABINETE · [DECRETO N° 29956, DE 07 DE OUTUBRO DE 2026](https://www.diariomunicipal.com.br/amp/materia/97F5AEE2) · 2026-10-08
+- GABINETE · [DECRETO N° 29957, DE 07 DE OUTUBRO DE 2026](https://www.diariomunicipal.com.br/amp/materia/CC2932D5) · 2026-10-08
+- SECRETARIA DE ADMINISTRAÇÃO · [EDITAL DE CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/16D5E16C) · 2026-10-08
+- SECRETARIA DE ADMINISTRAÇÃO · [EDITAL DE CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/012AB9F4) · 2026-10-08
+- SECRETARIA DE ADMINISTRAÇÃO · [EDITAL DE CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/BFF159AF) · 2026-10-08
+- SECRETARIA DE ADMINISTRAÇÃO · [EDITAL DE CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/4C1F94BB) · 2026-10-08
+- SECRETARIA DE ADMINISTRAÇÃO · [EDITAL DE CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/18683CC9) · 2026-10-08
+- MUNICÍPIO DE MATO RICO · [PORTARIA 320 2025 CONVOCAÇÃO TITULOS PSS 001 2025](https://www.diariomunicipal.com.br/amp/materia/B315A013) · 2026-10-08
+- PREFEITURA MUNICIPAL DE PAIÇANDU · [EDITAL DE CONVOCAÇÃO Nº281/2026](https://www.diariomunicipal.com.br/amp/materia/48A4A4AA) · 2026-10-08
+- FUNDAÇÃO DE SÁUDE DE PAIÇANDU · [EDITAL DE CONVOCAÇÃO Nº282/2026](https://www.diariomunicipal.com.br/amp/materia/91F18D32) · 2026-10-08
+- FUNDAÇÃO DE SÁUDE DE PAIÇANDU · [EDITAL DE CONVOCAÇÃO Nº 283/2026](https://www.diariomunicipal.com.br/amp/materia/6ED2A055) · 2026-10-08
+- FUNDAÇÃO DE SÁUDE DE PAIÇANDU · [EDITAL DE CONVOCAÇÃO Nº 284/2026](https://www.diariomunicipal.com.br/amp/materia/3D9E838F) · 2026-10-08
+- PREFEITURA MUNICIPAL DE PAIÇANDU · [EDITAL DE CONVOCAÇÃO Nº 285/2026](https://www.diariomunicipal.com.br/amp/materia/EAAB6D55) · 2026-10-08
+- PREFEITURA MUNICIPAL DE PAIÇANDU · [EDITAL DE CONVOCAÇÃO Nº 286/2026](https://www.diariomunicipal.com.br/amp/materia/A0EE2FD4) · 2026-10-08
+- PREFEITURA MUNICIPAL DE PAIÇANDU · [EDITAL DE CONVOCAÇÃO Nº 287/2026](https://www.diariomunicipal.com.br/amp/materia/E367A0E4) · 2026-10-08
+- PREFEITURA MUNICIPAL DE PAIÇANDU · [EDITAL DE CONVOCAÇÃO Nº288/2026](https://www.diariomunicipal.com.br/amp/materia/894F3ABF) · 2026-10-08
+- PREFEITURA MUNICIPAL DE PAIÇANDU · [EDITAL DE CONVOCAÇÃO Nº289/2026](https://www.diariomunicipal.com.br/amp/materia/D9A133F2) · 2026-10-08
+- PREFEITURA MUNICIPAL DE PAIÇANDU · [EDITAL DE CONVOCAÇÃO Nº 291/2026](https://www.diariomunicipal.com.br/amp/materia/8F0DEF93) · 2026-10-08
+- PREFEITURA MUNICIPAL DE PAIÇANDU · [EDITAL DE CONVOCAÇÃO Nº 292/2026](https://www.diariomunicipal.com.br/amp/materia/467AAC40) · 2026-10-08
+- PREFEITURA MUNICIPAL DE PAIÇANDU · [EDITAL DE CONVOCAÇÃO Nº 293/2026](https://www.diariomunicipal.com.br/amp/materia/02C618CD) · 2026-10-08
+- PREFEITURA MUNICIPAL DE PAIÇANDU · [EDITAL DE CONVOCAÇÃO Nº 294/2026](https://www.diariomunicipal.com.br/amp/materia/4FBC0CF6) · 2026-10-08
+- PREFEITURA MUNICIPAL DE PAIÇANDU · [EDITAL DE CONVOCAÇÃO Nº 295/2026](https://www.diariomunicipal.com.br/amp/materia/A27BDCD8) · 2026-10-08
+- PREFEITURA MUNICIPAL DE PAIÇANDU · [EDITAL DE CONVOCAÇÃO Nº 296/2026](https://www.diariomunicipal.com.br/amp/materia/DEAD8210) · 2026-10-08
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [COMUNICADO – CHAMADA AUXILIAR DE CUIDADOR DE](https://www.diariomunicipal.com.br/amp/materia/80575827) · 2026-10-08
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [COMUNICADO – CHAMADA AUXILIAR DE CUIDADOR DE](https://www.diariomunicipal.com.br/amp/materia/5AF2D372) · 2026-10-08
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [PROCESSO SELETIVO SIMPLIFICADO Nº. 01/2026](https://www.diariomunicipal.com.br/amp/materia/09E56481) · 2026-10-08
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [COMUNICADO – CHAMADA MOTORISTA II PROCESSO](https://www.diariomunicipal.com.br/amp/materia/5A2707C2) · 2026-10-08
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [COMUNICADO – CHAMADA TÉCNICO EM ENFERMAGEM](https://www.diariomunicipal.com.br/amp/materia/35AA21D3) · 2026-10-08
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [termos do Edital nº 001/2026 – Assistência Social, de 04 de março de](https://www.diariomunicipal.com.br/amp/materia/B08A755C) · 2026-10-08
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [termos do Edital nº 001/2026 – Assistência Social, de 04 de março de](https://www.diariomunicipal.com.br/amp/materia/C485902B) · 2026-10-08
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [termos do Edital nº 001/2026 – Assistência Social, de 04 de março de](https://www.diariomunicipal.com.br/amp/materia/4284ECD1) · 2026-10-08
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [TERMO DE DESISTÊNCIA - PROCESSO SELETIVO](https://www.diariomunicipal.com.br/amp/materia/0821BC53) · 2026-10-08
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [TERMO DE DESISTÊNCIA - PROCESSO SELETIVO](https://www.diariomunicipal.com.br/amp/materia/45C785D8) · 2026-10-08
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [TERMO DE DESISTÊNCIA - PROCESSO SELETIVO](https://www.diariomunicipal.com.br/amp/materia/877CB57A) · 2026-10-08
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO ADITIVO DE PRORROGAÇÃO DE](https://www.diariomunicipal.com.br/amp/materia/88D34841) · 2026-10-08
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO ADITIVO DE PRORROGAÇÃO DE](https://www.diariomunicipal.com.br/amp/materia/FDFC2002) · 2026-10-08
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO ADITIVO DE PRORROGAÇÃO DE](https://www.diariomunicipal.com.br/amp/materia/5526029A) · 2026-10-08
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO ADITIVO DE PRORROGAÇÃO DE](https://www.diariomunicipal.com.br/amp/materia/F1DC2FED) · 2026-10-08
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO ADITIVO DE PRORROGAÇÃO DE](https://www.diariomunicipal.com.br/amp/materia/22786589) · 2026-10-08
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO ADITIVO DE PRORROGAÇÃO DE](https://www.diariomunicipal.com.br/amp/materia/7348963B) · 2026-10-08
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO ADITIVO DE PRORROGAÇÃO DE](https://www.diariomunicipal.com.br/amp/materia/E38119B0) · 2026-10-08
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO ADITIVO DE PRORROGAÇÃO DE](https://www.diariomunicipal.com.br/amp/materia/CA9696C0) · 2026-10-08
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO ADITIVO DE PRORROGAÇÃO DE](https://www.diariomunicipal.com.br/amp/materia/F7D8759D) · 2026-10-08
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO ADITIVO DE PRORROGAÇÃO DE](https://www.diariomunicipal.com.br/amp/materia/7C9275BB) · 2026-10-08
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO ADITIVO DE PRORROGAÇÃO DE](https://www.diariomunicipal.com.br/amp/materia/11070F8D) · 2026-10-08
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO ADITIVO DE PRORROGAÇÃO DE](https://www.diariomunicipal.com.br/amp/materia/B2B16BB9) · 2026-10-08
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO ADITIVO DE PRORROGAÇÃO DE](https://www.diariomunicipal.com.br/amp/materia/F10F4395) · 2026-10-08
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO ADITIVO DE PRORROGAÇÃO DE](https://www.diariomunicipal.com.br/amp/materia/C2A6F485) · 2026-10-08
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO ADITIVO DE PRORROGAÇÃO DE](https://www.diariomunicipal.com.br/amp/materia/B5B5EAD4) · 2026-10-08
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO ADITIVO DE PRORROGAÇÃO DE](https://www.diariomunicipal.com.br/amp/materia/F8DEB214) · 2026-10-08
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO ADITIVO DE PRORROGAÇÃO DE](https://www.diariomunicipal.com.br/amp/materia/CFDAFE9D) · 2026-10-08
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO ADITIVO DE PRORROGAÇÃO DE](https://www.diariomunicipal.com.br/amp/materia/9959BE89) · 2026-10-08
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO ADITIVO DE PRORROGAÇÃO DE](https://www.diariomunicipal.com.br/amp/materia/926CE486) · 2026-10-08
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO ADITIVO DE PRORROGAÇÃO DE](https://www.diariomunicipal.com.br/amp/materia/4DC9ED70) · 2026-10-08
+- SECRETARIA MUNICIPAL DE RECURSOS HUMANOS · [PORTARIA Nº 274/2026 – DE 07 DE OUTUBRO DE 2026.](https://www.diariomunicipal.com.br/amp/materia/315DEDA7) · 2026-10-08
+- PREFEITURA MUNICIPAL DE RIO BRANCO DO SUL · [EDITAL N º 009/2026 – 09ª CONVOCAÇÃO –PSS Nº 001/2026–](https://www.diariomunicipal.com.br/amp/materia/021BA598) · 2026-10-08
+- ADMINISTRAÇÃO GERAL · [EDITAL Nº 118/2026 (CONVOCAÇÃO)](https://www.diariomunicipal.com.br/amp/materia/D6E40487) · 2026-10-08
+- PREFEITURA MUNICIPAL DE TERRA RICA · [DECRETO Nº 448/2026](https://www.diariomunicipal.com.br/amp/materia/5DE77B1C) · 2026-10-08
+- GABINETE DO PREFEITO · [PORTARIA Nº 420, DE 07 DE OUTUBRO DE 2026](https://www.diariomunicipal.com.br/amp/materia/6A64B701) · 2026-10-08
+- PODER EXECUTIVO · [PORTARIA N.º 374/2026](https://www.diariomunicipal.com.br/amp/materia/76E137D9) · 2026-10-08
+- PODER EXECUTIVO · [PORTARIA N.º 375/2026](https://www.diariomunicipal.com.br/amp/materia/132F2765) · 2026-10-08
+- SECRETARIA DE ADMINISTRAÇÃO · [EDITAL DE CONVOCAÇÃO 162-2026](https://www.diariomunicipal.com.br/amp/materia/D459E409) · 2026-10-08
+- SECRETARIA DE ADMINISTRAÇÃO · [EDITAL DE CONVOCAÇÃO 163-2026](https://www.diariomunicipal.com.br/amp/materia/6DA32AE4) · 2026-10-08
+- PREFEITURA MUNICIPAL DE GUAIRA · [PROCESSO SELETIVO SIMPLIFICADO Nº 003/2026 PARA CONTRATAÇÃO TEMPORÁRIA DE EMPREGADOS PÚBLICOS PARA](https://www.diariomunicipal.com.br/amp/materia/FCF9B292) · 2026-10-08
+- DEPARTAMENTO DE RECURSOS HUMANOS · [HOMOLOGAÇÃO DO RESULTADO PRELIMINAR - ESTAGIARIOS PSS 02/2026](https://www.diariomunicipal.com.br/amp/materia/8BC91F17) · 2026-10-08
+- PREFEITURA MUNICIPAL DE IRATI · [EDITAL DE PROCESSO SELETIVO SIMPLIFICADO DA SECRETARIA MUNICIPAL DE ASSISTÊNCIA SOCIAL E DIREITOS](https://www.diariomunicipal.com.br/amp/materia/C88A0EE0) · 2026-10-08
+- PREFEITURA MUNICIPAL DE RENASCENÇA · [EDITAL Nº 254 /2026 PROCESSO SELETIVO SIMPLIFICADO PARA CONTRATAÇÃO TEMPORÁRIA DE PROFESSOR COM](https://www.diariomunicipal.com.br/amp/materia/C53312C0) · 2026-10-08
+- RECURSOS HUMANOS · [EDITAL DE CONVOCAÇÃO N° 055/2026](https://www.diariomunicipal.com.br/amp/materia/6DAD7887) · 2026-10-09
+- GABINETE DA PREFEITA · [EDITAL DE CONVOCAÇÃO N. 024/2026 PSS - PROFESSOR](https://www.diariomunicipal.com.br/amp/materia/257BAC31) · 2026-10-09
+- PREFEITURA MUNICIPAL DE BALSA NOVA · [EDITAL DE CONVOCAÇÃO N.º 011/2026 - PROCESSO](https://www.diariomunicipal.com.br/amp/materia/987FCF85) · 2026-10-09
+- DEPARTAMENTO DE GESTÃO DE PESSOAS · [EDITAL DE CONVOCAÇÃO Nº 029/2026 - PROCESSO](https://www.diariomunicipal.com.br/amp/materia/EE2764C5) · 2026-10-09
+- SECRETARIA MUNICIPAL DE EDUCAÇÃO E CULTURA. · [EDITAL Nº 019.005/2026 – CONVOCAÇÃO PARA](https://www.diariomunicipal.com.br/amp/materia/0925B037) · 2026-10-09
+- PREFEITURA MUNICIPAL DE CORONEL VIVIDA · [EDITAL Nº 010/2026 DE 08/10/2026 - PSS 004/2025](https://www.diariomunicipal.com.br/amp/materia/7691EF51) · 2026-10-09
+- SECRETARIA DE ADMINISTRAÇÃO E PLANEJAMENTO · [DECRETO Nº 159/2026](https://www.diariomunicipal.com.br/amp/materia/D4B2E30B) · 2026-10-09
+- SECRETARIA DE ADMINISTRAÇÃO E PLANEJAMENTO · [DECRETO Nº 160/2026](https://www.diariomunicipal.com.br/amp/materia/B4257112) · 2026-10-09
+- GOVERNO MUNICIPAL - GABINETE DO PREFEITO · [PORTARIA Nº. 1586/2026](https://www.diariomunicipal.com.br/amp/materia/CDADA87E) · 2026-10-09
+- PROCURADORIA · [DECRETO Nº 755/2026](https://www.diariomunicipal.com.br/amp/materia/4C2DE686) · 2026-10-09
+- PROCURADORIA · [DECRETO Nº 756/2026](https://www.diariomunicipal.com.br/amp/materia/34A401FD) · 2026-10-09
+- PROCURADORIA · [DECRETO Nº 757/2026](https://www.diariomunicipal.com.br/amp/materia/1B8D1234) · 2026-10-09
+- PROCURADORIA · [DECRETO Nº 758/2026](https://www.diariomunicipal.com.br/amp/materia/1B3D2260) · 2026-10-09
+- PROCURADORIA · [DECRETO Nº 759/2026](https://www.diariomunicipal.com.br/amp/materia/398D8B94) · 2026-10-09
+- PREFEITURA MUNICIPAL DE LAPA · [GABINETE](https://www.diariomunicipal.com.br/amp/materia/4779E9AD) · 2026-10-09
+- GABINETE · [CONTRATO DE PRESTAÇÃO DE SERVIÇOS EM REGIME](https://www.diariomunicipal.com.br/amp/materia/ECA699AB) · 2026-10-09
+- GABINETE · [CONTRATO DE PRESTAÇÃO DE SERVIÇOS EM REGIME](https://www.diariomunicipal.com.br/amp/materia/3E065483) · 2026-10-09
+- GABINETE · [CONTRATO DE PRESTAÇÃO DE SERVIÇOS EM REGIME](https://www.diariomunicipal.com.br/amp/materia/0A275D42) · 2026-10-09
+- GABINETE · [CONTRATO DE PRESTAÇÃO DE SERVIÇOS EM REGIME](https://www.diariomunicipal.com.br/amp/materia/5AD0784F) · 2026-10-09
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [DECRETO Nº. 193/2026 DE 08 DE OUTUBRO DE 2026,](https://www.diariomunicipal.com.br/amp/materia/C54208EC) · 2026-10-09
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [EDITAL DE ABERTURA DO PSS - PROCESSO SELETIVO](https://www.diariomunicipal.com.br/amp/materia/C62287D7) · 2026-10-09
+- GABINETE DO PREFEITO · [DECRETO Nº 421/2026](https://www.diariomunicipal.com.br/amp/materia/5A8B49C4) · 2026-10-09
+- SECRETARIA DE ADMINISTRAÇÃO - SETOR DE RECURSOS HUMANOS · [EDITAL DE CONVOCAÇÃO N° 021.001/2026 – PSS 001/2025](https://www.diariomunicipal.com.br/amp/materia/A5346D8C) · 2026-10-09
+- GABINETE DO PREFEITO · [EDITAL N º. 315/2026 CONVOCAÇÃO PROCESSO](https://www.diariomunicipal.com.br/amp/materia/B7DD5540) · 2026-10-09
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [COMUNICADO – CHAMADA MÉDICO ESF PROCESSO](https://www.diariomunicipal.com.br/amp/materia/57C71E18) · 2026-10-09
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [COMUNICADO – CHAMADA PROFESSOR DE EDUCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/924CB7DB) · 2026-10-09
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [termos do Edital nº 02/2026 – SECRETARIA MUN ICIPAL DE](https://www.diariomunicipal.com.br/amp/materia/9B7E4415) · 2026-10-09
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [termos do Edital nº 02/2026 – SECRETARIA MUNICIPAL DE](https://www.diariomunicipal.com.br/amp/materia/7DE0B8A6) · 2026-10-09
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [termos do Edital nº 02/2026 – SECRETARIA MUNICIPAL DE](https://www.diariomunicipal.com.br/amp/materia/BE08FEFB) · 2026-10-09
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [TERMO DE DESISTÊNCIA - PROCESSO SELETIVO](https://www.diariomunicipal.com.br/amp/materia/9E30A9BE) · 2026-10-09
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EDITAL DE CONVOCAÇÃO Nº 194/2026](https://www.diariomunicipal.com.br/amp/materia/9F4F313E) · 2026-10-09
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EDITAL DE CONVOCAÇÃO Nº 195/2026](https://www.diariomunicipal.com.br/amp/materia/9580CA62) · 2026-10-09
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EDITAL DE CONVOCAÇÃO Nº 196/2026](https://www.diariomunicipal.com.br/amp/materia/56F76AD4) · 2026-10-09
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO ADITIVO DE PRORROGAÇÃO DE](https://www.diariomunicipal.com.br/amp/materia/946FD4AD) · 2026-10-09
+- SECRETARIA MUNICIPAL DE RECURSOS HUMANOS · [EDITAL Nº 07/2026](https://www.diariomunicipal.com.br/amp/materia/C1A31C2C) · 2026-10-09
+- SECRETARIA MUNICIPAL DE RECURSOS HUMANOS · [PORTARIA Nº 270/2026 – DE 05 DE OUTUBRO DE 2026.](https://www.diariomunicipal.com.br/amp/materia/58E7B854) · 2026-10-09
+- SECRETARIA DE ADMINISTRAÇÃO · [EXTRATO DE CONTRATO Nº 14/2026](https://www.diariomunicipal.com.br/amp/materia/10E581FB) · 2026-10-09
+- SECRETARIA DE ADMINISTRAÇÃO · [PORTARIA N.3424/2026](https://www.diariomunicipal.com.br/amp/materia/9C6D3049) · 2026-10-09
+- SECRETARIA DE ADMINISTRAÇÃO · [PORTARIA Nº 3433/2026](https://www.diariomunicipal.com.br/amp/materia/853225C8) · 2026-10-09
+- SECRETARIA DE GESTÃO PÚBLICA · [EXTRATO DE CONTRATO Nº. 013/2026 - PSS 002/2025](https://www.diariomunicipal.com.br/amp/materia/98A5AC0A) · 2026-10-09
+- DEPARTAMENTO DE ADMINISTRAÇÃO · [PORTARIA Nº 9.153/ 2026, DE 08 DE OUTUBRO DE 2026](https://www.diariomunicipal.com.br/amp/materia/9C232045) · 2026-10-09
+- MUNICIPIO DE SANTO ANTONIO DO SUDOESTE · [EXTRATO ADITIVO Nº 1 DO CONTRATO](https://www.diariomunicipal.com.br/amp/materia/F65D71AF) · 2026-10-09
+- PODER EXECUTIVO · [EDITAL DE CONVOCAÇÃO Nº 010-2026 - PROCESSO](https://www.diariomunicipal.com.br/amp/materia/65751C48) · 2026-10-09
+- DEPARTAMENTO DE ADMINISTRAÇÃO FINANÇAS E PLANEJAMENTO · [DECRETO Nº 334 DE 08 DE OUTUBRO DE 2026](https://www.diariomunicipal.com.br/amp/materia/8F0AB274) · 2026-10-09
+- MUNICIPIO DE ENÉAS MARQUES · [HOMOLOGA RESULTADO FINAL](https://www.diariomunicipal.com.br/amp/materia/9B11DBC0) · 2026-10-09
+- PREFEITURA MUNICIPAL DE DOUTOR ULYSSES · [PROCESSO SELETIVO SIMPLIFICADO 005/2026 EDITAL 03.2026 EDITAL DE DIVULGAÇÃO DO RESULTADO DOS RECURSOS](https://www.diariomunicipal.com.br/amp/materia/5033AE15) · 2026-10-09
+- PREFEITURA MUNICIPAL DE INÁCIO MARTINS · [HOMOLOGAÇÃO DO RESULTADO FINAL ESTAGIARIOS PSS 02/2026](https://www.diariomunicipal.com.br/amp/materia/B4048D98) · 2026-10-09
+- PREFEITURA MUNICIPAL DE IRATI · [EDITAL Nº 001.2./2026 - 40ª CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/A5BA719E) · 2026-10-09
+- PROCURADORIA · [EDITAL Nº 002.35/2026 – 31ª CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/E798E396) · 2026-10-09
+- SECRETARIA DE ADMINISTRACAO · [Processo Seletivo Público, a ser contratada com a respectiva](https://www.diariomunicipal.com.br/amp/materia/F2DF2AA7) · 2026-10-13
+- GABINETE DO PODER EXECUTIVO MUNICIPAL · [EXTRATO Nº 151/2026 DE RESCISÃO DE TÉRMINO DE](https://www.diariomunicipal.com.br/amp/materia/8C46F1C0) · 2026-10-13
+- DEPARTAMENTO DE PESSOAL · [PORTARIA Nº 389/2026](https://www.diariomunicipal.com.br/amp/materia/86A172E6) · 2026-10-13
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO · [PORTARIA Nº 455/2026 - PRORROGA CONTRATO PSS Nº](https://www.diariomunicipal.com.br/amp/materia/461A13F8) · 2026-10-13
+- DEPARTAMENTO DE ADMINISTRAÇÃO · [PROCESSO SELETIVO SIMPLIFICADO - PSS N°001/2025](https://www.diariomunicipal.com.br/amp/materia/7F6ADD2E) · 2026-10-13
+- PREFEITURA MUNICIPAL DE FOZ DO JORDÃO · [PORTARIA Nº267/2026](https://www.diariomunicipal.com.br/amp/materia/214E7720) · 2026-10-13
+- PROCURADORIA · [DECRETO Nº 765/2026](https://www.diariomunicipal.com.br/amp/materia/69A47448) · 2026-10-13
+- RECURSOS HUMANOS · [EDITAL Nº 28.01/2026](https://www.diariomunicipal.com.br/amp/materia/27EC60A3) · 2026-10-13
+- DEPARTAMENTO DE ADMINISTRAÇÃO · [PROCESSO SELETIVO SIMPLIFICADO Nº 001/2025](https://www.diariomunicipal.com.br/amp/materia/331D607A) · 2026-10-13
+- GABINETE DO PREFEITO · [DECRETO Nº 67/2026 DE 08 DE OUTUBRO DE 2026.](https://www.diariomunicipal.com.br/amp/materia/CE934CC6) · 2026-10-13
+- GABINETE · [DECRETO N° 29969, DE 09 DE OUTUBRO DE 2026](https://www.diariomunicipal.com.br/amp/materia/EC1099E6) · 2026-10-13
+- PREFEITURA MUNICIPAL DE MALLET · [DECRETO Nº 421/2026 *REPUBLICAÇÃO PARA](https://www.diariomunicipal.com.br/amp/materia/790B7947) · 2026-10-13
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [Processo Seletivo Simplificado – PSS nº. 01/2026, o não](https://www.diariomunicipal.com.br/amp/materia/25C2F3E3) · 2026-10-13
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [COMUNICADO – CHAMADA PROFESSOR 20H - PROCESSO](https://www.diariomunicipal.com.br/amp/materia/6F384599) · 2026-10-13
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [termos do](https://www.diariomunicipal.com.br/amp/materia/7BC35427) · 2026-10-13
+- PREFEITURA MUNICIPAL DE PALMITAL · [EDITAL DE CONVOCAÇÃO N.º 09/2026 PROCESSO](https://www.diariomunicipal.com.br/amp/materia/D874459B) · 2026-10-13
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO DE RESCISÃO DO CONTRATO](https://www.diariomunicipal.com.br/amp/materia/7A2FA50D) · 2026-10-13
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO DE RESCISÃO DO CONTRATO](https://www.diariomunicipal.com.br/amp/materia/B1F0A135) · 2026-10-13
+- SECRETARIA DE ADMINISTRAÇÃO · [PROCESSO SELETIVO SIMPLIFICADO PSS N° 01/2026](https://www.diariomunicipal.com.br/amp/materia/F59884E3) · 2026-10-13
+- DEPARTAMENTO DE RECURSOS HUMANOS · [PORTARIA Nº 332, DE 09 DE OUTUBRO DE 2026.](https://www.diariomunicipal.com.br/amp/materia/BEF76E9D) · 2026-10-13
+- PREFEITURA MUNICIPAL DE RESERVA DO IGUAÇU · [PROCESSO SELETIVO SIMPLIFICADO Nº 03/2026 EDITAL](https://www.diariomunicipal.com.br/amp/materia/E1F1CF43) · 2026-10-13
+- PREFEITURA MUNICIPAL DE TEIXEIRA SOARES · [EDITAL Nº 02/2026](https://www.diariomunicipal.com.br/amp/materia/428DBD42) · 2026-10-13
+- PREFEITURA MUNICIPAL DE TURVO · [EDITAL DE CONVOCAÇÃO 162-2026](https://www.diariomunicipal.com.br/amp/materia/799CF982) · 2026-10-13
+- MUNICÍPIO DE NOSSA SENHORA DAS GRAÇAS · [EDITAL Nº 07/2026 RESULTADO PARCIAL AVALIAÇÃO CURRICULAR](https://www.diariomunicipal.com.br/amp/materia/772D9164) · 2026-10-13
+- PREFEITURA MUNICIPAL DE AGUDOS DO SUL · [EXTRATO 147/2026 DO TERMO ADITIVO AO CONTRATO DE TRABALHO REGIME ESPECIAL](https://www.diariomunicipal.com.br/amp/materia/7583CEBF) · 2026-10-13
+- GABINETE DO PODER EXECUTIVO MUNICIPAL · [EXTRATO 149/2026 DO TERMO ADITIVO AO CONTRATO DE TRABALHO REGIME ESPECIAL](https://www.diariomunicipal.com.br/amp/materia/FDC21AFE) · 2026-10-13
+- GABINETE DO PODER EXECUTIVO MUNICIPAL · [EXTRATO 150/2026 DO TERMO ADITIVO AO CONTRATO DE TRABALHO REGIME ESPECIAL](https://www.diariomunicipal.com.br/amp/materia/72716055) · 2026-10-13
+- PREFEITURA MUNICIPAL DE CERRO AZUL · [EDITAL Nº 020.005/2026 – CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/FCD74B44) · 2026-10-13
+- CONSAMU · [PROCESSO SELETIVO SIMPLIFICADO Nº 003/2025 PARA CONTRATAÇÃO DE FUNCIONÁRIOS TEMPORÁRIOS PARA O CONSAMU – EDITAL DE ABERTURA Nº 181/2025 DE 14/10/2025 -](https://www.diariomunicipal.com.br/amp/materia/2A9753FE) · 2026-10-13
+- SECRETARIA DE ADMINISTRAÇÃO · [Edital nº. 15/2026, que estabelece instruções destinadas à realização](https://www.diariomunicipal.com.br/amp/materia/39BF51D7) · 2026-10-14
+- SECRETARIA DE GOVERNO · [PROCESSO SELETIVO SIMPLIFICADO – PSS Nº 06/2026](https://www.diariomunicipal.com.br/amp/materia/525AC1A1) · 2026-10-14
+- PREFEITURA MUNICIPAL DE CORONEL VIVIDA · [EDITAL Nº 051/2026 DE 13/10/2026 - PSS 001/2026](https://www.diariomunicipal.com.br/amp/materia/7CA9BF72) · 2026-10-14
+- SECRETARIA DE ADMINISTRAÇÃO E PLANEJAMENTO · [EDITAL Nº 115/2026](https://www.diariomunicipal.com.br/amp/materia/A5701D74) · 2026-10-14
+- SECRETARIA DE ADMINISTRAÇÃO E PLANEJAMENTO · [EDITAL Nº 116/2026](https://www.diariomunicipal.com.br/amp/materia/A8B01E83) · 2026-10-14
+- RECURSOS HUMANOS · [EXTRATO DE ADITIVO DE CONTRATO DE TRABALHO Nº](https://www.diariomunicipal.com.br/amp/materia/093D666D) · 2026-10-14
+- RECURSOS HUMANOS · [EXTRATO DE ADITIVO DE CONTRATO DE TRABALHO Nº](https://www.diariomunicipal.com.br/amp/materia/0B7899D9) · 2026-10-14
+- RECURSOS HUMANOS · [EXTRATO DE ADITIVO DE CONTRATO DE TRABALHO Nº](https://www.diariomunicipal.com.br/amp/materia/A4A759A2) · 2026-10-14
+- RECURSOS HUMANOS · [EXTRATO DE ADITIVO DE CONTRATO DE TRABALHO Nº](https://www.diariomunicipal.com.br/amp/materia/8058C503) · 2026-10-14
+- RECURSOS HUMANOS · [EXTRATO DE ADITIVO DE CONTRATO DE TRABALHO Nº](https://www.diariomunicipal.com.br/amp/materia/6CD10386) · 2026-10-14
+- RECURSOS HUMANOS · [EXTRATO DE ADITIVO DE CONTRATO DE TRABALHO Nº](https://www.diariomunicipal.com.br/amp/materia/C517E856) · 2026-10-14
+- RECURSOS HUMANOS · [EXTRATO DE ADITIVO DE CONTRATO DE TRABALHO Nº](https://www.diariomunicipal.com.br/amp/materia/7732635F) · 2026-10-14
+- RECURSOS HUMANOS · [EXTRATO DE ADITIVO DE CONTRATO DE TRABALHO Nº](https://www.diariomunicipal.com.br/amp/materia/69144237) · 2026-10-14
+- RECURSOS HUMANOS · [EXTRATO DE ADITIVO DE CONTRATO DE TRABALHO Nº](https://www.diariomunicipal.com.br/amp/materia/F57D0D43) · 2026-10-14
+- RECURSOS HUMANOS · [EXTRATO DE ADITIVO DE CONTRATO DE TRABALHO Nº](https://www.diariomunicipal.com.br/amp/materia/AF7D3A82) · 2026-10-14
+- RECURSOS HUMANOS · [EXTRATO DE ADITIVO DE CONTRATO DE TRABALHO Nº](https://www.diariomunicipal.com.br/amp/materia/6243AFF8) · 2026-10-14
+- RECURSOS HUMANOS · [EXTRATO DE ADITIVO DE CONTRATO DE TRABALHO Nº](https://www.diariomunicipal.com.br/amp/materia/829ECB5F) · 2026-10-14
+- RECURSOS HUMANOS · [EXTRATO DE ADITIVO DE CONTRATO DE TRABALHO Nº](https://www.diariomunicipal.com.br/amp/materia/62BACA28) · 2026-10-14
+- PREFEITURA MUNICIPAL DE IVATUBA · [EXTRATO DO CONTRATO DE TRABALHO POR TEMPO](https://www.diariomunicipal.com.br/amp/materia/767DD383) · 2026-10-14
+- SECRETARIA DE ADMINISTRAÇÃO · [EDITAL DE CONVOCAÇÃO](https://www.diariomunicipal.com.br/amp/materia/7B002CC7) · 2026-10-14
+- PREFEITURA MUNICIPAL DE MANDAGUARI · [EDITAL N º. 316/2026 CONVOCAÇÃO - DISPÕE SOBRE A](https://www.diariomunicipal.com.br/amp/materia/0DCA84D1) · 2026-10-14
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [COMUNICADO – CHAMADA AUXILIAR DE CUIDADOR DE](https://www.diariomunicipal.com.br/amp/materia/CDDA279E) · 2026-10-14
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [PROCESSO SELETIVO SIMPLIFICADO Nº. 01/2026](https://www.diariomunicipal.com.br/amp/materia/2F903459) · 2026-10-14
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [COMUNICADO – CHAMADA PSICÓLOGO - PROCESSO](https://www.diariomunicipal.com.br/amp/materia/21A5541B) · 2026-10-14
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [COMUNICADO – CHAMADA TÉCNICO EM ENFERMAGEM](https://www.diariomunicipal.com.br/amp/materia/0211B8D9) · 2026-10-14
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [COMUNICADO – CHAMADA TÉCNICO EM ENFERMAGEM](https://www.diariomunicipal.com.br/amp/materia/BB92D17D) · 2026-10-14
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [termos do Edital nº 001/2026 – Assistência Social, de 04 de março de](https://www.diariomunicipal.com.br/amp/materia/FB736C80) · 2026-10-14
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [termos do Edital nº 001/2026 – Assistência Social, de 04 de março de](https://www.diariomunicipal.com.br/amp/materia/8FBDEA06) · 2026-10-14
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [termos do Edital nº 02/2026 – SECRETARIA MUNICIPAL DE](https://www.diariomunicipal.com.br/amp/materia/D4FDCDF3) · 2026-10-14
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [termos do Edital nº 02/2026 – SECRETARIA MUNICIPAL DE](https://www.diariomunicipal.com.br/amp/materia/8800B143) · 2026-10-14
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [termos do Edital nº 02/2026 – SECRETARIA MUNICIPAL DE](https://www.diariomunicipal.com.br/amp/materia/EA3C8F26) · 2026-10-14
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [termos do Edital nº 02/2026 – SECRETARIA MUNICIPAL DE](https://www.diariomunicipal.com.br/amp/materia/1412620E) · 2026-10-14
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [termos do Edital nº 02/2026 – SECRETARIA MUNICIPAL DE](https://www.diariomunicipal.com.br/amp/materia/8D158B63) · 2026-10-14
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [termos do Edital nº 02/2026 – SECRETARIA MUNICIPAL DE](https://www.diariomunicipal.com.br/amp/materia/B3CEFEDD) · 2026-10-14
+- SECRETARIA MUNICIPAL DE GESTÃO PÚBLICA · [termos do Edital nº 001/2026 – Assistência Social, de 04 de março de](https://www.diariomunicipal.com.br/amp/materia/3302D8C8) · 2026-10-14
+- SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO PÚBLICA · [EXTRATO DO TERMO ADITIVO DE PRORROGAÇÃO DE](https://www.diariomunicipal.com.br/amp/materia/4888F29A) · 2026-10-14
+- PREFEITURA MUNICIPAL DE SANTA FÉ · [SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO](https://www.diariomunicipal.com.br/amp/materia/6675A1D6) · 2026-10-14
+- PODER EXECUTIVO · [PORTARIA N.º 380/2026](https://www.diariomunicipal.com.br/amp/materia/068C0838) · 2026-10-14
+- DEPARTAMENTO DE ADMINISTRAÇÃO FINANÇAS E PLANEJAMENTO · [DECRETO Nº 337 DE 13 DE OUTUBRO DE 2026](https://www.diariomunicipal.com.br/amp/materia/69EC58F2) · 2026-10-14
+- DEPARTAMENTO DE ADMINISTRAÇÃO FINANÇAS E PLANEJAMENTO · [PROCESSO SELETIVO SIMPLIFICADO Nº 002/2026 EDITAL](https://www.diariomunicipal.com.br/amp/materia/4FD55C36) · 2026-10-14
+- DIRETORIA DE LICITAÇÕES E CONTRATOS · [RESUMO DE CONTRATO - PMU](https://www.diariomunicipal.com.br/amp/materia/298E75C3) · 2026-10-14
+
+## Fila sem ficha nem descarte (extração pendente)
+
+- `fila/dou-2026-07-01-ministerio-da-educacao-fundacao-universi-8dd612f8.md`
+- `fila/dou-2026-07-01-ministerio-da-educacao-fundacao-universi-bf890d77.md`
+- `fila/dou-2026-07-01-ministerio-da-educacao-universidade-fede-129116ef.md`
+- `fila/dou-2026-07-01-ministerio-da-educacao-universidade-fede-241e4920.md`
+- `fila/dou-2026-07-01-ministerio-da-educacao-universidade-fede-46c534bb.md`
+- `fila/dou-2026-07-01-ministerio-da-educacao-universidade-fede-6dd602a0.md`
+- `fila/dou-2026-07-01-ministerio-da-educacao-universidade-fede-9bba931f.md`
+- `fila/dou-2026-07-01-ministerio-da-educacao-universidade-fede-b3ecfe70.md`
+- `fila/dou-2026-07-01-ministerio-da-educacao-universidade-fede-e65803ba.md`
+- `fila/dou-2026-07-01-ministerio-da-gestao-e-da-inovacao-em-se-008d4097.md`
+- `fila/dou-2026-07-01-ministerio-da-gestao-e-da-inovacao-em-se-0829e941.md`
+- `fila/dou-2026-07-01-ministerio-da-gestao-e-da-inovacao-em-se-c978f553.md`
+- `fila/dou-2026-07-02-entidades-de-fiscalizacao-do-exercicio-d-66918275.md`
+- `fila/dou-2026-07-02-ministerio-da-educacao-instituto-federal-21884c7c.md`
+- `fila/dou-2026-07-02-ministerio-da-educacao-universidade-fede-19976eb3.md`
+- `fila/dou-2026-07-02-ministerio-da-educacao-universidade-fede-855ab924.md`
+- `fila/dou-2026-07-02-ministerio-da-educacao-universidade-fede-8ba8c0ff.md`
+- `fila/dou-2026-07-02-ministerio-da-educacao-universidade-fede-90b5ea5a.md`
+- `fila/dou-2026-07-02-ministerio-da-educacao-universidade-fede-f31deb95.md`
+- `fila/dou-2026-07-03-entidades-de-fiscalizacao-do-exercicio-d-1f856c21.md`
+- `fila/dou-2026-07-03-ministerio-da-educacao-colegio-pedro-ii-c5e3d501.md`
+- `fila/dou-2026-07-03-ministerio-da-educacao-fundacao-universi-59efbca5.md`
+- `fila/dou-2026-07-03-ministerio-da-educacao-fundacao-universi-c5007610.md`
+- `fila/dou-2026-07-03-ministerio-da-educacao-instituto-federal-404855cc.md`
+- `fila/dou-2026-07-03-ministerio-da-educacao-instituto-federal-b6b33ae5.md`
+- `fila/dou-2026-07-03-ministerio-da-educacao-universidade-fede-0c95646e.md`
+- `fila/dou-2026-07-03-ministerio-da-educacao-universidade-fede-14706bbd.md`
+- `fila/dou-2026-07-03-ministerio-da-educacao-universidade-fede-4c4eb400.md`
+- `fila/dou-2026-07-03-ministerio-da-educacao-universidade-fede-abba866b.md`
+- `fila/dou-2026-07-03-ministerio-da-educacao-universidade-fede-fdb75e3d.md`
+- `fila/dou-2026-07-03-ministerio-da-gestao-e-da-inovacao-em-se-11870e0b.md`
+- `fila/dou-2026-07-03-ministerio-da-gestao-e-da-inovacao-em-se-1eab3662.md`
+- `fila/dou-2026-07-03-ministerio-da-gestao-e-da-inovacao-em-se-2847783e.md`
+- `fila/dou-2026-07-03-ministerio-da-gestao-e-da-inovacao-em-se-43a8246d.md`
+- `fila/dou-2026-07-03-ministerio-da-gestao-e-da-inovacao-em-se-56084e6a.md`
+- `fila/dou-2026-07-03-ministerio-da-gestao-e-da-inovacao-em-se-d07bb961.md`
+- `fila/dou-2026-07-06-ministerio-da-educacao-fundacao-universi-c8e523a4.md`
+- `fila/dou-2026-07-06-ministerio-da-educacao-universidade-fede-50e0f001.md`
+- `fila/dou-2026-07-06-ministerio-do-desenvolvimento-agrario-e-f604cd21.md`
+- `fila/dou-2026-07-07-ministerio-da-defesa-comando-da-marinha-e1c7b476.md`
+- `fila/dou-2026-07-07-ministerio-da-educacao-fundacao-universi-ad402851.md`
+- `fila/dou-2026-07-07-ministerio-da-educacao-universidade-fede-2fd6af50.md`
+- `fila/dou-2026-07-08-ministerio-da-educacao-universidade-fede-429747c8.md`
+- `fila/dou-2026-07-08-ministerio-da-educacao-universidade-fede-aa3fd95c.md`
+- `fila/dou-2026-07-08-ministerio-da-gestao-e-da-inovacao-em-se-9a22e346.md`
+- `fila/dou-2026-07-08-ministerio-da-gestao-e-da-inovacao-em-se-d968cae3.md`
+- `fila/dou-2026-07-09-entidades-de-fiscalizacao-do-exercicio-d-ecb5b39f.md`
+- `fila/dou-2026-07-09-ministerio-da-educacao-universidade-fede-b017222e.md`
+- `fila/dou-2026-07-09-ministerio-da-educacao-universidade-fede-db0e338f.md`
+- `fila/dou-2026-07-09-ministerio-da-gestao-e-da-inovacao-em-se-0d454bf5.md`
+- `fila/dou-2026-07-10-atos-do-poder-executivo-45d74c06.md`
+- `fila/dou-2026-07-10-entidades-de-fiscalizacao-do-exercicio-d-150dee3f.md`
+- `fila/dou-2026-07-10-ministerio-da-educacao-universidade-fede-487c1fb4.md`
+- `fila/dou-2026-07-10-ministerio-da-gestao-e-da-inovacao-em-se-09344614.md`
+- `fila/dou-2026-07-13-entidades-de-fiscalizacao-do-exercicio-d-d2037b32.md`
+- `fila/dou-2026-07-13-ministerio-da-defesa-comando-do-exercito-d8c6bd51.md`
+- `fila/dou-2026-07-13-ministerio-da-educacao-instituto-federal-d2c6d542.md`
+- `fila/dou-2026-07-13-ministerio-da-educacao-instituto-federal-f4581f19.md`
+- `fila/dou-2026-07-13-ministerio-da-educacao-universidade-fede-5f5b2fb3.md`
+- `fila/dou-2026-07-13-ministerio-da-gestao-e-da-inovacao-em-se-e970e3b4.md`
+- `fila/dou-2026-07-14-ministerio-da-defesa-comando-da-marinha-cb2b3dd7.md`
+- `fila/dou-2026-07-14-ministerio-da-defesa-comando-da-marinha-e274b54c.md`
+- `fila/dou-2026-07-14-ministerio-da-educacao-fundacao-universi-713cbd87.md`
+- `fila/dou-2026-07-14-ministerio-da-educacao-universidade-fede-befacdc3.md`
+- `fila/dou-2026-07-14-ministerio-da-gestao-e-da-inovacao-em-se-4737b01d.md`
+- `fila/dou-2026-07-15-ministerio-da-educacao-fundacao-universi-8f8b4317.md`
+- `fila/dou-2026-07-15-ministerio-da-educacao-universidade-fede-0f921e82.md`
+- `fila/dou-2026-07-16-entidades-de-fiscalizacao-do-exercicio-d-963f76e7.md`
+- `fila/dou-2026-07-16-ministerio-da-defesa-comando-da-marinha-f520eecc.md`
+- `fila/dou-2026-07-16-ministerio-da-educacao-instituto-federal-879f31ef.md`
+- `fila/dou-2026-07-16-ministerio-da-educacao-instituto-federal-d8aa012f.md`
+- `fila/dou-2026-07-16-ministerio-da-educacao-universidade-fede-06fce82d.md`
+- `fila/dou-2026-07-16-ministerio-da-educacao-universidade-fede-37041d04.md`
+- `fila/dou-2026-07-17-entidades-de-fiscalizacao-do-exercicio-d-7d379fe2.md`
+- `fila/dou-2026-07-17-entidades-de-fiscalizacao-do-exercicio-d-d93dec64.md`
+- `fila/dou-2026-07-17-ministerio-da-educacao-universidade-fede-7e1d22c7.md`
+- `fila/dou-2026-07-17-ministerio-da-educacao-universidade-fede-8c9f0b95.md`
+- `fila/dou-2026-07-17-ministerio-da-educacao-universidade-fede-970871e2.md`
+- `fila/dou-2026-07-17-ministerio-da-educacao-universidade-fede-ddd8d239.md`
+- `fila/dou-2026-07-17-ministerio-da-educacao-universidade-fede-e45958c0.md`
+- `fila/dou-2026-07-17-ministerio-da-fazenda-agencia-brasileira-1cda0b67.md`
+- `fila/dou-2026-07-17-ministerio-do-desenvolvimento-agrario-e-078ad44e.md`
+- `fila/dou-2026-07-17-poder-judiciario-tribunal-regional-do-tr-4b800992.md`
+- `fila/dou-2026-07-20-ministerio-da-educacao-fundacao-universi-0e3d2b6b.md`
+- `fila/dou-2026-07-20-ministerio-da-educacao-instituto-federal-8d8f0742.md`
+- `fila/dou-2026-07-20-ministerio-da-educacao-universidade-fede-2519fd2e.md`
+- `fila/dou-2026-07-20-ministerio-da-educacao-universidade-fede-261ac27f.md`
+- `fila/dou-2026-07-20-ministerio-da-educacao-universidade-fede-44db2c4a.md`
+- `fila/dou-2026-07-20-ministerio-da-educacao-universidade-fede-73cd33ab.md`
+- `fila/dou-2026-07-20-ministerio-da-educacao-universidade-fede-a2fe03cf.md`
+- `fila/dou-2026-07-20-ministerio-da-educacao-universidade-fede-aaa7de21.md`
+- `fila/dou-2026-07-20-ministerio-da-educacao-universidade-fede-b1b4b466.md`
+- `fila/dou-2026-07-20-ministerio-da-educacao-universidade-fede-c671e391.md`
+- `fila/dou-2026-07-20-ministerio-da-educacao-universidade-fede-e2d41443.md`
+- `fila/dou-2026-07-20-ministerio-da-educacao-universidade-fede-f84ebc5f.md`
+- `fila/dou-2026-07-20-ministerio-da-gestao-e-da-inovacao-em-se-fffae389.md`
+- `fila/dou-2026-07-20-ministerio-das-comunicacoes-telecomunica-b4ec5cd4.md`
+- `fila/dou-2026-07-20-poder-judiciario-tribunal-regional-do-tr-ea16c352.md`
+- `fila/dou-2026-07-21-entidades-de-fiscalizacao-do-exercicio-d-cd63879b.md`
+- `fila/dou-2026-07-21-ministerio-da-defesa-comando-do-exercito-1e5089e9.md`
+- `fila/dou-2026-07-21-ministerio-da-educacao-instituto-federal-2247b190.md`
+- `fila/dou-2026-07-21-ministerio-da-educacao-universidade-fede-a4841ecd.md`
+- `fila/dou-2026-07-21-poder-judiciario-tribunal-regional-feder-32ff186a.md`
+- `fila/dou-2026-07-22-entidades-de-fiscalizacao-do-exercicio-d-8c2c42b1.md`
+- `fila/dou-2026-07-22-ministerio-da-educacao-instituto-federal-0f0a5f91.md`
+- `fila/dou-2026-07-22-ministerio-da-educacao-instituto-federal-1be41bd4.md`
+- `fila/dou-2026-07-22-ministerio-da-educacao-universidade-fede-00f844fc.md`
+- `fila/dou-2026-07-22-ministerio-da-educacao-universidade-fede-2e9bb86f.md`
+- `fila/dou-2026-07-23-ministerio-da-educacao-instituto-federal-d7710f81.md`
+- `fila/dou-2026-07-23-ministerio-da-educacao-instituto-federal-dd134e12.md`
+- `fila/dou-2026-07-23-ministerio-da-educacao-universidade-fede-15a39411.md`
+- `fila/dou-2026-07-23-ministerio-da-educacao-universidade-fede-24cad9bd.md`
+- `fila/dou-2026-07-23-ministerio-publico-da-uniao-ministerio-p-013c72f8.md`
+- `fila/dou-2026-07-24-entidades-de-fiscalizacao-do-exercicio-d-2a878e82.md`
+- `fila/dou-2026-07-24-entidades-de-fiscalizacao-do-exercicio-d-69a2142d.md`
+- `fila/dou-2026-07-24-poder-legislativo-camara-dos-deputados-d-9cd7ed82.md`
+- `fila/dou-2026-07-27-entidades-de-fiscalizacao-do-exercicio-d-926be0d7.md`
+- `fila/dou-2026-07-27-ministerio-da-educacao-instituto-federal-17f503ae.md`
+- `fila/dou-2026-07-27-ministerio-da-educacao-instituto-federal-999a4414.md`
+- `fila/dou-2026-07-27-ministerio-da-educacao-universidade-fede-8ee1a0f4.md`
+- `fila/dou-2026-07-28-ministerio-da-educacao-fundacao-universi-08f6a12a.md`
+- `fila/dou-2026-07-28-ministerio-da-educacao-universidade-fede-5ce7f56c.md`
+- `fila/dou-2026-07-29-entidades-de-fiscalizacao-do-exercicio-d-1b3619e1.md`
+- `fila/dou-2026-07-29-ministerio-da-defesa-comando-da-marinha-18415d2f.md`
+- `fila/dou-2026-07-29-ministerio-da-educacao-universidade-fede-6b0b93fd.md`
+- `fila/dou-2026-07-29-ministerio-da-gestao-e-da-inovacao-em-se-0bfe0937.md`
+- `fila/dou-2026-07-30-ministerio-da-defesa-comando-da-marinha-4c66e8db.md`
+- `fila/dou-2026-07-30-ministerio-da-educacao-universidade-fede-6ae31457.md`
+- `fila/dou-2026-07-30-ministerio-da-educacao-universidade-fede-f4c42889.md`
+- `fila/dou-2026-07-30-ministerio-do-desenvolvimento-agrario-e-0d98e107.md`
+- `fila/dou-2026-07-31-entidades-de-fiscalizacao-do-exercicio-d-28239e83.md`
+- `fila/dou-2026-07-31-entidades-de-fiscalizacao-do-exercicio-d-b11f7e48.md`
+- `fila/dou-2026-07-31-ministerio-da-educacao-colegio-pedro-ii-b10ad189.md`
+- `fila/dou-2026-07-31-ministerio-da-educacao-instituto-federal-a2f8a4e5.md`
+- `fila/dou-2026-07-31-ministerio-da-educacao-instituto-federal-ed3c27d0.md`
+- `fila/dou-2026-07-31-ministerio-da-educacao-universidade-fede-9e6d3c17.md`
+- `fila/dou-2026-07-31-ministerio-da-saude-empresa-brasileira-d-6fb57ce0.md`
+- `fila/dou-2026-08-03-ministerio-da-defesa-comando-da-marinha-925343df.md`
+- `fila/dou-2026-08-03-ministerio-da-educacao-instituto-federal-5aed9b06.md`
+- `fila/dou-2026-08-03-ministerio-da-educacao-universidade-fede-0dae7268.md`
+- `fila/dou-2026-08-03-ministerio-da-educacao-universidade-fede-74565a12.md`
+- `fila/dou-2026-08-03-ministerio-da-educacao-universidade-fede-9a9b4ffc.md`
+- `fila/dou-2026-08-03-ministerio-da-educacao-universidade-fede-d461a987.md`
+- `fila/dou-2026-08-04-poder-legislativo-camara-dos-deputados-d-0be514a7.md`
+- `fila/dou-2026-08-05-ministerio-da-defesa-comando-da-marinha-2ee10aa2.md`
+- `fila/dou-2026-08-05-ministerio-da-defesa-comando-da-marinha-d54733b6.md`
+- `fila/dou-2026-08-06-ministerio-da-educacao-instituto-federal-35daafe1.md`
+- `fila/dou-2026-08-06-ministerio-da-educacao-instituto-federal-f64ff1c9.md`
+- `fila/dou-2026-08-06-ministerio-da-educacao-universidade-fede-51581a4d.md`
+- `fila/dou-2026-08-06-ministerio-da-educacao-universidade-fede-f7cd60a3.md`
+- `fila/dou-2026-08-06-ministerio-da-educacao-universidade-fede-fb47a970.md`
+- `fila/dou-2026-08-06-ministerio-da-fazenda-agencia-brasileira-abf2e9f2.md`
+- `fila/dou-2026-08-07-entidades-de-fiscalizacao-do-exercicio-d-427281fc.md`
+- `fila/dou-2026-08-07-entidades-de-fiscalizacao-do-exercicio-d-a6e636f6.md`
+- `fila/dou-2026-08-07-ministerio-da-agricultura-e-pecuaria-sec-b9342c05.md`
+- `fila/dou-2026-08-07-ministerio-da-educacao-fundacao-universi-498e0264.md`
+- `fila/dou-2026-08-07-ministerio-da-educacao-instituto-federal-2d54480e.md`
+- `fila/dou-2026-08-07-ministerio-da-educacao-universidade-fede-0e6514fb.md`
+- `fila/dou-2026-08-07-ministerio-da-educacao-universidade-fede-1dd2550b.md`
+- `fila/dou-2026-08-07-ministerio-da-educacao-universidade-fede-8869249d.md`
+- `fila/dou-2026-08-10-entidades-de-fiscalizacao-do-exercicio-d-3b0b9e22.md`
+- `fila/dou-2026-08-10-ministerio-da-defesa-comando-do-exercito-14cdb8eb.md`
+- `fila/dou-2026-08-10-ministerio-da-defesa-comando-do-exercito-369e813b.md`
+- `fila/dou-2026-08-10-ministerio-da-educacao-instituto-federal-5ee25ede.md`
+- `fila/dou-2026-08-10-ministerio-da-educacao-universidade-fede-cef0cfb7.md`
+- `fila/dou-2026-08-10-ministerio-da-educacao-universidade-fede-dc46d2a2.md`
+- `fila/dou-2026-08-10-ministerio-da-educacao-universidade-fede-f2c1b3c4.md`
+- `fila/dou-2026-08-10-ministerio-da-educacao-universidade-fede-f2f4e1f0.md`
+- `fila/dou-2026-08-10-ministerio-da-gestao-e-da-inovacao-em-se-29b98716.md`
+- `fila/dou-2026-08-11-ministerio-da-educacao-instituto-federal-887f6a15.md`
+- `fila/dou-2026-08-11-ministerio-da-educacao-universidade-fede-afe5ad38.md`
+- `fila/dou-2026-08-11-ministerio-da-gestao-e-da-inovacao-em-se-d33bfe9c.md`
+- `fila/dou-2026-08-12-entidades-de-fiscalizacao-do-exercicio-d-7f815da2.md`
+- `fila/dou-2026-08-12-ministerio-da-educacao-fundacao-universi-7a8c4baf.md`
+- `fila/dou-2026-08-12-ministerio-da-gestao-e-da-inovacao-em-se-ba02dde3.md`
+- `fila/dou-2026-08-13-ministerio-da-gestao-e-da-inovacao-em-se-a1b2e97c.md`
+- `fila/dou-2026-08-14-entidades-de-fiscalizacao-do-exercicio-d-b777ced6.md`
+- `fila/dou-2026-08-14-entidades-de-fiscalizacao-do-exercicio-d-e1896334.md`
+- `fila/dou-2026-08-14-ministerio-da-defesa-comando-da-marinha-384576b9.md`
+- `fila/dou-2026-08-14-ministerio-da-defesa-comando-do-exercito-69571843.md`
+- `fila/dou-2026-08-14-ministerio-da-defesa-comando-do-exercito-7d6af072.md`
+- `fila/dou-2026-08-14-ministerio-da-defesa-comando-do-exercito-819969cb.md`
+- `fila/dou-2026-08-14-ministerio-da-educacao-instituto-federal-5cc8c5f7.md`
+- `fila/dou-2026-08-14-ministerio-da-educacao-instituto-federal-78d49343.md`
+- `fila/dou-2026-08-14-ministerio-da-educacao-instituto-federal-a97d6faf.md`
+- `fila/dou-2026-08-14-ministerio-da-educacao-instituto-federal-cca354f2.md`
+- `fila/dou-2026-08-14-ministerio-da-educacao-universidade-fede-e0a19d8d.md`
+- `fila/dou-2026-08-14-ministerio-da-fazenda-agencia-brasileira-b9711461.md`
+- `fila/dou-2026-08-14-ministerio-da-gestao-e-da-inovacao-em-se-2b39df8e.md`
+- `fila/dou-2026-08-14-ministerio-da-gestao-e-da-inovacao-em-se-74953e84.md`
+- `fila/dou-2026-08-14-ministerio-da-gestao-e-da-inovacao-em-se-88c7a4b4.md`
+- `fila/dou-2026-08-14-ministerio-da-gestao-e-da-inovacao-em-se-919894a6.md`
+- `fila/dou-2026-08-14-ministerio-da-gestao-e-da-inovacao-em-se-b606e550.md`
+- `fila/dou-2026-08-14-ministerio-da-gestao-e-da-inovacao-em-se-f84714c4.md`
+- `fila/dou-2026-08-17-entidades-de-fiscalizacao-do-exercicio-d-4210eb98.md`
+- `fila/dou-2026-08-17-ministerio-da-educacao-universidade-fede-6a74802d.md`
+- `fila/dou-2026-08-17-ministerio-da-educacao-universidade-fede-7c731bb1.md`
+- `fila/dou-2026-08-17-ministerio-da-justica-e-seguranca-public-264d7fbb.md`
+- `fila/dou-2026-08-17-ministerio-do-desenvolvimento-agrario-e-640ae044.md`
+- `fila/dou-2026-08-18-entidades-de-fiscalizacao-do-exercicio-d-ff20c049.md`
+- `fila/dou-2026-08-18-ministerio-da-educacao-universidade-fede-808ca8a2.md`
+- `fila/dou-2026-08-18-poder-judiciario-tribunal-regional-do-tr-a6affdd8.md`
+- `fila/dou-2026-08-18-poder-judiciario-tribunal-regional-feder-976a6585.md`
+- `fila/dou-2026-08-19-entidades-de-fiscalizacao-do-exercicio-d-7499d877.md`
+- `fila/dou-2026-08-19-ministerio-da-educacao-centro-federal-de-9a168c03.md`
+- `fila/dou-2026-08-19-ministerio-da-educacao-instituto-federal-b5e6453c.md`
+- `fila/dou-2026-08-19-ministerio-da-educacao-instituto-federal-f73a494a.md`
+- `fila/dou-2026-08-19-ministerio-da-educacao-universidade-fede-447f59fb.md`
+- `fila/dou-2026-08-19-ministerio-da-educacao-universidade-fede-8ecf9908.md`
+- `fila/dou-2026-08-19-ministerio-da-educacao-universidade-fede-9fcdc05d.md`
+- `fila/dou-2026-08-20-ministerio-da-educacao-instituto-federal-0e776e06.md`
+- `fila/dou-2026-08-20-ministerio-da-educacao-instituto-federal-e2508be5.md`
+- `fila/dou-2026-08-20-ministerio-da-educacao-instituto-federal-f7be53c0.md`
+- `fila/dou-2026-08-20-ministerio-da-educacao-universidade-fede-63a1bf47.md`
+- `fila/dou-2026-08-21-entidades-de-fiscalizacao-do-exercicio-d-b0e7e175.md`
+- `fila/dou-2026-08-21-entidades-de-fiscalizacao-do-exercicio-d-b7b7532d.md`
+- `fila/dou-2026-08-21-ministerio-da-educacao-fundacao-universi-833c38ff.md`
+- `fila/dou-2026-08-21-ministerio-da-educacao-fundacao-universi-d102675d.md`
+- `fila/dou-2026-08-21-ministerio-da-educacao-instituto-federal-ad0b2ac1.md`
+- `fila/dou-2026-08-24-ministerio-da-educacao-instituto-federal-55234723.md`
+- `fila/dou-2026-08-24-ministerio-da-educacao-universidade-fede-207c554e.md`
+- `fila/dou-2026-08-24-ministerio-da-educacao-universidade-fede-668c0d30.md`
+- `fila/dou-2026-08-24-ministerio-da-educacao-universidade-fede-7ecfc232.md`
+- `fila/dou-2026-08-24-ministerio-da-educacao-universidade-fede-b31bf742.md`
+- `fila/dou-2026-08-24-ministerio-da-educacao-universidade-fede-b5d48700.md`
+- `fila/dou-2026-08-25-entidades-de-fiscalizacao-do-exercicio-d-ed2a4822.md`
+- `fila/dou-2026-08-25-ministerio-da-educacao-universidade-fede-05cc0601.md`
+- `fila/dou-2026-08-25-ministerio-da-educacao-universidade-fede-2719f3f3.md`
+- `fila/dou-2026-08-25-ministerio-da-saude-empresa-brasileira-d-3a6a4e87.md`
+- `fila/dou-2026-08-26-ministerio-da-educacao-fundacao-universi-9831d2a5.md`
+- `fila/dou-2026-08-26-ministerio-da-educacao-universidade-fede-238fb78d.md`
+- `fila/dou-2026-08-26-ministerio-da-educacao-universidade-fede-ee7183d4.md`
+- `fila/dou-2026-08-26-ministerio-da-saude-empresa-brasileira-d-00479d6d.md`
+- `fila/dou-2026-08-27-ministerio-da-educacao-fundacao-universi-f02a7518.md`
+- `fila/dou-2026-08-27-poder-judiciario-tribunal-regional-feder-6c7b6082.md`
+- `fila/dou-2026-08-28-ministerio-da-defesa-comando-da-marinha-12d47a55.md`
+- `fila/dou-2026-08-28-ministerio-da-defesa-comando-da-marinha-2f9455b3.md`
+- `fila/dou-2026-08-28-ministerio-da-defesa-comando-da-marinha-5b469ffc.md`
+- `fila/dou-2026-08-28-ministerio-da-defesa-comando-da-marinha-956cfb83.md`
+- `fila/dou-2026-08-28-ministerio-da-defesa-comando-da-marinha-e0f42c68.md`
+- `fila/dou-2026-08-28-ministerio-da-defesa-comando-da-marinha-e3423c56.md`
+- `fila/dou-2026-08-28-ministerio-da-educacao-universidade-fede-a7784e98.md`
+- `fila/dou-2026-08-28-ministerio-da-gestao-e-da-inovacao-em-se-01c49263.md`
+- `fila/dou-2026-08-28-poder-judiciario-conselho-nacional-de-ju-9a99d2a4.md`
+- `fila/dou-2026-08-31-ministerio-da-defesa-comando-da-marinha-648b9a4c.md`
+- `fila/dou-2026-08-31-ministerio-da-educacao-universidade-fede-3c3069f2.md`
+- `fila/dou-2026-09-01-poder-judiciario-tribunal-regional-do-tr-6111c4d8.md`
+- `fila/dou-2026-09-01-poder-judiciario-tribunal-regional-feder-3922c211.md`
+- `fila/dou-2026-09-02-entidades-de-fiscalizacao-do-exercicio-d-38006577.md`
+- `fila/dou-2026-09-02-ministerio-da-defesa-comando-da-marinha-713998d0.md`
+- `fila/dou-2026-09-02-ministerio-da-educacao-fundacao-universi-33a0ea9b.md`
+- `fila/dou-2026-09-02-ministerio-da-educacao-instituto-federal-a7fb132c.md`
+- `fila/dou-2026-09-03-entidades-de-fiscalizacao-do-exercicio-d-6e9cf85f.md`
+- `fila/dou-2026-09-03-ministerio-da-ciencia-tecnologia-e-inova-5e146ab2.md`
+- `fila/dou-2026-09-03-ministerio-da-educacao-instituto-federal-cb9e25c8.md`
+- `fila/dou-2026-09-04-entidades-de-fiscalizacao-do-exercicio-d-e01a7c91.md`
+- `fila/dou-2026-09-04-ministerio-da-defesa-comando-da-marinha-62faee39.md`
+- `fila/dou-2026-09-04-ministerio-da-educacao-instituto-federal-44e9d03f.md`
+- `fila/dou-2026-09-04-ministerio-da-educacao-instituto-federal-ad2c440c.md`
+- `fila/dou-2026-09-04-ministerio-da-gestao-e-da-inovacao-em-se-6b413aa9.md`
+- `fila/dou-2026-09-08-ministerio-da-educacao-instituto-federal-74a2425b.md`
+- `fila/dou-2026-09-08-ministerio-da-educacao-instituto-federal-987e06fa.md`
+- `fila/dou-2026-09-08-ministerio-da-educacao-instituto-federal-b57e1e03.md`
+- `fila/dou-2026-09-08-ministerio-da-educacao-universidade-fede-1f57a309.md`
+- `fila/dou-2026-09-08-ministerio-da-educacao-universidade-fede-5e863c4f.md`
+- `fila/dou-2026-09-08-ministerio-da-educacao-universidade-fede-fbb491e3.md`
+- `fila/dou-2026-09-09-ministerio-da-educacao-instituto-federal-4eff1500.md`
+- `fila/dou-2026-09-10-ministerio-da-defesa-comando-da-marinha-b443fb89.md`
+- `fila/dou-2026-09-10-ministerio-da-educacao-fundacao-universi-5baa644c.md`
+- `fila/dou-2026-09-10-ministerio-da-educacao-instituto-federal-41d5f033.md`
+- `fila/dou-2026-09-10-ministerio-da-educacao-universidade-fede-95d73dae.md`
+- `fila/dou-2026-09-10-ministerio-do-desenvolvimento-agrario-e-6ff694b0.md`
+- `fila/dou-2026-09-11-ministerio-da-educacao-fundacao-universi-facd804b.md`
+- `fila/dou-2026-09-11-ministerio-da-educacao-universidade-fede-319ffc0d.md`
+- `fila/dou-2026-09-11-ministerio-da-educacao-universidade-fede-55811aaf.md`
+- `fila/dou-2026-09-11-ministerio-da-educacao-universidade-fede-89be7d42.md`
+- `fila/dou-2026-09-11-ministerio-da-educacao-universidade-fede-a0e60f4b.md`
+- `fila/dou-2026-09-11-ministerio-da-educacao-universidade-fede-d3fa09ea.md`
+- `fila/dou-2026-09-11-ministerio-da-educacao-universidade-fede-db09cf3d.md`
+- `fila/dou-2026-09-11-ministerio-da-educacao-universidade-fede-e0bb41f6.md`
+- `fila/dou-2026-09-11-ministerio-da-educacao-universidade-fede-e2bc3914.md`
+- `fila/dou-2026-09-11-ministerio-da-educacao-universidade-fede-feca574b.md`
+- `fila/dou-2026-09-11-poder-judiciario-tribunal-regional-do-tr-8619840a.md`
+- `fila/dou-2026-09-14-ministerio-da-educacao-fundacao-universi-6dd6bc51.md`
+- `fila/dou-2026-09-14-ministerio-da-educacao-fundacao-universi-fd6f544a.md`
+- `fila/dou-2026-09-14-ministerio-da-educacao-universidade-fede-0e93395d.md`
+- `fila/dou-2026-09-14-ministerio-da-educacao-universidade-fede-1f377390.md`
+- `fila/dou-2026-09-14-ministerio-da-educacao-universidade-fede-633793c8.md`
+- `fila/dou-2026-09-14-ministerio-da-educacao-universidade-fede-752850ea.md`
+- `fila/dou-2026-09-14-ministerio-da-educacao-universidade-fede-9bb0d097.md`
+- `fila/dou-2026-09-14-ministerio-da-educacao-universidade-fede-f10f4f89.md`
+- `fila/dou-2026-09-14-ministerio-da-gestao-e-da-inovacao-em-se-9669fd67.md`
+- `fila/dou-2026-09-14-poder-judiciario-tribunal-regional-do-tr-087258f5.md`
+- `fila/dou-2026-09-15-ministerio-da-educacao-fundacao-universi-c44b856e.md`
+- `fila/dou-2026-09-15-ministerio-da-gestao-e-da-inovacao-em-se-c1440242.md`
+- `fila/dou-2026-09-15-poder-judiciario-tribunal-regional-do-tr-6d2fcb3e.md`
+- `fila/dou-2026-09-16-ministerio-da-educacao-universidade-fede-1a3c7e44.md`
+- `fila/dou-2026-09-16-ministerio-de-portos-e-aeroportos-autori-14280d59.md`
+- `fila/dou-2026-09-16-ministerio-do-desenvolvimento-agrario-e-c60edeec.md`
+- `fila/dou-2026-09-17-ministerio-da-educacao-fundacao-universi-432c89ad.md`
+- `fila/dou-2026-09-17-ministerio-da-educacao-fundacao-universi-aa85aa51.md`
+- `fila/dou-2026-09-17-ministerio-da-educacao-instituto-federal-53370dd2.md`
+- `fila/dou-2026-09-17-ministerio-da-educacao-instituto-federal-5af2ae66.md`
+- `fila/dou-2026-09-17-ministerio-da-educacao-instituto-federal-d7c8d34d.md`
+- `fila/dou-2026-09-17-ministerio-da-educacao-universidade-fede-5a31d876.md`
+- `fila/dou-2026-09-17-ministerio-da-educacao-universidade-fede-7c47961a.md`
+- `fila/dou-2026-09-17-poder-judiciario-tribunal-regional-feder-4e314ab7.md`
+- `fila/dou-2026-09-18-entidades-de-fiscalizacao-do-exercicio-d-15e53fd4.md`
+- `fila/dou-2026-09-18-entidades-de-fiscalizacao-do-exercicio-d-277bd099.md`
+- `fila/dou-2026-09-18-entidades-de-fiscalizacao-do-exercicio-d-a4781a9e.md`
+- `fila/dou-2026-09-18-entidades-de-fiscalizacao-do-exercicio-d-e196af07.md`
+- `fila/dou-2026-09-18-ministerio-da-educacao-universidade-fede-eb65c3e6.md`
+- `fila/dou-2026-09-18-ministerio-de-portos-e-aeroportos-compan-cbe5a97d.md`
+- `fila/dou-2026-09-18-poder-judiciario-tribunal-regional-feder-9692c5f8.md`
+- `fila/dou-2026-09-21-entidades-de-fiscalizacao-do-exercicio-d-09f0c6d7.md`
+- `fila/dou-2026-09-21-entidades-de-fiscalizacao-do-exercicio-d-5c2e19f6.md`
+- `fila/dou-2026-09-21-ministerio-da-defesa-comando-da-marinha-3c2653d4.md`
+- `fila/dou-2026-09-21-ministerio-da-educacao-instituto-federal-ce1b6a25.md`
+- `fila/dou-2026-09-21-ministerio-da-educacao-universidade-fede-2a23e723.md`
+- `fila/dou-2026-09-21-ministerio-da-educacao-universidade-fede-33ccb3c6.md`
+- `fila/dou-2026-09-21-ministerio-da-educacao-universidade-fede-4759d63f.md`
+- `fila/dou-2026-09-21-ministerio-da-educacao-universidade-fede-5d678b9c.md`
+- `fila/dou-2026-09-22-ministerio-da-educacao-universidade-fede-4a9a5a2f.md`
+- `fila/dou-2026-09-22-ministerio-da-educacao-universidade-fede-60536e3e.md`
+- `fila/dou-2026-09-22-ministerio-da-educacao-universidade-fede-c2e7c232.md`
+- `fila/dou-2026-09-22-poder-judiciario-tribunal-regional-do-tr-ca5bd90e.md`
+- `fila/dou-2026-09-23-ministerio-da-educacao-instituto-federal-83e3e43d.md`
+- `fila/dou-2026-09-23-ministerio-da-educacao-universidade-fede-a33963ab.md`
+- `fila/dou-2026-09-23-ministerio-da-educacao-universidade-fede-eb6ffb42.md`
+- `fila/dou-2026-09-23-ministerio-do-meio-ambiente-e-mudanca-do-735bf480.md`
+- `fila/dou-2026-09-23-ministerio-dos-transportes-valec-engenha-0282a8c4.md`
+- `fila/dou-2026-09-24-ministerio-da-educacao-instituto-federal-f76021f5.md`
+- `fila/dou-2026-09-24-ministerio-da-educacao-universidade-fede-02d875e3.md`
+- `fila/dou-2026-09-24-ministerio-da-educacao-universidade-fede-f2aa1180.md`
+- `fila/dou-2026-09-25-ministerio-da-educacao-instituto-federal-11c751eb.md`
+- `fila/dou-2026-09-25-ministerio-da-educacao-instituto-federal-29b761ce.md`
+- `fila/dou-2026-09-25-ministerio-da-educacao-instituto-federal-8d5aefad.md`
+- `fila/dou-2026-09-25-ministerio-da-educacao-universidade-fede-6c00c127.md`
+- `fila/dou-2026-09-25-poder-judiciario-tribunal-regional-do-tr-1e35bf3d.md`
+- `fila/dou-2026-09-28-ministerio-da-defesa-comando-da-marinha-90b467b0.md`
+- `fila/dou-2026-09-28-ministerio-da-educacao-fundacao-universi-25080ead.md`
+- `fila/dou-2026-09-28-ministerio-da-educacao-fundacao-universi-2dccc4c4.md`
+- `fila/dou-2026-09-28-ministerio-da-educacao-instituto-federal-e69b5720.md`
+- `fila/dou-2026-09-28-ministerio-da-educacao-universidade-fede-a689889a.md`
+- `fila/dou-2026-09-28-ministerio-da-educacao-universidade-fede-b70c740b.md`
+- `fila/dou-2026-09-28-ministerio-da-educacao-universidade-fede-bea83f3b.md`
+- `fila/dou-2026-09-29-ministerio-da-educacao-instituto-federal-2000ea2d.md`
+- `fila/dou-2026-09-29-ministerio-da-educacao-instituto-federal-811bcc08.md`
+- `fila/dou-2026-09-29-ministerio-da-educacao-instituto-federal-f646dfa3.md`
+- `fila/dou-2026-09-29-ministerio-da-educacao-universidade-fede-20e1c82d.md`
+- `fila/dou-2026-09-29-ministerio-da-educacao-universidade-fede-24b0d361.md`
+- `fila/dou-2026-09-29-ministerio-da-educacao-universidade-fede-54b9116b.md`
+- `fila/dou-2026-09-29-ministerio-da-educacao-universidade-fede-5e26ba45.md`
+- `fila/dou-2026-09-29-ministerio-da-educacao-universidade-fede-a031c3d5.md`
+- `fila/dou-2026-09-29-ministerio-da-saude-empresa-brasileira-d-7763d58c.md`
+- `fila/dou-2026-09-30-entidades-de-fiscalizacao-do-exercicio-d-9da85fa5.md`
+- `fila/dou-2026-09-30-ministerio-da-educacao-universidade-fede-41629ae7.md`
+- `fila/dou-2026-09-30-ministerio-da-educacao-universidade-fede-5eb66f1e.md`
+- `fila/dou-2026-09-30-ministerio-da-educacao-universidade-fede-e48d7b52.md`
+- `fila/dou-2026-09-30-poder-legislativo-camara-dos-deputados-d-e9f5ceba.md`
+- `fila/dou-2026-10-01-entidades-de-fiscalizacao-do-exercicio-d-6d826fd2.md`
+- `fila/dou-2026-10-01-ministerio-da-defesa-comando-da-marinha-3740d306.md`
+- `fila/dou-2026-10-02-entidades-de-fiscalizacao-do-exercicio-d-72088a76.md`
+- `fila/dou-2026-10-02-entidades-de-fiscalizacao-do-exercicio-d-f6a19ecb.md`
+- `fila/dou-2026-10-02-ministerio-da-educacao-instituto-federal-dba4970f.md`
+- `fila/dou-2026-10-02-ministerio-da-educacao-instituto-federal-eec8eb49.md`
+- `fila/dou-2026-10-02-ministerio-da-educacao-universidade-fede-668dd475.md`
+- `fila/dou-2026-10-02-ministerio-da-educacao-universidade-fede-ea46252b.md`
+- `fila/dou-2026-10-02-poder-judiciario-tribunal-regional-do-tr-738a4969.md`
+- `fila/dou-2026-10-05-entidades-de-fiscalizacao-do-exercicio-d-669ebb49.md`
+- `fila/dou-2026-10-05-ministerio-da-educacao-instituto-federal-beacc093.md`
+- `fila/dou-2026-10-05-ministerio-da-educacao-universidade-fede-bf6acfa0.md`
+- `fila/dou-2026-10-05-ministerio-da-educacao-universidade-fede-fcc6a88e.md`
+- `fila/dou-2026-10-05-ministerio-de-portos-e-aeroportos-autori-fec30053.md`
+- `fila/dou-2026-10-05-poder-judiciario-tribunal-regional-feder-e2969c5d.md`
+- `fila/dou-2026-10-05-poder-legislativo-camara-dos-deputados-d-c4e1c1e1.md`
+- `fila/dou-2026-10-06-entidades-de-fiscalizacao-do-exercicio-d-f443f3e3.md`
+- `fila/dou-2026-10-06-entidades-de-fiscalizacao-do-exercicio-d-fec4884f.md`
+- `fila/dou-2026-10-06-ministerio-da-educacao-universidade-fede-16c1fa69.md`
+- `fila/dou-2026-10-07-entidades-de-fiscalizacao-do-exercicio-d-da179342.md`
+- `fila/dou-2026-10-07-ministerio-da-educacao-fundacao-universi-4eef003b.md`
+- `fila/dou-2026-10-07-ministerio-da-educacao-instituto-federal-4a4884e1.md`
+- `fila/dou-2026-10-07-ministerio-da-educacao-instituto-federal-b335f44c.md`
+- `fila/dou-2026-10-08-ministerio-da-educacao-universidade-fede-7b76a59f.md`
+- `fila/dou-2026-10-08-ministerio-da-educacao-universidade-fede-efe3d16c.md`
+- `fila/dou-2026-10-08-poder-judiciario-tribunal-regional-do-tr-2c28e9ac.md`
+- `fila/dou-2026-10-09-controladoria-geral-da-uniao-secretaria-132bdbd3.md`
+- `fila/dou-2026-10-09-entidades-de-fiscalizacao-do-exercicio-d-3ddd5e6a.md`
+- `fila/dou-2026-10-09-ministerio-da-educacao-instituto-federal-556b58f1.md`
+- `fila/dou-2026-10-09-ministerio-da-educacao-instituto-federal-7d80bdde.md`
+- `fila/dou-2026-10-09-ministerio-da-educacao-universidade-fede-08767b8e.md`
+- `fila/dou-2026-10-09-ministerio-da-educacao-universidade-fede-224428c1.md`
+- `fila/dou-2026-10-09-ministerio-da-educacao-universidade-fede-28de3955.md`
+- `fila/dou-2026-10-09-ministerio-da-educacao-universidade-fede-5c59eb4e.md`
+- `fila/dou-2026-10-09-ministerio-da-educacao-universidade-fede-5e35cfac.md`
+- `fila/dou-2026-10-09-ministerio-da-educacao-universidade-fede-c5be5721.md`
+- `fila/dou-2026-10-13-ministerio-da-defesa-comando-da-marinha-8a76d8e8.md`
+- `fila/dou-2026-10-13-ministerio-da-educacao-instituto-federal-402ee035.md`
+- `fila/dou-2026-10-13-ministerio-da-educacao-instituto-federal-a6447775.md`
+- `fila/dou-2026-10-13-ministerio-da-educacao-instituto-federal-b6a7255f.md`
+- `fila/dou-2026-10-13-ministerio-da-educacao-instituto-federal-bb5b3a57.md`
+- `fila/dou-2026-10-13-ministerio-da-educacao-instituto-federal-e5b15caf.md`
+- `fila/dou-2026-10-13-ministerio-da-educacao-instituto-federal-ede69ddd.md`
+- `fila/dou-2026-10-13-ministerio-da-gestao-e-da-inovacao-em-se-2472fe69.md`
+- `fila/dou-2026-10-13-ministerio-da-saude-agencia-nacional-de-9a386b16.md`
+- `fila/dou-2026-10-14-entidades-de-fiscalizacao-do-exercicio-d-0b3fc0c2.md`
+- `fila/dou-2026-10-14-ministerio-da-educacao-instituto-federal-00a304e7.md`
+- `fila/dou-2026-10-14-ministerio-da-educacao-instituto-federal-b5dcd9d0.md`
+- `fila/dou-2026-10-14-ministerio-da-educacao-instituto-federal-cb3756db.md`
+- `fila/dou-2026-10-14-ministerio-da-educacao-universidade-fede-422e4024.md`
+- `fila/dou-2026-10-14-ministerio-da-educacao-universidade-fede-766a4166.md`
+- `fila/dou-2026-10-14-ministerio-de-minas-e-energia-51248254.md`
+- `fila/dou-2026-10-14-ministerio-do-desenvolvimento-agrario-e-b86cc113.md`
+
+## Descartados na extração
+
+- `amp-pr-2026-07-01-prefeitura-municipal-de-flor-da-serra-do-73c9f57b.md`: resultado do Concurso 001/2026 (Edital 024/2026), não é abertura
+- `amp-pr-2026-07-01-prefeitura-municipal-de-pato-branco-07e487ec.md`: edital posterior do Concurso 002/2026 (abertura em 15/04/2026): resultados
+- `amp-pr-2026-07-07-prefeitura-municipal-de-pato-branco-42bf9bae.md`: edital posterior do Concurso 002/2026 (abertura em 15/04/2026): resultados
+- `amp-pr-2026-07-10-prefeitura-municipal-de-pato-branco-f1bba242.md`: edital posterior do Concurso 002/2026 (abertura em 15/04/2026): resultados
+- `amp-pr-2026-07-14-prefeitura-municipal-de-pato-branco-f3db06ee.md`: edital posterior do Concurso 002/2026 (abertura em 15/04/2026): resultados
+- `amp-pr-2026-07-24-prefeitura-municipal-de-pato-branco-a436e6d4.md`: edital posterior do Concurso 002/2026 (abertura em 15/04/2026): resultados
+- `amp-pr-2026-07-07-prefeitura-municipal-de-ipora-9e89ca0b.md`: Iporã: gabarito preliminar, não é abertura
+- `amp-pr-2026-07-14-governo-municipal-gabinete-do-prefeito-9aef5e2e.md`: Iporã: resultado preliminar, não é abertura
+- `amp-pr-2026-07-14-prefeitura-municipal-de-ipora-c79bc75b.md`: Iporã: gabarito oficial, não é abertura
+- `amp-pr-2026-07-17-governo-municipal-gabinete-do-prefeito-1d70dcb1.md`: Iporã: sorteio do tema da prova prática, não é abertura
+- `amp-pr-2026-07-17-prefeitura-municipal-de-ipora-7ab799ec.md`: Iporã: convocação para prova prática, não é abertura
+- `amp-pr-2026-07-17-prefeitura-municipal-de-ipora-bcf6caf3.md`: Iporã: resultado preliminar pós-recurso, não é abertura
+- `amp-pr-2026-07-23-prefeitura-municipal-de-ipora-a52e8968.md`: Iporã: resultado da prova prática, não é abertura
+- `amp-pr-2026-07-27-prefeitura-municipal-de-ipora-d1733663.md`: Iporã: devolução de taxas duplicadas, não é abertura
+- `amp-pr-2026-07-14-prefeitura-municipal-de-flor-da-serra-do-3b370e03.md`: processo seletivo de estagiários, não é concurso público
+- `amp-pr-2026-07-16-prefeitura-municipal-de-barbosa-ferraz-9de55135.md`: processo seletivo de estágio, não é concurso público
+- `amp-pr-2026-08-06-gabinete-do-prefeito-f918589a.md`: chamamento do Concurso 001/2024, não é abertura
+- `amp-pr-2026-08-05-secretaria-municipal-de-administracao-e-f1b089c9.md`: Quitandinha: recursos contra o edital de abertura (abertura em 29/07/2026 já na fila)
+- `amp-pr-2026-08-20-secretaria-municipal-de-administracao-e-ea4b7107.md`: Quitandinha: resultado de isenções (edital posterior ao de abertura)
+- `amp-pr-2026-08-27-prefeitura-municipal-de-quitandinha-4483c1f8.md`: Quitandinha: edital posterior ao de abertura
+- `amp-pr-2026-08-28-secretaria-municipal-de-administracao-e-a02a41e7.md`: Quitandinha: retificação do resultado de isenções
+- `amp-pr-2026-09-04-secretaria-municipal-de-administracao-e-a1ac023a.md`: Quitandinha: homologação preliminar das inscrições
+- `amp-pr-2026-09-10-secretaria-municipal-de-administracao-e-24d7efac.md`: Quitandinha: edital posterior (inscrições homologadas)
+- `amp-pr-2026-09-15-secretaria-municipal-de-administracao-e-83607806.md`: Quitandinha: edital posterior (inscrições homologadas)
+- `amp-pr-2026-09-22-secretaria-municipal-de-administracao-e-ce391c2a.md`: Quitandinha: gabarito preliminar
+- `amp-pr-2026-10-02-prefeitura-municipal-de-quitandinha-527e9a5e.md`: Quitandinha: edital posterior (resultados)
+- `amp-pr-2026-10-02-prefeitura-municipal-de-quitandinha-e2a20065.md`: Quitandinha: edital posterior (resultados)
+- `amp-pr-2026-10-05-prefeitura-municipal-de-quitandinha-fda119b4.md`: Quitandinha: edital posterior (resultados)
+- `amp-pr-2026-10-14-prefeitura-municipal-de-quitandinha-18c53189.md`: Quitandinha: edital posterior (resultados)
+- `amp-pr-2026-10-14-secretaria-municipal-de-administracao-e-ec38f27e.md`: Quitandinha: edital posterior (resultado da prova objetiva)
+- `amp-pr-2026-08-11-secretaria-municipal-de-administracao-3a78bc41.md`: Umuarama: isenções do Concurso 001/2026 (abertura em 21/06/2026, inscrições já homologadas)
+- `amp-pr-2026-08-17-secretaria-municipal-de-administracao-4c8a0ed1.md`: Umuarama: resultado das isenções (inscrições já encerradas)
+- `amp-pr-2026-08-25-secretaria-municipal-de-administracao-78275638.md`: Umuarama: homologação preliminar das inscrições
+- `amp-pr-2026-09-01-secretaria-municipal-de-administracao-417dbe2a.md`: Umuarama: edital posterior à homologação das inscrições
+- `amp-pr-2026-09-01-secretaria-municipal-de-administracao-c8e4ab90.md`: Umuarama: homologação das inscrições
+- `amp-pr-2026-09-10-prefeitura-municipal-de-umuarama-924f4338.md`: Umuarama: gabarito preliminar
+- `amp-pr-2026-09-18-secretaria-municipal-de-administracao-a7532726.md`: Umuarama: convocação para teste de aptidão física
+- `amp-pr-2026-09-18-secretaria-municipal-de-administracao-ac0ba933.md`: Umuarama: gabarito da prova objetiva
+- `amp-pr-2026-09-18-secretaria-municipal-de-administracao-b70500fe.md`: Umuarama: resultado da prova objetiva
+- `amp-pr-2026-09-30-secretaria-municipal-de-administracao-0522e394.md`: Umuarama: resultado do teste de aptidão física
+- `amp-pr-2026-10-08-secretaria-municipal-de-administracao-93e8a1fc.md`: Umuarama: edital posterior (resultados)
+- `amp-pr-2026-07-14-secretaria-municipal-de-administracao-9910f8e6.md`: General Carneiro: inscrições de 20/07 a 11/08/2026, já encerradas
+- `amp-pr-2026-07-22-prefeitura-municipal-de-rancho-alegre-d-ebb380e6.md`: Rancho Alegre D'Oeste: inscrições de 29/07 a 19/08/2026, já encerradas
+- `amp-pr-2026-07-24-gabinete-654bd579.md`: Matinhos (Edital 109/2026): inscrições de 28/07 a 27/08/2026, já encerradas
+- `amp-pr-2026-07-24-gabinete-7483a43d.md`: Matinhos (Edital 108/2026): inscrições de 28/07 a 27/08/2026, já encerradas
+- `amp-pr-2026-07-24-prefeitura-municipal-de-matinhos-a9716a3a.md`: Matinhos (Edital 107/2026): inscrições de 28/07 a 27/08/2026, já encerradas
+- `amp-pr-2026-07-28-prefeitura-municipal-de-matinhos-60607a75.md`: Matinhos (Edital 110/2026): inscrições de 01/08 a 01/09/2026, já encerradas
+- `amp-pr-2026-07-29-departamento-de-recursos-humanos-166891d6.md`: Contenda (Edital 01.002/2026): inscrições de 03/08 a 31/08/2026, já encerradas
+- `amp-pr-2026-07-29-departamento-de-recursos-humanos-ba5ed598.md`: Contenda (Edital 01.001/2026): inscrições de 03/08 a 31/08/2026, já encerradas
+- `amp-pr-2026-07-29-prefeitura-municipal-de-quitandinha-aa3d28b2.md`: Quitandinha (Concurso 001/2026): inscrições de 05/08 a 01/09/2026, já encerradas
+- `amp-pr-2026-07-31-instituto-de-previdencia-dos-servidores-1b64c575.md`: Matinhos Prev (Edital 001/2026): inscrições de 05/08 a 03/09/2026, já encerradas
+- `amp-pr-2026-08-06-prefeitura-municipal-de-coronel-vivida-63fb2305.md`: Coronel Vivida (Concurso 001/2026): inscrições de 11/08 a 08/10/2026, já encerradas
+- `amp-pr-2026-07-02-secretaria-municipal-de-administracao-103d2b35.md`: retificação de classificação final por decisão judicial (concurso já homologado)
+- `amp-pr-2026-07-03-gabinete-43a03439.md`: Lapa: retificação de decreto de nomeação do Concurso 01/2024 (homologado)
+- `amp-pr-2026-07-03-governo-municipal-gabinete-do-prefeito-c4520663.md`: Iporã: retificação do edital do Concurso 001/2026, já em fase de resultados (gabarito e provas em julho)
+- `amp-pr-2026-07-06-secretaria-de-administracao-9086f099.md`: retificação de convocação para heteroidentificação do Concurso 01/2024 (encerrado)
+- `amp-pr-2026-07-08-secretaria-municipal-de-assistencia-soci-b2d3f74e.md`: errata de ata do Conselho de Assistência Social de Campo Magro, não é concurso
+- `amp-pr-2026-07-15-gabinete-do-prefeito-dd271ea1.md`: Itaperuçu (Edital 02-2026, emprego público): inscrições já encerradas; homologação publicada em 08/10/2026
+- `amp-pr-2026-07-15-prefeitura-municipal-de-itaperucu-d03603da.md`: Itaperuçu (Edital 01-2026): inscrições já encerradas; resultado definitivo e homologação publicados em 08/10/2026
+- `amp-pr-2026-07-16-secretaria-municipal-de-recursos-humanos-b088236c.md`: Almirante Tamandaré: retificação de convocação do concurso de 2022
+- `amp-pr-2026-07-17-prefeitura-municipal-de-guaira-58d70828.md`: Guaíra (Concurso 001/2026): retificação de carga horária; prova já aplicada (gabaritos em agosto de 2026)
+- `amp-pr-2026-07-22-prefeitura-municipal-de-general-carneiro-bf00021c.md`: General Carneiro: retificação do edital cujas inscrições encerraram em 11/08/2026
+- `amp-pr-2026-07-23-prefeitura-municipal-de-mandirituba-82f79457.md`: Mandirituba: retificação de edital de eliminação do Concurso 01/2025
+- `amp-pr-2026-07-24-gabinete-do-prefeito-87c373fe.md`: Itaperuçu: resultado preliminar de isenções (concurso já homologado)
+- `amp-pr-2026-07-24-prefeitura-municipal-de-itaperucu-5ccb36a7.md`: Itaperuçu: resultado preliminar de isenções (concurso já homologado)
+- `amp-pr-2026-07-27-gabinete-do-prefeito-0b2a7864.md`: Itaperuçu: resultado preliminar de isenções (concurso já homologado)
+- `amp-pr-2026-07-27-prefeitura-municipal-de-itaperucu-553a1198.md`: Itaperuçu: resultado preliminar de isenções (concurso já homologado)
+- `amp-pr-2026-07-28-departamento-de-recursos-humanos-7ec167f1.md`: Rolândia: retificação de data de perícia médica de convocação
+- `amp-pr-2026-07-28-departamento-de-recursos-humanos-937c3e8a.md`: Rolândia: retificação de classificação final
+- `amp-pr-2026-07-29-gabinete-do-prefeito-1dc46d29.md`: Itaperuçu: resultado de isenções (concurso já homologado)
+- `amp-pr-2026-07-29-prefeitura-municipal-de-itaperucu-ba48ee7c.md`: Itaperuçu: resultado de isenções (concurso já homologado)
+- `amp-pr-2026-07-31-prefeitura-municipal-de-piraquara-8052bdc2.md`: Piraquara: resultado final retificado do Concurso 001/2026
+- `amp-pr-2026-07-31-secretaria-de-administracao-4dec6849.md`: Piraquara: resultado final retificado do Concurso 001/2026
+- `amp-pr-2026-07-31-secretaria-de-administracao-9434af27.md`: Piraquara: resultado final retificado do Concurso 001/2026
+- `amp-pr-2026-08-03-gabinete-03142ff0.md`: Matinhos: retificação de conteúdo programático de concurso com inscrições encerradas em 27/08/2026
+- `amp-pr-2026-08-06-prefeitura-municipal-de-ipora-4bbc6fc3.md`: Iporã: retificação de homologação do resultado final
+- `amp-pr-2026-08-06-prefeitura-municipal-de-paula-freitas-f9202d4c.md`: Paula Freitas: retificação de classificação final
+- `amp-pr-2026-08-06-secretaria-municipal-de-administracao-67259d5b.md`: General Carneiro: retificação do edital cujas inscrições encerraram em 11/08/2026
+- `amp-pr-2026-08-07-departamento-de-recursos-humanos-1a3337db.md`: Contenda: adiamento de prova de concurso com inscrições encerradas em 31/08/2026
+- `amp-pr-2026-08-10-administrativo-recursos-humanos-1383d55a.md`: Planalto: retificação de edital de convocação
+- `amp-pr-2026-08-10-departamento-de-recursos-humanos-58782d39.md`: Contenda: adiamento de prova de concurso com inscrições encerradas em 31/08/2026
+- `amp-pr-2026-08-10-projur-3c3e2b4b.md`: Guaíra (Concurso 001/2026): retificação de cronograma de gabaritos; prova já aplicada
+- `amp-pr-2026-08-11-secretaria-de-administracao-204815fe.md`: Matinhos: retificação de cronograma de concurso com inscrições encerradas
+- `amp-pr-2026-08-13-prefeitura-municipal-de-campina-grande-d-2a5f3bf7.md`: Campina Grande do Sul: convocação para prova prática retificada
+- `amp-pr-2026-08-13-secretaria-municipal-de-administracao-3eeb5bd5.md`: General Carneiro: retificação de edital posterior de concurso com inscrições encerradas
+- `amp-pr-2026-08-17-gabinete-do-prefeito-a2d0588f.md`: Itaperuçu: inscrições deferidas (concurso já homologado)
+- `amp-pr-2026-08-18-departamento-de-recursos-humanos-d0d770e6.md`: Rolândia: retificação de edital de convocação
+- `amp-pr-2026-08-18-prefeitura-municipal-de-rio-branco-do-su-a505f9b6.md`: Rio Branco do Sul: resultado final retificado e republicado
+- `amp-pr-2026-08-18-secretaria-municipal-de-compras-licitaco-242cb30c.md`: Goioerê: retificação de termo aditivo de contrato, sem abertura de concurso
+- `amp-pr-2026-08-26-gabinete-51697f20.md`: Matinhos: retificação de requisito de cargo em concurso com inscrições encerradas
+- `amp-pr-2026-08-26-prefeitura-municipal-de-pontal-do-parana-1dd2e5af.md`: Pontal do Paraná: retificação de edital do Concurso 002/2024
+- `amp-pr-2026-08-28-gabinete-do-prefeito-1be476d1.md`: Itaperuçu: inscrições deferidas após recurso (concurso já homologado)
+- `amp-pr-2026-08-28-prefeitura-municipal-de-quitandinha-cb5fe62d.md`: Quitandinha: retificação do resultado de isenções; inscrições encerradas em 01/09/2026
+- `amp-pr-2026-09-09-departamento-de-recursos-humanos-e-adm-8003fd19.md`: Salgado Filho: errata de edital de convocação do Concurso 01/2024
+- `amp-pr-2026-09-10-secretaria-municipal-de-administracao-8facaa06.md`: Antonina: errata de convocação do concurso de 2022
+- `amp-pr-2026-09-14-departamento-de-recursos-humanos-703d0c77.md`: Rolândia: retificação de convocação
+- `amp-pr-2026-09-16-prefeitura-municipal-de-querencia-do-nor-77bd8709.md`: Querência do Norte: retificação de portaria que nomeia a comissão organizadora; não é autorização do concurso nem contratação de banca (regra 7)
+- `amp-pr-2026-09-21-departamento-municipal-de-administracao-416408ae.md`: Prado Ferreira: errata de convocação
+- `amp-pr-2026-09-28-departamento-de-gestao-de-pessoas-ad75a04d.md`: Coronel Vivida: retificação de decreto; concurso com inscrições encerradas em 08/10/2026
+- `amp-pr-2026-10-01-gabinete-do-prefeito-49799b6b.md`: Itaperuçu: gabarito definitivo e resultado preliminar
+- `amp-pr-2026-10-05-secretaria-municipal-de-recursos-humanos-723b7190.md`: Almirante Tamandaré: errata de convocação do Concurso 003/2023
+- `amp-pr-2026-10-08-prefeitura-municipal-de-itaperucu-982faef3.md`: Itaperuçu: resultado definitivo e homologação
+- `amp-pr-2026-10-13-prefeitura-municipal-de-itambaraca-f26f2300.md`: Itambaracá: errata de lei complementar que cria cargos; não autoriza concurso (regra 7)
+- `amp-pr-2026-10-13-secretaria-municipal-de-administracao-6a12a1a9.md`: Pontal do Paraná: retificação de convocação do Concurso 001/2023
+- `amp-pr-2026-07-02-prefeitura-municipal-de-rio-negro-d235675d.md`: Câmara de Rio Negro: concorrência ainda em andamento; não há contratação de banca nem autorização (regra 7)
+- `amp-pr-2026-07-08-recursos-humanos-3c24197f.md`: Boa Vista da Aparecida: decreto autoriza chamar excedente do Concurso 01/2025; não é concurso novo
+- `amp-pr-2026-07-16-secretaria-municipal-de-administracao-8ddc1841.md`: Cerro Azul: extrato de contrato assinado em 22/01/2026 com vigência de 6 meses, já vencida; nenhum edital na varredura
+- `amp-pr-2026-07-16-setor-de-compras-65ed0679.md`: Campina Grande do Sul: termo aditivo de contrato de 2025; o concurso já está em andamento (convocação para prova prática em agosto)
+- `amp-pr-2026-07-17-secretaria-municipal-de-administracao-4ce8a945.md`: Colombo: termo aditivo que só prorroga contrato anterior (105/2026); não indica concurso novo
+- `amp-pr-2026-07-28-licitacoes-276ec0a2.md`: Terra Boa: termo aditivo de contrato anterior (58/2026); não indica concurso novo
+- `amp-pr-2026-08-03-governo-municipal-gabinete-do-prefeito-2c33c2d4.md`: Iporã (Prefeitura): termo aditivo do contrato do Concurso 001/2026, já em fase de resultados
+- `amp-pr-2026-08-18-secretaria-municipal-de-administracao-3f374a76.md`: Umuarama: termo de referência genérico, sem contratação de banca
+- `amp-pr-2026-08-24-secretaria-municipal-de-administracao-73fe8e75.md`: Colombo: aditivo de contrato de seguro, não é concurso
+- `amp-pr-2026-10-05-prefeitura-municipal-de-terra-rica-3d79760b.md`: Terra Rica: portaria só designa a comissão de contratação; ainda não há banca contratada (regra 7)
+- `dou-2026-07-27-ministerio-da-educacao-universidade-fede-b522738b.md`: UNILA (Edital 204/2026): inscrições de 30/07 a 13/09/2026, já encerradas
+- `dou-2026-07-30-ministerio-da-educacao-universidade-fede-812afb6e.md`: UNILA: retificação do Edital 204/2026, com inscrições encerradas em 13/09/2026
+- `dou-2026-07-30-ministerio-da-educacao-universidade-fede-32590f99.md`: UNILA: retificação de conteúdo específico do concurso do Edital 204/2026 (inscrições encerradas)
+- `dou-2026-07-30-ministerio-da-educacao-universidade-fede-e3be1a4f.md`: UNILA: retificação de conteúdo específico do concurso do Edital 204/2026 (inscrições encerradas)
+- `dou-2026-07-07-entidades-de-fiscalizacao-do-exercicio-d-fecedfcf.md`: CRM-PR: retificação de convocação do Concurso 01/2025
+- `dou-2026-08-14-entidades-de-fiscalizacao-do-exercicio-d-f1ef5a70.md`: CRM-PR: retificação de convocação do Concurso 01/2025
+- `dou-2026-08-24-entidades-de-fiscalizacao-do-exercicio-d-db7f6965.md`: CRM-PR: termo aditivo de contrato de 2022 (reajuste de valores); não indica concurso novo
+- `dou-2026-09-08-entidades-de-fiscalizacao-do-exercicio-d-29c8335e.md`: CRM-PR: retificação do Edital 1/2026, cujas inscrições foram de 04/09 a 01/10/2026 (já encerradas)
+- `dou-2026-07-27-poder-judiciario-tribunal-regional-feder-21f1bde9.md`: TRF da 1ª Região: retificação de resultado de etapa da magistratura; não é abertura
+- `amp-pr-2026-10-06-gabinete-do-prefeito-1c39159b.md`: Campo Magro: decreto que prorroga a validade do Concurso 03/2024; não é abertura
+- `dou-2026-09-01-entidades-de-fiscalizacao-do-exercicio-d-0205d73c.md`: CRM-PR (Edital 1/2026): inscrições de 04/09 a 01/10/2026, já encerradas; provas em 18/10/2026
+

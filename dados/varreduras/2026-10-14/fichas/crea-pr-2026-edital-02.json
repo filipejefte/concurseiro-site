@@ -1,0 +1,146 @@
+{
+  "ato": "dou-2026-09-09-entidades-de-fiscalizacao-do-exercicio-d-96dd943f.md",
+  "atos_extras": [],
+  "trechos": {
+    "salario": "AGENTE ADMINISTRATIVO [...] Salário de R$ 3.115,75 (40h/s) e R$ 2.336,80 (30h/s) [...] AGENTE PROFISSIONAL DO SISTEMA (NS) [...] Salário mínimo igual à 8,5 salários-mínimos nacional de ingresso [...] AGENTE PROFISSIONAL - Sede - Curitiba; Formação e vagas: Contador CR, Advogado 1 + CR, Analista de Informação CR [...] Salário R$ 7.234,12 [...] Arquiteto e Urbanista CR [...] Salário mínimo igual à 8,5 salários-mínimos nacional de ingresso",
+    "inscricao.inicio": "Inscrições de 10/09/2026 a 15/10/2026 pelo site www.institutounifil.com.br",
+    "inscricao.fim": "Inscrições de 10/09/2026 a 15/10/2026 pelo site www.institutounifil.com.br",
+    "prova_objetiva": "Data provável de realização da prova: 22/11/2026",
+    "taxa": "Taxa de Inscrição: R$ 60,00 (Agente Administrativo) [...] Taxa de Inscrição: R$ 100,00 (Agente Profissional)",
+    "banca": "por intermédio da Organizadora Instituto Filadélfia de Londrina - UniFil",
+    "cidade": "AGENTE ADMINISTRATIVO - Sede e Inspetoria de Curitiba: 5 vagas [...] Pato Branco 1 vaga; Local de prova: Curitiba, Cascavel, Apucarana, Londrina, Maringá, Ponta Grossa, Guarapuava e Pato Branco",
+    "edital": "EDITAL nº 2, DE 8 de setembro de 2026 Concurso Público Para seleção de candidatos para cadastro de reserva O CONSELHO REGIONAL DE ENGENHARIA E AGRONOMIA DO PARANÁ - CREA/PR"
+  },
+  "concurso": {
+    "ficticio": false,
+    "esfera": "federal",
+    "uf": "PR",
+    "nacional": false,
+    "abrangencia": null,
+    "isencao_ate": null,
+    "prova_objetiva": "2026-11-22",
+    "local_prova": "Curitiba, Cascavel, Apucarana, Londrina, Maringá, Ponta Grossa, Guarapuava e Pato Branco (PR)",
+    "isencao_regras": null,
+    "regime": "CLT",
+    "beneficios": [
+      {
+        "nome": "Benefícios conforme o acordo coletivo (ACT) vigente",
+        "valor": null
+      }
+    ],
+    "o_que_levar": null,
+    "conferencia": null,
+    "primeira_varredura": null,
+    "ultima_alteracao": null,
+    "id": "crea-pr-2026-edital-02",
+    "orgao": "Conselho Regional de Engenharia e Agronomia do Paraná (CREA-PR)",
+    "municipio_ibge": "4106902",
+    "cidade": "Curitiba",
+    "area": "Administrativa",
+    "banca": {
+      "nome": "Instituto Filadélfia de Londrina (UniFil)",
+      "url": "https://www.institutounifil.com.br"
+    },
+    "inscricao": {
+      "inicio": "2026-09-10",
+      "fim": "2026-10-15",
+      "url": "https://www.institutounifil.com.br"
+    },
+    "taxa": {
+      "min": 60.0,
+      "max": 100.0
+    },
+    "cargos": [
+      {
+        "nome": "Agente Profissional – Advogado",
+        "vagas": 1,
+        "cadastro_reserva": true,
+        "salario": 7234.12,
+        "escolaridade": "Superior",
+        "requisitos": "Ensino superior completo; lotação na Sede, em Curitiba",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Agente Profissional – Contador",
+        "vagas": 0,
+        "cadastro_reserva": true,
+        "salario": 7234.12,
+        "escolaridade": "Superior",
+        "requisitos": "Ensino superior completo; lotação na Sede, em Curitiba",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Agente Profissional – Analista de Informação",
+        "vagas": 0,
+        "cadastro_reserva": true,
+        "salario": 7234.12,
+        "escolaridade": "Superior",
+        "requisitos": "Ensino superior completo; lotação na Sede, em Curitiba",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Agente Profissional do Sistema (engenharias e agronomia)",
+        "vagas": 0,
+        "cadastro_reserva": true,
+        "salario": null,
+        "escolaridade": "Superior",
+        "requisitos": "Ensino superior completo nas modalidades Engenharia Elétrica, Civil, Mecânica/Metalúrgica, Química, Geologia e Minas, Agrimensura, Agronomia e Florestal; abrangência estadual; salário de 8,5 salários-mínimos nacionais de ingresso, conforme o edital",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Agente Profissional – Arquiteto e Urbanista",
+        "vagas": 0,
+        "cadastro_reserva": true,
+        "salario": null,
+        "escolaridade": "Superior",
+        "requisitos": "Ensino superior completo; lotação na Sede, em Curitiba; salário de 8,5 salários-mínimos nacionais de ingresso, conforme o edital",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Agente Administrativo (40 h)",
+        "vagas": 6,
+        "cadastro_reserva": true,
+        "salario": 3115.75,
+        "escolaridade": "Médio",
+        "requisitos": "Ensino médio completo; 5 vagas na Sede e Inspetoria de Curitiba e 1 em Pato Branco; cadastro reserva em Cascavel, Apucarana, Londrina, Maringá, Ponta Grossa e Guarapuava",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Agente Administrativo (30 h)",
+        "vagas": null,
+        "cadastro_reserva": true,
+        "salario": 2336.8,
+        "escolaridade": "Médio",
+        "requisitos": "Ensino médio completo",
+        "jornada_horas": 30,
+        "materias": []
+      }
+    ],
+    "documentos": [
+      {
+        "tipo": "edital",
+        "titulo": "Edital nº 2/2026 – Concurso Público (aviso de abertura)",
+        "numero": "2/2026",
+        "url": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=09/09/2026&jornal=530&pagina=117",
+        "publicado_em": "2026-09-09",
+        "fonte": "DOU",
+        "resumo": null
+      },
+      {
+        "tipo": "retificacao",
+        "titulo": "Edital nº 3/2026 – Retificação do Edital nº 2/2026",
+        "numero": "3/2026",
+        "url": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=29/09/2026&jornal=530&pagina=140",
+        "publicado_em": "2026-09-29",
+        "fonte": "DOU",
+        "resumo": "Convocação para as provas e cartão de local passam para a data provável de 11/11/2026"
+      }
+    ]
+  }
+}
