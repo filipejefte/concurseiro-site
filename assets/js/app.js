@@ -7,7 +7,9 @@
   - Os textos de exibição ("até R$ 9.312,40", "189 vagas + CR", "sex, 20/11") saem dos números e das datas.
   - A situação vem calculada da publicação; aqui só se refaz a contagem e se marca "Encerrado" pela data de hoje.
   - A cidade escolhida fica neste aparelho (localStorage). O GPS é opcional e só acha o município mais próximo.
-  - Não coleta dado pessoal: o "Avise-me" leva ao canal do Telegram, ou diz "Alertas em breve".
+  - O perfil (escolaridade, curso técnico, formação) também fica só no aparelho: com ele, o card mostra o salário
+    do cargo que a pessoa pode fazer, e não o maior do edital.
+  - Não coleta dado pessoal: o "Avise-me" leva ao canal do WhatsApp ou do Telegram, ou diz "Alertas em breve".
 */
 (function () {
   'use strict';
@@ -24,6 +26,10 @@
 
   var CHAVE_CIDADE = 'concurseiro:cidade';
   var CIDADE = cidadeGuardada();   // município escolhido pela pessoa, ou null
+  var CHAVE_PERFIL = 'concurseiro:perfil';
+  var ESTUDO = ['Fundamental', 'Médio', 'Superior'];   // "até onde estudou"; técnico é marcado à parte
+  var NOME_NIVEL = { 'Fundamental': 'Ensino fundamental completo', 'Médio': 'Ensino médio completo', 'Técnico': 'Curso técnico completo', 'Superior': 'Curso superior completo' };
+  var PERFIL = perfilGuardado();   // { escolaridade, tecnico, formacao }, ou null
   var ORIGEM = CIDADE;             // de onde se medem as distâncias (a listagem aceita ?perto=)
   var HOJE = hojeISO();
   var DADOS = [];                  // concursos prontos para exibir (preparar), montados no início
@@ -99,6 +105,48 @@
     return { municipio: melhor, km: menor };
   }
 
+  /* ---------- Perfil: escolaridade e formação, guardados só neste aparelho ---------- */
+
+  function perfilGuardado() {
+    try {
+      var p = JSON.parse(localStorage.getItem(CHAVE_PERFIL));
+      return p && ESTUDO.indexOf(p.escolaridade) >= 0 ? p : null;
+    } catch (e) { return null; }
+  }
+  function guardarPerfil(p) {
+    try {
+      if (p) localStorage.setItem(CHAVE_PERFIL, JSON.stringify(p)); else localStorage.removeItem(CHAVE_PERFIL);
+      return true;
+    } catch (e) { return false; }
+  }
+  // Pode fazer tudo até onde estudou; cargo de nível técnico só com curso técnico.
+  function niveisDoPerfil() {
+    var n = ESTUDO.slice(0, ESTUDO.indexOf(PERFIL.escolaridade) + 1);
+    return PERFIL.tecnico ? n.concat('Técnico') : n;
+  }
+  // Formação digitada contra o nome e os requisitos do cargo, pelas 5 primeiras letras de cada palavra
+  // ("pedagogia" acha "pedagogo", "medicina" acha "médico"). Cargo de fundamental ou médio não pede formação.
+  // ponytail: radical erra sinônimo ("advocacia" x "direito"); a lista "Este concurso é pra você?" da ficha é a conferência.
+  var GENERICAS = ['tecnico', 'tecnica', 'curso', 'bacharel', 'bacharelado', 'licenciatura', 'graduacao', 'superior', 'completo'];
+  function radicais(t) {
+    return normalizar(t).split(/[^a-z]+/)
+      .filter(function (w) { return w.length >= 4 && GENERICAS.indexOf(w) < 0; })
+      .map(function (w) { return w.slice(0, 5); });
+  }
+  function serveFormacao(k) {
+    var r = radicais(PERFIL.formacao);
+    if (!r.length || (k.escolaridade !== 'Superior' && k.escolaridade !== 'Técnico')) return true;
+    var alvo = normalizar(k.nome + ' ' + (k.requisitos || ''));
+    return alvo.indexOf('qualquer') >= 0 || r.some(function (x) { return alvo.indexOf(x) >= 0; });
+  }
+  function cargosDoPerfil(cargos) {
+    var n = niveisDoPerfil();
+    return cargos.filter(function (k) { return n.indexOf(k.escolaridade) >= 0 && serveFormacao(k); });
+  }
+  function resumoPerfil() {
+    return [NOME_NIVEL[PERFIL.escolaridade], PERFIL.tecnico ? 'curso técnico' : null, PERFIL.formacao || null].filter(Boolean).join(' · ');
+  }
+
   /* ---------- Do dado ao texto de exibição ---------- */
 
   function situacaoHoje(c) {
@@ -154,12 +202,17 @@
       .sort(function (a, b) { return (b.publicado_em || '').localeCompare(a.publicado_em || ''); })[0] || null;
   }
 
+  // Com perfil, o card fala do cargo da pessoa: nome, salário e ordem por salário saem só dos cargos que ela pode fazer.
   function preparar(c) {
     var cargos = porSalario(c.cargos);
-    var principal = cargos[0];
-    var salarios = c.cargos.map(function (k) { return k.salario; }).filter(existe);
+    var meus = PERFIL ? cargosDoPerfil(cargos) : cargos;
+    var paraVoce = PERFIL ? meus.length > 0 : null;   // null = sem perfil
+    var base = paraVoce === false ? cargos : meus;
+    var principal = base[0];
+    var salarios = base.map(function (k) { return k.salario; }).filter(existe);
     var max = salarios.length ? Math.max.apply(null, salarios) : null;
     var varios = salarios.some(function (v) { return v !== max; });
+    var outros = paraVoce ? meus.length - 1 : cargos.length - 1;
     var niveis = NIVEIS.filter(function (n) { return c.cargos.some(function (k) { return k.escolaridade === n; }); });
     var s = situacaoHoje(c);
     var insc = c.inscricao;
@@ -171,9 +224,11 @@
     return {
       id: c.id, orgao: c.orgao, cidade: c.cidade, uf: c.uf, area: c.area,
       nacional: c.nacional || c.uf !== 'PR',
-      cargo: principal ? principal.nome + (cargos.length > 1 ? ' e mais ' + contar(cargos.length - 1, 'cargo', 'cargos') : '') : 'Cargos não informados',
+      cargo: principal ? principal.nome + (outros > 0 ? ' e mais ' + contar(outros, 'cargo', 'cargos') + (paraVoce ? ' para você' : '') : '') : 'Cargos não informados',
       salario: max === null ? null : (varios ? 'até ' : '') + dinheiro(max),
-      valor: max || 0,
+      valor: paraVoce === false ? 0 : (max || 0),
+      paraVoce: paraVoce,
+      principal: principal || null,
       beneficio: b ? '+ ' + minuscula(b.nome) : '',
       vagas: textoVagas(c.cargos),
       escolaridade: textoEscolaridade(niveis),
@@ -206,7 +261,11 @@
     abaixo: '<svg class="pt-i" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>',
     mira: '<svg class="pt-i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="7"/><circle cx="12" cy="12" r="2.5"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/></svg>',
     fechar: '<svg class="pt-i" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>',
-    aviao: '<svg class="pt-i" viewBox="0 0 24 24" aria-hidden="true"><path d="m22 2-7 20-4-9-9-4z"/><path d="M22 2 11 13"/></svg>'
+    aviao: '<svg class="pt-i" viewBox="0 0 24 24" aria-hidden="true"><path d="m22 2-7 20-4-9-9-4z"/><path d="M22 2 11 13"/></svg>',
+    conversa: '<svg class="pt-i" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20.5 5.4 16A8.5 8.5 0 1 1 8.6 19z"/></svg>',
+    agenda: '<svg class="pt-i pt-linha-icone" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2"/><path d="M8 3v4M16 3v4M3.5 10h17"/></svg>',
+    certo: '<svg class="pt-i2" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m8.5 12.5 2.5 2.5 4.5-5"/></svg>',
+    errado: '<svg class="pt-i2" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m9 9 6 6M15 9l-6 6"/></svg>'
   };
 
   /* ---------- Regras de lista ---------- */
@@ -290,9 +349,11 @@
 
   function cardHTML(c) {
     var s = c.situacao;
+    // O grifo verde só vai no salário que interessa: sem perfil, o do edital; com perfil, só o do cargo da pessoa.
     var salario = c.salario === null ? NI
-      : (s === 'encerrado' ? '<span>' + esc(c.salario) + '</span>' : '<span class="cc-grifo">' + esc(c.salario) + '</span>');
-    var beneficio = c.beneficio ? '<small>' + esc(c.beneficio) + '</small>' : '';
+      : (s === 'encerrado' || c.paraVoce === false ? '<span>' + esc(c.salario) + '</span>' : '<span class="cc-grifo">' + esc(c.salario) + '</span>');
+    var nota = c.paraVoce === false ? 'nenhum cargo para o seu perfil' : c.beneficio;
+    var beneficio = nota ? '<small>' + esc(nota) + '</small>' : '';
     var rotuloPrazo = s === 'previsto' ? 'Inscrições:' : (s === 'encerrado' ? 'Encerrou em' : 'Inscrições até');
     var corPrazo = s === 'breve' ? 'var(--prazo)' : (s === 'aberto' ? 'var(--tinta)' : 'var(--tinta-suave)');
     var dados = [c.vagas, c.escolaridade, c.jornada].filter(Boolean).map(function (t) { return '<li>' + esc(t) + '</li>'; }).join('');
@@ -301,7 +362,7 @@
         '<div class="cc-card-topo">' + seloHTML(c) +
           '<span class="cc-card-local">' + ICONE.pino + esc(localDoCard(c)) + '</span></div>' +
         '<div><h3 class="cc-card-orgao">' + esc(c.orgao) + '</h3><p class="cc-card-cargo">' + esc(c.cargo) + '</p></div>' +
-        '<div><span class="cc-rotulo">Salário inicial</span><span class="cc-salario">' + salario + beneficio + '</span></div>' +
+        '<div><span class="cc-rotulo">' + (c.paraVoce ? 'Salário para você' : 'Salário inicial') + '</span><span class="cc-salario">' + salario + beneficio + '</span></div>' +
         '<ul class="cc-dados">' + dados + '</ul>' +
         '<div class="cc-card-rodape">' +
           '<span class="cc-fonte">' + rotuloPrazo + ' <b style="color:' + corPrazo + '">' + esc(c.prazo) + '</b></span>' +
@@ -395,16 +456,23 @@
     return dialogo;
   }
 
-  /* ---------- Folha "Avise-me": canal do Telegram, ou "em breve". Sem formulário, sem dado pessoal. ---------- */
+  /* ---------- Folha "Avise-me": canal do WhatsApp e/ou do Telegram, ou "em breve". Sem formulário, sem dado pessoal. ---------- */
 
   function iniciarAlerta() {
-    var canal = /^https:\/\//.test(CONFIG.canalTelegram || '') ? CONFIG.canalTelegram : null;
-    var corpo = canal
-      ? '<p>Um canal no Telegram com os concursos novos de cada semana e as inscrições que estão acabando. Você entra e sai quando quiser; não pedimos telefone, e-mail nem cadastro.</p>' +
-        '<a class="cc-btn cc-btn-primario cc-btn-bloco" href="' + url(canal) + '" target="_blank" rel="noopener">' + ICONE.aviao + 'Entrar no canal do Telegram</a>'
-      : '<p>Ainda não mandamos alertas. Quando o canal do Telegram abrir, o link aparece aqui. Enquanto isso, esta lista é atualizada uma vez por semana.</p>' +
+    function canal(u) { return /^https:\/\//.test(u || '') ? u : null; }
+    var canais = [
+      canal(CONFIG.canalWhatsApp) && [CONFIG.canalWhatsApp, 'WhatsApp', ICONE.conversa],
+      canal(CONFIG.canalTelegram) && [CONFIG.canalTelegram, 'Telegram', ICONE.aviao]
+    ].filter(Boolean);
+    var corpo = canais.length
+      ? '<p>Um canal com os concursos novos de cada semana e as inscrições que estão acabando. Você entra e sai quando quiser; não pedimos telefone, e-mail nem cadastro.</p>' +
+        canais.map(function (k, i) {
+          return '<a class="cc-btn ' + (i ? '' : 'cc-btn-primario ') + 'cc-btn-bloco" href="' + url(k[0]) + '" target="_blank" rel="noopener">' + k[2] + 'Entrar no canal do ' + k[1] + '</a>';
+        }).join('')
+      : '<p>Ainda não mandamos alertas. Quando o canal do WhatsApp abrir, o link aparece aqui. Enquanto isso, esta lista é atualizada uma vez por semana.</p>' +
         '<button class="cc-btn cc-btn-primario cc-btn-bloco" type="button" data-fechar>Entendi</button>';
-    var dialogo = criarFolha('alerta', canal ? 'Avisos pelo Telegram' : 'Alertas em breve', corpo);
+    var titulo = canais.length ? 'Avisos pelo ' + canais.map(function (k) { return k[1]; }).join(' ou ') : 'Alertas em breve';
+    var dialogo = criarFolha('alerta', titulo, corpo);
     function abrir(ev) {
       if (ev) ev.preventDefault();
       fecharMenu();
@@ -483,6 +551,55 @@
     }
     $$('[data-abrir-cidade]').forEach(function (el) { el.addEventListener('click', abrir); });
     if (location.hash === '#cidade') abrir();
+  }
+
+  /* ---------- Folha "Seu perfil": escolaridade, curso técnico e formação, só neste aparelho ---------- */
+
+  function iniciarPerfil() {
+    var dialogo = criarFolha('perfil', 'Seu perfil', '' +
+      '<p>Para mostrar o salário do cargo que você pode fazer, e não o maior do edital. Fica guardado só neste aparelho; não pedimos nome, e-mail nem telefone.</p>' +
+      '<form class="pt-form-alerta" data-form-perfil novalidate>' +
+        '<fieldset class="pt-grupo"><legend class="pt-rotulo-campo">Até onde você estudou?</legend>' +
+          ESTUDO.map(function (n) {
+            return '<label class="cc-check pt-check44"><input type="radio" name="escolaridade" value="' + esc(n) + '"><span>' + esc(NOME_NIVEL[n]) + '</span></label>';
+          }).join('') +
+        '</fieldset>' +
+        '<label class="cc-check pt-check44"><input type="checkbox" name="tecnico"><span>Tenho curso técnico</span></label>' +
+        '<label class="cc-campo">Sua formação (opcional)<input name="formacao" autocomplete="off" maxlength="60" placeholder="Ex.: pedagogia, direito, enfermagem"></label>' +
+        '<p id="perfil-erro" class="pt-erro-msg" role="alert" hidden>Escolha até onde você estudou.</p>' +
+        '<button class="cc-btn cc-btn-primario cc-btn-bloco" type="submit">Usar este perfil</button>' +
+        (PERFIL ? '<button class="cc-btn cc-btn-texto" type="button" data-apagar-perfil style="align-self:flex-start">Apagar meu perfil</button>' : '') +
+      '</form>');
+    var form = $('[data-form-perfil]', dialogo);
+    var erro = $('#perfil-erro', dialogo);
+
+    function salvar(p) {
+      if (!guardarPerfil(p)) { erro.textContent = 'Este navegador não deixou guardar o perfil. Confira se o site pode salvar dados.'; erro.hidden = false; return; }
+      location.reload();
+    }
+    form.addEventListener('change', function () { erro.hidden = true; });
+    form.addEventListener('submit', function (ev) {
+      ev.preventDefault();
+      var nivel = form.elements.escolaridade.value;
+      if (!nivel) { erro.textContent = 'Escolha até onde você estudou.'; erro.hidden = false; return; }
+      salvar({ escolaridade: nivel, tecnico: form.elements.tecnico.checked, formacao: form.elements.formacao.value.trim() });
+    });
+    var apagar = $('[data-apagar-perfil]', dialogo);
+    if (apagar) apagar.addEventListener('click', function () { salvar(null); });
+
+    $$('[data-perfil-texto]').forEach(function (el) { el.textContent = PERFIL ? resumoPerfil() : 'Para ver o salário do seu cargo,'; });
+    $$('[data-rotulo-perfil]').forEach(function (el) { el.textContent = PERFIL ? 'Alterar' : 'diga sua escolaridade'; });
+    // Delegado: a ficha monta o botão depois que esta folha já existe.
+    document.addEventListener('click', function (ev) {
+      if (!ev.target.closest('[data-abrir-perfil]')) return;
+      ev.preventDefault();
+      fecharMenu();
+      form.elements.escolaridade.value = PERFIL ? PERFIL.escolaridade : '';
+      form.elements.tecnico.checked = !!(PERFIL && PERFIL.tecnico);
+      form.elements.formacao.value = PERFIL ? PERFIL.formacao || '' : '';
+      erro.hidden = true;
+      dialogo.showModal();
+    });
   }
 
   /* ---------- Página inicial ---------- */
@@ -789,6 +906,64 @@
 
   /* ---------- Ficha do concurso (concurso.html?id=) ---------- */
 
+  // Prazos que ainda vão acontecer, só com data do edital (nada estimado).
+  function prazosDe(c) {
+    var i = c.inscricao, p = [];
+    if (i.inicio && i.inicio > HOJE) p.push({ chave: 'inicio', data: i.inicio, nome: 'Abrem as inscrições' });
+    if (c.isencao_ate && c.isencao_ate >= HOJE) p.push({ chave: 'isencao', data: c.isencao_ate, nome: 'Último dia para pedir isenção da taxa' });
+    if (i.fim && i.fim >= HOJE) p.push({ chave: 'fim', data: i.fim, nome: 'Último dia de inscrição' });
+    if (c.prova_objetiva && c.prova_objetiva >= HOJE) p.push({ chave: 'prova', data: c.prova_objetiva, nome: 'Prova objetiva' });
+    return p;
+  }
+  function diaCompacto(iso, mais) { return new Date(utc(iso) + (mais || 0) * 864e5).toISOString().slice(0, 10).replace(/-/g, ''); }
+  function detalheAgenda(c) {
+    var ed = editalDe(c);
+    return (ed ? 'Edital oficial: ' + ed.url + '\n' : '') + 'Ficha: ' + location.href.split('#')[0] + '\nConfira sempre o edital: as datas mudam com retificação.';
+  }
+  function linkGoogle(c, p) {
+    return 'https://calendar.google.com/calendar/render?action=TEMPLATE&text=' + encodeURIComponent(p.nome + ': ' + c.orgao) +
+      '&dates=' + diaCompacto(p.data) + '/' + diaCompacto(p.data, 1) + '&details=' + encodeURIComponent(detalheAgenda(c));
+  }
+  // Eventos de dia inteiro. ponytail: sem dobrar linhas em 75 bytes (RFC 5545); Google, Apple e Outlook leem linha longa.
+  function ics(c, prazos) {
+    function txt(t) { return String(t).replace(/[\\;,]/g, '\\$&').replace(/\n/g, '\\n'); }
+    var agora = new Date().toISOString().replace(/[-:]/g, '').slice(0, 15) + 'Z';
+    var l = ['BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-//concurseiro//prazos//PT', 'CALSCALE:GREGORIAN'];
+    prazos.forEach(function (p) {
+      l.push('BEGIN:VEVENT', 'UID:' + c.id + '-' + p.chave + '@concurseiro', 'DTSTAMP:' + agora,
+        'DTSTART;VALUE=DATE:' + diaCompacto(p.data), 'DTEND;VALUE=DATE:' + diaCompacto(p.data, 1),
+        'SUMMARY:' + txt(p.nome + ': ' + c.orgao), 'DESCRIPTION:' + txt(detalheAgenda(c)), 'END:VEVENT');
+    });
+    return l.concat('END:VCALENDAR').join('\r\n') + '\r\n';
+  }
+
+  // Lista "Este concurso é pra você?": a escolaridade sai do perfil (✓/✗); o resto, a pessoa marca.
+  function requisitosHTML(k) {
+    var nivel = NOME_NIVEL[k.escolaridade];
+    var itens = [];
+    if (nivel && PERFIL) {
+      var ok = niveisDoPerfil().indexOf(k.escolaridade) >= 0;
+      itens.push('<li class="pt-req-auto" data-ok="' + ok + '">' + (ok ? ICONE.certo : ICONE.errado) +
+        '<span>' + esc(nivel) + (ok ? '' : ' · seu perfil diz ' + minuscula(NOME_NIVEL[PERFIL.escolaridade])) + '</span></li>');
+    } else if (nivel) {
+      itens.push(caixa(nivel));
+    }
+    (k.requisitos || '').split(';').map(function (r) { return r.trim(); })
+      .filter(function (r) { return r && normalizar(r) !== normalizar(nivel); })
+      .forEach(function (r) { itens.push(caixa(maiuscula(r))); });
+    if (!k.requisitos) itens.push('<li class="pt-apoio">Outros requisitos: não informados nesta ficha. Confira no edital oficial.</li>');
+    return itens.join('');
+    function caixa(t) { return '<li><label class="cc-check pt-check44"><input type="checkbox"><span>' + esc(t) + '</span></label></li>'; }
+  }
+  function veredito(lista) {
+    if ($('[data-ok="false"]', lista)) return 'Pelo seu perfil, falta a escolaridade que este cargo pede.';
+    var caixas = $$('input', lista);
+    var faltam = caixas.filter(function (x) { return !x.checked; }).length;
+    if (faltam === caixas.length && caixas.length) return 'Marque o que você já tem.';
+    if (faltam) return plural(faltam, 'Falta 1 item', 'Faltam ' + faltam + ' itens') + ' para você cumprir o que esta ficha lista.';
+    return 'Você tem o que esta ficha lista para o cargo. Leia o edital completo antes de se inscrever no site da banca.';
+  }
+
   function fichaHTML(v) {
     var c = v.bruto;
     var ed = editalDe(c);
@@ -806,12 +981,13 @@
     var atualizacao = '<span class="cc-atualizacao">' + ICONE.atualizado + esc(origem.join(' · ')) + '</span>';
 
     var cargos = porSalario(c.cargos);
-    var principal = cargos[0];
+    var principal = v.principal;
     var salarios = c.cargos.map(function (k) { return k.salario; }).filter(existe);
     var min = Math.min.apply(null, salarios), max = Math.max.apply(null, salarios);
     var faixaSalario = !salarios.length ? ni : esc(min === max ? dinheiro(max) : dinheiro(min) + ' a ' + dinheiro(max) + ', conforme o cargo');
     var b = c.beneficios[0];
-    var detalhe = [principal && principal.nome, b && ('+ ' + minuscula(b.nome) + (b.valor ? ' de ' + dinheiro(b.valor) : ''))].filter(Boolean).join(' · ');
+    var detalhe = v.paraVoce === false ? 'Nenhum cargo deste concurso bate com o seu perfil'
+      : [principal && principal.nome, b && ('+ ' + minuscula(b.nome) + (b.valor ? ' de ' + dinheiro(b.valor) : ''))].filter(Boolean).join(' · ');
 
     var insc = c.inscricao;
     var inscricoes = insc.inicio && insc.fim ? dataCurta(insc.inicio) + ' a ' + dataCurta(insc.fim)
@@ -819,6 +995,48 @@
       : insc.inicio ? 'a partir de ' + dataCurta(insc.inicio) : null;
     var resumoInscricao = v.situacao === 'previsto' ? (insc.inicio ? 'a partir de ' + dataCurta(insc.inicio) : 'sem data ainda')
       : (insc.fim ? (v.situacao === 'encerrado' ? 'encerrou ' : 'até ') + dataCurta(insc.fim) : 'não informado');
+
+    var prazos = prazosDe(c);
+    var agenda = prazos.length ? '' +
+      '<details class="pt-acordeao">' +
+        '<summary>Adicionar os prazos à agenda' + ICONE.abaixo + '</summary>' +
+        '<div class="pt-acordeao-corpo">' +
+          '<ul class="pt-lista">' + prazos.map(function (p) {
+            return '<li><a class="pt-linha" href="' + url(linkGoogle(c, p)) + '" target="_blank" rel="noopener">' + ICONE.agenda +
+              '<span class="pt-linha-txt"><span class="pt-linha-tit">' + esc(p.nome) + '</span><span class="pt-linha-sub">' + esc(dataCurta(p.data)) + ' · no Google Agenda</span></span>' +
+              ICONE.externo + '</a></li>';
+          }).join('') + '</ul>' +
+          '<a class="cc-btn cc-btn-bloco" href="data:text/calendar;charset=utf-8,' + encodeURIComponent(ics(c, prazos)) + '" download="' + esc(c.id) + '.ics">' +
+            ICONE.calendario + 'Baixar todos os prazos (.ics)</a>' +
+          '<p class="pt-apoio">O arquivo .ics põe todos os prazos de uma vez no Google Agenda, no calendário do celular ou no Outlook. As datas são as do edital: se sair retificação, confira de novo.</p>' +
+        '</div>' +
+      '</details>' : '';
+
+    var diasProva = c.prova_objetiva && c.prova_objetiva >= HOJE ? diasAte(c.prova_objetiva) : null;
+    var contagem = diasProva === null ? '' : '<p class="pt-contagem">' + ICONE.calendario + esc(
+      (diasProva === 0 ? 'A prova é hoje' : diasProva === 1 ? 'Falta 1 dia para a prova' : 'Faltam ' + diasProva + ' dias para a prova') +
+      (diasProva >= 14 ? ' · dá umas ' + Math.floor(diasProva / 7) + ' semanas de estudo' : '')) + '</p>';
+
+    // O texto compartilhado usa o salário do edital, não o do perfil de quem manda.
+    var salarioEdital = !salarios.length ? null : (min === max ? '' : 'até ') + dinheiro(max);
+    var comCidade = c.cidade && !c.nacional && normalizar(c.orgao).indexOf(normalizar(c.cidade)) < 0;
+    var mensagem = ['Olha esse concurso: ' + c.orgao + (comCidade ? ' (' + c.cidade + '/' + c.uf + ')' : ''),
+      salarioEdital, 'inscrições ' + resumoInscricao].filter(Boolean).join(' · ') + '\n' + location.href.split('#')[0];
+    var compartilhar = '<a class="cc-btn cc-btn-bloco" href="https://wa.me/?text=' + encodeURIComponent(mensagem) + '" target="_blank" rel="noopener">' +
+      ICONE.conversa + 'Mandar no WhatsApp</a>';
+
+    var pravoce = cargos.length ? '' +
+      '<section id="pra-voce" class="pt-secao" aria-labelledby="titulo-pra-voce">' +
+        '<h2 class="pt-h2" id="titulo-pra-voce">Este concurso é pra você?</h2>' +
+        '<p class="pt-apoio">' + (PERFIL ? 'Seu perfil: ' + esc(resumoPerfil()) + '. ' : '') + 'Marque o que você já tem. Nada disso sai do seu aparelho.</p>' +
+        (cargos.length > 1 ? '<label class="cc-campo">Cargo<select data-requisitos-cargo>' + cargos.map(function (k, i) {
+          return '<option value="' + i + '"' + (k === principal ? ' selected' : '') + '>' + esc(k.nome) + '</option>';
+        }).join('') + '</select></label>' : '') +
+        '<ul class="pt-requisitos" data-requisitos></ul>' +
+        '<p class="pt-texto pt-veredito" data-veredito aria-live="polite"></p>' +
+        '<button class="pt-link-btn" type="button" data-abrir-perfil style="align-self:flex-start">' + (PERFIL ? 'Alterar meu perfil' : 'Dizer minha escolaridade') + '</button>' +
+      '</section>' : '';
+
     var t = c.taxa;
     var taxa = !existe(t.min) && !existe(t.max) ? null
       : (t.min === t.max || !existe(t.max) || !existe(t.min) ? dinheiro(existe(t.min) ? t.min : t.max) : dinheiro(t.min) + ' a ' + dinheiro(t.max) + ', conforme o cargo');
@@ -878,17 +1096,19 @@
             '<p class="pt-texto" style="margin-top:4px;color:var(--tinta-suave)">' +
               esc([c.cargos.length ? contar(c.cargos.length, 'cargo', 'cargos') : null, 'banca ' + (c.banca.nome || 'a definir')].filter(Boolean).join(' · ')) + '</p></div>' +
           '<div class="pt-caixa-salario">' +
-            '<div><span class="cc-rotulo">Salário inicial</span>' +
-              '<span class="cc-salario">' + (v.salario ? '<span class="cc-grifo">' + esc(v.salario) + '</span>' : ni) +
+            '<div><span class="cc-rotulo">' + (v.paraVoce ? 'Salário para você' : 'Salário inicial') + '</span>' +
+              '<span class="cc-salario">' + (v.salario ? '<span' + (v.paraVoce === false ? '' : ' class="cc-grifo"') + '>' + esc(v.salario) + '</span>' : ni) +
               (detalhe ? '<small>' + esc(detalhe) + '</small>' : '') + '</span></div>' +
             '<dl class="pt-resumo">' +
               '<div><dt>Vagas</dt><dd>' + esc(textoVagas(c.cargos, true)) + '</dd></div>' +
               '<div><dt>Escolaridade</dt><dd>' + (v.escolaridade ? esc(v.escolaridade) : ni) + '</dd></div>' +
               '<div><dt>Inscrições</dt><dd>' + esc(resumoInscricao) + '</dd></div>' +
             '</dl>' +
+            contagem +
           '</div>' +
-          botao + atualizacao +
+          botao + compartilhar + atualizacao +
           '<nav class="pt-trilho" aria-label="Seções da ficha">' +
+            (pravoce ? '<a class="pt-chip" href="#pra-voce">Pra você?</a>' : '') +
             '<a class="pt-chip" href="#salario">Salário</a><a class="pt-chip" href="#vagas">Vagas</a>' +
             '<a class="pt-chip" href="#inscricao">Inscrição e prova</a>' +
             (conteudo ? '<a class="pt-chip" href="#conteudo-programatico">Conteúdo</a>' : '') +
@@ -896,6 +1116,8 @@
           '</nav>' +
         '</section>' +
       '</div>' +
+
+      pravoce +
 
       '<section id="salario" class="pt-secao">' +
         '<h2 class="pt-h2">Salário e benefícios</h2>' +
@@ -929,6 +1151,7 @@
           linha('O que levar', c.o_que_levar) +
           linha('Banca', c.banca.nome || (ed ? null : 'A definir')) +
         '</dl>' +
+        agenda +
       '</section>' +
 
       conteudo +
@@ -964,6 +1187,20 @@
     document.title = v.orgao + ' · concurseiro (protótipo)';
     alvo.innerHTML = fichaHTML(v);
 
+    var lista = $('[data-requisitos]', alvo);
+    if (lista) {
+      var cargos = porSalario(v.bruto.cargos);
+      var escolha = $('[data-requisitos-cargo]', alvo);
+      var resultado = $('[data-veredito]', alvo);
+      var montar = function () {
+        lista.innerHTML = requisitosHTML(cargos[escolha ? Number(escolha.value) : 0]);
+        resultado.textContent = veredito(lista);
+      };
+      if (escolha) escolha.addEventListener('change', montar);
+      lista.addEventListener('change', function () { resultado.textContent = veredito(lista); });
+      montar();
+    }
+
     var botoes = $$('[data-cargo]', alvo);
     var listas = $$('[data-materias]', alvo);
     if (!botoes.length) return;
@@ -986,6 +1223,7 @@
     iniciarMenu();
     iniciarAlerta();
     iniciarCidade();
+    iniciarPerfil();
     iniciarBotaoFlutuante();
     if (pagina === 'inicio') paginaInicio();
     if (pagina === 'concursos') paginaConcursos();

@@ -33,7 +33,7 @@ cidade-maringa.html          redireciona para cidade.html?ibge=4115200
 robots.txt                   bloqueia buscadores (v0)
 assets/
   css/                       tokens.css (design system), componentes.css (cc-), site.css (pt-)
-  js/config.js               canalTelegram: null ou a URL do canal
+  js/config.js               canalWhatsApp e canalTelegram: null ou a URL do canal
   js/dados.js                GERADO por `python -m varredura publicar`; não edite à mão
   js/app.js                  cards, filtros, ficha, cidade, faixa de atualização, folhas
 dados/

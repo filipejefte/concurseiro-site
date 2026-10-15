@@ -263,3 +263,18 @@ a.cc-card:hover { border-color: var(--linha-forte); }
   .pt-rodape-in { padding: 32px 32px 48px; }
   .pt-rodape-links { justify-content: flex-end; }
 }
+
+/* Perfil e "Este concurso é pra você?" */
+.pt-grupo { margin: 0; padding: 0; border: 0; min-width: 0; display: flex; flex-direction: column; }
+.pt-grupo legend { padding: 0; margin-bottom: 4px; }
+.cc-check input[type="radio"] { border-radius: 50%; }
+.cc-campo select { min-height: 48px; padding: 0 12px; border: 1px solid var(--linha-forte); border-radius: var(--radius-sm); background: var(--papel-alto); color: var(--tinta); font: inherit; font-size: 16px; font-weight: 400; }
+.cc-campo select:focus-visible { outline: 2px solid transparent; box-shadow: var(--foco); }
+.pt-requisitos { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; }
+.pt-req-auto { display: flex; align-items: center; gap: 12px; min-height: 44px; font-size: 14px; line-height: 20px; }
+.pt-req-auto svg { width: 22px; height: 22px; }
+.pt-req-auto[data-ok="true"] svg { color: var(--verde); }
+.pt-req-auto[data-ok="false"] svg { color: var(--erro); }
+.pt-veredito { font-weight: 600; }
+.pt-contagem { margin: 0; display: flex; align-items: center; gap: 6px; font-size: 15px; line-height: 20px; font-weight: 600; }
+.pt-contagem svg { width: 18px; height: 18px; color: var(--tinta-suave); }

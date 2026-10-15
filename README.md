@@ -29,9 +29,10 @@ Depois abra http://localhost:8000. Abrir o `index.html` com dois cliques também
 | --- | --- | --- |
 | Início | `index.html` | Concursos perto da cidade escolhida (ou do Paraná, por prazo), inscrições que encerram na semana, áreas e nacionais |
 | Listagem | `concursos.html` | Busca, ordenação e filtros, com o estado na URL; `?perto=<IBGE>` mede a distância a partir de outra cidade |
-| Ficha | `concurso.html?id=<id>` | Salário, vagas, inscrição e prova, conteúdo, documentos e "Ver edital oficial" |
+| Ficha | `concurso.html?id=<id>` | Salário, vagas, inscrição e prova, conteúdo, documentos e "Ver edital oficial"; contagem até a prova, prazos para a agenda (Google ou `.ics`) e "Mandar no WhatsApp" |
 | Cidade | `cidade.html?ibge=<código>` | Concursos na cidade e a até 50 km; `cidade-maringa.html` redireciona para cá |
-| Avise-me | em todas | Com `canalTelegram: null` em `assets/js/config.js`, diz "Alertas em breve"; com a URL do canal, mostra "Entrar no canal do Telegram". Não há formulário nem coleta de dado pessoal |
+| Avise-me | em todas | Com `canalWhatsApp` e `canalTelegram` em `null` (`assets/js/config.js`), diz "Alertas em breve"; com a URL de um canal, mostra "Entrar no canal do WhatsApp" (ou do Telegram; com os dois, o WhatsApp vem primeiro). Não há formulário nem coleta de dado pessoal |
+| Seu perfil | início, lista, ficha | Escolaridade, curso técnico e formação, guardados só no aparelho. Com perfil, o card mostra o salário do cargo que a pessoa pode fazer, e a ficha traz "Este concurso é pra você?" |
 
 **Cidade.**
 - Não há cidade padrão: a pessoa escolhe entre os 399 municípios do PR.
