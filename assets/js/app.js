@@ -356,6 +356,8 @@
         if (!cargos || !cargos.length) return;
         var meus = cargos.filter(function (k) { return niveis.indexOf(k[2]) >= 0 && serveFormacao(k[0], k[2], k[3]); });
         var sal = $('[data-salario]', card);
+        // Cargo sem escolaridade na ficha: não dá para dizer que não serve. O card fica como está.
+        if (!meus.length && cargos.some(function (k) { return !k[2]; })) return;
         if (!meus.length) {
           card.setAttribute('data-sal', '0');
           var grifo = $('.cc-grifo', sal);
@@ -494,7 +496,10 @@
         el.textContent = estado.q ? 'Em todos os concursos' : (!origem || estado.raio === 'estado' ? (origem ? 'A partir de ' + origem.nome + ' (PR), sem limite de distância' : 'Federais e todo o Paraná')
           : origem.nome + ' (PR) · a até ' + estado.raio + ' km') + (estado.federais ? '' : ' · sem federais de fora do PR');
       });
-      $$('[data-area]').forEach(function (a) { a.setAttribute('aria-pressed', String(estado.areas.length === 1 && estado.areas[0] === a.getAttribute('data-area'))); });
+      $$('[data-area]').forEach(function (a) {
+        if (estado.areas.length === 1 && estado.areas[0] === a.getAttribute('data-area')) a.setAttribute('aria-current', 'true');
+        else a.removeAttribute('aria-current');
+      });
       $$('[data-ordem]').forEach(function (b) { b.setAttribute('aria-pressed', String(b.getAttribute('data-ordem') === estado.ordem)); });
       var n = ativos(estado), selo = $('[data-n-filtros]');
       selo.hidden = n === 0;
@@ -669,7 +674,7 @@
     montar();
     if (PERFIL) {
       var niveisP = niveisDoPerfil();
-      var algum = dados.cargos.some(function (k) { return niveisP.indexOf(k[1]) >= 0 && serveFormacao(k[0], k[1], k[2]); });
+      var algum = dados.cargos.some(function (k) { return !k[1] || (niveisP.indexOf(k[1]) >= 0 && serveFormacao(k[0], k[1], k[2])); });
       var detalhe = $('[data-detalhe]');
       if (!algum && detalhe) detalhe.textContent = 'Nenhum cargo deste concurso bate com o seu perfil';
     }
@@ -714,7 +719,6 @@
   /* ---------- Início ---------- */
 
   document.addEventListener('DOMContentLoaded', function () {
-    $$('[data-so-js]').forEach(function (el) { el.hidden = false; });
     var pagina = document.body.getAttribute('data-pagina');
     iniciarFolhas();
     iniciarKit();

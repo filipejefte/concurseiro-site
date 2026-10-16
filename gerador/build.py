@@ -106,6 +106,8 @@ class Site:
 
     def estaticos(self):
         css = "\n".join((ASSETS / "css" / n).read_text(encoding="utf-8") for n in ("tokens.css", "componentes.css", "site.css"))
+        css = re.sub(r"/\*.*?\*/", "", css, flags=re.S)            # sem comentários
+        css = re.sub(r"\s*\n\s*", "\n", css).strip() + "\n"        # sem linhas em branco nem recuo
         # O tokens.css aponta a fonte por caminho relativo à pasta css/; no arquivo único continua valendo.
         self.ativos = {
             "css": self._com_hash("assets/css/concurseiro.css", css),

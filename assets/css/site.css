@@ -316,3 +316,6 @@ a.cc-card:hover { border-color: var(--linha-forte); }
 .pt-cookies p { margin: 0; }
 .pt-cookies-botoes { display: flex; gap: 8px; justify-content: flex-end; }
 .pt-caixa-texto { display: block; min-height: 0; line-height: 20px; }
+/* Peças que só funcionam com JavaScript: uma linha no <head> marca <html class="js"> antes da pintura, sem pulo de layout. */
+html:not(.js) [data-so-js] { display: none !important; }
+.pt-chip[aria-current="true"] { background: var(--verde); border-color: var(--verde); color: var(--on-verde); }

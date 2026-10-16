@@ -15,6 +15,7 @@
 <link rel="apple-touch-icon" href="{{ u('/apple-touch-icon.png') }}">
 <link rel="manifest" href="{{ u('/site.webmanifest') }}">
 <link rel="preload" href="{{ u(ativos.fonte) }}" as="font" type="font/woff2" crossorigin>
+<script>document.documentElement.className += ' js';</script>
 <link rel="stylesheet" href="{{ u(ativos.css) }}">
 <meta property="og:site_name" content="Concurseiro">
 <meta property="og:locale" content="pt_BR">
@@ -77,7 +78,7 @@
     </div>
   </div>
 </header>
-<div class="pt-faixa"><p class="pt-pagina">{{ faixa }}</p></div>
+<aside class="pt-faixa" aria-label="Atualização dos dados"><p class="pt-pagina">{{ faixa }}</p></aside>
 
 {% block conteudo %}{% endblock %}
 
@@ -104,9 +105,8 @@
       {%- endif %}
     </nav>
   </div>
+  {{ m.botao_alerta("Avise-me", "cc-btn cc-btn-primario cc-flutuante pt-fab") }}
 </footer>
-
-{{ m.botao_alerta("Avise-me", "cc-btn cc-btn-primario cc-flutuante pt-fab") }}
 {% include "_folhas.html" %}
 {%- if anuncios %}
 {% include "_cookies.html" %}

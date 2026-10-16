@@ -2,8 +2,8 @@
 {% block conteudo %}
 <main id="conteudo">
   <section class="pt-heroi pt-pagina">
-    <p class="pt-local" data-so-js hidden>{{ m.icone("pino") }}<span data-local-texto>Nenhuma cidade escolhida</span><button class="pt-link-btn" type="button" data-abrir-cidade data-rotulo-cidade>Escolher cidade</button></p>
-    <p class="pt-local" data-so-js hidden>{{ m.icone("capelo") }}<span data-perfil-texto>Para ver o salário do seu cargo,</span><button class="pt-link-btn" type="button" data-abrir-perfil data-rotulo-perfil>diga sua escolaridade</button></p>
+    <p class="pt-local" data-so-js>{{ m.icone("pino") }}<span data-local-texto>Nenhuma cidade escolhida</span><button class="pt-link-btn" type="button" data-abrir-cidade data-rotulo-cidade>Escolher cidade</button></p>
+    <p class="pt-local" data-so-js>{{ m.icone("capelo") }}<span data-perfil-texto>Para ver o salário do seu cargo,</span><button class="pt-link-btn" type="button" data-abrir-perfil data-rotulo-perfil>diga sua escolaridade</button></p>
     <h1 class="pt-display">Concursos abertos federais e do Paraná</h1>
     <p class="pt-capa"><span class="cc-grifo">{{ n_abertos }}</span> com inscrição aberta{% if base.previstos %}, e mais {{ n_previstos }} {{ "previsto" if base.previstos | length == 1 else "previstos" }} com ato oficial{% endif %}.</p>
     <p class="pt-caixa pt-caixa-info" data-perto hidden></p>

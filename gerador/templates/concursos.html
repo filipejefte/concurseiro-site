@@ -6,8 +6,8 @@
     {{ m.trilha(pagina.trilha) }}
     <h1 class="pt-titulo" data-titulo>Concursos com inscrição aberta</h1>
     <p class="pt-capa"><span class="cc-grifo">{{ n_abertos }}</span> com inscrição aberta, federais e do Paraná.</p>
-    <p class="pt-local" data-so-js hidden>{{ m.icone("pino") }}<span data-resumo-local>Federais e todo o Paraná</span><button class="pt-link-btn" type="button" data-abrir-cidade data-rotulo-cidade>Escolher cidade</button></p>
-    <p class="pt-local" data-so-js hidden>{{ m.icone("capelo") }}<span data-perfil-texto>Para ver o salário do seu cargo,</span><button class="pt-link-btn" type="button" data-abrir-perfil data-rotulo-perfil>diga sua escolaridade</button></p>
+    <p class="pt-local" data-so-js>{{ m.icone("pino") }}<span data-resumo-local>Federais e todo o Paraná</span><button class="pt-link-btn" type="button" data-abrir-cidade data-rotulo-cidade>Escolher cidade</button></p>
+    <p class="pt-local" data-so-js>{{ m.icone("capelo") }}<span data-perfil-texto>Para ver o salário do seu cargo,</span><button class="pt-link-btn" type="button" data-abrir-perfil data-rotulo-perfil>diga sua escolaridade</button></p>
     <form class="pt-busca" action="{{ u('/concursos/') }}" method="get" role="search" data-form-busca>
       <label class="pt-rotulo-campo" for="busca-lista">Buscar concurso</label>
       <div class="pt-busca-linha">
@@ -19,12 +19,12 @@
 
   <div class="pt-controles">
     <div class="pt-trilho" role="group" aria-label="Filtrar por área">
-      <button class="pt-chip" type="button" data-abrir-filtros data-so-js hidden>{{ m.icone("filtro") }}Filtros<span class="pt-selo-n" data-n-filtros hidden></span></button>
+      <button class="pt-chip" type="button" data-abrir-filtros data-so-js>{{ m.icone("filtro") }}Filtros<span class="pt-selo-n" data-n-filtros hidden></span></button>
       {%- for g in areas if g.abertos or g.previstos %}
       <a class="pt-chip" href="{{ u('/area/' ~ g.slug ~ '/') }}" data-area="{{ g.slug }}">{{ g.nome }}</a>
       {%- endfor %}
     </div>
-    <div class="pt-ordem" data-so-js hidden>
+    <div class="pt-ordem" data-so-js>
       <span class="pt-rotulo-campo" id="ordem-rotulo">Ordenar por</span>
       <div class="pt-seg" role="group" aria-labelledby="ordem-rotulo">
         <button type="button" data-ordem="prazo" aria-pressed="true">Prazo</button>
