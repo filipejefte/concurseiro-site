@@ -1,6 +1,539 @@
 {
-  "varredura": null,
-  "proxima_varredura": null,
-  "cobertura": ["federal", "PR"],
-  "concursos": []
+  "varredura": "2026-10-14",
+  "proxima_varredura": "2026-10-21",
+  "cobertura": [
+    "federal",
+    "PR"
+  ],
+  "concursos": [
+    {
+      "id": "camara-ipora-pr-2026",
+      "ficticio": false,
+      "orgao": "Câmara Municipal de Iporã (PR)",
+      "esfera": "municipal",
+      "uf": "PR",
+      "municipio_ibge": "4110607",
+      "cidade": "Iporã",
+      "nacional": false,
+      "abrangencia": null,
+      "area": "Administrativa",
+      "banca": {
+        "nome": "Instituto Omni",
+        "url": null
+      },
+      "inscricao": {
+        "inicio": null,
+        "fim": null,
+        "url": null
+      },
+      "isencao_ate": null,
+      "prova_objetiva": null,
+      "local_prova": null,
+      "taxa": {
+        "min": null,
+        "max": null
+      },
+      "isencao_regras": null,
+      "regime": null,
+      "beneficios": [],
+      "o_que_levar": null,
+      "cargos": [
+        {
+          "nome": "Assistente Legislativo",
+          "vagas": null,
+          "cadastro_reserva": false,
+          "salario": null,
+          "escolaridade": null,
+          "requisitos": null,
+          "jornada_horas": null,
+          "materias": []
+        },
+        {
+          "nome": "Zeladora",
+          "vagas": 0,
+          "cadastro_reserva": true,
+          "salario": null,
+          "escolaridade": null,
+          "requisitos": null,
+          "jornada_horas": null,
+          "materias": []
+        }
+      ],
+      "documentos": [
+        {
+          "tipo": "contratacao_banca",
+          "titulo": "Extrato do contrato – Instituto Omni",
+          "numero": null,
+          "url": "https://www.diariomunicipal.com.br/amp/materia/02307134",
+          "publicado_em": "2026-10-08",
+          "fonte": "AMP-PR",
+          "resumo": "Contrato assinado em 05/10/2026"
+        },
+        {
+          "tipo": "contratacao_banca",
+          "titulo": "Termo de homologação/ratificação – Dispensa Eletrônica nº 10/2026",
+          "numero": "10/2026",
+          "url": "https://www.diariomunicipal.com.br/amp/materia/41F02336",
+          "publicado_em": "2026-10-05",
+          "fonte": "AMP-PR",
+          "resumo": null
+        }
+      ],
+      "conferencia": {
+        "conferido_em": "2026-10-16",
+        "por": "conferência automática",
+        "campos": [
+          "salario",
+          "inscricao.inicio",
+          "inscricao.fim",
+          "prova_objetiva",
+          "taxa",
+          "banca",
+          "cidade",
+          "edital"
+        ]
+      },
+      "primeira_varredura": "2026-10-14",
+      "ultima_alteracao": "2026-10-14"
+    },
+    {
+      "id": "camara-quatro-barras-pr-2026",
+      "ficticio": false,
+      "orgao": "Câmara Municipal de Quatro Barras (PR)",
+      "esfera": "municipal",
+      "uf": "PR",
+      "municipio_ibge": "4120804",
+      "cidade": "Quatro Barras",
+      "nacional": false,
+      "abrangencia": null,
+      "area": "Outras",
+      "banca": {
+        "nome": "Instituto Consulpam",
+        "url": null
+      },
+      "inscricao": {
+        "inicio": null,
+        "fim": null,
+        "url": null
+      },
+      "isencao_ate": null,
+      "prova_objetiva": null,
+      "local_prova": null,
+      "taxa": {
+        "min": null,
+        "max": null
+      },
+      "isencao_regras": null,
+      "regime": null,
+      "beneficios": [],
+      "o_que_levar": null,
+      "cargos": [],
+      "documentos": [
+        {
+          "tipo": "contratacao_banca",
+          "titulo": "Contrato nº 16 – Dispensa nº 18/2026",
+          "numero": "16",
+          "url": "https://www.diariomunicipal.com.br/amp/materia/CB504042",
+          "publicado_em": "2026-09-25",
+          "fonte": "AMP-PR",
+          "resumo": "Período do contrato: 23/09/2026 a 22/09/2027"
+        },
+        {
+          "tipo": "contratacao_banca",
+          "titulo": "Homologação da Dispensa nº 18/2026",
+          "numero": "18/2026",
+          "url": "https://www.diariomunicipal.com.br/amp/materia/011F225A",
+          "publicado_em": "2026-09-23",
+          "fonte": "AMP-PR",
+          "resumo": null
+        }
+      ],
+      "conferencia": {
+        "conferido_em": "2026-10-16",
+        "por": "conferência automática",
+        "campos": [
+          "inscricao.inicio",
+          "inscricao.fim",
+          "prova_objetiva",
+          "taxa",
+          "banca",
+          "cidade",
+          "edital"
+        ]
+      },
+      "primeira_varredura": "2026-10-14",
+      "ultima_alteracao": "2026-10-14"
+    },
+    {
+      "ficticio": false,
+      "esfera": "federal",
+      "uf": "PR",
+      "nacional": false,
+      "abrangencia": null,
+      "isencao_ate": null,
+      "prova_objetiva": "2026-11-29",
+      "local_prova": "Curitiba e Maringá (PR)",
+      "isencao_regras": null,
+      "regime": "CLT",
+      "beneficios": [],
+      "o_que_levar": null,
+      "conferencia": {
+        "conferido_em": "2026-10-16",
+        "por": "conferência automática",
+        "campos": [
+          "salario",
+          "inscricao.inicio",
+          "inscricao.fim",
+          "prova_objetiva",
+          "taxa",
+          "banca",
+          "cidade",
+          "edital"
+        ]
+      },
+      "primeira_varredura": "2026-10-14",
+      "ultima_alteracao": "2026-10-14",
+      "id": "crq-9-regiao-pr-2026-edital-01",
+      "orgao": "Conselho Regional de Química da 9ª Região – Paraná (CRQ-IX)",
+      "municipio_ibge": "4106902",
+      "cidade": "Curitiba",
+      "area": "Administrativa",
+      "banca": {
+        "nome": "Instituto Quadrix",
+        "url": "https://www.quadrix.org.br"
+      },
+      "inscricao": {
+        "inicio": null,
+        "fim": "2026-10-21",
+        "url": "https://www.quadrix.org.br"
+      },
+      "taxa": {
+        "min": 62.0,
+        "max": 66.0
+      },
+      "cargos": [
+        {
+          "nome": "Auxiliar Administrativo",
+          "vagas": null,
+          "cadastro_reserva": false,
+          "salario": null,
+          "escolaridade": null,
+          "requisitos": null,
+          "jornada_horas": null,
+          "materias": []
+        },
+        {
+          "nome": "Auxiliar Técnico de Fiscalização",
+          "vagas": null,
+          "cadastro_reserva": false,
+          "salario": null,
+          "escolaridade": null,
+          "requisitos": null,
+          "jornada_horas": null,
+          "materias": []
+        },
+        {
+          "nome": "Técnico em Contabilidade",
+          "vagas": null,
+          "cadastro_reserva": false,
+          "salario": null,
+          "escolaridade": null,
+          "requisitos": null,
+          "jornada_horas": null,
+          "materias": []
+        },
+        {
+          "nome": "Agente Fiscal",
+          "vagas": null,
+          "cadastro_reserva": false,
+          "salario": null,
+          "escolaridade": null,
+          "requisitos": null,
+          "jornada_horas": null,
+          "materias": []
+        },
+        {
+          "nome": "Analista de Informática",
+          "vagas": null,
+          "cadastro_reserva": false,
+          "salario": null,
+          "escolaridade": null,
+          "requisitos": null,
+          "jornada_horas": null,
+          "materias": []
+        },
+        {
+          "nome": "Assessor Jurídico",
+          "vagas": null,
+          "cadastro_reserva": false,
+          "salario": null,
+          "escolaridade": null,
+          "requisitos": null,
+          "jornada_horas": null,
+          "materias": []
+        },
+        {
+          "nome": "Contador",
+          "vagas": null,
+          "cadastro_reserva": false,
+          "salario": null,
+          "escolaridade": null,
+          "requisitos": null,
+          "jornada_horas": null,
+          "materias": []
+        }
+      ],
+      "documentos": [
+        {
+          "tipo": "edital",
+          "titulo": "Edital nº 1, de 18 de setembro de 2026 – Concurso Público (aviso)",
+          "numero": "1/2026",
+          "url": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=21/09/2026&jornal=530&pagina=220",
+          "publicado_em": "2026-09-21",
+          "fonte": "DOU",
+          "resumo": null
+        }
+      ]
+    },
+    {
+      "id": "prefeitura-palmital-pr-2026",
+      "ficticio": false,
+      "orgao": "Prefeitura de Palmital (PR)",
+      "esfera": "municipal",
+      "uf": "PR",
+      "municipio_ibge": "4117800",
+      "cidade": "Palmital",
+      "nacional": false,
+      "abrangencia": null,
+      "area": "Outras",
+      "banca": {
+        "nome": "Fundação de Apoio ao Desenvolvimento da UNICENTRO (FAU)",
+        "url": "https://www.concursosfau.com.br"
+      },
+      "inscricao": {
+        "inicio": null,
+        "fim": null,
+        "url": null
+      },
+      "isencao_ate": null,
+      "prova_objetiva": null,
+      "local_prova": null,
+      "taxa": {
+        "min": null,
+        "max": null
+      },
+      "isencao_regras": null,
+      "regime": null,
+      "beneficios": [],
+      "o_que_levar": null,
+      "cargos": [],
+      "documentos": [
+        {
+          "tipo": "contratacao_banca",
+          "titulo": "Contrato Administrativo nº 146/2026 – Dispensa de Licitação nº 28/2026",
+          "numero": "146/2026",
+          "url": "https://www.diariomunicipal.com.br/amp/materia/3C4C4F76",
+          "publicado_em": "2026-09-04",
+          "fonte": "AMP-PR",
+          "resumo": "49 cargos: 11 de nível fundamental, 8 de nível médio/técnico e 30 de nível superior"
+        }
+      ],
+      "conferencia": {
+        "conferido_em": "2026-10-16",
+        "por": "conferência automática",
+        "campos": [
+          "inscricao.inicio",
+          "inscricao.fim",
+          "prova_objetiva",
+          "taxa",
+          "banca",
+          "cidade",
+          "edital"
+        ]
+      },
+      "primeira_varredura": "2026-10-14",
+      "ultima_alteracao": "2026-10-14"
+    },
+    {
+      "id": "prefeitura-senges-pr-2026",
+      "ficticio": false,
+      "orgao": "Prefeitura de Sengés (PR)",
+      "esfera": "municipal",
+      "uf": "PR",
+      "municipio_ibge": "4126306",
+      "cidade": "Sengés",
+      "nacional": false,
+      "abrangencia": null,
+      "area": "Policial e segurança",
+      "banca": {
+        "nome": "Instituto Filadélfia de Londrina",
+        "url": null
+      },
+      "inscricao": {
+        "inicio": null,
+        "fim": null,
+        "url": null
+      },
+      "isencao_ate": null,
+      "prova_objetiva": null,
+      "local_prova": null,
+      "taxa": {
+        "min": null,
+        "max": null
+      },
+      "isencao_regras": null,
+      "regime": null,
+      "beneficios": [],
+      "o_que_levar": null,
+      "cargos": [
+        {
+          "nome": "Guarda Civil Municipal",
+          "vagas": 13,
+          "cadastro_reserva": true,
+          "salario": null,
+          "escolaridade": null,
+          "requisitos": null,
+          "jornada_horas": null,
+          "materias": []
+        }
+      ],
+      "documentos": [
+        {
+          "tipo": "contratacao_banca",
+          "titulo": "Extrato do Contrato nº 222/2026 – Dispensa de Licitação nº 050/2026",
+          "numero": "222/2026",
+          "url": "https://www.diariomunicipal.com.br/amp/materia/59DA1748",
+          "publicado_em": "2026-08-25",
+          "fonte": "AMP-PR",
+          "resumo": "Contrato assinado em 19/08/2026"
+        },
+        {
+          "tipo": "contratacao_banca",
+          "titulo": "Homologação/adjudicação – Dispensa de Licitação nº 050/2026",
+          "numero": "050/2026",
+          "url": "https://www.diariomunicipal.com.br/amp/materia/52224528",
+          "publicado_em": "2026-08-05",
+          "fonte": "AMP-PR",
+          "resumo": null
+        }
+      ],
+      "conferencia": {
+        "conferido_em": "2026-10-16",
+        "por": "conferência automática",
+        "campos": [
+          "salario",
+          "inscricao.inicio",
+          "inscricao.fim",
+          "prova_objetiva",
+          "taxa",
+          "banca",
+          "cidade",
+          "edital"
+        ]
+      },
+      "primeira_varredura": "2026-10-14",
+      "ultima_alteracao": "2026-10-14"
+    },
+    {
+      "id": "prefeitura-tres-barras-do-parana-pr-2026",
+      "ficticio": false,
+      "orgao": "Prefeitura de Três Barras do Paraná (PR)",
+      "esfera": "municipal",
+      "uf": "PR",
+      "municipio_ibge": "4127858",
+      "cidade": "Três Barras do Paraná",
+      "nacional": false,
+      "abrangencia": null,
+      "area": "Operacional",
+      "banca": {
+        "nome": null,
+        "url": null
+      },
+      "inscricao": {
+        "inicio": null,
+        "fim": null,
+        "url": null
+      },
+      "isencao_ate": null,
+      "prova_objetiva": null,
+      "local_prova": null,
+      "taxa": {
+        "min": null,
+        "max": null
+      },
+      "isencao_regras": null,
+      "regime": null,
+      "beneficios": [],
+      "o_que_levar": null,
+      "cargos": [
+        {
+          "nome": "Auxiliar de Serviços Gerais",
+          "vagas": 3,
+          "cadastro_reserva": true,
+          "salario": null,
+          "escolaridade": null,
+          "requisitos": null,
+          "jornada_horas": 40,
+          "materias": []
+        },
+        {
+          "nome": "Trabalhador Braçal",
+          "vagas": 3,
+          "cadastro_reserva": true,
+          "salario": null,
+          "escolaridade": null,
+          "requisitos": null,
+          "jornada_horas": 40,
+          "materias": []
+        },
+        {
+          "nome": "Cozinheiro",
+          "vagas": 1,
+          "cadastro_reserva": true,
+          "salario": null,
+          "escolaridade": null,
+          "requisitos": null,
+          "jornada_horas": 40,
+          "materias": []
+        },
+        {
+          "nome": "Auditor Tributário Municipal",
+          "vagas": 1,
+          "cadastro_reserva": true,
+          "salario": null,
+          "escolaridade": null,
+          "requisitos": null,
+          "jornada_horas": 40,
+          "materias": []
+        }
+      ],
+      "documentos": [
+        {
+          "tipo": "autorizacao",
+          "titulo": "Decreto nº 7248/2026 – determina a realização de Concurso Público",
+          "numero": "7248/2026",
+          "url": "https://www.diariomunicipal.com.br/amp/materia/07AAE918",
+          "publicado_em": "2026-08-20",
+          "fonte": "AMP-PR",
+          "resumo": null
+        }
+      ],
+      "conferencia": {
+        "conferido_em": "2026-10-16",
+        "por": "conferência automática",
+        "campos": [
+          "salario",
+          "inscricao.inicio",
+          "inscricao.fim",
+          "prova_objetiva",
+          "taxa",
+          "banca",
+          "cidade",
+          "edital"
+        ]
+      },
+      "primeira_varredura": "2026-10-14",
+      "ultima_alteracao": "2026-10-14"
+    }
+  ]
 }
