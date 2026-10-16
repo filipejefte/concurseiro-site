@@ -12,7 +12,7 @@ Antes de tudo, leia o `CLAUDE.md` da raiz. As regras fixas valem para cada ficha
 - só ato oficial, com link;
 - `null` no que o ato não traz;
 - nada de agregador;
-- nada vai ao ar sem conferência humana.
+- nada vai ao ar sem conferência: a automática acha o valor no texto do ato, ou o Filipe confere.
 
 Rode tudo no PowerShell, a partir da raiz do projeto. Nunca mostre o conteúdo do `.env`.
 
@@ -46,7 +46,8 @@ Ao terminar, leia `dados/varreduras/<data>/atos.json`:
 3. Se o texto do ato não traz o edital completo (anexo em PDF, edital só no site da banca ou do órgão):
    - pode abrir o link oficial (diário, órgão ou banca), uma requisição por vez;
    - PDFs baixados vão para `.cache/`, nunca para o repositório;
-   - nunca use PCI, Folha Dirigida ou outro agregador.
+   - nunca use PCI, Folha Dirigida ou outro agregador;
+   - grave o texto oficial que você usou e que não está no ato da fila (outras matérias do mesmo edital, anexo, edital da banca) em `fila/<nome do ato>-extra-<n>.md`, com o mesmo cabeçalho e a url de onde veio, e ponha o nome em `atos_extras`. Sem isso, a conferência automática não enxerga esse texto e a linha cai para o Filipe.
 4. Escreva o resultado:
    - **Ficha:** `dados/varreduras/<data>/fichas/<id>.json` com `{"ato": "<nome do arquivo da fila>", "trechos": {...}, "concurso": {...}}`.
    - **Descarte:** acrescente `{"ato": "<nome do arquivo da fila>", "motivo": "..."}` à lista em `dados/varreduras/<data>/descartes.json`.
@@ -71,7 +72,8 @@ Gera `revisao.md` e `revisao.csv` na pasta da semana. Termine com um resumo curt
 - fontes com problema e fichas com erro de validação;
 - PSS em avaliação e atos ainda pendentes;
 - os caminhos de `revisao.md` e `revisao.csv`;
-- o próximo passo: conferir no `revisao.csv` cada campo crítico contra o ato e marcar `ok` (ou `corrigir`).
+- a linha **Conferência** do `revisao.md`: quantas linhas a automática achou no ato e quantas ficaram para o Filipe;
+- o próximo passo: no `revisao.csv`, conferir só as linhas com **conferido** vazio e as `amostra` contra o ato e marcar `ok` (ou `corrigir`).
 
 ## 6. Pare aqui
 

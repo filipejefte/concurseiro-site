@@ -1,13 +1,19 @@
 """Revisão: revisao.md e revisao.csv na pasta da semana.
 
 Para cada concurso novo ou alterado vêm os campos críticos, o trecho do ato de onde saíram e a
-coluna "conferido" (ok | corrigir). Rodar de novo mantém as marcas das linhas que não mudaram.
+coluna "conferido":
+  auto      a conferência automática achou o valor no texto do ato (conferir.py);
+  amostra   passou na automática, mas caiu na amostra semanal: a pessoa confere e troca por ok;
+  (vazio)   a automática não achou: a pessoa confere (o motivo vai em "observacao");
+  ok | corrigir   marcas da pessoa, que valem sobre as automáticas.
+Rodar de novo mantém as marcas da pessoa nas linhas que não mudaram e refaz as automáticas.
 """
 import csv
 from datetime import date
 from pathlib import Path
 
 from .comparar import comparar
+from .conferir import na_amostra, texto_dos_atos, verificar
 from . import dados
 from .dados import brl, carregar_fichas, data_br, edital, ler_json
 from .extracao import ler_fila, pendentes
@@ -16,6 +22,8 @@ from .validar import validar_concurso
 CSV = "revisao.csv"
 MD = "revisao.md"
 COLUNAS = ["id", "situacao", "campo", "valor", "trecho", "conferido", "observacao"]
+MARCAS_DA_PESSOA = ("ok", "corrigir")
+ORDEM = {"corrigir": 0, "": 0, "amostra": 1}   # o que a pessoa precisa olhar vem primeiro no CSV
 NI = "Não informado no edital"
 
 
@@ -81,10 +89,12 @@ def gerar(pasta, data_varredura=None):
     md.append(f"# Revisão da varredura de {data_varredura:%d/%m/%Y}\n")
     md.append(f"Fichas: {len(fichas)} · novos: {len(r.novos)} · alterados: {len(r.alterados)} · iguais ao publicado: "
               f"{len(r.iguais)} · encerrados desde a última varredura: {len(r.encerrados)}\n")
-    md.append("Como conferir: abra `revisao.csv` (Excel ou LibreOffice), compare cada valor com o trecho e com o ato "
-              "oficial e escreva `ok` na coluna **conferido**. Valor errado: corrija `fichas/<id>.json`, rode "
-              "`python -m varredura revisao` de novo (as marcas das linhas que não mudaram ficam) e marque `ok`. "
-              "`corrigir` segura o concurso fora da publicação.\n")
+    md.append("Como conferir: abra `revisao.csv` (Excel ou LibreOffice). As linhas `auto` a conferência automática já "
+              "achou no texto do ato. Confira só as linhas com **conferido** vazio (o motivo está em `observacao`) e as "
+              "marcadas `amostra`, comparando com o ato oficial, e escreva `ok`. Valor errado: corrija "
+              "`fichas/<id>.json`, rode `python -m varredura revisao` de novo (as suas marcas nas linhas que não "
+              "mudaram ficam) e marque `ok`. `corrigir` segura o concurso fora da publicação.\n")
+    resumo_pos = len(md)
 
     falhas = {nome: estado for nome, estado in registro.get("fontes", {}).items() if estado != "ok"}
     if falhas:
@@ -113,6 +123,8 @@ def gerar(pasta, data_varredura=None):
         origem = (f"[{_celula(meta.get('titulo'))}]({meta.get('url')}) · {meta.get('fonte')} · {meta.get('data')}"
                   if meta else ato or "ato não identificado")
         antes = dict(linhas_criticas(antigo)) if antigo else {}
+        texto, links = texto_dos_atos(pasta, ficha)
+        cargos = iter(c["cargos"])
         md.append(f"### {c['orgao']} · `{c['id']}`\n")
         md.append(f"Ato: {origem}\n")
         md.append("| Campo | Valor | Trecho do ato |\n| --- | --- | --- |")
@@ -120,10 +132,21 @@ def gerar(pasta, data_varredura=None):
             mudou = antigo is not None and antes.get(campo) != valor and campo != "salario"
             valor_md = f"**{_celula(valor)}** (antes: {_celula(antes.get(campo, '—'))})" if mudou else _celula(valor)
             md.append(f"| {campo} | {valor_md} | {_celula(trechos.get(campo))} |")
+            cargo = next(cargos) if campo == "salario" else None
             conferido, obs = marcas.get((c["id"], campo, valor), ("", ""))
+            if conferido not in MARCAS_DA_PESSOA:
+                conferido, obs = "", ""
             if not conferido and antigo is not None and (campo, valor) in linhas_criticas(antigo) and antigo.get("conferencia"):
                 conf = antigo["conferencia"]
                 conferido, obs = "ok", f"igual ao publicado (conferido em {conf['conferido_em']} por {conf['por']})"
+            if not conferido:
+                passou, motivo = verificar(campo, c, texto, links, cargo)
+                if not passou:
+                    obs = "conferir: " + motivo
+                elif na_amostra(pasta.name, c["id"], campo, valor):
+                    conferido, obs = "amostra", f"amostra semanal ({motivo}): confira e troque por ok"
+                else:
+                    conferido, obs = "auto", motivo
             linhas_csv.append({"id": c["id"], "situacao": situacao, "campo": campo, "valor": valor,
                                "trecho": trechos.get(campo, ""), "conferido": conferido, "observacao": obs})
         md.append("")
@@ -159,6 +182,11 @@ def gerar(pasta, data_varredura=None):
         md += [f"- `{d['ato']}`: {d['motivo']}" for d in ler_json(pasta / "descartes.json")]
         md.append("")
 
+    n = {k: sum(1 for l in linhas_csv if l["conferido"] == k) for k in ("", "amostra", "auto", "ok", "corrigir")}
+    md.insert(resumo_pos, f"**Conferência:** {len(linhas_csv)} linhas · {n['auto']} achadas no ato pela automática · "
+                          f"**{n[''] + n['amostra']} para você** ({n['']} que a automática não achou e {n['amostra']} "
+                          f"da amostra) · {n['ok']} ok · {n['corrigir']} corrigir\n")
+    linhas_csv.sort(key=lambda l: ORDEM.get(l["conferido"], 2))   # estável: dentro de cada grupo, a ordem dos concursos
     (pasta / MD).write_text("\n".join(md) + "\n", encoding="utf-8", newline="\n")
     # utf-8 com BOM e ";" para o Excel em português abrir certo.
     with (pasta / CSV).open("w", encoding="utf-8-sig", newline="") as f:

@@ -1,6 +1,6 @@
 # concurseiro: MVP v0
 
-Site gratuito que reúne os concursos públicos **federais e do Paraná** com inscrição aberta: salário na frente, prazos, localização e sempre o caminho para o edital oficial. "concurseiro" é nome provisório. No ar em https://filipejefte.github.io/concurseiro-site/ (fora do Google na v0).
+Site gratuito que reúne os concursos públicos **federais e do Paraná** com inscrição aberta: salário na frente, prazos, localização e sempre o caminho para o edital oficial. "concurseiro" é o nome definitivo. No ar em https://filipejefte.github.io/concurseiro-site/ (fora do Google na v0).
 
 > **Dados de exemplo até a primeira varredura.** Enquanto a primeira varredura real não for publicada, o site mostra 12 concursos fictícios (`dados/exemplo/`), com aviso em todas as páginas. Todas as páginas têm `noindex` e o `robots.txt` bloqueia buscadores até os sócios decidirem abrir o site.
 
@@ -98,9 +98,22 @@ As fontes são lidas com boas maneiras:
 
 ### Conferir e publicar
 
-1. Abra `dados/varreduras/AAAA-MM-DD/revisao.csv` no Excel ou no LibreOffice. Ele vem em UTF-8 e separado por `;`.
-2. Para cada linha, compare o valor com o trecho e com o ato oficial (link em `revisao.md`) e escreva `ok` na coluna **conferido**.
-3. Se o valor estiver errado, corrija `fichas/<id>.json`, rode `python -m varredura revisao` de novo (as marcas das linhas que não mudaram ficam) e marque `ok`. `corrigir` segura o concurso.
+O `python -m varredura revisao` já roda a conferência automática (`varredura/conferir.py`). Ela não usa IA nem custa nada: procura cada valor crítico no texto do ato oficial, no lugar certo, e marca `auto` na coluna **conferido** o que achou:
+
+| Campo | Passa quando |
+| --- | --- |
+| Salário | o valor aparece logo depois do nome do cargo, e nenhum outro cargo da ficha está mais perto |
+| Inscrição | início e fim aparecem como período ("de X a Y", "das 12h de X às 23h59 de Y") logo depois de "inscrição" |
+| Prova objetiva | é a primeira data depois de "objetiva" (sem contar gabarito, resultado e recurso) |
+| Taxa | o valor aparece depois de "taxa" |
+| Banca e cidade | o nome está no ato |
+| Link do edital | é o link do próprio ato |
+
+"Não informado" passa quando o texto não tem o dado perto da palavra-chave; em concurso previsto (sem edital), passa direto. Uma amostra fixa de 1 em 20 linhas que passaram vem marcada `amostra`, para pegar erro do próprio verificador. Os testes estragam fichas de propósito (salário trocado entre cargos, data deslocada, início e fim invertidos) e exigem que nada disso passe.
+
+1. Abra `dados/varreduras/AAAA-MM-DD/revisao.csv` no Excel ou no LibreOffice (UTF-8, separado por `;`). As linhas para você vêm primeiro.
+2. Confira as linhas com **conferido** vazio (o motivo está em `observacao`) e as `amostra`, comparando com o ato oficial (link em `revisao.md`), e escreva `ok`.
+3. Se o valor estiver errado, corrija `fichas/<id>.json`, rode `python -m varredura revisao` de novo (as suas marcas nas linhas que não mudaram ficam) e marque `ok`. `corrigir` segura o concurso.
 4. Publique:
 
 ```powershell
@@ -155,7 +168,7 @@ Os 399 códigos do IBGE batem com os do repositório, e os nomes também. As cid
 - O site nunca recebe inscrição nem pagamento. O botão principal da ficha é "Ver edital oficial".
 - Toda ficha vem de ato oficial, com link. Agregadores não são fonte.
 - O que o edital não traz aparece como "Não informado no edital".
-- Nada vai ao ar sem conferência humana dos campos críticos.
+- Nada vai ao ar sem conferência dos campos críticos: automática contra o texto do ato, ou da pessoa no que a automática não acha, mais uma amostra semanal.
 - Nenhum dado pessoal é coletado na v0. Alerta, quando existir, só com opt-in.
 - Anúncio leva "Publicidade"; indicação paga leva "Link de parceiro" e `rel="sponsored"`.
 - "Previsto" só com ato oficial de autorização do concurso ou de contratação da banca.

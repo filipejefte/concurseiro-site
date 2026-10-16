@@ -1,6 +1,6 @@
 # concurseiro: instruções para o Claude Code
 
-Site gratuito que reúne concursos públicos abertos, com o salário na frente, prazos e localização. Ele sempre leva ao edital oficial. "concurseiro" é nome provisório.
+Site gratuito que reúne concursos públicos abertos, com o salário na frente, prazos e localização. Ele sempre leva ao edital oficial. "concurseiro" é o nome definitivo (decisão de 16/10/2026).
 
 ## Contexto (decisão de 14/10/2026)
 
@@ -18,7 +18,7 @@ Site gratuito que reúne concursos públicos abertos, com o salário na frente, 
 1. O site nunca recebe inscrição nem pagamento. O botão principal da ficha é sempre "Ver edital oficial". Concurso previsto, sem edital, usa "Ver ato oficial".
 2. Toda ficha vem de ato oficial (diário oficial ou site da banca), com link. PCI, Folha Dirigida e outros agregadores servem só para conferir cobertura; nunca copie texto ou dado deles.
 3. O que o edital não traz fica `null` no JSON e aparece como "Não informado no edital" na tela. Nada de chute.
-4. Nada vai ao ar sem uma pessoa conferir os campos críticos: salário de cada cargo, início e fim da inscrição, data da prova objetiva, taxa, banca, cidade e link do edital.
+4. Nada vai ao ar sem conferir os campos críticos: salário de cada cargo, início e fim da inscrição, data da prova objetiva, taxa, banca, cidade e link do edital. A conferência automática (`varredura/conferir.py`, sem IA e sem custo) procura cada valor no texto do ato e marca `auto` o que acha no lugar certo; a pessoa confere o resto e uma amostra de 1 em 20 do que passou.
 5. A v0 não coleta dado pessoal. Alerta, quando existir, só com opt-in (LGPD).
 6. Anúncio leva "Publicidade". Indicação paga leva "Link de parceiro" e `rel="sponsored"`.
 7. "Previsto" só com ato oficial de autorização do concurso ou de contratação da banca.
@@ -43,7 +43,7 @@ dados/
   exemplo/                   12 concursos e 4 cidades fictícios (só com --exemplo)
   varreduras/AAAA-MM-DD/     atos.json, fila/ (fora do git), fichas/, descartes.json,
                              revisao.md, revisao.csv, resumo-telegram.md
-varredura/                   pacote Python (fontes, triagem, extração, validação, revisão, publicação)
+varredura/                   pacote Python (fontes, triagem, extração, validação, conferência automática, revisão, publicação)
   instrucoes_extracao.md     como extrair a ficha de um ato (vale para o modo api e para o /varredura)
 tests/                       pytest
 .claude/commands/varredura.md  passo a passo semanal
@@ -73,7 +73,8 @@ python -m varredura municipios                              # refaz a tabela de 
 - Fazer commit de `.env`, chaves, `.cache/`, PDFs ou da fila de extração.
 - Escrever credencial no código ou mostrar o conteúdo do `.env`. Elas vêm de `CONTATO_VARREDURA`, `INLABS_EMAIL`, `INLABS_SENHA` e `ANTHROPIC_API_KEY` (ver `.env.example`).
 - Ler dados de agregador, preencher campo por dedução ou inventar valor para passar na validação.
-- Marcar `ok` no `revisao.csv` no lugar do Filipe: a conferência é humana.
+- Marcar `ok` ou `auto` à mão no `revisao.csv`: `ok` é do Filipe, `auto` só a conferência automática escreve.
+- Afrouxar a conferência automática sem que os testes de valor errado (`tests/test_varredura.py`) continuem passando.
 - Tirar o `noindex` ou mudar o `robots.txt` sem decisão dos sócios.
 - Pôr campo de e-mail ou formulário de cadastro no site da v0.
 - Passar de 1 requisição por segundo nas fontes, ignorar o `robots.txt` ou fazer a coleta completa fora do `/varredura`.

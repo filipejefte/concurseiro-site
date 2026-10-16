@@ -8,6 +8,7 @@ import pytest
 
 from varredura import dados
 from varredura.comparar import comparar
+from varredura.conferir import normalizar, verificar
 from varredura.dados import ler_json, situacao
 from varredura.publicar import publicar_semana
 from varredura.revisao import gerar, linhas_criticas
@@ -325,3 +326,73 @@ def test_revisao_mantem_marcas_das_linhas_que_nao_mudaram(ambiente):
     with (pasta / "revisao.csv").open(encoding="utf-8-sig", newline="") as f:
         linhas = list(csv.DictReader(f, delimiter=";"))
     assert len(linhas) == len(linhas_criticas(c)) and all(l["conferido"] == "ok" for l in linhas)
+
+
+# ---------- conferência automática ----------
+
+
+ATO = normalizar("""EDITAL DE ABERTURA Nº 01/2026. 5.3 O período para a realização das inscrições será a partir das 12h00min
+do dia 30 de setembro de 2026 às 23h59min do dia 29/10/2026. Divulgação das inscrições deferidas: 05/11/2026.
+Valor da taxa de inscrição: R$ 130,00 (médio) e R$ 180,00 (superior).
+201 Agente Administrativo 40h 01 R$ 2.689,59 130,00 202 Auxiliar de Serviços Gerais 40h 01 R$ 1.837,03 130,00
+10.2 A prova objetiva será aplicada na data provável de 15 de novembro de 2026. 16.11 Gabarito da prova objetiva 16/11/2026.
+Contratada: Fundação de Apoio ao Ensino (FAUEPG). Município de Nova Prata do Iguaçu.""")
+LINK = "https://www.diariomunicipal.com.br/amp/materia/X1"
+
+
+def _ficha_conferir(**mudar):
+    c = {"inscricao": {"inicio": "2026-09-30", "fim": "2026-10-29"}, "prova_objetiva": "2026-11-15", "isencao_ate": None,
+         "taxa": {"min": 130.0, "max": 180.0}, "banca": {"nome": "FAUEPG"}, "cidade": "Nova Prata do Iguaçu", "nacional": False,
+         "cargos": [{"nome": "Agente Administrativo", "salario": 2689.59}, {"nome": "Auxiliar de Serviços Gerais", "salario": 1837.03}],
+         "documentos": [{"tipo": "edital", "url": LINK, "publicado_em": "2026-09-23"}]}
+    for chave, valor in mudar.items():
+        alvo, campo = (c["inscricao"], chave[5:]) if chave.startswith("insc_") else (c, chave)
+        alvo[campo] = valor
+    return c
+
+
+def _passa(campo, c, cargo=None):
+    return verificar(campo, c, ATO, {LINK}, cargo)[0]
+
+
+def test_conferencia_automatica_aceita_o_que_esta_no_ato():
+    c = _ficha_conferir()
+    assert all(_passa("salario", c, k) for k in c["cargos"])
+    assert all(_passa(campo, c) for campo in ("inscricao.inicio", "inscricao.fim", "prova_objetiva", "taxa", "banca", "cidade", "edital"))
+
+
+@pytest.mark.parametrize("campo,mudar", [
+    ("inscricao.inicio", {"insc_inicio": "2026-10-29", "insc_fim": "2026-09-30"}),   # início e fim trocados
+    ("inscricao.fim", {"insc_fim": "2026-10-30"}),                                   # um dia depois
+    ("prova_objetiva", {"prova_objetiva": "2026-11-16"}),                            # data do gabarito
+    ("prova_objetiva", {"prova_objetiva": None}),                                    # o edital traz a data
+    ("taxa", {"taxa": {"min": 130.0, "max": 190.0}}),
+    ("banca", {"banca": {"nome": "Instituto Inventado"}}),
+    ("cidade", {"cidade": "Maringá"}),
+    ("edital", {"documentos": [{"tipo": "edital", "url": "https://outro.example/edital.pdf", "publicado_em": "2026-09-23"}]}),
+])
+def test_conferencia_automatica_recusa_valor_errado(campo, mudar):
+    assert not _passa(campo, _ficha_conferir(**mudar))
+
+
+def test_conferencia_automatica_recusa_salario_trocado_entre_cargos():
+    c = _ficha_conferir()
+    c["cargos"][1]["salario"] = 2689.59   # o auxiliar com o salário do agente
+    assert not _passa("salario", c, c["cargos"][1])
+
+
+def test_previsto_sem_edital_passa_nos_campos_vazios():
+    c = _ficha_conferir(insc_inicio=None, insc_fim=None, prova_objetiva=None, taxa={"min": None, "max": None},
+                        documentos=[{"tipo": "autorizacao", "url": LINK, "publicado_em": "2026-09-23"}])
+    assert all(_passa(campo, c) for campo in ("inscricao.inicio", "inscricao.fim", "prova_objetiva", "taxa", "edital"))
+
+
+def test_publicar_aceita_auto_e_recusa_amostra(ambiente):
+    pasta, base, c = ambiente
+    gerar(pasta)
+    _marcar(pasta, "amostra")
+    assert publicar_semana(pasta, "Teste", hoje=DIA)[0] == []
+    _marcar(pasta, "auto")
+    aprovados, _ = publicar_semana(pasta, "Teste", hoje=DIA)
+    assert [x["id"] for x in aprovados] == [c["id"]]
+    assert ler_json(base)["concursos"][0]["conferencia"]["por"] == "conferência automática"

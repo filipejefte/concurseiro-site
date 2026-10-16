@@ -52,10 +52,20 @@ def gerar_js(base, exemplo=False, hoje=None):
     return concursos
 
 
+CONFERIDO = ("ok", "auto")   # ok = a pessoa; auto = achado no texto do ato pela conferência automática
+
+
 def _faltando_conferir(c, marcas):
-    """Campos críticos sem "ok" no revisao.csv (o valor tem de ser o mesmo da ficha atual)."""
+    """Campos críticos sem "ok" nem "auto" no revisao.csv (o valor tem de ser o mesmo da ficha atual)."""
     return [f"{campo} ({valor})" for campo, valor in linhas_criticas(c)
-            if marcas.get((c["id"], campo, valor), ("", ""))[0] != "ok"]
+            if marcas.get((c["id"], campo, valor), ("", ""))[0] not in CONFERIDO]
+
+
+def _quem_conferiu(c, marcas, por):
+    tipos = {marcas[(c["id"], campo, valor)][0] for campo, valor in linhas_criticas(c)}
+    if tipos == {"auto"}:
+        return "conferência automática"
+    return por + (" e conferência automática" if "auto" in tipos else "")
 
 
 def publicar_semana(pasta, por, hoje=None):
@@ -85,7 +95,7 @@ def publicar_semana(pasta, por, hoje=None):
         antigo = publicados.get(c["id"]) or {}
         publicados[c["id"]] = dict(
             c,
-            conferencia={"conferido_em": hoje.isoformat(), "por": por,
+            conferencia={"conferido_em": hoje.isoformat(), "por": _quem_conferiu(c, marcas, por),
                          "campos": [campo for campo in d.CAMPOS_CRITICOS if any(k == campo for k, _ in linhas_criticas(c))]},
             primeira_varredura=antigo.get("primeira_varredura") or data_varredura.isoformat(),
             ultima_alteracao=data_varredura.isoformat(),
