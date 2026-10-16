@@ -1,32 +1,16 @@
 # Revisão da varredura de 14/10/2026
 
-Fichas: 22 · novos: 22 · alterados: 0 · iguais ao publicado: 0 · encerrados desde a última varredura: 0
+Fichas: 21 · novos: 15 · alterados: 0 · iguais ao publicado: 6 · encerrados desde a última varredura: 0
 
 Como conferir: abra `revisao.csv` (Excel ou LibreOffice). As linhas `auto` a conferência automática já achou no texto do ato. Confira só as linhas com **conferido** vazio (o motivo está em `observacao`) e as marcadas `amostra`, comparando com o ato oficial, e escreva `ok`. Valor errado: corrija `fichas/<id>.json`, rode `python -m varredura revisao` de novo (as suas marcas nas linhas que não mudaram ficam) e marque `ok`. `corrigir` segura o concurso fora da publicação.
 
-**Conferência:** 277 linhas · 212 achadas no ato pela automática · **65 para você** (54 que a automática não achou e 11 da amostra) · 0 ok · 0 corrigir
+**Conferência:** 207 linhas · 152 achadas no ato pela automática · **55 para você** (44 que a automática não achou e 11 da amostra) · 0 ok · 0 corrigir
 
 ## Fontes com problema nesta coleta
 
 - **DIOE-PR**: pulada: DIOE-PR ainda não implementado: formato e acesso não verificados (ver TODO no arquivo).
 
 ## Novos
-
-### Câmara Municipal de Iporã (PR) · `camara-ipora-pr-2026`
-
-Ato: [EXTRATO DO CONTRATO](https://www.diariomunicipal.com.br/amp/materia/02307134) · AMP-PR · 2026-10-08
-
-| Campo | Valor | Trecho do ato |
-| --- | --- | --- |
-| salario | Assistente Legislativo: Não informado no edital | O ato não traz vagas nem salários |
-| salario | Zeladora: Não informado no edital | O ato não traz vagas nem salários |
-| inscricao.inicio | Não informado no edital | não consta no ato |
-| inscricao.fim | Não informado no edital | não consta no ato |
-| prova_objetiva | Não informado no edital | não consta no ato |
-| taxa | Não informado no edital | não consta no ato |
-| banca | Instituto Omni | Contratante: Câmara Municipal de Iporã/PR Contratada: Instituto Omni [...] Data da assinatura: 05/10/2026 |
-| cidade | Iporã (PR) · IBGE 4110607 | concurso público para os cargos de Assistente Legislativo e Cadastro de Reserva da Zeladora (Câmara Municipal de Iporã) |
-| edital | https://www.diariomunicipal.com.br/amp/materia/02307134 | EXTRATO DO CONTRATO Contratante: Câmara Municipal de Iporã/PR |
 
 ### Câmara Municipal de Nova Prata do Iguaçu (PR) · `camara-nova-prata-do-iguacu-pr-2026-edital-01`
 
@@ -59,23 +43,9 @@ Ato: [EXTRATO DE DISPENSA DE LICITAÇÃO N° 08/2026 -](https://www.diariomunici
 | inscricao.fim | Não informado no edital | não consta no ato |
 | prova_objetiva | Não informado no edital | não consta no ato |
 | taxa | Não informado no edital | não consta no ato |
-| banca | Fundação FAFIPA | Contratante: Câmara Municipal de Paranaguá. Contratada: Fundação de Apoio ao Campus de Paranavaí – [...] FAFIPA |
+| banca | Fundação de Apoio ao Campus de Paranavaí (FAFIPA) | Contratante: Câmara Municipal de Paranaguá. Contratada: Fundação de Apoio ao Campus de Paranavaí – [...] FAFIPA |
 | cidade | Paranaguá (PR) · IBGE 4118204 | concurso público destinado ao provimento de cargos efetivos e à formação de cadastro de reserva da Câmara Municipal de Paranaguá |
 | edital | https://www.diariomunicipal.com.br/amp/materia/C90005FC | EXTRATO DE DISPENSA DE LICITAÇÃO N° 08/2026 - COMPRA DIRETA |
-
-### Câmara Municipal de Quatro Barras (PR) · `camara-quatro-barras-pr-2026`
-
-Ato: [CONCURSO PÚBLICO PARA PREENCHIMENTO DE VAGAS](https://www.diariomunicipal.com.br/amp/materia/CB504042) · AMP-PR · 2026-09-25
-
-| Campo | Valor | Trecho do ato |
-| --- | --- | --- |
-| inscricao.inicio | Não informado no edital | não consta no ato |
-| inscricao.fim | Não informado no edital | não consta no ato |
-| prova_objetiva | Não informado no edital | não consta no ato |
-| taxa | Não informado no edital | não consta no ato |
-| banca | Instituto Consulpam | CONTRATANTE: CAMARA MUNICIPAL DE QUATRO BARRAS CONTRATADA: INSTITUTO CONSULPAM CONSULTORIA PÚBLICO PRIVADO |
-| cidade | Quatro Barras (PR) · IBGE 4120804 | CONCURSO PÚBLICO PARA PREENCHIMENTO DE VAGAS DE CARGOS EFETIVOS DA CÂMARA MUNICIPAL DE QUATRO BARRAS – PR |
-| edital | https://www.diariomunicipal.com.br/amp/materia/CB504042 | CONTRATO 16 DISPENSA: 18/2026 |
 
 ### Câmara Municipal de Renascença (PR) · `camara-renascenca-pr-2026`
 
@@ -109,48 +79,6 @@ Ato: [CONCURSO PÚBLICO - EDITAL DE ABERTURA Nº](https://www.diariomunicipal.co
 | banca | Fundação FAFIPA | 1.1 O Concurso Público a que se refere o presente Edital será executado pela Fundação FAFIPA – Campus de Paranavaí |
 | cidade | Rio Azul (PR) · IBGE 4122008 | será aplicada no Município de Rio Azul, Estado do Paraná; quadro de servidores efetivos do Poder Legislativo Municipal |
 | edital | https://www.diariomunicipal.com.br/amp/materia/64FE0D83 | EDITAL DE ABERTURA N.º 01.01/2026 CONCURSO PÚBLICO Nº 01/2026 A Presidente da Câmara Municipal de Rio Azul, Estado do Paraná |
-
-### Conselho Regional de Engenharia e Agronomia do Paraná (CREA-PR) · `crea-pr-2026-edital-02`
-
-Ato: [EDITAL nº 2, DE 8 de setembro de 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=09/09/2026&jornal=530&pagina=117) · DOU · 2026-09-09
-
-| Campo | Valor | Trecho do ato |
-| --- | --- | --- |
-| salario | Agente Profissional – Advogado: R$ 7.234,12 | AGENTE ADMINISTRATIVO [...] Salário de R$ 3.115,75 (40h/s) e R$ 2.336,80 (30h/s) [...] AGENTE PROFISSIONAL DO SISTEMA (NS) [...] Salário mínimo igual à 8,5 salários-mínimos nacional de ingresso [...] AGENTE PROFISSIONAL - Sede - Curitiba; Formação e vagas: Contador CR, Advogado 1 + CR, Analista de Informação CR [...] Salário R$ 7.234,12 [...] Arquiteto e Urbanista CR [...] Salário mínimo igual à 8,5 salários-mínimos nacional de ingresso |
-| salario | Agente Profissional – Contador: R$ 7.234,12 | AGENTE ADMINISTRATIVO [...] Salário de R$ 3.115,75 (40h/s) e R$ 2.336,80 (30h/s) [...] AGENTE PROFISSIONAL DO SISTEMA (NS) [...] Salário mínimo igual à 8,5 salários-mínimos nacional de ingresso [...] AGENTE PROFISSIONAL - Sede - Curitiba; Formação e vagas: Contador CR, Advogado 1 + CR, Analista de Informação CR [...] Salário R$ 7.234,12 [...] Arquiteto e Urbanista CR [...] Salário mínimo igual à 8,5 salários-mínimos nacional de ingresso |
-| salario | Agente Profissional – Analista de Informação: R$ 7.234,12 | AGENTE ADMINISTRATIVO [...] Salário de R$ 3.115,75 (40h/s) e R$ 2.336,80 (30h/s) [...] AGENTE PROFISSIONAL DO SISTEMA (NS) [...] Salário mínimo igual à 8,5 salários-mínimos nacional de ingresso [...] AGENTE PROFISSIONAL - Sede - Curitiba; Formação e vagas: Contador CR, Advogado 1 + CR, Analista de Informação CR [...] Salário R$ 7.234,12 [...] Arquiteto e Urbanista CR [...] Salário mínimo igual à 8,5 salários-mínimos nacional de ingresso |
-| salario | Agente Profissional do Sistema (engenharias e agronomia): Não informado no edital | AGENTE ADMINISTRATIVO [...] Salário de R$ 3.115,75 (40h/s) e R$ 2.336,80 (30h/s) [...] AGENTE PROFISSIONAL DO SISTEMA (NS) [...] Salário mínimo igual à 8,5 salários-mínimos nacional de ingresso [...] AGENTE PROFISSIONAL - Sede - Curitiba; Formação e vagas: Contador CR, Advogado 1 + CR, Analista de Informação CR [...] Salário R$ 7.234,12 [...] Arquiteto e Urbanista CR [...] Salário mínimo igual à 8,5 salários-mínimos nacional de ingresso |
-| salario | Agente Profissional – Arquiteto e Urbanista: Não informado no edital | AGENTE ADMINISTRATIVO [...] Salário de R$ 3.115,75 (40h/s) e R$ 2.336,80 (30h/s) [...] AGENTE PROFISSIONAL DO SISTEMA (NS) [...] Salário mínimo igual à 8,5 salários-mínimos nacional de ingresso [...] AGENTE PROFISSIONAL - Sede - Curitiba; Formação e vagas: Contador CR, Advogado 1 + CR, Analista de Informação CR [...] Salário R$ 7.234,12 [...] Arquiteto e Urbanista CR [...] Salário mínimo igual à 8,5 salários-mínimos nacional de ingresso |
-| salario | Agente Administrativo (40 h): R$ 3.115,75 | AGENTE ADMINISTRATIVO [...] Salário de R$ 3.115,75 (40h/s) e R$ 2.336,80 (30h/s) [...] AGENTE PROFISSIONAL DO SISTEMA (NS) [...] Salário mínimo igual à 8,5 salários-mínimos nacional de ingresso [...] AGENTE PROFISSIONAL - Sede - Curitiba; Formação e vagas: Contador CR, Advogado 1 + CR, Analista de Informação CR [...] Salário R$ 7.234,12 [...] Arquiteto e Urbanista CR [...] Salário mínimo igual à 8,5 salários-mínimos nacional de ingresso |
-| salario | Agente Administrativo (30 h): R$ 2.336,80 | AGENTE ADMINISTRATIVO [...] Salário de R$ 3.115,75 (40h/s) e R$ 2.336,80 (30h/s) [...] AGENTE PROFISSIONAL DO SISTEMA (NS) [...] Salário mínimo igual à 8,5 salários-mínimos nacional de ingresso [...] AGENTE PROFISSIONAL - Sede - Curitiba; Formação e vagas: Contador CR, Advogado 1 + CR, Analista de Informação CR [...] Salário R$ 7.234,12 [...] Arquiteto e Urbanista CR [...] Salário mínimo igual à 8,5 salários-mínimos nacional de ingresso |
-| inscricao.inicio | 10/09/2026 | Inscrições de 10/09/2026 a 15/10/2026 pelo site www.institutounifil.com.br |
-| inscricao.fim | 15/10/2026 | Inscrições de 10/09/2026 a 15/10/2026 pelo site www.institutounifil.com.br |
-| prova_objetiva | 22/11/2026 | Data provável de realização da prova: 22/11/2026 |
-| taxa | R$ 60,00 a R$ 100,00 | Taxa de Inscrição: R$ 60,00 (Agente Administrativo) [...] Taxa de Inscrição: R$ 100,00 (Agente Profissional) |
-| banca | Instituto Filadélfia de Londrina (UniFil) | por intermédio da Organizadora Instituto Filadélfia de Londrina - UniFil |
-| cidade | Curitiba (PR) · IBGE 4106902 | AGENTE ADMINISTRATIVO - Sede e Inspetoria de Curitiba: 5 vagas [...] Pato Branco 1 vaga; Local de prova: Curitiba, Cascavel, Apucarana, Londrina, Maringá, Ponta Grossa, Guarapuava e Pato Branco |
-| edital | http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=09/09/2026&jornal=530&pagina=117 | EDITAL nº 2, DE 8 de setembro de 2026 Concurso Público Para seleção de candidatos para cadastro de reserva O CONSELHO REGIONAL DE ENGENHARIA E AGRONOMIA DO PARANÁ - CREA/PR |
-
-### Conselho Regional de Química da 9ª Região – Paraná (CRQ-IX) · `crq-9-regiao-pr-2026-edital-01`
-
-Ato: [EDITAL Nº 1, DE 18 DE SETEMBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=21/09/2026&jornal=530&pagina=220) · DOU · 2026-09-21
-
-| Campo | Valor | Trecho do ato |
-| --- | --- | --- |
-| salario | Auxiliar Administrativo: Não informado no edital | O aviso lista os cargos (Auxiliar Administrativo; Auxiliar Técnico de Fiscalização; Técnico em Contabilidade; Agente Fiscal; Analista de Informática; Assessor Jurídico e Contador), sem vagas nem salários; o edital normativo está em www.quadrix.org.br |
-| salario | Auxiliar Técnico de Fiscalização: Não informado no edital | O aviso lista os cargos (Auxiliar Administrativo; Auxiliar Técnico de Fiscalização; Técnico em Contabilidade; Agente Fiscal; Analista de Informática; Assessor Jurídico e Contador), sem vagas nem salários; o edital normativo está em www.quadrix.org.br |
-| salario | Técnico em Contabilidade: Não informado no edital | O aviso lista os cargos (Auxiliar Administrativo; Auxiliar Técnico de Fiscalização; Técnico em Contabilidade; Agente Fiscal; Analista de Informática; Assessor Jurídico e Contador), sem vagas nem salários; o edital normativo está em www.quadrix.org.br |
-| salario | Agente Fiscal: Não informado no edital | O aviso lista os cargos (Auxiliar Administrativo; Auxiliar Técnico de Fiscalização; Técnico em Contabilidade; Agente Fiscal; Analista de Informática; Assessor Jurídico e Contador), sem vagas nem salários; o edital normativo está em www.quadrix.org.br |
-| salario | Analista de Informática: Não informado no edital | O aviso lista os cargos (Auxiliar Administrativo; Auxiliar Técnico de Fiscalização; Técnico em Contabilidade; Agente Fiscal; Analista de Informática; Assessor Jurídico e Contador), sem vagas nem salários; o edital normativo está em www.quadrix.org.br |
-| salario | Assessor Jurídico: Não informado no edital | O aviso lista os cargos (Auxiliar Administrativo; Auxiliar Técnico de Fiscalização; Técnico em Contabilidade; Agente Fiscal; Analista de Informática; Assessor Jurídico e Contador), sem vagas nem salários; o edital normativo está em www.quadrix.org.br |
-| salario | Contador: Não informado no edital | O aviso lista os cargos (Auxiliar Administrativo; Auxiliar Técnico de Fiscalização; Técnico em Contabilidade; Agente Fiscal; Analista de Informática; Assessor Jurídico e Contador), sem vagas nem salários; o edital normativo está em www.quadrix.org.br |
-| inscricao.inicio | Não informado no edital | não consta no ato (o aviso só traz o fim das inscrições) |
-| inscricao.fim | 21/10/2026 | Será admitida a inscrição exclusivamente via internet, no endereço eletrônico http://www.quadrix.org.br, até às 23 horas do dia 21 de outubro de 2026 |
-| prova_objetiva | 29/11/2026 | As provas objetivas e discursivas serão realizadas na data de 29 de novembro de 2026 (domingo) nas cidades de Curitiba/PR e Maringá/PR |
-| taxa | R$ 62,00 a R$ 66,00 | R$ 62,00 para o cargo de nível médio; R$ 64,00 para os cargos de nível técnico; e R$ 66,00 para os cargos de nível superior |
-| banca | Instituto Quadrix | O concurso público será realizado sob a responsabilidade do Instituto Quadrix |
-| cidade | Curitiba (PR) · IBGE 4106902 | As fases do concurso público serão realizadas nas cidades de Curitiba/PR e Maringá/PR (o aviso não diz a cidade de lotação) |
-| edital | http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=21/09/2026&jornal=530&pagina=220 | EDITAL Nº 1, DE 18 DE SETEMBRO DE 2026 CONCURSO PÚBLICO [...] CONSELHO REGIONAL DE QUÍMICA DA 9ª REGIÃO - CRQ - 9ª REGIÃO - PARANÁ |
 
 ### Prefeitura de Califórnia (PR) · `prefeitura-california-pr-2026`
 
@@ -233,20 +161,6 @@ Ato: [EDITAL DE ABERTURA Nº 01/2026 - CONCURSO PÚBLICO Nº 01/2026](https://ww
 | cidade | Nova Prata do Iguaçu (PR) · IBGE 4117255 | 10.1 A prova objetiva será aplicada na Cidade de Nova Prata do Iguaçu/Paraná; quadro de servidores do Município de Nova Prata do Iguaçu |
 | edital | https://www.diariomunicipal.com.br/amp/materia/B81AACEE | EDITAL DE ABERTURA Nº 01/2026 CONCURSO PÚBLICO Nº 01/2026 A Prefeita do Município de Nova Prata do Iguaçu – Estado do Paraná |
 
-### Prefeitura de Palmital (PR) · `prefeitura-palmital-pr-2026`
-
-Ato: [CONTRATO ADMINISTRATIVO Nº 146/2026 - FAU UNICENTRO](https://www.diariomunicipal.com.br/amp/materia/3C4C4F76) · AMP-PR · 2026-09-04
-
-| Campo | Valor | Trecho do ato |
-| --- | --- | --- |
-| inscricao.inicio | Não informado no edital | não consta no ato |
-| inscricao.fim | Não informado no edital | não consta no ato |
-| prova_objetiva | Não informado no edital | não consta no ato |
-| taxa | Não informado no edital | não consta no ato |
-| banca | Fundação de Apoio ao Desenvolvimento da UNICENTRO (FAU) | CONTRATO ADMINISTRATIVO Nº 146/2026 - FAU UNICENTRO |
-| cidade | Palmital (PR) · IBGE 4117800 | CONCURSO PÚBLICO destinado ao provimento de cargos públicos do quadro de pessoal do MUNICÍPIO DE PALMITAL-PR |
-| edital | https://www.diariomunicipal.com.br/amp/materia/3C4C4F76 | CONTRATO ADMINISTRATIVO Nº 146/2026 DISPENSA DE LICITAÇÃO Nº 28/2026 |
-
 ### Prefeitura de Realeza (PR) · `prefeitura-realeza-pr-2026`
 
 Ato: [EXTRATO DE CONTRATO -DISP. 26](https://www.diariomunicipal.com.br/amp/materia/1153BEDD) · AMP-PR · 2026-09-29
@@ -257,42 +171,9 @@ Ato: [EXTRATO DE CONTRATO -DISP. 26](https://www.diariomunicipal.com.br/amp/mate
 | inscricao.fim | Não informado no edital | não consta no ato |
 | prova_objetiva | Não informado no edital | não consta no ato |
 | taxa | Não informado no edital | não consta no ato |
-| banca | Fundação FAFIPA | CONTRATADA: FUNDAÇÃO DE APOIO AO CAMPUS DE PARANAVAÍ - FAFIPA [...] DATA DA ASSINATURA: 22/09/2026 |
+| banca | Fundação de Apoio ao Campus de Paranavaí (FAFIPA) | CONTRATADA: FUNDAÇÃO DE APOIO AO CAMPUS DE PARANAVAÍ - FAFIPA [...] DATA DA ASSINATURA: 22/09/2026 |
 | cidade | Realeza (PR) · IBGE 4121406 | Concurso Público destinado ao provimento de cargos efetivos do Município de Realeza/PR |
 | edital | https://www.diariomunicipal.com.br/amp/materia/1153BEDD | EXTRATO DE CONTRATO - CONTRATO ADMINISTRATIVO DE PRESTAÇÃO DE SERVIÇOS Nº 314/2026 |
-
-### Prefeitura de Sengés (PR) · `prefeitura-senges-pr-2026`
-
-Ato: [EXTRATO DO CONTRATO Nº 222/2026](https://www.diariomunicipal.com.br/amp/materia/59DA1748) · AMP-PR · 2026-08-25
-
-| Campo | Valor | Trecho do ato |
-| --- | --- | --- |
-| salario | Guarda Civil Municipal: Não informado no edital | não consta no ato |
-| inscricao.inicio | Não informado no edital | não consta no ato |
-| inscricao.fim | Não informado no edital | não consta no ato |
-| prova_objetiva | Não informado no edital | não consta no ato |
-| taxa | Não informado no edital | não consta no ato |
-| banca | Instituto Filadélfia de Londrina | CONTRATADA: INSTITUTO FILADÉLFIA DE LONDRINA [...] DATA ASSINATURA DO CONTRATO: 19/08/2026 |
-| cidade | Sengés (PR) · IBGE 4126306 | provimento de 13 (treze) vagas imediatas e formação de cadastro de reserva para o cargo de Guarda Civil Municipal do quadro efetivo do Município de Sengés/PR |
-| edital | https://www.diariomunicipal.com.br/amp/materia/59DA1748 | EXTRATO DO CONTRATO Nº 222/2026 Dispensa de Licitação n.º 050/2026 |
-
-### Prefeitura de Três Barras do Paraná (PR) · `prefeitura-tres-barras-do-parana-pr-2026`
-
-Ato: [DECRETO Nº 7248/2026](https://www.diariomunicipal.com.br/amp/materia/07AAE918) · AMP-PR · 2026-08-20
-
-| Campo | Valor | Trecho do ato |
-| --- | --- | --- |
-| salario | Auxiliar de Serviços Gerais: Não informado no edital | O decreto lista cargos, vagas e carga horária, sem remuneração |
-| salario | Trabalhador Braçal: Não informado no edital | O decreto lista cargos, vagas e carga horária, sem remuneração |
-| salario | Cozinheiro: Não informado no edital | O decreto lista cargos, vagas e carga horária, sem remuneração |
-| salario | Auditor Tributário Municipal: Não informado no edital | O decreto lista cargos, vagas e carga horária, sem remuneração |
-| inscricao.inicio | Não informado no edital | não consta no ato |
-| inscricao.fim | Não informado no edital | não consta no ato |
-| prova_objetiva | Não informado no edital | não consta no ato |
-| taxa | Não informado no edital | não consta no ato |
-| banca | Não informado no edital | Art. 3º O Departamento de Licitação deverá realizar certame, para a contratação de empresa especializada (banca ainda não contratada) |
-| cidade | Três Barras do Paraná (PR) · IBGE 4127858 | provimento efetivo de vagas existentes no Quadro de Pessoal do município de Três Barras do Paraná |
-| edital | https://www.diariomunicipal.com.br/amp/materia/07AAE918 | DECRETO Nº 7248/2026 Data: 19/08/2026 Determina providências para a realização de Concurso Público |
 
 ### Prefeitura de Tunas do Paraná (PR) · `prefeitura-tunas-do-parana-pr-2026`
 
@@ -6053,4 +5934,5 @@ Ato: [EDITAL Nº 240/DICS/DAP/PROGEPE, DE 22 DE SETEMBRO DE 2026](http://pesquis
 - `dou-2026-07-27-poder-judiciario-tribunal-regional-feder-21f1bde9.md`: TRF da 1ª Região: retificação de resultado de etapa da magistratura; não é abertura
 - `amp-pr-2026-10-06-gabinete-do-prefeito-1c39159b.md`: Campo Magro: decreto que prorroga a validade do Concurso 03/2024; não é abertura
 - `dou-2026-09-01-entidades-de-fiscalizacao-do-exercicio-d-0205d73c.md`: CRM-PR (Edital 1/2026): inscrições de 04/09 a 01/10/2026, já encerradas; provas em 18/10/2026
+- `dou-2026-09-09-entidades-de-fiscalizacao-do-exercicio-d-96dd943f.md`: CREA-PR (Edital 2/2026): inscrições encerradas em 15/10/2026, antes da publicação
 
