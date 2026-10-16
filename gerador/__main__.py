@@ -1,8 +1,10 @@
 """Linha de comando do gerador: python -m gerador <comando>.
 
-  build [--exemplo] [--hoje AAAA-MM-DD] [--saida public] [--plataforma github|cloudflare] [--indexar]
+  build [--exemplo] [--hoje AAAA-MM-DD] [--saida public] [--plataforma github|cloudflare]
         gera o site em public/ a partir de dados/concursos.json e do site.toml
   links [pasta]   confere os links internos do site gerado (o CI roda depois do build)
+  redirecionar [--saida publicar-github] [--base-antiga /concurseiro-site/]
+        site mínimo que leva o endereço antigo do GitHub Pages ao site_url novo
 """
 import argparse
 import sys
@@ -29,6 +31,9 @@ def main(argv=None):
                    help="cloudflare liga a sugestão de cidade pelo IP (Pages Function /api/local)")
     l = sub.add_parser("links", help="confere os links internos do site gerado")
     l.add_argument("pasta", nargs="?", type=Path, default=SAIDA)
+    r = sub.add_parser("redirecionar", help="site mínimo que leva o endereço antigo do GitHub Pages ao site_url novo")
+    r.add_argument("--saida", type=Path, default=Path("publicar-github"))
+    r.add_argument("--base-antiga", default="/concurseiro-site/")
     args = p.parse_args(argv)
 
     cfg = configuracao.ler()
@@ -42,6 +47,13 @@ def main(argv=None):
               f"em {time.monotonic() - inicio:.1f} s. indexar = {str(cfg.indexar).lower()}.")
         if not site.marca["logotipo"]:
             print("Aviso: sem docs/marca/logotipo-concurseiro.svg; o cabeçalho usa o logotipo provisório do protótipo.")
+        return 0
+    if args.comando == "redirecionar":
+        from .redirecionar import gerar
+        if cfg.base_path == args.base_antiga:
+            raise SystemExit("O site_url ainda é o do GitHub Pages: troque site_url e base_path no site.toml antes.")
+        gerar(args.saida, cfg.site_url, args.base_antiga)
+        print(f"Redirecionamento para {cfg.site_url} em {args.saida}")
         return 0
     if args.comando == "links":
         problemas = verificar(args.pasta, cfg.base_path)

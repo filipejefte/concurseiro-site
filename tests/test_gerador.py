@@ -233,3 +233,11 @@ def test_email_do_kit_so_com_formulario_configurado(tmp_path, site):
     assert "checked" not in caixa and "required" in caixa
     assert "Pronto. Mandamos um e-mail para você confirmar. Os alertas começam depois disso." in html
     assert "https://t.me/concurseiro_teste" in html
+
+
+def test_redirecionamento_do_github_pages(tmp_path):
+    from gerador.redirecionar import gerar
+    pasta = gerar(tmp_path / "r", "https://concurseiro.example", "/concurseiro-site/")
+    html = (pasta / "404.html").read_text(encoding="utf-8")
+    assert '"/concurseiro-site/"' in html and '"https://concurseiro.example"' in html and "noindex" in html
+    assert (pasta / "index.html").read_text(encoding="utf-8") == html

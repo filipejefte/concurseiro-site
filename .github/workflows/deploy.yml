@@ -1,0 +1,82 @@
+# Site: testa, gera e publica. Roda em todo push na main, todo dia às 06:00 de Brasília (a situação e os
+# prazos viram sem nova varredura), à mão e, sem publicar, em pull request.
+# Com os segredos CLOUDFLARE_API_TOKEN e CLOUDFLARE_ACCOUNT_ID, publica no Cloudflare Pages; sem eles, no GitHub Pages.
+name: Site
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  schedule:
+    - cron: "0 9 * * *"   # 09:00 UTC = 06:00 em Brasília
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: site-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  site:
+    runs-on: ubuntu-latest
+    env:
+      TEM_CLOUDFLARE: ${{ secrets.CLOUDFLARE_API_TOKEN != '' && secrets.CLOUDFLARE_ACCOUNT_ID != '' }}
+      PUBLICAR: ${{ github.event_name != 'pull_request' && github.ref == 'refs/heads/main' }}
+    outputs:
+      destino: ${{ steps.destino.outputs.destino }}
+    steps:
+      - uses: actions/checkout@v5.0.0
+      - uses: actions/setup-python@v6.0.0
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Instala as dependências
+        run: python -m pip install -r requirements.txt
+      - name: Testes
+        run: python -m pytest -q
+      - name: Escolhe onde publicar
+        id: destino
+        run: |
+          if [ "$TEM_CLOUDFLARE" = "true" ]; then echo "destino=cloudflare" >> "$GITHUB_OUTPUT"; else echo "destino=github" >> "$GITHUB_OUTPUT"; fi
+      - name: Gera o site
+        run: python -m gerador build --plataforma "${{ steps.destino.outputs.destino }}"
+      - name: Confere os links internos
+        run: python -m gerador links
+      - name: Publica no Cloudflare Pages
+        if: env.PUBLICAR == 'true' && steps.destino.outputs.destino == 'cloudflare'
+        run: npx --yes wrangler@4.145.0 pages deploy public --project-name="${CLOUDFLARE_PROJETO:-concurseiro}" --branch=main --commit-dirty=true
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CLOUDFLARE_PROJETO: ${{ vars.CLOUDFLARE_PROJETO }}
+      # Depois da mudança para o Cloudflare: com a variável REDIRECIONAR_GITHUB_PAGES = true, o endereço antigo
+      # no GitHub Pages vira uma página que leva ao mesmo caminho no domínio novo.
+      - name: Gera o redirecionamento do GitHub Pages
+        if: env.PUBLICAR == 'true' && steps.destino.outputs.destino == 'cloudflare' && vars.REDIRECIONAR_GITHUB_PAGES == 'true'
+        run: python -m gerador redirecionar --saida publicar-github
+      - name: Prepara o GitHub Pages (site)
+        if: env.PUBLICAR == 'true' && steps.destino.outputs.destino == 'github'
+        uses: actions/upload-pages-artifact@v4.0.0
+        with:
+          path: public
+      - name: Prepara o GitHub Pages (redirecionamento)
+        if: env.PUBLICAR == 'true' && steps.destino.outputs.destino == 'cloudflare' && vars.REDIRECIONAR_GITHUB_PAGES == 'true'
+        uses: actions/upload-pages-artifact@v4.0.0
+        with:
+          path: publicar-github
+
+  github-pages:
+    needs: site
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main' && (needs.site.outputs.destino == 'github' || vars.REDIRECIONAR_GITHUB_PAGES == 'true')
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - id: deploy
+        uses: actions/deploy-pages@v4.0.5
