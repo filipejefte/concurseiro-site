@@ -1,0 +1,36 @@
+# Configuração do site gerado (python -m gerador build). Nada aqui é segredo: o arquivo é público.
+# Segredos (tokens do Cloudflare e do Telegram) ficam só nos GitHub Secrets ou no .env.
+
+# Endereço público, sem barra no fim. Trocar de domínio = mudar site_url e base_path.
+site_url = "https://filipejefte.github.io/concurseiro-site"
+# Pasta do site dentro do domínio, com barra no começo e no fim ("/" num domínio próprio).
+base_path = "/concurseiro-site/"
+
+# false: toda página sai com noindex, nofollow e o robots.txt bloqueia tudo.
+# true: páginas indexáveis e o robots.txt aponta o sitemap. Só com decisão dos sócios.
+indexar = false
+
+# Canais de alerta (URL completa, https). Vazio = não aparece.
+canal_whatsapp = ""
+canal_telegram = ""
+
+# Formulário de e-mail do Kit (só o número do formulário, com confirmação dupla ligada no Kit). Vazio = sem e-mail.
+kit_form_id = ""
+
+# Endereço do "Contato" e do "Avise a gente" (mailto:). [A PREENCHER] até o Email Routing do domínio.
+email_contato = ""
+
+# Cloudflare Web Analytics (sem cookie). Vazio = nada é carregado.
+cloudflare_analytics_token = ""
+
+# Google AdSense. Vazio = sem anúncio, sem ads.txt e sem aviso de cookies.
+adsense_client = ""   # ex.: ca-pub-0000000000000000
+adsense_slot = ""     # id do bloco de anúncio responsivo
+
+# Links de parceiro (indicação paga), no fim do arquivo. Cada um vale para uma área ou uma banca.
+# Sem nenhum bloco [[afiliados]], não aparece. Exemplo (tire o # das 5 linhas):
+# [[afiliados]]
+# area = "Saúde"            # ou: banca = "fafipa" (o slug da página /banca/<slug>/)
+# nome = "Curso preparatório X"
+# url = "https://parceiro.example/curso"
+# descricao = "curso completo para concursos da saúde"

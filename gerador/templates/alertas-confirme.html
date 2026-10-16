@@ -1,0 +1,9 @@
+{% extends "texto.html" %}
+{% block texto %}
+<div class="pt-sucesso">
+  {{ m.icone("aberto", "pt-i2") }}
+  <p class="pt-sucesso-tit">Pronto. Mandamos um e-mail para você confirmar. Os alertas começam depois disso.</p>
+</div>
+<p>Não chegou? Olhe a caixa de spam ou de promoções. O e-mail vem do Kit, o serviço que manda os alertas do Concurseiro.</p>
+<p><a class="cc-btn" href="{{ u('/concursos/') }}">Ver os concursos abertos</a></p>
+{% endblock %}

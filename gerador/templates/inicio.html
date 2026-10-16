@@ -1,0 +1,111 @@
+{% extends "base.html" %}
+{% block conteudo %}
+<main id="conteudo">
+  <section class="pt-heroi pt-pagina">
+    <p class="pt-local" data-so-js>{{ m.icone("pino") }}<span data-local-texto>Nenhuma cidade escolhida</span><button class="pt-link-btn" type="button" data-abrir-cidade data-rotulo-cidade>Escolher cidade</button></p>
+    <p class="pt-local" data-so-js>{{ m.icone("capelo") }}<span data-perfil-texto>Para ver o salário do seu cargo,</span><button class="pt-link-btn" type="button" data-abrir-perfil data-rotulo-perfil>diga sua escolaridade</button></p>
+    <h1 class="pt-display">Concursos abertos federais e do Paraná</h1>
+    <p class="pt-capa"><span class="cc-grifo">{{ n_abertos }}</span> com inscrição aberta{% if base.previstos %}, e mais {{ n_previstos }} {{ "previsto" if base.previstos | length == 1 else "previstos" }} com ato oficial{% endif %}.</p>
+    <p class="pt-caixa pt-caixa-info" data-perto hidden></p>
+    <form class="pt-busca" action="{{ u('/concursos/') }}" method="get" role="search">
+      <label class="pt-rotulo-campo" for="busca">Buscar concurso</label>
+      <div class="pt-busca-linha">
+        <span class="pt-campo-busca">{{ m.icone("busca") }}<input id="busca" name="q" type="search" placeholder="Cargo, órgão ou cidade" autocomplete="off"></span>
+        <button class="cc-btn cc-btn-primario" type="submit">Buscar</button>
+      </div>
+    </form>
+    <nav class="pt-trilho" aria-label="Áreas">
+      {%- for g in areas if g.abertos %}
+      <a class="pt-chip" href="{{ u('/area/' ~ g.slug ~ '/') }}">{{ g.nome }}</a>
+      {%- endfor %}
+      <a class="pt-chip" href="{{ u('/federais/') }}">Federais</a>
+      <a class="pt-chip" href="{{ u('/previstos/') }}">Previstos</a>
+    </nav>
+  </section>
+
+  <div class="pt-colunas pt-pagina">
+    <div class="pt-principal">
+      <section class="pt-secao ordem-1" aria-labelledby="titulo-abertos">
+        <div class="pt-secao-cab">
+          <h2 class="pt-h2" id="titulo-abertos">Inscrições abertas</h2>
+          {%- if base.abertos %}<a class="pt-link pt-link-44" href="{{ u('/concursos/') }}">Ver {{ "o" if base.abertos | length == 1 else "os" }} {{ base.abertos | length }}</a>{% endif %}
+        </div>
+        {%- if destaque %}
+        {{ m.grade(destaque) }}
+        <a class="cc-btn" href="{{ u('/concursos/') }}" style="align-self:flex-start">Ver todos os concursos abertos</a>
+        {%- else %}
+        {{ m.vazio("Nenhum concurso com inscrição aberta agora. A lista é atualizada uma vez por semana.") }}
+        {%- endif %}
+      </section>
+
+      <section class="pt-secao ordem-3" aria-labelledby="titulo-areas">
+        <div class="pt-secao-cab"><h2 class="pt-h2" id="titulo-areas">Por área</h2></div>
+        <div class="pt-grade-areas">
+          {%- for g in areas %}
+          <a class="pt-area" href="{{ u('/area/' ~ g.slug ~ '/') }}"><span class="pt-area-nome">{{ g.nome }}</span><span class="pt-area-n">{{ g.abertos | length if g.abertos else "Nenhum" }} {{ "aberto" if g.abertos | length == 1 else "abertos" if g.abertos else "aberto agora" }}</span></a>
+          {%- endfor %}
+        </div>
+      </section>
+
+      {%- if federais.abertos %}
+      <section class="pt-secao ordem-4" aria-labelledby="titulo-federais">
+        <div class="pt-secao-cab">
+          <h2 class="pt-h2" id="titulo-federais">Federais</h2>
+          <a class="pt-link pt-link-44" href="{{ u('/federais/') }}">Ver {{ "o" if federais.abertos | length == 1 else "os" }} {{ federais.abertos | length }}</a>
+        </div>
+        <p class="pt-apoio">Órgãos federais de todo o Brasil, com inscrição aberta.</p>
+        {{ m.grade(federais.abertos[:4]) }}
+      </section>
+      {%- endif %}
+
+      {%- if base.previstos %}
+      <section class="pt-secao ordem-5" aria-labelledby="titulo-previstos">
+        <div class="pt-secao-cab">
+          <h2 class="pt-h2" id="titulo-previstos">Previstos</h2>
+          <a class="pt-link pt-link-44" href="{{ u('/previstos/') }}">Ver {{ "o" if base.previstos | length == 1 else "os" }} {{ base.previstos | length }}</a>
+        </div>
+        <p class="pt-apoio">Concursos com autorização ou banca contratada em ato oficial, ainda sem edital. Não entram na conta dos abertos.</p>
+        {{ m.grade(base.previstos[:4]) }}
+      </section>
+      {%- endif %}
+
+      {%- if cidades_destaque %}
+      <section class="pt-secao ordem-6" aria-labelledby="titulo-cidades">
+        <div class="pt-secao-cab"><h2 class="pt-h2" id="titulo-cidades">Cidades do Paraná com concurso</h2>
+          <a class="pt-link pt-link-44" href="{{ u('/estado/pr/') }}">Ver o Paraná</a></div>
+        <div class="pt-chips">
+          {%- for g in cidades_destaque %}
+          <a class="pt-chip" href="{{ u('/cidade/' ~ g.slug ~ '/') }}">{{ g.nome }} <span class="pt-chip-n">{{ g.concursos | length }}</span></a>
+          {%- endfor %}
+        </div>
+      </section>
+      {%- endif %}
+    </div>
+
+    <div class="pt-lateral">
+      <section class="pt-secao ordem-2" aria-labelledby="titulo-encerram">
+        <div class="pt-secao-cab"><h2 class="pt-h2" id="titulo-encerram">Encerram nesta semana</h2>
+          {%- if base.breve %}<a class="pt-link pt-link-44" href="{{ u('/encerram-esta-semana/') }}">Ver todos</a>{% endif %}</div>
+        <ul class="pt-lista">
+          {%- for x in base.breve[:5] %}
+          {{ m.linha_prazo(x) }}
+          {%- else %}
+          <li class="pt-linha"><span class="pt-linha-sub">Nenhuma inscrição acaba nos próximos 7 dias.</span></li>
+          {%- endfor %}
+        </ul>
+      </section>
+
+      <section class="pt-cta ordem-7" aria-labelledby="titulo-cta">
+        {{ m.icone("sino") }}
+        <h2 class="pt-h2" id="titulo-cta">Avise-me quando abrir concurso</h2>
+        <p class="pt-texto" style="font-size:15px;line-height:22px">Os concursos novos de cada semana e as inscrições que estão acabando. Sem cadastro no site: você entra no canal e sai quando quiser.</p>
+        {{ m.botao_alerta() }}
+      </section>
+
+      {{ m.publicidade("lateral") }}
+
+      <div class="ordem-8">{{ m.aviso_oficial() }}</div>
+    </div>
+  </div>
+</main>
+{% endblock %}

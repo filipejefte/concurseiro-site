@@ -1,12 +1,12 @@
 """Publicação.
 
-gerar_js: escreve assets/js/dados.js, que o site lê (funciona até abrindo o HTML direto, sem servidor).
-publicar_semana: leva para dados/concursos.json só os concursos com todos os campos críticos
-conferidos no revisao.csv, atualiza as datas da varredura, gera o dados.js e escreve
-resumo-telegram.md na pasta da semana.
+publicar_semana: leva para dados/concursos.json só os concursos com todos os campos críticos conferidos
+no revisao.csv e atualiza as datas da varredura. Escreve na pasta da semana:
+  resumo-telegram.md    o que o comando `python -m varredura telegram` posta no canal;
+  resumo-whatsapp.txt   o mesmo resumo, curto, para colar no canal do WhatsApp;
+  posts/post-<id>.png   imagem 1080x1350 de cada concurso novo, com a legenda em post-<id>.txt (fora do git).
+O site sai de dados/concursos.json no próximo `python -m gerador build` (o deploy roda sozinho no push).
 """
-import json
-import unicodedata
 from datetime import date, timedelta
 from pathlib import Path
 
@@ -14,43 +14,6 @@ from . import dados as d
 from .comparar import comparar
 from .revisao import ato_principal, ler_marcas, linhas_criticas
 from .validar import validar_concurso
-
-
-def _linhas(itens):
-    # Um item por linha: o diff semanal mostra só o que mudou.
-    return "[\n" + ",\n".join(json.dumps(i, ensure_ascii=False, separators=(",", ":")) for i in itens) + "\n]"
-
-
-def _sem_acento(texto):
-    return unicodedata.normalize("NFD", texto).encode("ascii", "ignore").decode().lower()
-
-
-def gerar_js(base, exemplo=False, hoje=None):
-    """Escreve dados.js a partir de um arquivo no formato de dados/concursos.json.
-
-    A situação é calculada aqui, na data da varredura; o navegador só refaz a contagem
-    regressiva e marca "Encerrado" pela data de hoje.
-    """
-    ref = d.data(base["varredura"]) or hoje or date.today()
-    concursos = [dict(c, situacao=d.situacao(c, ref)) for c in base["concursos"]]
-    meta = {k: base[k] for k in ("varredura", "proxima_varredura", "cobertura")}
-    meta["exemplo"] = exemplo
-    areas = d.ler_json(d.SCHEMA)["properties"]["area"]["enum"]
-    tabela = sorted(d.municipios(exemplo).values(), key=lambda m: _sem_acento(m["nome"]))
-    tabela = [[m["ibge"], m["nome"], m["lat"], m["lon"]] + ([1] if m.get("ficticio") else []) for m in tabela]
-
-    aviso = "DADOS DE EXEMPLO, FICTÍCIOS. " if exemplo else ""
-    texto = (
-        f"/* {aviso}Gerado por `python -m varredura publicar{' --exemplo' if exemplo else ''}`. Não edite à mão.\n"
-        "   MUNICIPIOS: [código IBGE, nome, latitude, longitude, 1 se fictício]. */\n"
-        f"window.VARREDURA = {json.dumps(meta, ensure_ascii=False)};\n"
-        f"window.AREAS = {json.dumps(areas, ensure_ascii=False)};\n"
-        f"window.MUNICIPIOS = {_linhas(tabela)};\n"
-        f"window.CONCURSOS = {_linhas(concursos)};\n"
-    )
-    d.DADOS_JS.write_text(texto, encoding="utf-8", newline="\n")
-    return concursos
-
 
 CONFERIDO = ("ok", "auto")   # ok = a pessoa; auto = achado no texto do ato pela conferência automática
 
@@ -68,7 +31,7 @@ def _quem_conferiu(c, marcas, por):
     return por + (" e conferência automática" if "auto" in tipos else "")
 
 
-def publicar_semana(pasta, por, hoje=None):
+def publicar_semana(pasta, por, hoje=None, posts=True):
     """Devolve (aprovados, recusados). Recusado = ficha inválida, fictícia ou com campo crítico não conferido."""
     pasta = Path(pasta)
     hoje = hoje or date.today()
@@ -105,9 +68,25 @@ def publicar_semana(pasta, por, hoje=None):
     base["varredura"] = data_varredura.isoformat()
     base["proxima_varredura"] = (data_varredura + timedelta(days=7)).isoformat()
     d.gravar_json(d.CONCURSOS, base)
-    gerar_js(base)
-    escrever_resumo(pasta, base, aprovados, r.alterados, anterior, data_varredura)
+    novos, retificados, acabando = _grupos(base, aprovados, r.alterados, data_varredura)
+    escrever_resumo(pasta, novos, retificados, acabando, anterior, data_varredura)
+    escrever_whatsapp(pasta, novos, retificados, acabando, anterior, data_varredura)
+    if posts and novos:
+        escrever_posts(pasta, [publicados[c["id"]] for c in novos], data_varredura)
     return aprovados, recusados
+
+
+def _grupos(base, aprovados, alterados, data_varredura):
+    ids_alterados = {novo["id"] for novo, _ in alterados}
+    novos = [c for c in aprovados if c["id"] not in ids_alterados]
+    retificados = [c for c in aprovados if c["id"] in ids_alterados]
+    acabando = sorted((c for c in base["concursos"] if d.situacao(c, data_varredura) == "breve"),
+                      key=lambda c: c["inscricao"]["fim"])
+    return novos, retificados, acabando
+
+
+def ficha_url(c):
+    return d.site_url(f"/concurso/{c['id']}/")
 
 
 def _cargo(c):
@@ -124,32 +103,68 @@ def _salario(c):
     return ("até " if len(set(salarios)) > 1 else "") + d.brl(max(salarios))
 
 
-def _linha(c):
+def _prazo(c):
     insc = c["inscricao"]
-    prazo = f"inscrições até {d.data_curta(insc['fim'])}" if insc["fim"] else "previsto, sem data de inscrição"
-    lugar = f"Nacional ({c['abrangencia']})" if c["nacional"] else f"{c['cidade']} ({c['uf']})"
+    return f"inscrições até {d.data_curta(insc['fim'])}" if insc["fim"] else "previsto, sem data de inscrição"
+
+
+def _lugar(c):
+    return f"Nacional ({c['abrangencia']})" if c["nacional"] else f"{c['cidade']} ({c['uf']})"
+
+
+def _linha(c):
     ato = ato_principal(c) or {}
     return (f"• {c['orgao']} — {_cargo(c)}\n"
-            f"  {_salario(c)} · {prazo} · {lugar}\n"
-            f"  Ficha: {d.SITE}concurso.html?id={c['id']}\n"
+            f"  {_salario(c)} · {_prazo(c)} · {_lugar(c)}\n"
+            f"  Ficha: {ficha_url(c)}\n"
             f"  {'Edital oficial' if ato.get('tipo') == 'edital' else 'Ato oficial'}: {ato.get('url', 'sem link')}")
 
 
-def escrever_resumo(pasta, base, aprovados, alterados, anterior, data_varredura):
-    ids_alterados = {novo["id"] for novo, _ in alterados}
-    novos = [c for c in aprovados if c["id"] not in ids_alterados]
-    retificados = [c for c in aprovados if c["id"] in ids_alterados]
-    acabando = sorted((c for c in base["concursos"] if d.situacao(c, data_varredura) == "breve"),
-                      key=lambda c: c["inscricao"]["fim"])
-    periodo = f"de {d.data(anterior):%d/%m} a {data_varredura:%d/%m}" if anterior else f"até {data_varredura:%d/%m}"
-    partes = [f"Concursos da semana ({periodo}) · federais e do Paraná", ""]
+def _periodo(anterior, data_varredura):
+    return f"de {d.data(anterior):%d/%m} a {data_varredura:%d/%m}" if anterior else f"até {data_varredura:%d/%m}"
+
+
+def escrever_resumo(pasta, novos, retificados, acabando, anterior, data_varredura):
+    """resumo-telegram.md: texto puro, links completos (o comando telegram parte em mensagens)."""
+    partes = [f"Concursos da semana ({_periodo(anterior, data_varredura)}) · federais e do Paraná", ""]
     partes += ["Novos", ""] + ([_linha(c) for c in novos] or ["• Nenhum concurso novo nesta semana."]) + [""]
     if retificados:
         partes += ["Retificados (o edital mudou)", ""] + [_linha(c) for c in retificados] + [""]
     if acabando:
         partes += ["Inscrições acabando nos próximos 7 dias", ""]
-        partes += [f"• {c['orgao']} — até {d.data_curta(c['inscricao']['fim'])} — {d.SITE}concurso.html?id={c['id']}" for c in acabando]
+        partes += [f"• {c['orgao']} — até {d.data_curta(c['inscricao']['fim'])} — {ficha_url(c)}" for c in acabando]
         partes.append("")
-    partes += [f"Todos os concursos: {d.SITE}",
+    partes += [f"Todos os concursos: {d.site_url('/')}",
                "Inscrição e pagamento, só no site da banca. Não somos site oficial."]
     (Path(pasta) / "resumo-telegram.md").write_text("\n".join(partes) + "\n", encoding="utf-8", newline="\n")
+
+
+def escrever_whatsapp(pasta, novos, retificados, acabando, anterior, data_varredura):
+    """resumo-whatsapp.txt: curto, para colar no canal. Só *negrito*, que o WhatsApp lê; nada de outro markdown."""
+    def item(c):
+        return f"• {c['orgao']}: {_salario(c)}, {_prazo(c)}\n{ficha_url(c)}"
+    partes = [f"*Concursos da semana* ({_periodo(anterior, data_varredura)})", "Federais e do Paraná", ""]
+    partes += ["*Novos*"] + ([item(c) for c in novos] or ["Nenhum concurso novo nesta semana."]) + [""]
+    if retificados:
+        partes += ["*Edital retificado*"] + [item(c) for c in retificados] + [""]
+    if acabando:
+        partes += ["*Acabando em 7 dias*"] + [f"• {c['orgao']}: até {d.data_curta(c['inscricao']['fim'])}\n{ficha_url(c)}" for c in acabando] + [""]
+    partes += [f"Todos: {d.site_url('/')}", "Inscrição e pagamento, só no site da banca."]
+    (Path(pasta) / "resumo-whatsapp.txt").write_text("\n".join(partes) + "\n", encoding="utf-8", newline="\n")
+
+
+def escrever_posts(pasta, concursos, data_varredura):
+    """posts/post-<id>.png (1080x1350, layout do PostSocial) e a legenda em posts/post-<id>.txt."""
+    from gerador import imagens, modelo   # Pillow e a fonte só para quem gera os posts
+
+    saida = Path(pasta) / "posts"
+    saida.mkdir(parents=True, exist_ok=True)
+    rodape = d.site_url("/").split("://", 1)[1].rstrip("/")
+    municipios = d.municipios()
+    for c in concursos:
+        x = modelo.Concurso(c, data_varredura, municipio=municipios.get(c["municipio_ibge"]))
+        imagens.salvar_png(imagens.post_concurso(x, rodape), saida / f"post-{c['id']}.png")
+        legenda = [f"{c['orgao']}", f"Salário inicial: {_salario(c)}", f"{_cargo(c)} · {x.vagas.lower()}",
+                   f"{_prazo(c).capitalize()} · {_lugar(c)}", "", f"Ficha e edital oficial: {ficha_url(c)}",
+                   "Inscrição e pagamento, só no site da banca."]
+        (saida / f"post-{c['id']}.txt").write_text("\n".join(legenda) + "\n", encoding="utf-8", newline="\n")

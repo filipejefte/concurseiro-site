@@ -15,12 +15,13 @@ from pathlib import Path
 from .comparar import comparar
 from .conferir import na_amostra, texto_dos_atos, verificar
 from . import dados
-from .dados import brl, carregar_fichas, data_br, edital, ler_json
+from .dados import brl, carregar_fichas, data_br, edital, ler_json, situacao
 from .extracao import ler_fila, pendentes
 from .validar import validar_concurso
 
 CSV = "revisao.csv"
 MD = "revisao.md"
+COBERTURA = "cobertura.csv"   # para conferir à mão a cobertura contra os agregadores (só conferir, nunca copiar)
 COLUNAS = ["id", "situacao", "campo", "valor", "trecho", "conferido", "observacao"]
 MARCAS_DA_PESSOA = ("ok", "corrigir")
 ORDEM = {"corrigir": 0, "": 0, "amostra": 1}   # o que a pessoa precisa olhar vem primeiro no CSV
@@ -193,4 +194,25 @@ def gerar(pasta, data_varredura=None):
         escritor = csv.DictWriter(f, fieldnames=COLUNAS, delimiter=";")
         escritor.writeheader()
         escritor.writerows(linhas_csv)
+    escrever_cobertura(pasta, base, [f["concurso"] for f in fichas if f.get("concurso")], data_varredura)
     return r, problemas
+
+
+def escrever_cobertura(pasta, base, novos, data_varredura):
+    """cobertura.csv: todo concurso conhecido (publicado ou ficha da semana), para comparar à mão com os agregadores."""
+    todos = {c["id"]: (c, "sim") for c in base["concursos"]}
+    todos.update({c["id"]: (c, "não (ficha da semana)") for c in novos})
+    ordem = {"aberto": 0, "breve": 0, "previsto": 1, "encerrado": 2}
+    linhas = []
+    for c, publicado in todos.values():
+        sit = situacao(c, data_varredura)
+        linhas.append({
+            "orgao": c["orgao"], "cidade": "Nacional" if c["nacional"] else (c["cidade"] or ""), "uf": c["uf"],
+            "situacao": {"breve": "aberto (encerra em até 7 dias)"}.get(sit, sit), "fim_inscricao": data_br(c["inscricao"]["fim"]),
+            "link_edital": (ato_principal(c) or {}).get("url", ""), "esfera": c["esfera"], "publicado": publicado, "id": c["id"],
+        })
+    linhas.sort(key=lambda l: (ordem[situacao(todos[l["id"]][0], data_varredura)], l["uf"] != "PR", l["orgao"]))
+    with (Path(pasta) / COBERTURA).open("w", encoding="utf-8-sig", newline="") as f:
+        escritor = csv.DictWriter(f, fieldnames=list(linhas[0]) if linhas else ["orgao"], delimiter=";")
+        escritor.writeheader()
+        escritor.writerows(linhas)

@@ -13,7 +13,7 @@ import urllib.robotparser
 from dataclasses import asdict, dataclass
 from http.cookiejar import CookieJar
 
-from ..dados import CACHE, SITE
+from ..dados import CACHE, site_url
 
 
 @dataclass
@@ -45,7 +45,7 @@ class Cliente:
         contato = contato or os.environ.get("CONTATO_VARREDURA")
         if not contato:
             raise SystemExit("Defina CONTATO_VARREDURA no .env (e-mail ou página de contato do projeto) antes de coletar.")
-        texto = f"concurseiro-varredura/0.1 (+{SITE}; contato: {contato})"
+        texto = f"concurseiro-varredura/0.1 (+{site_url()}; contato: {contato})"
         self.user_agent = texto.encode("ascii", "ignore").decode()  # cabeçalho HTTP só aceita ASCII
         self.intervalo = intervalo
         self.cache = cache

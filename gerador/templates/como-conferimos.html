@@ -1,0 +1,45 @@
+{% extends "texto.html" %}
+{% block texto %}
+<p class="pt-capa">Toda ficha do Concurseiro sai de um ato oficial, com link. Antes de ir ao ar, os campos que mais importam são conferidos contra o texto desse ato.</p>
+
+<h2 class="pt-h2">1. As fontes</h2>
+<p>Só diário oficial e site oficial de banca ou de órgão público:</p>
+<ul>
+  <li><strong>Diário Oficial da União (DOU)</strong>, pelos arquivos que a Imprensa Nacional publica todo dia. É onde saem os concursos federais.</li>
+  <li><strong>Diário Oficial dos Municípios do Paraná</strong>, da Associação dos Municípios do Paraná. É onde as prefeituras e câmaras do estado publicam editais.</li>
+  <li><strong>Diário Oficial do Estado do Paraná</strong>: ainda não lemos. Concurso de órgão estadual entra quando aparece numa das fontes acima.</li>
+  <li><strong>Site da banca ou do órgão</strong>, quando o diário traz só o extrato e o edital completo está lá.</li>
+</ul>
+<p>As fontes são lidas com calma: no máximo uma página por segundo, respeitando o que cada site permite.</p>
+
+<h2 class="pt-h2">2. A triagem</h2>
+<p>De cada edição, separamos os atos que falam de concurso público e classificamos cada um: abertura de inscrições, retificação, autorização do concurso, contratação da banca, resultado ou outro. Só os quatro primeiros viram ficha. Processo seletivo simplificado e contratação temporária ficam de fora.</p>
+
+<h2 class="pt-h2">3. A ficha</h2>
+<p>Cada ato vira uma ficha com as mesmas regras:</p>
+<ul>
+  <li>Entra só o que está escrito no ato. Nada é deduzido nem estimado.</li>
+  <li>O que o edital não traz aparece como <span class="cc-ni">Não informado no edital</span>.</li>
+  <li>Retificação atualiza a ficha do mesmo concurso, e o documento novo entra na lista de documentos.</li>
+  <li>"Previsto" só com ato oficial de autorização do concurso ou de contratação da banca.</li>
+  <li>Concurso com inscrição já encerrada na data da varredura não entra.</li>
+</ul>
+
+<h2 class="pt-h2">4. A conferência</h2>
+<p>Estes campos são conferidos antes de qualquer concurso ir ao ar: salário de cada cargo, início e fim da inscrição, data da prova objetiva, taxa, banca, cidade e link do edital.</p>
+<ul>
+  <li><strong>Conferência automática.</strong> Um programa procura cada valor no texto do ato, no lugar certo: o salário logo depois do nome do cargo, as datas da inscrição logo depois de "inscrição", a data da prova logo depois de "prova objetiva", e assim por diante. Ele não usa inteligência artificial e não "acha" nada: ou o valor está escrito ali, ou o campo vai para uma pessoa.</li>
+  <li><strong>Conferência de uma pessoa.</strong> Tudo o que a conferência automática não achou é conferido por uma pessoa, contra o ato oficial.</li>
+  <li><strong>Amostra.</strong> Toda semana, 1 em cada 20 campos que passaram na conferência automática também é conferido por uma pessoa, para pegar erro do próprio programa.</li>
+</ul>
+<p>Cada ficha mostra a data da conferência, o ato de onde saiu e a fonte.</p>
+
+<h2 class="pt-h2">5. Por que não usamos sites de notícias de concurso</h2>
+<p>Sites que juntam notícias de concurso são úteis para conferir se nenhum concurso ficou de fora, e só para isso. Copiar deles repetiria os erros deles e tiraria o que importa: saber de onde veio cada número. Por isso toda ficha aponta para o ato oficial.</p>
+
+<h2 class="pt-h2">6. Achou um erro?</h2>
+<p>Em toda ficha há o link "Avise a gente", que abre um e-mail já com o endereço da ficha.
+{%- if email %} Você também pode escrever para <a class="pt-link" href="mailto:{{ email }}">{{ email }}</a>.{% else %} [A PREENCHER: e-mail de contato].{% endif %}
+Mande, se puder, o trecho do edital que mostra o valor certo. A correção passa pela mesma conferência.</p>
+<p>Mesmo com tudo isso, vale sempre o edital oficial. Antes de se inscrever, leia o edital completo no site da banca.</p>
+{% endblock %}

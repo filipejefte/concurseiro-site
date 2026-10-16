@@ -78,6 +78,10 @@ def _fora_da_cobertura(c):
     c.update(esfera="municipal", uf="SP", municipio_ibge=None, cidade="Campinas")
 
 
+def _codigo_ibge_fora_do_pr(c):
+    c.update(esfera="federal", uf="SP", municipio_ibge="3509502", cidade="Campinas")
+
+
 @pytest.mark.parametrize("estragar, esperado", [
     (_fim_antes_do_inicio, "precisa ser depois"),
     (_salario_zero, "schema"),
@@ -88,12 +92,22 @@ def _fora_da_cobertura(c):
     (_cidade_errada, "não bate"),
     (_link_de_exemplo, "link de exemplo"),
     (_fora_da_cobertura, "fora da cobertura"),
+    (_codigo_ibge_fora_do_pr, "só para cidade do PR"),
 ])
 def test_validacao_pega_erros(estragar, esperado):
     c = real()
     estragar(c)
     erros = validar_concurso(c)
     assert any(esperado in e for e in erros), erros
+
+
+def test_federal_fora_do_pr_valido():
+    """Federal com uma cidade só fora do PR: uf e cidade, sem código IBGE; nacional: abrangência."""
+    c = real()
+    c.update(esfera="federal", uf="RJ", municipio_ibge=None, cidade="Rio de Janeiro")
+    assert validar_concurso(c) == []
+    c.update(nacional=True, abrangencia="14 estados", uf="DF", cidade="Brasília")
+    assert validar_concurso(c) == []
 
 
 def test_ficticio_so_nos_exemplos():
@@ -260,7 +274,6 @@ def ambiente(tmp_path, monkeypatch):
     base.write_text(json.dumps({"varredura": None, "proxima_varredura": None, "cobertura": ["federal", "PR"], "concursos": []}),
                     encoding="utf-8")
     monkeypatch.setattr(dados, "CONCURSOS", base)
-    monkeypatch.setattr(dados, "DADOS_JS", tmp_path / "dados.js")
     pasta = tmp_path / "varreduras" / "2026-10-14"
     c = real()
     trechos = {campo: "trecho de teste" for campo in dados.CAMPOS_CRITICOS}
@@ -284,6 +297,10 @@ def test_publicar_recusa_sem_conferencia(ambiente):
     pasta, base, c = ambiente
     gerar(pasta)
     assert (pasta / "revisao.md").exists()
+    with (pasta / "cobertura.csv").open(encoding="utf-8-sig", newline="") as f:
+        cobertura = list(csv.DictReader(f, delimiter=";"))
+    assert [(l["orgao"], l["uf"], l["link_edital"]) for l in cobertura] == [(c["orgao"], "PR", c["documentos"][0]["url"])]
+    assert set(cobertura[0]) >= {"orgao", "cidade", "uf", "situacao", "fim_inscricao", "link_edital"}
     aprovados, recusados = publicar_semana(pasta, "Teste", hoje=DIA)
     assert aprovados == [] and recusados and "falta conferir" in recusados[0][1]
     assert ler_json(base)["concursos"] == []
@@ -302,9 +319,14 @@ def test_publicar_o_que_foi_conferido(ambiente):
     assert ficha["conferencia"]["por"] == "Teste"
     assert set(ficha["conferencia"]["campos"]) == set(dados.CAMPOS_CRITICOS)
     assert ficha["primeira_varredura"] == ficha["ultima_alteracao"] == "2026-10-14"
-    js = dados.DADOS_JS.read_text(encoding="utf-8")
-    assert c["id"] in js and '"exemplo": false' in js
-    assert c["orgao"] in (pasta / "resumo-telegram.md").read_text(encoding="utf-8")
+    resumo = (pasta / "resumo-telegram.md").read_text(encoding="utf-8")
+    assert c["orgao"] in resumo and f"/concurso/{c['id']}/" in resumo and "concurso.html" not in resumo
+    assert resumo.count(dados.site_url("/")) >= 2
+    whatsapp = (pasta / "resumo-whatsapp.txt").read_text(encoding="utf-8")
+    assert c["orgao"] in whatsapp and "*Novos*" in whatsapp and "##" not in whatsapp and "](" not in whatsapp
+    from PIL import Image
+    assert Image.open(pasta / "posts" / f"post-{c['id']}.png").size == (1080, 1350)
+    assert ficha["orgao"] in (pasta / "posts" / f"post-{c['id']}.txt").read_text(encoding="utf-8")
 
 
 def test_valor_mudado_depois_da_conferencia_volta_a_ser_recusado(ambiente):
@@ -396,3 +418,104 @@ def test_publicar_aceita_auto_e_recusa_amostra(ambiente):
     aprovados, _ = publicar_semana(pasta, "Teste", hoje=DIA)
     assert [x["id"] for x in aprovados] == [c["id"]]
     assert ler_json(base)["concursos"][0]["conferencia"]["por"] == "conferência automática"
+
+
+# ---------- conferência automática: tabela do magistério e inscrição por item ----------
+
+# Edital de professor federal: uma tabela de remuneração para todos os cargos (regime x titulação) e um período
+# de inscrição por item. Modelado nos editais da UFPR (276/2026) e da UNILA (240/2026).
+ATO_MAGISTERIO = normalizar("""EDITAL Nº 276/2026. 1.1 Dos cargos: os itens constam do Anexo 01.
+2. DA REMUNERAÇÃO. Tabela de remuneração, Classe A.
+20 (VINTE) HORAS: PROFESSOR ASSISTENTE (COM GRADUAÇÃO) VB R$ 2.500,00 RT R$ 698,59 R$ 3.198,59
+(COM MESTRADO) R$ 3.998,24 (COM DOUTORADO) R$ 5.037,78
+DEDICAÇÃO EXCLUSIVA (DE): (COM GRADUAÇÃO) R$ 6.397,19 (COM MESTRADO) R$ 9.595,78 (COM DOUTORADO) VB R$ 7.107,99 R$ 13.753,96
+ANEXO 02. ITEM PERÍODO DE INSCRIÇÕES TAXA DE INSCRIÇÃO 1.2 22/03/2027 a 20/04/2027 R$ 240,00
+1.3 18/01/2027 a 17/02/2027 R$ 88,00 1.28 21/12/2026 a 20/01/2027 R$ 240,00""")
+
+
+def _professor(salario, requisitos, jornada=40):
+    return {"nome": "Professor do Magistério Superior – Genética", "salario": salario, "requisitos": requisitos, "jornada_horas": jornada}
+
+
+def _ficha_magisterio(cargo, inicio="2027-03-22", fim="2027-04-20"):
+    return {"inscricao": {"inicio": inicio, "fim": fim}, "prova_objetiva": None, "isencao_ate": None, "cargos": [cargo],
+            "taxa": {"min": None, "max": None}, "banca": {"nome": "UFPR"}, "cidade": "Curitiba", "nacional": False,
+            "documentos": [{"tipo": "edital", "url": LINK, "publicado_em": "2026-09-25"}]}
+
+
+def _passa_magisterio(campo, c, cargo=None):
+    return verificar(campo, c, ATO_MAGISTERIO, {LINK}, cargo)[0]
+
+
+@pytest.mark.parametrize("salario,requisitos,jornada", [
+    (13753.96, "Item 1.2; dedicação exclusiva; titulação mínima: doutorado", 40),
+    (5037.78, "Item 1.2; 20 horas; titulação mínima: doutorado", 20),
+    (3198.59, "Item 1.2; 20 horas; graduação em Medicina", 20),
+    (13753.96, "40 h com dedicação exclusiva; graduação na área da saúde ou ciências biológicas e doutorado em Anatomia", 40),
+])
+def test_conferencia_aceita_salario_da_tabela_do_magisterio(salario, requisitos, jornada):
+    cargo = _professor(salario, requisitos, jornada)
+    assert _passa_magisterio("salario", _ficha_magisterio(cargo), cargo)
+
+
+@pytest.mark.parametrize("salario,requisitos,jornada", [
+    (5037.78, "Item 1.2; dedicação exclusiva; titulação mínima: doutorado", 40),     # valor do regime de 20 h
+    (9595.78, "Item 1.2; dedicação exclusiva; titulação mínima: doutorado", 40),     # valor do mestrado
+    (7107.99, "Item 1.2; dedicação exclusiva; titulação mínima: doutorado", 40),     # vencimento básico, não o total
+    (13753.96, "Item 1.2; 20 horas; titulação mínima: doutorado", 20),               # valor da dedicação exclusiva
+    (3198.59, "Item 1.6; 20 horas; graduação em Medicina com residência ou especialização", 20),   # titulação em dúvida
+])
+def test_conferencia_recusa_salario_errado_na_tabela_do_magisterio(salario, requisitos, jornada):
+    cargo = _professor(salario, requisitos, jornada)
+    assert not _passa_magisterio("salario", _ficha_magisterio(cargo), cargo)
+
+
+def test_tabela_do_magisterio_nao_vale_para_outro_cargo():
+    cargo = {"nome": "Técnico de Laboratório", "salario": 13753.96, "requisitos": "dedicação exclusiva; doutorado", "jornada_horas": 40}
+    assert not _passa_magisterio("salario", _ficha_magisterio(cargo), cargo)
+
+
+def test_conferencia_aceita_periodo_do_item_do_cargo():
+    cargo = _professor(13753.96, "Item 1.2; dedicação exclusiva; titulação mínima: doutorado")
+    c = _ficha_magisterio(cargo)
+    assert _passa_magisterio("inscricao.inicio", c) and _passa_magisterio("inscricao.fim", c)
+    cargo128 = _professor(13753.96, "Item 1.28; dedicação exclusiva; titulação mínima: doutorado")
+    c = _ficha_magisterio(cargo128, "2026-12-21", "2027-01-20")
+    assert _passa_magisterio("inscricao.inicio", c) and _passa_magisterio("inscricao.fim", c)
+
+
+@pytest.mark.parametrize("item,inicio,fim", [
+    ("1.2", "2027-01-18", "2027-02-17"),    # período do item 1.3
+    ("1.2", "2027-04-20", "2027-03-22"),    # início e fim trocados
+    ("1.2", "2027-03-23", "2027-04-20"),    # um dia depois
+    ("1.2", "2026-12-21", "2027-01-20"),    # período do 1.28: "1.2" não casa com "1.28"
+    ("1.4", "2027-03-22", "2027-04-20"),    # item que não está na tabela
+])
+def test_conferencia_recusa_periodo_de_outro_item(item, inicio, fim):
+    cargo = _professor(13753.96, f"Item {item}; dedicação exclusiva; titulação mínima: doutorado")
+    c = _ficha_magisterio(cargo, inicio, fim)
+    assert not (_passa_magisterio("inscricao.inicio", c) and _passa_magisterio("inscricao.fim", c))
+
+
+# ---------- Telegram ----------
+
+def test_telegram_parte_mensagens_abaixo_do_limite():
+    from varredura.telegram import mensagens
+    blocos = [f"• Concurso {i}\n  até R$ 1.000,00 · inscrições até sex, 20/11\n  Ficha: https://x.example/concurso/{i}/" for i in range(200)]
+    texto = "Concursos da semana\n\nNovos\n\n" + "\n".join(blocos) + "\n\nTodos os concursos: https://x.example/"
+    partes = mensagens(texto)
+    assert len(partes) > 1 and all(len(p) <= 4096 for p in partes)
+    assert "\n".join(partes).replace("\n\n", "\n").count("• Concurso") == 200
+    assert mensagens("curto") == ["curto"]
+    assert all(len(p) <= 4096 for p in mensagens("x" * 10000))
+
+
+def test_telegram_teste_so_imprime(tmp_path, capsys, monkeypatch):
+    from varredura.telegram import postar
+    (tmp_path / "resumo-telegram.md").write_text("Concursos da semana\n\n• Um\n", encoding="utf-8")
+    monkeypatch.delenv("TELEGRAM_BOT_TOKEN", raising=False)
+    assert postar(tmp_path, teste=True) == 0
+    assert "mensagem 1 de 1" in capsys.readouterr().out
+    assert postar(tmp_path, se_configurado=True) == 0
+    with pytest.raises(SystemExit):
+        postar(tmp_path)

@@ -10,9 +10,12 @@ body { margin: 0; font-family: var(--font-sans); background: var(--papel); color
 .cc-grifo { position: relative; isolation: isolate; display: inline-block; padding: 0 var(--grifo-sobra, 0.16em); color: var(--on-grifo); }
 .cc-grifo::before { content: ""; position: absolute; z-index: -1; inset: 0.06em 0 0.02em 0; background: var(--grifo); border-radius: 2px; transform: skewX(var(--grifo-inclinacao, -12deg)) rotate(var(--grifo-giro, -1.5deg)); }
 
-/* ---------- Logotipo (palavra dentro do grifo) ---------- */
-.cc-logo { display: inline-flex; align-items: center; gap: 0.32em; font-family: var(--font-sans); font-weight: 800; letter-spacing: -0.035em; line-height: 1; text-transform: lowercase; }
-.cc-logo .cc-grifo { padding: 0.04em 0.2em 0.1em; }
+/* ---------- Logotipo ---------- */
+/* .cc-logo é só para a <img> do logotipo oficial (docs/marca/): o logotipo nunca é redigitado. */
+.cc-logo { display: block; width: auto; height: 32px; }
+/* Provisório, enquanto os arquivos da marca não chegam: ícone + palavra no grifo, como no protótipo. */
+.cc-logo-provisorio { display: inline-flex; align-items: center; gap: 0.32em; font-family: var(--font-sans); font-weight: 800; letter-spacing: -0.035em; line-height: 1; text-transform: lowercase; }
+.cc-logo-provisorio .cc-grifo { padding: 0.04em 0.2em 0.1em; }
 .cc-logo-icone { width: 1.15em; height: 1.15em; flex: none; display: block; }
 
 /* ---------- Selo de situação ---------- */
