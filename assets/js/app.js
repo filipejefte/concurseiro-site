@@ -958,6 +958,7 @@
   function veredito(lista) {
     if ($('[data-ok="false"]', lista)) return 'Pelo seu perfil, falta a escolaridade que este cargo pede.';
     var caixas = $$('input', lista);
+    if (!caixas.length && !$('[data-ok]', lista)) return 'Esta ficha não traz os requisitos do cargo. Confira no edital oficial.';
     var faltam = caixas.filter(function (x) { return !x.checked; }).length;
     if (faltam === caixas.length && caixas.length) return 'Marque o que você já tem.';
     if (faltam) return plural(faltam, 'Falta 1 item', 'Faltam ' + faltam + ' itens') + ' para você cumprir o que esta ficha lista.';
