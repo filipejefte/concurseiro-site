@@ -147,7 +147,6 @@
     $$('[data-form-kit]').forEach(function (form) {
       var caixa = $('[data-consentimento]', form);
       var botao = $('[data-enviar]', form);
-      var erro = $('[data-erro-kit]', form);
       var sucesso = form.parentNode.querySelector('[data-sucesso-kit]');
       botao.disabled = !caixa.checked;
       caixa.addEventListener('change', function () { botao.disabled = !caixa.checked; });
@@ -156,10 +155,9 @@
         if (!window.fetch) return;   // sem fetch, o formulário vai direto ao Kit
         ev.preventDefault();
         botao.disabled = true;
-        erro.hidden = true;
         fetch(form.action, { method: 'POST', body: new FormData(form), headers: { Accept: 'application/json' } })
           .then(function (r) { if (!r.ok) throw new Error(r.status); form.hidden = true; sucesso.hidden = false; })
-          .catch(function () { erro.hidden = false; botao.disabled = false; });
+          .catch(function () { form.submit(); });   // sem resposta legível: envia do jeito normal (o Kit redireciona)
       });
     });
   }

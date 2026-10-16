@@ -5,14 +5,15 @@ argument-hint: "[inicial AAAA-MM-DD | semana]"
 
 # Varredura semanal
 
-Argumentos: `$ARGUMENTS` (vazio = `semana`; `inicial 2026-07-01` = primeira varredura desde a data).
+Argumentos: `$ARGUMENTS` (vazio = `semana`; `inicial 2026-06-16` = varredura inicial desde a data; o INLABS guarda 4 meses).
 
 Antes de tudo, leia o `CLAUDE.md` da raiz. As regras fixas valem para cada ficha, sobretudo estas:
 
 - só ato oficial, com link;
 - `null` no que o ato não traz;
 - nada de agregador;
-- nada vai ao ar sem conferência: a automática acha o valor no texto do ato, ou o Filipe confere.
+- nada vai ao ar sem conferência: a automática acha o valor no texto do ato, ou o Filipe confere;
+- custo zero: extração sempre aqui, no Claude Code; nunca `--modo api`.
 
 Rode tudo no PowerShell, a partir da raiz do projeto. Nunca mostre o conteúdo do `.env`.
 
@@ -52,9 +53,9 @@ Ao terminar, leia `dados/varreduras/<data>/atos.json`:
    - **Ficha:** `dados/varreduras/<data>/fichas/<id>.json` com `{"ato": "<nome do arquivo da fila>", "trechos": {...}, "concurso": {...}}`.
    - **Descarte:** acrescente `{"ato": "<nome do arquivo da fila>", "motivo": "..."}` à lista em `dados/varreduras/<data>/descartes.json`.
 
-Com muitos atos, trabalhe em lotes e rode `python -m varredura pendentes` entre eles até zerar.
+Com muitos atos, trabalhe em lotes e rode `python -m varredura pendentes` entre eles até zerar. Não pare nos atos do Paraná: concurso **federal de qualquer estado** está na cobertura (universidade, instituto federal, conselho, forças armadas, tribunal, ministério). Em 14/10, 413 atos federais de fora do PR ficaram pendentes por isso (ver `docs/DIAGNOSTICO-COBERTURA.md`). `pendentes --resumo` ajuda a descartar rápido o que já encerrou.
 
-Alternativa paga: `python -m varredura coletar ... --modo api` faz esta etapa com `claude-haiku-5-5` e a chave `ANTHROPIC_API_KEY`. Use só se o Filipe pedir.
+Não use `--modo api`: é pago, e a regra do projeto é custo zero.
 
 ## 4. Validar
 
@@ -66,7 +67,7 @@ Corrija cada erro voltando ao ato. Se o ato não permite corrigir (por exemplo, 
 
 `python -m varredura revisao`
 
-Gera `revisao.md` e `revisao.csv` na pasta da semana. Termine com um resumo curto para o Filipe:
+Gera `revisao.md`, `revisao.csv` e `cobertura.csv` (para o Chico comparar à mão com o PCI) na pasta da semana. Termine com um resumo curto para o Filipe:
 
 - quantos concursos são novos, alterados (retificações) e encerrados;
 - fontes com problema e fichas com erro de validação;
@@ -79,6 +80,10 @@ Gera `revisao.md` e `revisao.csv` na pasta da semana. Termine com um resumo curt
 
 **Não publique.** Espere o Filipe conferir.
 
-Só quando ele pedir, rode `python -m varredura publicar --por "Filipe"`. O comando recusa o que não foi conferido e mostra o motivo; repasse ao Filipe cada concurso recusado.
+Só quando ele pedir, rode `python -m varredura publicar --por "Filipe"`. O comando recusa o que não foi conferido e mostra o motivo; repasse ao Filipe cada concurso recusado. Ele escreve na pasta da semana `resumo-telegram.md`, `resumo-whatsapp.txt` e `posts/` (imagens e legendas, fora do git).
 
-Depois, mostre o que mudou (`git status` e `git diff --stat`). Faça commit só se ele pedir, e nunca de `.env`, `.cache/` ou PDFs. Push só com o ok dele, porque o push publica no GitHub Pages.
+Depois:
+1. `python -m gerador build` e `python -m gerador links`; ofereça `python -m gerador servir` para o Filipe ver o site.
+2. Mostre o que mudou (`git status` e `git diff --stat`). Faça commit só se ele pedir, e nunca de `.env`, `.cache/`, `public/`, posts ou PDFs.
+3. Push só com o ok dele: o push na `main` publica o site (workflow **Site**) e posta o resumo no Telegram (workflow **Telegram**).
+4. Lembre o Filipe de colar o `resumo-whatsapp.txt` no canal do WhatsApp.

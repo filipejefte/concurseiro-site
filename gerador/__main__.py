@@ -5,6 +5,7 @@
   links [pasta]   confere os links internos do site gerado (o CI roda depois do build)
   redirecionar [--saida publicar-github] [--base-antiga /concurseiro-site/]
         site mínimo que leva o endereço antigo do GitHub Pages ao site_url novo
+  servir [--porta 8000]   serve o public/ no computador, no mesmo caminho do site no ar
 """
 import argparse
 import sys
@@ -34,6 +35,9 @@ def main(argv=None):
     r = sub.add_parser("redirecionar", help="site mínimo que leva o endereço antigo do GitHub Pages ao site_url novo")
     r.add_argument("--saida", type=Path, default=Path("publicar-github"))
     r.add_argument("--base-antiga", default="/concurseiro-site/")
+    s = sub.add_parser("servir", help="serve o public/ em http://localhost:8000 com o base_path")
+    s.add_argument("--porta", type=int, default=8000)
+    s.add_argument("pasta", nargs="?", type=Path, default=SAIDA)
     args = p.parse_args(argv)
 
     cfg = configuracao.ler()
@@ -54,6 +58,12 @@ def main(argv=None):
             raise SystemExit("O site_url ainda é o do GitHub Pages: troque site_url e base_path no site.toml antes.")
         gerar(args.saida, cfg.site_url, args.base_antiga)
         print(f"Redirecionamento para {cfg.site_url} em {args.saida}")
+        return 0
+    if args.comando == "servir":
+        from .servir import servir
+        if not (args.pasta / "index.html").exists():
+            raise SystemExit("Gere o site antes: python -m gerador build")
+        servir(args.pasta, cfg.base_path, args.porta)
         return 0
     if args.comando == "links":
         problemas = verificar(args.pasta, cfg.base_path)
