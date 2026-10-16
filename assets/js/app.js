@@ -28,6 +28,9 @@
 
   function $(sel, raiz) { return (raiz || document).querySelector(sel); }
   function $$(sel, raiz) { return Array.prototype.slice.call((raiz || document).querySelectorAll(sel)); }
+  function esc(t) {
+    return String(t == null ? '' : t).replace(/[&<>"']/g, function (ch) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[ch]; });
+  }
   function lerJSON(id) { var el = document.getElementById(id); try { return el ? JSON.parse(el.textContent) : null; } catch (e) { return null; } }
   function normalizar(t) { return String(t || '').normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase(); }
   function plural(n, um, varios) { return n === 1 ? um : varios; }
@@ -179,7 +182,7 @@
       if (lista) return Promise.resolve(lista);
       return municipios().then(function (l) {
         lista = l.filter(function (m) { return !m.ficticio; });
-        $('#lista-municipios', dialogo).innerHTML = lista.map(function (m) { return '<option value="' + m.nome.replace(/"/g, '&quot;') + '"></option>'; }).join('');
+        $('#lista-municipios', dialogo).innerHTML = lista.map(function (m) { return '<option value="' + esc(m.nome) + '"></option>'; }).join('');
         return lista;
       });
     }
@@ -516,7 +519,7 @@
       function chips(itens, selecionados, grupo, unico) {
         return itens.map(function (it) {
           var ativo = unico ? selecionados === it[0] : selecionados.indexOf(it[0]) >= 0;
-          return '<button class="pt-chip" type="button" data-grupo="' + grupo + '" data-valor="' + it[0] + '" aria-pressed="' + ativo + '">' + it[1] + '</button>';
+          return '<button class="pt-chip" type="button" data-grupo="' + grupo + '" data-valor="' + esc(it[0]) + '" aria-pressed="' + ativo + '">' + esc(it[1]) + '</button>';
         }).join('');
       }
       function pares(obj) { return Object.keys(obj).map(function (k) { return [k, obj[k]]; }); }
