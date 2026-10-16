@@ -1,0 +1,17 @@
+{% extends "texto.html" %}
+{% block texto %}
+<p class="pt-capa">Os concursos novos de cada semana e as inscrições que estão acabando, sem precisar abrir o site.</p>
+<div class="cc-folha pt-folha-pagina">
+  {% include "_canais.html" %}
+</div>
+
+<h2 class="pt-h2">O que você recebe</h2>
+<ul>
+  <li>Uma vez por semana, depois de cada varredura: os concursos novos, os que tiveram o edital retificado e as inscrições que acabam nos 7 dias seguintes.</li>
+  <li>Para cada concurso: órgão, cargo, salário inicial, prazo, cidade e o link da ficha, que leva ao edital oficial.</li>
+</ul>
+
+<h2 class="pt-h2">Como sair</h2>
+<p>No WhatsApp e no Telegram, é só deixar de seguir o canal.{% if cfg.kit_form_id %} No e-mail, use o link para sair que vem no fim de cada mensagem.{% endif %}</p>
+<p>Detalhes sobre os seus dados estão na <a class="pt-link" href="{{ u('/privacidade/') }}">política de privacidade</a>.</p>
+{% endblock %}

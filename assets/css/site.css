@@ -34,7 +34,8 @@ a:focus-visible, button:focus-visible, summary:focus-visible, input:focus-visibl
 .pt-topo { position: sticky; top: 0; z-index: 30; background: var(--papel); border-bottom: 1px solid var(--linha); }
 .pt-topo-in { max-width: 1200px; margin: 0 auto; min-height: 60px; padding: 0 8px 0 16px; display: flex; align-items: center; gap: 16px; }
 .pt-marca { display: inline-flex; align-items: center; min-height: 44px; text-decoration: none; color: var(--tinta); }
-.pt-topo .cc-logo { font-size: 22px; }
+.pt-topo .cc-logo-provisorio { font-size: 22px; }
+.pt-topo .cc-logo { height: 28px; }
 .pt-nav { display: none; }
 .pt-topo-acoes { margin-left: auto; display: flex; align-items: center; gap: 4px; }
 .pt-navlink { display: inline-flex; align-items: center; min-height: 44px; padding: 0 12px; border-radius: var(--radius-md); color: var(--tinta); font-size: 15px; font-weight: 600; text-decoration: none; }
@@ -42,12 +43,17 @@ a:focus-visible, button:focus-visible, summary:focus-visible, input:focus-visibl
 .pt-navlink[aria-current="page"] { color: var(--verde); }
 @media (min-width: 960px) {
   .pt-topo-in { min-height: 72px; padding: 0 32px; gap: 24px; }
-  .pt-topo .cc-logo { font-size: 26px; }
+  .pt-topo .cc-logo-provisorio { font-size: 26px; }
+  .pt-topo .cc-logo { height: 32px; }
   .pt-nav { display: flex; gap: 4px; }
 }
 .pt-icone-btn { -webkit-appearance: none; appearance: none; display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; padding: 0; border: 0; border-radius: var(--radius-md); background: transparent; color: var(--tinta); text-decoration: none; cursor: pointer; }
 .pt-icone-btn svg { width: 22px; height: 22px; }
-.pt-menu-celular { display: flex; flex-direction: column; padding: 4px 16px 12px; border-top: 1px solid var(--linha); background: var(--papel); }
+/* Menu do celular: <details> nativo, abre e fecha sem JavaScript. */
+.pt-menu > summary { list-style: none; }
+.pt-menu > summary::-webkit-details-marker { display: none; }
+.pt-menu[open] > summary { background: var(--papel-alto); }
+.pt-menu-celular { position: absolute; left: 0; right: 0; top: 100%; display: flex; flex-direction: column; padding: 4px 16px 12px; border-top: 1px solid var(--linha); border-bottom: 1px solid var(--linha); background: var(--papel); }
 .pt-menu-celular a, .pt-menu-celular button { -webkit-appearance: none; appearance: none; display: flex; align-items: center; min-height: 48px; padding: 0; border: 0; border-bottom: 1px solid var(--linha); background: transparent; color: var(--tinta); font: inherit; font-size: 17px; font-weight: 600; text-align: left; text-decoration: none; cursor: pointer; }
 .pt-menu-celular > :last-child { border-bottom: 0; color: var(--verde); }
 
@@ -256,7 +262,8 @@ a.cc-card:hover { border-color: var(--linha-forte); }
 .pt-rodape-in { max-width: 1200px; margin: 0 auto; padding: 32px 16px 96px; display: flex; flex-wrap: wrap; align-items: flex-start; justify-content: space-between; gap: 16px 48px; font-size: 14px; line-height: 20px; color: var(--tinta-suave); }
 .pt-rodape-in p { margin: 0; }
 .pt-rodape-texto { display: flex; flex-direction: column; gap: 12px; flex: 1 1 320px; max-width: 560px; }
-.pt-rodape .cc-logo { font-size: 20px; color: var(--tinta); }
+.pt-rodape .cc-logo-provisorio { font-size: 20px; color: var(--tinta); }
+.pt-rodape .cc-logo { height: 24px; }
 .pt-rodape-links { display: flex; flex-wrap: wrap; gap: 0 16px; flex: 1 1 320px; }
 .pt-rodape-links a { display: inline-flex; align-items: center; min-height: 44px; color: var(--tinta); text-decoration: underline; text-underline-offset: 3px; }
 @media (min-width: 960px) {
@@ -278,3 +285,34 @@ a.cc-card:hover { border-color: var(--linha-forte); }
 .pt-veredito { font-weight: 600; }
 .pt-contagem { margin: 0; display: flex; align-items: center; gap: 6px; font-size: 15px; line-height: 20px; font-weight: 600; }
 .pt-contagem svg { width: 18px; height: 18px; color: var(--tinta-suave); }
+
+/* ---------- Lançamento: páginas geradas ---------- */
+.ordem-8 { order: 8; }
+.pt-prazo-aberto { color: var(--tinta); }
+.pt-prazo-breve { color: var(--prazo); }
+.pt-prazo-previsto, .pt-prazo-encerrado { color: var(--tinta-suave); }
+.pt-linha-sub .pt-prazo, .pt-linha-txt .pt-prazo-previsto, .pt-linha-txt .pt-prazo-encerrado { font-size: 14px; line-height: 20px; font-weight: 600; }
+.pt-h3 { margin: 0; font-size: 17px; line-height: 22px; font-weight: 700; }
+.pt-link-btn.pt-rodape-btn { display: inline-flex; align-items: center; min-height: 44px; color: var(--tinta); font-weight: 400; }
+.pt-trilha { margin-bottom: -4px; }
+
+/* Páginas de texto (sobre, privacidade, termos...) */
+.pt-texto-pagina { display: flex; flex-direction: column; gap: 16px; padding-top: 8px; padding-bottom: 48px; font-size: 16px; line-height: 26px; }
+.pt-texto-pagina p, .pt-texto-pagina ul { margin: 0; }
+.pt-texto-pagina ul { padding-left: 22px; display: flex; flex-direction: column; gap: 6px; }
+.pt-texto-pagina .pt-h2 { margin-top: 16px; }
+.pt-texto-pagina code { font-size: 14px; padding: 1px 4px; border-radius: 4px; background: var(--papel-alto); border: 1px solid var(--linha); }
+.pt-texto-pagina .cc-btn { align-self: flex-start; }
+.pt-folha-pagina { max-width: none; box-shadow: none; border: 1px solid var(--linha); border-radius: var(--radius-lg); }
+
+/* Publicidade: espaço reservado, para o anúncio não empurrar a página quando carrega. */
+.pt-pub-lista, .pt-pub-ficha { min-height: 124px; }
+.pt-pub-lista .pt-pub-caixa, .pt-pub-ficha .pt-pub-caixa { min-height: 100px; padding: 0; border-style: solid; }
+.pt-pub-lateral .pt-pub-caixa { min-height: 250px; padding: 0; border-style: solid; }
+.pt-pub .adsbygoogle { width: 100%; }
+
+/* Aviso de anúncios (só com AdSense ligado) */
+.pt-cookies { position: fixed; left: 16px; right: 16px; bottom: 16px; z-index: 40; max-width: 560px; margin: 0 auto; display: flex; flex-direction: column; gap: 12px; padding: 16px; background: var(--papel-alto); border: 1px solid var(--linha); border-radius: var(--radius-lg); box-shadow: var(--sombra-folha); font-size: 15px; line-height: 22px; }
+.pt-cookies p { margin: 0; }
+.pt-cookies-botoes { display: flex; gap: 8px; justify-content: flex-end; }
+.pt-caixa-texto { display: block; min-height: 0; line-height: 20px; }

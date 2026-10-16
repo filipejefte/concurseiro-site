@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, follow">
+<title>Endereço novo · Concurseiro</title>
+<link rel="canonical" href="{{ cfg.absoluta(destino_padrao) }}">
+<link rel="icon" href="{{ u('/favicon.svg') }}" type="image/svg+xml">
+<style>body{font:16px/1.5 system-ui,sans-serif;background:#f7f6f1;color:#14211b;margin:0;padding:32px 16px}a{color:#0b6b48;font-weight:600}</style>
+</head>
+<body>
+<main>
+<h1 style="font-size:22px">Esta página mudou de endereço</h1>
+<p><a href="{{ u(destino_padrao) }}" data-destino>Ir para o endereço novo</a></p>
+</main>
+<script>
+/* Endereço antigo do protótipo: leva para a página nova equivalente. */
+(function () {
+  var base = {{ cfg.base_path | tojson }};
+  var mapa = {{ mapa | tojson }};
+  var p = new URLSearchParams(location.search);
+  var destino = {{ destino_padrao | tojson }};
+  {{ regra | safe }}
+  var link = document.querySelector('[data-destino]');
+  link.href = base + destino.replace(/^\//, '');
+  location.replace(link.href);
+})();
+</script>
+</body>
+</html>

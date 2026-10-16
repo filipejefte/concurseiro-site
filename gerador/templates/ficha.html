@@ -1,0 +1,164 @@
+{% extends "base.html" %}
+{#- Ficha do concurso: tudo o que vem do edital está no HTML. O JavaScript só acrescenta perfil, contagem e situação do dia. -#}
+{% block conteudo %}
+{%- set NI = '<span class="cc-ni">Não informado no edital</span>' if x.edital else '<span class="cc-ni">Ainda sem edital</span>' -%}
+<main id="conteudo" class="pt-ficha pt-pagina pt-pagina-estreita" data-ficha="{{ x.id }}" data-fim="{{ x.fim or '' }}" data-prova="{{ x.c.prova_objetiva or '' }}">
+  <div style="display:flex;flex-direction:column;gap:4px">
+    {{ m.trilha(pagina.trilha) }}
+    <section class="pt-ficha-topo">
+      <div class="cc-card-topo" style="justify-content:flex-start;flex-wrap:wrap;gap:8px 12px">{{ m.selo(x) }}
+        <span class="cc-card-local">{{ m.icone("pino") }}<span>{{ x.local }}</span></span></div>
+      <div><h1 class="pt-titulo">{{ x.orgao }}</h1>
+        <p class="pt-texto" style="margin-top:4px;color:var(--tinta-suave)">{% if x.cargos %}{{ x.cargos | length }} {{ "cargo" if x.cargos | length == 1 else "cargos" }} · {% endif %}banca {{ x.banca or "a definir" }}</p></div>
+      {%- if x.ficticio %}
+      <p class="pt-caixa pt-caixa-info pt-caixa-texto"><span><strong>Exemplo fictício.</strong> Este concurso não existe: serve só para mostrar a ficha.</span></p>
+      {%- endif %}
+      <div class="pt-caixa-salario">
+        <div><span class="cc-rotulo" data-rotulo-salario>Salário inicial</span>
+          <span class="cc-salario" data-salario>
+            {%- if x.salario %}<span{% if x.situacao != 'encerrado' %} class="cc-grifo"{% endif %}>{{ m.dinheiro(x.salario) }}</span>{% else %}{{ NI | safe }}{% endif -%}
+            {%- if detalhe %}<small data-detalhe>{{ m.dinheiro(detalhe) }}</small>{% endif %}</span></div>
+        <dl class="pt-resumo">
+          <div><dt>Vagas</dt><dd>{{ x.vagas_curto }}</dd></div>
+          <div><dt>Escolaridade</dt><dd>{% if x.escolaridade %}{{ x.escolaridade }}{% else %}{{ NI | safe }}{% endif %}</dd></div>
+          <div><dt>Inscrições</dt><dd>{{ x.resumo_inscricao }}</dd></div>
+        </dl>
+        <p class="pt-contagem" data-contagem hidden></p>
+      </div>
+      {%- if x.ato %}
+      <a class="cc-btn cc-btn-primario cc-btn-bloco" href="{{ x.ato.url }}" rel="noopener">{{ x.botao }}{{ m.icone("externo", "pt-i2") }}</a>
+      {%- endif %}
+      <a class="cc-btn cc-btn-bloco" href="{{ whatsapp }}" target="_blank" rel="noopener">{{ m.icone("conversa") }}Mandar no WhatsApp</a>
+      <span class="cc-atualizacao">{{ m.icone("atualizado") }}{{ origem }}</span>
+      <nav class="pt-trilho" aria-label="Seções da ficha">
+        {%- if x.situacao == "encerrado" and x.parecidos %}<a class="pt-chip" href="#parecidos">Abertos parecidos</a>{% endif %}
+        <a class="pt-chip" href="#salario">Salário</a><a class="pt-chip" href="#vagas">Vagas</a>
+        <a class="pt-chip" href="#inscricao">Inscrição e prova</a>
+        {%- if materias %}<a class="pt-chip" href="#conteudo-programatico">Conteúdo</a>{% endif %}
+        <a class="pt-chip" href="#documentos">Documentos</a>
+      </nav>
+    </section>
+  </div>
+
+  {%- if x.situacao == "encerrado" %}
+  <section id="parecidos" class="pt-secao" aria-labelledby="titulo-parecidos">
+    <h2 class="pt-h2" id="titulo-parecidos">Inscrições encerradas. Estes estão abertos</h2>
+    <p class="pt-apoio">As inscrições deste concurso terminaram em {{ fim_br }}. A ficha fica aqui para consulta; vale sempre o edital oficial.</p>
+    {%- if x.parecidos %}
+    {{ m.grade(x.parecidos) }}
+    {%- else %}
+    <p class="pt-texto"><a class="pt-link" href="{{ u('/concursos/') }}">Ver os concursos abertos</a></p>
+    {%- endif %}
+  </section>
+  {%- endif %}
+
+  {%- if x.cargos %}
+  <section id="pra-voce" class="pt-secao" aria-labelledby="titulo-pra-voce" data-pra-voce data-so-js hidden>
+    <h2 class="pt-h2" id="titulo-pra-voce">Este concurso é pra você?</h2>
+    <p class="pt-apoio" data-pra-voce-perfil>Marque o que você já tem. Nada disso sai do seu aparelho.</p>
+    {%- if x.cargos | length > 1 %}
+    <label class="cc-campo">Cargo<select data-requisitos-cargo>
+      {%- for k in x.cargos %}<option value="{{ loop.index0 }}">{{ k.nome }}</option>{% endfor %}
+    </select></label>
+    {%- endif %}
+    <ul class="pt-requisitos" data-requisitos></ul>
+    <p class="pt-texto pt-veredito" data-veredito aria-live="polite"></p>
+    <button class="pt-link-btn" type="button" data-abrir-perfil data-rotulo-perfil-ficha style="align-self:flex-start">Dizer minha escolaridade</button>
+  </section>
+  {%- endif %}
+
+  <section id="salario" class="pt-secao">
+    <h2 class="pt-h2">Salário e benefícios</h2>
+    <dl class="cc-ficha">
+      <dt>Salário inicial</dt><dd>{% if x.faixa_salario %}{{ m.dinheiro(x.faixa_salario) }}{% if x.sal_min != x.sal_max %}, conforme o cargo{% endif %}{% else %}{{ NI | safe }}{% endif %}</dd>
+      {%- for b in x.c.beneficios %}
+      <dt>{{ b.nome }}</dt><dd>{% if b.valor %}{{ m.dinheiro(dinheiro(b.valor)) }}{% else %}<span class="cc-ni">Valor não informado no edital</span>{% endif %}</dd>
+      {%- endfor %}
+      <dt>Jornada</dt><dd>{% if x.jornada %}{{ x.jornada }}{% else %}{{ NI | safe }}{% endif %}</dd>
+      <dt>Regime</dt><dd>{% if x.c.regime %}{{ x.c.regime }}{% else %}{{ NI | safe }}{% endif %}</dd>
+    </dl>
+    <p class="pt-apoio">Salário inicial bruto, antes dos descontos. Benefícios aparecem à parte.</p>
+  </section>
+
+  {{ m.publicidade("ficha") }}
+
+  <section id="vagas" class="pt-secao">
+    <h2 class="pt-h2">Vagas e requisitos</h2>
+    {%- if x.cargos %}
+    <ul class="pt-cargos">
+      {%- for k in x.cargos %}
+      <li><span class="pt-cargo-nome">{{ k.nome }}</span><span class="pt-cargo-sal">{% if k.salario %}{{ m.dinheiro(dinheiro(k.salario)) }}{% else %}{{ NI | safe }}{% endif %}</span>
+        <span class="pt-cargo-info">{{ info_cargo(k) }}</span></li>
+      {%- endfor %}
+    </ul>
+    {%- else %}
+    <p class="pt-texto">{{ NI | safe }}</p>
+    {%- endif %}
+    <p class="pt-apoio">CR é cadastro reserva: aprovados além das vagas, chamados se abrirem novas.</p>
+  </section>
+
+  <section id="inscricao" class="pt-secao">
+    <h2 class="pt-h2">Inscrição e prova</h2>
+    <dl class="cc-ficha">
+      <dt>Inscrições</dt><dd>{% if x.inscricoes %}{{ x.inscricoes }}{% else %}{{ NI | safe }}{% endif %}</dd>
+      <dt>Taxa</dt><dd>{% if x.taxa %}{{ m.dinheiro(x.taxa) }}{% else %}{{ NI | safe }}{% endif %}{% if x.c.isencao_regras %} · {{ x.c.isencao_regras[:1] | lower }}{{ x.c.isencao_regras[1:] }}{% endif %}</dd>
+      <dt>Pedido de isenção</dt><dd>{% if x.c.isencao_ate %}até {{ data_curta(x.c.isencao_ate) }}{% else %}{{ NI | safe }}{% endif %}</dd>
+      <dt>Prova objetiva</dt><dd>{% if x.c.prova_objetiva %}{{ data_curta(x.c.prova_objetiva) }}{% else %}{{ NI | safe }}{% endif %}</dd>
+      <dt>Local da prova</dt><dd>{% if x.c.local_prova %}{{ x.c.local_prova }}{% else %}{{ NI | safe }}{% endif %}</dd>
+      <dt>O que levar</dt><dd>{% if x.c.o_que_levar %}{{ x.c.o_que_levar }}{% else %}{{ NI | safe }}{% endif %}</dd>
+      <dt>Banca</dt><dd>{% if x.banca %}{% if x.banca_slug and tem_banca %}<a class="pt-link" href="{{ u('/banca/' ~ x.banca_slug ~ '/') }}">{{ x.banca }}</a>{% else %}{{ x.banca }}{% endif %}{% elif not x.edital %}A definir{% else %}{{ NI | safe }}{% endif %}</dd>
+    </dl>
+    {%- if prazos %}
+    <details class="pt-acordeao">
+      <summary>Adicionar os prazos à agenda{{ m.icone("abaixo") }}</summary>
+      <div class="pt-acordeao-corpo">
+        <ul class="pt-lista">
+          {%- for p in prazos %}
+          <li><a class="pt-linha" href="{{ p.google }}" target="_blank" rel="noopener">{{ m.icone("calendario", "pt-i pt-linha-icone") }}
+            <span class="pt-linha-txt"><span class="pt-linha-tit">{{ p.nome }}</span><span class="pt-linha-sub">{{ data_curta(p.data) }} · no Google Agenda</span></span>
+            {{ m.icone("externo", "pt-i2 pt-seta") }}</a></li>
+          {%- endfor %}
+        </ul>
+        <a class="cc-btn cc-btn-bloco" href="{{ ics }}" download="{{ x.id }}.ics">{{ m.icone("calendario", "pt-i2") }}Baixar todos os prazos (.ics)</a>
+        <p class="pt-apoio">O arquivo .ics põe todos os prazos de uma vez no Google Agenda, no calendário do celular ou no Outlook. As datas são as do edital: se sair retificação, confira de novo.</p>
+      </div>
+    </details>
+    {%- endif %}
+  </section>
+
+  {%- if materias %}
+  <section id="conteudo-programatico" class="pt-secao">
+    <h2 class="pt-h2">Conteúdo programático</h2>
+    {%- for k in materias %}
+    <details class="pt-acordeao"{% if loop.first %} open{% endif %}>
+      <summary>{{ k.nome }}{{ m.icone("abaixo") }}</summary>
+      <div class="pt-acordeao-corpo"><ul class="pt-materias">{% for mat in k.materias %}<li>{{ mat }}</li>{% endfor %}</ul></div>
+    </details>
+    {%- endfor %}
+    <p class="pt-apoio">Lista completa de tópicos no edital.</p>
+  </section>
+  {%- endif %}
+
+  {{ m.parceiros(parceiros) }}
+
+  <section id="documentos" class="pt-secao">
+    <h2 class="pt-h2">Documentos</h2>
+    <ul class="pt-lista">
+      {%- for doc in x.c.documentos %}
+      <li><a class="pt-linha" href="{{ doc.url }}" rel="noopener">{{ m.icone("documento", "pt-i pt-linha-icone") }}
+        <span class="pt-linha-txt"><span class="pt-linha-tit">{{ doc.titulo }}</span><span class="pt-linha-sub">{{ sub_documento(doc) }}</span></span>
+        {{ m.icone("externo", "pt-i2 pt-seta") }}</a></li>
+      {%- endfor %}
+      {%- if site_banca %}
+      <li><a class="pt-linha" href="{{ site_banca }}" rel="noopener">{{ m.icone("globo", "pt-i pt-linha-icone") }}
+        <span class="pt-linha-txt"><span class="pt-linha-tit">Site da banca</span><span class="pt-linha-sub">{{ x.banca }} · inscrição e pagamento da taxa</span></span>
+        {{ m.icone("externo", "pt-i2 pt-seta") }}</a></li>
+      {%- endif %}
+    </ul>
+    <span class="cc-atualizacao">{{ m.icone("atualizado") }}{{ origem }}</span>
+  </section>
+
+  {{ m.aviso_oficial(avise | safe) }}
+</main>
+<script type="application/json" id="ficha-dados">{{ ficha_js | tojson }}</script>
+{% endblock %}

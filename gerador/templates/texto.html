@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{#- Páginas de texto: sobre, como conferimos, privacidade, termos, contato, alertas e 404. -#}
+{% block conteudo %}
+<main id="conteudo" class="pt-pagina pt-pagina-estreita pt-texto-pagina">
+  {%- if pagina.trilha %}{{ m.trilha(pagina.trilha) }}{% endif %}
+  <h1 class="pt-titulo">{{ pagina.h1 }}</h1>
+  {% block texto %}{% endblock %}
+</main>
+{% endblock %}

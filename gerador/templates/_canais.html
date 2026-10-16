@@ -1,0 +1,27 @@
+{#- Os canais de alerta configurados no site.toml. Vale para a folha "Avise-me" e para a página /alertas/. -#}
+{%- if canais or cfg.kit_form_id %}
+<p>{{ alerta.texto }}</p>
+{%- for canal in canais %}
+<a class="cc-btn {% if loop.first %}cc-btn-primario {% endif %}cc-btn-bloco" href="{{ canal.url }}" target="_blank" rel="noopener">{{ m.icone(canal.icone) }}Entrar no canal do {{ canal.nome }}</a>
+{%- endfor %}
+{%- if canais %}
+<p class="cc-letra-miuda">{{ canais | map(attribute="nome") | join(" e ") }} {{ "são serviços" if canais | length > 1 else "é um serviço" }} de terceiros: você entra e sai quando quiser, e não vemos seu número.</p>
+{%- endif %}
+{%- if cfg.kit_form_id %}
+<form class="pt-form-alerta" action="https://app.kit.com/forms/{{ cfg.kit_form_id }}/subscriptions" method="post" data-form-kit>
+  <h3 class="pt-h3">Por e-mail</h3>
+  <label class="cc-campo">Seu e-mail<input type="email" name="email_address" required autocomplete="email" inputmode="email"></label>
+  <label class="cc-check"><input type="checkbox" name="consentimento" required data-consentimento><span>Quero receber por e-mail os concursos novos de cada semana. Li a <a class="pt-link" href="{{ u('/privacidade/') }}">política de privacidade</a>.</span></label>
+  <p class="cc-letra-miuda">Um e-mail por semana, com os concursos novos e as inscrições que estão acabando. Primeiro chega um e-mail para você confirmar; sem a confirmação, nada é enviado. Para sair, use o link no fim de qualquer e-mail.</p>
+  <button class="cc-btn cc-btn-primario cc-btn-bloco" type="submit" data-enviar>Quero receber por e-mail</button>
+  <p class="pt-erro-msg" role="alert" data-erro-kit hidden>Não deu para enviar agora. Tente de novo em instantes.</p>
+</form>
+<div class="pt-sucesso" data-sucesso-kit hidden>
+  {{ m.icone("aberto", "pt-i2") }}
+  <p class="pt-sucesso-tit">Pronto. Mandamos um e-mail para você confirmar. Os alertas começam depois disso.</p>
+</div>
+{%- endif %}
+{%- else %}
+<p>Ainda não mandamos alertas. Quando o canal abrir, o link aparece aqui. Enquanto isso, a lista do site é atualizada uma vez por semana.</p>
+<a class="cc-btn cc-btn-primario cc-btn-bloco" href="{{ u('/concursos/') }}" data-fechar>Ver os concursos abertos</a>
+{%- endif %}

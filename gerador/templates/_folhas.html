@@ -1,0 +1,55 @@
+{#- Folhas (diálogos nativos). Fechadas, não aparecem; o JavaScript abre. Sem JavaScript, os botões levam a /alertas/. -#}
+<dialog id="alerta" class="pt-dialogo" aria-labelledby="alerta-titulo">
+  <div class="cc-folha">
+    <div class="pt-folha-alca" aria-hidden="true"></div>
+    <div class="pt-folha-cab">
+      <div><h2 id="alerta-titulo">{{ alerta.titulo }}</h2></div>
+      <button class="pt-icone-btn" type="button" data-fechar aria-label="Fechar">{{ m.icone("fechar") }}</button>
+    </div>
+    {% include "_canais.html" %}
+  </div>
+</dialog>
+
+<dialog id="cidade" class="pt-dialogo" aria-labelledby="cidade-titulo">
+  <div class="cc-folha">
+    <div class="pt-folha-alca" aria-hidden="true"></div>
+    <div class="pt-folha-cab">
+      <div><h2 id="cidade-titulo">Sua cidade</h2></div>
+      <button class="pt-icone-btn" type="button" data-fechar aria-label="Fechar">{{ m.icone("fechar") }}</button>
+    </div>
+    <p>Para mostrar primeiro os concursos perto de você. A escolha fica guardada só neste aparelho.</p>
+    <form class="pt-form-alerta" data-form-cidade novalidate>
+      <label class="cc-campo">Município do Paraná<input name="cidade" list="lista-municipios" autocomplete="off" placeholder="Comece a digitar" aria-describedby="cidade-erro"></label>
+      <datalist id="lista-municipios"></datalist>
+      <p id="cidade-erro" class="pt-erro-msg" role="alert" hidden>Escolha um município do Paraná da lista.</p>
+      <p class="pt-caixa pt-caixa-info" data-sugestao-ip hidden></p>
+      <button class="cc-btn cc-btn-primario cc-btn-bloco" type="submit">Usar esta cidade</button>
+      <button class="cc-btn cc-btn-bloco" type="button" data-gps>{{ m.icone("mira") }}Achar pela minha localização</button>
+      <p class="pt-apoio" data-aviso-gps aria-live="polite">Opcional. A localização só serve para achar o município mais próximo e não sai do seu aparelho.</p>
+      <button class="cc-btn cc-btn-texto" type="button" data-esquecer hidden style="align-self:flex-start">Esquecer minha cidade</button>
+    </form>
+  </div>
+</dialog>
+
+<dialog id="perfil" class="pt-dialogo" aria-labelledby="perfil-titulo">
+  <div class="cc-folha">
+    <div class="pt-folha-alca" aria-hidden="true"></div>
+    <div class="pt-folha-cab">
+      <div><h2 id="perfil-titulo">Seu perfil</h2></div>
+      <button class="pt-icone-btn" type="button" data-fechar aria-label="Fechar">{{ m.icone("fechar") }}</button>
+    </div>
+    <p>Para mostrar o salário do cargo que você pode fazer, e não o maior do edital. Fica guardado só neste aparelho; não pedimos nome, e-mail nem telefone.</p>
+    <form class="pt-form-alerta" data-form-perfil novalidate>
+      <fieldset class="pt-grupo"><legend class="pt-rotulo-campo">Até onde você estudou?</legend>
+        <label class="cc-check pt-check44"><input type="radio" name="escolaridade" value="Fundamental"><span>Ensino fundamental completo</span></label>
+        <label class="cc-check pt-check44"><input type="radio" name="escolaridade" value="Médio"><span>Ensino médio completo</span></label>
+        <label class="cc-check pt-check44"><input type="radio" name="escolaridade" value="Superior"><span>Curso superior completo</span></label>
+      </fieldset>
+      <label class="cc-check pt-check44"><input type="checkbox" name="tecnico"><span>Tenho curso técnico</span></label>
+      <label class="cc-campo">Sua formação (opcional)<input name="formacao" autocomplete="off" maxlength="60" placeholder="Ex.: pedagogia, direito, enfermagem"></label>
+      <p id="perfil-erro" class="pt-erro-msg" role="alert" hidden>Escolha até onde você estudou.</p>
+      <button class="cc-btn cc-btn-primario cc-btn-bloco" type="submit">Usar este perfil</button>
+      <button class="cc-btn cc-btn-texto" type="button" data-apagar-perfil hidden style="align-self:flex-start">Apagar meu perfil</button>
+    </form>
+  </div>
+</dialog>

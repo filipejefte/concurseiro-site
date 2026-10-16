@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{#- Página de lista: estado, federais, previstos, área, banca, encerram esta semana e cidade. -#}
+{% block conteudo %}
+<main id="conteudo" class="pt-listagem pt-pagina">
+  <div class="pt-listagem-topo">
+    {{ m.trilha(pagina.trilha) }}
+    <h1 class="pt-titulo">{{ lista.h1 }}</h1>
+    <p class="pt-capa">{{ lista.capa | safe }}</p>
+    {%- if lista.intro %}<p class="pt-texto">{{ lista.intro | safe }}</p>{% endif %}
+  </div>
+
+  {%- for s in lista.secoes if s.concursos or s.get("vazio") %}
+  <section class="pt-secao" aria-labelledby="secao-{{ loop.index }}">
+    <div class="pt-secao-cab"><h2 class="pt-h2" id="secao-{{ loop.index }}">{{ s.titulo }}</h2></div>
+    {%- if s.get("apoio") %}<p class="pt-apoio">{{ s.apoio }}</p>{% endif %}
+    {%- if s.concursos %}
+    {{ m.grade(s.concursos) }}
+    {%- elif s.get("vazio") %}
+    {{ m.vazio(s.vazio) }}
+    {%- endif %}
+  </section>
+  {%- endfor %}
+
+  {%- block depois_das_listas %}{% endblock %}
+
+  {%- for bloco in lista.chips %}
+  <section class="pt-secao" aria-labelledby="chips-{{ loop.index }}">
+    <h2 class="pt-h2" id="chips-{{ loop.index }}">{{ bloco.titulo }}</h2>
+    <div class="pt-chips">
+      {%- for nome, caminho, n in bloco.itens %}
+      <a class="pt-chip" href="{{ u(caminho) }}">{{ nome }}{% if n %} <span class="pt-chip-n">{{ n }}</span>{% endif %}</a>
+      {%- endfor %}
+    </div>
+  </section>
+  {%- endfor %}
+
+  {{ m.parceiros(lista.parceiros) }}
+
+  <section class="pt-cta" aria-labelledby="titulo-cta">
+    {{ m.icone("sino") }}
+    <h2 class="pt-h2" id="titulo-cta">{{ alerta.titulo }}</h2>
+    <p class="pt-texto" style="font-size:15px;line-height:22px">Os concursos novos de cada semana e as inscrições que estão acabando. Sem cadastro no site.</p>
+    {{ m.botao_alerta() }}
+  </section>
+
+  <p class="pt-apoio">Salário inicial bruto, antes dos descontos. Benefícios aparecem à parte.</p>
+  {{ m.aviso_oficial() }}
+</main>
+{% endblock %}

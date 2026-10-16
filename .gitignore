@@ -11,3 +11,7 @@ __pycache__/
 .pytest_cache/
 # Fila de extração: texto bruto dos atos, refeito pela coleta (o atos.json da semana guarda os links).
 dados/varreduras/*/fila/
+
+# Site gerado (python -m gerador build) e posts da semana: refeitos a cada vez.
+public/
+dados/varreduras/*/posts/
