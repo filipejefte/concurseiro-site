@@ -88,7 +88,9 @@ def validar_concurso(c, tabela=None, exemplo=False):
     if ed and not _oficial(ed["url"], c):
         erros.append(f"edital: o link ({_host(ed['url'])}) não é de diário oficial, órgão público nem da banca")
 
-    if c["municipio_ibge"] is not None:
+    if c["municipio_ibge"] is not None and c["uf"] != "PR":
+        erros.append("cidade: municipio_ibge só para cidade do PR; fora do PR, deixe null e preencha uf e cidade")
+    elif c["municipio_ibge"] is not None:
         m = tabela.get(c["municipio_ibge"])
         if c["uf"] == "PR" and m is None:
             erros.append(f"cidade: município {c['municipio_ibge']} não existe na tabela do PR")

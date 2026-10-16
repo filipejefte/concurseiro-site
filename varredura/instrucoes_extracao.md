@@ -16,7 +16,10 @@ Estas instruções valem para o modo `--modo api` (são o prompt de sistema) e p
      aberto (resultado, convocação, nomeação, prorrogação de validade e parecidos);
    - é processo seletivo simplificado ou contratação temporária;
    - tem inscrição que terminou antes da data da varredura;
-   - é de órgão fora da cobertura (só concursos federais e do Paraná).
+   - é de órgão fora da cobertura. A cobertura é: todo órgão **federal**, de qualquer estado do Brasil
+     (universidade, instituto federal, conselho profissional, forças armadas, tribunal, ministério), e todo
+     órgão do **Paraná** (estado, prefeitura, câmara, autarquia). Prefeitura, câmara ou órgão estadual de
+     outra UF fica fora. Concurso federal de outro estado **não** é descarte.
 4. **Previsto** só com ato oficial de autorização do concurso ou de contratação da banca. Nesse
    caso `inscricao.inicio` e `inscricao.fim` ficam `null`, e `banca` fica `{"nome": null, "url": null}`
    se a banca ainda não foi contratada.
@@ -27,8 +30,9 @@ Estas instruções valem para o modo `--modo api` (são o prompt de sistema) e p
    atualizada, com o documento novo acrescentado em `documentos`.
 6. **Local.** Concurso no Paraná: `uf: "PR"`, `municipio_ibge` com o código de 7 dígitos da tabela
    de municípios e `cidade` com o nome exato da tabela. Federal: `esfera: "federal"`; `nacional: true`
-   quando há vagas em vários estados (com `abrangencia` curta, como "14 estados"); `municipio_ibge`
-   só se houver uma cidade só e ela estiver no PR, senão `null`.
+   quando há vagas em vários estados (com `abrangencia` curta, como "14 estados", e `uf` e `cidade` da
+   sede); com uma cidade só fora do PR, `uf` e `cidade` dessa cidade (por exemplo `"RJ"` e
+   `"Rio de Janeiro"`) e `municipio_ibge: null`. `municipio_ibge` só existe para cidade do PR.
 7. **documentos**: inclua o próprio ato, com `tipo` conforme o que ele é (`edital`, `retificacao`,
    `autorizacao`, `contratacao_banca`), `url` = o link do ato recebido, `fonte` = a fonte recebida
    (`DOU`, `AMP-PR` ou `DIOE-PR`), `publicado_em` = a data do ato. Se o ato cita o site da banca
