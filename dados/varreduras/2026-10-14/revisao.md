@@ -2,7 +2,9 @@
 
 Fichas: 22 · novos: 22 · alterados: 0 · iguais ao publicado: 0 · encerrados desde a última varredura: 0
 
-Como conferir: abra `revisao.csv` (Excel ou LibreOffice), compare cada valor com o trecho e com o ato oficial e escreva `ok` na coluna **conferido**. Valor errado: corrija `fichas/<id>.json`, rode `python -m varredura revisao` de novo (as marcas das linhas que não mudaram ficam) e marque `ok`. `corrigir` segura o concurso fora da publicação.
+Como conferir: abra `revisao.csv` (Excel ou LibreOffice). As linhas `auto` a conferência automática já achou no texto do ato. Confira só as linhas com **conferido** vazio (o motivo está em `observacao`) e as marcadas `amostra`, comparando com o ato oficial, e escreva `ok`. Valor errado: corrija `fichas/<id>.json`, rode `python -m varredura revisao` de novo (as suas marcas nas linhas que não mudaram ficam) e marque `ok`. `corrigir` segura o concurso fora da publicação.
+
+**Conferência:** 277 linhas · 212 achadas no ato pela automática · **65 para você** (54 que a automática não achou e 11 da amostra) · 0 ok · 0 corrigir
 
 ## Fontes com problema nesta coleta
 
