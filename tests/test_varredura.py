@@ -274,7 +274,6 @@ def ambiente(tmp_path, monkeypatch):
     base.write_text(json.dumps({"varredura": None, "proxima_varredura": None, "cobertura": ["federal", "PR"], "concursos": []}),
                     encoding="utf-8")
     monkeypatch.setattr(dados, "CONCURSOS", base)
-    monkeypatch.setattr(dados, "DADOS_JS", tmp_path / "dados.js")
     pasta = tmp_path / "varreduras" / "2026-10-14"
     c = real()
     trechos = {campo: "trecho de teste" for campo in dados.CAMPOS_CRITICOS}
@@ -320,9 +319,14 @@ def test_publicar_o_que_foi_conferido(ambiente):
     assert ficha["conferencia"]["por"] == "Teste"
     assert set(ficha["conferencia"]["campos"]) == set(dados.CAMPOS_CRITICOS)
     assert ficha["primeira_varredura"] == ficha["ultima_alteracao"] == "2026-10-14"
-    js = dados.DADOS_JS.read_text(encoding="utf-8")
-    assert c["id"] in js and '"exemplo": false' in js
-    assert c["orgao"] in (pasta / "resumo-telegram.md").read_text(encoding="utf-8")
+    resumo = (pasta / "resumo-telegram.md").read_text(encoding="utf-8")
+    assert c["orgao"] in resumo and f"/concurso/{c['id']}/" in resumo and "concurso.html" not in resumo
+    assert resumo.count(dados.site_url("/")) >= 2
+    whatsapp = (pasta / "resumo-whatsapp.txt").read_text(encoding="utf-8")
+    assert c["orgao"] in whatsapp and "*Novos*" in whatsapp and "##" not in whatsapp and "](" not in whatsapp
+    from PIL import Image
+    assert Image.open(pasta / "posts" / f"post-{c['id']}.png").size == (1080, 1350)
+    assert ficha["orgao"] in (pasta / "posts" / f"post-{c['id']}.txt").read_text(encoding="utf-8")
 
 
 def test_valor_mudado_depois_da_conferencia_volta_a_ser_recusado(ambiente):
@@ -491,3 +495,27 @@ def test_conferencia_recusa_periodo_de_outro_item(item, inicio, fim):
     cargo = _professor(13753.96, f"Item {item}; dedicação exclusiva; titulação mínima: doutorado")
     c = _ficha_magisterio(cargo, inicio, fim)
     assert not (_passa_magisterio("inscricao.inicio", c) and _passa_magisterio("inscricao.fim", c))
+
+
+# ---------- Telegram ----------
+
+def test_telegram_parte_mensagens_abaixo_do_limite():
+    from varredura.telegram import mensagens
+    blocos = [f"• Concurso {i}\n  até R$ 1.000,00 · inscrições até sex, 20/11\n  Ficha: https://x.example/concurso/{i}/" for i in range(200)]
+    texto = "Concursos da semana\n\nNovos\n\n" + "\n".join(blocos) + "\n\nTodos os concursos: https://x.example/"
+    partes = mensagens(texto)
+    assert len(partes) > 1 and all(len(p) <= 4096 for p in partes)
+    assert "\n".join(partes).replace("\n\n", "\n").count("• Concurso") == 200
+    assert mensagens("curto") == ["curto"]
+    assert all(len(p) <= 4096 for p in mensagens("x" * 10000))
+
+
+def test_telegram_teste_so_imprime(tmp_path, capsys, monkeypatch):
+    from varredura.telegram import postar
+    (tmp_path / "resumo-telegram.md").write_text("Concursos da semana\n\n• Um\n", encoding="utf-8")
+    monkeypatch.delenv("TELEGRAM_BOT_TOKEN", raising=False)
+    assert postar(tmp_path, teste=True) == 0
+    assert "mensagem 1 de 1" in capsys.readouterr().out
+    assert postar(tmp_path, se_configurado=True) == 0
+    with pytest.raises(SystemExit):
+        postar(tmp_path)

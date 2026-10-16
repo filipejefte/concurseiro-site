@@ -141,25 +141,31 @@ def icone_app(lado):
 
 def cartao(largura, altura, *, tag, orgao, salario, linhas, rodape, verde=False, cor_tag=VERDE,
            sem_salario="Salário: não informado no edital"):
-    """Desenha o cartão (OG e post) e devolve a imagem RGB."""
+    """Desenha o cartão (OG 1200x630 e post 1080x1350) e devolve a imagem RGB.
+
+    O bloco de texto é desenhado numa camada à parte: no OG fica no topo; no post (retrato), letras maiores
+    e o bloco centrado na altura que sobra acima do rodapé.
+    """
     fundo, tinta, suave = (VERDE, "#ffffff", "#e5f1ea") if verde else (PAPEL, TINTA, TINTA_SUAVE)
+    retrato = altura > largura
     img = Image.new("RGB", (largura, altura), fundo)
-    d = ImageDraw.Draw(img)
-    m = round(largura * 0.06)
-    escala = largura / 1200
-    y = m
+    camada = Image.new("RGBA", (largura, altura), (0, 0, 0, 0))
+    d = ImageDraw.Draw(camada)
+    m = round(largura * (0.074 if retrato else 0.06))
+    escala = largura / (860 if retrato else 1200)
+    y = 0
     d.text((m, y), tag.upper(), font=fonte(700, round(26 * escala)), fill="#ffffff" if verde else cor_tag)
     y += round(56 * escala)
-    tamanho_orgao = round((54 if altura < largura else 64) * escala)
-    for linha in quebrar(d, orgao, fonte(800, tamanho_orgao), largura - 2 * m, linhas=2 if altura < largura else 3):
+    tamanho_orgao = round(54 * escala)
+    for linha in quebrar(d, orgao, fonte(800, tamanho_orgao), largura - 2 * m, linhas=3 if retrato else 2):
         d.text((m, y), linha, font=fonte(800, tamanho_orgao), fill=tinta)
         y += round(tamanho_orgao * 1.12)
     y += round(28 * escala)
     if salario:
         d.text((m, y), "Salário inicial", font=fonte(600, round(26 * escala)), fill=suave)
         y += round(40 * escala)
-        f = fonte(800, round((92 if altura < largura else 110) * escala))
-        while d.textlength(salario, font=f) > largura - 2 * m and f.size > 40:
+        f = fonte(800, round(92 * escala))
+        while d.textlength(salario, font=f) > largura - 2 * m - 16 and f.size > 40:
             f = fonte(800, f.size - 4)
         texto_grifado(d, (m + round(8 * escala), y), salario, f, TINTA)
         y += round(f.size * 1.45)
@@ -171,15 +177,18 @@ def cartao(largura, altura, *, tag, orgao, salario, linhas, rodape, verde=False,
             d.text((m, y), parte, font=fonte(600, round(32 * escala)), fill=tinta)
             y += round(44 * escala)
     # Rodapé: logotipo à esquerda, endereço à direita.
-    alt_logo = round(48 * escala)
+    alt_logo = round(48 * (escala if not retrato else escala * 0.9))
     logo = logotipo(alt_logo)
     if verde:
         placa = Image.new("RGBA", (logo.width + round(24 * escala), alt_logo + round(16 * escala)), PAPEL)
         placa.alpha_composite(logo, (round(12 * escala), round(8 * escala)))
         logo = placa
     base_y = altura - m - logo.height
+    topo = m if not retrato else max(m, (base_y - y) // 2)
+    img.paste(camada, (0, topo), camada)
     img.paste(logo, (m, base_y), logo)
-    f_rod = fonte(600, round(24 * escala))
+    d = ImageDraw.Draw(img)
+    f_rod = fonte(600, round(24 * min(escala, 1.15)))
     w = d.textlength(rodape, font=f_rod)
     d.text((largura - m - w, base_y + (logo.height - f_rod.size) / 2), rodape, font=f_rod, fill=suave)
     return img

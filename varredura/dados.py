@@ -1,6 +1,7 @@
 """Caminhos, leitura dos arquivos de dados e as regras que a varredura e o site compartilham."""
 import json
 import os
+import tomllib
 from datetime import date
 from pathlib import Path
 
@@ -12,14 +13,20 @@ MUNICIPIOS = DADOS / "municipios-pr.json"
 MUNICIPIOS_FICTICIOS = DADOS / "exemplo" / "municipios-ficticios.json"
 SCHEMA = DADOS / "schema" / "concurso.schema.json"
 VARREDURAS = DADOS / "varreduras"
-DADOS_JS = RAIZ / "assets" / "js" / "dados.js"
 CACHE = RAIZ / ".cache"
-SITE = "https://filipejefte.github.io/concurseiro-site/"
+SITE_TOML = RAIZ / "site.toml"
 
 # Campos que uma pessoa confere antes de qualquer concurso ir ao ar (regra 4).
 CAMPOS_CRITICOS = ["salario", "inscricao.inicio", "inscricao.fim", "prova_objetiva", "taxa", "banca", "cidade", "edital"]
 
 DIAS_SEMANA = ["seg", "ter", "qua", "qui", "sex", "sáb", "dom"]
+
+
+def site_url(caminho=""):
+    """Endereço público do site (site_url do site.toml) mais o caminho: site_url("/concurso/x/")."""
+    with open(SITE_TOML, "rb") as f:
+        base = tomllib.load(f)["site_url"].rstrip("/")
+    return base + "/" + caminho.lstrip("/")
 
 
 def ler_json(caminho):
