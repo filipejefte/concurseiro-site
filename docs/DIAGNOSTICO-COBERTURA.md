@@ -50,14 +50,16 @@ Em 16/10 não deu para verificar: a rede da sessão bloqueava os domínios `.pr.
 
 ## Para fechar a cobertura (no notebook)
 
-A coleta grava na pasta do dia em que roda (`dados/varreduras/<hoje>/`). Os nomes dos atos na fila são estáveis, então as fichas e os descartes de 14/10 continuam valendo se forem copiados para a pasta nova antes da extração:
+Em 19/10, numa sessão na nuvem, a AMP-PR e o DIOE-PR foram coletados desde 16/06 e extraídos até zerar (`dados/varreduras/2026-10-19/`, com o `progresso.md`). Falta o DOU, que precisa do INLABS (`INLABS_EMAIL` e `INLABS_SENHA` no `.env`).
+
+A coleta grava na pasta do dia em que roda (`dados/varreduras/<hoje>/`). Os nomes dos atos na fila são estáveis, então as fichas e os descartes de 19/10 (que já incluem os de 14/10) continuam valendo se forem copiados para a pasta nova antes da extração. Só os atos do DOU vão aparecer como pendentes:
 
 ```powershell
 python -m varredura coletar --inicial --desde 2026-06-16
 $nova = (Get-ChildItem dados\varreduras -Directory | Sort-Object Name | Select-Object -Last 1).FullName
 New-Item -ItemType Directory "$nova\fichas" -Force | Out-Null
-Copy-Item dados\varreduras\2026-10-14\fichas\*.json "$nova\fichas\" -Force
-Copy-Item dados\varreduras\2026-10-14\descartes.json "$nova\" -Force
+Copy-Item dados\varreduras\2026-10-19\fichas\*.json "$nova\fichas\" -Force
+Copy-Item dados\varreduras\2026-10-19\descartes.json "$nova\" -Force
 python -m varredura pendentes --resumo        # triagem rápida
 # extrair em lotes no /varredura até "0 ato(s) pendente(s)"
 python -m varredura validar

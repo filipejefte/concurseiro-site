@@ -24,4 +24,4 @@ Fontes: DOU: falhou depois de 0 atos: Defina INLABS_EMAIL e INLABS_SENHA no .env
 - Lote 2: 53 atos (50 do DIOE-PR, 3 da AMP de 15 a 19/10): 1 ficha nova (DETRAN-PR, previsto), 2 fichas atualizadas (Califórnia: nova licitação da banca; Tunas do Paraná: comissão organizadora) e 50 descartes. Os editais estaduais abertos no período (PCPR, AGEPAR, UNICENTRO, UENP) já tinham inscrição encerrada em 19/10.
 - Ficou para trás, e por quê:
   - DOU: esta sessão não tem `INLABS_EMAIL` e `INLABS_SENHA`. Os atos federais (413 pendentes em 14/10, mais os de 15 a 19/10) ficam para o notebook ou para quando as credenciais entrarem no ambiente. Estimativa: 2 a 3 sessões de extração.
-  - DIOE-PR: 17 matérias sem texto (PDF escaneado) ou fora do ar (HTTP 400) no período; ver o log da coleta.
+  - DIOE-PR: no período, 10 matérias lidas eram PDF escaneado (sem texto) e 51 responderam HTTP 400 ("não está vinculada a uma edição"); essas 61 não passaram pela triagem.
