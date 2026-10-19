@@ -1,0 +1,235 @@
+{
+  "ato": "dou-2026-09-24-ministerio-da-educacao-universidade-fede-f2aa1180.md",
+  "atos_extras": [
+    "dou-2026-09-24-ministerio-da-educacao-universidade-fede-f2aa1180-extra-1.md",
+    "dou-2026-09-24-ministerio-da-educacao-universidade-fede-f2aa1180-extra-2.md"
+  ],
+  "trechos": {
+    "salario": "2.3. A remuneração inicial de Professor Assistente na Classe A, Nível 1, em regime de trabalho de 40 horas semanais com Dedicação Exclusiva (DE) [...] Vencimento Básico Retribuição por Titulação Vencimento Básico + RT R$ 6.180,86 3. Doutorado R$ 7.107,99 R$ 13.288,85",
+    "prova_objetiva": "não consta no ato: as datas das provas (prova escrita, didática e de títulos) ficam nas Instruções Específicas de cada área",
+    "taxa": "4.4. O valor da taxa de inscrição será de R$ 200,00 (duzentos reais).",
+    "banca": "torna público que estarão abertas as inscrições para o Concurso Público de Provas e Títulos para Professor do Magistério Superior da UFVJM",
+    "cidade": "Campus JK em Diamantina: 14 vagas",
+    "edital": "EDITAL Nº 101, DE 23 DE SETEMBRO DE 2026 ABERTURA DE CONCURSO PÚBLICO PARA PROFESSOR DO MAGISTÉRIO SUPERIOR",
+    "inscricao.inicio": "Período de Inscrição: 25 de setembro de 2026 até as 23h59min do dia 23 de outubro de 2026",
+    "inscricao.fim": "Período de Inscrição: 25 de setembro de 2026 até as 23h59min do dia 23 de outubro de 2026"
+  },
+  "concurso": {
+    "id": "ufvjm-2026-edital-101",
+    "ficticio": false,
+    "orgao": "Universidade Federal dos Vales do Jequitinhonha e Mucuri (UFVJM)",
+    "esfera": "federal",
+    "uf": "MG",
+    "municipio_ibge": null,
+    "cidade": "Diamantina",
+    "nacional": false,
+    "abrangencia": null,
+    "area": "Educação",
+    "banca": {
+      "nome": "Universidade Federal dos Vales do Jequitinhonha e Mucuri (UFVJM)",
+      "url": "https://portal.ufvjm.edu.br/editais/progep/docentes/2026/edital-101-2026-progep/edital-101-2026-concurso-publico-para-professor-de-magisterio-superior"
+    },
+    "inscricao": {
+      "inicio": "2026-09-25",
+      "fim": "2026-10-23",
+      "url": "https://portal.ufvjm.edu.br/editais/progep/docentes/2026/edital-101-2026-progep/edital-101-2026-concurso-publico-para-professor-de-magisterio-superior"
+    },
+    "isencao_ate": "2026-10-13",
+    "prova_objetiva": null,
+    "local_prova": null,
+    "taxa": {
+      "min": 200.0,
+      "max": 200.0
+    },
+    "isencao_regras": "Isenção para inscritos no CadÚnico de família de baixa renda, pessoas em situação de hipossuficiência econômica e doadores de medula óssea (Decreto 6.593/2008 e Lei 13.656/2018), por requerimento (Anexo II); pedido de 25/09 a 13/10/2026",
+    "regime": "Estatutário (Lei 8.112/1990)",
+    "beneficios": [],
+    "o_que_levar": "Documento oficial de identificação com foto; nas provas escritas, caneta esferográfica de tinta azul e corpo transparente",
+    "cargos": [
+      {
+        "nome": "Professor do Magistério Superior – Ciência da Computação (Análise de Algoritmos, Metodologia e Técnicas da Computação, Banco de Dados, Sistemas de Informação ou Linguagens de Programação)",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 13288.85,
+        "escolaridade": "Superior",
+        "requisitos": "Área 101.1; Faculdade de Ciências Exatas (FACET), Campus de Conceição do Mato Dentro; dedicação exclusiva; graduação em Análise de Sistemas, Ciência da Computação, Sistemas de Informação, Engenharia de Computação, Engenharia de Software, Ciência de Dados ou Inteligência Artificial e doutorado em Ciência da Computação, Engenharia Elétrica, Engenharia da Computação, Engenharia de Produção, Engenharia Eletrônica, Sistemas de Informação ou Informática; titulação mínima: doutorado",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Magistério Superior – Ciência da Computação (Sistemas de Computação, Arquitetura de Sistemas de Computação, Hardware, Linguagens de Programação ou Inteligência Artificial)",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 13288.85,
+        "escolaridade": "Superior",
+        "requisitos": "Área 101.2; Faculdade de Ciências Exatas (FACET), Campus de Conceição do Mato Dentro; dedicação exclusiva; graduação em Análise de Sistemas, Ciência da Computação, Sistemas de Informação, Engenharia de Computação, Engenharia de Software, Ciência de Dados ou Inteligência Artificial e doutorado em Ciência da Computação, Engenharia Elétrica, Engenharia da Computação, Engenharia de Produção, Engenharia Eletrônica, Sistemas de Informação ou Informática; titulação mínima: doutorado",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Magistério Superior – Odontologia – Clínica Odontológica (Dentística ou Prótese Dentária)",
+        "vagas": 2,
+        "cadastro_reserva": false,
+        "salario": 13288.85,
+        "escolaridade": "Superior",
+        "requisitos": "Área 101.4; Faculdade de Ciências Biológicas e da Saúde (FCBS), Campus I e Campus JK, Diamantina; dedicação exclusiva; graduação em Odontologia, especialização em Dentística ou Prótese Dentária e doutorado em Odontologia ou áreas afins; titulação mínima: doutorado",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Magistério Superior – Química",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 13288.85,
+        "escolaridade": "Superior",
+        "requisitos": "Área 101.5; Faculdade de Ciências Exatas (FACET), Campus JK, Diamantina; dedicação exclusiva; graduação em Química Tecnológica, Química Industrial ou Engenharia Química e doutorado em Química; titulação mínima: doutorado",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Magistério Superior – Ciências Agrárias – Agronomia/Engenharia Agrícola",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 13288.85,
+        "escolaridade": "Superior",
+        "requisitos": "Área 101.6; Faculdade de Ciências Agrárias (FCA), Campus JK, Diamantina; dedicação exclusiva; graduação em Agronomia ou Engenharia Agronômica e doutorado em Agronomia, Produção Vegetal, Fitotecnia ou Engenharia Agrícola; titulação mínima: doutorado",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Magistério Superior – Nutrição Básica e Nutrição Clínica",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 13288.85,
+        "escolaridade": "Superior",
+        "requisitos": "Área 101.10; Faculdade de Ciências Biológicas e da Saúde (FCBS), Campus JK, Diamantina; dedicação exclusiva; graduação em Nutrição com registro no conselho e doutorado em Ciências da Saúde, Ciências Biológicas ou Ciências Agrárias (subáreas do edital); titulação mínima: doutorado",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Magistério Superior – Educação – Ensino-Aprendizagem (Linguagem, Alfabetização, Leitura, Oralidade e Escrita, Formação Docente)",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 13288.85,
+        "escolaridade": "Superior",
+        "requisitos": "Área 101.11; Faculdade Interdisciplinar em Humanidades (FIH), Campus JK, Diamantina; dedicação exclusiva; licenciatura em Pedagogia, especialização na área e doutorado em Ciências Humanas ou Educação; titulação mínima: doutorado",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Magistério Superior – Ciências Humanas, Ciências Sociais Aplicadas e/ou Multidisciplinar",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 13288.85,
+        "escolaridade": "Superior",
+        "requisitos": "Área 101.12; Faculdade Interdisciplinar em Humanidades (FIH), Campus JK, Diamantina; dedicação exclusiva; doutorado na área das Ciências Humanas, das Ciências Sociais Aplicadas ou Multidisciplinar; titulação mínima: doutorado",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Magistério Superior – Psicologia do Desenvolvimento Humano e Tratamento e Prevenção Psicológica",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 13288.85,
+        "escolaridade": "Superior",
+        "requisitos": "Área 101.13; Faculdade Interdisciplinar em Humanidades (FIH), Campus JK, Diamantina; dedicação exclusiva; graduação em Psicologia e doutorado em Psicologia, Saúde ou áreas afins; titulação mínima: doutorado",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Magistério Superior – Psicologia – Tratamento e Prevenção Psicológica (Intervenção Terapêutica e Programas de Atendimento Comunitário)",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 13288.85,
+        "escolaridade": "Superior",
+        "requisitos": "Área 101.14; Faculdade Interdisciplinar em Humanidades (FIH), Campus JK, Diamantina; dedicação exclusiva; graduação em Psicologia e doutorado em Psicologia, Saúde ou áreas afins; titulação mínima: doutorado",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Magistério Superior – Ensino de Geografia, Novas Tecnologias e Educação em Direitos Humanos",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 13288.85,
+        "escolaridade": "Superior",
+        "requisitos": "Área 101.15; Faculdade Interdisciplinar em Humanidades (FIH), Campus JK, Diamantina; dedicação exclusiva; licenciatura em Geografia e doutorado em Educação ou Geografia; titulação mínima: doutorado",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Magistério Superior – Geografia Econômica, Geografia Regional e Metodologia Científica",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 13288.85,
+        "escolaridade": "Superior",
+        "requisitos": "Área 101.16; Faculdade Interdisciplinar em Humanidades (FIH), Campus JK, Diamantina; dedicação exclusiva; bacharelado ou licenciatura em Geografia e doutorado em Geografia; titulação mínima: doutorado",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Magistério Superior – Metodologia Quantitativa, Geotecnologias e Estatística Aplicada",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 13288.85,
+        "escolaridade": "Superior",
+        "requisitos": "Área 101.17; Faculdade Interdisciplinar em Humanidades (FIH), Campus JK, Diamantina; dedicação exclusiva; bacharelado ou licenciatura em Geografia e doutorado em Geografia ou áreas listadas no edital; titulação mínima: doutorado",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Magistério Superior – Química ou Ciências – Química/Físico-Química",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 13288.85,
+        "escolaridade": "Superior",
+        "requisitos": "Área 101.18; Instituto de Ciência e Tecnologia (ICT), Campus JK, Diamantina; dedicação exclusiva; graduação em Química e doutorado em Química ou Ciências; titulação mínima: doutorado",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Magistério Superior – Ciência da Computação (Sistemas de Computação, Hardware, Linguagens de Programação ou Inteligência Artificial)",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 13288.85,
+        "escolaridade": "Superior",
+        "requisitos": "Área 101.19; Instituto de Engenharia, Ciência e Tecnologia (IECT), Campus de Janaúba; dedicação exclusiva; graduação na área de Computação listada no edital, mestrado e doutorado em Ciência da Computação ou áreas listadas; titulação mínima: doutorado",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Magistério Superior – Educação – Fundamentos da Educação e Tecnologia Educacional",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 13288.85,
+        "escolaridade": "Superior",
+        "requisitos": "Área 101.21; Faculdade de Ciências Sociais Aplicadas e Exatas (FACSAE), Campus do Mucuri, Teófilo Otoni; dedicação exclusiva; graduação em Pedagogia e doutorado em Educação; titulação mínima: doutorado",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Magistério Superior – Engenharia de Produção",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 13288.85,
+        "escolaridade": "Superior",
+        "requisitos": "Área 101.22; Instituto de Ciência, Engenharia e Tecnologia (ICET), Campus do Mucuri, Teófilo Otoni; dedicação exclusiva; graduação em Engenharia de Produção e doutorado em qualquer área do conhecimento; titulação mínima: doutorado",
+        "jornada_horas": 40,
+        "materias": []
+      }
+    ],
+    "documentos": [
+      {
+        "tipo": "edital",
+        "titulo": "Edital nº 101, de 23 de setembro de 2026 – Concurso público para Professor do Magistério Superior",
+        "numero": "101/2026",
+        "url": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=24/09/2026&jornal=530&pagina=62",
+        "publicado_em": "2026-09-24",
+        "fonte": "DOU",
+        "resumo": null
+      }
+    ],
+    "conferencia": null,
+    "primeira_varredura": null,
+    "ultima_alteracao": null
+  }
+}

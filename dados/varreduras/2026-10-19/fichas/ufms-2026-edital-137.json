@@ -1,0 +1,463 @@
+{
+  "ato": "dou-2026-10-07-ministerio-da-educacao-fundacao-universi-4eef003b.md",
+  "atos_extras": [
+    "dou-2026-10-07-ministerio-da-educacao-fundacao-universi-4eef003b-extra-1.md",
+    "dou-2026-10-07-ministerio-da-educacao-fundacao-universi-4eef003b-extra-2.md"
+  ],
+  "trechos": {
+    "salario": "Dedicação Exclusiva - Doutor Vencimento Básico inicial: R$ 6.397,19 + Retribuição por Titulação de Doutorado: R$ 7.356,77 + Auxílio-Alimentação R$ 1.192,00. 20 horas - Especialista Vencimento Básico inicial: R$ 3.198,59 + Retribuição por Titulação: Especialização: 319,86; — salário = vencimento + retribuição pela titulação exigida (o ato não traz o total)",
+    "inscricao.inicio": "12/10 a 25/10/2026 Período de inscrições on-line .",
+    "inscricao.fim": "12/10 a 25/10/2026 Período de inscrições on-line .",
+    "prova_objetiva": "não consta no ato: não há prova objetiva; o cronograma traz \"8 a 12/12/2026 Realização de todas as Etapas das Provas\"",
+    "taxa": "4.2. O valor da inscrição para o concurso será de R$ 350,00 (trezentos e cinquenta reais) para todas as áreas.",
+    "banca": "1.1. Este Concurso Público será executado pela Fundação Universidade Federal de Mato Grosso do Sul - UFMS.",
+    "cidade": "1.4. As provas serão realizadas em Três Lagoas, estado de Mato Grosso do Sul, para as vagas destinadas àquele município, e em Campo Grande, estado de Mato Grosso do Sul, para todas as demais vagas.",
+    "edital": "EDITAL PROGEP/UFMS Nº 137, DE 6 DE OUTUBRO DE 2026 CONCURSO PÚBLICO PARA INGRESSO NA CARREIRA DO MAGISTÉRIO SUPERIOR DA FUNDAÇÃO UNIVERSIDADE FEDERAL DE MATO GROSSO DO SUL"
+  },
+  "concurso": {
+    "id": "ufms-2026-edital-137",
+    "ficticio": false,
+    "orgao": "Fundação Universidade Federal de Mato Grosso do Sul (UFMS)",
+    "esfera": "federal",
+    "uf": "MS",
+    "municipio_ibge": null,
+    "cidade": "Campo Grande",
+    "nacional": false,
+    "abrangencia": null,
+    "area": "Educação",
+    "banca": {
+      "nome": "Fundação Universidade Federal de Mato Grosso do Sul (UFMS)",
+      "url": "https://www.concursos.ufms.br"
+    },
+    "inscricao": {
+      "inicio": "2026-10-12",
+      "fim": "2026-10-25",
+      "url": "https://www.concursos.ufms.br"
+    },
+    "isencao_ate": "2026-10-15",
+    "prova_objetiva": null,
+    "local_prova": "Campo Grande e Três Lagoas (MS)",
+    "taxa": {
+      "min": 350.0,
+      "max": 350.0
+    },
+    "isencao_regras": "Isenção para famílias do CadÚnico com renda per capita de até meio salário-mínimo e doadores de medula óssea (Lei 13.656/2018); pedido de 12 a 15/10/2026",
+    "regime": "Estatutário (Lei 8.112/1990)",
+    "beneficios": [
+      {
+        "nome": "Auxílio-alimentação (dedicação exclusiva)",
+        "valor": 1192.0
+      },
+      {
+        "nome": "Auxílio-alimentação (20 horas)",
+        "valor": 596.0
+      }
+    ],
+    "o_que_levar": null,
+    "cargos": [
+      {
+        "nome": "Professor do Magistério Superior – Artes – Educação Artística",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 13753.96,
+        "escolaridade": "Superior",
+        "requisitos": "Vaga 1198; Campo Grande (FAALC); dedicação exclusiva; licenciatura em Artes Visuais, Artes Plásticas, Desenho ou Educação Artística e doutorado em Artes, Educação, Letras ou Interdisciplinar (Edital 140); titulação mínima: doutorado",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Magistério Superior – Comunicação",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 13753.96,
+        "escolaridade": "Superior",
+        "requisitos": "Vaga 1199; Campo Grande (FAALC); dedicação exclusiva; graduação em Jornalismo ou Comunicação Social (Jornalismo) e doutorado em Comunicação ou Desenho Industrial; titulação mínima: doutorado",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Magistério Superior – Artes",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 13753.96,
+        "escolaridade": "Superior",
+        "requisitos": "Vaga 1213; Campo Grande (FAALC); dedicação exclusiva; graduação em Artes Visuais, Artes Plásticas, Educação Artística ou Desenho e doutorado em Letras, Interdisciplinar, Artes ou Educação; titulação mínima: doutorado",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Magistério Superior – Filosofia – História da Filosofia",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 13753.96,
+        "escolaridade": "Superior",
+        "requisitos": "Vaga 1200; Campo Grande (FACH); dedicação exclusiva; graduação em Filosofia e doutorado em Filosofia; titulação mínima: doutorado",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Magistério Superior – Psicologia – Processos de Aprendizagem, Memória e Motivação",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 13753.96,
+        "escolaridade": "Superior",
+        "requisitos": "Vaga 1201; Campo Grande (FACH); dedicação exclusiva; graduação em Psicologia e doutorado em Psicologia, Psicobiologia ou Interdisciplinar; titulação mínima: doutorado",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Magistério Superior – Ciência da Computação – Metodologia e Técnicas da Computação",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 13753.96,
+        "escolaridade": "Superior",
+        "requisitos": "Vaga 1207; Campo Grande (FACOM); dedicação exclusiva; graduação na área de Computação e doutorado em Computação; titulação mínima: doutorado",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Magistério Superior – Geociências – Paleontologia Estratigráfica",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 13753.96,
+        "escolaridade": "Superior",
+        "requisitos": "Vaga 1191; Campo Grande (FAENG); dedicação exclusiva; graduação em Geologia, Engenharia Geológica, Biologia/Ciências Biológicas ou Geografia e doutorado em Geociências (Edital 140); titulação mínima: doutorado",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Magistério Superior – Arquitetura e Urbanismo – Planejamento e Projeto do Espaço Urbano",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 13753.96,
+        "escolaridade": "Superior",
+        "requisitos": "Vaga 1192; Campo Grande (FAENG); dedicação exclusiva; graduação em Arquitetura e Urbanismo e doutorado nas áreas listadas no edital (Edital 140); titulação mínima: doutorado",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Magistério Superior – Arquitetura e Urbanismo – Tecnologia de Arquitetura e Urbanismo",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 13753.96,
+        "escolaridade": "Superior",
+        "requisitos": "Vaga 1193; Campo Grande (FAENG); dedicação exclusiva; bacharelado em Arquitetura e Urbanismo e doutorado em Arquitetura, Urbanismo e Design ou Engenharias listadas; titulação mínima: doutorado",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Magistério Superior – Engenharia Sanitária – Recursos Hídricos",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 13753.96,
+        "escolaridade": "Superior",
+        "requisitos": "Vaga 1194; Campo Grande (FAENG); dedicação exclusiva; graduação em Engenharia Ambiental, Sanitária e Ambiental, Civil ou Hídrica e doutorado em Ciências Ambientais ou Engenharias I (Edital 140); titulação mínima: doutorado",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Magistério Superior – Engenharia Elétrica – Instalações Elétricas Prediais e Industriais",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 13753.96,
+        "escolaridade": "Superior",
+        "requisitos": "Vaga 1195; Campo Grande (FAENG); dedicação exclusiva; bacharelado em Engenharia Elétrica e doutorado em Engenharia Elétrica; titulação mínima: doutorado",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Magistério Superior – Engenharia de Produção – Gerência de Produção",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 13753.96,
+        "escolaridade": "Superior",
+        "requisitos": "Vaga 1196; Campo Grande (FAENG); dedicação exclusiva; bacharelado em Engenharia de Produção e doutorado em Engenharia de Produção; titulação mínima: doutorado",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Magistério Superior – Medicina – Ginecologia e Obstetrícia",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 3518.45,
+        "escolaridade": "Superior",
+        "requisitos": "Vaga 1209; Campo Grande (FAMED); 20 horas; graduação em Medicina e residência médica ou título de especialista em Ginecologia e Obstetrícia; titulação mínima: especialização (residência médica ou título de especialista); a remuneração sobe com mestrado ou doutorado",
+        "jornada_horas": 20,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Magistério Superior – Saúde Coletiva – Saúde Pública",
+        "vagas": 2,
+        "cadastro_reserva": false,
+        "salario": 3518.45,
+        "escolaridade": "Superior",
+        "requisitos": "Vaga 1211; Campo Grande (FAMED); 20 horas; graduação em Medicina e residência médica ou título de especialista em Medicina de Família e Comunidade; titulação mínima: especialização (residência médica ou título de especialista); a remuneração sobe com mestrado ou doutorado",
+        "jornada_horas": 20,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Magistério Superior – Medicina – Cirurgia",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 3518.45,
+        "escolaridade": "Superior",
+        "requisitos": "Vaga 1212; Campo Grande (FAMED); 20 horas; graduação em Medicina e residência médica ou título de especialista em Cirurgia Geral; titulação mínima: especialização (residência médica ou título de especialista); a remuneração sobe com mestrado ou doutorado",
+        "jornada_horas": 20,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Magistério Superior – Zootecnia – Nutrição e Alimentação Animal",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 13753.96,
+        "escolaridade": "Superior",
+        "requisitos": "Vaga 1204; Campo Grande (FAMEZ); dedicação exclusiva; graduação em Zootecnia, Medicina Veterinária ou Agronomia e doutorado em Zootecnia ou áreas listadas; titulação mínima: doutorado",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Magistério Superior – Botânica – Ecofisiologia Vegetal",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 13753.96,
+        "escolaridade": "Superior",
+        "requisitos": "Vaga 1203; Campo Grande (INBIO); dedicação exclusiva; graduação em Ciências Biológicas, Agronomia, Engenharia Agronômica ou Engenharia Florestal e doutorado em Botânica ou áreas listadas; titulação mínima: doutorado",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Magistério Superior – Física – Áreas Clássicas de Fenomenologia e Suas Aplicações",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 13753.96,
+        "escolaridade": "Superior",
+        "requisitos": "Vaga 1197; Campo Grande (INFI); dedicação exclusiva; graduação em Física e doutorado em Meteorologia, Geociências ou Ciências Ambientais; titulação mínima: doutorado",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Magistério Superior – Probabilidade e Estatística – Estatística",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 13753.96,
+        "escolaridade": "Superior",
+        "requisitos": "Vaga 1208; Campo Grande (INMA); dedicação exclusiva; graduação em Estatística, Matemática ou Matemática Aplicada e doutorado em Probabilidade e Estatística ou áreas listadas; titulação mínima: doutorado",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Magistério Superior – Linguística – Teoria e Análise Linguística",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 13753.96,
+        "escolaridade": "Superior",
+        "requisitos": "Vaga 1177; Aquidauana (CPAQ); dedicação exclusiva; graduação em Licenciatura Intercultural Indígena e doutorado em Linguística e Literatura; exige RANI na inscrição; titulação mínima: doutorado",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Magistério Superior – História – História Antiga e Medieval",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 13753.96,
+        "escolaridade": "Superior",
+        "requisitos": "Vaga 1214; Aquidauana (CPAQ); dedicação exclusiva; graduação em História e doutorado em História; titulação mínima: doutorado",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Magistério Superior – Ciência da Computação – Linguagens de Programação",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 13753.96,
+        "escolaridade": "Superior",
+        "requisitos": "Vaga 1166; Corumbá (CPAN); dedicação exclusiva; graduação na área de Computação e doutorado em Computação (Edital 140); titulação mínima: doutorado",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Magistério Superior – Letras – Literaturas Estrangeiras Modernas",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 13753.96,
+        "escolaridade": "Superior",
+        "requisitos": "Vaga 1168; Corumbá (CPAN); dedicação exclusiva; licenciatura em Letras (Inglês ou Português/Inglês) e doutorado em Linguística e Literatura; titulação mínima: doutorado",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Magistério Superior – Linguística – Teoria e Análise Linguística",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 13753.96,
+        "escolaridade": "Superior",
+        "requisitos": "Vaga 1169; Corumbá (CPAN); dedicação exclusiva; licenciatura em Letras ou Linguística e doutorado em Linguística e Literatura; titulação mínima: doutorado",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Magistério Superior – Letras – Teoria Literária",
+        "vagas": 2,
+        "cadastro_reserva": false,
+        "salario": 13753.96,
+        "escolaridade": "Superior",
+        "requisitos": "Vaga 1170; Corumbá (CPAN); dedicação exclusiva; licenciatura em Letras, Linguística ou Literatura e doutorado em Linguística e Literatura; titulação mínima: doutorado",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Magistério Superior – Psicologia",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 13753.96,
+        "escolaridade": "Superior",
+        "requisitos": "Vaga 1172; Corumbá (CPAN); dedicação exclusiva; graduação em Psicologia e doutorado em Psicologia ou Educação Especial; titulação mínima: doutorado",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Magistério Superior – Sociologia",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 13753.96,
+        "escolaridade": "Superior",
+        "requisitos": "Vaga 1173; Corumbá (CPAN); dedicação exclusiva; graduação em Ciências Sociais ou Sociologia e doutorado em Sociologia ou Educação; titulação mínima: doutorado",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Magistério Superior – Geografia – Geografia Humana",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 13753.96,
+        "escolaridade": "Superior",
+        "requisitos": "Vaga 1174; Três Lagoas (CPTL); dedicação exclusiva; graduação em Geografia e doutorado em Geografia; titulação mínima: doutorado",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Magistério Superior – Direito – Direito Penal",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 13753.96,
+        "escolaridade": "Superior",
+        "requisitos": "Vaga 1186; Três Lagoas (CPTL); dedicação exclusiva; bacharelado em Direito e doutorado em Direito; titulação mínima: doutorado",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Magistério Superior – Medicina – Clínica Médica",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 3518.45,
+        "escolaridade": "Superior",
+        "requisitos": "Vaga 1187; Três Lagoas (CPTL); 20 horas; graduação em Medicina e residência médica ou título de especialista em Clínica Médica; titulação mínima: especialização (residência médica ou título de especialista); a remuneração sobe com mestrado ou doutorado",
+        "jornada_horas": 20,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Magistério Superior – Medicina – Cirurgia",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 3518.45,
+        "escolaridade": "Superior",
+        "requisitos": "Vaga 1188; Três Lagoas (CPTL); 20 horas; graduação em Medicina e residência médica ou título de especialista em Cirurgia Geral; titulação mínima: especialização (residência médica ou título de especialista); a remuneração sobe com mestrado ou doutorado",
+        "jornada_horas": 20,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Magistério Superior – Medicina – Ortopedia",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 3518.45,
+        "escolaridade": "Superior",
+        "requisitos": "Vaga 1189; Três Lagoas (CPTL); 20 horas; graduação em Medicina e residência médica ou título de especialista em Ortopedia e Traumatologia; titulação mínima: especialização (residência médica ou título de especialista); a remuneração sobe com mestrado ou doutorado",
+        "jornada_horas": 20,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Magistério Superior – Medicina – Neurologia",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 3518.45,
+        "escolaridade": "Superior",
+        "requisitos": "Vaga 1190; Três Lagoas (CPTL); 20 horas; graduação em Medicina e residência médica ou título de especialista em Neurologia; titulação mínima: especialização (residência médica ou título de especialista); a remuneração sobe com mestrado ou doutorado",
+        "jornada_horas": 20,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Magistério Superior – Ciências Agrárias – Agronomia",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 13753.96,
+        "escolaridade": "Superior",
+        "requisitos": "Vaga 1180; Chapadão do Sul (CPCS); dedicação exclusiva; graduação em Agronomia, Ciências Biológicas ou Engenharia Florestal e doutorado nas áreas listadas (área retificada pelo Edital 140); titulação mínima: doutorado",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Magistério Superior – Direito – Direito Privado",
+        "vagas": 2,
+        "cadastro_reserva": false,
+        "salario": 13753.96,
+        "escolaridade": "Superior",
+        "requisitos": "Vaga 1182; Chapadão do Sul (CPCS); dedicação exclusiva; graduação em Direito ou Ciências Jurídicas, doutorado em Direito ou áreas listadas e inscrição ativa na OAB; titulação mínima: doutorado",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Magistério Superior – Direito – Direito Público",
+        "vagas": 2,
+        "cadastro_reserva": false,
+        "salario": 13753.96,
+        "escolaridade": "Superior",
+        "requisitos": "Vaga 1184; Chapadão do Sul (CPCS); dedicação exclusiva; graduação em Direito ou Ciências Jurídicas, doutorado em Direito ou áreas listadas e inscrição ativa na OAB; titulação mínima: doutorado",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Magistério Superior – História – História da América",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 13753.96,
+        "escolaridade": "Superior",
+        "requisitos": "Vaga 1175; Nova Andradina (CPNA); dedicação exclusiva; graduação em História e doutorado em História; titulação mínima: doutorado",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Magistério Superior – Arquitetura e Urbanismo – Tecnologia de Arquitetura e Urbanismo",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 13753.96,
+        "escolaridade": "Superior",
+        "requisitos": "Vaga 1176; Naviraí (CPNV); dedicação exclusiva; graduação em Arquitetura e Urbanismo e doutorado nas áreas listadas; titulação mínima: doutorado",
+        "jornada_horas": 40,
+        "materias": []
+      }
+    ],
+    "documentos": [
+      {
+        "tipo": "edital",
+        "titulo": "Edital PROGEP/UFMS nº 137, de 6 de outubro de 2026 – Concurso público para o Magistério Superior",
+        "numero": "137/2026",
+        "url": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=07/10/2026&jornal=530&pagina=89",
+        "publicado_em": "2026-10-07",
+        "fonte": "DOU",
+        "resumo": null
+      },
+      {
+        "tipo": "retificacao",
+        "titulo": "Edital PROGEP/UFMS nº 140, de 13 de outubro de 2026 – Retificação do Edital nº 137/2026",
+        "numero": "140/2026",
+        "url": "https://www.concursos.ufms.br/front/documents/download/3760",
+        "publicado_em": "2026-10-13",
+        "fonte": "banca",
+        "resumo": "Retifica itens do edital, o nome da área da vaga 1180 e a formação exigida de algumas vagas (Anexo V)"
+      }
+    ],
+    "conferencia": null,
+    "primeira_varredura": null,
+    "ultima_alteracao": null
+  }
+}
