@@ -28,11 +28,11 @@ Rode tudo no PowerShell, a partir da raiz do projeto. Nunca mostre o conteúdo d
 - **Inicial:** `python -m varredura coletar --inicial --desde <data>`
 - **Semana:** `python -m varredura coletar --semana`
 
-A coleta inicial demora. São um ZIP do DOU por dia e por seção, e um PDF da AMP por dia útil, e o texto de cada PDF leva cerca de 1 minuto para sair. Rode em segundo plano e espere terminar. O cache em `.cache/` faz uma segunda tentativa não baixar de novo.
+A coleta inicial demora. São um ZIP do DOU por dia e por seção, um PDF da AMP por dia útil (o texto de cada PDF leva cerca de 1 minuto para sair) e, no DIOE-PR, umas 45 páginas por dia útil, a 1 por segundo. Rode em segundo plano e espere terminar. O cache em `.cache/` faz uma segunda tentativa não baixar de novo.
 
 Ao terminar, leia `dados/varreduras/<data>/atos.json`:
 
-- Em `fontes`, toda fonte com `falhou` vai para o relatório final, com o motivo. O `DIOE-PR` aparece como `pulada` até ser implementado; isso é esperado.
+- Em `fontes`, toda fonte com `falhou` vai para o relatório final, com o motivo. O `DIOE-PR` imprime, por edição, quantas matérias leu e quantas ficaram sem texto (PDF escaneado) ou fora do ar.
 - Anote quantos atos estão na fila e quantos PSS ficaram em avaliação.
 
 ## 3. Extrair (aqui no Claude Code, sem custo de API)

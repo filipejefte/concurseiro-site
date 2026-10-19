@@ -107,7 +107,7 @@ python -m varredura municipios                             # refaz a tabela de m
 | --- | --- |
 | Diário Oficial da União | INLABS: um ZIP de XML por dia e seção (DO1 e DO3), últimos 4 meses |
 | Diário Oficial dos Municípios do PR (AMP) | Um PDF por dia útil; cada matéria vira um ato com link próprio |
-| Diário Oficial do Estado do PR (DIOE) | Ainda não: ver `varredura/fontes/diario_estado_pr.py` |
+| Diário Oficial do Estado do PR (DIOE) | Sumário de cada edição; o Suplemento de Concursos inteiro e, do Executivo e da Assembleia, as matérias que falam de concurso, edital, banca ou autorização |
 
 As fontes são lidas com boas maneiras: `robots.txt`, no máximo 1 requisição por segundo, User-Agent com contato, cache em `.cache/` (fora do git).
 

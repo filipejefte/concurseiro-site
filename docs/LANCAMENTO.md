@@ -146,7 +146,7 @@ Os e-mails semanais saem pelo próprio Kit (**Send** → **Broadcasts**), coland
 
 ## 13. Para o Claude Code ler as fontes oficiais numa sessão na nuvem (opcional)
 
-Se for rodar a varredura numa sessão do Claude Code na nuvem (e não no notebook), libere na configuração de rede do ambiente os domínios `inlabs.in.gov.br`, `www.in.gov.br`, `www.diariomunicipal.com.br` e o do DIOE-PR. Passo a passo: https://code.claude.com/docs/en/cloud-environments#network-access. No notebook não precisa.
+Se for rodar a varredura numa sessão do Claude Code na nuvem (e não no notebook), libere na configuração de rede do ambiente os domínios `inlabs.in.gov.br`, `www.in.gov.br`, `www.diariomunicipal.com.br`, `www-storage.voxtecnologia.com.br` (PDFs da AMP) e `www.dioe.pr.gov.br`. Passo a passo: https://code.claude.com/docs/en/cloud-environments#network-access. No notebook não precisa.
 
 ---
 

@@ -266,6 +266,129 @@ def test_materias_da_amp():
     assert "Publicado por" not in atos[0].texto and "Diário Oficial dos Municípios" not in atos[0].texto
 
 
+# Sumário no formato real do DIOE-PR: as duas primeiras matérias são do Suplemento de Concursos de 15/10/2026
+# (edição 17377); as duas últimas imitam pastas do Executivo do mesmo dia, com id e título ilustrativos.
+SUMARIO_DIOE = """<ul id="tree" class="filetree" data-id="1792162842">
+	<li><span class="folder">Secretaria da Administração e da Previdência</span>
+		<ul>
+			<li><span class="folder">Edital-EX</span>
+				<ul>
+					<li><span class="file"><a class="linkMateria" identificador="2134452" pagina="3"data-id="2176255" data-protocolo="138677/2026"data-materia-id="2134452"> #138677/2026 - EDITAL 246/2026</a></span>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</li>
+	<li><span class="folder">Secretaria da Segurança Pública</span>
+		<ul>
+			<li><span class="folder">PMPR</span>
+				<ul>
+					<li><span class="folder">Edital-EX</span>
+						<ul>
+							<li><span class="file"><a class="linkMateria" identificador="2134731" pagina="9"data-id="2176534" data-protocolo="138532/2026"data-materia-id="2134731"> #138532/2026 - Edital_nº_252_SOLDADO_PMPR_2025_-_Resultado_definitivo_da_Investigação_Social.docx</a></span>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</li>
+	<li><span class="folder">Poder Executivo</span>
+		<ul>
+			<li><span class="folder">Despacho do Governador</span>
+				<ul>
+					<li><span class="file"><a class="linkMateria" identificador="2136200" pagina=""data-id="2178018" data-protocolo="140240/2026"data-materia-id="2136200"> #140240/2026 - Despacho 1234</a></span>
+					</li>
+				</ul>
+			</li>
+			<li><span class="folder">IAT</span>
+				<ul>
+					<li><span class="folder">Concessão de Autorização Ambiental</span>
+						<ul>
+							<li><span class="file"><a class="linkMateria" identificador="2133790" pagina=""data-id="2175590" data-protocolo="138077/2026"data-materia-id="2133790"> #138077/2026 - Autorização Ambiental 55</a></span>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</li>
+</ul>"""
+
+# Começo real da página da matéria 2134452 (HTML exportado do Word), encurtado.
+MATERIA_DIOE = """<html><head><meta http-equiv=Content-Type content="text/html; charset=utf-8">
+<style><!-- p.MsoNormal {margin:0cm;} --></style></head><body lang=PT-BR><div class=WordSection1>
+<p class=tablepocp align=center style='text-align:center'><a name="_Hlk146525815"></a><b><span
+lang=PT style='background:white'>EDITAL Nº 246/2026 - DRH/SEAP</span></b></p>
+<p class=tablepocp style='text-align:justify'><span lang=PT>O CHEFE DO DEPARTAMENTO DE RECURSOS HUMANOS E
+PREVIDÊNCIA, DA SECRETARIA</span><span lang=PT> DE ESTADO DA ADMINISTRAÇÃO E DA PREVIDÊNCIA - SEAP,</span></p>
+<table class=MsoNormalTable border=1><tr><td><p class=tablepocp><span lang=PT>Inscrição</span></p></td>
+<td><p class=tablepocp><span lang=PT>Prova</span></p><p class=tablepocp><span lang=PT>Objetiva</span></p></td></tr>
+<tr><td><p class=tablepocp>002894-9</p></td><td><p class=tablepocp>61,00</p></td></tr></table>
+<p class=tablepocp>Curitiba, datado&nbsp;e assinado eletronicamente.</p></div></body></html>"""
+
+
+def test_sumario_do_dioe():
+    from varredura.fontes.diario_estado_pr import candidata, orgao, sumario
+
+    materias = sumario(SUMARIO_DIOE)
+    assert [m.id for m in materias] == ["2134452", "2134731", "2136200", "2133790"]
+    assert materias[0].titulo == "EDITAL 246/2026"
+    assert materias[1].titulo == "Edital nº 252 SOLDADO PMPR 2025 - Resultado definitivo da Investigação Social"
+    assert materias[1].pastas == ("Secretaria da Segurança Pública", "PMPR", "Edital-EX")
+    assert orgao(materias[0].pastas) == "Secretaria da Administração e da Previdência"
+    assert orgao(materias[1].pastas) == "Secretaria da Segurança Pública / PMPR"
+    assert orgao(materias[2].pastas) == "Governo do Estado do Paraná"
+    # No Executivo: edital e despacho do governador são lidos; licença ambiental nunca.
+    assert [candidata(m) for m in materias] == [True, True, True, False]
+
+
+def test_texto_da_materia_do_dioe():
+    from varredura.fontes.diario_estado_pr import texto_do_html
+
+    assert texto_do_html(MATERIA_DIOE).splitlines() == [
+        "EDITAL Nº 246/2026 - DRH/SEAP",
+        "O CHEFE DO DEPARTAMENTO DE RECURSOS HUMANOS E PREVIDÊNCIA, DA SECRETARIA DE ESTADO DA ADMINISTRAÇÃO E DA PREVIDÊNCIA - SEAP,",
+        "Inscrição | Prova Objetiva",
+        "002894-9 | 61,00",
+        "Curitiba, datado e assinado eletronicamente.",
+    ]
+
+
+def test_dioe_le_o_suplemento_inteiro_e_so_candidatas_do_executivo():
+    from datetime import date
+
+    from varredura.fontes import diario_estado_pr as dioe
+
+    edicoes = {"itens": [
+        {"id": 17377, "data": "15/10/2026", "tipo_edicao_id": 8, "tipo_edicao_posicao": 4},
+        {"id": 17376, "data": "15/10/2026", "tipo_edicao_id": 3, "tipo_edicao_posicao": 1},
+        {"id": 17379, "data": "15/10/2026", "tipo_edicao_id": 2, "tipo_edicao_posicao": 2},   # comércio: fora
+        {"id": 17300, "data": "01/10/2026", "tipo_edicao_id": 8, "tipo_edicao_posicao": 4},   # fora do período
+    ]}
+    pedidos = []
+
+    class Cliente:
+        def baixar(self, url, usar_cache=True, **_):
+            pedidos.append(url)
+            if url == dioe.URL_EDICOES:
+                return json.dumps(edicoes).encode()
+            if "view_html_diario" in url:
+                return SUMARIO_DIOE.encode()
+            return MATERIA_DIOE.encode()
+
+    atos = list(dioe.DiarioEstadoPR(Cliente()).listar_atos(date(2026, 10, 14), date(2026, 10, 16)))
+    sumarios = [u for u in pedidos if "view_html_diario" in u]
+    assert sumarios == [dioe.URL_SUMARIO.format(17376), dioe.URL_SUMARIO.format(17377)]
+    executivo = [a for a in atos if a.url.endswith("/17376")]
+    suplemento = [a for a in atos if a.url.endswith("/17377")]
+    assert len(executivo) == 3 and len(suplemento) == 4   # a licença ambiental só entra no Suplemento
+    a = suplemento[0]
+    assert (a.fonte, a.data, a.titulo) == ("DIOE-PR", "2026-10-15", "EDITAL 246/2026")
+    assert a.url == "https://www.dioe.pr.gov.br/apifront/portal/edicoes/publicacoes_ver_conteudo/2134452/17377"
+    assert a.texto.startswith("EDITAL Nº 246/2026 - DRH/SEAP\n")
+
+
 # ---------- revisão e publicação ----------
 
 @pytest.fixture

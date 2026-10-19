@@ -41,7 +41,12 @@ Boa parte dos atos de julho e agosto já tem inscrição encerrada e vira descar
 
 ## DIOE-PR
 
-Não foi possível verificar formato, `robots.txt` nem termos de uso: a rede da sessão bloqueia os domínios `.pr.gov.br`, e a busca na web não trouxe a estrutura atual das edições (a Casa Civil contratou uma plataforma nova de publicação). O passo a passo para implementar está em `varredura/fontes/diario_estado_pr.py`. Precisa ser feito no notebook, com rede.
+Em 16/10 não deu para verificar: a rede da sessão bloqueava os domínios `.pr.gov.br`. Em 19/10 a rede abriu e a fonte foi implementada (`varredura/fontes/diario_estado_pr.py`, com testes):
+
+- o portal (www.dioe.pr.gov.br, plataforma IONEWS) é público e gratuito. Não tem `robots.txt` (o endereço devolve a página inicial, sem regras) nem termos de uso publicados, e ato oficial não tem proteção de direito autoral (Lei 9.610/1998, art. 8º, IV). A leitura segue as regras das outras fontes: 1 requisição por segundo, contato no User-Agent e cache;
+- há um caderno diário só de concursos, o **Suplemento de Concursos Públicos**, lido inteiro (cerca de 12 matérias por dia). Do **Executivo** (cerca de 400 matérias por dia) e da **Assembleia** saem só as matérias cujo título ou pasta falam de concurso, edital, seleção, banca ou autorização, mais os decretos autônomos e os despachos do governador. As licenças ambientais ficam de fora;
+- cada matéria tem página própria, que vira o link do ato. Ela vem em HTML ou é o PDF que o órgão mandou. PDF escaneado fica sem texto, e a coleta conta quantos foram;
+- limite conhecido: um extrato de contrato de banca com título genérico ("Extrato de Contrato 12/2026") não é lido.
 
 ## Para fechar a cobertura (no notebook)
 
