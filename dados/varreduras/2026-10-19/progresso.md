@@ -1,18 +1,19 @@
 # Progresso da extração · varredura de 19/10/2026
 
-Atualizado em 19/10/2026 12:05 por `python -m varredura progresso`. A parte de cima é refeita a cada vez; a seção Notas fica como está.
+Atualizado em 19/10/2026 13:19 por `python -m varredura progresso`. A parte de cima é refeita a cada vez; a seção Notas fica como está.
 
 | Fonte | Na fila | Feitos (ficha ou descarte) | Faltam |
 | --- | --- | --- | --- |
 | AMP-PR | 176 | 176 | 0 |
 | DIOE-PR | 50 | 50 | 0 |
-| **Total** | **226** | **226** | **0** |
+| DOU | 499 | 46 | 453 |
+| **Total** | **725** | **272** | **453** |
 
-Faltam, por prioridade: P1 (inscrição aberta ou futura): 0 · P2 (previsto (autorização ou banca) dos últimos 120 dias): 0 · P3 (o resto): 0
+Faltam, por prioridade: P1 (inscrição aberta ou futura): 31 · P2 (previsto (autorização ou banca) dos últimos 120 dias): 4 · P3 (o resto): 418
 
-Fichas: 22 · descartes: 207
-PSS na coleta (fora da fila): AMP-PR 4705 · DIOE-PR 339
-Fontes: DOU: falhou depois de 0 atos: O INLABS não entregou arquivo em 3 dias úteis seguidos. Confira INLABS_EMAIL e INLABS_SENHA e se o INLABS está no ar. DO1: resposta sem ZIP; DO3: resposta sem ZIP; DO1E: resposta sem ZIP; DO3E: resposta sem ZIP · AMP-PR: ok · DIOE-PR: ok
+Fichas: 32 · descartes: 224
+PSS na coleta (fora da fila): AMP-PR 4705 · DIOE-PR 339 · DOU 1362
+Fontes: DOU: ok · AMP-PR: ok · DIOE-PR: ok
 
 <!-- notas: daqui para baixo, escrito à mão -->
 

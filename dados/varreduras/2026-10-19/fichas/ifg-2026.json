@@ -1,0 +1,60 @@
+{
+  "ato": "dou-2026-10-07-ministerio-da-educacao-instituto-federal-b335f44c.md",
+  "trechos": {
+    "salario": "não consta no ato",
+    "inscricao.inicio": "não consta no ato",
+    "inscricao.fim": "não consta no ato",
+    "prova_objetiva": "não consta no ato",
+    "taxa": "não consta no ato",
+    "banca": "Contratado: 12.667.012/0001-53 - INSTITUTO AOCP",
+    "cidade": "instituto federal de educação, ciência e tecnologia de goiás - ifg",
+    "edital": "cializada para o planejamento, organização, execução e gerenciamento do concurso público do instituto federal de educação, ciência e tecnologia de goiás - ifg, destinado ao provimento de cargos de técnico administrativos em educação - tae e de professor do ensino básico, técnico e tecnológico - ebtt"
+  },
+  "concurso": {
+    "id": "ifg-2026",
+    "ficticio": false,
+    "orgao": "Instituto Federal de Educação, Ciência e Tecnologia de Goiás (IFG)",
+    "esfera": "federal",
+    "uf": "GO",
+    "municipio_ibge": null,
+    "cidade": null,
+    "nacional": false,
+    "abrangencia": null,
+    "area": "Educação",
+    "banca": {
+      "nome": "Instituto AOCP",
+      "url": null
+    },
+    "inscricao": {
+      "inicio": null,
+      "fim": null,
+      "url": null
+    },
+    "isencao_ate": null,
+    "prova_objetiva": null,
+    "local_prova": null,
+    "taxa": {
+      "min": null,
+      "max": null
+    },
+    "isencao_regras": null,
+    "regime": null,
+    "beneficios": [],
+    "o_que_levar": null,
+    "cargos": [],
+    "documentos": [
+      {
+        "tipo": "contratacao_banca",
+        "titulo": "Extrato do Contrato nº 53/2026 – contratação do Instituto AOCP",
+        "numero": "53/2026",
+        "url": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=07/10/2026&jornal=530&pagina=38",
+        "publicado_em": "2026-10-07",
+        "fonte": "DOU",
+        "resumo": "Concurso para técnico-administrativo em educação (TAE) e professor EBTT do IFG; contrato assinado em 21/09/2026"
+      }
+    ],
+    "conferencia": null,
+    "primeira_varredura": null,
+    "ultima_alteracao": null
+  }
+}
