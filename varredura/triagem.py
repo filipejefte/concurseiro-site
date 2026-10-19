@@ -15,7 +15,8 @@ CONCURSO = re.compile(r"concurso\s+p[uú]blico", _I)
 PSS = re.compile(r"processo\s+seletivo\s+simplificado|\bPSS\b|contrata[çc][ãa]o\s+tempor[áa]ria", _I)
 # No DOU, prefeituras e estados aparecem como "Prefeituras/Estado de X/..." e "Estados/...".
 FORA_DA_COBERTURA = re.compile(r"^(Prefeituras|Estados?|Governo\s+do\s+Estado)\b(?!.*Paran[áa])", _I)
-RETIFICACAO = re.compile(r"retifica|errata", _I)
+# "Apostila" é como a UEPG (no DIOE-PR) corrige edital; "apostilamento" de contrato não é retificação.
+RETIFICACAO = re.compile(r"retifica|errata|\bapostila\b|\bcorrige\b", _I)
 RESULTADO = re.compile(
     r"homologa|reclassifica|resultado|classifica[çc][ãa]o|chamamento|convoca|nomea|nomear|posse|exonera|gabarito|"
     r"aprovad[oa]s|deferi|indeferi|desist|prorroga[çc][ãa]o\s+(do\s+prazo\s+)?de\s+validade|prorroga\s+(a\s+)?validade", _I)

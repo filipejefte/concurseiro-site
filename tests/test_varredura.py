@@ -167,6 +167,9 @@ def test_comparar_separa_novos_alterados_e_encerrados():
     ("EDITAL DE ABERTURA Nº 01/2026", "O Prefeito torna pública a abertura das inscrições do Concurso Público", ("abertura", False)),
     ("EDITAL Nº 3/2026", "Torna pública a realização de Concurso Público para provimento de cargos", ("abertura", False)),
     ("RETIFICAÇÃO Nº 1 DO EDITAL 01/2026", "Retifica o Concurso Público", ("retificacao", False)),
+    ("APOSTILA CCCPPD N 02-2026 - CORRIGE EDITAL 2026-608", "O Presidente da Comissão Coordenadora do Concurso Público "
+     "[...] declara em correção ao EDITAL Nº 2026.608", ("retificacao", False)),
+    ("TERMO DE APOSTILAMENTO Nº 2 AO CONTRATO 15/2026", "reajuste do contrato do concurso público", ("outro", False)),
     ("EDITAL Nº 9/2026", "Homologação do resultado final do Concurso Público 01/2025", ("resultado", False)),
     ("PROCESSO SELETIVO SIMPLIFICADO Nº 2/2026", "abertura das inscrições do processo seletivo simplificado", ("abertura", True)),
     ("EXTRATO DE CONTRATO Nº 10/2026", "Contratação de empresa para organização e realização de concurso público", ("contratacao_banca", False)),
