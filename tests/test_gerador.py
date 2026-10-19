@@ -241,3 +241,21 @@ def test_redirecionamento_do_github_pages(tmp_path):
     html = (pasta / "404.html").read_text(encoding="utf-8")
     assert '"/concurseiro-site/"' in html and '"https://concurseiro.example"' in html and "noindex" in html
     assert (pasta / "index.html").read_text(encoding="utf-8") == html
+
+
+def test_cidade_so_com_previstos_vizinhos_fica_fora_do_google(tmp_path):
+    from gerador.build import cidade_indexavel
+    site = construir(tmp_path / "p", DIA, exemplo=True, cfg=_cfg(indexar=True))
+    sitemap = (site.saida / "sitemap.xml").read_text(encoding="utf-8")
+    fechadas = [g for g in site.base.cidades.values() if not cidade_indexavel(g)]
+    abertas = [g for g in site.base.cidades.values() if g.concursos]
+    vizinhas = [g for g in site.base.cidades.values() if not g.concursos and cidade_indexavel(g)]
+    assert fechadas and abertas and vizinhas
+    for g in fechadas:   # só previstos a até 50 km: a página existe, mas noindex e fora do sitemap
+        assert all(x.situacao == "previsto" for _, x in g.extra["regiao"])
+        html = _html(site, f"/cidade/{g.slug}/")
+        assert '<meta name="robots" content="noindex, follow">' in html
+        assert f"/cidade/{g.slug}/<" not in sitemap
+    for g in abertas + vizinhas:   # concurso na cidade, ou aberto a até 50 km: indexável
+        assert '<meta name="robots" content="index, follow">' in _html(site, f"/cidade/{g.slug}/")
+        assert f"/cidade/{g.slug}/<" in sitemap

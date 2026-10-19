@@ -63,6 +63,7 @@ class Pagina:
     og_alt: str = "Concurseiro: concursos federais e do Paraná, com o salário na frente"
     og_type: str = "website"
     sitemap: bool = True
+    indexavel: bool = True      # False: noindex mesmo com indexar = true (e fora do sitemap)
     lastmod: str = None
     h1: str = None
     alerta: str = None          # contexto da folha "Avise-me" ("em Maringá", "na área da saúde")
@@ -188,7 +189,7 @@ class Site:
             }]
         contexto = dict(
             pagina=p, base=self.base, faixa=self.faixa(), menu=MENU, rodape=RODAPE, ativos=self.ativos, marca=self.marca,
-            robots="index, follow" if self.cfg.indexar else "noindex, nofollow",
+            robots=("noindex, nofollow" if not self.cfg.indexar else "index, follow" if p.indexavel else "noindex, follow"),
             canais=self.canais(), alerta=self.alerta(p.alerta),
             config_js={"base": self.cfg.base_path, "hoje": self.hoje.isoformat(), "localIP": self.plataforma == "cloudflare",
                        "adsense": self.cfg.adsense_client or None},
@@ -336,11 +337,11 @@ class Site:
         return [a for a in self.cfg.afiliados if (area and a.get("area") == area) or (banca and a.get("banca") == banca)]
 
     def lista(self, path, title, description, h1, capa, secoes, trilha, intro=None, chips=(), parceiros=(), alerta=None,
-              template="lista.html", tipo="lista", sitemap=True, **extra):
+              template="lista.html", tipo="lista", sitemap=True, indexavel=True, **extra):
         membros = [x for s in secoes for x in s["concursos"]]
         lastmod = max([x.c.get("ultima_alteracao") or "" for x in membros] + [self.base.varredura or ""]) or None
         self.render(Pagina(path, template, title=title, description=description, tipo=tipo, trilha=trilha, alerta=alerta,
-                           sitemap=sitemap, lastmod=lastmod,
+                           sitemap=sitemap and indexavel, indexavel=indexavel, lastmod=lastmod,
                            contexto=dict(lista=dict(h1=h1, capa=Markup(capa), intro=intro, secoes=secoes, chips=list(chips),
                                                     parceiros=list(parceiros)), **extra)))
 
@@ -420,7 +421,8 @@ class Site:
                 [inicio, ("Concursos abertos", "/concursos/"), (g.nome, f"/banca/{g.slug}/")],
                 parceiros=self._parceiros(banca=g.slug), sitemap=bool(g.abertos or g.previstos or recentes),
             )
-        # Cidades
+        # Cidades: todas as que têm concurso ativo a até 50 km (servem ao alerta local). Indexável só com concurso
+        # na própria cidade (aberto ou previsto) ou com pelo menos 1 aberto a até 50 km; só previstos vizinhos = noindex.
         for g in b.cidades.values():
             regiao_n = len(g.extra["regiao"])
             proximos = [x for _, x in g.extra["regiao"]]
@@ -445,7 +447,7 @@ class Site:
                             itens=[(a, f"/area/{modelo.slug(a)}/", n) for a, n in sorted(areas.items(), key=lambda p: -p[1])]),
                        dict(titulo="Bancas com concurso na região",
                             itens=[(nome, f"/banca/{s}/", n) for (s, nome), n in sorted(bancas.items(), key=lambda p: -p[1])])],
-                alerta=f"em {g.nome}", template="cidade.html", tipo="cidade", g=g,
+                alerta=f"em {g.nome}", template="cidade.html", tipo="cidade", g=g, indexavel=cidade_indexavel(g),
                 varredura_br=d.data_br(b.varredura) if b.varredura else d.data_br(self.hoje),
             )
 
@@ -528,6 +530,10 @@ class Site:
         if cfg.adsense_client:
             pub = cfg.adsense_client.replace("ca-", "")
             self._gravar("ads.txt", f"google.com, {pub}, DIRECT, f08c47fec0942fa0\n")
+
+
+def cidade_indexavel(g):
+    return bool(g.concursos) or any(x.aberto for _, x in g.extra["regiao"])
 
 
 DESCRICOES = {
