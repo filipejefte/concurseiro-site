@@ -6,7 +6,7 @@ Custo fixo: só o domínio. Não há banco, servidor, API paga nem serviço pago
 
 ## Como funciona
 
-1. Uma vez por semana, o Filipe roda `/varredura` no Claude Code. A varredura lê os diários oficiais, separa os atos de concurso, monta a ficha de cada um a partir do ato oficial (o próprio Claude Code extrai, sem API paga) e gera a planilha de revisão.
+1. Uma vez por semana, o Filipe roda `/varredura` no Claude Code, no notebook. A varredura lê os diários oficiais, separa os atos de concurso, monta a ficha de cada um a partir do ato oficial (o próprio Claude Code extrai, sem API paga) e gera a planilha de revisão.
 2. A conferência automática procura cada campo crítico no texto do ato; uma pessoa confere o resto e uma amostra de 1 em 20.
 3. `python -m varredura publicar` leva para `dados/concursos.json` só o que foi conferido e escreve os resumos da semana (Telegram e WhatsApp) e os posts.
 4. O push na `main` dispara o GitHub Actions: testes, `python -m gerador build`, verificador de links e deploy (Cloudflare Pages com os segredos; senão, GitHub Pages). O build também roda todo dia às 06:00, para a situação e os prazos virarem sem nova varredura. Um resumo novo na `main` é postado no canal do Telegram.
@@ -95,7 +95,7 @@ python -m varredura municipios                             # refaz a tabela de m
 ```
 
 - **coletar** lê as fontes, faz a triagem (abertura, retificação, autorização, contratação de banca, resultado, outro; PSS marcado e fora) e põe um arquivo por ato em `dados/varreduras/AAAA-MM-DD/fila/`.
-- **Extração:** sempre no modo `claude-code` (padrão): o `/varredura` lê cada ato e escreve a ficha seguindo `varredura/instrucoes_extracao.md`. O `--modo api` existe no código, mas é pago e não se usa.
+- **Extração:** o `/varredura` do Claude Code lê cada ato e escreve a ficha seguindo `varredura/instrucoes_extracao.md`, sem custo de API. (A extração por API paga existiu até o commit `7a1c11e`, se um dia houver receita para ela.)
 - **validar:** schema, datas, salário maior que zero, link oficial (agregador é recusado), município da tabela, código IBGE só para cidade do PR.
 - **revisao:** compara com o publicado e gera `revisao.md`, `revisao.csv` (conferência) e `cobertura.csv` (órgão, cidade, UF, situação, fim da inscrição e link do edital, para comparar à mão com os agregadores).
 - **publicar:** recusa campo crítico sem `ok` ou `auto`; atualiza `dados/concursos.json`; escreve `resumo-telegram.md`, `resumo-whatsapp.txt` e `posts/` (imagens 1080×1350 e legendas, fora do git).

@@ -35,8 +35,6 @@ def main(argv=None):
     quando.add_argument("--semana", action="store_true", help="desde a última varredura publicada")
     col.add_argument("--desde", type=date.fromisoformat, help="AAAA-MM-DD")
     col.add_argument("--ate", type=date.fromisoformat, default=date.today(), help="AAAA-MM-DD (padrão: hoje)")
-    col.add_argument("--modo", choices=["claude-code", "api"], default="claude-code",
-                     help="claude-code (padrão, sem custo de API) ou api (claude-haiku-5-5, ANTHROPIC_API_KEY)")
 
     val = sub.add_parser("validar", help="checa schema e regras")
     val.add_argument("--pasta", type=Path, help="pasta da varredura (padrão: a mais recente)")
@@ -76,7 +74,7 @@ def main(argv=None):
         else:
             anterior = dados.data(dados.ler_json(dados.CONCURSOS)["varredura"])
             desde = args.desde or (anterior + timedelta(days=1) if anterior else args.ate - timedelta(days=7))
-        coletar(desde, args.ate, inicial=args.inicial, modo=args.modo)
+        coletar(desde, args.ate, inicial=args.inicial)
         return 0
 
     if args.comando == "validar":

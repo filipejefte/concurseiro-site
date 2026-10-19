@@ -13,7 +13,7 @@ Antes de tudo, leia o `CLAUDE.md` da raiz. As regras fixas valem para cada ficha
 - `null` no que o ato não traz;
 - nada de agregador;
 - nada vai ao ar sem conferência: a automática acha o valor no texto do ato, ou o Filipe confere;
-- custo zero: extração sempre aqui, no Claude Code; nunca `--modo api`.
+- custo zero: extração sempre aqui, no Claude Code, sem API paga.
 
 Rode tudo no PowerShell, a partir da raiz do projeto. Nunca mostre o conteúdo do `.env`.
 
@@ -35,7 +35,7 @@ Ao terminar, leia `dados/varreduras/<data>/atos.json`:
 - Em `fontes`, toda fonte com `falhou` vai para o relatório final, com o motivo. O `DIOE-PR` aparece como `pulada` até ser implementado; isso é esperado.
 - Anote quantos atos estão na fila e quantos PSS ficaram em avaliação.
 
-## 3. Extrair (modo claude-code, sem custo de API)
+## 3. Extrair (aqui no Claude Code, sem custo de API)
 
 `python -m varredura pendentes` lista os atos da fila que ainda não viraram ficha nem descarte. Para cada um:
 
@@ -54,8 +54,6 @@ Ao terminar, leia `dados/varreduras/<data>/atos.json`:
    - **Descarte:** acrescente `{"ato": "<nome do arquivo da fila>", "motivo": "..."}` à lista em `dados/varreduras/<data>/descartes.json`.
 
 Com muitos atos, trabalhe em lotes e rode `python -m varredura pendentes` entre eles até zerar. Não pare nos atos do Paraná: concurso **federal de qualquer estado** está na cobertura (universidade, instituto federal, conselho, forças armadas, tribunal, ministério). Em 14/10, 413 atos federais de fora do PR ficaram pendentes por isso (ver `docs/DIAGNOSTICO-COBERTURA.md`). `pendentes --resumo` ajuda a descartar rápido o que já encerrou.
-
-Não use `--modo api`: é pago, e a regra do projeto é custo zero.
 
 ## 4. Validar
 

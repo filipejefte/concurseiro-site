@@ -6,5 +6,4 @@ Jinja2>=3.1           # páginas do site (python -m gerador build), com autoesca
 Pillow>=10.0          # imagens de compartilhamento, posts e ícones
 fonttools>=4.50       # converte a fonte woff2 da marca para as imagens
 brotli>=1.1           # o fonttools precisa dele para ler woff2
-anthropic>=1.0        # só para --modo api (pago; o padrão é o modo claude-code, sem custo)
 pytest>=8.0           # testes

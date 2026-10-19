@@ -2,13 +2,13 @@
 import urllib.error
 
 from .dados import VARREDURAS, gravar_json
-from .extracao import escrever_fila, extrair_api
+from .extracao import escrever_fila
 from .fontes import FONTES
 from .fontes.base import Cliente
 from .triagem import PARA_EXTRAIR, classificar
 
 
-def coletar(desde, ate, inicial=False, modo="claude-code"):
+def coletar(desde, ate, inicial=False):
     pasta = VARREDURAS / ate.isoformat()
     if (pasta / "atos.json").exists():
         # Refazer é seguro: o cache evita baixar de novo e os nomes da fila são estáveis,
@@ -49,10 +49,4 @@ def coletar(desde, ate, inicial=False, modo="claude-code"):
     })
     print(f"{len(registro)} atos sobre concurso; {len(para_fila)} na fila de extração; "
           f"{sum(1 for a in registro if a['pss'])} PSS em avaliação. Pasta: {pasta}")
-
-    if modo == "api":
-        fichas, descartes, falhas = extrair_api(pasta, ate)
-        print(f"Extração pela API: {fichas} fichas, {descartes} descartes, {len(falhas)} falhas.")
-        for nome, motivo in falhas:
-            print(f"  {nome}: {motivo}")
     return pasta

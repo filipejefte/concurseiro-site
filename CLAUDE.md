@@ -5,9 +5,9 @@ Site gratuito que reúne concursos públicos abertos, com o salário na frente, 
 ## Contexto
 
 - **Cobertura:** concursos federais, do Brasil todo, e do Paraná (estado, prefeituras, câmaras, autarquias). Federal de qualquer estado está na cobertura.
-- **Atualização:** uma varredura por semana, rodada pelo Filipe com `/varredura`. O site é gerado de novo todo dia às 06:00 pelo GitHub Actions (situação e prazos).
+- **Atualização:** uma varredura por semana, rodada pelo Filipe com `/varredura`, no notebook (o `.env` e a rede para os diários oficiais estão lá). O site é gerado de novo todo dia às 06:00 pelo GitHub Actions (situação e prazos).
 - **Custo:** o único custo é o domínio. Nada pode gerar cobrança (regra de 16/10/2026):
-  - extração sempre no modo `claude-code`; nunca `--modo api` nem chave de API paga;
+  - extração sempre pelo próprio Claude Code (`/varredura`); nada de chave de API paga;
   - só serviço com plano grátis que cubra o uso: GitHub (repositório público, Actions nos runners padrão), Cloudflare Pages, Web Analytics e Email Routing, Telegram Bot API, canal do WhatsApp (postagem manual), Kit (grátis até 10 mil inscritos). Outro serviço só se for grátis no uso previsto, com justificativa;
   - dependências só de código aberto, por `pip` ou `npx`; nada pago "com teste grátis";
   - o repositório continua público. Segredos só nos GitHub Secrets ou no `.env`.
@@ -83,7 +83,7 @@ python -m varredura municipios                              # refaz a tabela de 
 ## O que nunca fazer
 
 - Publicar (`python -m varredura publicar`), fazer merge na `main`, publicar em produção, fazer commit ou dar push sem o pedido do Filipe. Push na `main` publica o site e posta no Telegram.
-- Usar `--modo api`, criar chave de API paga ou contratar serviço pago.
+- Criar chave de API paga, extrair por API ou contratar serviço pago.
 - Fazer commit de `.env`, chaves, `.cache/`, `public/`, PDFs, posts ou da fila de extração.
 - Escrever credencial no código ou mostrar o conteúdo do `.env`. Elas vêm de `CONTATO_VARREDURA`, `INLABS_EMAIL`, `INLABS_SENHA`, `TELEGRAM_BOT_TOKEN` e `TELEGRAM_CANAL` (ver `.env.example`); no CI, dos GitHub Secrets.
 - Ler dados de agregador, preencher campo por dedução ou inventar valor para passar na validação.

@@ -1,7 +1,7 @@
 # Como extrair a ficha de um concurso de um ato oficial
 
-Estas instruções valem para o modo `--modo api` (são o prompt de sistema) e para quem segue o
-`/varredura` no Claude Code. A ficha segue `dados/schema/concurso.schema.json`.
+Estas instruções valem para quem segue o `/varredura` no Claude Code. A ficha segue
+`dados/schema/concurso.schema.json`.
 
 ## Regras
 
