@@ -16,7 +16,8 @@ PSS = re.compile(r"processo\s+seletivo\s+simplificado|\bPSS\b|contrata[çc][ãa]
 # No DOU, prefeituras e estados aparecem como "Prefeituras/Estado de X/..." e "Estados/...".
 FORA_DA_COBERTURA = re.compile(r"^(Prefeituras|Estados?|Governo\s+do\s+Estado)\b(?!.*Paran[áa])", _I)
 # "Apostila" é como a UEPG (no DIOE-PR) corrige edital; "apostilamento" de contrato não é retificação.
-RETIFICACAO = re.compile(r"retifica|errata|\bapostila\b|\bcorrige\b", _I)
+# Ampliação de vagas muda o concurso como uma retificação (se as inscrições já fecharam, vira descarte).
+RETIFICACAO = re.compile(r"retifica|errata|\bapostila\b|\bcorrige\b|amplia[çc][ãa]o\s+(d[eo]\s+n[uú]mero\s+)?de\s+vagas?", _I)
 RESULTADO = re.compile(
     r"homologa|reclassifica|resultado|classifica[çc][ãa]o|chamamento|convoca|nomea|nomear|posse|exonera|gabarito|"
     r"aprovad[oa]s|deferi|indeferi|desist|prorroga[çc][ãa]o\s+(do\s+prazo\s+)?de\s+validade|prorroga\s+(a\s+)?validade", _I)
@@ -29,7 +30,8 @@ CONTRATACAO_BANCA = re.compile(
 AUTORIZACAO = re.compile(
     r"autoriza(r|da|do|[çc][ãa]o)?\s+(a\s+)?(realiza[çc][ãa]o|abertura)\s+de\s+concurso|fica\s+autorizad[ao].{0,200}concurso\s+p[uú]blico", _I | re.S)
 # No título, só quando o título É o edital de abertura (não quando cita "Edital de Abertura nº X").
-ABERTURA_TITULO = re.compile(r"^\s*(edital\s+(de\s+)?abertura|abertura\s+de\s+(inscri|concurso))", _I)
+# Aceita uma palavra antes, com travessão: "Publicação - Edital de Abertura..." (UNICENTRO, no DIOE-PR).
+ABERTURA_TITULO = re.compile(r"^\s*(\w+\s*[-–:]\s*)?(edital\s+(de\s+)?abertura|abertura\s+de\s+(inscri|concurso))", _I)
 # No texto, só frases de quem abre inscrição; citar o edital de abertura não basta.
 ABERTURA_TEXTO = re.compile(
     r"abertura\s+(de|das)\s+inscri[çc][õo]es|torna(-se)?\s+p[uú]blic[ao].{0,160}(abertura|realiza[çc][ãa]o)\s+d[eo]s?\s+"

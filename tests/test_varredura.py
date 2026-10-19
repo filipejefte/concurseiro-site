@@ -170,6 +170,13 @@ def test_comparar_separa_novos_alterados_e_encerrados():
     ("APOSTILA CCCPPD N 02-2026 - CORRIGE EDITAL 2026-608", "O Presidente da Comissão Coordenadora do Concurso Público "
      "[...] declara em correção ao EDITAL Nº 2026.608", ("retificacao", False)),
     ("TERMO DE APOSTILAMENTO Nº 2 AO CONTRATO 15/2026", "reajuste do contrato do concurso público", ("outro", False)),
+    ("Publicação - Edital de Abertura de Concurso Público nº 01 2026-Progesp", "EDITAL Nº 01/2026-PROGESP/UNICENTRO "
+     "ABERTURA DE CONCURSO PÚBLICO DE PROVAS E TÍTULOS PARA PROVIMENTO DE CARGOS EFETIVOS", ("abertura", False)),
+    ("Resultado - Edital de Abertura 01/2026", "resultado final do concurso público", ("resultado", False)),
+    ("Convocação dos aprovados no Edital de Abertura 01/2026", "convoca os aprovados no concurso público", ("resultado", False)),
+    ("Edital 350-2026-PRH-Ampliação de vaga-CP 208-23", "TORNAR PÚBLICA A ampliação do número de vagas ofertadas no "
+     "Concurso Público para o Cargo de Professor", ("retificacao", False)),
+    ("EDITAL Nº 30/2026", "Ampliação do prazo de validade do concurso público", ("outro", False)),
     ("EDITAL Nº 9/2026", "Homologação do resultado final do Concurso Público 01/2025", ("resultado", False)),
     ("PROCESSO SELETIVO SIMPLIFICADO Nº 2/2026", "abertura das inscrições do processo seletivo simplificado", ("abertura", True)),
     ("EXTRATO DE CONTRATO Nº 10/2026", "Contratação de empresa para organização e realização de concurso público", ("contratacao_banca", False)),
