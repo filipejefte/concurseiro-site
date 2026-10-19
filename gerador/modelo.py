@@ -346,6 +346,7 @@ class Base:
         self.cobertura = base.get("cobertura") or ["federal", "PR"]
         self.municipios = municipios          # {ibge: {ibge, nome, lat, lon[, ficticio]}}
         self.exemplo = exemplo
+        self.previa = None           # data da varredura quando o build é a prévia (--previa)
         self.concursos = ordenar(Concurso(c, hoje, municipio=municipios.get(c["municipio_ibge"])) for c in base["concursos"])
         self.por_id = {x.id: x for x in self.concursos}
         self.ativos = [x for x in self.concursos if x.ativo]

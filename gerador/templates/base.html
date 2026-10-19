@@ -78,7 +78,7 @@
     </div>
   </div>
 </header>
-<aside class="pt-faixa" aria-label="Atualização dos dados"><p class="pt-pagina">{{ faixa }}</p></aside>
+<aside class="pt-faixa{% if base.previa %} pt-faixa-previa{% endif %}" aria-label="Atualização dos dados"><p class="pt-pagina">{{ faixa }}</p></aside>
 
 {% block conteudo %}{% endblock %}
 

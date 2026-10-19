@@ -30,7 +30,8 @@ O site é gerado: páginas HTML prontas em `public/` (fora do git), a partir de 
 ```powershell
 python -m gerador build              # gera public/ (só os concursos publicados)
 python -m gerador build --exemplo    # junta os 12 concursos fictícios, marcados como exemplo
-python -m gerador servir             # http://localhost:8000/concurseiro-site/
+python -m gerador build --previa     # em previa/: o publicado mais as fichas da semana, sem conferência (só para olhar)
+python -m gerador servir             # http://localhost:8000/concurseiro-site/ (servir previa para a prévia)
 python -m gerador links              # confere os links internos (o CI roda)
 ```
 
@@ -59,7 +60,9 @@ SEO: `title` e `description` por página, `canonical`, `sitemap.xml` com `lastmo
 | `indexar` | `false`: `noindex, nofollow` em toda página, `X-Robots-Tag` e `robots.txt` bloqueando tudo. `true`: o contrário, e o `robots.txt` aponta o sitemap. Só com decisão dos sócios |
 | `canal_whatsapp`, `canal_telegram` | Links dos canais, na folha "Avise-me" e em `/alertas/` |
 | `kit_form_id` | Liga o alerta por e-mail (formulário do Kit, confirmação dupla) |
-| `email_contato` | `mailto:` do contato e do "Avise a gente" das fichas |
+| `email_contato` | `mailto:` do contato, do "Avise a gente" das fichas e da política de privacidade |
+| `responsavel`, `razao_social`, `cnpj` | Controlador na política de privacidade: a pessoa física só pelo nome (CPF é recusado); com razão social e CNPJ, a empresa |
+| `quem_faz`, `foro` | Página Sobre e termos de uso |
 | `cloudflare_analytics_token` | Cloudflare Web Analytics, sem cookie |
 | `adsense_client`, `adsense_slot` | Liga anúncio com rótulo "Publicidade", `ads.txt` e aviso de cookies com opção de recusar |
 | `[[afiliados]]` | "Link de parceiro" por área ou banca, com `rel="sponsored noopener"` |

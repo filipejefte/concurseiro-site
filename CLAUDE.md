@@ -32,8 +32,9 @@ Site gratuito que reúne concursos públicos abertos, com o salário na frente, 
 ## Estrutura
 
 ```
-site.toml                     site_url, base_path, indexar, canais, kit_form_id, email_contato,
-                              cloudflare_analytics_token, adsense_client, adsense_slot, [[afiliados]]
+site.toml                     site_url, base_path, indexar, canais, kit_form_id, email_contato, responsavel,
+                              razao_social, cnpj, quem_faz, foro, cloudflare_analytics_token, adsense_client,
+                              adsense_slot, [[afiliados]]
 gerador/                      python -m gerador build | links | servir | redirecionar
   modelo.py                   situação na data do build, textos, ordem, cidades a até 50 km
   build.py                    páginas, sitemap, robots.txt, _headers, imagens OG, dados para o JS
@@ -68,6 +69,7 @@ python -m pip install -r requirements.txt
 python -m pytest
 python -m gerador build                                     # site em public/ (só o publicado)
 python -m gerador build --exemplo                           # com os exemplos fictícios marcados
+python -m gerador build --previa                            # previa/: com as fichas da semana, sem conferência
 python -m gerador servir                                    # http://localhost:8000/concurseiro-site/
 python -m gerador links                                     # verificador de links internos
 python -m varredura coletar --inicial --desde 2026-06-16    # coleta inicial (o INLABS guarda 4 meses)
@@ -84,7 +86,9 @@ python -m varredura municipios                              # refaz a tabela de 
 
 - Publicar (`python -m varredura publicar`), fazer merge na `main`, publicar em produção, fazer commit ou dar push sem o pedido do Filipe. Push na `main` publica o site e posta no Telegram.
 - Criar chave de API paga, extrair por API ou contratar serviço pago.
-- Fazer commit de `.env`, chaves, `.cache/`, `public/`, PDFs, posts ou da fila de extração.
+- Fazer commit de `.env`, chaves, `.cache/`, `public/`, `previa/`, PDFs, posts ou da fila de extração.
+- Publicar a prévia (`build --previa`): ela tem fichas sem conferência e serve só para olhar.
+- Pôr CPF ou endereço residencial no `site.toml` ou no site.
 - Escrever credencial no código ou mostrar o conteúdo do `.env`. Elas vêm de `CONTATO_VARREDURA`, `INLABS_EMAIL`, `INLABS_SENHA`, `TELEGRAM_BOT_TOKEN` e `TELEGRAM_CANAL` (ver `.env.example`); no CI, dos GitHub Secrets.
 - Ler dados de agregador, preencher campo por dedução ou inventar valor para passar na validação.
 - Marcar `ok` ou `auto` à mão no `revisao.csv`: `ok` é do Filipe, `auto` só a conferência automática escreve.

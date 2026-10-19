@@ -582,3 +582,40 @@ def test_resumo_whatsapp_ate_10_novos_com_salario_primeiro_e_abaixo_de_4000(tmp_
     assert fins == sorted(fins)
     assert f"e mais {30 - len(itens)} no site" in texto
     assert linhas[-2].startswith("Todos os concursos: ")
+
+
+# ---------- prioridade de extração e progresso.md ----------
+
+def _fila(pasta, nome, classe, data_ato, texto, fonte="DOU"):
+    (pasta / "fila").mkdir(parents=True, exist_ok=True)
+    (pasta / "fila" / nome).write_text(
+        f"fonte: {fonte}\ndata: {data_ato}\nclasse: {classe}\npss: False\norgao: Órgão\ntitulo: Edital\nurl: https://x.gov.br/{nome}\n---\n{texto}\n",
+        encoding="utf-8")
+    return pasta / "fila" / nome
+
+
+def test_prioridade_de_extracao(tmp_path):
+    from varredura.extracao import prioridade
+    hoje = date(2026, 10, 19)
+    aberto = _fila(tmp_path, "a.md", "abertura", "2026-09-30", "As inscrições serão de 01/10/2026 a 30/10/2026.")
+    futuro = _fila(tmp_path, "b.md", "abertura", "2026-10-15", "Período de inscrições: 3 de novembro de 2026 a 3 de dezembro de 2026.")
+    previsto = _fila(tmp_path, "c.md", "contratacao_banca", "2026-08-01", "Contratação de banca para concurso público.")
+    velho = _fila(tmp_path, "d.md", "autorizacao", "2026-05-01", "Autoriza concurso público.")
+    encerrado = _fila(tmp_path, "e.md", "abertura", "2026-07-01", "Inscrições de 01/07/2026 a 31/07/2026.")
+    assert prioridade(aberto, hoje)[0] == 1 and prioridade(futuro, hoje)[0] == 1
+    assert prioridade(previsto, hoje)[0] == 2
+    assert prioridade(velho, hoje) == (3, 0) and prioridade(encerrado, hoje) == (3, 1)   # encerrado por último
+
+
+def test_progresso_conta_o_que_falta_e_guarda_as_notas(tmp_path):
+    from varredura.progresso import MARCA, escrever
+    pasta = tmp_path / "2026-10-19"
+    _fila(pasta, "a.md", "abertura", "2026-10-01", "Inscrições de 01/10/2026 a 30/10/2026.")
+    _fila(pasta, "b.md", "abertura", "2026-07-01", "Inscrições de 01/07/2026 a 31/07/2026.", fonte="AMP-PR")
+    dados.gravar_json(pasta / "descartes.json", [{"ato": "b.md", "motivo": "inscrição encerrada"}])
+    arquivo, faltam = escrever(pasta, hoje=date(2026, 10, 19))
+    texto = arquivo.read_text(encoding="utf-8")
+    assert faltam == 1 and "| DOU | 1 | 0 | 1 |" in texto and "| AMP-PR | 1 | 1 | 0 |" in texto and "P1 (inscrição aberta ou futura): 1" in texto
+    arquivo.write_text(texto.split(MARCA)[0] + MARCA + "\n\n## Notas\n\n- Último lote: 1 a 30\n", encoding="utf-8")
+    escrever(pasta, hoje=date(2026, 10, 19))
+    assert "- Último lote: 1 a 30" in arquivo.read_text(encoding="utf-8")

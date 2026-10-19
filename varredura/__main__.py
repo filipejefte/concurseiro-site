@@ -2,7 +2,8 @@
 
   coletar --inicial --desde 2026-07-01   primeira varredura: tudo desde a data, fica o que tem inscrição aberta
   coletar --semana                       desde a última varredura publicada até hoje
-  pendentes                              atos da fila ainda sem ficha nem descarte
+  pendentes [--resumo]                   atos da fila ainda sem ficha nem descarte (--resumo: por prioridade)
+  progresso                              atualiza progresso.md: o que falta extrair, por fonte e prioridade
   validar                                schema e regras, na base publicada e nas fichas da semana
   revisao                                revisao.md e revisao.csv na pasta da semana
   publicar --por "Nome"                  publica só o que foi conferido; resumos do Telegram e do WhatsApp e posts
@@ -42,7 +43,12 @@ def main(argv=None):
 
     pen = sub.add_parser("pendentes", help="lista os atos da fila que ainda não viraram ficha nem descarte")
     pen.add_argument("--pasta", type=Path)
-    pen.add_argument("--resumo", action="store_true", help="mostra classe, órgão, título e o trecho das inscrições de cada ato")
+    pen.add_argument("--resumo", action="store_true",
+                     help="em ordem de prioridade (P1 inscrição aberta ou futura, P2 previsto recente, P3 o resto), "
+                          "com classe, órgão, título e o trecho das inscrições")
+
+    pro = sub.add_parser("progresso", help="atualiza progresso.md na pasta da semana (o que falta extrair, por fonte)")
+    pro.add_argument("--pasta", type=Path)
 
     rev = sub.add_parser("revisao", help="gera revisao.md e revisao.csv")
     rev.add_argument("--pasta", type=Path)
@@ -92,13 +98,22 @@ def main(argv=None):
         from .extracao import pendentes
         pasta = args.pasta or dados.ultima_pasta()
         faltam = pendentes(pasta)
-        for arquivo in faltam:
-            if args.resumo:
-                from .extracao import resumo_do_ato
-                print(resumo_do_ato(arquivo))
-            else:
+        if args.resumo:
+            from .extracao import prioridade, resumo_do_ato
+            hoje = date.today()
+            faltam.sort(key=lambda a: prioridade(a, hoje))   # extrair nesta ordem: P1, P2, P3
+            for arquivo in faltam:
+                print(resumo_do_ato(arquivo, hoje))
+        else:
+            for arquivo in faltam:
                 print(arquivo)
         print(f"{len(faltam)} ato(s) pendente(s) em {pasta / 'fila'}")
+        return 0
+
+    if args.comando == "progresso":
+        from .progresso import escrever
+        arquivo, faltam = escrever(args.pasta or dados.ultima_pasta())
+        print(f"{arquivo}: faltam {faltam} ato(s).")
         return 0
 
     if args.comando == "revisao":

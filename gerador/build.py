@@ -22,6 +22,7 @@ from .modelo import ABERTAS, plural
 
 RAIZ = configuracao.RAIZ
 SAIDA = RAIZ / "public"
+PREVIA = RAIZ / "previa"        # build --previa: fora do git e nunca publicado
 MARCA = RAIZ / "docs" / "marca"
 ASSETS = RAIZ / "assets"
 MARCADOR = ".gerado-pelo-concurseiro"
@@ -153,6 +154,9 @@ class Site:
     def faixa(self):
         b = self.base
         cobertura = "concursos federais e do Paraná"
+        if b.previa:
+            return (f"Prévia, não publicada: inclui as fichas da varredura de {d.data_br(b.previa)} ainda sem conferência. "
+                    "Só para olhar; o site no ar sai do python -m gerador build sem --previa.")
         if not b.varredura:
             return f"A primeira varredura ainda não foi publicada · {cobertura}"
         texto = f"Atualizado em {d.data_br(b.varredura)}"
@@ -190,7 +194,8 @@ class Site:
             }]
         contexto = dict(
             pagina=p, base=self.base, faixa=self.faixa(), menu=MENU, rodape=RODAPE, ativos=self.ativos, marca=self.marca,
-            robots=("noindex, nofollow" if not self.cfg.indexar else "index, follow" if p.indexavel else "noindex, follow"),
+            robots=("noindex, nofollow" if not self.cfg.indexar or self.base.previa
+                    else "index, follow" if p.indexavel else "noindex, follow"),
             canais=self.canais(), alerta=self.alerta(p.alerta),
             config_js={"base": self.cfg.base_path, "hoje": self.hoje.isoformat(), "localIP": self.plataforma == "cloudflare",
                        "adsense": self.cfg.adsense_client or None},
@@ -593,18 +598,30 @@ def _ics(x, prazos, endereco):
     return "data:text/calendar;charset=utf-8," + urllib.parse.quote(corpo)
 
 
-def carregar_base(exemplo=False, hoje=None, concursos=None):
-    """Base publicada (e os exemplos fictícios, com --exemplo) já como modelo.Base."""
+def carregar_base(exemplo=False, hoje=None, concursos=None, previa=None):
+    """Base publicada (e os exemplos fictícios, com --exemplo) já como modelo.Base.
+
+    previa: pasta de uma varredura; as fichas novas e alteradas dela entram por cima do publicado, sem conferência,
+    só para olhar o site com o volume real (nunca para publicar)."""
     base = d.ler_json(concursos or d.CONCURSOS)
     if exemplo:
         ex = d.ler_json(d.EXEMPLO)
         base = dict(base, concursos=base["concursos"] + ex["concursos"])
-    return modelo.Base(base, hoje or hoje_brasilia(), d.municipios(exemplo), exemplo=exemplo)
+    if previa:
+        from varredura.comparar import comparar
+        pasta = Path(previa)
+        r = comparar([f for f in d.carregar_fichas(pasta) if f.get("concurso")], base, date.fromisoformat(pasta.name))
+        por_id = {c["id"]: c for c in base["concursos"]}
+        por_id.update({c["id"]: c for c in r.novos + [novo for novo, _ in r.alterados]})
+        base = dict(base, concursos=list(por_id.values()))
+    resultado = modelo.Base(base, hoje or hoje_brasilia(), d.municipios(exemplo), exemplo=exemplo)
+    resultado.previa = Path(previa).name if previa else None
+    return resultado
 
 
-def construir(saida=SAIDA, hoje=None, exemplo=False, plataforma="github", cfg=None, concursos=None):
+def construir(saida=SAIDA, hoje=None, exemplo=False, plataforma="github", cfg=None, concursos=None, previa=None):
     cfg = cfg or configuracao.ler()
     hoje = hoje or hoje_brasilia()
-    site = Site(cfg, carregar_base(exemplo, hoje, concursos), hoje, saida, plataforma, exemplo)
+    site = Site(cfg, carregar_base(exemplo, hoje, concursos, previa), hoje, saida, plataforma, exemplo)
     site.gerar()
     return site

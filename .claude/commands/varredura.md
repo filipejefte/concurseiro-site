@@ -37,7 +37,15 @@ Ao terminar, leia `dados/varreduras/<data>/atos.json`:
 
 ## 3. Extrair (aqui no Claude Code, sem custo de API)
 
-`python -m varredura pendentes` lista os atos da fila que ainda não viraram ficha nem descarte. Para cada um:
+`python -m varredura pendentes --resumo` lista os atos da fila que ainda não viraram ficha nem descarte, já na ordem de extração:
+
+- **P1:** inscrição ainda aberta ou com data futura;
+- **P2:** autorização ou contratação de banca dos últimos 120 dias (previstos);
+- **P3:** o resto (por último, os que só citam datas de inscrição já passadas).
+
+Ato com inscrição já encerrada vira descarte com motivo, sem ficha completa. Trabalhe em lotes de 20 a 30 e, entre um lote e outro, rode `python -m varredura pendentes` e `python -m varredura progresso`. O `progresso.md` da pasta da semana mostra o que falta por fonte e por prioridade; escreva na seção Notas o último lote feito e o que ficou para trás, e por quê. Se a sessão acabar no meio, pare num lote fechado com o `progresso.md` em dia: a próxima sessão retoma dali.
+
+Para cada ato:
 
 1. Leia o arquivo da fila: cabeçalho com fonte, data, classe, órgão, título e url; depois o texto.
 2. Siga `varredura/instrucoes_extracao.md` à risca. Estas consultas ajudam:

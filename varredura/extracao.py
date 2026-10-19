@@ -12,6 +12,7 @@ varredura/instrucoes_extracao.md (sem custo de API).
 import hashlib
 import re
 import unicodedata
+from datetime import date
 from pathlib import Path
 
 from .dados import ler_json
@@ -54,14 +55,50 @@ def ler_fila(arquivo):
 _INSCRICAO = re.compile(r"inscri[çc][õo]es[^.\n]{0,40}(de|a partir de|até|no per[íi]odo|entre)[^.\n]{0,120}", re.I)
 
 
-def resumo_do_ato(arquivo):
-    """Uma linha por ato, para separar rápido o que vale ler inteiro."""
+def resumo_do_ato(arquivo, hoje=None):
+    """Uma linha por ato, para separar rápido o que vale ler inteiro. Começa pela prioridade (1, 2 ou 3)."""
     meta, texto = ler_fila(arquivo)
     plano = " ".join(texto.split())
     achado = _INSCRICAO.search(plano)
     trecho = achado.group(0)[:160] if achado else "(sem trecho de inscrição)"
-    return (f"{Path(arquivo).name} | {meta.get('classe')} | {meta.get('orgao', '')[:70]} | "
+    grupo, _ = prioridade(arquivo, hoje or date.today())
+    return (f"P{grupo} | {Path(arquivo).name} | {meta.get('classe')} | {meta.get('orgao', '')[:70]} | "
             f"{meta.get('titulo', '')[:70]} | {len(plano)} car. | {trecho}")
+
+
+_MESES = ["janeiro", "fevereiro", "marco", "abril", "maio", "junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro"]
+_DATA = re.compile(r"(?<!\d)(\d{1,2})\s*/\s*(\d{1,2})\s*/\s*(\d{4})(?!\d)|(?<!\d)(\d{1,2})\s*(?:o\s+)?de\s+(" + "|".join(_MESES)
+                   + r")\s+de\s+(\d{4})")
+PRIORIDADES = {1: "inscrição aberta ou futura", 2: "previsto (autorização ou banca) dos últimos 120 dias", 3: "o resto"}
+
+
+def _datas_de_inscricao(texto):
+    """Datas que aparecem até 250 caracteres depois de "inscrição" (texto normalizado, sem acento)."""
+    texto = unicodedata.normalize("NFD", texto).encode("ascii", "ignore").decode().lower()
+    datas = []
+    for k in re.finditer(r"inscric", texto):
+        for m in _DATA.finditer(texto, k.end(), k.end() + 250):
+            try:
+                if m.group(1):
+                    datas.append(date(int(m.group(3)), int(m.group(2)), int(m.group(1))))
+                else:
+                    datas.append(date(int(m.group(6)), _MESES.index(m.group(5)) + 1, int(m.group(4))))
+            except ValueError:
+                continue
+    return datas
+
+
+def prioridade(arquivo, hoje):
+    """(grupo, ordem) para extrair primeiro o que importa: 1 inscrição aberta ou futura; 2 previsto recente; 3 o resto
+    (dentro do 3, por último o que só tem datas de inscrição já passadas: provável descarte)."""
+    meta, texto = ler_fila(arquivo)
+    datas = _datas_de_inscricao(meta.get("titulo", "") + "\n" + texto)
+    publicado = date.fromisoformat(meta["data"]) if meta.get("data") else hoje
+    if any(dt >= hoje for dt in datas):
+        return 1, 0
+    if meta.get("classe") in ("autorizacao", "contratacao_banca") and (hoje - publicado).days <= 120:
+        return 2, 0
+    return 3, 1 if datas else 0
 
 
 def pendentes(pasta):

@@ -293,3 +293,21 @@ def test_responsavel_quem_faz_e_foro_vem_do_site_toml(tmp_path, site):
     assert "Concurseiro Ltda., CNPJ 00.000.000/0001-00, representada por Fulano de Tal" in _html(empresa, "/privacidade/")
     with pytest.raises(SystemExit):
         _cfg(responsavel="Fulano 123.456.789-00")
+
+
+def test_previa_junta_fichas_da_semana_e_nunca_indexa(tmp_path):
+    pasta = tmp_path / "varreduras" / "2026-10-14"
+    base = dados.ler_json(dados.EXEMPLO)
+    c = dict(next(x for x in base["concursos"] if x["id"].startswith("prefeitura-vale-verde")), id="previa-teste-pr-2026-edital-01")
+    dados.gravar_json(pasta / "fichas" / f"{c['id']}.json", {"ato": "x.md", "trechos": {}, "concurso": c})
+    site = construir(tmp_path / "p", DIA, exemplo=True, cfg=_cfg(indexar=True), previa=pasta)
+    html = _html(site, f"/concurso/{c['id']}/")
+    assert "Prévia, não publicada" in html and '<meta name="robots" content="noindex, nofollow">' in html
+    assert "Prévia, não publicada" in _html(site, "/")
+
+
+def test_previa_nao_vai_para_public(monkeypatch):
+    from gerador.__main__ import main
+    from gerador import build
+    with pytest.raises(SystemExit):
+        main(["build", "--previa", "dados/varreduras/2026-10-14", "--saida", str(build.SAIDA)])

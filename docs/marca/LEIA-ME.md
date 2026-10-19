@@ -6,12 +6,13 @@ O que o gerador usa, quando existir:
 
 | Arquivo | Onde vai |
 | --- | --- |
-| `logotipo-concurseiro.svg` | `<img>` do cabeçalho (32 px de altura no computador, 28 px no celular) e logotipo das imagens de compartilhamento e dos posts* |
-| `logotipo-concurseiro-palavra.svg` | rodapé |
+| `logotipo-concurseiro.svg` ou `.png` | `<img>` do cabeçalho (32 px de altura no computador, 28 px no celular); o `.png` também vai nas imagens de compartilhamento e nos posts |
+| `logotipo-concurseiro-palavra.svg` ou `.png` | rodapé |
 | `favicon.svg` | ícone da aba (sem ele, vale `assets/img/favicon.svg`, o do protótipo) |
-| `icone-app.svg` | `apple-touch-icon.png` (180 px) e os ícones do manifest (192 e 512 px)* |
+| `icone-app.png` | `apple-touch-icon.png` (180 px) e os ícones do manifest (192 e 512 px) |
+| `design-system/bundle.css` | referência para sincronizar `assets/css/componentes.css` |
 
-\* Para virar PNG, o SVG precisa do `cairosvg` (`python -m pip install cairosvg`, que no Windows pede a biblioteca Cairo). Se o pacote trouxer `logotipo-concurseiro.png` e `icone-app.png`, o gerador usa os PNG direto e não precisa do `cairosvg`.
+O pacote novo já traz os PNG, então o gerador não precisa do `cairosvg`.
 
 Sem estes arquivos, o build avisa e usa o logotipo provisório do protótipo.
 
