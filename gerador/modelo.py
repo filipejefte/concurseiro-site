@@ -194,6 +194,12 @@ class Concurso:
         self.path = f"/concurso/{self.id}/"
         self.og = f"/og/{self.id}.png"
         self.taxa = texto_taxa(c["taxa"])
+        # Professor federal (magistério superior ou EBTT): o salário é vencimento + retribuição por titulação.
+        self.magisterio = self.federal and bool(cargos) and all(
+            re.search(r"magist[ée]rio|\bEBTT\b|ensino b[áa]sico,? t[ée]cnico", k["nome"], re.I) for k in cargos)
+        self.rotulo_salario = ("Salário inicial bruto (vencimento + retribuição por titulação)" if self.magisterio
+                               else "Salário inicial")
+        self.tabelas_titulacao = [dict(t, linhas=[(d.TITULACOES[n], v) for n, v in t["linhas"]]) for t in d.tabelas_titulacao(c)]
 
     # ---------- textos ----------
 

@@ -259,3 +259,19 @@ def test_cidade_so_com_previstos_vizinhos_fica_fora_do_google(tmp_path):
     for g in abertas + vizinhas:   # concurso na cidade, ou aberto a até 50 km: indexável
         assert '<meta name="robots" content="index, follow">' in _html(site, f"/cidade/{g.slug}/")
         assert f"/cidade/{g.slug}/<" in sitemap
+
+
+def test_ficha_de_professor_federal_mostra_rotulo_e_tabela(tmp_path):
+    base = dados.ler_json(dados.EXEMPLO)
+    c = next(x for x in base["concursos"] if x["id"].startswith("instituto-federal-do-vale"))
+    for k in c["cargos"]:
+        k["nome"] = "Professor do Magistério Superior – " + k["nome"]
+        k["requisitos"] = "dedicação exclusiva; titulação mínima: doutorado"
+        k["remuneracao_por_titulacao"] = [{"titulacao": "doutorado", "valor": 13753.96}, {"titulacao": "mestrado", "valor": 9595.78}]
+    arquivo = tmp_path / "concursos.json"
+    dados.gravar_json(arquivo, dict(base, varredura="2026-10-14", proxima_varredura="2026-10-21", concursos=[c]))
+    site = construir(tmp_path / "p", DIA, exemplo=False, cfg=_cfg(), concursos=arquivo)
+    html = _html(site, f"/concurso/{c['id']}/")
+    assert "Salário inicial bruto (vencimento + retribuição por titulação)" in html
+    assert "Remuneração por titulação · dedicação exclusiva" in html and "9.595,78" in html
+    assert html.count("Remuneração por titulação ·") == 1   # cargos com a mesma tabela: uma tabela só

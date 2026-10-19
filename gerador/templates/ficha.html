@@ -14,7 +14,7 @@
       <p class="pt-caixa pt-caixa-info pt-caixa-texto"><span><strong>Exemplo fictício.</strong> Este concurso não existe: serve só para mostrar a ficha.</span></p>
       {%- endif %}
       <div class="pt-caixa-salario">
-        <div><span class="cc-rotulo" data-rotulo-salario>Salário inicial</span>
+        <div><span class="cc-rotulo" data-rotulo-salario>{{ x.rotulo_salario }}</span>
           <span class="cc-salario" data-salario>
             {%- if x.salario %}<span{% if x.situacao != 'encerrado' %} class="cc-grifo"{% endif %}>{{ m.dinheiro(x.salario) }}</span>{% else %}{{ NI | safe }}{% endif -%}
             {%- if detalhe %}<small data-detalhe>{{ m.dinheiro(detalhe) }}</small>{% endif %}</span></div>
@@ -70,13 +70,24 @@
   <section id="salario" class="pt-secao">
     <h2 class="pt-h2">Salário e benefícios</h2>
     <dl class="cc-ficha">
-      <dt>Salário inicial</dt><dd>{% if x.faixa_salario %}{{ m.dinheiro(x.faixa_salario) }}{% if x.sal_min != x.sal_max %}, conforme o cargo{% endif %}{% else %}{{ NI | safe }}{% endif %}</dd>
+      <dt>{{ x.rotulo_salario }}</dt><dd>{% if x.faixa_salario %}{{ m.dinheiro(x.faixa_salario) }}{% if x.sal_min != x.sal_max %}, conforme o cargo{% endif %}{% else %}{{ NI | safe }}{% endif %}</dd>
       {%- for b in x.c.beneficios %}
       <dt>{{ b.nome }}</dt><dd>{% if b.valor %}{{ m.dinheiro(dinheiro(b.valor)) }}{% else %}<span class="cc-ni">Valor não informado no edital</span>{% endif %}</dd>
       {%- endfor %}
       <dt>Jornada</dt><dd>{% if x.jornada %}{{ x.jornada }}{% else %}{{ NI | safe }}{% endif %}</dd>
       <dt>Regime</dt><dd>{% if x.c.regime %}{{ x.c.regime }}{% else %}{{ NI | safe }}{% endif %}</dd>
     </dl>
+    {%- for tabela in x.tabelas_titulacao %}
+    <h3 class="pt-h3">Remuneração por titulação{% if tabela.regime %} · {{ tabela.regime }}{% endif %}</h3>
+    <dl class="cc-ficha">
+      {%- for titulacao, valor in tabela.linhas %}
+      <dt>{{ titulacao }}</dt><dd>{{ m.dinheiro(dinheiro(valor)) }}</dd>
+      {%- endfor %}
+    </dl>
+    {%- endfor %}
+    {%- if x.tabelas_titulacao %}
+    <p class="pt-apoio">Se faltar candidato com a titulação exigida, o edital aceita titulação menor, e a remuneração segue esta tabela. Valores brutos: vencimento mais retribuição por titulação.</p>
+    {%- endif %}
     <p class="pt-apoio">Salário inicial bruto, antes dos descontos. Benefícios aparecem à parte.</p>
   </section>
 

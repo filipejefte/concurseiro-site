@@ -15,7 +15,7 @@ from pathlib import Path
 from .comparar import comparar
 from .conferir import na_amostra, texto_dos_atos, verificar
 from . import dados
-from .dados import brl, carregar_fichas, data_br, edital, ler_json, situacao
+from .dados import TITULACOES, brl, carregar_fichas, data_br, edital, ler_json, situacao, tabelas_titulacao
 from .extracao import ler_fila, pendentes
 from .validar import validar_concurso
 
@@ -47,9 +47,23 @@ def ato_principal(c):
     return edital(c) or next((d for d in c["documentos"] if d["tipo"] in ("autorizacao", "contratacao_banca")), None)
 
 
+def linhas_titulacao(c):
+    """[(valor em texto, cargo de referência)]: cada valor das tabelas por titulação, para conferir como salário.
+    O cargo de referência leva o regime e a titulação da linha, para a conferência automática achar na tabela."""
+    saida = []
+    for tabela in tabelas_titulacao(c):
+        regime = tabela["regime"] or "regime não informado"
+        for titulacao, valor in tabela["linhas"]:
+            referencia = {"nome": "Professor do magistério", "salario": valor, "jornada_horas": tabela["jornada"],
+                          "requisitos": f"{regime}; titulação mínima: {titulacao}"}
+            saida.append((f"Tabela por titulação, {regime}: {TITULACOES[titulacao]} {brl(valor)}", referencia))
+    return saida
+
+
 def linhas_criticas(c):
     """[(campo, valor em texto)]: o que uma pessoa confere antes de publicar (regra 4)."""
     linhas = [("salario", f"{k['nome']}: {brl(k['salario'])}") for k in c["cargos"]]
+    linhas += [("salario_titulacao", texto) for texto, _ in linhas_titulacao(c)]
     return linhas + [
         ("inscricao.inicio", data_br(c["inscricao"]["inicio"])),
         ("inscricao.fim", data_br(c["inscricao"]["fim"])),
@@ -126,14 +140,15 @@ def gerar(pasta, data_varredura=None):
         antes = dict(linhas_criticas(antigo)) if antigo else {}
         texto, links = texto_dos_atos(pasta, ficha)
         cargos = iter(c["cargos"])
+        referencias = iter(r for _, r in linhas_titulacao(c))
         md.append(f"### {c['orgao']} · `{c['id']}`\n")
         md.append(f"Ato: {origem}\n")
         md.append("| Campo | Valor | Trecho do ato |\n| --- | --- | --- |")
         for campo, valor in linhas_criticas(c):
-            mudou = antigo is not None and antes.get(campo) != valor and campo != "salario"
+            mudou = antigo is not None and antes.get(campo) != valor and campo not in ("salario", "salario_titulacao")
             valor_md = f"**{_celula(valor)}** (antes: {_celula(antes.get(campo, '—'))})" if mudou else _celula(valor)
             md.append(f"| {campo} | {valor_md} | {_celula(trechos.get(campo))} |")
-            cargo = next(cargos) if campo == "salario" else None
+            cargo = next(cargos) if campo == "salario" else next(referencias) if campo == "salario_titulacao" else None
             conferido, obs = marcas.get((c["id"], campo, valor), ("", ""))
             if conferido not in MARCAS_DA_PESSOA:
                 conferido, obs = "", ""

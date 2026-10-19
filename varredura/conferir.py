@@ -284,6 +284,13 @@ def verificar(campo, c, texto, links, cargo=None):
         return True, "previsto: sem edital, nada a achar"
     if campo == "salario":
         return _salario(texto, c["cargos"], cargo)
+    if campo == "salario_titulacao":
+        achados = [m.start() for m in padrao_valor(cargo["salario"]).finditer(texto)]
+        if not achados:
+            return False, "valor não achado no ato"
+        if _tabela_do_magisterio(texto, cargo, achados):
+            return True, "valor da linha desta titulação, no bloco do regime, na tabela de remuneração"
+        return False, "valor achado, mas não na linha desta titulação e regime da tabela"
     if campo in ("inscricao.inicio", "inscricao.fim"):
         if campo == "inscricao.inicio":
             passou, motivo = _datas(texto, INSCRICAO, insc["inicio"], insc["fim"], antes=True, conhecidas=datas)

@@ -519,3 +519,38 @@ def test_telegram_teste_so_imprime(tmp_path, capsys, monkeypatch):
     assert postar(tmp_path, se_configurado=True) == 0
     with pytest.raises(SystemExit):
         postar(tmp_path)
+
+
+def _professor_com_tabela():
+    """Ficha de professor federal com a tabela por titulação (o edital aceita titulação menor)."""
+    cargo = _professor(13753.96, "Item 1.2; dedicação exclusiva; titulação mínima: doutorado")
+    cargo["remuneracao_por_titulacao"] = [{"titulacao": "doutorado", "valor": 13753.96},
+                                          {"titulacao": "mestrado", "valor": 9595.78},
+                                          {"titulacao": "graduacao", "valor": 6397.19}]
+    return _ficha_magisterio(cargo), cargo
+
+
+def test_tabela_por_titulacao_vira_linhas_de_conferencia():
+    from varredura.revisao import linhas_titulacao
+    c, _ = _professor_com_tabela()
+    linhas = [campo for campo, _ in linhas_criticas(dict(c, cargos=c["cargos"], banca={"nome": "UFPR", "url": None}, nacional=False,
+                                                         cidade="Curitiba", uf="PR", municipio_ibge="4106902"))]
+    assert linhas.count("salario_titulacao") == 3
+    for texto, referencia in linhas_titulacao(c):
+        assert verificar("salario_titulacao", c, ATO_MAGISTERIO, {LINK}, referencia)[0], texto
+
+
+def test_tabela_por_titulacao_recusa_valor_trocado():
+    from varredura.revisao import linhas_titulacao
+    c, cargo = _professor_com_tabela()
+    cargo["remuneracao_por_titulacao"][1]["valor"] = 3998.24   # mestrado com o valor do regime de 20 h
+    resultados = {texto: verificar("salario_titulacao", c, ATO_MAGISTERIO, {LINK}, r)[0] for texto, r in linhas_titulacao(c)}
+    assert [t for t, ok in resultados.items() if not ok] == ["Tabela por titulação, dedicação exclusiva: Mestrado R$ 3.998,24"]
+
+
+def test_schema_aceita_tabela_por_titulacao():
+    c = real()
+    c["cargos"][0]["remuneracao_por_titulacao"] = [{"titulacao": "mestrado", "valor": 9595.78}]
+    assert validar_concurso(c) == []
+    c["cargos"][0]["remuneracao_por_titulacao"] = [{"titulacao": "pos-doutorado", "valor": 1.0}]
+    assert any("schema" in e for e in validar_concurso(c))

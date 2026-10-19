@@ -46,6 +46,15 @@ Estas instruções valem para quem segue o `/varredura` no Claude Code. A ficha 
     o valor saiu (até 300 caracteres). Para `salario`, um trecho que mostre os salários dos cargos.
     Se o ato não traz o campo, escreva `"não consta no ato"`.
 
+11. **Professor federal** (magistério superior ou EBTT): o `salario` de cada cargo é a remuneração
+    total (vencimento básico + retribuição por titulação) da titulação exigida no requisito principal
+    do cargo, no regime do cargo (20 h, 40 h ou dedicação exclusiva): o último valor da linha da tabela
+    de remuneração. Escreva o regime nos `requisitos` ("dedicação exclusiva" ou "20 horas") e a
+    titulação como "titulação mínima: doutorado". Se o edital aceita titulação menor na falta de
+    candidatos, preencha `remuneracao_por_titulacao` com a tabela do regime do cargo, uma linha por
+    titulação, sempre com o total (`[{"titulacao": "doutorado", "valor": 13753.96}, ...]`); se não
+    aceita, deixe `null`. Auxílio-alimentação e outros benefícios vão em `beneficios`.
+
 ## Saída
 
 Um único objeto JSON, sem texto antes nem depois:

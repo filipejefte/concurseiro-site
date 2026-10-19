@@ -1,6 +1,7 @@
 """Caminhos, leitura dos arquivos de dados e as regras que a varredura e o site compartilham."""
 import json
 import os
+import re
 import tomllib
 from datetime import date
 from pathlib import Path
@@ -110,3 +111,29 @@ def data_curta(d):
     """'sex, 20/11', como nos cards."""
     d = data(d) if isinstance(d, str) else d
     return f"{DIAS_SEMANA[d.weekday()]}, {d:%d/%m}" if d else "Não informado no edital"
+
+
+TITULACOES = {"graduacao": "Graduação", "aperfeicoamento": "Aperfeiçoamento", "especializacao": "Especialização",
+              "mestrado": "Mestrado", "doutorado": "Doutorado"}
+
+
+def regime_do_cargo(k):
+    """"dedicação exclusiva", "40 horas" ou "20 horas", pelo que a ficha diz do cargo; None quando não diz."""
+    if re.search(r"dedica[çc][ãa]o exclusiva|\(DE\)", (k.get("requisitos") or "") + " " + k["nome"], re.I):
+        return "dedicação exclusiva"
+    return f"{k['jornada_horas']:g} horas" if k.get("jornada_horas") else None
+
+
+def tabelas_titulacao(c):
+    """Tabelas de remuneração por titulação dos cargos, sem repetir: [{"regime", "jornada", "linhas": [(titulacao, valor)]}].
+
+    Só existe em professor federal quando o edital aceita titulação menor na falta de candidatos
+    (campo remuneracao_por_titulacao do cargo)."""
+    saida, vistas = [], set()
+    for k in c["cargos"]:
+        linhas = tuple((r["titulacao"], r["valor"]) for r in k.get("remuneracao_por_titulacao") or [])
+        chave = (regime_do_cargo(k), k.get("jornada_horas"), linhas)
+        if linhas and chave not in vistas:
+            vistas.add(chave)
+            saida.append({"regime": chave[0], "jornada": chave[1], "linhas": list(linhas)})
+    return saida
