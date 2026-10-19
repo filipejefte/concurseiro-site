@@ -619,3 +619,27 @@ def test_progresso_conta_o_que_falta_e_guarda_as_notas(tmp_path):
     arquivo.write_text(texto.split(MARCA)[0] + MARCA + "\n\n## Notas\n\n- Último lote: 1 a 30\n", encoding="utf-8")
     escrever(pasta, hoje=date(2026, 10, 19))
     assert "- Último lote: 1 a 30" in arquivo.read_text(encoding="utf-8")
+
+
+# ---------- voz.md: datas, legenda e negrito do Telegram ----------
+
+def test_data_curta_so_mostra_o_ano_quando_e_outro_ano(monkeypatch):
+    monkeypatch.setattr(dados, "ANO_REFERENCIA", 2026)
+    assert dados.data_curta("2026-11-20") == "sex, 20/11"
+    assert dados.data_curta("2027-03-22") == "seg, 22/03/2027"
+
+
+def test_legenda_do_post_no_formato_da_voz(monkeypatch):
+    from gerador.modelo import Concurso
+    from varredura.publicar import legenda_post
+    monkeypatch.setattr(dados, "ANO_REFERENCIA", 2026)
+    c = exemplo("prefeitura-vale-verde")
+    texto = legenda_post(c, Concurso(c, DIA))
+    assert texto.startswith("Prefeitura de Vale Verde (PR) abriu concurso para engenheiro civil e mais 4 cargos: "
+                            "até R$ 9.312,40 iniciais, 189 vagas + CR, níveis fundamental a superior. "
+                            "Inscrições até sex, 20/11, só no site da banca. Ficha completa e alerta grátis no link da bio.")
+
+
+def test_telegram_negrito_e_escape():
+    from varredura.telegram import para_html
+    assert para_html("**3 concursos novos** · R&D <x>") == "<b>3 concursos novos</b> · R&amp;D &lt;x&gt;"

@@ -4,8 +4,10 @@ Credenciais no ambiente (GitHub Secrets ou .env), nunca no código: TELEGRAM_BOT
 (o @nome do canal ou o id numérico; o bot precisa ser administrador do canal).
 O Telegram aceita até 4.096 caracteres por mensagem: o resumo é partido entre blocos, sem cortar um concurso.
 """
+import html
 import json
 import os
+import re
 import time
 import urllib.parse
 import urllib.request
@@ -13,6 +15,11 @@ from pathlib import Path
 
 LIMITE = 4096
 API = "https://api.telegram.org/bot{token}/sendMessage"
+
+
+def para_html(texto):
+    """Texto do resumo para o parse_mode HTML da Bot API: escapa &, < e > e troca **negrito** por <b>."""
+    return re.sub(r"\*\*(.+?)\*\*", r"<b>\1</b>", html.escape(texto, quote=False))
 
 
 def mensagens(texto, limite=LIMITE):
@@ -52,7 +59,7 @@ def enviar(token, canal, textos, pausa=1.0):
     for i, texto in enumerate(textos):
         if i:
             time.sleep(pausa)
-        corpo = urllib.parse.urlencode({"chat_id": canal, "text": texto,
+        corpo = urllib.parse.urlencode({"chat_id": canal, "text": texto, "parse_mode": "HTML",
                                         "link_preview_options": json.dumps({"is_disabled": True})}).encode()
         pedido = urllib.request.Request(API.format(token=token), data=corpo)
         with urllib.request.urlopen(pedido, timeout=30) as resp:
@@ -66,7 +73,7 @@ def postar(pasta, teste=False, se_configurado=False):
     arquivo = Path(pasta) / "resumo-telegram.md"
     if not arquivo.exists():
         raise SystemExit(f"Sem {arquivo}. Rode antes: python -m varredura publicar --por \"Nome\"")
-    textos = mensagens(arquivo.read_text(encoding="utf-8"))
+    textos = mensagens(para_html(arquivo.read_text(encoding="utf-8")))
     if teste:
         for i, t in enumerate(textos, 1):
             print(f"----- mensagem {i} de {len(textos)} ({len(t)} caracteres) -----\n{t}")

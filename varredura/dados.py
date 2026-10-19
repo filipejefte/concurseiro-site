@@ -107,10 +107,16 @@ def data_br(d):
     return d.strftime("%d/%m/%Y") if d else "Não informado no edital"
 
 
+ANO_REFERENCIA = None   # ano "de agora" para as datas curtas; o build e a publicação põem o do dia deles
+
+
 def data_curta(d):
-    """'sex, 20/11', como nos cards."""
+    """'sex, 20/11', como nos cards; com o ano só quando é outro ano ('seg, 22/03/2027')."""
     d = data(d) if isinstance(d, str) else d
-    return f"{DIAS_SEMANA[d.weekday()]}, {d:%d/%m}" if d else "Não informado no edital"
+    if not d:
+        return "Não informado no edital"
+    ano = f"/{d.year}" if d.year != (ANO_REFERENCIA or date.today().year) else ""
+    return f"{DIAS_SEMANA[d.weekday()]}, {d:%d/%m}{ano}"
 
 
 TITULACOES = {"graduacao": "Graduação", "aperfeicoamento": "Aperfeiçoamento", "especializacao": "Especialização",

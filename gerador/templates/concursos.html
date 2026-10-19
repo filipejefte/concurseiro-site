@@ -39,8 +39,8 @@
   {{ m.grade(base.abertos, 2, 'data-lista="abertos"') }}
 
   <div class="pt-vazio" data-vazio hidden>
-    <p class="pt-texto" style="font-weight:600">Nenhum concurso aberto com esses filtros agora.</p>
-    {{ m.botao_alerta("Avise-me quando abrir") }}
+    <p class="pt-texto" style="font-weight:600">Nenhum concurso aberto com esses filtros agora. Quer um alerta quando abrir?</p>
+    {{ m.botao_alerta("Avise-me") }}
   </div>
 
   {%- if base.previstos %}

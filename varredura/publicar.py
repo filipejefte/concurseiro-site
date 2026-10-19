@@ -36,6 +36,7 @@ def publicar_semana(pasta, por, hoje=None, posts=True):
     pasta = Path(pasta)
     hoje = hoje or date.today()
     data_varredura = date.fromisoformat(pasta.name)
+    d.ANO_REFERENCIA = data_varredura.year
     base = d.ler_json(d.CONCURSOS)
     fichas = [f for f in d.carregar_fichas(pasta) if f.get("concurso")]
     r = comparar(fichas, base, data_varredura)
@@ -126,13 +127,15 @@ def _periodo(anterior, data_varredura):
 
 
 def escrever_resumo(pasta, novos, retificados, acabando, anterior, data_varredura):
-    """resumo-telegram.md: texto puro, links completos (o comando telegram parte em mensagens)."""
-    partes = [f"Concursos da semana ({_periodo(anterior, data_varredura)}) · federais e do Paraná", ""]
-    partes += ["Novos", ""] + ([_linha(c) for c in novos] or ["• Nenhum concurso novo nesta semana."]) + [""]
+    """resumo-telegram.md: links completos; **negrito** só na linha de notícia e nos títulos (o comando telegram
+    converte para a Bot API e parte em mensagens)."""
+    partes = [f"**{len(novos)} concurso{'s' if len(novos) != 1 else ''} novo{'s' if len(novos) != 1 else ''} nesta semana** "
+              f"({_periodo(anterior, data_varredura)}) · federais e do Paraná", ""]
+    partes += ["**Novos**", ""] + ([_linha(c) for c in novos] or ["• Nenhum concurso novo nesta semana."]) + [""]
     if retificados:
-        partes += ["Retificados (o edital mudou)", ""] + [_linha(c) for c in retificados] + [""]
+        partes += ["**Edital retificado**", ""] + [_linha(c) for c in retificados] + [""]
     if acabando:
-        partes += ["Inscrições acabando nos próximos 7 dias", ""]
+        partes += ["**Encerram em até 7 dias**", ""]
         partes += [f"• {c['orgao']} — até {d.data_curta(c['inscricao']['fim'])} — {ficha_url(c)}" for c in acabando]
         partes.append("")
     partes += [f"Todos os concursos: {d.site_url('/')}",
@@ -204,7 +207,26 @@ def escrever_posts(pasta, concursos, data_varredura):
     for c in concursos:
         x = modelo.Concurso(c, data_varredura, municipio=municipios.get(c["municipio_ibge"]))
         imagens.salvar_png(imagens.post_concurso(x, rodape), saida / f"post-{c['id']}.png")
-        legenda = [f"{c['orgao']}", f"Salário inicial: {_salario(c)}", f"{_cargo(c)} · {x.vagas.lower()}",
-                   f"{_prazo(c).capitalize()} · {_lugar(c)}", "", f"Ficha e edital oficial: {ficha_url(c)}",
-                   "Inscrição e pagamento, só no site da banca."]
-        (saida / f"post-{c['id']}.txt").write_text("\n".join(legenda) + "\n", encoding="utf-8", newline="\n")
+        (saida / f"post-{c['id']}.txt").write_text(legenda_post(c, x) + "\n", encoding="utf-8", newline="\n")
+
+
+def legenda_post(c, x):
+    """Legenda no formato do voz.md: "Prefeitura de Vale Verde (PR) abriu concurso para agente administrativo:
+    R$ 4.218,50 iniciais, 120 vagas, nível médio. Inscrições até sex, 20/11, só no site da banca. ..." """
+    cargos = x.cargos
+    para = ""
+    if cargos:
+        para = " para " + cargos[0]["nome"][:1].lower() + cargos[0]["nome"][1:]
+        if len(cargos) > 1:
+            para += f" e mais {len(cargos) - 1} cargo{'s' if len(cargos) > 2 else ''}"
+    dados_ = []
+    if x.salario:
+        dados_.append(f"{x.salario} iniciais")
+    if cargos:
+        dados_.append(x.vagas[:1].lower() + x.vagas[1:])
+    if x.niveis:
+        dados_.append(("nível " if len(x.niveis) == 1 else "níveis ") + x.escolaridade.lower())
+    frase = f"{c['orgao']} abriu concurso{para}" + (": " + ", ".join(dados_) if dados_ else "") + "."
+    if x.fim:
+        frase += f" Inscrições até {d.data_curta(x.fim)}, só no site da banca."
+    return frase + " Ficha completa e alerta grátis no link da bio.\n\n" + ficha_url(c)

@@ -289,7 +289,7 @@ class Concurso:
         else:
             cargos = plural(n, "cargo", "cargos") if n else "cargos não informados"
             sal = f"salário inicial de {self.faixa_salario}" if self.faixa_salario else "salário não informado no edital"
-            partes.append(f"{self.orgao}: {cargos}, {self.vagas.lower()}, {sal}.")
+            partes.append(f"{self.orgao}: {cargos}, {minuscula(self.vagas)}, {sal}.")
             if self.situacao == "encerrado":
                 partes.append(f"Inscrições encerradas em {d.data_br(self.fim)}.")
             elif self.inscricoes:

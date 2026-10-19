@@ -75,6 +75,7 @@ class Pagina:
 class Site:
     def __init__(self, cfg, base, hoje, saida=SAIDA, plataforma="github", exemplo=False):
         self.cfg, self.hoje, self.saida, self.plataforma = cfg, hoje, Path(saida), plataforma
+        d.ANO_REFERENCIA = hoje.year   # "sex, 20/11" sem ano; data de outro ano leva o ano
         self.base = base
         self.exemplo = exemplo
         self.paginas = []
@@ -121,7 +122,7 @@ class Site:
         favicon = MARCA / "favicon.svg" if (MARCA / "favicon.svg").exists() else ASSETS / "img" / "favicon.svg"
         shutil.copy2(favicon, self.saida / "favicon.svg")
         for lado, nome in ((180, "apple-touch-icon.png"), (192, "icone-192.png"), (512, "icone-512.png")):
-            imagens.salvar_png(imagens.icone_app(lado), self.saida / nome)
+            imagens.salvar_png(imagens.icone_app(lado, opaco=nome.startswith("apple")), self.saida / nome)
         self.marca = {"logotipo": None, "palavra": None}
         for chave, nome in (("logotipo", "logotipo-concurseiro"), ("palavra", "logotipo-concurseiro-palavra")):
             origem = next((MARCA / f"{nome}{ext}" for ext in (".svg", ".png") if (MARCA / f"{nome}{ext}").exists()), None)
@@ -446,7 +447,7 @@ class Site:
                 f"Concursos em {g.nome} (PR)",
                 self._capa(len(g.abertos), f"com inscrição aberta na cidade e mais {regiao_n} abertos ou previstos a até 50 km."),
                 [dict(titulo=f"Abertos em {g.nome}", concursos=g.abertos,
-                      vazio=f"Nenhum concurso com inscrição aberta em {g.nome} agora. Veja os da região, logo abaixo."),
+                      vazio=f"Não achamos concurso aberto em {g.nome} hoje. Os da região, a até 50 km, estão logo abaixo."),
                  dict(titulo=f"Previstos em {g.nome}", concursos=g.previstos)],
                 [inicio, ("Paraná", "/estado/pr/"), (g.nome, f"/cidade/{g.slug}/")],
                 chips=[dict(titulo=f"Por área em {g.nome} e região",

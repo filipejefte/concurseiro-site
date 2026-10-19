@@ -103,13 +103,17 @@ def _svg_para_png(svg, largura):
     return Image.open(io.BytesIO(cairosvg.svg2png(url=str(svg), output_width=largura))).convert("RGBA")
 
 
-def logotipo(altura, claro=False):
-    """Imagem do logotipo na altura pedida: o arquivo da marca, se existir; senão o provisório."""
-    for png in (MARCA / "logotipo-concurseiro.png",):
-        if png.exists():
-            img = Image.open(png).convert("RGBA")
-            return img.resize((round(img.width * altura / img.height), altura), Image.LANCZOS)
-    svg = MARCA / "logotipo-concurseiro.svg"
+def logotipo(altura, palavra=False):
+    """Imagem do logotipo na altura pedida, do arquivo da marca (docs/marca/).
+
+    palavra=True: só a palavra no grifo (sobre verde, espaços estreitos, pé dos posts). Sem os arquivos da marca,
+    sai a versão provisória do protótipo."""
+    nome = "logotipo-concurseiro-palavra" if palavra else "logotipo-concurseiro"
+    png = MARCA / f"{nome}.png"
+    if png.exists():
+        img = Image.open(png).convert("RGBA")
+        return img.resize((round(img.width * altura / img.height), altura), Image.LANCZOS)
+    svg = MARCA / f"{nome}.svg"
     if svg.exists():
         img = _svg_para_png(svg, altura * 8)
         if img is not None:
@@ -124,19 +128,25 @@ def logotipo(altura, claro=False):
     return img
 
 
-def icone_app(lado):
-    """PNG quadrado para apple-touch-icon e manifest: icone-app.svg da marca, ou o ícone do protótipo."""
-    for png in (MARCA / "icone-app.png",):
-        if png.exists():
-            return Image.open(png).convert("RGBA").resize((lado, lado), Image.LANCZOS)
-    svg = MARCA / "icone-app.svg"
-    if svg.exists():
-        img = _svg_para_png(svg, lado)
-        if img is not None:
+def icone_app(lado, opaco=False):
+    """PNG quadrado para apple-touch-icon e manifest: icone-app da marca, ou o ícone do protótipo.
+
+    opaco=True (apple-touch-icon): o iOS pinta de preto o que é transparente e arredonda os cantos sozinho, então
+    os cantos transparentes do ícone viram verde da marca."""
+    img = None
+    if (MARCA / "icone-app.png").exists():
+        img = Image.open(MARCA / "icone-app.png").convert("RGBA").resize((lado, lado), Image.LANCZOS)
+    elif (MARCA / "icone-app.svg").exists():
+        img = _svg_para_png(MARCA / "icone-app.svg", lado)
+    if img is None:
+        img = _icone(lado)
+        if not opaco:
             return img
-    fundo = Image.new("RGBA", (lado, lado), PAPEL)   # o iOS não aceita transparência no apple-touch-icon
-    fundo.alpha_composite(_icone(lado))
-    return fundo
+    if opaco:
+        fundo = Image.new("RGBA", (lado, lado), VERDE)
+        fundo.alpha_composite(img)
+        return fundo
+    return img
 
 
 def cartao(largura, altura, *, tag, orgao, salario, linhas, rodape, verde=False, cor_tag=VERDE,
@@ -177,12 +187,9 @@ def cartao(largura, altura, *, tag, orgao, salario, linhas, rodape, verde=False,
             d.text((m, y), parte, font=fonte(600, round(32 * escala)), fill=tinta)
             y += round(44 * escala)
     # Rodapé: logotipo à esquerda, endereço à direita.
+    # Pé: logotipo completo na imagem de compartilhamento; nos posts (e sobre verde), só a palavra no grifo.
     alt_logo = round(48 * (escala if not retrato else escala * 0.9))
-    logo = logotipo(alt_logo)
-    if verde:
-        placa = Image.new("RGBA", (logo.width + round(24 * escala), alt_logo + round(16 * escala)), PAPEL)
-        placa.alpha_composite(logo, (round(12 * escala), round(8 * escala)))
-        logo = placa
+    logo = logotipo(alt_logo, palavra=retrato or verde)
     base_y = altura - m - logo.height
     topo = m if not retrato else max(m, (base_y - y) // 2)
     img.paste(camada, (0, topo), camada)
