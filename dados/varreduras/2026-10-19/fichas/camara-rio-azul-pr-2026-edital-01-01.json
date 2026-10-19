@@ -1,0 +1,113 @@
+{
+  "ato": "amp-pr-2026-09-25-prefeitura-municipal-de-rio-azul-2f499117.md",
+  "trechos": {
+    "salario": "CARGO: Agente de Serviços Operacionais [...] VENCIMENTO: R$ 1.621,00 [...] CARGO: Assistente Legislativo [...] VENCIMENTO: R$ 3.114,03 [...] CARGO: Contador [...] AC: 01 [...] VENCIMENTO: R$ 5.275,16",
+    "inscricao.inicio": "O período para a realização das inscrições iniciará às 08h do dia 05/10/2026",
+    "inscricao.fim": "perdurando até às 23h59min do dia 26/10/2026, observado o horário oficial de Brasília – DF",
+    "prova_objetiva": "Aplicação da prova objetiva / discursiva 22/11/2026",
+    "taxa": "CARGO DE NÍVEL FUNDAMENTAL VALOR DA TAXA DE INSCRIÇÃO: R$ 60,00 [...] CARGO DE NÍVEL MÉDIO VALOR DA TAXA DE INSCRIÇÃO: R$ 80,00 [...] CARGO DE NÍVEL SUPERIOR VALOR DA TAXA DE INSCRIÇÃO: R$ 100,00",
+    "banca": "1.1 O Concurso Público a que se refere o presente Edital será executado pela Fundação FAFIPA – Campus de Paranavaí",
+    "cidade": "será aplicada no Município de Rio Azul, Estado do Paraná; quadro de servidores efetivos do Poder Legislativo Municipal",
+    "edital": "EDITAL DE ABERTURA N.º 01.01/2026 CONCURSO PÚBLICO Nº 01/2026 A Presidente da Câmara Municipal de Rio Azul, Estado do Paraná"
+  },
+  "concurso": {
+    "id": "camara-rio-azul-pr-2026-edital-01-01",
+    "ficticio": false,
+    "orgao": "Câmara Municipal de Rio Azul (PR)",
+    "esfera": "municipal",
+    "uf": "PR",
+    "municipio_ibge": "4122008",
+    "cidade": "Rio Azul",
+    "nacional": false,
+    "abrangencia": null,
+    "area": "Administrativa",
+    "banca": {
+      "nome": "Fundação FAFIPA",
+      "url": "https://www.fundacaofafipa.org.br"
+    },
+    "inscricao": {
+      "inicio": "2026-10-05",
+      "fim": "2026-10-26",
+      "url": "https://www.fundacaofafipa.org.br"
+    },
+    "isencao_ate": "2026-10-11",
+    "prova_objetiva": "2026-11-22",
+    "local_prova": "Rio Azul (PR), podendo ser também em cidades próximas se o número de inscritos exceder a oferta de lugares",
+    "taxa": {
+      "min": 60.0,
+      "max": 100.0
+    },
+    "isencao_regras": "Isenção para inscritos no CadÚnico (Lei Federal 13.656/2018) e demais casos previstos no edital; pedido de 05/10 a 11/10/2026",
+    "regime": "Estatutário",
+    "beneficios": [],
+    "o_que_levar": null,
+    "cargos": [
+      {
+        "nome": "Contador",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 5275.16,
+        "escolaridade": "Superior",
+        "requisitos": "Ensino superior completo – Graduação em Ciências Contábeis e registro no conselho de classe (CRC)",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Assistente Legislativo",
+        "vagas": 0,
+        "cadastro_reserva": true,
+        "salario": 3114.03,
+        "escolaridade": "Médio",
+        "requisitos": "Ensino médio completo",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Agente de Serviços Operacionais",
+        "vagas": 0,
+        "cadastro_reserva": true,
+        "salario": 1621.0,
+        "escolaridade": "Fundamental",
+        "requisitos": "Ensino fundamental completo",
+        "jornada_horas": 40,
+        "materias": []
+      }
+    ],
+    "documentos": [
+      {
+        "tipo": "edital",
+        "titulo": "Edital de Abertura nº 01.01/2026 – Concurso Público nº 01/2026",
+        "numero": "01.01/2026",
+        "url": "https://www.diariomunicipal.com.br/amp/materia/64FE0D83",
+        "publicado_em": "2026-09-25",
+        "fonte": "AMP-PR",
+        "resumo": null
+      },
+      {
+        "tipo": "contratacao_banca",
+        "titulo": "Extrato do Contrato nº 02/2026 – Dispensa de Licitação nº 14/2026",
+        "numero": "02/2026",
+        "url": "https://www.diariomunicipal.com.br/amp/materia/CB807FA6",
+        "publicado_em": "2026-08-14",
+        "fonte": "AMP-PR",
+        "resumo": null
+      },
+      {
+        "tipo": "contratacao_banca",
+        "titulo": "Extrato de Dispensa de Licitação nº 14/2026",
+        "numero": "14/2026",
+        "url": "https://www.diariomunicipal.com.br/amp/materia/C54BE247",
+        "publicado_em": "2026-08-05",
+        "fonte": "AMP-PR",
+        "resumo": null
+      }
+    ],
+    "conferencia": null,
+    "primeira_varredura": null,
+    "ultima_alteracao": null
+  },
+  "atos_extras": [
+    "amp-pr-2026-08-05-prefeitura-municipal-de-rio-azul-35bca627.md",
+    "amp-pr-2026-08-14-prefeitura-municipal-de-rio-azul-c42f6304.md"
+  ]
+}

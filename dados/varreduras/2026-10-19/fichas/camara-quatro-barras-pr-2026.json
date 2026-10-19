@@ -1,0 +1,72 @@
+{
+  "ato": "amp-pr-2026-09-25-prefeitura-municipal-de-quatro-barras-db8b48d2.md",
+  "atos_extras": [
+    "amp-pr-2026-09-23-prefeitura-municipal-de-quatro-barras-6730c230.md"
+  ],
+  "trechos": {
+    "salario": "O ato não lista cargos nem salários",
+    "inscricao.inicio": "não consta no ato",
+    "inscricao.fim": "não consta no ato",
+    "prova_objetiva": "não consta no ato",
+    "taxa": "não consta no ato",
+    "banca": "CONTRATANTE: CAMARA MUNICIPAL DE QUATRO BARRAS CONTRATADA: INSTITUTO CONSULPAM CONSULTORIA PÚBLICO PRIVADO",
+    "cidade": "CONCURSO PÚBLICO PARA PREENCHIMENTO DE VAGAS DE CARGOS EFETIVOS DA CÂMARA MUNICIPAL DE QUATRO BARRAS – PR",
+    "edital": "CONTRATO 16 DISPENSA: 18/2026"
+  },
+  "concurso": {
+    "id": "camara-quatro-barras-pr-2026",
+    "ficticio": false,
+    "orgao": "Câmara Municipal de Quatro Barras (PR)",
+    "esfera": "municipal",
+    "uf": "PR",
+    "municipio_ibge": "4120804",
+    "cidade": "Quatro Barras",
+    "nacional": false,
+    "abrangencia": null,
+    "area": "Outras",
+    "banca": {
+      "nome": "Instituto Consulpam",
+      "url": null
+    },
+    "inscricao": {
+      "inicio": null,
+      "fim": null,
+      "url": null
+    },
+    "isencao_ate": null,
+    "prova_objetiva": null,
+    "local_prova": null,
+    "taxa": {
+      "min": null,
+      "max": null
+    },
+    "isencao_regras": null,
+    "regime": null,
+    "beneficios": [],
+    "o_que_levar": null,
+    "cargos": [],
+    "documentos": [
+      {
+        "tipo": "contratacao_banca",
+        "titulo": "Contrato nº 16 – Dispensa nº 18/2026",
+        "numero": "16",
+        "url": "https://www.diariomunicipal.com.br/amp/materia/CB504042",
+        "publicado_em": "2026-09-25",
+        "fonte": "AMP-PR",
+        "resumo": "Período do contrato: 23/09/2026 a 22/09/2027"
+      },
+      {
+        "tipo": "contratacao_banca",
+        "titulo": "Homologação da Dispensa nº 18/2026",
+        "numero": "18/2026",
+        "url": "https://www.diariomunicipal.com.br/amp/materia/011F225A",
+        "publicado_em": "2026-09-23",
+        "fonte": "AMP-PR",
+        "resumo": null
+      }
+    ],
+    "conferencia": null,
+    "primeira_varredura": null,
+    "ultima_alteracao": null
+  }
+}

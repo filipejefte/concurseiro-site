@@ -1,0 +1,79 @@
+{
+  "ato": "dou-2026-09-25-ministerio-da-educacao-universidade-fede-1d1541fc.md",
+  "atos_extras": [
+    "dou-2026-09-25-ministerio-da-educacao-universidade-fede-1d1541fc-extra-1.md"
+  ],
+  "trechos": {
+    "salario": "CLASSE A [...] 20 (VINTE) HORAS [...] PROFESSOR ASSISTENTE (COM GRADUAÇÃO) R$ 3.198,59 [...] (COM MESTRADO) [...] R$ 3.998,24 [...] (COM DOUTORADO) [...] R$ 5.037,78 [...] DEDICAÇÃO EXCLUSIVA (DE) [...] (COM GRADUAÇÃO) R$ 6.397,19 [...] (COM MESTRADO) [...] R$ 9.595,78 [...] (COM DOUTORADO) [...] R$ 13.753,96 — salário de cada item pela titulação mínima exigida no Anexo 01",
+    "inscricao.inicio": "ANEXO 02 [...] itens 1.28: período de inscrições 21/12/2026 a 20/01/2027",
+    "inscricao.fim": "ANEXO 02 [...] itens 1.28: período de inscrições 21/12/2026 a 20/01/2027",
+    "prova_objetiva": "não consta data: o Anexo 02 só traz o período provável das provas (por quinzena), e o concurso é de provas escrita, didática e de títulos",
+    "taxa": "ANEXO 02 ITEM TAXA DE INSCRIÇÃO [...] valores por item: 1.28 R$ 88,00",
+    "banca": "a própria UFPR (Pró-Reitoria de Gestão de Pessoas e unidades promotoras de cada item)",
+    "cidade": "Universidade Federal do Paraná, Curitiba; itens de Palotina e Toledo nos respectivos campi",
+    "edital": "EDITAL Nº 276, DE 24 DE SETEMBRO DE 2026 PROVIMENTO DE CARGOS DE PROFESSOR DA CARREIRA DO MAGISTÉRIO SUPERIOR"
+  },
+  "concurso": {
+    "id": "ufpr-2026-edital-276-item-1-28",
+    "ficticio": false,
+    "orgao": "Universidade Federal do Paraná (UFPR)",
+    "esfera": "federal",
+    "uf": "PR",
+    "municipio_ibge": "4106902",
+    "cidade": "Curitiba",
+    "nacional": false,
+    "abrangencia": null,
+    "area": "Educação",
+    "banca": {
+      "nome": "UFPR (Pró-Reitoria de Gestão de Pessoas)",
+      "url": null
+    },
+    "inscricao": {
+      "inicio": "2026-12-21",
+      "fim": "2027-01-20",
+      "url": null
+    },
+    "isencao_ate": null,
+    "prova_objetiva": null,
+    "local_prova": null,
+    "taxa": {
+      "min": 88.0,
+      "max": 88.0
+    },
+    "isencao_regras": "Isenção para inscritos no CadÚnico (Decreto 11.016/2022) e doadores de medula óssea (Lei 13.656/2018); pedido em até 10 dias corridos do início das inscrições, por e-mail à PROGEPE (urp@ufpr.br)",
+    "regime": "Estatutário (Lei 8.112/1990)",
+    "beneficios": [
+      {
+        "nome": "Auxílio-alimentação (20 horas)",
+        "valor": 587.5
+      }
+    ],
+    "o_que_levar": null,
+    "cargos": [
+      {
+        "nome": "Professor do Magistério Superior – Radiologia Odontológica e Imaginologia",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 5037.78,
+        "escolaridade": "Superior",
+        "requisitos": "Item 1.28; Departamento de Estomatologia; 20 horas; titulação mínima: doutorado (áreas aceitas no Anexo 01 do edital)",
+        "jornada_horas": 20,
+        "materias": []
+      }
+    ],
+    "documentos": [
+      {
+        "tipo": "edital",
+        "titulo": "Edital nº 276/2026-PROGEPE – Professor do Magistério Superior (item 1.28)",
+        "numero": "276/2026",
+        "url": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=25/09/2026&jornal=530&pagina=61",
+        "publicado_em": "2026-09-25",
+        "fonte": "DOU",
+        "resumo": null
+      }
+    ],
+    "conferencia": null,
+    "primeira_varredura": null,
+    "ultima_alteracao": null
+  }
+}

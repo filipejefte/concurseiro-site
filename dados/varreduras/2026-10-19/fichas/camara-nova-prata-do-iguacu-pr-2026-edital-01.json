@@ -1,0 +1,50 @@
+{
+  "ato": "amp-pr-2026-09-23-prefeitura-municipal-de-nova-prata-do-ig-e7cc0b2b.md",
+  "trechos": {
+    "salario": "101 Advogado 20h CR - - R$ 5.543,88 180,00 102 Contador 20h CR - - R$ 5.543,88 180,00 103 Tesoureiro 20h CR - - R$ 5.543,88 180,00 [...] 201 Agente Administrativo 40h 01 - - R$ 2.689,59 130,00 202 Auxiliar de Serviços Gerais 40h 01 - - R$ 1.837,03 130,00 203 Técnico em Informática 30h 01 - - R$ 4.331,62 130,00 204 Técnico de Relações Públicas 30h CR - - R$ 6.341,92 130,00",
+    "inscricao.inicio": "5.3 O período para a realização das inscrições será a partir das 12h00min do dia 30 de setembro de 2026",
+    "inscricao.fim": "às 23h59min do dia 29 de outubro de 2026, observado horário oficial de Brasília/DF, através do endereço eletrônico www.concursosfau.com.br",
+    "prova_objetiva": "10.2 A prova objetiva será aplicada na data provável de 15 de novembro de 2026",
+    "taxa": "TABELA 3.1 NÍVEL SUPERIOR COMPLETO [...] Taxa de Inscrição (R$) [...] 180,00 [...] TABELA 3.2 NÍVEL MÉDIO/TÉCNICO [...] 130,00",
+    "banca": "A Fundação de Apoio ao Desenvolvimento da UNICENTRO e a Câmara Municipal de Nova Prata do Iguaçu [...] entrar em contato com a FAU",
+    "cidade": "10.1 A prova objetiva será aplicada na Cidade de Nova Prata do Iguaçu/Paraná; o concurso destina-se ao quadro de servidores da Câmara Municipal de Nova Prata do Iguaçu",
+    "edital": "EDITAL DE ABERTURA Nº 01/2026 CONCURSO PÚBLICO Nº 01/2026 O Presidente da Câmara Municipal de Nova Prata do Iguaçu – Estado do Paraná"
+  },
+  "concurso": {
+    "id": "camara-nova-prata-do-iguacu-pr-2026-edital-01",
+    "ficticio": false,
+    "orgao": "Câmara Municipal de Nova Prata do Iguaçu (PR)",
+    "esfera": "municipal",
+    "uf": "PR",
+    "municipio_ibge": "4117255",
+    "cidade": "Nova Prata do Iguaçu",
+    "nacional": false,
+    "abrangencia": null,
+    "area": "Administrativa",
+    "banca": {"nome": "Fundação de Apoio ao Desenvolvimento da UNICENTRO (FAU)", "url": "https://www.concursosfau.com.br"},
+    "inscricao": {"inicio": "2026-09-30", "fim": "2026-10-29", "url": "https://www.concursosfau.com.br"},
+    "isencao_ate": "2026-10-02",
+    "prova_objetiva": "2026-11-15",
+    "local_prova": "Nova Prata do Iguaçu (PR), podendo ser também em cidades vizinhas se o número de inscritos exceder a capacidade do município",
+    "taxa": {"min": 130.0, "max": 180.0},
+    "isencao_regras": "Isenção para inscritos no CadÚnico, doadores de sangue ou de medula óssea e eleitores convocados, nos termos do edital; pedido em 01 e 02/10/2026",
+    "regime": "Estatutário",
+    "beneficios": [],
+    "o_que_levar": "Caneta esferográfica transparente de tinta azul ou preta, documento oficial de identificação com foto e o Cartão de Informação do Candidato impresso",
+    "cargos": [
+      {"nome": "Advogado", "vagas": 0, "cadastro_reserva": true, "salario": 5543.88, "escolaridade": "Superior", "requisitos": "Nível superior completo; requisitos no Anexo I do edital", "jornada_horas": 20, "materias": []},
+      {"nome": "Contador", "vagas": 0, "cadastro_reserva": true, "salario": 5543.88, "escolaridade": "Superior", "requisitos": "Nível superior completo; requisitos no Anexo I do edital", "jornada_horas": 20, "materias": []},
+      {"nome": "Tesoureiro", "vagas": 0, "cadastro_reserva": true, "salario": 5543.88, "escolaridade": "Superior", "requisitos": "Nível superior completo; requisitos no Anexo I do edital", "jornada_horas": 20, "materias": []},
+      {"nome": "Agente Administrativo", "vagas": 1, "cadastro_reserva": false, "salario": 2689.59, "escolaridade": null, "requisitos": "Nível médio/técnico; requisitos no Anexo I do edital", "jornada_horas": 40, "materias": []},
+      {"nome": "Auxiliar de Serviços Gerais", "vagas": 1, "cadastro_reserva": false, "salario": 1837.03, "escolaridade": null, "requisitos": "Nível médio/técnico; requisitos no Anexo I do edital", "jornada_horas": 40, "materias": []},
+      {"nome": "Técnico em Informática", "vagas": 1, "cadastro_reserva": false, "salario": 4331.62, "escolaridade": null, "requisitos": "Nível médio/técnico; requisitos no Anexo I do edital", "jornada_horas": 30, "materias": []},
+      {"nome": "Técnico de Relações Públicas", "vagas": 0, "cadastro_reserva": true, "salario": 6341.92, "escolaridade": null, "requisitos": "Nível médio/técnico; requisitos no Anexo I do edital", "jornada_horas": 30, "materias": []}
+    ],
+    "documentos": [
+      {"tipo": "edital", "titulo": "Edital de Abertura nº 01/2026 – Concurso Público nº 01/2026", "numero": "01/2026", "url": "https://www.diariomunicipal.com.br/amp/materia/7024F0DC", "publicado_em": "2026-09-23", "fonte": "AMP-PR", "resumo": null}
+    ],
+    "conferencia": null,
+    "primeira_varredura": null,
+    "ultima_alteracao": null
+  }
+}
