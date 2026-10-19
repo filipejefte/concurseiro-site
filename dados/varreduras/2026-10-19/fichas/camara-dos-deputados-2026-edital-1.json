@@ -1,0 +1,184 @@
+{
+  "ato": "dou-2026-10-05-poder-legislativo-camara-dos-deputados-d-c4e1c1e1.md",
+  "atos_extras": [
+    "dou-2026-10-05-poder-legislativo-camara-dos-deputados-d-c4e1c1e1-extra-1.md",
+    "dou-2026-10-05-poder-legislativo-camara-dos-deputados-d-c4e1c1e1-extra-2.md"
+  ],
+  "trechos": {
+    "salario": "2.1 CARGO 1: ANALISTA LEGISLATIVO - ESPECIALIDADE: COMUNICAÇÃO SOCIAL - ÁREA: DIVULGAÇÃO INSTITUCIONAL [...] REMUNERAÇÃO: R$ 32.070,88. JORNADA DE TRABALHO: 40 horas semanais. — o mesmo valor (R$ 32.070,88) aparece para os 11 cargos",
+    "inscricao.inicio": "Período de solicitação de inscrições 15/10 a 17/11/2026 Das 10 horas do primeiro dia às 18 horas do último dia",
+    "inscricao.fim": "Período de solicitação de inscrições 15/10 a 17/11/2026 Das 10 horas do primeiro dia às 18 horas do último dia",
+    "prova_objetiva": "Aplicação das provas objetivas e discursiva 17/1/2027",
+    "taxa": "6.1 TAXA: R$ 130,00.",
+    "banca": "1.1 O concurso público será regido por este edital e executado pelo Centro Brasileiro de Pesquisa em Avaliação e Seleção e de Promoção de Eventos (Cebraspe).",
+    "cidade": "1.4 As vagas destinam-se a lotação exclusiva em Brasília/DF.",
+    "edital": "EDITAL Nº 1, DE 2 DE OUTUBRO DE 2026 CONCURSO PÚBLICO PARA PROVIMENTO DE VAGAS E FORMAÇÃO DE CADASTRO DE RESERVA EM CARGOS DE ANALISTA LEGISLATIVO"
+  },
+  "concurso": {
+    "id": "camara-dos-deputados-2026-edital-1",
+    "ficticio": false,
+    "orgao": "Câmara dos Deputados",
+    "esfera": "federal",
+    "uf": "DF",
+    "municipio_ibge": null,
+    "cidade": "Brasília",
+    "nacional": false,
+    "abrangencia": null,
+    "area": "Administrativa",
+    "banca": {
+      "nome": "Centro Brasileiro de Pesquisa em Avaliação e Seleção e de Promoção de Eventos (Cebraspe)",
+      "url": "https://www.cebraspe.org.br/concursos/cd_26_analista"
+    },
+    "inscricao": {
+      "inicio": "2026-10-15",
+      "fim": "2026-11-17",
+      "url": "https://www.cebraspe.org.br/concursos/cd_26_analista"
+    },
+    "isencao_ate": "2026-10-23",
+    "prova_objetiva": "2027-01-17",
+    "local_prova": "Capitais dos 26 estados e Distrito Federal",
+    "taxa": {
+      "min": 130.0,
+      "max": 130.0
+    },
+    "isencao_regras": "Isenção para inscritos no CadÚnico (Decretos 6.593/2008 e 11.016/2022) e doadores de medula óssea (Lei 13.656/2018); pedido de 15 a 23/10/2026",
+    "regime": "Estatutário (Lei 8.112/1990)",
+    "beneficios": [],
+    "o_que_levar": "Caneta esferográfica de tinta preta fabricada em material transparente, comprovante de inscrição ou de pagamento da taxa e documento de identidade original",
+    "cargos": [
+      {
+        "nome": "Analista Legislativo – Comunicação Social – Divulgação Institucional",
+        "vagas": 4,
+        "cadastro_reserva": true,
+        "salario": 32070.88,
+        "escolaridade": "Superior",
+        "requisitos": "Cargo 1; graduação em Comunicação Social com habilitação em Publicidade e Propaganda ou Propaganda e Marketing e registro profissional no Ministério do Trabalho e Emprego (retificado pelo Edital nº 5); lotação em Brasília (DF); há também cadastro de reserva",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Analista Legislativo – Comunicação Social – Jornalismo",
+        "vagas": 12,
+        "cadastro_reserva": true,
+        "salario": 32070.88,
+        "escolaridade": "Superior",
+        "requisitos": "Cargo 2; graduação em Comunicação Social com habilitação em Jornalismo e registro profissional no Ministério do Trabalho e Emprego (retificado pelo Edital nº 5); lotação em Brasília (DF); há também cadastro de reserva",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Analista Legislativo – Comunicação Social – Relações Públicas",
+        "vagas": 4,
+        "cadastro_reserva": true,
+        "salario": 32070.88,
+        "escolaridade": "Superior",
+        "requisitos": "Cargo 3; graduação em Comunicação Social com habilitação em Relações Públicas ou em Comunicação Organizacional e registro no conselho profissional; lotação em Brasília (DF); há também cadastro de reserva",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Analista Legislativo – Documentação e Informação Legislativa – Arquivologia",
+        "vagas": 7,
+        "cadastro_reserva": true,
+        "salario": 32070.88,
+        "escolaridade": "Superior",
+        "requisitos": "Cargo 4; graduação em Arquivologia e registro profissional no Ministério do Trabalho e Emprego (retificado pelo Edital nº 5); lotação em Brasília (DF); há também cadastro de reserva",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Analista Legislativo – Documentação e Informação Legislativa – Biblioteconomia",
+        "vagas": 7,
+        "cadastro_reserva": true,
+        "salario": 32070.88,
+        "escolaridade": "Superior",
+        "requisitos": "Cargo 5; graduação em Biblioteconomia e registro no conselho profissional; lotação em Brasília (DF); há também cadastro de reserva",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Analista Legislativo – Engenheiro – Engenharia Civil",
+        "vagas": 1,
+        "cadastro_reserva": true,
+        "salario": 32070.88,
+        "escolaridade": "Superior",
+        "requisitos": "Cargo 6; graduação em Engenharia Civil ou em outro bacharelado em Engenharia com grade curricular equivalente e registro no conselho profissional (retificado pelo Edital nº 5); lotação em Brasília (DF); há também cadastro de reserva",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Analista Legislativo – Engenheiro – Engenharia Elétrica",
+        "vagas": 1,
+        "cadastro_reserva": true,
+        "salario": 32070.88,
+        "escolaridade": "Superior",
+        "requisitos": "Cargo 7; graduação em Engenharia Elétrica ou em outro bacharelado em Engenharia com grade curricular equivalente e registro no conselho profissional (retificado pelo Edital nº 5); lotação em Brasília (DF); há também cadastro de reserva",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Analista Legislativo – Engenheiro – Engenharia Eletrônica/Telecomunicações",
+        "vagas": 3,
+        "cadastro_reserva": true,
+        "salario": 32070.88,
+        "escolaridade": "Superior",
+        "requisitos": "Cargo 8; graduação em Engenharia Eletrônica, Engenharia de Telecomunicações ou outro bacharelado em Engenharia com grade curricular equivalente e registro no conselho profissional (retificado pelo Edital nº 5); lotação em Brasília (DF); há também cadastro de reserva",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Analista Legislativo – Engenheiro – Engenharia Mecânica",
+        "vagas": 1,
+        "cadastro_reserva": true,
+        "salario": 32070.88,
+        "escolaridade": "Superior",
+        "requisitos": "Cargo 9; graduação em Engenharia Mecânica ou em outro bacharelado com grade curricular equivalente e registro no conselho profissional (retificado pelo Edital nº 5); lotação em Brasília (DF); há também cadastro de reserva",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Analista Legislativo – Museólogo",
+        "vagas": 1,
+        "cadastro_reserva": true,
+        "salario": 32070.88,
+        "escolaridade": "Superior",
+        "requisitos": "Cargo 10; graduação em Museologia (ou outra habilitação do art. 2º da Lei 7.287/1984) e registro no conselho profissional; lotação em Brasília (DF); há também cadastro de reserva",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Analista Legislativo – Registro e Redação",
+        "vagas": 25,
+        "cadastro_reserva": true,
+        "salario": 32070.88,
+        "escolaridade": "Superior",
+        "requisitos": "Cargo 11; graduação em qualquer área; lotação em Brasília (DF); há também cadastro de reserva",
+        "jornada_horas": 40,
+        "materias": []
+      }
+    ],
+    "documentos": [
+      {
+        "tipo": "edital",
+        "titulo": "Edital nº 1 – Câmara dos Deputados – Analista Legislativo, de 2 de outubro de 2026",
+        "numero": "1/2026",
+        "url": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=05/10/2026&jornal=530&pagina=178",
+        "publicado_em": "2026-10-05",
+        "fonte": "DOU",
+        "resumo": null
+      },
+      {
+        "tipo": "retificacao",
+        "titulo": "Edital nº 5 – Câmara dos Deputados – Analista Legislativo, de 15 de outubro de 2026",
+        "numero": "5/2026",
+        "url": "https://cdn.cebraspe.org.br/concursos/cd_26_analista/arquivos/3FBDBB5294547B38537683E819608B5FB8DB0366C22D40681F2B19FC69A8A652.pdf",
+        "publicado_em": "2026-10-15",
+        "fonte": "banca",
+        "resumo": "Retifica requisitos dos cargos 1, 2, 4, 6, 7, 8 e 9, inclui o subitem 2.8 e atualiza o quadro de vagas após o sorteio das vagas reservadas"
+      }
+    ],
+    "conferencia": null,
+    "primeira_varredura": null,
+    "ultima_alteracao": null
+  }
+}

@@ -4,7 +4,8 @@
     "dou-2026-10-09-controladoria-geral-da-uniao-secretaria-132bdbd3-extra-1.md",
     "dou-2026-10-09-controladoria-geral-da-uniao-secretaria-132bdbd3-extra-2.md",
     "dou-2026-10-09-controladoria-geral-da-uniao-secretaria-132bdbd3-extra-3.md",
-    "dou-2026-10-09-controladoria-geral-da-uniao-secretaria-132bdbd3-extra-4.md"
+    "dou-2026-10-09-controladoria-geral-da-uniao-secretaria-132bdbd3-extra-4.md",
+    "dou-2026-06-24-ministerio-da-gestao-e-da-inovacao-em-se-79c7cb1c.md"
   ],
   "trechos": {
     "salario": "SUBSÍDIO INICIAL: R$ 20.000,00, de acordo com a Lei nº 15.141, de 2 de junho de 2025, com ingresso inicial na classe A, padrão I, da carreira de Finanças e Controle.",
@@ -105,6 +106,15 @@
       }
     ],
     "documentos": [
+      {
+        "tipo": "autorizacao",
+        "titulo": "Portaria MGI nº 5.093/2026 – autoriza concurso para 60 cargos da CGU",
+        "numero": "5.093/2026",
+        "url": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=24/06/2026&jornal=515&pagina=80",
+        "publicado_em": "2026-06-24",
+        "fonte": "DOU",
+        "resumo": "60 cargos de Auditor Federal de Finanças e Controle"
+      },
       {
         "tipo": "edital",
         "titulo": "Edital CGU nº 1, de 8 de outubro de 2026 – Auditor Federal de Finanças e Controle",
