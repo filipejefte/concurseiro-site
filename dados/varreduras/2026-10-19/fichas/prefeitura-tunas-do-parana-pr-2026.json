@@ -1,7 +1,8 @@
 {
   "ato": "amp-pr-2026-08-17-prefeitura-municipal-de-tunas-do-parana-8e3dcf55.md",
   "atos_extras": [
-    "amp-pr-2026-08-06-prefeitura-municipal-de-tunas-do-parana-5226faef.md"
+    "amp-pr-2026-08-06-prefeitura-municipal-de-tunas-do-parana-5226faef.md",
+    "amp-pr-2026-10-19-departamento-de-administracao-financas-e-6d73c27b.md"
   ],
   "trechos": {
     "salario": "O ato não lista cargos nem salários",
@@ -63,6 +64,15 @@
         "publicado_em": "2026-08-06",
         "fonte": "AMP-PR",
         "resumo": null
+      },
+      {
+        "tipo": "outro",
+        "titulo": "Decreto nº 339/2026 – institui a Comissão Organizadora do Concurso Público",
+        "numero": "339/2026",
+        "url": "https://www.diariomunicipal.com.br/amp/materia/8E7D0AF5",
+        "publicado_em": "2026-10-19",
+        "fonte": "AMP-PR",
+        "resumo": "Cria a comissão que acompanha o concurso para cargos efetivos da Prefeitura; o edital ainda não saiu"
       }
     ],
     "conferencia": null,

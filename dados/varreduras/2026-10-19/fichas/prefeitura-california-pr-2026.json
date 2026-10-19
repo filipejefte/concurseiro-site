@@ -1,7 +1,8 @@
 {
   "ato": "amp-pr-2026-07-20-prefeitura-municipal-de-california-ab4c8454.md",
   "atos_extras": [
-    "amp-pr-2026-08-31-prefeitura-municipal-de-california-0b379640.md"
+    "amp-pr-2026-08-31-prefeitura-municipal-de-california-0b379640.md",
+    "amp-pr-2026-10-19-secretaria-de-administracao-e-financas-cb94eae6.md"
   ],
   "trechos": {
     "salario": "O decreto lista cargos, carga horária, escolaridade e vagas, sem remuneração",
@@ -9,7 +10,7 @@
     "inscricao.fim": "não consta no ato",
     "prova_objetiva": "não consta no ato",
     "taxa": "não consta no ato",
-    "banca": "licitação anulada em 28/08/2026 (Pregão Eletrônico nº 35/2026); banca não contratada",
+    "banca": "licitação anulada em 28/08/2026 (Pregão Eletrônico nº 35/2026); nova licitação: Concorrência nº 19/2026, \"fará realizar às 09h00min do dia 14 de dezembro de 2026\"; banca não contratada",
     "cidade": "PREFEITURA MUNICIPAL DE CALIFÓRNIA [...] provimento de cargos públicos municipais",
     "edital": "DECRETO Nº 170/2026 SÚMULA: Autoriza a abertura de Concurso Público para provimento de cargos públicos municipais e formação de Cadastro de Reserva"
   },
@@ -434,6 +435,15 @@
         "publicado_em": "2026-08-31",
         "fonte": "AMP-PR",
         "resumo": "Anula a licitação para contratar a banca, por modalidade inadequada; a banca ainda não foi contratada"
+      },
+      {
+        "tipo": "outro",
+        "titulo": "Aviso de licitação – Concorrência nº 19/2026 (contratação da banca do concurso)",
+        "numero": "19/2026",
+        "url": "https://www.diariomunicipal.com.br/amp/materia/97D7593D",
+        "publicado_em": "2026-10-19",
+        "fonte": "AMP-PR",
+        "resumo": "Nova licitação para contratar a banca, com sessão em 14/12/2026; a banca ainda não foi contratada"
       }
     ],
     "conferencia": null,
