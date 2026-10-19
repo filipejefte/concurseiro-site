@@ -50,7 +50,9 @@ def main(argv=None):
         print(f"{len(site.paginas)} páginas em {args.saida} ({', '.join(f'{n} {t}' for t, n in sorted(tipos.items()))}) "
               f"em {time.monotonic() - inicio:.1f} s. indexar = {str(cfg.indexar).lower()}.")
         if not site.marca["logotipo"]:
-            print("Aviso: sem docs/marca/logotipo-concurseiro.svg; o cabeçalho usa o logotipo provisório do protótipo.")
+            print("Aviso: sem docs/marca/logotipo-concurseiro.svg (nem .png); o cabeçalho usa o logotipo provisório do protótipo.")
+        if cfg.pendentes():
+            print("[A PREENCHER] no site.toml: " + ", ".join(cfg.pendentes()))
         return 0
     if args.comando == "redirecionar":
         from .redirecionar import gerar

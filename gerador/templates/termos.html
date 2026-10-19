@@ -30,5 +30,5 @@
 <p>Como o site trata dados está na <a class="pt-link" href="{{ u('/privacidade/') }}">política de privacidade</a>.</p>
 
 <h2 class="pt-h2">Mudanças e foro</h2>
-<p>Estes termos podem mudar; a data no topo mostra a versão. Vale a lei brasileira. Foro: [A PREENCHER: comarca do foro].</p>
+<p>Estes termos podem mudar; a data no topo mostra a versão. Vale a lei brasileira. Foro: {% if cfg.foro %}comarca de {{ cfg.foro }}{% else %}[A PREENCHER: comarca do foro]{% endif %}.</p>
 {% endblock %}

@@ -122,13 +122,14 @@ class Site:
         for lado, nome in ((180, "apple-touch-icon.png"), (192, "icone-192.png"), (512, "icone-512.png")):
             imagens.salvar_png(imagens.icone_app(lado), self.saida / nome)
         self.marca = {"logotipo": None, "palavra": None}
-        for chave, arquivo in (("logotipo", "logotipo-concurseiro.svg"), ("palavra", "logotipo-concurseiro-palavra.svg")):
-            origem = MARCA / arquivo
-            if origem.exists():
+        for chave, nome in (("logotipo", "logotipo-concurseiro"), ("palavra", "logotipo-concurseiro-palavra")):
+            origem = next((MARCA / f"{nome}{ext}" for ext in (".svg", ".png") if (MARCA / f"{nome}{ext}").exists()), None)
+            if origem:
+                arquivo = origem.name
                 destino = self.saida / "assets" / "marca" / arquivo
                 destino.parent.mkdir(parents=True, exist_ok=True)
                 shutil.copy2(origem, destino)
-                largura, altura = _medidas_svg(origem)
+                largura, altura = _medidas_svg(origem) if origem.suffix == ".svg" else imagens.Image.open(origem).size
                 alvo = 32 if chave == "logotipo" else 24
                 self.marca[chave] = f"/assets/marca/{arquivo}"
                 self.marca[chave + "_largura"] = round(largura * alvo / altura)

@@ -47,9 +47,9 @@
 
 <header class="pt-topo">
   <div class="pt-topo-in">
-    <a class="pt-marca" href="{{ u('/') }}"{% if not marca.logotipo %} aria-label="concurseiro, página inicial"{% endif %}>
+    <a class="pt-marca" href="{{ u('/') }}"{% if not marca.logotipo %} aria-label="Concurseiro, página inicial"{% endif %}>
       {%- if marca.logotipo %}
-      <img class="cc-logo" src="{{ u(marca.logotipo) }}" alt="concurseiro, página inicial" width="{{ marca.logotipo_largura }}" height="{{ marca.logotipo_altura }}">
+      <img class="cc-logo" src="{{ u(marca.logotipo) }}" alt="Concurseiro, página inicial" width="{{ marca.logotipo_largura }}" height="{{ marca.logotipo_altura }}">
       {%- else %}
       <span class="cc-logo-provisorio">
         <svg class="cc-logo-icone" viewBox="0 0 64 64" aria-hidden="true" focusable="false"><rect width="64" height="64" rx="15" fill="#0B6B48"/><polygon points="15,25 53,22 49,41 11,44" fill="#D6F26A"/></svg>
@@ -86,7 +86,7 @@
   <div class="pt-rodape-in">
     <div class="pt-rodape-texto">
       {%- if marca.palavra %}
-      <img class="cc-logo cc-logo-rodape" src="{{ u(marca.palavra) }}" alt="concurseiro" width="{{ marca.palavra_largura }}" height="{{ marca.palavra_altura }}" loading="lazy">
+      <img class="cc-logo cc-logo-rodape" src="{{ u(marca.palavra) }}" alt="Concurseiro" width="{{ marca.palavra_largura }}" height="{{ marca.palavra_altura }}" loading="lazy">
       {%- else %}
       <span class="cc-logo-provisorio"><span class="cc-grifo">concurseiro</span></span>
       {%- endif %}

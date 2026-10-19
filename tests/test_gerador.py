@@ -275,3 +275,21 @@ def test_ficha_de_professor_federal_mostra_rotulo_e_tabela(tmp_path):
     assert "Salário inicial bruto (vencimento + retribuição por titulação)" in html
     assert "Remuneração por titulação · dedicação exclusiva" in html and "9.595,78" in html
     assert html.count("Remuneração por titulação ·") == 1   # cargos com a mesma tabela: uma tabela só
+
+
+def test_responsavel_quem_faz_e_foro_vem_do_site_toml(tmp_path, site):
+    assert "[A PREENCHER: nome do responsável]" in _html(site, "/privacidade/")
+    cfg = _cfg(responsavel="Fulano de Tal", email_contato="concurseiro.projeto@gmail.com",
+               quem_faz="quatro amigos de Maringá (PR)", foro="Maringá/PR")
+    assert cfg.pendentes() == []
+    com = construir(tmp_path / "p", DIA, cfg=cfg)
+    privacidade = _html(com, "/privacidade/")
+    assert "Fulano de Tal, pessoa física responsável pelo Concurseiro" in privacidade
+    assert "mailto:concurseiro.projeto@gmail.com" in privacidade and "[A PREENCHER" not in privacidade
+    assert "feito por quatro amigos de Maringá (PR)" in _html(com, "/sobre/")
+    assert "comarca de Maringá/PR" in _html(com, "/termos/")
+    empresa = construir(tmp_path / "e", DIA, cfg=_cfg(responsavel="Fulano de Tal", razao_social="Concurseiro Ltda.",
+                                                      cnpj="00.000.000/0001-00"))
+    assert "Concurseiro Ltda., CNPJ 00.000.000/0001-00, representada por Fulano de Tal" in _html(empresa, "/privacidade/")
+    with pytest.raises(SystemExit):
+        _cfg(responsavel="Fulano 123.456.789-00")

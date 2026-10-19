@@ -17,8 +17,20 @@ canal_telegram = ""
 # Formulário de e-mail do Kit (só o número do formulário, com confirmação dupla ligada no Kit). Vazio = sem e-mail.
 kit_form_id = ""
 
-# Endereço do "Contato" e do "Avise a gente" (mailto:). [A PREENCHER] até o Email Routing do domínio.
+# Endereço do "Contato", do "Avise a gente" e da política de privacidade (mailto:). Pode ser um Gmail do
+# projeto até o domínio existir. Vazio = [A PREENCHER] no site.
 email_contato = ""
+
+# Responsável pelos dados (controlador, LGPD). Pessoa física: só o nome; o contato é o email_contato.
+# Nunca ponha CPF nem endereço residencial aqui: o arquivo e o site são públicos.
+responsavel = ""
+# Quando a empresa existir: razão social e CNPJ passam a ser o controlador na política de privacidade.
+razao_social = ""
+cnpj = ""
+# Quem faz o Concurseiro, para a página Sobre (ex.: "quatro amigos de Maringá (PR)").
+quem_faz = ""
+# Comarca do foro dos termos de uso (ex.: "Maringá/PR").
+foro = ""
 
 # Cloudflare Web Analytics (sem cookie). Vazio = nada é carregado.
 cloudflare_analytics_token = ""

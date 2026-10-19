@@ -4,7 +4,11 @@
 <p class="pt-apoio">Versão de {{ versao_privacidade }}. Esta política segue a Lei Geral de Proteção de Dados (Lei 13.709/2018, a LGPD).</p>
 
 <h2 class="pt-h2">Quem é o responsável</h2>
-<p>O controlador dos dados é [A PREENCHER: nome ou razão social, CPF ou CNPJ e endereço do controlador].
+<p>O controlador dos dados é
+{%- if cfg.razao_social %} {{ cfg.razao_social }}{% if cfg.cnpj %}, CNPJ {{ cfg.cnpj }}{% endif %}{% if cfg.responsavel %}, representada por {{ cfg.responsavel }}{% endif %}.
+{%- elif cfg.responsavel %} {{ cfg.responsavel }}, pessoa física responsável pelo Concurseiro.
+{%- else %} [A PREENCHER: nome do responsável].
+{%- endif %}
 Contato para assuntos de privacidade: {% if email %}<a class="pt-link" href="mailto:{{ email }}">{{ email }}</a>{% else %}[A PREENCHER: e-mail de contato]{% endif %}.</p>
 
 <h2 class="pt-h2">Em resumo</h2>

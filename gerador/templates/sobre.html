@@ -37,6 +37,6 @@
 <p>O Concurseiro é gratuito. Quando houver anúncio, ele vem marcado como "Publicidade". Quando houver indicação paga, ela vem marcada como "Link de parceiro". Nenhum dos dois muda o que aparece nas fichas.</p>
 
 <h2 class="pt-h2">Quem faz</h2>
-<p>[A PREENCHER: quem faz o Concurseiro (nomes ou razão social) e a cidade.]</p>
+<p>{% if cfg.quem_faz %}O Concurseiro é feito por {{ cfg.quem_faz }}.{% else %}[A PREENCHER: quem faz o Concurseiro.]{% endif %}</p>
 <p>Fale com a gente pela página de <a class="pt-link" href="{{ u('/contato/') }}">contato</a>.</p>
 {% endblock %}
