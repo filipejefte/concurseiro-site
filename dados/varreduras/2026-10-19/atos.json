@@ -3,7 +3,7 @@
   "ate": "2026-10-19",
   "inicial": true,
   "fontes": {
-    "DOU": "falhou depois de 0 atos: Defina INLABS_EMAIL e INLABS_SENHA no .env para ler o DOU pelo INLABS.",
+    "DOU": "falhou depois de 0 atos: O INLABS não entregou arquivo em 3 dias úteis seguidos. Confira INLABS_EMAIL e INLABS_SENHA e se o INLABS está no ar. DO1: resposta sem ZIP; DO3: resposta sem ZIP; DO1E: resposta sem ZIP; DO3E: resposta sem ZIP",
     "AMP-PR": "ok",
     "DIOE-PR": "ok"
   },
@@ -107704,6 +107704,186 @@
       "titulo": "Portaria 2650 2026 Nomeacao SOLDADO 2025",
       "orgao": "Secretaria da Segurança Pública / PMPR",
       "url": "https://www.dioe.pr.gov.br/apifront/portal/edicoes/publicacoes_ver_conteudo/2135557/17381",
+      "classe": "resultado",
+      "pss": false,
+      "fila": null
+    },
+    {
+      "fonte": "DIOE-PR",
+      "data": "2026-10-19",
+      "titulo": "EDITAL 249/2026 - DRH/SEAP",
+      "orgao": "Secretaria da Administração e da Previdência",
+      "url": "https://www.dioe.pr.gov.br/apifront/portal/edicoes/publicacoes_ver_conteudo/2135924/17385",
+      "classe": "resultado",
+      "pss": false,
+      "fila": null
+    },
+    {
+      "fonte": "DIOE-PR",
+      "data": "2026-10-19",
+      "titulo": "EDITAL 250/2026 - DRH/SEAP",
+      "orgao": "Secretaria da Administração e da Previdência",
+      "url": "https://www.dioe.pr.gov.br/apifront/portal/edicoes/publicacoes_ver_conteudo/2135932/17385",
+      "classe": "resultado",
+      "pss": false,
+      "fila": null
+    },
+    {
+      "fonte": "DIOE-PR",
+      "data": "2026-10-19",
+      "titulo": "Edital 288-2026- Ed. 096 2025 8a. Convocacao DOE",
+      "orgao": "Secretaria da Ciência, Tecnologia e Ensino Superior / UEL",
+      "url": "https://www.dioe.pr.gov.br/apifront/portal/edicoes/publicacoes_ver_conteudo/2136012/17385",
+      "classe": "resultado",
+      "pss": false,
+      "fila": null
+    },
+    {
+      "fonte": "DIOE-PR",
+      "data": "2026-10-19",
+      "titulo": "PSS289 Retifica Titulos e 290 Resultado Final",
+      "orgao": "Secretaria da Ciência, Tecnologia e Ensino Superior / UEL",
+      "url": "https://www.dioe.pr.gov.br/apifront/portal/edicoes/publicacoes_ver_conteudo/2136151/17385",
+      "classe": "retificacao",
+      "pss": true,
+      "fila": null
+    },
+    {
+      "fonte": "DIOE-PR",
+      "data": "2026-10-19",
+      "titulo": "Edital 043/2026 - CPPS",
+      "orgao": "Secretaria da Ciência, Tecnologia e Ensino Superior / UNESPAR",
+      "url": "https://www.dioe.pr.gov.br/apifront/portal/edicoes/publicacoes_ver_conteudo/2135945/17385",
+      "classe": "resultado",
+      "pss": true,
+      "fila": null
+    },
+    {
+      "fonte": "DIOE-PR",
+      "data": "2026-10-19",
+      "titulo": "Edital 044.2026 - CPPS",
+      "orgao": "Secretaria da Ciência, Tecnologia e Ensino Superior / UNESPAR",
+      "url": "https://www.dioe.pr.gov.br/apifront/portal/edicoes/publicacoes_ver_conteudo/2136019/17385",
+      "classe": "outro",
+      "pss": true,
+      "fila": null
+    },
+    {
+      "fonte": "DIOE-PR",
+      "data": "2026-10-19",
+      "titulo": "Edital 045/2026 - CPPS",
+      "orgao": "Secretaria da Ciência, Tecnologia e Ensino Superior / UNESPAR",
+      "url": "https://www.dioe.pr.gov.br/apifront/portal/edicoes/publicacoes_ver_conteudo/2136056/17385",
+      "classe": "outro",
+      "pss": true,
+      "fila": null
+    },
+    {
+      "fonte": "DIOE-PR",
+      "data": "2026-10-19",
+      "titulo": "Editais 745 a 747 2026 PROGESP",
+      "orgao": "Secretaria da Ciência, Tecnologia e Ensino Superior / UNESPAR",
+      "url": "https://www.dioe.pr.gov.br/apifront/portal/edicoes/publicacoes_ver_conteudo/2136295/17385",
+      "classe": "resultado",
+      "pss": true,
+      "fila": null
+    },
+    {
+      "fonte": "DIOE-PR",
+      "data": "2026-10-19",
+      "titulo": "Editais 750 a 753 2026 PROGESP",
+      "orgao": "Secretaria da Ciência, Tecnologia e Ensino Superior / UNESPAR",
+      "url": "https://www.dioe.pr.gov.br/apifront/portal/edicoes/publicacoes_ver_conteudo/2136335/17385",
+      "classe": "resultado",
+      "pss": true,
+      "fila": null
+    },
+    {
+      "fonte": "DIOE-PR",
+      "data": "2026-10-19",
+      "titulo": "Edital 046/2026 - CPPS",
+      "orgao": "Secretaria da Ciência, Tecnologia e Ensino Superior / UNESPAR",
+      "url": "https://www.dioe.pr.gov.br/apifront/portal/edicoes/publicacoes_ver_conteudo/2136456/17385",
+      "classe": "outro",
+      "pss": true,
+      "fila": null
+    },
+    {
+      "fonte": "DIOE-PR",
+      "data": "2026-10-19",
+      "titulo": "Edital nº 255 SOLDADO PMPR 2025 - Resultado definitivo ESAFI - Puérperas",
+      "orgao": "Secretaria da Segurança Pública / PMPR",
+      "url": "https://www.dioe.pr.gov.br/apifront/portal/edicoes/publicacoes_ver_conteudo/2136451/17385",
+      "classe": "resultado",
+      "pss": false,
+      "fila": null
+    },
+    {
+      "fonte": "DIOE-PR",
+      "data": "2026-10-19",
+      "titulo": "Edital nº 256 SOLDADO PMPR 2025 - Preenchimento de Formulário e Envio de Documentos - Regular Puérperas",
+      "orgao": "Secretaria da Segurança Pública / PMPR",
+      "url": "https://www.dioe.pr.gov.br/apifront/portal/edicoes/publicacoes_ver_conteudo/2136453/17385",
+      "classe": "resultado",
+      "pss": false,
+      "fila": null
+    },
+    {
+      "fonte": "DIOE-PR",
+      "data": "2026-10-19",
+      "titulo": "Edital nº 257 SOLDADO PMPR-2025 - Convocação Para a Posse Regular Puérperas",
+      "orgao": "Secretaria da Segurança Pública / PMPR",
+      "url": "https://www.dioe.pr.gov.br/apifront/portal/edicoes/publicacoes_ver_conteudo/2136455/17385",
+      "classe": "resultado",
+      "pss": false,
+      "fila": null
+    },
+    {
+      "fonte": "DIOE-PR",
+      "data": "2026-10-19",
+      "titulo": "Edital nº 258 SOLDADO PMPR 2025 - Resultado definitivo da Investigação Social",
+      "orgao": "Secretaria da Segurança Pública / PMPR",
+      "url": "https://www.dioe.pr.gov.br/apifront/portal/edicoes/publicacoes_ver_conteudo/2136458/17385",
+      "classe": "resultado",
+      "pss": false,
+      "fila": null
+    },
+    {
+      "fonte": "DIOE-PR",
+      "data": "2026-10-19",
+      "titulo": "Edital nº 259 SOLDADO PMPR 2025 - Suspensão da Desclassificação de Candidato e Reserva de Vaga(Decisão Judicial)",
+      "orgao": "Secretaria da Segurança Pública / PMPR",
+      "url": "https://www.dioe.pr.gov.br/apifront/portal/edicoes/publicacoes_ver_conteudo/2136460/17385",
+      "classe": "resultado",
+      "pss": false,
+      "fila": null
+    },
+    {
+      "fonte": "DIOE-PR",
+      "data": "2026-10-19",
+      "titulo": "Edital nº 260 SOLDADO PMPR 2025 - Preenchimento de Formulário e Envio de Documentos",
+      "orgao": "Secretaria da Segurança Pública / PMPR",
+      "url": "https://www.dioe.pr.gov.br/apifront/portal/edicoes/publicacoes_ver_conteudo/2136462/17385",
+      "classe": "resultado",
+      "pss": false,
+      "fila": null
+    },
+    {
+      "fonte": "DIOE-PR",
+      "data": "2026-10-19",
+      "titulo": "Edital nº 176 CADETE PMPR-2025 - Suspensão De Desclassificação na (AP) - Vinicius de Almeida da Silva",
+      "orgao": "Secretaria da Segurança Pública / PMPR",
+      "url": "https://www.dioe.pr.gov.br/apifront/portal/edicoes/publicacoes_ver_conteudo/2136198/17385",
+      "classe": "resultado",
+      "pss": false,
+      "fila": null
+    },
+    {
+      "fonte": "DIOE-PR",
+      "data": "2026-10-19",
+      "titulo": "Edital nº 177 CADETE PMPR-2025 - Convocação para Avaliação Psicológica - Vinicius de Almeida da Silva",
+      "orgao": "Secretaria da Segurança Pública / PMPR",
+      "url": "https://www.dioe.pr.gov.br/apifront/portal/edicoes/publicacoes_ver_conteudo/2136200/17385",
       "classe": "resultado",
       "pss": false,
       "fila": null
