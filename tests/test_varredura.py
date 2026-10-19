@@ -324,6 +324,7 @@ def test_publicar_o_que_foi_conferido(ambiente):
     assert resumo.count(dados.site_url("/")) >= 2
     whatsapp = (pasta / "resumo-whatsapp.txt").read_text(encoding="utf-8")
     assert c["orgao"] in whatsapp and "*Novos*" in whatsapp and "##" not in whatsapp and "](" not in whatsapp
+    assert dados.site_url("/") in whatsapp.splitlines()[0] and whatsapp.startswith("*1 concurso novo nesta semana*")
     from PIL import Image
     assert Image.open(pasta / "posts" / f"post-{c['id']}.png").size == (1080, 1350)
     assert ficha["orgao"] in (pasta / "posts" / f"post-{c['id']}.txt").read_text(encoding="utf-8")
@@ -554,3 +555,30 @@ def test_schema_aceita_tabela_por_titulacao():
     assert validar_concurso(c) == []
     c["cargos"][0]["remuneracao_por_titulacao"] = [{"titulacao": "pos-doutorado", "valor": 1.0}]
     assert any("schema" in e for e in validar_concurso(c))
+
+
+def test_resumo_whatsapp_ate_10_novos_com_salario_primeiro_e_abaixo_de_4000(tmp_path):
+    from varredura.publicar import escrever_whatsapp
+    base = real()
+    novos = []
+    for i in range(30):
+        c = copy.deepcopy(base)
+        c.update(id=f"teste-{i:02d}", orgao=f"Prefeitura de Teste Número {i:02d} com Nome Bem Comprido (PR)")
+        c["inscricao"].update(inicio="2026-10-01", fim=f"2026-11-{10 + (30 - i) % 18:02d}")
+        if i % 3 == 0:
+            for k in c["cargos"]:
+                k["salario"] = None
+        novos.append(c)
+    acabando = [dict(copy.deepcopy(base), id=f"fim-{i}", orgao=f"Câmara de Encerra {i} (PR)") for i in range(40)]
+    texto = escrever_whatsapp(tmp_path, novos, acabando, novos, DIA)
+    assert len(texto) < 4000
+    linhas = texto.splitlines()
+    assert dados.site_url("/") in linhas[0] and linhas[0].startswith("*30 concursos novos nesta semana*")
+    itens = [l for l in linhas if l.startswith("• Prefeitura de Teste")]
+    assert 0 < len(itens) <= 10
+    primeiros = [n for n in novos if any(n["orgao"] in l for l in itens)]
+    assert all(any(k["salario"] for k in n["cargos"]) for n in primeiros)   # com salário antes dos sem salário
+    fins = [n["inscricao"]["fim"] for n in sorted(primeiros, key=lambda n: next(i for i, l in enumerate(itens) if n["orgao"] in l))]
+    assert fins == sorted(fins)
+    assert f"e mais {30 - len(itens)} no site" in texto
+    assert linhas[-2].startswith("Todos os concursos: ")

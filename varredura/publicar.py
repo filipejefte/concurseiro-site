@@ -70,7 +70,8 @@ def publicar_semana(pasta, por, hoje=None, posts=True):
     d.gravar_json(d.CONCURSOS, base)
     novos, retificados, acabando = _grupos(base, aprovados, r.alterados, data_varredura)
     escrever_resumo(pasta, novos, retificados, acabando, anterior, data_varredura)
-    escrever_whatsapp(pasta, novos, retificados, acabando, anterior, data_varredura)
+    abertos = [c for c in base["concursos"] if d.situacao(c, data_varredura) in ("aberto", "breve")]
+    escrever_whatsapp(pasta, novos, acabando, abertos, data_varredura)
     if posts and novos:
         escrever_posts(pasta, [publicados[c["id"]] for c in novos], data_varredura)
     return aprovados, recusados
@@ -139,18 +140,57 @@ def escrever_resumo(pasta, novos, retificados, acabando, anterior, data_varredur
     (Path(pasta) / "resumo-telegram.md").write_text("\n".join(partes) + "\n", encoding="utf-8", newline="\n")
 
 
-def escrever_whatsapp(pasta, novos, retificados, acabando, anterior, data_varredura):
-    """resumo-whatsapp.txt: curto, para colar no canal. Só *negrito*, que o WhatsApp lê; nada de outro markdown."""
+LIMITE_WHATSAPP = 4000   # caracteres: o resumo cabe numa mensagem do canal
+MAX_NOVOS_WHATSAPP = 10
+
+
+def _ordem_whatsapp(c, data_varredura):
+    """Abertos com salário primeiro, por prazo; depois abertos sem salário; depois previstos."""
+    sit = d.situacao(c, data_varredura)
+    tem_salario = any(k["salario"] is not None for k in c["cargos"])
+    grupo = 0 if sit in ("aberto", "breve") and tem_salario else 1 if sit in ("aberto", "breve") else 2
+    return (grupo, c["inscricao"]["fim"] or "9999-12-31", c["orgao"])
+
+
+def escrever_whatsapp(pasta, novos, acabando, abertos, data_varredura):
+    """resumo-whatsapp.txt, para colar no canal. Só *negrito*, que o WhatsApp lê; nada de outro markdown.
+
+    A primeira linha traz a contagem da semana e o link do site: é dela que o WhatsApp tira a prévia com a
+    imagem da marca. Depois, até 10 concursos novos (abertos com salário primeiro, por prazo), os que encerram
+    em 7 dias e o link de todos. Fica abaixo de 4.000 caracteres: o que não cabe vira "e mais N no site"."""
+    site = d.site_url("/")
+    n = len(novos)
+    topo = (f"*{n} concurso{'s' if n != 1 else ''} novo{'s' if n != 1 else ''} nesta semana* · "
+            f"{len(abertos)} com inscrição aberta: {site}")
+    lista = sorted(novos, key=lambda c: _ordem_whatsapp(c, data_varredura))
     def item(c):
         return f"• {c['orgao']}: {_salario(c)}, {_prazo(c)}\n{ficha_url(c)}"
-    partes = [f"*Concursos da semana* ({_periodo(anterior, data_varredura)})", "Federais e do Paraná", ""]
-    partes += ["*Novos*"] + ([item(c) for c in novos] or ["Nenhum concurso novo nesta semana."]) + [""]
-    if retificados:
-        partes += ["*Edital retificado*"] + [item(c) for c in retificados] + [""]
-    if acabando:
-        partes += ["*Acabando em 7 dias*"] + [f"• {c['orgao']}: até {d.data_curta(c['inscricao']['fim'])}\n{ficha_url(c)}" for c in acabando] + [""]
-    partes += [f"Todos: {d.site_url('/')}", "Inscrição e pagamento, só no site da banca."]
-    (Path(pasta) / "resumo-whatsapp.txt").write_text("\n".join(partes) + "\n", encoding="utf-8", newline="\n")
+    def item_acabando(c):
+        return f"• {c['orgao']}: até {d.data_curta(c['inscricao']['fim'])}\n{ficha_url(c)}"
+    def montar(n_novos, n_acabando):
+        partes = [topo, "Federais e do Paraná", ""]
+        if lista:
+            partes += ["*Novos*"] + [item(c) for c in lista[:n_novos]]
+            if len(lista) > n_novos:
+                partes.append(f"e mais {len(lista) - n_novos} no site")
+            partes.append("")
+        if acabando:
+            partes += ["*Encerram em até 7 dias*"] + [item_acabando(c) for c in acabando[:n_acabando]]
+            if len(acabando) > n_acabando:
+                partes.append(f"e mais {len(acabando) - n_acabando} no site")
+            partes.append("")
+        partes += [f"Todos os concursos: {site}", "Inscrição e pagamento, só no site da banca."]
+        return "\n".join(partes) + "\n"
+    n_novos, n_acabando = min(MAX_NOVOS_WHATSAPP, len(lista)), len(acabando)
+    texto = montar(n_novos, n_acabando)
+    while len(texto) >= LIMITE_WHATSAPP and (n_acabando or n_novos):
+        if n_acabando > 5 or not n_novos:
+            n_acabando -= 1
+        else:
+            n_novos -= 1
+        texto = montar(n_novos, n_acabando)
+    (Path(pasta) / "resumo-whatsapp.txt").write_text(texto, encoding="utf-8", newline="\n")
+    return texto
 
 
 def escrever_posts(pasta, concursos, data_varredura):
