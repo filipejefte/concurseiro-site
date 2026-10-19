@@ -222,6 +222,39 @@ def test_zip_do_inlabs():
     assert ato.url.startswith("https://pesquisa.in.gov.br/") and "abertura das inscrições" in ato.texto
 
 
+def _zip_com_uma_materia(dia):
+    import io
+    import zipfile
+
+    xml = (f'<xml><article pubDate="{dia:%d/%m/%Y}" artCategory="Ministério X" pdfPage="https://www.in.gov.br/x">'
+           '<body><Identifica>EDITAL Nº 1</Identifica><Texto>concurso público</Texto></body></article></xml>')
+    buffer = io.BytesIO()
+    with zipfile.ZipFile(buffer, "w") as z:
+        z.writestr("materia.xml", xml)
+    return buffer.getvalue()
+
+
+def test_dou_dias_com_404_nao_param_a_coleta(monkeypatch):
+    from datetime import date
+    from varredura.fontes.dou_inlabs import DouInlabs
+
+    # 16 a 19/06 (terça a sexta) já saíram dos 4 meses do INLABS: 404. Na segunda, 22/06, há edição.
+    def zip_falso(self, url, dia):
+        return (_zip_com_uma_materia(dia), None) if dia >= date(2026, 6, 22) and "DO1.zip" in url else (None, "404")
+    monkeypatch.setattr(DouInlabs, "_zip", zip_falso)
+    atos = list(DouInlabs(cliente=None).listar_atos(date(2026, 6, 16), date(2026, 6, 22)))
+    assert [a.data for a in atos] == ["2026-06-22"]
+
+
+def test_dou_login_invalido_para_em_3_dias_uteis(monkeypatch):
+    from datetime import date
+    from varredura.fontes.dou_inlabs import DouInlabs
+
+    monkeypatch.setattr(DouInlabs, "_zip", lambda self, url, dia: (None, "resposta sem ZIP"))
+    with pytest.raises(SystemExit, match="3 dias úteis"):
+        list(DouInlabs(cliente=None).listar_atos(date(2026, 10, 13), date(2026, 10, 19)))
+
+
 def test_cliente_tenta_de_novo_em_falha_de_rede(tmp_path, monkeypatch):
     import urllib.error
     from varredura.fontes.base import Cliente

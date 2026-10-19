@@ -121,7 +121,12 @@ class DouInlabs(Fonte):
                 yield from atos
             print(f"DOU {dia}: {n} matérias" + (f" (sem arquivo: {'; '.join(avisos)})" if avisos else ""), flush=True)
             if dia.weekday() < 5:
-                uteis_sem_arquivo = 0 if n else uteis_sem_arquivo + 1
+                # Login inválido aparece como página no lugar do ZIP. 404 é dia sem edição (feriado) ou que já
+                # saiu dos 4 meses do INLABS: não conta, senão a coleta inicial para logo nos primeiros dias.
+                if n:
+                    uteis_sem_arquivo = 0
+                elif avisos:
+                    uteis_sem_arquivo += 1
                 if uteis_sem_arquivo >= 3:
                     raise SystemExit("O INLABS não entregou arquivo em 3 dias úteis seguidos. Confira INLABS_EMAIL e "
                                      "INLABS_SENHA e se o INLABS está no ar. " + "; ".join(avisos))

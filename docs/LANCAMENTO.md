@@ -148,6 +148,8 @@ Os e-mails semanais saem pelo próprio Kit (**Send** → **Broadcasts**), coland
 
 Se for rodar a varredura numa sessão do Claude Code na nuvem (e não no notebook), libere na configuração de rede do ambiente os domínios `inlabs.in.gov.br`, `www.in.gov.br`, `www.diariomunicipal.com.br`, `www-storage.voxtecnologia.com.br` (PDFs da AMP) e `www.dioe.pr.gov.br`. Passo a passo: https://code.claude.com/docs/en/cloud-environments#network-access. No notebook não precisa.
 
+O INLABS prende a sessão ao IP de quem fez o login. Na nuvem, o proxy de saída troca de IP a cada conexão: o login entra, mas o pedido seguinte cai na página de login (`acessar.php`) e a coleta do DOU para com "não entregou arquivo em 3 dias úteis seguidos". Em 19/10 isso foi contornado fazendo o login e os downloads numa conexão só, que enchem o cache (`.cache/inlabs.in.gov.br/`), e rodando a coleta normal depois, que lê os ZIPs do disco. No notebook o IP é um só e nada disso é preciso.
+
 ---
 
 ## O que fica de graça e por quê
