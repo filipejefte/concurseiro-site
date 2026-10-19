@@ -135,15 +135,24 @@ def texto_do_html(html):
     return "\n".join(l for l in linhas if l)
 
 
+def juntar_palavras_soltas(texto):
+    """PDF feito no Google Docs sai do pypdf com uma palavra por linha: aí as linhas viram um texto corrido."""
+    linhas = [l.strip() for l in texto.splitlines() if l.strip()]
+    if len(linhas) > 20 and sum(map(len, linhas)) / len(linhas) < 12:
+        return re.sub(r" ([,.;:)])", r"\1", " ".join(linhas))
+    return "\n".join(linhas)
+
+
 def texto_da_materia(corpo):
     """Texto de uma matéria: HTML ou PDF (o portal devolve o arquivo do jeito que o órgão publicou)."""
     if corpo.lstrip()[:5] == b"%PDF-":
         from pypdf import PdfReader
         from pypdf.errors import PyPdfError
         try:
-            return "\n".join((pagina.extract_text() or "") for pagina in PdfReader(BytesIO(corpo)).pages).strip()
+            texto = "\n".join((pagina.extract_text() or "") for pagina in PdfReader(BytesIO(corpo)).pages)
         except (PyPdfError, ValueError):
             return ""
+        return juntar_palavras_soltas(texto)
     return texto_do_html(corpo.decode("utf-8", "replace"))
 
 

@@ -358,6 +358,19 @@ def test_texto_da_materia_do_dioe():
     ]
 
 
+def test_pdf_com_uma_palavra_por_linha_vira_texto_corrido():
+    from varredura.fontes.diario_estado_pr import juntar_palavras_soltas
+
+    # Começo real do Edital 01/2026 da PCPR no DIOE-PR (PDF do Google Docs), como o pypdf devolve.
+    solto = "CONCURSO\n \nPÚBLICO\n \nDA\n \nPOLÍCIA\n \nCIVIL\n \nDO\n \nPARANÁ\n \n \n \nEDITAL\n \nN.º\n \n01/2026\n \n" \
+            "A\n \nPOLÍCIA\n \nCIVIL\n \nDO\n \nESTADO\n \nDO\n \nPARANÁ\n \n-\n \nPCPR\n,\n \npor\n \nseu\n \nDelegado-Geral\n"
+    assert juntar_palavras_soltas(solto) == ("CONCURSO PÚBLICO DA POLÍCIA CIVIL DO PARANÁ EDITAL N.º 01/2026 "
+                                             "A POLÍCIA CIVIL DO ESTADO DO PARANÁ - PCPR, por seu Delegado-Geral")
+    # Texto normal (linhas compridas) fica com as linhas como estão.
+    normal = "EDITAL Nº 246/2026 - DRH/SEAP\nO CHEFE DO DEPARTAMENTO DE RECURSOS HUMANOS E PREVIDÊNCIA\n" * 15
+    assert juntar_palavras_soltas(normal) == normal.strip()
+
+
 def test_dioe_le_o_suplemento_inteiro_e_so_candidatas_do_executivo():
     from datetime import date
 
