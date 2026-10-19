@@ -1,0 +1,142 @@
+{
+  "ato": "dou-2026-09-21-entidades-de-fiscalizacao-do-exercicio-d-5c2e19f6.md",
+  "atos_extras": [],
+  "trechos": {
+    "salario": "não consta no ato (o aviso lista os cargos sem vagas nem salários; o edital normativo está em www.quadrix.org.br)",
+    "inscricao.inicio": "não consta no ato (o aviso só traz o fim das inscrições)",
+    "inscricao.fim": "9. Será admitida a inscrição exclusivamente via internet, no endereço eletrônico http://www.quadrix.org.br, até às 23 horas do dia 21 de outubro de 2026, observado o horário oficial de Brasília/DF.",
+    "prova_objetiva": "11. As provas objetivas e discursivas serão realizadas na data de 29 de novembro de 2026 (domingo) nas cidades de Campo Grande/MS, Cuiabá/MT e São Paulo/SP, no turno da tarde, para todos os cargos.",
+    "taxa": "10. Os valores das taxas de inscrição são de R$ 85,00, para os cargos de nível médio; e R$ 100,00, para os cargos de nível superior.",
+    "banca": "O concurso público será realizado sob a responsabilidade do Instituto Quadrix",
+    "cidade": "3. As fases do concurso público serão realizadas nas cidades de Campo Grande/MS, Cuiabá/MT e São Paulo/SP. [...] São Paulo, 18 de setembro de 2026.",
+    "edital": "EDITAL Nº 1, DE 18 DE SETEMBRO DE 2026 CONCURSO PÚBLICO PARA PROVIMENTO DE VAGA E FORMAÇÃO DE CADASTRO DE RESERVA PARA CARGOS DE NÍVEL MÉDIO E NÍVEL SUPERIOR"
+  },
+  "concurso": {
+    "id": "crbio-01-2026-edital-01",
+    "orgao": "Conselho Regional de Biologia da 1ª Região (CRBio-01)",
+    "esfera": "federal",
+    "uf": "SP",
+    "municipio_ibge": null,
+    "cidade": "São Paulo",
+    "nacional": false,
+    "abrangencia": null,
+    "area": "Administrativa",
+    "banca": {
+      "nome": "Instituto Quadrix",
+      "url": "https://www.quadrix.org.br"
+    },
+    "inscricao": {
+      "inicio": null,
+      "fim": "2026-10-21",
+      "url": "https://www.quadrix.org.br"
+    },
+    "isencao_ate": null,
+    "prova_objetiva": "2026-11-29",
+    "local_prova": "Campo Grande (MS), Cuiabá (MT) e São Paulo (SP), no turno da tarde",
+    "taxa": {
+      "min": 85.0,
+      "max": 100.0
+    },
+    "isencao_regras": null,
+    "regime": "CLT",
+    "beneficios": [],
+    "o_que_levar": null,
+    "cargos": [
+      {
+        "nome": "Técnico - Agente Fiscal",
+        "vagas": null,
+        "cadastro_reserva": false,
+        "salario": null,
+        "escolaridade": null,
+        "requisitos": null,
+        "jornada_horas": null,
+        "materias": []
+      },
+      {
+        "nome": "Técnico - Assistente Administrativo",
+        "vagas": null,
+        "cadastro_reserva": false,
+        "salario": null,
+        "escolaridade": null,
+        "requisitos": null,
+        "jornada_horas": null,
+        "materias": []
+      },
+      {
+        "nome": "Analista - Advogado",
+        "vagas": null,
+        "cadastro_reserva": false,
+        "salario": null,
+        "escolaridade": null,
+        "requisitos": null,
+        "jornada_horas": null,
+        "materias": []
+      },
+      {
+        "nome": "Analista - Analista de Tecnologia da Informação",
+        "vagas": null,
+        "cadastro_reserva": false,
+        "salario": null,
+        "escolaridade": null,
+        "requisitos": null,
+        "jornada_horas": null,
+        "materias": []
+      },
+      {
+        "nome": "Analista - Contador",
+        "vagas": null,
+        "cadastro_reserva": false,
+        "salario": null,
+        "escolaridade": null,
+        "requisitos": null,
+        "jornada_horas": null,
+        "materias": []
+      },
+      {
+        "nome": "Analista - Fiscal Biólogo",
+        "vagas": null,
+        "cadastro_reserva": false,
+        "salario": null,
+        "escolaridade": null,
+        "requisitos": null,
+        "jornada_horas": null,
+        "materias": []
+      },
+      {
+        "nome": "Especialista - Arquivista",
+        "vagas": null,
+        "cadastro_reserva": false,
+        "salario": null,
+        "escolaridade": null,
+        "requisitos": null,
+        "jornada_horas": null,
+        "materias": []
+      },
+      {
+        "nome": "Especialista - Recursos Humanos",
+        "vagas": null,
+        "cadastro_reserva": false,
+        "salario": null,
+        "escolaridade": null,
+        "requisitos": null,
+        "jornada_horas": null,
+        "materias": []
+      }
+    ],
+    "documentos": [
+      {
+        "tipo": "edital",
+        "titulo": "Edital nº 1, de 18 de setembro de 2026 – Concurso Público (extrato)",
+        "numero": "1/2026",
+        "url": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=21/09/2026&jornal=530&pagina=213",
+        "publicado_em": "2026-09-21",
+        "fonte": "DOU",
+        "resumo": null
+      }
+    ],
+    "ficticio": false,
+    "conferencia": null,
+    "primeira_varredura": null,
+    "ultima_alteracao": null
+  }
+}

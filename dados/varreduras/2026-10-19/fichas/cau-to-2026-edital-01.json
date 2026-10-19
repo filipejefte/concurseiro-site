@@ -1,0 +1,102 @@
+{
+  "ato": "dou-2026-10-06-entidades-de-fiscalizacao-do-exercicio-d-fec4884f.md",
+  "atos_extras": [],
+  "trechos": {
+    "salario": "não consta no ato (o aviso lista os cargos sem vagas nem salários; o edital normativo está em www.quadrix.org.br)",
+    "inscricao.inicio": "não consta no ato (o aviso só traz o fim das inscrições)",
+    "inscricao.fim": "9. Será admitida a inscrição exclusivamente via internet, no endereço eletrônico http://www.quadrix.org.br, até às 23 horas do dia 09 de novembro de 2026, observado o horário oficial de Brasília/DF.",
+    "prova_objetiva": "11. As provas objetivas e discursivas serão realizadas na data de 13 de dezembro de 2026 (domingo) na cidade de Palmas/TO, no turno da tarde, para todos os cargos.",
+    "taxa": "10. Os valores das taxas de inscrição são de R$ 64,00, para os cargos de nível médio; e R$ 66,00, para os cargos de nível superior.",
+    "banca": "O concurso público será realizado sob a responsabilidade do Instituto Quadrix",
+    "cidade": "3. As fases do concurso público serão realizadas na cidade de Palmas/TO.",
+    "edital": "EDITAL Nº 1, DE 5 DE OUTUBRO DE 2026 CONCURSO PÚBLICO PARA PROVIMENTO DE VAGA E FORMAÇÃO DE CADASTRO DE RESERVA PARA CARGOS DE NÍVEL MÉDIO E NÍVEL SUPERIOR"
+  },
+  "concurso": {
+    "id": "cau-to-2026-edital-01",
+    "orgao": "Conselho de Arquitetura e Urbanismo do Tocantins (CAU/TO)",
+    "esfera": "federal",
+    "uf": "TO",
+    "municipio_ibge": null,
+    "cidade": "Palmas",
+    "nacional": false,
+    "abrangencia": null,
+    "area": "Administrativa",
+    "banca": {
+      "nome": "Instituto Quadrix",
+      "url": "https://www.quadrix.org.br"
+    },
+    "inscricao": {
+      "inicio": null,
+      "fim": "2026-11-09",
+      "url": "https://www.quadrix.org.br"
+    },
+    "isencao_ate": null,
+    "prova_objetiva": "2026-12-13",
+    "local_prova": "Palmas (TO), no turno da tarde",
+    "taxa": {
+      "min": 64.0,
+      "max": 66.0
+    },
+    "isencao_regras": null,
+    "regime": "CLT",
+    "beneficios": [],
+    "o_que_levar": null,
+    "cargos": [
+      {
+        "nome": "Assistente Administrativo",
+        "vagas": null,
+        "cadastro_reserva": false,
+        "salario": null,
+        "escolaridade": null,
+        "requisitos": null,
+        "jornada_horas": null,
+        "materias": []
+      },
+      {
+        "nome": "Auxiliar de Fiscalização",
+        "vagas": null,
+        "cadastro_reserva": false,
+        "salario": null,
+        "escolaridade": null,
+        "requisitos": null,
+        "jornada_horas": null,
+        "materias": []
+      },
+      {
+        "nome": "Agente de Fiscalização",
+        "vagas": null,
+        "cadastro_reserva": false,
+        "salario": null,
+        "escolaridade": null,
+        "requisitos": null,
+        "jornada_horas": null,
+        "materias": []
+      },
+      {
+        "nome": "Analista de Administração e Finanças",
+        "vagas": null,
+        "cadastro_reserva": false,
+        "salario": null,
+        "escolaridade": null,
+        "requisitos": null,
+        "jornada_horas": null,
+        "materias": []
+      }
+    ],
+    "documentos": [
+      {
+        "tipo": "edital",
+        "titulo": "Edital nº 1, de 5 de outubro de 2026 – Concurso Público (extrato)",
+        "numero": "1/2026",
+        "url": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=06/10/2026&jornal=530&pagina=136",
+        "publicado_em": "2026-10-06",
+        "fonte": "DOU",
+        "resumo": null
+      }
+    ],
+    "ficticio": false,
+    "conferencia": null,
+    "primeira_varredura": null,
+    "ultima_alteracao": null
+  }
+}

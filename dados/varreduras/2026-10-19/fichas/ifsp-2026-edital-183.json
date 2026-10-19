@@ -1,0 +1,452 @@
+{
+  "ato": "dou-2026-09-29-ministerio-da-educacao-instituto-federal-811bcc08.md",
+  "atos_extras": [
+    "dou-2026-10-05-ministerio-da-educacao-instituto-federal-beacc093.md",
+    "dou-2026-09-29-ministerio-da-educacao-instituto-federal-811bcc08-extra-1.md",
+    "dou-2026-10-05-ministerio-da-educacao-instituto-federal-beacc093-extra-1.md"
+  ],
+  "trechos": {
+    "salario": "Regime Classe/Nível Vencimento (R$) RETRIBUIÇÃO POR TITULAÇÃO Aperfeiçoamento Especialização Mestrado Doutorado DE A1 6.397,19 639,72 1.279,44 3.198,59 7.356,77 DE = Dedicação exclusive",
+    "inscricao.inicio": "6.1. Será admitida a inscrição somente via internet, no sítio eletrônico https://concursopublico.ifsp.edu.br, solicitada no período de 06/10/2026 a 17/11/2026.",
+    "inscricao.fim": "6.1. Será admitida a inscrição somente via internet, no sítio eletrônico https://concursopublico.ifsp.edu.br, solicitada no período de 06/10/2026 a 17/11/2026.",
+    "prova_objetiva": "Data provável da prova objetiva 13/12/2026",
+    "taxa": "6.5. O candidato deverá efetuar o pagamento da taxa de inscrição, por meio de Guia de Recolhimento da União (GRU SIMPLES), no valor de R$200,00 (duzentos reais).",
+    "banca": "1.1. O concurso público será regido por este edital e conduzido pela Comissão Organizadora de Concurso do IFSP, designada pela Portaria IFSP nº 5.830, de 16 de setembro de 2026",
+    "cidade": "situada no endereço: Rua Pedro Vicente, 625 - Canindé - São Paulo - SP - Brasil - CEP: 01109-010. [...] 3.2. As vagas ofertadas neste edital serão vinculadas aos campi do IFSP.",
+    "edital": "EDITAL Nº 183, DE 28 DE SETEMBRO DE 2026 CONCURSO PÚBLICO PARA PROFESSOR DE MAGISTÉRIO DO ENSINO BÁSICO, TÉCNICO E TECNOLÓGICO"
+  },
+  "concurso": {
+    "id": "ifsp-2026-edital-183",
+    "ficticio": false,
+    "orgao": "Instituto Federal de Educação, Ciência e Tecnologia de São Paulo (IFSP)",
+    "esfera": "federal",
+    "uf": "SP",
+    "municipio_ibge": null,
+    "cidade": "São Paulo",
+    "nacional": false,
+    "abrangencia": null,
+    "area": "Educação",
+    "banca": {
+      "nome": "IFSP (Comissão Organizadora de Concurso)",
+      "url": "https://concursopublico.ifsp.edu.br"
+    },
+    "inscricao": {
+      "inicio": "2026-10-06",
+      "fim": "2026-11-17",
+      "url": "https://concursopublico.ifsp.edu.br"
+    },
+    "isencao_ate": "2026-10-08",
+    "prova_objetiva": "2026-12-13",
+    "local_prova": null,
+    "taxa": {
+      "min": 200.0,
+      "max": 200.0
+    },
+    "isencao_regras": "Isenção para inscritos no CadÚnico com renda familiar per capita de até meio salário mínimo e doadores de medula óssea (Lei 13.656/2018); pedido de 06/10 a 08/10/2026, no formulário de inscrição",
+    "regime": "Estatutário (Lei 8.112/1990)",
+    "beneficios": [
+      {
+        "nome": "Auxílio-alimentação",
+        "valor": 1192.0
+      },
+      {
+        "nome": "Auxílio-transporte",
+        "valor": null
+      },
+      {
+        "nome": "Auxílio pré-escolar",
+        "valor": null
+      },
+      {
+        "nome": "Auxílio para saúde suplementar",
+        "valor": null
+      }
+    ],
+    "o_que_levar": "Comprovante de inscrição e de pagamento da taxa",
+    "cargos": [
+      {
+        "nome": "Professor EBTT – Artes Cênicas (Campus São José do Rio Preto)",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 6397.19,
+        "escolaridade": "Superior",
+        "requisitos": "Campus São José do Rio Preto; 40 h com dedicação exclusiva; licenciatura em Artes Cênicas, Teatro, Educação Artística (habilitação em Artes Cênicas ou Teatro) ou Arte-Teatro; titulação mínima: graduação (a remuneração sobe com a retribuição por titulação: aperfeiçoamento R$ 639,72, especialização R$ 1.279,44, mestrado R$ 3.198,59, doutorado R$ 7.356,77); vaga ampla concorrência",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor EBTT – Design Gráfico (Campus Jardim Ângela)",
+        "vagas": 2,
+        "cadastro_reserva": false,
+        "salario": 6397.19,
+        "escolaridade": "Superior",
+        "requisitos": "Campus Jardim Ângela; 40 h com dedicação exclusiva; graduação (bacharelado ou tecnologia) em Design, Design Gráfico, Desenho Industrial (Programação Visual ou Comunicação Visual) ou Comunicação Visual; titulação mínima: graduação (a remuneração sobe com a retribuição por titulação: aperfeiçoamento R$ 639,72, especialização R$ 1.279,44, mestrado R$ 3.198,59, doutorado R$ 7.356,77); vagas: 1 pessoas pretas e pardas e 1 ampla concorrência",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor EBTT – Design Gráfico (Campus São Miguel Paulista)",
+        "vagas": 2,
+        "cadastro_reserva": false,
+        "salario": 6397.19,
+        "escolaridade": "Superior",
+        "requisitos": "Campus São Miguel Paulista; 40 h com dedicação exclusiva; graduação (bacharelado ou tecnologia) em Design, Design Gráfico, Desenho Industrial (Programação Visual ou Comunicação Visual) ou Comunicação Visual; titulação mínima: graduação (a remuneração sobe com a retribuição por titulação: aperfeiçoamento R$ 639,72, especialização R$ 1.279,44, mestrado R$ 3.198,59, doutorado R$ 7.356,77); vagas: 1 pessoas pretas e pardas e 1 ampla concorrência",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor EBTT – Educação Especial (Campus Bauru)",
+        "vagas": 2,
+        "cadastro_reserva": false,
+        "salario": 6397.19,
+        "escolaridade": "Superior",
+        "requisitos": "Campus Bauru; 40 h com dedicação exclusiva; licenciatura em Educação Especial ou em Educação Especial Inclusiva; titulação mínima: graduação (a remuneração sobe com a retribuição por titulação: aperfeiçoamento R$ 639,72, especialização R$ 1.279,44, mestrado R$ 3.198,59, doutorado R$ 7.356,77); vagas: 1 pessoas pretas e pardas e 1 ampla concorrência",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor EBTT – Eletrônica (Campus Avaré)",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 6397.19,
+        "escolaridade": "Superior",
+        "requisitos": "Campus Avaré; 40 h com dedicação exclusiva; bacharelado em Engenharia Elétrica ou Eletrônica (inclusive modalidades Eletrônica e Eletrotécnica), Engenharia de Telecomunicações, Engenharia de Controle e Automação, ou tecnologia em Eletrônica, Eletroeletrônica ou Automação Industrial; titulação mínima: graduação (a remuneração sobe com a retribuição por titulação: aperfeiçoamento R$ 639,72, especialização R$ 1.279,44, mestrado R$ 3.198,59, doutorado R$ 7.356,77); vaga ampla concorrência",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor EBTT – Eletrônica (Campus Campinas)",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 6397.19,
+        "escolaridade": "Superior",
+        "requisitos": "Campus Campinas; 40 h com dedicação exclusiva; bacharelado em Engenharia Elétrica ou Eletrônica (inclusive modalidades Eletrônica e Eletrotécnica), Engenharia de Telecomunicações, Engenharia de Controle e Automação, ou tecnologia em Eletrônica, Eletroeletrônica ou Automação Industrial; titulação mínima: graduação (a remuneração sobe com a retribuição por titulação: aperfeiçoamento R$ 639,72, especialização R$ 1.279,44, mestrado R$ 3.198,59, doutorado R$ 7.356,77); vaga ampla concorrência",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor EBTT – Eletrônica (Campus Catanduva)",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 6397.19,
+        "escolaridade": "Superior",
+        "requisitos": "Campus Catanduva; 40 h com dedicação exclusiva; bacharelado em Engenharia Elétrica ou Eletrônica (inclusive modalidades Eletrônica e Eletrotécnica), Engenharia de Telecomunicações, Engenharia de Controle e Automação, ou tecnologia em Eletrônica, Eletroeletrônica ou Automação Industrial; titulação mínima: graduação (a remuneração sobe com a retribuição por titulação: aperfeiçoamento R$ 639,72, especialização R$ 1.279,44, mestrado R$ 3.198,59, doutorado R$ 7.356,77); vaga ampla concorrência",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor EBTT – Eletrônica (Campus Franco da Rocha)",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 6397.19,
+        "escolaridade": "Superior",
+        "requisitos": "Campus Franco da Rocha; 40 h com dedicação exclusiva; bacharelado em Engenharia Elétrica ou Eletrônica (inclusive modalidades Eletrônica e Eletrotécnica), Engenharia de Telecomunicações, Engenharia de Controle e Automação, ou tecnologia em Eletrônica, Eletroeletrônica ou Automação Industrial; titulação mínima: graduação (a remuneração sobe com a retribuição por titulação: aperfeiçoamento R$ 639,72, especialização R$ 1.279,44, mestrado R$ 3.198,59, doutorado R$ 7.356,77); vaga ampla concorrência",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor EBTT – Eletrônica (Campus São Paulo)",
+        "vagas": 2,
+        "cadastro_reserva": false,
+        "salario": 6397.19,
+        "escolaridade": "Superior",
+        "requisitos": "Campus São Paulo; 40 h com dedicação exclusiva; bacharelado em Engenharia Elétrica ou Eletrônica (inclusive modalidades Eletrônica e Eletrotécnica), Engenharia de Telecomunicações, Engenharia de Controle e Automação, ou tecnologia em Eletrônica, Eletroeletrônica ou Automação Industrial; titulação mínima: graduação (a remuneração sobe com a retribuição por titulação: aperfeiçoamento R$ 639,72, especialização R$ 1.279,44, mestrado R$ 3.198,59, doutorado R$ 7.356,77); vagas: 1 pessoa com deficiência e 1 pessoas pretas e pardas",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor EBTT – Energias (Campus Matão)",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 6397.19,
+        "escolaridade": "Superior",
+        "requisitos": "Campus Matão; 40 h com dedicação exclusiva; bacharelado em Engenharia de Energias, Engenharia de Energias Renováveis ou Engenharia Elétrica, ou tecnologia em Energias Renováveis; titulação mínima: graduação (a remuneração sobe com a retribuição por titulação: aperfeiçoamento R$ 639,72, especialização R$ 1.279,44, mestrado R$ 3.198,59, doutorado R$ 7.356,77); vaga ampla concorrência",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor EBTT – Engenharia de Produção (Campus Pirituba)",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 6397.19,
+        "escolaridade": "Superior",
+        "requisitos": "Campus Pirituba; 40 h com dedicação exclusiva; bacharelado em Engenharia de Produção; titulação mínima: graduação (a remuneração sobe com a retribuição por titulação: aperfeiçoamento R$ 639,72, especialização R$ 1.279,44, mestrado R$ 3.198,59, doutorado R$ 7.356,77); vaga ampla concorrência",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor EBTT – Informática (Campus Barretos)",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 6397.19,
+        "escolaridade": "Superior",
+        "requisitos": "Campus Barretos; 40 h com dedicação exclusiva; bacharelado, licenciatura ou tecnologia na área de computação e informática (lista completa no Quadro 1 retificado pelo Edital 188/2026); titulação mínima: graduação (a remuneração sobe com a retribuição por titulação: aperfeiçoamento R$ 639,72, especialização R$ 1.279,44, mestrado R$ 3.198,59, doutorado R$ 7.356,77); vaga ampla concorrência",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor EBTT – Informática (Campus Boituva)",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 6397.19,
+        "escolaridade": "Superior",
+        "requisitos": "Campus Boituva; 40 h com dedicação exclusiva; bacharelado, licenciatura ou tecnologia na área de computação e informática (lista completa no Quadro 1 retificado pelo Edital 188/2026); titulação mínima: graduação (a remuneração sobe com a retribuição por titulação: aperfeiçoamento R$ 639,72, especialização R$ 1.279,44, mestrado R$ 3.198,59, doutorado R$ 7.356,77); vaga ampla concorrência",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor EBTT – Informática (Campus Capivari)",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 6397.19,
+        "escolaridade": "Superior",
+        "requisitos": "Campus Capivari; 40 h com dedicação exclusiva; bacharelado, licenciatura ou tecnologia na área de computação e informática (lista completa no Quadro 1 retificado pelo Edital 188/2026); titulação mínima: graduação (a remuneração sobe com a retribuição por titulação: aperfeiçoamento R$ 639,72, especialização R$ 1.279,44, mestrado R$ 3.198,59, doutorado R$ 7.356,77); vaga ampla concorrência",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor EBTT – Informática (Campus Cidade Tiradentes)",
+        "vagas": 2,
+        "cadastro_reserva": false,
+        "salario": 6397.19,
+        "escolaridade": "Superior",
+        "requisitos": "Campus Cidade Tiradentes; 40 h com dedicação exclusiva; bacharelado, licenciatura ou tecnologia na área de computação e informática (lista completa no Quadro 1 retificado pelo Edital 188/2026); titulação mínima: graduação (a remuneração sobe com a retribuição por titulação: aperfeiçoamento R$ 639,72, especialização R$ 1.279,44, mestrado R$ 3.198,59, doutorado R$ 7.356,77); vagas: 1 pessoa com deficiência e 1 pessoas pretas e pardas",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor EBTT – Informática (Campus Cubatão)",
+        "vagas": 2,
+        "cadastro_reserva": false,
+        "salario": 6397.19,
+        "escolaridade": "Superior",
+        "requisitos": "Campus Cubatão; 40 h com dedicação exclusiva; bacharelado, licenciatura ou tecnologia na área de computação e informática (lista completa no Quadro 1 retificado pelo Edital 188/2026); titulação mínima: graduação (a remuneração sobe com a retribuição por titulação: aperfeiçoamento R$ 639,72, especialização R$ 1.279,44, mestrado R$ 3.198,59, doutorado R$ 7.356,77); vagas: 1 pessoas pretas e pardas e 1 ampla concorrência",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor EBTT – Informática (Campus Itaquaquecetuba)",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 6397.19,
+        "escolaridade": "Superior",
+        "requisitos": "Campus Itaquaquecetuba; 40 h com dedicação exclusiva; bacharelado, licenciatura ou tecnologia na área de computação e informática (lista completa no Quadro 1 retificado pelo Edital 188/2026); titulação mínima: graduação (a remuneração sobe com a retribuição por titulação: aperfeiçoamento R$ 639,72, especialização R$ 1.279,44, mestrado R$ 3.198,59, doutorado R$ 7.356,77); vaga ampla concorrência",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor EBTT – Informática (Campus Jaçanã)",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 6397.19,
+        "escolaridade": "Superior",
+        "requisitos": "Campus Jaçanã; 40 h com dedicação exclusiva; bacharelado, licenciatura ou tecnologia na área de computação e informática (lista completa no Quadro 1 retificado pelo Edital 188/2026); titulação mínima: graduação (a remuneração sobe com a retribuição por titulação: aperfeiçoamento R$ 639,72, especialização R$ 1.279,44, mestrado R$ 3.198,59, doutorado R$ 7.356,77); vaga ampla concorrência",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor EBTT – Informática (Campus Miracatu)",
+        "vagas": 2,
+        "cadastro_reserva": false,
+        "salario": 6397.19,
+        "escolaridade": "Superior",
+        "requisitos": "Campus Miracatu; 40 h com dedicação exclusiva; bacharelado, licenciatura ou tecnologia na área de computação e informática (lista completa no Quadro 1 retificado pelo Edital 188/2026); titulação mínima: graduação (a remuneração sobe com a retribuição por titulação: aperfeiçoamento R$ 639,72, especialização R$ 1.279,44, mestrado R$ 3.198,59, doutorado R$ 7.356,77); vagas: 1 pessoas pretas e pardas e 1 ampla concorrência",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor EBTT – Informática (Campus Pirituba)",
+        "vagas": 2,
+        "cadastro_reserva": false,
+        "salario": 6397.19,
+        "escolaridade": "Superior",
+        "requisitos": "Campus Pirituba; 40 h com dedicação exclusiva; bacharelado, licenciatura ou tecnologia na área de computação e informática (lista completa no Quadro 1 retificado pelo Edital 188/2026); titulação mínima: graduação (a remuneração sobe com a retribuição por titulação: aperfeiçoamento R$ 639,72, especialização R$ 1.279,44, mestrado R$ 3.198,59, doutorado R$ 7.356,77); vagas: 1 pessoas pretas e pardas e 1 ampla concorrência",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor EBTT – Informática (Campus Santos)",
+        "vagas": 2,
+        "cadastro_reserva": false,
+        "salario": 6397.19,
+        "escolaridade": "Superior",
+        "requisitos": "Campus Santos; 40 h com dedicação exclusiva; bacharelado, licenciatura ou tecnologia na área de computação e informática (lista completa no Quadro 1 retificado pelo Edital 188/2026); titulação mínima: graduação (a remuneração sobe com a retribuição por titulação: aperfeiçoamento R$ 639,72, especialização R$ 1.279,44, mestrado R$ 3.198,59, doutorado R$ 7.356,77); vagas: 1 pessoas pretas e pardas e 1 ampla concorrência",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor EBTT – Informática (Campus São Miguel Paulista)",
+        "vagas": 2,
+        "cadastro_reserva": false,
+        "salario": 6397.19,
+        "escolaridade": "Superior",
+        "requisitos": "Campus São Miguel Paulista; 40 h com dedicação exclusiva; bacharelado, licenciatura ou tecnologia na área de computação e informática (lista completa no Quadro 1 retificado pelo Edital 188/2026); titulação mínima: graduação (a remuneração sobe com a retribuição por titulação: aperfeiçoamento R$ 639,72, especialização R$ 1.279,44, mestrado R$ 3.198,59, doutorado R$ 7.356,77); vagas: 1 pessoas pretas e pardas e 1 ampla concorrência",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor EBTT – Informática (Campus São Paulo)",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 6397.19,
+        "escolaridade": "Superior",
+        "requisitos": "Campus São Paulo; 40 h com dedicação exclusiva; bacharelado, licenciatura ou tecnologia na área de computação e informática (lista completa no Quadro 1 retificado pelo Edital 188/2026); titulação mínima: graduação (a remuneração sobe com a retribuição por titulação: aperfeiçoamento R$ 639,72, especialização R$ 1.279,44, mestrado R$ 3.198,59, doutorado R$ 7.356,77); vaga ampla concorrência",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor EBTT – Informática (Campus São Vicente)",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 6397.19,
+        "escolaridade": "Superior",
+        "requisitos": "Campus São Vicente; 40 h com dedicação exclusiva; bacharelado, licenciatura ou tecnologia na área de computação e informática (lista completa no Quadro 1 retificado pelo Edital 188/2026); titulação mínima: graduação (a remuneração sobe com a retribuição por titulação: aperfeiçoamento R$ 639,72, especialização R$ 1.279,44, mestrado R$ 3.198,59, doutorado R$ 7.356,77); vaga ampla concorrência",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor EBTT – Pedagogia (Campus Avaré)",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 6397.19,
+        "escolaridade": "Superior",
+        "requisitos": "Campus Avaré; 40 h com dedicação exclusiva; licenciatura em Pedagogia; titulação mínima: graduação (a remuneração sobe com a retribuição por titulação: aperfeiçoamento R$ 639,72, especialização R$ 1.279,44, mestrado R$ 3.198,59, doutorado R$ 7.356,77); vaga reservada a pessoas pretas e pardas",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor EBTT – Pedagogia (Campus Caraguatatuba)",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 6397.19,
+        "escolaridade": "Superior",
+        "requisitos": "Campus Caraguatatuba; 40 h com dedicação exclusiva; licenciatura em Pedagogia; titulação mínima: graduação (a remuneração sobe com a retribuição por titulação: aperfeiçoamento R$ 639,72, especialização R$ 1.279,44, mestrado R$ 3.198,59, doutorado R$ 7.356,77); vaga ampla concorrência",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor EBTT – Pedagogia (Campus Itaquaquecetuba)",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 6397.19,
+        "escolaridade": "Superior",
+        "requisitos": "Campus Itaquaquecetuba; 40 h com dedicação exclusiva; licenciatura em Pedagogia; titulação mínima: graduação (a remuneração sobe com a retribuição por titulação: aperfeiçoamento R$ 639,72, especialização R$ 1.279,44, mestrado R$ 3.198,59, doutorado R$ 7.356,77); vaga reservada a pessoa quilombola",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor EBTT – Pedagogia (Campus Pirituba)",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 6397.19,
+        "escolaridade": "Superior",
+        "requisitos": "Campus Pirituba; 40 h com dedicação exclusiva; licenciatura em Pedagogia; titulação mínima: graduação (a remuneração sobe com a retribuição por titulação: aperfeiçoamento R$ 639,72, especialização R$ 1.279,44, mestrado R$ 3.198,59, doutorado R$ 7.356,77); vaga ampla concorrência",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor EBTT – Pedagogia (Campus Presidente Epitácio)",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 6397.19,
+        "escolaridade": "Superior",
+        "requisitos": "Campus Presidente Epitácio; 40 h com dedicação exclusiva; licenciatura em Pedagogia; titulação mínima: graduação (a remuneração sobe com a retribuição por titulação: aperfeiçoamento R$ 639,72, especialização R$ 1.279,44, mestrado R$ 3.198,59, doutorado R$ 7.356,77); vaga reservada a pessoa com deficiência",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor EBTT – Pedagogia (Campus Registro)",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 6397.19,
+        "escolaridade": "Superior",
+        "requisitos": "Campus Registro; 40 h com dedicação exclusiva; licenciatura em Pedagogia; titulação mínima: graduação (a remuneração sobe com a retribuição por titulação: aperfeiçoamento R$ 639,72, especialização R$ 1.279,44, mestrado R$ 3.198,59, doutorado R$ 7.356,77); vaga ampla concorrência",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor EBTT – Pedagogia (Campus São Paulo)",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 6397.19,
+        "escolaridade": "Superior",
+        "requisitos": "Campus São Paulo; 40 h com dedicação exclusiva; licenciatura em Pedagogia; titulação mínima: graduação (a remuneração sobe com a retribuição por titulação: aperfeiçoamento R$ 639,72, especialização R$ 1.279,44, mestrado R$ 3.198,59, doutorado R$ 7.356,77); vaga ampla concorrência",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor EBTT – Pedagogia (Campus Suzano)",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 6397.19,
+        "escolaridade": "Superior",
+        "requisitos": "Campus Suzano; 40 h com dedicação exclusiva; licenciatura em Pedagogia; titulação mínima: graduação (a remuneração sobe com a retribuição por titulação: aperfeiçoamento R$ 639,72, especialização R$ 1.279,44, mestrado R$ 3.198,59, doutorado R$ 7.356,77); vaga ampla concorrência",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor EBTT – Produção de Áudio e Vídeo (Campus São José do Rio Preto)",
+        "vagas": 2,
+        "cadastro_reserva": false,
+        "salario": 6397.19,
+        "escolaridade": "Superior",
+        "requisitos": "Campus São José do Rio Preto; 40 h com dedicação exclusiva; bacharelado em Audiovisual, Cinema, Cinema e Audiovisual ou Comunicação Social (Rádio, TV e Internet, Cinema, Midialogia ou Audiovisual), ou tecnologia em Produção de Áudio e Vídeo ou Produção de Audiovisual; titulação mínima: graduação (a remuneração sobe com a retribuição por titulação: aperfeiçoamento R$ 639,72, especialização R$ 1.279,44, mestrado R$ 3.198,59, doutorado R$ 7.356,77); vagas: 1 pessoas pretas e pardas e 1 ampla concorrência",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor EBTT – Produção de Áudio e Vídeo (Campus São Miguel Paulista)",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 6397.19,
+        "escolaridade": "Superior",
+        "requisitos": "Campus São Miguel Paulista; 40 h com dedicação exclusiva; bacharelado em Audiovisual, Cinema, Cinema e Audiovisual ou Comunicação Social (Rádio, TV e Internet, Cinema, Midialogia ou Audiovisual), ou tecnologia em Produção de Áudio e Vídeo ou Produção de Audiovisual; titulação mínima: graduação (a remuneração sobe com a retribuição por titulação: aperfeiçoamento R$ 639,72, especialização R$ 1.279,44, mestrado R$ 3.198,59, doutorado R$ 7.356,77); vaga ampla concorrência",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor EBTT – Segurança do Trabalho (Campus Matão)",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 6397.19,
+        "escolaridade": "Superior",
+        "requisitos": "Campus Matão; 40 h com dedicação exclusiva; bacharelado em Engenharia ou Arquitetura, ou tecnologia em Segurança do Trabalho; titulação mínima: graduação (a remuneração sobe com a retribuição por titulação: aperfeiçoamento R$ 639,72, especialização R$ 1.279,44, mestrado R$ 3.198,59, doutorado R$ 7.356,77); vaga ampla concorrência",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor EBTT – Segurança do Trabalho (Campus São José dos Campos)",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 6397.19,
+        "escolaridade": "Superior",
+        "requisitos": "Campus São José dos Campos; 40 h com dedicação exclusiva; bacharelado em Engenharia ou Arquitetura, ou tecnologia em Segurança do Trabalho; titulação mínima: graduação (a remuneração sobe com a retribuição por titulação: aperfeiçoamento R$ 639,72, especialização R$ 1.279,44, mestrado R$ 3.198,59, doutorado R$ 7.356,77); vaga reservada a pessoa indígena",
+        "jornada_horas": 40,
+        "materias": []
+      }
+    ],
+    "documentos": [
+      {
+        "tipo": "edital",
+        "titulo": "Edital nº 183, de 28 de setembro de 2026 – Concurso público para Professor EBTT",
+        "numero": "183/2026",
+        "url": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=29/09/2026&jornal=530&pagina=43",
+        "publicado_em": "2026-09-29",
+        "fonte": "DOU",
+        "resumo": null
+      },
+      {
+        "tipo": "retificacao",
+        "titulo": "Edital de Retificação nº 188, de 2 de outubro de 2026",
+        "numero": "188/2026",
+        "url": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=05/10/2026&jornal=530&pagina=34",
+        "publicado_em": "2026-10-05",
+        "fonte": "DOU",
+        "resumo": "Refaz o Quadro 1 de vagas (inclui Eletrônica em Franco da Rocha, Informática no Jaçanã e Pedagogia em São Paulo; amplia a formação aceita em Informática e Educação Especial; Humanidades em São João da Boa Vista não aparece no quadro novo) e o prazo do laudo de PcD (item 10.3)"
+      }
+    ],
+    "conferencia": null,
+    "primeira_varredura": null,
+    "ultima_alteracao": null
+  }
+}

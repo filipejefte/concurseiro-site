@@ -1,0 +1,413 @@
+{
+  "ato": "dou-2026-10-05-ministerio-da-educacao-universidade-fede-bf6acfa0.md",
+  "atos_extras": [
+    "dou-2026-10-19-ministerio-da-educacao-universidade-fede-0ceeeaea.md",
+    "dou-2026-10-05-ministerio-da-educacao-universidade-fede-bf6acfa0-extra-1.md"
+  ],
+  "trechos": {
+    "salario": "DEDICAÇÃO EXCLUSIVA [...] Mestrado R$ 3.090,43 R$ 9.271,29 Doutorado R$ 7.107,99 R$ 13.288,85 [...] 20 HORAS [...] Mestrado R$ 772,61 R$ 3.863,04 Doutorado R$ 1.777,00 R$ 4.867,43 — Edital de Condições Gerais nº 23/2025; salário de cada área pela titulação e regime exigidos no Edital 22",
+    "inscricao.inicio": "PERÍODO DE INSCRIÇÃO UNIDADE RESPONSÁVEL PELO CONCURSO 23070.041850/2026-87 01 05 DE Câmpus da Região Metropolitana de Goiânia Educação Inclusiva Licenciatura em Pedagogia e/ou Educação Especial e Doutorado em Educação e/ou Educação Especial 16/10/2026 a 04/11/2026",
+    "inscricao.fim": "PERÍODO DE INSCRIÇÃO UNIDADE RESPONSÁVEL PELO CONCURSO 23070.041850/2026-87 01 05 DE Câmpus da Região Metropolitana de Goiânia Educação Inclusiva Licenciatura em Pedagogia e/ou Educação Especial e Doutorado em Educação e/ou Educação Especial 16/10/2026 a 04/11/2026",
+    "prova_objetiva": "não consta no ato: 3.1. O cronograma, por área do concurso, está disponível no Anexo I do presente edital (o Anexo I não veio no texto; as provas são escrita ou teórico-prática, didática, defesa de memorial e títulos)",
+    "taxa": "3.6. A taxa de inscrição varia de acordo com o regime de trabalho e a titulação máxima exigida para o concurso [...] Regime de Trabalho Graduação Especialização Mestrado Doutorado Dedicação Exclusiva R$ 110,00 R$ 130,00 R$ 170,00 R$ 240,00 20 horas R$ 60,00 R$ 60,00 R$ 70,00 R$ 90,00",
+    "banca": "tendo em vista o Edital de Condições Gerais nº 23/2025, torna públicas as condições específicas para realização de concurso público [...] no âmbito da Universidade Federal de Goiás [...] sítio da UFG - SISCONCURSO (www.ufg.br)",
+    "cidade": "Câmpus da Região Metropolitana de Goiânia Centro de Ensino e Pesquisa Aplicada à Educação - CEPAE/UFG Câmpus Samambaia - Av. Esperança, s/n, Câmpus Samambaia - Goiânia/GO [...] Câmpus Cidade Ocidental [...] Câmpus Goiás",
+    "edital": "EDITAL Nº 22, DE 1º DE OUTUBRO DE 2026 CONDIÇÕES ESPECÍFICAS PARA REALIZAÇÃO DE CONCURSO PÚBLICO DE PROVAS E TÍTULOS PARA PREENCHIMENTO DE VAGA(S) DE PROFESSOR DO MAGISTÉRIO SUPERIOR"
+  },
+  "concurso": {
+    "id": "ufg-2026-edital-22",
+    "ficticio": false,
+    "orgao": "Universidade Federal de Goiás (UFG)",
+    "esfera": "federal",
+    "uf": "GO",
+    "municipio_ibge": null,
+    "cidade": "Goiânia",
+    "nacional": false,
+    "abrangencia": null,
+    "area": "Educação",
+    "banca": {
+      "nome": "UFG (Pró-Reitoria de Gestão de Pessoas)",
+      "url": "https://sistemas.ufg.br/CONCURSOS_WEB/"
+    },
+    "inscricao": {
+      "inicio": "2026-10-16",
+      "fim": "2026-11-04",
+      "url": "https://sistemas.ufg.br/CONCURSOS_WEB/"
+    },
+    "isencao_ate": null,
+    "prova_objetiva": null,
+    "local_prova": "Nas unidades responsáveis por cada área: câmpus da UFG em Goiânia, em Cidade Ocidental (IIG) e na Cidade de Goiás (UAECSA)",
+    "taxa": {
+      "min": 70.0,
+      "max": 240.0
+    },
+    "isencao_regras": "Isenção para inscritos no CadÚnico de família de baixa renda (Decreto 11.016/2022) e doadores de medula óssea (Lei 13.656/2018); pedido em até 5 dias corridos do início das inscrições, na ficha de inscrição do SISCONCURSO (Edital de Condições Gerais nº 23/2025)",
+    "regime": "Estatutário (Lei 8.112/1990)",
+    "beneficios": [],
+    "o_que_levar": null,
+    "cargos": [
+      {
+        "nome": "Professor do Magistério Superior – Educação Inclusiva",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 13288.85,
+        "escolaridade": "Superior",
+        "requisitos": "CEPAE/UFG; Câmpus da Região Metropolitana de Goiânia; dedicação exclusiva; titulação mínima: doutorado (Licenciatura em Pedagogia e/ou Educação Especial e Doutorado em Educação e/ou Educação Especial); até 5 aprovados",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Magistério Superior – Geografia",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 13288.85,
+        "escolaridade": "Superior",
+        "requisitos": "CEPAE/UFG; Câmpus da Região Metropolitana de Goiânia; dedicação exclusiva; titulação mínima: doutorado (Licenciatura em Geografia e Doutorado em Geografia); uma vaga reservada a pessoas negras (pretas e pardas); até 5 aprovados",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Magistério Superior – Pedagogia",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 4867.43,
+        "escolaridade": "Superior",
+        "requisitos": "CEPAE/UFG; Câmpus da Região Metropolitana de Goiânia; 20 horas; titulação mínima: doutorado (Licenciatura em Pedagogia com Doutorado em Educação ou áreas afins); uma vaga reservada a pessoas negras (pretas e pardas); até 5 aprovados",
+        "jornada_horas": 20,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Magistério Superior – Construções Rurais com ênfase em Ambiência de Precisão",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 13288.85,
+        "escolaridade": "Superior",
+        "requisitos": "Escola de Agronomia (EA/UFG); Câmpus da Região Metropolitana de Goiânia; dedicação exclusiva; titulação mínima: doutorado (Graduação em Engenharia Agrícola ou Agronomia/Engenharia Agronômica ou Ciências Agrárias ou Engenharia de Biossistemas com Doutorado em Engenharia Agrícola ou Agronomia ou Engenharia de Sistemas Agrícolas ou áreas afins, com tese defendida na área do concurso); uma vaga reservada a pessoas negras (pretas e pardas); até 5 aprovados",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Magistério Superior – Economia Rural",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 13288.85,
+        "escolaridade": "Superior",
+        "requisitos": "Escola de Agronomia (EA/UFG); Câmpus da Região Metropolitana de Goiânia; dedicação exclusiva; titulação mínima: doutorado (Graduação em Agronegócio ou Gestão do Agronegócio ou Ciências Agrárias ou Ciências Econômicas e Doutorado em Economia ou Economia Agrícola ou Economia Aplicada ou Economia Rural ou Agronegócio); uma vaga reservada a pessoas negras (pretas e pardas); até 5 aprovados",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Magistério Superior – Educação Musical e Estágio Supervisionado",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 13288.85,
+        "escolaridade": "Superior",
+        "requisitos": "Escola de Música (EM/UFG); Câmpus da Região Metropolitana de Goiânia; dedicação exclusiva; titulação mínima: doutorado (Graduação em Música ou Educação Musical e Doutorado em Música ou Educação Musical ou Educação); até 5 aprovados",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Magistério Superior – Percussão e Estágio Supervisionado em Percussão",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 9271.29,
+        "escolaridade": "Superior",
+        "requisitos": "Escola de Música (EM/UFG); Câmpus da Região Metropolitana de Goiânia; dedicação exclusiva; titulação mínima: mestrado (Graduação em Música com habilitação em Percussão e Mestrado na área de Música); até 5 aprovados",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Magistério Superior – Produção de Bovinos de Corte e Melhoramento Genético Animal",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 13288.85,
+        "escolaridade": "Superior",
+        "requisitos": "Escola de Veterinária e Zootecnia (EVZ/UFG); Câmpus da Região Metropolitana de Goiânia; dedicação exclusiva; titulação mínima: doutorado (Graduação em Medicina Veterinária ou Zootecnia ou áreas afins e Doutorado em Zootecnia ou Ciência Animal ou áreas afins); até 5 aprovados",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Magistério Superior – Teoria Econômica",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 13288.85,
+        "escolaridade": "Superior",
+        "requisitos": "FACE/UFG; Câmpus da Região Metropolitana de Goiânia; dedicação exclusiva; titulação mínima: doutorado (Doutorado em Economia ou áreas afins com ao menos uma titulação em Economia (Graduação ou Mestrado ou Doutorado)); até 5 aprovados",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Magistério Superior – Antropologias Indígenas, Negras e Afrodiaspóricas",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 13288.85,
+        "escolaridade": "Superior",
+        "requisitos": "Faculdade de Ciências Sociais (FCS/UFG); Câmpus da Região Metropolitana de Goiânia; dedicação exclusiva; titulação mínima: doutorado (Doutorado em Antropologia ou em Ciências Sociais); até 5 aprovados",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Magistério Superior – Teoria Política e Instituições",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 13288.85,
+        "escolaridade": "Superior",
+        "requisitos": "Faculdade de Ciências Sociais (FCS/UFG); Câmpus da Região Metropolitana de Goiânia; dedicação exclusiva; titulação mínima: doutorado (Doutorado em Ciência Política ou áreas afins); uma vaga reservada a pessoas negras (pretas e pardas); até 5 aprovados",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Magistério Superior – Educação, Comunicação e Mídias",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 13288.85,
+        "escolaridade": "Superior",
+        "requisitos": "Faculdade de Educação (FE/UFG); Câmpus da Região Metropolitana de Goiânia; dedicação exclusiva; titulação mínima: doutorado (Licenciatura em Pedagogia e Doutorado em Educação ou Educação Escolar); até 5 aprovados",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Magistério Superior – Infância e Educação Infantil",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 13288.85,
+        "escolaridade": "Superior",
+        "requisitos": "Faculdade de Educação (FE/UFG); Câmpus da Região Metropolitana de Goiânia; dedicação exclusiva; titulação mínima: doutorado (Graduação em Pedagogia e Doutorado em Educação ou em áreas afins das Ciências Humanas com pertinência acadêmica e científica comprovada na área de Infância e Educação Infantil (retificado em 16/10/2026)); até 5 aprovados",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Magistério Superior – Enfermagem Fundamental",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 13288.85,
+        "escolaridade": "Superior",
+        "requisitos": "Faculdade de Enfermagem (FEN/UFG); Câmpus da Região Metropolitana de Goiânia; dedicação exclusiva; titulação mínima: doutorado (Graduação em Enfermagem com Doutorado em Enfermagem ou áreas afins); uma vaga reservada a pessoas negras (pretas e pardas); até 5 aprovados",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Magistério Superior – Análises Clínicas: Hematologia",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 13288.85,
+        "escolaridade": "Superior",
+        "requisitos": "Faculdade de Farmácia (FF/UFG); Câmpus da Região Metropolitana de Goiânia; dedicação exclusiva; titulação mínima: doutorado (Graduação em Farmácia com Doutorado em Ciências Farmacêuticas ou áreas afins e com tese defendida na área do concurso ou correlacionadas); até 5 aprovados",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Magistério Superior – Tecnologias aplicadas à Gestão da Informação",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 13288.85,
+        "escolaridade": "Superior",
+        "requisitos": "Faculdade de Informação e Comunicação (FIC/UFG); Câmpus da Região Metropolitana de Goiânia; dedicação exclusiva; titulação mínima: doutorado (Bacharelado em Ciência da Computação ou Sistemas de Informação ou Engenharia de Software ou Engenharia da Computação ou Engenharia Elétrica e Doutorado em Ciência da Computação ou Sistemas de Informação ou Engenharia de Software ou Engenharia de Sistemas e Computação ou Ciência da Informação ou Engenharia Elétrica e de Computação (retificado em 16/10/2026)); uma vaga reservada a pessoa quilombola; até 5 aprovados",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Magistério Superior – Tecnologias Avançadas aplicadas ao Jornalismo",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 13288.85,
+        "escolaridade": "Superior",
+        "requisitos": "Faculdade de Informação e Comunicação (FIC/UFG); Câmpus da Região Metropolitana de Goiânia; dedicação exclusiva; titulação mínima: doutorado (Graduação em Jornalismo com Doutorado em Comunicação com pesquisa em Tecnologias e Comunicação ou Doutorado em Ciências Sociais ou Ciências Humanas ou Ciências da Informação com pesquisa em Tecnologias da Comunicação); uma vaga reservada a pessoa com deficiência; até 5 aprovados",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Magistério Superior – Ginecologia e Obstetrícia",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 4867.43,
+        "escolaridade": "Superior",
+        "requisitos": "Faculdade de Medicina (FM/UFG); Câmpus da Região Metropolitana de Goiânia; 20 horas; titulação mínima: doutorado (Graduação em Medicina, Residência Médica em Ginecologia e Obstetrícia reconhecida pela CNRM ou Título de Especialista em Ginecologia e Obstetrícia registrado pela AMB com RQE no CRM, e Doutorado); até 5 aprovados",
+        "jornada_horas": 20,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Magistério Superior – Radiologia e Diagnóstico por Imagem",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 4867.43,
+        "escolaridade": "Superior",
+        "requisitos": "Faculdade de Medicina (FM/UFG); Câmpus da Região Metropolitana de Goiânia; 20 horas; titulação mínima: doutorado (Graduação em Medicina, Residência Médica em Radiologia e Diagnóstico por Imagem reconhecida pelo MEC ou Especialização em Radiologia e Diagnóstico por Imagem reconhecida pelo Colégio Brasileiro de Radiologia, e Doutorado); uma vaga reservada a pessoas negras (pretas e pardas); até 5 aprovados",
+        "jornada_horas": 20,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Magistério Superior – Semiologia/Introdução ao Método Clínico I, II, III e IV",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 3863.04,
+        "escolaridade": "Superior",
+        "requisitos": "Faculdade de Medicina (FM/UFG); Câmpus da Região Metropolitana de Goiânia; 20 horas; titulação mínima: mestrado (Graduação em Medicina, Residência em Clínica Médica registrada no CRM/GO ou outras Especialidades Clínicas reconhecidas pelo CRM, e título de Mestre em Ensino na Saúde ou em área afim (retificado em 16/10/2026)); até 5 aprovados",
+        "jornada_horas": 20,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Magistério Superior – Urologia",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 3863.04,
+        "escolaridade": "Superior",
+        "requisitos": "Faculdade de Medicina (FM/UFG); Câmpus da Região Metropolitana de Goiânia; 20 horas; titulação mínima: mestrado (Graduação em Medicina, Residência Médica em Urologia reconhecida pela CNRM ou Título de Especialista em Urologia emitido pela AMB, e Mestrado); até 5 aprovados",
+        "jornada_horas": 20,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Magistério Superior – Farmacologia",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 13288.85,
+        "escolaridade": "Superior",
+        "requisitos": "Instituto de Ciências Biológicas (ICB/UFG); Câmpus da Região Metropolitana de Goiânia; dedicação exclusiva; titulação mínima: doutorado (Doutorado em Farmacologia ou áreas afins); uma vaga reservada a pessoa indígena; até 5 aprovados",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Magistério Superior – Geopolítica e Geografia Política",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 13288.85,
+        "escolaridade": "Superior",
+        "requisitos": "Instituto de Estudos Socioambientais (IESA/UFG); Câmpus da Região Metropolitana de Goiânia; dedicação exclusiva; titulação mínima: doutorado (Graduação em Geografia e Doutorado em Geografia ou Ciência Política ou Relações Internacionais ou História ou Sociologia ou Planejamento Urbano e Regional ou Planejamento e Gestão do Território ou Demografia ou Desenvolvimento Regional (retificado em 16/10/2026)); até 5 aprovados",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Magistério Superior – Engenharia Física com ênfase em Instrumentação Científica e Tecnológica",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 13288.85,
+        "escolaridade": "Superior",
+        "requisitos": "Instituto de Física (IF/UFG); Câmpus da Região Metropolitana de Goiânia; dedicação exclusiva; titulação mínima: doutorado (Bacharelado em Engenharia Física com Doutorado em Engenharia Física ou áreas afins); uma vaga reservada a pessoa com deficiência; até 5 aprovados",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Magistério Superior – Física Experimental: Física de Materiais, Teranóstica ou Fotônica/Biofotônica",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 13288.85,
+        "escolaridade": "Superior",
+        "requisitos": "Instituto de Física (IF/UFG); Câmpus da Região Metropolitana de Goiânia; dedicação exclusiva; titulação mínima: doutorado (Bacharelado ou Licenciatura em Física, Bacharelado em Física Médica ou Bacharelado em Engenharia Física e Doutorado em Física ou áreas afins); até 5 aprovados",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Magistério Superior – Física Médica",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 13288.85,
+        "escolaridade": "Superior",
+        "requisitos": "Instituto de Física (IF/UFG); Câmpus da Região Metropolitana de Goiânia; dedicação exclusiva; titulação mínima: doutorado (Bacharelado em Física Médica ou Bacharelado/Licenciatura em Física com Doutorado em Física Médica ou áreas afins); até 5 aprovados",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Magistério Superior – Ciências da Segurança",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 13288.85,
+        "escolaridade": "Superior",
+        "requisitos": "Instituto de Inovação em Gestão (IIG/CCO/UFG); Câmpus Cidade Ocidental (GO); dedicação exclusiva; titulação mínima: doutorado (Graduação em Ciências Sociais (Sociologia, Antropologia ou Ciência Política) ou em Geografia, ou em Economia ou Direito ou Direitos Humanos ou Segurança Pública ou Serviço Social, e Doutorado em Ciências Sociais ou Sociologia ou Direito ou Direitos Humanos ou Segurança Pública ou Serviço Social ou Política Social e Direitos Humanos ou Estudos do Lazer (retificado em 16/10/2026)); até 5 aprovados",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Magistério Superior – Tecnologia da Informação",
+        "vagas": 2,
+        "cadastro_reserva": false,
+        "salario": 13288.85,
+        "escolaridade": "Superior",
+        "requisitos": "Instituto de Inovação em Gestão (IIG/CCO/UFG); Câmpus Cidade Ocidental (GO); dedicação exclusiva; titulação mínima: doutorado (Graduação e Doutorado em Ciências da Computação ou áreas afins); uma vaga reservada a pessoas negras (pretas e pardas); até 9 aprovados",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Magistério Superior – Ciência de Dados",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 13288.85,
+        "escolaridade": "Superior",
+        "requisitos": "Instituto de Matemática e Estatística (IME/UFG); Câmpus da Região Metropolitana de Goiânia; dedicação exclusiva; titulação mínima: doutorado (Graduação em qualquer área e Doutorado em Estatística ou em áreas afins); até 5 aprovados",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Magistério Superior – Educação Matemática",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 13288.85,
+        "escolaridade": "Superior",
+        "requisitos": "Instituto de Matemática e Estatística (IME/UFG); Câmpus da Região Metropolitana de Goiânia; dedicação exclusiva; titulação mínima: doutorado (Licenciatura em Matemática e Doutorado em Educação, Educação Matemática, Ensino de Ciências e Matemática, Educação em Ciências e Matemática, Educação Científica e Tecnológica ou Educação em Ciências (retificado em 16/10/2026)); uma vaga reservada a pessoa com deficiência; até 5 aprovados",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Magistério Superior – Estatística",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 13288.85,
+        "escolaridade": "Superior",
+        "requisitos": "Instituto de Matemática e Estatística (IME/UFG); Câmpus da Região Metropolitana de Goiânia; dedicação exclusiva; titulação mínima: doutorado (Graduação em Estatística ou áreas afins e Doutorado em Estatística ou em áreas afins); uma vaga reservada a pessoa com deficiência; até 5 aprovados",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Magistério Superior – Parasitologia",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 13288.85,
+        "escolaridade": "Superior",
+        "requisitos": "Instituto de Patologia Tropical e Saúde Pública (IPTSP/UFG); Câmpus da Região Metropolitana de Goiânia; dedicação exclusiva; titulação mínima: doutorado (Graduação em Ciências Biológicas ou áreas afins com Doutorado em Ciências Biológicas ou áreas afins, com tese defendida na área de Parasitologia); até 5 aprovados",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Magistério Superior – Gestão de Obras e Instalações Prediais",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 9271.29,
+        "escolaridade": "Superior",
+        "requisitos": "Unidade Acadêmica Especial de Ciências Sociais Aplicadas (UAECSA/CG/UFG); Câmpus Goiás, Cidade de Goiás (GO); dedicação exclusiva; titulação mínima: mestrado (Graduação em Arquitetura e Urbanismo e Mestrado em Arquitetura e Urbanismo ou áreas afins); uma vaga reservada a pessoas negras (pretas e pardas); até 5 aprovados",
+        "jornada_horas": 40,
+        "materias": []
+      }
+    ],
+    "documentos": [
+      {
+        "tipo": "edital",
+        "titulo": "Edital nº 22, de 1º de outubro de 2026 – Condições específicas, Professor do Magistério Superior",
+        "numero": "22/2026",
+        "url": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=05/10/2026&jornal=530&pagina=44",
+        "publicado_em": "2026-10-05",
+        "fonte": "DOU",
+        "resumo": null
+      },
+      {
+        "tipo": "retificacao",
+        "titulo": "Retificação nº 1 do Edital Específico nº 22/2026, de 16 de outubro de 2026",
+        "numero": null,
+        "url": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=19/10/2026&jornal=530&pagina=46",
+        "publicado_em": "2026-10-19",
+        "fonte": "DOU",
+        "resumo": "Altera a formação exigida de seis áreas: Infância e Educação Infantil, Geopolítica e Geografia Política, Ciências da Segurança, Tecnologias aplicadas à Gestão da Informação, Educação Matemática e Semiologia"
+      },
+      {
+        "tipo": "outro",
+        "titulo": "Edital de Condições Gerais nº 23/2025 – Professor do Magistério Federal (UFG)",
+        "numero": "23/2025",
+        "url": "https://sistemas.ufg.br/CONCURSOS_WEB/informacoes/download/cd_informacao/30517",
+        "publicado_em": "2025-09-15",
+        "fonte": "banca",
+        "resumo": "Normas gerais do concurso, tabela de remuneração, taxa de inscrição e isenção (publicado no DOU de 15/09/2025)"
+      }
+    ],
+    "conferencia": null,
+    "primeira_varredura": null,
+    "ultima_alteracao": null
+  }
+}

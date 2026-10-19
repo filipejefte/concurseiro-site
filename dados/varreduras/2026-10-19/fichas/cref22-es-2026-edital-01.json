@@ -1,0 +1,131 @@
+{
+  "ato": "dou-2026-09-18-entidades-de-fiscalizacao-do-exercicio-d-15e53fd4.md",
+  "atos_extras": [
+    "dou-2026-09-18-entidades-de-fiscalizacao-do-exercicio-d-15e53fd4-extra-1.md"
+  ],
+  "trechos": {
+    "salario": "S01 ADVOGADO I 01 - - - - 01 R$ 5.500,00 [...] ANALISTA [...] S02 CR⁶ - - - - CR⁶ R$ 5.000,00 ADMINISTRATIVO I [...] S03 CONTADOR I 01 - - - - 01 R$ 5.000,00 (Anexo I - Quadro de Vagas do edital no site do IBADE)",
+    "inscricao.inicio": "PERÍODO DE INSCRIÇÕES PELA INTERNET: 21/09 a 20/10/2026.",
+    "inscricao.fim": "PERÍODO DE INSCRIÇÕES PELA INTERNET: 21/09 a 20/10/2026.",
+    "prova_objetiva": "DATA PREVISTA PARA REALIZAÇÃO DAS PROVAS OBJETIVA E DISCURSIVA/REDAÇÃO: 13/12/2026.",
+    "taxa": "VALOR DA INSCRIÇÃO: R$ 90,00(noventa reais).",
+    "banca": "torna público que realizará, por meio do Instituto Brasileiro de Apoio e Desenvolvimento Executivo - IBADE, CONCURSO PÚBLICO para provimento de vagas e formação de cadastro de reserva do quadro de pessoal",
+    "cidade": "As Provas Objetiva e Discursiva/Redação serão realizadas em Vitória/ES. [...] **LOTAÇÃO: Vitória/ES (BASEADO NA SEDE).",
+    "edital": "EDITAL Nº 1 - CREF22/ES, DE 17 DE SETEMBRO DE 2026 CONCURSO PÚBLICO PARA PROVIMENTO DE VAGAS E FORMAÇÃO DE CADASTRO DE RESERVA"
+  },
+  "concurso": {
+    "id": "cref22-es-2026-edital-01",
+    "ficticio": false,
+    "orgao": "Conselho Regional de Educação Física da 22ª Região – Espírito Santo (CREF22/ES)",
+    "esfera": "federal",
+    "uf": "ES",
+    "municipio_ibge": null,
+    "cidade": "Vitória",
+    "nacional": false,
+    "abrangencia": null,
+    "area": "Administrativa",
+    "banca": {
+      "nome": "Instituto Brasileiro de Apoio e Desenvolvimento Executivo (IBADE)",
+      "url": "https://www.ibade.org.br"
+    },
+    "inscricao": {
+      "inicio": "2026-09-21",
+      "fim": "2026-10-20",
+      "url": "https://www.ibade.org.br"
+    },
+    "isencao_ate": "2026-09-29",
+    "prova_objetiva": "2026-12-13",
+    "local_prova": "Vitória (ES); havendo necessidade, em localidades adjacentes",
+    "taxa": {
+      "min": 90.0,
+      "max": 90.0
+    },
+    "isencao_regras": "Isenção para inscritos no CadÚnico de família de baixa renda e doadores de medula óssea (Lei 13.656/2018); pedido em 28 e 29/09/2026",
+    "regime": "CLT",
+    "beneficios": [
+      {
+        "nome": "Vale-alimentação",
+        "valor": null
+      },
+      {
+        "nome": "Vale-transporte",
+        "valor": null
+      },
+      {
+        "nome": "Plano de saúde",
+        "valor": null
+      }
+    ],
+    "o_que_levar": "Documento oficial e original de identificação com foto e caneta esferográfica de material transparente, preferencialmente de tinta preta",
+    "cargos": [
+      {
+        "nome": "Advogado I",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 5500.0,
+        "escolaridade": "Superior",
+        "requisitos": "Superior completo em Direito com registro profissional ativo e regular na OAB e CNH categoria B; lotação em Vitória (ES)",
+        "jornada_horas": 44,
+        "materias": [
+          "Língua Portuguesa",
+          "Raciocínio Lógico",
+          "Legislação e Ética na Administração Pública",
+          "Conhecimentos Específicos"
+        ]
+      },
+      {
+        "nome": "Analista Administrativo I",
+        "vagas": 0,
+        "cadastro_reserva": true,
+        "salario": 5000.0,
+        "escolaridade": "Superior",
+        "requisitos": "Superior completo em Administração com registro profissional ativo e regular no CRA e CNH categoria B; lotação em Vitória (ES)",
+        "jornada_horas": 44,
+        "materias": [
+          "Língua Portuguesa",
+          "Raciocínio Lógico",
+          "Legislação e Ética na Administração Pública",
+          "Conhecimentos Específicos"
+        ]
+      },
+      {
+        "nome": "Contador I",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 5000.0,
+        "escolaridade": "Superior",
+        "requisitos": "Superior completo em Ciências Contábeis com registro profissional ativo e regular no CRC e CNH categoria B; lotação em Vitória (ES)",
+        "jornada_horas": 44,
+        "materias": [
+          "Língua Portuguesa",
+          "Raciocínio Lógico",
+          "Legislação e Ética na Administração Pública",
+          "Conhecimentos Específicos"
+        ]
+      }
+    ],
+    "documentos": [
+      {
+        "tipo": "edital",
+        "titulo": "Edital nº 1 - CREF22/ES, de 17 de setembro de 2026 (extrato)",
+        "numero": "1/2026",
+        "url": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=18/09/2026&jornal=530&pagina=120",
+        "publicado_em": "2026-09-18",
+        "fonte": "DOU",
+        "resumo": null
+      },
+      {
+        "tipo": "outro",
+        "titulo": "Edital de Concurso Público nº 001/2026 – CREF22/ES (íntegra, no site do IBADE)",
+        "numero": "001/2026",
+        "url": "https://ibade.selecao.site/arquivo.php?file=edital/1/129/5a779510d77c56d649e64d16673b4cfb.pdf",
+        "publicado_em": "2026-09-18",
+        "fonte": "banca",
+        "resumo": "Íntegra do edital com o quadro de vagas e salários (Anexo I) e o cronograma (Anexo II)"
+      }
+    ],
+    "conferencia": null,
+    "primeira_varredura": null,
+    "ultima_alteracao": null
+  }
+}

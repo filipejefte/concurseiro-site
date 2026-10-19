@@ -1,0 +1,163 @@
+{
+  "ato": "dou-2026-09-18-entidades-de-fiscalizacao-do-exercicio-d-277bd099.md",
+  "atos_extras": [
+    "dou-2026-09-18-entidades-de-fiscalizacao-do-exercicio-d-e196af07.md",
+    "dou-2026-10-02-entidades-de-fiscalizacao-do-exercicio-d-72088a76.md"
+  ],
+  "trechos": {
+    "salario": "não consta no ato (o extrato e as retificações não trazem salários; o edital completo está em www.institutoconsulplan.org.br)",
+    "inscricao.inicio": "INSCRIÇÕES: de 16h00min do dia 23 de setembro de 2026 às 16h00min do dia 22 de outubro de 2026, no site www.institutoconsulplan.org.br.",
+    "inscricao.fim": "4. Ficam, ainda, prorrogadas as inscrições até às 16h00 do dia 29 de outubro de 2026, com reimpressão de boleto e pagamento até as 20h00 do dia 30 de outubro de 2026.",
+    "prova_objetiva": "As Provas Objetivas de Múltipla Escolha e Discursivas serão realizadas na cidade do Rio de Janeiro/RJ, na data provável de 13 de dezembro de 2026 (domingo), em dois turnos",
+    "taxa": "não consta no ato",
+    "banca": "INSCRIÇÕES: de 16h00min do dia 23 de setembro de 2026 às 16h00min do dia 22 de outubro de 2026, no site www.institutoconsulplan.org.br.",
+    "cidade": "As Provas Objetivas de Múltipla Escolha e Discursivas serão realizadas na cidade do Rio de Janeiro/RJ",
+    "edital": "EDITAL Nº 1, DE 17 DE SETEMBRO DE 2026 CONCURSO PÚBLICO DESTINADO AO PREENCHIMENTO DE VAGAS E FORMAÇÃO DO QUADRO DE PESSOAL E FORMAÇÃO DE CADASTRO DE RESERVA O Presidente do CONSELHO REGIONAL DE MEDICINA DO RIO DE JANEIRO - CREMERJ"
+  },
+  "concurso": {
+    "id": "cremerj-2026-edital-01",
+    "orgao": "Conselho Regional de Medicina do Estado do Rio de Janeiro (CREMERJ)",
+    "esfera": "federal",
+    "uf": "RJ",
+    "municipio_ibge": null,
+    "cidade": "Rio de Janeiro",
+    "nacional": false,
+    "abrangencia": null,
+    "area": "Administrativa",
+    "banca": {
+      "nome": "Instituto Consulplan",
+      "url": "https://www.institutoconsulplan.org.br"
+    },
+    "inscricao": {
+      "inicio": "2026-09-23",
+      "fim": "2026-10-29",
+      "url": "https://www.institutoconsulplan.org.br"
+    },
+    "isencao_ate": null,
+    "prova_objetiva": "2026-12-13",
+    "local_prova": "Rio de Janeiro (RJ), em dois turnos",
+    "taxa": {
+      "min": null,
+      "max": null
+    },
+    "isencao_regras": null,
+    "regime": null,
+    "beneficios": [],
+    "o_que_levar": null,
+    "cargos": [
+      {
+        "nome": "Analista de Operações",
+        "vagas": 11,
+        "cadastro_reserva": true,
+        "salario": null,
+        "escolaridade": "Superior",
+        "requisitos": "Diploma de graduação (bacharelado) em qualquer área ou de curso superior de tecnologia, reconhecido pelo MEC; vagas: 7 ampla concorrência, 1 pessoa com deficiência e 3 pessoas negras, mais cadastro de reserva",
+        "jornada_horas": null,
+        "materias": []
+      },
+      {
+        "nome": "Analista de Procedimentos Éticos",
+        "vagas": 3,
+        "cadastro_reserva": true,
+        "salario": null,
+        "escolaridade": null,
+        "requisitos": "Vagas: 2 ampla concorrência e 1 pessoa negra, mais cadastro de reserva; requisitos no edital completo",
+        "jornada_horas": null,
+        "materias": []
+      },
+      {
+        "nome": "Analista de Banco de Dados (DBA)",
+        "vagas": null,
+        "cadastro_reserva": true,
+        "salario": null,
+        "escolaridade": "Superior",
+        "requisitos": "Diploma de graduação (bacharelado ou tecnólogo) na área de Tecnologia da Informação, reconhecido pelo MEC (cursos aceitos na Retificação II)",
+        "jornada_horas": null,
+        "materias": []
+      },
+      {
+        "nome": "Analista de Ciência e Análise de Dados",
+        "vagas": null,
+        "cadastro_reserva": true,
+        "salario": null,
+        "escolaridade": "Superior",
+        "requisitos": "Diploma de graduação (bacharelado ou tecnólogo) na área de Tecnologia da Informação, ou em Estatística, Matemática ou Engenharia, reconhecido pelo MEC",
+        "jornada_horas": null,
+        "materias": []
+      },
+      {
+        "nome": "Analista de Desenvolvimento de Sistemas",
+        "vagas": null,
+        "cadastro_reserva": true,
+        "salario": null,
+        "escolaridade": "Superior",
+        "requisitos": "Diploma de graduação (bacharelado ou tecnólogo) na área de Tecnologia da Informação, reconhecido pelo MEC (cursos aceitos na Retificação II)",
+        "jornada_horas": null,
+        "materias": []
+      },
+      {
+        "nome": "Analista de Suporte",
+        "vagas": null,
+        "cadastro_reserva": true,
+        "salario": null,
+        "escolaridade": "Superior",
+        "requisitos": "Diploma de graduação (bacharelado ou tecnólogo) na área de Tecnologia da Informação, reconhecido pelo MEC (cursos aceitos na Retificação II)",
+        "jornada_horas": null,
+        "materias": []
+      },
+      {
+        "nome": "Web Designer",
+        "vagas": null,
+        "cadastro_reserva": true,
+        "salario": null,
+        "escolaridade": "Técnico",
+        "requisitos": "Ensino médio completo e formação técnica em Web Design e/ou Multimídia, com certificado reconhecido pelo MEC ou Sistema Senai/Senac",
+        "jornada_horas": null,
+        "materias": []
+      },
+      {
+        "nome": "Jornalista",
+        "vagas": null,
+        "cadastro_reserva": true,
+        "salario": null,
+        "escolaridade": null,
+        "requisitos": null,
+        "jornada_horas": null,
+        "materias": []
+      }
+    ],
+    "documentos": [
+      {
+        "tipo": "edital",
+        "titulo": "Edital nº 1, de 17 de setembro de 2026 – Concurso Público (extrato)",
+        "numero": "1/2026",
+        "url": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=18/09/2026&jornal=530&pagina=122",
+        "publicado_em": "2026-09-18",
+        "fonte": "DOU",
+        "resumo": null
+      },
+      {
+        "tipo": "retificacao",
+        "titulo": "Aviso de retificação – Retificação I do Edital nº 1/2026",
+        "numero": "1/2026",
+        "url": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=18/09/2026&jornal=608&pagina=1",
+        "publicado_em": "2026-09-18",
+        "fonte": "DOU",
+        "resumo": "Reduz as vagas imediatas de Analista de Operações (11) e Analista de Procedimentos Éticos (3); cadastro de reserva sem número."
+      },
+      {
+        "tipo": "retificacao",
+        "titulo": "Retificação II do Edital de Concurso Público nº 1/2026",
+        "numero": "1/2026",
+        "url": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=02/10/2026&jornal=530&pagina=176",
+        "publicado_em": "2026-10-02",
+        "fonte": "DOU",
+        "resumo": "Muda requisitos de cargos de TI, Analista de Operações e Web Designer, reabre a isenção (05 a 07/10/2026) para esses cargos e prorroga as inscrições até 29/10/2026."
+      }
+    ],
+    "ficticio": false,
+    "conferencia": null,
+    "primeira_varredura": null,
+    "ultima_alteracao": null
+  }
+}

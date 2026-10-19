@@ -1,0 +1,114 @@
+{
+  "ato": "dou-2026-10-15-ministerio-da-educacao-universidade-fede-1cf12f0e.md",
+  "atos_extras": [
+    "dou-2026-10-15-ministerio-da-educacao-universidade-fede-1cf12f0e-extra-1.md"
+  ],
+  "trechos": {
+    "salario": "3.5 A remuneração dos cargos do presente edital está disposta no quadro a seguir: PROFESSOR DA CARREIRA DE MAGISTÉRIO DO ENSINO BÁSICO, TÉCNICO E TECNOLÓGICO, CLASSE A, NÍVEL 1, 40 HORAS SEMANAIS COM REGIME DE DEDICAÇÃO EXCLUSIVA Vencimento básico R$ 6.397,19",
+    "inscricao.inicio": "INSCRIÇÃO Solicitação de inscrição no site https://centraldeconcursos.fcpc.ufc.br 31/10 a 10/11/2026",
+    "inscricao.fim": "INSCRIÇÃO Solicitação de inscrição no site https://centraldeconcursos.fcpc.ufc.br 31/10 a 10/11/2026",
+    "prova_objetiva": "não consta no ato (o concurso não tem prova objetiva; a primeira etapa é a prova escrita dissertativa: \"Aplicação da Prova Escrita Dissertativa. 06/12/2026\")",
+    "taxa": "efetuar o pagamento da taxa de inscrição até a data do vencimento, no valor de R$ 290,00 (duzentos e noventa reais",
+    "banca": "1.1. O concurso público regido por este Edital será realizado pela Central de Concursos e Verificações (CCV) da Universidade Federal do Ceará",
+    "cidade": "serão realizados no Município de Fortaleza - Ceará, no caso de procedimentos realizados de maneira presencial [...] FACULDADE DE EDUCAÇÃO/CAMPUS DE FORTALEZA [...] CENTRO DE HUMANIDADES/CAMPUS DE FORTALEZA",
+    "edital": "EDITAL Nº 50/2026/CCV/UFC CONCURSO PÚBLICO PARA PROVIMENTO DE CARGOS DE PROFESSOR DA CARREIRA DE MAGISTÉRIO DO ENSINO BÁSICO, TÉCNICO E TECNOLÓGICO DA UNIVERSIDADE FEDERAL DO CEARÁ"
+  },
+  "concurso": {
+    "id": "ufc-2026-edital-50",
+    "orgao": "Universidade Federal do Ceará (UFC)",
+    "esfera": "federal",
+    "uf": "CE",
+    "municipio_ibge": null,
+    "cidade": "Fortaleza",
+    "nacional": false,
+    "abrangencia": null,
+    "area": "Educação",
+    "banca": {
+      "nome": "UFC (Central de Concursos e Verificações – CCV)",
+      "url": "https://centraldeconcursos.fcpc.ufc.br"
+    },
+    "inscricao": {
+      "inicio": "2026-10-31",
+      "fim": "2026-11-10",
+      "url": "https://centraldeconcursos.fcpc.ufc.br"
+    },
+    "isencao_ate": "2026-10-22",
+    "prova_objetiva": null,
+    "local_prova": "Fortaleza (CE)",
+    "taxa": {
+      "min": 290.0,
+      "max": 290.0
+    },
+    "isencao_regras": "Isenção para inscritos no CadÚnico, doadores de medula óssea (Lei 13.656/2018) e quem comprovar hipossuficiência econômica (renda familiar per capita de até meio salário mínimo ou renda familiar total de até 3 salários mínimos); pedido em 21 e 22/10/2026 no site da CCV",
+    "regime": "Estatutário (Lei 8.112/1990)",
+    "beneficios": [],
+    "o_que_levar": "Documento oficial de identificação com foto e comprovante do local de prova; na prova escrita dissertativa, também caneta esferográfica de tinta azul ou preta, de material transparente",
+    "cargos": [
+      {
+        "nome": "Professor do Ensino Básico, Técnico e Tecnológico – Educação Infantil",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 6397.19,
+        "escolaridade": "Superior",
+        "requisitos": "Núcleo de Desenvolvimento da Criança (NDC CAp), Faculdade de Educação, campus Fortaleza; 40 h com dedicação exclusiva; titulação mínima: graduação (Graduação em Pedagogia)",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Ensino Básico, Técnico e Tecnológico – Atendimento Educacional Especializado",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 6397.19,
+        "escolaridade": "Superior",
+        "requisitos": "Núcleo de Desenvolvimento da Criança (NDC CAp), Faculdade de Educação, campus Fortaleza; 40 h com dedicação exclusiva; titulação mínima: graduação (Licenciatura Plena em Educação Especial, ou Licenciatura Plena em Pedagogia com especialização lato sensu de 360 h em Atendimento Educacional Especializado, Educação Especial Inclusiva ou Educação Inclusiva)",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Ensino Básico, Técnico e Tecnológico – Língua e Cultura Alemã",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 6397.19,
+        "escolaridade": "Superior",
+        "requisitos": "Casa de Cultura Alemã, Centro de Humanidades, campus Fortaleza; 40 h com dedicação exclusiva; titulação mínima: graduação (licenciatura plena em Letras com habilitação em língua alemã)",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Ensino Básico, Técnico e Tecnológico – Língua e Cultura Italiana",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 6397.19,
+        "escolaridade": "Superior",
+        "requisitos": "Casa de Cultura Italiana, Centro de Humanidades, campus Fortaleza; 40 h com dedicação exclusiva; titulação mínima: graduação (licenciatura plena em Letras com habilitação em língua italiana)",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Ensino Básico, Técnico e Tecnológico – Língua e Cultura Espanhola",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 6397.19,
+        "escolaridade": "Superior",
+        "requisitos": "Casa de Cultura Hispânica, Centro de Humanidades, campus Fortaleza; 40 h com dedicação exclusiva; titulação mínima: graduação (licenciatura plena em Letras com habilitação em língua espanhola)",
+        "jornada_horas": 40,
+        "materias": []
+      }
+    ],
+    "documentos": [
+      {
+        "tipo": "edital",
+        "titulo": "Edital nº 50/2026/CCV/UFC – Professor do Magistério do Ensino Básico, Técnico e Tecnológico",
+        "numero": "50/2026",
+        "url": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=15/10/2026&jornal=530&pagina=34",
+        "publicado_em": "2026-10-15",
+        "fonte": "DOU",
+        "resumo": null
+      }
+    ],
+    "ficticio": false,
+    "conferencia": null,
+    "primeira_varredura": null,
+    "ultima_alteracao": null
+  }
+}

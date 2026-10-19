@@ -1,0 +1,132 @@
+{
+  "ato": "dou-2026-10-09-controladoria-geral-da-uniao-secretaria-132bdbd3.md",
+  "atos_extras": [
+    "dou-2026-10-09-controladoria-geral-da-uniao-secretaria-132bdbd3-extra-1.md",
+    "dou-2026-10-09-controladoria-geral-da-uniao-secretaria-132bdbd3-extra-2.md",
+    "dou-2026-10-09-controladoria-geral-da-uniao-secretaria-132bdbd3-extra-3.md",
+    "dou-2026-10-09-controladoria-geral-da-uniao-secretaria-132bdbd3-extra-4.md"
+  ],
+  "trechos": {
+    "salario": "SUBSÍDIO INICIAL: R$ 20.000,00, de acordo com a Lei nº 15.141, de 2 de junho de 2025, com ingresso inicial na classe A, padrão I, da carreira de Finanças e Controle.",
+    "inscricao.inicio": "Período de solicitação de inscrições 10/10 a 4/11/2026 Das 10 horas do primeiro dia às 18 horas do último dia (horário oficial de Brasília/DF)",
+    "inscricao.fim": "Período de solicitação de inscrições 10/10 a 4/11/2026 Das 10 horas do primeiro dia às 18 horas do último dia (horário oficial de Brasília/DF)",
+    "prova_objetiva": "Aplicação das provas objetivas e discursiva 13/12/2026",
+    "taxa": "6.1 TAXA: R$ 170,00.",
+    "banca": "1.1 O concurso público será regido por este edital e executado pelo Centro Brasileiro de Pesquisa em Avaliação e Seleção e de Promoção de Eventos (Cebraspe).",
+    "cidade": "Cargo 1: Auditor Federal de Finanças e Controle (AFFC) - Especialidade: Auditoria Órgão Central - DF 11 1 5 2 1 20 [...] Unidade Regional - AC 1 * 1 * * 2 [...] serão realizados nas 27 capitais das Unidades da Federação.",
+    "edital": "EDITAL CGU Nº 1, DE 8 DE OUTUBRO DE 2026 CONCURSO PÚBLICO PARA O PROVIMENTO DE VAGAS E A FORMAÇÃO DE CADASTRO DE RESERVA EM CARGOS DE AUDITOR FEDERAL DE FINANÇAS E CONTROLE (AFFC)"
+  },
+  "concurso": {
+    "id": "cgu-2026-edital-01",
+    "orgao": "Controladoria-Geral da União (CGU)",
+    "esfera": "federal",
+    "uf": "DF",
+    "municipio_ibge": null,
+    "cidade": "Brasília",
+    "nacional": true,
+    "abrangencia": "6 UFs (DF, AC, AP, MT, RO e RR)",
+    "area": "Administrativa",
+    "banca": {
+      "nome": "Centro Brasileiro de Pesquisa em Avaliação e Seleção e de Promoção de Eventos (Cebraspe)",
+      "url": "http://www.cebraspe.org.br/concursos/cgu_26_affc"
+    },
+    "inscricao": {
+      "inicio": "2026-10-10",
+      "fim": "2026-11-04",
+      "url": "http://www.cebraspe.org.br/concursos/cgu_26_affc"
+    },
+    "isencao_ate": "2026-10-16",
+    "prova_objetiva": "2026-12-13",
+    "local_prova": "Nas 27 capitais das Unidades da Federação (objetivas de manhã e discursiva à tarde)",
+    "taxa": {
+      "min": 170.0,
+      "max": 170.0
+    },
+    "isencao_regras": "Isenção para inscritos no CadÚnico (Decretos 6.593/2008 e 11.016/2022) e doadores de medula óssea (Lei 13.656/2018); pedido de 10 a 16/10/2026 no site do Cebraspe",
+    "regime": "Estatutário (Lei 8.112/1990)",
+    "beneficios": [],
+    "o_que_levar": "Caneta esferográfica de tinta preta de material transparente, comprovante de inscrição ou de pagamento da taxa e documento de identidade original",
+    "cargos": [
+      {
+        "nome": "Auditor Federal de Finanças e Controle (AFFC) – Auditoria",
+        "vagas": 30,
+        "cadastro_reserva": true,
+        "salario": 20000.0,
+        "escolaridade": "Superior",
+        "requisitos": "Diploma de graduação de nível superior em qualquer área de formação, reconhecido pelo MEC; vagas: 20 no Órgão Central (DF) e 2 em cada Unidade Regional (AC, AP, MT, RO e RR)",
+        "jornada_horas": 40,
+        "materias": [
+          "Conhecimentos básicos",
+          "Conhecimentos complementares",
+          "Conhecimentos específicos"
+        ]
+      },
+      {
+        "nome": "Auditor Federal de Finanças e Controle (AFFC) – Tecnologia da Informação – Ciência de Dados",
+        "vagas": 10,
+        "cadastro_reserva": true,
+        "salario": 20000.0,
+        "escolaridade": "Superior",
+        "requisitos": "Diploma de graduação de nível superior em qualquer área de formação, reconhecido pelo MEC; lotação no Órgão Central (DF)",
+        "jornada_horas": 40,
+        "materias": [
+          "Conhecimentos básicos",
+          "Conhecimentos complementares",
+          "Conhecimentos específicos"
+        ]
+      },
+      {
+        "nome": "Auditor Federal de Finanças e Controle (AFFC) – Tecnologia da Informação – Infraestrutura de TI",
+        "vagas": 10,
+        "cadastro_reserva": true,
+        "salario": 20000.0,
+        "escolaridade": "Superior",
+        "requisitos": "Diploma de graduação de nível superior em qualquer área de formação, reconhecido pelo MEC",
+        "jornada_horas": 40,
+        "materias": [
+          "Conhecimentos básicos",
+          "Conhecimentos complementares",
+          "Conhecimentos específicos"
+        ]
+      },
+      {
+        "nome": "Auditor Federal de Finanças e Controle (AFFC) – Tecnologia da Informação – Desenvolvimento de Sistemas",
+        "vagas": 10,
+        "cadastro_reserva": true,
+        "salario": 20000.0,
+        "escolaridade": "Superior",
+        "requisitos": "Diploma de graduação de nível superior em qualquer área de formação, reconhecido pelo MEC",
+        "jornada_horas": 40,
+        "materias": [
+          "Conhecimentos básicos",
+          "Conhecimentos complementares",
+          "Conhecimentos específicos"
+        ]
+      }
+    ],
+    "documentos": [
+      {
+        "tipo": "edital",
+        "titulo": "Edital CGU nº 1, de 8 de outubro de 2026 – Auditor Federal de Finanças e Controle",
+        "numero": "1/2026",
+        "url": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=09/10/2026&jornal=530&pagina=155",
+        "publicado_em": "2026-10-09",
+        "fonte": "DOU",
+        "resumo": null
+      },
+      {
+        "tipo": "retificacao",
+        "titulo": "Edital CGU nº 2, de 13 de outubro de 2026 – retificação do Edital nº 1",
+        "numero": "2/2026",
+        "url": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=15/10/2026&jornal=530&pagina=128",
+        "publicado_em": "2026-10-15",
+        "fonte": "DOU",
+        "resumo": "Retifica o subitem 6.2.4 (pagamento da GRU pelo PagTesouro, por Pix ou cartão de crédito) e datas do atendimento especializado no Anexo I."
+      }
+    ],
+    "ficticio": false,
+    "conferencia": null,
+    "primeira_varredura": null,
+    "ultima_alteracao": null
+  }
+}

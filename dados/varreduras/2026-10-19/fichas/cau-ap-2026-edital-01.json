@@ -1,0 +1,92 @@
+{
+  "ato": "dou-2026-10-06-entidades-de-fiscalizacao-do-exercicio-d-f443f3e3.md",
+  "atos_extras": [],
+  "trechos": {
+    "salario": "não consta no ato (o aviso lista os cargos sem vagas nem salários; o edital normativo está em www.quadrix.org.br)",
+    "inscricao.inicio": "não consta no ato (o aviso só traz o fim das inscrições)",
+    "inscricao.fim": "9. Será admitida a inscrição exclusivamente via internet, no endereço eletrônico http://www.quadrix.org.br, até às 23 horas do dia 09 de novembro de 2026, observado o horário oficial de Brasília/DF.",
+    "prova_objetiva": "11. As provas objetivas e discursivas serão realizadas na data de 13 de dezembro de 2026 (domingo) na cidade de Macapá/AP, Turno da manhã, para o cargo de nível superior; e no Turno da tarde, para os cargos de nível médio.",
+    "taxa": "10. Os valores das taxas de inscrição são de R$ 60,00, para os cargos de nível médio; e R$ 65,00, para o cargo de nível superior.",
+    "banca": "O concurso público será realizado sob a responsabilidade do Instituto Quadrix",
+    "cidade": "3. As fases do concurso público serão realizadas na cidade de Macapá/AP.",
+    "edital": "EDITAL Nº 1, DE 5 DE OUTUBRO DE 2026 CONCURSO PÚBLICO PARA PROVIMENTO DE VAGA E FORMAÇÃO DE CADASTRO DE RESERVA PARA CARGOS DE NÍVEL MÉDIO E NÍVEL SUPERIOR"
+  },
+  "concurso": {
+    "id": "cau-ap-2026-edital-01",
+    "orgao": "Conselho de Arquitetura e Urbanismo do Amapá (CAU/AP)",
+    "esfera": "federal",
+    "uf": "AP",
+    "municipio_ibge": null,
+    "cidade": "Macapá",
+    "nacional": false,
+    "abrangencia": null,
+    "area": "Administrativa",
+    "banca": {
+      "nome": "Instituto Quadrix",
+      "url": "https://www.quadrix.org.br"
+    },
+    "inscricao": {
+      "inicio": null,
+      "fim": "2026-11-09",
+      "url": "https://www.quadrix.org.br"
+    },
+    "isencao_ate": null,
+    "prova_objetiva": "2026-12-13",
+    "local_prova": "Macapá (AP); manhã para o cargo de nível superior e tarde para os de nível médio",
+    "taxa": {
+      "min": 60.0,
+      "max": 65.0
+    },
+    "isencao_regras": null,
+    "regime": "CLT",
+    "beneficios": [],
+    "o_que_levar": null,
+    "cargos": [
+      {
+        "nome": "Assistente Administrativo",
+        "vagas": null,
+        "cadastro_reserva": false,
+        "salario": null,
+        "escolaridade": null,
+        "requisitos": null,
+        "jornada_horas": null,
+        "materias": []
+      },
+      {
+        "nome": "Auxiliar de Fiscalização",
+        "vagas": null,
+        "cadastro_reserva": false,
+        "salario": null,
+        "escolaridade": null,
+        "requisitos": null,
+        "jornada_horas": null,
+        "materias": []
+      },
+      {
+        "nome": "Agente de Fiscalização",
+        "vagas": null,
+        "cadastro_reserva": false,
+        "salario": null,
+        "escolaridade": null,
+        "requisitos": null,
+        "jornada_horas": null,
+        "materias": []
+      }
+    ],
+    "documentos": [
+      {
+        "tipo": "edital",
+        "titulo": "Edital nº 1, de 5 de outubro de 2026 – Concurso Público (extrato)",
+        "numero": "1/2026",
+        "url": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=06/10/2026&jornal=530&pagina=135",
+        "publicado_em": "2026-10-06",
+        "fonte": "DOU",
+        "resumo": null
+      }
+    ],
+    "ficticio": false,
+    "conferencia": null,
+    "primeira_varredura": null,
+    "ultima_alteracao": null
+  }
+}

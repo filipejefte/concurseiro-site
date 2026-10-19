@@ -1,0 +1,241 @@
+{
+  "ato": "dou-2026-09-16-ministerio-da-educacao-universidade-fede-1a3c7e44.md",
+  "atos_extras": [
+    "dou-2026-09-16-ministerio-da-educacao-universidade-fede-1a3c7e44-extra-1.md",
+    "dou-2026-09-16-ministerio-da-educacao-universidade-fede-1a3c7e44-extra-2.md",
+    "dou-2026-09-16-ministerio-da-educacao-universidade-fede-1a3c7e44-extra-3.md",
+    "dou-2026-09-22-ministerio-da-educacao-universidade-fede-4a9a5a2f.md",
+    "dou-2026-09-29-ministerio-da-educacao-universidade-fede-24b0d361.md",
+    "dou-2026-10-09-ministerio-da-educacao-universidade-fede-224428c1.md"
+  ],
+  "trechos": {
+    "salario": "A / Assistente 1 Dedicação Exclusiva Doutorado R$ 6.397,19 R$ 7.356,77 R$ 1.192,00 R$ 14.945,96 A / Assistente 1 40h Doutorado R$ 4.478,03 R$ 3.862,30 R$ 1.192,00 R$ 9.532,33 [...] Especialização / Residência R$ 4.478,03 R$ 671,71 R$ 1.192,00 R$ 6.341,74",
+    "inscricao.inicio": "9.1. A inscrição será feita, exclusivamente, via internet (https://sigrh.ufrn.br), no período de 28/09/2026 a 23/10/2026",
+    "inscricao.fim": "9.1. A inscrição será feita, exclusivamente, via internet (https://sigrh.ufrn.br), no período de 28/09/2026 a 23/10/2026",
+    "prova_objetiva": "12.1. A prova escrita e sorteio dos temas da prova didática de todas as áreas de conhecimento serão realizados no dia 21/02/2027, às 08:00h, município de Natal/RN.",
+    "taxa": "9.8.1. A taxa será cobrada conforme o quadro abaixo: Classe/ Denominação/ Nível Regime de trabalho Taxa de inscrição A / Assistente 1 Dedicação Exclusiva R$ 220,00 A / Assistente 1 40h R$ 180,00",
+    "banca": "A PRÓ-REITORA DE GESTÃO DE PESSOAS DA UNIVERSIDADE FEDERAL DO RIO GRANDE DO NORTE [...] torna pública a abertura de inscrições para o Concurso Público de Provas e Títulos",
+    "cidade": "Departamento de Medicina Integrada - Campus de Natal/RN [...] Departamento de História - Campus de Caicó/RN [...] Faculdade de Ciências da Saúde do Trairi - Campus de Santa Cruz/RN [...] Faculdade de Engenharia, Letras e Ciências Sociais do Seridó - Campus de Currais Novos/RN",
+    "edital": "EDITAL Nº 108-PROGESP, de 15 de setembro de 2026 CONCURSO PÚBLICO DE PROVAS E TÍTULOS PARA O PROVIMENTO DE CARGO DE PROFESSOR DO MAGISTÉRIO SUPERIOR"
+  },
+  "concurso": {
+    "id": "ufrn-2026-edital-108",
+    "ficticio": false,
+    "orgao": "Universidade Federal do Rio Grande do Norte (UFRN)",
+    "esfera": "federal",
+    "uf": "RN",
+    "municipio_ibge": null,
+    "cidade": "Natal",
+    "nacional": false,
+    "abrangencia": null,
+    "area": "Educação",
+    "banca": {
+      "nome": "UFRN (Pró-Reitoria de Gestão de Pessoas – Coordenadoria de Concursos)",
+      "url": "https://sigrh.ufrn.br"
+    },
+    "inscricao": {
+      "inicio": "2026-09-28",
+      "fim": "2026-10-23",
+      "url": "https://sigrh.ufrn.br"
+    },
+    "isencao_ate": "2026-10-22",
+    "prova_objetiva": "2027-02-21",
+    "local_prova": "Natal (RN): prova escrita em 21/02/2027 (8h; áreas do Departamento de Informática e Matemática Aplicada às 14h); demais etapas de 22/02 a 21/03/2027",
+    "taxa": {
+      "min": 180.0,
+      "max": 220.0
+    },
+    "isencao_regras": "Isenção para família inscrita no CadÚnico com renda per capita de até meio salário mínimo e para doadores de medula óssea (Lei 13.656/2018); pedido no formulário de inscrição, de 28/09 a 22/10/2026",
+    "regime": "Estatutário (Lei 8.112/1990)",
+    "beneficios": [
+      {
+        "nome": "Auxílio-alimentação",
+        "valor": 1192.0
+      }
+    ],
+    "o_que_levar": "Documento de identificação com foto, expedido há no máximo 10 anos, e caneta esferográfica de tinta preta, de material transparente",
+    "cargos": [
+      {
+        "nome": "Professor do Magistério Superior – Internato em Medicina de Urgência com atuação em Unidades de Pronto Atendimento/UPAS",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 5149.74,
+        "escolaridade": "Superior",
+        "requisitos": "Departamento de Medicina Integrada, Natal (RN); 40 horas; titulação mínima: especialização (graduação em Medicina + residência médica ou título de especialista em Medicina de Emergência, Medicina Intensiva ou Cirurgia do Trauma, reconhecidos pela CNRM ou AMB); a remuneração sobe com a titulação",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Magistério Superior – Ensino de História",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 13753.96,
+        "escolaridade": "Superior",
+        "requisitos": "Departamento de História, Caicó (RN); dedicação exclusiva; titulação mínima: doutorado (graduação em História e doutorado em História ou em Educação)",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Magistério Superior – Criptografia e Governança",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 13753.96,
+        "escolaridade": "Superior",
+        "requisitos": "Instituto Metrópole Digital, Natal (RN); dedicação exclusiva; titulação mínima: doutorado",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Magistério Superior – Engenharia de Segurança Cibernética",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 13753.96,
+        "escolaridade": "Superior",
+        "requisitos": "Instituto Metrópole Digital, Natal (RN); dedicação exclusiva; titulação mínima: doutorado",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Magistério Superior – Defesa Cibernética",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 13753.96,
+        "escolaridade": "Superior",
+        "requisitos": "Instituto Metrópole Digital, Natal (RN); dedicação exclusiva; titulação mínima: doutorado",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Magistério Superior – Biologia Celular e Molecular e Biofísica",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 13753.96,
+        "escolaridade": "Superior",
+        "requisitos": "Instituto Metrópole Digital, Natal (RN), na linha do Anexo I; dedicação exclusiva; titulação mínima: doutorado (graduação em Ciências Biológicas ou da Saúde e doutorado em Biologia Molecular, Biofísica, Ciências Biológicas, Ciências da Saúde ou áreas correlatas)",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Magistério Superior – Estado, Sociedade e Políticas Públicas, Metodologia da Produção Científica, Fundamentos e Recursos Terapêuticos Ocupacionais",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 13753.96,
+        "escolaridade": "Superior",
+        "requisitos": "Faculdade de Ciências da Saúde do Trairi, Santa Cruz (RN); dedicação exclusiva; titulação mínima: doutorado (graduação em Terapia Ocupacional e doutorado em Terapia Ocupacional, Ciências da Saúde, Ciências Sociais ou áreas correlatas)",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Magistério Superior – Funcionalidade do Corpo Humano",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 13753.96,
+        "escolaridade": "Superior",
+        "requisitos": "Faculdade de Ciências da Saúde do Trairi, Santa Cruz (RN); dedicação exclusiva; titulação mínima: doutorado (graduação em Terapia Ocupacional e doutorado em Terapia Ocupacional, Ciências da Saúde ou áreas correlatas)",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Magistério Superior – Administração e Marketing",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 13753.96,
+        "escolaridade": "Superior",
+        "requisitos": "Faculdade de Engenharia, Letras e Ciências Sociais do Seridó, Currais Novos (RN); dedicação exclusiva; titulação mínima: doutorado (graduação e doutorado em Administração)",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Magistério Superior – Fisioterapia Cardiovascular e Respiratória e Fisiologia do Exercício",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 13753.96,
+        "escolaridade": "Superior",
+        "requisitos": "Faculdade de Ciências da Saúde do Trairi, Santa Cruz (RN); dedicação exclusiva; titulação mínima: doutorado (graduação em Fisioterapia e doutorado em Fisioterapia ou áreas correlatas); incluída pela retificação de 22/09/2026",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Magistério Superior – Aprendizado de Máquina",
+        "vagas": 2,
+        "cadastro_reserva": false,
+        "salario": 13753.96,
+        "escolaridade": "Superior",
+        "requisitos": "Departamento de Estatística, Natal (RN); dedicação exclusiva; titulação mínima: doutorado (graduação em qualquer área e doutorado em Probabilidade e Estatística ou em Ciência da Computação); 1 vaga de ampla concorrência e 1 de cota; incluída pela retificação de 29/09/2026",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Magistério Superior – Segurança de Dados e Redes de Computadores",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 13753.96,
+        "escolaridade": "Superior",
+        "requisitos": "Departamento de Estatística, Natal (RN); dedicação exclusiva; titulação mínima: doutorado (em qualquer área); incluída pela retificação de 29/09/2026",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Magistério Superior – IA Generativa",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 13753.96,
+        "escolaridade": "Superior",
+        "requisitos": "Departamento de Informática e Matemática Aplicada, Natal (RN); dedicação exclusiva; titulação mínima: doutorado (em qualquer área); incluída pela retificação de 29/09/2026",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Magistério Superior – Algoritmos, Otimização, Grafos e Redes Complexas",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 13753.96,
+        "escolaridade": "Superior",
+        "requisitos": "Departamento de Informática e Matemática Aplicada, Natal (RN); dedicação exclusiva; titulação mínima: doutorado (em qualquer área); incluída pela retificação de 29/09/2026",
+        "jornada_horas": 40,
+        "materias": []
+      }
+    ],
+    "documentos": [
+      {
+        "tipo": "edital",
+        "titulo": "Edital nº 108/2026-PROGESP, de 15 de setembro de 2026 – Professor do Magistério Superior",
+        "numero": "108/2026",
+        "url": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=16/09/2026&jornal=530&pagina=47",
+        "publicado_em": "2026-09-16",
+        "fonte": "DOU",
+        "resumo": null
+      },
+      {
+        "tipo": "retificacao",
+        "titulo": "Retificação do Edital nº 108/2026-PROGESP, de 21 de setembro de 2026",
+        "numero": null,
+        "url": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=22/09/2026&jornal=530&pagina=54",
+        "publicado_em": "2026-09-22",
+        "fonte": "DOU",
+        "resumo": "Inclui a área de Fisioterapia Cardiovascular e Respiratória e Fisiologia do Exercício (Santa Cruz/RN); o edital passa a 10 vagas"
+      },
+      {
+        "tipo": "retificacao",
+        "titulo": "Aviso de retificação do Edital nº 108/2026-PROGESP, de 28 de setembro de 2026",
+        "numero": null,
+        "url": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=29/09/2026&jornal=530&pagina=63",
+        "publicado_em": "2026-09-29",
+        "fonte": "DOU",
+        "resumo": "Inclui quatro áreas no Centro de Ciências Exatas e da Terra (Aprendizado de Máquina, com 2 vagas; Segurança de Dados e Redes de Computadores; IA Generativa; Algoritmos, Otimização, Grafos e Redes Complexas); o edital passa a 15 vagas"
+      },
+      {
+        "tipo": "retificacao",
+        "titulo": "Aviso de retificação do Edital nº 108/2026-PROGESP, de 8 de outubro de 2026",
+        "numero": null,
+        "url": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=09/10/2026&jornal=530&pagina=57",
+        "publicado_em": "2026-10-09",
+        "fonte": "DOU",
+        "resumo": "Prova escrita das áreas do Departamento de Informática e Matemática Aplicada às 14h de 21/02/2027; ajusta documentos aceitos na prova de títulos"
+      }
+    ],
+    "conferencia": null,
+    "primeira_varredura": null,
+    "ultima_alteracao": null
+  }
+}

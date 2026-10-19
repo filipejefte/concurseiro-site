@@ -1,0 +1,282 @@
+{
+  "ato": "dou-2026-09-21-ministerio-da-educacao-instituto-federal-ce1b6a25.md",
+  "atos_extras": [
+    "dou-2026-09-24-ministerio-da-educacao-instituto-federal-f76021f5.md"
+  ],
+  "trechos": {
+    "salario": "Nível de Classificação Vencimento Básico Nível C R$ 2.607,70 Nível D R$ 3.181,39 Nível E R$ 5.215,39",
+    "inscricao.inicio": "DA SOLICITAÇÃO DE INSCRIÇÃO DATA Período de inscrições 09h00min do dia 23/09 até às 16h00min do dia 20/10/2026",
+    "inscricao.fim": "DA SOLICITAÇÃO DE INSCRIÇÃO DATA Período de inscrições 09h00min do dia 23/09 até às 16h00min do dia 20/10/2026",
+    "prova_objetiva": "não consta no ato: a data está no Anexo I - Cronograma, que não veio no texto publicado (a retificação só alterou isenção e inscrições)",
+    "taxa": "4.3.1 A taxa de inscrição obedecerá aos valores estabelecidos no quadro abaixo, conforme o cargo pretendido: Carreira Classe Taxa de Inscrição Técnico-Administrativos Nível C e D R$ 100,00 Nível E R$ 120,00",
+    "banca": "1.1 O Concurso Público, a que se refere o presente Edital, será executado pelo Instituto AOCP, com sede na Avenida Dr. Gastão Vidigal, nº 959 - Zona 08, CEP 87050-440, Maringá/PR, endereço eletrônico www.institutoaocp.org.br",
+    "cidade": "1.4 As fases presenciais descritas no item 1.3 serão realizadas obrigatoriamente no município de Belém/PA, facultando-se à organizadora a utilização de locais em municípios da região metropolitana apenas para a aplicação das Provas Objetivas em caso de excesso de candidatos.",
+    "edital": "EDITAL Nº 5-IFPA, DE 18 DE SETEMBRO DE 2026 CONCURSO PÚBLICO DE PROVAS PARA PROVIMENTO DE CARGOS DE TÉCNICO-ADMINISTRATIVOS EM EDUCAÇÃO"
+  },
+  "concurso": {
+    "id": "ifpa-2026-edital-5",
+    "ficticio": false,
+    "orgao": "Instituto Federal de Educação, Ciência e Tecnologia do Pará (IFPA)",
+    "esfera": "federal",
+    "uf": "PA",
+    "municipio_ibge": null,
+    "cidade": "Belém",
+    "nacional": false,
+    "abrangencia": null,
+    "area": "Administrativa",
+    "banca": {
+      "nome": "Instituto AOCP",
+      "url": "https://www.institutoaocp.org.br"
+    },
+    "inscricao": {
+      "inicio": "2026-09-23",
+      "fim": "2026-10-20",
+      "url": "https://www.institutoaocp.org.br"
+    },
+    "isencao_ate": "2026-09-25",
+    "prova_objetiva": null,
+    "local_prova": "Belém (PA); em caso de excesso de candidatos, a prova objetiva pode usar locais em municípios da região metropolitana",
+    "taxa": {
+      "min": 100.0,
+      "max": 120.0
+    },
+    "isencao_regras": "Isenção para inscritos no CadÚnico, pessoas em hipossuficiência econômica comprovada por outros meios e doadores de medula óssea (Lei 13.656/2018); pedido de 23/09 a 25/09/2026, no formulário de inscrição do Instituto AOCP",
+    "regime": "Estatutário (Lei 8.112/1990)",
+    "beneficios": [
+      {
+        "nome": "Auxílio-alimentação",
+        "valor": 1192.0
+      },
+      {
+        "nome": "Auxílio pré-escolar (dependentes com menos de 6 anos)",
+        "valor": 526.34
+      }
+    ],
+    "o_que_levar": null,
+    "cargos": [
+      {
+        "nome": "Assistente de Aluno",
+        "vagas": 3,
+        "cadastro_reserva": false,
+        "salario": 2607.7,
+        "escolaridade": "Médio",
+        "requisitos": "Código 201; nível C; ensino médio completo com experiência mínima de 6 meses; vencimento básico do nível, acrescido de incentivo à qualificação quando houver escolaridade acima da exigida",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Assistente em Administração",
+        "vagas": 20,
+        "cadastro_reserva": false,
+        "salario": 3181.39,
+        "escolaridade": "Médio",
+        "requisitos": "Código 301; nível D; ensino médio profissionalizante, ou ensino médio completo com experiência mínima de 12 meses; vencimento básico do nível, acrescido de incentivo à qualificação quando houver escolaridade acima da exigida",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Técnico de Laboratório – Área: Ciências",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 3181.39,
+        "escolaridade": "Técnico",
+        "requisitos": "Código 302; nível D; curso técnico (ou médio profissionalizante) em química, meio ambiente, controle ambiental, ciências da natureza, aquicultura ou saneamento e registro no conselho de classe; vencimento básico do nível, acrescido de incentivo à qualificação quando houver escolaridade acima da exigida",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Técnico de Tecnologia da Informação",
+        "vagas": 4,
+        "cadastro_reserva": false,
+        "salario": 3181.39,
+        "escolaridade": "Técnico",
+        "requisitos": "Código 303; nível D; ensino médio profissionalizante, ou ensino médio com curso técnico em eletrônica com ênfase em sistemas computacionais; vencimento básico do nível, acrescido de incentivo à qualificação quando houver escolaridade acima da exigida",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Técnico em Agropecuária",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 3181.39,
+        "escolaridade": "Técnico",
+        "requisitos": "Código 304; nível D; ensino médio profissionalizante, ou ensino médio com curso técnico em agropecuária; vencimento básico do nível, acrescido de incentivo à qualificação quando houver escolaridade acima da exigida",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Técnico em Contabilidade",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 3181.39,
+        "escolaridade": "Técnico",
+        "requisitos": "Código 305; nível D; ensino médio profissionalizante na área, ou ensino médio com curso técnico em contabilidade; vencimento básico do nível, acrescido de incentivo à qualificação quando houver escolaridade acima da exigida",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Técnico em Enfermagem",
+        "vagas": 4,
+        "cadastro_reserva": false,
+        "salario": 3181.39,
+        "escolaridade": "Técnico",
+        "requisitos": "Código 306; nível D; curso técnico em enfermagem e registro no conselho de classe; vencimento básico do nível, acrescido de incentivo à qualificação quando houver escolaridade acima da exigida",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Administrador",
+        "vagas": 2,
+        "cadastro_reserva": false,
+        "salario": 5215.39,
+        "escolaridade": "Superior",
+        "requisitos": "Código 401; nível E; graduação em Administração e registro no conselho; vencimento básico do nível, acrescido de incentivo à qualificação quando houver escolaridade acima da exigida",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Analista de Tecnologia da Informação",
+        "vagas": 2,
+        "cadastro_reserva": false,
+        "salario": 5215.39,
+        "escolaridade": "Superior",
+        "requisitos": "Código 402; nível E; graduação em Tecnologia na área de Computação e Informática, Ciência da Computação, Sistemas de Informação ou Engenharia da Computação; vencimento básico do nível, acrescido de incentivo à qualificação quando houver escolaridade acima da exigida",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Arquiteto e Urbanista",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 5215.39,
+        "escolaridade": "Superior",
+        "requisitos": "Código 403; nível E; graduação em Arquitetura e Urbanismo e registro no conselho; vencimento básico do nível, acrescido de incentivo à qualificação quando houver escolaridade acima da exigida",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Assistente Social",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 5215.39,
+        "escolaridade": "Superior",
+        "requisitos": "Código 404; nível E; graduação em Serviço Social e registro no conselho; vencimento básico do nível, acrescido de incentivo à qualificação quando houver escolaridade acima da exigida",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Auditor",
+        "vagas": 5,
+        "cadastro_reserva": false,
+        "salario": 5215.39,
+        "escolaridade": "Superior",
+        "requisitos": "Código 405; nível E; graduação em Economia, Direito ou Ciências Contábeis; vencimento básico do nível, acrescido de incentivo à qualificação quando houver escolaridade acima da exigida",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Bibliotecário-Documentalista",
+        "vagas": 2,
+        "cadastro_reserva": false,
+        "salario": 5215.39,
+        "escolaridade": "Superior",
+        "requisitos": "Código 406; nível E; graduação em Biblioteconomia ou Ciências da Informação e registro no conselho; vencimento básico do nível, acrescido de incentivo à qualificação quando houver escolaridade acima da exigida",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Contador",
+        "vagas": 2,
+        "cadastro_reserva": false,
+        "salario": 5215.39,
+        "escolaridade": "Superior",
+        "requisitos": "Código 407; nível E; graduação em Ciências Contábeis e registro no conselho; vencimento básico do nível, acrescido de incentivo à qualificação quando houver escolaridade acima da exigida",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Engenheiro Civil",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 5215.39,
+        "escolaridade": "Superior",
+        "requisitos": "Código 408; nível E; graduação em Engenharia Civil e registro no conselho; vencimento básico do nível, acrescido de incentivo à qualificação quando houver escolaridade acima da exigida",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Engenheiro Eletricista",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 5215.39,
+        "escolaridade": "Superior",
+        "requisitos": "Código 409; nível E; graduação em Engenharia Elétrica e registro no conselho; vencimento básico do nível, acrescido de incentivo à qualificação quando houver escolaridade acima da exigida",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Nutricionista",
+        "vagas": 2,
+        "cadastro_reserva": false,
+        "salario": 5215.39,
+        "escolaridade": "Superior",
+        "requisitos": "Código 410; nível E; graduação em Nutrição e registro no conselho; vencimento básico do nível, acrescido de incentivo à qualificação quando houver escolaridade acima da exigida",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Psicólogo",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 5215.39,
+        "escolaridade": "Superior",
+        "requisitos": "Código 411; nível E; graduação em Psicologia e registro no conselho; vencimento básico do nível, acrescido de incentivo à qualificação quando houver escolaridade acima da exigida",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Técnico em Assuntos Educacionais",
+        "vagas": 10,
+        "cadastro_reserva": false,
+        "salario": 5215.39,
+        "escolaridade": "Superior",
+        "requisitos": "Código 412; nível E; graduação em Pedagogia ou licenciatura; vencimento básico do nível, acrescido de incentivo à qualificação quando houver escolaridade acima da exigida",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Tecnólogo-Formação – Área: Gestão Pública",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 5215.39,
+        "escolaridade": "Superior",
+        "requisitos": "Código 413; nível E; graduação em Tecnologia em Gestão Pública, Administração ou Administração Pública; vencimento básico do nível, acrescido de incentivo à qualificação quando houver escolaridade acima da exigida",
+        "jornada_horas": 40,
+        "materias": []
+      }
+    ],
+    "documentos": [
+      {
+        "tipo": "edital",
+        "titulo": "Edital nº 5-IFPA, de 18 de setembro de 2026 – Concurso público para técnico-administrativos em educação",
+        "numero": "5/2026",
+        "url": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=21/09/2026&jornal=530&pagina=108",
+        "publicado_em": "2026-09-21",
+        "fonte": "DOU",
+        "resumo": "65 vagas de técnico-administrativo em educação (níveis C, D e E), lotação em qualquer unidade do IFPA"
+      },
+      {
+        "tipo": "retificacao",
+        "titulo": "Retificação do Edital nº 5/2026-IFPA (Anexo I - Cronograma)",
+        "numero": null,
+        "url": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=24/09/2026&jornal=530&pagina=30",
+        "publicado_em": "2026-09-24",
+        "fonte": "DOU",
+        "resumo": "Retifica o cronograma: isenção de 23/09 a 25/09/2026 e inscrições de 23/09 a 20/10/2026"
+      }
+    ],
+    "conferencia": null,
+    "primeira_varredura": null,
+    "ultima_alteracao": null
+  }
+}

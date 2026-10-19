@@ -1,0 +1,61 @@
+{
+  "ato": "dou-2026-09-18-entidades-de-fiscalizacao-do-exercicio-d-a4781a9e.md",
+  "atos_extras": [],
+  "trechos": {
+    "salario": "não consta no ato (o extrato não lista cargos nem salários; o edital completo está em www.institutoconsulplan.org.br)",
+    "inscricao.inicio": "INSCRIÇÕES: de 16h00min do dia 25 de setembro de 2026 às 16h00min do dia 26 de outubro de 2026, no site www.institutoconsulplan.org.br.",
+    "inscricao.fim": "INSCRIÇÕES: de 16h00min do dia 25 de setembro de 2026 às 16h00min do dia 26 de outubro de 2026, no site www.institutoconsulplan.org.br.",
+    "prova_objetiva": "As Provas Objetivas de Múltipla Escolha e Discursivas serão realizadas na cidade de Aracaju/SE, na data provável de 13 de dezembro de 2026 (domingo), em dois turnos",
+    "taxa": "não consta no ato",
+    "banca": "INSCRIÇÕES: de 16h00min do dia 25 de setembro de 2026 às 16h00min do dia 26 de outubro de 2026, no site www.institutoconsulplan.org.br.",
+    "cidade": "As Provas Objetivas de Múltipla Escolha e Discursivas serão realizadas na cidade de Aracaju/SE",
+    "edital": "EDITAL Nº 1, DE 17 DE SETEMBRO DE 2026 CONCURSO PÚBLICO DESTINADO AO PREENCHIMENTO DE VAGAS DE SEU QUADRO DE PESSOAL E FORMAÇÃO DE CADASTRO DE RESERVA A Presidente do CONSELHO REGIONAL DE ODONTOLOGIA DE SERGIPE - CRO/SE"
+  },
+  "concurso": {
+    "id": "cro-se-2026-edital-01",
+    "orgao": "Conselho Regional de Odontologia de Sergipe (CRO/SE)",
+    "esfera": "federal",
+    "uf": "SE",
+    "municipio_ibge": null,
+    "cidade": "Aracaju",
+    "nacional": false,
+    "abrangencia": null,
+    "area": "Administrativa",
+    "banca": {
+      "nome": "Instituto Consulplan",
+      "url": "https://www.institutoconsulplan.org.br"
+    },
+    "inscricao": {
+      "inicio": "2026-09-25",
+      "fim": "2026-10-26",
+      "url": "https://www.institutoconsulplan.org.br"
+    },
+    "isencao_ate": null,
+    "prova_objetiva": "2026-12-13",
+    "local_prova": "Aracaju (SE), em dois turnos",
+    "taxa": {
+      "min": null,
+      "max": null
+    },
+    "isencao_regras": null,
+    "regime": null,
+    "beneficios": [],
+    "o_que_levar": null,
+    "cargos": [],
+    "documentos": [
+      {
+        "tipo": "edital",
+        "titulo": "Edital nº 1, de 17 de setembro de 2026 – Concurso Público (extrato)",
+        "numero": "1/2026",
+        "url": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=18/09/2026&jornal=530&pagina=123",
+        "publicado_em": "2026-09-18",
+        "fonte": "DOU",
+        "resumo": null
+      }
+    ],
+    "ficticio": false,
+    "conferencia": null,
+    "primeira_varredura": null,
+    "ultima_alteracao": null
+  }
+}

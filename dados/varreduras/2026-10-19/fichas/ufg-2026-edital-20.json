@@ -1,0 +1,83 @@
+{
+  "ato": "dou-2026-10-05-ministerio-da-educacao-universidade-fede-fcc6a88e.md",
+  "atos_extras": [
+    "dou-2026-10-05-ministerio-da-educacao-universidade-fede-fcc6a88e-extra-1.md"
+  ],
+  "trechos": {
+    "salario": "DEDICAÇÃO EXCLUSIVA Titulação Vencimento Básico Retribuição por Titulação Total Graduação ---- R$ 6.180,86 Especialização R$ 1.236,17 R$ 7.417,03 R$ 6.180,86 Mestrado R$ 3.090,43 R$ 9.271,29 Doutorado R$ 7.107,99 R$ 13.288,85 — Edital de Condições Gerais nº 23/2025 (ingresso na Classe D I do EBTT)",
+    "inscricao.inicio": "PERÍODO DE INSCRIÇÃO UNIDADE RESPONSÁVEL PELO CONCURSO 23070.041831/2026-51 04 (1)(2) 18 DE Câmpus da Região Metropolitana de Goiânia Educação Inclusiva Licenciatura em Pedagogia e/ou Licenciatura em Educação Especial 16/10/2026 a 04/11/2026",
+    "inscricao.fim": "PERÍODO DE INSCRIÇÃO UNIDADE RESPONSÁVEL PELO CONCURSO 23070.041831/2026-51 04 (1)(2) 18 DE Câmpus da Região Metropolitana de Goiânia Educação Inclusiva Licenciatura em Pedagogia e/ou Licenciatura em Educação Especial 16/10/2026 a 04/11/2026",
+    "prova_objetiva": "não consta no ato: não há prova objetiva; o Anexo I traz 01/02/2027 14h às 18h UFG/Goiânia Prova Escrita ou Teórico-Prática, depois Prova Didática e Defesa de Memorial",
+    "taxa": "3.6. A taxa de inscrição varia de acordo com o regime de trabalho e a titulação máxima exigida para o concurso [...] Regime de Trabalho Graduação Especialização Mestrado Doutorado Dedicação Exclusiva R$ 110,00 R$ 130,00 R$ 170,00 R$ 240,00 (DE, graduação: R$ 110,00)",
+    "banca": "tendo em vista o Edital de Condições Gerais nº 23/2025, torna públicas as condições específicas para realização de concurso público [...] no âmbito da Universidade Federal de Goiás [...] sítio da UFG - SISCONCURSO (www.ufg.br)",
+    "cidade": "Câmpus da Região Metropolitana de Goiânia Centro de Ensino e Pesquisa Aplicada à Educação - CEPAE/UFG Câmpus Samambaia - Av. Esperança, s/n, Câmpus Samambaia - Goiânia/GO",
+    "edital": "EDITAL Nº 20, DE 1º DE OUTUBRO DE 2026 CONDIÇÕES ESPECÍFICAS PARA REALIZAÇÃO DE CONCURSO PÚBLICO DE PROVAS E TÍTULOS PARA PREENCHIMENTO DE VAGA(S) DE PROFESSOR DO ENSINO BÁSICO, TÉCNICO E TECNOLÓGICO"
+  },
+  "concurso": {
+    "id": "ufg-2026-edital-20",
+    "ficticio": false,
+    "orgao": "Universidade Federal de Goiás (UFG)",
+    "esfera": "federal",
+    "uf": "GO",
+    "municipio_ibge": null,
+    "cidade": "Goiânia",
+    "nacional": false,
+    "abrangencia": null,
+    "area": "Educação",
+    "banca": {
+      "nome": "UFG (Pró-Reitoria de Gestão de Pessoas)",
+      "url": "https://sistemas.ufg.br/CONCURSOS_WEB/"
+    },
+    "inscricao": {
+      "inicio": "2026-10-16",
+      "fim": "2026-11-04",
+      "url": "https://sistemas.ufg.br/CONCURSOS_WEB/"
+    },
+    "isencao_ate": null,
+    "prova_objetiva": null,
+    "local_prova": "UFG, Goiânia (GO)",
+    "taxa": {
+      "min": 110.0,
+      "max": 110.0
+    },
+    "isencao_regras": "Isenção para inscritos no CadÚnico de família de baixa renda (Decreto 11.016/2022) e doadores de medula óssea (Lei 13.656/2018); pedido em até 5 dias corridos do início das inscrições, na ficha de inscrição do SISCONCURSO (Edital de Condições Gerais nº 23/2025)",
+    "regime": "Estatutário (Lei 8.112/1990)",
+    "beneficios": [],
+    "o_que_levar": null,
+    "cargos": [
+      {
+        "nome": "Professor do Ensino Básico, Técnico e Tecnológico – Educação Inclusiva",
+        "vagas": 4,
+        "cadastro_reserva": false,
+        "salario": 6180.86,
+        "escolaridade": "Superior",
+        "requisitos": "Classe D I; Centro de Ensino e Pesquisa Aplicada à Educação (CEPAE/UFG), Câmpus da Região Metropolitana de Goiânia; dedicação exclusiva; titulação mínima: graduação (Licenciatura em Pedagogia e/ou Licenciatura em Educação Especial); a remuneração sobe com a titulação; uma vaga reservada a pessoa com deficiência e uma a pessoas negras (pretas e pardas); até 18 aprovados",
+        "jornada_horas": 40,
+        "materias": []
+      }
+    ],
+    "documentos": [
+      {
+        "tipo": "edital",
+        "titulo": "Edital nº 20, de 1º de outubro de 2026 – Condições específicas, Professor do Ensino Básico, Técnico e Tecnológico",
+        "numero": "20/2026",
+        "url": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=05/10/2026&jornal=530&pagina=44",
+        "publicado_em": "2026-10-05",
+        "fonte": "DOU",
+        "resumo": null
+      },
+      {
+        "tipo": "outro",
+        "titulo": "Edital de Condições Gerais nº 23/2025 – Professor do Magistério Federal (UFG)",
+        "numero": "23/2025",
+        "url": "https://sistemas.ufg.br/CONCURSOS_WEB/informacoes/download/cd_informacao/30517",
+        "publicado_em": "2025-09-15",
+        "fonte": "banca",
+        "resumo": "Normas gerais do concurso, tabela de remuneração, taxa de inscrição e isenção (publicado no DOU de 15/09/2025)"
+      }
+    ],
+    "conferencia": null,
+    "primeira_varredura": null,
+    "ultima_alteracao": null
+  }
+}

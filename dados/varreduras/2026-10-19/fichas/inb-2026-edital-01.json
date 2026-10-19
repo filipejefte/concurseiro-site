@@ -1,0 +1,892 @@
+{
+  "ato": "dou-2026-10-14-ministerio-de-minas-e-energia-51248254.md",
+  "atos_extras": [
+    "dou-2026-10-14-ministerio-de-minas-e-energia-51248254-extra-1.md",
+    "dou-2026-10-14-ministerio-de-minas-e-energia-51248254-extra-2.md",
+    "dou-2026-10-14-ministerio-de-minas-e-energia-51248254-extra-3.md",
+    "dou-2026-10-14-ministerio-de-minas-e-energia-51248254-extra-4.md"
+  ],
+  "trechos": {
+    "salario": "ANEXO II - SALÁRIOS, ATRIBUIÇÕES, SUMÁRIO DE TAREFAS E LOCAIS DAS VAGAS [...] FUNÇÃO: ADVOGADO CARGA HORÁRIA: 40 HORAS SALÁRIO BASE: R$ 7.221,00 [...] FUNÇÃO: ASSISTENTE ADMINISTRATIVO CARGA HORÁRIA: 40 HORAS SALÁRIO BASE: R$ 3.452,00 [...] FUNÇÃO: ENGENHEIRO CIVIL CARGA HORÁRIA: 40 HORAS SALÁRIO BASE: R$ 8.374,00",
+    "inscricao.inicio": "4.1 As inscrições para o Concurso Público estarão abertas no período das 16h do dia 13 de outubro de 2026 até as 16h do dia 11 de novembro de 2026, de acordo com o horário oficial de Brasília/DF.",
+    "inscricao.fim": "4.1 As inscrições para o Concurso Público estarão abertas no período das 16h do dia 13 de outubro de 2026 até as 16h do dia 11 de novembro de 2026, de acordo com o horário oficial de Brasília/DF.",
+    "prova_objetiva": "9.1 Para todos os cargos de nível superior, as Provas Objetivas serão realizadas no Rio de Janeiro/RJ, em Resende/RJ, em Caetité/BA e em Poços de Caldas/MG, na data provável de 10 de janeiro de 2027, de 9h às 13h",
+    "taxa": "4.1.1 O valor da taxa de inscrição para o cargo de nível superior é de R$ 125,00 (cento e vinte e cinco reais) e para nível médio é de R$ 100,00 (cem reais).",
+    "banca": "1.6 O Concurso Público será executado sob a responsabilidade da Fundação Getulio Vargas, doravante denominada FGV.",
+    "cidade": "3.8 O provimento dos cargos deverá ser realizado nas localidades de Caetité/BA, Caldas/MG, Resende/RJ e Rio de Janeiro/RJ ficando a critério da INB movimentar o efetivo para outra localidade, se houver necessidade da Empresa.",
+    "edital": "EDITAL DE CONCURSO PÚBLICO Nº 1/2026 Indústrias Nucleares do Brasil S.A. - INB, torna pública a realização do Concurso Público destinado a formação de Cadastro de Reserva para os cargos de nível médio e superior previstos neste edital"
+  },
+  "concurso": {
+    "id": "inb-2026-edital-01",
+    "ficticio": false,
+    "orgao": "Indústrias Nucleares do Brasil S.A. (INB)",
+    "esfera": "federal",
+    "uf": "RJ",
+    "municipio_ibge": null,
+    "cidade": null,
+    "nacional": true,
+    "abrangencia": "BA, MG e RJ",
+    "area": "Outras",
+    "banca": {
+      "nome": "Fundação Getulio Vargas (FGV)",
+      "url": "https://conhecimento.fgv.br/processoseletivo/inb2026"
+    },
+    "inscricao": {
+      "inicio": "2026-10-13",
+      "fim": "2026-11-11",
+      "url": "https://conhecimento.fgv.br/processoseletivo/inb2026"
+    },
+    "isencao_ate": "2026-10-15",
+    "prova_objetiva": "2027-01-10",
+    "local_prova": "Rio de Janeiro (RJ), Resende (RJ), Caetité (BA) e Poços de Caldas (MG, para as vagas de Caldas); Teste de Aptidão Física de Inspetor de Guarda em Resende (RJ)",
+    "taxa": {
+      "min": 100.0,
+      "max": 125.0
+    },
+    "isencao_regras": "Isenção para inscritos no CadÚnico (Decreto 11.016/2022) e doadores de medula óssea (Lei 13.656/2018); pedido entre 16h de 13/10 e 16h de 15/10/2026, no site da FGV, com envio dos comprovantes",
+    "regime": "CLT",
+    "beneficios": [],
+    "o_que_levar": "Caneta esferográfica de tinta azul ou preta em material transparente, documento de identidade original e comprovante de inscrição ou de pagamento da taxa",
+    "cargos": [
+      {
+        "nome": "Administrador",
+        "vagas": 0,
+        "cadastro_reserva": true,
+        "salario": 7221.0,
+        "escolaridade": "Superior",
+        "requisitos": "Cadastro reserva em Caetité/BA, Caldas/MG, Resende/RJ e Rio de Janeiro/RJ; Graduação de Nível Superior, Bacharelado, em Administração, reconhecido pelo Ministério da Educação, e registro definitivo no Órgão de Classe específico, e estar em dia com as obrigações legais junto àquele órgão. Inglês para leitura técnica.",
+        "jornada_horas": 40,
+        "materias": [
+          "Língua Portuguesa",
+          "Língua Inglesa",
+          "Conhecimento de Normas",
+          "Conhecimentos Específicos"
+        ]
+      },
+      {
+        "nome": "Advogado",
+        "vagas": 0,
+        "cadastro_reserva": true,
+        "salario": 7221.0,
+        "escolaridade": "Superior",
+        "requisitos": "Cadastro reserva em Caetité/BA, Caldas/MG, Resende/RJ e Rio de Janeiro/RJ; Graduação de Nível Superior, Bacharelado, em Direito, reconhecido pelo Ministério da Educação, e registro definitivo no Órgão de Classe específico, e estar em dia com as obrigações legais junto àquele órgão. Inglês para leitura técnica.",
+        "jornada_horas": 40,
+        "materias": [
+          "Língua Portuguesa",
+          "Língua Inglesa",
+          "Conhecimento de Normas",
+          "Conhecimentos Específicos"
+        ]
+      },
+      {
+        "nome": "Analista de Comércio Exterior",
+        "vagas": 0,
+        "cadastro_reserva": true,
+        "salario": 7221.0,
+        "escolaridade": "Superior",
+        "requisitos": "Cadastro reserva em Resende/RJ e Rio de Janeiro/RJ; Graduação de Nível Superior, Bacharelado, em Comércio Exterior ou Bacharel em outra área, com acréscimo de curso de especialização em nível de pós-graduação na área de comércio exterior, reconhecido pelo Ministério da Educação, e registro definitivo no Órgão de Classe específico, e estar em dia com as obrigações legais junto ao órgão. Inglês para leitura técnica",
+        "jornada_horas": 40,
+        "materias": [
+          "Língua Portuguesa",
+          "Língua Inglesa",
+          "Conhecimento de Normas",
+          "Conhecimentos Específicos"
+        ]
+      },
+      {
+        "nome": "Analista de Comunicação",
+        "vagas": 0,
+        "cadastro_reserva": true,
+        "salario": 6233.0,
+        "escolaridade": "Superior",
+        "requisitos": "Cadastro reserva em Caetité/BA, Caldas/MG, Resende/RJ e Rio de Janeiro/RJ; Graduação de Nível Superior, Bacharelado, em Comunicação Social, reconhecido pelo Ministério da Educação. Inglês para leitura técnica",
+        "jornada_horas": 40,
+        "materias": [
+          "Língua Portuguesa",
+          "Língua Inglesa",
+          "Conhecimento de Normas",
+          "Conhecimentos Específicos"
+        ]
+      },
+      {
+        "nome": "Analista de Sistemas",
+        "vagas": 0,
+        "cadastro_reserva": true,
+        "salario": 7221.0,
+        "escolaridade": "Superior",
+        "requisitos": "Cadastro reserva em Resende/RJ; Graduação de Nível Superior, Bacharelado, Graduação de Nível Superior, Bacharelado, em Ciência da Computação ou Informática ou Sistemas de Informação ou Análise de Sistemas ou Tecnologia da Informação. Inglês para leitura técnica",
+        "jornada_horas": 40,
+        "materias": [
+          "Língua Portuguesa",
+          "Língua Inglesa",
+          "Conhecimento de Normas",
+          "Conhecimentos Específicos"
+        ]
+      },
+      {
+        "nome": "Arquivologista",
+        "vagas": 0,
+        "cadastro_reserva": true,
+        "salario": 6233.0,
+        "escolaridade": "Superior",
+        "requisitos": "Cadastro reserva em Resende/RJ; Graduação de Nível Superior, Bacharelado, em Arquivologia, reconhecido pelo Ministério da Educação. Inglês para leitura técnica.",
+        "jornada_horas": 40,
+        "materias": [
+          "Língua Portuguesa",
+          "Língua Inglesa",
+          "Conhecimento de Normas",
+          "Conhecimentos Específicos"
+        ]
+      },
+      {
+        "nome": "Assistente Social",
+        "vagas": 0,
+        "cadastro_reserva": true,
+        "salario": 6233.0,
+        "escolaridade": "Superior",
+        "requisitos": "Cadastro reserva em Caetité/BA, Caldas/MG e Resende/RJ; Graduação de Nível Superior, Bacharelado, em Serviço Social, reconhecido pelo Ministério da Educação, e registro definitivo no Órgão de Classe específico, e estar em dia com as obrigações legais junto ao órgão. Inglês para leitura técnica",
+        "jornada_horas": 30,
+        "materias": [
+          "Língua Portuguesa",
+          "Língua Inglesa",
+          "Conhecimento de Normas",
+          "Conhecimentos Específicos"
+        ]
+      },
+      {
+        "nome": "Auditor",
+        "vagas": 0,
+        "cadastro_reserva": true,
+        "salario": 7221.0,
+        "escolaridade": "Superior",
+        "requisitos": "Cadastro reserva em Resende/RJ e Rio de Janeiro/RJ; Graduação de Nível Superior, Bacharelado, em Administração ou Ciências Contábeis, Análise de Sistemas ou Economia, reconhecido pelo Ministério da Educação, e registro definitivo no Órgão de Classe específico, e estar em dia com as obrigações legais junto ao órgão. Inglês para leitura técnica.",
+        "jornada_horas": 40,
+        "materias": [
+          "Língua Portuguesa",
+          "Língua Inglesa",
+          "Conhecimento de Normas",
+          "Conhecimentos Específicos"
+        ]
+      },
+      {
+        "nome": "Biólogo",
+        "vagas": 0,
+        "cadastro_reserva": true,
+        "salario": 6233.0,
+        "escolaridade": "Superior",
+        "requisitos": "Cadastro reserva em Caetité/BA, Caldas/MG e Resende/RJ; Graduação de Nível Superior, Bacharelado, em Biologia, reconhecido pelo Ministério da Educação, e registro definitivo no Órgão de Classe específico, e estar em dia com as obrigações legais junto ao órgão. Inglês para leitura técnica.",
+        "jornada_horas": 40,
+        "materias": [
+          "Língua Portuguesa",
+          "Língua Inglesa",
+          "Conhecimento de Normas",
+          "Conhecimentos Específicos"
+        ]
+      },
+      {
+        "nome": "Contador",
+        "vagas": 0,
+        "cadastro_reserva": true,
+        "salario": 7221.0,
+        "escolaridade": "Superior",
+        "requisitos": "Cadastro reserva em Resende/RJ e Rio de Janeiro/RJ; Graduação de Nível Superior, Bacharelado, Ciências Contábeis, reconhecido pelo Ministério da Educação, e registro definitivo no Órgão de Classe específico, e estar em dia com as obrigações legais junto ao órgão. Inglês para leitura técnica.",
+        "jornada_horas": 40,
+        "materias": [
+          "Língua Portuguesa",
+          "Língua Inglesa",
+          "Conhecimento de Normas",
+          "Conhecimentos Específicos"
+        ]
+      },
+      {
+        "nome": "Economista",
+        "vagas": 0,
+        "cadastro_reserva": true,
+        "salario": 7221.0,
+        "escolaridade": "Superior",
+        "requisitos": "Cadastro reserva em Resende/RJ; Graduação de Nível Superior, Bacharelado, em Economia, reconhecido pelo Ministério da Educação, e registro definitivo no Órgão de Classe específico, e estar em dia com as obrigações legais junto ao órgão. Inglês para leitura técnica.",
+        "jornada_horas": 40,
+        "materias": [
+          "Língua Portuguesa",
+          "Língua Inglesa",
+          "Conhecimento de Normas",
+          "Conhecimentos Específicos"
+        ]
+      },
+      {
+        "nome": "Enfermeiro do Trabalho",
+        "vagas": 0,
+        "cadastro_reserva": true,
+        "salario": 6233.0,
+        "escolaridade": "Superior",
+        "requisitos": "Cadastro reserva em Caetité/BA e Resende/RJ; Graduação de Nível Superior, Bacharelado, em Enfermagem, reconhecido pelo Ministério da Educação, acrescido de certificado de conclusão ou diploma de curso de especialização em nível de pós-graduação em Enfermagem do Trabalho, e registro definitivo no Órgão de Classe específico, como Engenheiro de Segurança do Trabalho, e estar em dia com as obrigações legais junto ao órgão. Inglês para leitura técnica",
+        "jornada_horas": 40,
+        "materias": [
+          "Língua Portuguesa",
+          "Língua Inglesa",
+          "Conhecimento de Normas",
+          "Conhecimentos Específicos"
+        ]
+      },
+      {
+        "nome": "Engenheiro Agrônomo/Florestal",
+        "vagas": 0,
+        "cadastro_reserva": true,
+        "salario": 8374.0,
+        "escolaridade": "Superior",
+        "requisitos": "Cadastro reserva em Caetité/BA; Graduação de Nível Superior, Bacharelado, em Engenharia Agronômica, reconhecido pelo Ministério da Educação, e registro definitivo no Órgão de Classe específico, e estar em dia com as obrigações legais junto ao órgão. Inglês para leitura técnica.",
+        "jornada_horas": 40,
+        "materias": [
+          "Língua Portuguesa",
+          "Língua Inglesa",
+          "Conhecimento de Normas",
+          "Conhecimentos Específicos"
+        ]
+      },
+      {
+        "nome": "Engenheiro Ambiental",
+        "vagas": 0,
+        "cadastro_reserva": true,
+        "salario": 8374.0,
+        "escolaridade": "Superior",
+        "requisitos": "Cadastro reserva em Caetité/BA, Caldas/MG e Resende/RJ; Graduação de Nível Superior, Bacharelado, em Engenharia Ambiental, reconhecido pelo Ministério da Educação, e registro definitivo no Órgão de Classe específico, e estar em dia com as obrigações legais junto ao órgão. Inglês para leitura técnica.",
+        "jornada_horas": 40,
+        "materias": [
+          "Língua Portuguesa",
+          "Língua Inglesa",
+          "Conhecimento de Normas",
+          "Conhecimentos Específicos"
+        ]
+      },
+      {
+        "nome": "Engenheiro Civil",
+        "vagas": 0,
+        "cadastro_reserva": true,
+        "salario": 8374.0,
+        "escolaridade": "Superior",
+        "requisitos": "Cadastro reserva em Caetité/BA, Caldas/MG e Resende/RJ; Graduação de Nível Superior, Bacharelado, em Engenharia Civil, reconhecido pelo Ministério da Educação, e registro definitivo no Órgão de Classe específico, e estar em dia com as obrigações legais junto ao órgão. Inglês para leitura técnica.",
+        "jornada_horas": 40,
+        "materias": [
+          "Língua Portuguesa",
+          "Língua Inglesa",
+          "Conhecimento de Normas",
+          "Conhecimentos Específicos"
+        ]
+      },
+      {
+        "nome": "Engenheiro de Controle e Automação",
+        "vagas": 0,
+        "cadastro_reserva": true,
+        "salario": 8374.0,
+        "escolaridade": "Superior",
+        "requisitos": "Cadastro reserva em Caetité/BA e Resende/RJ; Graduação de Nível Superior, Bacharelado, em Engenharia de Controle e Automação, reconhecido pelo Ministério da Educação, e registro definitivo no Órgão de Classe específico, e estar em dia com as obrigações legais junto ao órgão. Inglês para leitura técnica.",
+        "jornada_horas": 40,
+        "materias": [
+          "Língua Portuguesa",
+          "Língua Inglesa",
+          "Conhecimento de Normas",
+          "Conhecimentos Específicos"
+        ]
+      },
+      {
+        "nome": "Engenheiro de Minas",
+        "vagas": 0,
+        "cadastro_reserva": true,
+        "salario": 8374.0,
+        "escolaridade": "Superior",
+        "requisitos": "Cadastro reserva em Caetité/BA; Graduação de Nível Superior, Bacharelado, em Engenharia de Minas, reconhecido pelo Ministério da Educação, e registro definitivo no Órgão de Classe específico, e estar em dia com as obrigações legais junto ao órgão. Inglês para leitura técnica.",
+        "jornada_horas": 40,
+        "materias": [
+          "Língua Portuguesa",
+          "Língua Inglesa",
+          "Conhecimento de Normas",
+          "Conhecimentos Específicos"
+        ]
+      },
+      {
+        "nome": "Engenheiro de Produção",
+        "vagas": 0,
+        "cadastro_reserva": true,
+        "salario": 8374.0,
+        "escolaridade": "Superior",
+        "requisitos": "Cadastro reserva em Caetité/BA e Resende/RJ; Graduação de Nível Superior, Bacharelado, em Engenharia de Produção, reconhecido pelo Ministério da Educação, e registro definitivo no Órgão de Classe específico, e estar em dia com as obrigações legais junto ao órgão. Inglês para leitura técnica.",
+        "jornada_horas": 40,
+        "materias": [
+          "Língua Portuguesa",
+          "Língua Inglesa",
+          "Conhecimento de Normas",
+          "Conhecimentos Específicos"
+        ]
+      },
+      {
+        "nome": "Engenheiro de Segurança do Trabalho",
+        "vagas": 0,
+        "cadastro_reserva": true,
+        "salario": 8374.0,
+        "escolaridade": "Superior",
+        "requisitos": "Cadastro reserva em Caetité/BA, Caldas/MG e Resende/RJ; Graduação de Nível Superior, Bacharelado, em Engenharia, reconhecido pelo Ministério da Educação, acrescido de certificado de conclusão ou diploma de curso de especialização em nível de pós-graduação em Engenharia de Segurança do Trabalho, e registro definitivo no Órgão de Classe específico, como Engenheiro de Segurança do Trabalho, e estar em dia com as obrigações legais junto ao órgão. Inglês para leitura técnica",
+        "jornada_horas": 40,
+        "materias": [
+          "Língua Portuguesa",
+          "Língua Inglesa",
+          "Conhecimento de Normas",
+          "Conhecimentos Específicos"
+        ]
+      },
+      {
+        "nome": "Engenheiro Eletricista",
+        "vagas": 0,
+        "cadastro_reserva": true,
+        "salario": 8374.0,
+        "escolaridade": "Superior",
+        "requisitos": "Cadastro reserva em Caetité/BA, Caldas/MG e Resende/RJ; Graduação de Nível Superior, Bacharelado, em Engenharia Elétrica, reconhecido pelo Ministério da Educação, e registro definitivo no Órgão de Classe específico, e estar em dia com as obrigações legais junto ao órgão. Inglês para leitura técnica.",
+        "jornada_horas": 40,
+        "materias": [
+          "Língua Portuguesa",
+          "Língua Inglesa",
+          "Conhecimento de Normas",
+          "Conhecimentos Específicos"
+        ]
+      },
+      {
+        "nome": "Engenheiro Eletrônico",
+        "vagas": 0,
+        "cadastro_reserva": true,
+        "salario": 8374.0,
+        "escolaridade": "Superior",
+        "requisitos": "Cadastro reserva em Resende/RJ; Graduação de Nível Superior, Bacharelado, em Engenharia de Minas, reconhecido pelo Ministério da Educação, e registro definitivo no Órgão de Classe específico, e estar em dia com as obrigações legais junto ao órgão. Inglês para leitura técnica.",
+        "jornada_horas": 40,
+        "materias": [
+          "Língua Portuguesa",
+          "Língua Inglesa",
+          "Conhecimento de Normas",
+          "Conhecimentos Específicos"
+        ]
+      },
+      {
+        "nome": "Engenheiro Geotécnico",
+        "vagas": 0,
+        "cadastro_reserva": true,
+        "salario": 8374.0,
+        "escolaridade": "Superior",
+        "requisitos": "Cadastro reserva em Caetité/BA; Graduação de Nível Superior, Bacharelado, em Engenharia Civil, reconhecido pelo Ministério da Educação, e registro definitivo no Órgão de Classe específico, e estar em dia com as obrigações legais junto ao órgão. Desejável experiência e/ou pós-graduação na área de Geotecnia. Inglês para leitura técnica.",
+        "jornada_horas": 40,
+        "materias": [
+          "Língua Portuguesa",
+          "Língua Inglesa",
+          "Conhecimento de Normas",
+          "Conhecimentos Específicos"
+        ]
+      },
+      {
+        "nome": "Engenheiro Mecânico",
+        "vagas": 0,
+        "cadastro_reserva": true,
+        "salario": 8374.0,
+        "escolaridade": "Superior",
+        "requisitos": "Cadastro reserva em Caetité/BA, Caldas/MG e Resende/RJ; Graduação de Nível Superior, Bacharelado, em Engenharia Mecânica, reconhecido pelo Ministério da Educação, e registro definitivo no Órgão de Classe específico, e estar em dia com as obrigações legais junto ao órgão. Inglês para leitura técnica.",
+        "jornada_horas": 40,
+        "materias": [
+          "Língua Portuguesa",
+          "Língua Inglesa",
+          "Conhecimento de Normas",
+          "Conhecimentos Específicos"
+        ]
+      },
+      {
+        "nome": "Engenheiro Metalurgista",
+        "vagas": 0,
+        "cadastro_reserva": true,
+        "salario": 8374.0,
+        "escolaridade": "Superior",
+        "requisitos": "Cadastro reserva em Resende/RJ; Graduação de Nível Superior, Bacharelado, em Engenharia de Minas, reconhecido pelo Ministério da Educação, e registro definitivo no Órgão de Classe específico, e estar em dia com as obrigações legais junto ao órgão. Inglês para leitura técnica.",
+        "jornada_horas": 40,
+        "materias": [
+          "Língua Portuguesa",
+          "Língua Inglesa",
+          "Conhecimento de Normas",
+          "Conhecimentos Específicos"
+        ]
+      },
+      {
+        "nome": "Engenheiro Nuclear",
+        "vagas": 0,
+        "cadastro_reserva": true,
+        "salario": 8374.0,
+        "escolaridade": "Superior",
+        "requisitos": "Cadastro reserva em Resende/RJ; Graduação de Nível Superior, Bacharelado, em Engenharia Nuclear, reconhecido pelo Ministério da Educação, e registro definitivo no Órgão de Classe específico, e estar em dia com as obrigações legais junto ao órgão. Inglês para leitura técnica.",
+        "jornada_horas": 40,
+        "materias": [
+          "Língua Portuguesa",
+          "Língua Inglesa",
+          "Conhecimento de Normas",
+          "Conhecimentos Específicos"
+        ]
+      },
+      {
+        "nome": "Engenheiro Químico",
+        "vagas": 0,
+        "cadastro_reserva": true,
+        "salario": 8374.0,
+        "escolaridade": "Superior",
+        "requisitos": "Cadastro reserva em Caetité/BA, Caldas/MG e Resende/RJ; Graduação de Nível Superior, Bacharelado, em Engenharia Química, reconhecido pelo Ministério da Educação, e registro definitivo no Órgão de Classe específico, e estar em dia com as obrigações legais junto ao órgão. Inglês para leitura técnica.",
+        "jornada_horas": 40,
+        "materias": [
+          "Língua Portuguesa",
+          "Língua Inglesa",
+          "Conhecimento de Normas",
+          "Conhecimentos Específicos"
+        ]
+      },
+      {
+        "nome": "Físico",
+        "vagas": 0,
+        "cadastro_reserva": true,
+        "salario": 8374.0,
+        "escolaridade": "Superior",
+        "requisitos": "Cadastro reserva em Caetité/BA e Resende/RJ; Graduação de Nível Superior, Bacharelado, em Física, reconhecido pelo Ministério da Educação. Inglês para leitura técnica.",
+        "jornada_horas": 40,
+        "materias": [
+          "Língua Portuguesa",
+          "Língua Inglesa",
+          "Conhecimento de Normas",
+          "Conhecimentos Específicos"
+        ]
+      },
+      {
+        "nome": "Geólogo",
+        "vagas": 0,
+        "cadastro_reserva": true,
+        "salario": 8374.0,
+        "escolaridade": "Superior",
+        "requisitos": "Cadastro reserva em Caetité/BA e Caldas/MG; Graduação de Nível Superior, Bacharelado, em Geologia, reconhecido pelo Ministério da Educação, e registro definitivo no Órgão de Classe específico, e estar em dia com as obrigações legais junto ao órgão. Inglês para leitura técnica.",
+        "jornada_horas": 40,
+        "materias": [
+          "Língua Portuguesa",
+          "Língua Inglesa",
+          "Conhecimento de Normas",
+          "Conhecimentos Específicos"
+        ]
+      },
+      {
+        "nome": "Médico do Trabalho",
+        "vagas": 0,
+        "cadastro_reserva": true,
+        "salario": 6233.0,
+        "escolaridade": "Superior",
+        "requisitos": "Cadastro reserva em Caetité/BA, Caldas/MG e Resende/RJ; Graduação de Nível Superior, Bacharelado, em Medicina e Curso de Especialização em nível de pós-graduação em Medicina do Trabalho, fornecidos por instituições de ensino superior, reconhecidos pelo Ministério da Educação, e registro definitivo no Órgão de Classe específico, e estar em dia com as obrigações legais junto ao órgão. Inglês para leitura técnica. Necessário Registro de Qualificação de Especialista (RQE) em Medicina do Trabalho, registrados até a data de admissão.",
+        "jornada_horas": 20,
+        "materias": [
+          "Língua Portuguesa",
+          "Língua Inglesa",
+          "Conhecimento de Normas",
+          "Conhecimentos Específicos"
+        ]
+      },
+      {
+        "nome": "Psicólogo",
+        "vagas": 0,
+        "cadastro_reserva": true,
+        "salario": 6233.0,
+        "escolaridade": "Superior",
+        "requisitos": "Cadastro reserva em Resende/RJ; Graduação de Nível Superior, Bacharelado, em Psicologia, reconhecido pelo Ministério da Educação. Inglês para leitura técnica.",
+        "jornada_horas": 40,
+        "materias": [
+          "Língua Portuguesa",
+          "Língua Inglesa",
+          "Conhecimento de Normas",
+          "Conhecimentos Específicos"
+        ]
+      },
+      {
+        "nome": "Químico",
+        "vagas": 0,
+        "cadastro_reserva": true,
+        "salario": 8374.0,
+        "escolaridade": "Superior",
+        "requisitos": "Cadastro reserva em Caetité/BA, Caldas/MG e Resende/RJ; Graduação de Nível Superior, Bacharelado em Química ou Bacharelado em Química Industrial, reconhecido pelo Ministério da Educação, e registro definitivo no Órgão de Classe específico, e estar em dia com as obrigações legais junto ao órgão. Inglês para leitura técnica.",
+        "jornada_horas": 40,
+        "materias": [
+          "Língua Portuguesa",
+          "Língua Inglesa",
+          "Conhecimento de Normas",
+          "Conhecimentos Específicos"
+        ]
+      },
+      {
+        "nome": "Assistente Administrativo",
+        "vagas": 0,
+        "cadastro_reserva": true,
+        "salario": 3452.0,
+        "escolaridade": "Médio",
+        "requisitos": "Cadastro reserva em Caetité/BA, Caldas/MG, Resende/RJ e Rio de Janeiro/RJ; Diploma ou Certificado de conclusão de Curso de Ensino Médio expedido por instituição de ensino reconhecida pelo Ministério da Educação, Secretarias ou Conselhos Estaduais de Educação.",
+        "jornada_horas": 40,
+        "materias": [
+          "Língua Portuguesa",
+          "Raciocínio lógico-matemático",
+          "Conhecimento de Normas",
+          "Conhecimentos Específicos"
+        ]
+      },
+      {
+        "nome": "Inspetor de Guarda",
+        "vagas": 0,
+        "cadastro_reserva": true,
+        "salario": 3452.0,
+        "escolaridade": "Médio",
+        "requisitos": "Cadastro reserva em Resende/RJ; Diploma ou Certificado de conclusão do Ensino Médio Completo, reconhecido pelo Ministério da Educação, Secretarias ou Conselhos Estaduais de Educação. Certificado de Curso de Formação de Vigilante realizado por instituição credenciada junto aos órgãos competentes, devidamente registrado no Departamento de Polícia Federal do Ministério da Justiça, conforme Lei Federal Nº 14.967/24 e Portaria Nº 3.233/12 da Polícia Federal do Ministério da Justiça. Registro como Vigilante na Polícia Federal. Carteira Nacional de Habilitação - Categoria \"B\", no mínimo; tem Teste de Aptidão Física (em Resende/RJ)",
+        "jornada_horas": 40,
+        "materias": [
+          "Língua Portuguesa",
+          "Raciocínio lógico-matemático",
+          "Conhecimento de Normas",
+          "Conhecimentos Específicos"
+        ]
+      },
+      {
+        "nome": "Desenhista Projetista",
+        "vagas": 0,
+        "cadastro_reserva": true,
+        "salario": 3452.0,
+        "escolaridade": "Médio",
+        "requisitos": "Cadastro reserva em Resende/RJ e Caldas/MG; Diploma ou Certificado de conclusão de Ensino Médio Completo, reconhecido pelo Ministério da Educação, Secretarias ou Conselhos Estaduais de Educação, acrescido de Curso de qualificação profissional de Desenhista Projetista, com carga horária mínima de 400 (quatrocentas) horas-aula. Obrigatório Curso de AutoCAD.",
+        "jornada_horas": 40,
+        "materias": [
+          "Língua Portuguesa",
+          "Raciocínio lógico-matemático",
+          "Conhecimento de Normas",
+          "Conhecimentos Específicos"
+        ]
+      },
+      {
+        "nome": "Operador de Processos",
+        "vagas": 0,
+        "cadastro_reserva": true,
+        "salario": 3452.0,
+        "escolaridade": "Médio",
+        "requisitos": "Cadastro reserva em Caetité/BA, Caldas/MG e Resende/RJ; Diploma ou Certificado de conclusão do Ensino Médio Completo, reconhecido pelo Ministério da Diploma ou Certificado de conclusão de Curso de Ensino Médio expedido por instituição de ensino reconhecida pelo Ministério da Educação, Secretarias ou Conselhos Estaduais de Educação. Disponibilidade para realizar trabalhos em horários variáveis, incluindo escala de revezamento.",
+        "jornada_horas": 40,
+        "materias": [
+          "Língua Portuguesa",
+          "Raciocínio lógico-matemático",
+          "Conhecimento de Normas",
+          "Conhecimentos Específicos"
+        ]
+      },
+      {
+        "nome": "Técnico em Agrimensura",
+        "vagas": 0,
+        "cadastro_reserva": true,
+        "salario": 3452.0,
+        "escolaridade": "Técnico",
+        "requisitos": "Cadastro reserva em Caetité/BA e Caldas/MG; Diploma ou Certificado de habilitação de Técnico de Nível Médio em Agrimensura, expedido por instituição de ensino reconhecida pelo Ministério da Educação, Secretarias ou Conselhos Estaduais de Educação. Registro no respectivo Conselho de Classe, como Técnico.",
+        "jornada_horas": 40,
+        "materias": [
+          "Língua Portuguesa",
+          "Raciocínio lógico-matemático",
+          "Conhecimento de Normas",
+          "Conhecimentos Específicos"
+        ]
+      },
+      {
+        "nome": "Técnico em Automação",
+        "vagas": 0,
+        "cadastro_reserva": true,
+        "salario": 3452.0,
+        "escolaridade": "Técnico",
+        "requisitos": "Cadastro reserva em Caetité/BA; Diploma ou Certificado de habilitação de Técnico de Nível Médio em Automação, expedido por instituição de ensino reconhecida pelo Ministério da Educação, Secretarias ou Conselhos Estaduais de Educação. Registro no respectivo Conselho de Classe, como Técnico.",
+        "jornada_horas": 40,
+        "materias": [
+          "Língua Portuguesa",
+          "Raciocínio lógico-matemático",
+          "Conhecimento de Normas",
+          "Conhecimentos Específicos"
+        ]
+      },
+      {
+        "nome": "Técnico em Edificações",
+        "vagas": 0,
+        "cadastro_reserva": true,
+        "salario": 3452.0,
+        "escolaridade": "Técnico",
+        "requisitos": "Cadastro reserva em Resende/RJ; Diploma ou Certificado de habilitação de Técnico de Nível Médio em edificações, expedido por instituição de ensino reconhecida pelo Ministério da Educação, Secretarias ou Conselhos Estaduais de Educação. Registro no respectivo Conselho de Classe, como Técnico.",
+        "jornada_horas": 40,
+        "materias": [
+          "Língua Portuguesa",
+          "Raciocínio lógico-matemático",
+          "Conhecimento de Normas",
+          "Conhecimentos Específicos"
+        ]
+      },
+      {
+        "nome": "Técnico em Eletromecânica",
+        "vagas": 0,
+        "cadastro_reserva": true,
+        "salario": 3452.0,
+        "escolaridade": "Técnico",
+        "requisitos": "Cadastro reserva em Resende/RJ; Diploma ou Certificado de habilitação de Técnico de Nível Médio em Eletromecânica, expedido por instituição de ensino reconhecida pelo Ministério da Educação, Secretarias ou Conselhos Estaduais de Educação. Registro no respectivo Conselho de Classe, como Técnico.",
+        "jornada_horas": 40,
+        "materias": [
+          "Língua Portuguesa",
+          "Raciocínio lógico-matemático",
+          "Conhecimento de Normas",
+          "Conhecimentos Específicos"
+        ]
+      },
+      {
+        "nome": "Técnico em Eletrônica",
+        "vagas": 0,
+        "cadastro_reserva": true,
+        "salario": 3452.0,
+        "escolaridade": "Técnico",
+        "requisitos": "Cadastro reserva em Resende/RJ; Diploma ou Certificado de habilitação de Técnico de Nível Médio em Eletrônica, expedido por instituição de ensino reconhecida pelo Ministério da Educação, Secretarias ou Conselhos Estaduais de Educação. Registro no respectivo Conselho de Classe, como Técnico. Serão aceitos diplomas e certificados de outros cursos técnicos, com denominações distintas, desde que constem na Tabela de Convergência do Catálogo Nacional de Cursos Técnicos e sejam convergentes para os cursos técnicos requeridos para o cargo ofertado, conforme a citada Tabela de Convergência, regulamentada pelo Ministério da Educação.",
+        "jornada_horas": 40,
+        "materias": [
+          "Língua Portuguesa",
+          "Raciocínio lógico-matemático",
+          "Conhecimento de Normas",
+          "Conhecimentos Específicos"
+        ]
+      },
+      {
+        "nome": "Técnico em Eletrotécnica",
+        "vagas": 0,
+        "cadastro_reserva": true,
+        "salario": 3452.0,
+        "escolaridade": "Técnico",
+        "requisitos": "Cadastro reserva em Caetité/BA, Caldas/MG e Resende/RJ; Diploma ou Certificado de habilitação de Técnico de Nível Médio em Eletrotécnica, expedido por instituição de ensino reconhecida pelo Ministério da Educação, Secretarias ou Conselhos Estaduais de Educação. Registro no respectivo Conselho de Classe, como Técnico. Serão aceitos diplomas e certificados de outros cursos técnicos, com denominações distintas, desde que constem na Tabela de Convergência do Catálogo Nacional de Cursos Técnicos e sejam convergentes para os cursos técnicos requeridos para o cargo ofertado, conforme a citada Tabela de Convergência, regulamentada pelo Ministério da Educação.",
+        "jornada_horas": 40,
+        "materias": [
+          "Língua Portuguesa",
+          "Raciocínio lógico-matemático",
+          "Conhecimento de Normas",
+          "Conhecimentos Específicos"
+        ]
+      },
+      {
+        "nome": "Técnico em Enfermagem do Trabalho",
+        "vagas": 0,
+        "cadastro_reserva": true,
+        "salario": 3452.0,
+        "escolaridade": "Técnico",
+        "requisitos": "Cadastro reserva em Caetité/BA, Caldas/MG e Resende/RJ; Diploma ou Certificado de habilitação de Técnico de Nível Médio em Enfermagem do Trabalho a, expedido por instituição de ensino reconhecida pelo Ministério da Educação, Secretarias ou Conselhos Estaduais de Educação. Registro no respectivo Conselho de Classe, como Técnico.",
+        "jornada_horas": 40,
+        "materias": [
+          "Língua Portuguesa",
+          "Raciocínio lógico-matemático",
+          "Conhecimento de Normas",
+          "Conhecimentos Específicos"
+        ]
+      },
+      {
+        "nome": "Técnico em Ferramentaria",
+        "vagas": 0,
+        "cadastro_reserva": true,
+        "salario": 3452.0,
+        "escolaridade": "Técnico",
+        "requisitos": "Cadastro reserva em Resende/RJ; Diploma ou Certificado de habilitação de Técnico de Nível Médio em Ferramentaria, expedido por instituição de ensino reconhecida pelo Ministério da Educação, Secretarias ou Conselhos Estaduais de Educação. Registro no respectivo Conselho de Classe, como Técnico.",
+        "jornada_horas": 40,
+        "materias": [
+          "Língua Portuguesa",
+          "Raciocínio lógico-matemático",
+          "Conhecimento de Normas",
+          "Conhecimentos Específicos"
+        ]
+      },
+      {
+        "nome": "Técnico em Geologia",
+        "vagas": 0,
+        "cadastro_reserva": true,
+        "salario": 3452.0,
+        "escolaridade": "Técnico",
+        "requisitos": "Cadastro reserva em Caetité/BA; Diploma ou Certificado de habilitação de Técnico de Nível Médio em Geologia, expedido por instituição de ensino reconhecida pelo Ministério da Educação, Secretarias ou Conselhos Estaduais de Educação. Registro no respectivo Conselho de Classe, como Técnico. Serão aceitos diplomas e certificados de outros cursos técnicos, com denominações distintas, desde que constem na Tabela de Convergência do Catálogo Nacional de Cursos Técnicos e sejam convergentes para os cursos técnicos requeridos para o cargo ofertado, conforme a citada Tabela de Convergência, regulamentada pelo Ministério da Educação.",
+        "jornada_horas": 40,
+        "materias": [
+          "Língua Portuguesa",
+          "Raciocínio lógico-matemático",
+          "Conhecimento de Normas",
+          "Conhecimentos Específicos"
+        ]
+      },
+      {
+        "nome": "Técnico em Instrumentação",
+        "vagas": 0,
+        "cadastro_reserva": true,
+        "salario": 3452.0,
+        "escolaridade": "Técnico",
+        "requisitos": "Cadastro reserva em Caetité/BA, Caldas/MG e Resende/RJ; Diploma ou Certificado de habilitação de Técnico de Nível Médio em Instrumentação, expedido por instituição de ensino reconhecida pelo Ministério da Educação, Secretarias ou Conselhos Estaduais de Educação. Registro no respectivo Conselho de Classe, como Técnico. Serão aceitos diplomas e certificados de outros cursos técnicos, com denominações distintas, desde que constem na Tabela de Convergência do Catálogo Nacional de Cursos Técnicos e sejam convergentes para os cursos técnicos requeridos para o cargo ofertado, conforme a citada Tabela de Convergência, regulamentada pelo Ministério da Educação.",
+        "jornada_horas": 40,
+        "materias": [
+          "Língua Portuguesa",
+          "Raciocínio lógico-matemático",
+          "Conhecimento de Normas",
+          "Conhecimentos Específicos"
+        ]
+      },
+      {
+        "nome": "Técnico em Logística",
+        "vagas": 0,
+        "cadastro_reserva": true,
+        "salario": 3452.0,
+        "escolaridade": "Técnico",
+        "requisitos": "Cadastro reserva em Caetité/BA, Caldas/MG e Resende/RJ; Diploma ou Certificado de habilitação de Técnico de Nível Médio em Logística, expedido por instituição de ensino reconhecida pelo Ministério da Educação, Secretarias ou Conselhos Estaduais de Educação. Registro no respectivo Conselho de Classe, como Técnico. Serão aceitos diplomas e certificados de outros cursos técnicos, com denominações distintas, desde que constem na Tabela de Convergência do Catálogo Nacional de Cursos Técnicos e sejam convergentes para os cursos técnicos requeridos para o cargo ofertado, conforme a citada Tabela de Convergência, regulamentada pelo Ministério da Educação.",
+        "jornada_horas": 40,
+        "materias": [
+          "Língua Portuguesa",
+          "Raciocínio lógico-matemático",
+          "Conhecimento de Normas",
+          "Conhecimentos Específicos"
+        ]
+      },
+      {
+        "nome": "Técnico em Mecânica",
+        "vagas": 0,
+        "cadastro_reserva": true,
+        "salario": 3452.0,
+        "escolaridade": "Técnico",
+        "requisitos": "Cadastro reserva em Caetité/BA, Caldas/MG e Resende/RJ; Diploma ou Certificado de habilitação de Técnico de Nível Médio em Mecânica, expedido por instituição de ensino reconhecida pelo Ministério da Educação, Secretarias ou Conselhos Estaduais de Educação. Registro no respectivo Conselho de Classe, como Técnico. Serão aceitos diplomas e certificados de outros cursos técnicos, com denominações distintas, desde que constem na Tabela de Convergência do Catálogo Nacional de Cursos Técnicos e sejam convergentes para os cursos técnicos requeridos para o cargo ofertado, conforme a citada Tabela de Convergência, regulamentada pelo Ministério da Educação.",
+        "jornada_horas": 40,
+        "materias": [
+          "Língua Portuguesa",
+          "Raciocínio lógico-matemático",
+          "Conhecimento de Normas",
+          "Conhecimentos Específicos"
+        ]
+      },
+      {
+        "nome": "Técnico em Mecânica de Precisão",
+        "vagas": 0,
+        "cadastro_reserva": true,
+        "salario": 3452.0,
+        "escolaridade": "Técnico",
+        "requisitos": "Cadastro reserva em Caetité/BA, Caldas/MG e Resende/RJ; Diploma ou Certificado de habilitação de Técnico de Nível Médio em Mecânica, ou Fabricação Mecânica ou Mecânica de Precisão expedido por instituição de ensino reconhecida pelo Ministério da Educação, Secretarias ou Conselhos Estaduais de Educação. Registro no respectivo Conselho de Classe, como Técnico. Serão aceitos diplomas e certificados de outros cursos técnicos, com denominações distintas, desde que constem na Tabela de Convergência do Catálogo Nacional de Cursos Técnicos e sejam convergentes para os cursos técnicos requeridos para o cargo ofertado, conforme a citada Tabela de Convergência, regulamentada pelo Ministério da Educação.",
+        "jornada_horas": 40,
+        "materias": [
+          "Língua Portuguesa",
+          "Raciocínio lógico-matemático",
+          "Conhecimento de Normas",
+          "Conhecimentos Específicos"
+        ]
+      },
+      {
+        "nome": "Técnico em Meio Ambiente",
+        "vagas": 0,
+        "cadastro_reserva": true,
+        "salario": 3452.0,
+        "escolaridade": "Técnico",
+        "requisitos": "Cadastro reserva em Caetité/BA e Caldas/MG; Diploma ou Certificado de habilitação de Técnico de Nível Médio em Meio Ambiente, ou Fabricação Mecânica ou Mecânica de Precisão expedido por instituição de ensino reconhecida pelo Ministério da Educação, Secretarias ou Conselhos Estaduais de Educação. Registro no respectivo Conselho de Classe, como Técnico.",
+        "jornada_horas": 40,
+        "materias": [
+          "Língua Portuguesa",
+          "Raciocínio lógico-matemático",
+          "Conhecimento de Normas",
+          "Conhecimentos Específicos"
+        ]
+      },
+      {
+        "nome": "Técnico em Metalurgia",
+        "vagas": 0,
+        "cadastro_reserva": true,
+        "salario": 3452.0,
+        "escolaridade": "Técnico",
+        "requisitos": "Cadastro reserva em Resende/RJ; Diploma ou Certificado de habilitação de Técnico de Nível Médio em Metalurgia, expedido por instituição de ensino reconhecida pelo Ministério da Educação, Secretarias ou Conselhos Estaduais de Educação. Registro no respectivo Conselho de Classe, como Técnico. Serão aceitos diplomas e certificados de outros cursos técnicos, com denominações distintas, desde que constem na Tabela de Convergência do Catálogo Nacional de Cursos Técnicos e sejam convergentes para os cursos técnicos requeridos para o cargo ofertado, conforme a citada Tabela de Convergência, regulamentada pelo Ministério da Educação.",
+        "jornada_horas": 40,
+        "materias": [
+          "Língua Portuguesa",
+          "Raciocínio lógico-matemático",
+          "Conhecimento de Normas",
+          "Conhecimentos Específicos"
+        ]
+      },
+      {
+        "nome": "Técnico em Metrologia",
+        "vagas": 0,
+        "cadastro_reserva": true,
+        "salario": 3452.0,
+        "escolaridade": "Técnico",
+        "requisitos": "Cadastro reserva em Resende/RJ; Diploma ou Certificado de habilitação de Técnico de Nível Médio em Metrologia, expedido por instituição de ensino reconhecida pelo Ministério da Educação, Secretarias ou Conselhos Estaduais de Educação. Registro no respectivo Conselho de Classe, como Técnico. Serão aceitos diplomas e certificados de outros cursos técnicos, com denominações distintas, desde que constem na Tabela de Convergência do Catálogo Nacional de Cursos Técnicos e sejam convergentes para os cursos técnicos requeridos para o cargo ofertado, conforme a citada Tabela de Convergência, regulamentada pelo Ministério da Educação.",
+        "jornada_horas": 40,
+        "materias": [
+          "Língua Portuguesa",
+          "Raciocínio lógico-matemático",
+          "Conhecimento de Normas",
+          "Conhecimentos Específicos"
+        ]
+      },
+      {
+        "nome": "Técnico em Mineração",
+        "vagas": 0,
+        "cadastro_reserva": true,
+        "salario": 3452.0,
+        "escolaridade": "Técnico",
+        "requisitos": "Cadastro reserva em Caetité/BA; Diploma ou Certificado de habilitação de Técnico de Nível Médio em Mineração, expedido por instituição de ensino reconhecida pelo Ministério da Educação, Secretarias ou Conselhos Estaduais de Educação. Registro no respectivo Conselho de Classe, como Técnico. Serão aceitos diplomas e certificados de outros cursos técnicos, com denominações distintas, desde que constem na Tabela de Convergência do Catálogo Nacional de Cursos Técnicos e sejam convergentes para os cursos técnicos requeridos para o cargo ofertado, conforme a citada Tabela de Convergência, regulamentada pelo Ministério da Educação.",
+        "jornada_horas": 40,
+        "materias": [
+          "Língua Portuguesa",
+          "Raciocínio lógico-matemático",
+          "Conhecimento de Normas",
+          "Conhecimentos Específicos"
+        ]
+      },
+      {
+        "nome": "Técnico em Química",
+        "vagas": 0,
+        "cadastro_reserva": true,
+        "salario": 3452.0,
+        "escolaridade": "Técnico",
+        "requisitos": "Cadastro reserva em Caetité/BA, Caldas/MG e Resende/RJ; Diploma ou Certificado de habilitação de Técnico de Nível Médio em Química, expedido por instituição de ensino reconhecida pelo Ministério da Educação, Secretarias ou Conselhos Estaduais de Educação. Registro no respectivo Conselho de Classe, como Técnico. Serão aceitos diplomas e certificados de outros cursos técnicos, com denominações distintas, desde que constem na Tabela de Convergência do Catálogo Nacional de Cursos Técnicos e sejam convergentes para os cursos técnicos requeridos para o cargo ofertado, conforme a citada Tabela de Convergência, regulamentada pelo Ministério da Educação.",
+        "jornada_horas": 40,
+        "materias": [
+          "Língua Portuguesa",
+          "Raciocínio lógico-matemático",
+          "Conhecimento de Normas",
+          "Conhecimentos Específicos"
+        ]
+      },
+      {
+        "nome": "Técnico em Radioproteção",
+        "vagas": 0,
+        "cadastro_reserva": true,
+        "salario": 3452.0,
+        "escolaridade": "Técnico",
+        "requisitos": "Cadastro reserva em Caetité/BA, Caldas/MG e Resende/RJ; Diploma ou Certificado de habilitação de Técnico de Nível Médio Radiologia ou Química ou Segurança do Trabalho, expedido por instituição de ensino reconhecida pelo Ministério da Educação, Secretarias ou Conselhos Estaduais de Educação. Registro no respectivo Conselho de Classe, como Técnico. Serão aceitos diplomas e certificados de outros cursos técnicos, com denominações distintas, desde que constem na Tabela de Convergência do Catálogo Nacional de Cursos Técnicos e sejam convergentes para os cursos técnicos requeridos para o cargo ofertado, conforme a citada Tabela de Convergência, regulamentada pelo Ministério da Educação.",
+        "jornada_horas": 40,
+        "materias": [
+          "Língua Portuguesa",
+          "Raciocínio lógico-matemático",
+          "Conhecimento de Normas",
+          "Conhecimentos Específicos"
+        ]
+      },
+      {
+        "nome": "Técnico em Segurança do Trabalho",
+        "vagas": 0,
+        "cadastro_reserva": true,
+        "salario": 3452.0,
+        "escolaridade": "Técnico",
+        "requisitos": "Cadastro reserva em Caetité/BA, Caldas/MG e Resende/RJ; Diploma ou Certificado de habilitação de Técnico de Nível Médio em Segurança do Trabalho, expedido por instituição de ensino reconhecida pelo Ministério da Educação, Secretarias ou Conselhos Estaduais de Educação. Registro no respectivo Conselho de Classe, como Técnico. Serão aceitos diplomas e certificados de outros cursos técnicos, com denominações distintas, desde que constem na Tabela de Convergência do Catálogo Nacional de Cursos Técnicos e sejam convergentes para os cursos técnicos requeridos para o cargo ofertado, conforme a citada Tabela de Convergência, regulamentada pelo Ministério da Educação.",
+        "jornada_horas": 40,
+        "materias": [
+          "Língua Portuguesa",
+          "Raciocínio lógico-matemático",
+          "Conhecimento de Normas",
+          "Conhecimentos Específicos"
+        ]
+      }
+    ],
+    "documentos": [
+      {
+        "tipo": "edital",
+        "titulo": "Edital de Concurso Público nº 1/2026 – INB (cadastro de reserva, níveis médio e superior)",
+        "numero": "1/2026",
+        "url": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=14/10/2026&jornal=530&pagina=116",
+        "publicado_em": "2026-10-14",
+        "fonte": "DOU",
+        "resumo": null
+      }
+    ],
+    "conferencia": null,
+    "primeira_varredura": null,
+    "ultima_alteracao": null
+  }
+}
