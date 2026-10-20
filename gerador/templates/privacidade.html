@@ -1,27 +1,19 @@
 {% extends "texto.html" %}
 {% block texto %}
-<p class="pt-capa">O Concurseiro funciona sem conta e sem cookie próprio. O que você escolhe no site fica no seu aparelho.</p>
+<p class="pt-capa">O Concurseiro funciona sem cadastro e sem cookie próprio, e não guarda dado pessoal. O que você escolhe no site fica no seu aparelho.</p>
 <p class="pt-apoio">Versão de {{ versao_privacidade }}. Esta política segue a Lei Geral de Proteção de Dados (Lei 13.709/2018, a LGPD).</p>
-
-<h2 class="pt-h2">Quem é o responsável</h2>
-<p>O controlador dos dados é
-{%- if cfg.razao_social %} {{ cfg.razao_social }}{% if cfg.cnpj %}, CNPJ {{ cfg.cnpj }}{% endif %}{% if cfg.responsavel %}, representada por {{ cfg.responsavel }}{% endif %}.
-{%- elif cfg.responsavel %} {{ cfg.responsavel }}, pessoa física responsável pelo Concurseiro.
-{%- else %} [A PREENCHER: nome do responsável].
-{%- endif %}
-Contato para assuntos de privacidade: {% if email %}<a class="pt-link" href="mailto:{{ email }}">{{ email }}</a>{% else %}[A PREENCHER: e-mail de contato]{% endif %}.</p>
 
 <h2 class="pt-h2">Em resumo</h2>
 <ul>
-  <li>Você não precisa criar conta, e o site não pede nome, CPF, telefone nem e-mail para mostrar os concursos.</li>
-  <li>O site não grava cookie próprio.</li>
+  <li>Não há cadastro, e o site não pede nome, CPF, telefone nem e-mail para mostrar os concursos.</li>
+  <li>O site não guarda dado pessoal e não grava cookie próprio.</li>
   <li>A cidade e o perfil que você escolhe ficam guardados só no seu navegador.</li>
   <li>A localização pelo GPS é opcional e não sai do seu aparelho.</li>
 </ul>
 
 <h2 class="pt-h2">O que fica só no seu aparelho</h2>
 <p>Quando você escolhe uma cidade ou diz sua escolaridade e formação, o site guarda isso no armazenamento local do navegador (<code>localStorage</code>), com os nomes <code>concurseiro:cidade</code> e <code>concurseiro:perfil</code>. Esses dados servem para mostrar primeiro os concursos perto de você e o salário do cargo que você pode fazer. Eles não são enviados para nós nem para ninguém.</p>
-<p>Para apagar: use "Esquecer minha cidade" e "Apagar meu perfil" nas folhas do site, ou limpe os dados do site nas configurações do navegador.</p>
+<p>Para apagar: use "Esquecer minha cidade" e "Apagar meu perfil" nas folhas do site, ou limpe os dados do site nas configurações do navegador (em geral em Privacidade, "Cookies e dados do site"). Sem esses dados, o site volta a abrir como na primeira visita.</p>
 <p>As caixas que você marca em "Este concurso é pra você?" não são guardadas: somem quando a página fecha.</p>
 
 <h2 class="pt-h2">Localização</h2>
@@ -31,11 +23,7 @@ Contato para assuntos de privacidade: {% if email %}<a class="pt-link" href="mai
 {%- endif %}
 
 <h2 class="pt-h2">Hospedagem e registros de acesso</h2>
-{%- if plataforma == "cloudflare" %}
 <p>O site é hospedado na Cloudflare (Cloudflare Pages). Como todo servidor de internet, ela recebe dados técnicos de cada acesso, como o endereço IP e o tipo de navegador, para entregar as páginas e proteger o site contra ataques. A Cloudflare trata esses dados conforme a <a class="pt-link" href="https://www.cloudflare.com/pt-br/privacypolicy/" rel="noopener">política de privacidade dela</a>.</p>
-{%- else %}
-<p>O site é hospedado no GitHub Pages, do GitHub. Como todo servidor de internet, ele recebe dados técnicos de cada acesso, como o endereço IP e o tipo de navegador, para entregar as páginas e proteger o serviço. O GitHub trata esses dados conforme a <a class="pt-link" href="https://docs.github.com/pt/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener">declaração de privacidade dele</a>. O destino final do site é a Cloudflare (Cloudflare Pages); quando a mudança acontecer, esta seção muda junto.</p>
-{%- endif %}
 <p>Base legal: legítimo interesse (art. 7º, IX), para manter o site no ar e seguro.</p>
 
 <h2 class="pt-h2">Estatísticas de visita</h2>
@@ -48,9 +36,9 @@ Contato para assuntos de privacidade: {% if email %}<a class="pt-link" href="mai
 
 <h2 class="pt-h2">Alertas</h2>
 {%- if canais %}
-<p>Os alertas saem {{ "pelos canais" if canais | length > 1 else "pelo canal" }} do {{ canais | map(attribute="nome") | join(" e do ") }}. Esses canais são serviços de terceiros: ao entrar, você usa o aplicativo deles, com as regras e a política de privacidade deles. No canal do WhatsApp, quem administra não vê o seu número.{% if canais | selectattr("nome", "equalto", "Telegram") | list %} No Telegram, o seu número também não aparece para quem administra o canal, e não guardamos a lista de quem entrou.{% endif %} Para sair, deixe de seguir o canal.</p>
+<p>Os alertas saem {{ "pelos canais" if canais | length > 1 else "pelo canal" }} do {{ canais | map(attribute="nome") | join(" e do ") }}. Esses canais são serviços de terceiros: ao entrar, você usa o aplicativo deles, com as regras e a política de privacidade deles. Não guardamos a lista de quem segue o canal. Para sair, deixe de seguir o canal.</p>
 {%- else %}
-<p>Os alertas vão sair por canais do WhatsApp e do Telegram, que são serviços de terceiros. Quando estiverem no ar, esta seção vai dizer o que muda.</p>
+<p>Os alertas vão sair por canais do WhatsApp e do Telegram, que são serviços de terceiros e seguem as políticas desses serviços. Quando estiverem no ar, esta seção vai dizer o que muda.</p>
 {%- endif %}
 {%- if cfg.kit_form_id %}
 <p><strong>Por e-mail.</strong> Se você pedir alerta por e-mail, o endereço vai para o Kit (Kit.com, antigo ConvertKit), o serviço que manda os e-mails. Antes de qualquer alerta, chega um e-mail pedindo para você confirmar a inscrição; sem a confirmação, nada é enviado. Usamos o seu e-mail só para mandar os alertas de concurso, nunca para outra coisa, e não o vendemos nem o passamos adiante. Para sair, use o link no fim de qualquer e-mail; o endereço é apagado da lista. O Kit trata os dados conforme a <a class="pt-link" href="https://kit.com/privacy" rel="noopener">política de privacidade dele</a>, com servidores fora do Brasil.</p>
@@ -71,6 +59,7 @@ Contato para assuntos de privacidade: {% if email %}<a class="pt-link" href="mai
 <p>Os botões "Mandar no WhatsApp" e "Adicionar à agenda" abrem o WhatsApp e o Google Agenda com o texto já pronto; nada é enviado sem você tocar em enviar ou salvar. Os links de edital levam a diários oficiais e a sites de bancas e órgãos públicos, que têm as próprias regras.</p>
 
 <h2 class="pt-h2">Seus direitos</h2>
+{%- if cfg.kit_form_id %}
 <p>Pelo art. 18 da LGPD, você pode pedir a qualquer momento:</p>
 <ul>
   <li>confirmação de que tratamos dados seus e acesso a eles;</li>
@@ -82,7 +71,10 @@ Contato para assuntos de privacidade: {% if email %}<a class="pt-link" href="mai
   <li>informação sobre a possibilidade de não dar consentimento e o que acontece se você não der;</li>
   <li>revogação do consentimento.</li>
 </ul>
-<p>Para pedir, escreva para {% if email %}<a class="pt-link" href="mailto:{{ email }}">{{ email }}</a>{% else %}[A PREENCHER: e-mail de contato]{% endif %}. Respondemos em até 15 dias. Você também pode reclamar à Autoridade Nacional de Proteção de Dados (ANPD), em <a class="pt-link" href="https://www.gov.br/anpd/" rel="noopener">gov.br/anpd</a>.</p>
+<p>Para sair da lista de e-mail, use o link no fim de qualquer mensagem.{% if email %} Para os outros pedidos, escreva para <a class="pt-link" href="mailto:{{ email }}">{{ email }}</a>.{% endif %} Você também pode reclamar à Autoridade Nacional de Proteção de Dados (ANPD), em <a class="pt-link" href="https://www.gov.br/anpd/" rel="noopener">gov.br/anpd</a>.</p>
+{%- else %}
+<p>Como o site não guarda dado pessoal seu, não há o que acessar, corrigir ou apagar aqui. O que fica no seu aparelho (cidade e perfil) você apaga quando quiser, como explicado acima. Pela LGPD, você também pode reclamar à Autoridade Nacional de Proteção de Dados (ANPD), em <a class="pt-link" href="https://www.gov.br/anpd/" rel="noopener">gov.br/anpd</a>.</p>
+{%- endif %}
 
 <h2 class="pt-h2">Mudanças nesta política</h2>
 <p>Quando o site passar a tratar algum dado novo, esta página muda antes, e a data no topo também.</p>

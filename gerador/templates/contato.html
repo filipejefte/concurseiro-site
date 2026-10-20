@@ -1,11 +1,7 @@
 {% extends "texto.html" %}
 {% block texto %}
 <p class="pt-capa">Achou um erro numa ficha, sentiu falta de um concurso ou quer dar uma sugestão? Escreva para a gente.</p>
-{%- if email %}
 <p><a class="cc-btn cc-btn-primario" href="mailto:{{ email }}?subject={{ 'Contato pelo site' | urlencode }}">{{ m.icone("carta", "pt-i2") }}{{ email }}</a></p>
-{%- else %}
-<p>[A PREENCHER: e-mail de contato]</p>
-{%- endif %}
 
 <h2 class="pt-h2">Para corrigir uma ficha</h2>
 <p>O jeito mais rápido é o link "Avise a gente", no fim de cada ficha: ele já abre o e-mail com o endereço da página. Diga o que está errado e, se puder, mande o trecho do edital que mostra o valor certo.</p>

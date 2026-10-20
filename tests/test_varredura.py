@@ -792,6 +792,13 @@ def test_telegram_teste_so_imprime(tmp_path, capsys, monkeypatch):
         postar(tmp_path)
 
 
+def test_telegram_recusa_resumo_com_dado_de_quem_faz(tmp_path):
+    from varredura.telegram import postar
+    (tmp_path / "resumo-telegram.md").write_text("Ficha: https://alguem.github.io/concurseiro/concurso/x/\n", encoding="utf-8")
+    with pytest.raises(SystemExit, match="Nada foi postado"):
+        postar(tmp_path, teste=True)
+
+
 def _professor_com_tabela():
     """Ficha de professor federal com a tabela por titulação (o edital aceita titulação menor)."""
     cargo = _professor(13753.96, "Item 1.2; dedicação exclusiva; titulação mínima: doutorado")

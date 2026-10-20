@@ -1,6 +1,6 @@
 // Cloudflare Pages Function: GET /api/local devolve a região que a Cloudflare estima pelo IP de quem pede
 // (request.cf), para o site sugerir a cidade. Não grava nada e não manda o IP de volta.
-// Só existe no Cloudflare; no GitHub Pages o endereço dá 404 e o site segue sem sugestão.
+// Só existe no Cloudflare Pages; num servidor local o endereço dá 404 e o site segue sem sugestão.
 export function onRequestGet({ request }) {
   const cf = request.cf || {};
   const numero = (v) => (v === undefined || v === null || v === '' ? null : Number(v));

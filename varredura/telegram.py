@@ -73,7 +73,11 @@ def postar(pasta, teste=False, se_configurado=False):
     arquivo = Path(pasta) / "resumo-telegram.md"
     if not arquivo.exists():
         raise SystemExit(f"Sem {arquivo}. Rode antes: python -m varredura publicar --por \"Nome\"")
-    textos = mensagens(para_html(arquivo.read_text(encoding="utf-8")))
+    resumo = arquivo.read_text(encoding="utf-8")
+    from gerador.anonimato import achados   # regra 11: o canal não recebe nada de quem faz o Concurseiro
+    if achados(resumo):
+        raise SystemExit(f"{arquivo} tem dado que não pode ir ao canal ({'; '.join(achados(resumo))}). Nada foi postado.")
+    textos = mensagens(para_html(resumo))
     if teste:
         for i, t in enumerate(textos, 1):
             print(f"----- mensagem {i} de {len(textos)} ({len(t)} caracteres) -----\n{t}")

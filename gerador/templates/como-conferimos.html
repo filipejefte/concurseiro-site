@@ -37,9 +37,11 @@
 <h2 class="pt-h2">5. Por que não usamos sites de notícias de concurso</h2>
 <p>Sites que juntam notícias de concurso são úteis para conferir se nenhum concurso ficou de fora, e só para isso. Copiar deles repetiria os erros deles e tiraria o que importa: saber de onde veio cada número. Por isso toda ficha aponta para o ato oficial.</p>
 
-<h2 class="pt-h2">6. Achou um erro?</h2>
-<p>Em toda ficha há o link "Avise a gente", que abre um e-mail já com o endereço da ficha.
-{%- if email %} Você também pode escrever para <a class="pt-link" href="mailto:{{ email }}">{{ email }}</a>.{% else %} [A PREENCHER: e-mail de contato].{% endif %}
-Mande, se puder, o trecho do edital que mostra o valor certo. A correção passa pela mesma conferência.</p>
+<h2 class="pt-h2">6. E se a ficha estiver errada?</h2>
+{%- if email %}
+<p>Em toda ficha há o link "Avise a gente", que abre um e-mail já com o endereço da ficha. Você também pode escrever para <a class="pt-link" href="mailto:{{ email }}">{{ email }}</a>. Mande, se puder, o trecho do edital que mostra o valor certo. A correção passa pela mesma conferência.</p>
+{%- else %}
+<p>A ficha é refeita a cada varredura semanal, e a retificação do edital atualiza a ficha do mesmo concurso.</p>
+{%- endif %}
 <p>Mesmo com tudo isso, vale sempre o edital oficial. Antes de se inscrever, leia o edital completo no site da banca.</p>
 {% endblock %}

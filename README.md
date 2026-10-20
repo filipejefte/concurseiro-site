@@ -1,17 +1,17 @@
 # Concurseiro
 
-Site gratuito que reúne os concursos públicos **federais (do Brasil todo) e do Paraná** com inscrição aberta: salário na frente, prazos, localização e sempre o caminho para o edital oficial. No ar em https://filipejefte.github.io/concurseiro-site/ (fora dos buscadores até os sócios decidirem).
+Site gratuito que reúne os concursos públicos **federais (do Brasil todo) e do Paraná** com inscrição aberta: salário na frente, prazos, localização e sempre o caminho para o edital oficial. No ar em https://concurseiro.pages.dev (Cloudflare Pages; fora dos buscadores até os sócios decidirem). O site fala só da proposta, nunca de quem o faz (regra 11 do `CLAUDE.md`).
 
-Custo fixo: só o domínio. Não há banco, servidor, API paga nem serviço pago.
+Custo fixo: zero. Não há banco, servidor, API paga, domínio nem serviço pago.
 
 ## Como funciona
 
 1. Uma vez por semana, o Filipe roda `/varredura` no Claude Code, no notebook. A varredura lê os diários oficiais, separa os atos de concurso, monta a ficha de cada um a partir do ato oficial (o próprio Claude Code extrai, sem API paga) e gera a planilha de revisão.
 2. A conferência automática procura cada campo crítico no texto do ato; uma pessoa confere o resto e uma amostra de 1 em 20.
 3. `python -m varredura publicar` leva para `dados/concursos.json` só o que foi conferido e escreve os resumos da semana (Telegram e WhatsApp) e os posts.
-4. O push na `main` dispara o GitHub Actions: testes, `python -m gerador build`, verificador de links e deploy (Cloudflare Pages com os segredos; senão, GitHub Pages). O build também roda todo dia às 06:00, para a situação e os prazos virarem sem nova varredura. Um resumo novo na `main` é postado no canal do Telegram.
+4. O push na `main` dispara o GitHub Actions: testes, `python -m gerador build`, verificador de links, verificação de anonimato e deploy no Cloudflare Pages (com os segredos; sem eles o workflow testa e gera, mas não publica). O build também roda todo dia às 06:00, para a situação e os prazos virarem sem nova varredura. Um resumo novo na `main` é postado no canal do Telegram.
 
-Passo a passo dos painéis (domínio, Cloudflare, segredos, Telegram, WhatsApp, Kit): [`docs/LANCAMENTO.md`](docs/LANCAMENTO.md). Rotina da semana: [`docs/ROTINA-SEMANAL.md`](docs/ROTINA-SEMANAL.md).
+Passo a passo dos painéis (Cloudflare, segredos, repositório privado, Telegram, WhatsApp, Kit): [`docs/LANCAMENTO.md`](docs/LANCAMENTO.md). Rotina da semana: [`docs/ROTINA-SEMANAL.md`](docs/ROTINA-SEMANAL.md).
 
 ## Instalar
 
@@ -31,8 +31,9 @@ O site é gerado: páginas HTML prontas em `public/` (fora do git), a partir de 
 python -m gerador build              # gera public/ (só os concursos publicados)
 python -m gerador build --exemplo    # junta os 12 concursos fictícios, marcados como exemplo
 python -m gerador build --previa     # em previa/: o publicado mais as fichas da semana, sem conferência (só para olhar)
-python -m gerador servir             # http://localhost:8000/concurseiro-site/ (servir previa para a prévia)
+python -m gerador servir             # http://localhost:8000/ (servir previa para a prévia)
 python -m gerador links              # confere os links internos (o CI roda)
+python -m gerador anonimato          # nada de quem faz o Concurseiro no site gerado (o CI roda)
 ```
 
 | Endereço | O que é |
@@ -60,9 +61,7 @@ SEO: `title` e `description` por página, `canonical`, `sitemap.xml` com `lastmo
 | `indexar` | `false`: `noindex, nofollow` em toda página, `X-Robots-Tag` e `robots.txt` bloqueando tudo. `true`: o contrário, e o `robots.txt` aponta o sitemap. Só com decisão dos sócios |
 | `canal_whatsapp`, `canal_telegram` | Links dos canais, na folha "Avise-me" e em `/alertas/` |
 | `kit_form_id` | Liga o alerta por e-mail (formulário do Kit, confirmação dupla) |
-| `email_contato` | `mailto:` do contato, do "Avise a gente" das fichas e da política de privacidade |
-| `responsavel`, `razao_social`, `cnpj` | Controlador na política de privacidade: a pessoa física só pelo nome (CPF é recusado); com razão social e CNPJ, a empresa |
-| `quem_faz`, `foro` | Página Sobre e termos de uso |
+| `email_contato` | Liga a página Contato, o link do rodapé e o "Avise a gente" das fichas (um endereço só da marca). Vazio: nada disso aparece |
 | `cloudflare_analytics_token` | Cloudflare Web Analytics, sem cookie |
 | `adsense_client`, `adsense_slot` | Liga anúncio com rótulo "Publicidade", `ads.txt` e aviso de cookies com opção de recusar |
 | `[[afiliados]]` | "Link de parceiro" por área ou banca, com `rel="sponsored noopener"` |
@@ -132,13 +131,13 @@ O que não passa fica para a pessoa, com o motivo. Uma amostra fixa de 1 em 20 d
 python -m pytest
 ```
 
-`.github/workflows/deploy.yml` roda os testes, o build e o verificador de links em todo push e pull request; publica só a partir da `main`. `.github/workflows/telegram.yml` posta o resumo novo.
+`.github/workflows/deploy.yml` roda os testes, o build e o verificador de links e a verificação de anonimato em todo push e pull request; publica só a partir da `main`. `.github/workflows/telegram.yml` posta o resumo novo.
 
 ## Estrutura
 
 ```
 site.toml                    configuração do site (domínio, indexar, canais, Kit, anúncios)
-gerador/                     python -m gerador: build, links, servir, redirecionar
+gerador/                     python -m gerador: build, links, anonimato, servir
   templates/                 Jinja2 (autoescape): base, início, listas, ficha, institucionais
 assets/css/                  tokens.css, componentes.css (cc-), site.css (pt-): juntados no build
 assets/js/app.js             só o que depende da pessoa

@@ -20,23 +20,19 @@
   <li>Não copia sites de notícias de concurso. Os dados vêm só de diário oficial e do site da banca ou do órgão.</li>
 </ul>
 
+<h2 class="pt-h2">As fontes que lemos</h2>
+<p>Só diários oficiais e sites oficiais de bancas organizadoras. O que cada fonte cobre, e o que ainda não lemos, está em <a class="pt-link" href="{{ u('/como-conferimos/') }}">como conferimos os dados</a>.</p>
+
 <h2 class="pt-h2">Cobertura</h2>
 <p>Hoje o Concurseiro cobre:</p>
 <ul>
   <li><strong>Concursos federais</strong>, de todo o Brasil, publicados no Diário Oficial da União.</li>
-  <li><strong>Concursos do Paraná</strong>: prefeituras, câmaras e autarquias municipais, pelo Diário Oficial dos Municípios do Paraná, e os órgãos federais com vagas no estado.</li>
+  <li><strong>Concursos do Paraná</strong>: o estado, as prefeituras, as câmaras e as autarquias, pelos diários oficiais do estado e dos municípios e pelos sites das bancas, e os órgãos federais com vagas no estado.</li>
 </ul>
-<p>O Diário Oficial do Estado do Paraná ainda não é lido. Concurso de órgão estadual do Paraná entra quando aparece em outra fonte oficial que já lemos. Processo seletivo simplificado e contratação temporária ficam de fora.</p>
+<p>Processo seletivo simplificado e contratação temporária ficam de fora.</p>
 <p>Agora há {{ n_abertos }} {{ "concurso" if n_abertos == 1 else "concursos" }} com inscrição aberta no site.</p>
 
 <h2 class="pt-h2">Atualização</h2>
 <p>Uma varredura por semana. A data da última e a da próxima ficam na faixa do topo de toda página. A situação de cada concurso (aberto, encerra esta semana, encerrado) é recalculada todo dia.</p>
 <p>Concurso "previsto" é aquele com ato oficial de autorização ou de contratação da banca, mas sem edital. Ele aparece em <a class="pt-link" href="{{ u('/previstos/') }}">página própria</a> e não entra na conta dos abertos.</p>
-
-<h2 class="pt-h2">Como o site se paga</h2>
-<p>O Concurseiro é gratuito. Quando houver anúncio, ele vem marcado como "Publicidade". Quando houver indicação paga, ela vem marcada como "Link de parceiro". Nenhum dos dois muda o que aparece nas fichas.</p>
-
-<h2 class="pt-h2">Quem faz</h2>
-<p>{% if cfg.quem_faz %}O Concurseiro é feito por {{ cfg.quem_faz }}.{% else %}[A PREENCHER: quem faz o Concurseiro.]{% endif %}</p>
-<p>Fale com a gente pela página de <a class="pt-link" href="{{ u('/contato/') }}">contato</a>.</p>
 {% endblock %}

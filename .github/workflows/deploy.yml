@@ -1,6 +1,7 @@
-# Site: testa, gera e publica. Roda em todo push na main, todo dia às 06:00 de Brasília (a situação e os
-# prazos viram sem nova varredura), à mão e, sem publicar, em pull request.
-# Com os segredos CLOUDFLARE_API_TOKEN e CLOUDFLARE_ACCOUNT_ID, publica no Cloudflare Pages; sem eles, no GitHub Pages.
+# Site: testa, gera e publica no Cloudflare Pages (a hospedagem é só essa). Roda em todo push na main, todo dia às
+# 06:00 de Brasília (a situação e os prazos viram sem nova varredura), à mão e, sem publicar, em pull request.
+# Sem os segredos CLOUDFLARE_API_TOKEN e CLOUDFLARE_ACCOUNT_ID ele testa e gera o site, mas não publica, e avisa no log.
+# Com os segredos, cria o projeto no Cloudflare se ele ainda não existir (nome: variável CLOUDFLARE_PROJETO, ou "concurseiro").
 name: Site
 
 on:
@@ -21,13 +22,18 @@ concurrency:
 jobs:
   site:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     env:
       TEM_CLOUDFLARE: ${{ secrets.CLOUDFLARE_API_TOKEN != '' && secrets.CLOUDFLARE_ACCOUNT_ID != '' }}
       PUBLICAR: ${{ github.event_name != 'pull_request' && github.ref == 'refs/heads/main' }}
-    outputs:
-      destino: ${{ steps.destino.outputs.destino }}
+      PROJETO: ${{ vars.CLOUDFLARE_PROJETO || 'concurseiro' }}
     steps:
+      - name: Marca a hora de início
+        run: echo "INICIO=$(date +%s)" >> "$GITHUB_ENV"
+      # Histórico inteiro: a verificação de anonimato lê os autores de commit com git log.
       - uses: actions/checkout@v5.0.0
+        with:
+          fetch-depth: 0
       - uses: actions/setup-python@v6.0.0
         with:
           python-version: "3.12"
@@ -36,47 +42,36 @@ jobs:
         run: python -m pip install -r requirements.txt
       - name: Testes
         run: python -m pytest -q
-      - name: Escolhe onde publicar
-        id: destino
-        run: |
-          if [ "$TEM_CLOUDFLARE" = "true" ]; then echo "destino=cloudflare" >> "$GITHUB_OUTPUT"; else echo "destino=github" >> "$GITHUB_OUTPUT"; fi
       - name: Gera o site
-        run: python -m gerador build --plataforma "${{ steps.destino.outputs.destino }}"
+        run: python -m gerador build --plataforma cloudflare
       - name: Confere os links internos
         run: python -m gerador links
-      - name: Publica no Cloudflare Pages
-        if: env.PUBLICAR == 'true' && steps.destino.outputs.destino == 'cloudflare'
-        run: npx --yes wrangler@4.145.0 pages deploy public --project-name="${CLOUDFLARE_PROJETO:-concurseiro}" --branch=main --commit-dirty=true
+      - name: Confere o anonimato (nada de quem faz o Concurseiro)
+        run: python -m gerador anonimato
+      - name: Avisa que não vai publicar
+        if: env.PUBLICAR == 'true' && env.TEM_CLOUDFLARE != 'true'
+        run: echo "::warning::Sem CLOUDFLARE_API_TOKEN e CLOUDFLARE_ACCOUNT_ID nos segredos do repositório. O site foi testado e gerado, mas NÃO foi publicado."
+      - name: Cria o projeto no Cloudflare Pages, se ele não existir
+        if: env.PUBLICAR == 'true' && env.TEM_CLOUDFLARE == 'true'
+        run: |
+          set +e
+          saida=$(npx --yes wrangler@4.145.0 pages project create "$PROJETO" --production-branch=main 2>&1)
+          codigo=$?
+          echo "$saida"
+          if [ "$codigo" -ne 0 ] && ! echo "$saida" | grep -qiE "already exists|8000002"; then exit "$codigo"; fi
+          exit 0
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          CLOUDFLARE_PROJETO: ${{ vars.CLOUDFLARE_PROJETO }}
-      # Depois da mudança para o Cloudflare: com a variável REDIRECIONAR_GITHUB_PAGES = true, o endereço antigo
-      # no GitHub Pages vira uma página que leva ao mesmo caminho no domínio novo.
-      - name: Gera o redirecionamento do GitHub Pages
-        if: env.PUBLICAR == 'true' && steps.destino.outputs.destino == 'cloudflare' && vars.REDIRECIONAR_GITHUB_PAGES == 'true'
-        run: python -m gerador redirecionar --saida publicar-github
-      - name: Prepara o GitHub Pages (site)
-        if: env.PUBLICAR == 'true' && steps.destino.outputs.destino == 'github'
-        uses: actions/upload-pages-artifact@v4.0.0
-        with:
-          path: public
-      - name: Prepara o GitHub Pages (redirecionamento)
-        if: env.PUBLICAR == 'true' && steps.destino.outputs.destino == 'cloudflare' && vars.REDIRECIONAR_GITHUB_PAGES == 'true'
-        uses: actions/upload-pages-artifact@v4.0.0
-        with:
-          path: publicar-github
-
-  github-pages:
-    needs: site
-    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main' && (needs.site.outputs.destino == 'github' || vars.REDIRECIONAR_GITHUB_PAGES == 'true')
-    runs-on: ubuntu-latest
-    permissions:
-      pages: write
-      id-token: write
-    environment:
-      name: github-pages
-      url: ${{ steps.deploy.outputs.page_url }}
-    steps:
-      - id: deploy
-        uses: actions/deploy-pages@v4.0.5
+      - name: Publica no Cloudflare Pages
+        if: env.PUBLICAR == 'true' && env.TEM_CLOUDFLARE == 'true'
+        run: npx --yes wrangler@4.145.0 pages deploy public --project-name="$PROJETO" --branch=main --commit-dirty=true --commit-message="site $GITHUB_RUN_NUMBER"
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+      # Os minutos que o GitHub cobra: cada job arredonda para cima. Serve para conferir a estimativa do docs/LANCAMENTO.md.
+      - name: Registra a duração
+        if: always()
+        run: |
+          segundos=$(( $(date +%s) - INICIO ))
+          echo "Duração: ${segundos} s (cobrança: $(( (segundos + 59) / 60 )) min)" | tee -a "$GITHUB_STEP_SUMMARY"

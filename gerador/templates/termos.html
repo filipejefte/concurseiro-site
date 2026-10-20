@@ -23,12 +23,16 @@
 <h2 class="pt-h2">Anúncios e parceiros</h2>
 <p>Anúncios levam o rótulo "Publicidade". Indicações pagas levam "Link de parceiro". Eles não mudam o que aparece nas fichas, nem a ordem dos concursos.</p>
 
-<h2 class="pt-h2">Como avisar um erro</h2>
+<h2 class="pt-h2">Erro numa ficha</h2>
+{%- if email %}
 <p>Em toda ficha há o link "Avise a gente". Você também pode usar a página de <a class="pt-link" href="{{ u('/contato/') }}">contato</a>. Diga qual ficha e o que está errado; se puder, mande o trecho do edital. A correção passa pela mesma conferência das outras fichas. Veja <a class="pt-link" href="{{ u('/como-conferimos/') }}">como conferimos os dados</a>.</p>
+{%- else %}
+<p>Se uma ficha divergir do edital, vale o edital. As fichas passam por conferência e são refeitas a cada varredura semanal. Veja <a class="pt-link" href="{{ u('/como-conferimos/') }}">como conferimos os dados</a>.</p>
+{%- endif %}
 
 <h2 class="pt-h2">Privacidade</h2>
 <p>Como o site trata dados está na <a class="pt-link" href="{{ u('/privacidade/') }}">política de privacidade</a>.</p>
 
-<h2 class="pt-h2">Mudanças e foro</h2>
-<p>Estes termos podem mudar; a data no topo mostra a versão. Vale a lei brasileira. Foro: {% if cfg.foro %}comarca de {{ cfg.foro }}{% else %}[A PREENCHER: comarca do foro]{% endif %}.</p>
+<h2 class="pt-h2">Mudanças</h2>
+<p>Estes termos podem mudar; a data no topo mostra a versão. Vale a lei brasileira.</p>
 {% endblock %}

@@ -130,15 +130,13 @@ def test_indexar_liga_e_desliga_o_noindex(tmp_path):
     fechado = construir(tmp_path / "f", DIA, cfg=_cfg(indexar=False))
     aberto = construir(tmp_path / "a", DIA, cfg=_cfg(indexar=True))
     for arquivo, html in _todas(fechado).items():
-        if "Endereço novo" in html:
-            continue   # páginas de redirecionamento: sempre noindex
         assert '<meta name="robots" content="noindex, nofollow">' in html, arquivo
     assert "Disallow: /" in (fechado.saida / "robots.txt").read_text(encoding="utf-8")
     assert "X-Robots-Tag: noindex" in (fechado.saida / "_headers").read_text(encoding="utf-8")
     for arquivo, html in _todas(aberto).items():
-        assert "noindex, nofollow" not in html or "Endereço novo" in html, arquivo
+        assert "noindex, nofollow" not in html, arquivo
     robots = (aberto.saida / "robots.txt").read_text(encoding="utf-8")
-    assert "Disallow" not in robots and "Sitemap: https://filipejefte.github.io/concurseiro-site/sitemap.xml" in robots
+    assert "Disallow" not in robots and f"Sitemap: {_cfg().site_url}/sitemap.xml" in robots
 
 
 def test_nenhuma_pagina_tem_inscreva_se(site):
@@ -156,7 +154,8 @@ def test_paginas_por_cidade_area_banca_e_estado(site):
         if x.banca_slug:
             assert f"/banca/{x.banca_slug}/" in caminhos
     assert {"/estado/pr/", "/federais/", "/previstos/", "/encerram-esta-semana/", "/concursos/", "/"} <= caminhos
-    assert {"/sobre/", "/como-conferimos/", "/privacidade/", "/termos/", "/contato/", "/alertas/"} <= caminhos
+    assert {"/sobre/", "/como-conferimos/", "/privacidade/", "/termos/", "/alertas/"} <= caminhos
+    assert "/contato/" not in caminhos   # sem email_contato no site.toml, não há página de contato
     assert (site.saida / "404.html").exists()
 
 
@@ -168,12 +167,6 @@ def test_cidade_so_com_concurso_na_cidade_ou_a_50_km(site):
         m = g.extra["municipio"]
         assert any(x.municipio["ibge"] == m["ibge"] or distancia(m, x.municipio) <= 50 for x in locais)
     assert "curitiba" in b.cidades or not any(x.municipio and x.municipio["nome"] == "Curitiba" for x in locais)
-
-
-def test_enderecos_antigos_redirecionam(site):
-    for antigo in ("concurso.html", "cidade.html", "concursos.html", "cidade-maringa.html"):
-        html = (site.saida / antigo).read_text(encoding="utf-8")
-        assert 'content="noindex' in html and "location.replace" in html and "Ir para o endereço novo" in html
 
 
 def test_imagens_de_compartilhamento(site):
@@ -235,14 +228,6 @@ def test_email_do_kit_so_com_formulario_configurado(tmp_path, site):
     assert "https://t.me/concurseiro_teste" in html
 
 
-def test_redirecionamento_do_github_pages(tmp_path):
-    from gerador.redirecionar import gerar
-    pasta = gerar(tmp_path / "r", "https://concurseiro.example", "/concurseiro-site/")
-    html = (pasta / "404.html").read_text(encoding="utf-8")
-    assert '"/concurseiro-site/"' in html and '"https://concurseiro.example"' in html and "noindex" in html
-    assert (pasta / "index.html").read_text(encoding="utf-8") == html
-
-
 def test_cidade_so_com_previstos_vizinhos_fica_fora_do_google(tmp_path):
     from gerador.build import cidade_indexavel
     site = construir(tmp_path / "p", DIA, exemplo=True, cfg=_cfg(indexar=True))
@@ -277,22 +262,39 @@ def test_ficha_de_professor_federal_mostra_rotulo_e_tabela(tmp_path):
     assert html.count("Remuneração por titulação ·") == 1   # cargos com a mesma tabela: uma tabela só
 
 
-def test_responsavel_quem_faz_e_foro_vem_do_site_toml(tmp_path, site):
-    assert "[A PREENCHER: nome do responsável]" in _html(site, "/privacidade/")
-    cfg = _cfg(responsavel="Fulano de Tal", email_contato="concurseiro.projeto@gmail.com",
-               quem_faz="quatro amigos de Maringá (PR)", foro="Maringá/PR")
-    assert cfg.pendentes() == []
-    com = construir(tmp_path / "p", DIA, cfg=cfg)
-    privacidade = _html(com, "/privacidade/")
-    assert "Fulano de Tal, pessoa física responsável pelo Concurseiro" in privacidade
-    assert "mailto:concurseiro.projeto@gmail.com" in privacidade and "[A PREENCHER" not in privacidade
-    assert "feito por quatro amigos de Maringá (PR)" in _html(com, "/sobre/")
-    assert "comarca de Maringá/PR" in _html(com, "/termos/")
-    empresa = construir(tmp_path / "e", DIA, cfg=_cfg(responsavel="Fulano de Tal", razao_social="Concurseiro Ltda.",
-                                                      cnpj="00.000.000/0001-00"))
-    assert "Concurseiro Ltda., CNPJ 00.000.000/0001-00, representada por Fulano de Tal" in _html(empresa, "/privacidade/")
+def test_contato_e_avise_a_gente_so_com_email_contato(tmp_path, site):
+    """Sem email_contato nada de contato aparece, e nada fica como [A PREENCHER] nem como link quebrado."""
+    ficha = _html(site, "/concurso/prefeitura-vale-verde-pr-2026-edital-12/")
+    assert "Avise a gente" not in ficha and "mailto:" not in ficha
+    for arquivo, html in _todas(site).items():
+        assert "[A PREENCHER" not in html and 'href="/contato/"' not in html, arquivo
+    assert not (site.saida / "contato").exists()
+    assert verificar(site.saida, site.cfg.base_path) == []
+    com = construir(tmp_path / "c", DIA, exemplo=True, cfg=_cfg(email_contato="contato@exemplo.example"))
+    assert (com.saida / "contato" / "index.html").exists()
+    assert 'href="/contato/"' in _html(com, "/")
+    assert "mailto:contato@exemplo.example?subject=" in _html(com, "/contato/")
+    assert "Avise a gente" in _html(com, "/concurso/prefeitura-vale-verde-pr-2026-edital-12/")
+    assert verificar(com.saida, com.cfg.base_path) == []
     with pytest.raises(SystemExit):
-        _cfg(responsavel="Fulano 123.456.789-00")
+        _cfg(email_contato="isto não é e-mail")
+
+
+def test_site_toml_nao_tem_campo_de_pessoa():
+    """Regra 11: o site não fala de quem o faz; o site.toml não tem onde pôr isso."""
+    for campo in ("responsavel", "quem_faz", "foro", "razao_social", "cnpj"):
+        assert campo not in configuracao.Config.__dataclass_fields__
+        with pytest.raises(SystemExit):
+            _cfg(**{campo: "x"})
+
+
+def test_privacidade_e_termos_sem_controlador_nem_foro_nem_promessa(site):
+    privacidade = _html(site, "/privacidade/")
+    for frase in ("controlador", "Respondemos em", "representada por", "pessoa física responsável"):
+        assert frase not in privacidade, frase
+    assert "limpe os dados do site" in privacidade and "Cloudflare" in privacidade
+    assert "GitHub" not in privacidade and ">Anúncios</h2>" not in privacidade   # sem AdSense ligado
+    assert "foro" not in _html(site, "/termos/").lower()
 
 
 def test_previa_junta_fichas_da_semana_e_nunca_indexa(tmp_path):

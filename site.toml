@@ -2,9 +2,10 @@
 # Segredos (tokens do Cloudflare e do Telegram) ficam só nos GitHub Secrets ou no .env.
 
 # Endereço público, sem barra no fim. Trocar de domínio = mudar site_url e base_path.
-site_url = "https://filipejefte.github.io/concurseiro-site"
-# Pasta do site dentro do domínio, com barra no começo e no fim ("/" num domínio próprio).
-base_path = "/concurseiro-site/"
+# O site fica só no Cloudflare Pages (https://<projeto>.pages.dev, ou o domínio próprio, se um dia existir).
+site_url = "https://concurseiro.pages.dev"
+# Pasta do site dentro do domínio, com barra no começo e no fim ("/" no pages.dev e em domínio próprio).
+base_path = "/"
 
 # false: toda página sai com noindex, nofollow e o robots.txt bloqueia tudo.
 # true: páginas indexáveis e o robots.txt aponta o sitemap. Só com decisão dos sócios.
@@ -17,20 +18,10 @@ canal_telegram = ""
 # Formulário de e-mail do Kit (só o número do formulário, com confirmação dupla ligada no Kit). Vazio = sem e-mail.
 kit_form_id = ""
 
-# Endereço do "Contato", do "Avise a gente" e da política de privacidade (mailto:). Pode ser um Gmail do
-# projeto até o domínio existir. Vazio = [A PREENCHER] no site.
+# Endereço do "Contato", do "Avise a gente" das fichas e dos pedidos de privacidade (um endereço da marca, nunca de
+# uma pessoa). Vazio = a página Contato e o "Avise a gente" não aparecem. Nada no site fala de quem faz o Concurseiro
+# (regra 11 do CLAUDE.md).
 email_contato = ""
-
-# Responsável pelos dados (controlador, LGPD). Pessoa física: só o nome; o contato é o email_contato.
-# Nunca ponha CPF nem endereço residencial aqui: o arquivo e o site são públicos.
-responsavel = ""
-# Quando a empresa existir: razão social e CNPJ passam a ser o controlador na política de privacidade.
-razao_social = ""
-cnpj = ""
-# Quem faz o Concurseiro, para a página Sobre (ex.: "quatro amigos de Maringá (PR)").
-quem_faz = ""
-# Comarca do foro dos termos de uso (ex.: "Maringá/PR").
-foro = ""
 
 # Cloudflare Web Analytics (sem cookie). Vazio = nada é carregado.
 cloudflare_analytics_token = ""

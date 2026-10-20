@@ -1,6 +1,6 @@
 """Gera o site estático em public/ a partir de dados/concursos.json e do site.toml.
 
-python -m gerador build [--saida public] [--hoje AAAA-MM-DD] [--exemplo] [--plataforma github|cloudflare]
+python -m gerador build [--saida public] [--hoje AAAA-MM-DD] [--exemplo] [--plataforma local|cloudflare] [--previa]
 """
 import hashlib
 import json
@@ -27,13 +27,14 @@ MARCA = RAIZ / "docs" / "marca"
 ASSETS = RAIZ / "assets"
 MARCADOR = ".gerado-pelo-concurseiro"
 FONTE = "assets/fonts/schibsted-grotesk-latin-wght-normal.woff2"
-TEXTOS_ATUALIZADOS = "2026-10-16"   # data da última mudança nas páginas institucionais (lastmod do sitemap)
+TEXTOS_ATUALIZADOS = "2026-10-19"   # data da última mudança nas páginas institucionais (lastmod do sitemap)
 FUSO = timezone(timedelta(hours=-3))  # Brasília, sem horário de verão desde 2019
 
 MENU = [("Concursos abertos", "/concursos/"), ("Federais", "/federais/"), ("Paraná", "/estado/pr/"), ("Previstos", "/previstos/")]
 RODAPE = [("Sobre", "/sobre/"), ("Como conferimos os dados", "/como-conferimos/"), ("Alertas", "/alertas/"),
           ("Política de privacidade", "/privacidade/"), ("Termos de uso", "/termos/"), ("Contato", "/contato/"),
           ("Encerram esta semana", "/encerram-esta-semana/")]
+SO_COM_EMAIL = {"/contato/"}   # só existem com email_contato no site.toml
 NA_AREA = {"Administrativa": "na área administrativa", "Saúde": "na área da saúde", "Educação": "na área da educação",
            "Operacional": "na área operacional", "Policial e segurança": "na área policial e de segurança",
            "Jurídica": "na área jurídica", "Bancária": "na área bancária", "Outras": "em outras áreas"}
@@ -73,7 +74,7 @@ class Pagina:
 
 
 class Site:
-    def __init__(self, cfg, base, hoje, saida=SAIDA, plataforma="github", exemplo=False):
+    def __init__(self, cfg, base, hoje, saida=SAIDA, plataforma="local", exemplo=False):
         self.cfg, self.hoje, self.saida, self.plataforma = cfg, hoje, Path(saida), plataforma
         d.ANO_REFERENCIA = hoje.year   # "sex, 20/11" sem ano; data de outro ano leva o ano
         self.base = base
@@ -95,7 +96,6 @@ class Site:
             shutil.rmtree(self.saida)
         self.saida.mkdir(parents=True)
         (self.saida / MARCADOR).write_text("public/ é apagada e refeita a cada build.\n", encoding="utf-8")
-        (self.saida / ".nojekyll").write_text("", encoding="utf-8")   # GitHub Pages: publica _headers e afins como estão
 
     def _com_hash(self, destino, conteudo):
         """Grava assets/<nome>-<hash>.<ext> (cache longo no Cloudflare) e devolve o caminho público."""
@@ -194,7 +194,8 @@ class Site:
                                     for i, (nome, caminho) in enumerate(p.trilha)],
             }]
         contexto = dict(
-            pagina=p, base=self.base, faixa=self.faixa(), menu=MENU, rodape=RODAPE, ativos=self.ativos, marca=self.marca,
+            pagina=p, base=self.base, faixa=self.faixa(), menu=MENU, ativos=self.ativos, marca=self.marca,
+            rodape=[(n, c) for n, c in RODAPE if self.cfg.email_contato or c not in SO_COM_EMAIL],
             robots=("noindex, nofollow" if not self.cfg.indexar or self.base.previa
                     else "index, follow" if p.indexavel else "noindex, follow"),
             canais=self.canais(), alerta=self.alerta(p.alerta),
@@ -224,7 +225,6 @@ class Site:
             self.pagina_ficha(x)
         self.paginas_listas()
         self.paginas_institucionais()
-        self.redirecionamentos()
         self.dados_js()
         self.imagens_og()
         self.sitemap_robots()
@@ -292,7 +292,7 @@ class Site:
         ] if t) + "\n" + endereco
         prazos = self._prazos(x)
         avise = (f' Viu um erro nesta ficha? <a class="pt-link" href="{escape(_mailto(cfg.email_contato, x.id, endereco))}">Avise a gente</a>.'
-                 if cfg.email_contato else " Viu um erro nesta ficha? Avise a gente: [A PREENCHER: e-mail de contato].")
+                 if cfg.email_contato else "")
         trilha = [("Início", "/")]
         if x.no_pr:
             trilha.append(("Paraná", "/estado/pr/"))
@@ -460,6 +460,8 @@ class Site:
 
     def paginas_institucionais(self):
         for path, template, h1 in INSTITUCIONAIS:
+            if path in SO_COM_EMAIL and not self.cfg.email_contato:
+                continue
             self.render(Pagina(path, template, title=f"{h1} · Concurseiro", description=DESCRICOES[path], tipo="texto",
                                trilha=[("Início", "/"), (h1, path)], h1=h1, lastmod=TEXTOS_ATUALIZADOS,
                                contexto=dict(email=self.cfg.email_contato, n_abertos=len(self.base.abertos),
@@ -470,22 +472,6 @@ class Site:
         self.render(Pagina("/404.html", "404.html", title="Página não encontrada · Concurseiro",
                            description="Esta página não existe ou saiu do ar.", tipo="texto", h1="Página não encontrada",
                            sitemap=False, canonical=""))
-
-    def redirecionamentos(self):
-        """Os endereços do protótipo viram páginas pequenas que levam ao endereço novo."""
-        b = self.base
-        maringa = "/cidade/maringa/" if "maringa" in b.cidades else "/concursos/?perto=4115200"
-        regras = {
-            "concurso.html": ("/concursos/", "var id = p.get('id'); if (id && /^[a-z0-9-]+$/.test(id)) destino = '/concurso/' + id + '/';", {}),
-            "cidade.html": ("/estado/pr/", "var ibge = p.get('ibge'); if (ibge && mapa[ibge]) destino = '/cidade/' + mapa[ibge] + '/';"
-                                           " else if (/^[0-9]{7}$/.test(ibge || '')) destino = '/concursos/?perto=' + ibge;",
-                            b.cidade_por_ibge),
-            "concursos.html": ("/concursos/", "destino = '/concursos/' + location.search;", {}),
-            "cidade-maringa.html": (maringa, "", {}),
-        }
-        modelo_html = self.env.get_template("redireciona.html")
-        for arquivo, (padrao, regra, mapa) in regras.items():
-            self._gravar(arquivo, modelo_html.render(destino_padrao=padrao, regra=Markup(regra), mapa=mapa))
 
     def dados_js(self):
         """Dados que o JavaScript busca só quando a pessoa precisa: municípios (cidade, GPS) e cargos (perfil)."""
@@ -620,7 +606,7 @@ def carregar_base(exemplo=False, hoje=None, concursos=None, previa=None):
     return resultado
 
 
-def construir(saida=SAIDA, hoje=None, exemplo=False, plataforma="github", cfg=None, concursos=None, previa=None):
+def construir(saida=SAIDA, hoje=None, exemplo=False, plataforma="local", cfg=None, concursos=None, previa=None):
     cfg = cfg or configuracao.ler()
     hoje = hoje or hoje_brasilia()
     site = Site(cfg, carregar_base(exemplo, hoje, concursos, previa), hoje, saida, plataforma, exemplo)
