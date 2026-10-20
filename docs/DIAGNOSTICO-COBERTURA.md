@@ -48,11 +48,11 @@ Em 16/10 não deu para verificar: a rede da sessão bloqueava os domínios `.pr.
 - cada matéria tem página própria, que vira o link do ato. Ela vem em HTML ou é o PDF que o órgão mandou. PDF escaneado fica sem texto, e a coleta conta quantos foram;
 - limite conhecido: um extrato de contrato de banca com título genérico ("Extrato de Contrato 12/2026") não é lido.
 
-## Para fechar a cobertura (no notebook)
+## Para fechar a cobertura
 
-Em 19/10, numa sessão na nuvem, a AMP-PR e o DIOE-PR foram coletados desde 16/06 e extraídos até zerar (`dados/varreduras/2026-10-19/`, com o `progresso.md`). Falta o DOU, que precisa do INLABS (`INLABS_EMAIL` e `INLABS_SENHA` no `.env`).
+Em 19 e 20/10, numa sessão na nuvem, as três fontes foram coletadas desde 16/06 (o DOU desde 22/06: os dias anteriores já tinham saído dos 4 meses do INLABS) e extraídas (`dados/varreduras/2026-10-19/`, com o `progresso.md`). A fila tem 769 atos; ficaram 66 fichas e 616 descartes. Faltam 2 atos: os retificadores do Edital 2/2026 do IFMT, cujo período de inscrição só está no Anexo I, em seletivo.ifmt.edu.br, bloqueado na rede da nuvem. No notebook, abra o Anexo I: se a inscrição já terminou, os dois são descarte; se não, faça a ficha no `/varredura`. Depois disso, a cobertura está fechada e o próximo passo é a conferência do `revisao.csv`.
 
-A coleta grava na pasta do dia em que roda (`dados/varreduras/<hoje>/`). Os nomes dos atos na fila são estáveis, então as fichas e os descartes de 19/10 (que já incluem os de 14/10) continuam valendo se forem copiados para a pasta nova antes da extração. Só os atos do DOU vão aparecer como pendentes:
+Se precisar refazer a coleta numa pasta nova, as fichas e os descartes de 19/10 continuam valendo: a coleta grava na pasta do dia em que roda (`dados/varreduras/<hoje>/`) e os nomes dos atos na fila são estáveis. Só os atos novos aparecem como pendentes:
 
 ```powershell
 python -m varredura coletar --inicial --desde 2026-06-16
