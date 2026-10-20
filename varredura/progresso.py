@@ -11,6 +11,8 @@ from .dados import carregar_fichas, data_br, ler_json
 from .extracao import PRIORIDADES, ler_fila, pendentes, prioridade
 
 ARQUIVO = "progresso.md"
+# fila/<ato>-extra-<n>.md: texto oficial que completa a ficha de outro ato (continuação, anexo), não é ato da coleta.
+EXTRA = "-extra-"
 MARCA = "<!-- notas: daqui para baixo, escrito à mão -->"
 NOTAS_INICIAIS = """## Notas
 
@@ -22,8 +24,10 @@ NOTAS_INICIAIS = """## Notas
 def escrever(pasta, hoje=None):
     pasta = Path(pasta)
     hoje = hoje or date.today()
-    fila = sorted((pasta / "fila").glob("*.md")) if (pasta / "fila").exists() else []
-    faltam = pendentes(pasta) if fila else []
+    arquivos = sorted((pasta / "fila").glob("*.md")) if (pasta / "fila").exists() else []
+    fila = [a for a in arquivos if EXTRA not in a.stem]
+    extras = len(arquivos) - len(fila)
+    faltam = [a for a in pendentes(pasta) if EXTRA not in a.stem] if fila else []
     fonte = lambda a: ler_fila(a)[0].get("fonte", "?")
     na_fila, por_fazer = Counter(fonte(a) for a in fila), Counter(fonte(a) for a in faltam)
     grupos = Counter(prioridade(a, hoje)[0] for a in faltam)
@@ -40,7 +44,8 @@ def escrever(pasta, hoje=None):
         linhas.append(f"| {f} | {na_fila[f]} | {na_fila[f] - por_fazer[f]} | {por_fazer[f]} |")
     linhas.append(f"| **Total** | **{len(fila)}** | **{len(fila) - len(faltam)}** | **{len(faltam)}** |")
     linhas += ["", "Faltam, por prioridade: " + " · ".join(f"P{g} ({PRIORIDADES[g]}): {grupos[g]}" for g in sorted(PRIORIDADES)),
-               "", f"Fichas: {len(fichas)} · descartes: {len(descartes)}",
+               "", f"Fichas: {len(fichas)} · descartes: {len(descartes)}"
+               + (f" · textos extras juntados às fichas (fora da conta da fila): {extras}" if extras else ""),
                "PSS na coleta (fora da fila): " + (" · ".join(f"{f} {n}" for f, n in sorted(pss.items())) or "nenhum"),
                "Fontes: " + (" · ".join(f"{f}: {e}" for f, e in atos.get("fontes", {}).items()) or "sem atos.json"), ""]
     alvo = pasta / ARQUIVO

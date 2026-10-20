@@ -1,17 +1,17 @@
 # Progresso da extração · varredura de 19/10/2026
 
-Atualizado em 20/10/2026 00:22 por `python -m varredura progresso`. A parte de cima é refeita a cada vez; a seção Notas fica como está.
+Atualizado em 20/10/2026 00:49 por `python -m varredura progresso`. A parte de cima é refeita a cada vez; a seção Notas fica como está.
 
 | Fonte | Na fila | Feitos (ficha ou descarte) | Faltam |
 | --- | --- | --- | --- |
 | AMP-PR | 176 | 176 | 0 |
 | DIOE-PR | 50 | 50 | 0 |
-| DOU | 543 | 541 | 2 |
-| **Total** | **769** | **767** | **2** |
+| DOU | 499 | 497 | 2 |
+| **Total** | **725** | **723** | **2** |
 
 Faltam, por prioridade: P1 (inscrição aberta ou futura): 0 · P2 (previsto (autorização ou banca) dos últimos 120 dias): 0 · P3 (o resto): 2
 
-Fichas: 66 · descartes: 616
+Fichas: 66 · descartes: 616 · textos extras juntados às fichas (fora da conta da fila): 44
 PSS na coleta (fora da fila): AMP-PR 4705 · DIOE-PR 339 · DOU 1362
 Fontes: DOU: ok · AMP-PR: ok · DIOE-PR: ok
 

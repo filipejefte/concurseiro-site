@@ -50,7 +50,7 @@ Em 16/10 não deu para verificar: a rede da sessão bloqueava os domínios `.pr.
 
 ## Para fechar a cobertura
 
-Em 19 e 20/10, numa sessão na nuvem, as três fontes foram coletadas desde 16/06 (o DOU desde 22/06: os dias anteriores já tinham saído dos 4 meses do INLABS) e extraídas (`dados/varreduras/2026-10-19/`, com o `progresso.md`). A fila tem 769 atos; ficaram 66 fichas e 616 descartes. Faltam 2 atos: os retificadores do Edital 2/2026 do IFMT, cujo período de inscrição só está no Anexo I, em seletivo.ifmt.edu.br, bloqueado na rede da nuvem. No notebook, abra o Anexo I: se a inscrição já terminou, os dois são descarte; se não, faça a ficha no `/varredura`. Depois disso, a cobertura está fechada e o próximo passo é a conferência do `revisao.csv`.
+Em 19 e 20/10, numa sessão na nuvem, as três fontes foram coletadas desde 16/06 (o DOU desde 22/06: os dias anteriores já tinham saído dos 4 meses do INLABS) e extraídas (`dados/varreduras/2026-10-19/`, com o `progresso.md`). A fila tem 725 atos (176 da AMP, 50 do DIOE, 499 do DOU); ficaram 66 fichas e 616 descartes. Faltam 2 atos: os retificadores do Edital 2/2026 do IFMT, cujo período de inscrição só está no Anexo I, em seletivo.ifmt.edu.br, bloqueado na rede da nuvem. No notebook, abra o Anexo I: se a inscrição já terminou, os dois são descarte; se não, faça a ficha no `/varredura`. Depois disso, a cobertura está fechada e o próximo passo é a conferência do `revisao.csv`.
 
 Se precisar refazer a coleta numa pasta nova, as fichas e os descartes de 19/10 continuam valendo: a coleta grava na pasta do dia em que roda (`dados/varreduras/<hoje>/`) e os nomes dos atos na fila são estáveis. Só os atos novos aparecem como pendentes:
 

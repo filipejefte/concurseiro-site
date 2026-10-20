@@ -882,10 +882,12 @@ def test_progresso_conta_o_que_falta_e_guarda_as_notas(tmp_path):
     pasta = tmp_path / "2026-10-19"
     _fila(pasta, "a.md", "abertura", "2026-10-01", "Inscrições de 01/10/2026 a 30/10/2026.")
     _fila(pasta, "b.md", "abertura", "2026-07-01", "Inscrições de 01/07/2026 a 31/07/2026.", fonte="AMP-PR")
+    _fila(pasta, "b-extra-1.md", "outro", "2026-07-01", "Anexo I do edital.", fonte="AMP-PR")   # completa a ficha, não é ato
     dados.gravar_json(pasta / "descartes.json", [{"ato": "b.md", "motivo": "inscrição encerrada"}])
     arquivo, faltam = escrever(pasta, hoje=date(2026, 10, 19))
     texto = arquivo.read_text(encoding="utf-8")
     assert faltam == 1 and "| DOU | 1 | 0 | 1 |" in texto and "| AMP-PR | 1 | 1 | 0 |" in texto and "P1 (inscrição aberta ou futura): 1" in texto
+    assert "| **Total** | **2** | **1** | **1** |" in texto and "textos extras juntados às fichas (fora da conta da fila): 1" in texto
     arquivo.write_text(texto.split(MARCA)[0] + MARCA + "\n\n## Notas\n\n- Último lote: 1 a 30\n", encoding="utf-8")
     escrever(pasta, hoje=date(2026, 10, 19))
     assert "- Último lote: 1 a 30" in arquivo.read_text(encoding="utf-8")
