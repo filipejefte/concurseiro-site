@@ -655,6 +655,97 @@ def test_tabela_do_magisterio_nao_vale_para_outro_cargo():
     assert not _passa_magisterio("salario", _ficha_magisterio(cargo), cargo)
 
 
+# Formatos de salário vistos nos editais do DOU de 19/10/2026 (Câmara dos Deputados, IFSP, UFMS, IFPA, TRT8).
+ATO_BLOCOS = normalizar("""Cargo 1: Analista Legislativo – Comunicação Social – Jornalismo. Atribuições: planejar, produzir e editar
+conteúdos jornalísticos para os veículos da Casa, apurar informações, entrevistar fontes, redigir notícias, reportagens e
+textos para os portais, coordenar a cobertura das sessões e das comissões, além de outras atividades inerentes à sua área
+de atuação e desenvolvidas na respectiva unidade administrativa de lotação, com uso de ferramentas digitais e mídias sociais,
+observadas as normas internas e a legislação vigente sobre comunicação pública. Remuneração: R$ 32.070,88. Jornada de 40 h.
+Cargo 2: Técnico Legislativo – Agente de Polícia. Atribuições: segurança das instalações. Remuneração: R$ 12.000,00.""")
+
+ATO_EBTT = normalizar("""4. DA REMUNERAÇÃO REGIME CLASSE/NÍVEL VENCIMENTO (R$) RETRIBUIÇÃO POR TITULAÇÃO APERFEIÇOAMENTO
+ESPECIALIZAÇÃO MESTRADO DOUTORADO DE A1 6.397,19 639,72 1.279,44 3.198,59 7.356,77 40H A1 4.478,03 447,80 895,61""")
+
+ATO_SOMA = normalizar("""6.1. As tabelas de remuneração básica inicial são as seguintes: Dedicação Exclusiva - Doutor Vencimento Básico
+Inicial: R$ 6.397,19 + Retribuição por Titulação de Doutorado: R$ 7.356,77 + Auxílio-Alimentação R$ 1.192,00.
+20 horas - Especialista Vencimento Básico Inicial: R$ 3.198,59 + Retribuição por Titulação: Especialização: 319,86;
+ou Mestrado: 799,65; ou Doutorado: R$ 1.839,19 + Auxílio-Alimentação R$ 596,00.""")
+
+ATO_TAE = normalizar("""QUADRO DE VAGAS 201 Assistente de Aluno C 40 h 2 0 1 0 0 3 manhã 301 Assistente em Administração D 40 h
+11 2 5 1 1 20 manhã. 2. DOS REQUISITOS 2.1. Os requisitos de escolaridade e de experiência profissional de cada cargo são os
+do Anexo I deste edital, conforme a Lei nº 11.091/2005, e serão comprovados no ato da posse, com a apresentação do diploma ou
+certificado expedido por instituição reconhecida pelo Ministério da Educação e, quando exigido, do registro no conselho de
+classe competente. 2.2. A jornada de trabalho é de 40 horas semanais, em turnos definidos pela unidade de lotação.
+3. DA REMUNERAÇÃO Nível de classificação Vencimento básico Nível C R$ 2.607,70 Nível D R$ 3.181,39 Nível E R$ 5.215,39""")
+
+ATO_CARREIRA = normalizar("""2. DOS CARGOS ANALISTA Ensino superior completo: Valor da inscrição: R$ 110,00 Remuneração inicial:
+R$ 16.040,88 TÉCNICO Ensino médio completo Valor da inscrição: R$ 90,00 Remuneração inicial: R$ 9.776,71
+Cargo 01 Analista Judiciário – Área Judiciária Cargo 02 Analista Judiciário – Área Administrativa
+Cargo 03 Técnico Judiciário – Área Administrativa""")
+
+
+def _salario_passa(ato, cargos, k):
+    c = {"cargos": cargos, "documentos": [{"tipo": "edital", "url": LINK, "publicado_em": "2026-10-05"}],
+         "inscricao": {"inicio": None, "fim": None}, "prova_objetiva": None, "isencao_ate": None}
+    return verificar("salario", c, ato, {LINK}, k)[0]
+
+
+def _k(nome, salario, requisitos=None, jornada=40):
+    return {"nome": nome, "salario": salario, "requisitos": requisitos, "jornada_horas": jornada}
+
+
+def test_salario_no_bloco_do_proprio_cargo():
+    jornalista = _k("Analista Legislativo – Comunicação Social – Jornalismo", 32070.88)
+    policial = _k("Técnico Legislativo – Agente de Polícia", 12000.0)
+    assert _salario_passa(ATO_BLOCOS, [jornalista, policial], jornalista)
+    assert _salario_passa(ATO_BLOCOS, [jornalista, policial], policial)
+    policial_errado = _k("Técnico Legislativo – Agente de Polícia", 32070.88)   # salário do bloco do jornalista
+    assert not _salario_passa(ATO_BLOCOS, [jornalista, policial_errado], policial_errado)
+
+
+def test_salario_de_professor_que_so_exige_graduacao_e_o_vencimento_do_regime():
+    certo = _k("Professor EBTT – Artes Cênicas", 6397.19, "40 h com dedicação exclusiva; graduação em Artes Cênicas")
+    assert _salario_passa(ATO_EBTT, [certo], certo)
+    for errado in (_k("Professor EBTT – Artes Cênicas", 639.72, "40 h com dedicação exclusiva; graduação em Artes"),   # a RT
+                   _k("Professor EBTT – Artes Cênicas", 6397.19, "40 horas; graduação em Artes"),                    # regime de 40 h
+                   _k("Professor EBTT – Artes Cênicas", 6397.19, "dedicação exclusiva; mestrado em Artes")):         # exige mestrado
+        assert not _salario_passa(ATO_EBTT, [errado], errado), errado
+
+
+def test_salario_de_professor_como_soma_de_vencimento_e_retribuicao():
+    de = _k("Professor do Magistério Superior – Artes", 13753.96, "dedicação exclusiva; titulação mínima: doutorado")
+    vinte = _k("Professor do Magistério Superior – Medicina", 3518.45, "20 horas; titulação mínima: especialização", 20)
+    assert _salario_passa(ATO_SOMA, [de], de)
+    assert _salario_passa(ATO_SOMA, [vinte], vinte)
+    for errado in (_k("Professor do Magistério Superior – Artes", 13753.97, "dedicação exclusiva; titulação mínima: doutorado"),
+                   _k("Professor do Magistério Superior – Medicina", 3518.45, "20 horas; titulação mínima: doutorado", 20),
+                   _k("Professor do Magistério Superior – Medicina", 3518.45, "20 horas; graduação ou especialização", 20),
+                   _k("Técnico de Laboratório", 13753.96, "dedicação exclusiva; doutorado")):
+        assert not _salario_passa(ATO_SOMA, [errado], errado), errado
+
+
+def test_salario_de_tecnico_administrativo_pela_classe():
+    aluno = _k("Assistente de Aluno", 2607.70, "Código 201; nível C; ensino médio")
+    adm = _k("Assistente em Administração", 3181.39, "Código 301; nível D; ensino médio profissionalizante")
+    assert _salario_passa(ATO_TAE, [aluno, adm], aluno)
+    assert _salario_passa(ATO_TAE, [aluno, adm], adm)
+    adm_errado = _k("Assistente em Administração", 2607.70, "Código 301; nível D")       # valor da classe C
+    aluno_classe_errada = _k("Assistente de Aluno", 3181.39, "Código 201; nível D")      # o ato diz classe C
+    assert not _salario_passa(ATO_TAE, [aluno, adm_errado], adm_errado)
+    assert not _salario_passa(ATO_TAE, [aluno_classe_errada, adm], aluno_classe_errada)
+
+
+def test_salario_da_carreira_vale_para_os_cargos_que_comecam_pela_mesma_palavra():
+    a1 = _k("Analista Judiciário – Área Judiciária", 16040.88)
+    a2 = _k("Analista Judiciário – Área Administrativa", 16040.88)
+    t1 = _k("Técnico Judiciário – Área Administrativa", 9776.71)
+    assert all(_salario_passa(ATO_CARREIRA, [a1, a2, t1], k) for k in (a1, a2, t1))
+    t_errado = _k("Técnico Judiciário – Área Administrativa", 16040.88)
+    assert not _salario_passa(ATO_CARREIRA, [a1, a2, t_errado], t_errado)
+    a2_diferente = _k("Analista Judiciário – Área Administrativa", 15000.0)              # carreira sem salário único
+    assert not _salario_passa(ATO_CARREIRA, [a1, a2_diferente, t1], a1)
+
+
 def test_conferencia_aceita_periodo_do_item_do_cargo():
     cargo = _professor(13753.96, "Item 1.2; dedicação exclusiva; titulação mínima: doutorado")
     c = _ficha_magisterio(cargo)

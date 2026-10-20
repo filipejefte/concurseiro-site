@@ -1,9 +1,14 @@
 """Conferência automática: cada campo crítico contra o texto do ato oficial, sem modelo de IA (custo zero).
 
 Um valor só passa quando aparece no texto do ato no lugar certo:
-  salario           o valor (5.543,88) com o nome do cargo logo antes, e nenhum outro cargo da ficha mais perto;
+  salario           o valor (5.543,88) com o nome do cargo logo antes, e nenhum outro cargo da ficha mais perto
+                    (ou, no bloco do próprio cargo, logo depois de "remuneração:");
                     professor do magistério (tabela única de remuneração): o último valor da linha da titulação
-                    exigida, dentro do bloco do regime do cargo (20 h, 40 h ou dedicação exclusiva);
+                    exigida, dentro do bloco do regime do cargo (20 h, 40 h ou dedicação exclusiva); com graduação,
+                    o vencimento da linha do regime; ou vencimento + retribuição, duas parcelas seguidas que somam o valor;
+                    técnico-administrativo: o valor logo depois de "classe D" (ou "nível D"), a classe do cargo no ato;
+                    carreira com um salário só ("Analista ... remuneração inicial: R$ 16.040,88"): vale para os cargos
+                    que começam pela mesma palavra, se todos eles têm esse salário;
   inscricao.*       a data (30/09/2026, 30/09 ou 30 de setembro) logo depois de "inscri", com o início antes do fim;
                     tabela de inscrições por item: o período logo depois do número do item do cargo;
   prova_objetiva    a data logo depois de "objetiva" (ou "prova escrita", "aplicação da prova");
@@ -40,6 +45,11 @@ TITULACOES = [("graduacao", r"graduac|graduad"), ("aperfeicoamento", r"aperfeico
 QUALQUER_TITULACAO = re.compile("|".join(p for _, p in TITULACOES))
 QUALQUER_REGIME = re.compile("|".join(REGIMES.values()))
 REMUNERACAO = re.compile(r"remunerac|vencimento|retribuicao|subsidio|tabela")
+# Rótulo logo antes do valor: "remuneração inicial: R$", "vencimento básico de R$", "subsídio: R$".
+ROTULO_SALARIO = re.compile(r"(?:remunerac\w*|vencimento\w*|subsidio|salario)(?:\s+(?:inicial|mensal|basico|basica|de))*\s*:?\s*(?:r\$)?\s*$")
+# Linha de dedicação exclusiva em tabela de magistério: "DE A1 6.397,19" ou "DE D I 6.397,19".
+LINHA_DE = re.compile(r"\bde\s+[a-d]\s?(?:1|i)\b")
+CLASSE = re.compile(r"\b(?:classe|nivel)(?:\s+de\s+classificacao)?\s+([a-e])\b")
 
 
 def normalizar(texto):
@@ -112,15 +122,138 @@ def _salario(texto, cargos, k):
         return (False, "há valor em reais perto do cargo") if tem else (True, "sem valor em reais perto do cargo")
     achados = [m.start() for m in padrao_valor(k["salario"]).finditer(texto)]
     if not achados:
+        # A soma não aparece escrita no ato: só as parcelas.
+        if _soma_vencimento_retribuicao(texto, k):
+            return True, "vencimento + retribuição por titulação: duas parcelas seguidas do ato que somam o valor"
         return False, "valor não achado no ato"
     eu = cargos.index(k)
     for pos in achados:
         i, distancia = _cargo_mais_perto(texto, cargos, pos)
         if i == eu and distancia <= 300:
             return True, "valor achado logo depois do nome do cargo"
+        if i == eu and distancia <= 2500 and ROTULO_SALARIO.search(texto[max(0, pos - 60):pos]):
+            return True, "valor logo depois de \"remuneração\", no bloco do próprio cargo"
     if _tabela_do_magisterio(texto, k, achados):
         return True, "valor da linha da titulação do cargo, no bloco do regime dele, na tabela de remuneração"
+    if _vencimento_da_graduacao(texto, k, achados):
+        return True, "vencimento da linha do regime do cargo (titulação exigida: graduação), na tabela de remuneração"
+    if _soma_vencimento_retribuicao(texto, k):
+        return True, "vencimento + retribuição por titulação: duas parcelas seguidas do ato que somam o valor"
+    if _tabela_por_classe(texto, k, achados):
+        return True, "valor logo depois da classe do cargo (técnico-administrativo), e a classe aparece com o cargo no ato"
+    if _carreira(texto, cargos, k, achados):
+        return True, "salário da carreira, logo depois da primeira palavra do cargo; os cargos da carreira têm o mesmo valor"
     return False, "valor achado, mas não logo depois do nome deste cargo"
+
+
+def _professor(k):
+    return bool(re.search(r"magisterio|professor|\bebtt\b", normalizar(k["nome"])))
+
+
+def _regime_antes(texto, pos, janela=1500):
+    """O regime mais perto antes de `pos` (20, 40 ou de), contando a linha "DE A1" das tabelas, ou None."""
+    antes = texto[max(0, pos - janela):pos]
+    achados = [(m.end(), nome) for nome, p in REGIMES.items() for m in re.finditer(p, antes)]
+    achados += [(m.end(), "de") for m in LINHA_DE.finditer(antes)]
+    return max(achados)[1] if achados else None
+
+
+def _vencimento_da_graduacao(texto, k, achados):
+    """Professor que só exige graduação: o salário é o vencimento, o primeiro valor da linha do regime dele."""
+    if not _professor(k) or _titulacao(k) != "graduacao" or not _regime(k):
+        return False
+    for pos in achados:
+        antes = texto[max(0, pos - 1500):pos]
+        if not re.search(r"vencimento", antes):
+            continue
+        marcas = [(m.end(), nome) for nome, p in REGIMES.items() for m in re.finditer(p, antes)]
+        marcas += [(m.end(), "de") for m in LINHA_DE.finditer(antes)]
+        if not marcas:
+            continue
+        fim, nome = max(marcas)
+        meio = antes[fim:]
+        if nome == _regime(k) and len(meio) <= 40 and not DINHEIRO.search(meio) and not QUALQUER_TITULACAO.search(meio):
+            return True
+    return False
+
+
+def _soma_vencimento_retribuicao(texto, k):
+    """Professor: o ato dá o vencimento e a retribuição por titulação, e a ficha tem a soma (regra 11).
+
+    Passa quando duas parcelas seguidas (até 160 caracteres entre elas) somam o salário ao centavo, perto de uma
+    palavra de remuneração, e a titulação e o regime mais perto antes delas (quando o ato os traz ali) são os do cargo.
+    Titulação do cargo em dúvida não passa."""
+    titulacao = _titulacao(k)
+    if not _professor(k) or not titulacao:
+        return False
+    alvo = round(k["salario"] * 100)
+    valores = [(m.start(), m.end(), round(float(m.group(0).replace(".", "").replace(",", ".")) * 100))
+               for m in DINHEIRO.finditer(texto)]
+    for (ini, fim, a), (ini2, _, b) in zip(valores, valores[1:]):
+        if a + b != alvo or ini2 - fim > 160 or not REMUNERACAO.search(texto, max(0, ini - 3000), ini):
+            continue
+        regime = _regime_antes(texto, ini)
+        titulos = list(QUALQUER_TITULACAO.finditer(texto, max(0, ini - 400), ini))
+        titulo_ok = not titulos or re.match(dict(TITULACOES)[titulacao], titulos[-1].group(0))
+        if titulo_ok and (regime is None or _regime(k) is None or regime == _regime(k)):
+            return True
+    return False
+
+
+def _classe_do_cargo(k):
+    m = CLASSE.search(normalizar(k.get("requisitos") or ""))
+    return m.group(1) if m else None
+
+
+def _tabela_por_classe(texto, k, achados):
+    """Técnico-administrativo: vencimento por classe ("classe D R$ 3.181,39"). A classe do cargo tem de aparecer
+    com o nome dele no ato: logo depois do nome ("assistente de aluno C 40 h") ou no título do bloco antes dele."""
+    classe = _classe_do_cargo(k)
+    nome = _padrao_cargo(k["nome"])
+    if not classe or not nome:
+        return False
+    confirmada = False
+    for m in nome.finditer(texto):
+        if re.match(rf"\s+{classe}\s+\d", texto[m.end():m.end() + 8]):
+            confirmada = True
+            break
+        blocos = list(CLASSE.finditer(texto, max(0, m.start() - 400), m.start()))
+        if blocos and blocos[-1].group(1) == classe:
+            confirmada = True
+            break
+    if not confirmada:
+        return False
+    for pos in achados:
+        antes = texto[max(0, pos - 40):pos]
+        rotulos = list(CLASSE.finditer(antes))
+        if rotulos and rotulos[-1].group(1) == classe and not DINHEIRO.search(antes[rotulos[-1].end():]) \
+                and REMUNERACAO.search(texto, max(0, pos - 1500), pos):
+            return True
+    return False
+
+
+def _carreira(texto, cargos, k, achados):
+    """Um salário por carreira ("Analista ... remuneração inicial: R$ 16.040,88"): vale para o cargo se a primeira
+    palavra do nome dele vem antes do valor, sem a primeira palavra de outra carreira no meio, e se todos os cargos
+    que começam por essa palavra têm o mesmo salário."""
+    def primeira(c):
+        palavras = [p for p in re.findall(r"[a-z0-9]+", normalizar(c["nome"])) if p not in VAZIAS]
+        return palavras[0] if palavras else None
+    minha = primeira(k)
+    if not minha or any(primeira(c) == minha and c["salario"] != k["salario"] for c in cargos):
+        return False
+    outras = {primeira(c) for c in cargos} - {minha, None}
+    for pos in achados:
+        if not ROTULO_SALARIO.search(texto[max(0, pos - 60):pos]):
+            continue
+        antes = texto[max(0, pos - 200):pos]
+        minhas = [m.end() for m in re.finditer(rf"\b{re.escape(minha)}\b", antes)]
+        if not minhas:
+            continue
+        depois = antes[minhas[-1]:]
+        if not any(re.search(rf"\b{re.escape(o)}\b", depois) for o in outras):
+            return True
+    return False
 
 
 def _regime(k):
@@ -139,6 +272,8 @@ def _titulacao(k):
     if re.search(rf"(?:{QUALQUER_TITULACAO.pattern})\w*[^;.]{{0,40}}\bou\b[^;.]{{0,10}}(?:{QUALQUER_TITULACAO.pattern})", alvo):
         return None
     achadas = [nome for nome, p in TITULACOES if re.search(p, alvo)]
+    if not achadas and re.search(r"licenciatura|licenciad|bacharel", alvo):
+        return "graduacao"   # licenciatura e bacharelado são graduação
     return achadas[-1] if achadas else None   # a mais alta citada: doutorado pressupõe a graduação
 
 

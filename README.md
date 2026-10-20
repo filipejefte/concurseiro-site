@@ -117,7 +117,7 @@ As fontes são lidas com boas maneiras: `robots.txt`, no máximo 1 requisição 
 
 | Campo | Passa quando |
 | --- | --- |
-| Salário | o valor aparece logo depois do nome do cargo, sem outro cargo mais perto; professor do magistério: último valor da linha da titulação exigida, no bloco do regime do cargo, na tabela de remuneração |
+| Salário | o valor aparece logo depois do nome do cargo, sem outro cargo mais perto (ou logo depois de "remuneração", no bloco do próprio cargo); professor do magistério: último valor da linha da titulação exigida, no bloco do regime do cargo, na tabela de remuneração; professor que só exige graduação: o vencimento da linha do regime dele; professor com vencimento e retribuição em parcelas: duas parcelas seguidas que somam o valor, com a titulação e o regime do cargo; técnico-administrativo: o valor da classe do cargo, e a classe aparece com o nome dele no ato; um salário por carreira: logo depois da primeira palavra do cargo, se todos os cargos da carreira têm o mesmo valor |
 | Inscrição | início e fim como período ("de X a Y") logo depois de "inscrição"; em tabela por item, logo depois do número do item do cargo |
 | Prova objetiva | a primeira data depois de "objetiva" (sem gabarito, resultado, recurso) |
 | Taxa | o valor depois de "taxa" |
