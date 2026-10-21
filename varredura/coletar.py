@@ -7,6 +7,8 @@ from .fontes import FONTES
 from .fontes.base import Cliente
 from .triagem import PARA_EXTRAIR, classificar
 
+CAMPOS_DO_MUNICIPIO = ("municipio", "municipio_ibge", "entidade")   # só a AMP preenche: nas outras fontes ficam fora do atos.json
+
 
 def coletar(desde, ate, inicial=False):
     pasta = VARREDURAS / ate.isoformat()
@@ -15,7 +17,7 @@ def coletar(desde, ate, inicial=False):
         # então fichas e descartes já feitos continuam ligados aos seus atos.
         print(f"Refazendo a coleta de {ate} (fichas e descartes já feitos ficam).", flush=True)
     cliente = Cliente()
-    estado_fontes, registro, para_fila = {}, [], []
+    estado_fontes, registro, para_fila, publicacoes, sem_leitura = {}, [], [], {}, {}
     for Classe in FONTES:
         fonte = Classe(cliente)
         lidos = 0
@@ -27,7 +29,9 @@ def coletar(desde, ate, inicial=False):
                 if resultado is None:
                     continue
                 classe, pss = resultado
-                item = {k: v for k, v in ato.como_dict().items() if k != "texto"}
+                if ato.fonte.startswith("banca-") and not pss:
+                    classe = "abertura"   # está na lista de inscrições abertas da banca: é o edital de abertura
+                item = {k: v for k, v in ato.como_dict().items() if k not in ("texto", "continuacao") and not (k in CAMPOS_DO_MUNICIPIO and v == "")}
                 item.update(classe=classe, pss=pss, fila=None)
                 registro.append(item)
                 if classe in PARA_EXTRAIR and not pss:
@@ -38,14 +42,18 @@ def coletar(desde, ate, inicial=False):
             # Uma fonte com problema não derruba as outras; a revisão mostra o que faltou.
             estado_fontes[fonte.nome] = f"falhou depois de {lidos} atos: {erro}"
         else:
-            estado_fontes[fonte.nome] = "ok"
+            estado_fontes[fonte.nome] = "ok" if not getattr(fonte, "aviso", None) else "ok, mas " + fonte.aviso
+        if getattr(fonte, "publicacoes", None):
+            publicacoes[fonte.nome] = fonte.publicacoes
+        if getattr(fonte, "sem_leitura", None):
+            sem_leitura[fonte.nome] = fonte.sem_leitura
         print(f"{fonte.nome}: {estado_fontes[fonte.nome]} ({lidos} atos lidos)", flush=True)
 
     for nome, (_, _, _, item) in zip(escrever_fila(pasta, [(a, c, p) for a, c, p, _ in para_fila]), para_fila):
         item["fila"] = nome
     gravar_json(pasta / "atos.json", {
         "desde": desde.isoformat(), "ate": ate.isoformat(), "inicial": inicial,
-        "fontes": estado_fontes, "atos": registro,
+        "fontes": estado_fontes, "publicacoes": publicacoes, "sem_leitura": sem_leitura, "atos": registro,
     })
     print(f"{len(registro)} atos sobre concurso; {len(para_fila)} na fila de extração; "
           f"{sum(1 for a in registro if a['pss'])} PSS em avaliação. Pasta: {pasta}")

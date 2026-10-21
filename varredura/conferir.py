@@ -177,25 +177,46 @@ def _vencimento_da_graduacao(texto, k, achados):
     return False
 
 
+DENOMINACAO = re.compile(r"\b(?:professor\s+)?(assistente|adjunto|associado|titular)\b[\s-]*(livre|[a-d])?\b")
+
+
+def _denominacao(texto):
+    """(denominação, letra) do professor na redação do ato ou da ficha: ('assistente', 'a'), ('titular', 'livre')."""
+    achado = None
+    for m in DENOMINACAO.finditer(texto):
+        if m.group(0).startswith("professor") or m.group(2):   # "assistente" sozinho é outro cargo (assistente em administração)
+            achado = (m.group(1), m.group(2) or "")
+    return achado
+
+
 def _soma_vencimento_retribuicao(texto, k):
     """Professor: o ato dá o vencimento e a retribuição por titulação, e a ficha tem a soma (regra 11).
 
     Passa quando duas parcelas seguidas (até 160 caracteres entre elas) somam o salário ao centavo, perto de uma
-    palavra de remuneração, e a titulação e o regime mais perto antes delas (quando o ato os traz ali) são os do cargo.
-    Titulação do cargo em dúvida não passa."""
+    palavra de remuneração, e as três coisas que mudam o valor são as do cargo:
+      titulação  o ato cita a titulação (até 400 caracteres antes das parcelas, ou logo depois) e é a que o cargo exige;
+      regime     o regime mais perto antes delas (20 h, 40 h ou dedicação exclusiva), quando o ato o traz ali;
+      classe     a denominação do professor (Assistente A, Adjunto A, Titular-Livre...) mais perto antes das parcelas
+                 é a que a ficha traz para o cargo. O vencimento muda com a classe: valor de outra classe (o caso dos
+                 editais 58 e 59 da UFV, de 15/10/2026) não passa.
+    Titulação em dúvida, ou ausente perto das parcelas, não passa."""
     titulacao = _titulacao(k)
     if not _professor(k) or not titulacao:
         return False
     alvo = round(k["salario"] * 100)
     valores = [(m.start(), m.end(), round(float(m.group(0).replace(".", "").replace(",", ".")) * 100))
                for m in DINHEIRO.finditer(texto)]
-    for (ini, fim, a), (ini2, _, b) in zip(valores, valores[1:]):
+    classe_do_cargo = _denominacao(normalizar(k.get("requisitos") or ""))
+    for (ini, fim, a), (ini2, fim2, b) in zip(valores, valores[1:]):
         if a + b != alvo or ini2 - fim > 160 or not REMUNERACAO.search(texto, max(0, ini - 3000), ini):
             continue
         regime = _regime_antes(texto, ini)
-        titulos = list(QUALQUER_TITULACAO.finditer(texto, max(0, ini - 400), ini))
-        titulo_ok = not titulos or re.match(dict(TITULACOES)[titulacao], titulos[-1].group(0))
-        if titulo_ok and (regime is None or _regime(k) is None or regime == _regime(k)):
+        antes = list(QUALQUER_TITULACAO.finditer(texto, max(0, ini - 400), ini))
+        depois = QUALQUER_TITULACAO.search(texto, fim2, fim2 + 120)
+        citada = antes[-1] if antes else depois
+        titulo_ok = citada is not None and re.match(dict(TITULACOES)[titulacao], citada.group(0))
+        classe_ok = classe_do_cargo is None or _denominacao(texto[max(0, ini - 1200):ini]) == classe_do_cargo
+        if titulo_ok and classe_ok and (regime is None or _regime(k) is None or regime == _regime(k)):
             return True
     return False
 

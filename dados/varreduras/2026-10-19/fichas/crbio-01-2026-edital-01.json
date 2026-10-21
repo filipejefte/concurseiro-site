@@ -1,10 +1,12 @@
 {
   "ato": "dou-2026-09-21-entidades-de-fiscalizacao-do-exercicio-d-5c2e19f6.md",
-  "atos_extras": [],
+  "atos_extras": [
+    "dou-2026-09-21-entidades-de-fiscalizacao-do-exercicio-d-5c2e19f6-extra-1.md"
+  ],
   "trechos": {
-    "salario": "não consta no ato (o aviso lista os cargos sem vagas nem salários; o edital normativo está em www.quadrix.org.br)",
-    "inscricao.inicio": "não consta no ato (o aviso só traz o fim das inscrições)",
-    "inscricao.fim": "9. Será admitida a inscrição exclusivamente via internet, no endereço eletrônico http://www.quadrix.org.br, até às 23 horas do dia 21 de outubro de 2026, observado o horário oficial de Brasília/DF.",
+    "salario": "200 Técnico – Agente Fiscal 1 - - - - 25 2 10 1 1 40 Mato Grosso 40h R$ 3.399,52 + benefícios 201 Técnico – Agente Fiscal - - - - - 18 2 8 1 1 30 Mato Grosso do Sul 40h R$ 3.399,52 + benefícios 202 Técnico – Agente Fiscal 1 - - - - 25 2 10 1 1 40 São",
+    "inscricao.inicio": "Período de solicitação de inscrição, exclusivamente por meio do sistema eletrônico de inscrição 21/09 a 21/10/2026 Das 10 horas do primeiro dia às 23 horas do último dia 8 Período para solicitação de atendimento especializado, de",
+    "inscricao.fim": "Período de solicitação de inscrição, exclusivamente por meio do sistema eletrônico de inscrição 21/09 a 21/10/2026 Das 10 horas do primeiro dia às 23 horas do último dia 8 Período para solicitação de atendimento especializado, de",
     "prova_objetiva": "11. As provas objetivas e discursivas serão realizadas na data de 29 de novembro de 2026 (domingo) nas cidades de Campo Grande/MS, Cuiabá/MT e São Paulo/SP, no turno da tarde, para todos os cargos.",
     "taxa": "10. Os valores das taxas de inscrição são de R$ 85,00, para os cargos de nível médio; e R$ 100,00, para os cargos de nível superior.",
     "banca": "O concurso público será realizado sob a responsabilidade do Instituto Quadrix",
@@ -26,104 +28,130 @@
       "url": "https://www.quadrix.org.br"
     },
     "inscricao": {
-      "inicio": null,
+      "inicio": "2026-09-21",
       "fim": "2026-10-21",
       "url": "https://www.quadrix.org.br"
     },
-    "isencao_ate": null,
+    "isencao_ate": "2026-09-22",
     "prova_objetiva": "2026-11-29",
     "local_prova": "Campo Grande (MS), Cuiabá (MT) e São Paulo (SP), no turno da tarde",
     "taxa": {
       "min": 85.0,
       "max": 100.0
     },
-    "isencao_regras": null,
+    "isencao_regras": "Isenção para inscritos no CadÚnico (família de baixa renda) e doadores de medula óssea (Decreto 6.593/2008 e Lei 13.656/2018); pedido pela internet, de 21/09 a 22/09/2026",
     "regime": "CLT",
-    "beneficios": [],
+    "beneficios": [
+      {
+        "nome": "Vale-refeição",
+        "valor": 1540.0
+      },
+      {
+        "nome": "Vale-alimentação",
+        "valor": 950.0
+      },
+      {
+        "nome": "Plano de saúde",
+        "valor": null
+      },
+      {
+        "nome": "Vale-transporte",
+        "valor": null
+      }
+    ],
     "o_que_levar": null,
     "cargos": [
       {
         "nome": "Técnico - Agente Fiscal",
-        "vagas": null,
-        "cadastro_reserva": false,
-        "salario": null,
-        "escolaridade": null,
-        "requisitos": null,
-        "jornada_horas": null,
+        "vagas": 2,
+        "cadastro_reserva": true,
+        "salario": 3399.52,
+        "escolaridade": "Médio",
+        "requisitos": "Nível médio, CNH categoria B ou superior. Lotação: Mato Grosso, Mato Grosso do Sul e São Paulo (códigos 200 a 202).",
+        "jornada_horas": 40,
         "materias": []
       },
       {
         "nome": "Técnico - Assistente Administrativo",
-        "vagas": null,
-        "cadastro_reserva": false,
-        "salario": null,
-        "escolaridade": null,
-        "requisitos": null,
-        "jornada_horas": null,
+        "vagas": 9,
+        "cadastro_reserva": true,
+        "salario": 3399.52,
+        "escolaridade": "Médio",
+        "requisitos": "Nível médio. Lotação: Mato Grosso, Mato Grosso do Sul e São Paulo (códigos 203 a 205).",
+        "jornada_horas": 40,
         "materias": []
       },
       {
         "nome": "Analista - Advogado",
-        "vagas": null,
-        "cadastro_reserva": false,
-        "salario": null,
-        "escolaridade": null,
-        "requisitos": null,
-        "jornada_horas": null,
+        "vagas": 0,
+        "cadastro_reserva": true,
+        "salario": 7181.5,
+        "escolaridade": "Superior",
+        "requisitos": "Graduação de nível superior em Direito. Inscrição ativa e regular na Ordem dos Advogados do Brasil (OAB), sem sanções disciplinares ou outras restrições vigentes que impeçam o exercício da advocacia ou comprometam a eficácia da inscrição. Lotação: São Paulo (código 400).",
+        "jornada_horas": 40,
         "materias": []
       },
       {
         "nome": "Analista - Analista de Tecnologia da Informação",
-        "vagas": null,
-        "cadastro_reserva": false,
-        "salario": null,
-        "escolaridade": null,
-        "requisitos": null,
-        "jornada_horas": null,
+        "vagas": 0,
+        "cadastro_reserva": true,
+        "salario": 7181.5,
+        "escolaridade": "Superior",
+        "requisitos": "Graduação de nível superior nas áreas de Tecnologia da Informação ou Ciências da Computação, ou curso de denominação e conteúdo equivalentes, em grau de bacharel ou tecnólogo. Lotação: São Paulo (código 401).",
+        "jornada_horas": 40,
         "materias": []
       },
       {
         "nome": "Analista - Contador",
-        "vagas": null,
-        "cadastro_reserva": false,
-        "salario": null,
-        "escolaridade": null,
-        "requisitos": null,
-        "jornada_horas": null,
+        "vagas": 0,
+        "cadastro_reserva": true,
+        "salario": 7181.5,
+        "escolaridade": "Superior",
+        "requisitos": "Graduação de nível superior em Ciências Contábeis. Registro ativo e regular no Conselho Regional de Contabilidade (CRC). Lotação: São Paulo (código 402).",
+        "jornada_horas": 40,
         "materias": []
       },
       {
         "nome": "Analista - Fiscal Biólogo",
-        "vagas": null,
-        "cadastro_reserva": false,
-        "salario": null,
-        "escolaridade": null,
-        "requisitos": null,
-        "jornada_horas": null,
+        "vagas": 2,
+        "cadastro_reserva": true,
+        "salario": 7181.5,
+        "escolaridade": "Superior",
+        "requisitos": "Graduação de nível superior em Biologia. Registro ativo e regular no Conselho Regional de Biologia (CRBio-01). CNH categoria B ou superior. Lotação: São Paulo (código 403).",
+        "jornada_horas": 40,
         "materias": []
       },
       {
         "nome": "Especialista - Arquivista",
-        "vagas": null,
-        "cadastro_reserva": false,
-        "salario": null,
-        "escolaridade": null,
-        "requisitos": null,
-        "jornada_horas": null,
+        "vagas": 1,
+        "cadastro_reserva": true,
+        "salario": 7181.5,
+        "escolaridade": "Superior",
+        "requisitos": "Graduação de nível superior em Arquivologia, na modalidade bacharelado. Lotação: São Paulo (código 404).",
+        "jornada_horas": 40,
         "materias": []
       },
       {
         "nome": "Especialista - Recursos Humanos",
-        "vagas": null,
-        "cadastro_reserva": false,
-        "salario": null,
-        "escolaridade": null,
-        "requisitos": null,
-        "jornada_horas": null,
+        "vagas": 1,
+        "cadastro_reserva": true,
+        "salario": 7181.5,
+        "escolaridade": "Superior",
+        "requisitos": "Graduação de nível superior em Administração, Psicologia, Ciências Contábeis, Gestão de Recursos Humanos. Lotação: São Paulo (código 405).",
+        "jornada_horas": 40,
         "materias": []
       }
     ],
     "documentos": [
+      {
+        "tipo": "edital",
+        "titulo": "Edital nº 1/2026 – Concurso Público (edital completo)",
+        "numero": "1/2026",
+        "url": "https://anexos-r2.selecao.net.br/uploads/861/concursos/3071/anexos/1afe4f0b-7113-4dad-bf04-0c578b3fd24a.pdf",
+        "publicado_em": "2026-09-21",
+        "fonte": "banca",
+        "resumo": null
+      },
       {
         "tipo": "edital",
         "titulo": "Edital nº 1, de 18 de setembro de 2026 – Concurso Público (extrato)",

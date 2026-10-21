@@ -3,6 +3,7 @@ import json
 import os
 import re
 import tomllib
+import unicodedata
 from datetime import date
 from pathlib import Path
 
@@ -75,6 +76,25 @@ def municipios(exemplo=False):
     if exemplo:
         lista = lista + ler_json(MUNICIPIOS_FICTICIOS)["municipios"]
     return {m["ibge"]: m for m in lista}
+
+
+def chave_nome(texto):
+    """Nome sem acento, aspas, maiúscula nem pontuação, para casar "SÃO JORGE D’OESTE" com "São Jorge d'Oeste"."""
+    sem_acento = unicodedata.normalize("NFD", str(texto or "")).encode("ascii", "ignore").decode().lower()
+    return re.sub(r"\s+", " ", re.sub(r"[^a-z0-9]+", " ", sem_acento.replace("'", "").replace("’", ""))).strip()
+
+
+_NOMES_SEM_ESPACO = []
+
+
+def municipio_pelo_inicio(texto):
+    """O município do Paraná (da tabela) cujo nome abre o texto; o mais longo, se houver mais de um. Compara sem
+    espaços: o PDF do diário quebra nomes em linhas e até em palavras ("CHOPINZ INHO"). None se nenhum abre o texto."""
+    if not _NOMES_SEM_ESPACO:
+        _NOMES_SEM_ESPACO.extend(sorted(((chave_nome(m["nome"]).replace(" ", ""), m) for m in municipios().values()),
+                                        key=lambda par: -len(par[0])))
+    alvo = chave_nome(texto).replace(" ", "")
+    return next((m for chave, m in _NOMES_SEM_ESPACO if alvo.startswith(chave)), None)
 
 
 def situacao(c, hoje):

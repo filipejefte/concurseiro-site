@@ -1,14 +1,16 @@
 {
   "ato": "dou-2026-09-18-entidades-de-fiscalizacao-do-exercicio-d-a4781a9e.md",
-  "atos_extras": [],
+  "atos_extras": [
+    "dou-2026-09-18-entidades-de-fiscalizacao-do-exercicio-d-a4781a9e-extra-1.md"
+  ],
   "trechos": {
-    "salario": "não consta no ato (o extrato não lista cargos nem salários; o edital completo está em www.institutoconsulplan.org.br)",
-    "inscricao.inicio": "INSCRIÇÕES: de 16h00min do dia 25 de setembro de 2026 às 16h00min do dia 26 de outubro de 2026, no site www.institutoconsulplan.org.br.",
-    "inscricao.fim": "INSCRIÇÕES: de 16h00min do dia 25 de setembro de 2026 às 16h00min do dia 26 de outubro de 2026, no site www.institutoconsulplan.org.br.",
-    "prova_objetiva": "As Provas Objetivas de Múltipla Escolha e Discursivas serão realizadas na cidade de Aracaju/SE, na data provável de 13 de dezembro de 2026 (domingo), em dois turnos",
-    "taxa": "não consta no ato",
-    "banca": "INSCRIÇÕES: de 16h00min do dia 25 de setembro de 2026 às 16h00min do dia 26 de outubro de 2026, no site www.institutoconsulplan.org.br.",
-    "cidade": "As Provas Objetivas de Múltipla Escolha e Discursivas serão realizadas na cidade de Aracaju/SE",
+    "salario": "ASSISTENTE TÉCNICO ADMINISTRATIVO a) Salário inicial de R$ 2.642,71; b) Auxílio Alimentação de R$ 1.000,00; c) Progressão por Titulação (5% - art. 3º, §4º, do PCCS); d) Progressão por Antiguidade (art. 3º, §3º, do PCCS); e) Auxílio transporte ou Vale Transporte; f) Auxí",
+    "inscricao.inicio": "Período de inscrições 16h de 25/09/2026 às 16h de 26/10/2026 Período para envio de títulos 16h de 25/09/2026 às 23h59 de",
+    "inscricao.fim": "Período de inscrições 16h de 25/09/2026 às 16h de 26/10/2026 Período para envio de títulos 16h de 25/09/2026 às 23h59 de",
+    "prova_objetiva": "Realização da Prova Objetiva e Discursiva 13/12/2026 Divulgação dos ga",
+    "taxa": "3.2 Os valores das taxas de inscrição serão: a) R$ 99,00 (noventa e nove reais) para os cargos de nível superior; b) R$ 98,00 (noventa e oito reais) para o cargo de nível médio. 3.3 Será permitido ao candidato inscrever-se para até 2 (dois)",
+    "banca": "1.1 O Concurso Público será regido por este Edital, por seus anexos, avisos, atos complementares e eventuais retificações, sendo sua execução de responsabilidade do Instituto Consulplan de Desenvolvimento, Projetos e Assistência Social , site: www.institutoconsulplan.org.br e telefone 0800",
+    "cidade": "1.8 As Provas deste concurso público serão realizadas na cidade de Aracaju, em Sergipe. 1.8.1 Caso a capacidad",
     "edital": "EDITAL Nº 1, DE 17 DE SETEMBRO DE 2026 CONCURSO PÚBLICO DESTINADO AO PREENCHIMENTO DE VAGAS DE SEU QUADRO DE PESSOAL E FORMAÇÃO DE CADASTRO DE RESERVA A Presidente do CONSELHO REGIONAL DE ODONTOLOGIA DE SERGIPE - CRO/SE"
   },
   "concurso": {
@@ -30,19 +32,82 @@
       "fim": "2026-10-26",
       "url": "https://www.institutoconsulplan.org.br"
     },
-    "isencao_ate": null,
+    "isencao_ate": "2026-09-28",
     "prova_objetiva": "2026-12-13",
-    "local_prova": "Aracaju (SE), em dois turnos",
+    "local_prova": "Aracaju (SE)",
     "taxa": {
-      "min": null,
-      "max": null
+      "min": 98.0,
+      "max": 99.0
     },
-    "isencao_regras": null,
-    "regime": null,
-    "beneficios": [],
+    "isencao_regras": "Isenção para inscritos no CadÚnico e doadores de medula óssea (Decreto 6.593/2008 e Lei 13.656/2018); pedido pela internet, de 25 a 28/09/2026",
+    "regime": "CLT",
+    "beneficios": [
+      {
+        "nome": "Auxílio-alimentação",
+        "valor": 1000.0
+      },
+      {
+        "nome": "Auxílio-transporte ou vale-transporte",
+        "valor": null
+      },
+      {
+        "nome": "Auxílio-saúde",
+        "valor": null
+      }
+    ],
     "o_que_levar": null,
-    "cargos": [],
+    "cargos": [
+      {
+        "nome": "Assistente Técnico Administrativo",
+        "vagas": 2,
+        "cadastro_reserva": true,
+        "salario": 2642.71,
+        "escolaridade": "Médio",
+        "requisitos": "Nível médio. Lotação: Aracaju (SE).",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Assistente Técnico de Fiscalização",
+        "vagas": 1,
+        "cadastro_reserva": true,
+        "salario": 3303.39,
+        "escolaridade": "Médio",
+        "requisitos": "Nível médio e CNH categoria B ou superior; há prova prática de condução de veículo. Lotação: Aracaju (SE).",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Analista Administrativo",
+        "vagas": 0,
+        "cadastro_reserva": true,
+        "salario": 3964.05,
+        "escolaridade": "Superior",
+        "requisitos": "Graduação em qualquer área do ensino superior. Lotação: Aracaju (SE).",
+        "jornada_horas": 30,
+        "materias": []
+      },
+      {
+        "nome": "Analista Contábil",
+        "vagas": 0,
+        "cadastro_reserva": true,
+        "salario": 4504.61,
+        "escolaridade": "Superior",
+        "requisitos": "Graduação em Ciências Contábeis, com registro regular no CRC (comprovado na contratação). Lotação: Aracaju (SE).",
+        "jornada_horas": 30,
+        "materias": []
+      }
+    ],
     "documentos": [
+      {
+        "tipo": "edital",
+        "titulo": "Edital nº 1/2026 – Concurso Público (edital completo)",
+        "numero": "1/2026",
+        "url": "https://cdnsite.institutoconsulplan.org.br/concursos/1343/fa01ef7ef54e4e85b348f9cd74594f72.pdf",
+        "publicado_em": "2026-09-18",
+        "fonte": "banca",
+        "resumo": null
+      },
       {
         "tipo": "edital",
         "titulo": "Edital nº 1, de 17 de setembro de 2026 – Concurso Público (extrato)",

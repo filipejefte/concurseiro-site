@@ -159,6 +159,16 @@ def texto_da_materia(corpo):
 class DiarioEstadoPR(Fonte):
     nome = "DIOE-PR"
 
+    def __init__(self, cliente):
+        super().__init__(cliente)
+        # Matérias que não deu para ler (portal responde 400/404, ou PDF escaneado sem texto). A triagem não as vê:
+        # o coletar guarda a lista no atos.json e a revisão mostra, "para ler à mão", as que falam de concurso.
+        self.sem_leitura = []
+
+    @staticmethod
+    def _sem_leitura(dia, materia, url, motivo):
+        return {"data": dia.isoformat(), "titulo": materia.titulo[:300], "orgao": orgao(materia.pastas)[:200], "url": url, "motivo": motivo}
+
     def _edicoes(self, desde, ate):
         resposta = json.loads(self.cliente.baixar(URL_EDICOES, usar_cache=False))
         edicoes = []
@@ -178,15 +188,25 @@ class DiarioEstadoPR(Fonte):
             sem_texto = sem_edicao = 0
             for m in lidas:
                 url = URL_MATERIA.format(m.id, edicao)
+                # 400 ("não está vinculada a uma edição") e 404 não mudam: o marcador evita pedir de novo a cada coleta.
+                marcador = self.cliente.arquivo_cache(url).with_suffix(".sem-edicao")
+                if marcador.exists():
+                    sem_edicao += 1
+                    self.sem_leitura.append(self._sem_leitura(dia, m, url, "HTTP 400/404"))
+                    continue
                 try:
                     texto = texto_da_materia(self.cliente.baixar(url))
                 except urllib.error.HTTPError as erro:
                     if erro.code not in (400, 404):
                         raise
+                    marcador.parent.mkdir(parents=True, exist_ok=True)
+                    marcador.touch()
                     sem_edicao += 1
+                    self.sem_leitura.append(self._sem_leitura(dia, m, url, "HTTP 400/404"))
                     continue
                 if not texto:
                     sem_texto += 1
+                    self.sem_leitura.append(self._sem_leitura(dia, m, url, "PDF escaneado, sem texto"))
                 yield Ato(fonte=self.nome, data=dia.isoformat(), titulo=m.titulo[:300], orgao=orgao(m.pastas)[:200],
                           url=url, texto=texto)
             avisos = "".join(f"; {n} {o}" for n, o in ((sem_texto, "sem texto (PDF escaneado)"),

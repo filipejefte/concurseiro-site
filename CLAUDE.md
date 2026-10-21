@@ -99,5 +99,5 @@ python -m varredura municipios                              # refaz a tabela de 
 - Mudar `indexar` para `true` (ou tirar o `noindex` de outro jeito) sem decisão dos sócios.
 - Pôr campo de e-mail ou formulário fora do fluxo do Kit (opt-in duplo).
 - Redigitar o logotipo: use os arquivos de `docs/marca/`.
-- Passar de 1 requisição por segundo nas fontes, ignorar o `robots.txt` ou fazer a coleta completa fora do `/varredura`.
+- Passar de 1 requisição por segundo nas fontes, ignorar o `robots.txt` ou fazer a coleta completa fora do `/varredura`. Única exceção, decisão do Filipe em 21/10/2026: o login e os downloads do INLABS (`inlabs.in.gov.br`, serviço oficial de download do DOU, com cadastro), porque o `robots.txt` dele só redireciona para o do portal (`Disallow: /`). Está em `Cliente.SEM_ROBOTS` e vale só para esse host.
 - Usar API não oficial do WhatsApp: o resumo do canal é colado à mão.

@@ -2,15 +2,16 @@
   "ato": "dou-2026-09-18-entidades-de-fiscalizacao-do-exercicio-d-277bd099.md",
   "atos_extras": [
     "dou-2026-09-18-entidades-de-fiscalizacao-do-exercicio-d-e196af07.md",
-    "dou-2026-10-02-entidades-de-fiscalizacao-do-exercicio-d-72088a76.md"
+    "dou-2026-10-02-entidades-de-fiscalizacao-do-exercicio-d-72088a76.md",
+    "dou-2026-09-18-entidades-de-fiscalizacao-do-exercicio-d-277bd099-extra-1.md"
   ],
   "trechos": {
-    "salario": "não consta no ato (o extrato e as retificações não trazem salários; o edital completo está em www.institutoconsulplan.org.br)",
-    "inscricao.inicio": "INSCRIÇÕES: de 16h00min do dia 23 de setembro de 2026 às 16h00min do dia 22 de outubro de 2026, no site www.institutoconsulplan.org.br.",
-    "inscricao.fim": "4. Ficam, ainda, prorrogadas as inscrições até às 16h00 do dia 29 de outubro de 2026, com reimpressão de boleto e pagamento até as 20h00 do dia 30 de outubro de 2026.",
+    "salario": "Analista Contábil Rio de Janeiro/RJ R$ 6.084,46 a) Auxílio Refeição de R$ 1.234,00 por mês; b) Auxílio Alimentação de R$ 1.104,00 por mês; c) Assistência Médica para os empregados públicos, cônjuge, descendentes e ascendentes diretos de 1º grau; d) P",
+    "inscricao.inicio": "Período de inscrições 16h de 23/09/2026 às 16h de 29/10/2026 Período para envio de títulos 16h de 23/09/2026 às 23h59 de",
+    "inscricao.fim": "Período de inscrições 16h de 23/09/2026 às 16h de 29/10/2026 Período para envio de títulos 16h de 23/09/2026 às 23h59 de",
     "prova_objetiva": "As Provas Objetivas de Múltipla Escolha e Discursivas serão realizadas na cidade do Rio de Janeiro/RJ, na data provável de 13 de dezembro de 2026 (domingo), em dois turnos",
-    "taxa": "não consta no ato",
-    "banca": "INSCRIÇÕES: de 16h00min do dia 23 de setembro de 2026 às 16h00min do dia 22 de outubro de 2026, no site www.institutoconsulplan.org.br.",
+    "taxa": "3.2 Os valores das taxas de inscrição serão: a) R$ 47,50 (quarenta e sete reais e cinquenta centavos) para os cargos/especialidades de nível superior; b) R$ 47,00 (quarenta e sete reais) para os cargos/especialidades de nível médio/técnico. 3.3 Será permitido ao candidato inscrever -se par",
+    "banca": "1.1 O Concurso Público será regido por este Edital, por seus anexos, avisos, atos complementares e eventuais retificações, sendo sua execução de responsabilidade do Instituto Consulplan de Desenvolvimento, Projetos e Assistê ncia Social , site: www.institutoconsulplan.org.br e telefone 080",
     "cidade": "As Provas Objetivas de Múltipla Escolha e Discursivas serão realizadas na cidade do Rio de Janeiro/RJ",
     "edital": "EDITAL Nº 1, DE 17 DE SETEMBRO DE 2026 CONCURSO PÚBLICO DESTINADO AO PREENCHIMENTO DE VAGAS E FORMAÇÃO DO QUADRO DE PESSOAL E FORMAÇÃO DE CADASTRO DE RESERVA O Presidente do CONSELHO REGIONAL DE MEDICINA DO RIO DE JANEIRO - CREMERJ"
   },
@@ -33,100 +34,282 @@
       "fim": "2026-10-29",
       "url": "https://www.institutoconsulplan.org.br"
     },
-    "isencao_ate": null,
+    "isencao_ate": "2026-09-25",
     "prova_objetiva": "2026-12-13",
-    "local_prova": "Rio de Janeiro (RJ), em dois turnos",
+    "local_prova": "Rio de Janeiro, Campos dos Goytacazes e Volta Redonda (RJ)",
     "taxa": {
-      "min": null,
-      "max": null
+      "min": 47.0,
+      "max": 47.5
     },
-    "isencao_regras": null,
-    "regime": null,
-    "beneficios": [],
+    "isencao_regras": "Isenção para inscritos no CadÚnico e doadores de medula óssea (Decreto 6.593/2008 e Lei 13.656/2018); pedido pela internet, de 23 a 25/09/2026 (de 05 a 07/10/2026 para Analista de Banco de Dados, Analista de Ciência e Análise de Dados, Analista de Desenvolvimento de Sistemas, Analista de Operações, Analista de Suporte e Web Designer)",
+    "regime": "CLT",
+    "beneficios": [
+      {
+        "nome": "Auxílio-refeição (por mês)",
+        "valor": 1234.0
+      },
+      {
+        "nome": "Auxílio-alimentação (por mês)",
+        "valor": 1104.0
+      },
+      {
+        "nome": "Assistência médica",
+        "valor": null
+      },
+      {
+        "nome": "Plano odontológico básico",
+        "valor": null
+      },
+      {
+        "nome": "Cesta natalina",
+        "valor": 2338.0
+      },
+      {
+        "nome": "Auxílio-creche",
+        "valor": 800.0
+      },
+      {
+        "nome": "Auxílio-educação (até)",
+        "valor": 630.0
+      },
+      {
+        "nome": "Auxílio material escolar (semestral)",
+        "valor": 420.0
+      }
+    ],
     "o_que_levar": null,
     "cargos": [
+      {
+        "nome": "Advogado",
+        "vagas": 1,
+        "cadastro_reserva": true,
+        "salario": 7718.45,
+        "escolaridade": "Superior",
+        "requisitos": "Ensino superior completo em Direito (bacharelado), registro ativo na OAB e experiência comprovada de pelo menos 1 ano na área (comprovada na contratação). Lotação: Rio de Janeiro (RJ).",
+        "jornada_horas": 30,
+        "materias": []
+      },
+      {
+        "nome": "Analista Contábil",
+        "vagas": 0,
+        "cadastro_reserva": true,
+        "salario": 6084.46,
+        "escolaridade": "Superior",
+        "requisitos": "Ensino superior completo em Ciências Contábeis e registro ativo no CRC. Lotação: Rio de Janeiro (RJ).",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Analista de Controle Interno",
+        "vagas": 1,
+        "cadastro_reserva": true,
+        "salario": 6084.46,
+        "escolaridade": "Superior",
+        "requisitos": "Ensino superior completo (bacharelado) em Administração, Ciências Econômicas, Ciências Contábeis ou Direito. Lotação: Rio de Janeiro (RJ).",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Analista de Departamento Pessoal",
+        "vagas": 1,
+        "cadastro_reserva": true,
+        "salario": 6084.46,
+        "escolaridade": "Superior",
+        "requisitos": "Ensino superior completo (bacharelado) em Administração, Ciências Econômicas, Ciências Contábeis ou Direito. Lotação: Rio de Janeiro (RJ).",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Analista de Execução Fiscal",
+        "vagas": 0,
+        "cadastro_reserva": true,
+        "salario": 6084.46,
+        "escolaridade": "Superior",
+        "requisitos": "Ensino superior completo (bacharelado) em Administração, Ciências Econômicas, Ciências Contábeis ou Direito. Lotação: Rio de Janeiro (RJ).",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Analista de Recursos Humanos",
+        "vagas": 1,
+        "cadastro_reserva": true,
+        "salario": 6084.46,
+        "escolaridade": "Superior",
+        "requisitos": "Ensino superior completo em Administração, Psicologia, Gestão de Recursos Humanos ou Gestão de Pessoas e registro ativo no conselho de classe pertinente. Lotação: Rio de Janeiro (RJ).",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Analista Financeiro",
+        "vagas": 2,
+        "cadastro_reserva": true,
+        "salario": 6084.46,
+        "escolaridade": "Superior",
+        "requisitos": "Ensino superior completo (bacharelado) em Administração, Ciências Econômicas, Ciências Contábeis ou Direito. Lotação: Rio de Janeiro (RJ).",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Analista Jurídico",
+        "vagas": 0,
+        "cadastro_reserva": true,
+        "salario": 6084.46,
+        "escolaridade": "Superior",
+        "requisitos": "Ensino superior completo em Direito (bacharelado). Lotação: Rio de Janeiro (RJ).",
+        "jornada_horas": 40,
+        "materias": []
+      },
       {
         "nome": "Analista de Operações",
         "vagas": 11,
         "cadastro_reserva": true,
-        "salario": null,
+        "salario": 6084.46,
         "escolaridade": "Superior",
-        "requisitos": "Diploma de graduação (bacharelado) em qualquer área ou de curso superior de tecnologia, reconhecido pelo MEC; vagas: 7 ampla concorrência, 1 pessoa com deficiência e 3 pessoas negras, mais cadastro de reserva",
-        "jornada_horas": null,
+        "requisitos": "Graduação (bacharelado) em qualquer área do conhecimento, ou curso superior de tecnologia, reconhecido pelo MEC. Lotação em qualquer unidade do CREMERJ no estado do Rio de Janeiro (item 1.5.1 do edital).",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Analista de Processos, Consultas e Resoluções",
+        "vagas": 1,
+        "cadastro_reserva": true,
+        "salario": 6084.46,
+        "escolaridade": "Superior",
+        "requisitos": "Ensino superior completo em Direito (bacharelado). Lotação: Rio de Janeiro (RJ).",
+        "jornada_horas": 40,
         "materias": []
       },
       {
         "nome": "Analista de Procedimentos Éticos",
         "vagas": 3,
         "cadastro_reserva": true,
-        "salario": null,
-        "escolaridade": null,
-        "requisitos": "Vagas: 2 ampla concorrência e 1 pessoa negra, mais cadastro de reserva; requisitos no edital completo",
-        "jornada_horas": null,
-        "materias": []
-      },
-      {
-        "nome": "Analista de Banco de Dados (DBA)",
-        "vagas": null,
-        "cadastro_reserva": true,
-        "salario": null,
+        "salario": 6084.46,
         "escolaridade": "Superior",
-        "requisitos": "Diploma de graduação (bacharelado ou tecnólogo) na área de Tecnologia da Informação, reconhecido pelo MEC (cursos aceitos na Retificação II)",
-        "jornada_horas": null,
+        "requisitos": "Ensino superior completo em Direito (bacharelado). Lotação: Rio de Janeiro (RJ).",
+        "jornada_horas": 40,
         "materias": []
       },
       {
         "nome": "Analista de Ciência e Análise de Dados",
-        "vagas": null,
+        "vagas": 1,
         "cadastro_reserva": true,
-        "salario": null,
+        "salario": 7765.48,
         "escolaridade": "Superior",
-        "requisitos": "Diploma de graduação (bacharelado ou tecnólogo) na área de Tecnologia da Informação, ou em Estatística, Matemática ou Engenharia, reconhecido pelo MEC",
-        "jornada_horas": null,
+        "requisitos": "Graduação (bacharelado ou tecnólogo) na área de Tecnologia da Informação, ou em Estatística, Matemática ou Engenharia, reconhecida pelo MEC. Lotação: Rio de Janeiro (RJ).",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Analista de Banco de Dados (DBA)",
+        "vagas": 0,
+        "cadastro_reserva": true,
+        "salario": 7765.48,
+        "escolaridade": "Superior",
+        "requisitos": "Graduação (bacharelado ou tecnólogo) na área de Tecnologia da Informação, reconhecida pelo MEC. Lotação: Rio de Janeiro (RJ).",
+        "jornada_horas": 40,
         "materias": []
       },
       {
         "nome": "Analista de Desenvolvimento de Sistemas",
-        "vagas": null,
+        "vagas": 1,
         "cadastro_reserva": true,
-        "salario": null,
+        "salario": 7765.48,
         "escolaridade": "Superior",
-        "requisitos": "Diploma de graduação (bacharelado ou tecnólogo) na área de Tecnologia da Informação, reconhecido pelo MEC (cursos aceitos na Retificação II)",
-        "jornada_horas": null,
+        "requisitos": "Graduação (bacharelado ou tecnólogo) na área de Tecnologia da Informação, reconhecida pelo MEC. Lotação: Rio de Janeiro (RJ).",
+        "jornada_horas": 40,
         "materias": []
       },
       {
         "nome": "Analista de Suporte",
-        "vagas": null,
+        "vagas": 1,
         "cadastro_reserva": true,
-        "salario": null,
+        "salario": 7765.48,
         "escolaridade": "Superior",
-        "requisitos": "Diploma de graduação (bacharelado ou tecnólogo) na área de Tecnologia da Informação, reconhecido pelo MEC (cursos aceitos na Retificação II)",
-        "jornada_horas": null,
+        "requisitos": "Graduação (bacharelado ou tecnólogo) na área de Tecnologia da Informação, reconhecida pelo MEC. Lotação: Rio de Janeiro (RJ).",
+        "jornada_horas": 40,
         "materias": []
       },
       {
-        "nome": "Web Designer",
-        "vagas": null,
+        "nome": "Auditor",
+        "vagas": 1,
         "cadastro_reserva": true,
-        "salario": null,
-        "escolaridade": "Técnico",
-        "requisitos": "Ensino médio completo e formação técnica em Web Design e/ou Multimídia, com certificado reconhecido pelo MEC ou Sistema Senai/Senac",
-        "jornada_horas": null,
+        "salario": 18000.0,
+        "escolaridade": "Superior",
+        "requisitos": "Ensino superior completo (bacharelado) em Ciências Contábeis, Administração, Direito, Economia ou Engenharia. Lotação: Rio de Janeiro (RJ).",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Contador",
+        "vagas": 1,
+        "cadastro_reserva": true,
+        "salario": 7765.48,
+        "escolaridade": "Superior",
+        "requisitos": "Ensino superior completo em Ciências Contábeis e registro ativo no CRC. Lotação: Rio de Janeiro (RJ).",
+        "jornada_horas": 40,
         "materias": []
       },
       {
         "nome": "Jornalista",
-        "vagas": null,
+        "vagas": 0,
         "cadastro_reserva": true,
-        "salario": null,
-        "escolaridade": null,
-        "requisitos": null,
+        "salario": 5824.19,
+        "escolaridade": "Superior",
+        "requisitos": "Ensino superior completo em Comunicação Social, com habilitação em Jornalismo, e registro profissional ativo. Lotação: Rio de Janeiro (RJ).",
+        "jornada_horas": 30,
+        "materias": []
+      },
+      {
+        "nome": "Analista de Comunicação Audiovisual",
+        "vagas": 0,
+        "cadastro_reserva": true,
+        "salario": 6084.46,
+        "escolaridade": "Superior",
+        "requisitos": "Ensino superior em Cinema, Produção Audiovisual ou Comunicação Social (nesta, com habilitação em Audiovisual, Cinema, Rádio e TV ou Produção Multimídia). Lotação: Rio de Janeiro (RJ).",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Assistente de Operações",
+        "vagas": 0,
+        "cadastro_reserva": true,
+        "salario": 3010.0,
+        "escolaridade": "Médio",
+        "requisitos": "Ensino médio completo. Jornada de 180 horas mensais. Lotação: Rio de Janeiro (RJ).",
         "jornada_horas": null,
+        "materias": []
+      },
+      {
+        "nome": "Técnico de Apoio ao Usuário (Técnico de Informática)",
+        "vagas": 0,
+        "cadastro_reserva": true,
+        "salario": 4346.04,
+        "escolaridade": "Técnico",
+        "requisitos": "Ensino médio completo e formação técnica em Informática. Lotação: Rio de Janeiro (RJ).",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Web Designer",
+        "vagas": 0,
+        "cadastro_reserva": true,
+        "salario": 4346.04,
+        "escolaridade": "Técnico",
+        "requisitos": "Ensino médio completo, formação técnica em Web Design e/ou Multimídia e certificado reconhecido pelo MEC ou pelo sistema Senai/Senac. Lotação: Rio de Janeiro (RJ).",
+        "jornada_horas": 40,
         "materias": []
       }
     ],
     "documentos": [
+      {
+        "tipo": "edital",
+        "titulo": "Edital nº 1/2026 – Concurso Público (edital completo, atualizado pelas Retificações I e II)",
+        "numero": "1/2026",
+        "url": "https://cdnsite.institutoconsulplan.org.br/concursos/1337/337e753b4a834b4ba9de5a728159457b.pdf",
+        "publicado_em": "2026-09-18",
+        "fonte": "banca",
+        "resumo": null
+      },
       {
         "tipo": "edital",
         "titulo": "Edital nº 1, de 17 de setembro de 2026 – Concurso Público (extrato)",

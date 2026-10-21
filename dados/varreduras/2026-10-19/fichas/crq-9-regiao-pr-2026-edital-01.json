@@ -1,10 +1,12 @@
 {
   "ato": "dou-2026-09-21-entidades-de-fiscalizacao-do-exercicio-d-3d126649.md",
-  "atos_extras": [],
+  "atos_extras": [
+    "dou-2026-09-21-entidades-de-fiscalizacao-do-exercicio-d-3d126649-extra-1.md"
+  ],
   "trechos": {
-    "salario": "O aviso lista os cargos (Auxiliar Administrativo; Auxiliar Técnico de Fiscalização; Técnico em Contabilidade; Agente Fiscal; Analista de Informática; Assessor Jurídico e Contador), sem vagas nem salários; o edital normativo está em www.quadrix.org.br",
-    "inscricao.inicio": "não consta no ato (o aviso só traz o fim das inscrições)",
-    "inscricao.fim": "Será admitida a inscrição exclusivamente via internet, no endereço eletrônico http://www.quadrix.org.br, até às 23 horas do dia 21 de outubro de 2026",
+    "salario": "200 Auxiliar Administrativo 1 - - - - 25 2 10 1 1 40 Curitiba 40h R$ 3.459,01 + benefícios 2.1.2 CARGO DE NÍVEL TÉCNICO Cod Cargo Vagas efetivas Cadastro de reserva Total de vagas Local de lotação Carga horária semanal Salário base¹ AC PCD PN PI PQ A",
+    "inscricao.inicio": "Período de solicitação de inscrição, exclusivamente por meio do sistema eletrônico de inscrição 21/09 a 21/10/2026 Das 10 horas do primeiro dia às 23 horas do último dia 8 Período para solicitação de atendimento especializado, de",
+    "inscricao.fim": "Período de solicitação de inscrição, exclusivamente por meio do sistema eletrônico de inscrição 21/09 a 21/10/2026 Das 10 horas do primeiro dia às 23 horas do último dia 8 Período para solicitação de atendimento especializado, de",
     "prova_objetiva": "As provas objetivas e discursivas serão realizadas na data de 29 de novembro de 2026 (domingo) nas cidades de Curitiba/PR e Maringá/PR",
     "taxa": "R$ 62,00 para o cargo de nível médio; R$ 64,00 para os cargos de nível técnico; e R$ 66,00 para os cargos de nível superior",
     "banca": "O concurso público será realizado sob a responsabilidade do Instituto Quadrix",
@@ -17,12 +19,29 @@
     "uf": "PR",
     "nacional": false,
     "abrangencia": null,
-    "isencao_ate": null,
+    "isencao_ate": "2026-09-22",
     "prova_objetiva": "2026-11-29",
     "local_prova": "Curitiba e Maringá (PR)",
-    "isencao_regras": null,
+    "isencao_regras": "Isenção para inscritos no CadÚnico (família de baixa renda) e doadores de medula óssea (Decreto 6.593/2008 e Lei 13.656/2018); pedido pela internet, de 21/09 a 22/09/2026",
     "regime": "CLT",
-    "beneficios": [],
+    "beneficios": [
+      {
+        "nome": "Auxílio-alimentação",
+        "valor": 1540.0
+      },
+      {
+        "nome": "Auxílio-saúde",
+        "valor": null
+      },
+      {
+        "nome": "Auxílio autocuidado, saúde e bem-estar",
+        "valor": 150.0
+      },
+      {
+        "nome": "Vale-transporte",
+        "valor": null
+      }
+    ],
     "o_que_levar": null,
     "conferencia": null,
     "primeira_varredura": null,
@@ -37,7 +56,7 @@
       "url": "https://www.quadrix.org.br"
     },
     "inscricao": {
-      "inicio": null,
+      "inicio": "2026-09-21",
       "fim": "2026-10-21",
       "url": "https://www.quadrix.org.br"
     },
@@ -48,76 +67,85 @@
     "cargos": [
       {
         "nome": "Auxiliar Administrativo",
-        "vagas": null,
-        "cadastro_reserva": false,
-        "salario": null,
-        "escolaridade": null,
-        "requisitos": null,
-        "jornada_horas": null,
+        "vagas": 1,
+        "cadastro_reserva": true,
+        "salario": 3459.01,
+        "escolaridade": "Médio",
+        "requisitos": "Nível médio. Lotação: Curitiba (código 200).",
+        "jornada_horas": 40,
         "materias": []
       },
       {
         "nome": "Auxiliar Técnico de Fiscalização",
-        "vagas": null,
-        "cadastro_reserva": false,
-        "salario": null,
-        "escolaridade": null,
-        "requisitos": null,
-        "jornada_horas": null,
+        "vagas": 1,
+        "cadastro_reserva": true,
+        "salario": 5125.16,
+        "escolaridade": "Técnico",
+        "requisitos": "Nível técnico em Técnico em Química (ensino médio completo e habilitação técnica). Registro ativo no Conselho Regional de Química da 9ª REGIÃO (CRQ - 9ª Região – Paraná). Lotação: Curitiba (código 300).",
+        "jornada_horas": 40,
         "materias": []
       },
       {
         "nome": "Técnico em Contabilidade",
-        "vagas": null,
-        "cadastro_reserva": false,
-        "salario": null,
-        "escolaridade": null,
-        "requisitos": null,
-        "jornada_horas": null,
+        "vagas": 1,
+        "cadastro_reserva": true,
+        "salario": 4984.99,
+        "escolaridade": "Técnico",
+        "requisitos": "Nível técnico como Técnico em Contabilidade. Será aceito também diploma de curso de graduação de nível superior concluído de Ciências Contábeis. Registro ativo no Conselho Regional de Contabilidade (CRC). Lotação: Curitiba (código 301).",
+        "jornada_horas": 40,
         "materias": []
       },
       {
         "nome": "Agente Fiscal",
-        "vagas": null,
-        "cadastro_reserva": false,
-        "salario": null,
-        "escolaridade": null,
-        "requisitos": null,
-        "jornada_horas": null,
+        "vagas": 0,
+        "cadastro_reserva": true,
+        "salario": 10727.55,
+        "escolaridade": "Superior",
+        "requisitos": "Graduação de nível superior, em grau bacharel, em Química com formação tecnológica e/ou Engenharia Química. Registro ativo no Conselho Regional de Química da 9ª REGIÃO (CRQ - 9ª Região – Paraná). Carteira Nacional de Habilitação Definitiva, no mínimo categoria “B”, conforme arts. 143 e 147 do Código Nacional de Trânsito e Resoluções 168/200 4 e 285/2008, do CONTRAN, com pontuação que permita, nos termos da legislação de trânsito, o pleno exercício do direito de dirigir. Lotação: Cascavel, Curitiba, Londrina e Maringá (códigos 400 a 403).",
+        "jornada_horas": 40,
         "materias": []
       },
       {
         "nome": "Analista de Informática",
-        "vagas": null,
-        "cadastro_reserva": false,
-        "salario": null,
-        "escolaridade": null,
-        "requisitos": null,
-        "jornada_horas": null,
+        "vagas": 0,
+        "cadastro_reserva": true,
+        "salario": 7498.15,
+        "escolaridade": "Superior",
+        "requisitos": "Graduação de nível superior na área de Tecnologia da Informação, tais como Ciência da Computação, Sistemas de Informação, Engenharia da Computação, Engenharia de Software ou outros cursos correlatos reconhecidos pelo Ministério da Educação (MEC). Lotação: Curitiba (código 404).",
+        "jornada_horas": 40,
         "materias": []
       },
       {
         "nome": "Assessor Jurídico",
-        "vagas": null,
-        "cadastro_reserva": false,
-        "salario": null,
-        "escolaridade": null,
-        "requisitos": null,
-        "jornada_horas": null,
+        "vagas": 0,
+        "cadastro_reserva": true,
+        "salario": 8013.71,
+        "escolaridade": "Superior",
+        "requisitos": "Graduação de nível superior em Direito. Registro ativo na Ordem dos Advogados do Brasil (OAB/PR). Lotação: Curitiba (código 405).",
+        "jornada_horas": 40,
         "materias": []
       },
       {
         "nome": "Contador",
-        "vagas": null,
-        "cadastro_reserva": false,
-        "salario": null,
-        "escolaridade": null,
-        "requisitos": null,
-        "jornada_horas": null,
+        "vagas": 0,
+        "cadastro_reserva": true,
+        "salario": 7279.15,
+        "escolaridade": "Superior",
+        "requisitos": "Graduação de nível superior em Ciências Contábeis. Registro ativo no Conselho Regional de Contabilidade do Paraná (CRCPR). Lotação: Curitiba (código 406).",
+        "jornada_horas": 40,
         "materias": []
       }
     ],
     "documentos": [
+      {
+        "tipo": "edital",
+        "titulo": "Edital nº 1/2026 – Concurso Público (edital completo)",
+        "numero": "1/2026",
+        "url": "https://anexos-r2.selecao.net.br/uploads/861/concursos/3052/anexos/4f26afcf-b071-4868-ba51-4149651125fe.pdf",
+        "publicado_em": "2026-09-21",
+        "fonte": "banca",
+        "resumo": null
+      },
       {
         "tipo": "edital",
         "titulo": "Edital nº 1, de 18 de setembro de 2026 – Concurso Público (aviso)",

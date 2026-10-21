@@ -4,6 +4,7 @@ import urllib.parse
 import jsonschema
 
 from .dados import SCHEMA, carregar_fichas, data, edital, ler_json, municipios
+from .fontes.bancas import TODOS_OS_DOMINIOS
 
 # Domínios aceitos para o link do edital e dos documentos: diário oficial, órgão público ou banca.
 SUFIXOS_OFICIAIS = (".gov.br", ".leg.br", ".jus.br", ".mp.br", ".def.br", ".mil.br", ".edu.br")
@@ -11,6 +12,7 @@ DOMINIOS_OFICIAIS = (
     "diariomunicipal.com.br",    # AMP-PR (matérias)
     "voxtecnologia.com.br",      # AMP-PR (PDF das edições)
     "atende.net",                # portais e diários de muitas prefeituras do PR
+    *TODOS_OS_DOMINIOS,          # bancas que a varredura lê sozinha (fontes/bancas.py): o edital completo mora no site delas
 )
 # Agregadores servem só para conferir cobertura: nunca como link nem como fonte.
 AGREGADORES = (

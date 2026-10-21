@@ -39,9 +39,10 @@ def escrever_fila(pasta, atos_classificados):
     nomes = []
     for ato, classe, pss in atos_classificados:
         meta = dict(ato.como_dict(), classe=classe, pss=pss)
+        corpo = ato.texto + ("\n" + ato.continuacao if ato.continuacao else "")
         cabecalho = "\n".join(f"{k}: {str(meta[k]).replace(chr(10), ' ')}" for k in CAMPOS_FILA)
         nome = nome_na_fila(ato)
-        (fila / nome).write_text(cabecalho + "\n---\n" + ato.texto + "\n", encoding="utf-8", newline="\n")
+        (fila / nome).write_text(cabecalho + "\n---\n" + corpo + "\n", encoding="utf-8", newline="\n")
         nomes.append(nome)
     return nomes
 

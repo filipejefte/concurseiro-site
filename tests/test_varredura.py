@@ -246,6 +246,21 @@ def test_dou_dias_com_404_nao_param_a_coleta(monkeypatch):
     assert [a.data for a in atos] == ["2026-06-22"]
 
 
+def test_dou_nao_pede_dia_fora_da_janela_de_4_meses(monkeypatch, capsys):
+    """Em 19/10 o INLABS responde com a página de login (não com 404) para 16 a 19/06; pedir esses dias derrubava o DOU."""
+    from datetime import date
+    from varredura.fontes.dou_inlabs import DouInlabs
+
+    pedidos = []
+
+    def zip_falso(self, url, dia):
+        pedidos.append(dia)
+        return (_zip_com_uma_materia(dia), None) if dia >= date(2026, 6, 22) and "DO1.zip" in url else (None, "resposta sem ZIP")
+    monkeypatch.setattr(DouInlabs, "_zip", zip_falso)
+    atos = list(DouInlabs(cliente=None).listar_atos(date(2026, 6, 16), date(2026, 10, 19)))
+    assert min(pedidos) == date(2026, 6, 21) and atos and "começa em 2026-06-21" in capsys.readouterr().out
+
+
 def test_dou_login_invalido_para_em_3_dias_uteis(monkeypatch):
     from datetime import date
     from varredura.fontes.dou_inlabs import DouInlabs
@@ -253,6 +268,21 @@ def test_dou_login_invalido_para_em_3_dias_uteis(monkeypatch):
     monkeypatch.setattr(DouInlabs, "_zip", lambda self, url, dia: (None, "resposta sem ZIP"))
     with pytest.raises(SystemExit, match="3 dias úteis"):
         list(DouInlabs(cliente=None).listar_atos(date(2026, 10, 13), date(2026, 10, 19)))
+
+
+def test_robots_vale_para_todas_as_fontes_menos_o_login_do_inlabs(tmp_path, monkeypatch):
+    """Exceção única (decisão de 21/10/2026): o INLABS não passa pelo robots.txt; os outros hosts passam."""
+    from varredura.fontes.base import Cliente
+
+    cliente = Cliente(contato="teste", intervalo=0, cache=tmp_path)
+    pedidos = []
+
+    def robots_fechado(url, dados=None, cabecalhos=None):
+        pedidos.append(url)
+        return b"User-agent: *\nDisallow: /\n"
+    monkeypatch.setattr(cliente, "_pedir", robots_fechado)
+    assert cliente.permitido("https://inlabs.in.gov.br/logar.php") is True and pedidos == []
+    assert cliente.permitido("https://www.diariomunicipal.com.br/amp/") is False and pedidos
 
 
 def test_cliente_tenta_de_novo_em_falha_de_rede(tmp_path, monkeypatch):
@@ -411,7 +441,7 @@ def test_pdf_com_uma_palavra_por_linha_vira_texto_corrido():
     assert juntar_palavras_soltas(normal) == normal.strip()
 
 
-def test_dioe_le_o_suplemento_inteiro_e_so_candidatas_do_executivo():
+def test_dioe_le_o_suplemento_inteiro_e_so_candidatas_do_executivo(tmp_path):
     from datetime import date
 
     from varredura.fontes import diario_estado_pr as dioe
@@ -425,6 +455,9 @@ def test_dioe_le_o_suplemento_inteiro_e_so_candidatas_do_executivo():
     pedidos = []
 
     class Cliente:
+        def arquivo_cache(self, url, dados=None, extensao=""):
+            return tmp_path / (__import__("hashlib").sha1(url.encode()).hexdigest() + extensao)
+
         def baixar(self, url, usar_cache=True, **_):
             pedidos.append(url)
             if url == dioe.URL_EDICOES:
@@ -922,3 +955,168 @@ def test_legenda_do_post_no_formato_da_voz(monkeypatch):
 def test_telegram_negrito_e_escape():
     from varredura.telegram import para_html
     assert para_html("**3 concursos novos** · R&D <x>") == "<b>3 concursos novos</b> · R&amp;D &lt;x&gt;"
+
+
+def test_amp_guarda_o_municipio_e_o_tipo_de_cada_materia():
+    """Trecho real da edição de 31/07/2026: o município vem do último cabeçalho "ESTADO DO PARANÁ / ..." (o nome quebra
+    em duas linhas), e a matéria sem cabeçalho fica no município do grupo. Consórcio sai marcado "outro"."""
+    from pathlib import Path
+    from varredura.fontes.diario_municipios_pr import materias
+
+    texto = (Path(__file__).parent / "dados" / "amp-trecho-31-07-2026.txt").read_text(encoding="utf-8")
+    atos = materias(texto, "2026-07-31")
+    por = [(a.municipio, a.municipio_ibge, a.entidade, a.titulo[:20]) for a in atos]
+    assert por[0][:3] == ("Capitão Leônidas Marques", "4104600", "prefeitura")   # "PREFEITURA MUNICIPAL DE CAPITÃO LEÔNIDAS" / "MARQUES"
+    assert por[1][:3] == ("Capitão Leônidas Marques", "4104600", "")              # "GABINETE PREFEITO", sem cabeçalho: herda o município
+    assert por[2][:3] == ("Chopinzinho", "4105409", "camara")                     # "MUNICÍPIO DE CHOPINZINHO" + "CÂMARA MUNICIPAL DE ..."
+    assert por[3][:3] == ("Chopinzinho", "4105409", "")
+    assert por[-1][:3] == ("Chopinzinho", "4105409", "outro")                     # CONSAMU, publicado na conta do município
+    assert all(a.url.startswith("https://www.diariomunicipal.com.br/amp/materia/") for a in atos)
+
+
+def test_municipio_pelo_inicio_do_texto_aceita_nome_quebrado_e_prefere_o_mais_longo():
+    from varredura.dados import municipio_pelo_inicio
+
+    assert municipio_pelo_inicio("CHOPINZ INHO PREFEITURA MUNICIPAL")["nome"] == "Chopinzinho"          # palavra partida pelo PDF
+    assert municipio_pelo_inicio("SANTO ANTÔNIO DO SUDOESTE GABINETE")["nome"] == "Santo Antônio do Sudoeste"
+    assert municipio_pelo_inicio("SÃO JORGE D’OESTE DIVISÃO DE LICITAÇÕES")["nome"] == "São Jorge d'Oeste"
+    assert municipio_pelo_inicio("ASSOCIAÇÃO DOS MUNICÍPIOS") is None
+
+
+def test_coleta_so_guarda_o_municipio_no_atos_json_da_amp():
+    from varredura.coletar import CAMPOS_DO_MUNICIPIO
+    assert CAMPOS_DO_MUNICIPIO == ("municipio", "municipio_ibge", "entidade")
+
+
+# UFV, editais 48, 58 e 59 de 25/09 e 14/10/2026. As parcelas são as dos trechos que a ficha guarda do ato; a frase que
+# diz a classe e a titulação foi escrita como o ato a traz para o cargo (a conferência anterior somava as parcelas sem
+# olhar a classe, e deixou passar o salário de outra classe).
+def _ato_ufv(denominacao, vencimento, retribuicao, titulacao="doutorado"):
+    return normalizar(
+        f"O(A) candidato(a) será nomeado(a) para o cargo de Professor do Magistério Superior, {denominacao}, em regime de "
+        f"dedicação exclusiva, com titulação de {titulacao}, recebendo o vencimento básico inicial de {vencimento} e a "
+        f"retribuição por titulação de {retribuicao}.")
+
+
+UFV_48 = _ato_ufv("Classe A, denominação Professor Assistente A, nível I", "R$ 6.180,86 (seis mil, cento e oitenta reais e oitenta e seis centavos)",
+                  "R$ 7.107,99 (sete mil, cento e sete reais e noventa nove centavos)")
+UFV_59 = _ato_ufv("Classe E, denominação Professor Titular-Livre", "R$ 12.245,03 (doze mil, duzentos e quarenta e cinco reais e três centavos)",
+                  "R$ 14.081,78 (quatorze mil e oitenta e um reais e setenta e oito centavos)")
+UFV_58 = _ato_ufv("Classe C, denominação Professor Adjunto A, nível I", "R$ 8.571,52 (oito mil, quinhentos e setenta e um reais e cinquenta e dois centavos)",
+                  "R$ 7.392,93 (sete mil, trezentos e noventa e dois reais e noventa e três centavos)")
+REQUISITOS_UFV = "Professor Assistente A, nível I; dedicação exclusiva; graduação em Jornalismo e doutorado em Comunicação Social; titulação mínima: doutorado"
+
+
+def test_soma_de_vencimento_e_retribuicao_exige_a_classe_do_cargo():
+    certo = _k("Professor do Magistério Superior – Projeto Arquitetônico", 13288.85, REQUISITOS_UFV)
+    assert _salario_passa(UFV_48, [certo], certo)
+    # a ficha somou as parcelas de outra classe: o ato fala de Professor Titular-Livre (59) e de Professor Adjunto A (58)
+    titular = _k("Professor do Magistério Superior – Jornalismo Audiovisual", 26326.81, REQUISITOS_UFV)
+    adjunto = _k("Professor do Magistério Superior – Bases Morfofuncionais", 15964.45, REQUISITOS_UFV)
+    assert not _salario_passa(UFV_59, [titular], titular)
+    assert not _salario_passa(UFV_58, [adjunto], adjunto)
+    # o ato não diz a classe perto das parcelas: não dá para confirmar
+    sem_classe = normalizar("A remuneração, em dedicação exclusiva, com titulação de doutorado, é o vencimento básico inicial de "
+                            "R$ 6.180,86 e a retribuição por titulação de R$ 7.107,99.")
+    assert not _salario_passa(sem_classe, [certo], certo)
+
+
+def test_soma_de_vencimento_e_retribuicao_exige_a_titulacao_do_cargo():
+    certo = _k("Professor do Magistério Superior – Projeto Arquitetônico", 13288.85, REQUISITOS_UFV)
+    sem_titulacao = normalizar("Professor Assistente A, nível I, em dedicação exclusiva, recebendo o vencimento básico inicial de "
+                               "R$ 6.180,86 e a retribuição por titulação de R$ 7.107,99.")
+    assert not _salario_passa(sem_titulacao, [certo], certo)
+    de_mestre = _k("Professor do Magistério Superior – Projeto Arquitetônico", 13288.85,
+                   "Professor Assistente A, nível I; dedicação exclusiva; titulação mínima: mestrado")
+    assert not _salario_passa(UFV_48, [de_mestre], de_mestre)      # o ato fala de doutorado, o cargo exige mestrado
+    de_outro_regime = _k("Professor do Magistério Superior – Projeto Arquitetônico", 13288.85,
+                         "Professor Assistente A, nível I; 40 horas; titulação mínima: doutorado")
+    assert not _salario_passa(UFV_48, [de_outro_regime], de_outro_regime)
+
+
+def test_dou_com_login_recusado_le_o_cache_e_avisa_os_dias_que_faltam(tmp_path, monkeypatch, capsys):
+    """21/10/2026: o inlabs.in.gov.br passou a redirecionar para o in.gov.br e o login levou 403. A coleta não pode cair:
+    lê o que está no cache e diz quais dias úteis ficaram de fora."""
+    import urllib.error
+    from datetime import date
+    from varredura.fontes.base import Cliente
+    from varredura.fontes.dou_inlabs import DouInlabs, URL_DOWNLOAD
+
+    cliente = Cliente(contato="teste", intervalo=0, cache=tmp_path)
+    fonte = DouInlabs(cliente)
+    zip_do_dia = cliente.arquivo_cache(URL_DOWNLOAD.format(dia="2026-10-13", secao="DO1"), extensao=".zip")
+    zip_do_dia.parent.mkdir(parents=True, exist_ok=True)
+    zip_do_dia.write_bytes(_zip_com_uma_materia(date(2026, 10, 13)))
+
+    tentativas = []
+
+    def login_recusado():
+        tentativas.append(1)
+        raise urllib.error.HTTPError("https://inlabs.in.gov.br/logar.php", 403, "Forbidden", {}, None)
+    monkeypatch.setattr(fonte, "_entrar", login_recusado)
+    atos = list(fonte.listar_atos(date(2026, 10, 12), date(2026, 10, 16)))    # segunda a sexta
+    assert [a.data for a in atos] == ["2026-10-13"]
+    assert len(tentativas) == 1                                               # um login só, não um por seção e por dia
+    assert fonte.dias_sem_acesso == [date(2026, 10, 12), date(2026, 10, 14), date(2026, 10, 15), date(2026, 10, 16)]
+    assert "2026-10-12, 2026-10-14 a 2026-10-16" in fonte.aviso and "403" in fonte.aviso
+    assert "só o cache será lido" in capsys.readouterr().out
+
+
+def test_edital_partido_em_varios_xmls_leva_as_outras_partes_na_continuacao(tmp_path):
+    """INLABS parte o edital grande em 530_AAAAMMDD_<matéria>-1.xml, -2.xml...; a fila precisa do edital inteiro, com o mesmo nome."""
+    import io
+    import zipfile
+    from varredura.extracao import escrever_fila, nome_na_fila, ler_fila
+    from varredura.fontes.dou_inlabs import atos_do_zip
+
+    def xml(pagina, identifica, texto):
+        return (f'<xml><article pubDate="05/10/2026" artCategory="Poder Legislativo/Câmara dos Deputados" '
+                f'pdfPage="http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=05/10/2026&amp;jornal=530&amp;pagina={pagina}">'
+                f'<body><Identifica>{identifica}</Identifica><Texto>{texto}</Texto></body></article></xml>')
+    buffer = io.BytesIO()
+    with zipfile.ZipFile(buffer, "w") as z:
+        z.writestr("530_20261005_24450707-1.xml", xml(178, "EDITAL Nº 1, DE 2 DE OUTUBRO DE 2026", "Torna pública a abertura do concurso público."))
+        z.writestr("530_20261005_24450707-3.xml", xml(186, "", "9.8.1 Serão corrigidas as provas discursivas."))
+        z.writestr("530_20261005_24450707-2.xml", xml(182, "", "5.3.6 Remuneração inicial: R$ 32.070,88."))
+        z.writestr("530_20261005_99999999.xml", xml(190, "AVISO DE LICITAÇÃO", "pregão"))
+    atos = atos_do_zip(buffer.getvalue())
+    primeira = next(a for a in atos if a.titulo.startswith("EDITAL Nº 1"))
+    assert primeira.continuacao.splitlines() == ["\n5.3.6 Remuneração inicial: R$ 32.070,88.".strip(), "\n9.8.1 Serão corrigidas as provas discursivas.".strip()]   # na ordem das partes
+    assert next(a for a in atos if a.titulo == "AVISO DE LICITAÇÃO").continuacao == ""
+    sem = type(primeira)(**dict(primeira.como_dict(), continuacao=""))
+    assert nome_na_fila(primeira) == nome_na_fila(sem)           # fichas e descartes já feitos continuam ligados ao ato
+    nome = escrever_fila(tmp_path, [(primeira, "abertura", False)])[0]
+    meta, texto = ler_fila(tmp_path / "fila" / nome)
+    assert "Remuneração inicial: R$ 32.070,88" in texto and "provas discursivas" in texto   # o edital inteiro, para a conferência
+    assert "continuacao" not in meta
+
+
+def test_dioe_nao_pede_de_novo_a_materia_que_responde_400(tmp_path):
+    """61 matérias do período respondem 400 ("não está vinculada a uma edição"): vão uma vez só e entram na lista da revisão."""
+    import urllib.error
+    from datetime import date
+
+    from varredura.fontes import diario_estado_pr as dioe
+
+    pedidos = []
+
+    class Cliente:
+        def arquivo_cache(self, url, dados=None, extensao=""):
+            return tmp_path / (__import__("hashlib").sha1(url.encode()).hexdigest() + extensao)
+
+        def baixar(self, url, usar_cache=True, **_):
+            if url == dioe.URL_EDICOES:
+                return json.dumps({"itens": [{"id": 17377, "data": "15/10/2026", "tipo_edicao_id": 8, "tipo_edicao_posicao": 4}]}).encode()
+            if "view_html_diario" in url:
+                return SUMARIO_DIOE.encode()
+            pedidos.append(url)
+            raise urllib.error.HTTPError(url, 400, "não está vinculada a uma edição", {}, None)
+
+    primeira = dioe.DiarioEstadoPR(Cliente())
+    assert list(primeira.listar_atos(date(2026, 10, 15), date(2026, 10, 15))) == []
+    n = len(pedidos)
+    assert n and len(primeira.sem_leitura) == n
+    segunda = dioe.DiarioEstadoPR(Cliente())
+    assert list(segunda.listar_atos(date(2026, 10, 15), date(2026, 10, 15))) == []
+    assert len(pedidos) == n and len(segunda.sem_leitura) == n          # o marcador evitou os pedidos
+    assert segunda.sem_leitura[0]["motivo"] == "HTTP 400/404" and segunda.sem_leitura[0]["url"].startswith(dioe.URL)

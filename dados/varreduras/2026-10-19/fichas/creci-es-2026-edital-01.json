@@ -1,10 +1,13 @@
 {
   "ato": "dou-2026-10-02-entidades-de-fiscalizacao-do-exercicio-d-f6a19ecb.md",
-  "atos_extras": [],
+  "atos_extras": [
+    "dou-2026-10-02-entidades-de-fiscalizacao-do-exercicio-d-f6a19ecb-extra-1.md",
+    "dou-2026-10-02-entidades-de-fiscalizacao-do-exercicio-d-f6a19ecb-extra-2.md"
+  ],
   "trechos": {
-    "salario": "não consta no ato (o aviso lista os cargos sem vagas nem salários; o edital normativo está em www.quadrix.org.br)",
-    "inscricao.inicio": "não consta no ato (o aviso só traz o fim das inscrições)",
-    "inscricao.fim": "9. Será admitida a inscrição exclusivamente via internet, no endereço eletrônico http://www.quadrix.org.br, até às 23 horas do dia 10 de novembro de 2026, observado o horário oficial de Brasília/DF.",
+    "salario": "200 Profissional de Suporte Técnico (PST)-Assistente Administrativo - - - - - 18 2 8 1 1 30 Cachoeiro de Itapemirim 40h R$ 2.341,23 + benefícios 201 Profissional de Suporte Técnico (PST)-Assistente Administrativo - - - - - 18 2 8 1 1 30 Colatina 40h",
+    "inscricao.inicio": "Período de solicitação de inscrição, exclusivamente por meio do sistema eletrônico de inscrição 05/10 a 10/11/2026 Das 10 horas do primeiro dia às 23 horas do último dia 9 Período para solicitação de atendimento especializado, de",
+    "inscricao.fim": "Período de solicitação de inscrição, exclusivamente por meio do sistema eletrônico de inscrição 05/10 a 10/11/2026 Das 10 horas do primeiro dia às 23 horas do último dia 9 Período para solicitação de atendimento especializado, de",
     "prova_objetiva": "11. As provas objetivas e discursivas serão realizadas na data de 17 de janeiro de 2027 (domingo) nas cidades de Colatina/ES, Guarapari/ES e Vitória/ES, no turno da tarde, para todos os cargos.",
     "taxa": "10. Os valores das taxas de inscrição são de R$ 66,00, para os cargos de nível médio; e R$ 68,00, para os cargos de nível superior.",
     "banca": "O concurso público será realizado sob a responsabilidade do Instituto Quadrix",
@@ -26,124 +29,155 @@
       "url": "https://www.quadrix.org.br"
     },
     "inscricao": {
-      "inicio": null,
+      "inicio": "2026-10-05",
       "fim": "2026-11-10",
       "url": "https://www.quadrix.org.br"
     },
-    "isencao_ate": null,
+    "isencao_ate": "2026-10-06",
     "prova_objetiva": "2027-01-17",
     "local_prova": "Colatina, Guarapari e Vitória (ES), no turno da tarde",
     "taxa": {
       "min": 66.0,
       "max": 68.0
     },
-    "isencao_regras": null,
+    "isencao_regras": "Isenção para inscritos no CadÚnico (família de baixa renda) e doadores de medula óssea (Decreto 6.593/2008 e Lei 13.656/2018); pedido pela internet, de 05/10 a 06/10/2026",
     "regime": "CLT",
-    "beneficios": [],
+    "beneficios": [
+      {
+        "nome": "Vale-refeição",
+        "valor": 800.0
+      },
+      {
+        "nome": "Plano de saúde e odontológico",
+        "valor": null
+      },
+      {
+        "nome": "Vale-transporte",
+        "valor": null
+      }
+    ],
     "o_que_levar": null,
     "cargos": [
       {
         "nome": "Profissional de Suporte Técnico (PST) - Assistente Administrativo",
-        "vagas": null,
-        "cadastro_reserva": false,
-        "salario": null,
-        "escolaridade": null,
-        "requisitos": null,
-        "jornada_horas": null,
+        "vagas": 7,
+        "cadastro_reserva": true,
+        "salario": 2341.23,
+        "escolaridade": "Médio",
+        "requisitos": "Nível médio. Lotação: Cachoeiro de Itapemirim, Colatina, Guarapari, Linhares, Venda Nova do Imigrante, Vila Velha e Vitória (códigos 200 a 206).",
+        "jornada_horas": 40,
         "materias": []
       },
       {
         "nome": "Profissional de Suporte Técnico (PST) - Assistente Especializado",
-        "vagas": null,
-        "cadastro_reserva": false,
-        "salario": null,
-        "escolaridade": null,
-        "requisitos": null,
-        "jornada_horas": null,
+        "vagas": 1,
+        "cadastro_reserva": true,
+        "salario": 4050.0,
+        "escolaridade": "Médio",
+        "requisitos": "Nível médio. Curso técnico em Design Gráfico, Comunicação Visual, Produção Multimídia ou área correlata, ou experiência profissional comprovada de no mínimo 6 (seis) meses na área de design gráfico. Lotação: Vitória (código 207).",
+        "jornada_horas": 40,
         "materias": []
       },
       {
         "nome": "Profissional de Suporte Técnico (PST) - Assistente de T.I.",
-        "vagas": null,
-        "cadastro_reserva": false,
-        "salario": null,
-        "escolaridade": null,
-        "requisitos": null,
-        "jornada_horas": null,
+        "vagas": 1,
+        "cadastro_reserva": true,
+        "salario": 7012.5,
+        "escolaridade": "Médio",
+        "requisitos": "Nível médio. Curso técnico em Informática, Tecnologia da Informação, Redes de Computadores, Manutenção e Suporte em Informática, Desenvolvimento de Sistemas ou área correlata, ou experiência comprovada de no mínimo 6 (seis) meses na área de Tecnologia da Informação. Lotação: Vitória (código 208).",
+        "jornada_horas": 40,
         "materias": []
       },
       {
         "nome": "Profissional Analista Superior (PAS) - Agente Fiscal",
-        "vagas": null,
-        "cadastro_reserva": false,
-        "salario": null,
-        "escolaridade": null,
-        "requisitos": null,
-        "jornada_horas": null,
+        "vagas": 5,
+        "cadastro_reserva": true,
+        "salario": 4500.0,
+        "escolaridade": "Superior",
+        "requisitos": "Graduação de nível superior em Direito, Administração, Tecnólogo em Gestão de Negócios Imobiliários ou áreas correlatas. CNH categoria B ou superior. Lotação: Cachoeiro de Itapemirim, Colatina, Guarapari, Linhares, Venda Nova do Imigrante, Vila Velha e Vitória (códigos 400 a 406).",
+        "jornada_horas": 40,
         "materias": []
       },
       {
         "nome": "Profissional Analista Superior (PAS) - Analista de T.I.",
-        "vagas": null,
-        "cadastro_reserva": false,
-        "salario": null,
-        "escolaridade": null,
-        "requisitos": null,
-        "jornada_horas": null,
+        "vagas": 2,
+        "cadastro_reserva": true,
+        "salario": 7792.5,
+        "escolaridade": "Superior",
+        "requisitos": "Graduação de nível superior nas áreas de Tecnologia da Informação ou Ciências da Computação, ou curso de denominação e conteúdo equivalentes, em grau de bacharel ou tecnólogo, em grau de bacharel ou tecnólogo. Lotação: Vitória (código 407).",
+        "jornada_horas": 40,
         "materias": []
       },
       {
         "nome": "Profissional Analista Superior (PAS) - Especialista (Administrativo)",
-        "vagas": null,
-        "cadastro_reserva": false,
-        "salario": null,
-        "escolaridade": null,
-        "requisitos": null,
-        "jornada_horas": null,
+        "vagas": 1,
+        "cadastro_reserva": true,
+        "salario": 8250.0,
+        "escolaridade": "Superior",
+        "requisitos": "Graduação de nível superior em Administração e/ou curso de denominação e conteúdo equivalentes, em grau de bacharel ou tecnólogo. Registro ativo no Conselho Regional de Administração (CRA). Lotação: Vitória (código 408).",
+        "jornada_horas": 40,
         "materias": []
       },
       {
         "nome": "Profissional Analista Superior (PAS) - Especialista (Contas a Pagar)",
-        "vagas": null,
-        "cadastro_reserva": false,
-        "salario": null,
-        "escolaridade": null,
-        "requisitos": null,
-        "jornada_horas": null,
+        "vagas": 1,
+        "cadastro_reserva": true,
+        "salario": 8250.0,
+        "escolaridade": "Superior",
+        "requisitos": "Graduação de nível superior em Administração e/ou Ciência Contábeis. Registro ativo no respectivo Conselho de Classe. Lotação: Vitória (código 409).",
+        "jornada_horas": 40,
         "materias": []
       },
       {
         "nome": "Profissional Analista Superior (PAS) - Especialista (Recursos Humanos)",
-        "vagas": null,
-        "cadastro_reserva": false,
-        "salario": null,
-        "escolaridade": null,
-        "requisitos": null,
-        "jornada_horas": null,
+        "vagas": 1,
+        "cadastro_reserva": true,
+        "salario": 8250.0,
+        "escolaridade": "Superior",
+        "requisitos": "Graduação de nível superior em Administração, Recursos Humanos, e/ou curso de denominação e conteúdo equivalentes, em grau de bacharel ou tecnólogo. Registro ativo no respectivo Conselho de Classe. Lotação: Vitória (código 410).",
+        "jornada_horas": 40,
         "materias": []
       },
       {
         "nome": "Profissional Analista Superior (PAS) - Especialista (Serviços Contábeis)",
-        "vagas": null,
-        "cadastro_reserva": false,
-        "salario": null,
-        "escolaridade": null,
-        "requisitos": null,
-        "jornada_horas": null,
+        "vagas": 1,
+        "cadastro_reserva": true,
+        "salario": 8250.0,
+        "escolaridade": "Superior",
+        "requisitos": "Graduação de nível superior em Ciências Contábeis. Registro ativo no Conselho Regional de Contabilidade (CRC). Lotação: Vitória (código 411).",
+        "jornada_horas": 40,
         "materias": []
       },
       {
         "nome": "Profissional Analista Superior (PAS) - Especialista (Serviços Jurídicos)",
-        "vagas": null,
-        "cadastro_reserva": false,
-        "salario": null,
-        "escolaridade": null,
-        "requisitos": null,
-        "jornada_horas": null,
+        "vagas": 4,
+        "cadastro_reserva": true,
+        "salario": 8250.0,
+        "escolaridade": "Superior",
+        "requisitos": "Graduação de nível superior em Direito. Lotação: Vitória (código 412).",
+        "jornada_horas": 40,
         "materias": []
       }
     ],
     "documentos": [
+      {
+        "tipo": "edital",
+        "titulo": "Edital nº 1/2026 – Concurso Público (edital completo, atualizado conforme as retificações)",
+        "numero": "1/2026",
+        "url": "https://anexos-r2.selecao.net.br/uploads/861/concursos/3049/anexos/322b041e-27b8-4ac4-9215-bcc5018ef92e.pdf",
+        "publicado_em": "2026-10-02",
+        "fonte": "banca",
+        "resumo": null
+      },
+      {
+        "tipo": "retificacao",
+        "titulo": "Edital nº 2/2026 – Retificação do Edital nº 1",
+        "numero": "2/2026",
+        "url": "https://anexos-r2.selecao.net.br/uploads/861/concursos/3049/anexos/ad77eedc-10cb-4e37-9aea-fdb29efb89bd.pdf",
+        "publicado_em": "2026-10-21",
+        "fonte": "banca",
+        "resumo": null
+      },
       {
         "tipo": "edital",
         "titulo": "Edital nº 1, de 5 de outubro de 2026 – Concurso Público (extrato)",
