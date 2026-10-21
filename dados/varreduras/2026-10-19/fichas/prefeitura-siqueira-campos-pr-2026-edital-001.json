@@ -1,0 +1,599 @@
+{
+  "ato": "banca-fau-2026-10-19-prefeitura-municipal-de-siqueira-campos-4a7dce63.md",
+  "atos_extras": [
+    "banca-fau-2026-10-19-prefeitura-municipal-de-siqueira-campos-4a7dce63-extra-1.md",
+    "banca-fau-2026-10-19-prefeitura-municipal-de-siqueira-campos-4a7dce63-extra-2.md",
+    "banca-fau-2026-10-19-prefeitura-municipal-de-siqueira-campos-4a7dce63-extra-3.md",
+    "banca-fau-2026-10-19-prefeitura-municipal-de-siqueira-campos-4a7dce63-extra-4.md"
+  ],
+  "trechos": {
+    "salario": "101 Assistente Social 20h 01 + CR - - R$ 3.908,43 R$ 120,00 MUNICÍPIO DE SIQUEIRA CAMPOS ESTADO DO PARANÁ 102 Auditor Fiscal da Receita Municipal 40h 01 + CR - - R$ 6.776,90 R$ 120,00 103 Contador 40h 01 + CR - - R$ 7.803,05 R$ 120,00 104 Dentista 40h 01 + CR - - R$ 6.937,44 R$ 120,00 105 Enfermeiro",
+    "inscricao.inicio": "5.3 O período para a realização das inscrições será a partir das 12h00min do dia 28 de setembro 2026 às 23h59min do dia 27 de outubro de 2026 , observado horário oficial de Brasília/DF , através do endereço eletrônico www.concursosfau.com.br. 5.4 Para efetuar sua inscrição, o candidato dev",
+    "inscricao.fim": "5.3 O período para a realização das inscrições será a partir das 12h00min do dia 28 de setembro 2026 às 23h59min do dia 27 de outubro de 2026 , observado horário oficial de Brasília/DF , através do endereço eletrônico www.concursosfau.com.br. 5.4 Para efetuar sua inscrição, o candidato dev",
+    "prova_objetiva": "10.2 A prova objetiva será aplicada na data provável de 29 de novembro de 2026, em horário e local a ser informado através de edital disponibilizado n",
+    "taxa": "TABELA 3.1 NÍVEL SUPERIOR COMPLETO (1) Código do Cargo Cargo Carga Horária Semanal Vagas Ampla Concorrência Vagas PcD(**) Vagas Afro Remuneração Inici [...] 301 Atendente de Agendamento/ Recepcionista 40h 01 + CR - - R$ 2.105,03 R$ 60,00 302 Auxiliar de Serviços Gerais 40h 01",
+    "banca": "2.1 O Concurso Público a que se refere o presente Edital será executado pela Fundação de Apoio ao Desenvolvimento da UNICENTRO, com sede na Rua Salvatore Renna - Padre Salvador, 875, Complemento: Bloc",
+    "cidade": "10.1 A prova objetiva será aplicada na Cidade de Siqueira Campos/Paraná, podendo ser aplicada também em cidades vizinhas, caso o número de inscritos exceda a capacidade d",
+    "edital": "EDITAL DE ABERTURA Nº 001/2026 CONCURSO PÚBLICO Nº 01/2026 O Prefeito do Município de Siqueira Campos – Estado do Paraná"
+  },
+  "concurso": {
+    "id": "prefeitura-siqueira-campos-pr-2026-edital-001",
+    "ficticio": false,
+    "orgao": "Prefeitura de Siqueira Campos (PR)",
+    "esfera": "municipal",
+    "uf": "PR",
+    "municipio_ibge": "4126603",
+    "cidade": "Siqueira Campos",
+    "nacional": false,
+    "abrangencia": null,
+    "area": "Administrativa",
+    "banca": {
+      "nome": "Fundação de Apoio ao Desenvolvimento da UNICENTRO (FAU)",
+      "url": "https://www.concursosfau.com.br"
+    },
+    "inscricao": {
+      "inicio": "2026-09-28",
+      "fim": "2026-10-27",
+      "url": "https://www.concursosfau.com.br"
+    },
+    "isencao_ate": "2026-09-29",
+    "prova_objetiva": "2026-11-29",
+    "local_prova": "Siqueira Campos (PR), podendo ser também em cidades vizinhas se o número de inscritos exceder a capacidade do município; data provável, com cargos divididos entre manhã e tarde (horário e local no Cartão de Informação do Candidato, a partir de 25/11/2026)",
+    "taxa": {
+      "min": 60.0,
+      "max": 120.0
+    },
+    "isencao_regras": "Isenção para membros de família de baixa renda (CadÚnico), doadores de sangue (2 doações nos 12 meses anteriores ao edital) e doadores de medula óssea (REDOME); pedido em 28 e 29/09/2026 pela área do candidato",
+    "regime": "Estatutário",
+    "beneficios": [
+      {
+        "nome": "Complemento de insalubridade (Agente Comunitário de Saúde)",
+        "valor": null
+      }
+    ],
+    "o_que_levar": "Caneta esferográfica transparente de tinta azul ou preta, documento oficial de identificação com foto e o Cartão de Informação do Candidato impresso",
+    "cargos": [
+      {
+        "nome": "Assistente Social",
+        "vagas": 1,
+        "cadastro_reserva": true,
+        "salario": 3908.43,
+        "escolaridade": "Superior",
+        "requisitos": "Ensino Superior Completo na área de atuação e registro no conselho de classe competente. Código 101.",
+        "jornada_horas": 20.0,
+        "materias": []
+      },
+      {
+        "nome": "Auditor Fiscal da Receita Municipal",
+        "vagas": 1,
+        "cadastro_reserva": true,
+        "salario": 6776.9,
+        "escolaridade": "Superior",
+        "requisitos": "Nível Superior Completo em Economia ou Direito, ou Ciências Contábeis ou Administração. Código 102.",
+        "jornada_horas": 40.0,
+        "materias": []
+      },
+      {
+        "nome": "Contador",
+        "vagas": 1,
+        "cadastro_reserva": true,
+        "salario": 7803.05,
+        "escolaridade": "Superior",
+        "requisitos": "Ensino Superior Completo na área de atuação e registro no conselho de classe competente. Código 103.",
+        "jornada_horas": 40.0,
+        "materias": []
+      },
+      {
+        "nome": "Dentista",
+        "vagas": 1,
+        "cadastro_reserva": true,
+        "salario": 6937.44,
+        "escolaridade": "Superior",
+        "requisitos": "Ensino Superior Completo na área de atuação e registro no conselho de classe competente. Código 104.",
+        "jornada_horas": 40.0,
+        "materias": []
+      },
+      {
+        "nome": "Enfermeiro",
+        "vagas": 1,
+        "cadastro_reserva": true,
+        "salario": 5209.47,
+        "escolaridade": "Superior",
+        "requisitos": "Ensino Superior Completo na área de atuação e registro no conselho de classe competente. Código 105.",
+        "jornada_horas": 40.0,
+        "materias": []
+      },
+      {
+        "nome": "Engenheiro Civil",
+        "vagas": 1,
+        "cadastro_reserva": true,
+        "salario": 6776.9,
+        "escolaridade": "Superior",
+        "requisitos": "Ensino Superior Completo na área de atuação e registro no conselho de classe competente. Código 106.",
+        "jornada_horas": 40.0,
+        "materias": []
+      },
+      {
+        "nome": "Farmacêutico",
+        "vagas": 1,
+        "cadastro_reserva": true,
+        "salario": 4913.25,
+        "escolaridade": "Superior",
+        "requisitos": "Ensino Superior Completo em Farmácia e registro no respectivo Conselho de Classe. Código 107.",
+        "jornada_horas": 40.0,
+        "materias": []
+      },
+      {
+        "nome": "Fisioterapeuta",
+        "vagas": 1,
+        "cadastro_reserva": true,
+        "salario": 4717.66,
+        "escolaridade": "Superior",
+        "requisitos": "Ensino Superior Completo na área de atuação e registro no conselho de classe competente. Código 108.",
+        "jornada_horas": 20.0,
+        "materias": []
+      },
+      {
+        "nome": "Fonoaudiólogo",
+        "vagas": 1,
+        "cadastro_reserva": true,
+        "salario": 3908.42,
+        "escolaridade": "Superior",
+        "requisitos": "Ensino Superior Completo na área de atuação e registro no conselho de classe competente. Código 109.",
+        "jornada_horas": 20.0,
+        "materias": []
+      },
+      {
+        "nome": "Médico Clínico Geral",
+        "vagas": 1,
+        "cadastro_reserva": true,
+        "salario": 16681.6,
+        "escolaridade": "Superior",
+        "requisitos": "Ensino Superior Completo em Medicina e registro no respectivo Conselho de Classe. Código 110.",
+        "jornada_horas": 40.0,
+        "materias": []
+      },
+      {
+        "nome": "Nutricionista",
+        "vagas": 1,
+        "cadastro_reserva": true,
+        "salario": 5465.71,
+        "escolaridade": "Superior",
+        "requisitos": "Ensino Superior Completo na área de atuação e registro no conselho de classe competente. Código 111.",
+        "jornada_horas": 40.0,
+        "materias": []
+      },
+      {
+        "nome": "Oficial de Administração",
+        "vagas": 1,
+        "cadastro_reserva": true,
+        "salario": 2480.0,
+        "escolaridade": "Superior",
+        "requisitos": "Ensino Superior Completo. Código 112.",
+        "jornada_horas": 40.0,
+        "materias": []
+      },
+      {
+        "nome": "Professor de Arte",
+        "vagas": 1,
+        "cadastro_reserva": true,
+        "salario": 2565.31,
+        "escolaridade": "Superior",
+        "requisitos": "Formação em nível superior (Licenciatura Plena) na área de atuação, conforme exigência legal. Código 113.",
+        "jornada_horas": 20.0,
+        "materias": []
+      },
+      {
+        "nome": "Professor Ed. Física",
+        "vagas": 1,
+        "cadastro_reserva": true,
+        "salario": 2565.31,
+        "escolaridade": "Superior",
+        "requisitos": "Formação em nível superior (Licenciatura Plena) na área de atuação, conforme exigência legal. Código 114.",
+        "jornada_horas": 20.0,
+        "materias": []
+      },
+      {
+        "nome": "Professor de Inglês",
+        "vagas": 1,
+        "cadastro_reserva": true,
+        "salario": 2565.31,
+        "escolaridade": "Superior",
+        "requisitos": "Formação em nível superior (Licenciatura Plena) na área de atuação, conforme exigência legal. Código 115.",
+        "jornada_horas": 20.0,
+        "materias": []
+      },
+      {
+        "nome": "Psicólogo",
+        "vagas": 1,
+        "cadastro_reserva": true,
+        "salario": 3908.43,
+        "escolaridade": "Superior",
+        "requisitos": "Ensino Superior Completo na área de atuação e registro no conselho de classe competente. Código 116.",
+        "jornada_horas": 20.0,
+        "materias": []
+      },
+      {
+        "nome": "Terapeuta Ocupacional",
+        "vagas": 1,
+        "cadastro_reserva": true,
+        "salario": 3908.42,
+        "escolaridade": "Superior",
+        "requisitos": "Ensino Superior completo em Terapia Ocupacional e registro no respectivo Conselho de Classe. Código 117.",
+        "jornada_horas": 20.0,
+        "materias": []
+      },
+      {
+        "nome": "Agente Administrativo",
+        "vagas": 1,
+        "cadastro_reserva": true,
+        "salario": 2480.0,
+        "escolaridade": "Médio",
+        "requisitos": "Ensino Médio Completo. Código 201.",
+        "jornada_horas": 40.0,
+        "materias": []
+      },
+      {
+        "nome": "Agente Comunitário de Saúde",
+        "vagas": 1,
+        "cadastro_reserva": true,
+        "salario": 3242.0,
+        "escolaridade": "Médio",
+        "requisitos": "Ensino médio completo; residir na área da comunidade em que for atuar desde a publicação do edital; curso de formação inicial de, no mínimo, 40 horas. A classificação é feita por área de atuação (UBS). Código 202.",
+        "jornada_horas": 40.0,
+        "materias": []
+      },
+      {
+        "nome": "Agente de Controle de Endemias",
+        "vagas": 1,
+        "cadastro_reserva": true,
+        "salario": 3242.0,
+        "escolaridade": "Médio",
+        "requisitos": "Ensino Médio Completo. Código 203.",
+        "jornada_horas": 40.0,
+        "materias": []
+      },
+      {
+        "nome": "Agente de Defesa Civil",
+        "vagas": 1,
+        "cadastro_reserva": true,
+        "salario": 3127.8,
+        "escolaridade": "Médio",
+        "requisitos": "Ensino médio completo e carteira nacional de habilitação (CNH) classe D ou E. Código 204. Jornada em regime de escala.",
+        "jornada_horas": null,
+        "materias": []
+      },
+      {
+        "nome": "Agente de Trânsito",
+        "vagas": 1,
+        "cadastro_reserva": true,
+        "salario": 3127.8,
+        "escolaridade": "Médio",
+        "requisitos": "Ensino Médio Completo e Carteira Nacional de Habilitação – CNH válida. Código 205.",
+        "jornada_horas": 40.0,
+        "materias": []
+      },
+      {
+        "nome": "Atendente de Farmácia",
+        "vagas": 1,
+        "cadastro_reserva": true,
+        "salario": 1913.66,
+        "escolaridade": "Médio",
+        "requisitos": "Ensino Médio Completo. Código 206.",
+        "jornada_horas": 40.0,
+        "materias": []
+      },
+      {
+        "nome": "Auxiliar de Higiene Dental",
+        "vagas": 1,
+        "cadastro_reserva": true,
+        "salario": 2105.03,
+        "escolaridade": "Médio",
+        "requisitos": "Ensino Médio Completo. Código 207.",
+        "jornada_horas": 40.0,
+        "materias": []
+      },
+      {
+        "nome": "Eletricista",
+        "vagas": 1,
+        "cadastro_reserva": true,
+        "salario": 2219.82,
+        "escolaridade": "Médio",
+        "requisitos": "Ensino Fundamental Completo. (o edital lista o cargo na tabela de nível médio/técnico). Código 208.",
+        "jornada_horas": 40.0,
+        "materias": []
+      },
+      {
+        "nome": "Fiscal de Posturas",
+        "vagas": 1,
+        "cadastro_reserva": true,
+        "salario": 3127.8,
+        "escolaridade": "Médio",
+        "requisitos": "Ensino Médio Completo. Código 209.",
+        "jornada_horas": 40.0,
+        "materias": []
+      },
+      {
+        "nome": "Fiscal de Obras",
+        "vagas": 1,
+        "cadastro_reserva": true,
+        "salario": 3127.8,
+        "escolaridade": "Médio",
+        "requisitos": "Ensino Médio Completo. Código 210.",
+        "jornada_horas": 40.0,
+        "materias": []
+      },
+      {
+        "nome": "Fiscal de Tributos",
+        "vagas": 1,
+        "cadastro_reserva": true,
+        "salario": 3127.8,
+        "escolaridade": "Médio",
+        "requisitos": "Ensino Médio Completo. Código 211.",
+        "jornada_horas": 40.0,
+        "materias": []
+      },
+      {
+        "nome": "Monitor de Educação",
+        "vagas": 1,
+        "cadastro_reserva": true,
+        "salario": 2105.03,
+        "escolaridade": "Médio",
+        "requisitos": "Ensino Médio Completo. Código 212.",
+        "jornada_horas": 40.0,
+        "materias": []
+      },
+      {
+        "nome": "Professor",
+        "vagas": 1,
+        "cadastro_reserva": true,
+        "salario": 2565.31,
+        "escolaridade": "Médio",
+        "requisitos": "Graduação em curso de Licenciatura, de graduação plena, ou outra graduação correspondente às áreas de conhecimento específicas do currículo, com formação pedagógica, nos termos da legislação vigente; admitindo-se, excepcionalmente, formação em nível médio com formação de Magistério na modalidade Normal, nos termos da Lei Municipal nº 1.558/2022. Código 213. Carga horária corrigida para 20h pela retificação de 23/09/2026.",
+        "jornada_horas": 20.0,
+        "materias": []
+      },
+      {
+        "nome": "Professor da Educação Infantil",
+        "vagas": 1,
+        "cadastro_reserva": true,
+        "salario": 5130.62,
+        "escolaridade": "Médio",
+        "requisitos": "Graduação em curso de Licenciatura, de graduação plena, ou outra graduação correspondente às áreas de conhecimento específicas do currículo, com formação pedagógica, nos termos da legislação vigente, admitindo -se, excepcionalmente, como formação mínima para o exercício da docência na Educação Infantil, a formação em nível médio, com Magistério na modalidade Normal. Código 214.",
+        "jornada_horas": 40.0,
+        "materias": []
+      },
+      {
+        "nome": "Professor da Educação Infantil Distrital",
+        "vagas": 1,
+        "cadastro_reserva": true,
+        "salario": 5130.62,
+        "escolaridade": "Médio",
+        "requisitos": "Formação em nível médio, na modalidade Normal (Magistério), ou formação em nível superior em curso de Licenciatura em Pedagogia, admitidas as demais formações legalmente habilitantes para o exercício da docência na Educação Infantil, nos termos da legislação educacional vigente. Código 215.",
+        "jornada_horas": 40.0,
+        "materias": []
+      },
+      {
+        "nome": "Secretário Escolar",
+        "vagas": 1,
+        "cadastro_reserva": true,
+        "salario": 3127.8,
+        "escolaridade": "Médio",
+        "requisitos": "Ensino Médio Completo.  Possuir conhecimentos na operação de computador, editor de textos e planilha eletrônica. Código 216.",
+        "jornada_horas": 40.0,
+        "materias": []
+      },
+      {
+        "nome": "Técnico de Enfermagem",
+        "vagas": 1,
+        "cadastro_reserva": true,
+        "salario": 3646.64,
+        "escolaridade": "Técnico",
+        "requisitos": "Ensino Médio Completo, Curso Técnico em Enfermagem e registro regular no Conselho Regional da categoria. Código 217.",
+        "jornada_horas": 40.0,
+        "materias": []
+      },
+      {
+        "nome": "Técnico em Segurança do Trabalho",
+        "vagas": 1,
+        "cadastro_reserva": true,
+        "salario": 3127.8,
+        "escolaridade": "Técnico",
+        "requisitos": "Ensino médico completo com curso específico e habilitação na área. Código 218.",
+        "jornada_horas": 40.0,
+        "materias": []
+      },
+      {
+        "nome": "Vigilante Sanitário",
+        "vagas": 1,
+        "cadastro_reserva": true,
+        "salario": 2923.48,
+        "escolaridade": "Médio",
+        "requisitos": "Ensino Médio Completo. Código 219.",
+        "jornada_horas": 40.0,
+        "materias": []
+      },
+      {
+        "nome": "Atendente de Agendamento/Recepcionista",
+        "vagas": 1,
+        "cadastro_reserva": true,
+        "salario": 2105.03,
+        "escolaridade": "Fundamental",
+        "requisitos": "Ensino Fundamental Completo. Código 301.",
+        "jornada_horas": 40.0,
+        "materias": []
+      },
+      {
+        "nome": "Auxiliar de Serviços Gerais",
+        "vagas": 1,
+        "cadastro_reserva": true,
+        "salario": 2105.03,
+        "escolaridade": "Fundamental",
+        "requisitos": "Ensino Fundamental Completo. Código 302.",
+        "jornada_horas": 40.0,
+        "materias": []
+      },
+      {
+        "nome": "Borracheiro",
+        "vagas": 1,
+        "cadastro_reserva": true,
+        "salario": 2384.35,
+        "escolaridade": "Fundamental",
+        "requisitos": "Ensino Fundamental Completo. Código 303.",
+        "jornada_horas": 40.0,
+        "materias": []
+      },
+      {
+        "nome": "Agente de Sepultamento",
+        "vagas": 1,
+        "cadastro_reserva": true,
+        "salario": 2606.5,
+        "escolaridade": "Fundamental",
+        "requisitos": "Ensino Fundamental Completo. Código 304.",
+        "jornada_horas": 40.0,
+        "materias": []
+      },
+      {
+        "nome": "Eletricista de Máquina Rodoviária e Veículos",
+        "vagas": 1,
+        "cadastro_reserva": true,
+        "salario": 4170.4,
+        "escolaridade": "Fundamental",
+        "requisitos": "Ensino Fundamental Completo. Código 305.",
+        "jornada_horas": 40.0,
+        "materias": []
+      },
+      {
+        "nome": "Mecânico de Máquina Rodoviária e Veículos",
+        "vagas": 1,
+        "cadastro_reserva": true,
+        "salario": 4170.4,
+        "escolaridade": "Fundamental",
+        "requisitos": "Ensino Fundamental Completo. Código 306.",
+        "jornada_horas": 40.0,
+        "materias": []
+      },
+      {
+        "nome": "Motorista de Ambulância",
+        "vagas": 1,
+        "cadastro_reserva": true,
+        "salario": 2636.83,
+        "escolaridade": "Fundamental",
+        "requisitos": "Carteira Nacional de Habilitação – CNH categoria “D” ou superior e Curso Especializado de Transporte de Urgência e Emergência, devidamente registrado no órgão de trânsito competente e em vigência. Código 307.",
+        "jornada_horas": 40.0,
+        "materias": []
+      },
+      {
+        "nome": "Motorista de Caminhão e Ônibus",
+        "vagas": 1,
+        "cadastro_reserva": true,
+        "salario": 2636.83,
+        "escolaridade": "Fundamental",
+        "requisitos": "Ensino Fundamental Completo Ensino Fundamental Completo.  Carteira Nacional de Habilitação – CNH categoria “D” ou “E”, válida. Código 308.",
+        "jornada_horas": 40.0,
+        "materias": []
+      },
+      {
+        "nome": "Operador de Máquinas",
+        "vagas": 1,
+        "cadastro_reserva": true,
+        "salario": 3066.75,
+        "escolaridade": "Fundamental",
+        "requisitos": "Ensino Fundamental Completo, Carteira Nacional de Habilitação – CNH, no mínimo categoria “C”, e curso de Operador de Máquinas ou equivalente. Código 309.",
+        "jornada_horas": 40.0,
+        "materias": []
+      },
+      {
+        "nome": "Pedreiro",
+        "vagas": 1,
+        "cadastro_reserva": true,
+        "salario": 2606.5,
+        "escolaridade": "Fundamental",
+        "requisitos": "Ensino Fundamental Completo. Código 310.",
+        "jornada_horas": 40.0,
+        "materias": []
+      },
+      {
+        "nome": "Pintor",
+        "vagas": 1,
+        "cadastro_reserva": true,
+        "salario": 2105.03,
+        "escolaridade": "Fundamental",
+        "requisitos": "Ensino Fundamental Completo. Código 311.",
+        "jornada_horas": 40.0,
+        "materias": []
+      },
+      {
+        "nome": "Soldador",
+        "vagas": 1,
+        "cadastro_reserva": true,
+        "salario": 2923.48,
+        "escolaridade": "Fundamental",
+        "requisitos": "Ensino Fundamental Completo. Código 312.",
+        "jornada_horas": 40.0,
+        "materias": []
+      },
+      {
+        "nome": "Trabalhador Braçal",
+        "vagas": 1,
+        "cadastro_reserva": true,
+        "salario": 2105.03,
+        "escolaridade": "Fundamental",
+        "requisitos": "Ensino Fundamental Completo. Código 313.",
+        "jornada_horas": 40.0,
+        "materias": []
+      },
+      {
+        "nome": "Vigia",
+        "vagas": 1,
+        "cadastro_reserva": true,
+        "salario": 2105.03,
+        "escolaridade": "Fundamental",
+        "requisitos": "Ensino Fundamental Completo. Código 314.",
+        "jornada_horas": 40.0,
+        "materias": []
+      }
+    ],
+    "documentos": [
+      {
+        "tipo": "edital",
+        "titulo": "Edital de Abertura nº 001/2026 – Concurso Público nº 01/2026",
+        "numero": "001/2026",
+        "url": "https://www.concursosfau.com.br//sistema/uploads/EDITAL_CONCURSO_PUBLICO_-_SIQUEIRA_CAMPOS.pdf",
+        "publicado_em": "2026-09-21",
+        "fonte": "banca",
+        "resumo": null
+      },
+      {
+        "tipo": "retificacao",
+        "titulo": "Retificação – carga horária do Professor e data do pedido de isenção",
+        "numero": "001/2026 (ret.)",
+        "url": "https://www.concursosfau.com.br//sistema/uploads/RETIFICACAO_-_EDITAL_DE_ABERTURA_PEDIDO_DE_ISENCAO.pdf",
+        "publicado_em": "2026-09-23",
+        "fonte": "banca",
+        "resumo": null
+      },
+      {
+        "tipo": "retificacao",
+        "titulo": "Retificação – período da prova",
+        "numero": "001/2026 (ret.)",
+        "url": "https://www.concursosfau.com.br//sistema/uploads/RETIFICACAO_EDITAL_ABERTURA_-_PERIODO.pdf",
+        "publicado_em": "2026-09-24",
+        "fonte": "banca",
+        "resumo": null
+      },
+      {
+        "tipo": "retificacao",
+        "titulo": "Retificação – Tabela 9.2",
+        "numero": "001/2026 (ret.)",
+        "url": "https://www.concursosfau.com.br//sistema/uploads/RETIFICACAO_EDITAL_TABELA_9.2_.pdf",
+        "publicado_em": "2026-09-25",
+        "fonte": "banca",
+        "resumo": null
+      }
+    ],
+    "conferencia": null,
+    "primeira_varredura": null,
+    "ultima_alteracao": null
+  }
+}

@@ -1,0 +1,154 @@
+{
+  "ato": "banca-fau-2026-10-19-prefeitura-municipal-de-apucarana-2026-b5c149b9.md",
+  "atos_extras": [
+    "banca-fau-2026-10-19-prefeitura-municipal-de-apucarana-2026-b5c149b9-extra-1.md",
+    "banca-fau-2026-10-19-prefeitura-municipal-de-apucarana-2026-b5c149b9-extra-2.md",
+    "banca-fau-2026-10-19-prefeitura-municipal-de-apucarana-2026-b5c149b9-extra-3.md"
+  ],
+  "trechos": {
+    "salario": "101 Administrador 40h 02 - - - R$8.886,87 R$120,00 MUNICÍPIO DE APUCARANA ESTADO DO PARANÁ 102 Arquiteto 40h CR - - - R$ 8.208,13 R$120,00 103 Economista 40h 02 - - - R$ 8.886,87 R$120,00 104 Engenheiro Civil 40h CR - - - R$ 8.208,13 R$120,00 105 Procurador Jurídico 30h 01 - - - R$ 16.381,",
+    "inscricao.inicio": "5.3 O período para a realização das inscrições será a partir das 12h00min do dia 21 de outubro de 2026 às 23h59min do dia 09 de novembro de 2026 , observado horário oficial de Brasília/DF , através do endereço eletrônico www.concursosfau.com.br. 5.4 Para efetuar sua inscrição, o candidato",
+    "inscricao.fim": "5.3 O período para a realização das inscrições será a partir das 12h00min do dia 21 de outubro de 2026 às 23h59min do dia 09 de novembro de 2026 , observado horário oficial de Brasília/DF , através do endereço eletrônico www.concursosfau.com.br. 5.4 Para efetuar sua inscrição, o candidato",
+    "prova_objetiva": "10.2 A prova objetiva será aplicada na data provável de 06 de dezembro de 2026, em horário e local a ser informado através de edital disponi",
+    "taxa": "TABELA 3.1 NÍVEL SUPERIOR COMPLETO Conforme o Anexo I (requisitos e atribuições do cargo) Código do Cargo Cargo Carga Horária Semanal Vagas Ampla Conc [...] 201 Agente Fiscal 40h 04 - - - R$5.415,55 R$90,00 (1) Vagas 50+: Reser",
+    "banca": "2.1 O Concurso Público a que se refere o presente Edital será executado pela Fundação de Apoio ao Desenvolvimento da UNICENTRO, com sede na Rua Salvatore Renna - Padre Salvador, 875, Complemento: Bloc",
+    "cidade": "10.1 A prova objetiva será aplicada na Cidade de Apucarana/Paraná, podendo ser aplicada também em cidades vizinhas, caso o número de inscritos exceda a capacidade de aloc",
+    "edital": "EDITAL DE ABERTURA Nº 54/2026 CONCURSO PÚBLICO Nº 001/2026 O Prefeito do Município de Apucarana e a Comissão do Concurso"
+  },
+  "concurso": {
+    "id": "prefeitura-apucarana-pr-2026-edital-54",
+    "ficticio": false,
+    "orgao": "Prefeitura de Apucarana (PR)",
+    "esfera": "municipal",
+    "uf": "PR",
+    "municipio_ibge": "4101408",
+    "cidade": "Apucarana",
+    "nacional": false,
+    "abrangencia": null,
+    "area": "Administrativa",
+    "banca": {
+      "nome": "Fundação de Apoio ao Desenvolvimento da UNICENTRO (FAU)",
+      "url": "https://www.concursosfau.com.br"
+    },
+    "inscricao": {
+      "inicio": "2026-10-21",
+      "fim": "2026-11-09",
+      "url": "https://www.concursosfau.com.br"
+    },
+    "isencao_ate": "2026-10-23",
+    "prova_objetiva": "2026-12-06",
+    "local_prova": "Apucarana (PR), podendo ser também em cidades vizinhas se o número de inscritos exceder a capacidade do município",
+    "taxa": {
+      "min": 90.0,
+      "max": 120.0
+    },
+    "isencao_regras": "Isenção para membros de família de baixa renda (CadÚnico), doadores de sangue, doadores regulares de leite materno e quem participou de ao menos 3 ações ou campanhas solidárias (Lei Municipal 073/2025); pedido em 22 e 23/10/2026 pela área do candidato",
+    "regime": "Estatutário",
+    "beneficios": [],
+    "o_que_levar": "Caneta esferográfica transparente de tinta azul ou preta, documento oficial de identificação com foto e o Cartão de Informação do Candidato impresso",
+    "cargos": [
+      {
+        "nome": "Administrador",
+        "vagas": 2,
+        "cadastro_reserva": true,
+        "salario": 8886.87,
+        "escolaridade": "Superior",
+        "requisitos": "Nível superior completo em Administração, Gestão Pública ou tecnólogo em Gestão Pública, e registro no conselho da categoria. Código 101.",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Arquiteto",
+        "vagas": 0,
+        "cadastro_reserva": true,
+        "salario": 8208.13,
+        "escolaridade": "Superior",
+        "requisitos": "Curso superior completo em Arquitetura e Urbanismo e registro no conselho da categoria. Código 102.",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Economista",
+        "vagas": 2,
+        "cadastro_reserva": true,
+        "salario": 8886.87,
+        "escolaridade": "Superior",
+        "requisitos": "Nível superior completo em Ciências Econômicas ou Economia e registro no conselho da categoria. Código 103.",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Engenheiro Civil",
+        "vagas": 0,
+        "cadastro_reserva": true,
+        "salario": 11957.61,
+        "escolaridade": "Superior",
+        "requisitos": "Curso superior em Engenharia Civil e registro no conselho da categoria. Código 104; remuneração corrigida pela retificação de 14/10/2026.",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Procurador Jurídico",
+        "vagas": 1,
+        "cadastro_reserva": true,
+        "salario": 16381.41,
+        "escolaridade": "Superior",
+        "requisitos": "Graduação em Direito, inscrição na OAB e, no mínimo, 2 anos de prática forense após a colação de grau. Código 105; o valor é o vencimento básico mais o adicional por representação judicial.",
+        "jornada_horas": 30,
+        "materias": []
+      },
+      {
+        "nome": "Veterinário",
+        "vagas": 0,
+        "cadastro_reserva": true,
+        "salario": 7734.7,
+        "escolaridade": "Superior",
+        "requisitos": "Curso superior em Medicina Veterinária e registro no conselho da categoria. Código 106.",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Agente Fiscal",
+        "vagas": 4,
+        "cadastro_reserva": true,
+        "salario": 5415.55,
+        "escolaridade": "Médio",
+        "requisitos": "Ensino médio completo. Código 201.",
+        "jornada_horas": 40,
+        "materias": []
+      }
+    ],
+    "documentos": [
+      {
+        "tipo": "edital",
+        "titulo": "Edital de Abertura nº 54/2026 – Concurso Público nº 001/2026",
+        "numero": "54/2026",
+        "url": "https://www.concursosfau.com.br//sistema/uploads/EDITAL_CONCURSO_PUBLICO_APUCARANA-ok.pdf",
+        "publicado_em": "2026-10-14",
+        "fonte": "banca",
+        "resumo": null
+      },
+      {
+        "tipo": "retificacao",
+        "titulo": "Retificação do Edital nº 54/2026 – remuneração do Engenheiro Civil",
+        "numero": "54/2026 (ret.)",
+        "url": "https://www.concursosfau.com.br//sistema/uploads/RETIFICACAO_EDITAL_DE_ABERTURA_SAL_ENG.pdf",
+        "publicado_em": "2026-10-14",
+        "fonte": "banca",
+        "resumo": null
+      },
+      {
+        "tipo": "retificacao",
+        "titulo": "Retificação do Edital nº 54/2026 – laudo do Transtorno do Espectro Autista",
+        "numero": "54/2026 (ret.)",
+        "url": "https://www.concursosfau.com.br//sistema/uploads/RETIFICACAO_EDITAL_ABERTURA_-_TEA_-_APUCARANA.pdf",
+        "publicado_em": "2026-10-20",
+        "fonte": "banca",
+        "resumo": null
+      }
+    ],
+    "conferencia": null,
+    "primeira_varredura": null,
+    "ultima_alteracao": null
+  }
+}

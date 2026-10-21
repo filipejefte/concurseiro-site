@@ -344,6 +344,7 @@ class Base:
         self.varredura = base.get("varredura")
         self.proxima = base.get("proxima_varredura")
         self.cobertura = base.get("cobertura") or ["federal", "PR"]
+        self.fontes = base.get("fontes")      # o que a última varredura leu (varredura/publicar.py: fontes_da_semana)
         self.municipios = municipios          # {ibge: {ibge, nome, lat, lon[, ficticio]}}
         self.exemplo = exemplo
         self.previa = None           # data da varredura quando o build é a prévia (--previa)

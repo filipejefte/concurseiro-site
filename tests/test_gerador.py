@@ -313,3 +313,28 @@ def test_previa_nao_vai_para_public(monkeypatch):
     from gerador import build
     with pytest.raises(SystemExit):
         main(["build", "--previa", "dados/varreduras/2026-10-14", "--saida", str(build.SAIDA)])
+
+
+def test_faixa_e_como_conferimos_trazem_as_fontes_lidas_e_o_que_falta(tmp_path):
+    """A faixa de atualização lista o que a varredura leu; /como-conferimos/ diz o que cada fonte cobre e o que ainda não lemos."""
+    base = dados.ler_json(dados.CONCURSOS)
+    fontes = {"dou": "parcial", "amp": "ok", "dioe": "ok", "bancas": ["fafipa", "fau", "quadrix"], "dou_dias_sem_acesso": 12,
+              "municipios_sem_fonte": 87}
+    arquivo = tmp_path / "concursos.json"
+    dados.gravar_json(arquivo, dict(base, varredura="2026-10-19", proxima_varredura="2026-10-26", fontes=fontes))
+    site = construir(tmp_path / "p", DIA, cfg=_cfg(), concursos=arquivo)
+    assert ("Atualizado em seg, 19/10 · lemos o Diário Oficial da União (parcial), o do Paraná, o Diário dos Municípios do PR "
+            "e os sites de 3 bancas · próxima varredura em seg, 26/10") in _html(site, "/")
+    como = _html(site, "/como-conferimos/")
+    assert "faltaram 12 dias úteis do Diário Oficial da União" in como
+    assert "Fundação FAFIPA" in como and "Instituto Quadrix" in como and "Instituto Omni" not in como      # só as bancas lidas
+    inicio = como.index("O que ainda não lemos")
+    assert "87 municípios do Paraná sem nenhuma fonte lida" in como[inicio:] and "Unioeste" in como[inicio:]
+
+
+def test_sem_a_chave_fontes_o_site_diz_so_o_que_dizia_antes(site_publicado):
+    """Varredura publicada antes de existir a chave: DOU e AMP lidos; o diário do Estado e as bancas ficam em "ainda não lemos"."""
+    assert "lemos o Diário Oficial da União e o Diário dos Municípios do PR" in _html(site_publicado, "/")
+    como = _html(site_publicado, "/como-conferimos/")
+    inicio = como.index("O que ainda não lemos")
+    assert "Diário Oficial do Estado do Paraná" in como[inicio:] and "Sites das bancas" in como[inicio:]

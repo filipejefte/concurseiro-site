@@ -1,0 +1,103 @@
+{
+  "ato": "banca-fafipa-2026-10-16-municipio-de-curitiba-pr-1ec3b574.md",
+  "atos_extras": [],
+  "trechos": {
+    "salario": "A remuneração dos integrantes do cargo de Procurador do Município, correspondente ao valor de R$ 38.087,99, é composta por: a) Vencimento Básico, no valor de R$ 9.474,12; b) Gratificação de Responsabilidade Técnica: percentual de 30%, calculado com base no vencimento básico inicial é R$ 2.842,24. c) Prêmio por Atividade Jurídica",
+    "inscricao.inicio": "O período para a realização das inscrições iniciará às 08h do dia 7 de outubro de 2026 até às 23h59min do dia 5 de novembro de 2026 , observado o horário oficial de Brasília – DF, por meio do endereço eletrônico www.fundacaofafipa.org.br. 5",
+    "inscricao.fim": "O período para a realização das inscrições iniciará às 08h do dia 7 de outubro de 2026 até às 23h59min do dia 5 de novembro de 2026 , observado o horário oficial de Brasília – DF, por meio do endereço eletrônico www.fundacaofafipa.org.br. 5",
+    "prova_objetiva": "Aplicação da prova objetiva 13/12/2026 Divulgação do gabarit",
+    "taxa": "TABELA 3.1.11 CARGO DE NÍVEL SUPERIOR VALOR DA TAXA DE INSCRIÇÃO R$ 250,00 QUADRO DE VAGAS CARGO REQUISITOS DO CARGO CH AC PcD (5%",
+    "banca": "O Concurso Público a que se refere o presente Edital será executado pela Fundação FAFIPA – Campus de Paranavaí, CNPJ: 05.566.804/0001 -76, com sede administrativa na Av. Paraná, 794 A - Esquina com Ru",
+    "cidade": "BJETIVA 11.1 A prova objetiva será aplicada no Município de Curitiba, Estado do Paraná. Caso o número de candidatos inscritos exceda a oferta de lugares existentes no Mun",
+    "edital": "EDITAL NORMATIVO Nº 6 Torna público o Edital Normativo do Concurso Público para provimento de vagas no cargo de Procurador do Município. A SECRETÁRIA MUNICIPAL DE GESTÃO DE PESSOAL no uso das competências que lhe foram delegadas pelo Decret"
+  },
+  "concurso": {
+    "id": "prefeitura-curitiba-pr-2026-edital-06",
+    "ficticio": false,
+    "orgao": "Prefeitura de Curitiba (PR)",
+    "esfera": "municipal",
+    "uf": "PR",
+    "municipio_ibge": "4106902",
+    "cidade": "Curitiba",
+    "nacional": false,
+    "abrangencia": null,
+    "area": "Jurídica",
+    "banca": {
+      "nome": "Fundação FAFIPA",
+      "url": "https://www.fundacaofafipa.org.br"
+    },
+    "inscricao": {
+      "inicio": "2026-10-07",
+      "fim": "2026-11-05",
+      "url": "https://www.fundacaofafipa.org.br/concurso/4216-concurso-publico-do-municipio-de-curitiba-pr-pgm"
+    },
+    "isencao_ate": "2026-10-13",
+    "prova_objetiva": "2026-12-13",
+    "local_prova": "Curitiba (PR); data provável, com horário e local divulgados em 03/12/2026 no Cartão de Convocação do Candidato",
+    "taxa": {
+      "min": 250.0,
+      "max": 250.0
+    },
+    "isencao_regras": "Isenção para quem está no CadÚnico (Lei Complementar Municipal 113/2019: NIS válido, cadastro atualizado nos últimos 24 meses e renda familiar de até meio salário mínimo por pessoa) e para doador de sangue (Lei Municipal 9.818/2000); pedido de 07 a 13/10/2026 pelo site da banca",
+    "regime": "Estatutário",
+    "beneficios": [
+      {
+        "nome": "Plano de saúde do Instituto Curitiba de Saúde (ICS), com coparticipação",
+        "valor": null
+      },
+      {
+        "nome": "Previdência complementar",
+        "valor": null
+      },
+      {
+        "nome": "Seguro de vida em grupo",
+        "valor": null
+      }
+    ],
+    "o_que_levar": "Caneta esferográfica transparente, preferencialmente de tinta preta, documento oficial de identificação com foto e o Cartão de Convocação do Candidato; chegar com 40 minutos de antecedência do fechamento dos portões",
+    "cargos": [
+      {
+        "nome": "Procurador do Município",
+        "vagas": 5,
+        "cadastro_reserva": false,
+        "salario": 38087.99,
+        "escolaridade": "Superior",
+        "requisitos": "Graduação em Direito e inscrição na OAB – Seção Paraná, com pleno gozo das prerrogativas profissionais (comprovada na posse). 5 vagas (3 de ampla concorrência, 1 para pessoa com deficiência e 1 para pessoas negras e povos indígenas). Remuneração total de R$ 38.087,99: vencimento básico de R$ 9.474,12, Gratificação de Responsabilidade Técnica de 30% (R$ 2.842,24) e Prêmio por Atividade Jurídica de R$ 25.771,63.",
+        "jornada_horas": 40,
+        "materias": []
+      }
+    ],
+    "documentos": [
+      {
+        "tipo": "edital",
+        "titulo": "Edital Normativo nº 6/2026 – versão original",
+        "numero": "6/2026",
+        "url": "https://anexos-r2.selecao.net.br/uploads/889/concursos/4/anexos/5eb3682a-b870-4a88-ab63-be9376bc358d.pdf",
+        "publicado_em": "2026-09-22",
+        "fonte": "banca",
+        "resumo": null
+      },
+      {
+        "tipo": "edital",
+        "titulo": "Edital Normativo nº 6/2026 – retificado em 07/10/2026",
+        "numero": "6/2026",
+        "url": "https://anexos-r2.selecao.net.br/uploads/889/concursos/4/anexos/f669d66d-5cf8-4926-9fcf-475268c28d66.pdf",
+        "publicado_em": "2026-10-07",
+        "fonte": "banca",
+        "resumo": null
+      },
+      {
+        "tipo": "edital",
+        "titulo": "Edital Normativo nº 6/2026 – retificado em 16/10/2026 (versão atual)",
+        "numero": "6/2026",
+        "url": "https://anexos-r2.selecao.net.br/uploads/889/concursos/4/anexos/6167b00f-2ebb-4514-9076-0b2074787714.pdf",
+        "publicado_em": "2026-10-16",
+        "fonte": "banca",
+        "resumo": null
+      }
+    ],
+    "conferencia": null,
+    "primeira_varredura": null,
+    "ultima_alteracao": null
+  }
+}

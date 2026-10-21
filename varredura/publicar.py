@@ -7,6 +7,7 @@ no revisao.csv e atualiza as datas da varredura. Escreve na pasta da semana:
   posts/post-<id>.png   imagem 1080x1350 de cada concurso novo, com a legenda em post-<id>.txt (fora do git).
 O site sai de dados/concursos.json no próximo `python -m gerador build` (o deploy roda sozinho no push).
 """
+import re
 from datetime import date, timedelta
 from pathlib import Path
 
@@ -68,6 +69,7 @@ def publicar_semana(pasta, por, hoje=None, posts=True):
     base["concursos"] = sorted(publicados.values(), key=lambda c: c["id"])
     base["varredura"] = data_varredura.isoformat()
     base["proxima_varredura"] = (data_varredura + timedelta(days=7)).isoformat()
+    base["fontes"] = fontes_da_semana(pasta)
     d.gravar_json(d.CONCURSOS, base)
     novos, retificados, acabando = _grupos(base, aprovados, r.alterados, data_varredura)
     escrever_resumo(pasta, novos, retificados, acabando, anterior, data_varredura)
@@ -76,6 +78,29 @@ def publicar_semana(pasta, por, hoje=None, posts=True):
     if posts and novos:
         escrever_posts(pasta, [publicados[c["id"]] for c in novos], data_varredura)
     return aprovados, recusados
+
+
+def fontes_da_semana(pasta):
+    """O que a varredura leu, para a faixa de atualização e para /como-conferimos/ (vai em dados/concursos.json, chave "fontes").
+
+    dou, amp, dioe: "ok", "parcial" (leu o que pôde, e o aviso diz o que faltou) ou "falhou"; bancas: as que foram lidas;
+    dou_dias_sem_acesso: dias úteis do DOU que não vieram; municipios_sem_fonte: municípios do PR que nem a AMP nem
+    uma banca trouxeram (dados/cobertura-municipios.csv)."""
+    registro = d.ler_json(Path(pasta) / "atos.json") if (Path(pasta) / "atos.json").exists() else {}
+    estados = registro.get("fontes", {})
+
+    def estado(nome):
+        e = estados.get(nome, "")
+        return "ok" if e == "ok" else "parcial" if e.startswith("ok, mas") else "falhou" if e else "nao_lida"
+    faltando = re.search(r"(\d+) dia\(s\)", estados.get("DOU", ""))
+    saida = {"dou": estado("DOU"), "amp": estado("AMP-PR"), "dioe": estado("DIOE-PR"),
+             "bancas": sorted(registro.get("bancas_lidas", {})), "dou_dias_sem_acesso": int(faltando.group(1)) if faltando else 0}
+    cobertura = Path(d.DADOS) / "cobertura-municipios.csv"
+    if cobertura.exists():
+        import csv
+        with cobertura.open(encoding="utf-8-sig", newline="") as f:
+            saida["municipios_sem_fonte"] = sum(1 for linha in csv.DictReader(f, delimiter=";") if linha["fonte"] == "nenhuma")
+    return saida
 
 
 def _grupos(base, aprovados, alterados, data_varredura):

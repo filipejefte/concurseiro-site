@@ -1,0 +1,126 @@
+{
+  "ato": "banca-consulplan-2026-09-09-conselho-regional-de-administracao-do-am-123700e4.md",
+  "atos_extras": [
+    "banca-consulplan-2026-09-09-conselho-regional-de-administracao-do-am-123700e4-extra-1.md"
+  ],
+  "trechos": {
+    "salario": "001 Assistente Administrativo 2 0 0 0 0 6 1 3 0 0 12 Manaus 40h R$ 2.021,58 + Auxílio-Alimentação (R$ 900,00) + Vale transporte (R$ 250,00) + outros benefícios (vide item 2) Cód. Cargos de Nível Superior VAGAS EFETIVAS CADASTRO DE RESERVA Total Cidade de lotação Carga horária semanal Salário-base/Benefícios* AC PCD PN PI PQ AC P [...] 002 Administrador 4 0 1 0 0 11 2 5 1 1 25 Manaus 40h R$ 3.683,95 + Auxílio-Alimentação (R$ 900,00) + Vale transporte (R$ 250,00) + outros benefícios (vide item 2) 003 Administrador Fiscal 2 0 0 0 0 6 1 3 0 0 12 Manaus 40h 004 Analista de Recursos Humanos 1 0 0 0 0 2 1 1 0 0 5 Manaus 40h Obs.: Data base dos vencimentos: 01/05/202",
+    "inscricao.inicio": "Período de solicitação de inscrição 16h de 16/09/2026 às 16h de 15/10/2026 3 Período para envio (recebimento via upload)",
+    "inscricao.fim": "As inscrições poderão ser realizadas até as 16h00min do dia 23 de outubro de 2026 (sexta-feira), observado o horário oficial de Manaus/AM, no endereço eletrônico www.institutoconsulplan.org.br. 2. Apó",
+    "prova_objetiva": "Aplicação das provas objetiva e discursiva 22/11/2026 15 Div",
+    "taxa": "4.1 Valores das taxas de inscrição: a) R$ 64,00 para os cargos de nível médio. b) R$ 65,00 para os cargos de nível superior. 4.2 Será admitida exclusivamente a",
+    "banca": "a real ização de CONCURSO PÚBLICO, que será executado mediante a coordenação técnico-administrativa do INSTITUTO CONSULPLAN, para provimento de vagas e formação de Cadastro de Reserva (CR) para cargos de nível médio e nível superior do qua",
+    "cidade": "1.5 As fases do concurso público serão realizadas na cidade de Manaus/AM. 1.6 Os candidatos aprovado",
+    "edital": "EDITAL No 1/2026 O CONSELHO REGIONAL DE ADMINISTRAÇÃO DO AMAZONAS – CRA-AM, Autarquia Federal da Administração Indireta, representada pelo Presidente, Adm. José Carlos de Sá Colares, no uso das atribu"
+  },
+  "concurso": {
+    "id": "cra-am-2026-edital-01",
+    "ficticio": false,
+    "orgao": "Conselho Regional de Administração do Amazonas (CRA-AM)",
+    "esfera": "federal",
+    "uf": "AM",
+    "municipio_ibge": null,
+    "cidade": "Manaus",
+    "nacional": false,
+    "abrangencia": null,
+    "area": "Administrativa",
+    "banca": {
+      "nome": "Instituto Consulplan",
+      "url": "https://www.institutoconsulplan.org.br"
+    },
+    "inscricao": {
+      "inicio": "2026-09-16",
+      "fim": "2026-10-23",
+      "url": "https://www.institutoconsulplan.org.br/cra2026"
+    },
+    "isencao_ate": "2026-09-18",
+    "prova_objetiva": "2026-11-22",
+    "local_prova": "Manaus (AM)",
+    "taxa": {
+      "min": 64.0,
+      "max": 65.0
+    },
+    "isencao_regras": "Isenção para quem se enquadra no Decreto nº 6.593/2008 ou na Lei nº 13.656/2018; pedido de 16 a 18/09/2026 pelo site da banca, com envio dos documentos",
+    "regime": "CLT",
+    "beneficios": [
+      {
+        "nome": "Auxílio-alimentação",
+        "valor": 900.0
+      },
+      {
+        "nome": "Vale-transporte (até)",
+        "valor": 250.0
+      },
+      {
+        "nome": "Auxílio-saúde por reembolso (até)",
+        "valor": 800.0
+      }
+    ],
+    "o_que_levar": null,
+    "cargos": [
+      {
+        "nome": "Assistente Administrativo",
+        "vagas": 2,
+        "cadastro_reserva": true,
+        "salario": 2021.58,
+        "escolaridade": "Médio",
+        "requisitos": "Diploma ou certificado de conclusão de curso de nível médio, registrado, fornecido por instituição reconhecida pelo MEC. Código 001; lotação em Manaus. 2 vagas imediatas de ampla concorrência, mais cadastro de reserva (inclusive para pessoas com deficiência, negras, indígenas e quilombolas).",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Administrador",
+        "vagas": 5,
+        "cadastro_reserva": true,
+        "salario": 3683.95,
+        "escolaridade": "Superior",
+        "requisitos": "Bacharelado em Administração, Gestão Pública ou outro curso correlato à Administração, e registro ativo e regular no conselho profissional. Código 002; lotação em Manaus. 5 vagas imediatas (4 de ampla concorrência e 1 para pessoa negra), mais cadastro de reserva. Salário-base da tabela do edital, comum aos três cargos de nível superior (célula única).",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Administrador Fiscal",
+        "vagas": 2,
+        "cadastro_reserva": true,
+        "salario": 3683.95,
+        "escolaridade": "Superior",
+        "requisitos": "Bacharelado em Administração, Gestão Pública ou outro curso correlato à Administração, registro ativo e regular no conselho profissional e CNH mínima categoria B. Código 003; lotação em Manaus. 2 vagas imediatas de ampla concorrência, mais cadastro de reserva. Salário-base da tabela do edital, comum aos três cargos de nível superior (célula única).",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Analista de Recursos Humanos",
+        "vagas": 1,
+        "cadastro_reserva": true,
+        "salario": 3683.95,
+        "escolaridade": "Superior",
+        "requisitos": "Bacharelado em Administração, Gestão Pública ou correlato, ou tecnólogo em Gestão de Recursos Humanos, Gestão de Pessoas, Processos Gerenciais ou Gestão Pública, e registro ativo e regular no conselho profissional. Código 004; lotação em Manaus. 1 vaga imediata de ampla concorrência, mais cadastro de reserva. Salário-base da tabela do edital, comum aos três cargos de nível superior (célula única).",
+        "jornada_horas": 40,
+        "materias": []
+      }
+    ],
+    "documentos": [
+      {
+        "tipo": "edital",
+        "titulo": "Edital nº 1/2026 – Concurso Público",
+        "numero": "1/2026",
+        "url": "https://cdnsite.institutoconsulplan.org.br/concursos/1339/87dcd9705838453088f12cf09d1d6a41.pdf",
+        "publicado_em": "2026-09-09",
+        "fonte": "banca",
+        "resumo": null
+      },
+      {
+        "tipo": "retificacao",
+        "titulo": "Comunicado – Prorrogação das inscrições até 23/10/2026",
+        "numero": "1/2026 (com.)",
+        "url": "https://cdnsite.institutoconsulplan.org.br/concursos/1339/7c6af626a41b4f73a080ed5155b28ba4.pdf",
+        "publicado_em": "2026-10-15",
+        "fonte": "banca",
+        "resumo": null
+      }
+    ],
+    "conferencia": null,
+    "primeira_varredura": null,
+    "ultima_alteracao": null
+  }
+}

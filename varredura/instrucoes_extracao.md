@@ -35,7 +35,7 @@ Estas instruções valem para quem segue o `/varredura` no Claude Code. A ficha 
    `"Rio de Janeiro"`) e `municipio_ibge: null`. `municipio_ibge` só existe para cidade do PR.
 7. **documentos**: inclua o próprio ato, com `tipo` conforme o que ele é (`edital`, `retificacao`,
    `autorizacao`, `contratacao_banca`), `url` = o link do ato recebido, `fonte` = a fonte recebida
-   (`DOU`, `AMP-PR` ou `DIOE-PR`), `publicado_em` = a data do ato. Se o ato cita o site da banca
+   (`DOU`, `AMP-PR`, `DIOE-PR`; ato de banca é `banca`, e edital que o próprio órgão publica é `outra`), `publicado_em` = a data do ato. Se o ato cita o site da banca
    para inscrição, ele vai em `inscricao.url` e `banca.url`.
 8. **area**: uma de Administrativa, Saúde, Educação, Operacional, Policial e segurança, Jurídica,
    Bancária ou Outras, pela maioria das vagas.
@@ -54,6 +54,17 @@ Estas instruções valem para quem segue o `/varredura` no Claude Code. A ficha 
     candidatos, preencha `remuneracao_por_titulacao` com a tabela do regime do cargo, uma linha por
     titulação, sempre com o total (`[{"titulacao": "doutorado", "valor": 13753.96}, ...]`); se não
     aceita, deixe `null`. Auxílio-alimentação e outros benefícios vão em `beneficios`.
+
+12. **Ato que é só o extrato.** Quando o ato do DOU é um aviso ou extrato sem os cargos, salários e datas (ele manda ler o edital
+    normativo no site da banca ou do órgão), a ficha só fica pronta depois de ler o edital completo: complete cargos, vagas
+    (soma das vagas imediatas de todos os códigos do mesmo cargo; só cadastro reserva = `0` com `cadastro_reserva: true`),
+    salário, escolaridade, requisitos, jornada, taxa, datas de inscrição e de isenção, prova e benefícios. Ponha o edital
+    completo em `documentos` (primeiro, `tipo: "edital"`, `fonte: "banca"` ou `"outra"` quando o órgão mesmo publica; o extrato do
+    DOU depois) e o texto em `atos_extras`. `null` ("Não informado no edital") só quando o edital completo não traz o dado.
+    Confirme a banca no edital. Não confunda Instituto Consulplan com Instituto Consulpam: são bancas diferentes.
+13. **Ato de banca** (`fonte: banca-<slug>`, na fila): é o próprio edital completo, lido da página oficial da banca. Se o concurso
+    já tem ficha (feita pelo DOU ou pelo AMP), use o mesmo id e não crie outra: ponha o nome do arquivo em `atos_extras`.
+    Residência, programa de estágio, vestibular seriado e processo seletivo simplificado viram descarte.
 
 ## Saída
 

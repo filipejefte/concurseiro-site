@@ -84,6 +84,7 @@ class Site:
                                autoescape=select_autoescape(["html", "xml"]), undefined=StrictUndefined,
                                trim_blocks=False, lstrip_blocks=False)
         self.anuncios = bool(cfg.adsense_client)
+        self.info_fontes = d.ler_json(d.DADOS / "fontes.json")
         self.env.globals.update(u=cfg.url, cfg=cfg, anuncios=self.anuncios, dinheiro=modelo.dinheiro,
                                 data_curta=d.data_curta, plataforma=plataforma)
 
@@ -160,10 +161,52 @@ class Site:
                     "Só para olhar; o site no ar sai do python -m gerador build sem --previa.")
         if not b.varredura:
             return f"A primeira varredura ainda não foi publicada · {cobertura}"
-        texto = f"Atualizado em {d.data_br(b.varredura)}"
+        texto = f"Atualizado em {d.data_curta(b.varredura)}"
+        lidas = self.fontes_lidas()
+        if lidas:
+            texto += f" · {lidas}"
         if b.proxima:
-            texto += f" · próxima varredura em {d.data_br(b.proxima)}"
-        return texto + f" · {cobertura}"
+            texto += f" · próxima varredura em {d.data_curta(b.proxima)}"
+        return texto + ("" if lidas else f" · {cobertura}")
+
+    def fontes_da_semana(self):
+        """O que a última varredura leu. Sem a chave "fontes" no concursos.json (varredura de antes dela), vale o que o site
+        dizia: o DOU e a AMP; o diário do Estado e as bancas ficam em "o que ainda não lemos"."""
+        return self.base.fontes or {"dou": "ok", "amp": "ok", "dioe": "nao_lida", "bancas": []}
+
+    def fontes_lidas(self):
+        """"lemos o Diário Oficial da União, o do Paraná, o Diário dos Municípios do PR e os sites de 7 bancas"."""
+        f, info = self.fontes_da_semana(), self.info_fontes["lidas"]
+        nomes = [info[k]["curto"] + (" (parcial)" if f.get(k) == "parcial" else "") for k in ("dou", "dioe", "amp") if f.get(k) in ("ok", "parcial")]
+        n = len(f.get("bancas", []))
+        if n:
+            nomes.append(f"os sites de {plural(n, 'banca', 'bancas')}")
+        if not nomes:
+            return None
+        return "lemos " + (nomes[0] if len(nomes) == 1 else ", ".join(nomes[:-1]) + " e " + nomes[-1])
+
+    def pagina_fontes(self):
+        """Contexto de /como-conferimos/: o que é lido, o que cada fonte cobre e o que ainda não lemos (tudo dos dados)."""
+        f, info = self.fontes_da_semana(), self.info_fontes
+        lidas = []
+        for k in ("dou", "dioe", "amp"):
+            if f.get(k) in ("ok", "parcial"):
+                aviso = None
+                if f[k] == "parcial" and k == "dou":
+                    aviso = (f"Nesta semana faltaram {f.get('dou_dias_sem_acesso', 0)} dias úteis do Diário Oficial da União "
+                             "(o acesso aos arquivos falhou). Os concursos federais desses dias podem estar de fora até a próxima varredura.")
+                elif f[k] == "parcial":
+                    aviso = "Nesta semana a leitura foi parcial."
+                lidas.append(dict(info["lidas"][k], aviso=aviso))
+        bancas = [info["bancas"][s] for s in f.get("bancas", []) if s in info["bancas"]]
+        nao = [dict(nome=info["lidas"][k]["nome"], motivo="Ainda não é lido pela varredura.") for k in ("dou", "dioe", "amp") if f.get(k) not in ("ok", "parcial")]
+        nao += info["nao_lidas"]
+        if f.get("municipios_sem_fonte"):
+            nao.insert(0, dict(nome=f"{plural(f['municipios_sem_fonte'], 'município', 'municípios')} do Paraná sem nenhuma fonte lida",
+                               motivo="Não aparecem no Diário dos Municípios do PR nem em nenhuma banca que lemos. Concurso deles pode estar fora do site."))
+        if not bancas:
+            nao.insert(0, dict(nome="Sites das bancas", motivo="Ainda não são lidos pela varredura: o edital completo vem só do diário oficial."))
+        return dict(lidas=lidas, bancas=bancas, nao_lidas=nao)
 
     def canais(self):
         c = self.cfg
@@ -465,7 +508,7 @@ class Site:
             self.render(Pagina(path, template, title=f"{h1} · Concurseiro", description=DESCRICOES[path], tipo="texto",
                                trilha=[("Início", "/"), (h1, path)], h1=h1, lastmod=TEXTOS_ATUALIZADOS,
                                contexto=dict(email=self.cfg.email_contato, n_abertos=len(self.base.abertos),
-                                             versao_privacidade=d.data_br(TEXTOS_ATUALIZADOS))))
+                                             versao_privacidade=d.data_br(TEXTOS_ATUALIZADOS), fontes=self.pagina_fontes())))
         self.render(Pagina("/alertas/confirme/", "alertas-confirme.html", title="Confirme o seu e-mail · Concurseiro",
                            description="Falta confirmar o e-mail para começar a receber os alertas de concurso.", tipo="texto",
                            h1="Falta só confirmar", sitemap=False, trilha=[("Início", "/"), ("Alertas", "/alertas/"), ("Confirme", "/alertas/confirme/")]))

@@ -28,7 +28,7 @@ DATA = re.compile(r"(\d{2})/(\d{2})/(\d{4})")
 NAO_E_EDITAL = re.compile(r"retifica|errata|resultado|gabarito|deferimento|convoca|homologa|cronograma|isen[çc]|locais|ensalamento|recurso|"
                           r"classifica|aviso|comunicado|corre[çc][ãa]o|divulga[çc][ãa]o|prorroga", re.I)
 ATUALIZADO = re.compile(r"retificado|atualizado|consolidado", re.I)
-PSS = re.compile(r"processo\s+seletivo|teste\s+seletivo|\bpss\b|sele[çc][ãa]o\s+simplificada|contrata[çc][ãa]o\s+tempor", re.I)
+PSS = re.compile(r"processo\s+seletivo|teste\s+seletivo|\bpss\b|sele[çc][ãa]o\s+simplificada|contrata[çc][ãa]o\s+tempor|resid[êe]ncia\s+(multiprofissional|m[ée]dica)", re.I)
 # Órgão federal (qualquer UF) entra mesmo sem "PR"; prefeitura, câmara e estado só entram no Paraná.
 FEDERAL = re.compile(r"universidade federal|instituto federal|\bconselho (regional|federal)\b|tribunal (regional|superior)|minist[ée]rio|"
                      r"pol[ií]cia (federal|rodovi[áa]ria)|receita federal|banco (central|do brasil)|caixa econ|correios|defensoria p[úu]blica da uni|"
@@ -84,6 +84,7 @@ class Concurso:
     inscricao_fim: str = None
     prova: str = None
     documentos: list = field(default_factory=list)
+    texto: str = None   # texto da própria página do concurso, quando o PDF do edital não pode ser lido (robots.txt da banca)
 
     @property
     def edital(self):
@@ -297,6 +298,43 @@ class Consulplan:
             yield self.completar(c, decodificar(cliente.baixar(c.pagina)))
 
 
+# ---------- Consulpam Consultoria (não é o Instituto Consulplan) ----------
+
+class Consulpam:
+    slug, nome, base = "consulpam", "Consulpam Consultoria", "https://www.consulpam.com.br"
+
+    def itens_da_lista(self, pagina):
+        """Só as linhas com a bolinha verde ("Inscrições Abertas"); o nome vem como "CÂMARA MUNICIPAL DE X-PR(EDITAL 001/2026-CONCURSO PÚBLICO)"."""
+        itens = []
+        for m in re.finditer(r'images/verde\.gif.*?<a href="(index\.php\?menu=concursos&(?:amp;)?acao=ver&(?:amp;)?id=\d+)">(.*?)</a>', pagina, re.S):
+            nome = limpar(m.group(2))
+            partes = re.match(r"(.*?)-([A-Z]{2})\((.*)\)$", nome)
+            orgao, uf, descricao = partes.groups() if partes else (nome, uf_do_nome(nome), "")
+            tipo = "Concurso Público" if re.search(r"concurso p[úu]blico", descricao, re.I) else descricao
+            itens.append(Concurso(self.slug, nome, orgao, self.base + "/" + html.unescape(m.group(1)), tipo, uf,
+                                  (re.search(r"(?:edital\s*)?(\d+/\d{4})", descricao, re.I) or [None, None])[1]))
+        return itens
+
+    def completar(self, c, pagina):
+        texto = limpar(re.sub(r"<(script|style)\b.*?</\1>", " ", pagina, flags=re.S | re.I))
+        periodo = re.search(r"Inscri.{1,3}es de (\d{2}/\d{2}/\d{4}) a (\d{2}/\d{2}/\d{4})", texto)
+        if periodo:
+            c.inscricao_inicio, c.inscricao_fim = iso(periodo.group(1)), iso(periodo.group(2))
+        prova = re.search(r"Data da prova:\s*(\d{2}/\d{2}/\d{4})", texto)
+        c.prova = iso(prova.group(1)) if prova else None
+        # O robots.txt da Consulpam proíbe /arquivos/ (onde ficam os PDFs); a página traz a tabela de cargos, salários e taxas.
+        trecho = re.search(r"Dados do Concurso.*?(?=Inscri.{1,3}o de Concurso ATEN)", texto)
+        c.texto = f"{c.titulo}. " + trecho.group(0) if trecho else None
+        for m in re.finditer(r'<a href="(arquivos/[^"]+\.pdf)"[^>]*>(.*?)</a>', pagina, re.S):
+            titulo = limpar(m.group(2))
+            c.documentos.append(Documento(re.sub(r"^\d{2}/\d{2}/\d{4}\s*-\s*", "", titulo), self.base + "/" + urllib.parse.quote(html.unescape(m.group(1))), iso(titulo)))
+        return c
+
+    def listar(self, cliente):
+        for c in self.itens_da_lista(decodificar(cliente.baixar(self.base + "/index.php?menu=concursos", usar_cache=False))):
+            yield self.completar(c, decodificar(cliente.baixar(c.pagina)))
+
+
 LEITORES = [
     ProSeletaNova("fafipa", "Fundação FAFIPA", "https://www.fundacaofafipa.org.br"),
     Fau(),
@@ -304,12 +342,13 @@ LEITORES = [
     ProSeletaAntiga("omni", "Instituto Omni", "https://omniinstituto.org.br"),
     Unicampo(),
     Consulplan(),
+    Consulpam(),
 ]
 # Domínios dos editais de cada banca (o validar aceita como link de edital).
 DOMINIOS = {
     "fafipa": ("fundacaofafipa.org.br", "selecao.net.br"), "fau": ("concursosfau.com.br",), "quadrix": ("quadrix.org.br", "selecao.net.br"),
     "omni": ("omniinstituto.org.br", "selecao.net.br"), "unicampo": ("institutounicampo.com.br",),
-    "consulplan": ("institutoconsulplan.org.br",),
+    "consulplan": ("institutoconsulplan.org.br",), "consulpam": ("consulpam.com.br", "selecao.net.br"),
 }
 TODOS_OS_DOMINIOS = tuple(sorted({d for ds in DOMINIOS.values() for d in ds}))
 
@@ -336,7 +375,14 @@ class Bancas(Fonte):
                     edital = c.edital
                     if not (edital and aberto(c, ate) and dentro_da_cobertura(c)):
                         continue
-                    texto = self.cliente.texto_pdf(edital.url)
+                    try:
+                        texto = self.cliente.texto_pdf(edital.url)
+                    except PermissionError:
+                        if not c.texto:
+                            raise
+                        # Não baixamos o PDF; o ato é o texto da página da banca e o link do edital continua sendo o do PDF.
+                        texto = ("[Texto da página do concurso no site da banca: o robots.txt dela não permite ler o PDF do edital.] "
+                                 + c.texto)
                     if not texto:
                         self.avisos.append(f"{leitor.slug}: PDF sem texto em {edital.url}")
                         continue

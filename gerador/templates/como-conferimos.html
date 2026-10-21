@@ -3,14 +3,29 @@
 <p class="pt-capa">Toda ficha do Concurseiro sai de um ato oficial, com link. Antes de ir ao ar, os campos que mais importam são conferidos contra o texto desse ato.</p>
 
 <h2 class="pt-h2">1. As fontes</h2>
-<p>Só diário oficial e site oficial de banca ou de órgão público:</p>
+<p>Só diário oficial e site oficial de banca ou de órgão público. Estas são as fontes que a última varredura leu, e o que cada uma cobre:</p>
 <ul>
-  <li><strong>Diário Oficial da União (DOU)</strong>, pelos arquivos que a Imprensa Nacional publica todo dia. É onde saem os concursos federais.</li>
-  <li><strong>Diário Oficial dos Municípios do Paraná</strong>, da Associação dos Municípios do Paraná. É onde as prefeituras e câmaras do estado publicam editais.</li>
-  <li><strong>Diário Oficial do Estado do Paraná</strong>: ainda não lemos. Concurso de órgão estadual entra quando aparece numa das fontes acima.</li>
-  <li><strong>Site da banca ou do órgão</strong>, quando o diário traz só o extrato e o edital completo está lá.</li>
+  {%- for f in fontes.lidas %}
+  <li><strong><a class="pt-link" href="{{ f.url }}" rel="noopener">{{ f.nome }}</a></strong>: {{ f.cobre }}.{% if f.aviso %} <em>{{ f.aviso }}</em>{% endif %}</li>
+  {%- endfor %}
+  {%- if fontes.bancas %}
+  <li><strong>Sites das bancas organizadoras</strong>, onde está o edital completo (o diário traz só o extrato):
+    <ul>
+      {%- for b in fontes.bancas %}
+      <li><a class="pt-link" href="{{ b.url }}" rel="noopener">{{ b.nome }}</a>: {{ b.cobre }}.</li>
+      {%- endfor %}
+    </ul>
+  </li>
+  {%- endif %}
 </ul>
 <p>As fontes são lidas com calma: no máximo uma página por segundo, respeitando o que cada site permite.</p>
+
+<h3 class="pt-h3">O que ainda não lemos</h3>
+<ul>
+  {%- for n in fontes.nao_lidas %}
+  <li><strong>{{ n.nome }}.</strong> {{ n.motivo }}</li>
+  {%- endfor %}
+</ul>
 
 <h2 class="pt-h2">2. A triagem</h2>
 <p>De cada edição, separamos os atos que falam de concurso público e classificamos cada um: abertura de inscrições, retificação, autorização do concurso, contratação da banca, resultado ou outro. Só os quatro primeiros viram ficha. Processo seletivo simplificado e contratação temporária ficam de fora.</p>

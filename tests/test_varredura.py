@@ -1120,3 +1120,64 @@ def test_dioe_nao_pede_de_novo_a_materia_que_responde_400(tmp_path):
     assert list(segunda.listar_atos(date(2026, 10, 15), date(2026, 10, 15))) == []
     assert len(pedidos) == n and len(segunda.sem_leitura) == n          # o marcador evitou os pedidos
     assert segunda.sem_leitura[0]["motivo"] == "HTTP 400/404" and segunda.sem_leitura[0]["url"].startswith(dioe.URL)
+
+
+def test_cobertura_dos_municipios_conta_amp_e_bancas(tmp_path):
+    """dados/cobertura-municipios.csv: os 399 municípios, quantos atos de concurso cada um teve na AMP e a data do último."""
+    import csv
+    from varredura import dados
+    from varredura.cobertura import COLUNAS, gerar, municipio_do_orgao
+
+    tabela = {m["nome"]: m["ibge"] for m in dados.municipios().values()}
+    cap, cho, apu = tabela["Capitão Leônidas Marques"], tabela["Chopinzinho"], tabela["Apucarana"]
+
+    def ato(fonte, data, classe, ibge="", entidade="", pss=False, orgao="X"):
+        item = {"fonte": fonte, "data": data, "titulo": "t", "orgao": orgao, "url": "u", "classe": classe, "pss": pss, "fila": None}
+        if ibge:
+            item.update(municipio_ibge=ibge, entidade=entidade)
+        return item
+
+    dados.gravar_json(tmp_path / "atos.json", {
+        "publicacoes": {"AMP-PR": {cap: {"materias": 120, "ultima": "2026-10-16"}, cho: {"materias": 40, "ultima": "2026-10-01"}}},
+        "atos": [ato("AMP-PR", "2026-08-03", "abertura", cap, "prefeitura"), ato("AMP-PR", "2026-09-10", "resultado", cap, "prefeitura"),
+                 ato("AMP-PR", "2026-09-12", "retificacao", cap, "camara"), ato("AMP-PR", "2026-09-20", "outro", cap),
+                 ato("AMP-PR", "2026-07-02", "abertura", cap, pss=True), ato("AMP-PR", "2026-10-02", "resultado", cho),
+                 ato("banca-fau", "2026-10-21", "abertura", orgao="PREFEITURA MUNICIPAL DE APUCARANA - 2026"),
+                 ato("banca-fafipa", "2026-10-16", "abertura", orgao="Município de Curitiba - PR"),
+                 ato("DOU", "2026-10-01", "abertura", orgao="Ministério X")]})
+    destino, resumo = gerar(tmp_path, tmp_path / "cobertura.csv")
+    linhas = {l["ibge"]: l for l in csv.DictReader(destino.open(encoding="utf-8-sig", newline=""), delimiter=";")}
+    assert len(linhas) == 399 and list(next(iter(linhas.values()))) == COLUNAS
+    c = linhas[cap]
+    assert (c["materias_na_amp"], c["ultima_materia_na_amp"], c["atos_sobre_concurso"], c["atos_de_edital_ou_previsto"], c["pss"]) == ("120", "2026-10-16", "3", "2", "1")
+    assert (c["da_prefeitura"], c["da_camara"], c["ultimo_ato_sobre_concurso"], c["fonte"]) == ("2", "1", "2026-09-12", "AMP")
+    assert linhas[cho]["entidade_nao_dita"] == "1" and linhas[cho]["atos_de_edital_ou_previsto"] == "0"
+    assert (linhas[apu]["fonte"], linhas[apu]["bancas"], linhas[apu]["materias_na_amp"]) == ("banca", "fau", "0")
+    assert linhas[tabela["Curitiba"]]["bancas"] == "fafipa" and linhas[tabela["Maringá"]]["fonte"] == "nenhuma"
+    assert municipio_do_orgao("PREFEITURA MUNICIPAL DE APUCARANA - 2026") == apu and municipio_do_orgao("Ministério X") is None
+    assert "399 municípios · 2 publicaram na AMP" in resumo
+
+
+def test_revisao_lista_para_ler_a_mao_so_o_que_fala_de_concurso():
+    from varredura.revisao import ler_a_mao
+
+    def m(titulo, motivo="HTTP 400/404"):
+        return {"data": "2026-07-07", "titulo": titulo, "orgao": "SEAP", "url": "https://www.dioe.pr.gov.br/x", "motivo": motivo}
+    registro = {"sem_leitura": {"DIOE-PR": [m("EDITAL DE ABERTURA Nº 12/2026 CONCURSO PÚBLICO"), m("Licença ambiental"), m("Abertura de inscrições", "PDF escaneado, sem texto")]}}
+    assert [x["titulo"] for x in ler_a_mao(registro)] == ["EDITAL DE ABERTURA Nº 12/2026 CONCURSO PÚBLICO", "Abertura de inscrições"]
+    assert ler_a_mao({"atos": []}) == []
+
+
+def test_fontes_da_semana_resume_o_que_a_coleta_leu(tmp_path):
+    from varredura import dados
+    from varredura.publicar import fontes_da_semana
+
+    dados.gravar_json(tmp_path / "atos.json", {
+        "fontes": {"DOU": "ok, mas parcial: 12 dia(s) útil(eis) fora do cache sem acesso ao INLABS (2026-06-22 a 2026-06-30): login recusado (403)",
+                   "AMP-PR": "ok", "DIOE-PR": "falhou depois de 3 atos: HTTP Error 500", "BANCAS": "ok"},
+        "bancas_lidas": {"fau": 6, "fafipa": 4, "omni": 0}, "atos": []})
+    f = fontes_da_semana(tmp_path)
+    assert (f["dou"], f["amp"], f["dioe"], f["dou_dias_sem_acesso"]) == ("parcial", "ok", "falhou", 12)
+    assert f["bancas"] == ["fafipa", "fau", "omni"]            # omni foi lida, mesmo sem concurso aberto
+    sem_coleta = fontes_da_semana(tmp_path / "nao-existe")
+    assert (sem_coleta["dou"], sem_coleta["bancas"]) == ("nao_lida", [])

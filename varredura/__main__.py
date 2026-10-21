@@ -8,6 +8,8 @@
   revisao                                revisao.md e revisao.csv na pasta da semana
   publicar --por "Nome"                  publica só o que foi conferido; resumos do Telegram e do WhatsApp e posts
   telegram [--teste]                     posta o resumo da semana no canal do Telegram (--teste só imprime)
+  previstos                              reconfere no site da banca cada concurso previsto com banca conhecida
+  cobertura                              refaz dados/cobertura-municipios.csv (quanto a AMP traz de cada município do PR)
   municipios                             refaz dados/municipios-pr.json
 
 O site sai de dados/concursos.json com `python -m gerador build`.
@@ -64,11 +66,31 @@ def main(argv=None):
     tel.add_argument("--se-configurado", action="store_true", help="sem as variáveis, avisa e sai sem erro (para o CI)")
 
     sub.add_parser("municipios", help="refaz dados/municipios-pr.json (IBGE + coordenadas)")
+    sub.add_parser("previstos", help="reconfere os previstos no site da banca: quem já tem edital vira aberto")
+    cob = sub.add_parser("cobertura", help="refaz dados/cobertura-municipios.csv a partir do atos.json da semana")
+    cob.add_argument("--pasta", type=Path)
 
     args = p.parse_args(argv)
 
     if args.comando == "municipios":
         municipios.gerar()
+        return 0
+
+    if args.comando == "previstos":
+        from .fontes.base import Cliente
+        from .previstos import previstos as lista, verificar
+        base = dados.ler_json(dados.CONCURSOS)
+        achados = verificar(base, Cliente())
+        for c, b in achados:
+            print(f"{c['id']}: a banca já abriu. Edital: {b.edital.titulo} ({b.edital.url}); inscrições até {b.inscricao_fim or 'ver edital'}. "
+                  f"Extraia o edital com o MESMO id (ele já está na fila como banca-{b.banca}).")
+        print(f"{len(achados)} de {len(lista(base, date.today()))} previsto(s) com banca conhecida já têm edital na banca.")
+        return 0
+
+    if args.comando == "cobertura":
+        from .cobertura import gerar
+        arquivo, resumo = gerar(args.pasta or dados.ultima_pasta())
+        print(f"{arquivo}: {resumo}")
         return 0
 
     if args.comando == "coletar":

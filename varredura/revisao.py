@@ -9,6 +9,7 @@ coluna "conferido":
 Rodar de novo mantém as marcas da pessoa nas linhas que não mudaram e refaz as automáticas.
 """
 import csv
+import re
 from datetime import date
 from pathlib import Path
 
@@ -87,6 +88,14 @@ def ler_marcas(pasta):
 
 def _celula(texto):
     return str(texto or "").replace("|", "\\|").replace("\n", " ").strip()
+
+
+TITULO_DE_CONCURSO = re.compile(r"concurs|abertura", re.I)
+
+
+def ler_a_mao(registro):
+    """Matérias que nenhuma fonte conseguiu ler (DIOE-PR: HTTP 400/404 e PDF escaneado) e cujo título fala de concurso ou abertura."""
+    return [m for lista in registro.get("sem_leitura", {}).values() for m in lista if TITULO_DE_CONCURSO.search(m["titulo"])]
 
 
 def gerar(pasta, data_varredura=None):
@@ -188,6 +197,12 @@ def gerar(pasta, data_varredura=None):
         md.append("## Em avaliação: processos seletivos simplificados (não publicados)\n")
         md += [f"- {_celula(a['orgao'])} · [{_celula(a['titulo'])}]({a['url']}) · {a['data']}" for a in pss]
         md.append("")
+    a_mao = ler_a_mao(registro)
+    if a_mao:
+        md.append("## Ler à mão: matérias com título de concurso que a varredura não conseguiu ler\n")
+        md.append("O diário não entregou o texto (HTTP 400/404 ou PDF escaneado). Abra o link e veja se é abertura de concurso.\n")
+        md += [f"- {a['data']} · {_celula(a['orgao'])} · [{_celula(a['titulo'])}]({a['url']}) · {a['motivo']}" for a in a_mao]
+        md.append("")
     faltam = pendentes(pasta) if (pasta / "fila").exists() else []
     if faltam:
         md.append("## Fila sem ficha nem descarte (extração pendente)\n")
@@ -210,6 +225,9 @@ def gerar(pasta, data_varredura=None):
         escritor.writeheader()
         escritor.writerows(linhas_csv)
     escrever_cobertura(pasta, base, [f["concurso"] for f in fichas if f.get("concurso")], data_varredura)
+    if (pasta / "atos.json").exists():
+        from .cobertura import gerar as cobertura_dos_municipios
+        cobertura_dos_municipios(pasta)   # dados/cobertura-municipios.csv
     return r, problemas
 
 

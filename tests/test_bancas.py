@@ -40,6 +40,8 @@ def test_fau_so_os_concursos_em_aberto_e_o_edital_de_abertura():
     assert (c.inscricao_inicio, c.inscricao_fim, c.prova, c.uf) == ("2026-10-21", "2026-11-09", "2026-12-06", "PR")
     assert c.edital.titulo == "EDITAL DE ABERTURA" and c.edital.url.endswith("EDITAL_CONCURSO_PUBLICO_APUCARANA-ok.pdf")
     assert B.dentro_da_cobertura(c)
+    residencia = [(n, u) for n, u, _ in itens if n.startswith("RESIDÊNCIA")]
+    assert residencia and not B.dentro_da_cobertura(fau.concurso(ler("fau-concurso-apucarana.html"), residencia[0][1], residencia[0][0]))
 
 
 def test_quadrix_e_omni_mesma_plataforma_cobertura_federal_e_parana():
@@ -147,3 +149,59 @@ def test_banca_que_falha_nao_derruba_as_outras():
     fonte = B.Bancas(object(), [Quebrada(), Boa()])
     assert list(fonte.listar_atos(HOJE, HOJE)) == []
     assert "quebrada: <urlopen error fora do ar>" in fonte.aviso and fonte.por_banca == {"quebrada": 0, "boa": 0}
+
+
+def test_consulpam_so_as_abertas_e_o_edital_com_nome_acentuado():
+    consulpam = leitor("consulpam")
+    itens = consulpam.itens_da_lista(ler("consulpam-concursos.html"))
+    assert [i.orgao for i in itens if B.dentro_da_cobertura(i)] == ["CÂMARA MUNICIPAL DE QUATRO BARRAS"]     # as outras são PSS ou de outra UF
+    quatro = next(i for i in itens if "QUATRO BARRAS" in i.orgao)
+    assert (quatro.uf, quatro.tipo, quatro.numero) == ("PR", "Concurso Público", "001/2026")
+    consulpam.completar(quatro, ler("consulpam-quatro-barras.html").replace("Inscrição de Concurso", "<script>function validaDat(campo){}</script>Inscrição de Concurso", 1))
+    assert (quatro.inscricao_inicio, quatro.inscricao_fim) == ("2026-10-09", "2026-11-03")
+    assert quatro.edital.titulo == "EDITAL 001/2026" and quatro.edital.data == "2026-10-09"
+    assert "%20" in quatro.edital.url and "C%C3%82MARA" in quatro.edital.url          # nome do arquivo com espaço e acento, pedível
+    # o PDF fica em /arquivos/, que o robots.txt da Consulpam proíbe: a página traz cargos, salários e taxas
+    assert "ADVOGADO" in quatro.texto and "R$ 5403,69" in quatro.texto and "Dados do Concurso" in quatro.texto and "ATENÇÃO" not in quatro.texto and "validaDat" not in quatro.texto
+
+
+def test_consulpam_com_robots_proibindo_o_pdf_o_ato_e_o_texto_da_pagina():
+    class Cliente:
+        def baixar(self, url, **_):
+            return (ler("consulpam-quatro-barras.html") if "acao=ver" in url else ler("consulpam-concursos.html")).encode("utf-8")
+
+        def texto_pdf(self, url):
+            raise PermissionError(f"robots.txt não permite: {url}")
+
+    fonte = B.Bancas(Cliente(), leitores=[leitor("consulpam")])
+    atos = list(fonte.listar_atos(HOJE, HOJE))
+    assert len(atos) == 1 and fonte.por_banca == {"consulpam": 1} and fonte.aviso is None
+    ato = atos[0]
+    assert ato.fonte == "banca-consulpam" and ato.url.endswith("C%C3%82MARA.pdf")               # o link continua sendo o do PDF
+    assert "robots.txt" in ato.texto and "SECRETÁRIO DA MESA DIRETIVA" in ato.texto and "R$ 5190,74" in ato.texto
+
+
+def test_instituto_consulpam_nao_e_o_consulplan():
+    from varredura.previstos import slug_da_banca
+    assert slug_da_banca("Instituto Consulpam") == "consulpam" and slug_da_banca("Instituto Consulplan") == "consulplan"
+    assert slug_da_banca("Fundação de Apoio ao Campus de Paranavaí (FAFIPA)") == "fafipa" == slug_da_banca("Fundação FAFIPA")
+    assert slug_da_banca("Instituto Quadrix") == "quadrix" and slug_da_banca("Banca desconhecida") is None and slug_da_banca(None) is None
+
+
+def test_previsto_com_banca_conhecida_vira_aberto_quando_a_banca_publica_o_edital():
+    """Caso real de 21/10/2026: a Câmara de Quatro Barras estava "prevista" (contratação da Consulpam) e a banca já tinha o edital
+    com inscrições de 09/10 a 03/11."""
+    from varredura import dados
+    from varredura.previstos import verificar
+
+    base = dados.ler_json(dados.CONCURSOS)
+    previsto = next(c for c in base["concursos"] if c["id"] == "camara-quatro-barras-pr-2026")
+    assert dados.situacao(previsto, HOJE) == "previsto" and previsto["banca"]["nome"] == "Instituto Consulpam"
+
+    class Cliente:
+        def baixar(self, url, **_):
+            return (ler("consulpam-quatro-barras.html") if "acao=ver" in url else ler("consulpam-concursos.html")).encode("utf-8")
+
+    achados = verificar(base, Cliente(), HOJE, leitores=[leitor("consulpam")])
+    assert [(c["id"], b.edital.titulo, b.inscricao_fim) for c, b in achados] == [("camara-quatro-barras-pr-2026", "EDITAL 001/2026", "2026-11-03")]
+    assert verificar(base, Cliente(), date(2026, 11, 4), leitores=[leitor("consulpam")]) == []      # depois do prazo não é mais aberto

@@ -21,30 +21,114 @@
     "nacional": false,
     "abrangencia": null,
     "area": "Administrativa",
-    "banca": {"nome": "Fundação de Apoio ao Desenvolvimento da UNICENTRO (FAU)", "url": "https://www.concursosfau.com.br"},
-    "inscricao": {"inicio": "2026-09-30", "fim": "2026-10-29", "url": "https://www.concursosfau.com.br"},
+    "banca": {
+      "nome": "Fundação de Apoio ao Desenvolvimento da UNICENTRO (FAU)",
+      "url": "https://www.concursosfau.com.br"
+    },
+    "inscricao": {
+      "inicio": "2026-09-30",
+      "fim": "2026-10-29",
+      "url": "https://www.concursosfau.com.br"
+    },
     "isencao_ate": "2026-10-02",
     "prova_objetiva": "2026-11-15",
     "local_prova": "Nova Prata do Iguaçu (PR), podendo ser também em cidades vizinhas se o número de inscritos exceder a capacidade do município",
-    "taxa": {"min": 130.0, "max": 180.0},
+    "taxa": {
+      "min": 130.0,
+      "max": 180.0
+    },
     "isencao_regras": "Isenção para inscritos no CadÚnico, doadores de sangue ou de medula óssea e eleitores convocados, nos termos do edital; pedido em 01 e 02/10/2026",
     "regime": "Estatutário",
     "beneficios": [],
     "o_que_levar": "Caneta esferográfica transparente de tinta azul ou preta, documento oficial de identificação com foto e o Cartão de Informação do Candidato impresso",
     "cargos": [
-      {"nome": "Advogado", "vagas": 0, "cadastro_reserva": true, "salario": 5543.88, "escolaridade": "Superior", "requisitos": "Nível superior completo; requisitos no Anexo I do edital", "jornada_horas": 20, "materias": []},
-      {"nome": "Contador", "vagas": 0, "cadastro_reserva": true, "salario": 5543.88, "escolaridade": "Superior", "requisitos": "Nível superior completo; requisitos no Anexo I do edital", "jornada_horas": 20, "materias": []},
-      {"nome": "Tesoureiro", "vagas": 0, "cadastro_reserva": true, "salario": 5543.88, "escolaridade": "Superior", "requisitos": "Nível superior completo; requisitos no Anexo I do edital", "jornada_horas": 20, "materias": []},
-      {"nome": "Agente Administrativo", "vagas": 1, "cadastro_reserva": false, "salario": 2689.59, "escolaridade": null, "requisitos": "Nível médio/técnico; requisitos no Anexo I do edital", "jornada_horas": 40, "materias": []},
-      {"nome": "Auxiliar de Serviços Gerais", "vagas": 1, "cadastro_reserva": false, "salario": 1837.03, "escolaridade": null, "requisitos": "Nível médio/técnico; requisitos no Anexo I do edital", "jornada_horas": 40, "materias": []},
-      {"nome": "Técnico em Informática", "vagas": 1, "cadastro_reserva": false, "salario": 4331.62, "escolaridade": null, "requisitos": "Nível médio/técnico; requisitos no Anexo I do edital", "jornada_horas": 30, "materias": []},
-      {"nome": "Técnico de Relações Públicas", "vagas": 0, "cadastro_reserva": true, "salario": 6341.92, "escolaridade": null, "requisitos": "Nível médio/técnico; requisitos no Anexo I do edital", "jornada_horas": 30, "materias": []}
+      {
+        "nome": "Advogado",
+        "vagas": 0,
+        "cadastro_reserva": true,
+        "salario": 5543.88,
+        "escolaridade": "Superior",
+        "requisitos": "Nível superior completo; requisitos no Anexo I do edital",
+        "jornada_horas": 20,
+        "materias": []
+      },
+      {
+        "nome": "Contador",
+        "vagas": 0,
+        "cadastro_reserva": true,
+        "salario": 5543.88,
+        "escolaridade": "Superior",
+        "requisitos": "Nível superior completo; requisitos no Anexo I do edital",
+        "jornada_horas": 20,
+        "materias": []
+      },
+      {
+        "nome": "Tesoureiro",
+        "vagas": 0,
+        "cadastro_reserva": true,
+        "salario": 5543.88,
+        "escolaridade": "Superior",
+        "requisitos": "Nível superior completo; requisitos no Anexo I do edital",
+        "jornada_horas": 20,
+        "materias": []
+      },
+      {
+        "nome": "Agente Administrativo",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 2689.59,
+        "escolaridade": null,
+        "requisitos": "Nível médio/técnico; requisitos no Anexo I do edital",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Auxiliar de Serviços Gerais",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 1837.03,
+        "escolaridade": null,
+        "requisitos": "Nível médio/técnico; requisitos no Anexo I do edital",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Técnico em Informática",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 4331.62,
+        "escolaridade": null,
+        "requisitos": "Nível médio/técnico; requisitos no Anexo I do edital",
+        "jornada_horas": 30,
+        "materias": []
+      },
+      {
+        "nome": "Técnico de Relações Públicas",
+        "vagas": 0,
+        "cadastro_reserva": true,
+        "salario": 6341.92,
+        "escolaridade": null,
+        "requisitos": "Nível médio/técnico; requisitos no Anexo I do edital",
+        "jornada_horas": 30,
+        "materias": []
+      }
     ],
     "documentos": [
-      {"tipo": "edital", "titulo": "Edital de Abertura nº 01/2026 – Concurso Público nº 01/2026", "numero": "01/2026", "url": "https://www.diariomunicipal.com.br/amp/materia/7024F0DC", "publicado_em": "2026-09-23", "fonte": "AMP-PR", "resumo": null}
+      {
+        "tipo": "edital",
+        "titulo": "Edital de Abertura nº 01/2026 – Concurso Público nº 01/2026",
+        "numero": "01/2026",
+        "url": "https://www.diariomunicipal.com.br/amp/materia/7024F0DC",
+        "publicado_em": "2026-09-23",
+        "fonte": "AMP-PR",
+        "resumo": null
+      }
     ],
     "conferencia": null,
     "primeira_varredura": null,
     "ultima_alteracao": null
-  }
+  },
+  "atos_extras": [
+    "banca-fau-2026-10-19-camara-municipal-de-nova-prata-do-iguacu-8e2c88e0.md"
+  ]
 }

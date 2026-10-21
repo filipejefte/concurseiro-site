@@ -17,7 +17,7 @@ def coletar(desde, ate, inicial=False):
         # então fichas e descartes já feitos continuam ligados aos seus atos.
         print(f"Refazendo a coleta de {ate} (fichas e descartes já feitos ficam).", flush=True)
     cliente = Cliente()
-    estado_fontes, registro, para_fila, publicacoes, sem_leitura = {}, [], [], {}, {}
+    estado_fontes, registro, para_fila, publicacoes, sem_leitura, bancas_lidas = {}, [], [], {}, {}, {}
     for Classe in FONTES:
         fonte = Classe(cliente)
         lidos = 0
@@ -47,13 +47,16 @@ def coletar(desde, ate, inicial=False):
             publicacoes[fonte.nome] = fonte.publicacoes
         if getattr(fonte, "sem_leitura", None):
             sem_leitura[fonte.nome] = fonte.sem_leitura
+        if getattr(fonte, "por_banca", None) is not None:
+            bancas_lidas.update(fonte.por_banca)   # {slug: concursos abertos dentro da cobertura}
         print(f"{fonte.nome}: {estado_fontes[fonte.nome]} ({lidos} atos lidos)", flush=True)
 
     for nome, (_, _, _, item) in zip(escrever_fila(pasta, [(a, c, p) for a, c, p, _ in para_fila]), para_fila):
         item["fila"] = nome
     gravar_json(pasta / "atos.json", {
         "desde": desde.isoformat(), "ate": ate.isoformat(), "inicial": inicial,
-        "fontes": estado_fontes, "publicacoes": publicacoes, "sem_leitura": sem_leitura, "atos": registro,
+        "fontes": estado_fontes, "publicacoes": publicacoes, "sem_leitura": sem_leitura,
+        "bancas_lidas": bancas_lidas, "atos": registro,
     })
     print(f"{len(registro)} atos sobre concurso; {len(para_fila)} na fila de extração; "
           f"{sum(1 for a in registro if a['pss'])} PSS em avaliação. Pasta: {pasta}")

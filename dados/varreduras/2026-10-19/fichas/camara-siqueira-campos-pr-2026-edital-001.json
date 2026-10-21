@@ -1,0 +1,104 @@
+{
+  "ato": "banca-fau-2026-10-19-camara-municipal-de-siqueira-campos-5ed4427e.md",
+  "atos_extras": [
+    "banca-fau-2026-10-19-camara-municipal-de-siqueira-campos-5ed4427e-extra-1.md",
+    "banca-fau-2026-10-19-camara-municipal-de-siqueira-campos-5ed4427e-extra-2.md",
+    "banca-fau-2026-10-19-camara-municipal-de-siqueira-campos-5ed4427e-extra-3.md",
+    "banca-fau-2026-10-19-camara-municipal-de-siqueira-campos-5ed4427e-extra-4.md"
+  ],
+  "trechos": {
+    "salario": "LEIA-SE: 3. DOS CARGOS TABELA 3.1 NÍVEL SUPERIOR COMPLETO (1) Código do Cargo Cargo Carga Horária Semanal Vagas Ampla Concorrência Vagas PcD(3) Vagas Afro Remuneração Inicial Bruta (R$) Taxa de Inscrição (R$) PERÍODO 101 Procurador Jurídico 20h 01 + CR (2) - - R$ 5.779,15 R$ 150.00 Matutino Este Edital entra em vigor na data de sua publicação. Siqueira Campos, 24 de setembro de 2026. Registre-se e Publique-se. MAURO",
+    "inscricao.inicio": "5.3 O período para a realização das inscrições será a partir das 12h00min do dia 28 de setembro de 2026 às 23h59min do dia 27 de outubro de 2026 , observado horário oficial de Brasília/DF , através do endereço eletrônico www.concursosfau.com.br. 5.4 Para efetuar sua inscrição, o candidato",
+    "inscricao.fim": "5.3 O período para a realização das inscrições será a partir das 12h00min do dia 28 de setembro de 2026 às 23h59min do dia 27 de outubro de 2026 , observado horário oficial de Brasília/DF , através do endereço eletrônico www.concursosfau.com.br. 5.4 Para efetuar sua inscrição, o candidato",
+    "prova_objetiva": "10.2 A prova objetiva será aplicada na data provável de 29 de novembro de 2026 , em horário e local a ser informado através de edital disponibilizado",
+    "taxa": "TABELA 3.1 NÍVEL SUPERIOR COMPLETO (1) Código do Cargo Cargo Carga Horária Semanal Vagas Ampla Concorrência Vagas PcD(3) Vagas Afro Remuneração Inicial Bruta (R$) Taxa de Inscrição (R$) 101 Procurador Jurídico 20h 01 + CR (2) - - R$ 5.654,04 R$ 150.00 (1) Ver as atribuições e os requisitos dos cargos no Anexo I deste Edital. CÂMARA MUNICIPAL DE SIQUEIRA CAMPOS ESTADO DO PARANÁ",
+    "banca": "2.1 O Concurso Público a que se refere o presente Edital será executado pela Fundação de Apoio ao Desenvolvimento da UNICENTRO, com sede na Rua Salvatore Renna - Padre Salvador, 875, Complemento: Bloc",
+    "cidade": "10.1 A prova objetiva será aplicada na Cidade de Siqueira Campos/Paraná, podendo ser aplicada também em cidades vizinhas, caso o número de inscritos exceda a capacidade d",
+    "edital": "EDITAL DE ABERTURA Nº 001/2026 CONCURSO PÚBLICO Nº 01/2026 O Presidente da Câmara Municipal do Município de Siqueira Cam"
+  },
+  "concurso": {
+    "id": "camara-siqueira-campos-pr-2026-edital-001",
+    "ficticio": false,
+    "orgao": "Câmara Municipal de Siqueira Campos (PR)",
+    "esfera": "municipal",
+    "uf": "PR",
+    "municipio_ibge": "4126603",
+    "cidade": "Siqueira Campos",
+    "nacional": false,
+    "abrangencia": null,
+    "area": "Jurídica",
+    "banca": {
+      "nome": "Fundação de Apoio ao Desenvolvimento da UNICENTRO (FAU)",
+      "url": "https://www.concursosfau.com.br"
+    },
+    "inscricao": {
+      "inicio": "2026-09-28",
+      "fim": "2026-10-27",
+      "url": "https://www.concursosfau.com.br"
+    },
+    "isencao_ate": "2026-09-29",
+    "prova_objetiva": "2026-11-29",
+    "local_prova": "Siqueira Campos (PR), no período da manhã, podendo ser também em cidades vizinhas se o número de inscritos exceder a capacidade do município; data provável (horário e local no Cartão de Informação do Candidato, a partir de 25/11/2026)",
+    "taxa": {
+      "min": 150.0,
+      "max": 150.0
+    },
+    "isencao_regras": "Isenção para membros de família de baixa renda (CadÚnico), doadores de sangue, doadores de medula óssea (REDOME) e eleitor convocado e nomeado pela Justiça Eleitoral em ao menos duas eleições (Resolução Municipal 002/2024); pedido em 28 e 29/09/2026 pela área do candidato",
+    "regime": "Estatutário",
+    "beneficios": [],
+    "o_que_levar": "Caneta esferográfica transparente de tinta azul ou preta, documento oficial de identificação com foto e o Cartão de Informação do Candidato impresso",
+    "cargos": [
+      {
+        "nome": "Procurador Jurídico",
+        "vagas": 1,
+        "cadastro_reserva": true,
+        "salario": 5779.15,
+        "escolaridade": "Superior",
+        "requisitos": "Curso superior em Direito e inscrição na Ordem dos Advogados do Brasil (OAB). Código 101; remuneração de R$ 5.779,15 pela retificação (o edital original trazia R$ 5.654,04).",
+        "jornada_horas": 20.0,
+        "materias": []
+      }
+    ],
+    "documentos": [
+      {
+        "tipo": "edital",
+        "titulo": "Edital de Abertura nº 001/2026 – Concurso Público nº 01/2026",
+        "numero": "001/2026",
+        "url": "https://www.concursosfau.com.br//sistema/uploads/EDITAL_CONCURSO_PUBLICO_CAMARA_MUNICIPAL_SIQUEIRA_CAMPOS_2.pdf",
+        "publicado_em": "2026-09-21",
+        "fonte": "banca",
+        "resumo": null
+      },
+      {
+        "tipo": "retificacao",
+        "titulo": "Retificação – valor da remuneração, tabela de provas e isenção para eleitor convocado",
+        "numero": "001/2026 (ret.)",
+        "url": "https://www.concursosfau.com.br//sistema/uploads/RETIFICACAO_EDITAL_ABERTURA_4.pdf",
+        "publicado_em": "2026-09-23",
+        "fonte": "banca",
+        "resumo": null
+      },
+      {
+        "tipo": "retificacao",
+        "titulo": "Retificação do Anexo II – conteúdo programático",
+        "numero": "001/2026 (ret.)",
+        "url": "https://www.concursosfau.com.br//sistema/uploads/RETIFICACAO_ANEXO_II_-_CONTEUDO_PROGRAMATICO_2.pdf",
+        "publicado_em": "2026-09-23",
+        "fonte": "banca",
+        "resumo": null
+      },
+      {
+        "tipo": "retificacao",
+        "titulo": "Retificação – período da prova e remuneração",
+        "numero": "001/2026 (ret.)",
+        "url": "https://www.concursosfau.com.br//sistema/uploads/RETIFICACAO_EDITAL_PERIODO_PROVA.pdf",
+        "publicado_em": "2026-09-24",
+        "fonte": "banca",
+        "resumo": null
+      }
+    ],
+    "conferencia": null,
+    "primeira_varredura": null,
+    "ultima_alteracao": null
+  }
+}

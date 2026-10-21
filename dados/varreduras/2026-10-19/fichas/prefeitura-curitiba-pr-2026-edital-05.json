@@ -1,0 +1,161 @@
+{
+  "ato": "banca-fafipa-2026-10-15-municipio-de-curitiba-pr-3509073c.md",
+  "atos_extras": [],
+  "trechos": {
+    "salario": "Analista Administrativo Ensino superior completo Conforme subitem 18.9.1 40h 03 + CR 01 + CR 01 + CR R$ 5.306,21 + 30% Gratificação Técnica Analista de Finanças Ensino superior completo Conforme subitem 18.9.2 40h 03 + CR 01 + CR 01 + CR R$ 10.839,69 + 30% Gratificação Técnica Assistente Social Ensi",
+    "inscricao.inicio": "O período para a realização das inscrições iniciará às 08h do dia 7 de outubro de 2026 até às 23h59min do dia 5 de novembro de 2026 , observado o horário oficial de Brasília – DF, por meio do endereço eletrônico www.fundacaofafipa.org.br. 5",
+    "inscricao.fim": "O período para a realização das inscrições iniciará às 08h do dia 7 de outubro de 2026 até às 23h59min do dia 5 de novembro de 2026 , observado o horário oficial de Brasília – DF, por meio do endereço eletrônico www.fundacaofafipa.org.br. 5",
+    "prova_objetiva": "Aplicação da prova objetiva 06/12/2026 Divulgação do gabarit",
+    "taxa": "TABELA 3.1.11 CARGOS DE NÍVEL SUPERIOR VALOR DA TAXA DE INSCRIÇÃO R$ 150,00 QUADRO DE VAGAS CARGO REQUISITOS DO CARGO CH AC PcD (5",
+    "banca": "O Concurso Público a que se refere o presente Edital será executado pela Fundação FAFIPA – Campus de Paranavaí, CNPJ: 05.566.804/0001 -76, com sede administrativa na Av. Paraná, 794 A - Esquina com Ru",
+    "cidade": "BJETIVA 11.1 A prova objetiva será aplicada no Município de Curitiba, Estado do Paraná. Caso o número de candidatos inscritos exceda a oferta de lugares existentes no Mun",
+    "edital": "EDITAL NORMATIVO Nº 5 Torna público o Edital Normativo do Concurso Público para provimento de vagas nos cargos de Analista Administrativo, Analista de Finanças, Assistente Social, Auditor Fiscal de Tributos Municipais, Contador e Engenheiro"
+  },
+  "concurso": {
+    "id": "prefeitura-curitiba-pr-2026-edital-05",
+    "ficticio": false,
+    "orgao": "Prefeitura de Curitiba (PR)",
+    "esfera": "municipal",
+    "uf": "PR",
+    "municipio_ibge": "4106902",
+    "cidade": "Curitiba",
+    "nacional": false,
+    "abrangencia": null,
+    "area": "Administrativa",
+    "banca": {
+      "nome": "Fundação FAFIPA",
+      "url": "https://www.fundacaofafipa.org.br"
+    },
+    "inscricao": {
+      "inicio": "2026-10-07",
+      "fim": "2026-11-05",
+      "url": "https://www.fundacaofafipa.org.br/concurso/4214-concurso-publico-do-municipio-de-curitiba-pr-superior"
+    },
+    "isencao_ate": "2026-10-13",
+    "prova_objetiva": "2026-12-06",
+    "local_prova": "Curitiba (PR); data provável, com horário e local divulgados em 26/11/2026 no Cartão de Convocação do Candidato",
+    "taxa": {
+      "min": 150.0,
+      "max": 150.0
+    },
+    "isencao_regras": "Isenção para quem está no CadÚnico (Lei Complementar Municipal 113/2019: NIS válido, cadastro atualizado nos últimos 24 meses e renda familiar de até meio salário mínimo por pessoa) e para doador de sangue (Lei Municipal 9.818/2000); pedido de 07 a 13/10/2026 pelo site da banca",
+    "regime": "Estatutário",
+    "beneficios": [
+      {
+        "nome": "Auxílio-transporte",
+        "valor": null
+      },
+      {
+        "nome": "Auxílio-alimentação",
+        "valor": null
+      },
+      {
+        "nome": "Plano de saúde do Instituto Curitiba de Saúde (ICS), com coparticipação",
+        "valor": null
+      },
+      {
+        "nome": "Previdência complementar",
+        "valor": null
+      },
+      {
+        "nome": "Seguro de vida em grupo",
+        "valor": null
+      }
+    ],
+    "o_que_levar": "Caneta esferográfica transparente, preferencialmente de tinta preta, documento oficial de identificação com foto e o Cartão de Convocação do Candidato; chegar com 40 minutos de antecedência do fechamento dos portões",
+    "cargos": [
+      {
+        "nome": "Analista Administrativo",
+        "vagas": 5,
+        "cadastro_reserva": true,
+        "salario": 5306.21,
+        "escolaridade": "Superior",
+        "requisitos": "Ensino superior completo: Bacharelado em Administração, Administração Pública, Análise de Sistemas, Ciências da Logística, Ciências Gerenciais, Direito, Gestão de Empresas e Negócios, Gestão de Políticas Públicas, Gestão Pública, Logística, Políticas Públicas ou Sistemas de Informação; ou tecnólogo em Análise e Desenvolvimento de Sistemas, Gestão da Qualidade, Gestão da Tecnologia da Informação, Gestão de Recursos Humanos, Gestão Pública, Logística ou Processos Gerenciais. 5 vagas imediatas (3 de ampla concorrência, 1 para pessoa com deficiência e 1 para pessoas negras e povos indígenas), mais cadastro de reserva. Gratificação Técnica de 30% sobre o vencimento, não somada ao valor ao lado (o edital não informa o total).",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Analista de Finanças",
+        "vagas": 5,
+        "cadastro_reserva": true,
+        "salario": 10839.69,
+        "escolaridade": "Superior",
+        "requisitos": "Ensino superior completo: Bacharelado em Administração, Administração Pública, Ciências Contábeis ou Ciências Econômicas; ou tecnólogo em Gestão Financeira, Gestão Pública ou Gestão Tributária. 5 vagas imediatas (3 de ampla concorrência, 1 para pessoa com deficiência e 1 para pessoas negras e povos indígenas), mais cadastro de reserva. Gratificação Técnica de 30% sobre o vencimento, não somada ao valor ao lado (o edital não informa o total).",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Assistente Social",
+        "vagas": 3,
+        "cadastro_reserva": true,
+        "salario": 4333.71,
+        "escolaridade": "Superior",
+        "requisitos": "Ensino superior completo: Bacharelado em Serviço Social. 3 vagas imediatas de ampla concorrência, mais cadastro de reserva para pessoa com deficiência e para pessoas negras e povos indígenas. Gratificação Técnica de 30% sobre o vencimento, não somada ao valor ao lado (o edital não informa o total).",
+        "jornada_horas": 30,
+        "materias": []
+      },
+      {
+        "nome": "Auditor Fiscal de Tributos Municipais",
+        "vagas": 10,
+        "cadastro_reserva": false,
+        "salario": 14117.18,
+        "escolaridade": "Superior",
+        "requisitos": "Ensino superior completo: Bacharelado em Administração, Administração Pública, Análise de Sistemas, Arquitetura e Urbanismo, Ciência da Computação, Ciência de Dados, Ciências Contábeis, Ciências Econômicas, Computação, Direito, Engenharia Civil, Engenharia da Computação, Engenharia de Software, Gestão de Políticas Públicas, Gestão Pública, Inteligência Artificial, Sistemas de Informação ou Tecnologia da Informação. 10 vagas imediatas (8 de ampla concorrência, 1 para pessoa com deficiência e 1 para pessoas negras e povos indígenas). Gratificação Técnica de 30% sobre o vencimento, não somada ao valor ao lado (o edital não informa o total).",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Contador",
+        "vagas": 10,
+        "cadastro_reserva": true,
+        "salario": 10839.69,
+        "escolaridade": "Superior",
+        "requisitos": "Ensino superior completo: Graduação em Ciências Contábeis. 10 vagas imediatas (8 de ampla concorrência, 1 para pessoa com deficiência e 1 para pessoas negras e povos indígenas), mais cadastro de reserva. Gratificação Técnica de 30% sobre o vencimento, não somada ao valor ao lado (o edital não informa o total).",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Engenheiro Civil",
+        "vagas": 30,
+        "cadastro_reserva": true,
+        "salario": 8838.96,
+        "escolaridade": "Superior",
+        "requisitos": "Ensino superior completo: Graduação em Engenharia Civil (ou Engenharia de Produção Civil). 30 vagas imediatas (24 de ampla concorrência, 2 para pessoa com deficiência e 4 para pessoas negras e povos indígenas), mais cadastro de reserva. Gratificação Técnica de 30% sobre o vencimento, não somada ao valor ao lado (o edital não informa o total).",
+        "jornada_horas": 40,
+        "materias": []
+      }
+    ],
+    "documentos": [
+      {
+        "tipo": "edital",
+        "titulo": "Edital Normativo nº 5/2026 – versão original",
+        "numero": "5/2026",
+        "url": "https://anexos-r2.selecao.net.br/uploads/889/concursos/3/anexos/5469c5fb-c9d3-4f28-8fa2-f4240ce42fc5.pdf",
+        "publicado_em": "2026-09-23",
+        "fonte": "banca",
+        "resumo": null
+      },
+      {
+        "tipo": "edital",
+        "titulo": "Edital Normativo nº 5/2026 – retificado em 07/10/2026",
+        "numero": "5/2026",
+        "url": "https://anexos-r2.selecao.net.br/uploads/889/concursos/3/anexos/3d019fff-ccd9-44ca-b737-42f01bd2b1a7.pdf",
+        "publicado_em": "2026-10-07",
+        "fonte": "banca",
+        "resumo": null
+      },
+      {
+        "tipo": "edital",
+        "titulo": "Edital Normativo nº 5/2026 – retificado em 15/10/2026 (versão atual)",
+        "numero": "5/2026",
+        "url": "https://anexos-r2.selecao.net.br/uploads/889/concursos/3/anexos/15b25c6f-7a6d-4d60-bb97-85731e5bde82.pdf",
+        "publicado_em": "2026-10-15",
+        "fonte": "banca",
+        "resumo": null
+      }
+    ],
+    "conferencia": null,
+    "primeira_varredura": null,
+    "ultima_alteracao": null
+  }
+}
