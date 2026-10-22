@@ -5,8 +5,8 @@
   <div class="pt-listagem-topo">
     {{ m.trilha(pagina.trilha) }}
     <h1 class="pt-titulo" data-titulo>Concursos com inscrição aberta</h1>
-    <p class="pt-capa"><span class="cc-grifo">{{ n_abertos }}</span> com inscrição aberta, federais e do Paraná.</p>
-    <p class="pt-local" data-so-js>{{ m.icone("pino") }}<span data-resumo-local>Federais e todo o Paraná</span><button class="pt-link-btn" type="button" data-abrir-cidade data-rotulo-cidade>Escolher cidade</button></p>
+    <p class="pt-capa"><span class="cc-grifo">{{ n_abertos }}</span> com inscrição aberta, em todo o Brasil.</p>
+    <p class="pt-local" data-so-js>{{ m.icone("pino") }}<span data-resumo-local>Todo o Brasil</span><button class="pt-link-btn" type="button" data-abrir-cidade data-rotulo-cidade>Escolher cidade</button></p>
     <p class="pt-local" data-so-js>{{ m.icone("capelo") }}<span data-perfil-texto>Para ver o salário do seu cargo,</span><button class="pt-link-btn" type="button" data-abrir-perfil data-rotulo-perfil>diga sua escolaridade</button></p>
     <form class="pt-busca" action="{{ u('/concursos/') }}" method="get" role="search" data-form-busca>
       <label class="pt-rotulo-campo" for="busca-lista">Buscar concurso</label>
@@ -71,7 +71,7 @@
         <p class="pt-apoio">A distância é medida a partir da cidade escolhida, que fica guardada só neste aparelho.</p>
         <span class="pt-rotulo-campo" id="raio-rotulo">Distância</span>
         <div class="pt-chips" role="group" aria-labelledby="raio-rotulo" data-grupo-raio></div>
-        <label class="cc-check pt-check44"><input type="checkbox" name="federais"><span>Incluir concursos federais de fora do Paraná</span></label>
+        <label class="cc-check pt-check44"><input type="checkbox" name="federais"><span>Incluir concursos nacionais e os sem cidade definida</span></label>
       </div>
       <div class="pt-filtro-grupo" role="group" aria-labelledby="grupo-2">
         <h3 class="pt-filtro-tit" id="grupo-2">Área</h3>

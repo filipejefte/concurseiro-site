@@ -9,9 +9,9 @@ from .fontes.bancas import TODOS_OS_DOMINIOS
 # Domínios aceitos para o link do edital e dos documentos: diário oficial, órgão público ou banca.
 SUFIXOS_OFICIAIS = (".gov.br", ".leg.br", ".jus.br", ".mp.br", ".def.br", ".mil.br", ".edu.br")
 DOMINIOS_OFICIAIS = (
-    "diariomunicipal.com.br",    # AMP-PR (matérias)
+    "diariomunicipal.com.br",    # AMP-PR e diários de outras associações de municípios (matérias)
     "voxtecnologia.com.br",      # AMP-PR (PDF das edições)
-    "atende.net",                # portais e diários de muitas prefeituras do PR
+    "atende.net",                # portais e diários de muitas prefeituras
     *TODOS_OS_DOMINIOS,          # bancas que a varredura lê sozinha (fontes/bancas.py): o edital completo mora no site delas
 )
 # Agregadores servem só para conferir cobertura: nunca como link nem como fonte.
@@ -90,18 +90,16 @@ def validar_concurso(c, tabela=None, exemplo=False):
     if ed and not _oficial(ed["url"], c):
         erros.append(f"edital: o link ({_host(ed['url'])}) não é de diário oficial, órgão público nem da banca")
 
-    if c["municipio_ibge"] is not None and c["uf"] != "PR":
-        erros.append("cidade: municipio_ibge só para cidade do PR; fora do PR, deixe null e preencha uf e cidade")
-    elif c["municipio_ibge"] is not None:
+    if c["municipio_ibge"] is not None:
         m = tabela.get(c["municipio_ibge"])
-        if c["uf"] == "PR" and m is None:
-            erros.append(f"cidade: município {c['municipio_ibge']} não existe na tabela do PR")
-        elif m and c["cidade"] != m["nome"]:
+        if m is None:
+            erros.append(f"cidade: município {c['municipio_ibge']} não existe na tabela de municípios")
+        elif m.get("uf") != c["uf"]:
+            erros.append(f"cidade: o município {c['municipio_ibge']} é de {m.get('uf')}, não de {c['uf']}")
+        elif c["cidade"] != m["nome"]:
             erros.append(f"cidade: '{c['cidade']}' não bate com o nome da tabela ('{m['nome']}')")
-    elif c["uf"] == "PR" and not c["nacional"]:
-        erros.append("cidade: concurso no PR sem municipio_ibge")
-    if c["esfera"] != "federal" and c["uf"] != "PR":
-        erros.append(f"cobertura: {c['esfera']} de {c['uf']} está fora da cobertura (federais e PR)")
+    elif not c["nacional"] and (c["esfera"] == "municipal" or c["uf"] == "PR"):
+        erros.append("cidade: concurso municipal (ou de órgão no PR) sem municipio_ibge")
     if c["nacional"] and c["esfera"] != "federal":
         erros.append("nacional: só concurso federal pode ser nacional")
     return erros

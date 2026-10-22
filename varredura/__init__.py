@@ -1,1 +1,1 @@
-"""Varredura semanal de concursos federais e do Paraná."""
+"""Varredura semanal de concursos públicos de todo o Brasil."""

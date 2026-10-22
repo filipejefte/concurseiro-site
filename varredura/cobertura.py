@@ -33,7 +33,7 @@ def municipio_do_orgao(orgao):
 def gerar(pasta, destino=DESTINO):
     pasta = Path(pasta)
     registro = ler_json(pasta / "atos.json")
-    tabela = dados.municipios()
+    tabela = dados.municipios_pr()
     publicou = registro.get("publicacoes", {}).get("AMP-PR", {})
     atos = defaultdict(list)
     abertos = defaultdict(set)

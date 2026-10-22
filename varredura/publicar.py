@@ -155,7 +155,7 @@ def escrever_resumo(pasta, novos, retificados, acabando, anterior, data_varredur
     """resumo-telegram.md: links completos; **negrito** só na linha de notícia e nos títulos (o comando telegram
     converte para a Bot API e parte em mensagens)."""
     partes = [f"**{len(novos)} concurso{'s' if len(novos) != 1 else ''} novo{'s' if len(novos) != 1 else ''} nesta semana** "
-              f"({_periodo(anterior, data_varredura)}) · federais e do Paraná", ""]
+              f"({_periodo(anterior, data_varredura)}) · todo o Brasil", ""]
     partes += ["**Novos**", ""] + ([_linha(c) for c in novos] or ["• Nenhum concurso novo nesta semana."]) + [""]
     if retificados:
         partes += ["**Edital retificado**", ""] + [_linha(c) for c in retificados] + [""]
@@ -196,7 +196,7 @@ def escrever_whatsapp(pasta, novos, acabando, abertos, data_varredura):
     def item_acabando(c):
         return f"• {c['orgao']}: até {d.data_curta(c['inscricao']['fim'])}\n{ficha_url(c)}"
     def montar(n_novos, n_acabando):
-        partes = [topo, "Federais e do Paraná", ""]
+        partes = [topo, "Todo o Brasil", ""]
         if lista:
             partes += ["*Novos*"] + [item(c) for c in lista[:n_novos]]
             if len(lista) > n_novos:

@@ -77,7 +77,7 @@ def test_consulplan_cartoes_cobertura_e_datas_dos_documentos():
     itens = consulplan.itens_da_lista(ler("consulplan-concursos.html"))
     dentro = [i.titulo for i in itens if B.dentro_da_cobertura(i)]
     assert any(t.startswith("CREMERJ") for t in dentro) and any("CRO/SE" in t for t in dentro)
-    assert not any("Prefeitura Municipal" in t or "Câmara Municipal" in t for t in dentro)     # municípios de MG, ES e GO: fora
+    assert any("Prefeitura Municipal" in t or "Câmara Municipal" in t for t in dentro)         # municípios de MG, ES e GO: agora entram
     assert not any("PASES" in i.tipo for i in itens if B.dentro_da_cobertura(i))              # vestibular seriado da UFV não é concurso
     cremerj = consulplan.completar(next(i for i in itens if "cremerj" in i.pagina), ler("consulplan-cremerj2026.html"))
     assert (cremerj.edital.titulo, cremerj.edital.data) == ("Edital nº 1/2026 - Abertura", "2026-09-18")
@@ -116,16 +116,18 @@ def test_fonte_entrega_um_ato_por_concurso_aberto_dentro_da_cobertura(tmp_path):
             doc = B.Documento("EDITAL DE ABERTURA", "https://www.concursosfau.com.br//sistema/uploads/ed.pdf", "2026-10-20")
             yield B.Concurso("fau", "PREFEITURA MUNICIPAL DE APUCARANA", "PREFEITURA MUNICIPAL DE APUCARANA", "u", "Concurso Público", "PR",
                              "01/2026", "2026-10-21", "2026-11-09", None, [doc])
-            yield B.Concurso("fau", "PREFEITURA DE X", "PREFEITURA DE X", "u", "Concurso Público", "SP", None, None, "2026-11-09", None, [doc])   # fora
+            yield B.Concurso("fau", "PREFEITURA DE X", "PREFEITURA DE X", "u", "Concurso Público", "SP", None, None, "2026-11-09", None, [doc])   # outra UF: entra
+            yield B.Concurso("fau", "PROCESSO SELETIVO DE W", "PREFEITURA DE W", "u", "Processo Seletivo", "SP", None, None, "2026-11-09", None, [doc])   # PSS: fora
             yield B.Concurso("fau", "PREFEITURA DE Y", "PREFEITURA DE Y", "u", "Concurso Público", "PR", None, None, "2026-10-01", None, [doc])   # encerrado
             yield B.Concurso("fau", "PREFEITURA DE Z", "PREFEITURA DE Z", "u", "Concurso Público", "PR", None, None, "2026-11-09", None, [])      # sem edital
 
     fonte = B.Bancas(Cliente(), [Leitor()])
     atos = list(fonte.listar_atos(date(2026, 6, 16), HOJE))
-    assert len(atos) == 1 and pedidos == ["https://www.concursosfau.com.br//sistema/uploads/ed.pdf"]
+    assert len(atos) == 2 and pedidos == ["https://www.concursosfau.com.br//sistema/uploads/ed.pdf"] * 2
     a = atos[0]
     assert (a.fonte, a.data, a.orgao) == ("banca-fau", "2026-10-20", "PREFEITURA MUNICIPAL DE APUCARANA")
-    assert a.titulo.startswith("Edital de abertura nº 01/2026") and fonte.por_banca == {"fau": 1} and fonte.aviso is None
+    assert a.titulo.startswith("Edital de abertura nº 01/2026") and fonte.por_banca == {"fau": 2} and fonte.aviso is None
+    assert atos[1].orgao == "PREFEITURA DE X"
     from varredura.triagem import classificar
     assert classificar(a) == ("abertura", False)
 
@@ -154,7 +156,7 @@ def test_banca_que_falha_nao_derruba_as_outras():
 def test_consulpam_so_as_abertas_e_o_edital_com_nome_acentuado():
     consulpam = leitor("consulpam")
     itens = consulpam.itens_da_lista(ler("consulpam-concursos.html"))
-    assert [i.orgao for i in itens if B.dentro_da_cobertura(i)] == ["CÂMARA MUNICIPAL DE QUATRO BARRAS"]     # as outras são PSS ou de outra UF
+    assert [i.orgao for i in itens if B.dentro_da_cobertura(i)] == ["CÂMARA MUNICIPAL DE QUATRO BARRAS"]     # as outras são PSS ou de outra UF (agora só PSS fica de fora)
     quatro = next(i for i in itens if "QUATRO BARRAS" in i.orgao)
     assert (quatro.uf, quatro.tipo, quatro.numero) == ("PR", "Concurso Público", "001/2026")
     consulpam.completar(quatro, ler("consulpam-quatro-barras.html").replace("Inscrição de Concurso", "<script>function validaDat(campo){}</script>Inscrição de Concurso", 1))

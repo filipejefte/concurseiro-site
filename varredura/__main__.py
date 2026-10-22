@@ -10,7 +10,7 @@
   telegram [--teste]                     posta o resumo da semana no canal do Telegram (--teste só imprime)
   previstos                              reconfere no site da banca cada concurso previsto com banca conhecida
   cobertura                              refaz dados/cobertura-municipios.csv (quanto a AMP traz de cada município do PR)
-  municipios                             refaz dados/municipios-pr.json
+  municipios                             refaz dados/municipios.json e dados/municipios-pr.json
 
 O site sai de dados/concursos.json com `python -m gerador build`.
 """
@@ -29,7 +29,7 @@ def main(argv=None):
         sys.stderr.reconfigure(encoding="utf-8")
     dados.carregar_env()
 
-    p = argparse.ArgumentParser(prog="python -m varredura", description="Varredura semanal de concursos (federais e do Paraná).")
+    p = argparse.ArgumentParser(prog="python -m varredura", description="Varredura semanal de concursos públicos de todo o Brasil.")
     sub = p.add_subparsers(dest="comando", required=True)
 
     col = sub.add_parser("coletar", help="lê as fontes, faz a triagem e monta a fila de extração")
@@ -65,7 +65,7 @@ def main(argv=None):
     tel.add_argument("--teste", action="store_true", help="só imprime as mensagens, sem postar")
     tel.add_argument("--se-configurado", action="store_true", help="sem as variáveis, avisa e sai sem erro (para o CI)")
 
-    sub.add_parser("municipios", help="refaz dados/municipios-pr.json (IBGE + coordenadas)")
+    sub.add_parser("municipios", help="refaz dados/municipios.json e dados/municipios-pr.json (IBGE + coordenadas)")
     sub.add_parser("previstos", help="reconfere os previstos no site da banca: quem já tem edital vira aberto")
     cob = sub.add_parser("cobertura", help="refaz dados/cobertura-municipios.csv a partir do atos.json da semana")
     cob.add_argument("--pasta", type=Path)

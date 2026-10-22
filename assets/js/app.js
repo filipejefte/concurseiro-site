@@ -69,9 +69,11 @@
   }
   function municipios() {
     return buscar('municipios').then(function (lista) {
-      return lista.map(function (m) { return { ibge: m[0], nome: m[1], lat: m[2], lon: m[3], slug: m[4] || null, ficticio: !!m[5] }; });
+      return lista.map(function (m) { return { ibge: m[0], nome: m[1], lat: m[2], lon: m[3], slug: m[4] || null, uf: m[5] || null, ficticio: !!m[6] }; });
     });
   }
+  // "Curitiba (PR)": o mesmo nome existe em mais de um estado.
+  function rotulo(m) { return m.nome + (m.uf ? ' (' + m.uf + ')' : ''); }
   function maisProximo(lista, ponto) {
     var melhor = null, menor = Infinity;
     lista.forEach(function (m) {
@@ -165,7 +167,7 @@
     });
   }
 
-  /* ---------- Folha "Sua cidade": lista dos municípios do PR, GPS opcional e sugestão pelo IP ---------- */
+  /* ---------- Folha "Sua cidade": lista dos municípios do Brasil, GPS opcional e sugestão pelo IP ---------- */
 
   function iniciarCidade() {
     var dialogo = document.getElementById('cidade');
@@ -182,7 +184,7 @@
       if (lista) return Promise.resolve(lista);
       return municipios().then(function (l) {
         lista = l.filter(function (m) { return !m.ficticio; });
-        $('#lista-municipios', dialogo).innerHTML = lista.map(function (m) { return '<option value="' + esc(m.nome) + '"></option>'; }).join('');
+        $('#lista-municipios', dialogo).innerHTML = lista.map(function (m) { return '<option value="' + esc(rotulo(m)) + '"></option>'; }).join('');
         return lista;
       });
     }
@@ -192,19 +194,24 @@
       campo.setAttribute('aria-invalid', String(!!texto));
     }
     function escolher(m) {
-      var valor = m ? { ibge: m.ibge, nome: m.nome, lat: m.lat, lon: m.lon, slug: m.slug } : null;
+      var valor = m ? { ibge: m.ibge, nome: m.nome, uf: m.uf, lat: m.lat, lon: m.lon, slug: m.slug } : null;
       if (!guardar(CHAVE_CIDADE, valor)) { mostrarErro('Este navegador não deixou guardar a cidade. Confira se o site pode salvar dados.'); return; }
       location.reload();
     }
     dialogo.addEventListener('focusin', preparar, { once: true });
-    $$('[data-abrir-cidade]').forEach(function (b) { b.addEventListener('click', function () { campo.value = CIDADE && CIDADE.nome ? CIDADE.nome : ''; mostrarErro(''); preparar(); }); });
+    $$('[data-abrir-cidade]').forEach(function (b) { b.addEventListener('click', function () { campo.value = CIDADE && CIDADE.nome ? rotulo(CIDADE) : ''; mostrarErro(''); preparar(); }); });
     campo.addEventListener('input', function () { mostrarErro(''); });
     form.addEventListener('submit', function (ev) {
       ev.preventDefault();
       preparar().then(function (l) {
         var alvo = normalizar(campo.value).trim();
-        var m = l.filter(function (x) { return normalizar(x.nome) === alvo; })[0];
-        if (!m) { mostrarErro('Escolha um município do Paraná da lista.'); campo.focus(); return; }
+        var m = l.filter(function (x) { return normalizar(rotulo(x)) === alvo; })[0];
+        if (!m) {
+          var iguais = l.filter(function (x) { return normalizar(x.nome) === alvo; });   // só o nome, sem a sigla do estado
+          if (iguais.length === 1) m = iguais[0];
+          else if (iguais.length > 1) { mostrarErro('Há mais de um município com esse nome. Escolha na lista, com a sigla do estado.'); campo.focus(); return; }
+        }
+        if (!m) { mostrarErro('Escolha um município da lista.'); campo.focus(); return; }
         escolher(m);
       }).catch(function () { mostrarErro('Não deu para carregar a lista de municípios. Tente de novo.'); });
     });
@@ -216,11 +223,11 @@
       navigator.geolocation.getCurrentPosition(function (pos) {
         preparar().then(function (l) {
           var r = maisProximo(l, { lat: pos.coords.latitude, lon: pos.coords.longitude });
-          campo.value = r.municipio.nome;
+          campo.value = rotulo(r.municipio);
           mostrarErro('');
           aviso.textContent = r.km > 50
-            ? 'Você parece estar fora do Paraná. O município do PR mais perto é ' + r.municipio.nome + ', a ' + Math.round(r.km) + ' km. Confira e toque em "Usar esta cidade".'
-            : 'Mais perto de você: ' + r.municipio.nome + '. Confira e toque em "Usar esta cidade".';
+            ? 'O município da lista mais perto de você é ' + rotulo(r.municipio) + ', a ' + Math.round(r.km) + ' km. Confira e toque em "Usar esta cidade".'
+            : 'Mais perto de você: ' + rotulo(r.municipio) + '. Confira e toque em "Usar esta cidade".';
         });
       }, function () { aviso.textContent = 'Sem permissão de localização. Escolha a cidade na lista.'; },
       { timeout: 10000, maximumAge: 600000 });
@@ -230,7 +237,7 @@
     if (CIDADE && CIDADE.antiga) {
       preparar().then(function (l) {
         var m = l.filter(function (x) { return x.ibge === CIDADE.ibge; })[0];
-        guardar(CHAVE_CIDADE, m ? { ibge: m.ibge, nome: m.nome, lat: m.lat, lon: m.lon, slug: m.slug } : null);
+        guardar(CHAVE_CIDADE, m ? { ibge: m.ibge, nome: m.nome, uf: m.uf, lat: m.lat, lon: m.lon, slug: m.slug } : null);
         location.reload();
       });
       return;
@@ -243,7 +250,7 @@
     fetch(caminho('/api/local'), { headers: { Accept: 'application/json' } })
       .then(function (r) { return r.ok ? r.json() : null; })
       .then(function (local) {
-        if (!local || local.regiao !== 'PR' || typeof local.lat !== 'number') return null;
+        if (!local || local.pais !== 'BR' || typeof local.lat !== 'number') return null;
         return preparar().then(function (l) { return maisProximo(l, local); });
       })
       .then(function (r) {
@@ -251,7 +258,7 @@
         var m = r.municipio;
         $$('[data-perto], [data-sugestao-ip]').forEach(function (caixa) {
           caixa.innerHTML = '';
-          caixa.appendChild(document.createTextNode('Você está perto de ' + m.nome + '? '));
+          caixa.appendChild(document.createTextNode('Você está perto de ' + rotulo(m) + '? '));
           var b = document.createElement('button');
           b.type = 'button';
           b.className = 'pt-link-btn';
@@ -383,14 +390,14 @@
   /* ---------- Início ---------- */
 
   function paginaInicio() {
-    $$('[data-local-texto]').forEach(function (el) { el.textContent = CIDADE ? CIDADE.nome + ' (PR) · escolhida por você' : 'Nenhuma cidade escolhida'; });
+    $$('[data-local-texto]').forEach(function (el) { el.textContent = CIDADE ? rotulo(CIDADE) + ' · escolhida por você' : 'Nenhuma cidade escolhida'; });
     $$('[data-rotulo-cidade]').forEach(function (el) { el.textContent = CIDADE ? 'Alterar' : 'Escolher cidade'; });
     var caixa = $('[data-perto]');
     if (caixa && CIDADE && CIDADE.nome) {
       var a = document.createElement('a');
       a.className = 'pt-link';
       a.href = CIDADE.slug ? caminho('/cidade/' + CIDADE.slug + '/') : caminho('/concursos/?perto=' + CIDADE.ibge);
-      a.textContent = 'Ver os concursos perto de ' + CIDADE.nome;
+      a.textContent = 'Ver os concursos perto de ' + rotulo(CIDADE);
       caixa.appendChild(a);
       caixa.hidden = false;
     }
@@ -434,8 +441,8 @@
     function passa(card, e) {
       var q = normalizar(e.q).trim();
       if (q && card._texto.indexOf(q) < 0) return false;
-      var foraPR = !card.hasAttribute('data-pr');
-      if (foraPR) { if (!e.federais) return false; }
+      var semLocal = !card.hasAttribute('data-lat');   // nacional, ou a ficha não traz o código da cidade
+      if (semLocal) { if (!e.federais) return false; }
       else if (!q && e.raio !== 'estado' && !(card._km !== null && card._km !== undefined && card._km <= Number(e.raio))) return false;
       if (card.getAttribute('data-sit') === 'encerrado') return false;
       if (card.getAttribute('data-sit') === 'previsto' && !e.previstos) return false;
@@ -489,13 +496,13 @@
       });
       var abertos = visiveis.filter(function (c) { return c.getAttribute('data-sit') !== 'previsto'; }).length;
       var previstos = visiveis.length - abertos;
-      var titulo = estado.q ? 'Resultados para “' + estado.q + '”' : (origem && estado.raio !== 'estado' ? 'Concursos perto de ' + origem.nome : 'Concursos com inscrição aberta');
+      var titulo = estado.q ? 'Resultados para “' + estado.q + '”' : (origem && estado.raio !== 'estado' ? 'Concursos perto de ' + rotulo(origem) : 'Concursos com inscrição aberta');
       $('[data-titulo]').textContent = titulo;
       $('[data-contagem]').textContent = contar(abertos, 'concurso aberto', 'concursos abertos') +
         (previstos ? ' e ' + contar(previstos, 'previsto', 'previstos') : '') + ' · ' + NOMES_ORDEM[estado.ordem];
       $$('[data-resumo-local]').forEach(function (el) {
-        el.textContent = estado.q ? 'Em todos os concursos' : (!origem || estado.raio === 'estado' ? (origem ? 'A partir de ' + origem.nome + ' (PR), sem limite de distância' : 'Federais e todo o Paraná')
-          : origem.nome + ' (PR) · a até ' + estado.raio + ' km') + (estado.federais ? '' : ' · sem federais de fora do PR');
+        el.textContent = estado.q ? 'Em todos os concursos' : (!origem || estado.raio === 'estado' ? (origem ? 'A partir de ' + rotulo(origem) + ', sem limite de distância' : 'Todo o Brasil')
+          : rotulo(origem) + ' · a até ' + estado.raio + ' km') + (estado.federais ? '' : ' · sem os nacionais e os sem cidade');
       });
       $$('[data-area]').forEach(function (a) {
         if (estado.areas.length === 1 && estado.areas[0] === a.getAttribute('data-area')) a.setAttribute('aria-current', 'true');
@@ -515,7 +522,7 @@
       var dialogo = document.getElementById('filtros');
       var rascunho = null;
       var faixa = $('#faixa-salario', dialogo);
-      $('[data-onde]', dialogo).textContent = origem ? origem.nome + ' (PR)' : 'Nenhuma cidade escolhida';
+      $('[data-onde]', dialogo).textContent = origem ? rotulo(origem) : 'Nenhuma cidade escolhida';
       function chips(itens, selecionados, grupo, unico) {
         return itens.map(function (it) {
           var ativo = unico ? selecionados === it[0] : selecionados.indexOf(it[0]) >= 0;

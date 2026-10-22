@@ -73,7 +73,7 @@ Nome e @ só da marca. Nada de nome, foto ou número de pessoa no canal, no bot 
 ## 7. Canais: WhatsApp (10 min)
 
 1. No WhatsApp do celular: aba **Atualizações** → **+** (ou "Canais" → **Criar canal**) → siga as telas.
-2. Nome `Concurseiro`, descrição curta ("Concursos federais e do Paraná com inscrição aberta, toda semana. Não somos site oficial."), foto com o ícone da marca (`docs/marca/icone-app.png`).
+2. Nome `Concurseiro`, descrição curta ("Concursos públicos de todo o Brasil com inscrição aberta, toda semana. Não somos site oficial."), foto com o ícone da marca (`docs/marca/icone-app.png`).
 3. No canal: toque no nome → **Compartilhar link do canal** → copie.
 4. No `site.toml`: `canal_whatsapp = "<o link>"`.
 

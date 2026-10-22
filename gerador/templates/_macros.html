@@ -40,7 +40,7 @@
 <a class="cc-card{% if x.situacao == 'encerrado' %} cc-card-encerrado{% endif %}" href="{{ u(x.path) }}"
    data-card data-id="{{ x.id }}" data-area="{{ x.area_slug }}" data-niveis="{{ x.niveis | join(' ') }}"
    data-banca="{{ x.banca_slug or '' }}" data-sal="{{ x.sal_max or 0 }}" data-sit="{{ x.situacao }}"
-   data-fim="{{ x.fim or '' }}" data-inicio="{{ x.inicio or '' }}"{% if x.federal %} data-federal{% endif %}{% if x.no_pr %} data-pr{% endif %}
+   data-fim="{{ x.fim or '' }}" data-inicio="{{ x.inicio or '' }}"{% if x.federal %} data-federal{% endif %}
    {%- if x.municipio %} data-lat="{{ x.municipio.lat }}" data-lon="{{ x.municipio.lon }}"{% endif %}>
   <div class="cc-card-topo">{{ selo(x) }}<span class="cc-card-local">{{ icone("pino") }}<span data-local>{{ x.local }}</span></span></div>
   <div><h{{ nivel }} class="cc-card-orgao">{{ x.orgao }}</h{{ nivel }}><p class="cc-card-cargo" data-cargo>{{ x.cargo }}</p></div>

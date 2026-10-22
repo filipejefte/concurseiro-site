@@ -19,9 +19,9 @@
     </div>
     <p>Para mostrar primeiro os concursos perto de você. A escolha fica guardada só neste aparelho.</p>
     <form class="pt-form-alerta" data-form-cidade novalidate>
-      <label class="cc-campo">Município do Paraná<input name="cidade" list="lista-municipios" autocomplete="off" placeholder="Comece a digitar" aria-describedby="cidade-erro"></label>
+      <label class="cc-campo">Município<input name="cidade" list="lista-municipios" autocomplete="off" placeholder="Comece a digitar" aria-describedby="cidade-erro"></label>
       <datalist id="lista-municipios"></datalist>
-      <p id="cidade-erro" class="pt-erro-msg" role="alert" hidden>Escolha um município do Paraná da lista.</p>
+      <p id="cidade-erro" class="pt-erro-msg" role="alert" hidden>Escolha um município da lista.</p>
       <p class="pt-caixa pt-caixa-info" data-sugestao-ip hidden></p>
       <button class="cc-btn cc-btn-primario cc-btn-bloco" type="submit">Usar esta cidade</button>
       <button class="cc-btn cc-btn-bloco" type="button" data-gps>{{ m.icone("mira") }}Achar pela minha localização</button>

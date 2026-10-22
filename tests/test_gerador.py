@@ -1,4 +1,5 @@
 """Testes do gerador do site: páginas, conteúdo no HTML, links, canonical, sitemap e indexação."""
+import json
 import re
 import xml.etree.ElementTree as ET
 from datetime import date
@@ -153,7 +154,9 @@ def test_paginas_por_cidade_area_banca_e_estado(site):
         assert f"/area/{x.area_slug}/" in caminhos
         if x.banca_slug:
             assert f"/banca/{x.banca_slug}/" in caminhos
-    assert {"/estado/pr/", "/federais/", "/previstos/", "/encerram-esta-semana/", "/concursos/", "/"} <= caminhos
+    assert {"/estado/pr/", "/estados/", "/federais/", "/previstos/", "/encerram-esta-semana/", "/concursos/", "/"} <= caminhos
+    for e in b.estados():
+        assert f"/estado/{e.slug}/" in caminhos and e.extra["uf"] == e.slug.upper()
     assert {"/sobre/", "/como-conferimos/", "/privacidade/", "/termos/", "/alertas/"} <= caminhos
     assert "/contato/" not in caminhos   # sem email_contato no site.toml, não há página de contato
     assert (site.saida / "404.html").exists()
@@ -162,11 +165,11 @@ def test_paginas_por_cidade_area_banca_e_estado(site):
 def test_cidade_so_com_concurso_na_cidade_ou_a_50_km(site):
     from gerador.modelo import distancia
     b = site.base
-    locais = [x for x in b.ativos if x.no_pr and x.municipio]
+    locais = [x for x in b.ativos if not x.nacional and x.municipio]
     for g in b.cidades.values():
         m = g.extra["municipio"]
         assert any(x.municipio["ibge"] == m["ibge"] or distancia(m, x.municipio) <= 50 for x in locais)
-    assert "curitiba" in b.cidades or not any(x.municipio and x.municipio["nome"] == "Curitiba" for x in locais)
+    assert "curitiba-pr" in b.cidades or not any(x.municipio and x.municipio["nome"] == "Curitiba" for x in locais)
 
 
 def test_imagens_de_compartilhamento(site):
@@ -192,7 +195,7 @@ def test_sem_ficticio_publicado_nao_tem_aviso_de_exemplo(site_publicado):
 
 
 def test_federal_fora_do_pr_aparece_nos_federais(site):
-    fora = [x for x in site.base.concursos if x.federal and not x.no_pr]
+    fora = [x for x in site.base.concursos if x.federal and x.uf != "PR"]
     assert fora
     html = _html(site, "/federais/")
     assert all(x.orgao in html for x in fora if x.aberto)
@@ -338,3 +341,20 @@ def test_sem_a_chave_fontes_o_site_diz_so_o_que_dizia_antes(site_publicado):
     como = _html(site_publicado, "/como-conferimos/")
     inicio = como.index("O que ainda não lemos")
     assert "Diário Oficial do Estado do Paraná" in como[inicio:] and "Sites das bancas" in como[inicio:]
+
+
+def test_slug_da_cidade_leva_a_uf_e_o_js_recebe_a_uf(site):
+    """São José existe em vários estados: o slug da cidade leva a UF, e a tabela que o JS baixa também."""
+    from gerador.modelo import cidade_slug
+    assert cidade_slug({"nome": "São José", "uf": "SC"}) == "sao-jose-sc" != cidade_slug({"nome": "São José", "uf": "SP"})
+    linhas = json.loads((site.saida / "assets/dados/municipios.json").read_text(encoding="utf-8"))
+    assert all(len(l[5]) == 2 and l[5].isupper() for l in linhas)
+    assert len({l[0] for l in linhas}) == len(linhas) > 5000       # o Brasil todo, um código por município
+
+
+def test_pagina_de_estado_so_para_uf_com_concurso(site):
+    b = site.base
+    ufs = {x.uf for x in b.concursos if not x.nacional}
+    assert {e.extra["uf"] for e in b.estados()} == ufs
+    html = _html(site, "/estados/")
+    assert all(f'/estado/{uf.lower()}/' in html for uf in ufs)

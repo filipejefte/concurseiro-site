@@ -74,12 +74,19 @@ def _link_de_exemplo(c):
     c["documentos"][0]["url"] = "https://edital.example/1.pdf"
 
 
-def _fora_da_cobertura(c):
+def _municipal_sem_ibge(c):
     c.update(esfera="municipal", uf="SP", municipio_ibge=None, cidade="Campinas")
 
 
-def _codigo_ibge_fora_do_pr(c):
-    c.update(esfera="federal", uf="SP", municipio_ibge="3509502", cidade="Campinas")
+def _ibge_de_outra_uf(c):
+    c.update(esfera="federal", uf="PR", municipio_ibge="3509502", cidade="Campinas")   # 3509502 é Campinas, SP
+
+
+def test_concurso_de_outro_estado_esta_na_cobertura():
+    """Desde 22/10/2026 a cobertura é o Brasil todo: prefeitura de SP com o código IBGE certo não dá erro de cidade nem de cobertura."""
+    c = real()
+    c.update(esfera="municipal", uf="SP", municipio_ibge="3509502", cidade="Campinas")
+    assert not [e for e in validar_concurso(c) if e.startswith(("cidade", "cobertura"))]
 
 
 @pytest.mark.parametrize("estragar, esperado", [
@@ -91,8 +98,8 @@ def _codigo_ibge_fora_do_pr(c):
     (_municipio_inexistente, "não existe na tabela"),
     (_cidade_errada, "não bate"),
     (_link_de_exemplo, "link de exemplo"),
-    (_fora_da_cobertura, "fora da cobertura"),
-    (_codigo_ibge_fora_do_pr, "só para cidade do PR"),
+    (_municipal_sem_ibge, "sem municipio_ibge"),
+    (_ibge_de_outra_uf, "é de SP, não de PR"),
 ])
 def test_validacao_pega_erros(estragar, esperado):
     c = real()
@@ -483,7 +490,7 @@ def test_dioe_le_o_suplemento_inteiro_e_so_candidatas_do_executivo(tmp_path):
 @pytest.fixture
 def ambiente(tmp_path, monkeypatch):
     base = tmp_path / "concursos.json"
-    base.write_text(json.dumps({"varredura": None, "proxima_varredura": None, "cobertura": ["federal", "PR"], "concursos": []}),
+    base.write_text(json.dumps({"varredura": None, "proxima_varredura": None, "cobertura": ["Brasil"], "concursos": []}),
                     encoding="utf-8")
     monkeypatch.setattr(dados, "CONCURSOS", base)
     pasta = tmp_path / "varreduras" / "2026-10-14"

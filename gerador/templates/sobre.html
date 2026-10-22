@@ -1,6 +1,6 @@
 {% extends "texto.html" %}
 {% block texto %}
-<p class="pt-capa">O Concurseiro reúne os concursos públicos com inscrição aberta: federais, de todo o Brasil, e do Paraná. O salário vem na frente, e todo concurso leva ao edital oficial.</p>
+<p class="pt-capa">O Concurseiro reúne os concursos públicos com inscrição aberta: de todo o Brasil, de qualquer estado e esfera. O salário vem na frente, e todo concurso leva ao edital oficial.</p>
 
 <h2 class="pt-h2">O que o Concurseiro faz</h2>
 <ul>
@@ -26,10 +26,10 @@
 <h2 class="pt-h2">Cobertura</h2>
 <p>Hoje o Concurseiro cobre:</p>
 <ul>
-  <li><strong>Concursos federais</strong>, de todo o Brasil, publicados no Diário Oficial da União.</li>
-  <li><strong>Concursos do Paraná</strong>: o estado, as prefeituras, as câmaras e as autarquias, pelos diários oficiais do estado e dos municípios e pelos sites das bancas, e os órgãos federais com vagas no estado.</li>
+  <li><strong>Todo concurso público do Brasil</strong>: órgãos federais, estaduais e municipais, câmaras, autarquias, conselhos e universidades, de qualquer estado.</li>
+  <li>Os concursos chegam pelo Diário Oficial da União, pelos diários do Paraná, pelos sites das bancas organizadoras e por pesquisa com o edital oficial na mão. O que ainda não lemos está listado em <a class="pt-link" href="{{ u('/como-conferimos/') }}">como conferimos os dados</a>.</li>
 </ul>
-<p>Processo seletivo simplificado e contratação temporária ficam de fora.</p>
+<p>Processo seletivo simplificado, contratação temporária, residência e vestibular ficam de fora: não são concurso público.</p>
 <p>Agora há {{ n_abertos }} {{ "concurso" if n_abertos == 1 else "concursos" }} com inscrição aberta no site.</p>
 
 <h2 class="pt-h2">Atualização</h2>

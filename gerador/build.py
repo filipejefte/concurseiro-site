@@ -30,7 +30,7 @@ FONTE = "assets/fonts/schibsted-grotesk-latin-wght-normal.woff2"
 TEXTOS_ATUALIZADOS = "2026-10-19"   # data da última mudança nas páginas institucionais (lastmod do sitemap)
 FUSO = timezone(timedelta(hours=-3))  # Brasília, sem horário de verão desde 2019
 
-MENU = [("Concursos abertos", "/concursos/"), ("Federais", "/federais/"), ("Paraná", "/estado/pr/"), ("Previstos", "/previstos/")]
+MENU = [("Concursos abertos", "/concursos/"), ("Federais", "/federais/"), ("Estados", "/estados/"), ("Previstos", "/previstos/")]
 RODAPE = [("Sobre", "/sobre/"), ("Como conferimos os dados", "/como-conferimos/"), ("Alertas", "/alertas/"),
           ("Política de privacidade", "/privacidade/"), ("Termos de uso", "/termos/"), ("Contato", "/contato/"),
           ("Encerram esta semana", "/encerram-esta-semana/")]
@@ -62,7 +62,7 @@ class Pagina:
     contexto: dict = field(default_factory=dict)
     trilha: list = field(default_factory=list)
     og_image: str = "/og/padrao.png"
-    og_alt: str = "Concurseiro: concursos federais e do Paraná, com o salário na frente"
+    og_alt: str = "Concurseiro: concursos públicos de todo o Brasil, com o salário na frente"
     og_type: str = "website"
     sitemap: bool = True
     indexavel: bool = True      # False: noindex mesmo com indexar = true (e fora do sitemap)
@@ -139,7 +139,7 @@ class Site:
                 self.marca[chave + "_altura"] = alvo
         manifest = {
             "name": "Concurseiro", "short_name": "Concurseiro", "lang": "pt-BR",
-            "description": "Concursos federais e do Paraná com inscrição aberta, com o salário na frente.",
+            "description": "Concursos públicos de todo o Brasil com inscrição aberta, com o salário na frente.",
             "start_url": self.cfg.base_path, "scope": self.cfg.base_path, "display": "standalone",
             "background_color": "#f7f6f1", "theme_color": "#f7f6f1",
             "icons": [{"src": self.cfg.url(f"/icone-{n}.png"), "sizes": f"{n}x{n}", "type": "image/png"} for n in (192, 512)],
@@ -155,7 +155,7 @@ class Site:
 
     def faixa(self):
         b = self.base
-        cobertura = "concursos federais e do Paraná"
+        cobertura = "concursos públicos de todo o Brasil"
         if b.previa:
             return (f"Prévia, não publicada: inclui as fichas da varredura de {d.data_br(b.previa)} ainda sem conferência. "
                     "Só para olhar; o site no ar sai do python -m gerador build sem --previa.")
@@ -283,8 +283,8 @@ class Site:
         cidades = sorted(b.cidades.values(), key=lambda g: (-len(g.concursos), g.slug))
         self.render(Pagina(
             "/", "inicio.html",
-            title="Concursos abertos federais e do Paraná, com o salário na frente · Concurseiro",
-            description=(f"{plural(n, 'concurso', 'concursos')} com inscrição aberta: federais de todo o Brasil e do Paraná, "
+            title="Concursos públicos abertos em todo o Brasil, com o salário na frente · Concurseiro",
+            description=(f"{plural(n, 'concurso', 'concursos')} com inscrição aberta: de todo o Brasil, "
                          f"com salário, prazo e o link do edital oficial."
                          + (f" Atualizado em {d.data_br(b.varredura)}." if b.varredura else "")),
             tipo="inicio",
@@ -306,8 +306,8 @@ class Site:
                    "niveis": modelo.NIVEIS}
         self.render(Pagina(
             "/concursos/", "concursos.html",
-            title=f"Concursos abertos em {self._ano()}: {plural(n, 'concurso', 'concursos')} federais e do Paraná · Concurseiro",
-            description=(f"Lista de {plural(n, 'concurso', 'concursos')} com inscrição aberta, federais e do Paraná, com salário inicial, "
+            title=f"Concursos abertos em {self._ano()}: {plural(n, 'concurso', 'concursos')} em todo o Brasil · Concurseiro",
+            description=(f"Lista de {plural(n, 'concurso', 'concursos')} com inscrição aberta em todo o Brasil, com salário inicial, "
                          "vagas, prazo e o link do edital oficial. Busque por cargo, órgão ou cidade."),
             tipo="concursos", trilha=[("Início", "/"), ("Concursos abertos", "/concursos/")],
             contexto=dict(n_abertos=plural(n, "concurso", "concursos"), areas=self.areas, rotulos=rotulos),
@@ -337,8 +337,8 @@ class Site:
         avise = (f' Viu um erro nesta ficha? <a class="pt-link" href="{escape(_mailto(cfg.email_contato, x.id, endereco))}">Avise a gente</a>.'
                  if cfg.email_contato else "")
         trilha = [("Início", "/")]
-        if x.no_pr:
-            trilha.append(("Paraná", "/estado/pr/"))
+        if not x.nacional:
+            trilha.append((modelo.SIGLA_UF.get(x.uf, x.uf), f"/estado/{x.uf.lower()}/"))
             if x.cidade_slug:
                 trilha.append((x.c["cidade"], f"/cidade/{x.cidade_slug}/"))
         elif x.federal:
@@ -348,7 +348,7 @@ class Site:
             x.path, "ficha.html", title=x.title, description=x.description, tipo="concurso", trilha=trilha,
             og_image=x.og, og_alt=f"{x.orgao}: {x.salario or 'salário não informado'}", og_type="article",
             sitemap=b.no_sitemap(x), lastmod=c.get("ultima_alteracao") or b.varredura,
-            alerta=(f"em {c['cidade']}" if x.no_pr and c["cidade"] else NA_AREA.get(x.area)),
+            alerta=(f"em {c['cidade']}" if not x.nacional and c["cidade"] else NA_AREA.get(x.area)),
             contexto=dict(
                 x=x, detalhe=detalhe, origem=" · ".join(origem), prazos=prazos, ics=_ics(x, prazos, endereco) if prazos else None,
                 whatsapp="https://wa.me/?text=" + urllib.parse.quote(mensagem),
@@ -402,19 +402,31 @@ class Site:
     def paginas_listas(self):
         b, ano = self.base, self._ano()
         inicio = ("Início", "/")
-        # Paraná
-        pr = b.estado_pr()
+        # Estados: um por UF que tem concurso, mais o índice
         cidades = sorted(b.cidades.values(), key=lambda g: (-len(g.concursos), g.slug))
+        estados = b.estados()
+        for e in estados:
+            uf, em = e.extra["uf"], modelo.EM_UF[e.extra["uf"]]
+            caminho = f"/estado/{e.slug}/"
+            self.lista(
+                caminho, f"Concursos abertos {em} ({uf}) em {ano}: {plural(len(e.abertos), 'concurso', 'concursos')} · Concurseiro",
+                f"{plural(len(e.abertos), 'concurso', 'concursos')} com inscrição aberta {em}, entre órgãos federais, estaduais e "
+                "municipais, com salário, prazo e o link do edital oficial.",
+                f"Concursos abertos {em}", self._capa(len(e.abertos), f"com inscrição aberta {em}."),
+                [dict(titulo="Inscrições abertas", concursos=e.abertos, vazio=f"Nenhum concurso com inscrição aberta {em} agora."),
+                 dict(titulo="Previstos", concursos=e.previstos, apoio="Autorização ou banca contratada em ato oficial, sem edital ainda.")],
+                [inicio, ("Estados", "/estados/"), (e.nome, caminho)], alerta=em,
+                chips=[dict(titulo="Cidades com concurso",
+                            itens=[(f"{g.nome} ({uf})", f"/cidade/{g.slug}/", len(g.concursos) or None)
+                                   for g in cidades if g.extra["municipio"]["uf"] == uf]),
+                       dict(titulo="Por área", itens=[(a.nome, f"/area/{a.slug}/", None) for a in self.areas if a.abertos])],
+            )
         self.lista(
-            "/estado/pr/", f"Concursos abertos no Paraná (PR) em {ano}: {plural(len(pr.abertos), 'concurso', 'concursos')} · Concurseiro",
-            f"{plural(len(pr.abertos), 'concurso', 'concursos')} com inscrição aberta no Paraná, entre órgãos federais, estaduais e "
-            "municipais, com salário, prazo e o link do edital oficial.",
-            "Concursos abertos no Paraná", self._capa(len(pr.abertos), "com inscrição aberta no Paraná."),
-            [dict(titulo="Inscrições abertas", concursos=pr.abertos, vazio="Nenhum concurso com inscrição aberta no Paraná agora."),
-             dict(titulo="Previstos", concursos=pr.previstos, apoio="Autorização ou banca contratada em ato oficial, sem edital ainda.")],
-            [inicio, ("Paraná", "/estado/pr/")], alerta="no Paraná",
-            chips=[dict(titulo="Cidades com concurso", itens=[(g.nome, f"/cidade/{g.slug}/", len(g.concursos) or None) for g in cidades]),
-                   dict(titulo="Por área", itens=[(g.nome, f"/area/{g.slug}/", None) for g in self.areas if g.abertos])],
+            "/estados/", f"Concursos abertos por estado em {ano} · Concurseiro",
+            "Os estados com concurso aberto ou previsto, com a quantidade de cada um.",
+            "Concursos por estado", self._capa(len(b.abertos), "com inscrição aberta em todo o Brasil."),
+            [], [inicio, ("Estados", "/estados/")],
+            chips=[dict(titulo="Estados com concurso", itens=[(e.nome, f"/estado/{e.slug}/", len(e.abertos) or None) for e in estados])],
         )
         # Federais
         fed = b.federais()
@@ -430,7 +442,7 @@ class Site:
         # Previstos
         self.lista(
             "/previstos/", f"Concursos previstos: {plural(len(b.previstos), 'concurso', 'concursos')} com ato oficial · Concurseiro",
-            "Concursos federais e do Paraná com autorização publicada ou banca contratada em ato oficial, ainda sem edital.",
+            "Concursos de todo o Brasil com autorização publicada ou banca contratada em ato oficial, ainda sem edital.",
             "Concursos previstos", self._capa(len(b.previstos), "previstos, com ato oficial."),
             [dict(titulo="Previstos", concursos=b.previstos, vazio="Nenhum concurso previsto agora.")],
             [inicio, ("Previstos", "/previstos/")],
@@ -440,7 +452,7 @@ class Site:
         # Encerram esta semana
         self.lista(
             "/encerram-esta-semana/", f"Inscrições que encerram esta semana: {plural(len(b.breve), 'concurso', 'concursos')} · Concurseiro",
-            "Concursos federais e do Paraná com inscrição terminando nos próximos 7 dias, com salário e o link do edital oficial.",
+            "Concursos de todo o Brasil com inscrição terminando nos próximos 7 dias, com salário e o link do edital oficial.",
             "Inscrições que encerram esta semana", self._capa(len(b.breve), "com inscrição terminando nos próximos 7 dias."),
             [dict(titulo="Encerram nos próximos 7 dias", concursos=b.breve, vazio="Nenhuma inscrição acaba nos próximos 7 dias.")],
             [inicio, ("Encerram esta semana", "/encerram-esta-semana/")],
@@ -450,7 +462,7 @@ class Site:
             frase = NA_AREA[g.nome]
             self.lista(
                 f"/area/{g.slug}/", f"Concursos abertos {frase}: {plural(len(g.abertos), 'concurso', 'concursos')} · Concurseiro",
-                f"Concursos {frase} com inscrição aberta, federais e do Paraná, com salário, vagas, prazo e o link do edital oficial.",
+                f"Concursos {frase} com inscrição aberta em todo o Brasil, com salário, vagas, prazo e o link do edital oficial.",
                 f"Concursos abertos {frase}", self._capa(len(g.abertos), f"com inscrição aberta {frase}."),
                 [dict(titulo="Inscrições abertas", concursos=g.abertos, vazio=f"Nenhum concurso aberto {frase} agora."),
                  dict(titulo="Previstos", concursos=g.previstos)],
@@ -473,7 +485,9 @@ class Site:
             )
         # Cidades: todas as que têm concurso ativo a até 50 km (servem ao alerta local). Indexável só com concurso
         # na própria cidade (aberto ou previsto) ou com pelo menos 1 aberto a até 50 km; só previstos vizinhos = noindex.
+        ufs_com_pagina = {e.extra["uf"] for e in estados}
         for g in b.cidades.values():
+            uf_g = g.extra["municipio"]["uf"]
             regiao_n = len(g.extra["regiao"])
             proximos = [x for _, x in g.extra["regiao"]]
             areas = {}
@@ -484,15 +498,15 @@ class Site:
                     bancas[(x.banca_slug, x.banca)] = bancas.get((x.banca_slug, x.banca), 0) + 1
             self.lista(
                 f"/cidade/{g.slug}/",
-                f"Concursos abertos em {g.nome} (PR) {self._ano()}: {plural(len(g.abertos), 'concurso', 'concursos')} na cidade e "
+                f"Concursos abertos em {g.nome} ({g.extra['municipio']['uf']}) {self._ano()}: {plural(len(g.abertos), 'concurso', 'concursos')} na cidade e "
                 f"{regiao_n} na região · Concurseiro",
-                f"Concursos com inscrição aberta em {g.nome} (PR) e a até 50 km: salário, vagas, prazo e o link do edital oficial.",
-                f"Concursos em {g.nome} (PR)",
+                f"Concursos com inscrição aberta em {g.nome} ({g.extra['municipio']['uf']}) e a até 50 km: salário, vagas, prazo e o link do edital oficial.",
+                f"Concursos em {g.nome} ({g.extra['municipio']['uf']})",
                 self._capa(len(g.abertos), f"com inscrição aberta na cidade e mais {regiao_n} abertos ou previstos a até 50 km."),
                 [dict(titulo=f"Abertos em {g.nome}", concursos=g.abertos,
                       vazio=f"Não achamos concurso aberto em {g.nome} hoje. Os da região, a até 50 km, estão logo abaixo."),
                  dict(titulo=f"Previstos em {g.nome}", concursos=g.previstos)],
-                [inicio, ("Paraná", "/estado/pr/"), (g.nome, f"/cidade/{g.slug}/")],
+                [inicio] + ([(modelo.SIGLA_UF[uf_g], f"/estado/{uf_g.lower()}/")] if uf_g in ufs_com_pagina else []) + [(g.nome, f"/cidade/{g.slug}/")],
                 chips=[dict(titulo=f"Por área em {g.nome} e região",
                             itens=[(a, f"/area/{modelo.slug(a)}/", n) for a, n in sorted(areas.items(), key=lambda p: -p[1])]),
                        dict(titulo="Bancas com concurso na região",
@@ -519,8 +533,8 @@ class Site:
     def dados_js(self):
         """Dados que o JavaScript busca só quando a pessoa precisa: municípios (cidade, GPS) e cargos (perfil)."""
         b = self.base
-        municipios = [[m["ibge"], m["nome"], m["lat"], m["lon"], b.cidade_por_ibge.get(m["ibge"])] + ([1] if m.get("ficticio") else [])
-                      for m in sorted(b.municipios.values(), key=lambda m: modelo.slug(m["nome"]))]
+        municipios = [[m["ibge"], m["nome"], m["lat"], m["lon"], b.cidade_por_ibge.get(m["ibge"]), m["uf"]] + ([1] if m.get("ficticio") else [])
+                      for m in sorted(b.municipios.values(), key=lambda m: (modelo.slug(m["nome"]), m["uf"]))]
         self._gravar("assets/dados/municipios.json", json.dumps(municipios, ensure_ascii=False, separators=(",", ":")))
         cargos = {x.id: [[k["nome"], k["salario"], k["escolaridade"], k["requisitos"]] for k in x.cargos] for x in b.ativos}
         self._gravar("assets/dados/cargos.json", json.dumps(cargos, ensure_ascii=False, separators=(",", ":")))
@@ -532,7 +546,7 @@ class Site:
         tarefas = [(x.og, ("concurso", x.id, x.situacao, x.selo, x.orgao, x.salario, x.prazo, x.local, x.vagas, x.banca, rodape),
                     lambda x=x: imagens.og_concurso(x, rodape)) for x in self.base.concursos]
         tarefas.append(("/og/padrao.png", ("padrao", rodape),
-                        lambda: imagens.og_padrao("Concursos abertos federais e do Paraná, com o salário na frente",
+                        lambda: imagens.og_padrao("Concursos públicos abertos em todo o Brasil, com o salário na frente",
                                                   "Prazos, vagas e sempre o link do edital oficial.", rodape)))
         for destino, chave, desenhar in tarefas:
             guardada = cache / (imagens.assinatura(*chave, _versao_imagens()) + ".png")
@@ -573,7 +587,7 @@ def cidade_indexavel(g):
 
 
 DESCRICOES = {
-    "/sobre/": "O que é o Concurseiro, o que ele faz e o que não faz: reúne concursos federais e do Paraná a partir de atos oficiais, sem inscrição nem pagamento.",
+    "/sobre/": "O que é o Concurseiro, o que ele faz e o que não faz: reúne concursos públicos de todo o Brasil a partir de atos oficiais, sem inscrição nem pagamento.",
     "/como-conferimos/": "De onde vêm os dados do Concurseiro, como cada ficha é extraída do ato oficial e conferida antes de ir ao ar, e como pedir correção.",
     "/privacidade/": "Como o Concurseiro trata dados pessoais, conforme a LGPD: sem conta e sem cookie próprio; cidade e perfil ficam só no seu aparelho.",
     "/termos/": "Termos de uso do Concurseiro: como usar a informação, por que vale sempre o edital oficial e como avisar um erro.",

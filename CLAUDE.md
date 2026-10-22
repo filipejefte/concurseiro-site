@@ -4,7 +4,7 @@ Site gratuito que reúne concursos públicos abertos, com o salário na frente, 
 
 ## Contexto
 
-- **Cobertura:** concursos federais, do Brasil todo, e do Paraná (estado, prefeituras, câmaras, autarquias). Federal de qualquer estado está na cobertura.
+- **Cobertura (decisão de 22/10/2026):** todo concurso público do Brasil, de qualquer UF e esfera (federal, estadual, prefeituras, câmaras, autarquias, conselhos, universidades). Fora só o que não é concurso público: processo seletivo simplificado (PSS), teste seletivo, contratação temporária, residência, estágio e vestibular. As fontes lidas sozinhas hoje são o DOU, o diário do Paraná, o Diário dos Municípios do PR e os sites das bancas (de todas as UFs); o resto do país entra pelos atos do DOU, pelas bancas lidas e por pesquisa manual com edital oficial. O que não lemos aparece em `/como-conferimos/` ("O que ainda não lemos", de `dados/fontes.json`).
 - **Atualização:** uma varredura por semana, rodada pelo Filipe com `/varredura`, no notebook (o `.env` e a rede para os diários oficiais estão lá). O site é gerado de novo todo dia às 06:00 pelo GitHub Actions (situação e prazos).
 - **Custo:** o único custo é o domínio. Nada pode gerar cobrança (regra de 16/10/2026):
   - extração sempre pelo próprio Claude Code (`/varredura`); nada de chave de API paga;
@@ -47,7 +47,8 @@ functions/api/local.js        Cloudflare Pages Function: região pelo IP, sem gr
 dados/
   schema/concurso.schema.json
   concursos.json              o que está publicado
-  municipios-pr.json          399 municípios (IBGE + coordenadas)
+  municipios.json             todos os municípios do Brasil, com UF (IBGE + coordenadas)
+  municipios-pr.json          os 399 do Paraná (a AMP e a cobertura casam o nome dentro do estado)
   exemplo/                    12 concursos e 4 cidades fictícios (só com --exemplo)
   varreduras/AAAA-MM-DD/      atos.json, fila/ (fora do git), fichas/, descartes.json, revisao.md,
                               revisao.csv, cobertura.csv, resumo-telegram.md, resumo-whatsapp.txt,

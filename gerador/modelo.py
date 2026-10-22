@@ -27,6 +27,14 @@ SIGLA_UF = {
     "RJ": "Rio de Janeiro", "RN": "Rio Grande do Norte", "RS": "Rio Grande do Sul", "RO": "Rondônia", "RR": "Roraima",
     "SC": "Santa Catarina", "SP": "São Paulo", "SE": "Sergipe", "TO": "Tocantins",
 }
+EM_UF = {
+    "AC": "no Acre", "AL": "em Alagoas", "AP": "no Amapá", "AM": "no Amazonas", "BA": "na Bahia", "CE": "no Ceará",
+    "DF": "no Distrito Federal", "ES": "no Espírito Santo", "GO": "em Goiás", "MA": "no Maranhão", "MT": "no Mato Grosso",
+    "MS": "no Mato Grosso do Sul", "MG": "em Minas Gerais", "PA": "no Pará", "PB": "na Paraíba", "PR": "no Paraná",
+    "PE": "em Pernambuco", "PI": "no Piauí", "RJ": "no Rio de Janeiro", "RN": "no Rio Grande do Norte",
+    "RS": "no Rio Grande do Sul", "RO": "em Rondônia", "RR": "em Roraima", "SC": "em Santa Catarina", "SP": "em São Paulo",
+    "SE": "em Sergipe", "TO": "no Tocantins",
+}
 RAIO_KM = 50
 DIAS_NO_SITEMAP = 90   # encerrado sai do sitemap 90 dias depois do fim da inscrição
 ATIVAS = ("aberto", "breve", "previsto")
@@ -36,6 +44,11 @@ ABERTAS = ("aberto", "breve")
 def slug(texto):
     texto = unicodedata.normalize("NFD", str(texto)).encode("ascii", "ignore").decode().lower()
     return re.sub(r"[^a-z0-9]+", "-", texto).strip("-")
+
+
+def cidade_slug(m):
+    """Slug da cidade com a UF: "São José" existe em vários estados ("sao-jose-sc", "sao-jose-sp")."""
+    return f"{slug(m['nome'])}-{m['uf'].lower()}"
 
 
 def distancia(a, b):
@@ -142,7 +155,7 @@ class Concurso:
     """Um concurso pronto para as páginas. `c` é a ficha original."""
     c: dict
     hoje: date
-    municipio: dict = None          # linha da tabela de municípios (com lat e lon), quando a cidade é do PR
+    municipio: dict = None          # linha da tabela de municípios (com uf, lat e lon), quando a ficha traz o código IBGE
     cidade_slug: str = None         # só quando a cidade tem página
     parecidos: list = field(default_factory=list)
 
@@ -179,7 +192,6 @@ class Concurso:
         self.area_slug = slug(c["area"])
         self.federal = c["esfera"] == "federal"
         self.nacional = c["nacional"]
-        self.no_pr = c["uf"] == "PR" and not c["nacional"]
         self.uf = c["uf"]
         insc = c["inscricao"]
         self.inicio, self.fim = insc["inicio"], insc["fim"]
@@ -343,7 +355,7 @@ class Base:
         self.hoje = hoje
         self.varredura = base.get("varredura")
         self.proxima = base.get("proxima_varredura")
-        self.cobertura = base.get("cobertura") or ["federal", "PR"]
+        self.cobertura = base.get("cobertura") or ["Brasil"]
         self.fontes = base.get("fontes")      # o que a última varredura leu (varredura/publicar.py: fontes_da_semana)
         self.municipios = municipios          # {ibge: {ibge, nome, lat, lon[, ficticio]}}
         self.exemplo = exemplo
@@ -361,15 +373,16 @@ class Base:
     # ---------- cidades: só as que têm concurso ativo na cidade ou a até 50 km ----------
 
     def _cidades(self):
-        locais = [x for x in self.ativos if x.no_pr and x.municipio]
+        locais = [x for x in self.ativos if not x.nacional and x.municipio]
         self.cidades = {}
-        for m in sorted(self.municipios.values(), key=lambda m: slug(m["nome"])):
+        # Só varre as cidades perto de algum concurso ativo: a tabela é do Brasil todo (5,5 mil linhas).
+        for m in sorted(self.municipios.values(), key=lambda m: cidade_slug(m)):
             na = [x for x in locais if x.municipio["ibge"] == m["ibge"]]
             perto = [(distancia(m, x.municipio), x) for x in locais if x.municipio["ibge"] != m["ibge"]]
             perto = [(km, x) for km, x in perto if km <= RAIO_KM]
             if not na and not perto:
                 continue
-            g = Grupo(slug(m["nome"]), m["nome"], ordenar(na),
+            g = Grupo(cidade_slug(m), m["nome"], ordenar(na),
                       extra={"municipio": m, "regiao": sorted(perto, key=lambda p: (p[0], p[1].chave()))})
             self.cidades[g.slug] = g
         por_ibge = {g.extra["municipio"]["ibge"]: g.slug for g in self.cidades.values()}
@@ -405,8 +418,17 @@ class Base:
                 g.nome = x.banca
         return sorted(grupos.values(), key=lambda g: slug(g.nome))
 
-    def estado_pr(self):
-        return Grupo("pr", "Paraná", [x for x in self.concursos if x.no_pr])
+    def estados(self):
+        """Um grupo por UF que tem concurso (nacional fica de fora: vale para vários estados), pela ordem do nome do estado."""
+        grupos = {}
+        for x in self.concursos:
+            if x.nacional or x.uf not in SIGLA_UF:
+                continue
+            grupos.setdefault(x.uf, Grupo(x.uf.lower(), SIGLA_UF[x.uf], [], extra={"uf": x.uf})).concursos.append(x)
+        return sorted(grupos.values(), key=lambda g: slug(g.nome))
+
+    def estado(self, uf):
+        return next((g for g in self.estados() if g.extra["uf"] == uf), Grupo(uf.lower(), SIGLA_UF.get(uf, uf), [], extra={"uf": uf}))
 
     def federais(self):
         return Grupo("federais", "Federais", [x for x in self.concursos if x.federal])

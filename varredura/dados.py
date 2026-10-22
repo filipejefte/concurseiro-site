@@ -11,7 +11,8 @@ RAIZ = Path(__file__).resolve().parent.parent
 DADOS = RAIZ / "dados"
 CONCURSOS = DADOS / "concursos.json"
 EXEMPLO = DADOS / "exemplo" / "concursos.json"
-MUNICIPIOS = DADOS / "municipios-pr.json"
+MUNICIPIOS = DADOS / "municipios.json"          # os 5.570 municípios do Brasil, com UF
+MUNICIPIOS_PR = DADOS / "municipios-pr.json"    # só o Paraná (AMP e cobertura casam o nome dentro do estado)
 MUNICIPIOS_FICTICIOS = DADOS / "exemplo" / "municipios-ficticios.json"
 SCHEMA = DADOS / "schema" / "concurso.schema.json"
 VARREDURAS = DADOS / "varreduras"
@@ -71,11 +72,22 @@ def data(texto):
 
 
 def municipios(exemplo=False):
-    """Tabela {ibge: municipio}. Com exemplo=True inclui as cidades fictícias dos dados de exemplo."""
+    """Tabela {ibge: municipio} do Brasil todo (cada um com "uf"). Com exemplo=True inclui as cidades fictícias dos dados de exemplo."""
     lista = ler_json(MUNICIPIOS)["municipios"]
     if exemplo:
-        lista = lista + ler_json(MUNICIPIOS_FICTICIOS)["municipios"]
+        lista = lista + [dict(m, uf="PR") for m in ler_json(MUNICIPIOS_FICTICIOS)["municipios"]]
     return {m["ibge"]: m for m in lista}
+
+
+def municipios_pr():
+    """Tabela {ibge: municipio} só do Paraná."""
+    return {m["ibge"]: m for m in ler_json(MUNICIPIOS_PR)["municipios"]}
+
+
+def municipio_por_nome(uf, nome):
+    """O município (da tabela do Brasil) com esse nome nessa UF, comparando sem acento nem maiúscula; None se não achar."""
+    alvo = chave_nome(nome)
+    return next((m for m in municipios().values() if m["uf"] == uf and chave_nome(m["nome"]) == alvo), None)
 
 
 def chave_nome(texto):
@@ -91,7 +103,7 @@ def municipio_pelo_inicio(texto):
     """O município do Paraná (da tabela) cujo nome abre o texto; o mais longo, se houver mais de um. Compara sem
     espaços: o PDF do diário quebra nomes em linhas e até em palavras ("CHOPINZ INHO"). None se nenhum abre o texto."""
     if not _NOMES_SEM_ESPACO:
-        _NOMES_SEM_ESPACO.extend(sorted(((chave_nome(m["nome"]).replace(" ", ""), m) for m in municipios().values()),
+        _NOMES_SEM_ESPACO.extend(sorted(((chave_nome(m["nome"]).replace(" ", ""), m) for m in municipios_pr().values()),
                                         key=lambda par: -len(par[0])))
     alvo = chave_nome(texto).replace(" ", "")
     return next((m for chave, m in _NOMES_SEM_ESPACO if alvo.startswith(chave)), None)

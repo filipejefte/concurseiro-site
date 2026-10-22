@@ -1,6 +1,6 @@
 # Concurseiro
 
-Site gratuito que reúne os concursos públicos **federais (do Brasil todo) e do Paraná** com inscrição aberta: salário na frente, prazos, localização e sempre o caminho para o edital oficial. No ar em https://concurseiro.pages.dev (Cloudflare Pages; fora dos buscadores até os sócios decidirem). O site fala só da proposta, nunca de quem o faz (regra 11 do `CLAUDE.md`).
+Site gratuito que reúne todos os concursos públicos **do Brasil** (qualquer estado e esfera) com inscrição aberta: salário na frente, prazos, localização e sempre o caminho para o edital oficial. No ar em https://concurseiro.pages.dev (Cloudflare Pages; fora dos buscadores até os sócios decidirem). O site fala só da proposta, nunca de quem o faz (regra 11 do `CLAUDE.md`).
 
 Custo fixo: zero. Não há banco, servidor, API paga, domínio nem serviço pago.
 
@@ -42,7 +42,7 @@ python -m gerador anonimato          # nada de quem faz o Concurseiro no site ge
 | `/concursos/` | Todos os abertos e os previstos no HTML; o JavaScript busca, filtra, ordena e mede a distância |
 | `/concurso/<id>/` | Ficha: salário, vagas, escolaridade, inscrição e prova, taxa, banca, cidade, documentos, "Ver edital oficial", agenda (.ics) e "Mandar no WhatsApp". Encerrado mantém a página, com abertos parecidos |
 | `/cidade/<slug>/` | Só cidades com concurso na cidade ou a até 50 km |
-| `/area/<slug>/`, `/banca/<slug>/`, `/estado/pr/`, `/federais/`, `/previstos/`, `/encerram-esta-semana/` | Listas |
+| `/area/<slug>/`, `/banca/<slug>/`, `/estados/`, `/estado/<uf>/`, `/federais/`, `/previstos/`, `/encerram-esta-semana/` | Listas |
 | `/sobre/`, `/como-conferimos/`, `/privacidade/`, `/termos/`, `/contato/`, `/alertas/` | Institucionais |
 | `concurso.html?id=`, `cidade.html?ibge=`, `concursos.html`, `cidade-maringa.html` | Endereços do protótipo: levam ao endereço novo |
 
@@ -153,4 +153,4 @@ tests/                       pytest
 
 ## Tabela de municípios
 
-`dados/municipios-pr.json`: os 399 municípios do Paraná com código IBGE, nome e coordenadas, gerada em 14/10/2026 por `python -m varredura municipios`. Códigos e nomes: API de localidades do IBGE. Coordenadas: [kelvins/municipios-brasileiros](https://github.com/kelvins/municipios-brasileiros) (MIT). As cidades dos exemplos são fictícias (códigos 41999xx) e ficam em `dados/exemplo/`.
+`dados/municipios.json`: todos os municípios do Brasil com código IBGE, UF, nome e coordenadas, e `dados/municipios-pr.json`, só os 399 do Paraná (a AMP casa o nome dentro do estado), gerados em 22/10/2026 por `python -m varredura municipios`. Códigos e nomes: API de localidades do IBGE. Coordenadas: [kelvins/municipios-brasileiros](https://github.com/kelvins/municipios-brasileiros) (MIT). As cidades dos exemplos são fictícias (códigos 41999xx) e ficam em `dados/exemplo/`.

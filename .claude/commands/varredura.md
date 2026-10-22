@@ -1,5 +1,5 @@
 ---
-description: Varredura semanal de concursos (federais e do Paraná), da coleta à revisão. Para antes de publicar.
+description: Varredura semanal de concursos (todo o Brasil), da coleta à revisão. Para antes de publicar.
 argument-hint: "[inicial AAAA-MM-DD | semana]"
 ---
 
@@ -54,7 +54,7 @@ Para cada ato:
 1. Leia o arquivo da fila: cabeçalho com fonte, data, classe, órgão, título e url; depois o texto.
 2. Siga `varredura/instrucoes_extracao.md` à risca. Estas consultas ajudam:
    - **schema:** `dados/schema/concurso.schema.json`;
-   - **códigos IBGE:** `dados/municipios-pr.json`;
+   - **códigos IBGE:** `dados/municipios.json` (Brasil todo; `municipios-pr.json` é só do Paraná, para a AMP);
    - **id e retificação:** antes de criar um id novo, procure em `dados/concursos.json` e em `fichas/` um concurso do mesmo órgão e edital. Retificação usa o mesmo id e devolve a ficha inteira, com o documento novo.
 3. Se o texto do ato não traz o edital completo (anexo em PDF, edital só no site da banca ou do órgão):
    - pode abrir o link oficial (diário, órgão ou banca), uma requisição por vez;
@@ -66,7 +66,7 @@ Para cada ato:
    - **Ficha:** `dados/varreduras/<data>/fichas/<id>.json` com `{"ato": "<nome do arquivo da fila>", "trechos": {...}, "concurso": {...}}`.
    - **Descarte:** acrescente `{"ato": "<nome do arquivo da fila>", "motivo": "..."}` à lista em `dados/varreduras/<data>/descartes.json`.
 
-Com muitos atos, trabalhe em lotes e rode `python -m varredura pendentes` entre eles até zerar. Não pare nos atos do Paraná: concurso **federal de qualquer estado** está na cobertura (universidade, instituto federal, conselho, forças armadas, tribunal, ministério). Em 14/10, 413 atos federais de fora do PR ficaram pendentes por isso (ver `docs/DIAGNOSTICO-COBERTURA.md`). `pendentes --resumo` ajuda a descartar rápido o que já encerrou.
+Com muitos atos, trabalhe em lotes e rode `python -m varredura pendentes` entre eles até zerar. Não pare nos atos do Paraná: concurso **de qualquer estado e esfera** está na cobertura (federal, estadual, prefeitura, câmara, autarquia, universidade, instituto federal, conselho, forças armadas, tribunal, ministério). Em 14/10, 413 atos federais de fora do PR ficaram pendentes por isso (ver `docs/DIAGNOSTICO-COBERTURA.md`). `pendentes --resumo` ajuda a descartar rápido o que já encerrou.
 
 ## 4. Validar
 

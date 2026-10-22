@@ -29,11 +29,6 @@ NAO_E_EDITAL = re.compile(r"retifica|errata|resultado|gabarito|deferimento|convo
                           r"classifica|aviso|comunicado|corre[çc][ãa]o|divulga[çc][ãa]o|prorroga", re.I)
 ATUALIZADO = re.compile(r"retificado|atualizado|consolidado", re.I)
 PSS = re.compile(r"processo\s+seletivo|teste\s+seletivo|\bpss\b|sele[çc][ãa]o\s+simplificada|contrata[çc][ãa]o\s+tempor|resid[êe]ncia\s+(multiprofissional|m[ée]dica)", re.I)
-# Órgão federal (qualquer UF) entra mesmo sem "PR"; prefeitura, câmara e estado só entram no Paraná.
-FEDERAL = re.compile(r"universidade federal|instituto federal|\bconselho (regional|federal)\b|tribunal (regional|superior)|minist[ée]rio|"
-                     r"pol[ií]cia (federal|rodovi[áa]ria)|receita federal|banco (central|do brasil)|caixa econ|correios|defensoria p[úu]blica da uni|"
-                     r"justi[çc]a federal|c[âa]mara dos deputados|senado federal|ebserh|hospital universit|fiocruz", re.I)
-MUNICIPAL_OU_ESTADUAL = re.compile(r"prefeitura|munic[ií]pio|c[âa]mara municipal|secretaria (municipal|estadual)|cons[óo]rcio|governo d[eo] estado", re.I)
 UF_NO_FIM = re.compile(r"(?:[-–/(]\s*|\s)([A-Za-z]{2})\.?\s*\)?\s*$")
 UFS = {"AC", "AL", "AP", "AM", "BA", "CE", "DF", "ES", "GO", "MA", "MT", "MS", "MG", "PA", "PB", "PR", "PE", "PI", "RJ", "RN", "RS", "RO", "RR", "SC", "SP", "SE", "TO"}
 
@@ -98,13 +93,9 @@ class Concurso:
 
 
 def dentro_da_cobertura(c):
-    """Federal de qualquer UF, ou qualquer órgão do Paraná. Processo seletivo simplificado fica de fora. UF desconhecida e
-    órgão que não é federal: fora (só entra com a UF PR)."""
-    if PSS.search(c.titulo) or PSS.search(c.tipo) or (c.tipo and "concurso" not in c.tipo.lower()):
-        return False
-    if c.uf == "PR":
-        return True
-    return bool(FEDERAL.search(c.orgao) or FEDERAL.search(c.titulo)) and not MUNICIPAL_OU_ESTADUAL.search(c.orgao)
+    """Todo concurso público do Brasil, de qualquer UF e esfera. Processo seletivo (PSS), teste seletivo, contratação
+    temporária, residência e o que a banca não chama de concurso ficam de fora."""
+    return not (PSS.search(c.titulo) or PSS.search(c.tipo) or (c.tipo and "concurso" not in c.tipo.lower()))
 
 
 def aberto(c, hoje):

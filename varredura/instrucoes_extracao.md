@@ -16,10 +16,9 @@ Estas instruções valem para quem segue o `/varredura` no Claude Code. A ficha 
      aberto (resultado, convocação, nomeação, prorrogação de validade e parecidos);
    - é processo seletivo simplificado ou contratação temporária;
    - tem inscrição que terminou antes da data da varredura;
-   - é de órgão fora da cobertura. A cobertura é: todo órgão **federal**, de qualquer estado do Brasil
-     (universidade, instituto federal, conselho profissional, forças armadas, tribunal, ministério), e todo
-     órgão do **Paraná** (estado, prefeitura, câmara, autarquia). Prefeitura, câmara ou órgão estadual de
-     outra UF fica fora. Concurso federal de outro estado **não** é descarte.
+   - não é concurso público do Brasil: a cobertura é **todo concurso público do país**, de qualquer UF e
+     esfera (federal, estadual, prefeitura, câmara, autarquia, conselho, universidade). Só ficam de fora o
+     que não é concurso público (processo seletivo, residência, estágio, vestibular).
 4. **Previsto** só com ato oficial de autorização do concurso ou de contratação da banca. Nesse
    caso `inscricao.inicio` e `inscricao.fim` ficam `null`, e `banca` fica `{"nome": null, "url": null}`
    se a banca ainda não foi contratada.
@@ -28,11 +27,12 @@ Estas instruções valem para quem segue o `/varredura` no Claude Code. A ficha 
    **Retificação** e edital de concurso já previsto usam o MESMO id do concurso que já está em
    `dados/concursos.json` (a lista de ids existentes vem junto) e devolvem a ficha inteira
    atualizada, com o documento novo acrescentado em `documentos`.
-6. **Local.** Concurso no Paraná: `uf: "PR"`, `municipio_ibge` com o código de 7 dígitos da tabela
-   de municípios e `cidade` com o nome exato da tabela. Federal: `esfera: "federal"`; `nacional: true`
-   quando há vagas em vários estados (com `abrangencia` curta, como "14 estados", e `uf` e `cidade` da
-   sede); com uma cidade só fora do PR, `uf` e `cidade` dessa cidade (por exemplo `"RJ"` e
-   `"Rio de Janeiro"`) e `municipio_ibge: null`. `municipio_ibge` só existe para cidade do PR.
+6. **Local.** Concurso numa cidade: `uf` da cidade, `municipio_ibge` com o código de 7 dígitos de
+   `dados/municipios.json` (todos os municípios do Brasil; `python -c "from varredura.dados import
+   municipio_por_nome as m; print(m('SP', 'Campinas'))"` acha o código) e `cidade` com o nome exato da
+   tabela. Prefeitura, câmara e órgão estadual precisam do `municipio_ibge`. Federal: `esfera: "federal"`;
+   `nacional: true` quando há vagas em vários estados (com `abrangencia` curta, como "14 estados", e `uf` e
+   `cidade` da sede); com uma cidade só, a `uf` e a `cidade` dela, e o `municipio_ibge` quando souber.
 7. **documentos**: inclua o próprio ato, com `tipo` conforme o que ele é (`edital`, `retificacao`,
    `autorizacao`, `contratacao_banca`), `url` = o link do ato recebido, `fonte` = a fonte recebida
    (`DOU`, `AMP-PR`, `DIOE-PR`; ato de banca é `banca`, e edital que o próprio órgão publica é `outra`), `publicado_em` = a data do ato. Se o ato cita o site da banca
