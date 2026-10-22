@@ -263,6 +263,11 @@ class Concurso:
         return FONTES.get((self.ato or {}).get("fonte"), "Fonte oficial")
 
     @property
+    def nao_conferido(self):
+        """Publicada sem conferência (`conferencia: null`, quem publica pediu): a ficha avisa e o texto de /como-conferimos/ também."""
+        return not self.ficticio and not self.c["conferencia"]
+
+    @property
     def conferido(self):
         if self.ficticio:
             return "exemplo fictício"
@@ -362,6 +367,7 @@ class Base:
         self.previa = None           # data da varredura quando o build é a prévia (--previa)
         self.concursos = ordenar(Concurso(c, hoje, municipio=municipios.get(c["municipio_ibge"])) for c in base["concursos"])
         self.por_id = {x.id: x for x in self.concursos}
+        self.nao_conferidos = [x for x in self.concursos if x.nao_conferido]
         self.ativos = [x for x in self.concursos if x.ativo]
         self.abertos = [x for x in self.concursos if x.aberto]
         self.previstos = [x for x in self.concursos if x.situacao == "previsto"]

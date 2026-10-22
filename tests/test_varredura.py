@@ -549,6 +549,29 @@ def test_publicar_o_que_foi_conferido(ambiente):
     assert ficha["orgao"] in (pasta / "posts" / f"post-{c['id']}.txt").read_text(encoding="utf-8")
 
 
+def test_publicar_nao_conferidos_so_com_a_opcao_e_sem_anunciar(ambiente):
+    pasta, base, c = ambiente
+    gerar(pasta)
+    aprovados, recusados = publicar_semana(pasta, "Teste", hoje=DIA, nao_conferidos=True)
+    assert recusados == [] and [x["id"] for x in aprovados] == [c["id"]]
+    ficha = ler_json(base)["concursos"][0]
+    assert ficha["id"] == c["id"] and ficha["conferencia"] is None   # o site mostra "não conferido"
+    # nada de anúncio nos canais para o que ninguém conferiu
+    assert not (pasta / "resumo-telegram.md").exists() and not (pasta / "resumo-whatsapp.txt").exists()
+    assert not (pasta / "posts").exists()
+
+
+def test_publicar_nao_conferidos_mantem_a_recusa_da_ficha_invalida(ambiente):
+    pasta, base, c = ambiente
+    gerar(pasta)
+    ficha = ler_json(pasta / "fichas" / f"{c['id']}.json")
+    ficha["concurso"]["documentos"][0]["url"] = "https://pciconcursos.com.br/edital"   # agregador
+    dados.gravar_json(pasta / "fichas" / f"{c['id']}.json", ficha)
+    aprovados, recusados = publicar_semana(pasta, "Teste", hoje=DIA, nao_conferidos=True)
+    assert aprovados == [] and "ficha inválida" in recusados[0][1]
+    assert ler_json(base)["concursos"] == []
+
+
 def test_valor_mudado_depois_da_conferencia_volta_a_ser_recusado(ambiente):
     pasta, base, c = ambiente
     gerar(pasta)

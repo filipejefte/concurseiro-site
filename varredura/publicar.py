@@ -32,8 +32,12 @@ def _quem_conferiu(c, marcas, por):
     return por + (" e conferência automática" if "auto" in tipos else "")
 
 
-def publicar_semana(pasta, por, hoje=None, posts=True):
-    """Devolve (aprovados, recusados). Recusado = ficha inválida, fictícia ou com campo crítico não conferido."""
+def publicar_semana(pasta, por, hoje=None, posts=True, nao_conferidos=False):
+    """Devolve (aprovados, recusados). Recusado = ficha inválida, fictícia ou com campo crítico não conferido.
+
+    nao_conferidos (decisão explícita de quem publica): leva também as fichas válidas com campo crítico ainda sem
+    "ok" nem "auto", com `conferencia: null`; o site mostra "não conferido" nelas. Nesse modo não escreve os resumos
+    do Telegram e do WhatsApp nem os posts: anunciar nos canais o que ninguém conferiu é decisão de quem confere."""
     pasta = Path(pasta)
     hoje = hoje or date.today()
     data_varredura = date.fromisoformat(pasta.name)
@@ -44,24 +48,27 @@ def publicar_semana(pasta, por, hoje=None, posts=True):
     marcas = ler_marcas(pasta)
     tabela = d.municipios()
 
-    aprovados, recusados = [], []
+    aprovados, recusados, sem_conferencia = [], [], set()
     for c in r.novos + [novo for novo, _ in r.alterados]:
         erros = validar_concurso(c, tabela)
         faltam = _faltando_conferir(c, marcas)
         if erros:
             recusados.append((c["id"], "ficha inválida: " + "; ".join(erros)))
-        elif faltam:
+        elif faltam and not nao_conferidos:
             recusados.append((c["id"], "falta conferir: " + ", ".join(faltam)))
         else:
             aprovados.append(c)
+            if faltam:
+                sem_conferencia.add(c["id"])
 
     publicados = {c["id"]: c for c in base["concursos"]}
     for c in aprovados:
         antigo = publicados.get(c["id"]) or {}
         publicados[c["id"]] = dict(
             c,
-            conferencia={"conferido_em": hoje.isoformat(), "por": _quem_conferiu(c, marcas, por),
-                         "campos": [campo for campo in d.CAMPOS_CRITICOS if any(k == campo for k, _ in linhas_criticas(c))]},
+            conferencia=None if c["id"] in sem_conferencia else
+            {"conferido_em": hoje.isoformat(), "por": _quem_conferiu(c, marcas, por),
+             "campos": [campo for campo in d.CAMPOS_CRITICOS if any(k == campo for k, _ in linhas_criticas(c))]},
             primeira_varredura=antigo.get("primeira_varredura") or data_varredura.isoformat(),
             ultima_alteracao=data_varredura.isoformat(),
         )
@@ -71,6 +78,8 @@ def publicar_semana(pasta, por, hoje=None, posts=True):
     base["proxima_varredura"] = (data_varredura + timedelta(days=7)).isoformat()
     base["fontes"] = fontes_da_semana(pasta)
     d.gravar_json(d.CONCURSOS, base)
+    if nao_conferidos:
+        return aprovados, recusados
     novos, retificados, acabando = _grupos(base, aprovados, r.alterados, data_varredura)
     escrever_resumo(pasta, novos, retificados, acabando, anterior, data_varredura)
     abertos = [c for c in base["concursos"] if d.situacao(c, data_varredura) in ("aberto", "breve")]

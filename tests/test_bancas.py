@@ -196,7 +196,8 @@ def test_previsto_com_banca_conhecida_vira_aberto_quando_a_banca_publica_o_edita
     from varredura import dados
     from varredura.previstos import verificar
 
-    base = dados.ler_json(dados.CONCURSOS)
+    # A ficha de 21/10, ainda prevista, guardada em tests/dados: o dado publicado muda a cada varredura (a de hoje já a traz aberta).
+    base = dados.ler_json(Path(__file__).parent / "dados" / "previsto-camara-quatro-barras.json")
     previsto = next(c for c in base["concursos"] if c["id"] == "camara-quatro-barras-pr-2026")
     assert dados.situacao(previsto, HOJE) == "previsto" and previsto["banca"]["nome"] == "Instituto Consulpam"
 

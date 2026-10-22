@@ -1,10 +1,10 @@
 # Revisão da varredura de 19/10/2026
 
-Fichas: 73 · novos: 67 · alterados: 2 · iguais ao publicado: 4 · encerrados desde a última varredura: 0
+Fichas: 74 · novos: 68 · alterados: 2 · iguais ao publicado: 4 · encerrados desde a última varredura: 0
 
 Como conferir: abra `revisao.csv` (Excel ou LibreOffice). As linhas `auto` a conferência automática já achou no texto do ato. Confira só as linhas com **conferido** vazio (o motivo está em `observacao`) e as marcadas `amostra`, comparando com o ato oficial, e escreva `ok`. Valor errado: corrija `fichas/<id>.json`, rode `python -m varredura revisao` de novo (as suas marcas nas linhas que não mudaram ficam) e marque `ok`. `corrigir` segura o concurso fora da publicação.
 
-**Conferência:** 1078 linhas · 850 achadas no ato pela automática · **221 para você** (171 que a automática não achou e 50 da amostra) · 7 ok · 0 corrigir
+**Conferência:** 1089 linhas · 735 achadas no ato pela automática · **347 para você** (308 que a automática não achou e 39 da amostra) · 7 ok · 0 corrigir
 
 ## Fontes com problema nesta coleta
 
@@ -14,7 +14,7 @@ Como conferir: abra `revisao.csv` (Excel ou LibreOffice). As linhas `auto` a con
 
 ### Agência Nacional de Proteção de Dados (ANPD) · `anpd-2026`
 
-Ato: dou-2026-06-24-ministerio-da-gestao-e-da-inovacao-em-se-0675e82a.md
+Ato: [PORTARIA MGI Nº 5.092, DE 22 DE JUNHO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=24/06/2026&jornal=515&pagina=79) · DOU · 2026-06-24
 
 | Campo | Valor | Trecho do ato |
 | --- | --- | --- |
@@ -43,6 +43,24 @@ Ato: [PORTARIA MGI Nº 5.508, DE 3 DE JULHO DE 2026](http://pesquisa.in.gov.br/i
 | banca | Não informado no edital | não consta no ato |
 | cidade | Não informado no edital (DF) · IBGE sem código | não consta no ato |
 | edital | http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/07/2026&jornal=613&pagina=11 | Art. 1º Fica autorizada a realização de concurso público para o provimento de cento e setenta cargos no quadro de pessoal do Banco Central do Brasil |
+
+### Câmara Municipal de Capinzal (SC) · `camara-capinzal-sc-2026-edital-001`
+
+Ato: [Edital nº 001/2026 – Concurso Público](https://anexos-r2.selecao.net.br/uploads/342/concursos/559/anexos/36440d38-64ee-4fd5-98ad-2fe5ef51e35f.pdf) · banca-furb · 2026-09-17
+
+| Campo | Valor | Trecho do ato |
+| --- | --- | --- |
+| salario | Advogado: R$ 4.534,82 | CARGO VAGAS CH (semanal) VENCIMENTO REQUISITOS Advogado 1 10h R$ 4.534,82 [...] Agente de Controle Interno  1 10h R$ 2.000,00 [...] Analista Legislativo 2 40h R$ 4.339,72 [...] Contador 1 20h R$ 4.339,72 |
+| salario | Agente de Controle Interno: R$ 2.000,00 | CARGO VAGAS CH (semanal) VENCIMENTO REQUISITOS Advogado 1 10h R$ 4.534,82 [...] Agente de Controle Interno  1 10h R$ 2.000,00 [...] Analista Legislativo 2 40h R$ 4.339,72 [...] Contador 1 20h R$ 4.339,72 |
+| salario | Analista Legislativo: R$ 4.339,72 | CARGO VAGAS CH (semanal) VENCIMENTO REQUISITOS Advogado 1 10h R$ 4.534,82 [...] Agente de Controle Interno  1 10h R$ 2.000,00 [...] Analista Legislativo 2 40h R$ 4.339,72 [...] Contador 1 20h R$ 4.339,72 |
+| salario | Contador: R$ 4.339,72 | CARGO VAGAS CH (semanal) VENCIMENTO REQUISITOS Advogado 1 10h R$ 4.534,82 [...] Agente de Controle Interno  1 10h R$ 2.000,00 [...] Analista Legislativo 2 40h R$ 4.339,72 [...] Contador 1 20h R$ 4.339,72 |
+| inscricao.inicio | 29/09/2026 | Período de Inscrições 29/09/2026 a 28/10/2026 [...] 3.2 A inscrição poderá ser efetuada no período compreendido en tre 8h do dia 29 de setembro de 2026 de 2026 e 23h59min do dia 28 de outubro de 2026. |
+| inscricao.fim | 28/10/2026 | Período de Inscrições 29/09/2026 a 28/10/2026 [...] 3.2 A inscrição poderá ser efetuada no período compreendido en tre 8h do dia 29 de setembro de 2026 de 2026 e 23h59min do dia 28 de outubro de 2026. |
+| prova_objetiva | 22/11/2026 | 8.5 A Prova Objetiva será realizada no dia 22 de novembro de 2026, com duração de 4 (quatro) horas, conforme cronograma a seguir: |
+| taxa | R$ 60,00 a R$ 130,00 | 3.4 O valor da taxa de inscrição fica firmado em: CARGO TAXA DE INSCRIÇÃO Agente de Controle Interno R$ 60,00 (sessenta reais) Advogado, Analista Legislativo e Contador R$130,00 (cento e trinta reais) |
+| banca | Fundação Universidade Regional de Blumenau (FURB) | 1.3 Sua execução caberá à Fundação Universidade Regional de Blumenau, doravante denominada FURB. |
+| cidade | Capinzal (SC) · IBGE 4203907 | O Presidente da Câmara Municipal de Capinzal, Estado de Santa Catarina, [...] 8.4.1 A Prova Objetiva será realizada no município de Capinzal/SC. Caso não haja locais suficientes ou adequados no município, a prova poderá ser realizada em Instituições de Ensino de municípios limítrofes. |
+| edital | https://anexos-r2.selecao.net.br/uploads/342/concursos/559/anexos/36440d38-64ee-4fd5-98ad-2fe5ef51e35f.pdf | CONCURSO PÚBLICO EDITAL N.º 001/2026 O Presidente da Câmara Municipal de Capinzal, Estado de Santa Catarina, [...] torna pública a abertura do Concurso Público, regido pelo presente Edital n.º 001/2026, destinado ao provimento de cargos efetivos para o Poder Legislativo Municipal. |
 
 ### Câmara dos Deputados · `camara-dos-deputados-2026-edital-1`
 
@@ -1026,7 +1044,7 @@ Ato: [EDITAL Nº 7, DE 25 DE SETEMBRO DE 2026](http://pesquisa.in.gov.br/imprens
 
 ### Universidade Federal do Ceará (UFC) · `ufc-2026-edital-50`
 
-Ato: dou-2026-10-15-ministerio-da-educacao-universidade-fede-1cf12f0e.md
+Ato: [EDITAL Nº 50/2026/CCV/UFC](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=15/10/2026&jornal=530&pagina=34) · DOU · 2026-10-15
 
 | Campo | Valor | Trecho do ato |
 | --- | --- | --- |
@@ -1372,7 +1390,7 @@ Ato: [EDITAL Nº 49, DE 25 DE SETEMBRO DE 2026](http://pesquisa.in.gov.br/impren
 
 ### Universidade Federal de Viçosa (UFV) · `ufv-2026-edital-57`
 
-Ato: dou-2026-10-15-ministerio-da-educacao-fundacao-universi-f0ee506d.md
+Ato: [EDITAL Nº 57, DE 14 DE OUTUBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=15/10/2026&jornal=530&pagina=72) · DOU · 2026-10-15
 
 | Campo | Valor | Trecho do ato |
 | --- | --- | --- |
@@ -1387,7 +1405,7 @@ Ato: dou-2026-10-15-ministerio-da-educacao-fundacao-universi-f0ee506d.md
 
 ### Universidade Federal de Viçosa (UFV) · `ufv-2026-edital-58`
 
-Ato: dou-2026-10-15-ministerio-da-educacao-fundacao-universi-bd583bc3.md
+Ato: [EDITAL Nº 58, DE 14 DE OUTUBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=15/10/2026&jornal=530&pagina=75) · DOU · 2026-10-15
 
 | Campo | Valor | Trecho do ato |
 | --- | --- | --- |
@@ -1402,7 +1420,7 @@ Ato: dou-2026-10-15-ministerio-da-educacao-fundacao-universi-bd583bc3.md
 
 ### Universidade Federal de Viçosa (UFV) · `ufv-2026-edital-59`
 
-Ato: dou-2026-10-15-ministerio-da-educacao-fundacao-universi-7d770ab9.md
+Ato: [EDITAL Nº 59, DE 14 DE OUTUBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=15/10/2026&jornal=530&pagina=77) · DOU · 2026-10-15
 
 | Campo | Valor | Trecho do ato |
 | --- | --- | --- |
@@ -1417,7 +1435,7 @@ Ato: dou-2026-10-15-ministerio-da-educacao-fundacao-universi-7d770ab9.md
 
 ### Universidade Federal de Viçosa (UFV) · `ufv-2026-edital-60`
 
-Ato: dou-2026-10-15-ministerio-da-educacao-fundacao-universi-4e4a1c1b.md
+Ato: [EDITAL Nº 60, DE 14 DE OUTUBRO DE 2026](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=15/10/2026&jornal=530&pagina=79) · DOU · 2026-10-15
 
 | Campo | Valor | Trecho do ato |
 | --- | --- | --- |
@@ -7681,6 +7699,20 @@ O diário não entregou o texto (HTTP 400/404 ou PDF escaneado). Abra o link e v
 
 - 2026-07-03 · Secretaria da Ciência, Tecnologia e Ensino Superior / UNICENTRO · [EDITAL 109/2026-DIRCOAV/UNICENTRO (CONCURSO PÚBLICO) 17cm](https://www.dioe.pr.gov.br/apifront/portal/edicoes/publicacoes_ver_conteudo/2074659/17007) · HTTP 400/404
 - 2026-07-07 · Secretaria da Agricultura e do Abastecimento · [Resolução nº 95/2026 - Institui Comissoes para Concurso Cafe Qualidade 2026 (Docto 2190953)](https://www.dioe.pr.gov.br/apifront/portal/edicoes/publicacoes_ver_conteudo/2076553/16966) · HTTP 400/404
+
+## Fila sem ficha nem descarte (extração pendente)
+
+- `fila/banca-cebraspe-2026-09-04-corpo-de-bombeiros-militar-do-estado-de-37f944ef.md`
+- `fila/banca-cebraspe-2026-09-10-corpo-de-bombeiros-militar-do-estado-de-7494c2b1.md`
+- `fila/banca-fgv-2026-09-17-prefeitura-municipal-do-salvador-bc25ba4c.md`
+- `fila/banca-fgv-2026-09-18-prefeitura-municipal-do-salvador-1fbca4e3.md`
+- `fila/banca-fundatec-2026-10-09-camara-municipal-de-vereadores-de-bage-4ab46d79.md`
+- `fila/banca-fundatec-2026-10-14-camara-municipal-de-vereadores-de-bage-ed61ae84.md`
+- `fila/orgao-2026-08-24-tribunal-de-contas-do-estado-de-goias-tc-4a919b39.md`
+- `fila/orgao-2026-09-16-secretaria-de-estado-da-administracao-do-f6c7f80f.md`
+- `fila/orgao-2026-09-18-defensoria-publica-do-estado-da-paraiba-ad74f4cc.md`
+- `fila/orgao-2026-10-01-secretaria-da-fazenda-e-planejamento-do-2846a303.md`
+- `fila/orgao-2026-10-21-secretaria-da-fazenda-e-planejamento-do-3f0163e7.md`
 
 ## Descartados na extração
 

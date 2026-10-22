@@ -522,6 +522,7 @@ class Site:
             self.render(Pagina(path, template, title=f"{h1} · Concurseiro", description=DESCRICOES[path], tipo="texto",
                                trilha=[("Início", "/"), (h1, path)], h1=h1, lastmod=TEXTOS_ATUALIZADOS,
                                contexto=dict(email=self.cfg.email_contato, n_abertos=len(self.base.abertos),
+                                             n_nao_conferidos=len(self.base.nao_conferidos), n_fichas=len(self.base.concursos),
                                              versao_privacidade=d.data_br(TEXTOS_ATUALIZADOS), fontes=self.pagina_fontes())))
         self.render(Pagina("/alertas/confirme/", "alertas-confirme.html", title="Confirme o seu e-mail · Concurseiro",
                            description="Falta confirmar o e-mail para começar a receber os alertas de concurso.", tipo="texto",

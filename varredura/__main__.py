@@ -7,6 +7,7 @@
   validar                                schema e regras, na base publicada e nas fichas da semana
   revisao                                revisao.md e revisao.csv na pasta da semana
   publicar --por "Nome"                  publica só o que foi conferido; resumos do Telegram e do WhatsApp e posts
+                                         (--incluir-nao-conferidos: leva também o que falta conferir, sem resumos nem posts)
   telegram [--teste]                     posta o resumo da semana no canal do Telegram (--teste só imprime)
   previstos                              reconfere no site da banca cada concurso previsto com banca conhecida
   cobertura                              refaz dados/cobertura-municipios.csv (quanto a AMP traz de cada município do PR)
@@ -59,6 +60,9 @@ def main(argv=None):
     pub.add_argument("--pasta", type=Path)
     pub.add_argument("--por", default=os.environ.get("CONFERENTE"), help="quem conferiu (ou CONFERENTE no .env)")
     pub.add_argument("--sem-posts", action="store_true", help="não gera as imagens dos posts")
+    pub.add_argument("--incluir-nao-conferidos", action="store_true",
+                     help='publica também o que falta conferir, com conferencia null ("não conferido" no site); '
+                          "nesse modo não gera resumos do Telegram e do WhatsApp nem posts")
 
     tel = sub.add_parser("telegram", help="posta resumo-telegram.md no canal (TELEGRAM_BOT_TOKEN e TELEGRAM_CANAL)")
     tel.add_argument("--pasta", type=Path)
@@ -151,9 +155,15 @@ def main(argv=None):
         if not args.por:
             p.error('diga quem conferiu: --por "Nome" (ou CONFERENTE no .env)')
         pasta = args.pasta or dados.ultima_pasta()
-        aprovados, recusados = publicar_semana(pasta, args.por, posts=not args.sem_posts)
-        print(f"Publicados {len(aprovados)} concursos em dados/concursos.json. Na pasta {pasta}: resumo-telegram.md, "
-              "resumo-whatsapp.txt e posts/. Para ver o site: python -m gerador build")
+        aprovados, recusados = publicar_semana(pasta, args.por, posts=not args.sem_posts,
+                                               nao_conferidos=args.incluir_nao_conferidos)
+        if args.incluir_nao_conferidos:
+            sem = [c["id"] for c in dados.ler_json(dados.CONCURSOS)["concursos"] if c["conferencia"] is None]
+            print(f"Publicados {len(aprovados)} concursos em dados/concursos.json, {len(sem)} deles NÃO CONFERIDOS "
+                  "(o site mostra \"não conferido\"). Sem resumos nem posts. Para ver o site: python -m gerador build")
+        else:
+            print(f"Publicados {len(aprovados)} concursos em dados/concursos.json. Na pasta {pasta}: resumo-telegram.md, "
+                  "resumo-whatsapp.txt e posts/. Para ver o site: python -m gerador build")
         for id_, motivo in recusados:
             print(f"  RECUSADO {id_}: {motivo}")
         return 1 if recusados else 0

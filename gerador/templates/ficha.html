@@ -30,6 +30,9 @@
       {%- endif %}
       <a class="cc-btn cc-btn-bloco" href="{{ whatsapp }}" target="_blank" rel="noopener">{{ m.icone("conversa") }}Mandar no WhatsApp</a>
       <span class="cc-atualizacao">{{ m.icone("atualizado") }}{{ origem }}</span>
+      {%- if x.nao_conferido %}
+      <p class="pt-apoio"><strong>Ficha ainda não conferida.</strong> Os dados vêm do ato oficial, mas ninguém os comparou com o edital. Confirme salário, datas e taxa no edital oficial antes de decidir.</p>
+      {%- endif %}
       <nav class="pt-trilho" aria-label="Seções da ficha">
         {%- if x.situacao == "encerrado" and x.parecidos %}<a class="pt-chip" href="#parecidos">Abertos parecidos</a>{% endif %}
         <a class="pt-chip" href="#salario">Salário</a><a class="pt-chip" href="#vagas">Vagas</a>

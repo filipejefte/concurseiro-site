@@ -1,6 +1,6 @@
 {% extends "texto.html" %}
 {% block texto %}
-<p class="pt-capa">Toda ficha do Concurseiro sai de um ato oficial, com link. Antes de ir ao ar, os campos que mais importam são conferidos contra o texto desse ato.</p>
+<p class="pt-capa">Toda ficha do Concurseiro sai de um ato oficial, com link. Os campos que mais importam são conferidos contra o texto desse ato{% if n_nao_conferidos %}; as fichas que ainda não passaram por isso levam o aviso "não conferida"{% else %}, antes de a ficha ir ao ar{% endif %}.</p>
 
 <h2 class="pt-h2">1. As fontes</h2>
 <p>Só diário oficial e site oficial de banca ou de órgão público. Estas são as fontes que a última varredura leu, e o que cada uma cobre:</p>
@@ -41,7 +41,12 @@
 </ul>
 
 <h2 class="pt-h2">4. A conferência</h2>
+{%- if n_nao_conferidos %}
+<p><strong>Atenção: {{ n_nao_conferidos }} das {{ n_fichas }} fichas do site ainda não passaram pela conferência.</strong> Elas foram publicadas para o site começar a funcionar e aparecem com o aviso "ficha ainda não conferida". Vale para elas o que está escrito no ato oficial, não o que esta página descreve: confirme os valores e as datas no edital.</p>
+<p>A conferência olha estes campos: salário de cada cargo, início e fim da inscrição, data da prova objetiva, taxa, banca, cidade e link do edital. Nas fichas conferidas, ela funciona assim:</p>
+{%- else %}
 <p>Estes campos são conferidos antes de qualquer concurso ir ao ar: salário de cada cargo, início e fim da inscrição, data da prova objetiva, taxa, banca, cidade e link do edital.</p>
+{%- endif %}
 <ul>
   <li><strong>Conferência automática.</strong> Um programa procura cada valor no texto do ato, no lugar certo: o salário logo depois do nome do cargo, as datas da inscrição logo depois de "inscrição", a data da prova logo depois de "prova objetiva", e assim por diante. Ele não usa inteligência artificial e não "acha" nada: ou o valor está escrito ali, ou o campo vai para uma pessoa.</li>
   <li><strong>Conferência de uma pessoa.</strong> Tudo o que a conferência automática não achou é conferido por uma pessoa, contra o ato oficial.</li>

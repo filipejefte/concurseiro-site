@@ -335,8 +335,34 @@ def test_faixa_e_como_conferimos_trazem_as_fontes_lidas_e_o_que_falta(tmp_path):
     assert "87 municípios do Paraná sem nenhuma fonte lida" in como[inicio:] and "Unioeste" in como[inicio:]
 
 
-def test_sem_a_chave_fontes_o_site_diz_so_o_que_dizia_antes(site_publicado):
+def test_ficha_sem_conferencia_avisa_e_como_conferimos_nao_afirma_o_que_nao_e_verdade(tmp_path):
+    base = dados.ler_json(dados.CONCURSOS)
+    conferido = {"conferido_em": "2026-10-20", "por": "conferência automática", "campos": list(dados.CAMPOS_CRITICOS)}
+    for c in base["concursos"]:
+        c["conferencia"] = conferido
+    sem, com = base["concursos"][0], base["concursos"][1]
+    sem["conferencia"] = None
+    arquivo = tmp_path / "concursos.json"
+    dados.gravar_json(arquivo, base)
+    site = construir(tmp_path / "p", DIA, cfg=_cfg(), concursos=arquivo)
+    assert "Ficha ainda não conferida" in _html(site, f"/concurso/{sem['id']}/")
+    assert "Ficha ainda não conferida" not in _html(site, f"/concurso/{com['id']}/")
+    como = _html(site, "/como-conferimos/")
+    assert f"Atenção: 1 das {len(base['concursos'])} fichas do site ainda não passaram pela conferência" in como
+    assert "são conferidos antes de qualquer concurso ir ao ar" not in como
+    # tudo conferido: a página volta a dizer o que sempre disse
+    sem["conferencia"] = conferido
+    dados.gravar_json(arquivo, base)
+    site = construir(tmp_path / "q", DIA, cfg=_cfg(), concursos=arquivo)
+    assert "Atenção:" not in _html(site, "/como-conferimos/") and "são conferidos antes de qualquer concurso ir ao ar" in _html(site, "/como-conferimos/")
+
+
+def test_sem_a_chave_fontes_o_site_diz_so_o_que_dizia_antes(tmp_path):
     """Varredura publicada antes de existir a chave: DOU e AMP lidos; o diário do Estado e as bancas ficam em "ainda não lemos"."""
+    base = {k: v for k, v in dados.ler_json(dados.CONCURSOS).items() if k != "fontes"}   # o publicado de hoje já traz a chave
+    arquivo = tmp_path / "concursos.json"
+    dados.gravar_json(arquivo, base)
+    site_publicado = construir(tmp_path / "p", DIA, cfg=_cfg(), concursos=arquivo)
     assert "lemos o Diário Oficial da União e o Diário dos Municípios do PR" in _html(site_publicado, "/")
     como = _html(site_publicado, "/como-conferimos/")
     inicio = como.index("O que ainda não lemos")
