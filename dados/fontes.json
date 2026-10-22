@@ -30,7 +30,7 @@
   },
   "nao_lidas": [
     {"nome": "Diários próprios de prefeituras e câmaras do Paraná", "motivo": "Alguns municípios não publicam no Diário dos Municípios do PR. O concurso deles só entra quando a banca que o organiza é uma das que lemos."},
-    {"nome": "Sites de outras bancas", "motivo": "Ainda não lemos, entre outras, Unioeste (o portal recusa leitura automática), Instituto UniFil (proteção contra robôs), Legalle (o robots.txt do site proíbe qualquer leitura), Império, MS Concursos, AOCP, IBFC, Cebraspe, FGV e Vunesp. O concurso delas entra quando aparece no Diário Oficial da União ou nos diários do Paraná."},
+    {"nome": "Sites de outras bancas", "motivo": "Ainda não lemos, entre outras, Unioeste (o portal recusa leitura automática), Instituto UniFil (proteção contra robôs), GAMA, Legalle (o robots.txt do site proíbe qualquer leitura), GAMA Consultoria em Gestão Pública, Império, MS Concursos, AOCP, IBFC, Cebraspe, FGV e Vunesp. O concurso delas entra quando aparece no Diário Oficial da União ou nos diários do Paraná."},
     {"nome": "Processo seletivo simplificado e contratação temporária", "motivo": "Ficam de fora de propósito: não são concurso público."},
     {"nome": "Concursos de prefeituras, câmaras e estados de outras UFs", "motivo": "Fora da cobertura. Entram só os federais, de qualquer estado, e os do Paraná."}
   ]
