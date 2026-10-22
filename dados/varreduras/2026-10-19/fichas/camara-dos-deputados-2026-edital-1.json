@@ -2,7 +2,8 @@
   "ato": "dou-2026-10-05-poder-legislativo-camara-dos-deputados-d-c4e1c1e1.md",
   "atos_extras": [
     "dou-2026-10-05-poder-legislativo-camara-dos-deputados-d-c4e1c1e1-extra-1.md",
-    "dou-2026-10-05-poder-legislativo-camara-dos-deputados-d-c4e1c1e1-extra-2.md"
+    "dou-2026-10-05-poder-legislativo-camara-dos-deputados-d-c4e1c1e1-extra-2.md",
+    "orgao-2026-10-21-camara-dos-deputados-53f5fdeb.md"
   ],
   "trechos": {
     "salario": "2.1 CARGO 1: ANALISTA LEGISLATIVO - ESPECIALIDADE: COMUNICAÇÃO SOCIAL - ÁREA: DIVULGAÇÃO INSTITUCIONAL [...] REMUNERAÇÃO: R$ 32.070,88. JORNADA DE TRABALHO: 40 horas semanais. — o mesmo valor (R$ 32.070,88) aparece para os 11 cargos",
@@ -132,7 +133,7 @@
         "cadastro_reserva": true,
         "salario": 32070.88,
         "escolaridade": "Superior",
-        "requisitos": "Cargo 9; graduação em Engenharia Mecânica ou em outro bacharelado com grade curricular equivalente e registro no conselho profissional (retificado pelo Edital nº 5); lotação em Brasília (DF); há também cadastro de reserva",
+        "requisitos": "Cargo 9; graduação em Engenharia Mecânica ou em outro curso de bacharelado em Engenharia com grade curricular equivalente e registro no conselho profissional (retificado pelo Edital nº 6); lotação em Brasília (DF); há também cadastro de reserva",
         "jornada_horas": 40,
         "materias": []
       },
@@ -175,6 +176,15 @@
         "publicado_em": "2026-10-15",
         "fonte": "banca",
         "resumo": "Retifica requisitos dos cargos 1, 2, 4, 6, 7, 8 e 9, inclui o subitem 2.8 e atualiza o quadro de vagas após o sorteio das vagas reservadas"
+      },
+      {
+        "tipo": "retificacao",
+        "titulo": "Edital nº 6 – Câmara dos Deputados – Analista Legislativo, de 21 de outubro de 2026 – retifica os subitens 2.5.4 e 11.8 e legenda do item 4",
+        "numero": "6",
+        "url": "https://www2.camara.leg.br/transparencia/recursos-humanos/concursos/arquivos-2025/edital-n-6-cd-especialidades-de-21-de-outubro-de-2026",
+        "publicado_em": "2026-10-21",
+        "fonte": "outra",
+        "resumo": null
       }
     ],
     "conferencia": null,
