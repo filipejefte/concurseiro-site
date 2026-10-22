@@ -1,0 +1,105 @@
+{% extends "base.html" %}
+{#- Listagem: todos os abertos e os previstos no HTML; o JavaScript filtra, ordena e mede a distância no aparelho. -#}
+{% block conteudo %}
+<main id="conteudo" class="pt-listagem pt-pagina" data-listagem>
+  <div class="pt-listagem-topo">
+    {{ m.trilha(pagina.trilha) }}
+    <h1 class="pt-titulo" data-titulo>Concursos com inscrição aberta</h1>
+    <p class="pt-capa"><span class="cc-grifo">{{ n_abertos }}</span> com inscrição aberta, em todo o Brasil.</p>
+    <p class="pt-local" data-so-js>{{ m.icone("pino") }}<span data-resumo-local>Todo o Brasil</span><button class="pt-link-btn" type="button" data-abrir-cidade data-rotulo-cidade>Escolher cidade</button></p>
+    <p class="pt-local" data-so-js>{{ m.icone("capelo") }}<span data-perfil-texto>Para ver o salário do seu cargo,</span><button class="pt-link-btn" type="button" data-abrir-perfil data-rotulo-perfil>diga sua escolaridade</button></p>
+    <form class="pt-busca" action="{{ u('/concursos/') }}" method="get" role="search" data-form-busca>
+      <label class="pt-rotulo-campo" for="busca-lista">Buscar concurso</label>
+      <div class="pt-busca-linha">
+        <span class="pt-campo-busca">{{ m.icone("busca") }}<input id="busca-lista" name="q" type="search" placeholder="Cargo, órgão ou cidade" autocomplete="off"></span>
+        <button class="cc-btn cc-btn-primario" type="submit">Buscar</button>
+      </div>
+    </form>
+  </div>
+
+  <div class="pt-controles">
+    <div class="pt-trilho" role="group" aria-label="Filtrar por área">
+      <button class="pt-chip" type="button" data-abrir-filtros data-so-js>{{ m.icone("filtro") }}Filtros<span class="pt-selo-n" data-n-filtros hidden></span></button>
+      {%- for g in areas if g.abertos or g.previstos %}
+      <a class="pt-chip" href="{{ u('/area/' ~ g.slug ~ '/') }}" data-area="{{ g.slug }}">{{ g.nome }}</a>
+      {%- endfor %}
+    </div>
+    <div class="pt-ordem" data-so-js>
+      <span class="pt-rotulo-campo" id="ordem-rotulo">Ordenar por</span>
+      <div class="pt-seg" role="group" aria-labelledby="ordem-rotulo">
+        <button type="button" data-ordem="prazo" aria-pressed="true">Prazo</button>
+        <button type="button" data-ordem="salario" aria-pressed="false">Maior salário</button>
+        <button type="button" data-ordem="perto" aria-pressed="false">Mais perto</button>
+      </div>
+    </div>
+  </div>
+
+  <p class="pt-apoio" data-contagem aria-live="polite">{{ n_abertos }} · com salário e prazo mais curto primeiro</p>
+
+  {{ m.grade(base.abertos, 2, 'data-lista="abertos"') }}
+
+  <div class="pt-vazio" data-vazio hidden>
+    <p class="pt-texto" style="font-weight:600">Nenhum concurso aberto com esses filtros agora. Quer um alerta quando abrir?</p>
+    {{ m.botao_alerta("Avise-me") }}
+  </div>
+
+  {%- if base.previstos %}
+  <section class="pt-secao" aria-labelledby="titulo-previstos" data-secao-previstos>
+    <div class="pt-secao-cab"><h2 class="pt-h2" id="titulo-previstos">Previstos</h2>
+      <a class="pt-link pt-link-44" href="{{ u('/previstos/') }}">Sobre os previstos</a></div>
+    <p class="pt-apoio">Autorização ou banca contratada em ato oficial, sem edital ainda. Não entram na conta dos abertos.</p>
+    {{ m.grade(base.previstos, 3, 'data-lista="previstos"') }}
+  </section>
+  {%- endif %}
+
+  <p class="pt-apoio">Salário inicial bruto, antes dos descontos. Benefícios aparecem à parte.</p>
+  {{ m.aviso_oficial() }}
+</main>
+
+<dialog id="filtros" class="pt-dialogo pt-dialogo-filtros" aria-labelledby="filtros-titulo">
+  <form class="pt-filtros" data-form-filtros>
+    <div class="pt-filtros-cab">
+      <button class="pt-icone-btn" type="button" data-fechar aria-label="Fechar filtros">{{ m.icone("fechar") }}</button>
+      <h2 id="filtros-titulo">Filtros</h2>
+      <button class="cc-btn cc-btn-texto" type="button" data-limpar style="min-height:44px">Limpar</button>
+    </div>
+    <div class="pt-filtros-corpo" data-filtros-corpo>
+      <div class="pt-filtro-grupo" role="group" aria-labelledby="grupo-1">
+        <h3 class="pt-filtro-tit" id="grupo-1">Onde</h3>
+        <div class="pt-caixa" style="justify-content:flex-start">{{ m.icone("pino") }}<span data-onde>Nenhuma cidade escolhida</span></div>
+        <button class="cc-btn" type="button" data-abrir-cidade>{{ m.icone("mira") }}<span data-rotulo-cidade>Escolher minha cidade</span></button>
+        <p class="pt-apoio">A distância é medida a partir da cidade escolhida, que fica guardada só neste aparelho.</p>
+        <span class="pt-rotulo-campo" id="raio-rotulo">Distância</span>
+        <div class="pt-chips" role="group" aria-labelledby="raio-rotulo" data-grupo-raio></div>
+        <label class="cc-check pt-check44"><input type="checkbox" name="federais"><span>Incluir concursos nacionais e os sem cidade definida</span></label>
+      </div>
+      <div class="pt-filtro-grupo" role="group" aria-labelledby="grupo-2">
+        <h3 class="pt-filtro-tit" id="grupo-2">Área</h3>
+        <div class="pt-chips" data-grupo-areas></div>
+      </div>
+      <div class="pt-filtro-grupo" role="group" aria-labelledby="grupo-3">
+        <h3 class="pt-filtro-tit" id="grupo-3">Escolaridade</h3>
+        <div class="pt-chips" data-grupo-niveis></div>
+      </div>
+      <div class="pt-filtro-grupo" role="group" aria-labelledby="grupo-4">
+        <h3 class="pt-filtro-tit" id="grupo-4"><label for="faixa-salario">Salário inicial a partir de</label></h3>
+        <p class="pt-filtro-valor" data-valor-salario aria-live="polite">Qualquer salário</p>
+        <input id="faixa-salario" class="pt-range" type="range" min="0" max="15000" step="500" value="0">
+        <div class="pt-apoio" style="display:flex;justify-content:space-between"><span>Qualquer</span><span>R$ 15 mil</span></div>
+      </div>
+      <div class="pt-filtro-grupo" role="group" aria-labelledby="grupo-5">
+        <h3 class="pt-filtro-tit" id="grupo-5">Banca organizadora</h3>
+        <div class="pt-chips" data-grupo-bancas></div>
+      </div>
+      <div class="pt-filtro-grupo" role="group" aria-labelledby="grupo-6">
+        <h3 class="pt-filtro-tit" id="grupo-6">Situação</h3>
+        <label class="cc-check pt-check44"><input type="checkbox" name="previstos"><span>Mostrar os previstos (sem edital ainda)</span></label>
+      </div>
+    </div>
+    <div class="pt-filtros-pe">
+      <button class="cc-btn cc-btn-primario cc-btn-bloco" type="submit" data-ver-resultado>Ver concursos</button>
+    </div>
+  </form>
+</dialog>
+<script type="application/json" id="rotulos">{{ rotulos | tojson }}</script>
+{% endblock %}

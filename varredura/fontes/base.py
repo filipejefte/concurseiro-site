@@ -13,7 +13,7 @@ import urllib.robotparser
 from dataclasses import asdict, dataclass
 from http.cookiejar import CookieJar
 
-from ..dados import CACHE, SITE
+from ..dados import CACHE, site_url
 
 
 @dataclass
@@ -24,6 +24,10 @@ class Ato:
     orgao: str
     url: str        # link oficial do ato (ou da edição)
     texto: str
+    municipio: str = ""   # AMP-PR: município que publicou (nome da tabela do IBGE; "" quando a entidade não é município)
+    municipio_ibge: str = ""
+    continuacao: str = ""   # DOU: texto das outras partes do mesmo edital (vai para a fila, fora do nome do arquivo e do atos.json)
+    entidade: str = ""    # AMP-PR: "prefeitura" ou "camara" quando o diário diz; "" quando não diz
 
     def como_dict(self):
         return asdict(self)
@@ -45,7 +49,7 @@ class Cliente:
         contato = contato or os.environ.get("CONTATO_VARREDURA")
         if not contato:
             raise SystemExit("Defina CONTATO_VARREDURA no .env (e-mail ou página de contato do projeto) antes de coletar.")
-        texto = f"concurseiro-varredura/0.1 (+{SITE}; contato: {contato})"
+        texto = f"concurseiro-varredura/0.1 (+{site_url()}; contato: {contato})"
         self.user_agent = texto.encode("ascii", "ignore").decode()  # cabeçalho HTTP só aceita ASCII
         self.intervalo = intervalo
         self.cache = cache
@@ -84,8 +88,15 @@ class Cliente:
             print(f"  {urllib.parse.urlsplit(url).netloc}: {motivo}; nova tentativa em {espera} s", flush=True)
             time.sleep(espera)
 
+    # Exceção única à regra do robots.txt (decisão do Filipe em 21/10/2026): o INLABS é o serviço oficial de download do
+    # Diário Oficial da União, com cadastro e login. O /robots.txt dele só redireciona para o do portal in.gov.br
+    # ("Disallow: /"), que não fala de download autorizado. Vale só para esse host; o login e a pausa de 3 s seguem.
+    SEM_ROBOTS = {"inlabs.in.gov.br"}
+
     def permitido(self, url):
         partes = urllib.parse.urlsplit(url)
+        if partes.netloc in self.SEM_ROBOTS:
+            return True
         base = f"{partes.scheme}://{partes.netloc}"
         if base not in self._robots:
             regras = urllib.robotparser.RobotFileParser()
@@ -101,6 +112,24 @@ class Cliente:
     def arquivo_cache(self, url, dados=None, extensao=""):
         chave = hashlib.sha256((url + repr(sorted((dados or {}).items()))).encode()).hexdigest()[:24]
         return self.cache / urllib.parse.urlsplit(url).netloc / (chave + extensao)
+
+    def texto_pdf(self, url):
+        """Texto de um PDF (pypdf); o PDF e o texto ficam em .cache/. Vazio se o arquivo não é PDF ou não tem texto."""
+        arquivo_txt = self.arquivo_cache(url, extensao=".txt")
+        if arquivo_txt.exists():
+            return arquivo_txt.read_text(encoding="utf-8")
+        corpo = self.baixar(url, extensao=".pdf")
+        if not corpo.startswith(b"%PDF"):
+            return ""
+        from io import BytesIO
+        from pypdf import PdfReader
+        from pypdf.errors import PyPdfError
+        try:
+            texto = "\n".join((pagina.extract_text() or "") for pagina in PdfReader(BytesIO(corpo)).pages)
+        except (PyPdfError, ValueError):
+            return ""
+        arquivo_txt.write_text(texto, encoding="utf-8")
+        return texto
 
     def baixar(self, url, dados=None, cabecalhos=None, usar_cache=True, extensao=""):
         """Corpo da resposta em bytes. Com usar_cache, o arquivo fica em .cache/<host>/ e não é pedido de novo."""

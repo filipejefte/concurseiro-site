@@ -1,0 +1,103 @@
+{
+  "ato": "dou-2026-10-02-ministerio-da-educacao-universidade-fede-668dd475.md",
+  "atos_extras": [
+    "dou-2026-10-15-ministerio-da-educacao-universidade-fede-2f3fdb16.md",
+    "dou-2026-10-15-ministerio-da-educacao-universidade-fede-cd6b2415.md",
+    "dou-2026-10-15-ministerio-da-educacao-universidade-fede-2ad8e5c6.md",
+    "dou-2026-10-15-ministerio-da-educacao-universidade-fede-bd91a892.md"
+  ],
+  "trechos": {
+    "salario": "REGIME DE TRABALHO - 40 HORAS COM DEDICAÇÃO EXCLUSIVA - DE Denominação / Classe / Nível Titulação Vencimento Básico Retribuição por Titulação* Total da Remuneração Titular / D / 1 (Único) Doutorado R$ 12.245,03 R$ 14.081,78 R$ 26.326,81",
+    "inscricao.inicio": "ANEXO III - CRONOGRAMA Publicação do edital 02/10/2026 Impugnações ao Edital 02 a 06/10/2026 Período de Inscrições 09/10/2026 a 23/10/2026",
+    "inscricao.fim": "ANEXO III - CRONOGRAMA Publicação do edital 02/10/2026 Impugnações ao Edital 02 a 06/10/2026 Período de Inscrições 09/10/2026 a 23/10/2026",
+    "prova_objetiva": "DATA DA PROVA ESCRITA CIDADE DE REALIZAÇÃO DAS PROVAS HORÁRIO DA PROVA ESCRITA SEQUÊNCIA DE REALIZAÇÃO DAS PROVAS* CCAAB - Centro de Ciências Agrárias, Ambientais e Biológicas 22/11/2026 Cruz das Almas/BA 08h às 12h",
+    "taxa": "mediante o pagamento da taxa de R$ 350,00 (trezentos e cinquenta) reais, salvo os casos de isenção.",
+    "banca": "O certame será promovido e executado pela Universidade Federal do Recôncavo da Bahia (UFRB)",
+    "cidade": "18.2 A vaga para provimento ofertada neste edital será lotada no seguinte Centro de Ensino, de acordo com a tabela de vagas do Anexo I: a.Centro de Ciências Agrárias, Ambientais e Biológicas - CCAAB - Cruz das Almas/BA;",
+    "edital": "EDITAL Nº 1, DE 1º DE OUTUBRO DE 2026 CONCURSO PÚBLICO PARA PROFESSOR TITULAR LIVRE DO MAGISTÉRIO SUPERIOR"
+  },
+  "concurso": {
+    "id": "ufrb-2026-edital-1",
+    "ficticio": false,
+    "orgao": "Universidade Federal do Recôncavo da Bahia (UFRB)",
+    "esfera": "federal",
+    "uf": "BA",
+    "municipio_ibge": null,
+    "cidade": "Cruz das Almas",
+    "nacional": false,
+    "abrangencia": null,
+    "area": "Educação",
+    "banca": {
+      "nome": "UFRB (Pró-Reitoria de Gestão de Pessoal)",
+      "url": "https://sistemas.ufrb.edu.br/sigrh/public/home.jsf"
+    },
+    "inscricao": {
+      "inicio": "2026-10-09",
+      "fim": "2026-10-23",
+      "url": "https://sistemas.ufrb.edu.br/sigrh/"
+    },
+    "isencao_ate": "2026-10-13",
+    "prova_objetiva": "2026-11-22",
+    "local_prova": "Cruz das Almas (BA): prova escrita e didática presenciais; defesa de memorial e títulos remotas",
+    "taxa": {
+      "min": 350.0,
+      "max": 350.0
+    },
+    "isencao_regras": "Isenção para inscritos no CadÚnico (família de baixa renda, Decreto 11.016/2022) e doadores de medula óssea (Lei 13.656/2018); pedido no ato da inscrição, de 09 a 13/10/2026",
+    "regime": "Estatutário (Lei 8.112/1990)",
+    "beneficios": [
+      {
+        "nome": "Auxílio-alimentação",
+        "valor": null
+      },
+      {
+        "nome": "Auxílio-transporte",
+        "valor": null
+      },
+      {
+        "nome": "Auxílio-saúde",
+        "valor": null
+      },
+      {
+        "nome": "Auxílio pré-escolar",
+        "valor": null
+      }
+    ],
+    "o_que_levar": "Documento de identificação original com foto e caneta esferográfica transparente (tinta azul ou preta)",
+    "cargos": [
+      {
+        "nome": "Professor Titular-Livre do Magistério Superior – Ciência e Tecnologia de Alimentos",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 26326.81,
+        "escolaridade": "Superior",
+        "requisitos": "Cargo isolado de Professor Titular-Livre (classe D, nível único); Centro de Ciências Agrárias, Ambientais e Biológicas (CCAAB), Cruz das Almas (BA); dedicação exclusiva; titulação mínima: doutorado na grande área de Ciências Agrárias, com 10 anos de obtenção do título; graduação em Agronomia, Ciência e Tecnologia de Alimentos, Ciência dos Alimentos, Engenharia de Alimentos ou Tecnólogo em Alimentos",
+        "jornada_horas": 40,
+        "materias": []
+      }
+    ],
+    "documentos": [
+      {
+        "tipo": "edital",
+        "titulo": "Edital nº 1, de 1º de outubro de 2026 – Concurso Público para Professor Titular-Livre do Magistério Superior",
+        "numero": "1/2026",
+        "url": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=02/10/2026&jornal=530&pagina=54",
+        "publicado_em": "2026-10-02",
+        "fonte": "DOU",
+        "resumo": null
+      },
+      {
+        "tipo": "retificacao",
+        "titulo": "Edital nº 1, de 14 de outubro de 2026 – Retificação nº 1",
+        "numero": "1/2026",
+        "url": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=15/10/2026&jornal=530&pagina=48",
+        "publicado_em": "2026-10-15",
+        "fonte": "DOU",
+        "resumo": "Republica o edital: defesa de memorial e títulos passam a ser remotas e a titulação exigida passa a ser doutorado na grande área de Ciências Agrárias; datas mantidas"
+      }
+    ],
+    "conferencia": null,
+    "primeira_varredura": null,
+    "ultima_alteracao": null
+  }
+}

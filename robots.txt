@@ -1,3 +1,0 @@
-# Protótipo com dados de exemplo: fora do Google até o site ter dados reais.
-User-agent: *
-Disallow: /

@@ -1,0 +1,202 @@
+{
+  "ato": "dou-2026-09-22-ministerio-da-educacao-universidade-fede-c2e7c232.md",
+  "atos_extras": [
+    "dou-2026-09-22-ministerio-da-educacao-universidade-fede-c2e7c232-extra-1.md",
+    "dou-2026-09-22-ministerio-da-educacao-universidade-fede-c2e7c232-extra-2.md",
+    "dou-2026-09-22-ministerio-da-educacao-universidade-fede-c2e7c232-extra-3.md",
+    "dou-2026-09-22-ministerio-da-educacao-universidade-fede-c2e7c232-extra-4.md",
+    "dou-2026-09-23-ministerio-da-educacao-universidade-fede-eb6ffb42.md",
+    "dou-2026-09-28-ministerio-da-educacao-universidade-fede-a689889a.md",
+    "dou-2026-09-29-ministerio-da-educacao-universidade-fede-5e26ba45.md",
+    "dou-2026-10-09-ministerio-da-educacao-universidade-fede-5e35cfac.md"
+  ],
+  "trechos": {
+    "salario": "Aperfeiçoamento R$ 639,72 R$ 8.211,91 A 1 Dedicação Exclusiva R$ 6.397,19 Especialização ou RSC-I + Graduação R$ 1.279,44 R$ 1.175,00 R$ 8.851,63 Mestrado ou RSC-II + Especialização R$ 3.198,59 R$ 10.770,78 Doutorado ou RSC-III + Mestrado R$ 7.356,77 R$ 14.928,96",
+    "inscricao.inicio": "9.1. A inscrição será feita, exclusivamente, via internet (https://sigrh.ufrn.br), a partir do dia 07/10/2026 até o dia 05/11/2026",
+    "inscricao.fim": "9.1. A inscrição será feita, exclusivamente, via internet (https://sigrh.ufrn.br), a partir do dia 07/10/2026 até o dia 05/11/2026",
+    "prova_objetiva": "12.1. A prova escrita e sorteio dos temas da prova didática de todas as áreas de conhecimento serão realizados no dia 21/03/2027, às 08:00h, município de Natal/RN.",
+    "taxa": "9.8.1. A taxa será cobrada conforme o quadro abaixo: Classe/ Denominação/ Nível Regime de trabalho Taxa de inscrição A 1 Dedicação Exclusiva R$ 150,00",
+    "banca": "A PRÓ-REITORA DE GESTÃO DE PESSOAS DA UNIVERSIDADE FEDERAL DO RIO GRANDE DO NORTE [...] torna pública a abertura de inscrições para o Concurso Público de Provas e Títulos",
+    "cidade": "Instituto Metrópole Digital - Campus de Natal/RN [...] Escola Agrícola de Jundiaí - Campus de Macaíba/RN [...] Escola de Música - Campus de Natal/RN [...] Escola de Saúde - Campus de Natal/RN",
+    "edital": "EDITAL Nº 109/PROGESP, de 18 de setembro de 2026 CONCURSO PÚBLICO DE PROVAS E TÍTULOS PARA O PROVIMENTO DE CARGO DE PROFESSOR DO ENSINO BÁSICO, TÉCNICO E TECNOLÓGICO"
+  },
+  "concurso": {
+    "id": "ufrn-2026-edital-109",
+    "ficticio": false,
+    "orgao": "Universidade Federal do Rio Grande do Norte (UFRN)",
+    "esfera": "federal",
+    "uf": "RN",
+    "municipio_ibge": null,
+    "cidade": "Natal",
+    "nacional": false,
+    "abrangencia": null,
+    "area": "Educação",
+    "banca": {
+      "nome": "UFRN (Pró-Reitoria de Gestão de Pessoas – Coordenadoria de Concursos)",
+      "url": "https://sigrh.ufrn.br"
+    },
+    "inscricao": {
+      "inicio": "2026-10-07",
+      "fim": "2026-11-05",
+      "url": "https://sigrh.ufrn.br"
+    },
+    "isencao_ate": "2026-11-04",
+    "prova_objetiva": "2027-03-21",
+    "local_prova": "Natal (RN): prova escrita em 21/03/2027; demais etapas de 22/03 a 11/04/2027",
+    "taxa": {
+      "min": 150.0,
+      "max": 150.0
+    },
+    "isencao_regras": "Isenção para família inscrita no CadÚnico com renda per capita de até meio salário mínimo e para doadores de medula óssea (Lei 13.656/2018); pedido no formulário de inscrição, de 07/10 a 04/11/2026",
+    "regime": "Estatutário (Lei 8.112/1990)",
+    "beneficios": [
+      {
+        "nome": "Auxílio-alimentação",
+        "valor": 1175.0
+      }
+    ],
+    "o_que_levar": "Documento de identificação com foto, expedido há no máximo 10 anos, e caneta esferográfica de tinta preta, de material transparente",
+    "cargos": [
+      {
+        "nome": "Professor do Ensino Básico, Técnico e Tecnológico – Computação Cognitiva e Inteligência Artificial Responsável",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 13753.96,
+        "escolaridade": "Superior",
+        "requisitos": "Instituto Metrópole Digital, Natal (RN); dedicação exclusiva; titulação mínima: doutorado (em qualquer área), com graduação em Computação, TI, Sistemas de Informação, Engenharias da área, Ciência de Dados ou Inteligência Artificial (requisito retificado em 22/09/2026)",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Ensino Básico, Técnico e Tecnológico – Inteligência Computacional",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 13753.96,
+        "escolaridade": "Superior",
+        "requisitos": "Instituto Metrópole Digital, Natal (RN); dedicação exclusiva; titulação mínima: doutorado (em qualquer área)",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Ensino Básico, Técnico e Tecnológico – Inovação Tecnológica em Inteligência Artificial",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 13753.96,
+        "escolaridade": "Superior",
+        "requisitos": "Instituto Metrópole Digital, Natal (RN); dedicação exclusiva; titulação mínima: doutorado (em qualquer área)",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Ensino Básico, Técnico e Tecnológico – Geografia",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 6397.19,
+        "escolaridade": "Superior",
+        "requisitos": "Escola Agrícola de Jundiaí, Macaíba (RN); dedicação exclusiva; titulação mínima: graduação (licenciatura em Geografia); a remuneração sobe com a titulação (retribuição de R$ 639,72 a R$ 7.356,77)",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Ensino Básico, Técnico e Tecnológico – Matemática",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 6397.19,
+        "escolaridade": "Superior",
+        "requisitos": "Escola Agrícola de Jundiaí, Macaíba (RN); dedicação exclusiva; titulação mínima: graduação (licenciatura em Matemática); a remuneração sobe com a titulação (retribuição de R$ 639,72 a R$ 7.356,77)",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Ensino Básico, Técnico e Tecnológico – Teoria da Música",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 6397.19,
+        "escolaridade": "Superior",
+        "requisitos": "Escola de Música, Natal (RN); dedicação exclusiva; titulação mínima: graduação (em Música); a remuneração sobe com a titulação (retribuição de R$ 639,72 a R$ 7.356,77)",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Ensino Básico, Técnico e Tecnológico – Produção Musical",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 6397.19,
+        "escolaridade": "Superior",
+        "requisitos": "Escola de Música, Natal (RN); dedicação exclusiva; titulação mínima: graduação (em qualquer área); a remuneração sobe com a titulação (retribuição de R$ 639,72 a R$ 7.356,77)",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Ensino Básico, Técnico e Tecnológico – Fundamentos de Enfermagem nos Ciclos de Vida",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 9595.78,
+        "escolaridade": "Superior",
+        "requisitos": "Escola de Saúde, Natal (RN); dedicação exclusiva; titulação mínima: mestrado (graduação em Enfermagem e mestrado em Enfermagem)",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Ensino Básico, Técnico e Tecnológico – Enfermagem em Saúde Coletiva com ênfase em saúde e segurança do Trabalho",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 7676.63,
+        "escolaridade": "Superior",
+        "requisitos": "Escola de Saúde, Natal (RN); dedicação exclusiva; titulação mínima: especialização (graduação em Enfermagem e especialização em Saúde Coletiva, Saúde do Trabalhador, Vigilância em Saúde, Enfermagem do Trabalho ou áreas afins)",
+        "jornada_horas": 40,
+        "materias": []
+      }
+    ],
+    "documentos": [
+      {
+        "tipo": "edital",
+        "titulo": "Edital nº 109/2026-PROGESP, de 18 de setembro de 2026 – Professor do Ensino Básico, Técnico e Tecnológico",
+        "numero": "109/2026",
+        "url": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=22/09/2026&jornal=530&pagina=44",
+        "publicado_em": "2026-09-22",
+        "fonte": "DOU",
+        "resumo": null
+      },
+      {
+        "tipo": "retificacao",
+        "titulo": "Aviso de retificação do Edital nº 109/2026-PROGESP, de 22 de setembro de 2026",
+        "numero": null,
+        "url": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=23/09/2026&jornal=530&pagina=70",
+        "publicado_em": "2026-09-23",
+        "fonte": "DOU",
+        "resumo": "Altera o requisito da área de Computação Cognitiva e Inteligência Artificial Responsável (graduações aceitas + doutorado em qualquer área)"
+      },
+      {
+        "tipo": "retificacao",
+        "titulo": "Aviso de retificação do Edital nº 109/2026-PROGESP, de 25 de setembro de 2026",
+        "numero": null,
+        "url": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=28/09/2026&jornal=530&pagina=69",
+        "publicado_em": "2026-09-28",
+        "fonte": "DOU",
+        "resumo": "Atualiza a tabela de remuneração (vencimento básico de R$ 6.397,19), o prazo de condições especiais (07/10 a 05/11/2026) e o número de aprovados para a prova didática"
+      },
+      {
+        "tipo": "retificacao",
+        "titulo": "Aviso de retificação do Edital nº 109/2026-PROGESP, de 28 de setembro de 2026",
+        "numero": null,
+        "url": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=29/09/2026&jornal=530&pagina=64",
+        "publicado_em": "2026-09-29",
+        "fonte": "DOU",
+        "resumo": "Altera a tabela de ordem de convocação (Anexo III)"
+      },
+      {
+        "tipo": "retificacao",
+        "titulo": "Aviso de retificação do Edital nº 109/2026-PROGESP, de 8 de outubro de 2026",
+        "numero": null,
+        "url": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=09/10/2026&jornal=530&pagina=57",
+        "publicado_em": "2026-10-09",
+        "fonte": "DOU",
+        "resumo": "Ajusta documentos aceitos na prova de títulos"
+      }
+    ],
+    "conferencia": null,
+    "primeira_varredura": null,
+    "ultima_alteracao": null
+  }
+}

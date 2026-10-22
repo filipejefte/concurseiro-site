@@ -10,9 +10,11 @@ body { margin: 0; font-family: var(--font-sans); background: var(--papel); color
 .cc-grifo { position: relative; isolation: isolate; display: inline-block; padding: 0 var(--grifo-sobra, 0.16em); color: var(--on-grifo); }
 .cc-grifo::before { content: ""; position: absolute; z-index: -1; inset: 0.06em 0 0.02em 0; background: var(--grifo); border-radius: 2px; transform: skewX(var(--grifo-inclinacao, -12deg)) rotate(var(--grifo-giro, -1.5deg)); }
 
-/* ---------- Logotipo (palavra dentro do grifo) ---------- */
-.cc-logo { display: inline-flex; align-items: center; gap: 0.32em; font-family: var(--font-sans); font-weight: 800; letter-spacing: -0.035em; line-height: 1; text-transform: lowercase; }
-.cc-logo .cc-grifo { padding: 0.04em 0.2em 0.1em; }
+/* ---------- Logotipo: sempre o arquivo SVG do grupo Marca, numa <img> ---------- */
+.cc-logo { display: block; height: 32px; width: auto; }
+/* Só do site: provisório para quando docs/marca/ não tiver os arquivos (o build avisa). */
+.cc-logo-provisorio { display: inline-flex; align-items: center; gap: 0.32em; font-family: var(--font-sans); font-weight: 800; letter-spacing: -0.035em; line-height: 1; text-transform: lowercase; }
+.cc-logo-provisorio .cc-grifo { padding: 0.04em 0.2em 0.1em; }
 .cc-logo-icone { width: 1.15em; height: 1.15em; flex: none; display: block; }
 
 /* ---------- Selo de situação ---------- */
@@ -93,9 +95,10 @@ body { margin: 0; font-family: var(--font-sans); background: var(--papel); color
 /* ---------- Post social (4:5) ---------- */
 .cc-post { width: 320px; height: 400px; box-sizing: border-box; border-radius: var(--radius-lg); padding: 24px; display: flex; flex-direction: column; justify-content: space-between; background: var(--papel); border: 1px solid var(--linha); overflow: hidden; }
 .cc-post-verde { background: var(--verde); border-color: var(--verde); color: var(--on-verde); }
-.cc-post-verde .cc-post-meta, .cc-post-verde .cc-post-pe { color: var(--on-verde); opacity: 0.86; }
+.cc-post-verde .cc-post-meta, .cc-post-verde .cc-post-pe span { color: var(--on-verde); opacity: 0.86; }
 .cc-post-tag { font-size: 12px; line-height: 16px; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; }
 .cc-post-orgao { margin: var(--space-2) 0 0; font-size: 26px; line-height: 28px; font-weight: 800; letter-spacing: -0.02em; }
 .cc-post-salario { font-size: 40px; line-height: 44px; font-weight: 800; letter-spacing: -0.02em; }
 .cc-post-meta { font-size: 15px; line-height: 21px; font-weight: 600; color: var(--tinta-suave); }
 .cc-post-pe { display: flex; justify-content: space-between; align-items: flex-end; font-size: 11px; line-height: 15px; color: var(--tinta-suave); }
+.cc-post-pe .cc-logo { height: 18px; }

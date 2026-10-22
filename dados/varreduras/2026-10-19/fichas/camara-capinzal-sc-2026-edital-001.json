@@ -1,0 +1,118 @@
+{
+  "ato": "banca-furb-2026-09-17-camara-municipal-de-capinzal-6a585cab.md",
+  "atos_extras": [
+    "banca-furb-2026-09-28-camara-municipal-de-capinzal-d94d178b.md"
+  ],
+  "trechos": {
+    "salario": "CARGO VAGAS CH (semanal) VENCIMENTO REQUISITOS Advogado 1 10h R$ 4.534,82 [...] Agente de Controle Interno  1 10h R$ 2.000,00 [...] Analista Legislativo 2 40h R$ 4.339,72 [...] Contador 1 20h R$ 4.339,72",
+    "inscricao.inicio": "Período de Inscrições 29/09/2026 a 28/10/2026 [...] 3.2 A inscrição poderá ser efetuada no período compreendido en tre 8h do dia 29 de setembro de 2026 de 2026 e 23h59min do dia 28 de outubro de 2026.",
+    "inscricao.fim": "Período de Inscrições 29/09/2026 a 28/10/2026 [...] 3.2 A inscrição poderá ser efetuada no período compreendido en tre 8h do dia 29 de setembro de 2026 de 2026 e 23h59min do dia 28 de outubro de 2026.",
+    "prova_objetiva": "8.5 A Prova Objetiva será realizada no dia 22 de novembro de 2026, com duração de 4 (quatro) horas, conforme cronograma a seguir:",
+    "taxa": "3.4 O valor da taxa de inscrição fica firmado em: CARGO TAXA DE INSCRIÇÃO Agente de Controle Interno R$ 60,00 (sessenta reais) Advogado, Analista Legislativo e Contador R$130,00 (cento e trinta reais)",
+    "banca": "1.3 Sua execução caberá à Fundação Universidade Regional de Blumenau, doravante denominada FURB.",
+    "cidade": "O Presidente da Câmara Municipal de Capinzal, Estado de Santa Catarina, [...] 8.4.1 A Prova Objetiva será realizada no município de Capinzal/SC. Caso não haja locais suficientes ou adequados no município, a prova poderá ser realizada em Instituições de Ensino de municípios limítrofes.",
+    "edital": "CONCURSO PÚBLICO EDITAL N.º 001/2026 O Presidente da Câmara Municipal de Capinzal, Estado de Santa Catarina, [...] torna pública a abertura do Concurso Público, regido pelo presente Edital n.º 001/2026, destinado ao provimento de cargos efetivos para o Poder Legislativo Municipal."
+  },
+  "concurso": {
+    "id": "camara-capinzal-sc-2026-edital-001",
+    "ficticio": false,
+    "orgao": "Câmara Municipal de Capinzal (SC)",
+    "esfera": "municipal",
+    "uf": "SC",
+    "municipio_ibge": "4203907",
+    "cidade": "Capinzal",
+    "nacional": false,
+    "abrangencia": null,
+    "area": "Administrativa",
+    "banca": {
+      "nome": "Fundação Universidade Regional de Blumenau (FURB)",
+      "url": "https://concursos.furb.br"
+    },
+    "inscricao": {
+      "inicio": "2026-09-29",
+      "fim": "2026-10-28",
+      "url": "https://concursos.furb.br"
+    },
+    "isencao_ate": "2026-10-08",
+    "prova_objetiva": "2026-11-22",
+    "local_prova": "Capinzal (SC), das 13h15 às 17h15 (local fecha às 13h); se faltar lugar, em instituições de ensino de municípios limítrofes; locais e salas publicados em 12/11/2026",
+    "taxa": {
+      "min": 60.0,
+      "max": 130.0
+    },
+    "isencao_regras": "Isenção para quem prestou serviço à Justiça Eleitoral em ao menos 1 eleição e mora em Capinzal (Lei Municipal 3.243/2017), para doador de sangue (ao menos 3 doações nos 365 dias antes do edital) e para integrante da Associação de Doadores de Sangue, ambos pela Lei Municipal 2.992/2011; pedido de 29/09 a 08/10/2026, na Área do Candidato do site da banca",
+    "regime": "Estatutário (Lei Complementar Municipal 6/1991)",
+    "beneficios": [
+      {
+        "nome": "Vale-alimentação proporcional à carga horária do cargo",
+        "valor": null
+      }
+    ],
+    "o_que_levar": "Documento oficial de identificação original com foto (ou o documento digital no aplicativo oficial do órgão emissor) e caneta esferográfica de material transparente, de tinta azul ou preta; chegar com 30 minutos de antecedência",
+    "cargos": [
+      {
+        "nome": "Advogado",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 4534.82,
+        "escolaridade": "Superior",
+        "requisitos": "Ensino superior completo em Direito e registro ativo na OAB (Ordem dos Advogados do Brasil). Jornada de 10 horas semanais.",
+        "jornada_horas": 10,
+        "materias": []
+      },
+      {
+        "nome": "Agente de Controle Interno",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 2000.0,
+        "escolaridade": "Superior",
+        "requisitos": "Ensino superior completo em Ciências Contábeis, Econômicas, Jurídicas ou Administração. Jornada de 10 horas semanais.",
+        "jornada_horas": 10,
+        "materias": []
+      },
+      {
+        "nome": "Analista Legislativo",
+        "vagas": 2,
+        "cadastro_reserva": false,
+        "salario": 4339.72,
+        "escolaridade": "Superior",
+        "requisitos": "Ensino superior completo em Ciências Contábeis, Econômicas, Direito ou Administração.",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Contador",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 4339.72,
+        "escolaridade": "Superior",
+        "requisitos": "Superior completo em Ciências Contábeis e registro no Conselho Regional de Contabilidade (CRC).",
+        "jornada_horas": 20,
+        "materias": []
+      }
+    ],
+    "documentos": [
+      {
+        "tipo": "edital",
+        "titulo": "Edital nº 001/2026 – Concurso Público",
+        "numero": "001/2026",
+        "url": "https://anexos-r2.selecao.net.br/uploads/342/concursos/559/anexos/36440d38-64ee-4fd5-98ad-2fe5ef51e35f.pdf",
+        "publicado_em": "2026-09-17",
+        "fonte": "banca",
+        "resumo": null
+      },
+      {
+        "tipo": "retificacao",
+        "titulo": "Errata nº 01 ao Edital nº 001/2026",
+        "numero": "001/2026 (errata 01)",
+        "url": "https://anexos-r2.selecao.net.br/uploads/342/concursos/559/anexos/3b127484-8c11-4fa2-bc91-027056fd34d0.pdf",
+        "publicado_em": "2026-09-28",
+        "fonte": "banca",
+        "resumo": "Prova de títulos: Agente de Controle Interno e Analista Legislativo passam a pontuar pós-graduação em Administração, Ciências Contábeis, Ciências Econômicas ou Ciências Jurídicas"
+      }
+    ],
+    "conferencia": null,
+    "primeira_varredura": null,
+    "ultima_alteracao": null
+  }
+}

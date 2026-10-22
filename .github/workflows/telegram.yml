@@ -1,0 +1,51 @@
+# Posta no canal do Telegram o resumo da semana quando um resumo-telegram.md novo chega na main, ou à mão.
+# Segredos: TELEGRAM_BOT_TOKEN e TELEGRAM_CANAL. Sem eles, avisa no log e não falha.
+name: Telegram
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "dados/varreduras/*/resumo-telegram.md"
+  workflow_dispatch:
+    inputs:
+      pasta:
+        description: "Pasta da varredura (AAAA-MM-DD). Vazio = a mais recente."
+        required: false
+        default: ""
+      teste:
+        description: "Só mostrar as mensagens no log, sem postar"
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+concurrency:
+  group: telegram
+  cancel-in-progress: false
+
+jobs:
+  postar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5.0.0
+        with:
+          fetch-depth: 0   # a verificação de anonimato lê os autores de commit
+      - uses: actions/setup-python@v6.0.0
+        with:
+          python-version: "3.12"
+      - name: Posta o resumo
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CANAL: ${{ secrets.TELEGRAM_CANAL }}
+          PASTA: ${{ inputs.pasta }}
+          TESTE: ${{ inputs.teste }}
+        run: |
+          args=(--se-configurado)
+          if [ -n "$PASTA" ]; then
+            if [[ ! "$PASTA" =~ ^[0-9]{4}-[0-9]{2}-[0-9]{2}$ ]]; then echo "Pasta inválida: use AAAA-MM-DD"; exit 1; fi
+            args+=(--pasta "dados/varreduras/$PASTA")
+          fi
+          if [ "$TESTE" = "true" ]; then args+=(--teste); fi
+          python -m varredura telegram "${args[@]}"

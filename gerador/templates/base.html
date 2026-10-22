@@ -1,0 +1,115 @@
+{%- import "_macros.html" as m -%}
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="{{ robots }}">
+<title>{{ pagina.title }}</title>
+<meta name="description" content="{{ pagina.description }}">
+{%- if pagina.canonical %}
+<link rel="canonical" href="{{ pagina.canonical }}">
+{%- endif %}
+<meta name="theme-color" content="#f7f6f1">
+<link rel="icon" href="{{ u('/favicon.svg') }}" type="image/svg+xml">
+<link rel="apple-touch-icon" href="{{ u('/apple-touch-icon.png') }}">
+<link rel="manifest" href="{{ u('/site.webmanifest') }}">
+<link rel="preload" href="{{ u(ativos.fonte) }}" as="font" type="font/woff2" crossorigin>
+<script>document.documentElement.className += ' js';</script>
+<link rel="stylesheet" href="{{ u(ativos.css) }}">
+<meta property="og:site_name" content="Concurseiro">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:type" content="{{ pagina.og_type }}">
+<meta property="og:title" content="{{ pagina.title }}">
+<meta property="og:description" content="{{ pagina.description }}">
+{%- if pagina.canonical %}
+<meta property="og:url" content="{{ pagina.canonical }}">
+{%- endif %}
+<meta property="og:image" content="{{ cfg.absoluta(pagina.og_image) }}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="{{ pagina.og_alt }}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ pagina.title }}">
+<meta name="twitter:description" content="{{ pagina.description }}">
+<meta name="twitter:image" content="{{ cfg.absoluta(pagina.og_image) }}">
+{%- for bloco in pagina.jsonld %}
+<script type="application/ld+json">{{ bloco | tojson }}</script>
+{%- endfor %}
+<script type="application/json" id="config">{{ config_js | tojson }}</script>
+<script src="{{ u(ativos.js) }}" defer></script>
+{%- if cfg.cloudflare_analytics_token %}
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{{ {"token": cfg.cloudflare_analytics_token} | tojson }}'></script>
+{%- endif %}
+</head>
+<body data-pagina="{{ pagina.tipo }}">
+<a class="pt-pular" href="#conteudo">Pular para o conteúdo</a>
+
+<header class="pt-topo">
+  <div class="pt-topo-in">
+    <a class="pt-marca" href="{{ u('/') }}"{% if not marca.logotipo %} aria-label="Concurseiro, página inicial"{% endif %}>
+      {%- if marca.logotipo %}
+      <img class="cc-logo" src="{{ u(marca.logotipo) }}" alt="Concurseiro, página inicial" width="{{ marca.logotipo_largura }}" height="{{ marca.logotipo_altura }}">
+      {%- else %}
+      <span class="cc-logo-provisorio">
+        <svg class="cc-logo-icone" viewBox="0 0 64 64" aria-hidden="true" focusable="false"><rect width="64" height="64" rx="15" fill="#0B6B48"/><polygon points="15,25 53,22 49,41 11,44" fill="#D6F26A"/></svg>
+        <span class="cc-grifo">concurseiro</span>
+      </span>
+      {%- endif %}
+    </a>
+    <nav class="pt-nav" aria-label="Principal">
+      {%- for nome, caminho in menu %}
+      <a class="pt-navlink" href="{{ u(caminho) }}"{% if pagina.path == caminho %} aria-current="page"{% endif %}>{{ nome }}</a>
+      {%- endfor %}
+    </nav>
+    <div class="pt-topo-acoes">
+      <a class="pt-icone-btn pt-so-celular" href="{{ u('/concursos/') }}" aria-label="Buscar concursos">{{ m.icone("busca") }}</a>
+      <details class="pt-menu pt-so-celular">
+        <summary class="pt-icone-btn" aria-label="Menu">{{ m.icone("menu") }}</summary>
+        <nav class="pt-menu-celular" aria-label="Menu">
+          <a href="{{ u('/') }}">Início</a>
+          {%- for nome, caminho in menu %}
+          <a href="{{ u(caminho) }}">{{ nome }}</a>
+          {%- endfor %}
+          <a href="{{ u('/alertas/') }}" data-abrir-alerta>Avise-me</a>
+        </nav>
+      </details>
+      {{ m.botao_alerta("Avise-me", "cc-btn cc-btn-primario pt-so-computador") }}
+    </div>
+  </div>
+</header>
+<aside class="pt-faixa{% if base.previa %} pt-faixa-previa{% endif %}" aria-label="Atualização dos dados"><p class="pt-pagina">{{ faixa }}</p></aside>
+
+{% block conteudo %}{% endblock %}
+
+<footer class="pt-rodape">
+  <div class="pt-rodape-in">
+    <div class="pt-rodape-texto">
+      {%- if marca.palavra %}
+      <img class="cc-logo cc-logo-rodape" src="{{ u(marca.palavra) }}" alt="Concurseiro" width="{{ marca.palavra_largura }}" height="{{ marca.palavra_altura }}" loading="lazy">
+      {%- else %}
+      <span class="cc-logo-provisorio"><span class="cc-grifo">concurseiro</span></span>
+      {%- endif %}
+      <p>O Concurseiro reúne concursos públicos de todo o Brasil a partir dos editais e diários oficiais. Inscrição e pagamento, só no site da banca.</p>
+      <p>Anúncios levam "Publicidade". Indicações pagas levam "Link de parceiro".</p>
+      {%- if base.tem_ficticio %}
+      <p><strong>Atenção:</strong> os concursos marcados como exemplo nesta versão são fictícios.</p>
+      {%- endif %}
+    </div>
+    <nav class="pt-rodape-links" aria-label="Rodapé">
+      {%- for nome, caminho in rodape %}
+      <a href="{{ u(caminho) }}">{{ nome }}</a>
+      {%- endfor %}
+      {%- if anuncios %}
+      <button class="pt-link-btn pt-rodape-btn" type="button" data-cookies-abrir>Preferência de anúncios</button>
+      {%- endif %}
+    </nav>
+  </div>
+  {{ m.botao_alerta("Avise-me", "cc-btn cc-btn-primario cc-flutuante pt-fab") }}
+</footer>
+{% include "_folhas.html" %}
+{%- if anuncios %}
+{% include "_cookies.html" %}
+{%- endif %}
+</body>
+</html>

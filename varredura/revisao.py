@@ -9,18 +9,20 @@ coluna "conferido":
 Rodar de novo mantém as marcas da pessoa nas linhas que não mudaram e refaz as automáticas.
 """
 import csv
+import re
 from datetime import date
 from pathlib import Path
 
 from .comparar import comparar
 from .conferir import na_amostra, texto_dos_atos, verificar
 from . import dados
-from .dados import brl, carregar_fichas, data_br, edital, ler_json
+from .dados import TITULACOES, brl, carregar_fichas, data_br, edital, ler_json, situacao, tabelas_titulacao
 from .extracao import ler_fila, pendentes
 from .validar import validar_concurso
 
 CSV = "revisao.csv"
 MD = "revisao.md"
+COBERTURA = "cobertura.csv"   # para conferir à mão a cobertura contra os agregadores (só conferir, nunca copiar)
 COLUNAS = ["id", "situacao", "campo", "valor", "trecho", "conferido", "observacao"]
 MARCAS_DA_PESSOA = ("ok", "corrigir")
 ORDEM = {"corrigir": 0, "": 0, "amostra": 1}   # o que a pessoa precisa olhar vem primeiro no CSV
@@ -46,9 +48,23 @@ def ato_principal(c):
     return edital(c) or next((d for d in c["documentos"] if d["tipo"] in ("autorizacao", "contratacao_banca")), None)
 
 
+def linhas_titulacao(c):
+    """[(valor em texto, cargo de referência)]: cada valor das tabelas por titulação, para conferir como salário.
+    O cargo de referência leva o regime e a titulação da linha, para a conferência automática achar na tabela."""
+    saida = []
+    for tabela in tabelas_titulacao(c):
+        regime = tabela["regime"] or "regime não informado"
+        for titulacao, valor in tabela["linhas"]:
+            referencia = {"nome": "Professor do magistério", "salario": valor, "jornada_horas": tabela["jornada"],
+                          "requisitos": f"{regime}; titulação mínima: {titulacao}"}
+            saida.append((f"Tabela por titulação, {regime}: {TITULACOES[titulacao]} {brl(valor)}", referencia))
+    return saida
+
+
 def linhas_criticas(c):
     """[(campo, valor em texto)]: o que uma pessoa confere antes de publicar (regra 4)."""
     linhas = [("salario", f"{k['nome']}: {brl(k['salario'])}") for k in c["cargos"]]
+    linhas += [("salario_titulacao", texto) for texto, _ in linhas_titulacao(c)]
     return linhas + [
         ("inscricao.inicio", data_br(c["inscricao"]["inicio"])),
         ("inscricao.fim", data_br(c["inscricao"]["fim"])),
@@ -72,6 +88,14 @@ def ler_marcas(pasta):
 
 def _celula(texto):
     return str(texto or "").replace("|", "\\|").replace("\n", " ").strip()
+
+
+TITULO_DE_CONCURSO = re.compile(r"concurs|abertura", re.I)
+
+
+def ler_a_mao(registro):
+    """Matérias que nenhuma fonte conseguiu ler (DIOE-PR: HTTP 400/404 e PDF escaneado) e cujo título fala de concurso ou abertura."""
+    return [m for lista in registro.get("sem_leitura", {}).values() for m in lista if TITULO_DE_CONCURSO.search(m["titulo"])]
 
 
 def gerar(pasta, data_varredura=None):
@@ -125,14 +149,15 @@ def gerar(pasta, data_varredura=None):
         antes = dict(linhas_criticas(antigo)) if antigo else {}
         texto, links = texto_dos_atos(pasta, ficha)
         cargos = iter(c["cargos"])
+        referencias = iter(r for _, r in linhas_titulacao(c))
         md.append(f"### {c['orgao']} · `{c['id']}`\n")
         md.append(f"Ato: {origem}\n")
         md.append("| Campo | Valor | Trecho do ato |\n| --- | --- | --- |")
         for campo, valor in linhas_criticas(c):
-            mudou = antigo is not None and antes.get(campo) != valor and campo != "salario"
+            mudou = antigo is not None and antes.get(campo) != valor and campo not in ("salario", "salario_titulacao")
             valor_md = f"**{_celula(valor)}** (antes: {_celula(antes.get(campo, '—'))})" if mudou else _celula(valor)
             md.append(f"| {campo} | {valor_md} | {_celula(trechos.get(campo))} |")
-            cargo = next(cargos) if campo == "salario" else None
+            cargo = next(cargos) if campo == "salario" else next(referencias) if campo == "salario_titulacao" else None
             conferido, obs = marcas.get((c["id"], campo, valor), ("", ""))
             if conferido not in MARCAS_DA_PESSOA:
                 conferido, obs = "", ""
@@ -172,6 +197,12 @@ def gerar(pasta, data_varredura=None):
         md.append("## Em avaliação: processos seletivos simplificados (não publicados)\n")
         md += [f"- {_celula(a['orgao'])} · [{_celula(a['titulo'])}]({a['url']}) · {a['data']}" for a in pss]
         md.append("")
+    a_mao = ler_a_mao(registro)
+    if a_mao:
+        md.append("## Ler à mão: matérias com título de concurso que a varredura não conseguiu ler\n")
+        md.append("O diário não entregou o texto (HTTP 400/404 ou PDF escaneado). Abra o link e veja se é abertura de concurso.\n")
+        md += [f"- {a['data']} · {_celula(a['orgao'])} · [{_celula(a['titulo'])}]({a['url']}) · {a['motivo']}" for a in a_mao]
+        md.append("")
     faltam = pendentes(pasta) if (pasta / "fila").exists() else []
     if faltam:
         md.append("## Fila sem ficha nem descarte (extração pendente)\n")
@@ -193,4 +224,28 @@ def gerar(pasta, data_varredura=None):
         escritor = csv.DictWriter(f, fieldnames=COLUNAS, delimiter=";")
         escritor.writeheader()
         escritor.writerows(linhas_csv)
+    escrever_cobertura(pasta, base, [f["concurso"] for f in fichas if f.get("concurso")], data_varredura)
+    if (pasta / "atos.json").exists():
+        from .cobertura import gerar as cobertura_dos_municipios
+        cobertura_dos_municipios(pasta)   # dados/cobertura-municipios.csv
     return r, problemas
+
+
+def escrever_cobertura(pasta, base, novos, data_varredura):
+    """cobertura.csv: todo concurso conhecido (publicado ou ficha da semana), para comparar à mão com os agregadores."""
+    todos = {c["id"]: (c, "sim") for c in base["concursos"]}
+    todos.update({c["id"]: (c, "não (ficha da semana)") for c in novos})
+    ordem = {"aberto": 0, "breve": 0, "previsto": 1, "encerrado": 2}
+    linhas = []
+    for c, publicado in todos.values():
+        sit = situacao(c, data_varredura)
+        linhas.append({
+            "orgao": c["orgao"], "cidade": "Nacional" if c["nacional"] else (c["cidade"] or ""), "uf": c["uf"],
+            "situacao": {"breve": "aberto (encerra em até 7 dias)"}.get(sit, sit), "fim_inscricao": data_br(c["inscricao"]["fim"]),
+            "link_edital": (ato_principal(c) or {}).get("url", ""), "esfera": c["esfera"], "publicado": publicado, "id": c["id"],
+        })
+    linhas.sort(key=lambda l: (ordem[situacao(todos[l["id"]][0], data_varredura)], l["uf"] != "PR", l["orgao"]))
+    with (Path(pasta) / COBERTURA).open("w", encoding="utf-8-sig", newline="") as f:
+        escritor = csv.DictWriter(f, fieldnames=list(linhas[0]) if linhas else ["orgao"], delimiter=";")
+        escritor.writeheader()
+        escritor.writerows(linhas)

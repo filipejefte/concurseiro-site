@@ -1,2401 +1,2800 @@
 {
-  "gerado_em": "2026-10-14",
+  "gerado_em": "2026-10-22",
   "fontes": {
-    "codigos_e_nomes": "https://servicodados.ibge.gov.br/api/v1/localidades/estados/41/municipios",
+    "codigos_e_nomes": "https://servicodados.ibge.gov.br/api/v1/localidades/municipios",
     "coordenadas": "https://raw.githubusercontent.com/kelvins/municipios-brasileiros/main/csv/municipios.csv (licença MIT, Kelvin S. do Prado)"
   },
   "municipios": [
     {
       "ibge": "4100103",
       "nome": "Abatiá",
+      "uf": "PR",
       "lat": -23.3049,
       "lon": -50.3133
     },
     {
       "ibge": "4100202",
       "nome": "Adrianópolis",
+      "uf": "PR",
       "lat": -24.6606,
       "lon": -48.9922
     },
     {
       "ibge": "4100301",
       "nome": "Agudos do Sul",
+      "uf": "PR",
       "lat": -25.9899,
       "lon": -49.3343
     },
     {
       "ibge": "4100400",
       "nome": "Almirante Tamandaré",
+      "uf": "PR",
       "lat": -25.3188,
       "lon": -49.3037
     },
     {
       "ibge": "4100459",
       "nome": "Altamira do Paraná",
+      "uf": "PR",
       "lat": -24.7983,
       "lon": -52.7128
     },
     {
       "ibge": "4100509",
       "nome": "Altônia",
+      "uf": "PR",
       "lat": -23.8759,
       "lon": -53.8958
     },
     {
       "ibge": "4100608",
       "nome": "Alto Paraná",
+      "uf": "PR",
       "lat": -23.1312,
       "lon": -52.3189
     },
     {
       "ibge": "4100707",
       "nome": "Alto Piquiri",
+      "uf": "PR",
       "lat": -24.0224,
       "lon": -53.44
     },
     {
       "ibge": "4100806",
       "nome": "Alvorada do Sul",
+      "uf": "PR",
       "lat": -22.7813,
       "lon": -51.2297
     },
     {
       "ibge": "4100905",
       "nome": "Amaporã",
+      "uf": "PR",
       "lat": -23.0943,
       "lon": -52.7866
     },
     {
       "ibge": "4101002",
       "nome": "Ampére",
+      "uf": "PR",
       "lat": -25.9168,
       "lon": -53.4686
     },
     {
       "ibge": "4101051",
       "nome": "Anahy",
+      "uf": "PR",
       "lat": -24.6449,
       "lon": -53.1332
     },
     {
       "ibge": "4101101",
       "nome": "Andirá",
+      "uf": "PR",
       "lat": -23.0533,
       "lon": -50.2304
     },
     {
       "ibge": "4101150",
       "nome": "Ângulo",
+      "uf": "PR",
       "lat": -23.1946,
       "lon": -51.9154
     },
     {
       "ibge": "4101200",
       "nome": "Antonina",
+      "uf": "PR",
       "lat": -25.4386,
       "lon": -48.7191
     },
     {
       "ibge": "4101309",
       "nome": "Antônio Olinto",
+      "uf": "PR",
       "lat": -25.9804,
       "lon": -50.1972
     },
     {
       "ibge": "4101408",
       "nome": "Apucarana",
+      "uf": "PR",
       "lat": -23.55,
       "lon": -51.4635
     },
     {
       "ibge": "4101507",
       "nome": "Arapongas",
+      "uf": "PR",
       "lat": -23.4153,
       "lon": -51.4259
     },
     {
       "ibge": "4101606",
       "nome": "Arapoti",
+      "uf": "PR",
       "lat": -24.1548,
       "lon": -49.8285
     },
     {
       "ibge": "4101655",
       "nome": "Arapuã",
+      "uf": "PR",
       "lat": -24.3132,
       "lon": -51.7856
     },
     {
       "ibge": "4101705",
       "nome": "Araruna",
+      "uf": "PR",
       "lat": -23.9315,
       "lon": -52.5021
     },
     {
       "ibge": "4101804",
       "nome": "Araucária",
+      "uf": "PR",
       "lat": -25.5859,
       "lon": -49.4047
     },
     {
       "ibge": "4101853",
       "nome": "Ariranha do Ivaí",
+      "uf": "PR",
       "lat": -24.3857,
       "lon": -51.5839
     },
     {
       "ibge": "4101903",
       "nome": "Assaí",
+      "uf": "PR",
       "lat": -23.3697,
       "lon": -50.8459
     },
     {
       "ibge": "4102000",
       "nome": "Assis Chateaubriand",
+      "uf": "PR",
       "lat": -24.4168,
       "lon": -53.5213
     },
     {
       "ibge": "4102109",
       "nome": "Astorga",
+      "uf": "PR",
       "lat": -23.2318,
       "lon": -51.6668
     },
     {
       "ibge": "4102208",
       "nome": "Atalaia",
+      "uf": "PR",
       "lat": -23.1517,
       "lon": -52.0551
     },
     {
       "ibge": "4102307",
       "nome": "Balsa Nova",
+      "uf": "PR",
       "lat": -25.5804,
       "lon": -49.6291
     },
     {
       "ibge": "4102406",
       "nome": "Bandeirantes",
+      "uf": "PR",
       "lat": -23.1078,
       "lon": -50.3704
     },
     {
       "ibge": "4102505",
       "nome": "Barbosa Ferraz",
+      "uf": "PR",
       "lat": -24.0334,
       "lon": -52.004
     },
     {
       "ibge": "4102604",
       "nome": "Barracão",
+      "uf": "PR",
       "lat": -26.2502,
       "lon": -53.6324
     },
     {
       "ibge": "4102703",
       "nome": "Barra do Jacaré",
+      "uf": "PR",
       "lat": -23.116,
       "lon": -50.1842
     },
     {
       "ibge": "4102752",
       "nome": "Bela Vista da Caroba",
+      "uf": "PR",
       "lat": -25.8842,
       "lon": -53.6725
     },
     {
       "ibge": "4102802",
       "nome": "Bela Vista do Paraíso",
+      "uf": "PR",
       "lat": -22.9937,
       "lon": -51.1927
     },
     {
       "ibge": "4102901",
       "nome": "Bituruna",
+      "uf": "PR",
       "lat": -26.1607,
       "lon": -51.5518
     },
     {
       "ibge": "4103008",
       "nome": "Boa Esperança",
+      "uf": "PR",
       "lat": -24.2467,
       "lon": -52.7876
     },
     {
       "ibge": "4103024",
       "nome": "Boa Esperança do Iguaçu",
+      "uf": "PR",
       "lat": -25.6324,
       "lon": -53.2108
     },
     {
       "ibge": "4103040",
       "nome": "Boa Ventura de São Roque",
+      "uf": "PR",
       "lat": -24.8688,
       "lon": -51.6276
     },
     {
       "ibge": "4103057",
       "nome": "Boa Vista da Aparecida",
+      "uf": "PR",
       "lat": -25.4308,
       "lon": -53.4117
     },
     {
       "ibge": "4103107",
       "nome": "Bocaiúva do Sul",
+      "uf": "PR",
       "lat": -25.2066,
       "lon": -49.1141
     },
     {
       "ibge": "4103156",
       "nome": "Bom Jesus do Sul",
+      "uf": "PR",
       "lat": -26.1958,
       "lon": -53.5955
     },
     {
       "ibge": "4103206",
       "nome": "Bom Sucesso",
+      "uf": "PR",
       "lat": -23.7063,
       "lon": -51.7671
     },
     {
       "ibge": "4103222",
       "nome": "Bom Sucesso do Sul",
+      "uf": "PR",
       "lat": -26.0731,
       "lon": -52.8353
     },
     {
       "ibge": "4103305",
       "nome": "Borrazópolis",
+      "uf": "PR",
       "lat": -23.9366,
       "lon": -51.5875
     },
     {
       "ibge": "4103354",
       "nome": "Braganey",
+      "uf": "PR",
       "lat": -24.8173,
       "lon": -53.1218
     },
     {
       "ibge": "4103370",
       "nome": "Brasilândia do Sul",
+      "uf": "PR",
       "lat": -24.1978,
       "lon": -53.5275
     },
     {
       "ibge": "4103404",
       "nome": "Cafeara",
+      "uf": "PR",
       "lat": -22.789,
       "lon": -51.7142
     },
     {
       "ibge": "4103453",
       "nome": "Cafelândia",
+      "uf": "PR",
       "lat": -24.6189,
       "lon": -53.3207
     },
     {
       "ibge": "4103479",
       "nome": "Cafezal do Sul",
+      "uf": "PR",
       "lat": -23.9005,
       "lon": -53.5124
     },
     {
       "ibge": "4103503",
       "nome": "Califórnia",
+      "uf": "PR",
       "lat": -23.6566,
       "lon": -51.3574
     },
     {
       "ibge": "4103602",
       "nome": "Cambará",
+      "uf": "PR",
       "lat": -23.0423,
       "lon": -50.0753
     },
     {
       "ibge": "4103701",
       "nome": "Cambé",
+      "uf": "PR",
       "lat": -23.2766,
       "lon": -51.2798
     },
     {
       "ibge": "4103800",
       "nome": "Cambira",
+      "uf": "PR",
       "lat": -23.589,
       "lon": -51.5792
     },
     {
       "ibge": "4103909",
       "nome": "Campina da Lagoa",
+      "uf": "PR",
       "lat": -24.5893,
       "lon": -52.7976
     },
     {
       "ibge": "4103958",
       "nome": "Campina do Simão",
+      "uf": "PR",
       "lat": -25.0802,
       "lon": -51.8237
     },
     {
       "ibge": "4104006",
       "nome": "Campina Grande do Sul",
+      "uf": "PR",
       "lat": -25.3044,
       "lon": -49.0551
     },
     {
       "ibge": "4104055",
       "nome": "Campo Bonito",
+      "uf": "PR",
       "lat": -25.0294,
       "lon": -52.9939
     },
     {
       "ibge": "4104105",
       "nome": "Campo do Tenente",
+      "uf": "PR",
       "lat": -25.98,
       "lon": -49.6844
     },
     {
       "ibge": "4104204",
       "nome": "Campo Largo",
+      "uf": "PR",
       "lat": -25.4525,
       "lon": -49.529
     },
     {
       "ibge": "4104253",
       "nome": "Campo Magro",
+      "uf": "PR",
       "lat": -25.3687,
       "lon": -49.4501
     },
     {
       "ibge": "4104303",
       "nome": "Campo Mourão",
+      "uf": "PR",
       "lat": -24.0463,
       "lon": -52.378
     },
     {
       "ibge": "4104402",
       "nome": "Cândido de Abreu",
+      "uf": "PR",
       "lat": -24.5649,
       "lon": -51.3372
     },
     {
       "ibge": "4104428",
       "nome": "Candói",
+      "uf": "PR",
       "lat": -25.5758,
       "lon": -52.0409
     },
     {
       "ibge": "4104451",
       "nome": "Cantagalo",
+      "uf": "PR",
       "lat": -25.3734,
       "lon": -52.1198
     },
     {
       "ibge": "4104501",
       "nome": "Capanema",
+      "uf": "PR",
       "lat": -25.6691,
       "lon": -53.8055
     },
     {
       "ibge": "4104600",
       "nome": "Capitão Leônidas Marques",
+      "uf": "PR",
       "lat": -25.4816,
       "lon": -53.6112
     },
     {
       "ibge": "4104659",
       "nome": "Carambeí",
+      "uf": "PR",
       "lat": -24.9152,
       "lon": -50.0986
     },
     {
       "ibge": "4104709",
       "nome": "Carlópolis",
+      "uf": "PR",
       "lat": -23.4269,
       "lon": -49.7235
     },
     {
       "ibge": "4104808",
       "nome": "Cascavel",
+      "uf": "PR",
       "lat": -24.9573,
       "lon": -53.459
     },
     {
       "ibge": "4104907",
       "nome": "Castro",
+      "uf": "PR",
       "lat": -24.7891,
       "lon": -50.0108
     },
     {
       "ibge": "4105003",
       "nome": "Catanduvas",
+      "uf": "PR",
       "lat": -25.2044,
       "lon": -53.1548
     },
     {
       "ibge": "4105102",
       "nome": "Centenário do Sul",
+      "uf": "PR",
       "lat": -22.8188,
       "lon": -51.5973
     },
     {
       "ibge": "4105201",
       "nome": "Cerro Azul",
+      "uf": "PR",
       "lat": -26.0891,
       "lon": -52.8691
     },
     {
       "ibge": "4105300",
       "nome": "Céu Azul",
+      "uf": "PR",
       "lat": -25.1489,
       "lon": -53.8415
     },
     {
       "ibge": "4105409",
       "nome": "Chopinzinho",
+      "uf": "PR",
       "lat": -25.8515,
       "lon": -52.5173
     },
     {
       "ibge": "4105508",
       "nome": "Cianorte",
+      "uf": "PR",
       "lat": -23.6599,
       "lon": -52.6054
     },
     {
       "ibge": "4105607",
       "nome": "Cidade Gaúcha",
+      "uf": "PR",
       "lat": -23.3772,
       "lon": -52.9436
     },
     {
       "ibge": "4105706",
       "nome": "Clevelândia",
+      "uf": "PR",
       "lat": -26.4043,
       "lon": -52.3508
     },
     {
       "ibge": "4105805",
       "nome": "Colombo",
+      "uf": "PR",
       "lat": -25.2925,
       "lon": -49.2262
     },
     {
       "ibge": "4105904",
       "nome": "Colorado",
+      "uf": "PR",
       "lat": -22.8374,
       "lon": -51.9743
     },
     {
       "ibge": "4106001",
       "nome": "Congonhinhas",
+      "uf": "PR",
       "lat": -23.5493,
       "lon": -50.5569
     },
     {
       "ibge": "4106100",
       "nome": "Conselheiro Mairinck",
+      "uf": "PR",
       "lat": -23.623,
       "lon": -50.1707
     },
     {
       "ibge": "4106209",
       "nome": "Contenda",
+      "uf": "PR",
       "lat": -25.6788,
       "lon": -49.535
     },
     {
       "ibge": "4106308",
       "nome": "Corbélia",
+      "uf": "PR",
       "lat": -24.7971,
       "lon": -53.3006
     },
     {
       "ibge": "4106407",
       "nome": "Cornélio Procópio",
+      "uf": "PR",
       "lat": -23.1829,
       "lon": -50.6498
     },
     {
       "ibge": "4106456",
       "nome": "Coronel Domingos Soares",
+      "uf": "PR",
       "lat": -26.2277,
       "lon": -52.0356
     },
     {
       "ibge": "4106506",
       "nome": "Coronel Vivida",
+      "uf": "PR",
       "lat": -25.9767,
       "lon": -52.5641
     },
     {
       "ibge": "4106555",
       "nome": "Corumbataí do Sul",
+      "uf": "PR",
       "lat": -24.101,
       "lon": -52.1177
     },
     {
       "ibge": "4106571",
       "nome": "Cruzeiro do Iguaçu",
+      "uf": "PR",
       "lat": -25.6192,
       "lon": -53.1285
     },
     {
       "ibge": "4106605",
       "nome": "Cruzeiro do Oeste",
+      "uf": "PR",
       "lat": -23.7799,
       "lon": -53.0774
     },
     {
       "ibge": "4106704",
       "nome": "Cruzeiro do Sul",
+      "uf": "PR",
       "lat": -22.9624,
       "lon": -52.1622
     },
     {
       "ibge": "4106803",
       "nome": "Cruz Machado",
+      "uf": "PR",
       "lat": -26.0166,
       "lon": -51.343
     },
     {
       "ibge": "4106852",
       "nome": "Cruzmaltina",
+      "uf": "PR",
       "lat": -24.0132,
       "lon": -51.4563
     },
     {
       "ibge": "4106902",
       "nome": "Curitiba",
+      "uf": "PR",
       "lat": -25.4195,
       "lon": -49.2646
     },
     {
       "ibge": "4107009",
       "nome": "Curiúva",
+      "uf": "PR",
       "lat": -24.0362,
       "lon": -50.4576
     },
     {
       "ibge": "4107108",
       "nome": "Diamante do Norte",
+      "uf": "PR",
       "lat": -22.655,
       "lon": -52.8617
     },
     {
       "ibge": "4107124",
       "nome": "Diamante do Sul",
+      "uf": "PR",
       "lat": -25.035,
       "lon": -52.6768
     },
     {
       "ibge": "4107157",
       "nome": "Diamante D'Oeste",
+      "uf": "PR",
       "lat": -24.9419,
       "lon": -54.1052
     },
     {
       "ibge": "4107207",
       "nome": "Dois Vizinhos",
+      "uf": "PR",
       "lat": -25.7407,
       "lon": -53.057
     },
     {
       "ibge": "4107256",
       "nome": "Douradina",
+      "uf": "PR",
       "lat": -23.3807,
       "lon": -53.2918
     },
     {
       "ibge": "4107306",
       "nome": "Doutor Camargo",
+      "uf": "PR",
       "lat": -23.5582,
       "lon": -52.2178
     },
     {
       "ibge": "4107405",
       "nome": "Enéas Marques",
+      "uf": "PR",
       "lat": -25.9445,
       "lon": -53.1659
     },
     {
       "ibge": "4107504",
       "nome": "Engenheiro Beltrão",
+      "uf": "PR",
       "lat": -23.797,
       "lon": -52.2659
     },
     {
       "ibge": "4107520",
       "nome": "Esperança Nova",
+      "uf": "PR",
       "lat": -23.7238,
       "lon": -53.811
     },
     {
       "ibge": "4107538",
       "nome": "Entre Rios do Oeste",
+      "uf": "PR",
       "lat": -24.7042,
       "lon": -54.2385
     },
     {
       "ibge": "4107546",
       "nome": "Espigão Alto do Iguaçu",
+      "uf": "PR",
       "lat": -25.4216,
       "lon": -52.8348
     },
     {
       "ibge": "4107553",
       "nome": "Farol",
+      "uf": "PR",
       "lat": -24.0958,
       "lon": -52.6217
     },
     {
       "ibge": "4107603",
       "nome": "Faxinal",
+      "uf": "PR",
       "lat": -24.0077,
       "lon": -51.3227
     },
     {
       "ibge": "4107652",
       "nome": "Fazenda Rio Grande",
+      "uf": "PR",
       "lat": -25.6624,
       "lon": -49.3073
     },
     {
       "ibge": "4107702",
       "nome": "Fênix",
+      "uf": "PR",
       "lat": -23.9135,
       "lon": -51.9805
     },
     {
       "ibge": "4107736",
       "nome": "Fernandes Pinheiro",
+      "uf": "PR",
       "lat": -25.4107,
       "lon": -50.5456
     },
     {
       "ibge": "4107751",
       "nome": "Figueira",
+      "uf": "PR",
       "lat": -23.8455,
       "lon": -50.4031
     },
     {
       "ibge": "4107801",
       "nome": "Floraí",
+      "uf": "PR",
       "lat": -23.3178,
       "lon": -52.3029
     },
     {
       "ibge": "4107850",
       "nome": "Flor da Serra do Sul",
+      "uf": "PR",
       "lat": -26.2523,
       "lon": -53.3092
     },
     {
       "ibge": "4107900",
       "nome": "Floresta",
+      "uf": "PR",
       "lat": -23.6031,
       "lon": -52.0807
     },
     {
       "ibge": "4108007",
       "nome": "Florestópolis",
+      "uf": "PR",
       "lat": -22.8623,
       "lon": -51.3882
     },
     {
       "ibge": "4108106",
       "nome": "Flórida",
+      "uf": "PR",
       "lat": -23.0847,
       "lon": -51.9546
     },
     {
       "ibge": "4108205",
       "nome": "Formosa do Oeste",
+      "uf": "PR",
       "lat": -24.2951,
       "lon": -53.3114
     },
     {
       "ibge": "4108304",
       "nome": "Foz do Iguaçu",
+      "uf": "PR",
       "lat": -25.5427,
       "lon": -54.5827
     },
     {
       "ibge": "4108320",
       "nome": "Francisco Alves",
+      "uf": "PR",
       "lat": -24.0667,
       "lon": -53.8461
     },
     {
       "ibge": "4108403",
       "nome": "Francisco Beltrão",
+      "uf": "PR",
       "lat": -26.0817,
       "lon": -53.0535
     },
     {
       "ibge": "4108452",
       "nome": "Foz do Jordão",
+      "uf": "PR",
       "lat": -25.7371,
       "lon": -52.1188
     },
     {
       "ibge": "4108502",
       "nome": "General Carneiro",
+      "uf": "PR",
       "lat": -26.425,
       "lon": -51.3172
     },
     {
       "ibge": "4108551",
       "nome": "Godoy Moreira",
+      "uf": "PR",
       "lat": -24.173,
       "lon": -51.9246
     },
     {
       "ibge": "4108601",
       "nome": "Goioerê",
+      "uf": "PR",
       "lat": -24.1835,
       "lon": -53.0248
     },
     {
       "ibge": "4108650",
       "nome": "Goioxim",
+      "uf": "PR",
       "lat": -25.1927,
       "lon": -51.9911
     },
     {
       "ibge": "4108700",
       "nome": "Grandes Rios",
+      "uf": "PR",
       "lat": -24.1466,
       "lon": -51.5094
     },
     {
       "ibge": "4108809",
       "nome": "Guaíra",
+      "uf": "PR",
       "lat": -24.085,
       "lon": -54.2573
     },
     {
       "ibge": "4108908",
       "nome": "Guairaçá",
+      "uf": "PR",
       "lat": -22.932,
       "lon": -52.6906
     },
     {
       "ibge": "4108957",
       "nome": "Guamiranga",
+      "uf": "PR",
       "lat": -25.1912,
       "lon": -50.8021
     },
     {
       "ibge": "4109005",
       "nome": "Guapirama",
+      "uf": "PR",
       "lat": -23.5203,
       "lon": -50.0407
     },
     {
       "ibge": "4109104",
       "nome": "Guaporema",
+      "uf": "PR",
       "lat": -23.3402,
       "lon": -52.7786
     },
     {
       "ibge": "4109203",
       "nome": "Guaraci",
+      "uf": "PR",
       "lat": -22.9694,
       "lon": -51.6504
     },
     {
       "ibge": "4109302",
       "nome": "Guaraniaçu",
+      "uf": "PR",
       "lat": -25.0968,
       "lon": -52.8755
     },
     {
       "ibge": "4109401",
       "nome": "Guarapuava",
+      "uf": "PR",
       "lat": -25.3902,
       "lon": -51.4623
     },
     {
       "ibge": "4109500",
       "nome": "Guaraqueçaba",
+      "uf": "PR",
       "lat": -25.3071,
       "lon": -48.3204
     },
     {
       "ibge": "4109609",
       "nome": "Guaratuba",
+      "uf": "PR",
       "lat": -25.8817,
       "lon": -48.5752
     },
     {
       "ibge": "4109658",
       "nome": "Honório Serpa",
+      "uf": "PR",
       "lat": -26.139,
       "lon": -52.3848
     },
     {
       "ibge": "4109708",
       "nome": "Ibaiti",
+      "uf": "PR",
       "lat": -23.8478,
       "lon": -50.1932
     },
     {
       "ibge": "4109757",
       "nome": "Ibema",
+      "uf": "PR",
       "lat": -25.1193,
       "lon": -53.0072
     },
     {
       "ibge": "4109807",
       "nome": "Ibiporã",
+      "uf": "PR",
       "lat": -23.2659,
       "lon": -51.0522
     },
     {
       "ibge": "4109906",
       "nome": "Icaraíma",
+      "uf": "PR",
       "lat": -23.3944,
       "lon": -53.615
     },
     {
       "ibge": "4110003",
       "nome": "Iguaraçu",
+      "uf": "PR",
       "lat": -23.1949,
       "lon": -51.8256
     },
     {
       "ibge": "4110052",
       "nome": "Iguatu",
+      "uf": "PR",
       "lat": -24.7153,
       "lon": -53.0827
     },
     {
       "ibge": "4110078",
       "nome": "Imbaú",
+      "uf": "PR",
       "lat": -24.448,
       "lon": -50.7533
     },
     {
       "ibge": "4110102",
       "nome": "Imbituva",
+      "uf": "PR",
       "lat": -25.2285,
       "lon": -50.5989
     },
     {
       "ibge": "4110201",
       "nome": "Inácio Martins",
+      "uf": "PR",
       "lat": -25.5704,
       "lon": -51.0769
     },
     {
       "ibge": "4110300",
       "nome": "Inajá",
+      "uf": "PR",
       "lat": -22.7509,
       "lon": -52.1995
     },
     {
       "ibge": "4110409",
       "nome": "Indianópolis",
+      "uf": "PR",
       "lat": -23.4762,
       "lon": -52.6989
     },
     {
       "ibge": "4110508",
       "nome": "Ipiranga",
+      "uf": "PR",
       "lat": -25.0238,
       "lon": -50.5794
     },
     {
       "ibge": "4110607",
       "nome": "Iporã",
+      "uf": "PR",
       "lat": -24.0083,
       "lon": -53.706
     },
     {
       "ibge": "4110656",
       "nome": "Iracema do Oeste",
+      "uf": "PR",
       "lat": -24.4262,
       "lon": -53.3528
     },
     {
       "ibge": "4110706",
       "nome": "Irati",
+      "uf": "PR",
       "lat": -25.4697,
       "lon": -50.6493
     },
     {
       "ibge": "4110805",
       "nome": "Iretama",
+      "uf": "PR",
       "lat": -24.4253,
       "lon": -52.1012
     },
     {
       "ibge": "4110904",
       "nome": "Itaguajé",
+      "uf": "PR",
       "lat": -22.6183,
       "lon": -51.9674
     },
     {
       "ibge": "4110953",
       "nome": "Itaipulândia",
+      "uf": "PR",
       "lat": -25.1366,
       "lon": -54.3001
     },
     {
       "ibge": "4111001",
       "nome": "Itambaracá",
+      "uf": "PR",
       "lat": -23.0181,
       "lon": -50.4097
     },
     {
       "ibge": "4111100",
       "nome": "Itambé",
+      "uf": "PR",
       "lat": -23.6601,
       "lon": -51.9912
     },
     {
       "ibge": "4111209",
       "nome": "Itapejara d'Oeste",
+      "uf": "PR",
       "lat": -25.9619,
       "lon": -52.8152
     },
     {
       "ibge": "4111258",
       "nome": "Itaperuçu",
+      "uf": "PR",
       "lat": -25.2193,
       "lon": -49.3454
     },
     {
       "ibge": "4111308",
       "nome": "Itaúna do Sul",
+      "uf": "PR",
       "lat": -22.7289,
       "lon": -52.8874
     },
     {
       "ibge": "4111407",
       "nome": "Ivaí",
+      "uf": "PR",
       "lat": -25.0067,
       "lon": -50.857
     },
     {
       "ibge": "4111506",
       "nome": "Ivaiporã",
+      "uf": "PR",
       "lat": -24.2485,
       "lon": -51.6754
     },
     {
       "ibge": "4111555",
       "nome": "Ivaté",
+      "uf": "PR",
       "lat": -23.4072,
       "lon": -53.3687
     },
     {
       "ibge": "4111605",
       "nome": "Ivatuba",
+      "uf": "PR",
       "lat": -23.6187,
       "lon": -52.2203
     },
     {
       "ibge": "4111704",
       "nome": "Jaboti",
+      "uf": "PR",
       "lat": -23.7435,
       "lon": -50.0729
     },
     {
       "ibge": "4111803",
       "nome": "Jacarezinho",
+      "uf": "PR",
       "lat": -23.1591,
       "lon": -49.9739
     },
     {
       "ibge": "4111902",
       "nome": "Jaguapitã",
+      "uf": "PR",
       "lat": -23.1104,
       "lon": -51.5342
     },
     {
       "ibge": "4112009",
       "nome": "Jaguariaíva",
+      "uf": "PR",
       "lat": -24.2439,
       "lon": -49.7066
     },
     {
       "ibge": "4112108",
       "nome": "Jandaia do Sul",
+      "uf": "PR",
       "lat": -23.6011,
       "lon": -51.6448
     },
     {
       "ibge": "4112207",
       "nome": "Janiópolis",
+      "uf": "PR",
       "lat": -24.1401,
       "lon": -52.7784
     },
     {
       "ibge": "4112306",
       "nome": "Japira",
+      "uf": "PR",
       "lat": -23.8142,
       "lon": -50.1422
     },
     {
       "ibge": "4112405",
       "nome": "Japurá",
+      "uf": "PR",
       "lat": -23.4693,
       "lon": -52.5557
     },
     {
       "ibge": "4112504",
       "nome": "Jardim Alegre",
+      "uf": "PR",
       "lat": -24.1809,
       "lon": -51.6902
     },
     {
       "ibge": "4112603",
       "nome": "Jardim Olinda",
+      "uf": "PR",
       "lat": -22.5523,
       "lon": -52.0503
     },
     {
       "ibge": "4112702",
       "nome": "Jataizinho",
+      "uf": "PR",
       "lat": -23.2578,
       "lon": -50.9777
     },
     {
       "ibge": "4112751",
       "nome": "Jesuítas",
+      "uf": "PR",
       "lat": -24.3839,
       "lon": -53.3849
     },
     {
       "ibge": "4112801",
       "nome": "Joaquim Távora",
+      "uf": "PR",
       "lat": -23.4987,
       "lon": -49.909
     },
     {
       "ibge": "4112900",
       "nome": "Jundiaí do Sul",
+      "uf": "PR",
       "lat": -23.4357,
       "lon": -50.2496
     },
     {
       "ibge": "4112959",
       "nome": "Juranda",
+      "uf": "PR",
       "lat": -24.4209,
       "lon": -52.8413
     },
     {
       "ibge": "4113007",
       "nome": "Jussara",
+      "uf": "PR",
       "lat": -23.6219,
       "lon": -52.4693
     },
     {
       "ibge": "4113106",
       "nome": "Kaloré",
+      "uf": "PR",
       "lat": -23.8188,
       "lon": -51.6687
     },
     {
       "ibge": "4113205",
       "nome": "Lapa",
+      "uf": "PR",
       "lat": -25.7671,
       "lon": -49.7168
     },
     {
       "ibge": "4113254",
       "nome": "Laranjal",
+      "uf": "PR",
       "lat": -24.8862,
       "lon": -52.47
     },
     {
       "ibge": "4113304",
       "nome": "Laranjeiras do Sul",
+      "uf": "PR",
       "lat": -25.4077,
       "lon": -52.4109
     },
     {
       "ibge": "4113403",
       "nome": "Leópolis",
+      "uf": "PR",
       "lat": -23.0818,
       "lon": -50.7511
     },
     {
       "ibge": "4113429",
       "nome": "Lidianópolis",
+      "uf": "PR",
       "lat": -24.11,
       "lon": -51.6506
     },
     {
       "ibge": "4113452",
       "nome": "Lindoeste",
+      "uf": "PR",
       "lat": -25.2596,
       "lon": -53.5733
     },
     {
       "ibge": "4113502",
       "nome": "Loanda",
+      "uf": "PR",
       "lat": -22.9232,
       "lon": -53.1362
     },
     {
       "ibge": "4113601",
       "nome": "Lobato",
+      "uf": "PR",
       "lat": -23.0058,
       "lon": -51.9524
     },
     {
       "ibge": "4113700",
       "nome": "Londrina",
+      "uf": "PR",
       "lat": -23.304,
       "lon": -51.1691
     },
     {
       "ibge": "4113734",
       "nome": "Luiziana",
+      "uf": "PR",
       "lat": -24.2853,
       "lon": -52.269
     },
     {
       "ibge": "4113759",
       "nome": "Lunardelli",
+      "uf": "PR",
       "lat": -24.0821,
       "lon": -51.7368
     },
     {
       "ibge": "4113809",
       "nome": "Lupionópolis",
+      "uf": "PR",
       "lat": -22.755,
       "lon": -51.6601
     },
     {
       "ibge": "4113908",
       "nome": "Mallet",
+      "uf": "PR",
       "lat": -25.8806,
       "lon": -50.8173
     },
     {
       "ibge": "4114005",
       "nome": "Mamborê",
+      "uf": "PR",
       "lat": -24.317,
       "lon": -52.5271
     },
     {
       "ibge": "4114104",
       "nome": "Mandaguaçu",
+      "uf": "PR",
       "lat": -23.3458,
       "lon": -52.0944
     },
     {
       "ibge": "4114203",
       "nome": "Mandaguari",
+      "uf": "PR",
       "lat": -23.5446,
       "lon": -51.671
     },
     {
       "ibge": "4114302",
       "nome": "Mandirituba",
+      "uf": "PR",
       "lat": -25.777,
       "lon": -49.3282
     },
     {
       "ibge": "4114351",
       "nome": "Manfrinópolis",
+      "uf": "PR",
       "lat": -26.1441,
       "lon": -53.3113
     },
     {
       "ibge": "4114401",
       "nome": "Mangueirinha",
+      "uf": "PR",
       "lat": -25.9421,
       "lon": -52.1743
     },
     {
       "ibge": "4114500",
       "nome": "Manoel Ribas",
+      "uf": "PR",
       "lat": -24.5144,
       "lon": -51.6658
     },
     {
       "ibge": "4114609",
       "nome": "Marechal Cândido Rondon",
+      "uf": "PR",
       "lat": -24.557,
       "lon": -54.0571
     },
     {
       "ibge": "4114708",
       "nome": "Maria Helena",
+      "uf": "PR",
       "lat": -23.6158,
       "lon": -53.2053
     },
     {
       "ibge": "4114807",
       "nome": "Marialva",
+      "uf": "PR",
       "lat": -23.4843,
       "lon": -51.7928
     },
     {
       "ibge": "4114906",
       "nome": "Marilândia do Sul",
+      "uf": "PR",
       "lat": -23.7425,
       "lon": -51.3137
     },
     {
       "ibge": "4115002",
       "nome": "Marilena",
+      "uf": "PR",
       "lat": -22.7336,
       "lon": -53.0402
     },
     {
       "ibge": "4115101",
       "nome": "Mariluz",
+      "uf": "PR",
       "lat": -24.0089,
       "lon": -53.1432
     },
     {
       "ibge": "4115200",
       "nome": "Maringá",
+      "uf": "PR",
       "lat": -23.4205,
       "lon": -51.9333
     },
     {
       "ibge": "4115309",
       "nome": "Mariópolis",
+      "uf": "PR",
       "lat": -26.355,
       "lon": -52.5532
     },
     {
       "ibge": "4115358",
       "nome": "Maripá",
+      "uf": "PR",
       "lat": -24.42,
       "lon": -53.8286
     },
     {
       "ibge": "4115408",
       "nome": "Marmeleiro",
+      "uf": "PR",
       "lat": -26.1472,
       "lon": -53.0267
     },
     {
       "ibge": "4115457",
       "nome": "Marquinho",
+      "uf": "PR",
       "lat": -25.112,
       "lon": -52.2497
     },
     {
       "ibge": "4115507",
       "nome": "Marumbi",
+      "uf": "PR",
       "lat": -23.7058,
       "lon": -51.6404
     },
     {
       "ibge": "4115606",
       "nome": "Matelândia",
+      "uf": "PR",
       "lat": -25.2496,
       "lon": -53.9935
     },
     {
       "ibge": "4115705",
       "nome": "Matinhos",
+      "uf": "PR",
       "lat": -25.8237,
       "lon": -48.549
     },
     {
       "ibge": "4115739",
       "nome": "Mato Rico",
+      "uf": "PR",
       "lat": -24.6995,
       "lon": -52.1454
     },
     {
       "ibge": "4115754",
       "nome": "Mauá da Serra",
+      "uf": "PR",
       "lat": -23.8988,
       "lon": -51.2277
     },
     {
       "ibge": "4115804",
       "nome": "Medianeira",
+      "uf": "PR",
       "lat": -25.2977,
       "lon": -54.0943
     },
     {
       "ibge": "4115853",
       "nome": "Mercedes",
+      "uf": "PR",
       "lat": -24.4538,
       "lon": -54.1618
     },
     {
       "ibge": "4115903",
       "nome": "Mirador",
+      "uf": "PR",
       "lat": -23.255,
       "lon": -52.7761
     },
     {
       "ibge": "4116000",
       "nome": "Miraselva",
+      "uf": "PR",
       "lat": -22.9657,
       "lon": -51.4846
     },
     {
       "ibge": "4116059",
       "nome": "Missal",
+      "uf": "PR",
       "lat": -25.0919,
       "lon": -54.2477
     },
     {
       "ibge": "4116109",
       "nome": "Moreira Sales",
+      "uf": "PR",
       "lat": -24.0509,
       "lon": -53.0102
     },
     {
       "ibge": "4116208",
       "nome": "Morretes",
+      "uf": "PR",
       "lat": -25.4744,
       "lon": -48.8345
     },
     {
       "ibge": "4116307",
       "nome": "Munhoz de Melo",
+      "uf": "PR",
       "lat": -23.1487,
       "lon": -51.7737
     },
     {
       "ibge": "4116406",
       "nome": "Nossa Senhora das Graças",
+      "uf": "PR",
       "lat": -22.9129,
       "lon": -51.7978
     },
     {
       "ibge": "4116505",
       "nome": "Nova Aliança do Ivaí",
+      "uf": "PR",
       "lat": -23.1763,
       "lon": -52.6032
     },
     {
       "ibge": "4116604",
       "nome": "Nova América da Colina",
+      "uf": "PR",
       "lat": -23.3308,
       "lon": -50.7168
     },
     {
       "ibge": "4116703",
       "nome": "Nova Aurora",
+      "uf": "PR",
       "lat": -24.5289,
       "lon": -53.2575
     },
     {
       "ibge": "4116802",
       "nome": "Nova Cantu",
+      "uf": "PR",
       "lat": -24.6723,
       "lon": -52.5661
     },
     {
       "ibge": "4116901",
       "nome": "Nova Esperança",
+      "uf": "PR",
       "lat": -23.182,
       "lon": -52.2031
     },
     {
       "ibge": "4116950",
       "nome": "Nova Esperança do Sudoeste",
+      "uf": "PR",
       "lat": -25.9004,
       "lon": -53.2618
     },
     {
       "ibge": "4117008",
       "nome": "Nova Fátima",
+      "uf": "PR",
       "lat": -23.4324,
       "lon": -50.5665
     },
     {
       "ibge": "4117057",
       "nome": "Nova Laranjeiras",
+      "uf": "PR",
       "lat": -25.3054,
       "lon": -52.5447
     },
     {
       "ibge": "4117107",
       "nome": "Nova Londrina",
+      "uf": "PR",
       "lat": -22.7639,
       "lon": -52.9868
     },
     {
       "ibge": "4117206",
       "nome": "Nova Olímpia",
+      "uf": "PR",
       "lat": -23.4703,
       "lon": -53.0898
     },
     {
       "ibge": "4117214",
       "nome": "Nova Santa Bárbara",
+      "uf": "PR",
       "lat": -23.5865,
       "lon": -50.7598
     },
     {
       "ibge": "4117222",
       "nome": "Nova Santa Rosa",
+      "uf": "PR",
       "lat": -24.4693,
       "lon": -53.9552
     },
     {
       "ibge": "4117255",
       "nome": "Nova Prata do Iguaçu",
+      "uf": "PR",
       "lat": -25.6309,
       "lon": -53.3469
     },
     {
       "ibge": "4117271",
       "nome": "Nova Tebas",
+      "uf": "PR",
       "lat": -24.438,
       "lon": -51.9454
     },
     {
       "ibge": "4117297",
       "nome": "Novo Itacolomi",
+      "uf": "PR",
       "lat": -23.7631,
       "lon": -51.5079
     },
     {
       "ibge": "4117305",
       "nome": "Ortigueira",
+      "uf": "PR",
       "lat": -24.2058,
       "lon": -50.9185
     },
     {
       "ibge": "4117404",
       "nome": "Ourizona",
+      "uf": "PR",
       "lat": -23.4053,
       "lon": -52.1964
     },
     {
       "ibge": "4117453",
       "nome": "Ouro Verde do Oeste",
+      "uf": "PR",
       "lat": -24.7933,
       "lon": -53.9043
     },
     {
       "ibge": "4117503",
       "nome": "Paiçandu",
+      "uf": "PR",
       "lat": -23.4555,
       "lon": -52.046
     },
     {
       "ibge": "4117602",
       "nome": "Palmas",
+      "uf": "PR",
       "lat": -26.4839,
       "lon": -51.9888
     },
     {
       "ibge": "4117701",
       "nome": "Palmeira",
+      "uf": "PR",
       "lat": -25.4257,
       "lon": -50.007
     },
     {
       "ibge": "4117800",
       "nome": "Palmital",
+      "uf": "PR",
       "lat": -24.8853,
       "lon": -52.2029
     },
     {
       "ibge": "4117909",
       "nome": "Palotina",
+      "uf": "PR",
       "lat": -24.2868,
       "lon": -53.8404
     },
     {
       "ibge": "4118006",
       "nome": "Paraíso do Norte",
+      "uf": "PR",
       "lat": -23.2824,
       "lon": -52.6054
     },
     {
       "ibge": "4118105",
       "nome": "Paranacity",
+      "uf": "PR",
       "lat": -22.9297,
       "lon": -52.1549
     },
     {
       "ibge": "4118204",
       "nome": "Paranaguá",
+      "uf": "PR",
       "lat": -25.5161,
       "lon": -48.5225
     },
     {
       "ibge": "4118303",
       "nome": "Paranapoema",
+      "uf": "PR",
       "lat": -22.6412,
       "lon": -52.0905
     },
     {
       "ibge": "4118402",
       "nome": "Paranavaí",
+      "uf": "PR",
       "lat": -23.0816,
       "lon": -52.4617
     },
     {
       "ibge": "4118451",
       "nome": "Pato Bragado",
+      "uf": "PR",
       "lat": -24.6271,
       "lon": -54.2265
     },
     {
       "ibge": "4118501",
       "nome": "Pato Branco",
+      "uf": "PR",
       "lat": -26.2292,
       "lon": -52.6706
     },
     {
       "ibge": "4118600",
       "nome": "Paula Freitas",
+      "uf": "PR",
       "lat": -26.2105,
       "lon": -50.931
     },
     {
       "ibge": "4118709",
       "nome": "Paulo Frontin",
+      "uf": "PR",
       "lat": -26.0466,
       "lon": -50.8304
     },
     {
       "ibge": "4118808",
       "nome": "Peabiru",
+      "uf": "PR",
       "lat": -23.914,
       "lon": -52.3431
     },
     {
       "ibge": "4118857",
       "nome": "Perobal",
+      "uf": "PR",
       "lat": -23.8949,
       "lon": -53.4098
     },
     {
       "ibge": "4118907",
       "nome": "Pérola",
+      "uf": "PR",
       "lat": -23.8039,
       "lon": -53.6834
     },
     {
       "ibge": "4119004",
       "nome": "Pérola d'Oeste",
+      "uf": "PR",
       "lat": -25.8278,
       "lon": -53.7433
     },
     {
       "ibge": "4119103",
       "nome": "Piên",
+      "uf": "PR",
       "lat": -26.0965,
       "lon": -49.4336
     },
     {
       "ibge": "4119152",
       "nome": "Pinhais",
+      "uf": "PR",
       "lat": -25.4429,
       "lon": -49.1927
     },
     {
       "ibge": "4119202",
       "nome": "Pinhalão",
+      "uf": "PR",
       "lat": -23.7982,
       "lon": -50.0536
     },
     {
       "ibge": "4119251",
       "nome": "Pinhal de São Bento",
+      "uf": "PR",
       "lat": -26.0324,
       "lon": -53.482
     },
     {
       "ibge": "4119301",
       "nome": "Pinhão",
+      "uf": "PR",
       "lat": -25.6944,
       "lon": -51.6536
     },
     {
       "ibge": "4119400",
       "nome": "Piraí do Sul",
+      "uf": "PR",
       "lat": -24.5306,
       "lon": -49.9433
     },
     {
       "ibge": "4119509",
       "nome": "Piraquara",
+      "uf": "PR",
       "lat": -25.4422,
       "lon": -49.0624
     },
     {
       "ibge": "4119608",
       "nome": "Pitanga",
+      "uf": "PR",
       "lat": -24.7588,
       "lon": -51.7596
     },
     {
       "ibge": "4119657",
       "nome": "Pitangueiras",
+      "uf": "PR",
       "lat": -23.2281,
       "lon": -51.5873
     },
     {
       "ibge": "4119707",
       "nome": "Planaltina do Paraná",
+      "uf": "PR",
       "lat": -23.0101,
       "lon": -52.9162
     },
     {
       "ibge": "4119806",
       "nome": "Planalto",
+      "uf": "PR",
       "lat": -25.7211,
       "lon": -53.7642
     },
     {
       "ibge": "4119905",
       "nome": "Ponta Grossa",
+      "uf": "PR",
       "lat": -25.0916,
       "lon": -50.1668
     },
     {
       "ibge": "4119954",
       "nome": "Pontal do Paraná",
+      "uf": "PR",
       "lat": -25.6735,
       "lon": -48.5111
     },
     {
       "ibge": "4120002",
       "nome": "Porecatu",
+      "uf": "PR",
       "lat": -22.7537,
       "lon": -51.3795
     },
     {
       "ibge": "4120101",
       "nome": "Porto Amazonas",
+      "uf": "PR",
       "lat": -25.54,
       "lon": -49.8946
     },
     {
       "ibge": "4120150",
       "nome": "Porto Barreiro",
+      "uf": "PR",
       "lat": -25.5477,
       "lon": -52.4067
     },
     {
       "ibge": "4120200",
       "nome": "Porto Rico",
+      "uf": "PR",
       "lat": -22.7747,
       "lon": -53.2677
     },
     {
       "ibge": "4120309",
       "nome": "Porto Vitória",
+      "uf": "PR",
       "lat": -26.1674,
       "lon": -51.231
     },
     {
       "ibge": "4120333",
       "nome": "Prado Ferreira",
+      "uf": "PR",
       "lat": -23.0357,
       "lon": -51.4429
     },
     {
       "ibge": "4120358",
       "nome": "Pranchita",
+      "uf": "PR",
       "lat": -26.0209,
       "lon": -53.7397
     },
     {
       "ibge": "4120408",
       "nome": "Presidente Castelo Branco",
+      "uf": "PR",
       "lat": -23.2782,
       "lon": -52.1536
     },
     {
       "ibge": "4120507",
       "nome": "Primeiro de Maio",
+      "uf": "PR",
       "lat": -22.8517,
       "lon": -51.0293
     },
     {
       "ibge": "4120606",
       "nome": "Prudentópolis",
+      "uf": "PR",
       "lat": -25.2111,
       "lon": -50.9754
     },
     {
       "ibge": "4120655",
       "nome": "Quarto Centenário",
+      "uf": "PR",
       "lat": -24.2775,
       "lon": -53.0759
     },
     {
       "ibge": "4120705",
       "nome": "Quatiguá",
+      "uf": "PR",
       "lat": -23.5671,
       "lon": -49.916
     },
     {
       "ibge": "4120804",
       "nome": "Quatro Barras",
+      "uf": "PR",
       "lat": -25.3673,
       "lon": -49.0763
     },
     {
       "ibge": "4120853",
       "nome": "Quatro Pontes",
+      "uf": "PR",
       "lat": -24.5752,
       "lon": -53.9759
     },
     {
       "ibge": "4120903",
       "nome": "Quedas do Iguaçu",
+      "uf": "PR",
       "lat": -25.4492,
       "lon": -52.9102
     },
     {
       "ibge": "4121000",
       "nome": "Querência do Norte",
+      "uf": "PR",
       "lat": -23.0838,
       "lon": -53.483
     },
     {
       "ibge": "4121109",
       "nome": "Quinta do Sol",
+      "uf": "PR",
       "lat": -23.8533,
       "lon": -52.1309
     },
     {
       "ibge": "4121208",
       "nome": "Quitandinha",
+      "uf": "PR",
       "lat": -25.8734,
       "lon": -49.4973
     },
     {
       "ibge": "4121257",
       "nome": "Ramilândia",
+      "uf": "PR",
       "lat": -25.1195,
       "lon": -54.023
     },
     {
       "ibge": "4121307",
       "nome": "Rancho Alegre",
+      "uf": "PR",
       "lat": -23.0676,
       "lon": -50.9145
     },
     {
       "ibge": "4121356",
       "nome": "Rancho Alegre D'Oeste",
+      "uf": "PR",
       "lat": -24.3065,
       "lon": -52.9552
     },
     {
       "ibge": "4121406",
       "nome": "Realeza",
+      "uf": "PR",
       "lat": -25.7711,
       "lon": -53.526
     },
     {
       "ibge": "4121505",
       "nome": "Rebouças",
+      "uf": "PR",
       "lat": -25.6232,
       "lon": -50.6877
     },
     {
       "ibge": "4121604",
       "nome": "Renascença",
+      "uf": "PR",
       "lat": -26.1588,
       "lon": -52.9703
     },
     {
       "ibge": "4121703",
       "nome": "Reserva",
+      "uf": "PR",
       "lat": -24.6492,
       "lon": -50.8466
     },
     {
       "ibge": "4121752",
       "nome": "Reserva do Iguaçu",
+      "uf": "PR",
       "lat": -25.8319,
       "lon": -52.0272
     },
     {
       "ibge": "4121802",
       "nome": "Ribeirão Claro",
+      "uf": "PR",
       "lat": -23.1941,
       "lon": -49.7597
     },
     {
       "ibge": "4121901",
       "nome": "Ribeirão do Pinhal",
+      "uf": "PR",
       "lat": -23.4091,
       "lon": -50.3601
     },
     {
       "ibge": "4122008",
       "nome": "Rio Azul",
+      "uf": "PR",
       "lat": -25.7306,
       "lon": -50.7985
     },
     {
       "ibge": "4122107",
       "nome": "Rio Bom",
+      "uf": "PR",
       "lat": -23.7606,
       "lon": -51.4122
     },
     {
       "ibge": "4122156",
       "nome": "Rio Bonito do Iguaçu",
+      "uf": "PR",
       "lat": -25.4874,
       "lon": -52.5292
     },
     {
       "ibge": "4122172",
       "nome": "Rio Branco do Ivaí",
+      "uf": "PR",
       "lat": -24.3244,
       "lon": -51.3187
     },
     {
       "ibge": "4122206",
       "nome": "Rio Branco do Sul",
+      "uf": "PR",
       "lat": -25.1892,
       "lon": -49.3115
     },
     {
       "ibge": "4122305",
       "nome": "Rio Negro",
+      "uf": "PR",
       "lat": -26.095,
       "lon": -49.7982
     },
     {
       "ibge": "4122404",
       "nome": "Rolândia",
+      "uf": "PR",
       "lat": -23.3101,
       "lon": -51.3659
     },
     {
       "ibge": "4122503",
       "nome": "Roncador",
+      "uf": "PR",
       "lat": -24.5958,
       "lon": -52.2716
     },
     {
       "ibge": "4122602",
       "nome": "Rondon",
+      "uf": "PR",
       "lat": -23.412,
       "lon": -52.7659
     },
     {
       "ibge": "4122651",
       "nome": "Rosário do Ivaí",
+      "uf": "PR",
       "lat": -24.2682,
       "lon": -51.272
     },
     {
       "ibge": "4122701",
       "nome": "Sabáudia",
+      "uf": "PR",
       "lat": -23.3155,
       "lon": -51.555
     },
     {
       "ibge": "4122800",
       "nome": "Salgado Filho",
+      "uf": "PR",
       "lat": -26.1777,
       "lon": -53.3631
     },
     {
       "ibge": "4122909",
       "nome": "Salto do Itararé",
+      "uf": "PR",
       "lat": -23.6074,
       "lon": -49.6354
     },
     {
       "ibge": "4123006",
       "nome": "Salto do Lontra",
+      "uf": "PR",
       "lat": -25.7813,
       "lon": -53.3135
     },
     {
       "ibge": "4123105",
       "nome": "Santa Amélia",
+      "uf": "PR",
       "lat": -23.2654,
       "lon": -50.4288
     },
     {
       "ibge": "4123204",
       "nome": "Santa Cecília do Pavão",
+      "uf": "PR",
       "lat": -23.5201,
       "lon": -50.7835
     },
     {
       "ibge": "4123303",
       "nome": "Santa Cruz de Monte Castelo",
+      "uf": "PR",
       "lat": -22.9582,
       "lon": -53.2949
     },
     {
       "ibge": "4123402",
       "nome": "Santa Fé",
+      "uf": "PR",
       "lat": -23.04,
       "lon": -51.808
     },
     {
       "ibge": "4123501",
       "nome": "Santa Helena",
+      "uf": "PR",
       "lat": -24.8585,
       "lon": -54.336
     },
     {
       "ibge": "4123600",
       "nome": "Santa Inês",
+      "uf": "PR",
       "lat": -22.6376,
       "lon": -51.9024
     },
     {
       "ibge": "4123709",
       "nome": "Santa Isabel do Ivaí",
+      "uf": "PR",
       "lat": -23.0025,
       "lon": -53.1989
     },
     {
       "ibge": "4123808",
       "nome": "Santa Izabel do Oeste",
+      "uf": "PR",
       "lat": -25.8217,
       "lon": -53.4801
     },
     {
       "ibge": "4123824",
       "nome": "Santa Lúcia",
+      "uf": "PR",
       "lat": -25.4104,
       "lon": -53.5638
     },
     {
       "ibge": "4123857",
       "nome": "Santa Maria do Oeste",
+      "uf": "PR",
       "lat": -24.9377,
       "lon": -51.8696
     },
     {
       "ibge": "4123907",
       "nome": "Santa Mariana",
+      "uf": "PR",
       "lat": -23.1465,
       "lon": -50.5167
     },
     {
       "ibge": "4123956",
       "nome": "Santa Mônica",
+      "uf": "PR",
       "lat": -23.108,
       "lon": -53.1103
     },
     {
       "ibge": "4124004",
       "nome": "Santana do Itararé",
+      "uf": "PR",
       "lat": -23.7587,
       "lon": -49.6293
     },
     {
       "ibge": "4124020",
       "nome": "Santa Tereza do Oeste",
+      "uf": "PR",
       "lat": -25.0543,
       "lon": -53.6274
     },
     {
       "ibge": "4124053",
       "nome": "Santa Terezinha de Itaipu",
+      "uf": "PR",
       "lat": -25.4391,
       "lon": -54.402
     },
     {
       "ibge": "4124103",
       "nome": "Santo Antônio da Platina",
+      "uf": "PR",
       "lat": -23.2959,
       "lon": -50.0815
     },
     {
       "ibge": "4124202",
       "nome": "Santo Antônio do Caiuá",
+      "uf": "PR",
       "lat": -22.7351,
       "lon": -52.344
     },
     {
       "ibge": "4124301",
       "nome": "Santo Antônio do Paraíso",
+      "uf": "PR",
       "lat": -23.4969,
       "lon": -50.6455
     },
     {
       "ibge": "4124400",
       "nome": "Santo Antônio do Sudoeste",
+      "uf": "PR",
       "lat": -26.0737,
       "lon": -53.7251
     },
     {
       "ibge": "4124509",
       "nome": "Santo Inácio",
+      "uf": "PR",
       "lat": -22.6957,
       "lon": -51.7969
     },
     {
       "ibge": "4124608",
       "nome": "São Carlos do Ivaí",
+      "uf": "PR",
       "lat": -23.3158,
       "lon": -52.4761
     },
     {
       "ibge": "4124707",
       "nome": "São Jerônimo da Serra",
+      "uf": "PR",
       "lat": -23.7218,
       "lon": -50.7475
     },
     {
       "ibge": "4124806",
       "nome": "São João",
+      "uf": "PR",
       "lat": -25.8214,
       "lon": -52.7252
     },
     {
       "ibge": "4124905",
       "nome": "São João do Caiuá",
+      "uf": "PR",
       "lat": -22.8535,
       "lon": -52.3411
     },
     {
       "ibge": "4125001",
       "nome": "São João do Ivaí",
+      "uf": "PR",
       "lat": -23.9833,
       "lon": -51.8215
     },
     {
       "ibge": "4125100",
       "nome": "São João do Triunfo",
+      "uf": "PR",
       "lat": -25.683,
       "lon": -50.2949
     },
     {
       "ibge": "4125209",
       "nome": "São Jorge d'Oeste",
+      "uf": "PR",
       "lat": -25.7085,
       "lon": -52.9204
     },
     {
       "ibge": "4125308",
       "nome": "São Jorge do Ivaí",
+      "uf": "PR",
       "lat": -23.4336,
       "lon": -52.2929
     },
     {
       "ibge": "4125357",
       "nome": "São Jorge do Patrocínio",
+      "uf": "PR",
       "lat": -23.7647,
       "lon": -53.8823
     },
     {
       "ibge": "4125407",
       "nome": "São José da Boa Vista",
+      "uf": "PR",
       "lat": -23.9122,
       "lon": -49.6577
     },
     {
       "ibge": "4125456",
       "nome": "São José das Palmeiras",
+      "uf": "PR",
       "lat": -24.8369,
       "lon": -54.0572
     },
     {
       "ibge": "4125506",
       "nome": "São José dos Pinhais",
+      "uf": "PR",
       "lat": -25.5313,
       "lon": -49.2031
     },
     {
       "ibge": "4125555",
       "nome": "São Manoel do Paraná",
+      "uf": "PR",
       "lat": -23.3941,
       "lon": -52.6454
     },
     {
       "ibge": "4125605",
       "nome": "São Mateus do Sul",
+      "uf": "PR",
       "lat": -25.8677,
       "lon": -50.384
     },
     {
       "ibge": "4125704",
       "nome": "São Miguel do Iguaçu",
+      "uf": "PR",
       "lat": -25.3492,
       "lon": -54.2405
     },
     {
       "ibge": "4125753",
       "nome": "São Pedro do Iguaçu",
+      "uf": "PR",
       "lat": -24.9373,
       "lon": -53.8521
     },
     {
       "ibge": "4125803",
       "nome": "São Pedro do Ivaí",
+      "uf": "PR",
       "lat": -23.8634,
       "lon": -51.8568
     },
     {
       "ibge": "4125902",
       "nome": "São Pedro do Paraná",
+      "uf": "PR",
       "lat": -22.8239,
       "lon": -53.2241
     },
     {
       "ibge": "4126009",
       "nome": "São Sebastião da Amoreira",
+      "uf": "PR",
       "lat": -23.4656,
       "lon": -50.7625
     },
     {
       "ibge": "4126108",
       "nome": "São Tomé",
+      "uf": "PR",
       "lat": -23.5349,
       "lon": -52.5901
     },
     {
       "ibge": "4126207",
       "nome": "Sapopema",
+      "uf": "PR",
       "lat": -23.9078,
       "lon": -50.5801
     },
     {
       "ibge": "4126256",
       "nome": "Sarandi",
+      "uf": "PR",
       "lat": -23.4441,
       "lon": -51.876
     },
     {
       "ibge": "4126272",
       "nome": "Saudade do Iguaçu",
+      "uf": "PR",
       "lat": -25.6917,
       "lon": -52.6184
     },
     {
       "ibge": "4126306",
       "nome": "Sengés",
+      "uf": "PR",
       "lat": -24.1129,
       "lon": -49.4616
     },
     {
       "ibge": "4126355",
       "nome": "Serranópolis do Iguaçu",
+      "uf": "PR",
       "lat": -25.3799,
       "lon": -54.0518
     },
     {
       "ibge": "4126405",
       "nome": "Sertaneja",
+      "uf": "PR",
       "lat": -23.0361,
       "lon": -50.8317
     },
     {
       "ibge": "4126504",
       "nome": "Sertanópolis",
+      "uf": "PR",
       "lat": -23.0571,
       "lon": -51.0399
     },
     {
       "ibge": "4126603",
       "nome": "Siqueira Campos",
+      "uf": "PR",
       "lat": -23.6875,
       "lon": -49.8304
     },
     {
       "ibge": "4126652",
       "nome": "Sulina",
+      "uf": "PR",
       "lat": -25.7066,
       "lon": -52.7299
     },
     {
       "ibge": "4126678",
       "nome": "Tamarana",
+      "uf": "PR",
       "lat": -23.7204,
       "lon": -51.0991
     },
     {
       "ibge": "4126702",
       "nome": "Tamboara",
+      "uf": "PR",
       "lat": -23.2036,
       "lon": -52.4743
     },
     {
       "ibge": "4126801",
       "nome": "Tapejara",
+      "uf": "PR",
       "lat": -23.7315,
       "lon": -52.8735
     },
     {
       "ibge": "4126900",
       "nome": "Tapira",
+      "uf": "PR",
       "lat": -23.3193,
       "lon": -53.0684
     },
     {
       "ibge": "4127007",
       "nome": "Teixeira Soares",
+      "uf": "PR",
       "lat": -25.3701,
       "lon": -50.4571
     },
     {
       "ibge": "4127106",
       "nome": "Telêmaco Borba",
+      "uf": "PR",
       "lat": -24.3245,
       "lon": -50.6176
     },
     {
       "ibge": "4127205",
       "nome": "Terra Boa",
+      "uf": "PR",
       "lat": -23.7683,
       "lon": -52.447
     },
     {
       "ibge": "4127304",
       "nome": "Terra Rica",
+      "uf": "PR",
       "lat": -22.7111,
       "lon": -52.6188
     },
     {
       "ibge": "4127403",
       "nome": "Terra Roxa",
+      "uf": "PR",
       "lat": -24.1575,
       "lon": -54.0988
     },
     {
       "ibge": "4127502",
       "nome": "Tibagi",
+      "uf": "PR",
       "lat": -24.5153,
       "lon": -50.4176
     },
     {
       "ibge": "4127601",
       "nome": "Tijucas do Sul",
+      "uf": "PR",
       "lat": -25.9311,
       "lon": -49.195
     },
     {
       "ibge": "4127700",
       "nome": "Toledo",
+      "uf": "PR",
       "lat": -24.7246,
       "lon": -53.7412
     },
     {
       "ibge": "4127809",
       "nome": "Tomazina",
+      "uf": "PR",
       "lat": -23.7796,
       "lon": -49.9499
     },
     {
       "ibge": "4127858",
       "nome": "Três Barras do Paraná",
+      "uf": "PR",
       "lat": -25.4185,
       "lon": -53.1833
     },
     {
       "ibge": "4127882",
       "nome": "Tunas do Paraná",
+      "uf": "PR",
       "lat": -24.9731,
       "lon": -49.0879
     },
     {
       "ibge": "4127908",
       "nome": "Tuneiras do Oeste",
+      "uf": "PR",
       "lat": -23.8648,
       "lon": -52.8769
     },
     {
       "ibge": "4127957",
       "nome": "Tupãssi",
+      "uf": "PR",
       "lat": -24.5879,
       "lon": -53.5105
     },
     {
       "ibge": "4127965",
       "nome": "Turvo",
+      "uf": "PR",
       "lat": -25.0437,
       "lon": -51.5282
     },
     {
       "ibge": "4128005",
       "nome": "Ubiratã",
+      "uf": "PR",
       "lat": -24.5393,
       "lon": -52.9865
     },
     {
       "ibge": "4128104",
       "nome": "Umuarama",
+      "uf": "PR",
       "lat": -23.7656,
       "lon": -53.3201
     },
     {
       "ibge": "4128203",
       "nome": "União da Vitória",
+      "uf": "PR",
       "lat": -26.2273,
       "lon": -51.0873
     },
     {
       "ibge": "4128302",
       "nome": "Uniflor",
+      "uf": "PR",
       "lat": -23.0868,
       "lon": -52.1573
     },
     {
       "ibge": "4128401",
       "nome": "Uraí",
+      "uf": "PR",
       "lat": -23.2,
       "lon": -50.7939
     },
     {
       "ibge": "4128500",
       "nome": "Wenceslau Braz",
+      "uf": "PR",
       "lat": -23.8742,
       "lon": -49.8032
     },
     {
       "ibge": "4128534",
       "nome": "Ventania",
+      "uf": "PR",
       "lat": -24.2458,
       "lon": -50.2376
     },
     {
       "ibge": "4128559",
       "nome": "Vera Cruz do Oeste",
+      "uf": "PR",
       "lat": -25.0577,
       "lon": -53.8771
     },
     {
       "ibge": "4128609",
       "nome": "Verê",
+      "uf": "PR",
       "lat": -25.8772,
       "lon": -52.9051
     },
     {
       "ibge": "4128625",
       "nome": "Alto Paraíso",
+      "uf": "PR",
       "lat": -26.1146,
       "lon": -52.7469
     },
     {
       "ibge": "4128633",
       "nome": "Doutor Ulysses",
+      "uf": "PR",
       "lat": -24.5665,
       "lon": -49.4219
     },
     {
       "ibge": "4128658",
       "nome": "Virmond",
+      "uf": "PR",
       "lat": -25.3829,
       "lon": -52.1987
     },
     {
       "ibge": "4128708",
       "nome": "Vitorino",
+      "uf": "PR",
       "lat": -26.2683,
       "lon": -52.7843
     },
     {
       "ibge": "4128807",
       "nome": "Xambrê",
+      "uf": "PR",
       "lat": -23.7364,
       "lon": -53.4884
     }

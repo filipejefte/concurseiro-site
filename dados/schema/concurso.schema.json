@@ -84,7 +84,20 @@
           "escolaridade": { "enum": ["Fundamental", "Médio", "Técnico", "Superior", null] },
           "requisitos": { "type": ["string", "null"] },
           "jornada_horas": { "type": ["number", "null"], "exclusiveMinimum": 0 },
-          "materias": { "type": "array", "items": { "type": "string", "minLength": 1 } }
+          "materias": { "type": "array", "items": { "type": "string", "minLength": 1 } },
+          "remuneracao_por_titulacao": {
+            "type": ["array", "null"],
+            "description": "Professor federal, quando o edital aceita titulação menor na falta de candidatos: a tabela do regime do cargo, com o total (vencimento + retribuição por titulação) de cada titulação. Ausente ou null nos outros casos.",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["titulacao", "valor"],
+              "properties": {
+                "titulacao": { "enum": ["graduacao", "aperfeicoamento", "especializacao", "mestrado", "doutorado"] },
+                "valor": { "type": "number", "exclusiveMinimum": 0 }
+              }
+            }
+          }
         }
       }
     },

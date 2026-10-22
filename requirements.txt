@@ -1,5 +1,9 @@
-# Varredura semanal (Python 3.11 ou mais novo). Instalar: python -m pip install -r requirements.txt
+# Varredura e gerador do site (Python 3.11 ou mais novo). Instalar: python -m pip install -r requirements.txt
+# Tudo código aberto e sem serviço pago.
 jsonschema>=4.20      # validação do schema das fichas
 pypdf>=5.0            # texto das edições em PDF do Diário dos Municípios do PR
-anthropic>=1.0        # só para --modo api (extração com claude-haiku-5-5)
+Jinja2>=3.1           # páginas do site (python -m gerador build), com autoescape
+Pillow>=10.0          # imagens de compartilhamento, posts e ícones
+fonttools>=4.50       # converte a fonte woff2 da marca para as imagens
+brotli>=1.1           # o fonttools precisa dele para ler woff2
 pytest>=8.0           # testes

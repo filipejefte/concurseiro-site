@@ -1,0 +1,80 @@
+{
+  "ato": "dou-2026-09-17-ministerio-da-educacao-fundacao-universi-432c89ad.md",
+  "trechos": {
+    "salario": "Classe/Nível Regime de Trabalho Vencimento Básico (R$) Retribuição por titulação (R$) Total (R$) Único Dedicação Exclusiva R$ 12.245,03 R$ 14.081,78 R$ 26.326,81",
+    "inscricao.inicio": "Recebimento de Inscrições 23/09/2026 a 22/10/2026",
+    "inscricao.fim": "Recebimento de Inscrições 23/09/2026 a 22/10/2026",
+    "prova_objetiva": "não consta no ato: não há prova objetiva (prova escrita, didática e defesa de memorial) e o cronograma só traz \"Data provável das provas 09/11/2026 a 11/12/2026\"",
+    "taxa": "Valor da inscrição: R$ 343,85 (trezentos e quarenta e três reais e oitenta e cinco centavos).",
+    "banca": "1.1 O presente concurso será executado pela Universidade Federal de São João del-Rei - UFSJ",
+    "cidade": "Universidade Federal de São João del-Rei - UFSJ [...] 11.4 As provas serão realizadas nas dependências da UFSJ",
+    "edital": "EDITAL CPD Nº 32, DE 16 DE SETEMBRO DE 2026 CONCURSO PÚBLICO PARA PROVIMENTO DE VAGA PARA O CARGO ISOLADO DE PROFESSOR TITULAR-LIVRE DO MAGISTÉRIO SUPERIOR"
+  },
+  "concurso": {
+    "id": "ufsj-2026-edital-cpd-32",
+    "ficticio": false,
+    "orgao": "Universidade Federal de São João del-Rei (UFSJ)",
+    "esfera": "federal",
+    "uf": "MG",
+    "municipio_ibge": null,
+    "cidade": "São João del-Rei",
+    "nacional": false,
+    "abrangencia": null,
+    "area": "Educação",
+    "banca": {
+      "nome": "Universidade Federal de São João del-Rei (UFSJ)",
+      "url": "https://sigrh.ufsj.edu.br/sigrh/public/home.jsf"
+    },
+    "inscricao": {
+      "inicio": "2026-09-23",
+      "fim": "2026-10-22",
+      "url": "https://sigrh.ufsj.edu.br/sigrh/public/home.jsf"
+    },
+    "isencao_ate": "2026-09-24",
+    "prova_objetiva": null,
+    "local_prova": "Dependências da UFSJ",
+    "taxa": {
+      "min": 343.85,
+      "max": 343.85
+    },
+    "isencao_regras": "Isenção para inscritos no CadÚnico (Decreto 6.593/2008) e doadores de medula óssea (Lei 13.656/2018); pedido de 23 a 24/09/2026",
+    "regime": "Estatutário (Lei 8.112/1990)",
+    "beneficios": [
+      {
+        "nome": "Auxílio-alimentação",
+        "valor": null
+      },
+      {
+        "nome": "Auxílio-transporte",
+        "valor": null
+      }
+    ],
+    "o_que_levar": null,
+    "cargos": [
+      {
+        "nome": "Professor Titular-Livre do Magistério Superior – Medicina (patologia clínica, medicina laboratorial, análises clínicas ou hematologia)",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 26326.81,
+        "escolaridade": "Superior",
+        "requisitos": "Cargo isolado de Professor Titular-Livre, classe e nível únicos; Departamento de Medicina (DEMED); dedicação exclusiva; título de doutor na área de formação de Medicina e 10 anos de experiência ou de obtenção do título de doutor na área do concurso; titulação mínima: doutorado",
+        "jornada_horas": 40,
+        "materias": []
+      }
+    ],
+    "documentos": [
+      {
+        "tipo": "edital",
+        "titulo": "Edital CPD nº 32, de 16 de setembro de 2026 – Professor Titular-Livre do Magistério Superior",
+        "numero": "CPD 32/2026",
+        "url": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=17/09/2026&jornal=530&pagina=72",
+        "publicado_em": "2026-09-17",
+        "fonte": "DOU",
+        "resumo": null
+      }
+    ],
+    "conferencia": null,
+    "primeira_varredura": null,
+    "ultima_alteracao": null
+  }
+}

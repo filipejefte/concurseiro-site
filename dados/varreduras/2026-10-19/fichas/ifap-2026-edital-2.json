@@ -1,0 +1,227 @@
+{
+  "ato": "dou-2026-09-08-ministerio-da-educacao-instituto-federal-b57e1e03.md",
+  "atos_extras": [
+    "dou-2026-09-08-ministerio-da-educacao-instituto-federal-b57e1e03-extra-1.md",
+    "dou-2026-09-08-ministerio-da-educacao-instituto-federal-b57e1e03-extra-2.md",
+    "dou-2026-09-08-ministerio-da-educacao-instituto-federal-b57e1e03-extra-3.md",
+    "dou-2026-09-08-ministerio-da-educacao-instituto-federal-b57e1e03-extra-4.md",
+    "dou-2026-09-08-ministerio-da-educacao-instituto-federal-b57e1e03-extra-5.md",
+    "dou-2026-09-08-ministerio-da-educacao-instituto-federal-b57e1e03-extra-6.md"
+  ],
+  "trechos": {
+    "salario": "15.1.2. Os valores de vencimento básico inicial, na data de publicação deste Edital, são: a) cargos de Nível E: Classe E, Padrão I – R$ 5.215,39; b) cargos de Nível D: Classe D, Padrão I – R$ 3.181,39. 15.1.2.1. Os valores de remuneração poderão ser atualizados em decorrência de alter",
+    "inscricao.inicio": "Realização das inscrições 28/09/2026 29/10/2026 Pagamento da",
+    "inscricao.fim": "Realização das inscrições 28/09/2026 29/10/2026 Pagamento da",
+    "prova_objetiva": "Realização da Prova Teórico-Objetiva 06/12/2026 06/12/2026 G",
+    "taxa": "2.9. O valor da taxa de inscrição será: a) R$ 90,00 (noventa reais) para os cargos de nível médio (nível D); b) R$ 120,00 (cento e vinte reais) para os cargos de nível superior (nível E). 2.9.1. O pagamento da taxa de inscrição po",
+    "banca": "1.1.2. A gestão do presente Concurso Público caberá ao Instituto Federal de Educação, Ciência e Tecnologia do Amapá - IFAP, sob o acompanhamento da Comissão de Planejamento e Supervisão do Concurso Público para TAEs",
+    "cidade": "Instituto Federal de Educação, Ciência e Tecnologia do Amapá — Reitoria Rod. BR 210, Km 3, s/n — Brasil Novo — Macapá/AP [...] 1.5. A lotação inicial dos candidatos nomeados dar-se-á nas unidades do IFAP indicadas no Anexo I - Quadro Demonstrativo de Vagas",
+    "edital": "EDITAL Nº 2 DE 4 DE SETEMBRO DE 2026 CONCURSO PÚBLICO PARA PROVIMENTO DE VAGAS PARA O CARGO DE TÉCNICOS-ADMINISTRATIVOS EM EDUCAÇÃO DO INSTITUTO FEDERAL DE EDUCAÇÃO, CIÊNCIA E TECNOLOGIA DO AMAPÁ - IFAP"
+  },
+  "concurso": {
+    "id": "ifap-2026-edital-2",
+    "ficticio": false,
+    "orgao": "Instituto Federal de Educação, Ciência e Tecnologia do Amapá (IFAP)",
+    "esfera": "federal",
+    "uf": "AP",
+    "municipio_ibge": null,
+    "cidade": "Macapá",
+    "nacional": false,
+    "abrangencia": null,
+    "area": "Administrativa",
+    "banca": {
+      "nome": "IFAP (Comissão de Planejamento e Supervisão do Concurso Público para TAEs)",
+      "url": "https://concursopublico.ifap.edu.br/concurso/"
+    },
+    "inscricao": {
+      "inicio": "2026-09-28",
+      "fim": "2026-10-29",
+      "url": "https://concursopublico.ifap.edu.br/concurso/"
+    },
+    "isencao_ate": "2026-10-02",
+    "prova_objetiva": "2026-12-06",
+    "local_prova": null,
+    "taxa": {
+      "min": 90.0,
+      "max": 120.0
+    },
+    "isencao_regras": "Isenção para inscritos no CadÚnico e doadores de medula óssea (Lei 13.656/2018); pedido pela internet, de 28/09 a 02/10/2026",
+    "regime": "Estatutário (Lei 8.112/1990)",
+    "beneficios": [
+      {
+        "nome": "Auxílio-alimentação",
+        "valor": 1192.0
+      },
+      {
+        "nome": "Auxílio pré-escolar",
+        "valor": null
+      },
+      {
+        "nome": "Auxílio-transporte",
+        "valor": null
+      }
+    ],
+    "o_que_levar": null,
+    "cargos": [
+      {
+        "nome": "Analista de Tecnologia da Informação",
+        "vagas": 6,
+        "cadastro_reserva": false,
+        "salario": 5215.39,
+        "escolaridade": "Superior",
+        "requisitos": "Código 01; nível E; lotação na Reitoria; graduação na área de Tecnologia da Informação",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Médico",
+        "vagas": 4,
+        "cadastro_reserva": false,
+        "salario": 5215.39,
+        "escolaridade": "Superior",
+        "requisitos": "Código 02; nível E; Campus Laranjal do Jari (1), Campus Oiapoque (2) e Campus Pedra Branca do Amapari (1); curso superior em Medicina e registro no conselho",
+        "jornada_horas": 20,
+        "materias": []
+      },
+      {
+        "nome": "Enfermeiro",
+        "vagas": 3,
+        "cadastro_reserva": false,
+        "salario": 5215.39,
+        "escolaridade": "Superior",
+        "requisitos": "Código 03; nível E; Campus Laranjal do Jari (1), Campus Oiapoque (1) e Campus Pedra Branca do Amapari (1); graduação em Enfermagem e registro no conselho",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Médico Veterinário",
+        "vagas": 2,
+        "cadastro_reserva": false,
+        "salario": 5215.39,
+        "escolaridade": "Superior",
+        "requisitos": "Código 04; nível E; Campus Porto Grande; graduação em Medicina Veterinária e registro no conselho",
+        "jornada_horas": 20,
+        "materias": []
+      },
+      {
+        "nome": "Zootecnista",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 5215.39,
+        "escolaridade": "Superior",
+        "requisitos": "Código 05; nível E; Campus Porto Grande; graduação em Zootecnia",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Assistente em Administração",
+        "vagas": 3,
+        "cadastro_reserva": false,
+        "salario": 3181.39,
+        "escolaridade": "Médio",
+        "requisitos": "Código 06; nível D; Campus Oiapoque (1), Campus Pedra Branca do Amapari (1) e Campus Tartarugalzinho (1); ensino médio profissionalizante, ou ensino médio completo e 12 meses de experiência",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Técnico de Tecnologia da Informação",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 3181.39,
+        "escolaridade": "Técnico",
+        "requisitos": "Código 07; nível D; Campus Oiapoque; ensino médio profissionalizante em Informática, ou ensino médio com curso técnico em Eletrônica (ênfase em sistemas computacionais) ou em Informática",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Técnico de Laboratório – Área Mineração",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 3181.39,
+        "escolaridade": "Técnico",
+        "requisitos": "Código 08; nível D; Campus Macapá; ensino médio com curso técnico na área, ou médio profissionalizante na área",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Técnico de Laboratório – Área Alimentos",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 3181.39,
+        "escolaridade": "Técnico",
+        "requisitos": "Código 09; nível D; Campus Macapá; ensino médio com curso técnico na área, ou médio profissionalizante na área",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Técnico de Laboratório – Área Publicidade e Propaganda",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 3181.39,
+        "escolaridade": "Técnico",
+        "requisitos": "Código 10; nível D; Campus Santana; ensino médio profissionalizante, ou médio com curso técnico, na área de Publicidade, Propaganda ou afim",
+        "jornada_horas": 40,
+        "materias": []
+      }
+    ],
+    "documentos": [
+      {
+        "tipo": "edital",
+        "titulo": "Edital nº 02/2026 TAES – IFAP – Concurso Público (edital completo)",
+        "numero": "02/2026",
+        "url": "https://ifap.edu.br/documents/232/Edital-n.%C2%BA-02-2026-Concurso-P%C3%BAblico-TAES-IFAP_-2026.pdf",
+        "publicado_em": "2026-09-08",
+        "fonte": "outra",
+        "resumo": null
+      },
+      {
+        "tipo": "retificacao",
+        "titulo": "Edital nº 02/2026 TAES – IFAP – Retificação nº 1",
+        "numero": "02/2026 (ret. 1)",
+        "url": "https://ifap.edu.br/documents/785/EDITAL_N.%C2%BA_02_2026_TAES_-_IFAP__-_RETIFICA%C3%87%C3%83O_N%C2%BA_01_2026_.pdf",
+        "publicado_em": "2026-09-21",
+        "fonte": "outra",
+        "resumo": null
+      },
+      {
+        "tipo": "retificacao",
+        "titulo": "Edital nº 02/2026 TAES – IFAP – Retificação nº 2",
+        "numero": "02/2026 (ret. 2)",
+        "url": "https://ifap.edu.br/documents/872/EDITAL_N.%C2%BA_02_2026_TAES_-_IFAP__-_RETIFICA%C3%87%C3%83O_N%C2%BA_02_2026.pdf",
+        "publicado_em": "2026-09-27",
+        "fonte": "outra",
+        "resumo": null
+      },
+      {
+        "tipo": "retificacao",
+        "titulo": "Edital nº 02/2026 TAES – IFAP – Retificação nº 3",
+        "numero": "02/2026 (ret. 3)",
+        "url": "https://ifap.edu.br/documents/1016/EDITAL_N.%C2%BA_02_2026_TAES_-_IFAP__-_RETIFICA%C3%87%C3%83O_N%C2%BA_03_2026_.pdf",
+        "publicado_em": "2026-10-01",
+        "fonte": "outra",
+        "resumo": null
+      },
+      {
+        "tipo": "retificacao",
+        "titulo": "Edital nº 02/2026 TAES – IFAP – Retificação nº 4",
+        "numero": "02/2026 (ret. 4)",
+        "url": "https://ifap.edu.br/documents/1136/EDITAL_N.%C2%BA_02_2026_TAES_-_IFAP__-_RETIFICA%C3%87%C3%83O_N%C2%BA_04_2026.pdf",
+        "publicado_em": "2026-10-16",
+        "fonte": "outra",
+        "resumo": null
+      },
+      {
+        "tipo": "edital",
+        "titulo": "Edital nº 2, de 4 de setembro de 2026 – Concurso público para técnico-administrativos em educação do IFAP",
+        "numero": "2/2026",
+        "url": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=08/09/2026&jornal=530&pagina=27",
+        "publicado_em": "2026-09-08",
+        "fonte": "DOU",
+        "resumo": "23 vagas de técnico-administrativo em educação em campi do Amapá e na Reitoria"
+      }
+    ],
+    "conferencia": null,
+    "primeira_varredura": null,
+    "ultima_alteracao": null
+  }
+}

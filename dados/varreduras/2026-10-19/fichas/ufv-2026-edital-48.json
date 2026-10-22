@@ -1,0 +1,74 @@
+{
+  "ato": "dou-2026-09-28-ministerio-da-educacao-fundacao-universi-25080ead.md",
+  "atos_extras": [
+    "dou-2026-09-28-ministerio-da-educacao-fundacao-universi-25080ead-extra-1.md"
+  ],
+  "trechos": {
+    "salario": "recebendo o vencimento básico inicial de R$ 6.180,86 (seis mil, cento e oitenta reais e oitenta e seis centavos) e a retribuição por titulação de R$ 7.107,99 (sete mil, cento e sete reais e noventa nove centavos) — salário = vencimento básico + retribuição por titulação (o ato não traz o total)",
+    "inscricao.inicio": "Período de inscrição De 28/09/2026 às 13:00:00h até 12/11/2026 às 23:30:00h",
+    "inscricao.fim": "Período de inscrição De 28/09/2026 às 13:00:00h até 12/11/2026 às 23:30:00h",
+    "prova_objetiva": "não consta no ato: não há prova objetiva; a Prova de Conhecimento é \"prova prático-oral, de caráter eliminatório e classificatório, a ser aplicada no dia 30 de novembro de 2026\"",
+    "taxa": "3.2. A taxa de inscrição será de R$120,75 (cento e vinte reais e setenta e cinco centavos)",
+    "banca": "A UNIVERSIDADE FEDERAL DE VIÇOSA - UFV, nos termos do Decreto nº 7.485/2011 [...] torna pública a abertura das inscrições, exclusivamente, através do link https://www.gps.ufv.br",
+    "cidade": "UNIVERSIDADE FEDERAL DE VIÇOSA - UFV [...] com lotação no Departamento de Arquitetura e Urbanismo, do Centro de Ciências Exatas e Tecnológicas",
+    "edital": "EDITAL Nº 48, DE 25 DE SETEMBRO DE 2026 [...] VINCULADO AO EDITAL AGREGADOR"
+  },
+  "concurso": {
+    "id": "ufv-2026-edital-48",
+    "ficticio": false,
+    "orgao": "Universidade Federal de Viçosa (UFV)",
+    "esfera": "federal",
+    "uf": "MG",
+    "municipio_ibge": null,
+    "cidade": "Viçosa",
+    "nacional": false,
+    "abrangencia": null,
+    "area": "Educação",
+    "banca": {
+      "nome": "Universidade Federal de Viçosa (UFV)",
+      "url": "https://www.ufv.br/soc"
+    },
+    "inscricao": {
+      "inicio": "2026-09-28",
+      "fim": "2026-11-12",
+      "url": "https://www.gps.ufv.br"
+    },
+    "isencao_ate": null,
+    "prova_objetiva": null,
+    "local_prova": "Departamento de Arquitetura e Urbanismo da UFV",
+    "taxa": {
+      "min": 120.75,
+      "max": 120.75
+    },
+    "isencao_regras": "Isenção para famílias do CadÚnico com renda per capita de até meio salário-mínimo e para doadores de medula óssea (Lei 13.656/2018); pedido no ato da inscrição",
+    "regime": "Estatutário (Lei 8.112/1990)",
+    "beneficios": [],
+    "o_que_levar": "Documento oficial de identidade original com foto e caneta esferográfica de tinta azul ou preta",
+    "cargos": [
+      {
+        "nome": "Professor do Magistério Superior – Projeto Arquitetônico e Urbanístico",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 13288.85,
+        "escolaridade": "Superior",
+        "requisitos": "Professor Assistente A, nível I; Departamento de Arquitetura e Urbanismo (Centro de Ciências Exatas e Tecnológicas); dedicação exclusiva; graduação em Arquitetura e Urbanismo e doutorado em Arquitetura e Urbanismo e áreas afins; titulação mínima: doutorado",
+        "jornada_horas": 40,
+        "materias": []
+      }
+    ],
+    "documentos": [
+      {
+        "tipo": "edital",
+        "titulo": "Edital nº 48/2026 – Concurso público vinculado ao Edital Agregador nº 04/2026",
+        "numero": "48/2026",
+        "url": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=28/09/2026&jornal=530&pagina=83",
+        "publicado_em": "2026-09-28",
+        "fonte": "DOU",
+        "resumo": null
+      }
+    ],
+    "conferencia": null,
+    "primeira_varredura": null,
+    "ultima_alteracao": null
+  }
+}

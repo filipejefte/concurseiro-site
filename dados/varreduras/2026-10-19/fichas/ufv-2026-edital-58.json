@@ -1,0 +1,74 @@
+{
+  "ato": "dou-2026-10-15-ministerio-da-educacao-fundacao-universi-bd583bc3.md",
+  "atos_extras": [
+    "dou-2026-10-15-ministerio-da-educacao-fundacao-universi-bd583bc3-extra-1.md"
+  ],
+  "trechos": {
+    "salario": "recebendo o vencimento básico inicial de R$ 8.571,52 (oito mil, quinhentos e setenta e um reais e cinquenta e dois centavos) e a retribuição por titulação de R$ 7.392,93 (sete mil, trezentos e noventa e dois reais e noventa e três centavos) — salário = vencimento básico + retribuição por titulação, como está no ato (valores acima dos da Classe A; conferir)",
+    "inscricao.inicio": "Período de inscrição De 15/10/2026 às 07:00:00h até 14/11/2026 às 23:30:00h",
+    "inscricao.fim": "Período de inscrição De 15/10/2026 às 07:00:00h até 14/11/2026 às 23:30:00h",
+    "prova_objetiva": "5.2.1. A Prova de Conhecimento será aferida por meio de prova escrita, de caráter eliminatório e classificatório, a ser aplicada no dia 24 de novembro de 2026, às 08h (oito horas), no PVA/Campus Rio Paranaíba — não há prova objetiva; é a data da prova escrita",
+    "taxa": "3.2. A taxa de inscrição será de R$120,75 (cento e vinte reais e setenta e cinco centavos)",
+    "banca": "A UNIVERSIDADE FEDERAL DE VIÇOSA - UFV, nos termos do Decreto nº 7.485/2011 [...] torna pública a abertura das inscrições, exclusivamente, através do link https://www.gps.ufv.br",
+    "cidade": "com lotação no Instituto de Ciências Biológicas e da Saúde, do Campus UFV-Rio Paranaíba",
+    "edital": "EDITAL Nº 58, DE 14 DE OUTUBRO DE 2026 [...] VINCULADO AO EDITAL AGREGADOR"
+  },
+  "concurso": {
+    "id": "ufv-2026-edital-58",
+    "ficticio": false,
+    "orgao": "Universidade Federal de Viçosa (UFV)",
+    "esfera": "federal",
+    "uf": "MG",
+    "municipio_ibge": null,
+    "cidade": "Rio Paranaíba",
+    "nacional": false,
+    "abrangencia": null,
+    "area": "Educação",
+    "banca": {
+      "nome": "Universidade Federal de Viçosa (UFV)",
+      "url": "https://www.ufv.br/soc"
+    },
+    "inscricao": {
+      "inicio": "2026-10-15",
+      "fim": "2026-11-14",
+      "url": "https://www.gps.ufv.br"
+    },
+    "isencao_ate": null,
+    "prova_objetiva": "2026-11-24",
+    "local_prova": "PVA/Campus UFV-Rio Paranaíba",
+    "taxa": {
+      "min": 120.75,
+      "max": 120.75
+    },
+    "isencao_regras": "Isenção para famílias do CadÚnico com renda per capita de até meio salário-mínimo e para doadores de medula óssea (Lei 13.656/2018); pedido no ato da inscrição",
+    "regime": "Estatutário (Lei 8.112/1990)",
+    "beneficios": [],
+    "o_que_levar": "Documento oficial de identidade original com foto e caneta esferográfica de tinta azul ou preta",
+    "cargos": [
+      {
+        "nome": "Professor do Magistério Superior – Bases Morfofuncionais da Medicina",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 15964.45,
+        "escolaridade": "Superior",
+        "requisitos": "Professor Assistente A, nível I; Instituto de Ciências Biológicas e da Saúde, Campus UFV-Rio Paranaíba; 40 horas semanais; graduação em Medicina com residência médica em cirurgia geral, cirurgia cardiovascular, neurocirurgia ou ortopedia-traumatologia, ou graduação em Fisioterapia com doutorado em ciências morfológicas, ciências fisiológicas ou biologia celular e estrutural",
+        "jornada_horas": 40,
+        "materias": []
+      }
+    ],
+    "documentos": [
+      {
+        "tipo": "edital",
+        "titulo": "Edital nº 58/2026 – Concurso público vinculado ao Edital Agregador nº 05/2026",
+        "numero": "58/2026",
+        "url": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=15/10/2026&jornal=530&pagina=75",
+        "publicado_em": "2026-10-15",
+        "fonte": "DOU",
+        "resumo": null
+      }
+    ],
+    "conferencia": null,
+    "primeira_varredura": null,
+    "ultima_alteracao": null
+  }
+}

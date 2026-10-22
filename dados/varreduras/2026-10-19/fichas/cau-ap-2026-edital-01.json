@@ -1,0 +1,120 @@
+{
+  "ato": "dou-2026-10-06-entidades-de-fiscalizacao-do-exercicio-d-f443f3e3.md",
+  "atos_extras": [
+    "banca-quadrix-2026-10-06-conselho-regional-de-arquitetura-e-urban-00effcc4.md"
+  ],
+  "trechos": {
+    "salario": "200 Assistente Administrativo 1 - - - - 31 3 12 2 1 50 Macapá 30h R$ 3.190,53 + benefícios 201 Auxiliar de Fiscalização 1 - - - - 31 3 12 2 1 50 Macapá 30h R$ 3.190,53 + benefícios 2.1.2 CARGO DE NÍVEL SUPERIOR Cod Cargo/Ocupação Vagas efetivas Cadas",
+    "inscricao.inicio": "Período de solicitação de inscrição, exclusivamente por meio do sistema eletrônico de inscrição 06/10 a 09/11/2026 Das 10 horas do primeiro dia às 23 horas do último dia 8 Período para solicitação de atendimento especializado, de",
+    "inscricao.fim": "Período de solicitação de inscrição, exclusivamente por meio do sistema eletrônico de inscrição 06/10 a 09/11/2026 Das 10 horas do primeiro dia às 23 horas do último dia 8 Período para solicitação de atendimento especializado, de",
+    "prova_objetiva": "11. As provas objetivas e discursivas serão realizadas na data de 13 de dezembro de 2026 (domingo) na cidade de Macapá/AP, Turno da manhã, para o cargo de nível superior; e no Turno da tarde, para os cargos de nível médio.",
+    "taxa": "10. Os valores das taxas de inscrição são de R$ 60,00, para os cargos de nível médio; e R$ 65,00, para o cargo de nível superior.",
+    "banca": "O concurso público será realizado sob a responsabilidade do Instituto Quadrix",
+    "cidade": "3. As fases do concurso público serão realizadas na cidade de Macapá/AP.",
+    "edital": "EDITAL Nº 1, DE 5 DE OUTUBRO DE 2026 CONCURSO PÚBLICO PARA PROVIMENTO DE VAGA E FORMAÇÃO DE CADASTRO DE RESERVA PARA CARGOS DE NÍVEL MÉDIO E NÍVEL SUPERIOR"
+  },
+  "concurso": {
+    "id": "cau-ap-2026-edital-01",
+    "orgao": "Conselho de Arquitetura e Urbanismo do Amapá (CAU/AP)",
+    "esfera": "federal",
+    "uf": "AP",
+    "municipio_ibge": null,
+    "cidade": "Macapá",
+    "nacional": false,
+    "abrangencia": null,
+    "area": "Administrativa",
+    "banca": {
+      "nome": "Instituto Quadrix",
+      "url": "https://www.quadrix.org.br"
+    },
+    "inscricao": {
+      "inicio": "2026-10-06",
+      "fim": "2026-11-09",
+      "url": "https://www.quadrix.org.br"
+    },
+    "isencao_ate": "2026-10-07",
+    "prova_objetiva": "2026-12-13",
+    "local_prova": "Macapá (AP); manhã para o cargo de nível superior e tarde para os de nível médio",
+    "taxa": {
+      "min": 60.0,
+      "max": 65.0
+    },
+    "isencao_regras": "Isenção para inscritos no CadÚnico (família de baixa renda) e doadores de medula óssea (Decreto 6.593/2008 e Lei 13.656/2018); pedido pela internet, de 06/10 a 07/10/2026",
+    "regime": "CLT",
+    "beneficios": [
+      {
+        "nome": "Vale-alimentação",
+        "valor": 896.64
+      },
+      {
+        "nome": "Auxílio-saúde",
+        "valor": 505.66
+      },
+      {
+        "nome": "Auxílio-creche",
+        "valor": 94.77
+      },
+      {
+        "nome": "Vale-transporte",
+        "valor": null
+      }
+    ],
+    "o_que_levar": null,
+    "cargos": [
+      {
+        "nome": "Assistente Administrativo",
+        "vagas": 1,
+        "cadastro_reserva": true,
+        "salario": 3190.53,
+        "escolaridade": "Médio",
+        "requisitos": "Nível médio. Lotação: Macapá (código 200).",
+        "jornada_horas": 30,
+        "materias": []
+      },
+      {
+        "nome": "Auxiliar de Fiscalização",
+        "vagas": 1,
+        "cadastro_reserva": true,
+        "salario": 3190.53,
+        "escolaridade": "Médio",
+        "requisitos": "Nível médio. CNH categoria B ou superior. Lotação: Macapá (código 201).",
+        "jornada_horas": 30,
+        "materias": []
+      },
+      {
+        "nome": "Agente de Fiscalização",
+        "vagas": 0,
+        "cadastro_reserva": true,
+        "salario": 9726.66,
+        "escolaridade": "Superior",
+        "requisitos": "Graduação de nível superior em Arquitetura e Urbanismo. Registro ativo no Conselho Regional de Arquitetura e Urbanismo (CAU). CNH categoria B ou superior. Lotação: Macapá (código 400).",
+        "jornada_horas": 30,
+        "materias": []
+      }
+    ],
+    "documentos": [
+      {
+        "tipo": "edital",
+        "titulo": "Edital nº 1/2026 – Concurso Público (edital completo)",
+        "numero": "1/2026",
+        "url": "https://anexos-r2.selecao.net.br/uploads/861/concursos/3072/anexos/4c0532de-2b94-4e8b-9098-fae933c63ccc.pdf",
+        "publicado_em": "2026-10-06",
+        "fonte": "banca",
+        "resumo": null
+      },
+      {
+        "tipo": "edital",
+        "titulo": "Edital nº 1, de 5 de outubro de 2026 – Concurso Público (extrato)",
+        "numero": "1/2026",
+        "url": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=06/10/2026&jornal=530&pagina=135",
+        "publicado_em": "2026-10-06",
+        "fonte": "DOU",
+        "resumo": null
+      }
+    ],
+    "ficticio": false,
+    "conferencia": null,
+    "primeira_varredura": null,
+    "ultima_alteracao": null
+  }
+}

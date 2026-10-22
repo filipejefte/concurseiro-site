@@ -1,0 +1,14 @@
+{% extends "texto.html" %}
+{% block texto %}
+<p class="pt-capa">Achou um erro numa ficha, sentiu falta de um concurso ou quer dar uma sugestão? Escreva para a gente.</p>
+<p><a class="cc-btn cc-btn-primario" href="mailto:{{ email }}?subject={{ 'Contato pelo site' | urlencode }}">{{ m.icone("carta", "pt-i2") }}{{ email }}</a></p>
+
+<h2 class="pt-h2">Para corrigir uma ficha</h2>
+<p>O jeito mais rápido é o link "Avise a gente", no fim de cada ficha: ele já abre o e-mail com o endereço da página. Diga o que está errado e, se puder, mande o trecho do edital que mostra o valor certo.</p>
+
+<h2 class="pt-h2">Para sugerir um concurso</h2>
+<p>Mande o link do edital no diário oficial ou no site da banca. Cobrimos concursos públicos de todo o Brasil; veja o <a class="pt-link" href="{{ u('/sobre/') }}">que entra no site</a>.</p>
+
+<h2 class="pt-h2">O que não fazemos</h2>
+<p>Não fazemos inscrição, não recebemos pagamento e não temos informação além do edital. Dúvida sobre a sua inscrição, a taxa ou a prova é com a banca: o contato dela está no edital.</p>
+{% endblock %}

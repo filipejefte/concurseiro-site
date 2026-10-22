@@ -1,0 +1,61 @@
+{
+  "ato": "amp-pr-2026-09-04-prefeitura-municipal-de-palmital-c3b7bf49.md",
+  "atos_extras": [],
+  "trechos": {
+    "salario": "O contrato cita 49 cargos (11 fundamental, 8 médio/técnico, 30 superior), sem nomes, vagas nem salários",
+    "inscricao.inicio": "não consta no ato",
+    "inscricao.fim": "não consta no ato",
+    "prova_objetiva": "não consta no ato",
+    "taxa": "não consta no ato",
+    "banca": "CONTRATO ADMINISTRATIVO Nº 146/2026 - FAU UNICENTRO",
+    "cidade": "CONCURSO PÚBLICO destinado ao provimento de cargos públicos do quadro de pessoal do MUNICÍPIO DE PALMITAL-PR",
+    "edital": "CONTRATO ADMINISTRATIVO Nº 146/2026 DISPENSA DE LICITAÇÃO Nº 28/2026"
+  },
+  "concurso": {
+    "id": "prefeitura-palmital-pr-2026",
+    "ficticio": false,
+    "orgao": "Prefeitura de Palmital (PR)",
+    "esfera": "municipal",
+    "uf": "PR",
+    "municipio_ibge": "4117800",
+    "cidade": "Palmital",
+    "nacional": false,
+    "abrangencia": null,
+    "area": "Outras",
+    "banca": {
+      "nome": "Fundação de Apoio ao Desenvolvimento da UNICENTRO (FAU)",
+      "url": "https://www.concursosfau.com.br"
+    },
+    "inscricao": {
+      "inicio": null,
+      "fim": null,
+      "url": null
+    },
+    "isencao_ate": null,
+    "prova_objetiva": null,
+    "local_prova": null,
+    "taxa": {
+      "min": null,
+      "max": null
+    },
+    "isencao_regras": null,
+    "regime": null,
+    "beneficios": [],
+    "o_que_levar": null,
+    "cargos": [],
+    "documentos": [
+      {
+        "tipo": "contratacao_banca",
+        "titulo": "Contrato Administrativo nº 146/2026 – Dispensa de Licitação nº 28/2026",
+        "numero": "146/2026",
+        "url": "https://www.diariomunicipal.com.br/amp/materia/3C4C4F76",
+        "publicado_em": "2026-09-04",
+        "fonte": "AMP-PR",
+        "resumo": "49 cargos: 11 de nível fundamental, 8 de nível médio/técnico e 30 de nível superior"
+      }
+    ],
+    "conferencia": null,
+    "primeira_varredura": null,
+    "ultima_alteracao": null
+  }
+}

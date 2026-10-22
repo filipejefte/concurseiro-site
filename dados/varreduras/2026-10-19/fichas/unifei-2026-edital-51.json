@@ -1,0 +1,129 @@
+{
+  "ato": "dou-2026-10-09-ministerio-da-educacao-universidade-fede-28de3955.md",
+  "atos_extras": [
+    "dou-2026-10-09-ministerio-da-educacao-universidade-fede-28de3955-extra-1.md",
+    "dou-2026-10-09-ministerio-da-educacao-universidade-fede-28de3955-extra-2.md"
+  ],
+  "trechos": {
+    "salario": "1.4. A remuneração inicial para o cargo de Professor de Magistério Superior é a constante na tabela abaixo: [...] A/Nível 1/Dedicação Exclusiva 6.397,19 7.356,77 13.753,96 (vencimento básico + retribuição por titulação; as cinco áreas exigem doutorado)",
+    "inscricao.inicio": "ANEXO PERÍODO DE INSCRIÇÃO: 09/10/2026 a 08/11/2026",
+    "inscricao.fim": "ANEXO PERÍODO DE INSCRIÇÃO: 09/10/2026 a 08/11/2026",
+    "prova_objetiva": "não consta no ato: 8.3. As provas somente serão realizadas a partir de 30 dias, a contar da publicação deste edital no Diário Oficial da União. A convocação para realização das provas será publicada no endereço eletrônico https://progepe.unifei.edu.br/concursos-e-processos-seletivos/edital-no-51-2026/",
+    "taxa": "Classe / Nível / Regime de Trabalho TAXA - R$ A / Nível 1 / Dedicação Exclusiva 200,00",
+    "banca": "a própria UNIFEI: 5.2. As inscrições deverão ser realizadas exclusivamente no Sistema Integrado de Gestão de Recursos Humanos (SIGRH) da UNIFEI no endereço eletrônico https://sigrh.unifei.edu.br/sigrh/public/home.jsf - Concursos - Concursos Abertos.",
+    "cidade": "Lotação Instituto de Recursos Naturais - Campus de Itajubá [...] Lotação Instituto de Ciências Tecnológicas - Campus de Itabira [...] Local de realização das provas Campus de Itabira",
+    "edital": "EDITAL Nº 51, de 8 de outubro de 2026 Concurso Público de Provas e Títulos para o cargo efetivo de PROFESSOR DE MAGISTÉRIO SUPERIOR"
+  },
+  "concurso": {
+    "id": "unifei-2026-edital-51",
+    "ficticio": false,
+    "orgao": "Universidade Federal de Itajubá (UNIFEI)",
+    "esfera": "federal",
+    "uf": "MG",
+    "municipio_ibge": null,
+    "cidade": "Itabira",
+    "nacional": false,
+    "abrangencia": null,
+    "area": "Educação",
+    "banca": {
+      "nome": "UNIFEI (Pró-Reitoria de Gestão de Pessoas)",
+      "url": "https://progepe.unifei.edu.br/concursos-e-processos-seletivos/edital-no-51-2026/"
+    },
+    "inscricao": {
+      "inicio": "2026-10-09",
+      "fim": "2026-11-08",
+      "url": "https://sigrh.unifei.edu.br/sigrh/public/home.jsf"
+    },
+    "isencao_ate": null,
+    "prova_objetiva": null,
+    "local_prova": "Campus de Itabira (MG) para Aprendizado de Máquina, Engenharia de Software, Redes de Computadores e Engenharia Elétrica; Campus de Itajubá (MG) para Geomática",
+    "taxa": {
+      "min": 200.0,
+      "max": 200.0
+    },
+    "isencao_regras": "Isenção para inscritos no CadÚnico (Decreto 11.016/2022) e doadores de medula óssea (Lei 13.656/2018); pedido na ficha de inscrição, só nos dez primeiros dias corridos de inscrição",
+    "regime": "Estatutário (Lei 8.112/1990)",
+    "beneficios": [],
+    "o_que_levar": null,
+    "cargos": [
+      {
+        "nome": "Professor do Magistério Superior – Geomática",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 13753.96,
+        "escolaridade": "Superior",
+        "requisitos": "Classe A, dedicação exclusiva; titulação mínima: doutorado; graduação em Engenharia de Agrimensura, Cartográfica ou Civil (ou combinações listadas) e doutorado em Ciências Geodésicas, Ciências Cartográficas ou áreas afins; lotação no Instituto de Recursos Naturais, Campus de Itajubá; provas escrita, didática, científica, prática e de títulos no Campus de Itajubá",
+        "jornada_horas": 40,
+        "materias": [],
+        "remuneracao_por_titulacao": null
+      },
+      {
+        "nome": "Professor do Magistério Superior – Aprendizado de Máquina",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 13753.96,
+        "escolaridade": "Superior",
+        "requisitos": "Classe A, dedicação exclusiva; titulação mínima: doutorado; graduação em Ciência da Computação, Engenharia da Computação, Sistemas de Informação, Engenharia de Software, tecnólogo do eixo Informação e Comunicação, Matemática, Engenharia Mecatrônica (incluída pela retificação de 16/10/2026) ou áreas afins e doutorado em programa da grande área de Ciência da Computação, Engenharias IV ou em Bioinformática; lotação no Instituto de Ciências Tecnológicas, Campus de Itabira",
+        "jornada_horas": 40,
+        "materias": [],
+        "remuneracao_por_titulacao": null
+      },
+      {
+        "nome": "Professor do Magistério Superior – Engenharia de Software",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 13753.96,
+        "escolaridade": "Superior",
+        "requisitos": "Classe A, dedicação exclusiva; titulação mínima: doutorado; graduação em Ciência da Computação, Sistemas de Informação, Engenharia da Computação, Engenharia de Software ou Licenciatura em Computação e doutorado em Ciência da Computação, Sistemas de Informação, Engenharia da Computação, Engenharia de Software ou Informática na Educação; lotação no Instituto de Ciências Tecnológicas, Campus de Itabira",
+        "jornada_horas": 40,
+        "materias": [],
+        "remuneracao_por_titulacao": null
+      },
+      {
+        "nome": "Professor do Magistério Superior – Redes de Computadores",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 13753.96,
+        "escolaridade": "Superior",
+        "requisitos": "Classe A, dedicação exclusiva; titulação mínima: doutorado; graduação em Ciência da Computação, Engenharia da Computação, Sistemas de Informação, Engenharia de Software ou tecnólogo do eixo Informação e Comunicação e doutorado em programa da grande área de Ciência da Computação ou Engenharias IV; lotação no Instituto de Ciências Tecnológicas, Campus de Itabira",
+        "jornada_horas": 40,
+        "materias": [],
+        "remuneracao_por_titulacao": null
+      },
+      {
+        "nome": "Professor do Magistério Superior – Engenharia Elétrica",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 13753.96,
+        "escolaridade": "Superior",
+        "requisitos": "Classe A, dedicação exclusiva; titulação mínima: doutorado; graduação em Engenharia Elétrica, Eletrônica, de Controle e Automação, Mecânica ou da Computação e doutorado em programa da grande área de Engenharias IV; lotação no Instituto de Ciências Puras e Aplicadas, Campus de Itabira",
+        "jornada_horas": 40,
+        "materias": [],
+        "remuneracao_por_titulacao": null
+      }
+    ],
+    "documentos": [
+      {
+        "tipo": "edital",
+        "titulo": "Edital nº 51, de 8 de outubro de 2026 – Professor do Magistério Superior",
+        "numero": "51/2026",
+        "url": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=09/10/2026&jornal=530&pagina=47",
+        "publicado_em": "2026-10-09",
+        "fonte": "DOU",
+        "resumo": null
+      },
+      {
+        "tipo": "retificacao",
+        "titulo": "Retificação do Edital nº 51/2026",
+        "numero": "51/2026",
+        "url": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=16/10/2026&jornal=530&pagina=45",
+        "publicado_em": "2026-10-16",
+        "fonte": "DOU",
+        "resumo": "Inclui Engenharia Mecatrônica entre as graduações aceitas na área Aprendizado de Máquina"
+      }
+    ],
+    "conferencia": null,
+    "primeira_varredura": null,
+    "ultima_alteracao": null
+  }
+}

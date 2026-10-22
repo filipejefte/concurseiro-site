@@ -1,0 +1,314 @@
+{
+  "ato": "dou-2026-10-02-poder-judiciario-tribunal-regional-do-tr-738a4969.md",
+  "atos_extras": [
+    "dou-2026-10-08-poder-judiciario-tribunal-regional-do-tr-2c28e9ac.md",
+    "dou-2026-10-02-poder-judiciario-tribunal-regional-do-tr-738a4969-extra-1.md"
+  ],
+  "trechos": {
+    "salario": "ANALISTA ENSINO SUPERIOR COMPLETO: Valor da inscrição: R$ 110,00 (cento e dez reais) Remuneração inicial: R$ 16.040,88 [...] TÉCNICO ENSINO SUPERIOR COMPLETO Valor da inscrição: R$ 90,00 (noventa reais) Remuneração inicial: R$ 9.776,71",
+    "inscricao.inicio": "4.3 As inscrições ficarão abertas, exclusivamente via internet, no período de 10h do dia 05/10/2026 às 23h59 do dia 05/11/2026 (horário de Brasília)",
+    "inscricao.fim": "4.3 As inscrições ficarão abertas, exclusivamente via internet, no período de 10h do dia 05/10/2026 às 23h59 do dia 05/11/2026 (horário de Brasília)",
+    "prova_objetiva": "As Provas Objetivas e as Provas Discursivas serão realizadas nas cidades de Belém/PA, Marabá/PA, Santarém/PA e Macapá/AP com previsão de aplicação para o dia 17/01/2027",
+    "taxa": "a) R$ 110,00 (cento e dez reais) para os cargos de Analista Judiciário, todas as Áreas e Especialidades; b) R$ 90,00 (noventa reais) para os cargos de Técnico Judiciário, todas as Áreas e Especialidades.",
+    "banca": "tendo em vista o contrato celebrado com a FUNDAÇÃO CARLOS CHAGAS",
+    "cidade": "serão ofertadas para provimento nas localidades de jurisdição da Justiça do Trabalho 8ª Região, nos Estados do Pará e Amapá. As vagas relativas aos demais cargos deverão ser preenchidas na cidade de Belém/PA, na sede do Tribunal.",
+    "edital": "EDITAL Nº 1, DE 1º DE outubro DE 2026 CONCURSO PÚBLICO PARA O PROVIMENTO DE CARGOS DO QUADRO PERMANENTE DE PESSOAL ABERTURA DE INSCRIÇÕES"
+  },
+  "concurso": {
+    "id": "trt8-2026-edital-1",
+    "ficticio": false,
+    "orgao": "Tribunal Regional do Trabalho da 8ª Região (TRT-8)",
+    "esfera": "federal",
+    "uf": "PA",
+    "municipio_ibge": null,
+    "cidade": "Belém",
+    "nacional": true,
+    "abrangencia": "Pará e Amapá",
+    "area": "Jurídica",
+    "banca": {
+      "nome": "Fundação Carlos Chagas (FCC)",
+      "url": "https://www.concursosfcc.com.br/concursos/trt8r126/index.html"
+    },
+    "inscricao": {
+      "inicio": "2026-10-05",
+      "fim": "2026-11-05",
+      "url": "https://www.concursosfcc.com.br"
+    },
+    "isencao_ate": "2026-10-09",
+    "prova_objetiva": "2027-01-17",
+    "local_prova": "Belém, Marabá e Santarém (PA) e Macapá (AP)",
+    "taxa": {
+      "min": 90.0,
+      "max": 110.0
+    },
+    "isencao_regras": "Isenção para inscritos no CadÚnico de família de baixa renda (Decretos 6.593/2008 e 11.016/2022) e doadores de medula óssea (Lei 13.656/2018); pedido de 05 a 09/10/2026, pela internet",
+    "regime": "Estatutário (Lei 8.112/1990)",
+    "beneficios": [],
+    "o_que_levar": "Documento de identidade oficial com foto e caneta esferográfica de material transparente, de tinta preta ou azul",
+    "cargos": [
+      {
+        "nome": "Analista Judiciário – Área Judiciária",
+        "vagas": 0,
+        "cadastro_reserva": true,
+        "salario": 16040.88,
+        "escolaridade": "Superior",
+        "requisitos": "Cargo 01; graduação em Direito; lotação nas localidades da 8ª Região (Pará e Amapá), por ordem de preferência indicada na inscrição; só cadastro de reserva",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Analista Judiciário – Área Judiciária – Oficial de Justiça Avaliador Federal",
+        "vagas": 0,
+        "cadastro_reserva": true,
+        "salario": 16040.88,
+        "escolaridade": "Superior",
+        "requisitos": "Cargo 02; graduação em Direito; lotação nas localidades da 8ª Região (Pará e Amapá), por ordem de preferência indicada na inscrição; só cadastro de reserva",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Analista Judiciário – Área Administrativa",
+        "vagas": 0,
+        "cadastro_reserva": true,
+        "salario": 16040.88,
+        "escolaridade": "Superior",
+        "requisitos": "Cargo 03; curso superior em qualquer área, inclusive licenciatura plena e tecnólogo; lotação em Belém (PA), na sede do Tribunal (Edital nº 2); só cadastro de reserva",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Analista Judiciário – Apoio Especializado – Tecnologia da Informação",
+        "vagas": 0,
+        "cadastro_reserva": true,
+        "salario": 16040.88,
+        "escolaridade": "Superior",
+        "requisitos": "Cargo 04; curso superior (inclusive tecnólogo) em Tecnologia da Informação, ou outro curso superior com pós-graduação em Informática; lotação em Belém (PA), na sede do Tribunal (Edital nº 2); só cadastro de reserva",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Analista Judiciário – Área Administrativa – Contabilidade",
+        "vagas": 0,
+        "cadastro_reserva": true,
+        "salario": 16040.88,
+        "escolaridade": "Superior",
+        "requisitos": "Cargo 05; graduação em Contabilidade e registro no órgão de classe; lotação em Belém (PA), na sede do Tribunal (Edital nº 2); só cadastro de reserva",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Analista Judiciário – Apoio Especializado – Estatística",
+        "vagas": 0,
+        "cadastro_reserva": true,
+        "salario": 16040.88,
+        "escolaridade": "Superior",
+        "requisitos": "Cargo 06; graduação em Estatística e registro no órgão de classe; lotação em Belém (PA), na sede do Tribunal (Edital nº 2); só cadastro de reserva",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Analista Judiciário – Apoio Especializado – Comunicação Social",
+        "vagas": 0,
+        "cadastro_reserva": true,
+        "salario": 16040.88,
+        "escolaridade": "Superior",
+        "requisitos": "Cargo 07; graduação em Comunicação Social; lotação em Belém (PA), na sede do Tribunal (Edital nº 2); só cadastro de reserva",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Analista Judiciário – Apoio Especializado – Arquitetura",
+        "vagas": 0,
+        "cadastro_reserva": true,
+        "salario": 16040.88,
+        "escolaridade": "Superior",
+        "requisitos": "Cargo 08; graduação em Arquitetura e registro no órgão de classe; lotação em Belém (PA), na sede do Tribunal (Edital nº 2); só cadastro de reserva",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Analista Judiciário – Apoio Especializado – Arquivologia",
+        "vagas": 0,
+        "cadastro_reserva": true,
+        "salario": 16040.88,
+        "escolaridade": "Superior",
+        "requisitos": "Cargo 09; graduação em Arquivologia e registro no Ministério do Trabalho; lotação em Belém (PA), na sede do Tribunal (Edital nº 2); só cadastro de reserva",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Analista Judiciário – Apoio Especializado – Biblioteconomia",
+        "vagas": 0,
+        "cadastro_reserva": true,
+        "salario": 16040.88,
+        "escolaridade": "Superior",
+        "requisitos": "Cargo 10; graduação em Biblioteconomia e registro no órgão de classe; lotação em Belém (PA), na sede do Tribunal (Edital nº 2); só cadastro de reserva",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Analista Judiciário – Apoio Especializado – Enfermagem",
+        "vagas": 0,
+        "cadastro_reserva": true,
+        "salario": 16040.88,
+        "escolaridade": "Superior",
+        "requisitos": "Cargo 11; graduação em Enfermagem e registro no órgão de classe; lotação em Belém (PA), na sede do Tribunal (Edital nº 2); só cadastro de reserva",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Analista Judiciário – Apoio Especializado – Engenharia Civil",
+        "vagas": 0,
+        "cadastro_reserva": true,
+        "salario": 16040.88,
+        "escolaridade": "Superior",
+        "requisitos": "Cargo 12; graduação em Engenharia Civil e registro no órgão de classe; lotação em Belém (PA), na sede do Tribunal (Edital nº 2); só cadastro de reserva",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Analista Judiciário – Apoio Especializado – Engenharia Elétrica",
+        "vagas": 0,
+        "cadastro_reserva": true,
+        "salario": 16040.88,
+        "escolaridade": "Superior",
+        "requisitos": "Cargo 13; graduação em Engenharia Elétrica e registro no órgão de classe; lotação em Belém (PA), na sede do Tribunal (Edital nº 2); só cadastro de reserva",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Analista Judiciário – Apoio Especializado – Engenharia de Segurança do Trabalho",
+        "vagas": 0,
+        "cadastro_reserva": true,
+        "salario": 16040.88,
+        "escolaridade": "Superior",
+        "requisitos": "Cargo 14; graduação em Arquitetura ou Engenharia com pós-graduação em Engenharia de Segurança do Trabalho e registro no órgão de classe; lotação em Belém (PA), na sede do Tribunal (Edital nº 2); só cadastro de reserva",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Analista Judiciário – Apoio Especializado – Medicina",
+        "vagas": 0,
+        "cadastro_reserva": true,
+        "salario": 16040.88,
+        "escolaridade": "Superior",
+        "requisitos": "Cargo 15; graduação em Medicina e registro no órgão de classe; lotação em Belém (PA), na sede do Tribunal (Edital nº 2); só cadastro de reserva",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Analista Judiciário – Apoio Especializado – Médico do Trabalho",
+        "vagas": 0,
+        "cadastro_reserva": true,
+        "salario": 16040.88,
+        "escolaridade": "Superior",
+        "requisitos": "Cargo 16; graduação em Medicina com residência em Medicina do Trabalho (CNRM) ou título de especialista em Medicina do Trabalho, e registro no órgão de classe; lotação em Belém (PA), na sede do Tribunal (Edital nº 2); só cadastro de reserva",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Analista Judiciário – Apoio Especializado – Odontologia",
+        "vagas": 0,
+        "cadastro_reserva": true,
+        "salario": 16040.88,
+        "escolaridade": "Superior",
+        "requisitos": "Cargo 17; graduação em Odontologia e registro no órgão de classe; lotação em Belém (PA), na sede do Tribunal (Edital nº 2); só cadastro de reserva",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Analista Judiciário – Apoio Especializado – Psicologia",
+        "vagas": 0,
+        "cadastro_reserva": true,
+        "salario": 16040.88,
+        "escolaridade": "Superior",
+        "requisitos": "Cargo 18; graduação em Psicologia e registro no órgão de classe; lotação em Belém (PA), na sede do Tribunal (Edital nº 2); só cadastro de reserva",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Analista Judiciário – Apoio Especializado – Serviço Social",
+        "vagas": 0,
+        "cadastro_reserva": true,
+        "salario": 16040.88,
+        "escolaridade": "Superior",
+        "requisitos": "Cargo 19; graduação em Serviço Social e registro no órgão de classe; lotação em Belém (PA), na sede do Tribunal (Edital nº 2); só cadastro de reserva",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Analista Judiciário – Apoio Especializado – História",
+        "vagas": 0,
+        "cadastro_reserva": true,
+        "salario": 16040.88,
+        "escolaridade": "Superior",
+        "requisitos": "Cargo 20; graduação em História e registro no órgão de classe; lotação em Belém (PA), na sede do Tribunal (Edital nº 2); só cadastro de reserva",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Técnico Judiciário – Área Administrativa",
+        "vagas": 0,
+        "cadastro_reserva": true,
+        "salario": 9776.71,
+        "escolaridade": "Superior",
+        "requisitos": "Cargo 21; curso superior em qualquer área, inclusive licenciatura plena e tecnólogo; lotação nas localidades da 8ª Região (Pará e Amapá), por ordem de preferência indicada na inscrição; só cadastro de reserva",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Técnico Judiciário – Apoio Especializado – Enfermagem",
+        "vagas": 0,
+        "cadastro_reserva": true,
+        "salario": 9776.71,
+        "escolaridade": "Superior",
+        "requisitos": "Cargo 22; curso superior e curso técnico de enfermagem, com registro no órgão de classe; lotação em Belém (PA), na sede do Tribunal (Edital nº 2); só cadastro de reserva",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Técnico Judiciário – Apoio Especializado – Tecnologia da Informação",
+        "vagas": 0,
+        "cadastro_reserva": true,
+        "salario": 9776.71,
+        "escolaridade": "Superior",
+        "requisitos": "Cargo 23; curso superior (inclusive tecnólogo) com curso de programação de no mínimo 120 horas/aula, ou curso técnico na área de informática; lotação em Belém (PA), na sede do Tribunal (Edital nº 2); só cadastro de reserva",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Técnico Judiciário – Área Administrativa – Agente da Polícia Judicial",
+        "vagas": 0,
+        "cadastro_reserva": true,
+        "salario": 9776.71,
+        "escolaridade": "Superior",
+        "requisitos": "Cargo 24; curso superior em qualquer área, inclusive licenciatura plena e tecnólogo, e CNH categoria B ou superior; teste de aptidão física; remuneração acrescida da Gratificação de Atividade de Segurança (GAS) de R$ 1.425,77, cumpridas as condições da Resolução CSJT 315/2021; lotação nas localidades da 8ª Região (Pará e Amapá), por ordem de preferência indicada na inscrição; só cadastro de reserva",
+        "jornada_horas": 40,
+        "materias": []
+      }
+    ],
+    "documentos": [
+      {
+        "tipo": "edital",
+        "titulo": "Edital nº 1, de 1º de outubro de 2026 – Abertura de inscrições",
+        "numero": "1/2026",
+        "url": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=02/10/2026&jornal=530&pagina=139",
+        "publicado_em": "2026-10-02",
+        "fonte": "DOU",
+        "resumo": null
+      },
+      {
+        "tipo": "retificacao",
+        "titulo": "Edital nº 2, de 7 de outubro de 2026 – Retificação do Edital nº 1/2026",
+        "numero": "2/2026",
+        "url": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=08/10/2026&jornal=530&pagina=191",
+        "publicado_em": "2026-10-08",
+        "fonte": "DOU",
+        "resumo": "Lotação: cargos 01, 02, 21 e 24 nas localidades do Pará e do Amapá; demais cargos só em Belém (PA)"
+      }
+    ],
+    "conferencia": null,
+    "primeira_varredura": null,
+    "ultima_alteracao": null
+  }
+}

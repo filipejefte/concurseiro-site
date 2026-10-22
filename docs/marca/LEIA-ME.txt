@@ -1,0 +1,14 @@
+Arquivos da marca Concurseiro, copiados do design system em 16/10/2026.
+Descompacte esta pasta em docs/marca/ dentro do repositorio concurseiro-site.
+
+logotipo-concurseiro.svg          logotipo principal (cabecalho, rodape, e-mails)
+logotipo-concurseiro-palavra.svg  so a palavra no grifo (sobre verde, espacos estreitos, pe dos posts)
+icone-app.svg                     avatar de rede social e icone do app
+favicon.svg                       aba do navegador e usos abaixo de 20 px
+grifo.svg                         o grifo sozinho, para pecas graficas
+logotipo-concurseiro.png          PNG do logotipo (266 px de altura), para as imagens de compartilhamento e posts
+logotipo-concurseiro-palavra.png  PNG so da palavra (266 px de altura), para o pe dos posts
+icone-app.png                     PNG 512 x 512 do icone, para apple-touch-icon e manifest
+design-system/                    README, tokens.json, bundle.css (componentes cc-), voz.md e nome.md
+
+Fonte da verdade: https://claude.ai/artifact/8UC6HJHt3oYFYjLUYpRfVD

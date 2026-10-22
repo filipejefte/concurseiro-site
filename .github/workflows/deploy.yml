@@ -1,0 +1,77 @@
+# Site: testa, gera e publica no Cloudflare Pages (a hospedagem é só essa). Roda em todo push na main, todo dia às
+# 06:00 de Brasília (a situação e os prazos viram sem nova varredura), à mão e, sem publicar, em pull request.
+# Sem os segredos CLOUDFLARE_API_TOKEN e CLOUDFLARE_ACCOUNT_ID ele testa e gera o site, mas não publica, e avisa no log.
+# Com os segredos, cria o projeto no Cloudflare se ele ainda não existir (nome: variável CLOUDFLARE_PROJETO, ou "concurseiro").
+name: Site
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  schedule:
+    - cron: "0 9 * * *"   # 09:00 UTC = 06:00 em Brasília
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: site-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  site:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      TEM_CLOUDFLARE: ${{ secrets.CLOUDFLARE_API_TOKEN != '' && secrets.CLOUDFLARE_ACCOUNT_ID != '' }}
+      PUBLICAR: ${{ github.event_name != 'pull_request' && github.ref == 'refs/heads/main' }}
+      PROJETO: ${{ vars.CLOUDFLARE_PROJETO || 'concurseiro' }}
+    steps:
+      - name: Marca a hora de início
+        run: echo "INICIO=$(date +%s)" >> "$GITHUB_ENV"
+      # Histórico inteiro: a verificação de anonimato lê os autores de commit com git log.
+      - uses: actions/checkout@v5.0.0
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v6.0.0
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Instala as dependências
+        run: python -m pip install -r requirements.txt
+      - name: Testes
+        run: python -m pytest -q
+      - name: Gera o site
+        run: python -m gerador build --plataforma cloudflare
+      - name: Confere os links internos
+        run: python -m gerador links
+      - name: Confere o anonimato (nada de quem faz o Concurseiro)
+        run: python -m gerador anonimato
+      - name: Avisa que não vai publicar
+        if: env.PUBLICAR == 'true' && env.TEM_CLOUDFLARE != 'true'
+        run: echo "::warning::Sem CLOUDFLARE_API_TOKEN e CLOUDFLARE_ACCOUNT_ID nos segredos do repositório. O site foi testado e gerado, mas NÃO foi publicado."
+      - name: Cria o projeto no Cloudflare Pages, se ele não existir
+        if: env.PUBLICAR == 'true' && env.TEM_CLOUDFLARE == 'true'
+        run: |
+          set +e
+          saida=$(npx --yes wrangler@4.145.0 pages project create "$PROJETO" --production-branch=main 2>&1)
+          codigo=$?
+          echo "$saida"
+          if [ "$codigo" -ne 0 ] && ! echo "$saida" | grep -qiE "already exists|8000002"; then exit "$codigo"; fi
+          exit 0
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+      - name: Publica no Cloudflare Pages
+        if: env.PUBLICAR == 'true' && env.TEM_CLOUDFLARE == 'true'
+        run: npx --yes wrangler@4.145.0 pages deploy public --project-name="$PROJETO" --branch=main --commit-dirty=true --commit-message="site $GITHUB_RUN_NUMBER"
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+      # Os minutos que o GitHub cobra: cada job arredonda para cima. Serve para conferir a estimativa do docs/LANCAMENTO.md.
+      - name: Registra a duração
+        if: always()
+        run: |
+          segundos=$(( $(date +%s) - INICIO ))
+          echo "Duração: ${segundos} s (cobrança: $(( (segundos + 59) / 60 )) min)" | tee -a "$GITHUB_STEP_SUMMARY"

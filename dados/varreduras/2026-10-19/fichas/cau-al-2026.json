@@ -1,0 +1,60 @@
+{
+  "ato": "dou-2026-10-05-entidades-de-fiscalizacao-do-exercicio-d-669ebb49.md",
+  "trechos": {
+    "salario": "não consta no ato",
+    "inscricao.inicio": "não consta no ato",
+    "inscricao.fim": "não consta no ato",
+    "prova_objetiva": "não consta no ato",
+    "taxa": "não consta no ato",
+    "banca": "Contratada: Instituto Americano de Desenvolvimento - IADES - CNPJ sob n. 11.432.298/0001-25",
+    "cidade": "Conselho de Arquitetura e Urbanismo de Alagoas - CAU/AL",
+    "edital": "s de planejamento, organização, coordenação, operacionalização, elaboração de provas, aplicação, processamento de resultados e execução integral de Concurso Público destinado ao provimento de cargos efetivos e formação de cadastro de reserva do Conselho de Arquitetura e Urbanismo de Alagoas - CAU/AL"
+  },
+  "concurso": {
+    "id": "cau-al-2026",
+    "ficticio": false,
+    "orgao": "Conselho de Arquitetura e Urbanismo de Alagoas (CAU/AL)",
+    "esfera": "federal",
+    "uf": "AL",
+    "municipio_ibge": null,
+    "cidade": null,
+    "nacional": false,
+    "abrangencia": null,
+    "area": "Outras",
+    "banca": {
+      "nome": "Instituto Americano de Desenvolvimento (IADES)",
+      "url": null
+    },
+    "inscricao": {
+      "inicio": null,
+      "fim": null,
+      "url": null
+    },
+    "isencao_ate": null,
+    "prova_objetiva": null,
+    "local_prova": null,
+    "taxa": {
+      "min": null,
+      "max": null
+    },
+    "isencao_regras": null,
+    "regime": null,
+    "beneficios": [],
+    "o_que_levar": null,
+    "cargos": [],
+    "documentos": [
+      {
+        "tipo": "contratacao_banca",
+        "titulo": "Extrato de Dispensa de Licitação – contratação do IADES",
+        "numero": null,
+        "url": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=05/10/2026&jornal=530&pagina=198",
+        "publicado_em": "2026-10-05",
+        "fonte": "DOU",
+        "resumo": "Concurso para cargos efetivos e cadastro de reserva do CAU/AL"
+      }
+    ],
+    "conferencia": null,
+    "primeira_varredura": null,
+    "ultima_alteracao": null
+  }
+}

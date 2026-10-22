@@ -1,0 +1,38 @@
+{% extends "texto.html" %}
+{% block texto %}
+<p class="pt-capa">O Concurseiro ajuda você a achar concursos. Quem decide as regras de cada concurso é o edital oficial.</p>
+<p class="pt-apoio">Versão de {{ versao_privacidade }}.</p>
+
+<h2 class="pt-h2">Vale sempre o edital oficial</h2>
+<p>As fichas resumem o ato oficial de cada concurso: salário, vagas, datas, taxa, banca e cidade. Mesmo conferidas, elas podem ficar desatualizadas (uma retificação sai entre duas varreduras) ou ter erro. Antes de se inscrever, pagar a taxa ou viajar para a prova, leia o edital completo e as retificações no site da banca ou no diário oficial. Toda ficha tem o botão "Ver edital oficial" para isso.</p>
+
+<h2 class="pt-h2">O que o site é e o que não é</h2>
+<ul>
+  <li>O Concurseiro não é site oficial e não representa nenhum órgão público nem banca.</li>
+  <li>O site não recebe inscrição nem pagamento. Inscrição e taxa, só no site da banca.</li>
+  <li>O uso é gratuito e não exige cadastro.</li>
+</ul>
+
+<h2 class="pt-h2">Uso da informação</h2>
+<p>Os dados das fichas vêm de atos oficiais, que são públicos. Você pode usar e compartilhar as informações do site, de preferência com o link da ficha ou do edital oficial. Não é permitido usar o site para enganar alguém, por exemplo cobrando por inscrição ou fingindo ser o Concurseiro ou uma banca.</p>
+<p>Programas que leem o site automaticamente devem respeitar o <code>robots.txt</code> e não sobrecarregar o servidor.</p>
+
+<h2 class="pt-h2">Limite de responsabilidade</h2>
+<p>Fazemos o possível para que cada ficha esteja certa e conferida, mas não garantimos que ela esteja completa ou atualizada a cada momento. O Concurseiro não responde por perda de prazo, inscrição, taxa ou qualquer decisão tomada só com base na ficha, sem conferir o edital oficial. Também não responde pelo conteúdo dos sites de bancas, órgãos, canais de terceiros, anunciantes e parceiros.</p>
+
+<h2 class="pt-h2">Anúncios e parceiros</h2>
+<p>Anúncios levam o rótulo "Publicidade". Indicações pagas levam "Link de parceiro". Eles não mudam o que aparece nas fichas, nem a ordem dos concursos.</p>
+
+<h2 class="pt-h2">Erro numa ficha</h2>
+{%- if email %}
+<p>Em toda ficha há o link "Avise a gente". Você também pode usar a página de <a class="pt-link" href="{{ u('/contato/') }}">contato</a>. Diga qual ficha e o que está errado; se puder, mande o trecho do edital. A correção passa pela mesma conferência das outras fichas. Veja <a class="pt-link" href="{{ u('/como-conferimos/') }}">como conferimos os dados</a>.</p>
+{%- else %}
+<p>Se uma ficha divergir do edital, vale o edital. As fichas passam por conferência e são refeitas a cada varredura semanal. Veja <a class="pt-link" href="{{ u('/como-conferimos/') }}">como conferimos os dados</a>.</p>
+{%- endif %}
+
+<h2 class="pt-h2">Privacidade</h2>
+<p>Como o site trata dados está na <a class="pt-link" href="{{ u('/privacidade/') }}">política de privacidade</a>.</p>
+
+<h2 class="pt-h2">Mudanças</h2>
+<p>Estes termos podem mudar; a data no topo mostra a versão. Vale a lei brasileira.</p>
+{% endblock %}

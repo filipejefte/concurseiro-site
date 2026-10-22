@@ -1,0 +1,77 @@
+{
+  "lidas": {
+    "dou": {
+      "nome": "Diário Oficial da União",
+      "curto": "o Diário Oficial da União",
+      "cobre": "concursos federais de todo o Brasil: universidades, institutos federais, conselhos profissionais, tribunais, ministérios, forças armadas e outros órgãos federais",
+      "url": "https://www.in.gov.br/"
+    },
+    "dioe": {
+      "nome": "Diário Oficial do Estado do Paraná",
+      "curto": "o do Paraná",
+      "cobre": "o Suplemento de Concursos e as matérias do Executivo e da Assembleia que falam de concurso ou de autorização de concurso",
+      "url": "https://www.dioe.pr.gov.br/"
+    },
+    "amp": {
+      "nome": "Diário Oficial dos Municípios do Paraná",
+      "curto": "o Diário dos Municípios do PR",
+      "cobre": "prefeituras, câmaras e entidades municipais do Paraná que publicam nesse diário (da Associação dos Municípios do Paraná)",
+      "url": "https://www.diariomunicipal.com.br/amp/"
+    }
+  },
+  "bancas": {
+    "fafipa": {
+      "nome": "Fundação FAFIPA",
+      "url": "https://www.fundacaofafipa.org.br",
+      "cobre": "concursos de prefeituras e câmaras, sobretudo do Paraná"
+    },
+    "fau": {
+      "nome": "FAU (Fundação de Apoio ao Desenvolvimento da UNICENTRO)",
+      "url": "https://www.concursosfau.com.br",
+      "cobre": "concursos de prefeituras e câmaras do Paraná"
+    },
+    "quadrix": {
+      "nome": "Instituto Quadrix",
+      "url": "https://www.quadrix.org.br",
+      "cobre": "conselhos profissionais e outros órgãos federais, de todo o Brasil"
+    },
+    "omni": {
+      "nome": "Instituto Omni",
+      "url": "https://omniinstituto.org.br",
+      "cobre": "concursos de prefeituras e câmaras"
+    },
+    "unicampo": {
+      "nome": "Instituto Unicampo",
+      "url": "https://institutounicampo.com.br",
+      "cobre": "concursos de prefeituras e câmaras do Paraná"
+    },
+    "consulplan": {
+      "nome": "Instituto Consulplan",
+      "url": "https://www.institutoconsulplan.org.br",
+      "cobre": "conselhos profissionais e outros órgãos federais, de todo o Brasil"
+    },
+    "consulpam": {
+      "nome": "Consulpam Consultoria",
+      "url": "https://www.consulpam.com.br",
+      "cobre": "concursos de câmaras e prefeituras, entre eles os do Paraná"
+    }
+  },
+  "nao_lidas": [
+    {
+      "nome": "Diários oficiais dos outros estados e dos municípios",
+      "motivo": "Lemos sozinhos o do Paraná e o Diário dos Municípios do PR. Os demais estados e municípios entram quando o concurso aparece no Diário Oficial da União ou numa das bancas que lemos (de todas as UFs), ou por pesquisa com o edital oficial. Alguns municípios do Paraná também publicam em diário próprio."
+    },
+    {
+      "nome": "Sites de outras bancas",
+      "motivo": "Ainda não lemos, entre outras, Unioeste (o portal recusa leitura automática), Instituto UniFil (proteção contra robôs), Legalle (o robots.txt do site proíbe qualquer leitura), GAMA Consultoria em Gestão Pública, Império, MS Concursos, AOCP, IBFC, Cebraspe, FGV e Vunesp. O concurso delas entra quando aparece no Diário Oficial da União, nos diários do Paraná ou na pesquisa com o edital oficial."
+    },
+    {
+      "nome": "Processo seletivo simplificado e contratação temporária",
+      "motivo": "Ficam de fora de propósito: não são concurso público."
+    },
+    {
+      "nome": "Concursos de prefeituras, câmaras e estados que só aparecem no diário local",
+      "motivo": "Se a banca não é uma das que lemos e o município não publica no Diário Oficial da União, o concurso pode estar fora do site até a pesquisa chegar a ele."
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "ato": "dou-2026-09-17-ministerio-da-educacao-universidade-fede-7c47961a.md",
+  "atos_extras": [
+    "dou-2026-09-17-ministerio-da-educacao-universidade-fede-7c47961a-extra-1.md",
+    "dou-2026-09-17-ministerio-da-educacao-universidade-fede-7c47961a-extra-2.md"
+  ],
+  "trechos": {
+    "salario": "1.6 A remuneração inicial para os cargos será: 1.6.1. Vencimento Básico (VB) do Nível de Classificação \"E\": R$ 4.967,04 (quatro mil, novecentos e sessenta e sete reais e quatro centavos).",
+    "inscricao.inicio": "Período de Inscrições 21/09/2026 a 19/10/2026",
+    "inscricao.fim": "Período de Inscrições 21/09/2026 a 19/10/2026",
+    "prova_objetiva": "Prova de Conhecimentos Gerais e de Conhecimentos Específicos 06/12/2026 [...] A Prova Objetiva, de Conhecimentos Gerais e de Conhecimentos Específicos, será realizada em Alfenas-MG",
+    "taxa": "2.3.1 Valor da Taxa de inscrição: Cargo de Nível de Classificação \"E\": R$ 124,00 (cento e vinte e quatro reais).",
+    "banca": "1.1 O concurso será regido por este Edital e coordenado pela Diretoria de Processos Seletivos (DIPS), podendo contar com comissão de apoio, desta Universidade.",
+    "cidade": "A Universidade Federal de Alfenas (UNIFAL-MG), autarquia federal de regime especial, com sede em Alfenas-MG [...] será realizada em Alfenas-MG",
+    "edital": "EDITAL Nº 114, DE 16 DE SETEMBRO DE 2026 ONCURSO PÚBLICO DESTINADO AO PROVIMENTO DE CARGOS TÉCNICO-ADMINISTRATIVOS EM EDUCAÇÃO"
+  },
+  "concurso": {
+    "id": "unifal-mg-2026-edital-114",
+    "ficticio": false,
+    "orgao": "Universidade Federal de Alfenas (UNIFAL-MG)",
+    "esfera": "federal",
+    "uf": "MG",
+    "municipio_ibge": null,
+    "cidade": "Alfenas",
+    "nacional": false,
+    "abrangencia": null,
+    "area": "Saúde",
+    "banca": {
+      "nome": "UNIFAL-MG (DIPS)",
+      "url": "https://www.unifal-mg.edu.br/dips/concurso-publico-tecnico-administrativo-em-educacao-tae/"
+    },
+    "inscricao": {
+      "inicio": "2026-09-21",
+      "fim": "2026-10-19",
+      "url": "https://www.unifal-mg.edu.br/dips/concurso-publico-tecnico-administrativo-em-educacao-tae/"
+    },
+    "isencao_ate": "2026-09-29",
+    "prova_objetiva": "2026-12-06",
+    "local_prova": "Alfenas (MG)",
+    "taxa": {
+      "min": 124.0,
+      "max": 124.0
+    },
+    "isencao_regras": "Isenção para famílias do CadÚnico com renda per capita de até meio salário-mínimo e doadores de medula óssea (Lei 13.656/2018); pedido no ato da inscrição, até 7 dias úteis após o início (até 29/09/2026)",
+    "regime": "Estatutário (Lei 8.112/1990)",
+    "beneficios": [
+      {
+        "nome": "Auxílio-alimentação",
+        "valor": null
+      }
+    ],
+    "o_que_levar": "Documento de identidade original com foto e caneta esferográfica de tinta preta ou azul, transparente",
+    "cargos": [
+      {
+        "nome": "Médico – Ginecologia e Obstetrícia",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 4967.04,
+        "escolaridade": "Superior",
+        "requisitos": "Técnico-administrativo nível de classificação E; graduação em Medicina e título de especialista em Ginecologia e Obstetrícia (FEBRASGO/AMB) e/ou residência médica na área reconhecida pela CNRM/MEC; registro no conselho; lotação em Alfenas (sede); vencimento básico, com incentivo à qualificação para mestrado ou doutorado",
+        "jornada_horas": 20,
+        "materias": []
+      }
+    ],
+    "documentos": [
+      {
+        "tipo": "edital",
+        "titulo": "Edital nº 114, de 16 de setembro de 2026 – Concurso público para técnico-administrativo em educação (Médico/Ginecologia e Obstetrícia)",
+        "numero": "114/2026",
+        "url": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=17/09/2026&jornal=530&pagina=39",
+        "publicado_em": "2026-09-17",
+        "fonte": "DOU",
+        "resumo": null
+      }
+    ],
+    "conferencia": null,
+    "primeira_varredura": null,
+    "ultima_alteracao": null
+  }
+}

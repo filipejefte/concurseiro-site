@@ -1,0 +1,453 @@
+{
+  "ato": "amp-pr-2026-07-20-prefeitura-municipal-de-california-ab4c8454.md",
+  "atos_extras": [
+    "amp-pr-2026-08-31-prefeitura-municipal-de-california-0b379640.md",
+    "amp-pr-2026-10-19-secretaria-de-administracao-e-financas-cb94eae6.md"
+  ],
+  "trechos": {
+    "salario": "O decreto lista cargos, carga horária, escolaridade e vagas, sem remuneração",
+    "inscricao.inicio": "não consta no ato",
+    "inscricao.fim": "não consta no ato",
+    "prova_objetiva": "não consta no ato",
+    "taxa": "não consta no ato",
+    "banca": "licitação anulada em 28/08/2026 (Pregão Eletrônico nº 35/2026); nova licitação: Concorrência nº 19/2026, \"fará realizar às 09h00min do dia 14 de dezembro de 2026\"; banca não contratada",
+    "cidade": "PREFEITURA MUNICIPAL DE CALIFÓRNIA [...] provimento de cargos públicos municipais",
+    "edital": "DECRETO Nº 170/2026 SÚMULA: Autoriza a abertura de Concurso Público para provimento de cargos públicos municipais e formação de Cadastro de Reserva"
+  },
+  "concurso": {
+    "id": "prefeitura-california-pr-2026",
+    "ficticio": false,
+    "orgao": "Prefeitura de Califórnia (PR)",
+    "esfera": "municipal",
+    "uf": "PR",
+    "municipio_ibge": "4103503",
+    "cidade": "Califórnia",
+    "nacional": false,
+    "abrangencia": null,
+    "area": "Operacional",
+    "banca": {
+      "nome": null,
+      "url": null
+    },
+    "inscricao": {
+      "inicio": null,
+      "fim": null,
+      "url": null
+    },
+    "isencao_ate": null,
+    "prova_objetiva": null,
+    "local_prova": null,
+    "taxa": {
+      "min": null,
+      "max": null
+    },
+    "isencao_regras": null,
+    "regime": null,
+    "beneficios": [],
+    "o_que_levar": null,
+    "cargos": [
+      {
+        "nome": "Advogado",
+        "vagas": 1,
+        "cadastro_reserva": true,
+        "salario": null,
+        "escolaridade": "Superior",
+        "requisitos": "Ensino Superior Completo com Direito, inscrito na OAB",
+        "jornada_horas": 20,
+        "materias": []
+      },
+      {
+        "nome": "Agente de Defesa Civil",
+        "vagas": 1,
+        "cadastro_reserva": true,
+        "salario": null,
+        "escolaridade": "Médio",
+        "requisitos": "Ensino Médio completo ou curso Técnico de Defesa Civil + CNH B",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Assistente Social",
+        "vagas": 6,
+        "cadastro_reserva": true,
+        "salario": null,
+        "escolaridade": "Superior",
+        "requisitos": "Curso Superior Completo em Assistência Social, com registro no Conselho de Classe",
+        "jornada_horas": 30,
+        "materias": []
+      },
+      {
+        "nome": "Auxiliar Administrativo",
+        "vagas": 12,
+        "cadastro_reserva": true,
+        "salario": null,
+        "escolaridade": "Fundamental",
+        "requisitos": "Ensino Fundamental Completo",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Auxiliar de Cuidados Dentários",
+        "vagas": 2,
+        "cadastro_reserva": true,
+        "salario": null,
+        "escolaridade": "Fundamental",
+        "requisitos": "Ensino Fundamental Completo",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Auxiliar de Farmácia",
+        "vagas": 4,
+        "cadastro_reserva": true,
+        "salario": null,
+        "escolaridade": "Médio",
+        "requisitos": "Ensino Médio Completo ou Curso Técnico de Auxiliar de Farmácia",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Auxiliar de Serviços Gerais",
+        "vagas": 8,
+        "cadastro_reserva": true,
+        "salario": null,
+        "escolaridade": "Fundamental",
+        "requisitos": "Ensino Fundamental Completo",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Auxiliar de Mecânico",
+        "vagas": 1,
+        "cadastro_reserva": true,
+        "salario": null,
+        "escolaridade": "Fundamental",
+        "requisitos": "Ensino Fundamental Completo",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Borracheiro",
+        "vagas": 0,
+        "cadastro_reserva": true,
+        "salario": null,
+        "escolaridade": "Fundamental",
+        "requisitos": "Ensino Fundamental Completo",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Contador",
+        "vagas": 1,
+        "cadastro_reserva": true,
+        "salario": null,
+        "escolaridade": "Superior",
+        "requisitos": "Curso Superior em Contabilidade Completo com Registro no CRC",
+        "jornada_horas": 20,
+        "materias": []
+      },
+      {
+        "nome": "Coveiro",
+        "vagas": 1,
+        "cadastro_reserva": true,
+        "salario": null,
+        "escolaridade": "Fundamental",
+        "requisitos": "Ensino Fundamental Completo",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Eletricista",
+        "vagas": 1,
+        "cadastro_reserva": true,
+        "salario": null,
+        "escolaridade": "Fundamental",
+        "requisitos": "Ensino Fundamental Completo",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Enfermeiro",
+        "vagas": 4,
+        "cadastro_reserva": true,
+        "salario": null,
+        "escolaridade": "Superior",
+        "requisitos": "Curso Superior Completo em Enfermagem com registro no COREN",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Enfermeiro (12x36)",
+        "vagas": 3,
+        "cadastro_reserva": true,
+        "salario": null,
+        "escolaridade": "Superior",
+        "requisitos": "Curso Superior Completo em Enfermagem com registro no COREN; escala 12x36",
+        "jornada_horas": null,
+        "materias": []
+      },
+      {
+        "nome": "Engenheiro Civil",
+        "vagas": 1,
+        "cadastro_reserva": true,
+        "salario": null,
+        "escolaridade": "Superior",
+        "requisitos": "Curso Superior Completo em Engenharia Civil com Registro no CREA",
+        "jornada_horas": 20,
+        "materias": []
+      },
+      {
+        "nome": "Escriturário",
+        "vagas": 1,
+        "cadastro_reserva": true,
+        "salario": null,
+        "escolaridade": "Médio",
+        "requisitos": "Ensino Médio Completo",
+        "jornada_horas": 20,
+        "materias": []
+      },
+      {
+        "nome": "Farmacêutico",
+        "vagas": 1,
+        "cadastro_reserva": true,
+        "salario": null,
+        "escolaridade": "Superior",
+        "requisitos": "Curso Superior Completo em Farmácia com Registro no CRF",
+        "jornada_horas": 20,
+        "materias": []
+      },
+      {
+        "nome": "Fiscal de Tributos",
+        "vagas": 1,
+        "cadastro_reserva": true,
+        "salario": null,
+        "escolaridade": "Superior",
+        "requisitos": "Curso Superior Completo",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Fisioterapeuta",
+        "vagas": 1,
+        "cadastro_reserva": true,
+        "salario": null,
+        "escolaridade": "Superior",
+        "requisitos": "Curso Superior Completo em Fisioterapia com Registro no CREFITO",
+        "jornada_horas": 20,
+        "materias": []
+      },
+      {
+        "nome": "Fonoaudióloga",
+        "vagas": 2,
+        "cadastro_reserva": true,
+        "salario": null,
+        "escolaridade": "Superior",
+        "requisitos": "Curso Superior Completo em Fonoaudiologia com Registro no CREFONO",
+        "jornada_horas": 20,
+        "materias": []
+      },
+      {
+        "nome": "Gari",
+        "vagas": 10,
+        "cadastro_reserva": true,
+        "salario": null,
+        "escolaridade": null,
+        "requisitos": "Alfabetizado",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Mecânico",
+        "vagas": 1,
+        "cadastro_reserva": true,
+        "salario": null,
+        "escolaridade": "Fundamental",
+        "requisitos": "Ensino Fundamental Completo e Curso Técnico",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Monitor Educacional",
+        "vagas": 10,
+        "cadastro_reserva": true,
+        "salario": null,
+        "escolaridade": "Médio",
+        "requisitos": "Ensino Médio Completo",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Motorista",
+        "vagas": 7,
+        "cadastro_reserva": true,
+        "salario": null,
+        "escolaridade": "Fundamental",
+        "requisitos": "Ensino Fundamental Completo com CNH categoria D",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Nutricionista",
+        "vagas": 1,
+        "cadastro_reserva": true,
+        "salario": null,
+        "escolaridade": "Superior",
+        "requisitos": "Curso Superior em Nutrição Completo com Registro no CRN",
+        "jornada_horas": 20,
+        "materias": []
+      },
+      {
+        "nome": "Operador de Máquinas",
+        "vagas": 5,
+        "cadastro_reserva": true,
+        "salario": null,
+        "escolaridade": "Fundamental",
+        "requisitos": "Ensino Fundamental Completo",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Pedreiro",
+        "vagas": 2,
+        "cadastro_reserva": true,
+        "salario": null,
+        "escolaridade": "Fundamental",
+        "requisitos": "Ensino Fundamental Completo",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor I",
+        "vagas": 14,
+        "cadastro_reserva": true,
+        "salario": null,
+        "escolaridade": null,
+        "requisitos": "Magistério ou Normal Superior Completo",
+        "jornada_horas": 20,
+        "materias": []
+      },
+      {
+        "nome": "Psicólogo",
+        "vagas": 4,
+        "cadastro_reserva": true,
+        "salario": null,
+        "escolaridade": "Superior",
+        "requisitos": "Ensino Superior Completo em Psicologia, inscrito no CRP",
+        "jornada_horas": 30,
+        "materias": []
+      },
+      {
+        "nome": "Psicopedagogo",
+        "vagas": 1,
+        "cadastro_reserva": true,
+        "salario": null,
+        "escolaridade": "Superior",
+        "requisitos": "Graduação em Psicopedagogia ou pós-graduação na área para graduados em Psicologia/Pedagogia",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Técnico de Contabilidade",
+        "vagas": 2,
+        "cadastro_reserva": true,
+        "salario": null,
+        "escolaridade": "Técnico",
+        "requisitos": "Ensino Médio Completo com Curso Técnico",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Técnico de Enfermagem",
+        "vagas": 4,
+        "cadastro_reserva": true,
+        "salario": null,
+        "escolaridade": "Técnico",
+        "requisitos": "Ensino Médio Completo com Curso Técnico, inscrito no COREN",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Técnico de Enfermagem (12x36)",
+        "vagas": 1,
+        "cadastro_reserva": true,
+        "salario": null,
+        "escolaridade": "Técnico",
+        "requisitos": "Ensino Médio Completo com Curso Técnico, inscrito no COREN; escala 12x36",
+        "jornada_horas": null,
+        "materias": []
+      },
+      {
+        "nome": "Técnico em Agropecuária",
+        "vagas": 1,
+        "cadastro_reserva": true,
+        "salario": null,
+        "escolaridade": "Técnico",
+        "requisitos": "Ensino Médio Completo com Curso Técnico",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Técnico em Segurança do Trabalho",
+        "vagas": 1,
+        "cadastro_reserva": true,
+        "salario": null,
+        "escolaridade": "Técnico",
+        "requisitos": "Ensino Médio Completo com Curso Técnico em Segurança do Trabalho",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Técnico em Vigilância Sanitária",
+        "vagas": 0,
+        "cadastro_reserva": true,
+        "salario": null,
+        "escolaridade": "Médio",
+        "requisitos": "Ensino Médio Completo",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Vigia",
+        "vagas": 6,
+        "cadastro_reserva": true,
+        "salario": null,
+        "escolaridade": "Fundamental",
+        "requisitos": "Ensino Fundamental Completo",
+        "jornada_horas": 40,
+        "materias": []
+      }
+    ],
+    "documentos": [
+      {
+        "tipo": "autorizacao",
+        "titulo": "Decreto nº 170/2026 – autoriza a abertura de Concurso Público",
+        "numero": "170/2026",
+        "url": "https://www.diariomunicipal.com.br/amp/materia/8EA31230",
+        "publicado_em": "2026-07-20",
+        "fonte": "AMP-PR",
+        "resumo": null
+      },
+      {
+        "tipo": "outro",
+        "titulo": "Aviso de licitação anulada – Pregão Eletrônico nº 35/2026",
+        "numero": "35/2026",
+        "url": "https://www.diariomunicipal.com.br/amp/materia/12ED2DBC",
+        "publicado_em": "2026-08-31",
+        "fonte": "AMP-PR",
+        "resumo": "Anula a licitação para contratar a banca, por modalidade inadequada; a banca ainda não foi contratada"
+      },
+      {
+        "tipo": "outro",
+        "titulo": "Aviso de licitação – Concorrência nº 19/2026 (contratação da banca do concurso)",
+        "numero": "19/2026",
+        "url": "https://www.diariomunicipal.com.br/amp/materia/97D7593D",
+        "publicado_em": "2026-10-19",
+        "fonte": "AMP-PR",
+        "resumo": "Nova licitação para contratar a banca, com sessão em 14/12/2026; a banca ainda não foi contratada"
+      }
+    ],
+    "conferencia": null,
+    "primeira_varredura": null,
+    "ultima_alteracao": null
+  }
+}

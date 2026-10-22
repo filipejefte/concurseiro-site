@@ -1,0 +1,131 @@
+{
+  "ato": "banca-fafipa-2026-10-15-municipio-de-curitiba-pr-381980a5.md",
+  "atos_extras": [],
+  "trechos": {
+    "salario": "A remuneração dos integrantes do cargo de Fiscal de Obras e Posturas, correspondente ao valor de R$ 4.993,27, é composta por: a) Vencimento Básico, no valor de R$ 3.840,98; b) Gratificação de Responsabilidade Técnica: percentual de 30%, calculado com base no vencimento básico inicial é R$ [...] Agente Administrativo Ensino médio completo Conforme subitem 17.9.1 40h 202 + CR 13 + CR 35 + CR R$ 3.027,73 Fiscal Ensino médio completo Conforme subitem 17.9.2 40h 16 0",
+    "inscricao.inicio": "O período para a realização das inscrições iniciará às 08h do dia 7 de outubro de 2026 até às 23h59min do dia 5 de novembro de 2026 , observado o horário oficial de Brasília – DF, por meio do endereço eletrônico www.fundacaofafipa.org.br. 5",
+    "inscricao.fim": "O período para a realização das inscrições iniciará às 08h do dia 7 de outubro de 2026 até às 23h59min do dia 5 de novembro de 2026 , observado o horário oficial de Brasília – DF, por meio do endereço eletrônico www.fundacaofafipa.org.br. 5",
+    "prova_objetiva": "Aplicação da prova objetiva 13/12/2026 Divulgação do gabarit",
+    "taxa": "TABELA 3.1.1 CARGOS DE NÍVEL MÉDIO VALOR DA TAXA DE INSCRIÇÃO R$ 100,00 QUADRO DE VAGAS CARGO REQUISITOS DO CARGO CH AC [...] TABELA 3.1.2 CARGOS DE NÍVEL MÉDIO-TÉCNICO VALOR DA TAXA DE INSCRIÇÃO R$ 120,00 QUADRO DE VAGAS CARGO REQUISITOS DO CARG",
+    "banca": "O Concurso Público a que se refere o presente Edital será executado pela Fundação FAFIPA – Campus de Paranavaí, CNPJ: 05.566.804/0001 -76, com sede administrativa na Av. Paraná, 794 A - Esquina com Ru",
+    "cidade": "BJETIVA 11.1 A prova objetiva será aplicada no Município de Curitiba, Estado do Paraná. Caso o número de candidatos inscritos exceda a oferta de lugares existentes no Mun",
+    "edital": "EDITAL NORMATIVO Nº 4 Torna público o Edital Normativo do Concurso Público para provimento de vagas nos cargos de Agente Administrativo, Fiscal e Fiscal de Obras e Posturas. A SECRETÁRIA MUNICIPAL DE GESTÃO DE PESSOAL no uso das competência"
+  },
+  "concurso": {
+    "id": "prefeitura-curitiba-pr-2026-edital-04",
+    "ficticio": false,
+    "orgao": "Prefeitura de Curitiba (PR)",
+    "esfera": "municipal",
+    "uf": "PR",
+    "municipio_ibge": "4106902",
+    "cidade": "Curitiba",
+    "nacional": false,
+    "abrangencia": null,
+    "area": "Administrativa",
+    "banca": {
+      "nome": "Fundação FAFIPA",
+      "url": "https://www.fundacaofafipa.org.br"
+    },
+    "inscricao": {
+      "inicio": "2026-10-07",
+      "fim": "2026-11-05",
+      "url": "https://www.fundacaofafipa.org.br/concurso/4209-concurso-publico-do-municipio-de-curitiba-pr-medio"
+    },
+    "isencao_ate": "2026-10-13",
+    "prova_objetiva": "2026-12-13",
+    "local_prova": "Curitiba (PR); data provável, com horário e local divulgados em 03/12/2026 no Cartão de Convocação do Candidato",
+    "taxa": {
+      "min": 100.0,
+      "max": 120.0
+    },
+    "isencao_regras": "Isenção para quem está no CadÚnico (Lei Complementar Municipal 113/2019: NIS válido, cadastro atualizado nos últimos 24 meses e renda familiar de até meio salário mínimo por pessoa) e para doador de sangue (Lei Municipal 9.818/2000); pedido de 07 a 13/10/2026 pelo site da banca",
+    "regime": "Estatutário",
+    "beneficios": [
+      {
+        "nome": "Auxílio-transporte",
+        "valor": null
+      },
+      {
+        "nome": "Auxílio-alimentação",
+        "valor": null
+      },
+      {
+        "nome": "Plano de saúde do Instituto Curitiba de Saúde (ICS), com coparticipação",
+        "valor": null
+      },
+      {
+        "nome": "Previdência complementar",
+        "valor": null
+      },
+      {
+        "nome": "Seguro de vida em grupo",
+        "valor": null
+      }
+    ],
+    "o_que_levar": "Caneta esferográfica transparente, preferencialmente de tinta preta, documento oficial de identificação com foto e o Cartão de Convocação do Candidato; chegar com 40 minutos de antecedência do fechamento dos portões",
+    "cargos": [
+      {
+        "nome": "Agente Administrativo",
+        "vagas": 250,
+        "cadastro_reserva": true,
+        "salario": 3027.73,
+        "escolaridade": "Médio",
+        "requisitos": "Ensino médio completo, com histórico escolar reconhecido; conhecimentos de editor de texto, planilhas e apresentações; disponibilidade para plantões ou escalas, fora do expediente e em fins de semana. 250 vagas (202 de ampla concorrência, 13 para pessoa com deficiência e 35 para pessoas negras e povos indígenas), mais cadastro de reserva em cada grupo.",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Fiscal",
+        "vagas": 20,
+        "cadastro_reserva": false,
+        "salario": 3652.27,
+        "escolaridade": "Médio",
+        "requisitos": "Ensino médio completo; conhecimentos de editor de texto, planilhas e apresentações; Carteira Nacional de Habilitação em situação regular, compatível com o veículo a ser conduzido. 20 vagas (16 de ampla concorrência, 1 para pessoa com deficiência e 3 para pessoas negras e povos indígenas).",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Fiscal de Obras e Posturas",
+        "vagas": 10,
+        "cadastro_reserva": false,
+        "salario": 4993.27,
+        "escolaridade": "Técnico",
+        "requisitos": "Ensino médio completo e curso técnico de nível médio em Edificações. 10 vagas (8 de ampla concorrência, 1 para pessoa com deficiência e 1 para pessoas negras e povos indígenas). Remuneração total de R$ 4.993,27: vencimento básico de R$ 3.840,98 mais Gratificação de Responsabilidade Técnica de 30% (R$ 1.152,29).",
+        "jornada_horas": 40,
+        "materias": []
+      }
+    ],
+    "documentos": [
+      {
+        "tipo": "edital",
+        "titulo": "Edital Normativo nº 4/2026 – versão original",
+        "numero": "4/2026",
+        "url": "https://anexos-r2.selecao.net.br/uploads/889/concursos/2/anexos/d0f604f1-dbf6-47d9-aca0-b263c7772081.pdf",
+        "publicado_em": "2026-09-23",
+        "fonte": "banca",
+        "resumo": null
+      },
+      {
+        "tipo": "edital",
+        "titulo": "Edital Normativo nº 4/2026 – retificado em 07/10/2026",
+        "numero": "4/2026",
+        "url": "https://anexos-r2.selecao.net.br/uploads/889/concursos/2/anexos/c3c39671-b136-4d9a-9ec7-f5851cdbe4d1.pdf",
+        "publicado_em": "2026-10-07",
+        "fonte": "banca",
+        "resumo": null
+      },
+      {
+        "tipo": "edital",
+        "titulo": "Edital Normativo nº 4/2026 – retificado em 15/10/2026 (versão atual)",
+        "numero": "4/2026",
+        "url": "https://anexos-r2.selecao.net.br/uploads/889/concursos/2/anexos/b447fbc7-b804-458d-ae8c-cdd72f6e8950.pdf",
+        "publicado_em": "2026-10-15",
+        "fonte": "banca",
+        "resumo": null
+      }
+    ],
+    "conferencia": null,
+    "primeira_varredura": null,
+    "ultima_alteracao": null
+  }
+}

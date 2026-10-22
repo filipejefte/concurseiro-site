@@ -1,0 +1,67 @@
+{% extends "texto.html" %}
+{% block texto %}
+<p class="pt-capa">Toda ficha do Concurseiro sai de um ato oficial, com link. Os campos que mais importam são conferidos contra o texto desse ato{% if n_nao_conferidos %}; as fichas que ainda não passaram por isso levam o aviso "não conferida"{% else %}, antes de a ficha ir ao ar{% endif %}.</p>
+
+<h2 class="pt-h2">1. As fontes</h2>
+<p>Só diário oficial e site oficial de banca ou de órgão público. Estas são as fontes que a última varredura leu, e o que cada uma cobre:</p>
+<ul>
+  {%- for f in fontes.lidas %}
+  <li><strong><a class="pt-link" href="{{ f.url }}" rel="noopener">{{ f.nome }}</a></strong>: {{ f.cobre }}.{% if f.aviso %} <em>{{ f.aviso }}</em>{% endif %}</li>
+  {%- endfor %}
+  {%- if fontes.bancas %}
+  <li><strong>Sites das bancas organizadoras</strong>, onde está o edital completo (o diário traz só o extrato):
+    <ul>
+      {%- for b in fontes.bancas %}
+      <li><a class="pt-link" href="{{ b.url }}" rel="noopener">{{ b.nome }}</a>: {{ b.cobre }}.</li>
+      {%- endfor %}
+    </ul>
+  </li>
+  {%- endif %}
+</ul>
+<p>As fontes são lidas com calma: no máximo uma página por segundo, respeitando o que cada site permite.</p>
+
+<h3 class="pt-h3">O que ainda não lemos</h3>
+<ul>
+  {%- for n in fontes.nao_lidas %}
+  <li><strong>{{ n.nome }}.</strong> {{ n.motivo }}</li>
+  {%- endfor %}
+</ul>
+
+<h2 class="pt-h2">2. A triagem</h2>
+<p>De cada edição, separamos os atos que falam de concurso público e classificamos cada um: abertura de inscrições, retificação, autorização do concurso, contratação da banca, resultado ou outro. Só os quatro primeiros viram ficha. Processo seletivo simplificado e contratação temporária ficam de fora.</p>
+
+<h2 class="pt-h2">3. A ficha</h2>
+<p>Cada ato vira uma ficha com as mesmas regras:</p>
+<ul>
+  <li>Entra só o que está escrito no ato. Nada é deduzido nem estimado.</li>
+  <li>O que o edital não traz aparece como <span class="cc-ni">Não informado no edital</span>.</li>
+  <li>Retificação atualiza a ficha do mesmo concurso, e o documento novo entra na lista de documentos.</li>
+  <li>"Previsto" só com ato oficial de autorização do concurso ou de contratação da banca.</li>
+  <li>Concurso com inscrição já encerrada na data da varredura não entra.</li>
+</ul>
+
+<h2 class="pt-h2">4. A conferência</h2>
+{%- if n_nao_conferidos %}
+<p><strong>Atenção: {{ n_nao_conferidos }} das {{ n_fichas }} fichas do site ainda não passaram pela conferência.</strong> Elas foram publicadas para o site começar a funcionar e aparecem com o aviso "ficha ainda não conferida". Vale para elas o que está escrito no ato oficial, não o que esta página descreve: confirme os valores e as datas no edital.</p>
+<p>A conferência olha estes campos: salário de cada cargo, início e fim da inscrição, data da prova objetiva, taxa, banca, cidade e link do edital. Nas fichas conferidas, ela funciona assim:</p>
+{%- else %}
+<p>Estes campos são conferidos antes de qualquer concurso ir ao ar: salário de cada cargo, início e fim da inscrição, data da prova objetiva, taxa, banca, cidade e link do edital.</p>
+{%- endif %}
+<ul>
+  <li><strong>Conferência automática.</strong> Um programa procura cada valor no texto do ato, no lugar certo: o salário logo depois do nome do cargo, as datas da inscrição logo depois de "inscrição", a data da prova logo depois de "prova objetiva", e assim por diante. Ele não usa inteligência artificial e não "acha" nada: ou o valor está escrito ali, ou o campo vai para uma pessoa.</li>
+  <li><strong>Conferência de uma pessoa.</strong> Tudo o que a conferência automática não achou é conferido por uma pessoa, contra o ato oficial.</li>
+  <li><strong>Amostra.</strong> Toda semana, 1 em cada 20 campos que passaram na conferência automática também é conferido por uma pessoa, para pegar erro do próprio programa.</li>
+</ul>
+<p>Cada ficha mostra a data da conferência, o ato de onde saiu e a fonte.</p>
+
+<h2 class="pt-h2">5. Por que não usamos sites de notícias de concurso</h2>
+<p>Sites que juntam notícias de concurso são úteis para conferir se nenhum concurso ficou de fora, e só para isso. Copiar deles repetiria os erros deles e tiraria o que importa: saber de onde veio cada número. Por isso toda ficha aponta para o ato oficial.</p>
+
+<h2 class="pt-h2">6. E se a ficha estiver errada?</h2>
+{%- if email %}
+<p>Em toda ficha há o link "Avise a gente", que abre um e-mail já com o endereço da ficha. Você também pode escrever para <a class="pt-link" href="mailto:{{ email }}">{{ email }}</a>. Mande, se puder, o trecho do edital que mostra o valor certo. A correção passa pela mesma conferência.</p>
+{%- else %}
+<p>A ficha é refeita a cada varredura semanal, e a retificação do edital atualiza a ficha do mesmo concurso.</p>
+{%- endif %}
+<p>Mesmo com tudo isso, vale sempre o edital oficial. Antes de se inscrever, leia o edital completo no site da banca.</p>
+{% endblock %}

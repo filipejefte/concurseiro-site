@@ -1,0 +1,41 @@
+{% extends "lista.html" %}
+{% block depois_das_listas %}
+  <section class="pt-secao" aria-labelledby="titulo-regiao">
+    <h2 class="pt-h2" id="titulo-regiao">Perto de {{ g.nome }}, a até 50 km</h2>
+    {%- if g.extra.regiao %}
+    <ul class="pt-lista">
+      {%- for km, x in g.extra.regiao %}
+      <li><a class="pt-linha" href="{{ u(x.path) }}"><span class="pt-linha-txt">
+        <span class="pt-linha-tit">{{ x.orgao }}</span>
+        <span class="pt-linha-sub">{{ x.local }} · a {{ km | round | int }} km · {{ m.dinheiro(x.salario or "salário não informado") }}</span>
+        <span class="pt-prazo pt-prazo-{{ x.situacao }}">{{ x.selo }} · {{ x.prazo_rotulo | lower }} {{ x.prazo }}</span>
+      </span>{{ m.icone("seta", "pt-i pt-seta") }}</a></li>
+      {%- endfor %}
+    </ul>
+    {%- else %}
+    <p class="pt-apoio">Nenhum concurso aberto ou previsto nas cidades a até 50 km agora.</p>
+    {%- endif %}
+  </section>
+
+  <section class="pt-secao" aria-labelledby="titulo-faq">
+    <h2 class="pt-h2" id="titulo-faq">Perguntas frequentes</h2>
+    <div class="pt-faq">
+      <details open>
+        <summary><span>Quantos concursos estão abertos em {{ g.nome }}?</span>{{ m.icone("abaixo") }}</summary>
+        <p>Na varredura de {{ varredura_br }} eram {{ g.abertos | length }} com inscrição aberta na cidade e {{ g.extra.regiao | length }} abertos ou previstos a até 50 km. A lista é atualizada uma vez por semana; a data fica no topo da página.</p>
+      </details>
+      <details>
+        <summary>Onde faço a inscrição?{{ m.icone("abaixo") }}</summary>
+        <p>Só no site da banca organizadora. Na ficha de cada concurso, o botão "Ver edital oficial" leva ao endereço certo. Aqui não há inscrição nem cobrança.</p>
+      </details>
+      <details>
+        <summary>O salário mostrado é o que eu recebo?{{ m.icone("abaixo") }}</summary>
+        <p>É o salário inicial bruto do edital, antes dos descontos. Benefícios aparecem à parte.</p>
+      </details>
+      <details>
+        <summary><span>Como fico sabendo de concurso novo em {{ g.nome }}?</span>{{ m.icone("abaixo") }}</summary>
+        <p>Pelos canais de alerta: toque em "Avise-me". Você entra e sai quando quiser, sem cadastro no site.</p>
+      </details>
+    </div>
+  </section>
+{% endblock %}

@@ -1,0 +1,536 @@
+{
+  "ato": "dou-2026-09-28-ministerio-da-educacao-universidade-fede-b70c740b.md",
+  "atos_extras": [
+    "dou-2026-09-28-ministerio-da-educacao-universidade-fede-b70c740b-extra-1.md",
+    "dou-2026-09-28-ministerio-da-educacao-universidade-fede-b70c740b-extra-2.md",
+    "dou-2026-09-28-ministerio-da-educacao-universidade-fede-b70c740b-extra-3.md",
+    "dou-2026-09-28-ministerio-da-educacao-universidade-fede-b70c740b-extra-4.md",
+    "dou-2026-09-29-ministerio-da-educacao-universidade-fede-20e1c82d.md",
+    "dou-2026-10-02-ministerio-da-educacao-universidade-fede-ea46252b.md",
+    "dou-2026-10-06-ministerio-da-educacao-universidade-fede-16c1fa69.md",
+    "dou-2026-10-14-ministerio-da-educacao-universidade-fede-766a4166.md"
+  ],
+  "trechos": {
+    "salario": "2.12 A remuneração correspondente à classe, nível de capacitação e padrão iniciais do cargo tem valor mensal de: TABELA 2.4 [...] Classe D R$ 3.181,39 [...] Classe E R$ 5.215,39",
+    "inscricao.inicio": "5.3.1 O período para a realização das inscrições via internet será a partir das 10h00min do dia 28/09/2026 às 23h59min do dia 29/10/2026, observado horário oficial de Brasília/DF, através do endereço eletrônico www.avalia.org.br.",
+    "inscricao.fim": "5.3.1 O período para a realização das inscrições via internet será a partir das 10h00min do dia 28/09/2026 às 23h59min do dia 29/10/2026, observado horário oficial de Brasília/DF, através do endereço eletrônico www.avalia.org.br.",
+    "prova_objetiva": "11.2 As Provas Objetiva e de Redação serão aplicadas na data provável de 20 de dezembro de 2026, em horário e local a serem informados através de edital disponibilizado no endereço eletrônico www.avalia.org.br",
+    "taxa": "2.3 As taxas de inscrição terão os seguintes valores TABELA 2.3 [...] Classe D R$ 100,00 [...] Classe E R$ 150,00",
+    "banca": "1.1 O Concurso Público, a que se refere o presente Edital, será executado pelo Instituto Avalia, com sede na Avenida Carneiro Leão, nº 563",
+    "cidade": "TABELA 2.1 CAMPUS SALVADOR [...] TABELA 2.2 CAMPUS VITÓRIA DA CONQUISTA [...] 11.1 As Provas Objetiva e de Redação serão aplicadas nas cidades de Salvador, Vitória da Conquista, Barreiras, Teixeira de Freitas e Juazeiro, estado da Bahia",
+    "edital": "EDITAL Nº 7, DE 25 DE SETEMBRO DE 2026 CONCURSO PÚBLICO PARA PROVIMENTO DE CARGOS DE TÉCNICOS-ADMINISTRATIVOS"
+  },
+  "concurso": {
+    "id": "ufba-2026-edital-07",
+    "ficticio": false,
+    "orgao": "Universidade Federal da Bahia (UFBA)",
+    "esfera": "federal",
+    "uf": "BA",
+    "municipio_ibge": null,
+    "cidade": "Salvador",
+    "nacional": false,
+    "abrangencia": null,
+    "area": "Administrativa",
+    "banca": {
+      "nome": "Instituto Avalia",
+      "url": "https://www.avalia.org.br"
+    },
+    "inscricao": {
+      "inicio": "2026-09-28",
+      "fim": "2026-10-29",
+      "url": "https://www.avalia.org.br"
+    },
+    "isencao_ate": "2026-10-05",
+    "prova_objetiva": "2026-12-20",
+    "local_prova": "Salvador, Vitória da Conquista, Barreiras, Teixeira de Freitas e Juazeiro (BA), podendo ser também em cidades vizinhas; prova prática dos cargos de Músico em Salvador",
+    "taxa": {
+      "min": 100.0,
+      "max": 150.0
+    },
+    "isencao_regras": "Isenção para inscritos no CadÚnico e doadores de medula óssea (Lei 13.656/2018); pedido de 28/09 a 05/10/2026 em www.avalia.org.br (doador envia comprovante até 06/10/2026)",
+    "regime": "Estatutário (Lei 8.112/1990), carreira dos técnico-administrativos em educação (Lei 11.091/2005)",
+    "beneficios": [
+      {
+        "nome": "Auxílio-alimentação (40/30/25/24 horas)",
+        "valor": 1192.0
+      },
+      {
+        "nome": "Auxílio-alimentação (20 horas)",
+        "valor": 587.5
+      },
+      {
+        "nome": "Auxílio creche e pré-escolar (até R$ 526,64 por dependente com menos de 6 anos)",
+        "valor": null
+      },
+      {
+        "nome": "Incentivo à Qualificação e à Capacitação (Lei 11.091/2005)",
+        "valor": null
+      },
+      {
+        "nome": "Vale-transporte",
+        "valor": null
+      },
+      {
+        "nome": "Auxílio saúde",
+        "valor": null
+      }
+    ],
+    "o_que_levar": "Caneta esferográfica transparente de tinta azul ou preta, documento oficial de identificação com foto e o Cartão de Informação do Candidato impresso (www.avalia.org.br)",
+    "cargos": [
+      {
+        "nome": "Assistente em Administração",
+        "vagas": 100,
+        "cadastro_reserva": false,
+        "salario": 3181.39,
+        "escolaridade": "Médio",
+        "requisitos": "Código 201; Classe D; Campus Salvador; ensino médio profissionalizante ou médio completo (vagas ampliadas de 94 para 100 pela Retificação nº 4)",
+        "jornada_horas": 40,
+        "materias": [
+          "Língua Portuguesa",
+          "Noções de Informática",
+          "Administração Pública",
+          "Conhecimentos Específicos",
+          "Redação"
+        ]
+      },
+      {
+        "nome": "Técnico em Contabilidade",
+        "vagas": 3,
+        "cadastro_reserva": false,
+        "salario": 3181.39,
+        "escolaridade": "Técnico",
+        "requisitos": "Código 202; Classe D; Campus Salvador; médio profissionalizante ou médio completo mais curso técnico na área; registro no conselho competente",
+        "jornada_horas": 40,
+        "materias": [
+          "Língua Portuguesa",
+          "Noções de Informática",
+          "Administração Pública",
+          "Conhecimentos Específicos",
+          "Redação"
+        ]
+      },
+      {
+        "nome": "Técnico em Enfermagem",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 3181.39,
+        "escolaridade": "Técnico",
+        "requisitos": "Código 203; Classe D; Campus Salvador; médio profissionalizante ou médio completo mais curso técnico na área; registro no COREN",
+        "jornada_horas": 40,
+        "materias": [
+          "Língua Portuguesa",
+          "Noções de Informática",
+          "Administração Pública",
+          "Conhecimentos Específicos",
+          "Redação"
+        ]
+      },
+      {
+        "nome": "Técnico de Laboratório/Química",
+        "vagas": 2,
+        "cadastro_reserva": false,
+        "salario": 3181.39,
+        "escolaridade": "Técnico",
+        "requisitos": "Código 204; Classe D; Campus Salvador; médio profissionalizante ou médio completo mais curso técnico na área; registro no conselho competente quando houver; tem prova de títulos",
+        "jornada_horas": 40,
+        "materias": [
+          "Língua Portuguesa",
+          "Noções de Informática",
+          "Administração Pública",
+          "Conhecimentos Específicos",
+          "Redação"
+        ]
+      },
+      {
+        "nome": "Técnico de Laboratório/Refrigeração e Climatização",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 3181.39,
+        "escolaridade": "Técnico",
+        "requisitos": "Código 205; Classe D; Campus Salvador; médio profissionalizante na área ou ensino médio completo com curso técnico em Refrigeração e Climatização; tem prova de títulos",
+        "jornada_horas": 40,
+        "materias": [
+          "Língua Portuguesa",
+          "Noções de Informática",
+          "Administração Pública",
+          "Conhecimentos Específicos",
+          "Redação"
+        ]
+      },
+      {
+        "nome": "Técnico de Tecnologia da Informação",
+        "vagas": 4,
+        "cadastro_reserva": false,
+        "salario": 3181.39,
+        "escolaridade": "Técnico",
+        "requisitos": "Código 206; Classe D; Campus Salvador; médio profissionalizante ou médio completo mais curso técnico na área de TI",
+        "jornada_horas": 40,
+        "materias": [
+          "Língua Portuguesa",
+          "Raciocínio Lógico",
+          "Administração Pública",
+          "Conhecimentos Específicos",
+          "Redação"
+        ]
+      },
+      {
+        "nome": "Técnico de Laboratório/Análises Clínicas",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 3181.39,
+        "escolaridade": "Técnico",
+        "requisitos": "Código 207; Classe D; Campus Vitória da Conquista (lotação alterada pela Retificação nº 1); médio profissionalizante ou médio completo mais curso técnico na área",
+        "jornada_horas": 40,
+        "materias": [
+          "Língua Portuguesa",
+          "Noções de Informática",
+          "Administração Pública",
+          "Conhecimentos Específicos",
+          "Redação"
+        ]
+      },
+      {
+        "nome": "Administrador",
+        "vagas": 5,
+        "cadastro_reserva": false,
+        "salario": 5215.39,
+        "escolaridade": "Superior",
+        "requisitos": "Código 401; Classe E; Campus Salvador; curso superior em Administração e registro no conselho competente",
+        "jornada_horas": 40,
+        "materias": [
+          "Língua Portuguesa",
+          "Noções de Informática",
+          "Administração Pública",
+          "Conhecimentos Específicos",
+          "Redação"
+        ]
+      },
+      {
+        "nome": "Analista de Tecnologia da Informação",
+        "vagas": 3,
+        "cadastro_reserva": false,
+        "salario": 5215.39,
+        "escolaridade": "Superior",
+        "requisitos": "Código 402; Classe E; Campus Salvador; graduação na área de Tecnologia da Informação (vagas ampliadas de 1 para 3 pela Retificação nº 4)",
+        "jornada_horas": 40,
+        "materias": [
+          "Língua Portuguesa",
+          "Raciocínio Lógico",
+          "Administração Pública",
+          "Conhecimentos Específicos",
+          "Redação"
+        ]
+      },
+      {
+        "nome": "Arquiteto Urbanista",
+        "vagas": 2,
+        "cadastro_reserva": false,
+        "salario": 5215.39,
+        "escolaridade": "Superior",
+        "requisitos": "Código 403; Classe E; Campus Salvador; curso superior em Arquitetura e registro no conselho competente; tem prova de títulos",
+        "jornada_horas": 40,
+        "materias": [
+          "Língua Portuguesa",
+          "Noções de Informática",
+          "Administração Pública",
+          "Conhecimentos Específicos",
+          "Redação"
+        ]
+      },
+      {
+        "nome": "Bibliotecário/Documentalista",
+        "vagas": 4,
+        "cadastro_reserva": false,
+        "salario": 5215.39,
+        "escolaridade": "Superior",
+        "requisitos": "Código 404; Classe E; Campus Salvador; curso superior em Biblioteconomia ou Ciências da Informação e registro no conselho competente",
+        "jornada_horas": 40,
+        "materias": [
+          "Língua Portuguesa",
+          "Noções de Informática",
+          "Administração Pública",
+          "Conhecimentos Específicos",
+          "Redação"
+        ]
+      },
+      {
+        "nome": "Contador",
+        "vagas": 2,
+        "cadastro_reserva": false,
+        "salario": 5215.39,
+        "escolaridade": "Superior",
+        "requisitos": "Código 405; Classe E; Campus Salvador; curso superior em Ciências Contábeis e registro no conselho competente",
+        "jornada_horas": 40,
+        "materias": [
+          "Língua Portuguesa",
+          "Noções de Informática",
+          "Administração Pública",
+          "Conhecimentos Específicos",
+          "Redação"
+        ]
+      },
+      {
+        "nome": "Enfermeiro/Área",
+        "vagas": 2,
+        "cadastro_reserva": false,
+        "salario": 5215.39,
+        "escolaridade": "Superior",
+        "requisitos": "Código 406; Classe E; Campus Salvador; curso superior em Enfermagem e registro no conselho competente; tem prova de títulos",
+        "jornada_horas": 40,
+        "materias": [
+          "Língua Portuguesa",
+          "Noções de Informática",
+          "Administração Pública",
+          "Conhecimentos Específicos",
+          "Redação"
+        ]
+      },
+      {
+        "nome": "Engenheiro Civil",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 5215.39,
+        "escolaridade": "Superior",
+        "requisitos": "Código 407; Classe E; Campus Salvador; curso superior em Engenharia Civil e registro no conselho competente; tem prova de títulos",
+        "jornada_horas": 40,
+        "materias": [
+          "Língua Portuguesa",
+          "Noções de Informática",
+          "Administração Pública",
+          "Conhecimentos Específicos",
+          "Redação"
+        ]
+      },
+      {
+        "nome": "Médico/Generalista",
+        "vagas": 3,
+        "cadastro_reserva": false,
+        "salario": 5215.39,
+        "escolaridade": "Superior",
+        "requisitos": "Código 408.1; Classe E; Campus Salvador; curso superior em Medicina e registro no conselho competente (requisito retificado pela Retificação nº 2); tem prova de títulos; regime pode passar a 40 h",
+        "jornada_horas": 20,
+        "materias": [
+          "Língua Portuguesa",
+          "Noções de Informática",
+          "Administração Pública",
+          "Conhecimentos Específicos",
+          "Redação"
+        ]
+      },
+      {
+        "nome": "Médico/Psiquiatra",
+        "vagas": 2,
+        "cadastro_reserva": false,
+        "salario": 5215.39,
+        "escolaridade": "Superior",
+        "requisitos": "Código 408.2; Classe E; Campus Salvador; Medicina com residência médica e/ou especialização em Psiquiatria e registro no conselho; tem prova de títulos; regime pode passar a 40 h",
+        "jornada_horas": 20,
+        "materias": [
+          "Língua Portuguesa",
+          "Noções de Informática",
+          "Administração Pública",
+          "Conhecimentos Específicos",
+          "Redação"
+        ]
+      },
+      {
+        "nome": "Médico/Cardiologista",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 5215.39,
+        "escolaridade": "Superior",
+        "requisitos": "Código 408.3; Classe E; Campus Salvador; Medicina com residência médica e/ou especialização em Cardiologia e registro no conselho; tem prova de títulos; regime pode passar a 40 h",
+        "jornada_horas": 20,
+        "materias": [
+          "Língua Portuguesa",
+          "Noções de Informática",
+          "Administração Pública",
+          "Conhecimentos Específicos",
+          "Redação"
+        ]
+      },
+      {
+        "nome": "Médico/Dermatologista",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 5215.39,
+        "escolaridade": "Superior",
+        "requisitos": "Código 408.4; Classe E; Campus Salvador; Medicina com residência médica e/ou especialização em Dermatologia e registro no conselho; tem prova de títulos; regime pode passar a 40 h",
+        "jornada_horas": 20,
+        "materias": [
+          "Língua Portuguesa",
+          "Noções de Informática",
+          "Administração Pública",
+          "Conhecimentos Específicos",
+          "Redação"
+        ]
+      },
+      {
+        "nome": "Médico Veterinário - Área: Patologia Veterinária e Patologia Clínica Veterinária",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 5215.39,
+        "escolaridade": "Superior",
+        "requisitos": "Código 409; Classe E; Campus Salvador; curso superior em Medicina Veterinária e registro no conselho; tem prova oral/prática; regime pode passar a 40 h",
+        "jornada_horas": 20,
+        "materias": [
+          "Língua Portuguesa",
+          "Noções de Informática",
+          "Administração Pública",
+          "Conhecimentos Específicos",
+          "Redação"
+        ]
+      },
+      {
+        "nome": "Músico/Trompete",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 5215.39,
+        "escolaridade": "Superior",
+        "requisitos": "Código 410.1; Classe E; Campus Salvador; curso superior em Música; só prova prática, em Salvador",
+        "jornada_horas": 25,
+        "materias": []
+      },
+      {
+        "nome": "Músico/Trombone",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 5215.39,
+        "escolaridade": "Superior",
+        "requisitos": "Código 410.2; Classe E; Campus Salvador; curso superior em Música; só prova prática, em Salvador",
+        "jornada_horas": 25,
+        "materias": []
+      },
+      {
+        "nome": "Pedagogo/Área",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 5215.39,
+        "escolaridade": "Superior",
+        "requisitos": "Código 411; Classe E; Campus Salvador; curso superior completo em Pedagogia",
+        "jornada_horas": 40,
+        "materias": [
+          "Língua Portuguesa",
+          "Noções de Informática",
+          "Administração Pública",
+          "Conhecimentos Específicos",
+          "Redação"
+        ]
+      },
+      {
+        "nome": "Terapeuta Ocupacional",
+        "vagas": 2,
+        "cadastro_reserva": false,
+        "salario": 5215.39,
+        "escolaridade": "Superior",
+        "requisitos": "Código 412; Classe E; Campus Salvador; curso superior em Terapia Ocupacional",
+        "jornada_horas": 30,
+        "materias": [
+          "Língua Portuguesa",
+          "Noções de Informática",
+          "Administração Pública",
+          "Conhecimentos Específicos",
+          "Redação"
+        ]
+      },
+      {
+        "nome": "Médico/Ginecologia e Obstetrícia",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 5215.39,
+        "escolaridade": "Superior",
+        "requisitos": "Código 413.1; Classe E; Campus Vitória da Conquista; Medicina com residência e/ou especialização em Ginecologia e Obstetrícia e registro no conselho; regime pode passar a 40 h",
+        "jornada_horas": 20,
+        "materias": [
+          "Língua Portuguesa",
+          "Noções de Informática",
+          "Administração Pública",
+          "Conhecimentos Específicos",
+          "Redação"
+        ]
+      },
+      {
+        "nome": "Médico/Pediatra",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 5215.39,
+        "escolaridade": "Superior",
+        "requisitos": "Código 413.2; Classe E; Campus Vitória da Conquista; Medicina com residência e/ou especialização em Pediatria e registro no conselho; regime pode passar a 40 h",
+        "jornada_horas": 20,
+        "materias": [
+          "Língua Portuguesa",
+          "Noções de Informática",
+          "Administração Pública",
+          "Conhecimentos Específicos",
+          "Redação"
+        ]
+      },
+      {
+        "nome": "Médico/Cirurgia Geral",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 5215.39,
+        "escolaridade": "Superior",
+        "requisitos": "Código 413.3; Classe E; Campus Vitória da Conquista; Medicina com residência médica em Cirurgia e/ou especialização em Clínica Cirúrgica e registro no conselho; regime pode passar a 40 h",
+        "jornada_horas": 20,
+        "materias": [
+          "Língua Portuguesa",
+          "Noções de Informática",
+          "Administração Pública",
+          "Conhecimentos Específicos",
+          "Redação"
+        ]
+      }
+    ],
+    "documentos": [
+      {
+        "tipo": "edital",
+        "titulo": "Edital nº 7, de 25 de setembro de 2026 – Concurso público para cargos técnico-administrativos",
+        "numero": "7/2026",
+        "url": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=28/09/2026&jornal=530&pagina=41",
+        "publicado_em": "2026-09-28",
+        "fonte": "DOU",
+        "resumo": null
+      },
+      {
+        "tipo": "retificacao",
+        "titulo": "Retificação nº 1 do Edital nº 7/2026",
+        "numero": "7/2026",
+        "url": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=29/09/2026&jornal=530&pagina=56",
+        "publicado_em": "2026-09-29",
+        "fonte": "DOU",
+        "resumo": "Separa as tabelas por campus, leva o cargo 207 (Técnico de Laboratório/Análises Clínicas) para o Campus Vitória da Conquista e ajusta isenção e conteúdos"
+      },
+      {
+        "tipo": "retificacao",
+        "titulo": "Retificação nº 2 do Edital nº 7/2026",
+        "numero": "7/2026",
+        "url": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=02/10/2026&jornal=530&pagina=51",
+        "publicado_em": "2026-10-02",
+        "fonte": "DOU",
+        "resumo": "Requisito do cargo 408.1 (Médico/Generalista) passa a ser curso superior em Medicina e registro no conselho"
+      },
+      {
+        "tipo": "retificacao",
+        "titulo": "Retificação nº 3 do Edital nº 7/2026",
+        "numero": "7/2026",
+        "url": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=06/10/2026&jornal=530&pagina=40",
+        "publicado_em": "2026-10-06",
+        "fonte": "DOU",
+        "resumo": "Altera o item 10 do conteúdo programático do cargo 206 (Técnico de Tecnologia da Informação)"
+      },
+      {
+        "tipo": "retificacao",
+        "titulo": "Retificação nº 4 do Edital nº 7/2026",
+        "numero": "7/2026",
+        "url": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=14/10/2026&jornal=530&pagina=49",
+        "publicado_em": "2026-10-14",
+        "fonte": "DOU",
+        "resumo": "Amplia as vagas de Assistente em Administração (94 para 100) e de Analista de Tecnologia da Informação (1 para 3) e ajusta tabelas de redação, títulos e conteúdos"
+      }
+    ],
+    "conferencia": null,
+    "primeira_varredura": null,
+    "ultima_alteracao": null
+  }
+}

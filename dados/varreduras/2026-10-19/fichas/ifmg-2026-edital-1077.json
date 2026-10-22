@@ -1,0 +1,351 @@
+{
+  "ato": "dou-2026-10-07-ministerio-da-educacao-instituto-federal-4a4884e1.md",
+  "atos_extras": [
+    "dou-2026-10-13-ministerio-da-educacao-instituto-federal-a6447775.md",
+    "dou-2026-10-13-ministerio-da-educacao-instituto-federal-ede69ddd.md",
+    "dou-2026-10-07-ministerio-da-educacao-instituto-federal-4a4884e1-extra-1.md"
+  ],
+  "trechos": {
+    "salario": "Quadro II - Remuneração Título Vencimento Básico Ret. por Titulação Auxílio Alimentação Total Graduação R$ 6.397,19 R$ 0,00 R$ 1.192,00 R$ 7.589,19",
+    "inscricao.inicio": "2.1. As inscrições serão realizadas exclusivamente via Internet, no período previsto de 13/10/2026 até 13/11/2026, até às 18h00, no horário de Brasília, conforme Cronograma - Anexo I.",
+    "inscricao.fim": "2.1. As inscrições serão realizadas exclusivamente via Internet, no período previsto de 13/10/2026 até 13/11/2026, até às 18h00, no horário de Brasília, conforme Cronograma - Anexo I.",
+    "prova_objetiva": "Realização das Provas Objetiva e Dissertativa 24/01/2027",
+    "taxa": "2.4. O valor da taxa de inscrição será de R$ 250,00 (duzentos e cinquenta reais).",
+    "banca": "1.1. O Concurso Público a que se refere este Edital será realizado pelo IFMG, regido por este documento, seus anexos e eventuais retificações, que estarão disponíveis no endereço: https://portal.concursos.ifmg.edu.br/.",
+    "cidade": "Av. Professor Mário Werneck, 2590 - Bairro Buritis - CEP 30575-180 - Belo Horizonte - MG [...] 7.3.2.2. Para os demais cargos/áreas que não apresentarem a opção de escolha do local no sistema de inscrição, a Prova Objetiva será realizada, obrigatoriamente, no município do Campus da vaga pleiteada.",
+    "edital": "EDITAL Nº 1.077, DE 6 DE OUTUBRO DE 2026 CONCURSO PÚBLICO DE PROVAS E TÍTULOS PARA O PROVIMENTO DOS CARGOS DA CARREIRA DO MAGISTÉRIO DO ENSINO BÁSICO, TÉCNICO E TECNOLÓGICO"
+  },
+  "concurso": {
+    "id": "ifmg-2026-edital-1077",
+    "ficticio": false,
+    "orgao": "Instituto Federal de Educação, Ciência e Tecnologia de Minas Gerais (IFMG)",
+    "esfera": "federal",
+    "uf": "MG",
+    "municipio_ibge": null,
+    "cidade": "Belo Horizonte",
+    "nacional": false,
+    "abrangencia": null,
+    "area": "Educação",
+    "banca": {
+      "nome": "IFMG (Comissão Central de Concurso Público)",
+      "url": "https://portal.concursos.ifmg.edu.br/"
+    },
+    "inscricao": {
+      "inicio": "2026-10-13",
+      "fim": "2026-11-13",
+      "url": "https://portal.concursos.ifmg.edu.br/"
+    },
+    "isencao_ate": "2026-10-14",
+    "prova_objetiva": "2027-01-24",
+    "local_prova": "No município do campus da vaga; nas áreas com vagas em mais de um campus, a pessoa escolhe na inscrição o local da prova objetiva e dissertativa entre as opções do sistema",
+    "taxa": {
+      "min": 250.0,
+      "max": 250.0
+    },
+    "isencao_regras": "Isenção para inscritos no CadÚnico, doadores de medula óssea (Lei 13.656/2018) e pessoas em hipossuficiência econômica (Anexo XI); pedido de 13/10 a 14/10/2026, pela internet",
+    "regime": "Estatutário (Lei 8.112/1990)",
+    "beneficios": [
+      {
+        "nome": "Auxílio-alimentação",
+        "valor": 1192.0
+      },
+      {
+        "nome": "Auxílio-transporte",
+        "valor": null
+      },
+      {
+        "nome": "Auxílio pré-escolar",
+        "valor": null
+      },
+      {
+        "nome": "Ressarcimento de plano de saúde",
+        "valor": null
+      }
+    ],
+    "o_que_levar": null,
+    "cargos": [
+      {
+        "nome": "Professor EBTT – Ciências Biológicas (Ibirité, Bom Despacho)",
+        "vagas": 2,
+        "cadastro_reserva": false,
+        "salario": 6397.19,
+        "escolaridade": "Superior",
+        "requisitos": "Área 1 do Quadro I-B; campus: Ibirité, Bom Despacho; 40 h com dedicação exclusiva; licenciatura em Ciências Biológicas ou em Biologia; titulação mínima: graduação (a remuneração sobe com a retribuição por titulação, Quadro II do edital)",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor EBTT – Educação Física (Sabará)",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 6397.19,
+        "escolaridade": "Superior",
+        "requisitos": "Área 2 do Quadro I-B; campus: Sabará; 40 h com dedicação exclusiva; licenciatura em Educação Física; titulação mínima: graduação (a remuneração sobe com a retribuição por titulação, Quadro II do edital)",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor EBTT – Enfermagem (Piumhi)",
+        "vagas": 3,
+        "cadastro_reserva": false,
+        "salario": 6397.19,
+        "escolaridade": "Superior",
+        "requisitos": "Área 3 do Quadro I-B; campus: Piumhi; 40 h com dedicação exclusiva; bacharelado em Enfermagem; titulação mínima: graduação (a remuneração sobe com a retribuição por titulação, Quadro II do edital)",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor EBTT – Engenharia de Controle e Automação – Automação Industrial (Betim)",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 6397.19,
+        "escolaridade": "Superior",
+        "requisitos": "Área 4 do Quadro I-B; campus: Betim; 40 h com dedicação exclusiva; bacharelado em Engenharia Eletrônica, de Controle e Automação, Elétrica ou Mecatrônica; titulação mínima: graduação (a remuneração sobe com a retribuição por titulação, Quadro II do edital)",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor EBTT – Engenharia de Controle e Automação – Controle de sistemas (Betim)",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 6397.19,
+        "escolaridade": "Superior",
+        "requisitos": "Área 5 do Quadro I-B; campus: Betim; 40 h com dedicação exclusiva; bacharelado em Engenharia Eletrônica, de Controle e Automação, Elétrica ou Mecatrônica; titulação mínima: graduação (a remuneração sobe com a retribuição por titulação, Quadro II do edital)",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor EBTT – Engenharia de Controle e Automação (Ibirité)",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 6397.19,
+        "escolaridade": "Superior",
+        "requisitos": "Área 6 do Quadro I-B; campus: Ibirité; 40 h com dedicação exclusiva; bacharelado em Engenharia de Controle e Automação; titulação mínima: graduação (a remuneração sobe com a retribuição por titulação, Quadro II do edital)",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor EBTT – Engenharia de Controle e Automação (Sabará)",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 6397.19,
+        "escolaridade": "Superior",
+        "requisitos": "Área 7 do Quadro I-B; campus: Sabará; 40 h com dedicação exclusiva; bacharelado em Engenharia de Controle e Automação ou Mecatrônica; titulação mínima: graduação (a remuneração sobe com a retribuição por titulação, Quadro II do edital)",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor EBTT – Engenharia Elétrica (Ibirité e Itabirito)",
+        "vagas": 2,
+        "cadastro_reserva": false,
+        "salario": 6397.19,
+        "escolaridade": "Superior",
+        "requisitos": "Área 8 do Quadro I-B; campus: Ibirité e Itabirito; 40 h com dedicação exclusiva; bacharelado em Engenharia Elétrica; titulação mínima: graduação (a remuneração sobe com a retribuição por titulação, Quadro II do edital)",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor EBTT – Engenharia Elétrica e Eletrônica (Ibirité e Itabirito)",
+        "vagas": 2,
+        "cadastro_reserva": false,
+        "salario": 6397.19,
+        "escolaridade": "Superior",
+        "requisitos": "Área 9 do Quadro I-B; campus: Ibirité e Itabirito; 40 h com dedicação exclusiva; bacharelado em Engenharia Elétrica, Eletrônica, de Controle e Automação ou Mecatrônica; titulação mínima: graduação (a remuneração sobe com a retribuição por titulação, Quadro II do edital)",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor EBTT – Engenharia Elétrica, Eletrônica ou de Controle e Automação (Formiga)",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 6397.19,
+        "escolaridade": "Superior",
+        "requisitos": "Área 10 do Quadro I-B; campus: Formiga; 40 h com dedicação exclusiva; bacharelado em Engenharia Elétrica, Eletrônica, de Controle e Automação ou de Energia; titulação mínima: graduação (a remuneração sobe com a retribuição por titulação, Quadro II do edital)",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor EBTT – Física (Betim, Itabirito e Piumhi)",
+        "vagas": 3,
+        "cadastro_reserva": false,
+        "salario": 6397.19,
+        "escolaridade": "Superior",
+        "requisitos": "Área 11 do Quadro I-B; campus: Betim, Itabirito e Piumhi; 40 h com dedicação exclusiva; licenciatura em Física; titulação mínima: graduação (a remuneração sobe com a retribuição por titulação, Quadro II do edital)",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor EBTT – Geografia (Piumhi, João Monlevade, Bom Despacho)",
+        "vagas": 3,
+        "cadastro_reserva": false,
+        "salario": 6397.19,
+        "escolaridade": "Superior",
+        "requisitos": "Área 12 do Quadro I-B; campus: Piumhi, João Monlevade, Bom Despacho; 40 h com dedicação exclusiva; licenciatura (ou licenciatura plena) em Geografia; titulação mínima: graduação (a remuneração sobe com a retribuição por titulação, Quadro II do edital)",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor EBTT – História (Ipatinga, João Monlevade, Bom Despacho)",
+        "vagas": 3,
+        "cadastro_reserva": false,
+        "salario": 6397.19,
+        "escolaridade": "Superior",
+        "requisitos": "Área 13 do Quadro I-B; campus: Ipatinga, João Monlevade, Bom Despacho; 40 h com dedicação exclusiva; licenciatura (ou licenciatura plena) em História; titulação mínima: graduação (a remuneração sobe com a retribuição por titulação, Quadro II do edital)",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor EBTT – Informática / Ciência da Computação / Engenharia de Computação (Ouro Branco, Ibirité, Ribeirão das Neves, Itabirito e Contagem)",
+        "vagas": 6,
+        "cadastro_reserva": false,
+        "salario": 6397.19,
+        "escolaridade": "Superior",
+        "requisitos": "Área 14 do Quadro I-B; campus: Ouro Branco, Ibirité, Ribeirão das Neves, Itabirito e Contagem; 40 h com dedicação exclusiva; bacharelado, licenciatura ou tecnologia em Ciência da Computação, Informática, Engenharia da Computação, Engenharia de Software, Sistemas de Informação, Sistemas de Computação, Análise e Desenvolvimento de Sistemas, Sistemas para Internet ou Análise de Sistemas; titulação mínima: graduação (a remuneração sobe com a retribuição por titulação, Quadro II do edital)",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor EBTT – Informática / Ciência da Computação / Engenharia de Computação (Sabará)",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 6397.19,
+        "escolaridade": "Superior",
+        "requisitos": "Área 15 do Quadro I-B; campus: Sabará; 40 h com dedicação exclusiva; bacharelado, licenciatura ou tecnologia em Ciência da Computação, Informática, Engenharia da Computação, Engenharia de Software, Sistemas de Informação, Sistemas de Computação, Análise e Desenvolvimento de Sistemas, Sistemas para Internet ou Análise de Sistemas; titulação mínima: graduação (a remuneração sobe com a retribuição por titulação, Quadro II do edital)",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor EBTT – Língua Portuguesa, suas Literaturas e Redação (Ribeirão das Neves, Ponte Nova, João Monlevade, Bom Despacho)",
+        "vagas": 4,
+        "cadastro_reserva": false,
+        "salario": 6397.19,
+        "escolaridade": "Superior",
+        "requisitos": "Área 16 do Quadro I-B; campus: Ribeirão das Neves, Ponte Nova, João Monlevade, Bom Despacho; 40 h com dedicação exclusiva; licenciatura em Letras com habilitação em Língua Portuguesa ou em Letras – Língua Portuguesa e suas Literaturas; titulação mínima: graduação (a remuneração sobe com a retribuição por titulação, Quadro II do edital)",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor EBTT – Letras Português/Espanhol (Itabirito)",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 6397.19,
+        "escolaridade": "Superior",
+        "requisitos": "Área 17 do Quadro I-B; campus: Itabirito; 40 h com dedicação exclusiva; licenciatura em Letras Português/Espanhol (ou dupla habilitação); titulação mínima: graduação (a remuneração sobe com a retribuição por titulação, Quadro II do edital)",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor EBTT – Letras Português/Inglês (Bambuí, Contagem, João Monlevade, Bom Despacho)",
+        "vagas": 4,
+        "cadastro_reserva": false,
+        "salario": 6397.19,
+        "escolaridade": "Superior",
+        "requisitos": "Área 18 do Quadro I-B; campus: Bambuí, Contagem, João Monlevade, Bom Despacho; 40 h com dedicação exclusiva; licenciatura em Letras Português/Inglês (ou dupla habilitação); titulação mínima: graduação (a remuneração sobe com a retribuição por titulação, Quadro II do edital)",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor EBTT – Pedagogia (AEE) (Bambuí)",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 6397.19,
+        "escolaridade": "Superior",
+        "requisitos": "Área 19 do Quadro I-B; campus: Bambuí; 40 h com dedicação exclusiva; licenciatura em Educação Especial, ou licenciatura em Pedagogia com pós-graduação lato sensu em Educação Especial ou AEE (mínimo 360 horas); titulação mínima: graduação (a remuneração sobe com a retribuição por titulação, Quadro II do edital)",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor EBTT – Sociologia (Ribeirão das Neves)",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 6397.19,
+        "escolaridade": "Superior",
+        "requisitos": "Área 20 do Quadro I-B; campus: Ribeirão das Neves; 40 h com dedicação exclusiva; licenciatura em Sociologia ou em Ciências Sociais; titulação mínima: graduação (a remuneração sobe com a retribuição por titulação, Quadro II do edital)",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor EBTT – Topografia (Ouro Preto)",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 6397.19,
+        "escolaridade": "Superior",
+        "requisitos": "Área 21 do Quadro I-B; campus: Ouro Preto; 40 h com dedicação exclusiva; bacharelado em Engenharia de Agrimensura e Cartografia, Engenharia de Agrimensura ou Engenharia Cartográfica; titulação mínima: graduação (a remuneração sobe com a retribuição por titulação, Quadro II do edital)",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor EBTT – Filosofia (João Monlevade)",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 6397.19,
+        "escolaridade": "Superior",
+        "requisitos": "Área 22 do Quadro I-B; campus: João Monlevade; 40 h com dedicação exclusiva; licenciatura em Filosofia; titulação mínima: graduação (a remuneração sobe com a retribuição por titulação, Quadro II do edital)",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor EBTT – Marketing / Comunicação Social (Bom Despacho)",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 6397.19,
+        "escolaridade": "Superior",
+        "requisitos": "Área 23 do Quadro I-B; campus: Bom Despacho; 40 h com dedicação exclusiva; bacharelado ou licenciatura em Marketing, Comunicação Social ou Publicidade e Propaganda; titulação mínima: graduação (a remuneração sobe com a retribuição por titulação, Quadro II do edital)",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor EBTT – Pedagogia (AEE) (Bom Despacho, Contagem e João Monlevade)",
+        "vagas": 3,
+        "cadastro_reserva": false,
+        "salario": 6397.19,
+        "escolaridade": "Superior",
+        "requisitos": "Área 24 do Quadro I-B; campus: Bom Despacho, Contagem e João Monlevade; 40 h com dedicação exclusiva; licenciatura em Educação Especial, ou licenciatura em Pedagogia com especialização em Educação Especial ou em AEE (mínimo 360 horas); titulação mínima: graduação (a remuneração sobe com a retribuição por titulação, Quadro II do edital)",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor EBTT – Física (Bambuí)",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 6397.19,
+        "escolaridade": "Superior",
+        "requisitos": "Área 25 do Quadro I-B; campus: Bambuí; 40 h com dedicação exclusiva; licenciatura em Física, em Ciências da Natureza ou em Ciências Naturais; titulação mínima: graduação (a remuneração sobe com a retribuição por titulação, Quadro II do edital)",
+        "jornada_horas": 40,
+        "materias": []
+      }
+    ],
+    "documentos": [
+      {
+        "tipo": "edital",
+        "titulo": "Edital nº 1.077, de 6 de outubro de 2026 – Concurso público para Professor EBTT",
+        "numero": "1077/2026",
+        "url": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=07/10/2026&jornal=530&pagina=39",
+        "publicado_em": "2026-10-07",
+        "fonte": "DOU",
+        "resumo": null
+      },
+      {
+        "tipo": "retificacao",
+        "titulo": "Retificação nº 1 do Concurso Público nº 1077/2026 (edital de 9 de outubro de 2026)",
+        "numero": "1",
+        "url": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=13/10/2026&jornal=530&pagina=54",
+        "publicado_em": "2026-10-13",
+        "fonte": "DOU",
+        "resumo": "Amplia de 33 para 49 vagas (novas áreas e campi, Quadros I-A e I-B) e altera o item 22.8 (reversão de vagas)"
+      },
+      {
+        "tipo": "retificacao",
+        "titulo": "Retificação nº 2 do Concurso Público nº 1077/2026 (edital de 9 de outubro de 2026)",
+        "numero": "2",
+        "url": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=13/10/2026&jornal=530&pagina=55",
+        "publicado_em": "2026-10-13",
+        "fonte": "DOU",
+        "resumo": "Refaz o Anexo II (detalhamento das áreas, requisitos e campi) e regras de lotação"
+      }
+    ],
+    "conferencia": null,
+    "primeira_varredura": null,
+    "ultima_alteracao": null
+  }
+}

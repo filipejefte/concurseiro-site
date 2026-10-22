@@ -1,0 +1,38 @@
+{% extends "texto.html" %}
+{% block texto %}
+<p class="pt-capa">O Concurseiro reúne os concursos públicos com inscrição aberta: de todo o Brasil, de qualquer estado e esfera. O salário vem na frente, e todo concurso leva ao edital oficial.</p>
+
+<h2 class="pt-h2">O que o Concurseiro faz</h2>
+<ul>
+  <li>Lê os diários oficiais uma vez por semana e separa o que é concurso público.</li>
+  <li>Monta uma ficha para cada concurso a partir do ato oficial: salário inicial de cada cargo, vagas, escolaridade, prazos de inscrição, data da prova, taxa, banca e cidade.</li>
+  <li>Confere os campos que mais importam antes de publicar. <a class="pt-link" href="{{ u('/como-conferimos/') }}">Veja como conferimos</a>.</li>
+  <li>Mostra quanto falta para a inscrição acabar e para a prova, e deixa você pôr os prazos na agenda.</li>
+  <li>Avisa dos concursos novos de cada semana pelos <a class="pt-link" href="{{ u('/alertas/') }}">canais de alerta</a>.</li>
+</ul>
+
+<h2 class="pt-h2">O que o Concurseiro não faz</h2>
+<ul>
+  <li><strong>Não é site oficial.</strong> Não fala em nome de nenhum órgão nem de nenhuma banca.</li>
+  <li><strong>Não recebe inscrição nem pagamento.</strong> A inscrição e a taxa são feitas só no site da banca. Se alguém pedir dinheiro em nome do Concurseiro, é golpe.</li>
+  <li>Não substitui o edital. O que vale é sempre o edital oficial e as retificações dele.</li>
+  <li>Não pede cadastro. Você usa o site sem conta, sem senha e sem dar nome, e-mail ou telefone.</li>
+  <li>Não copia sites de notícias de concurso. Os dados vêm só de diário oficial e do site da banca ou do órgão.</li>
+</ul>
+
+<h2 class="pt-h2">As fontes que lemos</h2>
+<p>Só diários oficiais e sites oficiais de bancas organizadoras. O que cada fonte cobre, e o que ainda não lemos, está em <a class="pt-link" href="{{ u('/como-conferimos/') }}">como conferimos os dados</a>.</p>
+
+<h2 class="pt-h2">Cobertura</h2>
+<p>Hoje o Concurseiro cobre:</p>
+<ul>
+  <li><strong>Todo concurso público do Brasil</strong>: órgãos federais, estaduais e municipais, câmaras, autarquias, conselhos e universidades, de qualquer estado.</li>
+  <li>Os concursos chegam pelo Diário Oficial da União, pelos diários do Paraná, pelos sites das bancas organizadoras e por pesquisa com o edital oficial na mão. O que ainda não lemos está listado em <a class="pt-link" href="{{ u('/como-conferimos/') }}">como conferimos os dados</a>.</li>
+</ul>
+<p>Processo seletivo simplificado, contratação temporária, residência e vestibular ficam de fora: não são concurso público.</p>
+<p>Agora há {{ n_abertos }} {{ "concurso" if n_abertos == 1 else "concursos" }} com inscrição aberta no site.</p>
+
+<h2 class="pt-h2">Atualização</h2>
+<p>Uma varredura por semana. A data da última e a da próxima ficam na faixa do topo de toda página. A situação de cada concurso (aberto, encerra esta semana, encerrado) é recalculada todo dia.</p>
+<p>Concurso "previsto" é aquele com ato oficial de autorização ou de contratação da banca, mas sem edital. Ele aparece em <a class="pt-link" href="{{ u('/previstos/') }}">página própria</a> e não entra na conta dos abertos.</p>
+{% endblock %}

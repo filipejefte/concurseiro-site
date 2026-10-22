@@ -18,6 +18,7 @@ from .base import Ato, Fonte
 
 URL_LOGIN = "https://inlabs.in.gov.br/logar.php"
 URL_DOWNLOAD = "https://inlabs.in.gov.br/index.php?p={dia}&dl={dia}-{secao}.zip"
+JANELA_DIAS = 120   # o INLABS guarda 4 meses; pedir dia mais antigo só gera "sem ZIP" e derruba a coleta (3 dias úteis seguidos)
 # DO1: atos normativos (autorização de concurso sai em portaria); DO3: editais e avisos. "E" = edição extra.
 SECOES = ["DO1", "DO3", "DO1E", "DO3E"]
 
@@ -27,9 +28,17 @@ def _texto(trecho_html):
     return html.unescape(re.sub(r"<[^>]+>", " ", trecho)).replace("\xa0", " ")
 
 
+PARTE_DA_MATERIA = re.compile(r"_(\d+)-(\d+)\.xml$", re.I)   # 530_20261005_24450707-2.xml: parte 2 da matéria 24450707
+
+
 def atos_do_zip(corpo, fonte="DOU"):
-    """Lê as matérias de um ZIP do INLABS (um XML por matéria)."""
+    """Lê as matérias de um ZIP do INLABS (um XML por matéria).
+
+    Edital grande vem partido em vários XMLs da mesma matéria (nome terminado em -1, -2, -3...); a primeira parte
+    leva o título e é a que a triagem lê. O texto das outras partes vai em `continuacao` da primeira, para a fila
+    trazer o edital inteiro (o nome do arquivo da fila continua saindo só da primeira parte)."""
     atos = []
+    primeiras, partes = {}, {}
     with zipfile.ZipFile(io.BytesIO(corpo)) as z:
         for nome in z.namelist():
             if not nome.lower().endswith(".xml"):
@@ -46,15 +55,40 @@ def atos_do_zip(corpo, fonte="DOU"):
             corpo_xml = artigo.find("body")
             identifica = corpo_xml.findtext("Identifica", "") if corpo_xml is not None else ""
             texto = _texto(corpo_xml.findtext("Texto", "")) if corpo_xml is not None else ""
-            atos.append(Ato(
+            ato = Ato(
                 fonte=fonte,
                 data=f"{ano}-{mes}-{dia}",
                 titulo=(_texto(identifica).strip() or artigo.get("name", ""))[:300],
                 orgao=artigo.get("artCategory", ""),
                 url=artigo.get("pdfPage", ""),
                 texto=(_texto(identifica) + "\n" + texto).strip(),
-            ))
+            )
+            atos.append(ato)
+            parte = PARTE_DA_MATERIA.search(nome)
+            if parte:
+                materia, n = parte.group(1), int(parte.group(2))
+                if n == 1:
+                    primeiras[materia] = ato
+                else:
+                    partes.setdefault(materia, {})[n] = ato.texto
+    for materia, ato in primeiras.items():
+        ato.continuacao = "\n".join(texto for _, texto in sorted(partes.get(materia, {}).items()))
     return atos
+
+
+def _faixas(dias):
+    """Dias seguidos viram "AAAA-MM-DD a AAAA-MM-DD"; fim de semana no meio não quebra a faixa."""
+    faixas, ini, fim = [], None, None
+    for d in sorted(dias):
+        if ini is not None and all((fim + timedelta(days=i)).weekday() >= 5 for i in range(1, (d - fim).days)):
+            fim = d
+            continue
+        if ini is not None:
+            faixas.append((ini, fim))
+        ini = fim = d
+    if ini is not None:
+        faixas.append((ini, fim))
+    return ", ".join(str(a) if a == b else f"{a} a {b}" for a, b in faixas)
 
 
 class DouInlabs(Fonte):
@@ -63,6 +97,17 @@ class DouInlabs(Fonte):
     def __init__(self, cliente):
         super().__init__(cliente)
         self._logado = False
+        self._sem_acesso = None    # motivo, depois de um login recusado: a coleta segue só com o que está no cache
+        self.dias_sem_acesso = []  # dias úteis que não estavam no cache e não puderam ser baixados
+
+    @property
+    def aviso(self):
+        """None, ou o que ficou de fora porque o INLABS recusou o login (a coleta de 21/10/2026 levou 403 do WAF
+        do in.gov.br, para onde o inlabs.in.gov.br passou a redirecionar). O coletar põe isto no estado da fonte."""
+        if not self.dias_sem_acesso:
+            return None
+        return (f"parcial: {len(self.dias_sem_acesso)} dia(s) útil(eis) fora do cache sem acesso ao INLABS "
+                f"({_faixas(self.dias_sem_acesso)}): {self._sem_acesso}")
 
     def _entrar(self):
         email, senha = os.environ.get("INLABS_EMAIL"), os.environ.get("INLABS_SENHA")
@@ -86,7 +131,14 @@ class DouInlabs(Fonte):
         if sem_arquivo.exists():
             return None, "404"
         if not self._logado and not cache.exists():
-            self._entrar()
+            if self._sem_acesso:
+                return None, "sem acesso"
+            try:
+                self._entrar()
+            except (urllib.error.HTTPError, urllib.error.URLError, TimeoutError, ConnectionError) as erro:
+                self._sem_acesso = f"login recusado ({getattr(erro, 'code', None) or erro})"
+                print(f"  INLABS: {self._sem_acesso}; só o cache será lido.", flush=True)
+                return None, "sem acesso"
         try:
             corpo = self.cliente.baixar(url, cabecalhos={"origem": "736372697074"}, extensao=".zip")
         except urllib.error.HTTPError as erro:
@@ -106,6 +158,10 @@ class DouInlabs(Fonte):
         return None, motivo
 
     def listar_atos(self, desde, ate):
+        primeiro = ate - timedelta(days=JANELA_DIAS)
+        if desde < primeiro:
+            print(f"DOU: o INLABS guarda 4 meses; a leitura começa em {primeiro}, não em {desde}.", flush=True)
+            desde = primeiro
         uteis_sem_arquivo = 0
         dia = desde
         while dia <= ate:
@@ -120,8 +176,18 @@ class DouInlabs(Fonte):
                 n += len(atos)
                 yield from atos
             print(f"DOU {dia}: {n} matérias" + (f" (sem arquivo: {'; '.join(avisos)})" if avisos else ""), flush=True)
+            if avisos and all(a.endswith("sem acesso") for a in avisos) and len(avisos) == len(SECOES):
+                if dia.weekday() < 5:
+                    self.dias_sem_acesso.append(dia)
+                dia += timedelta(days=1)
+                continue   # sem acesso não é login inválido: não entra na conta dos 3 dias úteis seguidos
             if dia.weekday() < 5:
-                uteis_sem_arquivo = 0 if n else uteis_sem_arquivo + 1
+                # Login inválido aparece como página no lugar do ZIP. 404 é dia sem edição (feriado) ou que já
+                # saiu dos 4 meses do INLABS: não conta, senão a coleta inicial para logo nos primeiros dias.
+                if n:
+                    uteis_sem_arquivo = 0
+                elif avisos:
+                    uteis_sem_arquivo += 1
                 if uteis_sem_arquivo >= 3:
                     raise SystemExit("O INLABS não entregou arquivo em 3 dias úteis seguidos. Confira INLABS_EMAIL e "
                                      "INLABS_SENHA e se o INLABS está no ar. " + "; ".join(avisos))

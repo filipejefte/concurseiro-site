@@ -1,0 +1,100 @@
+{
+  "ato": "dou-2026-09-24-ministerio-da-educacao-universidade-fede-216c3191.md",
+  "atos_extras": [
+    "dou-2026-09-24-ministerio-da-educacao-universidade-fede-8ba6b236.md",
+    "dou-2026-09-24-ministerio-da-educacao-universidade-fede-c1d2d304.md"
+  ],
+  "trechos": {
+    "salario": "DEDICAÇÃO EXCLUSIVA [...] Doutorado R$7.107,99 R$ 13.288,85 (vencimento básico + retribuição por titulação; as três vagas exigem doutorado)",
+    "inscricao.inicio": "ANEXO I - CRONOGRAMA GERAL Período de Inscrições 28/09/2026 a 27/10/2026",
+    "inscricao.fim": "ANEXO I - CRONOGRAMA GERAL Período de Inscrições 28/09/2026 a 27/10/2026",
+    "prova_objetiva": "não consta no ato: O cronograma das demais etapas constará nos editais de conteúdo específico de cada área",
+    "taxa": "9.3 A taxa de inscrição será de R$215,00 (duzentos e quinze reais)",
+    "banca": "o próprio concurso da UNILA (Divisão de Concursos e Seleções); informações em https://portal.unila.edu.br/concursos",
+    "cidade": "14.1 As etapas presenciais de realização das provas [...] ocorrerão na cidade de Foz do Iguaçu/PR, preferencialmente nos câmpus da UNILA",
+    "edital": "EDITAL Nº 240/DICS/DAP/PROGEPE, DE 22 DE SETEMBRO DE 2026 CONCURSO PÚBLICO UNIFICADO DESTINADO AO PROVIMENTO DE CARGOS DA CARREIRA DE MAGISTÉRIO SUPERIOR"
+  },
+  "concurso": {
+    "ficticio": false,
+    "esfera": "federal",
+    "uf": "PR",
+    "nacional": false,
+    "abrangencia": null,
+    "isencao_ate": "2026-10-09",
+    "prova_objetiva": null,
+    "local_prova": "Foz do Iguaçu (PR), preferencialmente nos câmpus da UNILA",
+    "isencao_regras": "Isenção para famílias do CadÚnico e doadores de medula óssea (Lei 13.656/2018); pedido de 28/09 a 09/10/2026",
+    "regime": "Estatutário (Lei 8.112/1990)",
+    "beneficios": [
+      {
+        "nome": "Auxílio-alimentação",
+        "valor": null
+      }
+    ],
+    "o_que_levar": null,
+    "conferencia": null,
+    "primeira_varredura": null,
+    "ultima_alteracao": null,
+    "id": "unila-2026-edital-240",
+    "orgao": "Universidade Federal da Integração Latino-Americana (UNILA)",
+    "municipio_ibge": "4108304",
+    "cidade": "Foz do Iguaçu",
+    "area": "Educação",
+    "banca": {
+      "nome": "UNILA (Divisão de Concursos e Seleções)",
+      "url": "https://portal.unila.edu.br/concursos"
+    },
+    "inscricao": {
+      "inicio": "2026-09-28",
+      "fim": "2026-10-27",
+      "url": "https://sig.unila.edu.br/sigrh/public/home.jsf"
+    },
+    "taxa": {
+      "min": 215.0,
+      "max": 215.0
+    },
+    "cargos": [
+      {
+        "nome": "Professor do Magistério Superior – Morfologia/Anatomia humana",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 13288.85,
+        "escolaridade": "Superior",
+        "requisitos": "Professor do Magistério Superior, 40 h com dedicação exclusiva; graduação na área da Saúde ou Ciências Biológicas e doutorado em Anatomia, Morfologia ou áreas afins; vaga reservada a pessoas pretas ou pardas",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Magistério Superior – Farmacologia/Farmacologia clínica",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 13288.85,
+        "escolaridade": "Superior",
+        "requisitos": "Professor do Magistério Superior, 40 h com dedicação exclusiva; graduação em Farmácia e doutorado em Farmacologia",
+        "jornada_horas": 40,
+        "materias": []
+      },
+      {
+        "nome": "Professor do Magistério Superior – Saúde coletiva/Saúde da família",
+        "vagas": 1,
+        "cadastro_reserva": false,
+        "salario": 13288.85,
+        "escolaridade": "Superior",
+        "requisitos": "Professor do Magistério Superior, 40 h com dedicação exclusiva; graduação na área da saúde (Enfermagem, Fisioterapia, Nutrição, Psicologia) e doutorado em Saúde Pública/Ciências da Saúde ou afins; vaga reservada a pessoa com deficiência",
+        "jornada_horas": 40,
+        "materias": []
+      }
+    ],
+    "documentos": [
+      {
+        "tipo": "edital",
+        "titulo": "Edital nº 240/DICS/DAP/PROGEPE, de 22 de setembro de 2026",
+        "numero": "240/2026",
+        "url": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=24/09/2026&jornal=530&pagina=44",
+        "publicado_em": "2026-09-24",
+        "fonte": "DOU",
+        "resumo": null
+      }
+    ]
+  }
+}

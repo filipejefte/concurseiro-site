@@ -1,0 +1,11 @@
+{% extends "texto.html" %}
+{% block texto %}
+<p class="pt-capa">Esta página não existe ou saiu do ar. Se você veio de um link antigo, o concurso pode ter mudado de endereço.</p>
+<p><a class="cc-btn cc-btn-primario" href="{{ u('/concursos/') }}">Ver os concursos abertos</a></p>
+<ul>
+  <li><a class="pt-link" href="{{ u('/') }}">Página inicial</a></li>
+  <li><a class="pt-link" href="{{ u('/federais/') }}">Concursos federais</a></li>
+  <li><a class="pt-link" href="{{ u('/estados/') }}">Concursos por estado</a></li>
+  <li><a class="pt-link" href="{{ u('/previstos/') }}">Concursos previstos</a></li>
+</ul>
+{% endblock %}

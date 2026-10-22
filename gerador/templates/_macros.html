@@ -1,0 +1,134 @@
+{#- Peças repetidas: ícones, selo, card, linha de prazo, publicidade, link de parceiro. -#}
+
+{%- macro icone(nome, classe="pt-i") -%}
+{%- set p = {
+  "aberto": '<circle cx="12" cy="12" r="9"/><path d="m8.5 12.5 2.5 2.5 4.5-5"/>',
+  "relogio": '<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>',
+  "calendario": '<rect x="3.5" y="5" width="17" height="15.5" rx="2"/><path d="M8 3v4M16 3v4M3.5 10h17"/>',
+  "encerrado": '<circle cx="12" cy="12" r="9"/><path d="M8 12h8"/>',
+  "pino": '<path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/>',
+  "seta": '<path d="m9 6 6 6-6 6"/>',
+  "externo": '<path d="M7 17 17 7M9 7h8v8"/>',
+  "voltar": '<path d="m15 6-6 6 6 6"/>',
+  "documento": '<path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h6"/>',
+  "globo": '<circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/>',
+  "atualizado": '<path d="M20 12a8 8 0 1 1-2.3-5.6"/><path d="M20 4v4.5h-4.5"/>',
+  "escudo": '<path d="M12 3 5 6v5.5c0 4.3 3 7.8 7 9.5 4-1.7 7-5.2 7-9.5V6z"/><path d="m9 12 2 2 4-4"/>',
+  "abaixo": '<path d="m6 9 6 6 6-6"/>',
+  "mira": '<circle cx="12" cy="12" r="7"/><circle cx="12" cy="12" r="2.5"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/>',
+  "fechar": '<path d="M6 6l12 12M18 6 6 18"/>',
+  "aviao": '<path d="m22 2-7 20-4-9-9-4z"/><path d="M22 2 11 13"/>',
+  "conversa": '<path d="M4 20.5 5.4 16A8.5 8.5 0 1 1 8.6 19z"/>',
+  "sino": '<path d="M6 16v-5a6 6 0 1 1 12 0v5l1.5 2h-15z"/><path d="M10 20.5a2.2 2.2 0 0 0 4 0"/>',
+  "busca": '<circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/>',
+  "menu": '<path d="M4 7h16M4 12h16M4 17h16"/>',
+  "filtro": '<path d="M4 7h10M18 7h2M4 17h4M12 17h8"/><circle cx="16" cy="7" r="2"/><circle cx="10" cy="17" r="2"/>',
+  "capelo": '<path d="m2 9 10-5 10 5-10 5z"/><path d="M6 11v5c0 1.5 2.7 3 6 3s6-1.5 6-3v-5"/>',
+  "carta": '<rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 6.5 8.5 7 8.5-7"/>',
+} -%}
+<svg class="{{ classe }}" viewBox="0 0 24 24" aria-hidden="true" focusable="false">{{ p[nome] | safe }}</svg>
+{%- endmacro %}
+
+{%- macro selo(x) -%}
+{%- set icones = {"aberto": "aberto", "breve": "relogio", "previsto": "calendario", "encerrado": "encerrado"} -%}
+<span class="cc-status cc-status-{{ x.situacao }}" data-selo>{{ icone(icones[x.situacao], "pt-i2") }}<span>{{ x.selo }}</span></span>
+{%- endmacro %}
+
+{%- macro dinheiro(texto) -%}{{ texto | replace("R$ ", "R$ ") }}{%- endmacro %}
+
+{%- macro card(x, nivel=3) -%}
+<a class="cc-card{% if x.situacao == 'encerrado' %} cc-card-encerrado{% endif %}" href="{{ u(x.path) }}"
+   data-card data-id="{{ x.id }}" data-area="{{ x.area_slug }}" data-niveis="{{ x.niveis | join(' ') }}"
+   data-banca="{{ x.banca_slug or '' }}" data-sal="{{ x.sal_max or 0 }}" data-sit="{{ x.situacao }}"
+   data-fim="{{ x.fim or '' }}" data-inicio="{{ x.inicio or '' }}"{% if x.federal %} data-federal{% endif %}
+   {%- if x.municipio %} data-lat="{{ x.municipio.lat }}" data-lon="{{ x.municipio.lon }}"{% endif %}>
+  <div class="cc-card-topo">{{ selo(x) }}<span class="cc-card-local">{{ icone("pino") }}<span data-local>{{ x.local }}</span></span></div>
+  <div><h{{ nivel }} class="cc-card-orgao">{{ x.orgao }}</h{{ nivel }}><p class="cc-card-cargo" data-cargo>{{ x.cargo }}</p></div>
+  <div><span class="cc-rotulo" data-rotulo-salario>Salário inicial</span><span class="cc-salario" data-salario>
+    {%- if x.salario -%}
+      {%- if x.situacao == 'encerrado' %}<span>{{ dinheiro(x.salario) }}</span>{% else %}<span class="cc-grifo">{{ dinheiro(x.salario) }}</span>{% endif -%}
+    {%- else %}<span class="cc-ni">Não informado no edital</span>{% endif -%}
+    {%- if x.beneficio %}<small>{{ x.beneficio }}</small>{% endif %}</span></div>
+  <ul class="cc-dados">{% for t in [x.vagas, x.escolaridade, x.jornada_card] if t %}<li>{{ t }}</li>{% endfor %}</ul>
+  <div class="cc-card-rodape">
+    <span class="cc-fonte">{{ x.prazo_rotulo }} <b class="pt-prazo-{{ x.situacao }}">{{ x.prazo }}</b></span>
+    <span class="cc-btn cc-btn-texto pt-ver-ficha" aria-hidden="true">Ver ficha</span>
+  </div>
+</a>
+{%- endmacro %}
+
+{%- macro grade(lista, nivel=3, atributos="") -%}
+<div class="pt-grade-cards" {{ atributos | safe }}>
+{%- for x in lista %}
+{{ card(x, nivel) }}
+{%- if loop.index == 3 and anuncios and lista | length > 4 %}{{ publicidade("lista") }}{% endif %}
+{%- endfor %}
+</div>
+{%- endmacro %}
+
+{%- macro linha_prazo(x) -%}
+<li><a class="pt-linha" href="{{ u(x.path) }}"><span class="pt-linha-txt">
+  <span class="pt-linha-tit">{{ x.orgao }}</span>
+  <span class="pt-linha-sub">{{ x.cargo }} · {{ dinheiro(x.salario or "salário não informado") }}</span>
+  <span class="pt-prazo">{{ icone("relogio", "pt-i2") }}{{ x.selo }} · {{ x.prazo }}</span>
+</span>{{ icone("seta", "pt-i pt-seta") }}</a></li>
+{%- endmacro %}
+
+{#- Anúncio: só com adsense_client. Espaço reservado (sem pulo de layout) e rótulo "Publicidade". -#}
+{%- macro publicidade(lugar) -%}
+{%- if anuncios -%}
+<aside class="pt-pub pt-pub-{{ lugar }}" aria-label="Publicidade">
+  <span class="cc-rotulo-pub">Publicidade</span>
+  <div class="pt-pub-caixa"><ins class="adsbygoogle" style="display:block" data-ad-client="{{ cfg.adsense_client }}"{% if cfg.adsense_slot %} data-ad-slot="{{ cfg.adsense_slot }}"{% endif %} data-ad-format="auto" data-full-width-responsive="true"></ins></div>
+</aside>
+{%- endif -%}
+{%- endmacro %}
+
+{#- Link de parceiro: só o que está em [[afiliados]] do site.toml, para esta área ou banca. -#}
+{%- macro parceiros(lista) -%}
+{%- if lista -%}
+<section class="pt-secao" aria-labelledby="titulo-parceiros">
+  <div class="pt-secao-cab"><h2 class="pt-h2" id="titulo-parceiros">Para estudar</h2><span class="cc-rotulo-pub">Link de parceiro</span></div>
+  <ul class="pt-lista">
+  {%- for a in lista %}
+    <li><a class="pt-linha" href="{{ a.url }}" rel="sponsored noopener" target="_blank"><span class="pt-linha-txt">
+      <span class="pt-linha-tit">{{ a.nome }}</span>{% if a.descricao %}<span class="pt-linha-sub">{{ a.descricao }}</span>{% endif %}
+    </span>{{ icone("externo", "pt-i2 pt-seta") }}</a></li>
+  {%- endfor %}
+  </ul>
+  <p class="pt-apoio">Indicação paga: se você comprar por esse link, recebemos uma comissão. O preço é o mesmo para você.</p>
+</section>
+{%- endif -%}
+{%- endmacro %}
+
+{%- macro aviso_oficial(extra="") -%}
+<div class="cc-aviso" role="note" style="max-width:none">
+  {{ icone("escudo") }}
+  <div><strong>Não somos site oficial.</strong> A inscrição e o pagamento da taxa são feitos só no site da banca. Aqui você encontra o concurso e o caminho certo até ele.{{ extra | safe }}</div>
+</div>
+{%- endmacro %}
+
+{%- macro botao_alerta(texto="Avise-me", classe="cc-btn cc-btn-primario") -%}
+<a class="{{ classe }}" href="{{ u('/alertas/') }}" data-abrir-alerta>{{ icone("sino", "pt-i2") }}{{ texto }}</a>
+{%- endmacro %}
+
+{%- macro trilha(itens) -%}
+<nav aria-label="Você está em">
+  <ol class="pt-trilha">
+  {%- for nome, caminho in itens %}
+    {%- if not loop.last %}
+    <li><a href="{{ u(caminho) }}">{{ nome }}</a></li><li aria-hidden="true">›</li>
+    {%- else %}
+    <li aria-current="page">{{ nome }}</li>
+    {%- endif %}
+  {%- endfor %}
+  </ol>
+</nav>
+{%- endmacro %}
+
+{%- macro vazio(texto) -%}
+<div class="pt-vazio">
+  <p class="pt-texto" style="font-weight:600">{{ texto }}</p>
+  {{ botao_alerta("Avise-me") }}
+</div>
+{%- endmacro %}

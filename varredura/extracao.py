@@ -6,21 +6,17 @@ Pasta da semana (dados/varreduras/AAAA-MM-DD/):
                                "trechos": {...}, "concurso": {...}}
   descartes.json               [{"ato": <arquivo da fila>, "motivo": ...}]
 
-Dois modos:
-  claude-code (padrão, sem custo de API): só gera a fila; o /varredura do Claude Code lê cada
-    arquivo e escreve a ficha seguindo varredura/instrucoes_extracao.md.
-  api: chama o modelo claude-haiku-5-5 (chave em ANTHROPIC_API_KEY) para cada ato da fila.
+A coleta só gera a fila; o /varredura do Claude Code lê cada arquivo e escreve a ficha seguindo
+varredura/instrucoes_extracao.md (sem custo de API).
 """
 import hashlib
-import json
 import re
 import unicodedata
+from datetime import date
 from pathlib import Path
 
-from .dados import CONCURSOS, SCHEMA, gravar_json, ler_json, municipios
+from .dados import ler_json
 
-MODELO = "claude-haiku-5-5"
-INSTRUCOES = Path(__file__).with_name("instrucoes_extracao.md")
 CAMPOS_FILA = ("fonte", "data", "classe", "pss", "orgao", "titulo", "url")
 
 
@@ -43,9 +39,10 @@ def escrever_fila(pasta, atos_classificados):
     nomes = []
     for ato, classe, pss in atos_classificados:
         meta = dict(ato.como_dict(), classe=classe, pss=pss)
+        corpo = ato.texto + ("\n" + ato.continuacao if ato.continuacao else "")
         cabecalho = "\n".join(f"{k}: {str(meta[k]).replace(chr(10), ' ')}" for k in CAMPOS_FILA)
         nome = nome_na_fila(ato)
-        (fila / nome).write_text(cabecalho + "\n---\n" + ato.texto + "\n", encoding="utf-8", newline="\n")
+        (fila / nome).write_text(cabecalho + "\n---\n" + corpo + "\n", encoding="utf-8", newline="\n")
         nomes.append(nome)
     return nomes
 
@@ -59,14 +56,50 @@ def ler_fila(arquivo):
 _INSCRICAO = re.compile(r"inscri[çc][õo]es[^.\n]{0,40}(de|a partir de|até|no per[íi]odo|entre)[^.\n]{0,120}", re.I)
 
 
-def resumo_do_ato(arquivo):
-    """Uma linha por ato, para separar rápido o que vale ler inteiro."""
+def resumo_do_ato(arquivo, hoje=None):
+    """Uma linha por ato, para separar rápido o que vale ler inteiro. Começa pela prioridade (1, 2 ou 3)."""
     meta, texto = ler_fila(arquivo)
     plano = " ".join(texto.split())
     achado = _INSCRICAO.search(plano)
     trecho = achado.group(0)[:160] if achado else "(sem trecho de inscrição)"
-    return (f"{Path(arquivo).name} | {meta.get('classe')} | {meta.get('orgao', '')[:70]} | "
+    grupo, _ = prioridade(arquivo, hoje or date.today())
+    return (f"P{grupo} | {Path(arquivo).name} | {meta.get('classe')} | {meta.get('orgao', '')[:70]} | "
             f"{meta.get('titulo', '')[:70]} | {len(plano)} car. | {trecho}")
+
+
+_MESES = ["janeiro", "fevereiro", "marco", "abril", "maio", "junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro"]
+_DATA = re.compile(r"(?<!\d)(\d{1,2})\s*/\s*(\d{1,2})\s*/\s*(\d{4})(?!\d)|(?<!\d)(\d{1,2})\s*(?:o\s+)?de\s+(" + "|".join(_MESES)
+                   + r")\s+de\s+(\d{4})")
+PRIORIDADES = {1: "inscrição aberta ou futura", 2: "previsto (autorização ou banca) dos últimos 120 dias", 3: "o resto"}
+
+
+def _datas_de_inscricao(texto):
+    """Datas que aparecem até 250 caracteres depois de "inscrição" (texto normalizado, sem acento)."""
+    texto = unicodedata.normalize("NFD", texto).encode("ascii", "ignore").decode().lower()
+    datas = []
+    for k in re.finditer(r"inscric", texto):
+        for m in _DATA.finditer(texto, k.end(), k.end() + 250):
+            try:
+                if m.group(1):
+                    datas.append(date(int(m.group(3)), int(m.group(2)), int(m.group(1))))
+                else:
+                    datas.append(date(int(m.group(6)), _MESES.index(m.group(5)) + 1, int(m.group(4))))
+            except ValueError:
+                continue
+    return datas
+
+
+def prioridade(arquivo, hoje):
+    """(grupo, ordem) para extrair primeiro o que importa: 1 inscrição aberta ou futura; 2 previsto recente; 3 o resto
+    (dentro do 3, por último o que só tem datas de inscrição já passadas: provável descarte)."""
+    meta, texto = ler_fila(arquivo)
+    datas = _datas_de_inscricao(meta.get("titulo", "") + "\n" + texto)
+    publicado = date.fromisoformat(meta["data"]) if meta.get("data") else hoje
+    if any(dt >= hoje for dt in datas):
+        return 1, 0
+    if meta.get("classe") in ("autorizacao", "contratacao_banca") and (hoje - publicado).days <= 120:
+        return 2, 0
+    return 3, 1 if datas else 0
 
 
 def pendentes(pasta):
@@ -79,81 +112,3 @@ def pendentes(pasta):
     descartes = ler_json(pasta / "descartes.json") if (pasta / "descartes.json").exists() else []
     feitos |= {d["ato"] for d in descartes}
     return [p for p in sorted((pasta / "fila").glob("*.md")) if p.name not in feitos]
-
-
-def registrar(pasta, nome_ato, resposta):
-    """Guarda a resposta da extração: ficha em fichas/<id>.json ou motivo em descartes.json."""
-    pasta = Path(pasta)
-    if resposta.get("descartar"):
-        caminho = pasta / "descartes.json"
-        descartes = ler_json(caminho) if caminho.exists() else []
-        descartes.append({"ato": nome_ato, "motivo": resposta["descartar"]})
-        gravar_json(caminho, descartes)
-        return None
-    concurso = resposta["concurso"]
-    gravar_json(pasta / "fichas" / f"{concurso['id']}.json",
-                {"ato": nome_ato, "trechos": resposta.get("trechos") or {}, "concurso": concurso})
-    return concurso["id"]
-
-
-def _sistema():
-    base = ler_json(CONCURSOS)
-    existentes = "\n".join(f"{c['id']} | {c['orgao']}" for c in base["concursos"]) or "(nenhum ainda)"
-    tabela = "\n".join(f"{m['ibge']} {m['nome']}" for m in municipios().values())
-    return (
-        INSTRUCOES.read_text(encoding="utf-8")
-        + "\n\n## Schema da ficha\n\n" + SCHEMA.read_text(encoding="utf-8")
-        + "\n\n## Concursos já publicados (id | órgão)\n\n" + existentes
-        + "\n\n## Municípios do Paraná (código IBGE e nome)\n\n" + tabela
-    )
-
-
-def _json_da_resposta(texto):
-    inicio, fim = texto.find("{"), texto.rfind("}")
-    if inicio < 0 or fim < inicio:
-        raise ValueError("a resposta não trouxe um objeto JSON")
-    return json.loads(texto[inicio:fim + 1])
-
-
-def extrair_api(pasta, data_varredura):
-    """Modo api: uma chamada ao modelo por ato pendente. Devolve (fichas, descartes, falhas)."""
-    import anthropic  # só o modo api precisa do SDK
-
-    cliente = anthropic.Anthropic()  # lê ANTHROPIC_API_KEY
-    sistema = [{"type": "text", "text": _sistema(), "cache_control": {"type": "ephemeral"}}]
-    fichas = descartes = 0
-    falhas = []
-    for arquivo in pendentes(pasta):
-        meta, texto = ler_fila(arquivo)
-        pedido = (f"Data da varredura: {data_varredura.isoformat()}\n"
-                  + "\n".join(f"{k}: {meta.get(k, '')}" for k in CAMPOS_FILA)
-                  + "\n\nTexto do ato:\n\n" + texto)
-        try:
-            resposta = cliente.messages.create(
-                model=MODELO,
-                max_tokens=16000,
-                system=sistema,
-                output_config={"effort": "medium"},
-                messages=[{"role": "user", "content": pedido}],
-            )
-        except anthropic.RateLimitError as erro:
-            falhas.append((arquivo.name, f"limite de uso da API: {erro}"))
-            break
-        except anthropic.APIStatusError as erro:
-            falhas.append((arquivo.name, f"erro da API ({erro.status_code}): {erro.message}"))
-            continue
-        except anthropic.APIConnectionError as erro:
-            falhas.append((arquivo.name, f"sem conexão com a API: {erro}"))
-            break
-        if resposta.stop_reason in ("refusal", "max_tokens"):
-            falhas.append((arquivo.name, f"resposta interrompida ({resposta.stop_reason}); extraia à mão"))
-            continue
-        try:
-            dados = _json_da_resposta("".join(b.text for b in resposta.content if b.type == "text"))
-            if registrar(pasta, arquivo.name, dados):
-                fichas += 1
-            else:
-                descartes += 1
-        except (ValueError, KeyError, TypeError) as erro:
-            falhas.append((arquivo.name, f"resposta fora do formato: {erro}"))
-    return fichas, descartes, falhas

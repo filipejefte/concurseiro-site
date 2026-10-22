@@ -1,0 +1,83 @@
+{
+  "ato": "amp-pr-2026-08-25-secretaria-de-administracao-aa315e52.md",
+  "atos_extras": [
+    "amp-pr-2026-08-05-secretaria-de-administracao-52d3e607.md"
+  ],
+  "trechos": {
+    "salario": "não consta no ato",
+    "inscricao.inicio": "não consta no ato",
+    "inscricao.fim": "não consta no ato",
+    "prova_objetiva": "não consta no ato",
+    "taxa": "não consta no ato",
+    "banca": "CONTRATADA: INSTITUTO FILADÉLFIA DE LONDRINA [...] DATA ASSINATURA DO CONTRATO: 19/08/2026",
+    "cidade": "provimento de 13 (treze) vagas imediatas e formação de cadastro de reserva para o cargo de Guarda Civil Municipal do quadro efetivo do Município de Sengés/PR",
+    "edital": "EXTRATO DO CONTRATO Nº 222/2026 Dispensa de Licitação n.º 050/2026"
+  },
+  "concurso": {
+    "id": "prefeitura-senges-pr-2026",
+    "ficticio": false,
+    "orgao": "Prefeitura de Sengés (PR)",
+    "esfera": "municipal",
+    "uf": "PR",
+    "municipio_ibge": "4126306",
+    "cidade": "Sengés",
+    "nacional": false,
+    "abrangencia": null,
+    "area": "Policial e segurança",
+    "banca": {
+      "nome": "Instituto Filadélfia de Londrina",
+      "url": null
+    },
+    "inscricao": {
+      "inicio": null,
+      "fim": null,
+      "url": null
+    },
+    "isencao_ate": null,
+    "prova_objetiva": null,
+    "local_prova": null,
+    "taxa": {
+      "min": null,
+      "max": null
+    },
+    "isencao_regras": null,
+    "regime": null,
+    "beneficios": [],
+    "o_que_levar": null,
+    "cargos": [
+      {
+        "nome": "Guarda Civil Municipal",
+        "vagas": 13,
+        "cadastro_reserva": true,
+        "salario": null,
+        "escolaridade": null,
+        "requisitos": null,
+        "jornada_horas": null,
+        "materias": []
+      }
+    ],
+    "documentos": [
+      {
+        "tipo": "contratacao_banca",
+        "titulo": "Extrato do Contrato nº 222/2026 – Dispensa de Licitação nº 050/2026",
+        "numero": "222/2026",
+        "url": "https://www.diariomunicipal.com.br/amp/materia/59DA1748",
+        "publicado_em": "2026-08-25",
+        "fonte": "AMP-PR",
+        "resumo": "Contrato assinado em 19/08/2026"
+      },
+      {
+        "tipo": "contratacao_banca",
+        "titulo": "Homologação/adjudicação – Dispensa de Licitação nº 050/2026",
+        "numero": "050/2026",
+        "url": "https://www.diariomunicipal.com.br/amp/materia/52224528",
+        "publicado_em": "2026-08-05",
+        "fonte": "AMP-PR",
+        "resumo": null
+      }
+    ],
+    "conferencia": null,
+    "primeira_varredura": null,
+    "ultima_alteracao": null
+  }
+}
